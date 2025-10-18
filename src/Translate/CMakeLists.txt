@@ -1,6 +1,6 @@
-# crypto/CMakeLists.txt
+# Translate/CMakeLists.txt
 set(ROOT src)
-set(LIBNAME calculator)
+set(LIBNAME translate)
 
 message(STATUS "[${ROOT}/${LIBNAME}] Module Processing...")
 
@@ -24,11 +24,11 @@ target_include_directories(${LIBNAME} PUBLIC
 						   ${CMAKE_CURRENT_SOURCE_DIR}/../utility/header
 						   ${CMAKE_CURRENT_SOURCE_DIR}/header)
 
-# Add any dependencies or compile options specific to crypto
+# Add any dependencies or compile options specific to translate
 target_link_libraries(${LIBNAME} PRIVATE utility)
 
 # creates preprocessor definition used for library exports
-add_compile_definitions("CORUH_CALCULATOR_LIB_EXPORTS")
+add_compile_definitions("CORUH_TRANSLATE_LIB_EXPORTS")
 
 install(TARGETS ${LIBNAME}
         LIBRARY DESTINATION lib
@@ -36,10 +36,10 @@ install(TARGETS ${LIBNAME}
         RUNTIME DESTINATION bin )
 		
 # Copy required header to the installation include folder		
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/header/calculator.h
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/header/Translate.h
         DESTINATION include)
 
-# Export the crypto target so other modules can use it
+# Export the translate target so other modules can use it
 # export(TARGETS ${LIBNAME} FILE ${LIBNAME}Targets.cmake)
 
 message(STATUS "[${ROOT}/${LIBNAME}] Added library target: ${LIBNAME}")

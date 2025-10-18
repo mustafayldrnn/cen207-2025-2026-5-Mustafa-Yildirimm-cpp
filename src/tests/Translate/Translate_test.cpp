@@ -1,57 +1,113 @@
-//#define ENABLE_CALCULATOR_TEST  // Uncomment this line to enable the Calculator tests
+/**
+ * @file Translate_test.cpp
+ * @brief Basic Language Translator test file
+ */
 
-#include "gtest/gtest.h"
-#include "../../calculator/header/calculator.h"  // Adjust this include path based on your project structure
+#include <gtest/gtest.h>
+#include "../../Translate/header/Translate.h"
 
-using namespace Coruh::Calculator;
+using namespace Coruh::Translate;
 
-class CalculatorTest : public ::testing::Test {
+class TranslateTest : public ::testing::Test {
 protected:
-	void SetUp() override {
-		// Setup test data
-	}
-
-	void TearDown() override {
-		// Clean up test data
-	}
+    void SetUp() override {
+        translator = new Translate();
+    }
+    
+    void TearDown() override {
+        delete translator;
+    }
+    
+    Translate* translator;
 };
 
-TEST_F(CalculatorTest, TestAdd) {
-	double result = Calculator::add(5.0, 3.0);
-	EXPECT_DOUBLE_EQ(result, 8.0);
+TEST_F(TranslateTest, EnglishToTurkishTranslation) {
+    EXPECT_EQ(translator->translate("en", "tr", "hello"), "merhaba");
+    EXPECT_EQ(translator->translate("en", "tr", "world"), "dünya");
+    EXPECT_EQ(translator->translate("en", "tr", "house"), "ev");
 }
 
-TEST_F(CalculatorTest, TestSubtract) {
-	double result = Calculator::subtract(5.0, 3.0);
-	EXPECT_DOUBLE_EQ(result, 2.0);
+TEST_F(TranslateTest, EnglishToSpanishTranslation) {
+    EXPECT_EQ(translator->translate("en", "es", "hello"), "hola");
+    EXPECT_EQ(translator->translate("en", "es", "world"), "mundo");
+    EXPECT_EQ(translator->translate("en", "es", "house"), "casa");
 }
 
-TEST_F(CalculatorTest, TestMultiply) {
-	double result = Calculator::multiply(5.0, 3.0);
-	EXPECT_DOUBLE_EQ(result, 15.0);
+TEST_F(TranslateTest, CaseInsensitiveTranslation) {
+    EXPECT_EQ(translator->translate("en", "tr", "HELLO"), "merhaba");
+    EXPECT_EQ(translator->translate("en", "tr", "Hello"), "merhaba");
+    EXPECT_EQ(translator->translate("en", "es", "WORLD"), "mundo");
+    EXPECT_EQ(translator->translate("en", "es", "World"), "mundo");
 }
 
-TEST_F(CalculatorTest, TestDivide) {
-	double result = Calculator::divide(6.0, 3.0);
-	EXPECT_DOUBLE_EQ(result, 2.0);
+TEST_F(TranslateTest, AddNewTranslation) {
+    translator->addTranslation("en", "tr", "test", "deneme");
+    EXPECT_EQ(translator->translate("en", "tr", "test"), "deneme");
 }
 
-TEST_F(CalculatorTest, TestDivideByZero) {
-	EXPECT_THROW(Calculator::divide(5.0, 0.0), std::invalid_argument);
+TEST_F(TranslateTest, TranslationNotFound) {
+    EXPECT_THROW(translator->translate("en", "tr", "nonexistent"), std::invalid_argument);
+    EXPECT_THROW(translator->translate("en", "es", "bulunmayan"), std::invalid_argument);
 }
 
-/**
- * @brief The main function of the test program.
- *
- * @param argc The number of command-line arguments.
- * @param argv An array of command-line argument strings.
- * @return int The exit status of the program.
- */
-int main(int argc, char** argv) {
-#ifdef ENABLE_CALCULATOR_TEST
-	::testing::InitGoogleTest(&argc, argv);
-	return RUN_ALL_TESTS();
-#else
-	return 0;
-#endif
+TEST_F(TranslateTest, UnsupportedLanguage) {
+    EXPECT_THROW(translator->translate("xx", "tr", "hello"), std::invalid_argument);
+    EXPECT_THROW(translator->translate("en", "xx", "hello"), std::invalid_argument);
+}
+
+TEST_F(TranslateTest, GetTranslations) {
+    auto translations = translator->getTranslations("en", "tr");
+    EXPECT_GT(translations.size(), 0);
+    
+    // Check if hello-merhaba translation exists
+    bool found = false;
+    for (const auto& pair : translations) {
+        if (pair.first == "hello" && pair.second == "merhaba") {
+            found = true;
+            break;
+        }
+    }
+    EXPECT_TRUE(found);
+}
+
+TEST_F(TranslateTest, GetSupportedLanguages) {
+    auto languages = translator->getSupportedLanguages();
+    EXPECT_GT(languages.size(), 0);
+    
+    // Check if English and Turkish are supported
+    bool foundEnglish = false;
+    bool foundTurkish = false;
+    for (const auto& lang : languages) {
+        if (lang == "en") foundEnglish = true;
+        if (lang == "tr") foundTurkish = true;
+    }
+    EXPECT_TRUE(foundEnglish);
+    EXPECT_TRUE(foundTurkish);
+}
+
+TEST_F(TranslateTest, IsLanguageSupported) {
+    EXPECT_TRUE(translator->isLanguageSupported("en"));
+    EXPECT_TRUE(translator->isLanguageSupported("tr"));
+    EXPECT_TRUE(translator->isLanguageSupported("es"));
+    EXPECT_FALSE(translator->isLanguageSupported("xx"));
+}
+
+TEST_F(TranslateTest, AddSupportedLanguage) {
+    translator->addSupportedLanguage("it");
+    EXPECT_TRUE(translator->isLanguageSupported("it"));
+}
+
+TEST_F(TranslateTest, GetWordsByLanguage) {
+    auto englishWords = translator->getWordsByLanguage("en");
+    EXPECT_GT(englishWords.size(), 0);
+    
+    // Check if "hello" is in English words
+    bool foundHello = false;
+    for (const auto& word : englishWords) {
+        if (word == "hello") {
+            foundHello = true;
+            break;
+        }
+    }
+    EXPECT_TRUE(foundHello);
 }

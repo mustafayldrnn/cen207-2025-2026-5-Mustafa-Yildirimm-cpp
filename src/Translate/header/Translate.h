@@ -1,62 +1,98 @@
 /**
- * @file calculator.h
+ * @file Translate.h
  * 
- * @brief Provides functions for math. utilities
+ * @brief Basic Language Translator - Multi-language word translation class
  */
 
-#ifndef CALCULATOR_H
-#define CALCULATOR_H
+#ifndef TRANSLATE_H
+#define TRANSLATE_H
 
-#include "../../utility/header/commonTypes.h"
+#include <string>
+#include <map>
+#include <vector>
+#include <stdexcept>
 
 namespace Coruh
 {
-    namespace Calculator
+    namespace Translate
     {
         /**
-            @class Calculator
-            @brief Provides Basic functions for various operations.
+            @class Translate
+            @brief Basic language translation operations class
         */
-        class Calculator
+        class Translate
         {
+        private:
+            std::map<std::string, std::map<std::string, std::string>> translations;
+            std::vector<std::string> supportedLanguages;
+            
         public:
             /**
-             * Adds two numbers.
-             * @param a First operand.
-             * @param b Second operand.
-             * @return The sum of a and b.
+             * Constructor - Initializes translation dictionary
              */
-            static double add(double a, double b);
-
+            Translate();
+            
             /**
-             * Subtracts the second number from the first.
-             * @param a Minuend.
-             * @param b Subtrahend.
-             * @return The result of a - b.
+             * Translates a word from source language to target language
+             * @param sourceLanguage Source language code (e.g., "en", "tr", "es")
+             * @param targetLanguage Target language code (e.g., "en", "tr", "es")
+             * @param word Word to translate
+             * @return Translated word
+             * @throws std::invalid_argument If word not found
              */
-            static double subtract(double a, double b);
-
+            std::string translate(const std::string& sourceLanguage, 
+                                const std::string& targetLanguage, 
+                                const std::string& word);
+            
             /**
-             * Multiplies two numbers.
-             * @param a First operand.
-             * @param b Second operand.
-             * @return The product of a and b.
+             * Adds a new translation pair
+             * @param sourceLanguage Source language code
+             * @param targetLanguage Target language code
+             * @param sourceWord Word in source language
+             * @param targetWord Word in target language
              */
-            static double multiply(double a, double b);
-
+            void addTranslation(const std::string& sourceLanguage,
+                              const std::string& targetLanguage,
+                              const std::string& sourceWord,
+                              const std::string& targetWord);
+            
             /**
-             * Divides the first number by the second.
-             * Throws std::invalid_argument if the second number is zero.
-             * @param a Dividend.
-             * @param b Divisor.
-             * @return The result of a / b.
-             * @throws std::invalid_argument If b is zero.
+             * Gets all translations for a specific language pair
+             * @param sourceLanguage Source language code
+             * @param targetLanguage Target language code
+             * @return Vector of translation pairs
              */
-            static double divide(double a, double b);
-
-
+            std::vector<std::pair<std::string, std::string>> getTranslations(
+                const std::string& sourceLanguage, 
+                const std::string& targetLanguage);
+            
+            /**
+             * Gets all supported languages
+             * @return Vector of supported language codes
+             */
+            std::vector<std::string> getSupportedLanguages();
+            
+            /**
+             * Adds a new supported language
+             * @param languageCode Language code to add
+             */
+            void addSupportedLanguage(const std::string& languageCode);
+            
+            /**
+             * Checks if a language is supported
+             * @param languageCode Language code to check
+             * @return True if language is supported
+             */
+            bool isLanguageSupported(const std::string& languageCode);
+            
+            /**
+             * Gets all words for a specific language
+             * @param languageCode Language code
+             * @return Vector of words in that language
+             */
+            std::vector<std::string> getWordsByLanguage(const std::string& languageCode);
         };
     }
 }
 
-#endif // CALCULATOR_H
+#endif // TRANSLATE_H

@@ -1,8 +1,27 @@
-# Calculator Project Library Generation and Testing Template
+# Data Structures and Algorithms Project
 
 ## Overview
 
-This project provides a suite of modules aimed to show how Cmake used with Ctest. Also combines doxygen documentation and test coverage reports
+This project provides comprehensive implementations of fundamental data structures and algorithms including Double Linked List, XOR Linked List, Sparse Matrix, Stack & Queue, Heap, and Hash Table. Each data structure includes real-world applications and comprehensive unit tests.
+
+## Features
+
+### Data Structures Implemented:
+- **Double Linked List** - Browser history system with backward/forward navigation
+- **XOR Linked List** - Memory-efficient playlist system with bidirectional navigation
+- **Sparse Matrix** - Map-based grid application for games with memory optimization
+- **Stack & Queue** - Task scheduler with undo operations (LIFO) and task queue (FIFO)
+- **Heap** - Priority task manager with heap property maintenance
+- **Hash Table** - Simple key-value database with collision handling
+
+### Key Features:
+- Template-based generic implementations
+- Real-world use cases for each data structure
+- Comprehensive unit tests with Google Test
+- Memory efficiency optimizations
+- Error handling and edge case management
+- Full documentation with Doxygen
+- Test coverage reports
 
 ## Requirements
 

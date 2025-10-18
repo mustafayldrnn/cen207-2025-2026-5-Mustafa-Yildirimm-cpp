@@ -1,6 +1,6 @@
 # Set the minimum required CMake version
 cmake_minimum_required(VERSION 3.12)
-project(calculatorapp)
+project(datastructures)
 
 set(ROOT src)
 
@@ -40,18 +40,28 @@ set(CRYPTOPP_BUILD_SHARED OFF)
 set(CRYPTOPP_USE_MASTER_BRANCH FALSE)
 
 option(ENABLE_UTILITY "Enable Utility Module" ON)
-option(ENABLE_CALCULATOR "Enable Calculator Module" ON)
-option(ENABLE_CALCULATOR_APP "Enable Calculator Application" ON)
+option(ENABLE_DOUBLE_LINKED_LIST "Enable Double Linked List Module" ON)
+option(ENABLE_XOR_LINKED_LIST "Enable XOR Linked List Module" ON)
+option(ENABLE_SPARSE_MATRIX "Enable Sparse Matrix Module" ON)
+option(ENABLE_STACK_QUEUE "Enable Stack Queue Module" ON)
+option(ENABLE_HEAP "Enable Heap Module" ON)
+option(ENABLE_HASH_TABLE "Enable Hash Table Module" ON)
+option(ENABLE_BROWSER_HISTORY "Enable Browser History Application" ON)
+option(ENABLE_TASK_SCHEDULER "Enable Task Scheduler Application" ON)
 option(ENABLE_TESTS "Enable All Tests" ON)
 
 # Configure tests
 add_compile_definitions(ENABLE_UTILITY_TEST)
-add_compile_definitions(ENABLE_CALCULATOR_TEST)
+add_compile_definitions(ENABLE_DOUBLE_LINKED_LIST_TEST)
+add_compile_definitions(ENABLE_XOR_LINKED_LIST_TEST)
+add_compile_definitions(ENABLE_SPARSE_MATRIX_TEST)
+add_compile_definitions(ENABLE_STACK_QUEUE_TEST)
+add_compile_definitions(ENABLE_HEAP_TEST)
+add_compile_definitions(ENABLE_HASH_TABLE_TEST)
 
 
 # Configure logs
 add_compile_definitions(ENABLE_UTILITY_LOGGER)
-add_compile_definitions(ENABLE_CALCULATOR_LOGGER)
 
 # Set the output directories for Debug and Release configurations
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_BINARY_DIR}/build/Debug)
@@ -100,14 +110,38 @@ if(ENABLE_UTILITY)
 	add_subdirectory(${ROOT}/utility)
 endif()
 
-# Logger submodule
-if(ENABLE_CALCULATOR)
-	add_subdirectory(${ROOT}/calculator)
+# Data Structures submodules
+if(ENABLE_DOUBLE_LINKED_LIST)
+	add_subdirectory(${ROOT}/DoubleLinkedList)
 endif()
 
-# BigInteger for Crypto submodule
-if(ENABLE_CALCULATOR_APP)
-	add_subdirectory(${ROOT}/calculatorapp)
+if(ENABLE_XOR_LINKED_LIST)
+	add_subdirectory(${ROOT}/XORLinkedList)
+endif()
+
+if(ENABLE_SPARSE_MATRIX)
+	add_subdirectory(${ROOT}/SparseMatrix)
+endif()
+
+if(ENABLE_STACK_QUEUE)
+	add_subdirectory(${ROOT}/StackQueue)
+endif()
+
+if(ENABLE_HEAP)
+	add_subdirectory(${ROOT}/Heap)
+endif()
+
+if(ENABLE_HASH_TABLE)
+	add_subdirectory(${ROOT}/HashTable)
+endif()
+
+# Applications
+if(ENABLE_BROWSER_HISTORY)
+	add_subdirectory(${ROOT}/BrowserHistory)
+endif()
+
+if(ENABLE_TASK_SCHEDULER)
+	add_subdirectory(${ROOT}/TaskScheduler)
 endif()
 
 # Tests

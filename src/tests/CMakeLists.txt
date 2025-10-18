@@ -37,8 +37,28 @@ if(ENABLE_UTILITY)
 	add_subdirectory(utility)
 endif()
 
-# Calculator tests
-if(ENABLE_CALCULATOR)
-	add_subdirectory(calculator)
+# Data Structure tests
+if(ENABLE_DOUBLE_LINKED_LIST)
+	add_subdirectory(DoubleLinkedList)
+endif()
+
+if(ENABLE_XOR_LINKED_LIST)
+	add_subdirectory(XORLinkedList)
+endif()
+
+if(ENABLE_SPARSE_MATRIX)
+	add_subdirectory(SparseMatrix)
+endif()
+
+if(ENABLE_STACK_QUEUE)
+	add_subdirectory(StackQueue)
+endif()
+
+if(ENABLE_HEAP)
+	add_subdirectory(Heap)
+endif()
+
+if(ENABLE_HASH_TABLE)
+	add_subdirectory(HashTable)
 endif()
 

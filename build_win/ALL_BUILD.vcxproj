@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3926CBBA-E3E6-3672-B689-DA090A3C0C5F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp -BC:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win --check-stamp-file C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\CMakeFiles\4.1.2\CMakeCCompiler.cmake;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\CMakeFiles\4.1.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp -BC:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win --check-stamp-file C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\CMakeFiles\4.1.2\CMakeCCompiler.cmake;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\CMakeFiles\4.1.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\ZERO_CHECK.vcxproj">
+      <Project>{C6827CCE-F064-39FF-9643-5E106722B43E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\BrowserHistory\browserhistory.vcxproj">
+      <Project>{0F1A5F1B-6DF1-3505-A655-E8C65A3809A1}</Project>
+      <Name>browserhistory</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\DoubleLinkedList\doublelinkedlist.vcxproj">
+      <Project>{BD2FEC84-0590-3421-9BA4-DE5E3849DB15}</Project>
+      <Name>doublelinkedlist</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\tests\DoubleLinkedList\doublelinkedlist_tests.vcxproj">
+      <Project>{3FDD835C-47BA-3753-8A4D-66368BFE7BE4}</Project>
+      <Name>doublelinkedlist_tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\HashTable\hashtable.vcxproj">
+      <Project>{CDDF9F37-A46B-3AD7-9FF3-BC5F3A71E02A}</Project>
+      <Name>hashtable</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\tests\HashTable\hashtable_tests.vcxproj">
+      <Project>{1E068A1F-3DE8-3C2F-ACED-3A0868844A08}</Project>
+      <Name>hashtable_tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\Heap\heap.vcxproj">
+      <Project>{A55DB64E-D22D-39B7-A529-4233C8A37509}</Project>
+      <Name>heap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\tests\Heap\heap_tests.vcxproj">
+      <Project>{F28C0707-24B9-300C-BC1E-CEA98164FC6F}</Project>
+      <Name>heap_tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\SparseMatrix\sparsematrix.vcxproj">
+      <Project>{22911B24-30D9-3F1A-81A3-9D7715F035B4}</Project>
+      <Name>sparsematrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\tests\SparseMatrix\sparsematrix_tests.vcxproj">
+      <Project>{E94BEA8D-2F38-3EDA-BF40-DBAE2029804D}</Project>
+      <Name>sparsematrix_tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\StackQueue\stackqueue.vcxproj">
+      <Project>{7D68F31C-79FF-341E-BA1F-8DF06E926C42}</Project>
+      <Name>stackqueue</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\tests\StackQueue\stackqueue_tests.vcxproj">
+      <Project>{B0CA8EE0-0F27-3CCF-8054-6899375B15A5}</Project>
+      <Name>stackqueue_tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\TaskScheduler\taskscheduler.vcxproj">
+      <Project>{259625FE-D63A-3DB2-BAB8-ACC7BA4C6784}</Project>
+      <Name>taskscheduler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\utility\utility.vcxproj">
+      <Project>{44AAEF23-95D4-3858-8010-2F8061D12677}</Project>
+      <Name>utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\tests\utility\utility_tests.vcxproj">
+      <Project>{D4663C84-E10B-399B-A5B9-326DFCA91F7E}</Project>
+      <Name>utility_tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\XORLinkedList\xorlinkedlist.vcxproj">
+      <Project>{D82B5655-44C7-33BB-BE99-4E4149F64A2E}</Project>
+      <Name>xorlinkedlist</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\src\tests\XORLinkedList\xorlinkedlist_tests.vcxproj">
+      <Project>{21C14C14-0172-3FBD-B126-FC1273995522}</Project>
+      <Name>xorlinkedlist_tests</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
