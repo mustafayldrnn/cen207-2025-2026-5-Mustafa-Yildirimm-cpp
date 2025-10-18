@@ -151,3 +151,4 @@ TEST_F(HashTableTest, HashFunction) {
     EXPECT_NE(hashTable->get("a"), hashTable->get("b"));
     EXPECT_NE(hashTable->get("b"), hashTable->get("c"));
 }
+
