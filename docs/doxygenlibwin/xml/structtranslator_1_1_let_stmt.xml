@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structtranslator_1_1_let_stmt" kind="struct" language="C++" prot="public">
+    <compoundname>translator::LetStmt</compoundname>
+    <basecompoundref refid="structtranslator_1_1_stmt" prot="public" virt="non-virtual">translator::Stmt</basecompoundref>
+    <includes refid="ast_8h" local="no">ast.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtranslator_1_1_let_stmt_1a2e254e84e516bfab49d9956eec8caa6d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string translator::LetStmt::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>translator::LetStmt::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="41" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtranslator_1_1_let_stmt_1ad9b43c0a057208438e598c102ea2695d" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;Expr&gt; translator::LetStmt::expr</definition>
+        <argsstring></argsstring>
+        <name>expr</name>
+        <qualifiedname>translator::LetStmt::expr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="41" column="38" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtranslator_1_1_let_stmt_1a0bfebf9ceb1029382c8ca27259962790" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>translator::LetStmt::LetStmt</definition>
+        <argsstring>(std::string n, std::unique_ptr&lt; Expr &gt; e)</argsstring>
+        <name>LetStmt</name>
+        <qualifiedname>translator::LetStmt::LetStmt</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref> &gt;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="42" column="5" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="structtranslator_1_1_let_stmt_1ad88e60c92df1de021f3fa562267fdb59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref></type>
+        <definition>StmtKind translator::LetStmt::kind</definition>
+        <argsstring>() const override</argsstring>
+        <name>kind</name>
+        <qualifiedname>translator::LetStmt::kind</qualifiedname>
+        <reimplements refid="structtranslator_1_1_stmt_1afb8f5d100524bc8cf234edae0ac57578">kind</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="43" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>translator::LetStmt</label>
+        <link refid="structtranslator_1_1_let_stmt"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>translator::Stmt</label>
+        <link refid="structtranslator_1_1_stmt"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>translator::LetStmt</label>
+        <link refid="structtranslator_1_1_let_stmt"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>translator::Stmt</label>
+        <link refid="structtranslator_1_1_stmt"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="40" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="40" bodyend="44"/>
+    <listofallmembers>
+      <member refid="structtranslator_1_1_let_stmt_1ad9b43c0a057208438e598c102ea2695d" prot="public" virt="non-virtual"><scope>translator::LetStmt</scope><name>expr</name></member>
+      <member refid="structtranslator_1_1_let_stmt_1ad88e60c92df1de021f3fa562267fdb59" prot="public" virt="virtual"><scope>translator::LetStmt</scope><name>kind</name></member>
+      <member refid="structtranslator_1_1_let_stmt_1a0bfebf9ceb1029382c8ca27259962790" prot="public" virt="non-virtual"><scope>translator::LetStmt</scope><name>LetStmt</name></member>
+      <member refid="structtranslator_1_1_let_stmt_1a2e254e84e516bfab49d9956eec8caa6d" prot="public" virt="non-virtual"><scope>translator::LetStmt</scope><name>name</name></member>
+      <member refid="structtranslator_1_1_stmt_1a0707842a254ce67ff9c72cda98226ec7" prot="public" virt="virtual"><scope>translator::LetStmt</scope><name>~Stmt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

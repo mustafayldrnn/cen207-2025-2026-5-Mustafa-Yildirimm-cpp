@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classds_1_1_queue" kind="class" language="C++" prot="public">
+    <compoundname>ds::Queue</compoundname>
+    <includes refid="queue_8h" local="no">queue.h</includes>
+    <innerclass refid="structds_1_1_queue_1_1_node" prot="private">ds::Queue::Node</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classds_1_1_queue_1af3e1805acba3c9de41f864bd19238db8" prot="private" static="no" mutable="no">
+        <type><ref refid="structds_1_1_queue_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* ds::Queue&lt; T &gt;::head_</definition>
+        <argsstring></argsstring>
+        <name>head_</name>
+        <qualifiedname>ds::Queue::head_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="9" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classds_1_1_queue_1a72a469ed84ae8b3b36542d36d94df464" prot="private" static="no" mutable="no">
+        <type><ref refid="structds_1_1_queue_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* ds::Queue&lt; T &gt;::tail_</definition>
+        <argsstring></argsstring>
+        <name>tail_</name>
+        <qualifiedname>ds::Queue::tail_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="9" column="22" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classds_1_1_queue_1aa9c993b85346dabd944f5b43205a8f15" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t ds::Queue&lt; T &gt;::sz_</definition>
+        <argsstring></argsstring>
+        <name>sz_</name>
+        <qualifiedname>ds::Queue::sz_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="9" column="41" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classds_1_1_queue_1a350273703e1de39445c099ae63532a41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ds::Queue&lt; T &gt;::~Queue</definition>
+        <argsstring>()</argsstring>
+        <name>~Queue</name>
+        <qualifiedname>ds::Queue::~Queue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="11" column="5" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_queue_1a1732c7aa0f519e004f4e7bdf0dac87d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::Queue&lt; T &gt;::enqueue</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>enqueue</name>
+        <qualifiedname>ds::Queue::enqueue</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="12" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_queue_1a2a1a1d312073663a893ee0e433cdd5f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::Queue&lt; T &gt;::dequeue</definition>
+        <argsstring>()</argsstring>
+        <name>dequeue</name>
+        <qualifiedname>ds::Queue::dequeue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="13" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_queue_1a3a74735b6ef905d487f3c3a1bad46843" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; ds::Queue&lt; T &gt;::front</definition>
+        <argsstring>()</argsstring>
+        <name>front</name>
+        <qualifiedname>ds::Queue::front</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="14" column="7" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_queue_1aee3b289f1a288d38124a2974a1a2999f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ds::Queue&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>ds::Queue::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="15" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_queue_1a557e831c44c39d8abf6b6cb55cb55aac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t ds::Queue&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>ds::Queue::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="16" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ds::Queue&lt; T &gt;::Node</label>
+        <link refid="structds_1_1_queue_1_1_node"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+next</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ds::Queue&lt; T &gt;</label>
+        <link refid="classds_1_1_queue"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-head_</edgelabel>
+          <edgelabel>-tail_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="7" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="7" bodyend="17"/>
+    <listofallmembers>
+      <member refid="classds_1_1_queue_1a2a1a1d312073663a893ee0e433cdd5f7" prot="public" virt="non-virtual"><scope>ds::Queue</scope><name>dequeue</name></member>
+      <member refid="classds_1_1_queue_1aee3b289f1a288d38124a2974a1a2999f" prot="public" virt="non-virtual"><scope>ds::Queue</scope><name>empty</name></member>
+      <member refid="classds_1_1_queue_1a1732c7aa0f519e004f4e7bdf0dac87d2" prot="public" virt="non-virtual"><scope>ds::Queue</scope><name>enqueue</name></member>
+      <member refid="classds_1_1_queue_1a3a74735b6ef905d487f3c3a1bad46843" prot="public" virt="non-virtual"><scope>ds::Queue</scope><name>front</name></member>
+      <member refid="classds_1_1_queue_1af3e1805acba3c9de41f864bd19238db8" prot="private" virt="non-virtual"><scope>ds::Queue</scope><name>head_</name></member>
+      <member refid="classds_1_1_queue_1a557e831c44c39d8abf6b6cb55cb55aac" prot="public" virt="non-virtual"><scope>ds::Queue</scope><name>size</name></member>
+      <member refid="classds_1_1_queue_1aa9c993b85346dabd944f5b43205a8f15" prot="private" virt="non-virtual"><scope>ds::Queue</scope><name>sz_</name></member>
+      <member refid="classds_1_1_queue_1a72a469ed84ae8b3b36542d36d94df464" prot="private" virt="non-virtual"><scope>ds::Queue</scope><name>tail_</name></member>
+      <member refid="classds_1_1_queue_1a350273703e1de39445c099ae63532a41" prot="public" virt="non-virtual"><scope>ds::Queue</scope><name>~Queue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

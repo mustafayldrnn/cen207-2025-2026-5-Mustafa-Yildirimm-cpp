@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['1_20run_20on_20windows_20can_20effect_20on_20wsl_0',['Step-1 (Run on Windows, Can Effect on WSL)',['../index.html#autotoc_md7',1,'']]]
+  ['17_0',['BASIC Translator (C++17)',['../index.html',1,'']]]
 ];

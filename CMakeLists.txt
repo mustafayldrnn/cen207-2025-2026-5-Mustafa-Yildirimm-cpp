@@ -9,6 +9,7 @@ option(TRANSLATOR_ENABLE_TESTS "Enable building tests" ON)
 add_library(translatorlib
   src/translator/lexer.cpp
   src/translator/parser.cpp
+  src/translator/codegen.cpp
 )
 
 target_include_directories(translatorlib PUBLIC include src)
@@ -29,4 +30,3 @@ if(TRANSLATOR_ENABLE_TESTS)
   enable_testing()
   add_subdirectory(tests)
 endif()
-

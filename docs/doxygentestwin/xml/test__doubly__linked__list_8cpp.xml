@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="test__doubly__linked__list_8cpp" kind="file" language="C++">
+    <compoundname>test_doubly_linked_list.cpp</compoundname>
+    <includes local="no">gtest/gtest.h</includes>
+    <includes local="yes">ds/doubly_linked_list.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_doubly_linked_list.cpp</label>
+        <link refid="test__doubly__linked__list_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ds/doubly_linked_list.h</label>
+      </node>
+      <node id="2">
+        <label>gtest/gtest.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__doubly__linked__list_8cpp_1adb7e1b2bf93fe02a8f16a176da18b9de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DoublyLinkedList, InsertAndTraverse)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DoublyLinkedList</type>
+        </param>
+        <param>
+          <type>InsertAndTraverse</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_doubly_linked_list.cpp" line="4" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_doubly_linked_list.cpp" bodystart="4" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="test__doubly__linked__list_8cpp_1ada320146363519d8a670cf9c4ac98f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DoublyLinkedList, EdgeCases)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DoublyLinkedList</type>
+        </param>
+        <param>
+          <type>EdgeCases</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_doubly_linked_list.cpp" line="19" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_doubly_linked_list.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ds/doubly_linked_list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="test__doubly__linked__list_8cpp_1adb7e1b2bf93fe02a8f16a176da18b9de" refkind="member"><highlight class="normal"><ref refid="test__doubly__linked__list_8cpp_1adb7e1b2bf93fe02a8f16a176da18b9de" kindref="member">TEST</ref>(DoublyLinkedList,<sp/>InsertAndTraverse){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::DoublyLinkedList&lt;int&gt;<sp/>dll;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(dll.empty());</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>dll.push_back(1);<sp/>dll.push_back(2);<sp/>dll.push_front(0);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sum<sp/>=<sp/>0;<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it=dll.begin();<sp/>it!=dll.end();<sp/>++it)<sp/>sum<sp/>+=<sp/>*it;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sum,<sp/>3);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>dll.begin();<sp/>++it;<sp/>dll.insert_after(it,<sp/>5);<sp/></highlight><highlight class="comment">//<sp/>after<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arr[4];<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it2=dll.begin();<sp/>it2!=dll.end();<sp/>++it2)<sp/>arr[i++]=*it2;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(arr[0],0);<sp/>EXPECT_EQ(arr[1],1);<sp/>EXPECT_EQ(arr[2],5);<sp/>EXPECT_EQ(arr[3],2);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>erase<sp/>middle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it3<sp/>=<sp/>dll.begin();<sp/>++it3;<sp/>dll.erase(it3);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arr2[3];<sp/>i=0;<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it4=dll.begin();<sp/>it4!=dll.end();<sp/>++it4)<sp/>arr2[i++]=*it4;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(arr2[0],0);<sp/>EXPECT_EQ(arr2[1],5);<sp/>EXPECT_EQ(arr2[2],2);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="test__doubly__linked__list_8cpp_1ada320146363519d8a670cf9c4ac98f98" refkind="member"><highlight class="normal"><ref refid="test__doubly__linked__list_8cpp_1adb7e1b2bf93fe02a8f16a176da18b9de" kindref="member">TEST</ref>(DoublyLinkedList,<sp/>EdgeCases){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::DoublyLinkedList&lt;int&gt;<sp/>dll;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>insert<sp/>into<sp/>empty<sp/>after<sp/>end<sp/>behaves<sp/>like<sp/>push_front</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>dll.insert_after(ds::DoublyLinkedList&lt;int&gt;::iterator(),<sp/>42);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(dll.empty());</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>dll.begin();<sp/>EXPECT_EQ(*it,<sp/>42);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_doubly_linked_list.cpp"/>
+  </compounddef>
+</doxygen>

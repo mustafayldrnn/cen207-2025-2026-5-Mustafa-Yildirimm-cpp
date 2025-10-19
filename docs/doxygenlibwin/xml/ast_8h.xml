@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="ast_8h" kind="file" language="C++">
+    <compoundname>ast.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="cfg_8h" local="yes">C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/cfg.h</includedby>
+    <includedby refid="codegen_8h" local="yes">C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/codegen.h</includedby>
+    <includedby refid="parser_8h" local="yes">C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h</label>
+        <link refid="ast_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h</label>
+        <link refid="ast_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/cfg.h</label>
+        <link refid="cfg_8h"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/codegen.cpp</label>
+        <link refid="codegen_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/codegen.h</label>
+        <link refid="codegen_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp</label>
+        <link refid="parser_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h</label>
+        <link refid="parser_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtranslator_1_1_expr" prot="public">translator::Expr</innerclass>
+    <innerclass refid="structtranslator_1_1_number_expr" prot="public">translator::NumberExpr</innerclass>
+    <innerclass refid="structtranslator_1_1_variable_expr" prot="public">translator::VariableExpr</innerclass>
+    <innerclass refid="structtranslator_1_1_binary_expr" prot="public">translator::BinaryExpr</innerclass>
+    <innerclass refid="structtranslator_1_1_stmt" prot="public">translator::Stmt</innerclass>
+    <innerclass refid="structtranslator_1_1_let_stmt" prot="public">translator::LetStmt</innerclass>
+    <innerclass refid="structtranslator_1_1_print_stmt" prot="public">translator::PrintStmt</innerclass>
+    <innerclass refid="structtranslator_1_1_input_stmt" prot="public">translator::InputStmt</innerclass>
+    <innerclass refid="structtranslator_1_1_goto_stmt" prot="public">translator::GotoStmt</innerclass>
+    <innerclass refid="structtranslator_1_1_if_goto_stmt" prot="public">translator::IfGotoStmt</innerclass>
+    <innerclass refid="structtranslator_1_1_gosub_stmt" prot="public">translator::GosubStmt</innerclass>
+    <innerclass refid="structtranslator_1_1_return_stmt" prot="public">translator::ReturnStmt</innerclass>
+    <innerclass refid="structtranslator_1_1_program" prot="public">translator::Program</innerclass>
+    <innernamespace refid="namespacetranslator">translator</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ExprKind</name>
+        <qualifiedname>translator::ExprKind</qualifiedname>
+        <enumvalue id="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0ab2ee912b91d69b435159c7c3f6df7f5f" prot="public">
+          <name>Number</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0a47c14840d8e15331fa420b9b2f757cd9" prot="public">
+          <name>Variable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0a6ce976e8f061b2b5cfe4d0c50c3405dd" prot="public">
+          <name>Binary</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="8" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>StmtKind</name>
+        <qualifiedname>translator::StmtKind</qualifiedname>
+        <enumvalue id="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dacae6404c4aecf46684930fe2a86676a6" prot="public">
+          <name>Let</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da13dba24862cf9128167a59100e154c8d" prot="public">
+          <name>Print</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da324118a6721dd6b8a9b9f4e327df2bf5" prot="public">
+          <name>Input</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3daae8fae3d74fdc80ef40995c3c6ca152e" prot="public">
+          <name>Goto</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dabb4ff8fec829fa14d95445a6675e0f8c" prot="public">
+          <name>IfGoto</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173" prot="public">
+          <name>Gosub</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce" prot="public">
+          <name>Return</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="36" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacetranslator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetranslator" kindref="compound">translator</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0a6ce976e8f061b2b5cfe4d0c50c3405dd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0" kindref="member">ExprKind</ref><sp/>{<sp/><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0ab2ee912b91d69b435159c7c3f6df7f5f" kindref="member">Number</ref>,<sp/><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0a47c14840d8e15331fa420b9b2f757cd9" kindref="member">Variable</ref>,<sp/><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0a6ce976e8f061b2b5cfe4d0c50c3405dd" kindref="member">Binary</ref><sp/>};</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="structtranslator_1_1_expr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="structtranslator_1_1_expr_1a3a61309da992f896228d1ba682f79187" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_expr_1a3a61309da992f896228d1ba682f79187" kindref="member">~Expr</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12" refid="structtranslator_1_1_expr_1aced195c2a0830ff10b582d02731c93b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0" kindref="member">ExprKind</ref><sp/><ref refid="structtranslator_1_1_expr_1aced195c2a0830ff10b582d02731c93b1" kindref="member">kind</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structtranslator_1_1_number_expr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_number_expr_1a1f3f3ffe225582173368a9fa08e9abb7" kindref="member">NumberExpr</ref><sp/>:<sp/><ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref><sp/>{</highlight></codeline>
+<codeline lineno="16" refid="structtranslator_1_1_number_expr_1acd4dc7cf346802fa3bf1a2872c4b477c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_number_expr_1acd4dc7cf346802fa3bf1a2872c4b477c" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="17" refid="structtranslator_1_1_number_expr_1a1f3f3ffe225582173368a9fa08e9abb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_number_expr_1a1f3f3ffe225582173368a9fa08e9abb7" kindref="member">NumberExpr</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v)<sp/>:<sp/><ref refid="structtranslator_1_1_number_expr_1acd4dc7cf346802fa3bf1a2872c4b477c" kindref="member">value</ref>(v)<sp/>{}</highlight></codeline>
+<codeline lineno="18" refid="structtranslator_1_1_number_expr_1a6747a2814f5d6135f2506cf35bda7401" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0" kindref="member">ExprKind</ref><sp/><ref refid="structtranslator_1_1_number_expr_1a6747a2814f5d6135f2506cf35bda7401" kindref="member">kind</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0ab2ee912b91d69b435159c7c3f6df7f5f" kindref="member">ExprKind::Number</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structtranslator_1_1_variable_expr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_variable_expr_1a2f077bd3bb494bd04446225c1e7e3df3" kindref="member">VariableExpr</ref><sp/>:<sp/><ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref><sp/>{</highlight></codeline>
+<codeline lineno="22" refid="structtranslator_1_1_variable_expr_1a5291773d6a8af4ee3e3abfa8e212ab4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structtranslator_1_1_variable_expr_1a5291773d6a8af4ee3e3abfa8e212ab4d" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="23" refid="structtranslator_1_1_variable_expr_1a2f077bd3bb494bd04446225c1e7e3df3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_variable_expr_1a2f077bd3bb494bd04446225c1e7e3df3" kindref="member">VariableExpr</ref>(std::string<sp/>n)<sp/>:<sp/><ref refid="structtranslator_1_1_variable_expr_1a5291773d6a8af4ee3e3abfa8e212ab4d" kindref="member">name</ref>(std::move(n))<sp/>{}</highlight></codeline>
+<codeline lineno="24" refid="structtranslator_1_1_variable_expr_1a0dd6b31c1c5ac1801779da5eb115c95d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0" kindref="member">ExprKind</ref><sp/><ref refid="structtranslator_1_1_variable_expr_1a0dd6b31c1c5ac1801779da5eb115c95d" kindref="member">kind</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0a47c14840d8e15331fa420b9b2f757cd9" kindref="member">ExprKind::Variable</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structtranslator_1_1_binary_expr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_binary_expr_1af157e5409dd40ef3eafdba3fb823bb7f" kindref="member">BinaryExpr</ref><sp/>:<sp/><ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref><sp/>{</highlight></codeline>
+<codeline lineno="28" refid="structtranslator_1_1_binary_expr_1a5f2cb60cdd8ab25136eba4b6c08ab305" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_binary_expr_1a5f2cb60cdd8ab25136eba4b6c08ab305" kindref="member">op</ref>;</highlight></codeline>
+<codeline lineno="29" refid="structtranslator_1_1_binary_expr_1a43a169916f11bd4686c74143ef3524f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Expr&gt;<sp/><ref refid="structtranslator_1_1_binary_expr_1a43a169916f11bd4686c74143ef3524f8" kindref="member">lhs</ref>;</highlight></codeline>
+<codeline lineno="30" refid="structtranslator_1_1_binary_expr_1a899fc189d22f70035034243de177b9ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Expr&gt;<sp/><ref refid="structtranslator_1_1_binary_expr_1a899fc189d22f70035034243de177b9ed" kindref="member">rhs</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structtranslator_1_1_binary_expr_1af157e5409dd40ef3eafdba3fb823bb7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtranslator_1_1_binary_expr_1af157e5409dd40ef3eafdba3fb823bb7f" kindref="member">BinaryExpr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_binary_expr_1a5f2cb60cdd8ab25136eba4b6c08ab305" kindref="member">op</ref>,<sp/>std::unique_ptr&lt;Expr&gt;<sp/>l,<sp/>std::unique_ptr&lt;Expr&gt;<sp/>r)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structtranslator_1_1_binary_expr_1a5f2cb60cdd8ab25136eba4b6c08ab305" kindref="member">op</ref>(<ref refid="structtranslator_1_1_binary_expr_1a5f2cb60cdd8ab25136eba4b6c08ab305" kindref="member">op</ref>),<sp/><ref refid="structtranslator_1_1_binary_expr_1a43a169916f11bd4686c74143ef3524f8" kindref="member">lhs</ref>(std::move(l)),<sp/><ref refid="structtranslator_1_1_binary_expr_1a899fc189d22f70035034243de177b9ed" kindref="member">rhs</ref>(std::move(r))<sp/>{}</highlight></codeline>
+<codeline lineno="33" refid="structtranslator_1_1_binary_expr_1a4f09625d10e55dad82469d2510b4cc96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0" kindref="member">ExprKind</ref><sp/><ref refid="structtranslator_1_1_binary_expr_1a4f09625d10e55dad82469d2510b4cc96" kindref="member">kind</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0a6ce976e8f061b2b5cfe4d0c50c3405dd" kindref="member">ExprKind::Binary</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref><sp/>{<sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dacae6404c4aecf46684930fe2a86676a6" kindref="member">Let</ref>,<sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da13dba24862cf9128167a59100e154c8d" kindref="member">Print</ref>,<sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da324118a6721dd6b8a9b9f4e327df2bf5" kindref="member">Input</ref>,<sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3daae8fae3d74fdc80ef40995c3c6ca152e" kindref="member">Goto</ref>,<sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dabb4ff8fec829fa14d95445a6675e0f8c" kindref="member">IfGoto</ref>,<sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173" kindref="member">Gosub</ref>,<sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce" kindref="member">Return</ref><sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structtranslator_1_1_stmt_1afb8f5d100524bc8cf234edae0ac57578" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_stmt" kindref="compound">Stmt</ref><sp/>{<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_stmt_1a0707842a254ce67ff9c72cda98226ec7" kindref="member">~Stmt</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref><sp/><ref refid="structtranslator_1_1_stmt_1afb8f5d100524bc8cf234edae0ac57578" kindref="member">kind</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;<sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structtranslator_1_1_let_stmt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_let_stmt_1a0bfebf9ceb1029382c8ca27259962790" kindref="member">LetStmt</ref><sp/>:<sp/><ref refid="structtranslator_1_1_stmt" kindref="compound">Stmt</ref><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="structtranslator_1_1_let_stmt_1ad9b43c0a057208438e598c102ea2695d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structtranslator_1_1_let_stmt_1a2e254e84e516bfab49d9956eec8caa6d" kindref="member">name</ref>;<sp/>std::unique_ptr&lt;Expr&gt;<sp/><ref refid="structtranslator_1_1_let_stmt_1ad9b43c0a057208438e598c102ea2695d" kindref="member">expr</ref>;</highlight></codeline>
+<codeline lineno="42" refid="structtranslator_1_1_let_stmt_1a0bfebf9ceb1029382c8ca27259962790" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtranslator_1_1_let_stmt_1a0bfebf9ceb1029382c8ca27259962790" kindref="member">LetStmt</ref>(std::string<sp/>n,<sp/>std::unique_ptr&lt;Expr&gt;<sp/>e)<sp/>:<sp/><ref refid="structtranslator_1_1_let_stmt_1a2e254e84e516bfab49d9956eec8caa6d" kindref="member">name</ref>(std::move(n)),<sp/><ref refid="structtranslator_1_1_let_stmt_1ad9b43c0a057208438e598c102ea2695d" kindref="member">expr</ref>(std::move(e))<sp/>{}</highlight></codeline>
+<codeline lineno="43" refid="structtranslator_1_1_let_stmt_1ad88e60c92df1de021f3fa562267fdb59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref><sp/><ref refid="structtranslator_1_1_let_stmt_1ad88e60c92df1de021f3fa562267fdb59" kindref="member">kind</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dacae6404c4aecf46684930fe2a86676a6" kindref="member">StmtKind::Let</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="structtranslator_1_1_print_stmt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_print_stmt_1acf477bf52c1d1a6b3d4ddb399a4128a8" kindref="member">PrintStmt</ref><sp/>:<sp/><ref refid="structtranslator_1_1_stmt" kindref="compound">Stmt</ref><sp/>{</highlight></codeline>
+<codeline lineno="47" refid="structtranslator_1_1_print_stmt_1a4e790939efbde0f2c720ca13fb1e25c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::unique_ptr&lt;Expr&gt;&gt;<sp/><ref refid="structtranslator_1_1_print_stmt_1a4e790939efbde0f2c720ca13fb1e25c5" kindref="member">items</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structtranslator_1_1_print_stmt_1acf477bf52c1d1a6b3d4ddb399a4128a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_print_stmt_1acf477bf52c1d1a6b3d4ddb399a4128a8" kindref="member">PrintStmt</ref>(std::vector&lt;std::unique_ptr&lt;Expr&gt;&gt;<sp/>xs)<sp/>:<sp/><ref refid="structtranslator_1_1_print_stmt_1a4e790939efbde0f2c720ca13fb1e25c5" kindref="member">items</ref>(std::move(xs))<sp/>{}</highlight></codeline>
+<codeline lineno="49" refid="structtranslator_1_1_print_stmt_1a2804d4e2524a83441edb292238c38fe9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref><sp/><ref refid="structtranslator_1_1_print_stmt_1a2804d4e2524a83441edb292238c38fe9" kindref="member">kind</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da13dba24862cf9128167a59100e154c8d" kindref="member">StmtKind::Print</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="structtranslator_1_1_input_stmt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_input_stmt_1ae709f989a663c5e7cfe2abe65589b63b" kindref="member">InputStmt</ref><sp/>:<sp/><ref refid="structtranslator_1_1_stmt" kindref="compound">Stmt</ref><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="structtranslator_1_1_input_stmt_1ae709f989a663c5e7cfe2abe65589b63b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structtranslator_1_1_input_stmt_1afb169d343ee04be4f15a594fa28b4b0e" kindref="member">name</ref>;<sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_input_stmt_1ae709f989a663c5e7cfe2abe65589b63b" kindref="member">InputStmt</ref>(std::string<sp/>n)<sp/>:<sp/><ref refid="structtranslator_1_1_input_stmt_1afb169d343ee04be4f15a594fa28b4b0e" kindref="member">name</ref>(std::move(n))<sp/>{}</highlight></codeline>
+<codeline lineno="54" refid="structtranslator_1_1_input_stmt_1a49fff20ac46a7ad799c335425a47b7f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref><sp/><ref refid="structtranslator_1_1_input_stmt_1a49fff20ac46a7ad799c335425a47b7f8" kindref="member">kind</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da324118a6721dd6b8a9b9f4e327df2bf5" kindref="member">StmtKind::Input</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="structtranslator_1_1_goto_stmt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_goto_stmt_1ae22d265c24459eb2537df432131f46d7" kindref="member">GotoStmt</ref><sp/>:<sp/><ref refid="structtranslator_1_1_stmt" kindref="compound">Stmt</ref><sp/>{</highlight></codeline>
+<codeline lineno="58" refid="structtranslator_1_1_goto_stmt_1ae22d265c24459eb2537df432131f46d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_goto_stmt_1a7f09790266e5d62bfc34b0709cab10c6" kindref="member">target</ref>;<sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_goto_stmt_1ae22d265c24459eb2537df432131f46d7" kindref="member">GotoStmt</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t)<sp/>:<sp/><ref refid="structtranslator_1_1_goto_stmt_1a7f09790266e5d62bfc34b0709cab10c6" kindref="member">target</ref>(t)<sp/>{}</highlight></codeline>
+<codeline lineno="59" refid="structtranslator_1_1_goto_stmt_1aae4b7271164ea8557ffdc4a79d8657f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref><sp/><ref refid="structtranslator_1_1_goto_stmt_1aae4b7271164ea8557ffdc4a79d8657f0" kindref="member">kind</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3daae8fae3d74fdc80ef40995c3c6ca152e" kindref="member">StmtKind::Goto</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structtranslator_1_1_if_goto_stmt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_if_goto_stmt_1a01828a7980e1ef2d5503aca3f106dc1f" kindref="member">IfGotoStmt</ref><sp/>:<sp/><ref refid="structtranslator_1_1_stmt" kindref="compound">Stmt</ref><sp/>{</highlight></codeline>
+<codeline lineno="63" refid="structtranslator_1_1_if_goto_stmt_1a0799d00d21436cbcadd3a2e7ccb94275" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Expr&gt;<sp/><ref refid="structtranslator_1_1_if_goto_stmt_1a0799d00d21436cbcadd3a2e7ccb94275" kindref="member">cond</ref>;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_if_goto_stmt_1af2860bea6273fdf9e63c46627fb1876d" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structtranslator_1_1_if_goto_stmt_1a01828a7980e1ef2d5503aca3f106dc1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtranslator_1_1_if_goto_stmt_1a01828a7980e1ef2d5503aca3f106dc1f" kindref="member">IfGotoStmt</ref>(std::unique_ptr&lt;Expr&gt;<sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t)<sp/>:<sp/><ref refid="structtranslator_1_1_if_goto_stmt_1a0799d00d21436cbcadd3a2e7ccb94275" kindref="member">cond</ref>(std::move(c)),<sp/><ref refid="structtranslator_1_1_if_goto_stmt_1af2860bea6273fdf9e63c46627fb1876d" kindref="member">target</ref>(t)<sp/>{}</highlight></codeline>
+<codeline lineno="65" refid="structtranslator_1_1_if_goto_stmt_1a77a2dccf8e1b280dd39c2a9101cb17e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref><sp/><ref refid="structtranslator_1_1_if_goto_stmt_1a77a2dccf8e1b280dd39c2a9101cb17e6" kindref="member">kind</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dabb4ff8fec829fa14d95445a6675e0f8c" kindref="member">StmtKind::IfGoto</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structtranslator_1_1_gosub_stmt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_gosub_stmt_1aae89ce3fc1bbe274899085b0fbee9181" kindref="member">GosubStmt</ref><sp/>:<sp/><ref refid="structtranslator_1_1_stmt" kindref="compound">Stmt</ref><sp/>{</highlight></codeline>
+<codeline lineno="69" refid="structtranslator_1_1_gosub_stmt_1aae89ce3fc1bbe274899085b0fbee9181" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_gosub_stmt_1a168c003fcda2ceb2e8c2cd015df7ec85" kindref="member">target</ref>;<sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_gosub_stmt_1aae89ce3fc1bbe274899085b0fbee9181" kindref="member">GosubStmt</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t)<sp/>:<sp/><ref refid="structtranslator_1_1_gosub_stmt_1a168c003fcda2ceb2e8c2cd015df7ec85" kindref="member">target</ref>(t)<sp/>{}</highlight></codeline>
+<codeline lineno="70" refid="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref><sp/><ref refid="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac" kindref="member">kind</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173" kindref="member">StmtKind::Gosub</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structtranslator_1_1_return_stmt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_return_stmt" kindref="compound">ReturnStmt</ref><sp/>:<sp/><ref refid="structtranslator_1_1_stmt" kindref="compound">Stmt</ref><sp/>{</highlight></codeline>
+<codeline lineno="74" refid="structtranslator_1_1_return_stmt_1a9344c9c9a74ac406decd1a74d4fc42af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref><sp/><ref refid="structtranslator_1_1_return_stmt_1a9344c9c9a74ac406decd1a74d4fc42af" kindref="member">kind</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce" kindref="member">StmtKind::Return</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="structtranslator_1_1_program" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_program" kindref="compound">Program</ref><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parallel<sp/>arrays:<sp/>one<sp/>statement<sp/>per<sp/>label<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="structtranslator_1_1_program_1a7475f175b7b501e7ec7d0a2f16a613c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structtranslator_1_1_program_1a7475f175b7b501e7ec7d0a2f16a613c4" kindref="member">labels</ref>;<sp/></highlight><highlight class="comment">//<sp/>e.g.,<sp/>10,<sp/>20,<sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="structtranslator_1_1_program_1ae1becdf326699756afe2f60647e47382" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::unique_ptr&lt;Stmt&gt;&gt;<sp/><ref refid="structtranslator_1_1_program_1ae1becdf326699756afe2f60647e47382" kindref="member">stmts</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Label<sp/>-&gt;<sp/>index<sp/>map<sp/>will<sp/>be<sp/>provided<sp/>via<sp/>lookup<sp/>helper.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>translator</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h"/>
+  </compounddef>
+</doxygen>

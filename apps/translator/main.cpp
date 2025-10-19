@@ -3,6 +3,7 @@
 #include <string>
 #include "translator/lexer.h"
 #include "translator/parser.h"
+#include "translator/codegen.h"
 
 int main(int argc, char** argv) {
     if (argc < 2) {
@@ -30,15 +31,8 @@ int main(int argc, char** argv) {
     auto tokens = lexer.tokenize();
     translator::Parser parser(tokens);
     auto program = parser.parseProgram();
-
-    // TODO: codegen to outputPath; currently just echo token count
-    std::cout << "Parsed tokens: " << tokens.size() << std::endl;
-
-    if (!outputPath.empty()) {
-        std::ofstream out(outputPath);
-        out << "// generated code placeholder\n";
-        out << "#include <iostream>\nint main(){ std::cout<<\"Hello from generated code\\n\"; return 0;}\n";
-    }
+    auto code = translator::Codegen::emit_cpp(program);
+    if (!outputPath.empty()) { std::ofstream out(outputPath); out << code; }
+    else { std::cout << code << std::endl; }
     return 0;
 }
-

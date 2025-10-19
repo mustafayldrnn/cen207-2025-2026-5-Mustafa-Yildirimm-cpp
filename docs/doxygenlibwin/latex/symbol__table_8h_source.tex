@@ -1,0 +1,22 @@
+\doxysection{symbol\+\_\+table.\+h}
+\hypertarget{symbol__table_8h_source}{}\label{symbol__table_8h_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/symbol\_table.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/symbol\_table.h}}
+\mbox{\hyperlink{symbol__table_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{hash__table_8h}{ds/hash\_table.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacetranslator}{translator}}\ \{}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtranslator_1_1_symbol_table}{SymbolTable}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{classds_1_1_hash_table}{ds::HashTable<std::string,\ double>}}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_a66cace7834f5eb0eb9b31edd66a994fd}{table\_}};}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_ac8dee7076ef5eb32c01014489f8bace5}{define}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{double}\ value)\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_a66cace7834f5eb0eb9b31edd66a994fd}{table\_}}.insert(name,\ value);\ \}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_a7e854ae1ff78c87a4ac95fed5047735b}{assign}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{double}\ value)\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_a66cace7834f5eb0eb9b31edd66a994fd}{table\_}}.insert(name,\ value);\ \}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}*\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_ae1876c1c25f5dffb5eadccc190ad93f3}{lookup}}(\textcolor{keyword}{const}\ std::string\&\ name)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_a66cace7834f5eb0eb9b31edd66a994fd}{table\_}}.find(name);\ \}}
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \}\ \textcolor{comment}{//\ namespace\ translator}}
+\DoxyCodeLine{00016\ }
+
+\end{DoxyCode}

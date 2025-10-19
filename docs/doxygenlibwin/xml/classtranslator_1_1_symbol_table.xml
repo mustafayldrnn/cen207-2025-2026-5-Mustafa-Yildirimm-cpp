@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classtranslator_1_1_symbol_table" kind="class" language="C++" prot="public">
+    <compoundname>translator::SymbolTable</compoundname>
+    <includes refid="symbol__table_8h" local="no">symbol_table.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtranslator_1_1_symbol_table_1a66cace7834f5eb0eb9b31edd66a994fd" prot="private" static="no" mutable="no">
+        <type><ref refid="classds_1_1_hash_table" kindref="compound">ds::HashTable</ref>&lt; std::string, double &gt;</type>
+        <definition>ds::HashTable&lt;std::string, double&gt; translator::SymbolTable::table_</definition>
+        <argsstring></argsstring>
+        <name>table_</name>
+        <qualifiedname>translator::SymbolTable::table_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="8" column="19" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtranslator_1_1_symbol_table_1ac8dee7076ef5eb32c01014489f8bace5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool translator::SymbolTable::define</definition>
+        <argsstring>(const std::string &amp;name, double value)</argsstring>
+        <name>define</name>
+        <qualifiedname>translator::SymbolTable::define</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="10" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classtranslator_1_1_symbol_table_1a7e854ae1ff78c87a4ac95fed5047735b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool translator::SymbolTable::assign</definition>
+        <argsstring>(const std::string &amp;name, double value)</argsstring>
+        <name>assign</name>
+        <qualifiedname>translator::SymbolTable::assign</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="11" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classtranslator_1_1_symbol_table_1ae1876c1c25f5dffb5eadccc190ad93f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const double *</type>
+        <definition>const double * translator::SymbolTable::lookup</definition>
+        <argsstring>(const std::string &amp;name) const</argsstring>
+        <name>lookup</name>
+        <qualifiedname>translator::SymbolTable::lookup</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="12" column="18" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="12" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ds::HashTable&lt; std::string, double &gt;</label>
+        <link refid="classds_1_1_hash_table"/>
+      </node>
+      <node id="1">
+        <label>translator::SymbolTable</label>
+        <link refid="classtranslator_1_1_symbol_table"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-table_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="7" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="7" bodyend="13"/>
+    <listofallmembers>
+      <member refid="classtranslator_1_1_symbol_table_1a7e854ae1ff78c87a4ac95fed5047735b" prot="public" virt="non-virtual"><scope>translator::SymbolTable</scope><name>assign</name></member>
+      <member refid="classtranslator_1_1_symbol_table_1ac8dee7076ef5eb32c01014489f8bace5" prot="public" virt="non-virtual"><scope>translator::SymbolTable</scope><name>define</name></member>
+      <member refid="classtranslator_1_1_symbol_table_1ae1876c1c25f5dffb5eadccc190ad93f3" prot="public" virt="non-virtual"><scope>translator::SymbolTable</scope><name>lookup</name></member>
+      <member refid="classtranslator_1_1_symbol_table_1a66cace7834f5eb0eb9b31edd66a994fd" prot="private" virt="non-virtual"><scope>translator::SymbolTable</scope><name>table_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

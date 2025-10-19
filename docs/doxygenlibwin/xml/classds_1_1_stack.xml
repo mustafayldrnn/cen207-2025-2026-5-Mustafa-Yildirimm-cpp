@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classds_1_1_stack" kind="class" language="C++" prot="public">
+    <compoundname>ds::Stack</compoundname>
+    <includes refid="stack_8h" local="no">stack.h</includes>
+    <innerclass refid="structds_1_1_stack_1_1_node" prot="private">ds::Stack::Node</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classds_1_1_stack_1a3a436623966dd4dcccd0aea883db73c4" prot="private" static="no" mutable="no">
+        <type><ref refid="structds_1_1_stack_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* ds::Stack&lt; T &gt;::top_</definition>
+        <argsstring></argsstring>
+        <name>top_</name>
+        <qualifiedname>ds::Stack::top_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" line="9" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classds_1_1_stack_1ac63eeada020909894b5bc5e6a51277c5" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t ds::Stack&lt; T &gt;::sz_</definition>
+        <argsstring></argsstring>
+        <name>sz_</name>
+        <qualifiedname>ds::Stack::sz_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" line="9" column="28" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classds_1_1_stack_1a72c71228fcf07010c45061d514ec3b8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ds::Stack&lt; T &gt;::~Stack</definition>
+        <argsstring>()</argsstring>
+        <name>~Stack</name>
+        <qualifiedname>ds::Stack::~Stack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" line="11" column="5" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_stack_1ab4a7ca4fc3ba1304565946fb584cff09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::Stack&lt; T &gt;::push</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>push</name>
+        <qualifiedname>ds::Stack::push</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" line="12" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_stack_1a838bd932bf5696ad97c99756d4bed45f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ds::Stack&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>ds::Stack::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" line="13" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_stack_1aa51d9456a5513ee7fa7074a0065096f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t ds::Stack&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>ds::Stack::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" line="14" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_stack_1ab51dcca6ef286f03d5520a7fa264ca86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; ds::Stack&lt; T &gt;::top</definition>
+        <argsstring>()</argsstring>
+        <name>top</name>
+        <qualifiedname>ds::Stack::top</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" line="15" column="7" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_stack_1a28e85edcd47ae3f343be66afc8cdfb67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::Stack&lt; T &gt;::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <qualifiedname>ds::Stack::pop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" line="16" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ds::Stack&lt; T &gt;::Node</label>
+        <link refid="structds_1_1_stack_1_1_node"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+next</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ds::Stack&lt; T &gt;</label>
+        <link refid="classds_1_1_stack"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-top_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" line="7" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" bodystart="7" bodyend="17"/>
+    <listofallmembers>
+      <member refid="classds_1_1_stack_1a838bd932bf5696ad97c99756d4bed45f" prot="public" virt="non-virtual"><scope>ds::Stack</scope><name>empty</name></member>
+      <member refid="classds_1_1_stack_1a28e85edcd47ae3f343be66afc8cdfb67" prot="public" virt="non-virtual"><scope>ds::Stack</scope><name>pop</name></member>
+      <member refid="classds_1_1_stack_1ab4a7ca4fc3ba1304565946fb584cff09" prot="public" virt="non-virtual"><scope>ds::Stack</scope><name>push</name></member>
+      <member refid="classds_1_1_stack_1aa51d9456a5513ee7fa7074a0065096f1" prot="public" virt="non-virtual"><scope>ds::Stack</scope><name>size</name></member>
+      <member refid="classds_1_1_stack_1ac63eeada020909894b5bc5e6a51277c5" prot="private" virt="non-virtual"><scope>ds::Stack</scope><name>sz_</name></member>
+      <member refid="classds_1_1_stack_1ab51dcca6ef286f03d5520a7fa264ca86" prot="public" virt="non-virtual"><scope>ds::Stack</scope><name>top</name></member>
+      <member refid="classds_1_1_stack_1a3a436623966dd4dcccd0aea883db73c4" prot="private" virt="non-virtual"><scope>ds::Stack</scope><name>top_</name></member>
+      <member refid="classds_1_1_stack_1a72c71228fcf07010c45061d514ec3b8b" prot="public" virt="non-virtual"><scope>ds::Stack</scope><name>~Stack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

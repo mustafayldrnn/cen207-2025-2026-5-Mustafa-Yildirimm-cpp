@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="test__sparse__matrix_8cpp" kind="file" language="C++">
+    <compoundname>test_sparse_matrix.cpp</compoundname>
+    <includes local="no">gtest/gtest.h</includes>
+    <includes local="yes">ds/sparse_matrix.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_sparse_matrix.cpp</label>
+        <link refid="test__sparse__matrix_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ds/sparse_matrix.h</label>
+      </node>
+      <node id="2">
+        <label>gtest/gtest.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__sparse__matrix_8cpp_1a4db3587556db215c5648c147df4e9c0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(SparseMatrix, InsertAndLookup)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SparseMatrix</type>
+        </param>
+        <param>
+          <type>InsertAndLookup</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_sparse_matrix.cpp" line="4" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_sparse_matrix.cpp" bodystart="4" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ds/sparse_matrix.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="test__sparse__matrix_8cpp_1a4db3587556db215c5648c147df4e9c0e" refkind="member"><highlight class="normal"><ref refid="test__sparse__matrix_8cpp_1a4db3587556db215c5648c147df4e9c0e" kindref="member">TEST</ref>(SparseMatrix,<sp/>InsertAndLookup){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::SparseMatrix&lt;int&gt;<sp/>sm(100,100);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sm.nonZeroCount(),<sp/>0u);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>sm.set(2,3,10);<sp/>sm.set(50,50,7);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sm.nonZeroCount(),<sp/>2u);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>v<sp/>=<sp/>sm.get(2,3);<sp/>ASSERT_NE(v,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);<sp/>EXPECT_EQ(*v,<sp/>10);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>v2<sp/>=<sp/>sm.get(1,1);<sp/>EXPECT_EQ(v2,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_sparse_matrix.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,35 @@
+\doxysection{graph.\+h}
+\hypertarget{graph_8h_source}{}\label{graph_8h_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/include/ds/graph.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/include/ds/graph.h}}
+\mbox{\hyperlink{graph_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceds}{ds}}\ \{}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classds_1_1_graph_a9fc7c0ff07b23eeb275f4447afd79048}{Graph}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ std::vector<std::vector<int>>\ \mbox{\hyperlink{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560}{adj\_}};}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classds_1_1_graph_a9fc7c0ff07b23eeb275f4447afd79048}{Graph}}(\textcolor{keywordtype}{int}\ n=0):\ \mbox{\hyperlink{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560}{adj\_}}(n)\ \{\}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_graph_ad0c233e6f3b8de9684a1cca850b85df5}{resize}}(\textcolor{keywordtype}{int}\ n)\{\ \mbox{\hyperlink{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560}{adj\_}}.assign(n,\ \{\});\ \}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_graph_a4b3a3bd8e6f96b36937c4ba175820d95}{add\_edge}}(\textcolor{keywordtype}{int}\ u,\ \textcolor{keywordtype}{int}\ v,\ \textcolor{keywordtype}{bool}\ undirected=\textcolor{keyword}{false})\{\ \mbox{\hyperlink{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560}{adj\_}}[u].push\_back(v);\ \textcolor{keywordflow}{if}\ (undirected)\ \mbox{\hyperlink{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560}{adj\_}}[v].push\_back(u);\ \}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\&\ \mbox{\hyperlink{classds_1_1_graph_a620124fd977deaae01a68ae117eed5dd}{neighbors}}(\textcolor{keywordtype}{int}\ u)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560}{adj\_}}[u];\ \}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classds_1_1_graph_ad0be55636f291082daabb61bf3d6c893}{size}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560}{adj\_}}.size());\ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{classds_1_1_graph_a4f65eeeb7663df3a2cf8c7d63430a22a}{bfs\_dist}}(\textcolor{keywordtype}{int}\ s)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::vector<int>\ dist(\mbox{\hyperlink{classds_1_1_graph_ad0be55636f291082daabb61bf3d6c893}{size}}(),\ -\/1);\ std::queue<int>\ q;\ dist[s]=0;\ q.push(s);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(!q.empty())\{\ \textcolor{keywordtype}{int}\ u=q.front();\ q.pop();\ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ v:\mbox{\hyperlink{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560}{adj\_}}[u])\ \textcolor{keywordflow}{if}(dist[v]==-\/1)\{\ dist[v]=dist[u]+1;\ q.push(v);\}\ \}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ dist;}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_graph_a0a55bcdcd40f74a90298ec34f8446b4e}{dfs\_util}}(\textcolor{keywordtype}{int}\ u,\ std::vector<int>\&\ vis,\ std::vector<int>\&\ order)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ vis[u]=1;\ order.push\_back(u);\ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ v:\mbox{\hyperlink{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560}{adj\_}}[u])\ \textcolor{keywordflow}{if}(!vis[v])\ \mbox{\hyperlink{classds_1_1_graph_a0a55bcdcd40f74a90298ec34f8446b4e}{dfs\_util}}(v,\ vis,\ order);}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{classds_1_1_graph_abe1955e3d6f2d997b8ce8c279cd855bb}{dfs\_order}}(\textcolor{keywordtype}{int}\ s=0)\textcolor{keyword}{\ const\ }\{\ std::vector<int>\ vis(\mbox{\hyperlink{classds_1_1_graph_ad0be55636f291082daabb61bf3d6c893}{size}}(),0),\ order;\ \textcolor{keywordflow}{if}(s<\mbox{\hyperlink{classds_1_1_graph_ad0be55636f291082daabb61bf3d6c893}{size}}())\ \mbox{\hyperlink{classds_1_1_graph_a0a55bcdcd40f74a90298ec34f8446b4e}{dfs\_util}}(s,\ vis,\ order);\ \textcolor{keywordflow}{return}\ order;\ \}}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \}\ \textcolor{comment}{//\ namespace\ ds}}
+\DoxyCodeLine{00029\ }
+
+\end{DoxyCode}

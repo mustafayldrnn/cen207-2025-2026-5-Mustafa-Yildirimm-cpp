@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="cfg_8h" kind="file" language="C++">
+    <compoundname>cfg.h</compoundname>
+    <includes refid="graph_8h" local="yes">ds/graph.h</includes>
+    <includes refid="ast_8h" local="yes">translator/ast.h</includes>
+    <includes local="no">unordered_map</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>ds/graph.h</label>
+        <link refid="graph_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>translator/ast.h</label>
+        <link refid="ast_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/cfg.h</label>
+        <link refid="cfg_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+      <node id="4">
+        <label>queue</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>unordered_map</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structtranslator_1_1_c_f_g" prot="public">translator::CFG</innerclass>
+    <innernamespace refid="namespacetranslator">translator</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetranslator_1afb6980d157f0f87830df2b0f98548fee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CFG</type>
+        <definition>CFG translator::build_cfg</definition>
+        <argsstring>(const Program &amp;p)</argsstring>
+        <name>build_cfg</name>
+        <qualifiedname>translator::build_cfg</qualifiedname>
+        <param>
+          <type>const Program &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/cfg.h" line="14" column="12" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/cfg.h" bodystart="14" bodyend="53"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="graph_8h" kindref="compound">ds/graph.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ast_8h" kindref="compound">translator/ast.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetranslator" kindref="compound">translator</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structtranslator_1_1_c_f_g" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtranslator_1_1_c_f_g" kindref="compound">CFG</ref><sp/>{</highlight></codeline>
+<codeline lineno="9" refid="structtranslator_1_1_c_f_g_1ac5fa55fea40f70bbd878019831610c3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classds_1_1_graph" kindref="compound">ds::Graph</ref><sp/><ref refid="structtranslator_1_1_c_f_g_1ac5fa55fea40f70bbd878019831610c3f" kindref="member">g</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>label<sp/>-&gt;<sp/>index<sp/>mapping<sp/>for<sp/>convenience</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structtranslator_1_1_c_f_g_1a8c3d964ad916e1f10065308e716ff291" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_map&lt;int,<sp/>int&gt;<sp/><ref refid="structtranslator_1_1_c_f_g_1a8c3d964ad916e1f10065308e716ff291" kindref="member">label_to_index</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="namespacetranslator_1afb6980d157f0f87830df2b0f98548fee" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_c_f_g" kindref="compound">CFG</ref><sp/><ref refid="namespacetranslator_1afb6980d157f0f87830df2b0f98548fee" kindref="member">build_cfg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_program" kindref="compound">Program</ref>&amp;<sp/>p){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtranslator_1_1_c_f_g" kindref="compound">CFG</ref><sp/>cfg;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(p.<ref refid="structtranslator_1_1_program_1ae1becdf326699756afe2f60647e47382" kindref="member">stmts</ref>.size());<sp/>cfg.<ref refid="structtranslator_1_1_c_f_g_1ac5fa55fea40f70bbd878019831610c3f" kindref="member">g</ref>.<ref refid="classds_1_1_graph_1ad0c233e6f3b8de9684a1cca850b85df5" kindref="member">resize</ref>(n);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;n;i++){<sp/>cfg.<ref refid="structtranslator_1_1_c_f_g_1a8c3d964ad916e1f10065308e716ff291" kindref="member">label_to_index</ref>[p.<ref refid="structtranslator_1_1_program_1a7475f175b7b501e7ec7d0a2f16a613c4" kindref="member">labels</ref>[i]]<sp/>=<sp/>i;<sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>next_index<sp/>=<sp/>[&amp;](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)-&gt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(i+1&lt;n)?(i+1):-1;<sp/>};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;n;i++){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s<sp/>=<sp/>p.<ref refid="structtranslator_1_1_program_1ae1becdf326699756afe2f60647e47382" kindref="member">stmts</ref>[i];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ni<sp/>=<sp/>next_index(i);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(s-&gt;kind()){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3daae8fae3d74fdc80ef40995c3c6ca152e" kindref="member">StmtKind::Goto</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tgt<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="structtranslator_1_1_goto_stmt" kindref="compound">GotoStmt</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(s.get())-&gt;<ref refid="structtranslator_1_1_goto_stmt_1a7f09790266e5d62bfc34b0709cab10c6" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>cfg.<ref refid="structtranslator_1_1_c_f_g_1a8c3d964ad916e1f10065308e716ff291" kindref="member">label_to_index</ref>.find(tgt);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it!=cfg.<ref refid="structtranslator_1_1_c_f_g_1a8c3d964ad916e1f10065308e716ff291" kindref="member">label_to_index</ref>.end())<sp/>cfg.<ref refid="structtranslator_1_1_c_f_g_1ac5fa55fea40f70bbd878019831610c3f" kindref="member">g</ref>.<ref refid="classds_1_1_graph_1a4b3a3bd8e6f96b36937c4ba175820d95" kindref="member">add_edge</ref>(i,<sp/>it-&gt;second);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dabb4ff8fec829fa14d95445a6675e0f8c" kindref="member">StmtKind::IfGoto</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tgt<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="structtranslator_1_1_if_goto_stmt" kindref="compound">IfGotoStmt</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(s.get())-&gt;<ref refid="structtranslator_1_1_if_goto_stmt_1af2860bea6273fdf9e63c46627fb1876d" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>cfg.<ref refid="structtranslator_1_1_c_f_g_1a8c3d964ad916e1f10065308e716ff291" kindref="member">label_to_index</ref>.find(tgt);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it!=cfg.<ref refid="structtranslator_1_1_c_f_g_1a8c3d964ad916e1f10065308e716ff291" kindref="member">label_to_index</ref>.end())<sp/>cfg.<ref refid="structtranslator_1_1_c_f_g_1ac5fa55fea40f70bbd878019831610c3f" kindref="member">g</ref>.<ref refid="classds_1_1_graph_1a4b3a3bd8e6f96b36937c4ba175820d95" kindref="member">add_edge</ref>(i,<sp/>it-&gt;second);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ni!=-1)<sp/>cfg.<ref refid="structtranslator_1_1_c_f_g_1ac5fa55fea40f70bbd878019831610c3f" kindref="member">g</ref>.<ref refid="classds_1_1_graph_1a4b3a3bd8e6f96b36937c4ba175820d95" kindref="member">add_edge</ref>(i,<sp/>ni);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173" kindref="member">StmtKind::Gosub</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tgt<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="structtranslator_1_1_gosub_stmt" kindref="compound">GosubStmt</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(s.get())-&gt;<ref refid="structtranslator_1_1_gosub_stmt_1a168c003fcda2ceb2e8c2cd015df7ec85" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>cfg.<ref refid="structtranslator_1_1_c_f_g_1a8c3d964ad916e1f10065308e716ff291" kindref="member">label_to_index</ref>.find(tgt);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it!=cfg.<ref refid="structtranslator_1_1_c_f_g_1a8c3d964ad916e1f10065308e716ff291" kindref="member">label_to_index</ref>.end())<sp/>cfg.<ref refid="structtranslator_1_1_c_f_g_1ac5fa55fea40f70bbd878019831610c3f" kindref="member">g</ref>.<ref refid="classds_1_1_graph_1a4b3a3bd8e6f96b36937c4ba175820d95" kindref="member">add_edge</ref>(i,<sp/>it-&gt;second);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ni!=-1)<sp/>cfg.<ref refid="structtranslator_1_1_c_f_g_1ac5fa55fea40f70bbd878019831610c3f" kindref="member">g</ref>.<ref refid="classds_1_1_graph_1a4b3a3bd8e6f96b36937c4ba175820d95" kindref="member">add_edge</ref>(i,<sp/>ni);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce" kindref="member">StmtKind::Return</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>default<sp/>successor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ni!=-1)<sp/>cfg.<ref refid="structtranslator_1_1_c_f_g_1ac5fa55fea40f70bbd878019831610c3f" kindref="member">g</ref>.<ref refid="classds_1_1_graph_1a4b3a3bd8e6f96b36937c4ba175820d95" kindref="member">add_edge</ref>(i,<sp/>ni);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cfg;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>translator</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/cfg.h"/>
+  </compounddef>
+</doxygen>

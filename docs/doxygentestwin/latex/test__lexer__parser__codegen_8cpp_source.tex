@@ -1,0 +1,51 @@
+\doxysection{test\+\_\+lexer\+\_\+parser\+\_\+codegen.\+cpp}
+\hypertarget{test__lexer__parser__codegen_8cpp_source}{}\label{test__lexer__parser__codegen_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_lexer\_parser\_codegen.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_lexer\_parser\_codegen.cpp}}
+\mbox{\hyperlink{test__lexer__parser__codegen_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}translator/lexer.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}translator/parser.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}translator/codegen.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}translator/cfg.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00007}\mbox{\hyperlink{test__lexer__parser__codegen_8cpp_adf30c99a234f3dc66c477bb34f44466d}{00007}}\ \mbox{\hyperlink{test__lexer__parser__codegen_8cpp_adf30c99a234f3dc66c477bb34f44466d}{TEST}}(LexerParser,\ BasicProgramParse)\{}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00008}00008\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src\ =\ R\textcolor{stringliteral}{"{}(10\ LET\ X\ =\ 1\ +\ 2}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00009}00009\ \textcolor{stringliteral}{20\ PRINT\ X}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00010}00010\ \textcolor{stringliteral}{30\ IF\ X\ THEN\ 50}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00011}00011\ \textcolor{stringliteral}{40\ GOTO\ 60}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00012}00012\ \textcolor{stringliteral}{50\ GOSUB\ 70}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00013}00013\ \textcolor{stringliteral}{60\ RETURN}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00014}00014\ \textcolor{stringliteral}{70\ PRINT\ X}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00015}00015\ \textcolor{stringliteral}{)"{};}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00016}00016\ \textcolor{stringliteral}{\ \ \ \ translator::Lexer\ lx(src);}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00017}00017\ \textcolor{stringliteral}{\ \ \ \ }\textcolor{keyword}{auto}\ toks\ =\ lx.tokenize();}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00018}00018\ \ \ \ \ translator::Parser\ ps(std::move(toks));}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{keyword}{auto}\ prog\ =\ ps.parseProgram();}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00020}00020\ \ \ \ \ ASSERT\_EQ(prog.stmts.size(),\ 7u);}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00021}00021\ \ \ \ \ ASSERT\_EQ(prog.labels.front(),\ 10);}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00022}00022\ \ \ \ \ ASSERT\_EQ(prog.labels.back(),\ 70);}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00024}\mbox{\hyperlink{test__lexer__parser__codegen_8cpp_a2db3c295f5f7cc3059ada17fe2e34689}{00024}}\ \ \ \ \ \textcolor{comment}{//\ CFG\ build\ and\ reachability}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keyword}{auto}\ cfg\ =\ translator::build\_cfg(prog);}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keyword}{auto}\ dist\ =\ cfg.g.bfs\_dist(0);}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{comment}{//\ Ensure\ start\ is\ reachable\ and\ some\ edges\ exist}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00028}00028\ \ \ \ \ EXPECT\_EQ(dist[0],\ 0);}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00029}00029\ \}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00031}00031\ \mbox{\hyperlink{test__lexer__parser__codegen_8cpp_adf30c99a234f3dc66c477bb34f44466d}{TEST}}(Codegen,\ EmitsCPP)\{}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src\ =\ R\textcolor{stringliteral}{"{}(10\ LET\ X\ =\ 1\ +\ 2\ *\ 3}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00033}00033\ \textcolor{stringliteral}{20\ PRINT\ X}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00034}00034\ \textcolor{stringliteral}{)"{};}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00035}00035\ \textcolor{stringliteral}{\ \ \ \ translator::Lexer\ lx(src);}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00036}00036\ \textcolor{stringliteral}{\ \ \ \ }\textcolor{keyword}{auto}\ toks\ =\ lx.tokenize();}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00037}00037\ \ \ \ \ translator::Parser\ ps(std::move(toks));}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{keyword}{auto}\ prog\ =\ ps.parseProgram();}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{keyword}{auto}\ code\ =\ translator::Codegen::emit\_cpp(prog);}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{comment}{//\ Basic\ sanity\ checks}}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00041}00041\ \ \ \ \ EXPECT\_NE(code.find(\textcolor{stringliteral}{"{}\#include\ <iostream>"{}}),\ std::string::npos);}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00042}00042\ \ \ \ \ EXPECT\_NE(code.find(\textcolor{stringliteral}{"{}int\ main()"{}}),\ std::string::npos);}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00043}00043\ \ \ \ \ EXPECT\_NE(code.find(\textcolor{stringliteral}{"{}var[\(\backslash\)"{}X\(\backslash\)"{}]\ =\ (1\ +\ (2\ *\ 3))"{}}),\ std::string::npos);}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00044}00044\ \ \ \ \ EXPECT\_NE(code.find(\textcolor{stringliteral}{"{}std::cout\ <<\ var[\(\backslash\)"{}X\(\backslash\)"{}]\ <<\ std::endl;"{}}),\ std::string::npos);}
+\DoxyCodeLine{\Hypertarget{test__lexer__parser__codegen_8cpp_source_l00045}00045\ \}}
+
+\end{DoxyCode}

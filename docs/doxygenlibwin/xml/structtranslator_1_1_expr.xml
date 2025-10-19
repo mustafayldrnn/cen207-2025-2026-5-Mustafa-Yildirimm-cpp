@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structtranslator_1_1_expr" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>translator::Expr</compoundname>
+    <derivedcompoundref refid="structtranslator_1_1_binary_expr" prot="public" virt="non-virtual">translator::BinaryExpr</derivedcompoundref>
+    <derivedcompoundref refid="structtranslator_1_1_number_expr" prot="public" virt="non-virtual">translator::NumberExpr</derivedcompoundref>
+    <derivedcompoundref refid="structtranslator_1_1_variable_expr" prot="public" virt="non-virtual">translator::VariableExpr</derivedcompoundref>
+    <includes refid="ast_8h" local="no">ast.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtranslator_1_1_expr_1a3a61309da992f896228d1ba682f79187" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual translator::Expr::~Expr</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Expr</name>
+        <qualifiedname>translator::Expr::~Expr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="11" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structtranslator_1_1_expr_1aced195c2a0830ff10b582d02731c93b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0" kindref="member">ExprKind</ref></type>
+        <definition>virtual ExprKind translator::Expr::kind</definition>
+        <argsstring>() const =0</argsstring>
+        <name>kind</name>
+        <qualifiedname>translator::Expr::kind</qualifiedname>
+        <reimplementedby refid="structtranslator_1_1_binary_expr_1a4f09625d10e55dad82469d2510b4cc96">kind</reimplementedby>
+        <reimplementedby refid="structtranslator_1_1_number_expr_1a6747a2814f5d6135f2506cf35bda7401">kind</reimplementedby>
+        <reimplementedby refid="structtranslator_1_1_variable_expr_1a0dd6b31c1c5ac1801779da5eb115c95d">kind</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="12" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>translator::BinaryExpr</label>
+        <link refid="structtranslator_1_1_binary_expr"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>translator::Expr</label>
+        <link refid="structtranslator_1_1_expr"/>
+      </node>
+      <node id="3">
+        <label>translator::NumberExpr</label>
+        <link refid="structtranslator_1_1_number_expr"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>translator::VariableExpr</label>
+        <link refid="structtranslator_1_1_variable_expr"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>translator::Expr</label>
+        <link refid="structtranslator_1_1_expr"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="10" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="10" bodyend="13"/>
+    <listofallmembers>
+      <member refid="structtranslator_1_1_expr_1aced195c2a0830ff10b582d02731c93b1" prot="public" virt="pure-virtual"><scope>translator::Expr</scope><name>kind</name></member>
+      <member refid="structtranslator_1_1_expr_1a3a61309da992f896228d1ba682f79187" prot="public" virt="virtual"><scope>translator::Expr</scope><name>~Expr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

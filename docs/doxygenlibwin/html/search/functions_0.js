@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['calculatemean_0',['calculateMean',['../class_coruh_1_1_utility_1_1_math_utility.html#abe3d63ed2737ae3c006bcc5732a3d01f',1,'Coruh::Utility::MathUtility']]],
-  ['calculatemedian_1',['calculateMedian',['../class_coruh_1_1_utility_1_1_math_utility.html#aa5888ea1bef95e477a66c2dd8517b885',1,'Coruh::Utility::MathUtility']]],
-  ['calculateminmax_2',['calculateMinMax',['../class_coruh_1_1_utility_1_1_math_utility.html#ac66a656b821b690761a1db545359508d',1,'Coruh::Utility::MathUtility']]],
-  ['comparedouble_3',['compareDouble',['../class_coruh_1_1_utility_1_1_math_utility.html#a8a30d3bb9945b043c861257596f17c30',1,'Coruh::Utility::MathUtility']]]
+  ['add_5fedge_0',['add_edge',['../classds_1_1_graph.html#a4b3a3bd8e6f96b36937c4ba175820d95',1,'ds::Graph']]],
+  ['advance_1',['advance',['../classtranslator_1_1_parser.html#a454ea6c16f64db09d8d2b9987e1e4833',1,'translator::Parser']]],
+  ['assign_2',['assign',['../classtranslator_1_1_symbol_table.html#a7e854ae1ff78c87a4ac95fed5047735b',1,'translator::SymbolTable']]],
+  ['at_5feof_3',['at_eof',['../classtranslator_1_1_parser.html#ab2e3e753c664de21a74add33db1a5d26',1,'translator::Parser']]]
 ];

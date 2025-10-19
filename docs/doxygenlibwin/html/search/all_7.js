@@ -1,14 +1,11 @@
 var searchData=
 [
-  ['calculatemean_0',['calculateMean',['../class_coruh_1_1_utility_1_1_math_utility.html#abe3d63ed2737ae3c006bcc5732a3d01f',1,'Coruh::Utility::MathUtility']]],
-  ['calculatemedian_1',['calculateMedian',['../class_coruh_1_1_utility_1_1_math_utility.html#aa5888ea1bef95e477a66c2dd8517b885',1,'Coruh::Utility::MathUtility']]],
-  ['calculateminmax_2',['calculateMinMax',['../class_coruh_1_1_utility_1_1_math_utility.html#ac66a656b821b690761a1db545359508d',1,'Coruh::Utility::MathUtility']]],
-  ['can_20effect_20on_20wsl_3',['Can Effect on WSL',['../index.html#autotoc_md7',1,'Step-1 (Run on Windows, Can Effect on WSL)'],['../index.html#autotoc_md8',1,'Step-2 (Run on Windows, Can Effect on WSL)']]],
-  ['clean_20project_4',['Clean Project',['../index.html#autotoc_md15',1,'']]],
-  ['commontypes_2eh_5',['commonTypes.h',['../common_types_8h.html',1,'']]],
-  ['comparedouble_6',['compareDouble',['../class_coruh_1_1_utility_1_1_math_utility.html#a8a30d3bb9945b043c861257596f17c30',1,'Coruh::Utility::MathUtility']]],
-  ['converter_7',['Install Test Results to HTML Converter',['../index.html#autotoc_md19',1,'']]],
-  ['coruh_8',['Coruh',['../namespace_coruh.html',1,'']]],
-  ['coruh_3a_3autility_9',['Utility',['../namespace_coruh_1_1_utility.html',1,'Coruh']]],
-  ['coverage_20ratios_10',['Coverage Ratios',['../index.html#autotoc_md18',1,'Documentation Coverage Ratios'],['../index.html#autotoc_md17',1,'Test Coverage Ratios']]]
+  ['g_0',['g',['../structtranslator_1_1_c_f_g.html#ac5fa55fea40f70bbd878019831610c3f',1,'translator::CFG']]],
+  ['get_1',['get',['../classds_1_1_sparse_matrix.html#ae238cab6800d072fc4c76e8b0578a8e5',1,'ds::SparseMatrix']]],
+  ['gosub_2',['Gosub',['../namespacetranslator.html#ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173',1,'translator']]],
+  ['gosubstmt_3',['GosubStmt',['../structtranslator_1_1_gosub_stmt.html',1,'translator::GosubStmt'],['../structtranslator_1_1_gosub_stmt.html#aae89ce3fc1bbe274899085b0fbee9181',1,'translator::GosubStmt::GosubStmt()']]],
+  ['goto_4',['Goto',['../namespacetranslator.html#ae91056a6e5d3941ec5899084a4007a3daae8fae3d74fdc80ef40995c3c6ca152e',1,'translator']]],
+  ['gotostmt_5',['GotoStmt',['../structtranslator_1_1_goto_stmt.html',1,'translator::GotoStmt'],['../structtranslator_1_1_goto_stmt.html#ae22d265c24459eb2537df432131f46d7',1,'translator::GotoStmt::GotoStmt()']]],
+  ['graph_6',['Graph',['../classds_1_1_graph.html',1,'ds::Graph'],['../classds_1_1_graph.html#a9fc7c0ff07b23eeb275f4447afd79048',1,'ds::Graph::Graph()']]],
+  ['graph_2eh_7',['graph.h',['../graph_8h.html',1,'']]]
 ];

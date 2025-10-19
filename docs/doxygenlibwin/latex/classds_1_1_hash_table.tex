@@ -1,0 +1,184 @@
+\doxysection{ds\+::Hash\+Table\texorpdfstring{$<$}{<} K, V \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classds_1_1_hash_table}{}\label{classds_1_1_hash_table}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+
+
+{\ttfamily \#include $<$hash\+\_\+table.\+h$>$}
+
+
+
+Collaboration diagram for ds\+::Hash\+Table\texorpdfstring{$<$}{<} K, V \texorpdfstring{$>$}{>}\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classds_1_1_hash_table__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structds_1_1_hash_table_1_1_entry}{Entry}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classds_1_1_hash_table_a47881f4560d8482207d0c72061df0176}{Hash\+Table}} (std\+::size\+\_\+t cap=16)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_hash_table_a3bb53d07891669bf56c915bc60b1f929}{size}} () const
+\item 
+bool \mbox{\hyperlink{classds_1_1_hash_table_a9441a212b9899e91aad5e3c915005395}{empty}} () const
+\item 
+bool \mbox{\hyperlink{classds_1_1_hash_table_a11c32f21e0c681b3eee2e7cba0532dcc}{insert}} (const K \&k, const V \&v)
+\item 
+V \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_hash_table_aa50954bdb669803b7e6c9b0e63db48ab}{find}} (const K \&k)
+\item 
+const V \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_hash_table_afb487ac0b40053e9e74902fb035ea979}{find}} (const K \&k) const
+\item 
+bool \mbox{\hyperlink{classds_1_1_hash_table_a0acc1f9c857e04c3769939702b0e19c5}{contains}} (const K \&k) const
+\item 
+bool \mbox{\hyperlink{classds_1_1_hash_table_a13001e8242174229d97e1b470704962c}{erase}} (const K \&k)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_hash_table_a228a82ca4a7e5438ee5725a441a84902}{idx}} (const K \&k) const
+\item 
+void \mbox{\hyperlink{classds_1_1_hash_table_a2b378cb65c687e96a785f3bd311197ea}{rehash}} (std\+::size\+\_\+t new\+\_\+cap)
+\item 
+void \mbox{\hyperlink{classds_1_1_hash_table_a9b34ffbaba50d07a6951faf2dae7b476}{ensure}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structds_1_1_hash_table_1_1_entry}{Entry}} $>$ \mbox{\hyperlink{classds_1_1_hash_table_ae6b9272c3d706ba75c7f6fabcdc9ace8}{table\+\_\+}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_hash_table_a9b7d14e05e82361e2166dac9be580190}{count\+\_\+}} = 0
+\item 
+float \mbox{\hyperlink{classds_1_1_hash_table_a9791021117665e725c0bc73c7e258a33}{max\+\_\+load\+\_\+}} = 0.\+7f
+\item 
+std\+::hash$<$ K $>$ \mbox{\hyperlink{classds_1_1_hash_table_a26b863af6d4339774e71afe1e7c33080}{hasher\+\_\+}} \{\}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classds_1_1_hash_table_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classds_1_1_hash_table_a47881f4560d8482207d0c72061df0176}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!HashTable@{HashTable}}
+\index{HashTable@{HashTable}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{HashTable()}{HashTable()}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a47881f4560d8482207d0c72061df0176} 
+template$<$typename K, typename V$>$ \\
+\mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::\+Hash\+Table (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cap}{ = {\ttfamily 16}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classds_1_1_hash_table_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classds_1_1_hash_table_a0acc1f9c857e04c3769939702b0e19c5}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!contains@{contains}}
+\index{contains@{contains}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a0acc1f9c857e04c3769939702b0e19c5} 
+template$<$typename K, typename V$>$ \\
+bool \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::contains (\begin{DoxyParamCaption}\item[{const K \&}]{k}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_hash_table_a9441a212b9899e91aad5e3c915005395}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!empty@{empty}}
+\index{empty@{empty}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a9441a212b9899e91aad5e3c915005395} 
+template$<$typename K, typename V$>$ \\
+bool \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_hash_table_a9b34ffbaba50d07a6951faf2dae7b476}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!ensure@{ensure}}
+\index{ensure@{ensure}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{ensure()}{ensure()}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a9b34ffbaba50d07a6951faf2dae7b476} 
+template$<$typename K, typename V$>$ \\
+void \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::ensure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classds_1_1_hash_table_a13001e8242174229d97e1b470704962c}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!erase@{erase}}
+\index{erase@{erase}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a13001e8242174229d97e1b470704962c} 
+template$<$typename K, typename V$>$ \\
+bool \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::erase (\begin{DoxyParamCaption}\item[{const K \&}]{k}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_hash_table_aa50954bdb669803b7e6c9b0e63db48ab}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!find@{find}}
+\index{find@{find}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_aa50954bdb669803b7e6c9b0e63db48ab} 
+template$<$typename K, typename V$>$ \\
+V \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::find (\begin{DoxyParamCaption}\item[{const K \&}]{k}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_hash_table_afb487ac0b40053e9e74902fb035ea979}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!find@{find}}
+\index{find@{find}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_afb487ac0b40053e9e74902fb035ea979} 
+template$<$typename K, typename V$>$ \\
+const V \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::find (\begin{DoxyParamCaption}\item[{const K \&}]{k}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_hash_table_a228a82ca4a7e5438ee5725a441a84902}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!idx@{idx}}
+\index{idx@{idx}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{idx()}{idx()}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a228a82ca4a7e5438ee5725a441a84902} 
+template$<$typename K, typename V$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::idx (\begin{DoxyParamCaption}\item[{const K \&}]{k}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classds_1_1_hash_table_a11c32f21e0c681b3eee2e7cba0532dcc}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!insert@{insert}}
+\index{insert@{insert}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a11c32f21e0c681b3eee2e7cba0532dcc} 
+template$<$typename K, typename V$>$ \\
+bool \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::insert (\begin{DoxyParamCaption}\item[{const K \&}]{k}{, }\item[{const V \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_hash_table_a2b378cb65c687e96a785f3bd311197ea}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!rehash@{rehash}}
+\index{rehash@{rehash}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{rehash()}{rehash()}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a2b378cb65c687e96a785f3bd311197ea} 
+template$<$typename K, typename V$>$ \\
+void \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::rehash (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{new\+\_\+cap}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classds_1_1_hash_table_a3bb53d07891669bf56c915bc60b1f929}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!size@{size}}
+\index{size@{size}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a3bb53d07891669bf56c915bc60b1f929} 
+template$<$typename K, typename V$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classds_1_1_hash_table_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classds_1_1_hash_table_a9b7d14e05e82361e2166dac9be580190}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!count\_@{count\_}}
+\index{count\_@{count\_}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{count\_}{count\_}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a9b7d14e05e82361e2166dac9be580190} 
+template$<$typename K, typename V$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::count\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classds_1_1_hash_table_a26b863af6d4339774e71afe1e7c33080}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!hasher\_@{hasher\_}}
+\index{hasher\_@{hasher\_}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{hasher\_}{hasher\_}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a26b863af6d4339774e71afe1e7c33080} 
+template$<$typename K, typename V$>$ \\
+std\+::hash$<$K$>$ \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::hasher\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classds_1_1_hash_table_a9791021117665e725c0bc73c7e258a33}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!max\_load\_@{max\_load\_}}
+\index{max\_load\_@{max\_load\_}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{max\_load\_}{max\_load\_}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_a9791021117665e725c0bc73c7e258a33} 
+template$<$typename K, typename V$>$ \\
+float \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::max\+\_\+load\+\_\+ = 0.\+7f\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classds_1_1_hash_table_ae6b9272c3d706ba75c7f6fabcdc9ace8}\index{ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}!table\_@{table\_}}
+\index{table\_@{table\_}!ds::HashTable$<$ K, V $>$@{ds::HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{table\_}{table\_}}
+{\footnotesize\ttfamily \label{classds_1_1_hash_table_ae6b9272c3d706ba75c7f6fabcdc9ace8} 
+template$<$typename K, typename V$>$ \\
+std\+::vector$<$\mbox{\hyperlink{structds_1_1_hash_table_1_1_entry}{Entry}}$>$ \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table}}$<$ K, V $>$\+::table\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/include/ds/\mbox{\hyperlink{hash__table_8h}{hash\+\_\+table.\+h}}\end{DoxyCompactItemize}

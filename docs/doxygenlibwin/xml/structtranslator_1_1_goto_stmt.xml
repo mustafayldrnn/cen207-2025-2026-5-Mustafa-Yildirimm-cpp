@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structtranslator_1_1_goto_stmt" kind="struct" language="C++" prot="public">
+    <compoundname>translator::GotoStmt</compoundname>
+    <basecompoundref refid="structtranslator_1_1_stmt" prot="public" virt="non-virtual">translator::Stmt</basecompoundref>
+    <includes refid="ast_8h" local="no">ast.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtranslator_1_1_goto_stmt_1a7f09790266e5d62bfc34b0709cab10c6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int translator::GotoStmt::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <qualifiedname>translator::GotoStmt::target</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="58" column="9" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtranslator_1_1_goto_stmt_1ae22d265c24459eb2537df432131f46d7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>translator::GotoStmt::GotoStmt</definition>
+        <argsstring>(int t)</argsstring>
+        <name>GotoStmt</name>
+        <qualifiedname>translator::GotoStmt::GotoStmt</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="58" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structtranslator_1_1_goto_stmt_1aae4b7271164ea8557ffdc4a79d8657f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref></type>
+        <definition>StmtKind translator::GotoStmt::kind</definition>
+        <argsstring>() const override</argsstring>
+        <name>kind</name>
+        <qualifiedname>translator::GotoStmt::kind</qualifiedname>
+        <reimplements refid="structtranslator_1_1_stmt_1afb8f5d100524bc8cf234edae0ac57578">kind</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="59" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>translator::GotoStmt</label>
+        <link refid="structtranslator_1_1_goto_stmt"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>translator::Stmt</label>
+        <link refid="structtranslator_1_1_stmt"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>translator::GotoStmt</label>
+        <link refid="structtranslator_1_1_goto_stmt"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>translator::Stmt</label>
+        <link refid="structtranslator_1_1_stmt"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="57" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="57" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structtranslator_1_1_goto_stmt_1ae22d265c24459eb2537df432131f46d7" prot="public" virt="non-virtual"><scope>translator::GotoStmt</scope><name>GotoStmt</name></member>
+      <member refid="structtranslator_1_1_goto_stmt_1aae4b7271164ea8557ffdc4a79d8657f0" prot="public" virt="virtual"><scope>translator::GotoStmt</scope><name>kind</name></member>
+      <member refid="structtranslator_1_1_goto_stmt_1a7f09790266e5d62bfc34b0709cab10c6" prot="public" virt="non-virtual"><scope>translator::GotoStmt</scope><name>target</name></member>
+      <member refid="structtranslator_1_1_stmt_1a0707842a254ce67ff9c72cda98226ec7" prot="public" virt="virtual"><scope>translator::GotoStmt</scope><name>~Stmt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

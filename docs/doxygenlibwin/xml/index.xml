@@ -1,36 +1,411 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="en-US">
-  <compound refid="class_coruh_1_1_utility_1_1_math_utility" kind="class"><name>Coruh::Utility::MathUtility</name>
-    <member refid="class_coruh_1_1_utility_1_1_math_utility_1abe3d63ed2737ae3c006bcc5732a3d01f" kind="function"><name>calculateMean</name></member>
-    <member refid="class_coruh_1_1_utility_1_1_math_utility_1aa5888ea1bef95e477a66c2dd8517b885" kind="function"><name>calculateMedian</name></member>
-    <member refid="class_coruh_1_1_utility_1_1_math_utility_1a8a30d3bb9945b043c861257596f17c30" kind="function"><name>compareDouble</name></member>
-    <member refid="class_coruh_1_1_utility_1_1_math_utility_1ac66a656b821b690761a1db545359508d" kind="function"><name>calculateMinMax</name></member>
+  <compound refid="structtranslator_1_1_binary_expr" kind="struct"><name>translator::BinaryExpr</name>
+    <member refid="structtranslator_1_1_binary_expr_1a5f2cb60cdd8ab25136eba4b6c08ab305" kind="variable"><name>op</name></member>
+    <member refid="structtranslator_1_1_binary_expr_1a43a169916f11bd4686c74143ef3524f8" kind="variable"><name>lhs</name></member>
+    <member refid="structtranslator_1_1_binary_expr_1a899fc189d22f70035034243de177b9ed" kind="variable"><name>rhs</name></member>
+    <member refid="structtranslator_1_1_binary_expr_1af157e5409dd40ef3eafdba3fb823bb7f" kind="function"><name>BinaryExpr</name></member>
+    <member refid="structtranslator_1_1_binary_expr_1a4f09625d10e55dad82469d2510b4cc96" kind="function"><name>kind</name></member>
   </compound>
-  <compound refid="namespace_coruh" kind="namespace"><name>Coruh</name>
+  <compound refid="classds_1_1_binary_heap" kind="class"><name>ds::BinaryHeap</name>
+    <member refid="classds_1_1_binary_heap_1a47028623394d46a8b882eb07aa729f7b" kind="variable"><name>a_</name></member>
+    <member refid="classds_1_1_binary_heap_1a10e019bc6948302123ecebd5ba1be449" kind="variable"><name>cmp_</name></member>
+    <member refid="classds_1_1_binary_heap_1a5ae353f634f177f593dd2e488779333a" kind="function"><name>sift_up</name></member>
+    <member refid="classds_1_1_binary_heap_1a3ca481ab3ae4a8f14cd2ef734cb5463e" kind="function"><name>sift_down</name></member>
+    <member refid="classds_1_1_binary_heap_1ad20587f5fd34a78c2c53f79a7a874c43" kind="function"><name>empty</name></member>
+    <member refid="classds_1_1_binary_heap_1a7b5bce7c78ca6e621247c672d17c6d1f" kind="function"><name>size</name></member>
+    <member refid="classds_1_1_binary_heap_1ae4fd1d06e57589a7465609c8df10ad29" kind="function"><name>top</name></member>
+    <member refid="classds_1_1_binary_heap_1a97c2f6999ad6446c6833cb8f45185dea" kind="function"><name>push</name></member>
+    <member refid="classds_1_1_binary_heap_1ab8da6f06f1a9a012cf1c4c53f2a8cf6d" kind="function"><name>pop</name></member>
+    <member refid="classds_1_1_binary_heap_1ad7467e086392e18c40c5423283ca38f6" kind="function"><name>heap_sort_copy</name></member>
   </compound>
-  <compound refid="namespace_coruh_1_1_utility" kind="namespace"><name>Coruh::Utility</name>
+  <compound refid="structtranslator_1_1_c_f_g" kind="struct"><name>translator::CFG</name>
+    <member refid="structtranslator_1_1_c_f_g_1ac5fa55fea40f70bbd878019831610c3f" kind="variable"><name>g</name></member>
+    <member refid="structtranslator_1_1_c_f_g_1a8c3d964ad916e1f10065308e716ff291" kind="variable"><name>label_to_index</name></member>
+  </compound>
+  <compound refid="classtranslator_1_1_codegen" kind="class"><name>translator::Codegen</name>
+    <member refid="classtranslator_1_1_codegen_1a93cb9bf11dd99728319a5e5de334f6f8" kind="function"><name>emit_cpp</name></member>
+  </compound>
+  <compound refid="classds_1_1_doubly_linked_list" kind="class"><name>ds::DoublyLinkedList</name>
+    <member refid="classds_1_1_doubly_linked_list_1ab984830080da01385b6e0c8eb8e1b963" kind="variable"><name>head_</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1aac0ac5dbd0e1a6f3d935a8357cf00a96" kind="variable"><name>tail_</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a8d9e5866bbdd5647b9ce4858bd9c60af" kind="variable"><name>size_</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a5ff7741bb2cbf5168485b6b2ece42bbd" kind="function"><name>DoublyLinkedList</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a16cada9d8162d86ba8b82dbaf7e1918b" kind="function"><name>~DoublyLinkedList</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a7cbccc3d21845cd07e4473c66a6b3f22" kind="function"><name>DoublyLinkedList</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a5139026d2052aea99e34ec66356e8d2c" kind="function"><name>operator=</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a0cd2cfe2104c7250369ee89c9616b923" kind="function"><name>begin</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1aed22012cf544c4546868ab5a545914f9" kind="function"><name>end</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1aaad687c167f3f8a8b3264d183bab8064" kind="function"><name>rbegin</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a161308040d6174300cdcf4f138c97c51" kind="function"><name>size</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1ae6b33a59dd79d4b4d578ad4ddcf64a97" kind="function"><name>empty</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a06c0989d05c4bd2bea24fe4e157cb7ea" kind="function"><name>clear</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a1eef59637606e2427a92a1c345bcf7de" kind="function"><name>push_back</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a0bf5bd3a047a9f9af555efb35f0afcdb" kind="function"><name>push_front</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a7e2d78d1d937fdd894fd9bc9e5448e1f" kind="function"><name>insert_after</name></member>
+    <member refid="classds_1_1_doubly_linked_list_1a007e35bdeab28fea7dc5931dc57bc267" kind="function"><name>erase</name></member>
+  </compound>
+  <compound refid="structds_1_1_hash_table_1_1_entry" kind="struct"><name>ds::HashTable::Entry</name>
+    <member refid="structds_1_1_hash_table_1_1_entry_1ae13e9ed3420c7513e15a5fb783535050" kind="variable"><name>key</name></member>
+    <member refid="structds_1_1_hash_table_1_1_entry_1a613402a3aca9f6fb7571bb7b350f3d95" kind="variable"><name>value</name></member>
+    <member refid="structds_1_1_hash_table_1_1_entry_1a918b379713350c27f26a0bc044220f76" kind="variable"><name>state</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_expr" kind="struct"><name>translator::Expr</name>
+    <member refid="structtranslator_1_1_expr_1a3a61309da992f896228d1ba682f79187" kind="function"><name>~Expr</name></member>
+    <member refid="structtranslator_1_1_expr_1aced195c2a0830ff10b582d02731c93b1" kind="function"><name>kind</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_gosub_stmt" kind="struct"><name>translator::GosubStmt</name>
+    <member refid="structtranslator_1_1_gosub_stmt_1a168c003fcda2ceb2e8c2cd015df7ec85" kind="variable"><name>target</name></member>
+    <member refid="structtranslator_1_1_gosub_stmt_1aae89ce3fc1bbe274899085b0fbee9181" kind="function"><name>GosubStmt</name></member>
+    <member refid="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac" kind="function"><name>kind</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_goto_stmt" kind="struct"><name>translator::GotoStmt</name>
+    <member refid="structtranslator_1_1_goto_stmt_1a7f09790266e5d62bfc34b0709cab10c6" kind="variable"><name>target</name></member>
+    <member refid="structtranslator_1_1_goto_stmt_1ae22d265c24459eb2537df432131f46d7" kind="function"><name>GotoStmt</name></member>
+    <member refid="structtranslator_1_1_goto_stmt_1aae4b7271164ea8557ffdc4a79d8657f0" kind="function"><name>kind</name></member>
+  </compound>
+  <compound refid="classds_1_1_graph" kind="class"><name>ds::Graph</name>
+    <member refid="classds_1_1_graph_1a30a376f3ad6e89e372c00d2142796560" kind="variable"><name>adj_</name></member>
+    <member refid="classds_1_1_graph_1a9fc7c0ff07b23eeb275f4447afd79048" kind="function"><name>Graph</name></member>
+    <member refid="classds_1_1_graph_1ad0c233e6f3b8de9684a1cca850b85df5" kind="function"><name>resize</name></member>
+    <member refid="classds_1_1_graph_1a4b3a3bd8e6f96b36937c4ba175820d95" kind="function"><name>add_edge</name></member>
+    <member refid="classds_1_1_graph_1a620124fd977deaae01a68ae117eed5dd" kind="function"><name>neighbors</name></member>
+    <member refid="classds_1_1_graph_1ad0be55636f291082daabb61bf3d6c893" kind="function"><name>size</name></member>
+    <member refid="classds_1_1_graph_1a4f65eeeb7663df3a2cf8c7d63430a22a" kind="function"><name>bfs_dist</name></member>
+    <member refid="classds_1_1_graph_1a0a55bcdcd40f74a90298ec34f8446b4e" kind="function"><name>dfs_util</name></member>
+    <member refid="classds_1_1_graph_1abe1955e3d6f2d997b8ce8c279cd855bb" kind="function"><name>dfs_order</name></member>
+  </compound>
+  <compound refid="classds_1_1_hash_table" kind="class"><name>ds::HashTable</name>
+    <member refid="classds_1_1_hash_table_1ae6b9272c3d706ba75c7f6fabcdc9ace8" kind="variable"><name>table_</name></member>
+    <member refid="classds_1_1_hash_table_1a9b7d14e05e82361e2166dac9be580190" kind="variable"><name>count_</name></member>
+    <member refid="classds_1_1_hash_table_1a9791021117665e725c0bc73c7e258a33" kind="variable"><name>max_load_</name></member>
+    <member refid="classds_1_1_hash_table_1a26b863af6d4339774e71afe1e7c33080" kind="variable"><name>hasher_</name></member>
+    <member refid="classds_1_1_hash_table_1a228a82ca4a7e5438ee5725a441a84902" kind="function"><name>idx</name></member>
+    <member refid="classds_1_1_hash_table_1a2b378cb65c687e96a785f3bd311197ea" kind="function"><name>rehash</name></member>
+    <member refid="classds_1_1_hash_table_1a9b34ffbaba50d07a6951faf2dae7b476" kind="function"><name>ensure</name></member>
+    <member refid="classds_1_1_hash_table_1a47881f4560d8482207d0c72061df0176" kind="function"><name>HashTable</name></member>
+    <member refid="classds_1_1_hash_table_1a3bb53d07891669bf56c915bc60b1f929" kind="function"><name>size</name></member>
+    <member refid="classds_1_1_hash_table_1a9441a212b9899e91aad5e3c915005395" kind="function"><name>empty</name></member>
+    <member refid="classds_1_1_hash_table_1a11c32f21e0c681b3eee2e7cba0532dcc" kind="function"><name>insert</name></member>
+    <member refid="classds_1_1_hash_table_1aa50954bdb669803b7e6c9b0e63db48ab" kind="function"><name>find</name></member>
+    <member refid="classds_1_1_hash_table_1afb487ac0b40053e9e74902fb035ea979" kind="function"><name>find</name></member>
+    <member refid="classds_1_1_hash_table_1a0acc1f9c857e04c3769939702b0e19c5" kind="function"><name>contains</name></member>
+    <member refid="classds_1_1_hash_table_1a13001e8242174229d97e1b470704962c" kind="function"><name>erase</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_if_goto_stmt" kind="struct"><name>translator::IfGotoStmt</name>
+    <member refid="structtranslator_1_1_if_goto_stmt_1a0799d00d21436cbcadd3a2e7ccb94275" kind="variable"><name>cond</name></member>
+    <member refid="structtranslator_1_1_if_goto_stmt_1af2860bea6273fdf9e63c46627fb1876d" kind="variable"><name>target</name></member>
+    <member refid="structtranslator_1_1_if_goto_stmt_1a01828a7980e1ef2d5503aca3f106dc1f" kind="function"><name>IfGotoStmt</name></member>
+    <member refid="structtranslator_1_1_if_goto_stmt_1a77a2dccf8e1b280dd39c2a9101cb17e6" kind="function"><name>kind</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_input_stmt" kind="struct"><name>translator::InputStmt</name>
+    <member refid="structtranslator_1_1_input_stmt_1afb169d343ee04be4f15a594fa28b4b0e" kind="variable"><name>name</name></member>
+    <member refid="structtranslator_1_1_input_stmt_1ae709f989a663c5e7cfe2abe65589b63b" kind="function"><name>InputStmt</name></member>
+    <member refid="structtranslator_1_1_input_stmt_1a49fff20ac46a7ad799c335425a47b7f8" kind="function"><name>kind</name></member>
+  </compound>
+  <compound refid="structds_1_1_doubly_linked_list_1_1iterator" kind="struct"><name>ds::DoublyLinkedList::iterator</name>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1a95a9f3158637486ed75de0441c1d1a5b" kind="typedef"><name>iterator_category</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1aaf7a86224100a96c9d7ad72b622ec847" kind="typedef"><name>value_type</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1a8b86df8007ae034f8a931d0b332047ae" kind="typedef"><name>difference_type</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1a4718b4853fce611523b73e37c02a0c4e" kind="typedef"><name>pointer</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1a8fa14f9d1a85839f9e2a4a6f24086a65" kind="typedef"><name>reference</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1a3bacec3a931e9a28634e1790db443abb" kind="variable"><name>n</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1a56a09b0ddbb67972c8a927b452dd6ca3" kind="function"><name>iterator</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1af3a3f1bf35f3546a138331069cfcf7dc" kind="function"><name>iterator</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1a48456d6f3f4889de29b7df3477053deb" kind="function"><name>operator*</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1a03ff7d385b670d58d0e33f28b4a70772" kind="function"><name>operator-&gt;</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1aa37bc58b8d0f1b10722e65228bee2050" kind="function"><name>operator++</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1ab9af84f0f8dd3f210c1836dc52d80411" kind="function"><name>operator++</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1ae282529971ee5b00f01e85a564bdafaa" kind="function"><name>operator--</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1a340a5137c8b569c5241498e9643d0b86" kind="function"><name>operator--</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1a46864d5a6547833a3165b2d0b9b5fca8" kind="function"><name>operator==</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1iterator_1a26603e5eca1f4e6bbb8f8194190a23ee" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_let_stmt" kind="struct"><name>translator::LetStmt</name>
+    <member refid="structtranslator_1_1_let_stmt_1a2e254e84e516bfab49d9956eec8caa6d" kind="variable"><name>name</name></member>
+    <member refid="structtranslator_1_1_let_stmt_1ad9b43c0a057208438e598c102ea2695d" kind="variable"><name>expr</name></member>
+    <member refid="structtranslator_1_1_let_stmt_1a0bfebf9ceb1029382c8ca27259962790" kind="function"><name>LetStmt</name></member>
+    <member refid="structtranslator_1_1_let_stmt_1ad88e60c92df1de021f3fa562267fdb59" kind="function"><name>kind</name></member>
+  </compound>
+  <compound refid="classtranslator_1_1_lexer" kind="class"><name>translator::Lexer</name>
+    <member refid="classtranslator_1_1_lexer_1a8dd38bc122462334b34032f50ca8a9e7" kind="variable"><name>src_</name></member>
+    <member refid="classtranslator_1_1_lexer_1a8a11e345d58654102d3a9cb26967f774" kind="function"><name>Lexer</name></member>
+    <member refid="classtranslator_1_1_lexer_1a89260e1e02eb2b01abcd1c7e31d480b9" kind="function"><name>tokenize</name></member>
+  </compound>
+  <compound refid="structds_1_1_doubly_linked_list_1_1_node" kind="struct"><name>ds::DoublyLinkedList::Node</name>
+    <member refid="structds_1_1_doubly_linked_list_1_1_node_1a778706d5c27692d909d05ea77d374baf" kind="variable"><name>value</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1_node_1a64fc7c89bdd43437562cbec74df7ed3e" kind="variable"><name>prev</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1_node_1a7ab466296c647e5fbdf5beac843e9008" kind="variable"><name>next</name></member>
+    <member refid="structds_1_1_doubly_linked_list_1_1_node_1a05a753f1adb42b84be2842bfdbbbf51e" kind="function"><name>Node</name></member>
+  </compound>
+  <compound refid="structds_1_1_queue_1_1_node" kind="struct"><name>ds::Queue::Node</name>
+    <member refid="structds_1_1_queue_1_1_node_1adc7c79369a2204b2e53a958325b91cee" kind="variable"><name>v</name></member>
+    <member refid="structds_1_1_queue_1_1_node_1a2c4e919f90cc715c851525a9acdf64d2" kind="variable"><name>next</name></member>
+    <member refid="structds_1_1_queue_1_1_node_1a8145d2462387db6dc7ed2b3aa97ee4b7" kind="function"><name>Node</name></member>
+  </compound>
+  <compound refid="structds_1_1_stack_1_1_node" kind="struct"><name>ds::Stack::Node</name>
+    <member refid="structds_1_1_stack_1_1_node_1ae249e60d8b34bd85b94bf1d111e8db1c" kind="variable"><name>v</name></member>
+    <member refid="structds_1_1_stack_1_1_node_1a612a173847b88c101b077a4dee540429" kind="variable"><name>next</name></member>
+    <member refid="structds_1_1_stack_1_1_node_1ad104a990356c1373194071e202980585" kind="function"><name>Node</name></member>
+  </compound>
+  <compound refid="structds_1_1_x_o_r_linked_list_1_1_node" kind="struct"><name>ds::XORLinkedList::Node</name>
+    <member refid="structds_1_1_x_o_r_linked_list_1_1_node_1a4b9e3ae8849a87d45ad64f8bd70c6f5e" kind="variable"><name>value</name></member>
+    <member refid="structds_1_1_x_o_r_linked_list_1_1_node_1abbe9121ffa153fdaaaf025090b8e7c39" kind="variable"><name>npx</name></member>
+    <member refid="structds_1_1_x_o_r_linked_list_1_1_node_1aeebc1a002126f2b73a6ece86e4a24495" kind="function"><name>Node</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_number_expr" kind="struct"><name>translator::NumberExpr</name>
+    <member refid="structtranslator_1_1_number_expr_1acd4dc7cf346802fa3bf1a2872c4b477c" kind="variable"><name>value</name></member>
+    <member refid="structtranslator_1_1_number_expr_1a1f3f3ffe225582173368a9fa08e9abb7" kind="function"><name>NumberExpr</name></member>
+    <member refid="structtranslator_1_1_number_expr_1a6747a2814f5d6135f2506cf35bda7401" kind="function"><name>kind</name></member>
+  </compound>
+  <compound refid="classtranslator_1_1_parser" kind="class"><name>translator::Parser</name>
+    <member refid="classtranslator_1_1_parser_1a656fd7ad404746f72905ea7ca9c96130" kind="variable"><name>tokens_</name></member>
+    <member refid="classtranslator_1_1_parser_1af5354c7d27d4189bd1f9c33c710b74ac" kind="variable"><name>pos_</name></member>
+    <member refid="classtranslator_1_1_parser_1a01eed9fe50c7b02223c8aaf8140b4649" kind="function"><name>peek</name></member>
+    <member refid="classtranslator_1_1_parser_1a454ea6c16f64db09d8d2b9987e1e4833" kind="function"><name>advance</name></member>
+    <member refid="classtranslator_1_1_parser_1a5719d1927d26586fc770de412025bdbb" kind="function"><name>match</name></member>
+    <member refid="classtranslator_1_1_parser_1ab2e3e753c664de21a74add33db1a5d26" kind="function"><name>at_eof</name></member>
+    <member refid="classtranslator_1_1_parser_1afd6a7894691a68ec5743314fef3a7f75" kind="function"><name>parse_expression</name></member>
+    <member refid="classtranslator_1_1_parser_1acfd7d04d3973badabd5a26214ed3c500" kind="function"><name>parse_term</name></member>
+    <member refid="classtranslator_1_1_parser_1abb54531b779933acfd0c644dcd868b45" kind="function"><name>parse_factor</name></member>
+    <member refid="classtranslator_1_1_parser_1aec074fe4de2041a83946260a05780582" kind="function"><name>parse_statement</name></member>
+    <member refid="classtranslator_1_1_parser_1a2e2390931ab80b865ac31eee1501c8ff" kind="function"><name>Parser</name></member>
+    <member refid="classtranslator_1_1_parser_1a119007cefb979b4071cd7313c0c31062" kind="function"><name>parseProgram</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_print_stmt" kind="struct"><name>translator::PrintStmt</name>
+    <member refid="structtranslator_1_1_print_stmt_1a4e790939efbde0f2c720ca13fb1e25c5" kind="variable"><name>items</name></member>
+    <member refid="structtranslator_1_1_print_stmt_1acf477bf52c1d1a6b3d4ddb399a4128a8" kind="function"><name>PrintStmt</name></member>
+    <member refid="structtranslator_1_1_print_stmt_1a2804d4e2524a83441edb292238c38fe9" kind="function"><name>kind</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_program" kind="struct"><name>translator::Program</name>
+    <member refid="structtranslator_1_1_program_1a7475f175b7b501e7ec7d0a2f16a613c4" kind="variable"><name>labels</name></member>
+    <member refid="structtranslator_1_1_program_1ae1becdf326699756afe2f60647e47382" kind="variable"><name>stmts</name></member>
+  </compound>
+  <compound refid="classds_1_1_queue" kind="class"><name>ds::Queue</name>
+    <member refid="classds_1_1_queue_1af3e1805acba3c9de41f864bd19238db8" kind="variable"><name>head_</name></member>
+    <member refid="classds_1_1_queue_1a72a469ed84ae8b3b36542d36d94df464" kind="variable"><name>tail_</name></member>
+    <member refid="classds_1_1_queue_1aa9c993b85346dabd944f5b43205a8f15" kind="variable"><name>sz_</name></member>
+    <member refid="classds_1_1_queue_1a350273703e1de39445c099ae63532a41" kind="function"><name>~Queue</name></member>
+    <member refid="classds_1_1_queue_1a1732c7aa0f519e004f4e7bdf0dac87d2" kind="function"><name>enqueue</name></member>
+    <member refid="classds_1_1_queue_1a2a1a1d312073663a893ee0e433cdd5f7" kind="function"><name>dequeue</name></member>
+    <member refid="classds_1_1_queue_1a3a74735b6ef905d487f3c3a1bad46843" kind="function"><name>front</name></member>
+    <member refid="classds_1_1_queue_1aee3b289f1a288d38124a2974a1a2999f" kind="function"><name>empty</name></member>
+    <member refid="classds_1_1_queue_1a557e831c44c39d8abf6b6cb55cb55aac" kind="function"><name>size</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_return_stmt" kind="struct"><name>translator::ReturnStmt</name>
+    <member refid="structtranslator_1_1_return_stmt_1a9344c9c9a74ac406decd1a74d4fc42af" kind="function"><name>kind</name></member>
+  </compound>
+  <compound refid="classds_1_1_sparse_matrix" kind="class"><name>ds::SparseMatrix</name>
+    <member refid="classds_1_1_sparse_matrix_1a4d4f238625b4c2ef2808c8c10616fee2" kind="variable"><name>data_</name></member>
+    <member refid="classds_1_1_sparse_matrix_1a9491432e44a4e92cc7ef89f097eb78aa" kind="variable"><name>rows_</name></member>
+    <member refid="classds_1_1_sparse_matrix_1a5521d53f3422f84d573d0aaaef5a63f4" kind="variable"><name>cols_</name></member>
+    <member refid="classds_1_1_sparse_matrix_1a3a11a8e14b05343ce581352fefc045d8" kind="function"><name>key</name></member>
+    <member refid="classds_1_1_sparse_matrix_1ab6f37bf5a7e19fadddc59a3f0d9ff2e6" kind="function"><name>SparseMatrix</name></member>
+    <member refid="classds_1_1_sparse_matrix_1aebcc0633214ed572ebdc39ca47efde47" kind="function"><name>set</name></member>
+    <member refid="classds_1_1_sparse_matrix_1ae238cab6800d072fc4c76e8b0578a8e5" kind="function"><name>get</name></member>
+    <member refid="classds_1_1_sparse_matrix_1a36f4a3217c358111b4526fefef641585" kind="function"><name>nonZeroCount</name></member>
+    <member refid="classds_1_1_sparse_matrix_1a626c4e3435266b08cc44477570f73021" kind="function"><name>rows</name></member>
+    <member refid="classds_1_1_sparse_matrix_1a70e925fb8bb0416fcccb4cfb66aaf52d" kind="function"><name>cols</name></member>
+  </compound>
+  <compound refid="classds_1_1_stack" kind="class"><name>ds::Stack</name>
+    <member refid="classds_1_1_stack_1a3a436623966dd4dcccd0aea883db73c4" kind="variable"><name>top_</name></member>
+    <member refid="classds_1_1_stack_1ac63eeada020909894b5bc5e6a51277c5" kind="variable"><name>sz_</name></member>
+    <member refid="classds_1_1_stack_1a72c71228fcf07010c45061d514ec3b8b" kind="function"><name>~Stack</name></member>
+    <member refid="classds_1_1_stack_1ab4a7ca4fc3ba1304565946fb584cff09" kind="function"><name>push</name></member>
+    <member refid="classds_1_1_stack_1a838bd932bf5696ad97c99756d4bed45f" kind="function"><name>empty</name></member>
+    <member refid="classds_1_1_stack_1aa51d9456a5513ee7fa7074a0065096f1" kind="function"><name>size</name></member>
+    <member refid="classds_1_1_stack_1ab51dcca6ef286f03d5520a7fa264ca86" kind="function"><name>top</name></member>
+    <member refid="classds_1_1_stack_1a28e85edcd47ae3f343be66afc8cdfb67" kind="function"><name>pop</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_stmt" kind="struct"><name>translator::Stmt</name>
+    <member refid="structtranslator_1_1_stmt_1a0707842a254ce67ff9c72cda98226ec7" kind="function"><name>~Stmt</name></member>
+    <member refid="structtranslator_1_1_stmt_1afb8f5d100524bc8cf234edae0ac57578" kind="function"><name>kind</name></member>
+  </compound>
+  <compound refid="classtranslator_1_1_symbol_table" kind="class"><name>translator::SymbolTable</name>
+    <member refid="classtranslator_1_1_symbol_table_1a66cace7834f5eb0eb9b31edd66a994fd" kind="variable"><name>table_</name></member>
+    <member refid="classtranslator_1_1_symbol_table_1ac8dee7076ef5eb32c01014489f8bace5" kind="function"><name>define</name></member>
+    <member refid="classtranslator_1_1_symbol_table_1a7e854ae1ff78c87a4ac95fed5047735b" kind="function"><name>assign</name></member>
+    <member refid="classtranslator_1_1_symbol_table_1ae1876c1c25f5dffb5eadccc190ad93f3" kind="function"><name>lookup</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_token" kind="struct"><name>translator::Token</name>
+    <member refid="structtranslator_1_1_token_1a36c889bc7ded337a56b399f92ae1fc2a" kind="variable"><name>type</name></member>
+    <member refid="structtranslator_1_1_token_1a462f6a4371b83edc64d5062861f9e5d2" kind="variable"><name>lexeme</name></member>
+    <member refid="structtranslator_1_1_token_1abb1cffe27ee8e34cfe2c7c37d72e1294" kind="variable"><name>line</name></member>
+  </compound>
+  <compound refid="structtranslator_1_1_variable_expr" kind="struct"><name>translator::VariableExpr</name>
+    <member refid="structtranslator_1_1_variable_expr_1a5291773d6a8af4ee3e3abfa8e212ab4d" kind="variable"><name>name</name></member>
+    <member refid="structtranslator_1_1_variable_expr_1a2f077bd3bb494bd04446225c1e7e3df3" kind="function"><name>VariableExpr</name></member>
+    <member refid="structtranslator_1_1_variable_expr_1a0dd6b31c1c5ac1801779da5eb115c95d" kind="function"><name>kind</name></member>
+  </compound>
+  <compound refid="classds_1_1_x_o_r_linked_list" kind="class"><name>ds::XORLinkedList</name>
+    <member refid="classds_1_1_x_o_r_linked_list_1af85d2ae57585cb42db59f56c04c054bd" kind="variable"><name>head_</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a95a97b23a09c589dd036b3d0806ca374" kind="variable"><name>tail_</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1aab74ca416607847b8782ec7212dbcdff" kind="variable"><name>size_</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1abf98b997a2880021132c67c3cae56bfb" kind="function"><name>XOR</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1aae796194f720e617116747e168453419" kind="function"><name>XORLinkedList</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1aaa43f3359722cb1e01e5ec973982fcee" kind="function"><name>~XORLinkedList</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1ac5e712263b5fe4ce9f487f8bf54452bd" kind="function"><name>XORLinkedList</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a37d39cef63d98f2f8171c7ea38723192" kind="function"><name>operator=</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a35cee59b1cca9f46777ae1376e0c4f02" kind="function"><name>clear</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a32bf5b35f5d1ebf1dd0ba36171be1b7b" kind="function"><name>size</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a1a310893e6c811a41a280958955292ec" kind="function"><name>empty</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a0e31879a97cd4ca5e4f3d33f43e773ec" kind="function"><name>push_back</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a8359f4aee2a942c557a35213f58a7b71" kind="function"><name>push_front</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a611686ef9b169694b3c1236cd68cfc82" kind="function"><name>pop_back</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a69b5b524d0a79c35e7324090124bda57" kind="function"><name>pop_front</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a804666e16c5c7a7e687b8d7d7c12e69e" kind="function"><name>for_each_forward</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a0d1a92c0f54b886c03e6c955f613daad" kind="function"><name>for_each_backward</name></member>
+    <member refid="classds_1_1_x_o_r_linked_list_1a0fc97e0767d2528236dcdf7e60d42de3" kind="function"><name>remove_first</name></member>
+  </compound>
+  <compound refid="namespaceds" kind="namespace"><name>ds</name>
+    <member refid="namespaceds_1ab8d36885b547ab0c7e429bd1d578a617" kind="enum"><name>SlotState</name></member>
+    <member refid="namespaceds_1ab8d36885b547ab0c7e429bd1d578a617ace2c8aed9c2fa0cfbed56cbda4d8bf07" kind="enumvalue"><name>Empty</name></member>
+    <member refid="namespaceds_1ab8d36885b547ab0c7e429bd1d578a617abbd86c81e760279d9731d5cac811ba50" kind="enumvalue"><name>Occupied</name></member>
+    <member refid="namespaceds_1ab8d36885b547ab0c7e429bd1d578a617a5fe6005bf6e415c950c011fb65f12b8f" kind="enumvalue"><name>Deleted</name></member>
+  </compound>
+  <compound refid="namespacetranslator" kind="namespace"><name>translator</name>
+    <member refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0" kind="enum"><name>ExprKind</name></member>
+    <member refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0ab2ee912b91d69b435159c7c3f6df7f5f" kind="enumvalue"><name>Number</name></member>
+    <member refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0a47c14840d8e15331fa420b9b2f757cd9" kind="enumvalue"><name>Variable</name></member>
+    <member refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0a6ce976e8f061b2b5cfe4d0c50c3405dd" kind="enumvalue"><name>Binary</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kind="enum"><name>StmtKind</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dacae6404c4aecf46684930fe2a86676a6" kind="enumvalue"><name>Let</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da13dba24862cf9128167a59100e154c8d" kind="enumvalue"><name>Print</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da324118a6721dd6b8a9b9f4e327df2bf5" kind="enumvalue"><name>Input</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3daae8fae3d74fdc80ef40995c3c6ca152e" kind="enumvalue"><name>Goto</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dabb4ff8fec829fa14d95445a6675e0f8c" kind="enumvalue"><name>IfGoto</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173" kind="enumvalue"><name>Gosub</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce" kind="enumvalue"><name>Return</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480" kind="enum"><name>TokenType</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a29ee5d1ebcc033234938a5234f1f2075" kind="enumvalue"><name>Identifier</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480ab2ee912b91d69b435159c7c3f6df7f5f" kind="enumvalue"><name>Number</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a27118326006d3829667a400ad23d5d98" kind="enumvalue"><name>String</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a90997b7f299d862f6bcbb1ac11d6cd24" kind="enumvalue"><name>KW_LET</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a4f1a5bb6f9136f5f9231ef51ed1db995" kind="enumvalue"><name>KW_PRINT</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a369d5563133c61595496807e8b3aa19d" kind="enumvalue"><name>KW_INPUT</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480aff705823708ecc4645c4220d09620ae9" kind="enumvalue"><name>KW_IF</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480aaad4a74ae5c704a58a3b563dc11d2fb8" kind="enumvalue"><name>KW_THEN</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a68a2ea2db0d1f282955130bb75c25172" kind="enumvalue"><name>KW_GOTO</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a97f42a58579d6cbe9b1c9eb0f0de750f" kind="enumvalue"><name>KW_FOR</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a221d6d4f9619e1cb8f5e563eb8c4e903" kind="enumvalue"><name>KW_TO</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a5b810bf9b287af6a80bc2756f5f650c8" kind="enumvalue"><name>KW_NEXT</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480aa83315e9d302480b6b4128b714921a1a" kind="enumvalue"><name>KW_GOSUB</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a3a387a428e7d6557200c4c5eea812c11" kind="enumvalue"><name>KW_RETURN</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a32ba78fe43257d3e7f88e3935a8ea0d4" kind="enumvalue"><name>Plus</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a453fb623e752c5993f65bc410fd74fe5" kind="enumvalue"><name>Minus</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a26f93e6e68e28a698377e941cb59f29a" kind="enumvalue"><name>Star</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a358cfe58715d680d9ab09f82e4010cbc" kind="enumvalue"><name>Slash</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a185b7133db22230701a857c059360cc2" kind="enumvalue"><name>Assign</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a876a9d4efdf66785e41cb452f0402c79" kind="enumvalue"><name>LParen</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480ad011e3feb19babda65e8951ff7189c0c" kind="enumvalue"><name>RParen</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a58be47db9455679e6a44df2eff9c9fa6" kind="enumvalue"><name>Comma</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a755fee300780823fcf4df98383331745" kind="enumvalue"><name>Newline</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a49650dcc55dc413da4032cbe44b15d37" kind="enumvalue"><name>Eof</name></member>
+    <member refid="namespacetranslator_1afb6980d157f0f87830df2b0f98548fee" kind="function"><name>build_cfg</name></member>
+    <member refid="namespacetranslator_1af6ff9e517addbbdbdc0246b11f7e8bae" kind="function"><name>emit_expr</name></member>
+    <member refid="namespacetranslator_1aff7945b4dbc7ff061dc31ce231c353d6" kind="function"><name>is_ident_start</name></member>
+    <member refid="namespacetranslator_1aff7e8ed0ea13ef191061e25e7ca6c3fe" kind="function"><name>is_ident_char</name></member>
+    <member refid="namespacetranslator_1a02908538e95cc8aad66aa4a96c6f3eb6" kind="function"><name>is_add_op</name></member>
+    <member refid="namespacetranslator_1a76ddf9f7d42d6da17b4c98e39cfa7ee5" kind="function"><name>is_mul_op</name></member>
+  </compound>
+  <compound refid="doubly__linked__list_8h" kind="file"><name>doubly_linked_list.h</name>
+  </compound>
+  <compound refid="graph_8h" kind="file"><name>graph.h</name>
+  </compound>
+  <compound refid="hash__table_8h" kind="file"><name>hash_table.h</name>
+    <member refid="namespaceds_1ab8d36885b547ab0c7e429bd1d578a617" kind="enum"><name>SlotState</name></member>
+    <member refid="namespaceds_1ab8d36885b547ab0c7e429bd1d578a617ace2c8aed9c2fa0cfbed56cbda4d8bf07" kind="enumvalue"><name>Empty</name></member>
+    <member refid="namespaceds_1ab8d36885b547ab0c7e429bd1d578a617abbd86c81e760279d9731d5cac811ba50" kind="enumvalue"><name>Occupied</name></member>
+    <member refid="namespaceds_1ab8d36885b547ab0c7e429bd1d578a617a5fe6005bf6e415c950c011fb65f12b8f" kind="enumvalue"><name>Deleted</name></member>
+  </compound>
+  <compound refid="heap_8h" kind="file"><name>heap.h</name>
+  </compound>
+  <compound refid="queue_8h" kind="file"><name>queue.h</name>
+  </compound>
+  <compound refid="sparse__matrix_8h" kind="file"><name>sparse_matrix.h</name>
+  </compound>
+  <compound refid="stack_8h" kind="file"><name>stack.h</name>
+  </compound>
+  <compound refid="xor__linked__list_8h" kind="file"><name>xor_linked_list.h</name>
   </compound>
   <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
-  <compound refid="common_types_8h" kind="file"><name>commonTypes.h</name>
+  <compound refid="ast_8h" kind="file"><name>ast.h</name>
+    <member refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0" kind="enum"><name>ExprKind</name></member>
+    <member refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0ab2ee912b91d69b435159c7c3f6df7f5f" kind="enumvalue"><name>Number</name></member>
+    <member refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0a47c14840d8e15331fa420b9b2f757cd9" kind="enumvalue"><name>Variable</name></member>
+    <member refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0a6ce976e8f061b2b5cfe4d0c50c3405dd" kind="enumvalue"><name>Binary</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kind="enum"><name>StmtKind</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dacae6404c4aecf46684930fe2a86676a6" kind="enumvalue"><name>Let</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da13dba24862cf9128167a59100e154c8d" kind="enumvalue"><name>Print</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da324118a6721dd6b8a9b9f4e327df2bf5" kind="enumvalue"><name>Input</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3daae8fae3d74fdc80ef40995c3c6ca152e" kind="enumvalue"><name>Goto</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dabb4ff8fec829fa14d95445a6675e0f8c" kind="enumvalue"><name>IfGoto</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173" kind="enumvalue"><name>Gosub</name></member>
+    <member refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce" kind="enumvalue"><name>Return</name></member>
   </compound>
-  <compound refid="math_utility_8h" kind="file"><name>mathUtility.h</name>
+  <compound refid="cfg_8h" kind="file"><name>cfg.h</name>
+    <member refid="namespacetranslator_1afb6980d157f0f87830df2b0f98548fee" kind="function"><name>build_cfg</name></member>
   </compound>
-  <compound refid="math_utility_8cpp" kind="file"><name>mathUtility.cpp</name>
+  <compound refid="codegen_8cpp" kind="file"><name>codegen.cpp</name>
+    <member refid="namespacetranslator_1af6ff9e517addbbdbdc0246b11f7e8bae" kind="function"><name>emit_expr</name></member>
+  </compound>
+  <compound refid="codegen_8h" kind="file"><name>codegen.h</name>
+  </compound>
+  <compound refid="lexer_8cpp" kind="file"><name>lexer.cpp</name>
+    <member refid="namespacetranslator_1aff7945b4dbc7ff061dc31ce231c353d6" kind="function"><name>is_ident_start</name></member>
+    <member refid="namespacetranslator_1aff7e8ed0ea13ef191061e25e7ca6c3fe" kind="function"><name>is_ident_char</name></member>
+  </compound>
+  <compound refid="lexer_8h" kind="file"><name>lexer.h</name>
+  </compound>
+  <compound refid="parser_8cpp" kind="file"><name>parser.cpp</name>
+    <member refid="namespacetranslator_1a02908538e95cc8aad66aa4a96c6f3eb6" kind="function"><name>is_add_op</name></member>
+    <member refid="namespacetranslator_1a76ddf9f7d42d6da17b4c98e39cfa7ee5" kind="function"><name>is_mul_op</name></member>
+  </compound>
+  <compound refid="parser_8h" kind="file"><name>parser.h</name>
+  </compound>
+  <compound refid="symbol__table_8h" kind="file"><name>symbol_table.h</name>
+  </compound>
+  <compound refid="token_8h" kind="file"><name>token.h</name>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480" kind="enum"><name>TokenType</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a29ee5d1ebcc033234938a5234f1f2075" kind="enumvalue"><name>Identifier</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480ab2ee912b91d69b435159c7c3f6df7f5f" kind="enumvalue"><name>Number</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a27118326006d3829667a400ad23d5d98" kind="enumvalue"><name>String</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a90997b7f299d862f6bcbb1ac11d6cd24" kind="enumvalue"><name>KW_LET</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a4f1a5bb6f9136f5f9231ef51ed1db995" kind="enumvalue"><name>KW_PRINT</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a369d5563133c61595496807e8b3aa19d" kind="enumvalue"><name>KW_INPUT</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480aff705823708ecc4645c4220d09620ae9" kind="enumvalue"><name>KW_IF</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480aaad4a74ae5c704a58a3b563dc11d2fb8" kind="enumvalue"><name>KW_THEN</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a68a2ea2db0d1f282955130bb75c25172" kind="enumvalue"><name>KW_GOTO</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a97f42a58579d6cbe9b1c9eb0f0de750f" kind="enumvalue"><name>KW_FOR</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a221d6d4f9619e1cb8f5e563eb8c4e903" kind="enumvalue"><name>KW_TO</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a5b810bf9b287af6a80bc2756f5f650c8" kind="enumvalue"><name>KW_NEXT</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480aa83315e9d302480b6b4128b714921a1a" kind="enumvalue"><name>KW_GOSUB</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a3a387a428e7d6557200c4c5eea812c11" kind="enumvalue"><name>KW_RETURN</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a32ba78fe43257d3e7f88e3935a8ea0d4" kind="enumvalue"><name>Plus</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a453fb623e752c5993f65bc410fd74fe5" kind="enumvalue"><name>Minus</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a26f93e6e68e28a698377e941cb59f29a" kind="enumvalue"><name>Star</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a358cfe58715d680d9ab09f82e4010cbc" kind="enumvalue"><name>Slash</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a185b7133db22230701a857c059360cc2" kind="enumvalue"><name>Assign</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a876a9d4efdf66785e41cb452f0402c79" kind="enumvalue"><name>LParen</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480ad011e3feb19babda65e8951ff7189c0c" kind="enumvalue"><name>RParen</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a58be47db9455679e6a44df2eff9c9fa6" kind="enumvalue"><name>Comma</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a755fee300780823fcf4df98383331745" kind="enumvalue"><name>Newline</name></member>
+    <member refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a49650dcc55dc413da4032cbe44b15d37" kind="enumvalue"><name>Eof</name></member>
   </compound>
   <compound refid="dir_b00da2fab6b604b485869b7d5702ce53" kind="dir"><name>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp</name>
   </compound>
   <compound refid="dir_87f260dbaa04f06c7d57423ba5ebac9d" kind="dir"><name>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure</name>
   </compound>
-  <compound refid="dir_5a03be7af79947cbea7bb1549f0caefe" kind="dir"><name>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/utility/header</name>
+  <compound refid="dir_141a24db7a49b5ceb8f7866020d800cc" kind="dir"><name>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds</name>
+  </compound>
+  <compound refid="dir_4dfc6c6bb4cb5cc6e762107be17038e6" kind="dir"><name>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include</name>
   </compound>
   <compound refid="dir_dfe968290d3b0ee03e08f374edd30ee3" kind="dir"><name>C:/Users/ahmet/OneDrive/Masaüstü</name>
   </compound>
   <compound refid="dir_235080e4fc6f8d1f814973dc40d3997a" kind="dir"><name>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src</name>
   </compound>
-  <compound refid="dir_ca7485108c3d5e39364ba42829e0c75a" kind="dir"><name>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/utility/src</name>
-  </compound>
-  <compound refid="dir_6f1e4e362ba3980e11270dc682882bb5" kind="dir"><name>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/utility</name>
+  <compound refid="dir_b83ed387cd3bb998e500a8fe99c544d9" kind="dir"><name>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator</name>
   </compound>
   <compound refid="indexpage" kind="page"><name>index</name>
   </compound>

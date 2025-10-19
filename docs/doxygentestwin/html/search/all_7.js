@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['can_20effect_20on_20wsl_0',['Can Effect on WSL',['../index.html#autotoc_md7',1,'Step-1 (Run on Windows, Can Effect on WSL)'],['../index.html#autotoc_md8',1,'Step-2 (Run on Windows, Can Effect on WSL)']]],
-  ['clean_20project_1',['Clean Project',['../index.html#autotoc_md15',1,'']]],
-  ['converter_2',['Install Test Results to HTML Converter',['../index.html#autotoc_md19',1,'']]],
-  ['coverage_20ratios_3',['Coverage Ratios',['../index.html#autotoc_md18',1,'Documentation Coverage Ratios'],['../index.html#autotoc_md17',1,'Test Coverage Ratios']]]
+  ['teardown_0',['TearDown',['../class_math_utility_test.html#a560c5797ed1c41f18332585712abc46e',1,'MathUtilityTest']]],
+  ['test_5ff_1',['TEST_F',['../utility__test_8cpp.html#a1a32a39867f3edfaa2b66659f6a5f56e',1,'TEST_F(MathUtilityTest, CalculateMean):&#160;utility_test.cpp'],['../utility__test_8cpp.html#a605cb3e19c672b332b4c1d7921a42b5b',1,'TEST_F(MathUtilityTest, CalculateMedianOdd):&#160;utility_test.cpp'],['../utility__test_8cpp.html#a1ad95925afbf048289b545eb09c30b07',1,'TEST_F(MathUtilityTest, CalculateMedianEven):&#160;utility_test.cpp'],['../utility__test_8cpp.html#af0df38eee307773917515593c89960fd',1,'TEST_F(MathUtilityTest, CompareDoubleLessTest):&#160;utility_test.cpp'],['../utility__test_8cpp.html#ad25e15111202b3f7f4e51d6f25cb5094',1,'TEST_F(MathUtilityTest, CompareDoubleGreaterTest):&#160;utility_test.cpp'],['../utility__test_8cpp.html#a66e890cc5d1a82f9a432efb5a64222d0',1,'TEST_F(MathUtilityTest, CompareDoubleEqualTest):&#160;utility_test.cpp'],['../utility__test_8cpp.html#afa0b74e33e6004da7134ebf0c6c93849',1,'TEST_F(MathUtilityTest, CalculateMinMaxTest_1):&#160;utility_test.cpp'],['../utility__test_8cpp.html#a75ca2c83dbb6c84cf11d97d45877aae1',1,'TEST_F(MathUtilityTest, CalculateMinMaxTest_2):&#160;utility_test.cpp']]],
+  ['translator_20c_2017_2',['BASIC Translator (C++17)',['../index.html',1,'']]]
 ];

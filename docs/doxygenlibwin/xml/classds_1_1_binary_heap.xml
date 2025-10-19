@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classds_1_1_binary_heap" kind="class" language="C++" prot="public">
+    <compoundname>ds::BinaryHeap</compoundname>
+    <includes refid="heap_8h" local="no">heap.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename Compare</type>
+        <defval>std::less&lt;T&gt;</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classds_1_1_binary_heap_1a47028623394d46a8b882eb07aa729f7b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; ds::BinaryHeap&lt; T, Compare &gt;::a_</definition>
+        <argsstring></argsstring>
+        <name>a_</name>
+        <qualifiedname>ds::BinaryHeap::a_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="9" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classds_1_1_binary_heap_1a10e019bc6948302123ecebd5ba1be449" prot="private" static="no" mutable="no">
+        <type>Compare</type>
+        <definition>Compare ds::BinaryHeap&lt; T, Compare &gt;::cmp_</definition>
+        <argsstring></argsstring>
+        <name>cmp_</name>
+        <qualifiedname>ds::BinaryHeap::cmp_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="10" column="13" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classds_1_1_binary_heap_1a5ae353f634f177f593dd2e488779333a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryHeap&lt; T, Compare &gt;::sift_up</definition>
+        <argsstring>(std::size_t i)</argsstring>
+        <name>sift_up</name>
+        <qualifiedname>ds::BinaryHeap::sift_up</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="11" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_heap_1a3ca481ab3ae4a8f14cd2ef734cb5463e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryHeap&lt; T, Compare &gt;::sift_down</definition>
+        <argsstring>(std::size_t i)</argsstring>
+        <name>sift_down</name>
+        <qualifiedname>ds::BinaryHeap::sift_down</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="14" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="14" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classds_1_1_binary_heap_1ad20587f5fd34a78c2c53f79a7a874c43" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ds::BinaryHeap&lt; T, Compare &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>ds::BinaryHeap::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="19" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_heap_1a7b5bce7c78ca6e621247c672d17c6d1f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t ds::BinaryHeap&lt; T, Compare &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>ds::BinaryHeap::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="20" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_heap_1ae4fd1d06e57589a7465609c8df10ad29" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; ds::BinaryHeap&lt; T, Compare &gt;::top</definition>
+        <argsstring>() const</argsstring>
+        <name>top</name>
+        <qualifiedname>ds::BinaryHeap::top</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="21" column="13" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_heap_1a97c2f6999ad6446c6833cb8f45185dea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryHeap&lt; T, Compare &gt;::push</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>push</name>
+        <qualifiedname>ds::BinaryHeap::push</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="22" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_heap_1ab8da6f06f1a9a012cf1c4c53f2a8cf6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryHeap&lt; T, Compare &gt;::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <qualifiedname>ds::BinaryHeap::pop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="23" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_heap_1ad7467e086392e18c40c5423283ca38f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; ds::BinaryHeap&lt; T, Compare &gt;::heap_sort_copy</definition>
+        <argsstring>() const</argsstring>
+        <name>heap_sort_copy</name>
+        <qualifiedname>ds::BinaryHeap::heap_sort_copy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="24" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ds::BinaryHeap&lt; T, Compare &gt;</label>
+        <link refid="classds_1_1_binary_heap"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="8" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="8" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classds_1_1_binary_heap_1a47028623394d46a8b882eb07aa729f7b" prot="private" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>a_</name></member>
+      <member refid="classds_1_1_binary_heap_1a10e019bc6948302123ecebd5ba1be449" prot="private" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>cmp_</name></member>
+      <member refid="classds_1_1_binary_heap_1ad20587f5fd34a78c2c53f79a7a874c43" prot="public" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>empty</name></member>
+      <member refid="classds_1_1_binary_heap_1ad7467e086392e18c40c5423283ca38f6" prot="public" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>heap_sort_copy</name></member>
+      <member refid="classds_1_1_binary_heap_1ab8da6f06f1a9a012cf1c4c53f2a8cf6d" prot="public" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>pop</name></member>
+      <member refid="classds_1_1_binary_heap_1a97c2f6999ad6446c6833cb8f45185dea" prot="public" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>push</name></member>
+      <member refid="classds_1_1_binary_heap_1a3ca481ab3ae4a8f14cd2ef734cb5463e" prot="private" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>sift_down</name></member>
+      <member refid="classds_1_1_binary_heap_1a5ae353f634f177f593dd2e488779333a" prot="private" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>sift_up</name></member>
+      <member refid="classds_1_1_binary_heap_1a7b5bce7c78ca6e621247c672d17c6d1f" prot="public" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>size</name></member>
+      <member refid="classds_1_1_binary_heap_1ae4fd1d06e57589a7465609c8df10ad29" prot="public" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>top</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

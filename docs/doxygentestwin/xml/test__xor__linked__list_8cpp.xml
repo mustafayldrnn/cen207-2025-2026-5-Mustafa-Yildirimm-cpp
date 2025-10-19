@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="test__xor__linked__list_8cpp" kind="file" language="C++">
+    <compoundname>test_xor_linked_list.cpp</compoundname>
+    <includes local="no">gtest/gtest.h</includes>
+    <includes local="yes">ds/xor_linked_list.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_xor_linked_list.cpp</label>
+        <link refid="test__xor__linked__list_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ds/xor_linked_list.h</label>
+      </node>
+      <node id="2">
+        <label>gtest/gtest.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__xor__linked__list_8cpp_1a4f428f97178e949d4665e0961d6e8c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(XORLinkedList, InsertDeleteNavigate)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>XORLinkedList</type>
+        </param>
+        <param>
+          <type>InsertDeleteNavigate</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_xor_linked_list.cpp" line="4" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_xor_linked_list.cpp" bodystart="4" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ds/xor_linked_list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="test__xor__linked__list_8cpp_1a4f428f97178e949d4665e0961d6e8c7d" refkind="member"><highlight class="normal"><ref refid="test__xor__linked__list_8cpp_1a4f428f97178e949d4665e0961d6e8c7d" kindref="member">TEST</ref>(XORLinkedList,<sp/>InsertDeleteNavigate){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::XORLinkedList&lt;int&gt;<sp/>xl;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>xl.push_back(1);<sp/>xl.push_back(2);<sp/>xl.push_front(0);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>forward[3];<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>xl.for_each_forward([&amp;](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v){<sp/>forward[i++]=v;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>});</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(forward[0],0);<sp/>EXPECT_EQ(forward[1],1);<sp/>EXPECT_EQ(forward[2],2);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>backward[3];<sp/>i=0;<sp/>xl.for_each_backward([&amp;](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v){<sp/>backward[i++]=v;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>});</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(backward[0],2);<sp/>EXPECT_EQ(backward[1],1);<sp/>EXPECT_EQ(backward[2],0);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(xl.remove_first(1));</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>after[2];<sp/>i=0;<sp/>xl.for_each_forward([&amp;](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v){<sp/>after[i++]=v;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>});</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(after[0],0);<sp/>EXPECT_EQ(after[1],2);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_xor_linked_list.cpp"/>
+  </compounddef>
+</doxygen>

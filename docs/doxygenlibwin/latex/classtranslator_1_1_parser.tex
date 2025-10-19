@@ -1,0 +1,141 @@
+\doxysection{translator\+::Parser Class Reference}
+\hypertarget{classtranslator_1_1_parser}{}\label{classtranslator_1_1_parser}\index{translator::Parser@{translator::Parser}}
+
+
+{\ttfamily \#include $<$parser.\+h$>$}
+
+
+
+Collaboration diagram for translator\+::Parser\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classtranslator_1_1_parser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtranslator_1_1_parser_a2e2390931ab80b865ac31eee1501c8ff}{Parser}} (std\+::vector$<$ \mbox{\hyperlink{structtranslator_1_1_token}{Token}} $>$ toks)
+\item 
+\mbox{\hyperlink{structtranslator_1_1_program}{Program}} \mbox{\hyperlink{classtranslator_1_1_parser_a119007cefb979b4071cd7313c0c31062}{parse\+Program}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{structtranslator_1_1_token}{Token}} \& \mbox{\hyperlink{classtranslator_1_1_parser_a01eed9fe50c7b02223c8aaf8140b4649}{peek}} () const
+\item 
+const \mbox{\hyperlink{structtranslator_1_1_token}{Token}} \& \mbox{\hyperlink{classtranslator_1_1_parser_a454ea6c16f64db09d8d2b9987e1e4833}{advance}} () const
+\item 
+bool \mbox{\hyperlink{classtranslator_1_1_parser_a5719d1927d26586fc770de412025bdbb}{match}} (\mbox{\hyperlink{namespacetranslator_a0eb119efce2d20d6019adb661cd4c480}{Token\+Type}} t) const
+\item 
+bool \mbox{\hyperlink{classtranslator_1_1_parser_ab2e3e753c664de21a74add33db1a5d26}{at\+\_\+eof}} () const
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ \mbox{\hyperlink{classtranslator_1_1_parser_afd6a7894691a68ec5743314fef3a7f75}{parse\+\_\+expression}} () const
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ \mbox{\hyperlink{classtranslator_1_1_parser_acfd7d04d3973badabd5a26214ed3c500}{parse\+\_\+term}} () const
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ \mbox{\hyperlink{classtranslator_1_1_parser_abb54531b779933acfd0c644dcd868b45}{parse\+\_\+factor}} () const
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}} $>$ \mbox{\hyperlink{classtranslator_1_1_parser_aec074fe4de2041a83946260a05780582}{parse\+\_\+statement}} (int \&out\+Label) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{structtranslator_1_1_token}{Token}} $>$ \mbox{\hyperlink{classtranslator_1_1_parser_a656fd7ad404746f72905ea7ca9c96130}{tokens\+\_\+}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classtranslator_1_1_parser_af5354c7d27d4189bd1f9c33c710b74ac}{pos\+\_\+}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classtranslator_1_1_parser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtranslator_1_1_parser_a2e2390931ab80b865ac31eee1501c8ff}\index{translator::Parser@{translator::Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_a2e2390931ab80b865ac31eee1501c8ff} 
+translator\+::\+Parser\+::\+Parser (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structtranslator_1_1_token}{Token}} $>$}]{toks}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classtranslator_1_1_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtranslator_1_1_parser_a454ea6c16f64db09d8d2b9987e1e4833}\index{translator::Parser@{translator::Parser}!advance@{advance}}
+\index{advance@{advance}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{advance()}{advance()}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_a454ea6c16f64db09d8d2b9987e1e4833} 
+const \mbox{\hyperlink{structtranslator_1_1_token}{Token}} \& translator\+::\+Parser\+::advance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtranslator_1_1_parser_ab2e3e753c664de21a74add33db1a5d26}\index{translator::Parser@{translator::Parser}!at\_eof@{at\_eof}}
+\index{at\_eof@{at\_eof}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{at\_eof()}{at\_eof()}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_ab2e3e753c664de21a74add33db1a5d26} 
+bool translator\+::\+Parser\+::at\+\_\+eof (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtranslator_1_1_parser_a5719d1927d26586fc770de412025bdbb}\index{translator::Parser@{translator::Parser}!match@{match}}
+\index{match@{match}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_a5719d1927d26586fc770de412025bdbb} 
+bool translator\+::\+Parser\+::match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetranslator_a0eb119efce2d20d6019adb661cd4c480}{Token\+Type}}}]{t}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtranslator_1_1_parser_afd6a7894691a68ec5743314fef3a7f75}\index{translator::Parser@{translator::Parser}!parse\_expression@{parse\_expression}}
+\index{parse\_expression@{parse\_expression}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{parse\_expression()}{parse\_expression()}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_afd6a7894691a68ec5743314fef3a7f75} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ translator\+::\+Parser\+::parse\+\_\+expression (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtranslator_1_1_parser_abb54531b779933acfd0c644dcd868b45}\index{translator::Parser@{translator::Parser}!parse\_factor@{parse\_factor}}
+\index{parse\_factor@{parse\_factor}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{parse\_factor()}{parse\_factor()}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_abb54531b779933acfd0c644dcd868b45} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ translator\+::\+Parser\+::parse\+\_\+factor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtranslator_1_1_parser_aec074fe4de2041a83946260a05780582}\index{translator::Parser@{translator::Parser}!parse\_statement@{parse\_statement}}
+\index{parse\_statement@{parse\_statement}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{parse\_statement()}{parse\_statement()}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_aec074fe4de2041a83946260a05780582} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}} $>$ translator\+::\+Parser\+::parse\+\_\+statement (\begin{DoxyParamCaption}\item[{int \&}]{out\+Label}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtranslator_1_1_parser_acfd7d04d3973badabd5a26214ed3c500}\index{translator::Parser@{translator::Parser}!parse\_term@{parse\_term}}
+\index{parse\_term@{parse\_term}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{parse\_term()}{parse\_term()}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_acfd7d04d3973badabd5a26214ed3c500} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ translator\+::\+Parser\+::parse\+\_\+term (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtranslator_1_1_parser_a119007cefb979b4071cd7313c0c31062}\index{translator::Parser@{translator::Parser}!parseProgram@{parseProgram}}
+\index{parseProgram@{parseProgram}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{parseProgram()}{parseProgram()}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_a119007cefb979b4071cd7313c0c31062} 
+\mbox{\hyperlink{structtranslator_1_1_program}{Program}} translator\+::\+Parser\+::parse\+Program (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classtranslator_1_1_parser_a01eed9fe50c7b02223c8aaf8140b4649}\index{translator::Parser@{translator::Parser}!peek@{peek}}
+\index{peek@{peek}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_a01eed9fe50c7b02223c8aaf8140b4649} 
+const \mbox{\hyperlink{structtranslator_1_1_token}{Token}} \& translator\+::\+Parser\+::peek (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classtranslator_1_1_parser_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtranslator_1_1_parser_af5354c7d27d4189bd1f9c33c710b74ac}\index{translator::Parser@{translator::Parser}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_af5354c7d27d4189bd1f9c33c710b74ac} 
+std\+::size\+\_\+t translator\+::\+Parser\+::pos\+\_\+ = 0\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+\Hypertarget{classtranslator_1_1_parser_a656fd7ad404746f72905ea7ca9c96130}\index{translator::Parser@{translator::Parser}!tokens\_@{tokens\_}}
+\index{tokens\_@{tokens\_}!translator::Parser@{translator::Parser}}
+\doxysubsubsection{\texorpdfstring{tokens\_}{tokens\_}}
+{\footnotesize\ttfamily \label{classtranslator_1_1_parser_a656fd7ad404746f72905ea7ca9c96130} 
+const std\+::vector$<$\mbox{\hyperlink{structtranslator_1_1_token}{Token}}$>$ translator\+::\+Parser\+::tokens\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/src/translator/\mbox{\hyperlink{parser_8h}{parser.\+h}}\item 
+C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/src/translator/\mbox{\hyperlink{parser_8cpp}{parser.\+cpp}}\end{DoxyCompactItemize}

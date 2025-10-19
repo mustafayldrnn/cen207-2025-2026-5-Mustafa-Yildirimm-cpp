@@ -1,0 +1,113 @@
+\doxysection{ds\+::Graph Class Reference}
+\hypertarget{classds_1_1_graph}{}\label{classds_1_1_graph}\index{ds::Graph@{ds::Graph}}
+
+
+{\ttfamily \#include $<$graph.\+h$>$}
+
+
+
+Collaboration diagram for ds\+::Graph\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{classds_1_1_graph__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classds_1_1_graph_a9fc7c0ff07b23eeb275f4447afd79048}{Graph}} (int n=0)
+\item 
+void \mbox{\hyperlink{classds_1_1_graph_ad0c233e6f3b8de9684a1cca850b85df5}{resize}} (int n)
+\item 
+void \mbox{\hyperlink{classds_1_1_graph_a4b3a3bd8e6f96b36937c4ba175820d95}{add\+\_\+edge}} (int u, int v, bool undirected=false)
+\item 
+const std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classds_1_1_graph_a620124fd977deaae01a68ae117eed5dd}{neighbors}} (int u) const
+\item 
+int \mbox{\hyperlink{classds_1_1_graph_ad0be55636f291082daabb61bf3d6c893}{size}} () const
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classds_1_1_graph_a4f65eeeb7663df3a2cf8c7d63430a22a}{bfs\+\_\+dist}} (int s) const
+\item 
+void \mbox{\hyperlink{classds_1_1_graph_a0a55bcdcd40f74a90298ec34f8446b4e}{dfs\+\_\+util}} (int u, std\+::vector$<$ int $>$ \&vis, std\+::vector$<$ int $>$ \&order) const
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classds_1_1_graph_abe1955e3d6f2d997b8ce8c279cd855bb}{dfs\+\_\+order}} (int s=0) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560}{adj\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classds_1_1_graph_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classds_1_1_graph_a9fc7c0ff07b23eeb275f4447afd79048}\index{ds::Graph@{ds::Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!ds::Graph@{ds::Graph}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily \label{classds_1_1_graph_a9fc7c0ff07b23eeb275f4447afd79048} 
+ds\+::\+Graph\+::\+Graph (\begin{DoxyParamCaption}\item[{int}]{n}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classds_1_1_graph_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classds_1_1_graph_a4b3a3bd8e6f96b36937c4ba175820d95}\index{ds::Graph@{ds::Graph}!add\_edge@{add\_edge}}
+\index{add\_edge@{add\_edge}!ds::Graph@{ds::Graph}}
+\doxysubsubsection{\texorpdfstring{add\_edge()}{add\_edge()}}
+{\footnotesize\ttfamily \label{classds_1_1_graph_a4b3a3bd8e6f96b36937c4ba175820d95} 
+void ds\+::\+Graph\+::add\+\_\+edge (\begin{DoxyParamCaption}\item[{int}]{u}{, }\item[{int}]{v}{, }\item[{bool}]{undirected}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_graph_a4f65eeeb7663df3a2cf8c7d63430a22a}\index{ds::Graph@{ds::Graph}!bfs\_dist@{bfs\_dist}}
+\index{bfs\_dist@{bfs\_dist}!ds::Graph@{ds::Graph}}
+\doxysubsubsection{\texorpdfstring{bfs\_dist()}{bfs\_dist()}}
+{\footnotesize\ttfamily \label{classds_1_1_graph_a4f65eeeb7663df3a2cf8c7d63430a22a} 
+std\+::vector$<$ int $>$ ds\+::\+Graph\+::bfs\+\_\+dist (\begin{DoxyParamCaption}\item[{int}]{s}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_graph_abe1955e3d6f2d997b8ce8c279cd855bb}\index{ds::Graph@{ds::Graph}!dfs\_order@{dfs\_order}}
+\index{dfs\_order@{dfs\_order}!ds::Graph@{ds::Graph}}
+\doxysubsubsection{\texorpdfstring{dfs\_order()}{dfs\_order()}}
+{\footnotesize\ttfamily \label{classds_1_1_graph_abe1955e3d6f2d997b8ce8c279cd855bb} 
+std\+::vector$<$ int $>$ ds\+::\+Graph\+::dfs\+\_\+order (\begin{DoxyParamCaption}\item[{int}]{s}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_graph_a0a55bcdcd40f74a90298ec34f8446b4e}\index{ds::Graph@{ds::Graph}!dfs\_util@{dfs\_util}}
+\index{dfs\_util@{dfs\_util}!ds::Graph@{ds::Graph}}
+\doxysubsubsection{\texorpdfstring{dfs\_util()}{dfs\_util()}}
+{\footnotesize\ttfamily \label{classds_1_1_graph_a0a55bcdcd40f74a90298ec34f8446b4e} 
+void ds\+::\+Graph\+::dfs\+\_\+util (\begin{DoxyParamCaption}\item[{int}]{u}{, }\item[{std\+::vector$<$ int $>$ \&}]{vis}{, }\item[{std\+::vector$<$ int $>$ \&}]{order}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_graph_a620124fd977deaae01a68ae117eed5dd}\index{ds::Graph@{ds::Graph}!neighbors@{neighbors}}
+\index{neighbors@{neighbors}!ds::Graph@{ds::Graph}}
+\doxysubsubsection{\texorpdfstring{neighbors()}{neighbors()}}
+{\footnotesize\ttfamily \label{classds_1_1_graph_a620124fd977deaae01a68ae117eed5dd} 
+const std\+::vector$<$ int $>$ \& ds\+::\+Graph\+::neighbors (\begin{DoxyParamCaption}\item[{int}]{u}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_graph_ad0c233e6f3b8de9684a1cca850b85df5}\index{ds::Graph@{ds::Graph}!resize@{resize}}
+\index{resize@{resize}!ds::Graph@{ds::Graph}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \label{classds_1_1_graph_ad0c233e6f3b8de9684a1cca850b85df5} 
+void ds\+::\+Graph\+::resize (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_graph_ad0be55636f291082daabb61bf3d6c893}\index{ds::Graph@{ds::Graph}!size@{size}}
+\index{size@{size}!ds::Graph@{ds::Graph}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classds_1_1_graph_ad0be55636f291082daabb61bf3d6c893} 
+int ds\+::\+Graph\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classds_1_1_graph_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560}\index{ds::Graph@{ds::Graph}!adj\_@{adj\_}}
+\index{adj\_@{adj\_}!ds::Graph@{ds::Graph}}
+\doxysubsubsection{\texorpdfstring{adj\_}{adj\_}}
+{\footnotesize\ttfamily \label{classds_1_1_graph_a30a376f3ad6e89e372c00d2142796560} 
+std\+::vector$<$std\+::vector$<$int$>$ $>$ ds\+::\+Graph\+::adj\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/include/ds/\mbox{\hyperlink{graph_8h}{graph.\+h}}\end{DoxyCompactItemize}

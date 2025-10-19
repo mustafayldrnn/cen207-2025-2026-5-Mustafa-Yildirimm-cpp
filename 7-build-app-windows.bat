@@ -80,18 +80,15 @@ call junit2html testResults_windows.xml testResults_windows.html
 call copy testResults_windows.html "..\docs\testresultswin\index.html"
 cd ..
 
-echo Generate Test Coverage Data for Utility
-call OpenCppCoverage.exe --export_type=binary:utility_tests_unit_win.cov --sources src\utility\src --sources src\utility\header --sources src\tests\utility -- build_win\build\Debug\utility_tests.exe
+echo Generate Test Coverage Data for unit_tests (translator project)
+call OpenCppCoverage.exe --export_type=binary:translator_tests_unit_win.cov --sources include --sources src\translator --sources tests -- build_win\tests\Debug\unit_tests.exe
 
-echo Generate Test Coverage Data for translate
-call OpenCppCoverage.exe --export_type=binary:translate_tests_unit_win.cov --sources src\translate\src --sources src\translate\header --sources src\tests\translate -- build_win\build\Debug\translate_tests.exe
-
-echo Generate Test Coverage Data for translate App and Combine Results
-call OpenCppCoverage.exe --input_coverage=utility_tests_unit_win.cov --input_coverage=translate_tests_unit_win.cov --export_type=cobertura:translateapp_unit_win_cobertura.xml --sources src\utility\src --sources src\utility\header --sources src\translate\src --sources src\translate\header --sources src\translateapp\src --sources src\translateapp\header --sources src\tests\utility --sources src\tests\translate -- build_win\build\Debug\translateapp.exe
+echo Export Cobertura Coverage from collected data
+call OpenCppCoverage.exe --input_coverage=translator_tests_unit_win.cov --export_type=cobertura:translateapp_unit_win_cobertura.xml --sources include --sources src\translator --sources tests -- build_win\tests\Debug\unit_tests.exe
 
 echo Generate Unit Test Coverage Report
-call reportgenerator "-title:translate Library Unit Test Coverage Report (Windows)" "-targetdir:docs/coveragereportlibwin" "-reporttypes:Html" "-reports:**/translateapp_unit_win_cobertura.xml" "-sourcedirs:src/utility/src;src/utility/header;src/translate/src;src/translate/header;src/translateapp/src;src/translateapp/header;src/tests/utility;src/tests/translate" "-filefilters:-*minkernel\*;-*gtest*;-*a\_work\*;-*gtest-*;-*gtest.cc;-*gtest.h;-*build*" "-historydir:report_test_hist_win"
-call reportgenerator "-targetdir:assets/codecoveragelibwin" "-reporttypes:Badges" "-reports:**/translateapp_unit_win_cobertura.xml" "-sourcedirs:src/utility/src;src/utility/header;src/translate/src;src/translate/header;src/translateapp/src;src/translateapp/header;src/tests/utility;src/tests/translate" "-filefilters:-*minkernel\*;-*gtest*;-*a\_work\*;-*gtest-*;-*gtest.cc;-*gtest.h;-*build*"
+call reportgenerator "-title:translate Library Unit Test Coverage Report (Windows)" "-targetdir:docs/coveragereportlibwin" "-reporttypes:Html" "-reports:**/translateapp_unit_win_cobertura.xml" "-sourcedirs:include;src/translator;tests" "-filefilters:-*minkernel\*;-*gtest*;-*a\_work\*;-*gtest-*;-*gtest.cc;-*gtest.h;-*build*" "-historydir:report_test_hist_win"
+call reportgenerator "-targetdir:assets/codecoveragelibwin" "-reporttypes:Badges" "-reports:**/translateapp_unit_win_cobertura.xml" "-sourcedirs:include;src/translator;tests" "-filefilters:-*minkernel\*;-*gtest*;-*a\_work\*;-*gtest-*;-*gtest.cc;-*gtest.h;-*build*"
 
 echo Copy the "assets" folder and its contents to "docs" recursively
 call robocopy assets "docs\assets" /E
@@ -123,16 +120,12 @@ echo Package Publish Windows Binaries
 tar -czvf release_win\windows-publish-binaries.tar.gz -C publish_win .
 
 echo Package Publish Windows Binaries
-call robocopy src\utility\header "build_win\build\Release" /E
-call robocopy src\translate\header "build_win\build\Release" /E
-call robocopy src\translateapp\header "build_win\build\Release" /E
-tar -czvf release_win\windows-release-binaries.tar.gz -C build_win\build\Release .
+call robocopy include "build_win\Release\include" /E
+tar -czvf release_win\windows-release-binaries.tar.gz -C build_win\Release .
 
 echo Package Publish Debug Windows Binaries
-call robocopy src\utility\header "build_win\build\Debug" /E
-call robocopy src\translate\header "build_win\build\Debug" /E
-call robocopy src\translateapp\header "build_win\build\Debug" /E
-tar -czvf release_win\windows-debug-binaries.tar.gz -C build_win\build\Debug .
+call robocopy include "build_win\Debug\include" /E
+tar -czvf release_win\windows-debug-binaries.tar.gz -C build_win\Debug .
 
 echo Package Publish Test Coverage Report
 tar -czvf release_win\windows-test-coverage-report.tar.gz -C docs\coveragereportlibwin .

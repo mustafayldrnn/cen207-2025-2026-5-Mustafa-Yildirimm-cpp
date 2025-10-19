@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['test_20and_20package_20application_20on_20windows_0',['Build, Test and Package Application on Windows',['../index.html#autotoc_md13',1,'']]],
-  ['test_20and_20package_20application_20on_20wsl_1',['Build, Test and Package Application on WSL',['../index.html#autotoc_md14',1,'']]],
-  ['test_20coverage_20ratios_2',['Test Coverage Ratios',['../index.html#autotoc_md17',1,'']]],
-  ['test_20results_20to_20html_20converter_3',['Install Test Results to HTML Converter',['../index.html#autotoc_md19',1,'']]],
-  ['to_20html_20converter_4',['Install Test Results to HTML Converter',['../index.html#autotoc_md19',1,'']]]
+  ['xor_0',['XOR',['../classds_1_1_x_o_r_linked_list.html#abf98b997a2880021132c67c3cae56bfb',1,'ds::XORLinkedList']]],
+  ['xor_5flinked_5flist_2eh_1',['xor_linked_list.h',['../xor__linked__list_8h.html',1,'']]],
+  ['xorlinkedlist_2',['XORLinkedList',['../classds_1_1_x_o_r_linked_list.html',1,'ds::XORLinkedList&lt; T &gt;'],['../classds_1_1_x_o_r_linked_list.html#aae796194f720e617116747e168453419',1,'ds::XORLinkedList::XORLinkedList()=default'],['../classds_1_1_x_o_r_linked_list.html#ac5e712263b5fe4ce9f487f8bf54452bd',1,'ds::XORLinkedList::XORLinkedList(const XORLinkedList &amp;)=delete']]]
 ];

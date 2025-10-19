@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="test__heap_8cpp" kind="file" language="C++">
+    <compoundname>test_heap.cpp</compoundname>
+    <includes local="no">gtest/gtest.h</includes>
+    <includes local="yes">ds/heap.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_heap.cpp</label>
+        <link refid="test__heap_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ds/heap.h</label>
+      </node>
+      <node id="2">
+        <label>gtest/gtest.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__heap_8cpp_1a08467fa2935a81ad6427c6c0928147e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(BinaryHeap, PushPopOrder)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>BinaryHeap</type>
+        </param>
+        <param>
+          <type>PushPopOrder</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_heap.cpp" line="4" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_heap.cpp" bodystart="4" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="test__heap_8cpp_1a8e9659c45df2039715e015ec0fd8da27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(BinaryHeap, HeapSort)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>BinaryHeap</type>
+        </param>
+        <param>
+          <type>HeapSort</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_heap.cpp" line="9" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_heap.cpp" bodystart="9" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ds/heap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="test__heap_8cpp_1a08467fa2935a81ad6427c6c0928147e5" refkind="member"><highlight class="normal"><ref refid="test__heap_8cpp_1a08467fa2935a81ad6427c6c0928147e5" kindref="member">TEST</ref>(BinaryHeap,<sp/>PushPopOrder){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::BinaryHeap&lt;int&gt;<sp/>h;<sp/>h.push(3);<sp/>h.push(1);<sp/>h.push(5);<sp/>h.push(2);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(h.top(),<sp/>5);<sp/>h.pop();<sp/>EXPECT_EQ(h.top(),<sp/>3);<sp/>h.pop();<sp/>EXPECT_EQ(h.top(),<sp/>2);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="test__heap_8cpp_1a8e9659c45df2039715e015ec0fd8da27" refkind="member"><highlight class="normal"><ref refid="test__heap_8cpp_1a08467fa2935a81ad6427c6c0928147e5" kindref="member">TEST</ref>(BinaryHeap,<sp/>HeapSort){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::BinaryHeap&lt;int&gt;<sp/>h;<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v:<sp/>{5,1,4,2,3})<sp/>h.push(v);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sorted<sp/>=<sp/>h.heap_sort_copy();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>max-heap,<sp/>heap_sort_copy<sp/>returns<sp/>descending</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_EQ(sorted.size(),<sp/>5u);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sorted[0],<sp/>5);<sp/>EXPECT_EQ(sorted[1],<sp/>4);<sp/>EXPECT_EQ(sorted[2],<sp/>3);<sp/>EXPECT_EQ(sorted[3],<sp/>2);<sp/>EXPECT_EQ(sorted[4],<sp/>1);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_heap.cpp"/>
+  </compounddef>
+</doxygen>

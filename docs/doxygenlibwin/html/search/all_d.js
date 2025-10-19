@@ -1,5 +1,13 @@
 var searchData=
 [
-  ['implemented_3a_0',['Data Structures Implemented:',['../index.html#autotoc_md3',1,'']]],
-  ['install_20test_20results_20to_20html_20converter_1',['Install Test Results to HTML Converter',['../index.html#autotoc_md19',1,'']]]
+  ['n_0',['n',['../structds_1_1_doubly_linked_list_1_1iterator.html#a3bacec3a931e9a28634e1790db443abb',1,'ds::DoublyLinkedList::iterator']]],
+  ['name_1',['name',['../structtranslator_1_1_variable_expr.html#a5291773d6a8af4ee3e3abfa8e212ab4d',1,'translator::VariableExpr::name'],['../structtranslator_1_1_let_stmt.html#a2e254e84e516bfab49d9956eec8caa6d',1,'translator::LetStmt::name'],['../structtranslator_1_1_input_stmt.html#afb169d343ee04be4f15a594fa28b4b0e',1,'translator::InputStmt::name']]],
+  ['neighbors_2',['neighbors',['../classds_1_1_graph.html#a620124fd977deaae01a68ae117eed5dd',1,'ds::Graph']]],
+  ['newline_3',['Newline',['../namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a755fee300780823fcf4df98383331745',1,'translator']]],
+  ['next_4',['next',['../structds_1_1_doubly_linked_list_1_1_node.html#a7ab466296c647e5fbdf5beac843e9008',1,'ds::DoublyLinkedList::Node::next'],['../structds_1_1_queue_1_1_node.html#a2c4e919f90cc715c851525a9acdf64d2',1,'ds::Queue::Node::next'],['../structds_1_1_stack_1_1_node.html#a612a173847b88c101b077a4dee540429',1,'ds::Stack::Node::next']]],
+  ['node_5',['Node',['../structds_1_1_doubly_linked_list_1_1_node.html',1,'ds::DoublyLinkedList&lt; T &gt;::Node'],['../structds_1_1_queue_1_1_node.html',1,'ds::Queue&lt; T &gt;::Node'],['../structds_1_1_stack_1_1_node.html',1,'ds::Stack&lt; T &gt;::Node'],['../structds_1_1_x_o_r_linked_list_1_1_node.html',1,'ds::XORLinkedList&lt; T &gt;::Node'],['../structds_1_1_doubly_linked_list_1_1_node.html#a05a753f1adb42b84be2842bfdbbbf51e',1,'ds::DoublyLinkedList::Node::Node()'],['../structds_1_1_queue_1_1_node.html#a8145d2462387db6dc7ed2b3aa97ee4b7',1,'ds::Queue::Node::Node()'],['../structds_1_1_stack_1_1_node.html#ad104a990356c1373194071e202980585',1,'ds::Stack::Node::Node()'],['../structds_1_1_x_o_r_linked_list_1_1_node.html#aeebc1a002126f2b73a6ece86e4a24495',1,'ds::XORLinkedList::Node::Node()']]],
+  ['nonzerocount_6',['nonZeroCount',['../classds_1_1_sparse_matrix.html#a36f4a3217c358111b4526fefef641585',1,'ds::SparseMatrix']]],
+  ['npx_7',['npx',['../structds_1_1_x_o_r_linked_list_1_1_node.html#abbe9121ffa153fdaaaf025090b8e7c39',1,'ds::XORLinkedList::Node']]],
+  ['number_8',['Number',['../namespacetranslator.html#a916392d25d1c3daa053abe2e1792a4a0ab2ee912b91d69b435159c7c3f6df7f5f',1,'translator::Number'],['../namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480ab2ee912b91d69b435159c7c3f6df7f5f',1,'translator::Number']]],
+  ['numberexpr_9',['NumberExpr',['../structtranslator_1_1_number_expr.html',1,'translator::NumberExpr'],['../structtranslator_1_1_number_expr.html#a1f3f3ffe225582173368a9fa08e9abb7',1,'translator::NumberExpr::NumberExpr()']]]
 ];

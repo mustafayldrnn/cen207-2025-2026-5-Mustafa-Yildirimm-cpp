@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="test__hash__table_8cpp" kind="file" language="C++">
+    <compoundname>test_hash_table.cpp</compoundname>
+    <includes local="no">gtest/gtest.h</includes>
+    <includes local="yes">ds/hash_table.h</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_hash_table.cpp</label>
+        <link refid="test__hash__table_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ds/hash_table.h</label>
+      </node>
+      <node id="2">
+        <label>gtest/gtest.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__hash__table_8cpp_1a5e435e6635fe896822884d80c8455e92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(HashTable, InsertFindErase)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>HashTable</type>
+        </param>
+        <param>
+          <type>InsertFindErase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_hash_table.cpp" line="5" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_hash_table.cpp" bodystart="5" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ds/hash_table.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="test__hash__table_8cpp_1a5e435e6635fe896822884d80c8455e92" refkind="member"><highlight class="normal"><ref refid="test__hash__table_8cpp_1a5e435e6635fe896822884d80c8455e92" kindref="member">TEST</ref>(HashTable,<sp/>InsertFindErase){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::HashTable&lt;std::string,int&gt;<sp/>ht(8);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(ht.insert(</highlight><highlight class="stringliteral">&quot;a&quot;</highlight><highlight class="normal">,1));</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(ht.insert(</highlight><highlight class="stringliteral">&quot;b&quot;</highlight><highlight class="normal">,2));</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(ht.insert(</highlight><highlight class="stringliteral">&quot;a&quot;</highlight><highlight class="normal">,3));<sp/></highlight><highlight class="comment">//<sp/>update</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>v<sp/>=<sp/>ht.find(</highlight><highlight class="stringliteral">&quot;a&quot;</highlight><highlight class="normal">);<sp/>ASSERT_NE(v,</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);<sp/>EXPECT_EQ(*v,3);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(ht.erase(</highlight><highlight class="stringliteral">&quot;a&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(ht.find(</highlight><highlight class="stringliteral">&quot;a&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_hash_table.cpp"/>
+  </compounddef>
+</doxygen>

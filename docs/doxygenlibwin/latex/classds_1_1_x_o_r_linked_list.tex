@@ -1,0 +1,213 @@
+\doxysection{ds\+::XORLinked\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classds_1_1_x_o_r_linked_list}{}\label{classds_1_1_x_o_r_linked_list}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+
+
+{\ttfamily \#include $<$xor\+\_\+linked\+\_\+list.\+h$>$}
+
+
+
+Collaboration diagram for ds\+::XORLinked\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classds_1_1_x_o_r_linked_list__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classds_1_1_x_o_r_linked_list_aae796194f720e617116747e168453419}{XORLinked\+List}} ()=default
+\item 
+\mbox{\hyperlink{classds_1_1_x_o_r_linked_list_aaa43f3359722cb1e01e5ec973982fcee}{\texorpdfstring{$\sim$}{\string~}\+XORLinked\+List}} ()
+\item 
+\mbox{\hyperlink{classds_1_1_x_o_r_linked_list_ac5e712263b5fe4ce9f487f8bf54452bd}{XORLinked\+List}} (const \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{XORLinked\+List}} \&)=delete
+\item 
+\mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{XORLinked\+List}} \& \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a37d39cef63d98f2f8171c7ea38723192}{operator=}} (const \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{XORLinked\+List}} \&)=delete
+\item 
+void \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a35cee59b1cca9f46777ae1376e0c4f02}{clear}} ()
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a32bf5b35f5d1ebf1dd0ba36171be1b7b}{size}} () const
+\item 
+bool \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a1a310893e6c811a41a280958955292ec}{empty}} () const
+\item 
+void \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a0e31879a97cd4ca5e4f3d33f43e773ec}{push\+\_\+back}} (const T \&v)
+\item 
+void \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a8359f4aee2a942c557a35213f58a7b71}{push\+\_\+front}} (const T \&v)
+\item 
+bool \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a611686ef9b169694b3c1236cd68cfc82}{pop\+\_\+back}} ()
+\item 
+bool \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a69b5b524d0a79c35e7324090124bda57}{pop\+\_\+front}} ()
+\item 
+{\footnotesize template$<$typename F$>$ }\\void \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a804666e16c5c7a7e687b8d7d7c12e69e}{for\+\_\+each\+\_\+forward}} (F cb) const
+\item 
+{\footnotesize template$<$typename F$>$ }\\void \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a0d1a92c0f54b886c03e6c955f613daad}{for\+\_\+each\+\_\+backward}} (F cb) const
+\item 
+bool \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a0fc97e0767d2528236dcdf7e60d42de3}{remove\+\_\+first}} (const T \&v)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_abf98b997a2880021132c67c3cae56bfb}{XOR}} (\mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*}a, \mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*}b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_af85d2ae57585cb42db59f56c04c054bd}{head\+\_\+}} = nullptr
+\item 
+\mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_a95a97b23a09c589dd036b3d0806ca374}{tail\+\_\+}} = nullptr
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_x_o_r_linked_list_aab74ca416607847b8782ec7212dbcdff}{size\+\_\+}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classds_1_1_x_o_r_linked_list_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classds_1_1_x_o_r_linked_list_aae796194f720e617116747e168453419}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!XORLinkedList@{XORLinkedList}}
+\index{XORLinkedList@{XORLinkedList}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{XORLinkedList()}{XORLinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_aae796194f720e617116747e168453419} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::\+XORLinked\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_aaa43f3359722cb1e01e5ec973982fcee}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!````~XORLinkedList@{\texorpdfstring{$\sim$}{\string~}XORLinkedList}}
+\index{````~XORLinkedList@{\texorpdfstring{$\sim$}{\string~}XORLinkedList}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}XORLinkedList()}{\string~XORLinkedList()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_aaa43f3359722cb1e01e5ec973982fcee} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{XORLinked\+List}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_ac5e712263b5fe4ce9f487f8bf54452bd}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!XORLinkedList@{XORLinkedList}}
+\index{XORLinkedList@{XORLinkedList}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{XORLinkedList()}{XORLinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_ac5e712263b5fe4ce9f487f8bf54452bd} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::\+XORLinked\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{XORLinked\+List}}$<$ T $>$ \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classds_1_1_x_o_r_linked_list_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classds_1_1_x_o_r_linked_list_a35cee59b1cca9f46777ae1376e0c4f02}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a35cee59b1cca9f46777ae1376e0c4f02} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_a1a310893e6c811a41a280958955292ec}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a1a310893e6c811a41a280958955292ec} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_a0d1a92c0f54b886c03e6c955f613daad}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!for\_each\_backward@{for\_each\_backward}}
+\index{for\_each\_backward@{for\_each\_backward}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{for\_each\_backward()}{for\_each\_backward()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a0d1a92c0f54b886c03e6c955f613daad} 
+template$<$typename T$>$ \\
+template$<$typename F$>$ \\
+void \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::for\+\_\+each\+\_\+backward (\begin{DoxyParamCaption}\item[{F}]{cb}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_a804666e16c5c7a7e687b8d7d7c12e69e}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!for\_each\_forward@{for\_each\_forward}}
+\index{for\_each\_forward@{for\_each\_forward}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{for\_each\_forward()}{for\_each\_forward()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a804666e16c5c7a7e687b8d7d7c12e69e} 
+template$<$typename T$>$ \\
+template$<$typename F$>$ \\
+void \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::for\+\_\+each\+\_\+forward (\begin{DoxyParamCaption}\item[{F}]{cb}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_a37d39cef63d98f2f8171c7ea38723192}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a37d39cef63d98f2f8171c7ea38723192} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{XORLinked\+List}} \& \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{XORLinked\+List}}$<$ T $>$ \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_a611686ef9b169694b3c1236cd68cfc82}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a611686ef9b169694b3c1236cd68cfc82} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_a69b5b524d0a79c35e7324090124bda57}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!pop\_front@{pop\_front}}
+\index{pop\_front@{pop\_front}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_front()}{pop\_front()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a69b5b524d0a79c35e7324090124bda57} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::pop\+\_\+front (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_a0e31879a97cd4ca5e4f3d33f43e773ec}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a0e31879a97cd4ca5e4f3d33f43e773ec} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_a8359f4aee2a942c557a35213f58a7b71}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!push\_front@{push\_front}}
+\index{push\_front@{push\_front}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_front()}{push\_front()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a8359f4aee2a942c557a35213f58a7b71} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{const T \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_a0fc97e0767d2528236dcdf7e60d42de3}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!remove\_first@{remove\_first}}
+\index{remove\_first@{remove\_first}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove\_first()}{remove\_first()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a0fc97e0767d2528236dcdf7e60d42de3} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::remove\+\_\+first (\begin{DoxyParamCaption}\item[{const T \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_a32bf5b35f5d1ebf1dd0ba36171be1b7b}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!size@{size}}
+\index{size@{size}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a32bf5b35f5d1ebf1dd0ba36171be1b7b} 
+template$<$typename T$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_abf98b997a2880021132c67c3cae56bfb}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!XOR@{XOR}}
+\index{XOR@{XOR}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{XOR()}{XOR()}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_abf98b997a2880021132c67c3cae56bfb} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::\+XOR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{\mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classds_1_1_x_o_r_linked_list_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classds_1_1_x_o_r_linked_list_af85d2ae57585cb42db59f56c04c054bd}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!head\_@{head\_}}
+\index{head\_@{head\_}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{head\_}{head\_}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_af85d2ae57585cb42db59f56c04c054bd} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::head\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_aab74ca416607847b8782ec7212dbcdff}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!size\_@{size\_}}
+\index{size\_@{size\_}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size\_}{size\_}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_aab74ca416607847b8782ec7212dbcdff} 
+template$<$typename T$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::size\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classds_1_1_x_o_r_linked_list_a95a97b23a09c589dd036b3d0806ca374}\index{ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}!tail\_@{tail\_}}
+\index{tail\_@{tail\_}!ds::XORLinkedList$<$ T $>$@{ds::XORLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{tail\_}{tail\_}}
+{\footnotesize\ttfamily \label{classds_1_1_x_o_r_linked_list_a95a97b23a09c589dd036b3d0806ca374} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{ds\+::\+XORLinked\+List}}$<$ T $>$\+::tail\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/include/ds/\mbox{\hyperlink{xor__linked__list_8h}{xor\+\_\+linked\+\_\+list.\+h}}\end{DoxyCompactItemize}

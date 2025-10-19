@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="symbol__table_8h" kind="file" language="C++">
+    <compoundname>symbol_table.h</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="hash__table_8h" local="yes">ds/hash_table.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>ds/hash_table.h</label>
+        <link refid="hash__table_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h</label>
+        <link refid="symbol__table_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>optional</label>
+      </node>
+      <node id="7">
+        <label>stdexcept</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classtranslator_1_1_symbol_table" prot="public">translator::SymbolTable</innerclass>
+    <innernamespace refid="namespacetranslator">translator</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="hash__table_8h" kindref="compound">ds/hash_table.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetranslator" kindref="compound">translator</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classtranslator_1_1_symbol_table" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtranslator_1_1_symbol_table" kindref="compound">SymbolTable</ref><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="classtranslator_1_1_symbol_table_1a66cace7834f5eb0eb9b31edd66a994fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classds_1_1_hash_table" kindref="compound">ds::HashTable&lt;std::string, double&gt;</ref><sp/><ref refid="classtranslator_1_1_symbol_table_1a66cace7834f5eb0eb9b31edd66a994fd" kindref="member">table_</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10" refid="classtranslator_1_1_symbol_table_1ac8dee7076ef5eb32c01014489f8bace5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_symbol_table_1ac8dee7076ef5eb32c01014489f8bace5" kindref="member">define</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_symbol_table_1a66cace7834f5eb0eb9b31edd66a994fd" kindref="member">table_</ref>.insert(name,<sp/>value);<sp/>}</highlight></codeline>
+<codeline lineno="11" refid="classtranslator_1_1_symbol_table_1a7e854ae1ff78c87a4ac95fed5047735b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_symbol_table_1a7e854ae1ff78c87a4ac95fed5047735b" kindref="member">assign</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_symbol_table_1a66cace7834f5eb0eb9b31edd66a994fd" kindref="member">table_</ref>.insert(name,<sp/>value);<sp/>}</highlight></codeline>
+<codeline lineno="12" refid="classtranslator_1_1_symbol_table_1ae1876c1c25f5dffb5eadccc190ad93f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="classtranslator_1_1_symbol_table_1ae1876c1c25f5dffb5eadccc190ad93f3" kindref="member">lookup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_symbol_table_1a66cace7834f5eb0eb9b31edd66a994fd" kindref="member">table_</ref>.find(name);<sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>translator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h"/>
+  </compounddef>
+</doxygen>

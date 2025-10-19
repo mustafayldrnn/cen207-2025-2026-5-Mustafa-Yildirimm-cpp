@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="test__lexer__parser__codegen_8cpp" kind="file" language="C++">
+    <compoundname>test_lexer_parser_codegen.cpp</compoundname>
+    <includes local="no">gtest/gtest.h</includes>
+    <includes local="yes">translator/lexer.h</includes>
+    <includes local="yes">translator/parser.h</includes>
+    <includes local="yes">translator/codegen.h</includes>
+    <includes local="yes">translator/cfg.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_lexer_parser_codegen.cpp</label>
+        <link refid="test__lexer__parser__codegen_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gtest/gtest.h</label>
+      </node>
+      <node id="6">
+        <label>translator/cfg.h</label>
+      </node>
+      <node id="5">
+        <label>translator/codegen.h</label>
+      </node>
+      <node id="3">
+        <label>translator/lexer.h</label>
+      </node>
+      <node id="4">
+        <label>translator/parser.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__lexer__parser__codegen_8cpp_1adf30c99a234f3dc66c477bb34f44466d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(LexerParser, BasicProgramParse)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>LexerParser</type>
+        </param>
+        <param>
+          <type>BasicProgramParse</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_lexer_parser_codegen.cpp" line="7" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_lexer_parser_codegen.cpp" bodystart="7" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="test__lexer__parser__codegen_8cpp_1a2db3c295f5f7cc3059ada17fe2e34689" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Codegen, EmitsCPP)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Codegen</type>
+        </param>
+        <param>
+          <type>EmitsCPP</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_lexer_parser_codegen.cpp" line="24" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_lexer_parser_codegen.cpp" bodystart="24" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;translator/lexer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;translator/parser.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;translator/codegen.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;translator/cfg.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="test__lexer__parser__codegen_8cpp_1adf30c99a234f3dc66c477bb34f44466d" refkind="member"><highlight class="normal"><ref refid="test__lexer__parser__codegen_8cpp_1adf30c99a234f3dc66c477bb34f44466d" kindref="member">TEST</ref>(LexerParser,<sp/>BasicProgramParse){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/>R</highlight><highlight class="stringliteral">&quot;(10<sp/>LET<sp/>X<sp/>=<sp/>1<sp/>+<sp/>2</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral">20<sp/>PRINT<sp/>X</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral">30<sp/>IF<sp/>X<sp/>THEN<sp/>50</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral">40<sp/>GOTO<sp/>60</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral">50<sp/>GOSUB<sp/>70</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral">60<sp/>RETURN</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral">70<sp/>PRINT<sp/>X</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral">)&quot;;</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>translator::Lexer<sp/>lx(src);</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>toks<sp/>=<sp/>lx.tokenize();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>translator::Parser<sp/>ps(std::move(toks));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>prog<sp/>=<sp/>ps.parseProgram();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_EQ(prog.stmts.size(),<sp/>7u);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_EQ(prog.labels.front(),<sp/>10);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_EQ(prog.labels.back(),<sp/>70);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="test__lexer__parser__codegen_8cpp_1a2db3c295f5f7cc3059ada17fe2e34689" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CFG<sp/>build<sp/>and<sp/>reachability</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cfg<sp/>=<sp/>translator::build_cfg(prog);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dist<sp/>=<sp/>cfg.g.bfs_dist(0);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ensure<sp/>start<sp/>is<sp/>reachable<sp/>and<sp/>some<sp/>edges<sp/>exist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(dist[0],<sp/>0);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="test__lexer__parser__codegen_8cpp_1adf30c99a234f3dc66c477bb34f44466d" kindref="member">TEST</ref>(Codegen,<sp/>EmitsCPP){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/>R</highlight><highlight class="stringliteral">&quot;(10<sp/>LET<sp/>X<sp/>=<sp/>1<sp/>+<sp/>2<sp/>*<sp/>3</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral">20<sp/>PRINT<sp/>X</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral">)&quot;;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>translator::Lexer<sp/>lx(src);</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>toks<sp/>=<sp/>lx.tokenize();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>translator::Parser<sp/>ps(std::move(toks));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>prog<sp/>=<sp/>ps.parseProgram();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>code<sp/>=<sp/>translator::Codegen::emit_cpp(prog);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Basic<sp/>sanity<sp/>checks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(code.find(</highlight><highlight class="stringliteral">&quot;#include<sp/>&lt;iostream&gt;&quot;</highlight><highlight class="normal">),<sp/>std::string::npos);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(code.find(</highlight><highlight class="stringliteral">&quot;int<sp/>main()&quot;</highlight><highlight class="normal">),<sp/>std::string::npos);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(code.find(</highlight><highlight class="stringliteral">&quot;var[\&quot;X\&quot;]<sp/>=<sp/>(1<sp/>+<sp/>(2<sp/>*<sp/>3))&quot;</highlight><highlight class="normal">),<sp/>std::string::npos);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(code.find(</highlight><highlight class="stringliteral">&quot;std::cout<sp/>&lt;&lt;<sp/>var[\&quot;X\&quot;]<sp/>&lt;&lt;<sp/>std::endl;&quot;</highlight><highlight class="normal">),<sp/>std::string::npos);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_lexer_parser_codegen.cpp"/>
+  </compounddef>
+</doxygen>

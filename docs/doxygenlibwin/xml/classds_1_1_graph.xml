@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classds_1_1_graph" kind="class" language="C++" prot="public">
+    <compoundname>ds::Graph</compoundname>
+    <includes refid="graph_8h" local="no">graph.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classds_1_1_graph_1a30a376f3ad6e89e372c00d2142796560" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; ds::Graph::adj_</definition>
+        <argsstring></argsstring>
+        <name>adj_</name>
+        <qualifiedname>ds::Graph::adj_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" line="8" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classds_1_1_graph_1a9fc7c0ff07b23eeb275f4447afd79048" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ds::Graph::Graph</definition>
+        <argsstring>(int n=0)</argsstring>
+        <name>Graph</name>
+        <qualifiedname>ds::Graph::Graph</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" line="10" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_graph_1ad0c233e6f3b8de9684a1cca850b85df5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::Graph::resize</definition>
+        <argsstring>(int n)</argsstring>
+        <name>resize</name>
+        <qualifiedname>ds::Graph::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" line="11" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_graph_1a4b3a3bd8e6f96b36937c4ba175820d95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::Graph::add_edge</definition>
+        <argsstring>(int u, int v, bool undirected=false)</argsstring>
+        <name>add_edge</name>
+        <qualifiedname>ds::Graph::add_edge</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>undirected</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" line="12" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_graph_1a620124fd977deaae01a68ae117eed5dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; int &gt; &amp;</type>
+        <definition>const std::vector&lt; int &gt; &amp; ds::Graph::neighbors</definition>
+        <argsstring>(int u) const</argsstring>
+        <name>neighbors</name>
+        <qualifiedname>ds::Graph::neighbors</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" line="13" column="23" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_graph_1ad0be55636f291082daabb61bf3d6c893" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ds::Graph::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>ds::Graph::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" line="14" column="9" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_graph_1a4f65eeeb7663df3a2cf8c7d63430a22a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; ds::Graph::bfs_dist</definition>
+        <argsstring>(int s) const</argsstring>
+        <name>bfs_dist</name>
+        <qualifiedname>ds::Graph::bfs_dist</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" line="16" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_graph_1a0a55bcdcd40f74a90298ec34f8446b4e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::Graph::dfs_util</definition>
+        <argsstring>(int u, std::vector&lt; int &gt; &amp;vis, std::vector&lt; int &gt; &amp;order) const</argsstring>
+        <name>dfs_util</name>
+        <qualifiedname>ds::Graph::dfs_util</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>vis</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" line="22" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_graph_1abe1955e3d6f2d997b8ce8c279cd855bb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; ds::Graph::dfs_order</definition>
+        <argsstring>(int s=0) const</argsstring>
+        <name>dfs_order</name>
+        <qualifiedname>ds::Graph::dfs_order</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" line="25" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ds::Graph</label>
+        <link refid="classds_1_1_graph"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" line="7" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h" bodystart="7" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classds_1_1_graph_1a4b3a3bd8e6f96b36937c4ba175820d95" prot="public" virt="non-virtual"><scope>ds::Graph</scope><name>add_edge</name></member>
+      <member refid="classds_1_1_graph_1a30a376f3ad6e89e372c00d2142796560" prot="private" virt="non-virtual"><scope>ds::Graph</scope><name>adj_</name></member>
+      <member refid="classds_1_1_graph_1a4f65eeeb7663df3a2cf8c7d63430a22a" prot="public" virt="non-virtual"><scope>ds::Graph</scope><name>bfs_dist</name></member>
+      <member refid="classds_1_1_graph_1abe1955e3d6f2d997b8ce8c279cd855bb" prot="public" virt="non-virtual"><scope>ds::Graph</scope><name>dfs_order</name></member>
+      <member refid="classds_1_1_graph_1a0a55bcdcd40f74a90298ec34f8446b4e" prot="public" virt="non-virtual"><scope>ds::Graph</scope><name>dfs_util</name></member>
+      <member refid="classds_1_1_graph_1a9fc7c0ff07b23eeb275f4447afd79048" prot="public" virt="non-virtual"><scope>ds::Graph</scope><name>Graph</name></member>
+      <member refid="classds_1_1_graph_1a620124fd977deaae01a68ae117eed5dd" prot="public" virt="non-virtual"><scope>ds::Graph</scope><name>neighbors</name></member>
+      <member refid="classds_1_1_graph_1ad0c233e6f3b8de9684a1cca850b85df5" prot="public" virt="non-virtual"><scope>ds::Graph</scope><name>resize</name></member>
+      <member refid="classds_1_1_graph_1ad0be55636f291082daabb61bf3d6c893" prot="public" virt="non-virtual"><scope>ds::Graph</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
