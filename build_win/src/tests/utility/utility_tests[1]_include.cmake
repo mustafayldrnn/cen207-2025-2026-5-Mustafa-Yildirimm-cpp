@@ -1,5 +1,0 @@
-if(EXISTS "C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/src/tests/utility/utility_tests[1]_tests.cmake")
-  include("C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/src/tests/utility/utility_tests[1]_tests.cmake")
-else()
-  add_test(utility_tests_NOT_BUILT utility_tests_NOT_BUILT)
-endif()
