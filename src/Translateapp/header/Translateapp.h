@@ -1,6 +1,6 @@
 /**
  * @file Translateapp.h
- * @brief Basic Language Translator Application header file
+ * @brief BASIC to C++ Translator Application header file
  *
  */
 
@@ -8,6 +8,7 @@
 #define TRANSLATE_APP_H
 
 #include <string>
+#include <vector>
 
 namespace Coruh
 {
@@ -15,7 +16,7 @@ namespace Coruh
     {
         /**
             @class TranslateApp
-            @brief Basic Language Translator application main class
+            @brief BASIC to C++ Translator application main class
         */
         class TranslateApp
         {
@@ -31,39 +32,47 @@ namespace Coruh
             static void showMenu();
             
             /**
-             * Performs translation operation
-             * @param sourceLanguage Source language code
-             * @param targetLanguage Target language code
-             * @param word Word to translate
+             * Translates BASIC code to C++
+             * @param basicCode BASIC code to translate
+             * @return Translated C++ code
              */
-            static void performTranslation(const std::string& sourceLanguage, 
-                                        const std::string& targetLanguage, 
-                                        const std::string& word);
+            static std::string translateBasicToCpp(const std::string& basicCode);
             
             /**
-             * Lists all translations for a language pair
-             * @param sourceLanguage Source language code
-             * @param targetLanguage Target language code
+             * Loads BASIC code from file
+             * @param filename File path
+             * @return BASIC code content
              */
-            static void listTranslations(const std::string& sourceLanguage, 
-                                       const std::string& targetLanguage);
+            static std::string loadBasicFile(const std::string& filename);
             
             /**
-             * Adds a new translation
+             * Saves C++ code to file
+             * @param filename File path
+             * @param cppCode C++ code to save
              */
-            static void addNewTranslation();
+            static void saveCppFile(const std::string& filename, const std::string& cppCode);
             
             /**
-             * Shows supported languages
+             * Shows example BASIC programs
              */
-            static void showSupportedLanguages();
+            static void showExamples();
             
             /**
-             * Shows language selection menu
-             * @param isSource true for source language, false for target
-             * @return Selected language code
+             * Interactive BASIC code editor
              */
-            static std::string selectLanguage(bool isSource);
+            static void interactiveEditor();
+            
+            /**
+             * Validates BASIC syntax
+             * @param basicCode BASIC code to validate
+             * @return True if syntax is valid
+             */
+            static bool validateBasicSyntax(const std::string& basicCode);
+            
+            /**
+             * Shows supported BASIC commands
+             */
+            static void showSupportedCommands();
         };
     }
 }

@@ -1,0 +1,639 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s6\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs12\cgrid \sbasedon0 \snext0 heading 6;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\*\listtable
+{\list\listtemplateid1
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8662 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid1}
+{\list\listtemplateid2
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid2}
+{\list\listtemplateid3
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid3}
+}
+{\listoverridetable
+{\listoverride\listid1\listoverridecount0\ls1}
+{\listoverride\listid2\listoverridecount0\ls2}
+{\listoverride\listid3\listoverridecount0\ls3}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+test_overflow_protection.cpp\par \pard\plain 
+{\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_overflow_protection.cpp}
+{\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_overflow_protection.cpp}
+{\bkmkstart AAAAAAAADZ}
+{\bkmkend AAAAAAAADZ}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEB" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAHK}{\bkmkend AAAAAAAAHK}
+00001 \par
+{\bkmkstart AAAAAAAAHT}{\bkmkend AAAAAAAAHT}
+00008 \par
+{\bkmkstart AAAAAAAAHU}{\bkmkend AAAAAAAAHU}
+00009 {\cf21 #include <gtest/gtest.h>}\par
+{\bkmkstart AAAAAAAAJC}{\bkmkend AAAAAAAAJC}
+00010 {\cf21 #include <chrono>}\par
+{\bkmkstart AAAAAAAANN}{\bkmkend AAAAAAAANN}
+00011 {\cf21 #include <limits>}\par
+{\bkmkstart AAAAAAAAQQ}{\bkmkend AAAAAAAAQQ}
+00012 {\cf21 #include <iostream>}\par
+{\bkmkstart AAAAAAAASW}{\bkmkend AAAAAAAASW}
+00013 \par
+{\bkmkstart AAAAAAAASX}{\bkmkend AAAAAAAASX}
+00014 {\cf17 namespace }\{\par
+{\bkmkstart AAAAAAAASY}{\bkmkend AAAAAAAASY}
+00015 \par
+{\bkmkstart AAAAAAAATB}{\bkmkend AAAAAAAATB}
+00020 {\cf17 class }OverflowProtectionTest : {\cf17 public} ::testing::Test \{\par
+{\bkmkstart AAAAAAAATG}{\bkmkend AAAAAAAATG}
+00021 {\cf17 protected}:\par
+{\bkmkstart AAAAAAAATJ}{\bkmkend AAAAAAAATJ}
+00022     {\cf18 void} SetUp(){\cf17  override }\{\par
+{\bkmkstart AAAAAAAATM}{\bkmkend AAAAAAAATM}
+00023         {\cf20 // Setup for each test}\par
+{\bkmkstart AAAAAAAATN}{\bkmkend AAAAAAAATN}
+00024     \}\par
+{\bkmkstart AAAAAAAATP}{\bkmkend AAAAAAAATP}
+00025     \par
+{\bkmkstart AAAAAAAATR}{\bkmkend AAAAAAAATR}
+00026     {\cf18 void} TearDown(){\cf17  override }\{\par
+{\bkmkstart AAAAAAAATT}{\bkmkend AAAAAAAATT}
+00027         {\cf20 // Cleanup after each test}\par
+{\bkmkstart AAAAAAAATV}{\bkmkend AAAAAAAATV}
+00028     \}\par
+{\bkmkstart AAAAAAAATW}{\bkmkend AAAAAAAATW}
+00029 \};\par
+{\bkmkstart AAAAAAAAUC}{\bkmkend AAAAAAAAUC}
+00030 \par
+{\bkmkstart AAAAAAAAUD}{\bkmkend AAAAAAAAUD}
+00035 TEST_F(OverflowProtectionTest, TestSafeMultiplication) \{\par
+{\bkmkstart AAAAAAAAUF}{\bkmkend AAAAAAAAUF}
+00036     {\cf20 // Test safe multiplication algorithm similar to _Whole and _Part}\par
+{\bkmkstart AAAAAAAAUG}{\bkmkend AAAAAAAAUG}
+00037     {\cf17 auto} safeMultiply = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} multiplier, {\cf18 long} {\cf18 long} divisor) -> {\cf18 long} {\cf18 long} \{\par
+{\bkmkstart AAAAAAAAUJ}{\bkmkend AAAAAAAAUJ}
+00038         {\cf20 // Prevent overflow by splitting the calculation}\par
+{\bkmkstart AAAAAAAAUL}{\bkmkend AAAAAAAAUL}
+00039         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / divisor) * multiplier;\par
+{\bkmkstart AAAAAAAAUO}{\bkmkend AAAAAAAAUO}
+00040         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % divisor) * multiplier / divisor;\par
+{\bkmkstart AAAAAAAAUR}{\bkmkend AAAAAAAAUR}
+00041         {\cf19 return} whole + part;\par
+{\bkmkstart AAAAAAAAUV}{\bkmkend AAAAAAAAUV}
+00042     \};\par
+{\bkmkstart AAAAAAAAUY}{\bkmkend AAAAAAAAUY}
+00043     \par
+{\bkmkstart AAAAAAAAUZ}{\bkmkend AAAAAAAAUZ}
+00044     {\cf20 // Test with large values that could cause overflow}\par
+{\bkmkstart AAAAAAAAVA}{\bkmkend AAAAAAAAVA}
+00045     {\cf17 const} {\cf18 long} {\cf18 long} largeCounter = std::numeric_limits<long long>::max() / 2;\par
+{\bkmkstart AAAAAAAAVW}{\bkmkend AAAAAAAAVW}
+00046     {\cf17 const} {\cf18 long} {\cf18 long} multiplier = 1000000;\par
+{\bkmkstart AAAAAAAAVZ}{\bkmkend AAAAAAAAVZ}
+00047     {\cf17 const} {\cf18 long} {\cf18 long} divisor = 1000000;\par
+{\bkmkstart AAAAAAAAWB}{\bkmkend AAAAAAAAWB}
+00048     \par
+{\bkmkstart AAAAAAAAWD}{\bkmkend AAAAAAAAWD}
+00049     {\cf20 // This should not overflow with safe algorithm}\par
+{\bkmkstart AAAAAAAAWE}{\bkmkend AAAAAAAAWE}
+00050     {\cf18 long} {\cf18 long} result = safeMultiply(largeCounter, multiplier, divisor);\par
+{\bkmkstart AAAAAAAAWG}{\bkmkend AAAAAAAAWG}
+00051     EXPECT_GT(result, 0);\par
+{\bkmkstart AAAAAAAAWH}{\bkmkend AAAAAAAAWH}
+00052     \par
+{\bkmkstart AAAAAAAAWI}{\bkmkend AAAAAAAAWI}
+00053     {\cf20 // Test edge cases}\par
+{\bkmkstart AAAAAAAAWJ}{\bkmkend AAAAAAAAWJ}
+00054     EXPECT_EQ(safeMultiply(0, multiplier, divisor), 0);\par
+{\bkmkstart AAAAAAAAWN}{\bkmkend AAAAAAAAWN}
+00055     EXPECT_EQ(safeMultiply(divisor, multiplier, divisor), multiplier);\par
+{\bkmkstart AAAAAAAAWT}{\bkmkend AAAAAAAAWT}
+00056 \}\par
+{\bkmkstart AAAAAAAAWU}{\bkmkend AAAAAAAAWU}
+00057 \par
+{\bkmkstart AAAAAAAAWW}{\bkmkend AAAAAAAAWW}
+00062 TEST_F(OverflowProtectionTest, TestOverflowDetection) \{\par
+{\bkmkstart AAAAAAAAWX}{\bkmkend AAAAAAAAWX}
+00063     {\cf20 // Test overflow detection}\par
+{\bkmkstart AAAAAAAAWY}{\bkmkend AAAAAAAAWY}
+00064     {\cf17 auto} detectOverflow = []({\cf18 long} {\cf18 long} a, {\cf18 long} {\cf18 long} b) -> {\cf18 bool} \{\par
+{\bkmkstart AAAAAAAAXA}{\bkmkend AAAAAAAAXA}
+00065         {\cf20 // Check if multiplication would overflow}\par
+{\bkmkstart AAAAAAAAXC}{\bkmkend AAAAAAAAXC}
+00066         {\cf19 if} (a > 0 && b > 0) \{\par
+{\bkmkstart AAAAAAAAXG}{\bkmkend AAAAAAAAXG}
+00067             {\cf19 return} a > std::numeric_limits<long long>::max() / b;\par
+{\bkmkstart AAAAAAAAXT}{\bkmkend AAAAAAAAXT}
+00068         \} {\cf19 else} {\cf19 if} (a < 0 && b < 0) \{\par
+{\bkmkstart AAAAAAAAXX}{\bkmkend AAAAAAAAXX}
+00069             {\cf19 return} a < std::numeric_limits<long long>::max() / b;\par
+{\bkmkstart AAAAAAAAYD}{\bkmkend AAAAAAAAYD}
+00070         \} {\cf19 else} {\cf19 if} (a < 0 && b > 0) \{\par
+{\bkmkstart AAAAAAAAYG}{\bkmkend AAAAAAAAYG}
+00071             {\cf19 return} a < std::numeric_limits<long long>::min() / b;\par
+{\bkmkstart AAAAAAAAYJ}{\bkmkend AAAAAAAAYJ}
+00072         \} {\cf19 else} {\cf19 if} (a > 0 && b < 0) \{\par
+{\bkmkstart AAAAAAAAYN}{\bkmkend AAAAAAAAYN}
+00073             {\cf19 return} b < std::numeric_limits<long long>::min() / a;\par
+{\bkmkstart AAAAAAAAYR}{\bkmkend AAAAAAAAYR}
+00074         \}\par
+{\bkmkstart AAAAAAAAYU}{\bkmkend AAAAAAAAYU}
+00075         {\cf19 return} {\cf17 false};\par
+{\bkmkstart AAAAAAAAYZ}{\bkmkend AAAAAAAAYZ}
+00076     \};\par
+{\bkmkstart AAAAAAAAZC}{\bkmkend AAAAAAAAZC}
+00077     \par
+{\bkmkstart AAAAAAAAZD}{\bkmkend AAAAAAAAZD}
+00078     {\cf20 // Test cases that should detect overflow}\par
+{\bkmkstart AAAAAAAAZF}{\bkmkend AAAAAAAAZF}
+00079     EXPECT_TRUE(detectOverflow(std::numeric_limits<long long>::max(), 2));\par
+{\bkmkstart AAAAAAABBE}{\bkmkend AAAAAAABBE}
+00080     EXPECT_TRUE(detectOverflow(std::numeric_limits<long long>::min(), 2));\par
+{\bkmkstart AAAAAAABCE}{\bkmkend AAAAAAABCE}
+00081     EXPECT_FALSE(detectOverflow(1000, 1000));\par
+{\bkmkstart AAAAAAABCL}{\bkmkend AAAAAAABCL}
+00082     EXPECT_FALSE(detectOverflow(0, 1000));\par
+{\bkmkstart AAAAAAABCR}{\bkmkend AAAAAAABCR}
+00083 \}\par
+{\bkmkstart AAAAAAABCT}{\bkmkend AAAAAAABCT}
+00084 \par
+{\bkmkstart AAAAAAABCW}{\bkmkend AAAAAAABCW}
+00089 TEST_F(OverflowProtectionTest, TestChronoOverflowProtection) \{\par
+{\bkmkstart AAAAAAABDC}{\bkmkend AAAAAAABDC}
+00090     {\cf20 // Test chrono duration calculations with overflow protection}\par
+{\bkmkstart AAAAAAABDE}{\bkmkend AAAAAAABDE}
+00091     {\cf17 auto} safeChronoCalculation = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency, {\cf18 long} {\cf18 long} periodDen) -> std::chrono::nanoseconds \{\par
+{\bkmkstart AAAAAAABDJ}{\bkmkend AAAAAAABDJ}
+00092         {\cf20 // Safe calculation using _Whole and _Part algorithm}\par
+{\bkmkstart AAAAAAABDK}{\bkmkend AAAAAAABDK}
+00093         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
+{\bkmkstart AAAAAAABDQ}{\bkmkend AAAAAAABDQ}
+00094         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
+{\bkmkstart AAAAAAABDW}{\bkmkend AAAAAAABDW}
+00095         \par
+{\bkmkstart AAAAAAABDY}{\bkmkend AAAAAAABDY}
+00096         {\cf20 // Check for overflow before creating duration}\par
+{\bkmkstart AAAAAAABEA}{\bkmkend AAAAAAABEA}
+00097         {\cf19 if} (whole > std::numeric_limits<long long>::max() - part) \{\par
+{\bkmkstart AAAAAAABEV}{\bkmkend AAAAAAABEV}
+00098             {\cf19 throw} std::overflow_error({\cf22 "Duration calculation would overflow"});\par
+{\bkmkstart AAAAAAABEZ}{\bkmkend AAAAAAABEZ}
+00099         \}\par
+{\bkmkstart AAAAAAABFA}{\bkmkend AAAAAAABFA}
+00100         \par
+{\bkmkstart AAAAAAABFC}{\bkmkend AAAAAAABFC}
+00101         {\cf19 return} std::chrono::nanoseconds(whole + part);\par
+{\bkmkstart AAAAAAABFE}{\bkmkend AAAAAAABFE}
+00102     \};\par
+{\bkmkstart AAAAAAABFG}{\bkmkend AAAAAAABFG}
+00103     \par
+{\bkmkstart AAAAAAABFH}{\bkmkend AAAAAAABFH}
+00104     {\cf20 // Test with safe values}\par
+{\bkmkstart AAAAAAABFI}{\bkmkend AAAAAAABFI}
+00105     {\cf17 const} {\cf18 long} {\cf18 long} counter = 1000000;\par
+{\bkmkstart AAAAAAABFK}{\bkmkend AAAAAAABFK}
+00106     {\cf17 const} {\cf18 long} {\cf18 long} frequency = 1000000;\par
+{\bkmkstart AAAAAAABFM}{\bkmkend AAAAAAABFM}
+00107     {\cf17 const} {\cf18 long} {\cf18 long} periodDen = 1000000000; {\cf20 // nanoseconds}\par
+{\bkmkstart AAAAAAABFO}{\bkmkend AAAAAAABFO}
+00108     \par
+{\bkmkstart AAAAAAABFQ}{\bkmkend AAAAAAABFQ}
+00109     {\cf17 auto} duration = safeChronoCalculation(counter, frequency, periodDen);\par
+{\bkmkstart AAAAAAABFT}{\bkmkend AAAAAAABFT}
+00110     EXPECT_EQ(duration.count(), 1000000000); {\cf20 // 1 second in nanoseconds}\par
+{\bkmkstart AAAAAAABFW}{\bkmkend AAAAAAABFW}
+00111     \par
+{\bkmkstart AAAAAAABFX}{\bkmkend AAAAAAABFX}
+00112     {\cf20 // Test with edge case}\par
+{\bkmkstart AAAAAAABFZ}{\bkmkend AAAAAAABFZ}
+00113     EXPECT_EQ(safeChronoCalculation(0, frequency, periodDen).count(), 0);\par
+{\bkmkstart AAAAAAABGC}{\bkmkend AAAAAAABGC}
+00114 \}\par
+{\bkmkstart AAAAAAABGE}{\bkmkend AAAAAAABGE}
+00115 \par
+{\bkmkstart AAAAAAABGF}{\bkmkend AAAAAAABGF}
+00120 TEST_F(OverflowProtectionTest, TestLargeValueHandling) \{\par
+{\bkmkstart AAAAAAABGK}{\bkmkend AAAAAAABGK}
+00121     {\cf20 // Test with very large counter values}\par
+{\bkmkstart AAAAAAABGM}{\bkmkend AAAAAAABGM}
+00122     {\cf17 auto} handleLargeCounter = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency) -> {\cf18 long} {\cf18 long} \{\par
+{\bkmkstart AAAAAAABGS}{\bkmkend AAAAAAABGS}
+00123         {\cf20 // Use safe division and multiplication}\par
+{\bkmkstart AAAAAAABGW}{\bkmkend AAAAAAABGW}
+00124         {\cf17 const} {\cf18 long} {\cf18 long} quotient = counter / frequency;\par
+{\bkmkstart AAAAAAABHA}{\bkmkend AAAAAAABHA}
+00125         {\cf17 const} {\cf18 long} {\cf18 long} remainder = counter % frequency;\par
+{\bkmkstart AAAAAAABHG}{\bkmkend AAAAAAABHG}
+00126         \par
+{\bkmkstart AAAAAAABHI}{\bkmkend AAAAAAABHI}
+00127         {\cf20 // Safe multiplication with overflow check}\par
+{\bkmkstart AAAAAAABHK}{\bkmkend AAAAAAABHK}
+00128         {\cf17 const} {\cf18 long} {\cf18 long} maxSafeMultiplier = std::numeric_limits<long long>::max() / frequency;\par
+{\bkmkstart AAAAAAABHX}{\bkmkend AAAAAAABHX}
+00129         {\cf17 const} {\cf18 long} {\cf18 long} multiplier = std::min(1000000000LL, maxSafeMultiplier);\par
+{\bkmkstart AAAAAAABHZ}{\bkmkend AAAAAAABHZ}
+00130         \par
+{\bkmkstart AAAAAAABIA}{\bkmkend AAAAAAABIA}
+00131         {\cf19 return} quotient * multiplier + (remainder * multiplier) / frequency;\par
+{\bkmkstart AAAAAAABIC}{\bkmkend AAAAAAABIC}
+00132     \};\par
+{\bkmkstart AAAAAAABIF}{\bkmkend AAAAAAABIF}
+00133     \par
+{\bkmkstart AAAAAAABIG}{\bkmkend AAAAAAABIG}
+00134     {\cf20 // Test with large but safe values}\par
+{\bkmkstart AAAAAAABIH}{\bkmkend AAAAAAABIH}
+00135     {\cf17 const} {\cf18 long} {\cf18 long} largeCounter = std::numeric_limits<long long>::max() / 4;\par
+{\bkmkstart AAAAAAABIL}{\bkmkend AAAAAAABIL}
+00136     {\cf17 const} {\cf18 long} {\cf18 long} frequency = 1000000;\par
+{\bkmkstart AAAAAAABIM}{\bkmkend AAAAAAABIM}
+00137     \par
+{\bkmkstart AAAAAAABIO}{\bkmkend AAAAAAABIO}
+00138     {\cf18 long} {\cf18 long} result = handleLargeCounter(largeCounter, frequency);\par
+{\bkmkstart AAAAAAABIR}{\bkmkend AAAAAAABIR}
+00139     EXPECT_GT(result, 0);\par
+{\bkmkstart AAAAAAABIT}{\bkmkend AAAAAAABIT}
+00140     \par
+{\bkmkstart AAAAAAABIU}{\bkmkend AAAAAAABIU}
+00141     {\cf20 // Test boundary conditions}\par
+{\bkmkstart AAAAAAABIV}{\bkmkend AAAAAAABIV}
+00142     EXPECT_EQ(handleLargeCounter(0, frequency), 0);\par
+{\bkmkstart AAAAAAABIY}{\bkmkend AAAAAAABIY}
+00143     EXPECT_EQ(handleLargeCounter(frequency, frequency), 1000000000);\par
+{\bkmkstart AAAAAAABJA}{\bkmkend AAAAAAABJA}
+00144 \}\par
+{\bkmkstart AAAAAAABJC}{\bkmkend AAAAAAABJC}
+00145 \par
+{\bkmkstart AAAAAAABJD}{\bkmkend AAAAAAABJD}
+00150 TEST_F(OverflowProtectionTest, TestFrequencySpecificCalculations) \{\par
+{\bkmkstart AAAAAAABJE}{\bkmkend AAAAAAABJE}
+00151     {\cf20 // Test for 10MHz frequency}\par
+{\bkmkstart AAAAAAABJF}{\bkmkend AAAAAAABJF}
+00152     {\cf17 auto} calculateFor10MHz = []({\cf18 long} {\cf18 long} counter) -> {\cf18 long} {\cf18 long} \{\par
+{\bkmkstart AAAAAAABJG}{\bkmkend AAAAAAABJG}
+00153         {\cf17 const} {\cf18 long} {\cf18 long} frequency = 10000000; {\cf20 // 10MHz}\par
+{\bkmkstart AAAAAAABJH}{\bkmkend AAAAAAABJH}
+00154         {\cf17 const} {\cf18 long} {\cf18 long} periodDen = 1000000000; {\cf20 // nanoseconds}\par
+{\bkmkstart AAAAAAABJJ}{\bkmkend AAAAAAABJJ}
+00155         \par
+{\bkmkstart AAAAAAABJK}{\bkmkend AAAAAAABJK}
+00156         {\cf20 // Safe calculation}\par
+{\bkmkstart AAAAAAABJL}{\bkmkend AAAAAAABJL}
+00157         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
+{\bkmkstart AAAAAAABJN}{\bkmkend AAAAAAABJN}
+00158         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
+{\bkmkstart AAAAAAABJP}{\bkmkend AAAAAAABJP}
+00159         \par
+{\bkmkstart AAAAAAABJQ}{\bkmkend AAAAAAABJQ}
+00160         {\cf19 return} whole + part;\par
+{\bkmkstart AAAAAAABJT}{\bkmkend AAAAAAABJT}
+00161     \};\par
+{\bkmkstart AAAAAAABJU}{\bkmkend AAAAAAABJU}
+00162     \par
+{\bkmkstart AAAAAAABJV}{\bkmkend AAAAAAABJV}
+00163     {\cf20 // Test for 24MHz frequency}\par
+{\bkmkstart AAAAAAABJW}{\bkmkend AAAAAAABJW}
+00164     {\cf17 auto} calculateFor24MHz = []({\cf18 long} {\cf18 long} counter) -> {\cf18 long} {\cf18 long} \{\par
+{\bkmkstart AAAAAAABJZ}{\bkmkend AAAAAAABJZ}
+00165         {\cf17 const} {\cf18 long} {\cf18 long} frequency = 24000000; {\cf20 // 24MHz}\par
+{\bkmkstart AAAAAAABKD}{\bkmkend AAAAAAABKD}
+00166         {\cf17 const} {\cf18 long} {\cf18 long} periodDen = 1000000000; {\cf20 // nanoseconds}\par
+{\bkmkstart AAAAAAABKE}{\bkmkend AAAAAAABKE}
+00167         \par
+{\bkmkstart AAAAAAABKG}{\bkmkend AAAAAAABKG}
+00168         {\cf20 // Safe calculation}\par
+{\bkmkstart AAAAAAABKI}{\bkmkend AAAAAAABKI}
+00169         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
+{\bkmkstart AAAAAAABKN}{\bkmkend AAAAAAABKN}
+00170         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
+{\bkmkstart AAAAAAABKQ}{\bkmkend AAAAAAABKQ}
+00171         \par
+{\bkmkstart AAAAAAABKR}{\bkmkend AAAAAAABKR}
+00172         {\cf19 return} whole + part;\par
+{\bkmkstart AAAAAAABKV}{\bkmkend AAAAAAABKV}
+00173     \};\par
+{\bkmkstart AAAAAAABKW}{\bkmkend AAAAAAABKW}
+00174     \par
+{\bkmkstart AAAAAAABKY}{\bkmkend AAAAAAABKY}
+00175     {\cf20 // Test calculations}\par
+{\bkmkstart AAAAAAABLC}{\bkmkend AAAAAAABLC}
+00176     {\cf17 const} {\cf18 long} {\cf18 long} testCounter = 1000000;\par
+{\bkmkstart AAAAAAABLH}{\bkmkend AAAAAAABLH}
+00177     \par
+{\bkmkstart AAAAAAABLS}{\bkmkend AAAAAAABLS}
+00178     {\cf18 long} {\cf18 long} result10MHz = calculateFor10MHz(testCounter);\par
+{\bkmkstart AAAAAAABLV}{\bkmkend AAAAAAABLV}
+00179     {\cf18 long} {\cf18 long} result24MHz = calculateFor24MHz(testCounter);\par
+{\bkmkstart AAAAAAABLW}{\bkmkend AAAAAAABLW}
+00180     \par
+{\bkmkstart AAAAAAABLX}{\bkmkend AAAAAAABLX}
+00181     EXPECT_GT(result10MHz, 0);\par
+{\bkmkstart AAAAAAABLY}{\bkmkend AAAAAAABLY}
+00182     EXPECT_GT(result24MHz, 0);\par
+{\bkmkstart AAAAAAABLZ}{\bkmkend AAAAAAABLZ}
+00183     EXPECT_NE(result10MHz, result24MHz); {\cf20 // Should be different}\par
+{\bkmkstart AAAAAAABMA}{\bkmkend AAAAAAABMA}
+00184 \}\par
+{\bkmkstart AAAAAAABMB}{\bkmkend AAAAAAABMB}
+00185 \par
+{\bkmkstart AAAAAAABMC}{\bkmkend AAAAAAABMC}
+00190 TEST_F(OverflowProtectionTest, TestOverflowPreventionAlgorithm) \{\par
+{\bkmkstart AAAAAAABMD}{\bkmkend AAAAAAABMD}
+00191     {\cf20 // Complete overflow prevention algorithm}\par
+{\bkmkstart AAAAAAABME}{\bkmkend AAAAAAABME}
+00192     {\cf17 auto} overflowSafeCalculation = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency, {\cf18 long} {\cf18 long} periodDen) -> {\cf18 long} {\cf18 long} \{\par
+{\bkmkstart AAAAAAABMF}{\bkmkend AAAAAAABMF}
+00193         {\cf20 // Check if direct multiplication would overflow}\par
+{\bkmkstart AAAAAAABMG}{\bkmkend AAAAAAABMG}
+00194         {\cf19 if} (counter > 0 && periodDen > 0) \{\par
+{\bkmkstart AAAAAAABMH}{\bkmkend AAAAAAABMH}
+00195             {\cf19 if} (counter > std::numeric_limits<long long>::max() / periodDen) \{\par
+{\bkmkstart AAAAAAABMI}{\bkmkend AAAAAAABMI}
+00196                 {\cf20 // Use safe algorithm}\par
+{\bkmkstart AAAAAAABMJ}{\bkmkend AAAAAAABMJ}
+00197                 {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
+{\bkmkstart AAAAAAABMK}{\bkmkend AAAAAAABMK}
+00198                 {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
+{\bkmkstart AAAAAAABML}{\bkmkend AAAAAAABML}
+00199                 \par
+{\bkmkstart AAAAAAABMM}{\bkmkend AAAAAAABMM}
+00200                 {\cf20 // Check if result would overflow}\par
+{\bkmkstart AAAAAAABMN}{\bkmkend AAAAAAABMN}
+00201                 {\cf19 if} (whole > std::numeric_limits<long long>::max() - part) \{\par
+{\bkmkstart AAAAAAABMO}{\bkmkend AAAAAAABMO}
+00202                     {\cf19 throw} std::overflow_error({\cf22 "Calculation would overflow even with safe algorithm"});\par
+{\bkmkstart AAAAAAABMP}{\bkmkend AAAAAAABMP}
+00203                 \}\par
+{\bkmkstart AAAAAAABMQ}{\bkmkend AAAAAAABMQ}
+00204                 \par
+{\bkmkstart AAAAAAABMR}{\bkmkend AAAAAAABMR}
+00205                 {\cf19 return} whole + part;\par
+{\bkmkstart AAAAAAABMT}{\bkmkend AAAAAAABMT}
+00206             \}\par
+{\bkmkstart AAAAAAABMV}{\bkmkend AAAAAAABMV}
+00207         \}\par
+{\bkmkstart AAAAAAABMW}{\bkmkend AAAAAAABMW}
+00208         \par
+{\bkmkstart AAAAAAABMX}{\bkmkend AAAAAAABMX}
+00209         {\cf20 // Safe to use direct multiplication}\par
+{\bkmkstart AAAAAAABMY}{\bkmkend AAAAAAABMY}
+00210         {\cf19 return} (counter * periodDen) / frequency;\par
+{\bkmkstart AAAAAAABMZ}{\bkmkend AAAAAAABMZ}
+00211     \};\par
+{\bkmkstart AAAAAAABNA}{\bkmkend AAAAAAABNA}
+00212     \par
+{\bkmkstart AAAAAAABNB}{\bkmkend AAAAAAABNB}
+00213     {\cf20 // Test with various values}\par
+{\bkmkstart AAAAAAABNC}{\bkmkend AAAAAAABNC}
+00214     {\cf17 struct }TestCase \{\par
+{\bkmkstart AAAAAAABND}{\bkmkend AAAAAAABND}
+00215         {\cf18 long} {\cf18 long} counter;\par
+{\bkmkstart AAAAAAABNE}{\bkmkend AAAAAAABNE}
+00216         {\cf18 long} {\cf18 long} frequency;\par
+{\bkmkstart AAAAAAABNF}{\bkmkend AAAAAAABNF}
+00217         {\cf18 long} {\cf18 long} periodDen;\par
+{\bkmkstart AAAAAAABNG}{\bkmkend AAAAAAABNG}
+00218         {\cf18 bool} shouldSucceed;\par
+{\bkmkstart AAAAAAABNH}{\bkmkend AAAAAAABNH}
+00219     \};\par
+{\bkmkstart AAAAAAABNI}{\bkmkend AAAAAAABNI}
+00220     \par
+{\bkmkstart AAAAAAABNJ}{\bkmkend AAAAAAABNJ}
+00221     std::vector<TestCase> testCases = \{\par
+{\bkmkstart AAAAAAABNK}{\bkmkend AAAAAAABNK}
+00222         \{1000, 1000000, 1000000000, {\cf17 true}\},\par
+{\bkmkstart AAAAAAABNM}{\bkmkend AAAAAAABNM}
+00223         \{0, 1000000, 1000000000, {\cf17 true}\},\par
+{\bkmkstart AAAAAAABNN}{\bkmkend AAAAAAABNN}
+00224         \{1000000, 1000000, 1000000000, {\cf17 true}\},\par
+{\bkmkstart AAAAAAABNO}{\bkmkend AAAAAAABNO}
+00225         \{std::numeric_limits<long long>::max() / 2, 1000000, 1000000000, {\cf17 true}\},\par
+{\bkmkstart AAAAAAABNP}{\bkmkend AAAAAAABNP}
+00226         \{std::numeric_limits<long long>::max(), 1, 1, {\cf17 false}\} {\cf20 // This should fail}\par
+{\bkmkstart AAAAAAABNR}{\bkmkend AAAAAAABNR}
+00227     \};\par
+{\bkmkstart AAAAAAABNS}{\bkmkend AAAAAAABNS}
+00228     \par
+{\bkmkstart AAAAAAABNT}{\bkmkend AAAAAAABNT}
+00229     {\cf19 for} ({\cf17 const} {\cf17 auto}& testCase : testCases) \{\par
+{\bkmkstart AAAAAAABNU}{\bkmkend AAAAAAABNU}
+00230         {\cf19 if} (testCase.shouldSucceed) \{\par
+{\bkmkstart AAAAAAABNV}{\bkmkend AAAAAAABNV}
+00231             EXPECT_NO_THROW(\{\par
+{\bkmkstart AAAAAAABNW}{\bkmkend AAAAAAABNW}
+00232                 {\cf18 long} {\cf18 long} result = overflowSafeCalculation(testCase.counter, testCase.frequency, testCase.periodDen);\par
+{\bkmkstart AAAAAAABNX}{\bkmkend AAAAAAABNX}
+00233                 EXPECT_GE(result, 0);\par
+{\bkmkstart AAAAAAABNY}{\bkmkend AAAAAAABNY}
+00234             \});\par
+{\bkmkstart AAAAAAABNZ}{\bkmkend AAAAAAABNZ}
+00235         \} {\cf19 else} \{\par
+{\bkmkstart AAAAAAABOA}{\bkmkend AAAAAAABOA}
+00236             EXPECT_THROW(\{\par
+{\bkmkstart AAAAAAABOC}{\bkmkend AAAAAAABOC}
+00237                 overflowSafeCalculation(testCase.counter, testCase.frequency, testCase.periodDen);\par
+{\bkmkstart AAAAAAABOF}{\bkmkend AAAAAAABOF}
+00238             \}, std::overflow_error);\par
+{\bkmkstart AAAAAAABOG}{\bkmkend AAAAAAABOG}
+00239         \}\par
+{\bkmkstart AAAAAAABOH}{\bkmkend AAAAAAABOH}
+00240     \}\par
+{\bkmkstart AAAAAAABOI}{\bkmkend AAAAAAABOI}
+00241 \}\par
+{\bkmkstart AAAAAAABOJ}{\bkmkend AAAAAAABOJ}
+00242 \par
+{\bkmkstart AAAAAAABOK}{\bkmkend AAAAAAABOK}
+00247 TEST_F(OverflowProtectionTest, TestEdgeCases) \{\par
+{\bkmkstart AAAAAAABOL}{\bkmkend AAAAAAABOL}
+00248     {\cf20 // Test edge cases}\par
+{\bkmkstart AAAAAAABOM}{\bkmkend AAAAAAABOM}
+00249     {\cf17 auto} testEdgeCase = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency, {\cf18 long} {\cf18 long} periodDen) -> {\cf18 bool} \{\par
+{\bkmkstart AAAAAAABON}{\bkmkend AAAAAAABON}
+00250         {\cf19 try} \{\par
+{\bkmkstart AAAAAAABOO}{\bkmkend AAAAAAABOO}
+00251             {\cf20 // Safe calculation}\par
+{\bkmkstart AAAAAAABOP}{\bkmkend AAAAAAABOP}
+00252             {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
+{\bkmkstart AAAAAAABOQ}{\bkmkend AAAAAAABOQ}
+00253             {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
+{\bkmkstart AAAAAAABOR}{\bkmkend AAAAAAABOR}
+00254             \par
+{\bkmkstart AAAAAAABOS}{\bkmkend AAAAAAABOS}
+00255             {\cf20 // Check for overflow}\par
+{\bkmkstart AAAAAAABOT}{\bkmkend AAAAAAABOT}
+00256             {\cf19 if} (whole > std::numeric_limits<long long>::max() - part) \{\par
+{\bkmkstart AAAAAAABPB}{\bkmkend AAAAAAABPB}
+00257                 {\cf19 return} {\cf17 false};\par
+{\bkmkstart AAAAAAABPD}{\bkmkend AAAAAAABPD}
+00258             \}\par
+{\bkmkstart AAAAAAABPE}{\bkmkend AAAAAAABPE}
+00259             \par
+{\bkmkstart AAAAAAABPF}{\bkmkend AAAAAAABPF}
+00260             {\cf18 long} {\cf18 long} result = whole + part;\par
+{\bkmkstart AAAAAAABPH}{\bkmkend AAAAAAABPH}
+00261             {\cf19 return} result >= 0;\par
+{\bkmkstart AAAAAAABPK}{\bkmkend AAAAAAABPK}
+00262         \} {\cf19 catch} (...) \{\par
+{\bkmkstart AAAAAAABPL}{\bkmkend AAAAAAABPL}
+00263             {\cf19 return} {\cf17 false};\par
+{\bkmkstart AAAAAAABPM}{\bkmkend AAAAAAABPM}
+00264         \}\par
+{\bkmkstart AAAAAAABPN}{\bkmkend AAAAAAABPN}
+00265     \};\par
+{\bkmkstart AAAAAAABPO}{\bkmkend AAAAAAABPO}
+00266     \par
+{\bkmkstart AAAAAAABPP}{\bkmkend AAAAAAABPP}
+00267     {\cf20 // Test various edge cases}\par
+{\bkmkstart AAAAAAABPQ}{\bkmkend AAAAAAABPQ}
+00268     EXPECT_TRUE(testEdgeCase(0, 1, 1));\par
+{\bkmkstart AAAAAAABPR}{\bkmkend AAAAAAABPR}
+00269     EXPECT_TRUE(testEdgeCase(1, 1, 1));\par
+{\bkmkstart AAAAAAABPS}{\bkmkend AAAAAAABPS}
+00270     EXPECT_TRUE(testEdgeCase(1000000, 1000000, 1000000000));\par
+{\bkmkstart AAAAAAABPT}{\bkmkend AAAAAAABPT}
+00271     EXPECT_TRUE(testEdgeCase(std::numeric_limits<long long>::max() / 4, 1000000, 1000000000));\par
+{\bkmkstart AAAAAAABPU}{\bkmkend AAAAAAABPU}
+00272     \par
+{\bkmkstart AAAAAAABPV}{\bkmkend AAAAAAABPV}
+00273     {\cf20 // Test with zero frequency (should handle gracefully)}\par
+{\bkmkstart AAAAAAABPW}{\bkmkend AAAAAAABPW}
+00274     EXPECT_FALSE(testEdgeCase(1000, 0, 1000000000));\par
+{\bkmkstart AAAAAAABPX}{\bkmkend AAAAAAABPX}
+00275 \}\par
+{\bkmkstart AAAAAAABPY}{\bkmkend AAAAAAABPY}
+00276 \par
+{\bkmkstart AAAAAAABPZ}{\bkmkend AAAAAAABPZ}
+00277 \} {\cf20 // namespace}\par
+}
+}

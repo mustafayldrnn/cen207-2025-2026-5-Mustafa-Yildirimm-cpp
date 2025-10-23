@@ -1,0 +1,368 @@
+\doxysection{test\+\_\+chrono\+\_\+coverage.\+cpp}
+\hypertarget{test__chrono__coverage_8cpp_source}{}\label{test__chrono__coverage_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_chrono\_coverage.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_chrono\_coverage.cpp}}
+\mbox{\hyperlink{test__chrono__coverage_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00014}00014\ \textcolor{keyword}{namespace\ }\{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00020}00020\ \textcolor{keyword}{class\ }ChronoCoverageTest\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00021}00021\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Setup\ for\ each\ test}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00024}00024\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00025}00025\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Cleanup\ after\ each\ test}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00028}00028\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00029}00029\ \};}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00035}00035\ TEST\_F(ChronoCoverageTest,\ TestHighResolutionClock)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00036}00036\ \ \ \ \ \textcolor{comment}{//\ Test\ high\_resolution\_clock}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keyword}{auto}\ start\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00038}00038\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{comment}{//\ Perform\ some\ work}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00040}00040\ \ \ \ \ std::this\_thread::sleep\_for(std::chrono::milliseconds(1));}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00041}00041\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keyword}{auto}\ end\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keyword}{auto}\ duration\ =\ std::chrono::duration\_cast<std::chrono::microseconds>(end\ -\/\ start);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00044}00044\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00045}00045\ \ \ \ \ EXPECT\_GT(duration.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00046}00046\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00052}00052\ TEST\_F(ChronoCoverageTest,\ TestSteadyClock)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{comment}{//\ Test\ steady\_clock}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keyword}{auto}\ start\ =\ std::chrono::steady\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00055}00055\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{comment}{//\ Perform\ some\ work}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00057}00057\ \ \ \ \ std::this\_thread::sleep\_for(std::chrono::milliseconds(1));}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00058}00058\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{keyword}{auto}\ end\ =\ std::chrono::steady\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{keyword}{auto}\ duration\ =\ std::chrono::duration\_cast<std::chrono::microseconds>(end\ -\/\ start);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00061}00061\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00062}00062\ \ \ \ \ EXPECT\_GT(duration.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00063}00063\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00069}00069\ TEST\_F(ChronoCoverageTest,\ TestSystemClock)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00070}00070\ \ \ \ \ \textcolor{comment}{//\ Test\ system\_clock}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00071}00071\ \ \ \ \ \textcolor{keyword}{auto}\ now\ =\ std::chrono::system\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{keyword}{auto}\ time\_t\_now\ =\ std::chrono::system\_clock::to\_time\_t(now);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00073}00073\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00074}00074\ \ \ \ \ EXPECT\_GT(time\_t\_now,\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00075}00075\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00081}00081\ TEST\_F(ChronoCoverageTest,\ TestDurationOperations)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00082}00082\ \ \ \ \ \textcolor{comment}{//\ Test\ different\ duration\ types}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00083}00083\ \ \ \ \ \textcolor{keyword}{auto}\ duration1\ =\ std::chrono::seconds(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00084}00084\ \ \ \ \ \textcolor{keyword}{auto}\ duration2\ =\ std::chrono::milliseconds(1000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00085}00085\ \ \ \ \ \textcolor{keyword}{auto}\ duration3\ =\ std::chrono::microseconds(1000000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00086}00086\ \ \ \ \ \textcolor{keyword}{auto}\ duration4\ =\ std::chrono::nanoseconds(1000000000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00087}00087\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00088}00088\ \ \ \ \ \textcolor{comment}{//\ Test\ duration\ arithmetic}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00089}00089\ \ \ \ \ \textcolor{keyword}{auto}\ sum\ =\ duration1\ +\ duration2;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{keyword}{auto}\ diff\ =\ duration3\ -\/\ duration4;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00091}00091\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00092}00092\ \ \ \ \ EXPECT\_EQ(sum.count(),\ 2000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00093}00093\ \ \ \ \ EXPECT\_EQ(diff.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00094}00094\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00100}00100\ TEST\_F(ChronoCoverageTest,\ TestTimePointOperations)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{keyword}{auto}\ now\ =\ std::chrono::system\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00102}00102\ \ \ \ \ \textcolor{keyword}{auto}\ later\ =\ now\ +\ std::chrono::seconds(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00103}00103\ \ \ \ \ \textcolor{keyword}{auto}\ earlier\ =\ now\ -\/\ std::chrono::seconds(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00104}00104\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00105}00105\ \ \ \ \ EXPECT\_GT(later,\ now);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00106}00106\ \ \ \ \ EXPECT\_LT(earlier,\ now);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00107}00107\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00113}00113\ TEST\_F(ChronoCoverageTest,\ TestDurationCast)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00114}00114\ \ \ \ \ \textcolor{keyword}{auto}\ seconds\ =\ std::chrono::seconds(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00115}00115\ \ \ \ \ \textcolor{keyword}{auto}\ milliseconds\ =\ std::chrono::duration\_cast<std::chrono::milliseconds>(seconds);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00116}00116\ \ \ \ \ \textcolor{keyword}{auto}\ microseconds\ =\ std::chrono::duration\_cast<std::chrono::microseconds>(seconds);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00117}00117\ \ \ \ \ \textcolor{keyword}{auto}\ nanoseconds\ =\ std::chrono::duration\_cast<std::chrono::nanoseconds>(seconds);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00118}00118\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00119}00119\ \ \ \ \ EXPECT\_EQ(milliseconds.count(),\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00120}00120\ \ \ \ \ EXPECT\_EQ(microseconds.count(),\ 1000000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00121}00121\ \ \ \ \ EXPECT\_EQ(nanoseconds.count(),\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00122}00122\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00123}00123\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00128}00128\ TEST\_F(ChronoCoverageTest,\ TestClockProperties)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00129}00129\ \ \ \ \ \textcolor{comment}{//\ Test\ clock\ properties}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00130}00130\ \ \ \ \ EXPECT\_TRUE(std::chrono::high\_resolution\_clock::is\_steady\ ||\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ !std::chrono::high\_resolution\_clock::is\_steady);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00132}00132\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00133}00133\ \ \ \ \ EXPECT\_TRUE(std::chrono::steady\_clock::is\_steady);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00134}00134\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00135}00135\ \ \ \ \ EXPECT\_TRUE(std::chrono::system\_clock::is\_steady\ ||\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ !std::chrono::system\_clock::is\_steady);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00137}00137\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00138}00138\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00143}00143\ TEST\_F(ChronoCoverageTest,\ TestEdgeCases)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00144}00144\ \ \ \ \ \textcolor{comment}{//\ Test\ zero\ duration}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00145}00145\ \ \ \ \ \textcolor{keyword}{auto}\ zero\_duration\ =\ std::chrono::seconds(0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00146}00146\ \ \ \ \ EXPECT\_EQ(zero\_duration.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00147}00147\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00148}00148\ \ \ \ \ \textcolor{comment}{//\ Test\ negative\ duration}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00149}00149\ \ \ \ \ \textcolor{keyword}{auto}\ negative\_duration\ =\ std::chrono::seconds(-\/1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00150}00150\ \ \ \ \ EXPECT\_EQ(negative\_duration.count(),\ -\/1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00151}00151\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00152}00152\ \ \ \ \ \textcolor{comment}{//\ Test\ large\ duration}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00153}00153\ \ \ \ \ \textcolor{keyword}{auto}\ large\_duration\ =\ std::chrono::hours(24);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00154}00154\ \ \ \ \ EXPECT\_EQ(large\_duration.count(),\ 24);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00155}00155\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00156}00156\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00161}00161\ TEST\_F(ChronoCoverageTest,\ TestChronoLiterals)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00162}00162\ \ \ \ \ \textcolor{keyword}{using\ namespace\ }std::chrono\_literals;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00163}00163\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00164}00164\ \ \ \ \ \textcolor{keyword}{auto}\ duration1\ =\ 1s;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00165}00165\ \ \ \ \ \textcolor{keyword}{auto}\ duration2\ =\ 1000ms;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00166}00166\ \ \ \ \ \textcolor{keyword}{auto}\ duration3\ =\ 1000000us;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00167}00167\ \ \ \ \ \textcolor{keyword}{auto}\ duration4\ =\ 1000000000ns;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00168}00168\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00169}00169\ \ \ \ \ EXPECT\_EQ(duration1.count(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00170}00170\ \ \ \ \ EXPECT\_EQ(duration2.count(),\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00171}00171\ \ \ \ \ EXPECT\_EQ(duration3.count(),\ 1000000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00172}00172\ \ \ \ \ EXPECT\_EQ(duration4.count(),\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00173}00173\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00174}00174\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00179}00179\ TEST\_F(ChronoCoverageTest,\ TestChronoComparison)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00180}00180\ \ \ \ \ \textcolor{keyword}{auto}\ duration1\ =\ std::chrono::seconds(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00181}00181\ \ \ \ \ \textcolor{keyword}{auto}\ duration2\ =\ std::chrono::seconds(2);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00182}00182\ \ \ \ \ \textcolor{keyword}{auto}\ duration3\ =\ std::chrono::seconds(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00183}00183\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00184}00184\ \ \ \ \ EXPECT\_LT(duration1,\ duration2);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00185}00185\ \ \ \ \ EXPECT\_GT(duration2,\ duration1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00186}00186\ \ \ \ \ EXPECT\_EQ(duration1,\ duration3);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00187}00187\ \ \ \ \ EXPECT\_NE(duration1,\ duration2);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00188}00188\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00189}00189\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00194}00194\ TEST\_F(ChronoCoverageTest,\ TestChronoArithmetic)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00195}00195\ \ \ \ \ \textcolor{keyword}{auto}\ duration1\ =\ std::chrono::seconds(5);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00196}00196\ \ \ \ \ \textcolor{keyword}{auto}\ duration2\ =\ std::chrono::seconds(3);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00197}00197\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00198}00198\ \ \ \ \ \textcolor{keyword}{auto}\ sum\ =\ duration1\ +\ duration2;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00199}00199\ \ \ \ \ \textcolor{keyword}{auto}\ diff\ =\ duration1\ -\/\ duration2;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00200}00200\ \ \ \ \ \textcolor{keyword}{auto}\ mult\ =\ duration1\ *\ 2;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00201}00201\ \ \ \ \ \textcolor{keyword}{auto}\ div\ =\ duration1\ /\ 2;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00202}00202\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00203}00203\ \ \ \ \ EXPECT\_EQ(sum.count(),\ 8);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00204}00204\ \ \ \ \ EXPECT\_EQ(diff.count(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00205}00205\ \ \ \ \ EXPECT\_EQ(mult.count(),\ 10);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00206}00206\ \ \ \ \ EXPECT\_EQ(div.count(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00207}00207\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00208}00208\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00213}00213\ TEST\_F(ChronoCoverageTest,\ TestAdvancedDurationOperations)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00214}00214\ \ \ \ \ \textcolor{comment}{//\ Test\ different\ duration\ types\ with\ complex\ operations}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00215}00215\ \ \ \ \ \textcolor{keyword}{auto}\ hours\ =\ std::chrono::hours(2);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00216}00216\ \ \ \ \ \textcolor{keyword}{auto}\ minutes\ =\ std::chrono::minutes(30);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00217}00217\ \ \ \ \ \textcolor{keyword}{auto}\ seconds\ =\ std::chrono::seconds(45);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00218}00218\ \ \ \ \ \textcolor{keyword}{auto}\ milliseconds\ =\ std::chrono::milliseconds(500);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00219}00219\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00220}00220\ \ \ \ \ \textcolor{comment}{//\ Test\ complex\ arithmetic}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00221}00221\ \ \ \ \ \textcolor{keyword}{auto}\ total\ =\ hours\ +\ minutes\ +\ seconds\ +\ milliseconds;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00222}00222\ \ \ \ \ \textcolor{keyword}{auto}\ total\_ms\ =\ std::chrono::duration\_cast<std::chrono::milliseconds>(total);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00223}00223\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00224}00224\ \ \ \ \ EXPECT\_GT(total\_ms.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00225}00225\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00226}00226\ \ \ \ \ \textcolor{comment}{//\ Test\ duration\ ratios}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00227}00227\ \ \ \ \ \textcolor{keyword}{auto}\ ratio\ =\ std::chrono::duration\_cast<std::chrono::nanoseconds>(total);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00228}00228\ \ \ \ \ EXPECT\_GT(ratio.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00229}00229\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00230}00230\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00235}00235\ TEST\_F(ChronoCoverageTest,\ TestClockPrecision)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00236}00236\ \ \ \ \ \textcolor{comment}{//\ Test\ high\ resolution\ clock\ precision}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00237}00237\ \ \ \ \ \textcolor{keyword}{auto}\ start\_hr\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00238}00238\ \ \ \ \ std::this\_thread::sleep\_for(std::chrono::microseconds(100));}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00239}00239\ \ \ \ \ \textcolor{keyword}{auto}\ end\_hr\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00240}00240\ \ \ \ \ \textcolor{keyword}{auto}\ duration\_hr\ =\ std::chrono::duration\_cast<std::chrono::nanoseconds>(end\_hr\ -\/\ start\_hr);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00241}00241\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00242}00242\ \ \ \ \ EXPECT\_GT(duration\_hr.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00243}00243\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00244}00244\ \ \ \ \ \textcolor{comment}{//\ Test\ steady\ clock\ precision}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00245}00245\ \ \ \ \ \textcolor{keyword}{auto}\ start\_sc\ =\ std::chrono::steady\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00246}00246\ \ \ \ \ std::this\_thread::sleep\_for(std::chrono::microseconds(100));}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00247}00247\ \ \ \ \ \textcolor{keyword}{auto}\ end\_sc\ =\ std::chrono::steady\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00248}00248\ \ \ \ \ \textcolor{keyword}{auto}\ duration\_sc\ =\ std::chrono::duration\_cast<std::chrono::nanoseconds>(end\_sc\ -\/\ start\_sc);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00249}00249\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00250}00250\ \ \ \ \ EXPECT\_GT(duration\_sc.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00251}00251\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00252}00252\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00257}00257\ TEST\_F(ChronoCoverageTest,\ TestTimePointArithmetic)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00258}00258\ \ \ \ \ \textcolor{keyword}{auto}\ now\ =\ std::chrono::system\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00259}00259\ \ \ \ \ \textcolor{keyword}{auto}\ one\_second\ =\ std::chrono::seconds(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00260}00260\ \ \ \ \ \textcolor{keyword}{auto}\ one\_minute\ =\ std::chrono::minutes(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00261}00261\ \ \ \ \ \textcolor{keyword}{auto}\ one\_hour\ =\ std::chrono::hours(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00262}00262\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00263}00263\ \ \ \ \ \textcolor{comment}{//\ Test\ addition}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00264}00264\ \ \ \ \ \textcolor{keyword}{auto}\ future1\ =\ now\ +\ one\_second;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00265}00265\ \ \ \ \ \textcolor{keyword}{auto}\ future2\ =\ now\ +\ one\_minute;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00266}00266\ \ \ \ \ \textcolor{keyword}{auto}\ future3\ =\ now\ +\ one\_hour;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00267}00267\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00268}00268\ \ \ \ \ EXPECT\_GT(future1,\ now);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00269}00269\ \ \ \ \ EXPECT\_GT(future2,\ now);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00270}00270\ \ \ \ \ EXPECT\_GT(future3,\ now);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00271}00271\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00272}00272\ \ \ \ \ \textcolor{comment}{//\ Test\ subtraction}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00273}00273\ \ \ \ \ \textcolor{keyword}{auto}\ past1\ =\ now\ -\/\ one\_second;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00274}00274\ \ \ \ \ \textcolor{keyword}{auto}\ past2\ =\ now\ -\/\ one\_minute;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00275}00275\ \ \ \ \ \textcolor{keyword}{auto}\ past3\ =\ now\ -\/\ one\_hour;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00276}00276\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00277}00277\ \ \ \ \ EXPECT\_LT(past1,\ now);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00278}00278\ \ \ \ \ EXPECT\_LT(past2,\ now);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00279}00279\ \ \ \ \ EXPECT\_LT(past3,\ now);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00280}00280\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00281}00281\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00286}00286\ TEST\_F(ChronoCoverageTest,\ TestDurationSpecialCases)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00287}00287\ \ \ \ \ \textcolor{comment}{//\ Test\ zero\ duration}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00288}00288\ \ \ \ \ \textcolor{keyword}{auto}\ zero\_sec\ =\ std::chrono::seconds(0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00289}00289\ \ \ \ \ \textcolor{keyword}{auto}\ zero\_ms\ =\ std::chrono::milliseconds(0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00290}00290\ \ \ \ \ \textcolor{keyword}{auto}\ zero\_us\ =\ std::chrono::microseconds(0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00291}00291\ \ \ \ \ \textcolor{keyword}{auto}\ zero\_ns\ =\ std::chrono::nanoseconds(0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00292}00292\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00293}00293\ \ \ \ \ EXPECT\_EQ(zero\_sec.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00294}00294\ \ \ \ \ EXPECT\_EQ(zero\_ms.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00295}00295\ \ \ \ \ EXPECT\_EQ(zero\_us.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00296}00296\ \ \ \ \ EXPECT\_EQ(zero\_ns.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00297}00297\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00298}00298\ \ \ \ \ \textcolor{comment}{//\ Test\ negative\ duration}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00299}00299\ \ \ \ \ \textcolor{keyword}{auto}\ neg\_sec\ =\ std::chrono::seconds(-\/1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00300}00300\ \ \ \ \ \textcolor{keyword}{auto}\ neg\_ms\ =\ std::chrono::milliseconds(-\/1000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00301}00301\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00302}00302\ \ \ \ \ EXPECT\_EQ(neg\_sec.count(),\ -\/1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00303}00303\ \ \ \ \ EXPECT\_EQ(neg\_ms.count(),\ -\/1000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00304}00304\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00305}00305\ \ \ \ \ \textcolor{comment}{//\ Test\ large\ duration}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00306}00306\ \ \ \ \ \textcolor{keyword}{auto}\ large\_sec\ =\ std::chrono::seconds(INT\_MAX);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00307}00307\ \ \ \ \ \textcolor{keyword}{auto}\ large\_ms\ =\ std::chrono::milliseconds(INT\_MAX);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00308}00308\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00309}00309\ \ \ \ \ EXPECT\_EQ(large\_sec.count(),\ INT\_MAX);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00310}00310\ \ \ \ \ EXPECT\_EQ(large\_ms.count(),\ INT\_MAX);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00311}00311\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00312}00312\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00317}00317\ TEST\_F(ChronoCoverageTest,\ TestClockConversion)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00318}00318\ \ \ \ \ \textcolor{comment}{//\ Test\ system\ clock\ to\ time\_t\ conversion}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00319}00319\ \ \ \ \ \textcolor{keyword}{auto}\ now\_sys\ =\ std::chrono::system\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00320}00320\ \ \ \ \ \textcolor{keyword}{auto}\ time\_t\_now\ =\ std::chrono::system\_clock::to\_time\_t(now\_sys);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00321}00321\ \ \ \ \ \textcolor{keyword}{auto}\ back\_to\_sys\ =\ std::chrono::system\_clock::from\_time\_t(time\_t\_now);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00322}00322\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00323}00323\ \ \ \ \ EXPECT\_GT(time\_t\_now,\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00324}00324\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00325}00325\ \ \ \ \ \textcolor{comment}{//\ Test\ duration\ conversions\ between\ different\ types}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00326}00326\ \ \ \ \ \textcolor{keyword}{auto}\ seconds\_val\ =\ std::chrono::seconds(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00327}00327\ \ \ \ \ \textcolor{keyword}{auto}\ milliseconds\_val\ =\ std::chrono::duration\_cast<std::chrono::milliseconds>(seconds\_val);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00328}00328\ \ \ \ \ \textcolor{keyword}{auto}\ microseconds\_val\ =\ std::chrono::duration\_cast<std::chrono::microseconds>(seconds\_val);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00329}00329\ \ \ \ \ \textcolor{keyword}{auto}\ nanoseconds\_val\ =\ std::chrono::duration\_cast<std::chrono::nanoseconds>(seconds\_val);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00330}00330\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00331}00331\ \ \ \ \ EXPECT\_EQ(milliseconds\_val.count(),\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00332}00332\ \ \ \ \ EXPECT\_EQ(microseconds\_val.count(),\ 1000000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00333}00333\ \ \ \ \ EXPECT\_EQ(nanoseconds\_val.count(),\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00334}00334\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00335}00335\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00340}00340\ TEST\_F(ChronoCoverageTest,\ TestChronoLiteralsAdvanced)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00341}00341\ \ \ \ \ \textcolor{keyword}{using\ namespace\ }std::chrono\_literals;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00342}00342\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00343}00343\ \ \ \ \ \textcolor{comment}{//\ Test\ various\ literal\ combinations}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00344}00344\ \ \ \ \ \textcolor{keyword}{auto}\ duration1\ =\ 1h\ +\ 30min\ +\ 45s\ +\ 500ms;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00345}00345\ \ \ \ \ \textcolor{keyword}{auto}\ duration2\ =\ 2h\ -\/\ 15min\ +\ 30s;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00346}00346\ \ \ \ \ \textcolor{keyword}{auto}\ duration3\ =\ 3h\ *\ 2;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00347}00347\ \ \ \ \ \textcolor{keyword}{auto}\ duration4\ =\ 6h\ /\ 3;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00348}00348\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00349}00349\ \ \ \ \ EXPECT\_GT(duration1.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00350}00350\ \ \ \ \ EXPECT\_GT(duration2.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00351}00351\ \ \ \ \ EXPECT\_GT(duration3.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00352}00352\ \ \ \ \ EXPECT\_GT(duration4.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00353}00353\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00354}00354\ \ \ \ \ \textcolor{comment}{//\ Test\ literal\ arithmetic}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00355}00355\ \ \ \ \ \textcolor{keyword}{auto}\ sum\ =\ 1h\ +\ 2h\ +\ 3h;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00356}00356\ \ \ \ \ \textcolor{keyword}{auto}\ diff\ =\ 10h\ -\/\ 5h;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00357}00357\ \ \ \ \ \textcolor{keyword}{auto}\ mult\ =\ 2h\ *\ 3;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00358}00358\ \ \ \ \ \textcolor{keyword}{auto}\ div\ =\ 12h\ /\ 4;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00359}00359\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00360}00360\ \ \ \ \ EXPECT\_EQ(sum.count(),\ 6);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00361}00361\ \ \ \ \ EXPECT\_EQ(diff.count(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00362}00362\ \ \ \ \ EXPECT\_EQ(mult.count(),\ 6);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00363}00363\ \ \ \ \ EXPECT\_EQ(div.count(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00364}00364\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00365}00365\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00370}00370\ TEST\_F(ChronoCoverageTest,\ TestClockPropertiesAdvanced)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00371}00371\ \ \ \ \ \textcolor{comment}{//\ Test\ clock\ period\ information}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00372}00372\ \ \ \ \ \textcolor{keyword}{using\ }hr\_clock\ =\ std::chrono::high\_resolution\_clock;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00373}00373\ \ \ \ \ \textcolor{keyword}{using\ }sc\_clock\ =\ std::chrono::steady\_clock;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00374}00374\ \ \ \ \ \textcolor{keyword}{using\ }sys\_clock\ =\ std::chrono::system\_clock;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00375}00375\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00376}00376\ \ \ \ \ \textcolor{comment}{//\ Test\ clock\ period\ ratios}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00377}00377\ \ \ \ \ \textcolor{keyword}{auto}\ hr\_period\ =\ hr\_clock::period::num;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00378}00378\ \ \ \ \ \textcolor{keyword}{auto}\ sc\_period\ =\ sc\_clock::period::num;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00379}00379\ \ \ \ \ \textcolor{keyword}{auto}\ sys\_period\ =\ sys\_clock::period::num;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00380}00380\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00381}00381\ \ \ \ \ EXPECT\_GT(hr\_period,\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00382}00382\ \ \ \ \ EXPECT\_GT(sc\_period,\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00383}00383\ \ \ \ \ EXPECT\_GT(sys\_period,\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00384}00384\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00385}00385\ \ \ \ \ \textcolor{comment}{//\ Test\ clock\ duration\ types}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00386}00386\ \ \ \ \ \textcolor{keyword}{using\ }hr\_duration\ =\ hr\_clock::duration;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00387}00387\ \ \ \ \ \textcolor{keyword}{using\ }sc\_duration\ =\ sc\_clock::duration;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00388}00388\ \ \ \ \ \textcolor{keyword}{using\ }sys\_duration\ =\ sys\_clock::duration;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00389}00389\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00390}00390\ \ \ \ \ \textcolor{keyword}{auto}\ hr\_dur\ =\ hr\_duration(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00391}00391\ \ \ \ \ \textcolor{keyword}{auto}\ sc\_dur\ =\ sc\_duration(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00392}00392\ \ \ \ \ \textcolor{keyword}{auto}\ sys\_dur\ =\ sys\_duration(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00393}00393\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00394}00394\ \ \ \ \ EXPECT\_GT(hr\_dur.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00395}00395\ \ \ \ \ EXPECT\_GT(sc\_dur.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00396}00396\ \ \ \ \ EXPECT\_GT(sys\_dur.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00397}00397\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00398}00398\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00403}00403\ TEST\_F(ChronoCoverageTest,\ TestChronoErrorHandling)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00404}00404\ \ \ \ \ \textcolor{comment}{//\ Test\ overflow\ protection}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00405}00405\ \ \ \ \ \textcolor{keyword}{auto}\ max\_duration\ =\ std::chrono::seconds(INT\_MAX);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00406}00406\ \ \ \ \ \textcolor{keyword}{auto}\ min\_duration\ =\ std::chrono::seconds(INT\_MIN);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00407}00407\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00408}00408\ \ \ \ \ EXPECT\_EQ(max\_duration.count(),\ INT\_MAX);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00409}00409\ \ \ \ \ EXPECT\_EQ(min\_duration.count(),\ INT\_MIN);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00410}00410\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00411}00411\ \ \ \ \ \textcolor{comment}{//\ Test\ duration\ bounds}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00412}00412\ \ \ \ \ \textcolor{keyword}{auto}\ zero\_duration\ =\ std::chrono::seconds(0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00413}00413\ \ \ \ \ \textcolor{keyword}{auto}\ small\_duration\ =\ std::chrono::nanoseconds(1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00414}00414\ \ \ \ \ \textcolor{keyword}{auto}\ large\_duration\ =\ std::chrono::hours(24);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00415}00415\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00416}00416\ \ \ \ \ EXPECT\_EQ(zero\_duration.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00417}00417\ \ \ \ \ EXPECT\_EQ(small\_duration.count(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00418}00418\ \ \ \ \ EXPECT\_EQ(large\_duration.count(),\ 24);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00419}00419\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00420}00420\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00425}00425\ TEST\_F(ChronoCoverageTest,\ TestChronoPerformance)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00426}00426\ \ \ \ \ \textcolor{comment}{//\ Test\ timing\ accuracy\ with\ multiple\ measurements}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00427}00427\ \ \ \ \ std::vector<std::chrono::nanoseconds>\ measurements;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00428}00428\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00429}00429\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00430}00430\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ start\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00431}00431\ \ \ \ \ \ \ \ \ std::this\_thread::sleep\_for(std::chrono::microseconds(100));}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00432}00432\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ end\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00433}00433\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00434}00434\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ duration\ =\ std::chrono::duration\_cast<std::chrono::nanoseconds>(end\ -\/\ start);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00435}00435\ \ \ \ \ \ \ \ \ measurements.push\_back(duration);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00436}00436\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00437}00437\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00438}00438\ \ \ \ \ \textcolor{comment}{//\ Verify\ all\ measurements\ are\ positive}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00439}00439\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ measurement\ :\ measurements)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00440}00440\ \ \ \ \ \ \ \ \ EXPECT\_GT(measurement.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00441}00441\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00442}00442\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00443}00443\ \ \ \ \ \textcolor{comment}{//\ Test\ duration\ statistics}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00444}00444\ \ \ \ \ \textcolor{keyword}{auto}\ total\_duration\ =\ std::chrono::nanoseconds(0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00445}00445\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ measurement\ :\ measurements)\ \{}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00446}00446\ \ \ \ \ \ \ \ \ total\_duration\ +=\ measurement;}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00447}00447\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00448}00448\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00449}00449\ \ \ \ \ EXPECT\_GT(total\_duration.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00450}00450\ \}}
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00451}00451\ }
+\DoxyCodeLine{\Hypertarget{test__chrono__coverage_8cpp_source_l00452}00452\ \}\ \textcolor{comment}{//\ namespace}}
+
+\end{DoxyCode}

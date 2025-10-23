@@ -1,0 +1,765 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s6\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs12\cgrid \sbasedon0 \snext0 heading 6;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\*\listtable
+{\list\listtemplateid1
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8662 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid1}
+{\list\listtemplateid2
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid2}
+{\list\listtemplateid3
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid3}
+}
+{\listoverridetable
+{\listoverride\listid1\listoverridecount0\ls1}
+{\listoverride\listid2\listoverridecount0\ls2}
+{\listoverride\listid3\listoverridecount0\ls3}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+test_chrono_advanced_coverage.cpp\par \pard\plain 
+{\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_chrono_advanced_coverage.cpp}
+{\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_chrono_advanced_coverage.cpp}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAAF}{\bkmkend AAAAAAAAAF}
+00001 \par
+{\bkmkstart AAAAAAAAAH}{\bkmkend AAAAAAAAAH}
+00008 \par
+{\bkmkstart AAAAAAAAAJ}{\bkmkend AAAAAAAAAJ}
+00009 {\cf21 #include <gtest/gtest.h>}\par
+{\bkmkstart AAAAAAAAAK}{\bkmkend AAAAAAAAAK}
+00010 {\cf21 #include <chrono>}\par
+{\bkmkstart AAAAAAAAAO}{\bkmkend AAAAAAAAAO}
+00011 {\cf21 #include <thread>}\par
+{\bkmkstart AAAAAAAAAS}{\bkmkend AAAAAAAAAS}
+00012 {\cf21 #include <iostream>}\par
+{\bkmkstart AAAAAAAAAU}{\bkmkend AAAAAAAAAU}
+00013 {\cf21 #include <vector>}\par
+{\bkmkstart AAAAAAAABA}{\bkmkend AAAAAAAABA}
+00014 {\cf21 #include <algorithm>}\par
+{\bkmkstart AAAAAAAABD}{\bkmkend AAAAAAAABD}
+00015 {\cf21 #include <limits>}\par
+{\bkmkstart AAAAAAAABM}{\bkmkend AAAAAAAABM}
+00016 \par
+{\bkmkstart AAAAAAAABO}{\bkmkend AAAAAAAABO}
+00017 {\cf17 namespace }\{\par
+{\bkmkstart AAAAAAAABQ}{\bkmkend AAAAAAAABQ}
+00018 \par
+{\bkmkstart AAAAAAAABR}{\bkmkend AAAAAAAABR}
+00023 {\cf17 class }ChronoAdvancedCoverageTest : {\cf17 public} ::testing::Test \{\par
+{\bkmkstart AAAAAAAABV}{\bkmkend AAAAAAAABV}
+00024 {\cf17 protected}:\par
+{\bkmkstart AAAAAAAABX}{\bkmkend AAAAAAAABX}
+00025     {\cf18 void} SetUp(){\cf17  override }\{\par
+{\bkmkstart AAAAAAAABY}{\bkmkend AAAAAAAABY}
+00026         {\cf20 // Setup for each test}\par
+{\bkmkstart AAAAAAAACB}{\bkmkend AAAAAAAACB}
+00027     \}\par
+{\bkmkstart AAAAAAAACD}{\bkmkend AAAAAAAACD}
+00028     \par
+{\bkmkstart AAAAAAAACE}{\bkmkend AAAAAAAACE}
+00029     {\cf18 void} TearDown(){\cf17  override }\{\par
+{\bkmkstart AAAAAAAACG}{\bkmkend AAAAAAAACG}
+00030         {\cf20 // Cleanup after each test}\par
+{\bkmkstart AAAAAAAACK}{\bkmkend AAAAAAAACK}
+00031     \}\par
+{\bkmkstart AAAAAAAACM}{\bkmkend AAAAAAAACM}
+00032 \};\par
+{\bkmkstart AAAAAAAACO}{\bkmkend AAAAAAAACO}
+00033 \par
+{\bkmkstart AAAAAAAACS}{\bkmkend AAAAAAAACS}
+00038 TEST_F(ChronoAdvancedCoverageTest, TestChronoTypeTraits) \{\par
+{\bkmkstart AAAAAAAACV}{\bkmkend AAAAAAAACV}
+00039     {\cf20 // Test duration type traits}\par
+{\bkmkstart AAAAAAAACW}{\bkmkend AAAAAAAACW}
+00040     {\cf17 using }seconds_type = std::chrono::seconds;\par
+{\bkmkstart AAAAAAAACY}{\bkmkend AAAAAAAACY}
+00041     {\cf17 using }milliseconds_type = std::chrono::milliseconds;\par
+{\bkmkstart AAAAAAAADA}{\bkmkend AAAAAAAADA}
+00042     {\cf17 using }microseconds_type = std::chrono::microseconds;\par
+{\bkmkstart AAAAAAAADE}{\bkmkend AAAAAAAADE}
+00043     {\cf17 using }nanoseconds_type = std::chrono::nanoseconds;\par
+{\bkmkstart AAAAAAAADF}{\bkmkend AAAAAAAADF}
+00044     \par
+{\bkmkstart AAAAAAAADG}{\bkmkend AAAAAAAADG}
+00045     {\cf20 // Test duration properties}\par
+{\bkmkstart AAAAAAAADH}{\bkmkend AAAAAAAADH}
+00046     EXPECT_TRUE(std::is_arithmetic_v<seconds_type::rep>);\par
+{\bkmkstart AAAAAAAADI}{\bkmkend AAAAAAAADI}
+00047     EXPECT_TRUE(std::is_arithmetic_v<milliseconds_type::rep>);\par
+{\bkmkstart AAAAAAAADJ}{\bkmkend AAAAAAAADJ}
+00048     EXPECT_TRUE(std::is_arithmetic_v<microseconds_type::rep>);\par
+{\bkmkstart AAAAAAAADK}{\bkmkend AAAAAAAADK}
+00049     EXPECT_TRUE(std::is_arithmetic_v<nanoseconds_type::rep>);\par
+{\bkmkstart AAAAAAAADN}{\bkmkend AAAAAAAADN}
+00050     \par
+{\bkmkstart AAAAAAAADO}{\bkmkend AAAAAAAADO}
+00051     {\cf20 // Test period properties}\par
+{\bkmkstart AAAAAAAADP}{\bkmkend AAAAAAAADP}
+00052     EXPECT_GT(seconds_type::period::num, 0);\par
+{\bkmkstart AAAAAAAADR}{\bkmkend AAAAAAAADR}
+00053     EXPECT_GT(milliseconds_type::period::num, 0);\par
+{\bkmkstart AAAAAAAADU}{\bkmkend AAAAAAAADU}
+00054     EXPECT_GT(microseconds_type::period::num, 0);\par
+{\bkmkstart AAAAAAAADX}{\bkmkend AAAAAAAADX}
+00055     EXPECT_GT(nanoseconds_type::period::num, 0);\par
+{\bkmkstart AAAAAAAAEA}{\bkmkend AAAAAAAAEA}
+00056 \}\par
+{\bkmkstart AAAAAAAAEC}{\bkmkend AAAAAAAAEC}
+00057 \par
+{\bkmkstart AAAAAAAAED}{\bkmkend AAAAAAAAED}
+00062 TEST_F(ChronoAdvancedCoverageTest, TestChronoRatioOperations) \{\par
+{\bkmkstart AAAAAAAAEE}{\bkmkend AAAAAAAAEE}
+00063     {\cf17 using namespace }std::chrono;\par
+{\bkmkstart AAAAAAAAEF}{\bkmkend AAAAAAAAEF}
+00064     \par
+{\bkmkstart AAAAAAAAEG}{\bkmkend AAAAAAAAEG}
+00065     {\cf20 // Test ratio arithmetic}\par
+{\bkmkstart AAAAAAAAEH}{\bkmkend AAAAAAAAEH}
+00066     {\cf17 using }ratio_1_1 = std::ratio<1, 1>;\par
+{\bkmkstart AAAAAAAAEI}{\bkmkend AAAAAAAAEI}
+00067     {\cf17 using }ratio_1_1000 = std::ratio<1, 1000>;\par
+{\bkmkstart AAAAAAAAEJ}{\bkmkend AAAAAAAAEJ}
+00068     {\cf17 using }ratio_1000_1 = std::ratio<1000, 1>;\par
+{\bkmkstart AAAAAAAAEL}{\bkmkend AAAAAAAAEL}
+00069     \par
+{\bkmkstart AAAAAAAAEM}{\bkmkend AAAAAAAAEM}
+00070     {\cf20 // Test ratio properties}\par
+{\bkmkstart AAAAAAAAEN}{\bkmkend AAAAAAAAEN}
+00071     EXPECT_EQ(ratio_1_1::num, 1);\par
+{\bkmkstart AAAAAAAAEO}{\bkmkend AAAAAAAAEO}
+00072     EXPECT_EQ(ratio_1_1::den, 1);\par
+{\bkmkstart AAAAAAAAEP}{\bkmkend AAAAAAAAEP}
+00073     EXPECT_EQ(ratio_1_1000::num, 1);\par
+{\bkmkstart AAAAAAAAEQ}{\bkmkend AAAAAAAAEQ}
+00074     EXPECT_EQ(ratio_1_1000::den, 1000);\par
+{\bkmkstart AAAAAAAAER}{\bkmkend AAAAAAAAER}
+00075     EXPECT_EQ(ratio_1000_1::num, 1000);\par
+{\bkmkstart AAAAAAAAET}{\bkmkend AAAAAAAAET}
+00076     EXPECT_EQ(ratio_1000_1::den, 1);\par
+{\bkmkstart AAAAAAAAEV}{\bkmkend AAAAAAAAEV}
+00077     \par
+{\bkmkstart AAAAAAAAEW}{\bkmkend AAAAAAAAEW}
+00078     {\cf20 // Test duration with custom ratios}\par
+{\bkmkstart AAAAAAAAEX}{\bkmkend AAAAAAAAEX}
+00079     {\cf17 using }custom_duration = duration<int, ratio_1_1000>;\par
+{\bkmkstart AAAAAAAAFA}{\bkmkend AAAAAAAAFA}
+00080     {\cf17 auto} custom_dur = custom_duration(1000);\par
+{\bkmkstart AAAAAAAAFD}{\bkmkend AAAAAAAAFD}
+00081     EXPECT_EQ(custom_dur.count(), 1000);\par
+{\bkmkstart AAAAAAAAFF}{\bkmkend AAAAAAAAFF}
+00082 \}\par
+{\bkmkstart AAAAAAAAFG}{\bkmkend AAAAAAAAFG}
+00083 \par
+{\bkmkstart AAAAAAAAFJ}{\bkmkend AAAAAAAAFJ}
+00088 TEST_F(ChronoAdvancedCoverageTest, TestChronoClockComparison) \{\par
+{\bkmkstart AAAAAAAAFP}{\bkmkend AAAAAAAAFP}
+00089     {\cf20 // Test clock ordering}\par
+{\bkmkstart AAAAAAAAFS}{\bkmkend AAAAAAAAFS}
+00090     {\cf17 auto} now1 = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAAFW}{\bkmkend AAAAAAAAFW}
+00091     std::this_thread::sleep_for(std::chrono::microseconds(1));\par
+{\bkmkstart AAAAAAAAGB}{\bkmkend AAAAAAAAGB}
+00092     {\cf17 auto} now2 = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAAGF}{\bkmkend AAAAAAAAGF}
+00093     \par
+{\bkmkstart AAAAAAAAGG}{\bkmkend AAAAAAAAGG}
+00094     EXPECT_LT(now1, now2);\par
+{\bkmkstart AAAAAAAAGH}{\bkmkend AAAAAAAAGH}
+00095     EXPECT_LE(now1, now2);\par
+{\bkmkstart AAAAAAAAGI}{\bkmkend AAAAAAAAGI}
+00096     EXPECT_GT(now2, now1);\par
+{\bkmkstart AAAAAAAAGK}{\bkmkend AAAAAAAAGK}
+00097     EXPECT_GE(now2, now1);\par
+{\bkmkstart AAAAAAAAGM}{\bkmkend AAAAAAAAGM}
+00098     EXPECT_NE(now1, now2);\par
+{\bkmkstart AAAAAAAAGN}{\bkmkend AAAAAAAAGN}
+00099     \par
+{\bkmkstart AAAAAAAAGO}{\bkmkend AAAAAAAAGO}
+00100     {\cf20 // Test equal time points}\par
+{\bkmkstart AAAAAAAAGQ}{\bkmkend AAAAAAAAGQ}
+00101     {\cf17 auto} now3 = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAAGT}{\bkmkend AAAAAAAAGT}
+00102     {\cf17 auto} now4 = now3;\par
+{\bkmkstart AAAAAAAAGV}{\bkmkend AAAAAAAAGV}
+00103     EXPECT_EQ(now3, now4);\par
+{\bkmkstart AAAAAAAAGY}{\bkmkend AAAAAAAAGY}
+00104     EXPECT_LE(now3, now4);\par
+{\bkmkstart AAAAAAAAHA}{\bkmkend AAAAAAAAHA}
+00105     EXPECT_GE(now3, now4);\par
+{\bkmkstart AAAAAAAAHC}{\bkmkend AAAAAAAAHC}
+00106 \}\par
+{\bkmkstart AAAAAAAAHF}{\bkmkend AAAAAAAAHF}
+00107 \par
+{\bkmkstart AAAAAAAAHH}{\bkmkend AAAAAAAAHH}
+00112 TEST_F(ChronoAdvancedCoverageTest, TestChronoDurationComparison) \{\par
+{\bkmkstart AAAAAAAAIB}{\bkmkend AAAAAAAAIB}
+00113     {\cf17 auto} dur1 = std::chrono::seconds(5);\par
+{\bkmkstart AAAAAAAAIF}{\bkmkend AAAAAAAAIF}
+00114     {\cf17 auto} dur2 = std::chrono::seconds(10);\par
+{\bkmkstart AAAAAAAAIH}{\bkmkend AAAAAAAAIH}
+00115     {\cf17 auto} dur3 = std::chrono::seconds(5);\par
+{\bkmkstart AAAAAAAAIN}{\bkmkend AAAAAAAAIN}
+00116     \par
+{\bkmkstart AAAAAAAAIO}{\bkmkend AAAAAAAAIO}
+00117     {\cf20 // Test all comparison operators}\par
+{\bkmkstart AAAAAAAAIP}{\bkmkend AAAAAAAAIP}
+00118     EXPECT_LT(dur1, dur2);\par
+{\bkmkstart AAAAAAAAIT}{\bkmkend AAAAAAAAIT}
+00119     EXPECT_LE(dur1, dur2);\par
+{\bkmkstart AAAAAAAAIX}{\bkmkend AAAAAAAAIX}
+00120     EXPECT_LE(dur1, dur3);\par
+{\bkmkstart AAAAAAAAIY}{\bkmkend AAAAAAAAIY}
+00121     EXPECT_GT(dur2, dur1);\par
+{\bkmkstart AAAAAAAAIZ}{\bkmkend AAAAAAAAIZ}
+00122     EXPECT_GE(dur2, dur1);\par
+{\bkmkstart AAAAAAAAJD}{\bkmkend AAAAAAAAJD}
+00123     EXPECT_GE(dur1, dur3);\par
+{\bkmkstart AAAAAAAAJE}{\bkmkend AAAAAAAAJE}
+00124     EXPECT_EQ(dur1, dur3);\par
+{\bkmkstart AAAAAAAAJI}{\bkmkend AAAAAAAAJI}
+00125     EXPECT_NE(dur1, dur2);\par
+{\bkmkstart AAAAAAAAJK}{\bkmkend AAAAAAAAJK}
+00126 \}\par
+{\bkmkstart AAAAAAAAJL}{\bkmkend AAAAAAAAJL}
+00127 \par
+{\bkmkstart AAAAAAAAJZ}{\bkmkend AAAAAAAAJZ}
+00132 TEST_F(ChronoAdvancedCoverageTest, TestChronoDurationArithmeticAdvanced) \{\par
+{\bkmkstart AAAAAAAAKG}{\bkmkend AAAAAAAAKG}
+00133     {\cf20 // Test mixed duration arithmetic}\par
+{\bkmkstart AAAAAAAAKJ}{\bkmkend AAAAAAAAKJ}
+00134     {\cf17 auto} hours = std::chrono::hours(2);\par
+{\bkmkstart AAAAAAAAKQ}{\bkmkend AAAAAAAAKQ}
+00135     {\cf17 auto} minutes = std::chrono::minutes(30);\par
+{\bkmkstart AAAAAAAAKU}{\bkmkend AAAAAAAAKU}
+00136     {\cf17 auto} seconds = std::chrono::seconds(45);\par
+{\bkmkstart AAAAAAAAKW}{\bkmkend AAAAAAAAKW}
+00137     \par
+{\bkmkstart AAAAAAAAKX}{\bkmkend AAAAAAAAKX}
+00138     {\cf20 // Test complex arithmetic}\par
+{\bkmkstart AAAAAAAAKZ}{\bkmkend AAAAAAAAKZ}
+00139     {\cf17 auto} total1 = hours + minutes + seconds;\par
+{\bkmkstart AAAAAAAALB}{\bkmkend AAAAAAAALB}
+00140     {\cf17 auto} total2 = hours - minutes + seconds;\par
+{\bkmkstart AAAAAAAALD}{\bkmkend AAAAAAAALD}
+00141     {\cf17 auto} total3 = hours * 2 + minutes;\par
+{\bkmkstart AAAAAAAALG}{\bkmkend AAAAAAAALG}
+00142     {\cf17 auto} total4 = (hours + minutes) / 2;\par
+{\bkmkstart AAAAAAAALK}{\bkmkend AAAAAAAALK}
+00143     \par
+{\bkmkstart AAAAAAAALL}{\bkmkend AAAAAAAALL}
+00144     EXPECT_GT(total1.count(), 0);\par
+{\bkmkstart AAAAAAAALM}{\bkmkend AAAAAAAALM}
+00145     EXPECT_GT(total2.count(), 0);\par
+{\bkmkstart AAAAAAAALO}{\bkmkend AAAAAAAALO}
+00146     EXPECT_GT(total3.count(), 0);\par
+{\bkmkstart AAAAAAAALQ}{\bkmkend AAAAAAAALQ}
+00147     EXPECT_GT(total4.count(), 0);\par
+{\bkmkstart AAAAAAAALS}{\bkmkend AAAAAAAALS}
+00148     \par
+{\bkmkstart AAAAAAAALU}{\bkmkend AAAAAAAALU}
+00149     {\cf20 // Test duration modulo operations}\par
+{\bkmkstart AAAAAAAALW}{\bkmkend AAAAAAAALW}
+00150     {\cf17 auto} remainder = total1 % std::chrono::minutes(1);\par
+{\bkmkstart AAAAAAAALZ}{\bkmkend AAAAAAAALZ}
+00151     EXPECT_GE(remainder.count(), 0);\par
+{\bkmkstart AAAAAAAAMB}{\bkmkend AAAAAAAAMB}
+00152 \}\par
+{\bkmkstart AAAAAAAAMC}{\bkmkend AAAAAAAAMC}
+00153 \par
+{\bkmkstart AAAAAAAAME}{\bkmkend AAAAAAAAME}
+00158 TEST_F(ChronoAdvancedCoverageTest, TestChronoTimePointArithmeticAdvanced) \{\par
+{\bkmkstart AAAAAAAAMG}{\bkmkend AAAAAAAAMG}
+00159     {\cf17 auto} now = std::chrono::system_clock::now();\par
+{\bkmkstart AAAAAAAAMJ}{\bkmkend AAAAAAAAMJ}
+00160     {\cf17 auto} duration1 = std::chrono::seconds(5);\par
+{\bkmkstart AAAAAAAAMM}{\bkmkend AAAAAAAAMM}
+00161     {\cf17 auto} duration2 = std::chrono::minutes(2);\par
+{\bkmkstart AAAAAAAAMO}{\bkmkend AAAAAAAAMO}
+00162     \par
+{\bkmkstart AAAAAAAAMP}{\bkmkend AAAAAAAAMP}
+00163     {\cf20 // Test time point arithmetic}\par
+{\bkmkstart AAAAAAAAMQ}{\bkmkend AAAAAAAAMQ}
+00164     {\cf17 auto} future1 = now + duration1;\par
+{\bkmkstart AAAAAAAAMS}{\bkmkend AAAAAAAAMS}
+00165     {\cf17 auto} future2 = now + duration2;\par
+{\bkmkstart AAAAAAAAMU}{\bkmkend AAAAAAAAMU}
+00166     {\cf17 auto} past1 = now - duration1;\par
+{\bkmkstart AAAAAAAAMW}{\bkmkend AAAAAAAAMW}
+00167     {\cf17 auto} past2 = now - duration2;\par
+{\bkmkstart AAAAAAAANB}{\bkmkend AAAAAAAANB}
+00168     \par
+{\bkmkstart AAAAAAAANC}{\bkmkend AAAAAAAANC}
+00169     EXPECT_GT(future1, now);\par
+{\bkmkstart AAAAAAAANF}{\bkmkend AAAAAAAANF}
+00170     EXPECT_GT(future2, now);\par
+{\bkmkstart AAAAAAAANH}{\bkmkend AAAAAAAANH}
+00171     EXPECT_LT(past1, now);\par
+{\bkmkstart AAAAAAAANJ}{\bkmkend AAAAAAAANJ}
+00172     EXPECT_LT(past2, now);\par
+{\bkmkstart AAAAAAAANK}{\bkmkend AAAAAAAANK}
+00173     \par
+{\bkmkstart AAAAAAAANM}{\bkmkend AAAAAAAANM}
+00174     {\cf20 // Test time point difference}\par
+{\bkmkstart AAAAAAAANO}{\bkmkend AAAAAAAANO}
+00175     {\cf17 auto} diff1 = future1 - now;\par
+{\bkmkstart AAAAAAAANQ}{\bkmkend AAAAAAAANQ}
+00176     {\cf17 auto} diff2 = now - past1;\par
+{\bkmkstart AAAAAAAANR}{\bkmkend AAAAAAAANR}
+00177     \par
+{\bkmkstart AAAAAAAANS}{\bkmkend AAAAAAAANS}
+00178     EXPECT_EQ(diff1, duration1);\par
+{\bkmkstart AAAAAAAANX}{\bkmkend AAAAAAAANX}
+00179     EXPECT_EQ(diff2, duration1);\par
+{\bkmkstart AAAAAAAANZ}{\bkmkend AAAAAAAANZ}
+00180 \}\par
+{\bkmkstart AAAAAAAAOA}{\bkmkend AAAAAAAAOA}
+00181 \par
+{\bkmkstart AAAAAAAAOC}{\bkmkend AAAAAAAAOC}
+00186 TEST_F(ChronoAdvancedCoverageTest, TestChronoDurationCastAdvanced) \{\par
+{\bkmkstart AAAAAAAAOF}{\bkmkend AAAAAAAAOF}
+00187     {\cf20 // Test complex duration casting}\par
+{\bkmkstart AAAAAAAAOH}{\bkmkend AAAAAAAAOH}
+00188     {\cf17 auto} hours = std::chrono::hours(1);\par
+{\bkmkstart AAAAAAAAOK}{\bkmkend AAAAAAAAOK}
+00189     {\cf17 auto} minutes = std::chrono::minutes(30);\par
+{\bkmkstart AAAAAAAAOM}{\bkmkend AAAAAAAAOM}
+00190     {\cf17 auto} seconds = std::chrono::seconds(45);\par
+{\bkmkstart AAAAAAAAOQ}{\bkmkend AAAAAAAAOQ}
+00191     {\cf17 auto} milliseconds = std::chrono::milliseconds(500);\par
+{\bkmkstart AAAAAAAAOT}{\bkmkend AAAAAAAAOT}
+00192     \par
+{\bkmkstart AAAAAAAAOU}{\bkmkend AAAAAAAAOU}
+00193     {\cf20 // Test casting to different types}\par
+{\bkmkstart AAAAAAAAOV}{\bkmkend AAAAAAAAOV}
+00194     {\cf17 auto} total_hours = std::chrono::duration_cast<std::chrono::hours>(hours + minutes + seconds + milliseconds);\par
+{\bkmkstart AAAAAAAAOY}{\bkmkend AAAAAAAAOY}
+00195     {\cf17 auto} total_minutes = std::chrono::duration_cast<std::chrono::minutes>(hours + minutes + seconds + milliseconds);\par
+{\bkmkstart AAAAAAAAPC}{\bkmkend AAAAAAAAPC}
+00196     {\cf17 auto} total_seconds = std::chrono::duration_cast<std::chrono::seconds>(hours + minutes + seconds + milliseconds);\par
+{\bkmkstart AAAAAAAAPF}{\bkmkend AAAAAAAAPF}
+00197     {\cf17 auto} total_milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(hours + minutes + seconds + milliseconds);\par
+{\bkmkstart AAAAAAAAPG}{\bkmkend AAAAAAAAPG}
+00198     {\cf17 auto} total_microseconds = std::chrono::duration_cast<std::chrono::microseconds>(hours + minutes + seconds + milliseconds);\par
+{\bkmkstart AAAAAAAAPK}{\bkmkend AAAAAAAAPK}
+00199     {\cf17 auto} total_nanoseconds = std::chrono::duration_cast<std::chrono::nanoseconds>(hours + minutes + seconds + milliseconds);\par
+{\bkmkstart AAAAAAAAPN}{\bkmkend AAAAAAAAPN}
+00200     \par
+{\bkmkstart AAAAAAAAPO}{\bkmkend AAAAAAAAPO}
+00201     EXPECT_GT(total_hours.count(), 0);\par
+{\bkmkstart AAAAAAAAPP}{\bkmkend AAAAAAAAPP}
+00202     EXPECT_GT(total_minutes.count(), 0);\par
+{\bkmkstart AAAAAAAAPT}{\bkmkend AAAAAAAAPT}
+00203     EXPECT_GT(total_seconds.count(), 0);\par
+{\bkmkstart AAAAAAAAPV}{\bkmkend AAAAAAAAPV}
+00204     EXPECT_GT(total_milliseconds.count(), 0);\par
+{\bkmkstart AAAAAAAAPW}{\bkmkend AAAAAAAAPW}
+00205     EXPECT_GT(total_microseconds.count(), 0);\par
+{\bkmkstart AAAAAAAAPZ}{\bkmkend AAAAAAAAPZ}
+00206     EXPECT_GT(total_nanoseconds.count(), 0);\par
+{\bkmkstart AAAAAAAAQA}{\bkmkend AAAAAAAAQA}
+00207 \}\par
+{\bkmkstart AAAAAAAAQC}{\bkmkend AAAAAAAAQC}
+00208 \par
+{\bkmkstart AAAAAAAAQD}{\bkmkend AAAAAAAAQD}
+00213 TEST_F(ChronoAdvancedCoverageTest, TestChronoClockResolution) \{\par
+{\bkmkstart AAAAAAAAQF}{\bkmkend AAAAAAAAQF}
+00214     {\cf20 // Test high resolution clock resolution}\par
+{\bkmkstart AAAAAAAAQG}{\bkmkend AAAAAAAAQG}
+00215     {\cf17 auto} start_hr = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAAQI}{\bkmkend AAAAAAAAQI}
+00216     {\cf17 auto} end_hr = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAAQL}{\bkmkend AAAAAAAAQL}
+00217     {\cf17 auto} resolution_hr = end_hr - start_hr;\par
+{\bkmkstart AAAAAAAAQP}{\bkmkend AAAAAAAAQP}
+00218     \par
+{\bkmkstart AAAAAAAAQR}{\bkmkend AAAAAAAAQR}
+00219     EXPECT_GE(resolution_hr.count(), 0);\par
+{\bkmkstart AAAAAAAAQU}{\bkmkend AAAAAAAAQU}
+00220     \par
+{\bkmkstart AAAAAAAAQX}{\bkmkend AAAAAAAAQX}
+00221     {\cf20 // Test steady clock resolution}\par
+{\bkmkstart AAAAAAAAQZ}{\bkmkend AAAAAAAAQZ}
+00222     {\cf17 auto} start_sc = std::chrono::steady_clock::now();\par
+{\bkmkstart AAAAAAAARD}{\bkmkend AAAAAAAARD}
+00223     {\cf17 auto} end_sc = std::chrono::steady_clock::now();\par
+{\bkmkstart AAAAAAAARF}{\bkmkend AAAAAAAARF}
+00224     {\cf17 auto} resolution_sc = end_sc - start_sc;\par
+{\bkmkstart AAAAAAAARH}{\bkmkend AAAAAAAARH}
+00225     \par
+{\bkmkstart AAAAAAAARI}{\bkmkend AAAAAAAARI}
+00226     EXPECT_GE(resolution_sc.count(), 0);\par
+{\bkmkstart AAAAAAAARL}{\bkmkend AAAAAAAARL}
+00227     \par
+{\bkmkstart AAAAAAAARM}{\bkmkend AAAAAAAARM}
+00228     {\cf20 // Test system clock resolution}\par
+{\bkmkstart AAAAAAAARP}{\bkmkend AAAAAAAARP}
+00229     {\cf17 auto} start_sys = std::chrono::system_clock::now();\par
+{\bkmkstart AAAAAAAARR}{\bkmkend AAAAAAAARR}
+00230     {\cf17 auto} end_sys = std::chrono::system_clock::now();\par
+{\bkmkstart AAAAAAAART}{\bkmkend AAAAAAAART}
+00231     {\cf17 auto} resolution_sys = end_sys - start_sys;\par
+{\bkmkstart AAAAAAAARX}{\bkmkend AAAAAAAARX}
+00232     \par
+{\bkmkstart AAAAAAAARZ}{\bkmkend AAAAAAAARZ}
+00233     EXPECT_GE(resolution_sys.count(), 0);\par
+{\bkmkstart AAAAAAAASC}{\bkmkend AAAAAAAASC}
+00234 \}\par
+{\bkmkstart AAAAAAAASD}{\bkmkend AAAAAAAASD}
+00235 \par
+{\bkmkstart AAAAAAAASE}{\bkmkend AAAAAAAASE}
+00240 TEST_F(ChronoAdvancedCoverageTest, TestChronoDurationLimits) \{\par
+{\bkmkstart AAAAAAAASG}{\bkmkend AAAAAAAASG}
+00241     {\cf20 // Test maximum duration values}\par
+{\bkmkstart AAAAAAAASH}{\bkmkend AAAAAAAASH}
+00242     {\cf17 auto} max_seconds = std::chrono::seconds(std::numeric_limits<std::chrono::seconds::rep>::max());\par
+{\bkmkstart AAAAAAAASQ}{\bkmkend AAAAAAAASQ}
+00243     {\cf17 auto} max_milliseconds = std::chrono::milliseconds(std::numeric_limits<std::chrono::milliseconds::rep>::max());\par
+{\bkmkstart AAAAAAAATD}{\bkmkend AAAAAAAATD}
+00244     {\cf17 auto} max_microseconds = std::chrono::microseconds(std::numeric_limits<std::chrono::microseconds::rep>::max());\par
+{\bkmkstart AAAAAAAATZ}{\bkmkend AAAAAAAATZ}
+00245     {\cf17 auto} max_nanoseconds = std::chrono::nanoseconds(std::numeric_limits<std::chrono::nanoseconds::rep>::max());\par
+{\bkmkstart AAAAAAAAUT}{\bkmkend AAAAAAAAUT}
+00246     \par
+{\bkmkstart AAAAAAAAUW}{\bkmkend AAAAAAAAUW}
+00247     EXPECT_GT(max_seconds.count(), 0);\par
+{\bkmkstart AAAAAAAAVB}{\bkmkend AAAAAAAAVB}
+00248     EXPECT_GT(max_milliseconds.count(), 0);\par
+{\bkmkstart AAAAAAAAVD}{\bkmkend AAAAAAAAVD}
+00249     EXPECT_GT(max_microseconds.count(), 0);\par
+{\bkmkstart AAAAAAAAVG}{\bkmkend AAAAAAAAVG}
+00250     EXPECT_GT(max_nanoseconds.count(), 0);\par
+{\bkmkstart AAAAAAAAVJ}{\bkmkend AAAAAAAAVJ}
+00251     \par
+{\bkmkstart AAAAAAAAVL}{\bkmkend AAAAAAAAVL}
+00252     {\cf20 // Test minimum duration values}\par
+{\bkmkstart AAAAAAAAVN}{\bkmkend AAAAAAAAVN}
+00253     {\cf17 auto} min_seconds = std::chrono::seconds(std::numeric_limits<std::chrono::seconds::rep>::min());\par
+{\bkmkstart AAAAAAAAWA}{\bkmkend AAAAAAAAWA}
+00254     {\cf17 auto} min_milliseconds = std::chrono::milliseconds(std::numeric_limits<std::chrono::milliseconds::rep>::min());\par
+{\bkmkstart AAAAAAAAWP}{\bkmkend AAAAAAAAWP}
+00255     {\cf17 auto} min_microseconds = std::chrono::microseconds(std::numeric_limits<std::chrono::microseconds::rep>::min());\par
+{\bkmkstart AAAAAAAAXS}{\bkmkend AAAAAAAAXS}
+00256     {\cf17 auto} min_nanoseconds = std::chrono::nanoseconds(std::numeric_limits<std::chrono::nanoseconds::rep>::min());\par
+{\bkmkstart AAAAAAAAYQ}{\bkmkend AAAAAAAAYQ}
+00257     \par
+{\bkmkstart AAAAAAAAYT}{\bkmkend AAAAAAAAYT}
+00258     EXPECT_LT(min_seconds.count(), 0);\par
+{\bkmkstart AAAAAAAAZA}{\bkmkend AAAAAAAAZA}
+00259     EXPECT_LT(min_milliseconds.count(), 0);\par
+{\bkmkstart AAAAAAAAZE}{\bkmkend AAAAAAAAZE}
+00260     EXPECT_LT(min_microseconds.count(), 0);\par
+{\bkmkstart AAAAAAAAZH}{\bkmkend AAAAAAAAZH}
+00261     EXPECT_LT(min_nanoseconds.count(), 0);\par
+{\bkmkstart AAAAAAAAZL}{\bkmkend AAAAAAAAZL}
+00262 \}\par
+{\bkmkstart AAAAAAAAZN}{\bkmkend AAAAAAAAZN}
+00263 \par
+{\bkmkstart AAAAAAAAZP}{\bkmkend AAAAAAAAZP}
+00268 TEST_F(ChronoAdvancedCoverageTest, TestChronoDurationArithmeticOverflow) \{\par
+{\bkmkstart AAAAAAAAZV}{\bkmkend AAAAAAAAZV}
+00269     {\cf20 // Test safe arithmetic operations}\par
+{\bkmkstart AAAAAAAAZY}{\bkmkend AAAAAAAAZY}
+00270     {\cf17 auto} duration1 = std::chrono::seconds(1000);\par
+{\bkmkstart AAAAAAABAD}{\bkmkend AAAAAAABAD}
+00271     {\cf17 auto} duration2 = std::chrono::seconds(2000);\par
+{\bkmkstart AAAAAAABAH}{\bkmkend AAAAAAABAH}
+00272     \par
+{\bkmkstart AAAAAAABAI}{\bkmkend AAAAAAABAI}
+00273     {\cf20 // Test safe addition}\par
+{\bkmkstart AAAAAAABAJ}{\bkmkend AAAAAAABAJ}
+00274     {\cf17 auto} sum = duration1 + duration2;\par
+{\bkmkstart AAAAAAABAM}{\bkmkend AAAAAAABAM}
+00275     EXPECT_EQ(sum.count(), 3000);\par
+{\bkmkstart AAAAAAABAO}{\bkmkend AAAAAAABAO}
+00276     \par
+{\bkmkstart AAAAAAABAR}{\bkmkend AAAAAAABAR}
+00277     {\cf20 // Test safe subtraction}\par
+{\bkmkstart AAAAAAABAS}{\bkmkend AAAAAAABAS}
+00278     {\cf17 auto} diff = duration2 - duration1;\par
+{\bkmkstart AAAAAAABAV}{\bkmkend AAAAAAABAV}
+00279     EXPECT_EQ(diff.count(), 1000);\par
+{\bkmkstart AAAAAAABAY}{\bkmkend AAAAAAABAY}
+00280     \par
+{\bkmkstart AAAAAAABBA}{\bkmkend AAAAAAABBA}
+00281     {\cf20 // Test safe multiplication}\par
+{\bkmkstart AAAAAAABBC}{\bkmkend AAAAAAABBC}
+00282     {\cf17 auto} mult = duration1 * 3;\par
+{\bkmkstart AAAAAAABBD}{\bkmkend AAAAAAABBD}
+00283     EXPECT_EQ(mult.count(), 3000);\par
+{\bkmkstart AAAAAAABBG}{\bkmkend AAAAAAABBG}
+00284     \par
+{\bkmkstart AAAAAAABBI}{\bkmkend AAAAAAABBI}
+00285     {\cf20 // Test safe division}\par
+{\bkmkstart AAAAAAABBJ}{\bkmkend AAAAAAABBJ}
+00286     {\cf17 auto} div = duration2 / 2;\par
+{\bkmkstart AAAAAAABBL}{\bkmkend AAAAAAABBL}
+00287     EXPECT_EQ(div.count(), 1000);\par
+{\bkmkstart AAAAAAABBN}{\bkmkend AAAAAAABBN}
+00288 \}\par
+{\bkmkstart AAAAAAABBO}{\bkmkend AAAAAAABBO}
+00289 \par
+{\bkmkstart AAAAAAABBS}{\bkmkend AAAAAAABBS}
+00294 TEST_F(ChronoAdvancedCoverageTest, TestChronoTimePointConversion) \{\par
+{\bkmkstart AAAAAAABBX}{\bkmkend AAAAAAABBX}
+00295     {\cf20 // Test system clock conversions}\par
+{\bkmkstart AAAAAAABBY}{\bkmkend AAAAAAABBY}
+00296     {\cf17 auto} now_sys = std::chrono::system_clock::now();\par
+{\bkmkstart AAAAAAABCC}{\bkmkend AAAAAAABCC}
+00297     {\cf17 auto} time_t_val = std::chrono::system_clock::to_time_t(now_sys);\par
+{\bkmkstart AAAAAAABCH}{\bkmkend AAAAAAABCH}
+00298     {\cf17 auto} back_to_sys = std::chrono::system_clock::from_time_t(time_t_val);\par
+{\bkmkstart AAAAAAABCO}{\bkmkend AAAAAAABCO}
+00299     \par
+{\bkmkstart AAAAAAABCP}{\bkmkend AAAAAAABCP}
+00300     EXPECT_GT(time_t_val, 0);\par
+{\bkmkstart AAAAAAABCS}{\bkmkend AAAAAAABCS}
+00301     \par
+{\bkmkstart AAAAAAABCU}{\bkmkend AAAAAAABCU}
+00302     {\cf20 // Test time point arithmetic with conversions}\par
+{\bkmkstart AAAAAAABCX}{\bkmkend AAAAAAABCX}
+00303     {\cf17 auto} future_sys = now_sys + std::chrono::seconds(1);\par
+{\bkmkstart AAAAAAABCZ}{\bkmkend AAAAAAABCZ}
+00304     {\cf17 auto} past_sys = now_sys - std::chrono::seconds(1);\par
+{\bkmkstart AAAAAAABDD}{\bkmkend AAAAAAABDD}
+00305     \par
+{\bkmkstart AAAAAAABDG}{\bkmkend AAAAAAABDG}
+00306     EXPECT_GT(future_sys, now_sys);\par
+{\bkmkstart AAAAAAABDL}{\bkmkend AAAAAAABDL}
+00307     EXPECT_LT(past_sys, now_sys);\par
+{\bkmkstart AAAAAAABDP}{\bkmkend AAAAAAABDP}
+00308 \}\par
+{\bkmkstart AAAAAAABDR}{\bkmkend AAAAAAABDR}
+00309 \par
+{\bkmkstart AAAAAAABDT}{\bkmkend AAAAAAABDT}
+00314 TEST_F(ChronoAdvancedCoverageTest, TestChronoDurationSpecialValues) \{\par
+{\bkmkstart AAAAAAABDZ}{\bkmkend AAAAAAABDZ}
+00315     {\cf20 // Test zero durations}\par
+{\bkmkstart AAAAAAABEB}{\bkmkend AAAAAAABEB}
+00316     {\cf17 auto} zero_sec = std::chrono::seconds(0);\par
+{\bkmkstart AAAAAAABEE}{\bkmkend AAAAAAABEE}
+00317     {\cf17 auto} zero_ms = std::chrono::milliseconds(0);\par
+{\bkmkstart AAAAAAABEH}{\bkmkend AAAAAAABEH}
+00318     {\cf17 auto} zero_us = std::chrono::microseconds(0);\par
+{\bkmkstart AAAAAAABEM}{\bkmkend AAAAAAABEM}
+00319     {\cf17 auto} zero_ns = std::chrono::nanoseconds(0);\par
+{\bkmkstart AAAAAAABEP}{\bkmkend AAAAAAABEP}
+00320     \par
+{\bkmkstart AAAAAAABER}{\bkmkend AAAAAAABER}
+00321     EXPECT_EQ(zero_sec.count(), 0);\par
+{\bkmkstart AAAAAAABET}{\bkmkend AAAAAAABET}
+00322     EXPECT_EQ(zero_ms.count(), 0);\par
+{\bkmkstart AAAAAAABEW}{\bkmkend AAAAAAABEW}
+00323     EXPECT_EQ(zero_us.count(), 0);\par
+{\bkmkstart AAAAAAABEY}{\bkmkend AAAAAAABEY}
+00324     EXPECT_EQ(zero_ns.count(), 0);\par
+{\bkmkstart AAAAAAABFB}{\bkmkend AAAAAAABFB}
+00325     \par
+{\bkmkstart AAAAAAABFD}{\bkmkend AAAAAAABFD}
+00326     {\cf20 // Test unit durations}\par
+{\bkmkstart AAAAAAABFF}{\bkmkend AAAAAAABFF}
+00327     {\cf17 auto} unit_sec = std::chrono::seconds(1);\par
+{\bkmkstart AAAAAAABFJ}{\bkmkend AAAAAAABFJ}
+00328     {\cf17 auto} unit_ms = std::chrono::milliseconds(1);\par
+{\bkmkstart AAAAAAABFN}{\bkmkend AAAAAAABFN}
+00329     {\cf17 auto} unit_us = std::chrono::microseconds(1);\par
+{\bkmkstart AAAAAAABFP}{\bkmkend AAAAAAABFP}
+00330     {\cf17 auto} unit_ns = std::chrono::nanoseconds(1);\par
+{\bkmkstart AAAAAAABFR}{\bkmkend AAAAAAABFR}
+00331     \par
+{\bkmkstart AAAAAAABFS}{\bkmkend AAAAAAABFS}
+00332     EXPECT_EQ(unit_sec.count(), 1);\par
+{\bkmkstart AAAAAAABFU}{\bkmkend AAAAAAABFU}
+00333     EXPECT_EQ(unit_ms.count(), 1);\par
+{\bkmkstart AAAAAAABFV}{\bkmkend AAAAAAABFV}
+00334     EXPECT_EQ(unit_us.count(), 1);\par
+{\bkmkstart AAAAAAABFY}{\bkmkend AAAAAAABFY}
+00335     EXPECT_EQ(unit_ns.count(), 1);\par
+{\bkmkstart AAAAAAABGA}{\bkmkend AAAAAAABGA}
+00336 \}\par
+{\bkmkstart AAAAAAABGB}{\bkmkend AAAAAAABGB}
+00337 \par
+{\bkmkstart AAAAAAABGD}{\bkmkend AAAAAAABGD}
+00342 TEST_F(ChronoAdvancedCoverageTest, TestChronoDurationArithmeticPrecision) \{\par
+{\bkmkstart AAAAAAABGH}{\bkmkend AAAAAAABGH}
+00343     {\cf20 // Test precision in arithmetic operations}\par
+{\bkmkstart AAAAAAABGJ}{\bkmkend AAAAAAABGJ}
+00344     {\cf17 auto} duration1 = std::chrono::nanoseconds(1000000000); {\cf20 // 1 second}\par
+{\bkmkstart AAAAAAABGO}{\bkmkend AAAAAAABGO}
+00345     {\cf17 auto} duration2 = std::chrono::nanoseconds(500000000);  {\cf20 // 0.5 seconds}\par
+{\bkmkstart AAAAAAABGR}{\bkmkend AAAAAAABGR}
+00346     \par
+{\bkmkstart AAAAAAABGT}{\bkmkend AAAAAAABGT}
+00347     {\cf20 // Test precision in addition}\par
+{\bkmkstart AAAAAAABGU}{\bkmkend AAAAAAABGU}
+00348     {\cf17 auto} sum = duration1 + duration2;\par
+{\bkmkstart AAAAAAABGZ}{\bkmkend AAAAAAABGZ}
+00349     EXPECT_EQ(sum.count(), 1500000000);\par
+{\bkmkstart AAAAAAABHD}{\bkmkend AAAAAAABHD}
+00350     \par
+{\bkmkstart AAAAAAABHE}{\bkmkend AAAAAAABHE}
+00351     {\cf20 // Test precision in subtraction}\par
+{\bkmkstart AAAAAAABHF}{\bkmkend AAAAAAABHF}
+00352     {\cf17 auto} diff = duration1 - duration2;\par
+{\bkmkstart AAAAAAABHJ}{\bkmkend AAAAAAABHJ}
+00353     EXPECT_EQ(diff.count(), 500000000);\par
+{\bkmkstart AAAAAAABHL}{\bkmkend AAAAAAABHL}
+00354     \par
+{\bkmkstart AAAAAAABHN}{\bkmkend AAAAAAABHN}
+00355     {\cf20 // Test precision in multiplication}\par
+{\bkmkstart AAAAAAABHO}{\bkmkend AAAAAAABHO}
+00356     {\cf17 auto} mult = duration2 * 2;\par
+{\bkmkstart AAAAAAABHP}{\bkmkend AAAAAAABHP}
+00357     EXPECT_EQ(mult.count(), 1000000000);\par
+{\bkmkstart AAAAAAABHQ}{\bkmkend AAAAAAABHQ}
+00358     \par
+{\bkmkstart AAAAAAABHR}{\bkmkend AAAAAAABHR}
+00359     {\cf20 // Test precision in division}\par
+{\bkmkstart AAAAAAABHT}{\bkmkend AAAAAAABHT}
+00360     {\cf17 auto} div = duration1 / 2;\par
+{\bkmkstart AAAAAAABHU}{\bkmkend AAAAAAABHU}
+00361     EXPECT_EQ(div.count(), 500000000);\par
+{\bkmkstart AAAAAAABHV}{\bkmkend AAAAAAABHV}
+00362 \}\par
+{\bkmkstart AAAAAAABHW}{\bkmkend AAAAAAABHW}
+00363 \par
+{\bkmkstart AAAAAAABHY}{\bkmkend AAAAAAABHY}
+00364 \} {\cf20 // namespace}\par
+}
+}

@@ -1,8 +1,8 @@
 /**
  * @file Translateapp.cpp
- * @brief Basic Language Translator Application
+ * @brief BASIC to C++ Translator Application
  *
- * This program performs multi-language word translation
+ * This program translates BASIC code to C++ code
  *
  */
 
@@ -11,6 +11,8 @@
 #include <string>
 #include <stdexcept>
 #include <iomanip>
+#include <fstream>
+#include <sstream>
 #include "../header/Translateapp.h"
 #include "../../Translate/header/Translate.h"
 
@@ -21,46 +23,76 @@ using namespace Coruh::Translate;
 static Translate translator;
 
 void TranslateApp::run() {
-    std::cout << "=== Basic Language Translator ===" << std::endl;
-    std::cout << "Welcome! You can translate words between multiple languages." << std::endl;
+    std::cout << "=== BASIC to C++ Translator ===" << std::endl;
+    std::cout << "Welcome! You can translate BASIC code to C++ code." << std::endl;
     
     int choice;
     bool running = true;
     
     while (running) {
         showMenu();
-        std::cout << "Enter your choice (1-6): ";
+        std::cout << "Enter your choice (1-7): ";
         std::cin >> choice;
         std::cin.ignore(); // Clear buffer
         
         switch (choice) {
             case 1: {
-                std::string sourceLang = selectLanguage(true);
-                std::string targetLang = selectLanguage(false);
-                std::string word;
-                std::cout << "Enter word to translate: ";
-                std::getline(std::cin, word);
-                performTranslation(sourceLang, targetLang, word);
+                std::string filename;
+                std::cout << "Enter BASIC file path: ";
+                std::getline(std::cin, filename);
+                try {
+                    std::string basicCode = loadBasicFile(filename);
+                    std::string cppCode = translateBasicToCpp(basicCode);
+                    std::cout << "\n=== TRANSLATED C++ CODE ===" << std::endl;
+                    std::cout << cppCode << std::endl;
+                    
+                    std::cout << "\nSave to file? (y/n): ";
+                    char save;
+                    std::cin >> save;
+                    if (save == 'y' || save == 'Y') {
+                        std::string outputFile;
+                        std::cout << "Enter output file path: ";
+                        std::cin.ignore();
+                        std::getline(std::cin, outputFile);
+                        saveCppFile(outputFile, cppCode);
+                    }
+                } catch (const std::exception& e) {
+                    std::cout << "Error: " << e.what() << std::endl;
+                }
                 break;
             }
-            case 2: {
-                std::string sourceLang = selectLanguage(true);
-                std::string targetLang = selectLanguage(false);
-                listTranslations(sourceLang, targetLang);
+            case 2:
+                interactiveEditor();
                 break;
-            }
             case 3:
-                addNewTranslation();
+                showExamples();
                 break;
             case 4:
-                showSupportedLanguages();
+                showSupportedCommands();
                 break;
-            case 5:
+            case 5: {
+                std::string basicCode;
+                std::cout << "Enter BASIC code (end with 'END' on new line):" << std::endl;
+                std::string line;
+                while (std::getline(std::cin, line) && line != "END") {
+                    basicCode += line + "\n";
+                }
+                
+                if (validateBasicSyntax(basicCode)) {
+                    std::string cppCode = translateBasicToCpp(basicCode);
+                    std::cout << "\n=== TRANSLATED C++ CODE ===" << std::endl;
+                    std::cout << cppCode << std::endl;
+                } else {
+                    std::cout << "Invalid BASIC syntax!" << std::endl;
+                }
+                break;
+            }
+            case 6:
                 std::cout << "Exiting... Goodbye!" << std::endl;
                 running = false;
                 break;
             default:
-                std::cout << "Invalid choice! Please enter a number between 1-5." << std::endl;
+                std::cout << "Invalid choice! Please enter a number between 1-6." << std::endl;
         }
         
         if (running) {
@@ -73,129 +105,130 @@ void TranslateApp::run() {
 
 void TranslateApp::showMenu() {
     std::cout << "\n=== MENU ===" << std::endl;
-    std::cout << "1. Translate word" << std::endl;
-    std::cout << "2. List translations" << std::endl;
-    std::cout << "3. Add new translation" << std::endl;
-    std::cout << "4. Show supported languages" << std::endl;
-    std::cout << "5. Exit" << std::endl;
+    std::cout << "1. Translate BASIC file to C++" << std::endl;
+    std::cout << "2. Interactive BASIC editor" << std::endl;
+    std::cout << "3. Show example BASIC programs" << std::endl;
+    std::cout << "4. Show supported BASIC commands" << std::endl;
+    std::cout << "5. Translate BASIC code directly" << std::endl;
+    std::cout << "6. Exit" << std::endl;
 }
 
-void TranslateApp::performTranslation(const std::string& sourceLanguage, 
-                                    const std::string& targetLanguage, 
-                                    const std::string& word) {
-    try {
-        std::string result = translator.translate(sourceLanguage, targetLanguage, word);
-        std::cout << "Translation: " << word << " -> " << result << std::endl;
-    } catch (const std::invalid_argument& e) {
-        std::cout << "Error: " << e.what() << std::endl;
-        std::cout << "This word is not in the dictionary. Would you like to add a new translation? (y/n): ";
-        char response;
-        std::cin >> response;
-        std::cin.ignore();
+std::string TranslateApp::translateBasicToCpp(const std::string& basicCode) {
+    return translator.translate(basicCode);
+}
+
+std::string TranslateApp::loadBasicFile(const std::string& filename) {
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        throw std::runtime_error("Cannot open file: " + filename);
+    }
+    
+    std::stringstream buffer;
+    buffer << file.rdbuf();
+    file.close();
+    
+    return buffer.str();
+}
+
+void TranslateApp::saveCppFile(const std::string& filename, const std::string& cppCode) {
+    std::ofstream file(filename);
+    if (!file.is_open()) {
+        throw std::runtime_error("Cannot create file: " + filename);
+    }
+    
+    file << cppCode;
+    file.close();
+    
+    std::cout << "C++ code saved to: " << filename << std::endl;
+}
+
+void TranslateApp::showExamples() {
+    std::cout << "\n=== EXAMPLE BASIC PROGRAMS ===" << std::endl;
+    
+    std::cout << "\n1. Hello World Program:" << std::endl;
+    std::cout << "10 PRINT \"Hello, World!\"" << std::endl;
+    std::cout << "20 END" << std::endl;
+    
+    std::cout << "\n2. Simple Calculator:" << std::endl;
+    std::cout << "10 INPUT \"Enter first number: \", A" << std::endl;
+    std::cout << "20 INPUT \"Enter second number: \", B" << std::endl;
+    std::cout << "30 LET C = A + B" << std::endl;
+    std::cout << "40 PRINT \"Sum is: \", C" << std::endl;
+    std::cout << "50 END" << std::endl;
+    
+    std::cout << "\n3. For Loop Example:" << std::endl;
+    std::cout << "10 FOR I = 1 TO 5" << std::endl;
+    std::cout << "20   PRINT \"Number: \", I" << std::endl;
+    std::cout << "30 NEXT I" << std::endl;
+    std::cout << "40 END" << std::endl;
+    
+    std::cout << "\n4. If-Then Example:" << std::endl;
+    std::cout << "10 INPUT \"Enter your age: \", AGE" << std::endl;
+    std::cout << "20 IF AGE >= 18 THEN PRINT \"You are an adult\"" << std::endl;
+    std::cout << "30 IF AGE < 18 THEN PRINT \"You are a minor\"" << std::endl;
+    std::cout << "40 END" << std::endl;
+}
+
+void TranslateApp::interactiveEditor() {
+    std::cout << "\n=== INTERACTIVE BASIC EDITOR ===" << std::endl;
+    std::cout << "Enter BASIC code line by line. Type 'TRANSLATE' to translate, 'QUIT' to exit." << std::endl;
+    
+    std::string basicCode;
+    std::string line;
+    
+    while (true) {
+        std::cout << "BASIC> ";
+        std::getline(std::cin, line);
         
-        if (response == 'y' || response == 'Y') {
-            addNewTranslation();
+        if (line == "QUIT") {
+            break;
+        } else if (line == "TRANSLATE") {
+            if (!basicCode.empty()) {
+                std::cout << "\n=== TRANSLATED C++ CODE ===" << std::endl;
+                std::string cppCode = translateBasicToCpp(basicCode);
+                std::cout << cppCode << std::endl;
+                
+                std::cout << "\nSave to file? (y/n): ";
+                char save;
+                std::cin >> save;
+                if (save == 'y' || save == 'Y') {
+                    std::string outputFile;
+                    std::cout << "Enter output file path: ";
+                    std::cin.ignore();
+                    std::getline(std::cin, outputFile);
+                    saveCppFile(outputFile, cppCode);
+                }
+            } else {
+                std::cout << "No BASIC code to translate!" << std::endl;
+            }
+        } else if (!line.empty()) {
+            basicCode += line + "\n";
         }
     }
 }
 
-void TranslateApp::listTranslations(const std::string& sourceLanguage, 
-                                   const std::string& targetLanguage) {
-    std::cout << "\n=== TRANSLATIONS (" << sourceLanguage << " -> " << targetLanguage << ") ===" << std::endl;
-    auto translations = translator.getTranslations(sourceLanguage, targetLanguage);
-    
-    if (translations.empty()) {
-        std::cout << "No translations found for this language pair." << std::endl;
-        return;
-    }
-    
-    std::cout << std::left << std::setw(20) << sourceLanguage << std::setw(20) << targetLanguage << std::endl;
-    std::cout << std::string(40, '-') << std::endl;
-    
-    for (const auto& pair : translations) {
-        std::cout << std::left << std::setw(20) << pair.first << std::setw(20) << pair.second << std::endl;
-    }
+bool TranslateApp::validateBasicSyntax(const std::string& basicCode) {
+    return translator.validateSyntax(basicCode);
 }
 
-void TranslateApp::addNewTranslation() {
-    std::string sourceLang, targetLang, sourceWord, targetWord;
+void TranslateApp::showSupportedCommands() {
+    std::cout << "\n=== SUPPORTED BASIC COMMANDS ===" << std::endl;
+    auto keywords = translator.getSupportedKeywords();
     
-    std::cout << "\n=== ADD NEW TRANSLATION ===" << std::endl;
-    
-    sourceLang = selectLanguage(true);
-    targetLang = selectLanguage(false);
-    
-    std::cout << "Enter word in " << sourceLang << ": ";
-    std::getline(std::cin, sourceWord);
-    
-    std::cout << "Enter word in " << targetLang << ": ";
-    std::getline(std::cin, targetWord);
-    
-    if (!sourceWord.empty() && !targetWord.empty()) {
-        translator.addTranslation(sourceLang, targetLang, sourceWord, targetWord);
-        std::cout << "Translation added successfully: " << sourceWord << " <-> " << targetWord << std::endl;
-    } else {
-        std::cout << "Invalid input! Both words must be non-empty." << std::endl;
-    }
-}
-
-void TranslateApp::showSupportedLanguages() {
-    std::cout << "\n=== SUPPORTED LANGUAGES ===" << std::endl;
-    auto languages = translator.getSupportedLanguages();
-    
-    std::cout << "Language codes: ";
-    for (size_t i = 0; i < languages.size(); ++i) {
-        std::cout << languages[i];
-        if (i < languages.size() - 1) {
-            std::cout << ", ";
-        }
-    }
-    std::cout << std::endl;
-    
-    // Show language names
-    std::cout << "\nLanguage names:" << std::endl;
-    for (const auto& lang : languages) {
-        std::string langName;
-        if (lang == "en") langName = "English";
-        else if (lang == "tr") langName = "Turkish";
-        else if (lang == "es") langName = "Spanish";
-        else if (lang == "fr") langName = "French";
-        else if (lang == "de") langName = "German";
-        else langName = "Unknown";
-        
-        std::cout << "  " << lang << " - " << langName << std::endl;
-    }
-}
-
-std::string TranslateApp::selectLanguage(bool isSource) {
-    std::string prompt = isSource ? "Select source language" : "Select target language";
-    std::cout << "\n=== " << prompt << " ===" << std::endl;
-    
-    auto languages = translator.getSupportedLanguages();
-    
-    for (size_t i = 0; i < languages.size(); ++i) {
-        std::string langName;
-        if (languages[i] == "en") langName = "English";
-        else if (languages[i] == "tr") langName = "Turkish";
-        else if (languages[i] == "es") langName = "Spanish";
-        else if (languages[i] == "fr") langName = "French";
-        else if (languages[i] == "de") langName = "German";
-        else langName = "Unknown";
-        
-        std::cout << (i + 1) << ". " << languages[i] << " - " << langName << std::endl;
+    std::cout << "Supported BASIC keywords:" << std::endl;
+    for (const auto& keyword : keywords) {
+        std::cout << "  - " << keyword << std::endl;
     }
     
-    int choice;
-    std::cout << "Enter your choice (1-" << languages.size() << "): ";
-    std::cin >> choice;
-    std::cin.ignore();
-    
-    if (choice >= 1 && choice <= static_cast<int>(languages.size())) {
-        return languages[choice - 1];
-    } else {
-        std::cout << "Invalid choice! Using default: en" << std::endl;
-        return "en";
-    }
+    std::cout << "\nCommand descriptions:" << std::endl;
+    std::cout << "  PRINT    - Output text or variables" << std::endl;
+    std::cout << "  LET      - Variable assignment" << std::endl;
+    std::cout << "  INPUT    - Get user input" << std::endl;
+    std::cout << "  IF/THEN  - Conditional statements" << std::endl;
+    std::cout << "  FOR/NEXT - For loops" << std::endl;
+    std::cout << "  GOTO     - Jump to line number" << std::endl;
+    std::cout << "  REM      - Comments" << std::endl;
+    std::cout << "  END      - End program" << std::endl;
 }
 
 int main() {

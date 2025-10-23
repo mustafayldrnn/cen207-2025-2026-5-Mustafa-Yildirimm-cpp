@@ -17,6 +17,14 @@ target_include_directories(translatorlib PUBLIC include src)
 add_executable(translator apps/translator/main.cpp)
 target_link_libraries(translator PRIVATE translatorlib)
 
+# BASIC to C++ Translator Application
+add_executable(basic_translator src/Translateapp/src/Translateapp.cpp src/Translate/src/Translate.cpp)
+target_include_directories(basic_translator PRIVATE src)
+
+# Safe Chrono Calculator Library
+add_library(safechronolib src/SafeChronoCalculator.cpp)
+target_include_directories(safechronolib PUBLIC src)
+
 if(TRANSLATOR_ENABLE_TESTS)
   include(FetchContent)
   set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)

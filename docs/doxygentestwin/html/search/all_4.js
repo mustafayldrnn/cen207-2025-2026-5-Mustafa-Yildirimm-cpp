@@ -1,13 +1,16 @@
 var searchData=
 [
   ['test_0',['TEST',['../test__doubly__linked__list_8cpp.html#adb7e1b2bf93fe02a8f16a176da18b9de',1,'TEST(DoublyLinkedList, InsertAndTraverse):&#160;test_doubly_linked_list.cpp'],['../test__doubly__linked__list_8cpp.html#ada320146363519d8a670cf9c4ac98f98',1,'TEST(DoublyLinkedList, EdgeCases):&#160;test_doubly_linked_list.cpp'],['../test__graph__bfs__dfs_8cpp.html#aa82d36f8a18445fb4ddcbf39cb1ea41c',1,'TEST(Graph, BFSandDFS):&#160;test_graph_bfs_dfs.cpp'],['../test__hash__table_8cpp.html#a5e435e6635fe896822884d80c8455e92',1,'TEST(HashTable, InsertFindErase):&#160;test_hash_table.cpp'],['../test__heap_8cpp.html#a08467fa2935a81ad6427c6c0928147e5',1,'TEST(BinaryHeap, PushPopOrder):&#160;test_heap.cpp'],['../test__heap_8cpp.html#a8e9659c45df2039715e015ec0fd8da27',1,'TEST(BinaryHeap, HeapSort):&#160;test_heap.cpp'],['../test__lexer__parser__codegen_8cpp.html#adf30c99a234f3dc66c477bb34f44466d',1,'TEST(LexerParser, BasicProgramParse):&#160;test_lexer_parser_codegen.cpp'],['../test__lexer__parser__codegen_8cpp.html#a2db3c295f5f7cc3059ada17fe2e34689',1,'TEST(Codegen, EmitsCPP):&#160;test_lexer_parser_codegen.cpp'],['../test__sparse__matrix_8cpp.html#a4db3587556db215c5648c147df4e9c0e',1,'TEST(SparseMatrix, InsertAndLookup):&#160;test_sparse_matrix.cpp'],['../test__stack__queue_8cpp.html#a91e5af25a60f96a751929e559d41344b',1,'TEST(StackQueue, StackLIFO):&#160;test_stack_queue.cpp'],['../test__stack__queue_8cpp.html#aad12174cbef62febb47cf062528e808b',1,'TEST(StackQueue, QueueFIFO):&#160;test_stack_queue.cpp'],['../test__xor__linked__list_8cpp.html#a4f428f97178e949d4665e0961d6e8c7d',1,'TEST(XORLinkedList, InsertDeleteNavigate):&#160;test_xor_linked_list.cpp']]],
-  ['test_5fdoubly_5flinked_5flist_2ecpp_1',['test_doubly_linked_list.cpp',['../test__doubly__linked__list_8cpp.html',1,'']]],
-  ['test_5fgraph_5fbfs_5fdfs_2ecpp_2',['test_graph_bfs_dfs.cpp',['../test__graph__bfs__dfs_8cpp.html',1,'']]],
-  ['test_5fhash_5ftable_2ecpp_3',['test_hash_table.cpp',['../test__hash__table_8cpp.html',1,'']]],
-  ['test_5fheap_2ecpp_4',['test_heap.cpp',['../test__heap_8cpp.html',1,'']]],
-  ['test_5flexer_5fparser_5fcodegen_2ecpp_5',['test_lexer_parser_codegen.cpp',['../test__lexer__parser__codegen_8cpp.html',1,'']]],
-  ['test_5fsparse_5fmatrix_2ecpp_6',['test_sparse_matrix.cpp',['../test__sparse__matrix_8cpp.html',1,'']]],
-  ['test_5fstack_5fqueue_2ecpp_7',['test_stack_queue.cpp',['../test__stack__queue_8cpp.html',1,'']]],
-  ['test_5fxor_5flinked_5flist_2ecpp_8',['test_xor_linked_list.cpp',['../test__xor__linked__list_8cpp.html',1,'']]],
-  ['translator_20c_2017_9',['BASIC Translator (C++17)',['../index.html',1,'']]]
+  ['test_5fchrono_5fadvanced_5fcoverage_2ecpp_1',['test_chrono_advanced_coverage.cpp',['../test__chrono__advanced__coverage_8cpp.html',1,'']]],
+  ['test_5fchrono_5fcoverage_2ecpp_2',['test_chrono_coverage.cpp',['../test__chrono__coverage_8cpp.html',1,'']]],
+  ['test_5fdoubly_5flinked_5flist_2ecpp_3',['test_doubly_linked_list.cpp',['../test__doubly__linked__list_8cpp.html',1,'']]],
+  ['test_5fgraph_5fbfs_5fdfs_2ecpp_4',['test_graph_bfs_dfs.cpp',['../test__graph__bfs__dfs_8cpp.html',1,'']]],
+  ['test_5fhash_5ftable_2ecpp_5',['test_hash_table.cpp',['../test__hash__table_8cpp.html',1,'']]],
+  ['test_5fheap_2ecpp_6',['test_heap.cpp',['../test__heap_8cpp.html',1,'']]],
+  ['test_5flexer_5fparser_5fcodegen_2ecpp_7',['test_lexer_parser_codegen.cpp',['../test__lexer__parser__codegen_8cpp.html',1,'']]],
+  ['test_5foverflow_5fprotection_2ecpp_8',['test_overflow_protection.cpp',['../test__overflow__protection_8cpp.html',1,'']]],
+  ['test_5fsparse_5fmatrix_2ecpp_9',['test_sparse_matrix.cpp',['../test__sparse__matrix_8cpp.html',1,'']]],
+  ['test_5fstack_5fqueue_2ecpp_10',['test_stack_queue.cpp',['../test__stack__queue_8cpp.html',1,'']]],
+  ['test_5fxor_5flinked_5flist_2ecpp_11',['test_xor_linked_list.cpp',['../test__xor__linked__list_8cpp.html',1,'']]],
+  ['translator_20c_2017_12',['BASIC Translator (C++17)',['../index.html',1,'']]]
 ];
