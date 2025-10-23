@@ -61,21 +61,21 @@ namespace Coruh
 
 // Template implementation
 template<typename K, typename V>
-HashTable<K, V>::HashTable(size_t initialCapacity, double loadFactor)
+Coruh::DataStructures::Coruh::DataStructures::HashTable<K, V>::HashTable(size_t initialCapacity, double loadFactor)
     : capacity(initialCapacity), loadFactor(loadFactor), size_(0)
 {
     table.resize(capacity);
 }
 
 template<typename K, typename V>
-size_t HashTable<K, V>::hash(const K& key) const
+size_t Coruh::DataStructures::Coruh::DataStructures::HashTable<K, V>::hash(const K& key) const
 {
     std::hash<K> hasher;
     return hasher(key) % capacity;
 }
 
 template<typename K, typename V>
-size_t HashTable<K, V>::findIndex(const K& key) const
+size_t Coruh::DataStructures::HashTable<K, V>::findIndex(const K& key) const
 {
     size_t index = hash(key);
     size_t originalIndex = index;
@@ -92,7 +92,7 @@ size_t HashTable<K, V>::findIndex(const K& key) const
 }
 
 template<typename K, typename V>
-void HashTable<K, V>::resize()
+void Coruh::DataStructures::HashTable<K, V>::resize()
 {
     std::vector<HashNode> oldTable = table;
     size_t oldCapacity = capacity;
@@ -110,7 +110,7 @@ void HashTable<K, V>::resize()
 }
 
 template<typename K, typename V>
-void HashTable<K, V>::insert(const K& key, const V& value)
+void Coruh::DataStructures::HashTable<K, V>::insert(const K& key, const V& value)
 {
     if (size_ >= capacity * loadFactor) {
         resize();
@@ -126,14 +126,14 @@ void HashTable<K, V>::insert(const K& key, const V& value)
 }
 
 template<typename K, typename V>
-bool HashTable<K, V>::contains(const K& key) const
+bool Coruh::DataStructures::HashTable<K, V>::contains(const K& key) const
 {
     size_t index = findIndex(key);
     return !table[index].isDeleted && table[index].key == key;
 }
 
 template<typename K, typename V>
-V& HashTable<K, V>::get(const K& key)
+V& Coruh::DataStructures::HashTable<K, V>::get(const K& key)
 {
     size_t index = findIndex(key);
     if (table[index].isDeleted || table[index].key != key) {
@@ -143,7 +143,7 @@ V& HashTable<K, V>::get(const K& key)
 }
 
 template<typename K, typename V>
-const V& HashTable<K, V>::get(const K& key) const
+const V& Coruh::DataStructures::HashTable<K, V>::get(const K& key) const
 {
     size_t index = findIndex(key);
     if (table[index].isDeleted || table[index].key != key) {
@@ -153,7 +153,7 @@ const V& HashTable<K, V>::get(const K& key) const
 }
 
 template<typename K, typename V>
-void HashTable<K, V>::remove(const K& key)
+void Coruh::DataStructures::HashTable<K, V>::remove(const K& key)
 {
     size_t index = findIndex(key);
     if (!table[index].isDeleted && table[index].key == key) {
@@ -163,7 +163,7 @@ void HashTable<K, V>::remove(const K& key)
 }
 
 template<typename K, typename V>
-void HashTable<K, V>::clear()
+void Coruh::DataStructures::HashTable<K, V>::clear()
 {
     table.clear();
     table.resize(capacity);
@@ -171,19 +171,19 @@ void HashTable<K, V>::clear()
 }
 
 template<typename K, typename V>
-size_t HashTable<K, V>::getSize() const
+size_t Coruh::DataStructures::HashTable<K, V>::getSize() const
 {
     return size_;
 }
 
 template<typename K, typename V>
-bool HashTable<K, V>::isEmpty() const
+bool Coruh::DataStructures::HashTable<K, V>::isEmpty() const
 {
     return size_ == 0;
 }
 
 template<typename K, typename V>
-void HashTable<K, V>::print() const
+void Coruh::DataStructures::HashTable<K, V>::print() const
 {
     for (size_t i = 0; i < capacity; ++i) {
         if (!table[i].isDeleted) {

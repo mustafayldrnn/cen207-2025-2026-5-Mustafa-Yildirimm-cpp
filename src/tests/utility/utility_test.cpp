@@ -7,6 +7,8 @@
 #include <fstream>
 #include <sys/stat.h>
 #include <cstdio>
+#include <limits>
+#include <cmath>
 #ifdef _WIN32
   #include <direct.h>
 #elif __linux__
@@ -111,6 +113,137 @@ TEST_F(MathUtilityTest, CalculateMinMaxTest_2) {
   MathUtility::calculateMinMax(data, sizeof(data) / sizeof(data[0]), &min, &max);
   EXPECT_DOUBLE_EQ(min, -5.0);
   EXPECT_DOUBLE_EQ(max, 7.2);
+}
+
+// Additional Edge Case Tests
+TEST_F(MathUtilityTest, CalculateMeanSingleElement) {
+  const double data[] = { 42.0 };
+  const int datalen = 1;
+  double result = MathUtility::calculateMean(data, datalen);
+  EXPECT_DOUBLE_EQ(result, 42.0);
+}
+
+TEST_F(MathUtilityTest, CalculateMeanEmptyArray) {
+  const double data[] = {};
+  const int datalen = 0;
+  double result = MathUtility::calculateMean(data, datalen);
+  EXPECT_TRUE(std::isnan(result) || std::isinf(result)); // Should handle division by zero
+}
+
+TEST_F(MathUtilityTest, CalculateMedianSingleElement) {
+  const double data[] = { 42.0 };
+  const int datalen = 1;
+  double result = MathUtility::calculateMedian(data, datalen);
+  EXPECT_DOUBLE_EQ(result, 42.0);
+}
+
+TEST_F(MathUtilityTest, CalculateMedianTwoElements) {
+  const double data[] = { 1.0, 2.0 };
+  const int datalen = 2;
+  double result = MathUtility::calculateMedian(data, datalen);
+  EXPECT_DOUBLE_EQ(result, 1.5);
+}
+
+TEST_F(MathUtilityTest, CalculateMedianNegativeNumbers) {
+  const double data[] = { -5.0, -2.0, -1.0, -3.0, -4.0 };
+  const int datalen = 5;
+  double result = MathUtility::calculateMedian(data, datalen);
+  EXPECT_DOUBLE_EQ(result, -3.0);
+}
+
+TEST_F(MathUtilityTest, CalculateMedianDuplicateValues) {
+  const double data[] = { 1.0, 1.0, 1.0, 1.0 };
+  const int datalen = 4;
+  double result = MathUtility::calculateMedian(data, datalen);
+  EXPECT_DOUBLE_EQ(result, 1.0);
+}
+
+TEST_F(MathUtilityTest, CalculateMinMaxSingleElement) {
+  const double data[] = { 42.0 };
+  const int datalen = 1;
+  double min, max;
+  MathUtility::calculateMinMax(data, datalen, &min, &max);
+  EXPECT_DOUBLE_EQ(min, 42.0);
+  EXPECT_DOUBLE_EQ(max, 42.0);
+}
+
+TEST_F(MathUtilityTest, CalculateMinMaxAllSameValues) {
+  const double data[] = { 5.0, 5.0, 5.0, 5.0 };
+  const int datalen = 4;
+  double min, max;
+  MathUtility::calculateMinMax(data, datalen, &min, &max);
+  EXPECT_DOUBLE_EQ(min, 5.0);
+  EXPECT_DOUBLE_EQ(max, 5.0);
+}
+
+TEST_F(MathUtilityTest, CalculateMinMaxZeroValues) {
+  const double data[] = { 0.0, -0.0, 0.0 };
+  const int datalen = 3;
+  double min, max;
+  MathUtility::calculateMinMax(data, datalen, &min, &max);
+  EXPECT_DOUBLE_EQ(min, 0.0);
+  EXPECT_DOUBLE_EQ(max, 0.0);
+}
+
+TEST_F(MathUtilityTest, CompareDoubleWithZero) {
+  const double val1 = 0.0;
+  const double val2 = 1.0;
+  int result = MathUtility::compareDouble(&val1, &val2);
+  EXPECT_EQ(result, -1);
+  
+  result = MathUtility::compareDouble(&val2, &val1);
+  EXPECT_EQ(result, 1);
+}
+
+TEST_F(MathUtilityTest, CompareDoubleWithNegativeZero) {
+  const double val1 = -0.0;
+  const double val2 = 0.0;
+  int result = MathUtility::compareDouble(&val1, &val2);
+  EXPECT_EQ(result, 0); // -0.0 should equal 0.0
+}
+
+TEST_F(MathUtilityTest, CompareDoubleWithInfinity) {
+  const double val1 = std::numeric_limits<double>::infinity();
+  const double val2 = 1.0;
+  int result = MathUtility::compareDouble(&val1, &val2);
+  EXPECT_EQ(result, 1); // infinity > 1.0
+  
+  result = MathUtility::compareDouble(&val2, &val1);
+  EXPECT_EQ(result, -1);
+}
+
+TEST_F(MathUtilityTest, CompareDoubleWithNaN) {
+  const double val1 = std::numeric_limits<double>::quiet_NaN();
+  const double val2 = 1.0;
+  int result = MathUtility::compareDouble(&val1, &val2);
+  EXPECT_EQ(result, 0); // NaN comparison should return 0
+}
+
+// Performance Tests
+TEST_F(MathUtilityTest, CalculateMeanLargeArray) {
+  const int size = 10000;
+  double* data = new double[size];
+  for (int i = 0; i < size; ++i) {
+    data[i] = i + 1.0;
+  }
+  
+  double result = MathUtility::calculateMean(data, size);
+  EXPECT_DOUBLE_EQ(result, (size + 1.0) / 2.0);
+  
+  delete[] data;
+}
+
+TEST_F(MathUtilityTest, CalculateMedianLargeArray) {
+  const int size = 10001; // Odd number
+  double* data = new double[size];
+  for (int i = 0; i < size; ++i) {
+    data[i] = size - i; // Reverse order
+  }
+  
+  double result = MathUtility::calculateMedian(data, size);
+  EXPECT_DOUBLE_EQ(result, (size + 1.0) / 2.0);
+  
+  delete[] data;
 }
 
 

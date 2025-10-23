@@ -151,39 +151,39 @@
 test_graph_bfs_dfs.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_graph_bfs_dfs.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_graph_bfs_dfs.cpp}
-{\bkmkstart AAAAAAAAAC}
-{\bkmkend AAAAAAAAAC}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAAJ}{\bkmkend AAAAAAAAAJ}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAAW}{\bkmkend AAAAAAAAAW}
 00001 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAAAL}{\bkmkend AAAAAAAAAL}
-00002 {\cf21 #include "ds/graph.h"}\par
-{\bkmkstart AAAAAAAAAM}{\bkmkend AAAAAAAAAM}
-00003 \par
-{\bkmkstart AAAAAAAAAO}{\bkmkend AAAAAAAAAO}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 00004}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(Graph, BFSandDFS)\{\par
-{\bkmkstart AAAAAAAAAX}{\bkmkend AAAAAAAAAX}
-00005     ds::Graph g(6);\par
-{\bkmkstart AAAAAAAABA}{\bkmkend AAAAAAAABA}
-00006     g.add_edge(0,1,{\cf17 true}); g.add_edge(1,2,{\cf17 true}); g.add_edge(2,3,{\cf17 true}); g.add_edge(3,4,{\cf17 true}); g.add_edge(4,5,{\cf17 true});\par
-{\bkmkstart AAAAAAAABD}{\bkmkend AAAAAAAABD}
-00007     {\cf17 auto} dist = g.bfs_dist(0);\par
-{\bkmkstart AAAAAAAABE}{\bkmkend AAAAAAAABE}
-00008     EXPECT_EQ(dist[0],0); EXPECT_EQ(dist[5],5);\par
-{\bkmkstart AAAAAAAABF}{\bkmkend AAAAAAAABF}
-00009     {\cf17 auto} order = g.dfs_order(0);\par
 {\bkmkstart AAAAAAAABG}{\bkmkend AAAAAAAABG}
+00002 {\cf21 #include "ds/graph.h"}\par
+{\bkmkstart AAAAAAAABQ}{\bkmkend AAAAAAAABQ}
+00003 \par
+{\bkmkstart AAAAAAAABU}{\bkmkend AAAAAAAABU}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABV" }{}}{\fldrslt {\cs37\ul\cf2 00004}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABV" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+(Graph, BFSandDFS)\{\par
+{\bkmkstart AAAAAAAAFV}{\bkmkend AAAAAAAAFV}
+00005     ds::Graph g(6);\par
+{\bkmkstart AAAAAAAAFY}{\bkmkend AAAAAAAAFY}
+00006     g.add_edge(0,1,{\cf17 true}); g.add_edge(1,2,{\cf17 true}); g.add_edge(2,3,{\cf17 true}); g.add_edge(3,4,{\cf17 true}); g.add_edge(4,5,{\cf17 true});\par
+{\bkmkstart AAAAAAAAGF}{\bkmkend AAAAAAAAGF}
+00007     {\cf17 auto} dist = g.bfs_dist(0);\par
+{\bkmkstart AAAAAAAAGH}{\bkmkend AAAAAAAAGH}
+00008     EXPECT_EQ(dist[0],0); EXPECT_EQ(dist[5],5);\par
+{\bkmkstart AAAAAAAAGM}{\bkmkend AAAAAAAAGM}
+00009     {\cf17 auto} order = g.dfs_order(0);\par
+{\bkmkstart AAAAAAAAGO}{\bkmkend AAAAAAAAGO}
 00010     ASSERT_FALSE(order.empty());\par
-{\bkmkstart AAAAAAAABH}{\bkmkend AAAAAAAABH}
+{\bkmkstart AAAAAAAAGR}{\bkmkend AAAAAAAAGR}
 00011     EXPECT_EQ(order.front(), 0);\par
-{\bkmkstart AAAAAAAABL}{\bkmkend AAAAAAAABL}
+{\bkmkstart AAAAAAAAGW}{\bkmkend AAAAAAAAGW}
 00012 \}\par
-{\bkmkstart AAAAAAAABM}{\bkmkend AAAAAAAABM}
+{\bkmkstart AAAAAAAAGY}{\bkmkend AAAAAAAAGY}
 00013 \par
 }
 }

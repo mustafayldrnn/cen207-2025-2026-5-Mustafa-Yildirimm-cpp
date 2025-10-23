@@ -58,16 +58,16 @@ namespace Coruh
 
 // Template implementation
 template<typename T>
-DoubleLinkedList<T>::DoubleLinkedList() : head(nullptr), tail(nullptr), size_(0) {}
+Coruh::DataStructures::DoubleLinkedList<T>::DoubleLinkedList() : head(nullptr), tail(nullptr), size_(0) {}
 
 template<typename T>
-DoubleLinkedList<T>::~DoubleLinkedList()
+Coruh::DataStructures::DoubleLinkedList<T>::~DoubleLinkedList()
 {
     clear();
 }
 
 template<typename T>
-void DoubleLinkedList<T>::append(const T& value)
+void Coruh::DataStructures::DoubleLinkedList<T>::append(const T& value)
 {
     Node* newNode = new Node(value);
     
@@ -82,7 +82,7 @@ void DoubleLinkedList<T>::append(const T& value)
 }
 
 template<typename T>
-void DoubleLinkedList<T>::prepend(const T& value)
+void Coruh::DataStructures::DoubleLinkedList<T>::prepend(const T& value)
 {
     Node* newNode = new Node(value);
     
@@ -97,7 +97,7 @@ void DoubleLinkedList<T>::prepend(const T& value)
 }
 
 template<typename T>
-void DoubleLinkedList<T>::insert(size_t index, const T& value)
+void Coruh::DataStructures::DoubleLinkedList<T>::insert(size_t index, const T& value)
 {
     if (index > size_) {
         throw std::out_of_range("Index out of range");
@@ -124,7 +124,7 @@ void DoubleLinkedList<T>::insert(size_t index, const T& value)
 }
 
 template<typename T>
-void DoubleLinkedList<T>::remove(size_t index)
+void Coruh::DataStructures::DoubleLinkedList<T>::remove(size_t index)
 {
     if (index >= size_) {
         throw std::out_of_range("Index out of range");
@@ -152,7 +152,7 @@ void DoubleLinkedList<T>::remove(size_t index)
 }
 
 template<typename T>
-void DoubleLinkedList<T>::clear()
+void Coruh::DataStructures::DoubleLinkedList<T>::clear()
 {
     while (head) {
         Node* temp = head;
@@ -164,7 +164,7 @@ void DoubleLinkedList<T>::clear()
 }
 
 template<typename T>
-T& DoubleLinkedList<T>::get(size_t index)
+T& Coruh::DataStructures::DoubleLinkedList<T>::get(size_t index)
 {
     if (index >= size_) {
         throw std::out_of_range("Index out of range");
@@ -178,7 +178,7 @@ T& DoubleLinkedList<T>::get(size_t index)
 }
 
 template<typename T>
-const T& DoubleLinkedList<T>::get(size_t index) const
+const T& Coruh::DataStructures::DoubleLinkedList<T>::get(size_t index) const
 {
     if (index >= size_) {
         throw std::out_of_range("Index out of range");
@@ -192,31 +192,31 @@ const T& DoubleLinkedList<T>::get(size_t index) const
 }
 
 template<typename T>
-T& DoubleLinkedList<T>::operator[](size_t index)
+T& Coruh::DataStructures::DoubleLinkedList<T>::operator[](size_t index)
 {
     return get(index);
 }
 
 template<typename T>
-const T& DoubleLinkedList<T>::operator[](size_t index) const
+const T& Coruh::DataStructures::DoubleLinkedList<T>::operator[](size_t index) const
 {
     return get(index);
 }
 
 template<typename T>
-size_t DoubleLinkedList<T>::getSize() const
+size_t Coruh::DataStructures::DoubleLinkedList<T>::getSize() const
 {
     return size_;
 }
 
 template<typename T>
-bool DoubleLinkedList<T>::isEmpty() const
+bool Coruh::DataStructures::DoubleLinkedList<T>::isEmpty() const
 {
     return size_ == 0;
 }
 
 template<typename T>
-void DoubleLinkedList<T>::print() const
+void Coruh::DataStructures::DoubleLinkedList<T>::print() const
 {
     Node* current = head;
     while (current) {
