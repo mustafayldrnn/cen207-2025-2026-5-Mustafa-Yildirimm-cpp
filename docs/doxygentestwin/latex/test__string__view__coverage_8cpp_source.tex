@@ -241,59 +241,59 @@
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00275}00275\ TEST\_F(StringViewCoverageTest,\ TestStringViewStartsWithEndsWith)\ \{}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00276}00276\ \ \ \ \ std::string\_view\ sv(\textcolor{stringliteral}{"{}Hello,\ World!"{}});}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00277}00277\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00278}00278\ \ \ \ \ \textcolor{comment}{//\ Test\ starts\_with()\ with\ character}}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00279}00279\ \ \ \ \ EXPECT\_TRUE(sv.starts\_with(\textcolor{charliteral}{'H'}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00280}00280\ \ \ \ \ EXPECT\_FALSE(sv.starts\_with(\textcolor{charliteral}{'h'}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00281}00281\ \ \ \ \ EXPECT\_FALSE(sv.starts\_with(\textcolor{charliteral}{'W'}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00282}00282\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00283}00283\ \ \ \ \ \textcolor{comment}{//\ Test\ starts\_with()\ with\ string}}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00284}00284\ \ \ \ \ EXPECT\_TRUE(sv.starts\_with(\textcolor{stringliteral}{"{}Hello"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00285}00285\ \ \ \ \ EXPECT\_TRUE(sv.starts\_with(\textcolor{stringliteral}{"{}Hello,\ World!"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00286}00286\ \ \ \ \ EXPECT\_FALSE(sv.starts\_with(\textcolor{stringliteral}{"{}World"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00287}00287\ \ \ \ \ EXPECT\_FALSE(sv.starts\_with(\textcolor{stringliteral}{"{}Hello,\ Universe!"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00288}00288\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00289}00289\ \ \ \ \ \textcolor{comment}{//\ Test\ starts\_with()\ with\ string\_view}}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00278}00278\ \ \ \ \ \textcolor{comment}{//\ Test\ starts\_with()\ functionality\ using\ find\ (C++20\ features\ not\ available)}}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00279}00279\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'H'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00280}00280\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'h'}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00281}00281\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'W'}),\ 7);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00282}00282\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00283}00283\ \ \ \ \ \textcolor{comment}{//\ Test\ starts\_with()\ with\ string\ using\ find}}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00284}00284\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}Hello"{}}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00285}00285\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}Hello,\ World!"{}}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00286}00286\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}World"{}}),\ 7);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00287}00287\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}Hello,\ Universe!"{}}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00288}00288\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00289}00289\ \ \ \ \ \textcolor{comment}{//\ Test\ starts\_with()\ with\ string\_view\ using\ find}}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00290}00290\ \ \ \ \ std::string\_view\ prefix(\textcolor{stringliteral}{"{}Hello"{}});}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00291}00291\ \ \ \ \ EXPECT\_TRUE(sv.starts\_with(prefix));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00292}00292\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00293}00293\ \ \ \ \ \textcolor{comment}{//\ Test\ ends\_with()\ with\ character}}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00294}00294\ \ \ \ \ EXPECT\_TRUE(sv.ends\_with(\textcolor{charliteral}{'!'}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00295}00295\ \ \ \ \ EXPECT\_FALSE(sv.ends\_with(\textcolor{charliteral}{'?'}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00296}00296\ \ \ \ \ EXPECT\_FALSE(sv.ends\_with(\textcolor{charliteral}{'d'}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00297}00297\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00298}00298\ \ \ \ \ \textcolor{comment}{//\ Test\ ends\_with()\ with\ string}}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00299}00299\ \ \ \ \ EXPECT\_TRUE(sv.ends\_with(\textcolor{stringliteral}{"{}World!"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00300}00300\ \ \ \ \ EXPECT\_TRUE(sv.ends\_with(\textcolor{stringliteral}{"{}Hello,\ World!"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00301}00301\ \ \ \ \ EXPECT\_FALSE(sv.ends\_with(\textcolor{stringliteral}{"{}Hello"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00302}00302\ \ \ \ \ EXPECT\_FALSE(sv.ends\_with(\textcolor{stringliteral}{"{}Universe!"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00303}00303\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00304}00304\ \ \ \ \ \textcolor{comment}{//\ Test\ ends\_with()\ with\ string\_view}}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00291}00291\ \ \ \ \ EXPECT\_EQ(sv.find(prefix),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00292}00292\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00293}00293\ \ \ \ \ \textcolor{comment}{//\ Test\ ends\_with()\ functionality\ using\ find}}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00294}00294\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'!'}),\ 12);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00295}00295\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'?'}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00296}00296\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'d'}),\ 10);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00297}00297\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00298}00298\ \ \ \ \ \textcolor{comment}{//\ Test\ ends\_with()\ with\ string\ using\ find}}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00299}00299\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}World!"{}}),\ 7);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00300}00300\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}Hello,\ World!"{}}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00301}00301\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}Hello"{}}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00302}00302\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}Universe!"{}}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00303}00303\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00304}00304\ \ \ \ \ \textcolor{comment}{//\ Test\ ends\_with()\ with\ string\_view\ using\ find}}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00305}00305\ \ \ \ \ std::string\_view\ suffix(\textcolor{stringliteral}{"{}World!"{}});}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00306}00306\ \ \ \ \ EXPECT\_TRUE(sv.ends\_with(suffix));}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00306}00306\ \ \ \ \ EXPECT\_EQ(sv.find(suffix),\ 7);}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00307}00307\ \}}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00308}00308\ }
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00313}00313\ TEST\_F(StringViewCoverageTest,\ TestStringViewContains)\ \{}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00314}00314\ \ \ \ \ std::string\_view\ sv(\textcolor{stringliteral}{"{}Hello,\ World!"{}});}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00315}00315\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00316}00316\ \ \ \ \ \textcolor{comment}{//\ Test\ contains()\ with\ character}}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00317}00317\ \ \ \ \ EXPECT\_TRUE(sv.contains(\textcolor{charliteral}{'H'}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00318}00318\ \ \ \ \ EXPECT\_TRUE(sv.contains(\textcolor{charliteral}{'o'}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00319}00319\ \ \ \ \ EXPECT\_TRUE(sv.contains(\textcolor{charliteral}{'!'}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00320}00320\ \ \ \ \ EXPECT\_FALSE(sv.contains(\textcolor{charliteral}{'z'}));}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00316}00316\ \ \ \ \ \textcolor{comment}{//\ Test\ contains()\ functionality\ using\ find\ (C++23\ features\ not\ available)}}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00317}00317\ \ \ \ \ EXPECT\_NE(sv.find(\textcolor{charliteral}{'H'}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00318}00318\ \ \ \ \ EXPECT\_NE(sv.find(\textcolor{charliteral}{'o'}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00319}00319\ \ \ \ \ EXPECT\_NE(sv.find(\textcolor{charliteral}{'!'}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00320}00320\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'z'}),\ std::string\_view::npos);}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00321}00321\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00322}00322\ \ \ \ \ \textcolor{comment}{//\ Test\ contains()\ with\ string}}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00323}00323\ \ \ \ \ EXPECT\_TRUE(sv.contains(\textcolor{stringliteral}{"{}Hello"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00324}00324\ \ \ \ \ EXPECT\_TRUE(sv.contains(\textcolor{stringliteral}{"{}World"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00325}00325\ \ \ \ \ EXPECT\_TRUE(sv.contains(\textcolor{stringliteral}{"{}lo,\ Wo"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00326}00326\ \ \ \ \ EXPECT\_FALSE(sv.contains(\textcolor{stringliteral}{"{}xyz"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00327}00327\ \ \ \ \ EXPECT\_FALSE(sv.contains(\textcolor{stringliteral}{"{}Universe"{}}));}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00322}00322\ \ \ \ \ \textcolor{comment}{//\ Test\ contains()\ with\ string\ using\ find}}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00323}00323\ \ \ \ \ EXPECT\_NE(sv.find(\textcolor{stringliteral}{"{}Hello"{}}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00324}00324\ \ \ \ \ EXPECT\_NE(sv.find(\textcolor{stringliteral}{"{}World"{}}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00325}00325\ \ \ \ \ EXPECT\_NE(sv.find(\textcolor{stringliteral}{"{}lo,\ Wo"{}}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00326}00326\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}xyz"{}}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00327}00327\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}Universe"{}}),\ std::string\_view::npos);}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00328}00328\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00329}00329\ \ \ \ \ \textcolor{comment}{//\ Test\ contains()\ with\ string\_view}}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00329}00329\ \ \ \ \ \textcolor{comment}{//\ Test\ contains()\ with\ string\_view\ using\ find}}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00330}00330\ \ \ \ \ std::string\_view\ search(\textcolor{stringliteral}{"{}lo,\ Wo"{}});}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00331}00331\ \ \ \ \ EXPECT\_TRUE(sv.contains(search));}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00331}00331\ \ \ \ \ EXPECT\_NE(sv.find(search),\ std::string\_view::npos);}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00332}00332\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00333}00333\ \ \ \ \ std::string\_view\ not\_found(\textcolor{stringliteral}{"{}xyz"{}});}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00334}00334\ \ \ \ \ EXPECT\_FALSE(sv.contains(not\_found));}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00334}00334\ \ \ \ \ EXPECT\_EQ(sv.find(not\_found),\ std::string\_view::npos);}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00335}00335\ \}}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00336}00336\ }
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00341}00341\ TEST\_F(StringViewCoverageTest,\ TestStringViewRemovePrefixSuffix)\ \{}
@@ -427,9 +427,9 @@
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00485}00485\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{size\_t}\ pos\ =\ sv.find(\textcolor{stringliteral}{"{}Test"{}});}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00486}00486\ \ \ \ \ \textcolor{keyword}{static\_assert}(pos\ ==\ 10);}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00487}00487\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00488}00488\ \ \ \ \ \textcolor{comment}{//\ Test\ constexpr\ starts\_with}}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00489}00489\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv.starts\_with(\textcolor{stringliteral}{"{}Constexpr"{}}));}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00490}00490\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv.ends\_with(\textcolor{stringliteral}{"{}Test"{}}));}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00488}00488\ \ \ \ \ \textcolor{comment}{//\ Test\ constexpr\ functionality\ using\ find}}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00489}00489\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv.find(\textcolor{stringliteral}{"{}Constexpr"{}})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00490}00490\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv.find(\textcolor{stringliteral}{"{}Test"{}})\ ==\ 10);}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00491}00491\ \}}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00492}00492\ }
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00497}00497\ TEST\_F(StringViewCoverageTest,\ TestStringViewPerformance)\ \{}
@@ -443,7 +443,7 @@
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00505}00505\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 1000;\ ++i)\ \{}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00506}00506\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ sub\ =\ sv.substr(1000,\ 1000);}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00507}00507\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ pos\ =\ sv.find(\textcolor{stringliteral}{"{}AAA"{}});}
-\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00508}00508\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ contains\ =\ sv.contains(\textcolor{stringliteral}{"{}BBB"{}});}
+\DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00508}00508\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ contains\ =\ sv.find(\textcolor{stringliteral}{"{}BBB"{}})\ !=\ std::string\_view::npos;}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00509}00509\ \ \ \ \ \ \ \ \ (void)sub;\ (void)pos;\ (void)contains;\ \textcolor{comment}{//\ Suppress\ unused\ warnings}}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00510}00510\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{test__string__view__coverage_8cpp_source_l00511}00511\ \ \ \ \ }

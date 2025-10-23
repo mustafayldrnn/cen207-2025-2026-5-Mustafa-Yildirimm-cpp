@@ -319,59 +319,59 @@ $(function() {
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>TEST_F(StringViewCoverageTest, TestStringViewStartsWithEndsWith) {</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    std::string_view sv(<span class="stringliteral">&quot;Hello, World!&quot;</span>);</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    </div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="comment">// Test starts_with() with character</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    EXPECT_TRUE(sv.starts_with(<span class="charliteral">&#39;H&#39;</span>));</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    EXPECT_FALSE(sv.starts_with(<span class="charliteral">&#39;h&#39;</span>));</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    EXPECT_FALSE(sv.starts_with(<span class="charliteral">&#39;W&#39;</span>));</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="comment">// Test starts_with() with string</span></div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    EXPECT_TRUE(sv.starts_with(<span class="stringliteral">&quot;Hello&quot;</span>));</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    EXPECT_TRUE(sv.starts_with(<span class="stringliteral">&quot;Hello, World!&quot;</span>));</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    EXPECT_FALSE(sv.starts_with(<span class="stringliteral">&quot;World&quot;</span>));</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    EXPECT_FALSE(sv.starts_with(<span class="stringliteral">&quot;Hello, Universe!&quot;</span>));</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    <span class="comment">// Test starts_with() with string_view</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="comment">// Test starts_with() functionality using find (C++20 features not available)</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    EXPECT_EQ(sv.find(<span class="charliteral">&#39;H&#39;</span>), 0);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    EXPECT_EQ(sv.find(<span class="charliteral">&#39;h&#39;</span>), std::string_view::npos);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    EXPECT_EQ(sv.find(<span class="charliteral">&#39;W&#39;</span>), 7);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="comment">// Test starts_with() with string using find</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    EXPECT_EQ(sv.find(<span class="stringliteral">&quot;Hello&quot;</span>), 0);</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    EXPECT_EQ(sv.find(<span class="stringliteral">&quot;Hello, World!&quot;</span>), 0);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    EXPECT_EQ(sv.find(<span class="stringliteral">&quot;World&quot;</span>), 7);</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    EXPECT_EQ(sv.find(<span class="stringliteral">&quot;Hello, Universe!&quot;</span>), std::string_view::npos);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    <span class="comment">// Test starts_with() with string_view using find</span></div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    std::string_view prefix(<span class="stringliteral">&quot;Hello&quot;</span>);</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    EXPECT_TRUE(sv.starts_with(prefix));</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="comment">// Test ends_with() with character</span></div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    EXPECT_TRUE(sv.ends_with(<span class="charliteral">&#39;!&#39;</span>));</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    EXPECT_FALSE(sv.ends_with(<span class="charliteral">&#39;?&#39;</span>));</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    EXPECT_FALSE(sv.ends_with(<span class="charliteral">&#39;d&#39;</span>));</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="comment">// Test ends_with() with string</span></div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    EXPECT_TRUE(sv.ends_with(<span class="stringliteral">&quot;World!&quot;</span>));</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    EXPECT_TRUE(sv.ends_with(<span class="stringliteral">&quot;Hello, World!&quot;</span>));</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    EXPECT_FALSE(sv.ends_with(<span class="stringliteral">&quot;Hello&quot;</span>));</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    EXPECT_FALSE(sv.ends_with(<span class="stringliteral">&quot;Universe!&quot;</span>));</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="comment">// Test ends_with() with string_view</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    EXPECT_EQ(sv.find(prefix), 0);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="comment">// Test ends_with() functionality using find</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    EXPECT_EQ(sv.find(<span class="charliteral">&#39;!&#39;</span>), 12);</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    EXPECT_EQ(sv.find(<span class="charliteral">&#39;?&#39;</span>), std::string_view::npos);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    EXPECT_EQ(sv.find(<span class="charliteral">&#39;d&#39;</span>), 10);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="comment">// Test ends_with() with string using find</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    EXPECT_EQ(sv.find(<span class="stringliteral">&quot;World!&quot;</span>), 7);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    EXPECT_EQ(sv.find(<span class="stringliteral">&quot;Hello, World!&quot;</span>), 0);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    EXPECT_EQ(sv.find(<span class="stringliteral">&quot;Hello&quot;</span>), 0);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    EXPECT_EQ(sv.find(<span class="stringliteral">&quot;Universe!&quot;</span>), std::string_view::npos);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="comment">// Test ends_with() with string_view using find</span></div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    std::string_view suffix(<span class="stringliteral">&quot;World!&quot;</span>);</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    EXPECT_TRUE(sv.ends_with(suffix));</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    EXPECT_EQ(sv.find(suffix), 7);</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>}</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span></div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>TEST_F(StringViewCoverageTest, TestStringViewContains) {</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    std::string_view sv(<span class="stringliteral">&quot;Hello, World!&quot;</span>);</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    </div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="comment">// Test contains() with character</span></div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    EXPECT_TRUE(sv.contains(<span class="charliteral">&#39;H&#39;</span>));</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    EXPECT_TRUE(sv.contains(<span class="charliteral">&#39;o&#39;</span>));</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    EXPECT_TRUE(sv.contains(<span class="charliteral">&#39;!&#39;</span>));</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    EXPECT_FALSE(sv.contains(<span class="charliteral">&#39;z&#39;</span>));</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="comment">// Test contains() functionality using find (C++23 features not available)</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    EXPECT_NE(sv.find(<span class="charliteral">&#39;H&#39;</span>), std::string_view::npos);</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    EXPECT_NE(sv.find(<span class="charliteral">&#39;o&#39;</span>), std::string_view::npos);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    EXPECT_NE(sv.find(<span class="charliteral">&#39;!&#39;</span>), std::string_view::npos);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    EXPECT_EQ(sv.find(<span class="charliteral">&#39;z&#39;</span>), std::string_view::npos);</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    </div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="comment">// Test contains() with string</span></div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    EXPECT_TRUE(sv.contains(<span class="stringliteral">&quot;Hello&quot;</span>));</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    EXPECT_TRUE(sv.contains(<span class="stringliteral">&quot;World&quot;</span>));</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    EXPECT_TRUE(sv.contains(<span class="stringliteral">&quot;lo, Wo&quot;</span>));</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    EXPECT_FALSE(sv.contains(<span class="stringliteral">&quot;xyz&quot;</span>));</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    EXPECT_FALSE(sv.contains(<span class="stringliteral">&quot;Universe&quot;</span>));</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="comment">// Test contains() with string using find</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    EXPECT_NE(sv.find(<span class="stringliteral">&quot;Hello&quot;</span>), std::string_view::npos);</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    EXPECT_NE(sv.find(<span class="stringliteral">&quot;World&quot;</span>), std::string_view::npos);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    EXPECT_NE(sv.find(<span class="stringliteral">&quot;lo, Wo&quot;</span>), std::string_view::npos);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    EXPECT_EQ(sv.find(<span class="stringliteral">&quot;xyz&quot;</span>), std::string_view::npos);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    EXPECT_EQ(sv.find(<span class="stringliteral">&quot;Universe&quot;</span>), std::string_view::npos);</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    </div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="comment">// Test contains() with string_view</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="comment">// Test contains() with string_view using find</span></div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    std::string_view search(<span class="stringliteral">&quot;lo, Wo&quot;</span>);</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    EXPECT_TRUE(sv.contains(search));</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    EXPECT_NE(sv.find(search), std::string_view::npos);</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    </div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    std::string_view not_found(<span class="stringliteral">&quot;xyz&quot;</span>);</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    EXPECT_FALSE(sv.contains(not_found));</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    EXPECT_EQ(sv.find(not_found), std::string_view::npos);</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>}</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span></div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>TEST_F(StringViewCoverageTest, TestStringViewRemovePrefixSuffix) {</div>
@@ -505,9 +505,9 @@ $(function() {
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>    <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> pos = sv.find(<span class="stringliteral">&quot;Test&quot;</span>);</div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    <span class="keyword">static_assert</span>(pos == 10);</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    </div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    <span class="comment">// Test constexpr starts_with</span></div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>    <span class="keyword">static_assert</span>(sv.starts_with(<span class="stringliteral">&quot;Constexpr&quot;</span>));</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>    <span class="keyword">static_assert</span>(sv.ends_with(<span class="stringliteral">&quot;Test&quot;</span>));</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    <span class="comment">// Test constexpr functionality using find</span></div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>    <span class="keyword">static_assert</span>(sv.find(<span class="stringliteral">&quot;Constexpr&quot;</span>) == 0);</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>    <span class="keyword">static_assert</span>(sv.find(<span class="stringliteral">&quot;Test&quot;</span>) == 10);</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>}</div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span></div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>TEST_F(StringViewCoverageTest, TestStringViewPerformance) {</div>
@@ -521,7 +521,7 @@ $(function() {
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 1000; ++i) {</div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>        <span class="keyword">auto</span> sub = sv.substr(1000, 1000);</div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>        <span class="keyword">auto</span> pos = sv.find(<span class="stringliteral">&quot;AAA&quot;</span>);</div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>        <span class="keyword">auto</span> contains = sv.contains(<span class="stringliteral">&quot;BBB&quot;</span>);</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>        <span class="keyword">auto</span> contains = sv.find(<span class="stringliteral">&quot;BBB&quot;</span>) != std::string_view::npos;</div>
 <div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        (void)sub; (void)pos; (void)contains; <span class="comment">// Suppress unused warnings</span></div>
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>    }</div>
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>    </div>

@@ -151,105 +151,105 @@
 test_lexer_parser_codegen.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_lexer_parser_codegen.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_lexer_parser_codegen.cpp}
-{\bkmkstart AAAAAAAAGH}
-{\bkmkend AAAAAAAAGH}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAJE}{\bkmkend AAAAAAAAJE}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAACH}{\bkmkend AAAAAAAACH}
 00001 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAALG}{\bkmkend AAAAAAAALG}
+{\bkmkstart AAAAAAAACW}{\bkmkend AAAAAAAACW}
 00002 {\cf21 #include "translator/lexer.h"}\par
-{\bkmkstart AAAAAAAAMC}{\bkmkend AAAAAAAAMC}
+{\bkmkstart AAAAAAAADU}{\bkmkend AAAAAAAADU}
 00003 {\cf21 #include "translator/parser.h"}\par
-{\bkmkstart AAAAAAAAMX}{\bkmkend AAAAAAAAMX}
+{\bkmkstart AAAAAAAAEV}{\bkmkend AAAAAAAAEV}
 00004 {\cf21 #include "translator/codegen.h"}\par
-{\bkmkstart AAAAAAAANL}{\bkmkend AAAAAAAANL}
+{\bkmkstart AAAAAAAAGH}{\bkmkend AAAAAAAAGH}
 00005 {\cf21 #include "translator/cfg.h"}\par
-{\bkmkstart AAAAAAAANS}{\bkmkend AAAAAAAANS}
+{\bkmkstart AAAAAAAAHN}{\bkmkend AAAAAAAAHN}
 00006 \par
-{\bkmkstart AAAAAAAAOA}{\bkmkend AAAAAAAAOA}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAOB" }{}}{\fldrslt {\cs37\ul\cf2 00007}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAOB" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+{\bkmkstart AAAAAAAAHT}{\bkmkend AAAAAAAAHT}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 00007}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
 (LexerParser, BasicProgramParse)\{\par
-{\bkmkstart AAAAAAAAQZ}{\bkmkend AAAAAAAAQZ}
+{\bkmkstart AAAAAAAALF}{\bkmkend AAAAAAAALF}
 00008     {\cf17 const} {\cf18 char}* src = R{\cf22 "(10 LET X = 1 + 2}\par
-{\bkmkstart AAAAAAAARF}{\bkmkend AAAAAAAARF}
+{\bkmkstart AAAAAAAALI}{\bkmkend AAAAAAAALI}
 00009 {\cf22 20 PRINT X}\par
-{\bkmkstart AAAAAAAARK}{\bkmkend AAAAAAAARK}
+{\bkmkstart AAAAAAAALJ}{\bkmkend AAAAAAAALJ}
 00010 {\cf22 30 IF X THEN 50}\par
-{\bkmkstart AAAAAAAARM}{\bkmkend AAAAAAAARM}
+{\bkmkstart AAAAAAAALL}{\bkmkend AAAAAAAALL}
 00011 {\cf22 40 GOTO 60}\par
-{\bkmkstart AAAAAAAARO}{\bkmkend AAAAAAAARO}
+{\bkmkstart AAAAAAAALN}{\bkmkend AAAAAAAALN}
 00012 {\cf22 50 GOSUB 70}\par
-{\bkmkstart AAAAAAAARS}{\bkmkend AAAAAAAARS}
+{\bkmkstart AAAAAAAALO}{\bkmkend AAAAAAAALO}
 00013 {\cf22 60 RETURN}\par
-{\bkmkstart AAAAAAAARU}{\bkmkend AAAAAAAARU}
+{\bkmkstart AAAAAAAALP}{\bkmkend AAAAAAAALP}
 00014 {\cf22 70 PRINT X}\par
-{\bkmkstart AAAAAAAARW}{\bkmkend AAAAAAAARW}
+{\bkmkstart AAAAAAAALS}{\bkmkend AAAAAAAALS}
 00015 {\cf22 )";}\par
-{\bkmkstart AAAAAAAARY}{\bkmkend AAAAAAAARY}
+{\bkmkstart AAAAAAAALV}{\bkmkend AAAAAAAALV}
 00016 {\cf22     translator::Lexer lx(src);}\par
-{\bkmkstart AAAAAAAASE}{\bkmkend AAAAAAAASE}
+{\bkmkstart AAAAAAAALZ}{\bkmkend AAAAAAAALZ}
 00017 {\cf22     }{\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAASH}{\bkmkend AAAAAAAASH}
+{\bkmkstart AAAAAAAAMB}{\bkmkend AAAAAAAAMB}
 00018     translator::Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAASL}{\bkmkend AAAAAAAASL}
+{\bkmkstart AAAAAAAAMH}{\bkmkend AAAAAAAAMH}
 00019     {\cf17 auto} prog = ps.parseProgram();\par
-{\bkmkstart AAAAAAAASR}{\bkmkend AAAAAAAASR}
+{\bkmkstart AAAAAAAAMK}{\bkmkend AAAAAAAAMK}
 00020     ASSERT_EQ(prog.stmts.size(), 7u);\par
-{\bkmkstart AAAAAAAASV}{\bkmkend AAAAAAAASV}
+{\bkmkstart AAAAAAAAML}{\bkmkend AAAAAAAAML}
 00021     ASSERT_EQ(prog.labels.front(), 10);\par
-{\bkmkstart AAAAAAAASY}{\bkmkend AAAAAAAASY}
+{\bkmkstart AAAAAAAAMN}{\bkmkend AAAAAAAAMN}
 00022     ASSERT_EQ(prog.labels.back(), 70);\par
-{\bkmkstart AAAAAAAATB}{\bkmkend AAAAAAAATB}
+{\bkmkstart AAAAAAAAMQ}{\bkmkend AAAAAAAAMQ}
 00023 \par
-{\bkmkstart AAAAAAAATF}{\bkmkend AAAAAAAATF}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAATG" }{}}{\fldrslt {\cs37\ul\cf2 00024}}}
+{\bkmkstart AAAAAAAAMS}{\bkmkend AAAAAAAAMS}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMT" }{}}{\fldrslt {\cs37\ul\cf2 00024}}}
      {\cf20 // CFG build and reachability}\par
-{\bkmkstart AAAAAAAATJ}{\bkmkend AAAAAAAATJ}
+{\bkmkstart AAAAAAAAMV}{\bkmkend AAAAAAAAMV}
 00025     {\cf17 auto} cfg = translator::build_cfg(prog);\par
-{\bkmkstart AAAAAAAATS}{\bkmkend AAAAAAAATS}
+{\bkmkstart AAAAAAAANA}{\bkmkend AAAAAAAANA}
 00026     {\cf17 auto} dist = cfg.g.bfs_dist(0);\par
-{\bkmkstart AAAAAAAATV}{\bkmkend AAAAAAAATV}
+{\bkmkstart AAAAAAAANC}{\bkmkend AAAAAAAANC}
 00027     {\cf20 // Ensure start is reachable and some edges exist}\par
-{\bkmkstart AAAAAAAATY}{\bkmkend AAAAAAAATY}
+{\bkmkstart AAAAAAAANF}{\bkmkend AAAAAAAANF}
 00028     EXPECT_EQ(dist[0], 0);\par
-{\bkmkstart AAAAAAAATZ}{\bkmkend AAAAAAAATZ}
+{\bkmkstart AAAAAAAANI}{\bkmkend AAAAAAAANI}
 00029 \}\par
-{\bkmkstart AAAAAAAAUB}{\bkmkend AAAAAAAAUB}
+{\bkmkstart AAAAAAAANK}{\bkmkend AAAAAAAANK}
 00030 \par
-{\bkmkstart AAAAAAAAUD}{\bkmkend AAAAAAAAUD}
-00031 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAOB" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+{\bkmkstart AAAAAAAANL}{\bkmkend AAAAAAAANL}
+00031 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
 (Codegen, EmitsCPP)\{\par
-{\bkmkstart AAAAAAAAUM}{\bkmkend AAAAAAAAUM}
+{\bkmkstart AAAAAAAANS}{\bkmkend AAAAAAAANS}
 00032     {\cf17 const} {\cf18 char}* src = R{\cf22 "(10 LET X = 1 + 2 * 3}\par
-{\bkmkstart AAAAAAAAUR}{\bkmkend AAAAAAAAUR}
+{\bkmkstart AAAAAAAANX}{\bkmkend AAAAAAAANX}
 00033 {\cf22 20 PRINT X}\par
-{\bkmkstart AAAAAAAAUS}{\bkmkend AAAAAAAAUS}
+{\bkmkstart AAAAAAAANY}{\bkmkend AAAAAAAANY}
 00034 {\cf22 )";}\par
-{\bkmkstart AAAAAAAAUW}{\bkmkend AAAAAAAAUW}
+{\bkmkstart AAAAAAAAOA}{\bkmkend AAAAAAAAOA}
 00035 {\cf22     translator::Lexer lx(src);}\par
-{\bkmkstart AAAAAAAAVG}{\bkmkend AAAAAAAAVG}
+{\bkmkstart AAAAAAAAOK}{\bkmkend AAAAAAAAOK}
 00036 {\cf22     }{\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAAVJ}{\bkmkend AAAAAAAAVJ}
+{\bkmkstart AAAAAAAAOO}{\bkmkend AAAAAAAAOO}
 00037     translator::Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAAVP}{\bkmkend AAAAAAAAVP}
+{\bkmkstart AAAAAAAAOW}{\bkmkend AAAAAAAAOW}
 00038     {\cf17 auto} prog = ps.parseProgram();\par
-{\bkmkstart AAAAAAAAVQ}{\bkmkend AAAAAAAAVQ}
+{\bkmkstart AAAAAAAAOZ}{\bkmkend AAAAAAAAOZ}
 00039     {\cf17 auto} code = translator::Codegen::emit_cpp(prog);\par
-{\bkmkstart AAAAAAAAVU}{\bkmkend AAAAAAAAVU}
+{\bkmkstart AAAAAAAAPJ}{\bkmkend AAAAAAAAPJ}
 00040     {\cf20 // Basic sanity checks}\par
-{\bkmkstart AAAAAAAAVY}{\bkmkend AAAAAAAAVY}
+{\bkmkstart AAAAAAAAPN}{\bkmkend AAAAAAAAPN}
 00041     EXPECT_NE(code.find({\cf22 "#include <iostream>"}), std::string::npos);\par
-{\bkmkstart AAAAAAAAWD}{\bkmkend AAAAAAAAWD}
+{\bkmkstart AAAAAAAAPQ}{\bkmkend AAAAAAAAPQ}
 00042     EXPECT_NE(code.find({\cf22 "int main()"}), std::string::npos);\par
-{\bkmkstart AAAAAAAAWJ}{\bkmkend AAAAAAAAWJ}
+{\bkmkstart AAAAAAAAPU}{\bkmkend AAAAAAAAPU}
 00043     EXPECT_NE(code.find({\cf22 "var[\\"X\\"] = (1 + (2 * 3))"}), std::string::npos);\par
-{\bkmkstart AAAAAAAAWM}{\bkmkend AAAAAAAAWM}
+{\bkmkstart AAAAAAAAPW}{\bkmkend AAAAAAAAPW}
 00044     EXPECT_NE(code.find({\cf22 "std::cout << var[\\"X\\"] << std::endl;"}), std::string::npos);\par
-{\bkmkstart AAAAAAAAWU}{\bkmkend AAAAAAAAWU}
+{\bkmkstart AAAAAAAAPX}{\bkmkend AAAAAAAAPX}
 00045 \}\par
 }
 }

@@ -302,59 +302,59 @@
 <codeline lineno="275"><highlight class="normal">TEST_F(StringViewCoverageTest,<sp/>TestStringViewStartsWithEndsWith)<sp/>{</highlight></codeline>
 <codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>starts_with()<sp/>with<sp/>character</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.starts_with(</highlight><highlight class="charliteral">&apos;H&apos;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.starts_with(</highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.starts_with(</highlight><highlight class="charliteral">&apos;W&apos;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>starts_with()<sp/>with<sp/>string</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.starts_with(</highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.starts_with(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.starts_with(</highlight><highlight class="stringliteral">&quot;World&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.starts_with(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>Universe!&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>starts_with()<sp/>with<sp/>string_view</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>starts_with()<sp/>functionality<sp/>using<sp/>find<sp/>(C++20<sp/>features<sp/>not<sp/>available)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="charliteral">&apos;H&apos;</highlight><highlight class="normal">),<sp/>0);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="charliteral">&apos;W&apos;</highlight><highlight class="normal">),<sp/>7);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>starts_with()<sp/>with<sp/>string<sp/>using<sp/>find</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">),<sp/>0);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">),<sp/>0);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;World&quot;</highlight><highlight class="normal">),<sp/>7);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>Universe!&quot;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>starts_with()<sp/>with<sp/>string_view<sp/>using<sp/>find</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>prefix(</highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.starts_with(prefix));</highlight></codeline>
-<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>ends_with()<sp/>with<sp/>character</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.ends_with(</highlight><highlight class="charliteral">&apos;!&apos;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.ends_with(</highlight><highlight class="charliteral">&apos;?&apos;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.ends_with(</highlight><highlight class="charliteral">&apos;d&apos;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>ends_with()<sp/>with<sp/>string</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.ends_with(</highlight><highlight class="stringliteral">&quot;World!&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.ends_with(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.ends_with(</highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.ends_with(</highlight><highlight class="stringliteral">&quot;Universe!&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>ends_with()<sp/>with<sp/>string_view</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(prefix),<sp/>0);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>ends_with()<sp/>functionality<sp/>using<sp/>find</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="charliteral">&apos;!&apos;</highlight><highlight class="normal">),<sp/>12);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="charliteral">&apos;?&apos;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="charliteral">&apos;d&apos;</highlight><highlight class="normal">),<sp/>10);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>ends_with()<sp/>with<sp/>string<sp/>using<sp/>find</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;World!&quot;</highlight><highlight class="normal">),<sp/>7);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">),<sp/>0);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">),<sp/>0);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;Universe!&quot;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>ends_with()<sp/>with<sp/>string_view<sp/>using<sp/>find</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>suffix(</highlight><highlight class="stringliteral">&quot;World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.ends_with(suffix));</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(suffix),<sp/>7);</highlight></codeline>
 <codeline lineno="307"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="308"><highlight class="normal"></highlight></codeline>
 <codeline lineno="313"><highlight class="normal">TEST_F(StringViewCoverageTest,<sp/>TestStringViewContains)<sp/>{</highlight></codeline>
 <codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>contains()<sp/>with<sp/>character</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.contains(</highlight><highlight class="charliteral">&apos;H&apos;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.contains(</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.contains(</highlight><highlight class="charliteral">&apos;!&apos;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.contains(</highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>contains()<sp/>functionality<sp/>using<sp/>find<sp/>(C++23<sp/>features<sp/>not<sp/>available)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(sv.find(</highlight><highlight class="charliteral">&apos;H&apos;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(sv.find(</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(sv.find(</highlight><highlight class="charliteral">&apos;!&apos;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
 <codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>contains()<sp/>with<sp/>string</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.contains(</highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.contains(</highlight><highlight class="stringliteral">&quot;World&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.contains(</highlight><highlight class="stringliteral">&quot;lo,<sp/>Wo&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.contains(</highlight><highlight class="stringliteral">&quot;xyz&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.contains(</highlight><highlight class="stringliteral">&quot;Universe&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>contains()<sp/>with<sp/>string<sp/>using<sp/>find</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(sv.find(</highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(sv.find(</highlight><highlight class="stringliteral">&quot;World&quot;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(sv.find(</highlight><highlight class="stringliteral">&quot;lo,<sp/>Wo&quot;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;xyz&quot;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;Universe&quot;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
 <codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>contains()<sp/>with<sp/>string_view</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>contains()<sp/>with<sp/>string_view<sp/>using<sp/>find</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>search(</highlight><highlight class="stringliteral">&quot;lo,<sp/>Wo&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sv.contains(search));</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(sv.find(search),<sp/>std::string_view::npos);</highlight></codeline>
 <codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>not_found(</highlight><highlight class="stringliteral">&quot;xyz&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(sv.contains(not_found));</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(not_found),<sp/>std::string_view::npos);</highlight></codeline>
 <codeline lineno="335"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="336"><highlight class="normal"></highlight></codeline>
 <codeline lineno="341"><highlight class="normal">TEST_F(StringViewCoverageTest,<sp/>TestStringViewRemovePrefixSuffix)<sp/>{</highlight></codeline>
@@ -488,9 +488,9 @@
 <codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/>sv.find(</highlight><highlight class="stringliteral">&quot;Test&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(pos<sp/>==<sp/>10);</highlight></codeline>
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>constexpr<sp/>starts_with</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(sv.starts_with(</highlight><highlight class="stringliteral">&quot;Constexpr&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(sv.ends_with(</highlight><highlight class="stringliteral">&quot;Test&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>constexpr<sp/>functionality<sp/>using<sp/>find</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(sv.find(</highlight><highlight class="stringliteral">&quot;Constexpr&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(sv.find(</highlight><highlight class="stringliteral">&quot;Test&quot;</highlight><highlight class="normal">)<sp/>==<sp/>10);</highlight></codeline>
 <codeline lineno="491"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="492"><highlight class="normal"></highlight></codeline>
 <codeline lineno="497"><highlight class="normal">TEST_F(StringViewCoverageTest,<sp/>TestStringViewPerformance)<sp/>{</highlight></codeline>
@@ -504,7 +504,7 @@
 <codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>1000;<sp/>++i)<sp/>{</highlight></codeline>
 <codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sub<sp/>=<sp/>sv.substr(1000,<sp/>1000);</highlight></codeline>
 <codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/>sv.find(</highlight><highlight class="stringliteral">&quot;AAA&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>contains<sp/>=<sp/>sv.contains(</highlight><highlight class="stringliteral">&quot;BBB&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>contains<sp/>=<sp/>sv.find(</highlight><highlight class="stringliteral">&quot;BBB&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string_view::npos;</highlight></codeline>
 <codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)sub;<sp/>(void)pos;<sp/>(void)contains;<sp/></highlight><highlight class="comment">//<sp/>Suppress<sp/>unused<sp/>warnings</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>

@@ -1,0 +1,373 @@
+\doxysection{test\+\_\+string\+\_\+view\+\_\+internal\+\_\+utilities.\+cpp}
+\hypertarget{test__string__view__internal__utilities_8cpp_source}{}\label{test__string__view__internal__utilities_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_string\_view\_internal\_utilities.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_string\_view\_internal\_utilities.cpp}}
+\mbox{\hyperlink{test__string__view__internal__utilities_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <string\_view>}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00017}00017\ \textcolor{preprocessor}{\#include\ <cstring>}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00018}00018\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00020}00020\ \textcolor{keyword}{namespace\ }\{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00026}00026\ \textcolor{keyword}{class\ }StringViewInternalUtilitiesTest\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00027}00027\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Setup\ for\ each\ test}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00030}00030\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00031}00031\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Cleanup\ after\ each\ test}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00035}00035\ \};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00041}00041\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewLengthFunction)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ various\ C-\/strings\ to\ trigger\ internal\ length()\ function}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ cstr1\ =\ \textcolor{stringliteral}{"{}Hello"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00044}00044\ \ \ \ \ std::string\_view\ sv1(cstr1);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00045}00045\ \ \ \ \ EXPECT\_EQ(sv1.size(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00046}00046\ \ \ \ \ EXPECT\_EQ(sv1.length(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00047}00047\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ empty\ string}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ cstr2\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00050}00050\ \ \ \ \ std::string\_view\ sv2(cstr2);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00051}00051\ \ \ \ \ EXPECT\_EQ(sv2.size(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00052}00052\ \ \ \ \ EXPECT\_EQ(sv2.length(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00053}00053\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ single\ character}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00055}00055\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ cstr3\ =\ \textcolor{stringliteral}{"{}A"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00056}00056\ \ \ \ \ std::string\_view\ sv3(cstr3);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00057}00057\ \ \ \ \ EXPECT\_EQ(sv3.size(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00058}00058\ \ \ \ \ EXPECT\_EQ(sv3.length(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00059}00059\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ long\ string}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ cstr4\ =\ \textcolor{stringliteral}{"{}This\ is\ a\ very\ long\ string\ that\ should\ trigger\ the\ internal\ length\ function"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00062}00062\ \ \ \ \ std::string\_view\ sv4(cstr4);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00063}00063\ \ \ \ \ EXPECT\_EQ(sv4.size(),\ 70);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00064}00064\ \ \ \ \ EXPECT\_EQ(sv4.length(),\ 70);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00065}00065\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00066}00066\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ string\ containing\ null\ characters\ (but\ null-\/terminated)}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ cstr5\ =\ \textcolor{stringliteral}{"{}Hello\(\backslash\)0World"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00068}00068\ \ \ \ \ std::string\_view\ sv5(cstr5,\ 11);\ \textcolor{comment}{//\ Explicit\ length\ to\ include\ null}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00069}00069\ \ \ \ \ EXPECT\_EQ(sv5.size(),\ 11);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00070}00070\ \ \ \ \ EXPECT\_EQ(sv5.length(),\ 11);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00071}00071\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ wide\ characters}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{wchar\_t}*\ wcstr\ =\ L\textcolor{stringliteral}{"{}Hello"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00074}00074\ \ \ \ \ std::wstring\_view\ wsv(wcstr);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00075}00075\ \ \ \ \ EXPECT\_EQ(wsv.size(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00076}00076\ \ \ \ \ EXPECT\_EQ(wsv.length(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00077}00077\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00078}00078\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ char16\_t}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char16\_t}*\ c16str\ =\ u\textcolor{stringliteral}{"{}Hello"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00080}00080\ \ \ \ \ std::u16string\_view\ sv16(c16str);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00081}00081\ \ \ \ \ EXPECT\_EQ(sv16.size(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00082}00082\ \ \ \ \ EXPECT\_EQ(sv16.length(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00083}00083\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00084}00084\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ char32\_t}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00085}00085\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char32\_t}*\ c32str\ =\ U\textcolor{stringliteral}{"{}Hello"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00086}00086\ \ \ \ \ std::u32string\_view\ sv32(c32str);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00087}00087\ \ \ \ \ EXPECT\_EQ(sv32.size(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00088}00088\ \ \ \ \ EXPECT\_EQ(sv32.length(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00089}00089\ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00095}00095\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewFindFunction)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00096}00096\ \ \ \ \ std::string\_view\ sv(\textcolor{stringliteral}{"{}Hello,\ World!"{}});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00097}00097\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00098}00098\ \ \ \ \ \textcolor{comment}{//\ Test\ find\ with\ character\ -\/\ this\ should\ trigger\ internal\ find()\ function}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00099}00099\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'H'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00100}00100\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'e'}),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00101}00101\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'l'}),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00102}00102\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'o'}),\ 4);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00103}00103\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{','}),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00104}00104\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'\ '}),\ 6);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00105}00105\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'W'}),\ 7);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00106}00106\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'r'}),\ 8);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00107}00107\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'d'}),\ 10);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00108}00108\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'!'}),\ 12);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00109}00109\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'z'}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00110}00110\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00111}00111\ \ \ \ \ \textcolor{comment}{//\ Test\ find\ with\ string\ -\/\ this\ should\ also\ trigger\ internal\ find()\ function}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00112}00112\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}Hello"{}}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00113}00113\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}ello"{}}),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00114}00114\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}llo"{}}),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00115}00115\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}lo"{}}),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00116}00116\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}o"{}}),\ 4);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00117}00117\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{},\ "{}}),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00118}00118\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}World"{}}),\ 7);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00119}00119\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}orld"{}}),\ 8);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00120}00120\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}rld"{}}),\ 9);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00121}00121\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}ld"{}}),\ 10);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00122}00122\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}d"{}}),\ 10);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00123}00123\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}!"{}}),\ 12);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00124}00124\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}xyz"{}}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00125}00125\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00126}00126\ \ \ \ \ \textcolor{comment}{//\ Test\ find\ with\ position\ parameter}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00127}00127\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'l'},\ 3),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00128}00128\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'l'},\ 4),\ 9);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00129}00129\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'o'},\ 5),\ 8);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00130}00130\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}lo"{}},\ 3),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00131}00131\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}lo"{}},\ 4),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00132}00132\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00133}00133\ \ \ \ \ \textcolor{comment}{//\ Test\ find\ with\ empty\ string}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00134}00134\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}"{}}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00135}00135\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}"{}},\ 5),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00136}00136\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00137}00137\ \ \ \ \ \textcolor{comment}{//\ Test\ find\ with\ single\ character\ at\ various\ positions}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00138}00138\ \ \ \ \ std::string\_view\ repeated(\textcolor{stringliteral}{"{}aaa"{}});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00139}00139\ \ \ \ \ EXPECT\_EQ(repeated.find(\textcolor{charliteral}{'a'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00140}00140\ \ \ \ \ EXPECT\_EQ(repeated.find(\textcolor{charliteral}{'a'},\ 1),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00141}00141\ \ \ \ \ EXPECT\_EQ(repeated.find(\textcolor{charliteral}{'a'},\ 2),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00142}00142\ \ \ \ \ EXPECT\_EQ(repeated.find(\textcolor{charliteral}{'a'},\ 3),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00143}00143\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00144}00144\ \ \ \ \ \textcolor{comment}{//\ Test\ find\ with\ wide\ characters}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00145}00145\ \ \ \ \ std::wstring\_view\ wsv(L\textcolor{stringliteral}{"{}Hello,\ World!"{}});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00146}00146\ \ \ \ \ EXPECT\_EQ(wsv.find(L\textcolor{charliteral}{'H'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00147}00147\ \ \ \ \ EXPECT\_EQ(wsv.find(L\textcolor{charliteral}{'e'}),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00148}00148\ \ \ \ \ EXPECT\_EQ(wsv.find(L\textcolor{charliteral}{'l'}),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00149}00149\ \ \ \ \ EXPECT\_EQ(wsv.find(L\textcolor{charliteral}{'o'}),\ 4);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00150}00150\ \ \ \ \ EXPECT\_EQ(wsv.find(L\textcolor{charliteral}{'z'}),\ std::wstring\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00151}00151\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00152}00152\ \ \ \ \ \textcolor{comment}{//\ Test\ find\ with\ char16\_t}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00153}00153\ \ \ \ \ std::u16string\_view\ sv16(u\textcolor{stringliteral}{"{}Hello,\ World!"{}});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00154}00154\ \ \ \ \ EXPECT\_EQ(sv16.find(u\textcolor{charliteral}{'H'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00155}00155\ \ \ \ \ EXPECT\_EQ(sv16.find(u\textcolor{charliteral}{'e'}),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00156}00156\ \ \ \ \ EXPECT\_EQ(sv16.find(u\textcolor{charliteral}{'l'}),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00157}00157\ \ \ \ \ EXPECT\_EQ(sv16.find(u\textcolor{charliteral}{'o'}),\ 4);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00158}00158\ \ \ \ \ EXPECT\_EQ(sv16.find(u\textcolor{charliteral}{'z'}),\ std::u16string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00159}00159\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00160}00160\ \ \ \ \ \textcolor{comment}{//\ Test\ find\ with\ char32\_t}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00161}00161\ \ \ \ \ std::u32string\_view\ sv32(U\textcolor{stringliteral}{"{}Hello,\ World!"{}});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00162}00162\ \ \ \ \ EXPECT\_EQ(sv32.find(U\textcolor{charliteral}{'H'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00163}00163\ \ \ \ \ EXPECT\_EQ(sv32.find(U\textcolor{charliteral}{'e'}),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00164}00164\ \ \ \ \ EXPECT\_EQ(sv32.find(U\textcolor{charliteral}{'l'}),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00165}00165\ \ \ \ \ EXPECT\_EQ(sv32.find(U\textcolor{charliteral}{'o'}),\ 4);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00166}00166\ \ \ \ \ EXPECT\_EQ(sv32.find(U\textcolor{charliteral}{'z'}),\ std::u32string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00167}00167\ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00168}00168\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00173}00173\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewAssignFunction)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00174}00174\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ string\ construction\ that\ might\ trigger\ internal\ assign()\ function}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00175}00175\ \ \ \ \ std::string\ str1(10,\ \textcolor{charliteral}{'A'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00176}00176\ \ \ \ \ std::string\_view\ sv1(str1);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00177}00177\ \ \ \ \ EXPECT\_EQ(sv1.size(),\ 10);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00178}00178\ \ \ \ \ EXPECT\_EQ(sv1[0],\ \textcolor{charliteral}{'A'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00179}00179\ \ \ \ \ EXPECT\_EQ(sv1[9],\ \textcolor{charliteral}{'A'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00180}00180\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00181}00181\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ string\ fill\ operations}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00182}00182\ \ \ \ \ std::string\ str2;}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00183}00183\ \ \ \ \ str2.resize(5,\ \textcolor{charliteral}{'B'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00184}00184\ \ \ \ \ std::string\_view\ sv2(str2);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00185}00185\ \ \ \ \ EXPECT\_EQ(sv2.size(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00186}00186\ \ \ \ \ EXPECT\_EQ(sv2[0],\ \textcolor{charliteral}{'B'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00187}00187\ \ \ \ \ EXPECT\_EQ(sv2[4],\ \textcolor{charliteral}{'B'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00188}00188\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00189}00189\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ vector\ operations\ that\ might\ trigger\ assign()}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00190}00190\ \ \ \ \ std::vector<char>\ vec(8,\ \textcolor{charliteral}{'C'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00191}00191\ \ \ \ \ std::string\_view\ sv3(vec.data(),\ vec.size());}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00192}00192\ \ \ \ \ EXPECT\_EQ(sv3.size(),\ 8);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00193}00193\ \ \ \ \ EXPECT\_EQ(sv3[0],\ \textcolor{charliteral}{'C'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00194}00194\ \ \ \ \ EXPECT\_EQ(sv3[7],\ \textcolor{charliteral}{'C'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00195}00195\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00196}00196\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ array\ operations}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00197}00197\ \ \ \ \ \textcolor{keywordtype}{char}\ arr[6];}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00198}00198\ \ \ \ \ std::fill(arr,\ arr\ +\ 6,\ \textcolor{charliteral}{'D'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00199}00199\ \ \ \ \ std::string\_view\ sv4(arr,\ 6);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00200}00200\ \ \ \ \ EXPECT\_EQ(sv4.size(),\ 6);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00201}00201\ \ \ \ \ EXPECT\_EQ(sv4[0],\ \textcolor{charliteral}{'D'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00202}00202\ \ \ \ \ EXPECT\_EQ(sv4[5],\ \textcolor{charliteral}{'D'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00203}00203\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00204}00204\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ memset\ operations}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00205}00205\ \ \ \ \ \textcolor{keywordtype}{char}\ buffer[12];}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00206}00206\ \ \ \ \ std::memset(buffer,\ \textcolor{charliteral}{'E'},\ 12);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00207}00207\ \ \ \ \ std::string\_view\ sv5(buffer,\ 12);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00208}00208\ \ \ \ \ EXPECT\_EQ(sv5.size(),\ 12);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00209}00209\ \ \ \ \ EXPECT\_EQ(sv5[0],\ \textcolor{charliteral}{'E'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00210}00210\ \ \ \ \ EXPECT\_EQ(sv5[11],\ \textcolor{charliteral}{'E'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00211}00211\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00212}00212\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ wide\ characters}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00213}00213\ \ \ \ \ std::wstring\ wstr(7,\ L\textcolor{charliteral}{'F'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00214}00214\ \ \ \ \ std::wstring\_view\ wsv(wstr);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00215}00215\ \ \ \ \ EXPECT\_EQ(wsv.size(),\ 7);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00216}00216\ \ \ \ \ EXPECT\_EQ(wsv[0],\ L\textcolor{charliteral}{'F'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00217}00217\ \ \ \ \ EXPECT\_EQ(wsv[6],\ L\textcolor{charliteral}{'F'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00218}00218\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00219}00219\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ char16\_t}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00220}00220\ \ \ \ \ std::u16string\ u16str(9,\ u\textcolor{charliteral}{'G'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00221}00221\ \ \ \ \ std::u16string\_view\ sv16(u16str);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00222}00222\ \ \ \ \ EXPECT\_EQ(sv16.size(),\ 9);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00223}00223\ \ \ \ \ EXPECT\_EQ(sv16[0],\ u\textcolor{charliteral}{'G'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00224}00224\ \ \ \ \ EXPECT\_EQ(sv16[8],\ u\textcolor{charliteral}{'G'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00225}00225\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00226}00226\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ char32\_t}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00227}00227\ \ \ \ \ std::u32string\ u32str(11,\ U\textcolor{charliteral}{'H'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00228}00228\ \ \ \ \ std::u32string\_view\ sv32(u32str);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00229}00229\ \ \ \ \ EXPECT\_EQ(sv32.size(),\ 11);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00230}00230\ \ \ \ \ EXPECT\_EQ(sv32[0],\ U\textcolor{charliteral}{'H'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00231}00231\ \ \ \ \ EXPECT\_EQ(sv32[10],\ U\textcolor{charliteral}{'H'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00232}00232\ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00233}00233\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00238}00238\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewInternalOperations)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00239}00239\ \ \ \ \ \textcolor{comment}{//\ Test\ operations\ that\ might\ trigger\ length()\ function}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00240}00240\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ cstr\ =\ \textcolor{stringliteral}{"{}Internal\ operations\ test"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00241}00241\ \ \ \ \ std::string\_view\ sv(cstr);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00242}00242\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00243}00243\ \ \ \ \ \textcolor{comment}{//\ Test\ size()\ and\ length()\ calls}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00244}00244\ \ \ \ \ EXPECT\_EQ(sv.size(),\ 24);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00245}00245\ \ \ \ \ EXPECT\_EQ(sv.length(),\ 24);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00246}00246\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00247}00247\ \ \ \ \ \textcolor{comment}{//\ Test\ empty()\ which\ might\ use\ length()}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00248}00248\ \ \ \ \ EXPECT\_FALSE(sv.empty());}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00249}00249\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00250}00250\ \ \ \ \ std::string\_view\ empty\_sv(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00251}00251\ \ \ \ \ EXPECT\_TRUE(empty\_sv.empty());}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00252}00252\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00253}00253\ \ \ \ \ \textcolor{comment}{//\ Test\ operations\ that\ might\ trigger\ find()\ function}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00254}00254\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}Internal"{}}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00255}00255\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}operations"{}}),\ 9);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00256}00256\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{stringliteral}{"{}test"{}}),\ 20);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00257}00257\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'I'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00258}00258\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'o'}),\ 9);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00259}00259\ \ \ \ \ EXPECT\_EQ(sv.find(\textcolor{charliteral}{'t'}),\ 20);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00260}00260\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00261}00261\ \ \ \ \ \textcolor{comment}{//\ Test\ operations\ that\ might\ trigger\ assign()\ function}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00262}00262\ \ \ \ \ std::string\ str(15,\ \textcolor{charliteral}{'X'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00263}00263\ \ \ \ \ std::string\_view\ sv2(str);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00264}00264\ \ \ \ \ EXPECT\_EQ(sv2.size(),\ 15);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00265}00265\ \ \ \ \ EXPECT\_EQ(sv2[0],\ \textcolor{charliteral}{'X'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00266}00266\ \ \ \ \ EXPECT\_EQ(sv2[14],\ \textcolor{charliteral}{'X'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00267}00267\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00268}00268\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ different\ character\ types}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00269}00269\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{wchar\_t}*\ wcstr\ =\ L\textcolor{stringliteral}{"{}Wide\ string\ test"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00270}00270\ \ \ \ \ std::wstring\_view\ wsv(wcstr);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00271}00271\ \ \ \ \ EXPECT\_EQ(wsv.size(),\ 16);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00272}00272\ \ \ \ \ EXPECT\_EQ(wsv.find(L\textcolor{charliteral}{'W'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00273}00273\ \ \ \ \ EXPECT\_EQ(wsv.find(L\textcolor{charliteral}{'t'}),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00274}00274\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00275}00275\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char16\_t}*\ c16str\ =\ u\textcolor{stringliteral}{"{}UTF-\/16\ string\ test"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00276}00276\ \ \ \ \ std::u16string\_view\ sv16(c16str);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00277}00277\ \ \ \ \ EXPECT\_EQ(sv16.size(),\ 18);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00278}00278\ \ \ \ \ EXPECT\_EQ(sv16.find(u\textcolor{charliteral}{'U'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00279}00279\ \ \ \ \ EXPECT\_EQ(sv16.find(u\textcolor{charliteral}{'t'}),\ 7);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00280}00280\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00281}00281\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char32\_t}*\ c32str\ =\ U\textcolor{stringliteral}{"{}UTF-\/32\ string\ test"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00282}00282\ \ \ \ \ std::u32string\_view\ sv32(c32str);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00283}00283\ \ \ \ \ EXPECT\_EQ(sv32.size(),\ 18);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00284}00284\ \ \ \ \ EXPECT\_EQ(sv32.find(U\textcolor{charliteral}{'U'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00285}00285\ \ \ \ \ EXPECT\_EQ(sv32.find(U\textcolor{charliteral}{'t'}),\ 7);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00286}00286\ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00287}00287\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00292}00292\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewEdgeCasesForInternalFunctions)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00293}00293\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ very\ long\ strings\ to\ trigger\ length()\ function}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00294}00294\ \ \ \ \ std::string\ long\_str(10000,\ \textcolor{charliteral}{'A'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00295}00295\ \ \ \ \ std::string\_view\ long\_sv(long\_str);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00296}00296\ \ \ \ \ EXPECT\_EQ(long\_sv.size(),\ 10000);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00297}00297\ \ \ \ \ EXPECT\_EQ(long\_sv.length(),\ 10000);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00298}00298\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00299}00299\ \ \ \ \ \textcolor{comment}{//\ Test\ find\ operations\ on\ long\ strings}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00300}00300\ \ \ \ \ EXPECT\_EQ(long\_sv.find(\textcolor{charliteral}{'A'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00301}00301\ \ \ \ \ EXPECT\_EQ(long\_sv.find(\textcolor{charliteral}{'B'}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00302}00302\ \ \ \ \ EXPECT\_EQ(long\_sv.find(\textcolor{stringliteral}{"{}AAAA"{}}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00303}00303\ \ \ \ \ EXPECT\_EQ(long\_sv.find(\textcolor{stringliteral}{"{}BBBB"{}}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00304}00304\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00305}00305\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ strings\ containing\ special\ characters}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00306}00306\ \ \ \ \ std::string\ special\_str\ =\ \textcolor{stringliteral}{"{}Hello\(\backslash\)0World\(\backslash\)0Test"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00307}00307\ \ \ \ \ std::string\_view\ special\_sv(special\_str.data(),\ 16);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00308}00308\ \ \ \ \ EXPECT\_EQ(special\_sv.size(),\ 16);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00309}00309\ \ \ \ \ EXPECT\_EQ(special\_sv.find(\textcolor{charliteral}{'\(\backslash\)0'}),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00310}00310\ \ \ \ \ EXPECT\_EQ(special\_sv.find(\textcolor{stringliteral}{"{}World"{}}),\ 6);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00311}00311\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00312}00312\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ strings\ containing\ all\ possible\ characters}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00313}00313\ \ \ \ \ std::string\ all\_chars;}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00314}00314\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 256;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00315}00315\ \ \ \ \ \ \ \ \ all\_chars\ +=\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(i);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00316}00316\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00317}00317\ \ \ \ \ std::string\_view\ all\_sv(all\_chars);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00318}00318\ \ \ \ \ EXPECT\_EQ(all\_sv.size(),\ 256);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00319}00319\ \ \ \ \ EXPECT\_EQ(all\_sv.find(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(0)),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00320}00320\ \ \ \ \ EXPECT\_EQ(all\_sv.find(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(255)),\ 255);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00321}00321\ \ \ \ \ EXPECT\_EQ(all\_sv.find(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(128)),\ 128);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00322}00322\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00323}00323\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ empty\ string\_view}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00324}00324\ \ \ \ \ std::string\_view\ empty\_sv;}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00325}00325\ \ \ \ \ EXPECT\_EQ(empty\_sv.size(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00326}00326\ \ \ \ \ EXPECT\_EQ(empty\_sv.length(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00327}00327\ \ \ \ \ EXPECT\_TRUE(empty\_sv.empty());}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00328}00328\ \ \ \ \ EXPECT\_EQ(empty\_sv.find(\textcolor{charliteral}{'A'}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00329}00329\ \ \ \ \ EXPECT\_EQ(empty\_sv.find(\textcolor{stringliteral}{"{}"{}}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00330}00330\ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00331}00331\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00336}00336\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewConstexprInternalFunctions)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00337}00337\ \ \ \ \ \textcolor{comment}{//\ Test\ constexpr\ operations\ that\ might\ trigger\ internal\ functions}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00338}00338\ \ \ \ \ \textcolor{keyword}{constexpr}\ std::string\_view\ sv(\textcolor{stringliteral}{"{}Constexpr\ test"{}});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00339}00339\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv.size()\ ==\ 14);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00340}00340\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv.length()\ ==\ 14);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00341}00341\ \ \ \ \ \textcolor{keyword}{static\_assert}(!sv.empty());}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00342}00342\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv.find(\textcolor{charliteral}{'C'})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00343}00343\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv.find(\textcolor{stringliteral}{"{}test"{}})\ ==\ 10);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00344}00344\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv.find(\textcolor{stringliteral}{"{}xyz"{}})\ ==\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00345}00345\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00346}00346\ \ \ \ \ \textcolor{comment}{//\ Test\ constexpr\ with\ wide\ characters}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00347}00347\ \ \ \ \ \textcolor{keyword}{constexpr}\ std::wstring\_view\ wsv(L\textcolor{stringliteral}{"{}Wide\ constexpr\ test"{}});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00348}00348\ \ \ \ \ \textcolor{keyword}{static\_assert}(wsv.size()\ ==\ 19);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00349}00349\ \ \ \ \ \textcolor{keyword}{static\_assert}(wsv.length()\ ==\ 19);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00350}00350\ \ \ \ \ \textcolor{keyword}{static\_assert}(!wsv.empty());}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00351}00351\ \ \ \ \ \textcolor{keyword}{static\_assert}(wsv.find(L\textcolor{charliteral}{'W'})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00352}00352\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00353}00353\ \ \ \ \ \textcolor{comment}{//\ Test\ constexpr\ with\ char16\_t}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00354}00354\ \ \ \ \ \textcolor{keyword}{constexpr}\ std::u16string\_view\ sv16(u\textcolor{stringliteral}{"{}UTF-\/16\ constexpr\ test"{}});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00355}00355\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv16.size()\ ==\ 21);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00356}00356\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv16.length()\ ==\ 21);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00357}00357\ \ \ \ \ \textcolor{keyword}{static\_assert}(!sv16.empty());}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00358}00358\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv16.find(u\textcolor{charliteral}{'U'})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00359}00359\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00360}00360\ \ \ \ \ \textcolor{comment}{//\ Test\ constexpr\ with\ char32\_t}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00361}00361\ \ \ \ \ \textcolor{keyword}{constexpr}\ std::u32string\_view\ sv32(U\textcolor{stringliteral}{"{}UTF-\/32\ constexpr\ test"{}});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00362}00362\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv32.size()\ ==\ 21);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00363}00363\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv32.length()\ ==\ 21);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00364}00364\ \ \ \ \ \textcolor{keyword}{static\_assert}(!sv32.empty());}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00365}00365\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv32.find(U\textcolor{charliteral}{'U'})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00366}00366\ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00367}00367\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00372}00372\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewPerformanceInternalFunctions)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00373}00373\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ large\ strings\ to\ trigger\ internal\ functions}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00374}00374\ \ \ \ \ std::string\ large\_string(100000,\ \textcolor{charliteral}{'P'});}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00375}00375\ \ \ \ \ std::string\_view\ large\_sv(large\_string);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00376}00376\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00377}00377\ \ \ \ \ \textcolor{comment}{//\ Test\ size\ operations}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00378}00378\ \ \ \ \ EXPECT\_EQ(large\_sv.size(),\ 100000);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00379}00379\ \ \ \ \ EXPECT\_EQ(large\_sv.length(),\ 100000);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00380}00380\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00381}00381\ \ \ \ \ \textcolor{comment}{//\ Test\ find\ operations\ on\ large\ strings}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00382}00382\ \ \ \ \ EXPECT\_EQ(large\_sv.find(\textcolor{charliteral}{'P'}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00383}00383\ \ \ \ \ EXPECT\_EQ(large\_sv.find(\textcolor{charliteral}{'Q'}),\ std::string\_view::npos);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00384}00384\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00385}00385\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ repeated\ patterns}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00386}00386\ \ \ \ \ std::string\ pattern\_str;}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00387}00387\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 1000;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00388}00388\ \ \ \ \ \ \ \ \ pattern\_str\ +=\ \textcolor{stringliteral}{"{}ABC"{}};}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00389}00389\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00390}00390\ \ \ \ \ std::string\_view\ pattern\_sv(pattern\_str);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00391}00391\ \ \ \ \ EXPECT\_EQ(pattern\_sv.size(),\ 3000);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00392}00392\ \ \ \ \ EXPECT\_EQ(pattern\_sv.find(\textcolor{stringliteral}{"{}ABC"{}}),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00393}00393\ \ \ \ \ EXPECT\_EQ(pattern\_sv.find(\textcolor{stringliteral}{"{}BCA"{}}),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00394}00394\ \ \ \ \ EXPECT\_EQ(pattern\_sv.find(\textcolor{stringliteral}{"{}CAB"{}}),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00395}00395\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00396}00396\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ mixed\ character\ types}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00397}00397\ \ \ \ \ std::string\ mixed\_str;}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00398}00398\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 1000;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00399}00399\ \ \ \ \ \ \ \ \ mixed\_str\ +=\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(i\ \%\ 256);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00400}00400\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00401}00401\ \ \ \ \ std::string\_view\ mixed\_sv(mixed\_str);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00402}00402\ \ \ \ \ EXPECT\_EQ(mixed\_sv.size(),\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00403}00403\ \ \ \ \ EXPECT\_EQ(mixed\_sv.find(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(0)),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00404}00404\ \ \ \ \ EXPECT\_EQ(mixed\_sv.find(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(255)),\ 255);}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00405}00405\ \}}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00406}00406\ }
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00407}00407\ \}\ \textcolor{comment}{//\ namespace}}
+
+\end{DoxyCode}
