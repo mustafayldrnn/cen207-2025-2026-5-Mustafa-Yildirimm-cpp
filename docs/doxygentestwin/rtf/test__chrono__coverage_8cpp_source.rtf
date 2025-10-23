@@ -159,727 +159,727 @@ test_chrono_coverage.cpp\par \pard\plain
 \par
 \pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAAE}{\bkmkend AAAAAAAAAE}
 00001 \par
-{\bkmkstart AAAAAAAAAG}{\bkmkend AAAAAAAAAG}
-00008 \par
 {\bkmkstart AAAAAAAAAI}{\bkmkend AAAAAAAAAI}
-00009 {\cf21 #include <gtest/gtest.h>}\par
+00008 \par
 {\bkmkstart AAAAAAAAAL}{\bkmkend AAAAAAAAAL}
-00010 {\cf21 #include <chrono>}\par
+00009 {\cf21 #include <gtest/gtest.h>}\par
 {\bkmkstart AAAAAAAAAP}{\bkmkend AAAAAAAAAP}
+00010 {\cf21 #include <chrono>}\par
+{\bkmkstart AAAAAAAAAU}{\bkmkend AAAAAAAAAU}
 00011 {\cf21 #include <thread>}\par
-{\bkmkstart AAAAAAAAAT}{\bkmkend AAAAAAAAAT}
-00012 {\cf21 #include <iostream>}\par
-{\bkmkstart AAAAAAAAAV}{\bkmkend AAAAAAAAAV}
-00013 \par
-{\bkmkstart AAAAAAAAAW}{\bkmkend AAAAAAAAAW}
-00014 {\cf17 namespace }\{\par
 {\bkmkstart AAAAAAAAAX}{\bkmkend AAAAAAAAAX}
-00015 \par
-{\bkmkstart AAAAAAAAAY}{\bkmkend AAAAAAAAAY}
-00020 {\cf17 class }ChronoCoverageTest : {\cf17 public} ::testing::Test \{\par
-{\bkmkstart AAAAAAAABB}{\bkmkend AAAAAAAABB}
-00021 {\cf17 protected}:\par
+00012 {\cf21 #include <iostream>}\par
+{\bkmkstart AAAAAAAABA}{\bkmkend AAAAAAAABA}
+00013 \par
+{\bkmkstart AAAAAAAABC}{\bkmkend AAAAAAAABC}
+00014 {\cf17 namespace }\{\par
 {\bkmkstart AAAAAAAABE}{\bkmkend AAAAAAAABE}
-00022     {\cf18 void} SetUp(){\cf17  override }\{\par
-{\bkmkstart AAAAAAAABF}{\bkmkend AAAAAAAABF}
-00023         {\cf20 // Setup for each test}\par
+00015 \par
 {\bkmkstart AAAAAAAABG}{\bkmkend AAAAAAAABG}
-00024     \}\par
-{\bkmkstart AAAAAAAABH}{\bkmkend AAAAAAAABH}
-00025     \par
-{\bkmkstart AAAAAAAABI}{\bkmkend AAAAAAAABI}
-00026     {\cf18 void} TearDown(){\cf17  override }\{\par
-{\bkmkstart AAAAAAAABK}{\bkmkend AAAAAAAABK}
-00027         {\cf20 // Cleanup after each test}\par
+00020 {\cf17 class }ChronoCoverageTest : {\cf17 public} ::testing::Test \{\par
 {\bkmkstart AAAAAAAABL}{\bkmkend AAAAAAAABL}
-00028     \}\par
+00021 {\cf17 protected}:\par
 {\bkmkstart AAAAAAAABN}{\bkmkend AAAAAAAABN}
-00029 \};\par
+00022     {\cf18 void} SetUp(){\cf17  override }\{\par
+{\bkmkstart AAAAAAAABO}{\bkmkend AAAAAAAABO}
+00023         {\cf20 // Setup for each test}\par
 {\bkmkstart AAAAAAAABP}{\bkmkend AAAAAAAABP}
-00030 \par
+00024     \}\par
+{\bkmkstart AAAAAAAABQ}{\bkmkend AAAAAAAABQ}
+00025     \par
+{\bkmkstart AAAAAAAABR}{\bkmkend AAAAAAAABR}
+00026     {\cf18 void} TearDown(){\cf17  override }\{\par
+{\bkmkstart AAAAAAAABS}{\bkmkend AAAAAAAABS}
+00027         {\cf20 // Cleanup after each test}\par
 {\bkmkstart AAAAAAAABT}{\bkmkend AAAAAAAABT}
-00035 TEST_F(ChronoCoverageTest, TestHighResolutionClock) \{\par
+00028     \}\par
 {\bkmkstart AAAAAAAABU}{\bkmkend AAAAAAAABU}
+00029 \};\par
+{\bkmkstart AAAAAAAABX}{\bkmkend AAAAAAAABX}
+00030 \par
+{\bkmkstart AAAAAAAABY}{\bkmkend AAAAAAAABY}
+00035 TEST_F(ChronoCoverageTest, TestHighResolutionClock) \{\par
+{\bkmkstart AAAAAAAACB}{\bkmkend AAAAAAAACB}
 00036     {\cf20 // Test high_resolution_clock}\par
-{\bkmkstart AAAAAAAABW}{\bkmkend AAAAAAAABW}
-00037     {\cf17 auto} start = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAAABZ}{\bkmkend AAAAAAAABZ}
-00038     \par
-{\bkmkstart AAAAAAAACA}{\bkmkend AAAAAAAACA}
-00039     {\cf20 // Perform some work}\par
 {\bkmkstart AAAAAAAACC}{\bkmkend AAAAAAAACC}
+00037     {\cf17 auto} start = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAACE}{\bkmkend AAAAAAAACE}
+00038     \par
+{\bkmkstart AAAAAAAACF}{\bkmkend AAAAAAAACF}
+00039     {\cf20 // Perform some work}\par
+{\bkmkstart AAAAAAAACG}{\bkmkend AAAAAAAACG}
 00040     std::this_thread::sleep_for(std::chrono::milliseconds(1));\par
 {\bkmkstart AAAAAAAACH}{\bkmkend AAAAAAAACH}
 00041     \par
 {\bkmkstart AAAAAAAACJ}{\bkmkend AAAAAAAACJ}
 00042     {\cf17 auto} end = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAAACR}{\bkmkend AAAAAAAACR}
+{\bkmkstart AAAAAAAACL}{\bkmkend AAAAAAAACL}
 00043     {\cf17 auto} duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);\par
-{\bkmkstart AAAAAAAACX}{\bkmkend AAAAAAAACX}
+{\bkmkstart AAAAAAAACN}{\bkmkend AAAAAAAACN}
 00044     \par
-{\bkmkstart AAAAAAAACZ}{\bkmkend AAAAAAAACZ}
+{\bkmkstart AAAAAAAACO}{\bkmkend AAAAAAAACO}
 00045     EXPECT_GT(duration.count(), 0);\par
-{\bkmkstart AAAAAAAADB}{\bkmkend AAAAAAAADB}
+{\bkmkstart AAAAAAAACR}{\bkmkend AAAAAAAACR}
 00046 \}\par
-{\bkmkstart AAAAAAAADC}{\bkmkend AAAAAAAADC}
+{\bkmkstart AAAAAAAACS}{\bkmkend AAAAAAAACS}
 00047 \par
-{\bkmkstart AAAAAAAADD}{\bkmkend AAAAAAAADD}
+{\bkmkstart AAAAAAAACT}{\bkmkend AAAAAAAACT}
 00052 TEST_F(ChronoCoverageTest, TestSteadyClock) \{\par
-{\bkmkstart AAAAAAAADL}{\bkmkend AAAAAAAADL}
+{\bkmkstart AAAAAAAACX}{\bkmkend AAAAAAAACX}
 00053     {\cf20 // Test steady_clock}\par
-{\bkmkstart AAAAAAAADM}{\bkmkend AAAAAAAADM}
+{\bkmkstart AAAAAAAACY}{\bkmkend AAAAAAAACY}
 00054     {\cf17 auto} start = std::chrono::steady_clock::now();\par
-{\bkmkstart AAAAAAAADQ}{\bkmkend AAAAAAAADQ}
+{\bkmkstart AAAAAAAADA}{\bkmkend AAAAAAAADA}
 00055     \par
-{\bkmkstart AAAAAAAADS}{\bkmkend AAAAAAAADS}
+{\bkmkstart AAAAAAAADB}{\bkmkend AAAAAAAADB}
 00056     {\cf20 // Perform some work}\par
-{\bkmkstart AAAAAAAADT}{\bkmkend AAAAAAAADT}
+{\bkmkstart AAAAAAAADC}{\bkmkend AAAAAAAADC}
 00057     std::this_thread::sleep_for(std::chrono::milliseconds(1));\par
-{\bkmkstart AAAAAAAADV}{\bkmkend AAAAAAAADV}
+{\bkmkstart AAAAAAAADE}{\bkmkend AAAAAAAADE}
 00058     \par
-{\bkmkstart AAAAAAAADW}{\bkmkend AAAAAAAADW}
+{\bkmkstart AAAAAAAADF}{\bkmkend AAAAAAAADF}
 00059     {\cf17 auto} end = std::chrono::steady_clock::now();\par
-{\bkmkstart AAAAAAAADY}{\bkmkend AAAAAAAADY}
+{\bkmkstart AAAAAAAADH}{\bkmkend AAAAAAAADH}
 00060     {\cf17 auto} duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);\par
-{\bkmkstart AAAAAAAAES}{\bkmkend AAAAAAAAES}
+{\bkmkstart AAAAAAAADK}{\bkmkend AAAAAAAADK}
 00061     \par
-{\bkmkstart AAAAAAAAEU}{\bkmkend AAAAAAAAEU}
+{\bkmkstart AAAAAAAADL}{\bkmkend AAAAAAAADL}
 00062     EXPECT_GT(duration.count(), 0);\par
-{\bkmkstart AAAAAAAAEY}{\bkmkend AAAAAAAAEY}
+{\bkmkstart AAAAAAAADP}{\bkmkend AAAAAAAADP}
 00063 \}\par
-{\bkmkstart AAAAAAAAFB}{\bkmkend AAAAAAAAFB}
+{\bkmkstart AAAAAAAADQ}{\bkmkend AAAAAAAADQ}
 00064 \par
-{\bkmkstart AAAAAAAAFC}{\bkmkend AAAAAAAAFC}
+{\bkmkstart AAAAAAAADR}{\bkmkend AAAAAAAADR}
 00069 TEST_F(ChronoCoverageTest, TestSystemClock) \{\par
-{\bkmkstart AAAAAAAAFI}{\bkmkend AAAAAAAAFI}
+{\bkmkstart AAAAAAAADT}{\bkmkend AAAAAAAADT}
 00070     {\cf20 // Test system_clock}\par
-{\bkmkstart AAAAAAAAFM}{\bkmkend AAAAAAAAFM}
+{\bkmkstart AAAAAAAADW}{\bkmkend AAAAAAAADW}
 00071     {\cf17 auto} now = std::chrono::system_clock::now();\par
-{\bkmkstart AAAAAAAAFU}{\bkmkend AAAAAAAAFU}
+{\bkmkstart AAAAAAAADZ}{\bkmkend AAAAAAAADZ}
 00072     {\cf17 auto} time_t_now = std::chrono::system_clock::to_time_t(now);\par
-{\bkmkstart AAAAAAAAFX}{\bkmkend AAAAAAAAFX}
+{\bkmkstart AAAAAAAAED}{\bkmkend AAAAAAAAED}
 00073     \par
-{\bkmkstart AAAAAAAAFZ}{\bkmkend AAAAAAAAFZ}
+{\bkmkstart AAAAAAAAEE}{\bkmkend AAAAAAAAEE}
 00074     EXPECT_GT(time_t_now, 0);\par
-{\bkmkstart AAAAAAAAGC}{\bkmkend AAAAAAAAGC}
+{\bkmkstart AAAAAAAAEG}{\bkmkend AAAAAAAAEG}
 00075 \}\par
-{\bkmkstart AAAAAAAAGD}{\bkmkend AAAAAAAAGD}
+{\bkmkstart AAAAAAAAEH}{\bkmkend AAAAAAAAEH}
 00076 \par
-{\bkmkstart AAAAAAAAGE}{\bkmkend AAAAAAAAGE}
+{\bkmkstart AAAAAAAAEI}{\bkmkend AAAAAAAAEI}
 00081 TEST_F(ChronoCoverageTest, TestDurationOperations) \{\par
-{\bkmkstart AAAAAAAAGL}{\bkmkend AAAAAAAAGL}
+{\bkmkstart AAAAAAAAEK}{\bkmkend AAAAAAAAEK}
 00082     {\cf20 // Test different duration types}\par
-{\bkmkstart AAAAAAAAGP}{\bkmkend AAAAAAAAGP}
+{\bkmkstart AAAAAAAAEY}{\bkmkend AAAAAAAAEY}
 00083     {\cf17 auto} duration1 = std::chrono::seconds(1);\par
-{\bkmkstart AAAAAAAAGS}{\bkmkend AAAAAAAAGS}
+{\bkmkstart AAAAAAAAFB}{\bkmkend AAAAAAAAFB}
 00084     {\cf17 auto} duration2 = std::chrono::milliseconds(1000);\par
-{\bkmkstart AAAAAAAAGW}{\bkmkend AAAAAAAAGW}
+{\bkmkstart AAAAAAAAFF}{\bkmkend AAAAAAAAFF}
 00085     {\cf17 auto} duration3 = std::chrono::microseconds(1000000);\par
-{\bkmkstart AAAAAAAAGZ}{\bkmkend AAAAAAAAGZ}
+{\bkmkstart AAAAAAAAFH}{\bkmkend AAAAAAAAFH}
 00086     {\cf17 auto} duration4 = std::chrono::nanoseconds(1000000000);\par
-{\bkmkstart AAAAAAAAHB}{\bkmkend AAAAAAAAHB}
+{\bkmkstart AAAAAAAAFJ}{\bkmkend AAAAAAAAFJ}
 00087     \par
-{\bkmkstart AAAAAAAAHD}{\bkmkend AAAAAAAAHD}
+{\bkmkstart AAAAAAAAFL}{\bkmkend AAAAAAAAFL}
 00088     {\cf20 // Test duration arithmetic}\par
-{\bkmkstart AAAAAAAAHG}{\bkmkend AAAAAAAAHG}
+{\bkmkstart AAAAAAAAFN}{\bkmkend AAAAAAAAFN}
 00089     {\cf17 auto} sum = duration1 + duration2;\par
-{\bkmkstart AAAAAAAAHI}{\bkmkend AAAAAAAAHI}
+{\bkmkstart AAAAAAAAFQ}{\bkmkend AAAAAAAAFQ}
 00090     {\cf17 auto} diff = duration3 - duration4;\par
-{\bkmkstart AAAAAAAAHJ}{\bkmkend AAAAAAAAHJ}
+{\bkmkstart AAAAAAAAFT}{\bkmkend AAAAAAAAFT}
 00091     \par
-{\bkmkstart AAAAAAAAHL}{\bkmkend AAAAAAAAHL}
+{\bkmkstart AAAAAAAAFW}{\bkmkend AAAAAAAAFW}
 00092     EXPECT_EQ(sum.count(), 2000);\par
-{\bkmkstart AAAAAAAAHN}{\bkmkend AAAAAAAAHN}
+{\bkmkstart AAAAAAAAFZ}{\bkmkend AAAAAAAAFZ}
 00093     EXPECT_EQ(diff.count(), 0);\par
-{\bkmkstart AAAAAAAAHP}{\bkmkend AAAAAAAAHP}
+{\bkmkstart AAAAAAAAGB}{\bkmkend AAAAAAAAGB}
 00094 \}\par
-{\bkmkstart AAAAAAAAHQ}{\bkmkend AAAAAAAAHQ}
+{\bkmkstart AAAAAAAAGD}{\bkmkend AAAAAAAAGD}
 00095 \par
-{\bkmkstart AAAAAAAAHR}{\bkmkend AAAAAAAAHR}
+{\bkmkstart AAAAAAAAGF}{\bkmkend AAAAAAAAGF}
 00100 TEST_F(ChronoCoverageTest, TestTimePointOperations) \{\par
-{\bkmkstart AAAAAAAAHV}{\bkmkend AAAAAAAAHV}
+{\bkmkstart AAAAAAAAGK}{\bkmkend AAAAAAAAGK}
 00101     {\cf17 auto} now = std::chrono::system_clock::now();\par
-{\bkmkstart AAAAAAAAHX}{\bkmkend AAAAAAAAHX}
+{\bkmkstart AAAAAAAAGL}{\bkmkend AAAAAAAAGL}
 00102     {\cf17 auto} later = now + std::chrono::seconds(1);\par
-{\bkmkstart AAAAAAAAIA}{\bkmkend AAAAAAAAIA}
+{\bkmkstart AAAAAAAAGN}{\bkmkend AAAAAAAAGN}
 00103     {\cf17 auto} earlier = now - std::chrono::seconds(1);\par
-{\bkmkstart AAAAAAAAIC}{\bkmkend AAAAAAAAIC}
+{\bkmkstart AAAAAAAAGO}{\bkmkend AAAAAAAAGO}
 00104     \par
-{\bkmkstart AAAAAAAAIE}{\bkmkend AAAAAAAAIE}
+{\bkmkstart AAAAAAAAGP}{\bkmkend AAAAAAAAGP}
 00105     EXPECT_GT(later, now);\par
-{\bkmkstart AAAAAAAAIG}{\bkmkend AAAAAAAAIG}
+{\bkmkstart AAAAAAAAGQ}{\bkmkend AAAAAAAAGQ}
 00106     EXPECT_LT(earlier, now);\par
-{\bkmkstart AAAAAAAAII}{\bkmkend AAAAAAAAII}
+{\bkmkstart AAAAAAAAGR}{\bkmkend AAAAAAAAGR}
 00107 \}\par
-{\bkmkstart AAAAAAAAIK}{\bkmkend AAAAAAAAIK}
+{\bkmkstart AAAAAAAAGS}{\bkmkend AAAAAAAAGS}
 00108 \par
-{\bkmkstart AAAAAAAAIM}{\bkmkend AAAAAAAAIM}
+{\bkmkstart AAAAAAAAGT}{\bkmkend AAAAAAAAGT}
 00113 TEST_F(ChronoCoverageTest, TestDurationCast) \{\par
-{\bkmkstart AAAAAAAAIR}{\bkmkend AAAAAAAAIR}
+{\bkmkstart AAAAAAAAGU}{\bkmkend AAAAAAAAGU}
 00114     {\cf17 auto} seconds = std::chrono::seconds(1);\par
-{\bkmkstart AAAAAAAAIV}{\bkmkend AAAAAAAAIV}
+{\bkmkstart AAAAAAAAGV}{\bkmkend AAAAAAAAGV}
 00115     {\cf17 auto} milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(seconds);\par
-{\bkmkstart AAAAAAAAJA}{\bkmkend AAAAAAAAJA}
+{\bkmkstart AAAAAAAAGY}{\bkmkend AAAAAAAAGY}
 00116     {\cf17 auto} microseconds = std::chrono::duration_cast<std::chrono::microseconds>(seconds);\par
-{\bkmkstart AAAAAAAAJH}{\bkmkend AAAAAAAAJH}
+{\bkmkstart AAAAAAAAHA}{\bkmkend AAAAAAAAHA}
 00117     {\cf17 auto} nanoseconds = std::chrono::duration_cast<std::chrono::nanoseconds>(seconds);\par
-{\bkmkstart AAAAAAAAJM}{\bkmkend AAAAAAAAJM}
+{\bkmkstart AAAAAAAAHD}{\bkmkend AAAAAAAAHD}
 00118     \par
-{\bkmkstart AAAAAAAAJO}{\bkmkend AAAAAAAAJO}
+{\bkmkstart AAAAAAAAHE}{\bkmkend AAAAAAAAHE}
 00119     EXPECT_EQ(milliseconds.count(), 1000);\par
-{\bkmkstart AAAAAAAAJP}{\bkmkend AAAAAAAAJP}
+{\bkmkstart AAAAAAAAHG}{\bkmkend AAAAAAAAHG}
 00120     EXPECT_EQ(microseconds.count(), 1000000);\par
-{\bkmkstart AAAAAAAAJQ}{\bkmkend AAAAAAAAJQ}
+{\bkmkstart AAAAAAAAHI}{\bkmkend AAAAAAAAHI}
 00121     EXPECT_EQ(nanoseconds.count(), 1000000000);\par
-{\bkmkstart AAAAAAAAJR}{\bkmkend AAAAAAAAJR}
+{\bkmkstart AAAAAAAAHL}{\bkmkend AAAAAAAAHL}
 00122 \}\par
-{\bkmkstart AAAAAAAAJS}{\bkmkend AAAAAAAAJS}
+{\bkmkstart AAAAAAAAHM}{\bkmkend AAAAAAAAHM}
 00123 \par
-{\bkmkstart AAAAAAAAJT}{\bkmkend AAAAAAAAJT}
+{\bkmkstart AAAAAAAAHN}{\bkmkend AAAAAAAAHN}
 00128 TEST_F(ChronoCoverageTest, TestClockProperties) \{\par
-{\bkmkstart AAAAAAAAJU}{\bkmkend AAAAAAAAJU}
+{\bkmkstart AAAAAAAAHP}{\bkmkend AAAAAAAAHP}
 00129     {\cf20 // Test clock properties}\par
-{\bkmkstart AAAAAAAAJV}{\bkmkend AAAAAAAAJV}
+{\bkmkstart AAAAAAAAHR}{\bkmkend AAAAAAAAHR}
 00130     EXPECT_TRUE(std::chrono::high_resolution_clock::is_steady || \par
-{\bkmkstart AAAAAAAAJW}{\bkmkend AAAAAAAAJW}
+{\bkmkstart AAAAAAAAHT}{\bkmkend AAAAAAAAHT}
 00131                 !std::chrono::high_resolution_clock::is_steady);\par
-{\bkmkstart AAAAAAAAJX}{\bkmkend AAAAAAAAJX}
+{\bkmkstart AAAAAAAAHU}{\bkmkend AAAAAAAAHU}
 00132     \par
-{\bkmkstart AAAAAAAAJY}{\bkmkend AAAAAAAAJY}
+{\bkmkstart AAAAAAAAHW}{\bkmkend AAAAAAAAHW}
 00133     EXPECT_TRUE(std::chrono::steady_clock::is_steady);\par
-{\bkmkstart AAAAAAAAKB}{\bkmkend AAAAAAAAKB}
+{\bkmkstart AAAAAAAAHX}{\bkmkend AAAAAAAAHX}
 00134     \par
-{\bkmkstart AAAAAAAAKC}{\bkmkend AAAAAAAAKC}
+{\bkmkstart AAAAAAAAHY}{\bkmkend AAAAAAAAHY}
 00135     EXPECT_TRUE(std::chrono::system_clock::is_steady || \par
-{\bkmkstart AAAAAAAAKE}{\bkmkend AAAAAAAAKE}
+{\bkmkstart AAAAAAAAHZ}{\bkmkend AAAAAAAAHZ}
 00136                 !std::chrono::system_clock::is_steady);\par
-{\bkmkstart AAAAAAAAKH}{\bkmkend AAAAAAAAKH}
+{\bkmkstart AAAAAAAAIA}{\bkmkend AAAAAAAAIA}
 00137 \}\par
-{\bkmkstart AAAAAAAAKI}{\bkmkend AAAAAAAAKI}
+{\bkmkstart AAAAAAAAIB}{\bkmkend AAAAAAAAIB}
 00138 \par
-{\bkmkstart AAAAAAAAKK}{\bkmkend AAAAAAAAKK}
+{\bkmkstart AAAAAAAAIC}{\bkmkend AAAAAAAAIC}
 00143 TEST_F(ChronoCoverageTest, TestEdgeCases) \{\par
-{\bkmkstart AAAAAAAAKN}{\bkmkend AAAAAAAAKN}
+{\bkmkstart AAAAAAAAID}{\bkmkend AAAAAAAAID}
 00144     {\cf20 // Test zero duration}\par
-{\bkmkstart AAAAAAAAKO}{\bkmkend AAAAAAAAKO}
+{\bkmkstart AAAAAAAAIE}{\bkmkend AAAAAAAAIE}
 00145     {\cf17 auto} zero_duration = std::chrono::seconds(0);\par
-{\bkmkstart AAAAAAAAKP}{\bkmkend AAAAAAAAKP}
+{\bkmkstart AAAAAAAAIG}{\bkmkend AAAAAAAAIG}
 00146     EXPECT_EQ(zero_duration.count(), 0);\par
-{\bkmkstart AAAAAAAAKR}{\bkmkend AAAAAAAAKR}
+{\bkmkstart AAAAAAAAII}{\bkmkend AAAAAAAAII}
 00147     \par
-{\bkmkstart AAAAAAAAKS}{\bkmkend AAAAAAAAKS}
+{\bkmkstart AAAAAAAAIJ}{\bkmkend AAAAAAAAIJ}
 00148     {\cf20 // Test negative duration}\par
-{\bkmkstart AAAAAAAAKT}{\bkmkend AAAAAAAAKT}
+{\bkmkstart AAAAAAAAIL}{\bkmkend AAAAAAAAIL}
 00149     {\cf17 auto} negative_duration = std::chrono::seconds(-1);\par
-{\bkmkstart AAAAAAAAKV}{\bkmkend AAAAAAAAKV}
+{\bkmkstart AAAAAAAAIO}{\bkmkend AAAAAAAAIO}
 00150     EXPECT_EQ(negative_duration.count(), -1);\par
-{\bkmkstart AAAAAAAAKY}{\bkmkend AAAAAAAAKY}
+{\bkmkstart AAAAAAAAIP}{\bkmkend AAAAAAAAIP}
 00151     \par
-{\bkmkstart AAAAAAAALA}{\bkmkend AAAAAAAALA}
+{\bkmkstart AAAAAAAAIQ}{\bkmkend AAAAAAAAIQ}
 00152     {\cf20 // Test large duration}\par
-{\bkmkstart AAAAAAAALC}{\bkmkend AAAAAAAALC}
+{\bkmkstart AAAAAAAAIS}{\bkmkend AAAAAAAAIS}
 00153     {\cf17 auto} large_duration = std::chrono::hours(24);\par
-{\bkmkstart AAAAAAAALF}{\bkmkend AAAAAAAALF}
+{\bkmkstart AAAAAAAAIT}{\bkmkend AAAAAAAAIT}
 00154     EXPECT_EQ(large_duration.count(), 24);\par
-{\bkmkstart AAAAAAAALH}{\bkmkend AAAAAAAALH}
+{\bkmkstart AAAAAAAAIU}{\bkmkend AAAAAAAAIU}
 00155 \}\par
-{\bkmkstart AAAAAAAALI}{\bkmkend AAAAAAAALI}
+{\bkmkstart AAAAAAAAIV}{\bkmkend AAAAAAAAIV}
 00156 \par
-{\bkmkstart AAAAAAAALJ}{\bkmkend AAAAAAAALJ}
+{\bkmkstart AAAAAAAAIW}{\bkmkend AAAAAAAAIW}
 00161 TEST_F(ChronoCoverageTest, TestChronoLiterals) \{\par
-{\bkmkstart AAAAAAAALN}{\bkmkend AAAAAAAALN}
+{\bkmkstart AAAAAAAAIX}{\bkmkend AAAAAAAAIX}
 00162     {\cf17 using namespace }std::chrono_literals;\par
-{\bkmkstart AAAAAAAALP}{\bkmkend AAAAAAAALP}
+{\bkmkstart AAAAAAAAIZ}{\bkmkend AAAAAAAAIZ}
 00163     \par
-{\bkmkstart AAAAAAAALR}{\bkmkend AAAAAAAALR}
+{\bkmkstart AAAAAAAAJA}{\bkmkend AAAAAAAAJA}
 00164     {\cf17 auto} duration1 = 1s;\par
-{\bkmkstart AAAAAAAALT}{\bkmkend AAAAAAAALT}
+{\bkmkstart AAAAAAAALH}{\bkmkend AAAAAAAALH}
 00165     {\cf17 auto} duration2 = 1000ms;\par
-{\bkmkstart AAAAAAAALV}{\bkmkend AAAAAAAALV}
+{\bkmkstart AAAAAAAALJ}{\bkmkend AAAAAAAALJ}
 00166     {\cf17 auto} duration3 = 1000000us;\par
-{\bkmkstart AAAAAAAALX}{\bkmkend AAAAAAAALX}
+{\bkmkstart AAAAAAAALK}{\bkmkend AAAAAAAALK}
 00167     {\cf17 auto} duration4 = 1000000000ns;\par
-{\bkmkstart AAAAAAAALY}{\bkmkend AAAAAAAALY}
+{\bkmkstart AAAAAAAALM}{\bkmkend AAAAAAAALM}
 00168     \par
-{\bkmkstart AAAAAAAAMA}{\bkmkend AAAAAAAAMA}
+{\bkmkstart AAAAAAAALO}{\bkmkend AAAAAAAALO}
 00169     EXPECT_EQ(duration1.count(), 1);\par
-{\bkmkstart AAAAAAAAMD}{\bkmkend AAAAAAAAMD}
+{\bkmkstart AAAAAAAALP}{\bkmkend AAAAAAAALP}
 00170     EXPECT_EQ(duration2.count(), 1000);\par
-{\bkmkstart AAAAAAAAMF}{\bkmkend AAAAAAAAMF}
+{\bkmkstart AAAAAAAALQ}{\bkmkend AAAAAAAALQ}
 00171     EXPECT_EQ(duration3.count(), 1000000);\par
-{\bkmkstart AAAAAAAAMH}{\bkmkend AAAAAAAAMH}
+{\bkmkstart AAAAAAAALR}{\bkmkend AAAAAAAALR}
 00172     EXPECT_EQ(duration4.count(), 1000000000);\par
-{\bkmkstart AAAAAAAAMI}{\bkmkend AAAAAAAAMI}
+{\bkmkstart AAAAAAAALS}{\bkmkend AAAAAAAALS}
 00173 \}\par
-{\bkmkstart AAAAAAAAMK}{\bkmkend AAAAAAAAMK}
+{\bkmkstart AAAAAAAALU}{\bkmkend AAAAAAAALU}
 00174 \par
-{\bkmkstart AAAAAAAAML}{\bkmkend AAAAAAAAML}
+{\bkmkstart AAAAAAAALV}{\bkmkend AAAAAAAALV}
 00179 TEST_F(ChronoCoverageTest, TestChronoComparison) \{\par
-{\bkmkstart AAAAAAAAMN}{\bkmkend AAAAAAAAMN}
+{\bkmkstart AAAAAAAAMA}{\bkmkend AAAAAAAAMA}
 00180     {\cf17 auto} duration1 = std::chrono::seconds(1);\par
-{\bkmkstart AAAAAAAAMR}{\bkmkend AAAAAAAAMR}
+{\bkmkstart AAAAAAAAMD}{\bkmkend AAAAAAAAMD}
 00181     {\cf17 auto} duration2 = std::chrono::seconds(2);\par
-{\bkmkstart AAAAAAAAMT}{\bkmkend AAAAAAAAMT}
+{\bkmkstart AAAAAAAAMG}{\bkmkend AAAAAAAAMG}
 00182     {\cf17 auto} duration3 = std::chrono::seconds(1);\par
-{\bkmkstart AAAAAAAAMV}{\bkmkend AAAAAAAAMV}
+{\bkmkstart AAAAAAAAMJ}{\bkmkend AAAAAAAAMJ}
 00183     \par
-{\bkmkstart AAAAAAAAMX}{\bkmkend AAAAAAAAMX}
+{\bkmkstart AAAAAAAAMK}{\bkmkend AAAAAAAAMK}
 00184     EXPECT_LT(duration1, duration2);\par
-{\bkmkstart AAAAAAAAMY}{\bkmkend AAAAAAAAMY}
+{\bkmkstart AAAAAAAAML}{\bkmkend AAAAAAAAML}
 00185     EXPECT_GT(duration2, duration1);\par
-{\bkmkstart AAAAAAAAMZ}{\bkmkend AAAAAAAAMZ}
+{\bkmkstart AAAAAAAAMM}{\bkmkend AAAAAAAAMM}
 00186     EXPECT_EQ(duration1, duration3);\par
-{\bkmkstart AAAAAAAANA}{\bkmkend AAAAAAAANA}
+{\bkmkstart AAAAAAAAMP}{\bkmkend AAAAAAAAMP}
 00187     EXPECT_NE(duration1, duration2);\par
-{\bkmkstart AAAAAAAAND}{\bkmkend AAAAAAAAND}
+{\bkmkstart AAAAAAAAMR}{\bkmkend AAAAAAAAMR}
 00188 \}\par
-{\bkmkstart AAAAAAAANE}{\bkmkend AAAAAAAANE}
+{\bkmkstart AAAAAAAAMS}{\bkmkend AAAAAAAAMS}
 00189 \par
-{\bkmkstart AAAAAAAANG}{\bkmkend AAAAAAAANG}
+{\bkmkstart AAAAAAAAMU}{\bkmkend AAAAAAAAMU}
 00194 TEST_F(ChronoCoverageTest, TestChronoArithmetic) \{\par
-{\bkmkstart AAAAAAAANI}{\bkmkend AAAAAAAANI}
+{\bkmkstart AAAAAAAAMW}{\bkmkend AAAAAAAAMW}
 00195     {\cf17 auto} duration1 = std::chrono::seconds(5);\par
-{\bkmkstart AAAAAAAANL}{\bkmkend AAAAAAAANL}
+{\bkmkstart AAAAAAAAMZ}{\bkmkend AAAAAAAAMZ}
 00196     {\cf17 auto} duration2 = std::chrono::seconds(3);\par
-{\bkmkstart AAAAAAAANT}{\bkmkend AAAAAAAANT}
+{\bkmkstart AAAAAAAANB}{\bkmkend AAAAAAAANB}
 00197     \par
-{\bkmkstart AAAAAAAANU}{\bkmkend AAAAAAAANU}
+{\bkmkstart AAAAAAAAND}{\bkmkend AAAAAAAAND}
 00198     {\cf17 auto} sum = duration1 + duration2;\par
-{\bkmkstart AAAAAAAANY}{\bkmkend AAAAAAAANY}
+{\bkmkstart AAAAAAAANE}{\bkmkend AAAAAAAANE}
 00199     {\cf17 auto} diff = duration1 - duration2;\par
-{\bkmkstart AAAAAAAAOB}{\bkmkend AAAAAAAAOB}
+{\bkmkstart AAAAAAAANH}{\bkmkend AAAAAAAANH}
 00200     {\cf17 auto} mult = duration1 * 2;\par
-{\bkmkstart AAAAAAAAOD}{\bkmkend AAAAAAAAOD}
+{\bkmkstart AAAAAAAANI}{\bkmkend AAAAAAAANI}
 00201     {\cf17 auto} div = duration1 / 2;\par
-{\bkmkstart AAAAAAAAOE}{\bkmkend AAAAAAAAOE}
+{\bkmkstart AAAAAAAANR}{\bkmkend AAAAAAAANR}
 00202     \par
-{\bkmkstart AAAAAAAAOG}{\bkmkend AAAAAAAAOG}
+{\bkmkstart AAAAAAAANT}{\bkmkend AAAAAAAANT}
 00203     EXPECT_EQ(sum.count(), 8);\par
-{\bkmkstart AAAAAAAAOI}{\bkmkend AAAAAAAAOI}
+{\bkmkstart AAAAAAAANU}{\bkmkend AAAAAAAANU}
 00204     EXPECT_EQ(diff.count(), 2);\par
-{\bkmkstart AAAAAAAAOJ}{\bkmkend AAAAAAAAOJ}
+{\bkmkstart AAAAAAAANW}{\bkmkend AAAAAAAANW}
 00205     EXPECT_EQ(mult.count(), 10);\par
-{\bkmkstart AAAAAAAAOL}{\bkmkend AAAAAAAAOL}
+{\bkmkstart AAAAAAAANY}{\bkmkend AAAAAAAANY}
 00206     EXPECT_EQ(div.count(), 2);\par
-{\bkmkstart AAAAAAAAON}{\bkmkend AAAAAAAAON}
+{\bkmkstart AAAAAAAAOD}{\bkmkend AAAAAAAAOD}
 00207 \}\par
-{\bkmkstart AAAAAAAAOO}{\bkmkend AAAAAAAAOO}
+{\bkmkstart AAAAAAAAOE}{\bkmkend AAAAAAAAOE}
 00208 \par
-{\bkmkstart AAAAAAAAOP}{\bkmkend AAAAAAAAOP}
+{\bkmkstart AAAAAAAAOF}{\bkmkend AAAAAAAAOF}
 00213 TEST_F(ChronoCoverageTest, TestAdvancedDurationOperations) \{\par
-{\bkmkstart AAAAAAAAOR}{\bkmkend AAAAAAAAOR}
+{\bkmkstart AAAAAAAAOL}{\bkmkend AAAAAAAAOL}
 00214     {\cf20 // Test different duration types with complex operations}\par
-{\bkmkstart AAAAAAAAOS}{\bkmkend AAAAAAAAOS}
+{\bkmkstart AAAAAAAAON}{\bkmkend AAAAAAAAON}
 00215     {\cf17 auto} hours = std::chrono::hours(2);\par
-{\bkmkstart AAAAAAAAOW}{\bkmkend AAAAAAAAOW}
+{\bkmkstart AAAAAAAAOQ}{\bkmkend AAAAAAAAOQ}
 00216     {\cf17 auto} minutes = std::chrono::minutes(30);\par
-{\bkmkstart AAAAAAAAOX}{\bkmkend AAAAAAAAOX}
+{\bkmkstart AAAAAAAAOT}{\bkmkend AAAAAAAAOT}
 00217     {\cf17 auto} seconds = std::chrono::seconds(45);\par
-{\bkmkstart AAAAAAAAOZ}{\bkmkend AAAAAAAAOZ}
+{\bkmkstart AAAAAAAAOV}{\bkmkend AAAAAAAAOV}
 00218     {\cf17 auto} milliseconds = std::chrono::milliseconds(500);\par
-{\bkmkstart AAAAAAAAPA}{\bkmkend AAAAAAAAPA}
+{\bkmkstart AAAAAAAAOY}{\bkmkend AAAAAAAAOY}
 00219     \par
-{\bkmkstart AAAAAAAAPB}{\bkmkend AAAAAAAAPB}
+{\bkmkstart AAAAAAAAPA}{\bkmkend AAAAAAAAPA}
 00220     {\cf20 // Test complex arithmetic}\par
-{\bkmkstart AAAAAAAAPD}{\bkmkend AAAAAAAAPD}
+{\bkmkstart AAAAAAAAPC}{\bkmkend AAAAAAAAPC}
 00221     {\cf17 auto} total = hours + minutes + seconds + milliseconds;\par
 {\bkmkstart AAAAAAAAPE}{\bkmkend AAAAAAAAPE}
 00222     {\cf17 auto} total_ms = std::chrono::duration_cast<std::chrono::milliseconds>(total);\par
 {\bkmkstart AAAAAAAAPH}{\bkmkend AAAAAAAAPH}
 00223     \par
-{\bkmkstart AAAAAAAAPI}{\bkmkend AAAAAAAAPI}
+{\bkmkstart AAAAAAAAPT}{\bkmkend AAAAAAAAPT}
 00224     EXPECT_GT(total_ms.count(), 0);\par
-{\bkmkstart AAAAAAAAPJ}{\bkmkend AAAAAAAAPJ}
+{\bkmkstart AAAAAAAAPW}{\bkmkend AAAAAAAAPW}
 00225     \par
-{\bkmkstart AAAAAAAAPL}{\bkmkend AAAAAAAAPL}
-00226     {\cf20 // Test duration ratios}\par
-{\bkmkstart AAAAAAAAPM}{\bkmkend AAAAAAAAPM}
-00227     {\cf17 auto} ratio = std::chrono::duration_cast<std::chrono::nanoseconds>(total);\par
-{\bkmkstart AAAAAAAAPQ}{\bkmkend AAAAAAAAPQ}
-00228     EXPECT_GT(ratio.count(), 0);\par
-{\bkmkstart AAAAAAAAPR}{\bkmkend AAAAAAAAPR}
-00229 \}\par
-{\bkmkstart AAAAAAAAPS}{\bkmkend AAAAAAAAPS}
-00230 \par
-{\bkmkstart AAAAAAAAPU}{\bkmkend AAAAAAAAPU}
-00235 TEST_F(ChronoCoverageTest, TestClockPrecision) \{\par
 {\bkmkstart AAAAAAAAPX}{\bkmkend AAAAAAAAPX}
-00236     {\cf20 // Test high resolution clock precision}\par
-{\bkmkstart AAAAAAAAPY}{\bkmkend AAAAAAAAPY}
-00237     {\cf17 auto} start_hr = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAAAQB}{\bkmkend AAAAAAAAQB}
-00238     std::this_thread::sleep_for(std::chrono::microseconds(100));\par
-{\bkmkstart AAAAAAAAQE}{\bkmkend AAAAAAAAQE}
-00239     {\cf17 auto} end_hr = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAAAQH}{\bkmkend AAAAAAAAQH}
-00240     {\cf17 auto} duration_hr = std::chrono::duration_cast<std::chrono::nanoseconds>(end_hr - start_hr);\par
-{\bkmkstart AAAAAAAAQM}{\bkmkend AAAAAAAAQM}
-00241     \par
+00226     {\cf20 // Test duration ratios}\par
+{\bkmkstart AAAAAAAAPZ}{\bkmkend AAAAAAAAPZ}
+00227     {\cf17 auto} ratio = std::chrono::duration_cast<std::chrono::nanoseconds>(total);\par
+{\bkmkstart AAAAAAAAQF}{\bkmkend AAAAAAAAQF}
+00228     EXPECT_GT(ratio.count(), 0);\par
+{\bkmkstart AAAAAAAAQI}{\bkmkend AAAAAAAAQI}
+00229 \}\par
+{\bkmkstart AAAAAAAAQJ}{\bkmkend AAAAAAAAQJ}
+00230 \par
+{\bkmkstart AAAAAAAAQL}{\bkmkend AAAAAAAAQL}
+00235 TEST_F(ChronoCoverageTest, TestClockPrecision) \{\par
 {\bkmkstart AAAAAAAAQO}{\bkmkend AAAAAAAAQO}
+00236     {\cf20 // Test high resolution clock precision}\par
+{\bkmkstart AAAAAAAAQQ}{\bkmkend AAAAAAAAQQ}
+00237     {\cf17 auto} start_hr = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAAQU}{\bkmkend AAAAAAAAQU}
+00238     std::this_thread::sleep_for(std::chrono::microseconds(100));\par
+{\bkmkstart AAAAAAAAQX}{\bkmkend AAAAAAAAQX}
+00239     {\cf17 auto} end_hr = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAARB}{\bkmkend AAAAAAAARB}
+00240     {\cf17 auto} duration_hr = std::chrono::duration_cast<std::chrono::nanoseconds>(end_hr - start_hr);\par
+{\bkmkstart AAAAAAAARI}{\bkmkend AAAAAAAARI}
+00241     \par
+{\bkmkstart AAAAAAAARL}{\bkmkend AAAAAAAARL}
 00242     EXPECT_GT(duration_hr.count(), 0);\par
-{\bkmkstart AAAAAAAAQS}{\bkmkend AAAAAAAAQS}
+{\bkmkstart AAAAAAAARP}{\bkmkend AAAAAAAARP}
 00243     \par
-{\bkmkstart AAAAAAAAQT}{\bkmkend AAAAAAAAQT}
+{\bkmkstart AAAAAAAARR}{\bkmkend AAAAAAAARR}
 00244     {\cf20 // Test steady clock precision}\par
-{\bkmkstart AAAAAAAAQW}{\bkmkend AAAAAAAAQW}
+{\bkmkstart AAAAAAAARV}{\bkmkend AAAAAAAARV}
 00245     {\cf17 auto} start_sc = std::chrono::steady_clock::now();\par
-{\bkmkstart AAAAAAAARC}{\bkmkend AAAAAAAARC}
+{\bkmkstart AAAAAAAARZ}{\bkmkend AAAAAAAARZ}
 00246     std::this_thread::sleep_for(std::chrono::microseconds(100));\par
-{\bkmkstart AAAAAAAARG}{\bkmkend AAAAAAAARG}
+{\bkmkstart AAAAAAAASD}{\bkmkend AAAAAAAASD}
 00247     {\cf17 auto} end_sc = std::chrono::steady_clock::now();\par
-{\bkmkstart AAAAAAAARN}{\bkmkend AAAAAAAARN}
-00248     {\cf17 auto} duration_sc = std::chrono::duration_cast<std::chrono::nanoseconds>(end_sc - start_sc);\par
-{\bkmkstart AAAAAAAARS}{\bkmkend AAAAAAAARS}
-00249     \par
-{\bkmkstart AAAAAAAARU}{\bkmkend AAAAAAAARU}
-00250     EXPECT_GT(duration_sc.count(), 0);\par
-{\bkmkstart AAAAAAAARY}{\bkmkend AAAAAAAARY}
-00251 \}\par
-{\bkmkstart AAAAAAAASA}{\bkmkend AAAAAAAASA}
-00252 \par
-{\bkmkstart AAAAAAAASB}{\bkmkend AAAAAAAASB}
-00257 TEST_F(ChronoCoverageTest, TestTimePointArithmetic) \{\par
-{\bkmkstart AAAAAAAASF}{\bkmkend AAAAAAAASF}
-00258     {\cf17 auto} now = std::chrono::system_clock::now();\par
 {\bkmkstart AAAAAAAASI}{\bkmkend AAAAAAAASI}
-00259     {\cf17 auto} one_second = std::chrono::seconds(1);\par
-{\bkmkstart AAAAAAAASJ}{\bkmkend AAAAAAAASJ}
-00260     {\cf17 auto} one_minute = std::chrono::minutes(1);\par
-{\bkmkstart AAAAAAAASK}{\bkmkend AAAAAAAASK}
-00261     {\cf17 auto} one_hour = std::chrono::hours(1);\par
-{\bkmkstart AAAAAAAASL}{\bkmkend AAAAAAAASL}
-00262     \par
-{\bkmkstart AAAAAAAASM}{\bkmkend AAAAAAAASM}
-00263     {\cf20 // Test addition}\par
-{\bkmkstart AAAAAAAASN}{\bkmkend AAAAAAAASN}
-00264     {\cf17 auto} future1 = now + one_second;\par
-{\bkmkstart AAAAAAAASO}{\bkmkend AAAAAAAASO}
-00265     {\cf17 auto} future2 = now + one_minute;\par
+00248     {\cf17 auto} duration_sc = std::chrono::duration_cast<std::chrono::nanoseconds>(end_sc - start_sc);\par
 {\bkmkstart AAAAAAAASP}{\bkmkend AAAAAAAASP}
-00266     {\cf17 auto} future3 = now + one_hour;\par
-{\bkmkstart AAAAAAAASR}{\bkmkend AAAAAAAASR}
-00267     \par
+00249     \par
+{\bkmkstart AAAAAAAASQ}{\bkmkend AAAAAAAASQ}
+00250     EXPECT_GT(duration_sc.count(), 0);\par
 {\bkmkstart AAAAAAAASS}{\bkmkend AAAAAAAASS}
-00268     EXPECT_GT(future1, now);\par
-{\bkmkstart AAAAAAAAST}{\bkmkend AAAAAAAAST}
-00269     EXPECT_GT(future2, now);\par
-{\bkmkstart AAAAAAAASV}{\bkmkend AAAAAAAASV}
-00270     EXPECT_GT(future3, now);\par
-{\bkmkstart AAAAAAAASZ}{\bkmkend AAAAAAAASZ}
-00271     \par
-{\bkmkstart AAAAAAAATA}{\bkmkend AAAAAAAATA}
-00272     {\cf20 // Test subtraction}\par
-{\bkmkstart AAAAAAAATC}{\bkmkend AAAAAAAATC}
-00273     {\cf17 auto} past1 = now - one_second;\par
-{\bkmkstart AAAAAAAATE}{\bkmkend AAAAAAAATE}
-00274     {\cf17 auto} past2 = now - one_minute;\par
-{\bkmkstart AAAAAAAATF}{\bkmkend AAAAAAAATF}
-00275     {\cf17 auto} past3 = now - one_hour;\par
-{\bkmkstart AAAAAAAATH}{\bkmkend AAAAAAAATH}
-00276     \par
-{\bkmkstart AAAAAAAATI}{\bkmkend AAAAAAAATI}
-00277     EXPECT_LT(past1, now);\par
-{\bkmkstart AAAAAAAATK}{\bkmkend AAAAAAAATK}
-00278     EXPECT_LT(past2, now);\par
-{\bkmkstart AAAAAAAATL}{\bkmkend AAAAAAAATL}
-00279     EXPECT_LT(past3, now);\par
+00251 \}\par
+{\bkmkstart AAAAAAAASU}{\bkmkend AAAAAAAASU}
+00252 \par
+{\bkmkstart AAAAAAAASX}{\bkmkend AAAAAAAASX}
+00257 TEST_F(ChronoCoverageTest, TestTimePointArithmetic) \{\par
 {\bkmkstart AAAAAAAATO}{\bkmkend AAAAAAAATO}
-00280 \}\par
-{\bkmkstart AAAAAAAATQ}{\bkmkend AAAAAAAATQ}
-00281 \par
-{\bkmkstart AAAAAAAATS}{\bkmkend AAAAAAAATS}
-00286 TEST_F(ChronoCoverageTest, TestDurationSpecialCases) \{\par
-{\bkmkstart AAAAAAAATX}{\bkmkend AAAAAAAATX}
-00287     {\cf20 // Test zero duration}\par
-{\bkmkstart AAAAAAAAUB}{\bkmkend AAAAAAAAUB}
-00288     {\cf17 auto} zero_sec = std::chrono::seconds(0);\par
-{\bkmkstart AAAAAAAAUE}{\bkmkend AAAAAAAAUE}
-00289     {\cf17 auto} zero_ms = std::chrono::milliseconds(0);\par
-{\bkmkstart AAAAAAAAUH}{\bkmkend AAAAAAAAUH}
-00290     {\cf17 auto} zero_us = std::chrono::microseconds(0);\par
-{\bkmkstart AAAAAAAAUI}{\bkmkend AAAAAAAAUI}
-00291     {\cf17 auto} zero_ns = std::chrono::nanoseconds(0);\par
-{\bkmkstart AAAAAAAAUK}{\bkmkend AAAAAAAAUK}
-00292     \par
-{\bkmkstart AAAAAAAAUM}{\bkmkend AAAAAAAAUM}
-00293     EXPECT_EQ(zero_sec.count(), 0);\par
+00258     {\cf17 auto} now = std::chrono::system_clock::now();\par
+{\bkmkstart AAAAAAAATW}{\bkmkend AAAAAAAATW}
+00259     {\cf17 auto} one_second = std::chrono::seconds(1);\par
+{\bkmkstart AAAAAAAAUC}{\bkmkend AAAAAAAAUC}
+00260     {\cf17 auto} one_minute = std::chrono::minutes(1);\par
+{\bkmkstart AAAAAAAAUF}{\bkmkend AAAAAAAAUF}
+00261     {\cf17 auto} one_hour = std::chrono::hours(1);\par
+{\bkmkstart AAAAAAAAUL}{\bkmkend AAAAAAAAUL}
+00262     \par
 {\bkmkstart AAAAAAAAUN}{\bkmkend AAAAAAAAUN}
-00294     EXPECT_EQ(zero_ms.count(), 0);\par
-{\bkmkstart AAAAAAAAUP}{\bkmkend AAAAAAAAUP}
-00295     EXPECT_EQ(zero_us.count(), 0);\par
-{\bkmkstart AAAAAAAAUQ}{\bkmkend AAAAAAAAUQ}
-00296     EXPECT_EQ(zero_ns.count(), 0);\par
-{\bkmkstart AAAAAAAAUS}{\bkmkend AAAAAAAAUS}
-00297     \par
+00263     {\cf20 // Test addition}\par
+{\bkmkstart AAAAAAAAUO}{\bkmkend AAAAAAAAUO}
+00264     {\cf17 auto} future1 = now + one_second;\par
 {\bkmkstart AAAAAAAAUU}{\bkmkend AAAAAAAAUU}
-00298     {\cf20 // Test negative duration}\par
-{\bkmkstart AAAAAAAAUX}{\bkmkend AAAAAAAAUX}
-00299     {\cf17 auto} neg_sec = std::chrono::seconds(-1);\par
+00265     {\cf17 auto} future2 = now + one_minute;\par
+{\bkmkstart AAAAAAAAUZ}{\bkmkend AAAAAAAAUZ}
+00266     {\cf17 auto} future3 = now + one_hour;\par
 {\bkmkstart AAAAAAAAVC}{\bkmkend AAAAAAAAVC}
-00300     {\cf17 auto} neg_ms = std::chrono::milliseconds(-1000);\par
+00267     \par
 {\bkmkstart AAAAAAAAVE}{\bkmkend AAAAAAAAVE}
-00301     \par
-{\bkmkstart AAAAAAAAVF}{\bkmkend AAAAAAAAVF}
-00302     EXPECT_EQ(neg_sec.count(), -1);\par
-{\bkmkstart AAAAAAAAVI}{\bkmkend AAAAAAAAVI}
-00303     EXPECT_EQ(neg_ms.count(), -1000);\par
+00268     EXPECT_GT(future1, now);\par
+{\bkmkstart AAAAAAAAVH}{\bkmkend AAAAAAAAVH}
+00269     EXPECT_GT(future2, now);\par
 {\bkmkstart AAAAAAAAVK}{\bkmkend AAAAAAAAVK}
-00304     \par
-{\bkmkstart AAAAAAAAVM}{\bkmkend AAAAAAAAVM}
-00305     {\cf20 // Test large duration}\par
-{\bkmkstart AAAAAAAAVO}{\bkmkend AAAAAAAAVO}
-00306     {\cf17 auto} large_sec = std::chrono::seconds(INT_MAX);\par
-{\bkmkstart AAAAAAAAVP}{\bkmkend AAAAAAAAVP}
-00307     {\cf17 auto} large_ms = std::chrono::milliseconds(INT_MAX);\par
-{\bkmkstart AAAAAAAAVQ}{\bkmkend AAAAAAAAVQ}
-00308     \par
-{\bkmkstart AAAAAAAAVR}{\bkmkend AAAAAAAAVR}
-00309     EXPECT_EQ(large_sec.count(), INT_MAX);\par
+00270     EXPECT_GT(future3, now);\par
 {\bkmkstart AAAAAAAAVS}{\bkmkend AAAAAAAAVS}
-00310     EXPECT_EQ(large_ms.count(), INT_MAX);\par
+00271     \par
 {\bkmkstart AAAAAAAAVT}{\bkmkend AAAAAAAAVT}
-00311 \}\par
-{\bkmkstart AAAAAAAAVU}{\bkmkend AAAAAAAAVU}
-00312 \par
+00272     {\cf20 // Test subtraction}\par
 {\bkmkstart AAAAAAAAVV}{\bkmkend AAAAAAAAVV}
-00317 TEST_F(ChronoCoverageTest, TestClockConversion) \{\par
-{\bkmkstart AAAAAAAAVX}{\bkmkend AAAAAAAAVX}
-00318     {\cf20 // Test system clock to time_t conversion}\par
-{\bkmkstart AAAAAAAAVY}{\bkmkend AAAAAAAAVY}
-00319     {\cf17 auto} now_sys = std::chrono::system_clock::now();\par
+00273     {\cf17 auto} past1 = now - one_second;\par
+{\bkmkstart AAAAAAAAWB}{\bkmkend AAAAAAAAWB}
+00274     {\cf17 auto} past2 = now - one_minute;\par
 {\bkmkstart AAAAAAAAWC}{\bkmkend AAAAAAAAWC}
-00320     {\cf17 auto} time_t_now = std::chrono::system_clock::to_time_t(now_sys);\par
-{\bkmkstart AAAAAAAAWF}{\bkmkend AAAAAAAAWF}
-00321     {\cf17 auto} back_to_sys = std::chrono::system_clock::from_time_t(time_t_now);\par
-{\bkmkstart AAAAAAAAWK}{\bkmkend AAAAAAAAWK}
-00322     \par
+00275     {\cf17 auto} past3 = now - one_hour;\par
+{\bkmkstart AAAAAAAAWG}{\bkmkend AAAAAAAAWG}
+00276     \par
+{\bkmkstart AAAAAAAAWH}{\bkmkend AAAAAAAAWH}
+00277     EXPECT_LT(past1, now);\par
 {\bkmkstart AAAAAAAAWL}{\bkmkend AAAAAAAAWL}
-00323     EXPECT_GT(time_t_now, 0);\par
-{\bkmkstart AAAAAAAAWO}{\bkmkend AAAAAAAAWO}
-00324     \par
+00278     EXPECT_LT(past2, now);\par
+{\bkmkstart AAAAAAAAWN}{\bkmkend AAAAAAAAWN}
+00279     EXPECT_LT(past3, now);\par
 {\bkmkstart AAAAAAAAWQ}{\bkmkend AAAAAAAAWQ}
-00325     {\cf20 // Test duration conversions between different types}\par
-{\bkmkstart AAAAAAAAWV}{\bkmkend AAAAAAAAWV}
-00326     {\cf17 auto} seconds_val = std::chrono::seconds(1);\par
-{\bkmkstart AAAAAAAAXK}{\bkmkend AAAAAAAAXK}
-00327     {\cf17 auto} milliseconds_val = std::chrono::duration_cast<std::chrono::milliseconds>(seconds_val);\par
-{\bkmkstart AAAAAAAAXN}{\bkmkend AAAAAAAAXN}
-00328     {\cf17 auto} microseconds_val = std::chrono::duration_cast<std::chrono::microseconds>(seconds_val);\par
-{\bkmkstart AAAAAAAAXP}{\bkmkend AAAAAAAAXP}
-00329     {\cf17 auto} nanoseconds_val = std::chrono::duration_cast<std::chrono::nanoseconds>(seconds_val);\par
-{\bkmkstart AAAAAAAAXV}{\bkmkend AAAAAAAAXV}
-00330     \par
-{\bkmkstart AAAAAAAAXW}{\bkmkend AAAAAAAAXW}
-00331     EXPECT_EQ(milliseconds_val.count(), 1000);\par
-{\bkmkstart AAAAAAAAXZ}{\bkmkend AAAAAAAAXZ}
-00332     EXPECT_EQ(microseconds_val.count(), 1000000);\par
-{\bkmkstart AAAAAAAAYB}{\bkmkend AAAAAAAAYB}
-00333     EXPECT_EQ(nanoseconds_val.count(), 1000000000);\par
-{\bkmkstart AAAAAAAAYH}{\bkmkend AAAAAAAAYH}
-00334 \}\par
-{\bkmkstart AAAAAAAAYI}{\bkmkend AAAAAAAAYI}
-00335 \par
-{\bkmkstart AAAAAAAAYK}{\bkmkend AAAAAAAAYK}
-00340 TEST_F(ChronoCoverageTest, TestChronoLiteralsAdvanced) \{\par
-{\bkmkstart AAAAAAAAYP}{\bkmkend AAAAAAAAYP}
-00341     {\cf17 using namespace }std::chrono_literals;\par
-{\bkmkstart AAAAAAAAYW}{\bkmkend AAAAAAAAYW}
-00342     \par
-{\bkmkstart AAAAAAAAYY}{\bkmkend AAAAAAAAYY}
-00343     {\cf20 // Test various literal combinations}\par
-{\bkmkstart AAAAAAAAZB}{\bkmkend AAAAAAAAZB}
-00344     {\cf17 auto} duration1 = 1h + 30min + 45s + 500ms;\par
-{\bkmkstart AAAAAAAAZJ}{\bkmkend AAAAAAAAZJ}
-00345     {\cf17 auto} duration2 = 2h - 15min + 30s;\par
+00280 \}\par
+{\bkmkstart AAAAAAAAWS}{\bkmkend AAAAAAAAWS}
+00281 \par
+{\bkmkstart AAAAAAAAWW}{\bkmkend AAAAAAAAWW}
+00286 TEST_F(ChronoCoverageTest, TestDurationSpecialCases) \{\par
+{\bkmkstart AAAAAAAAWY}{\bkmkend AAAAAAAAWY}
+00287     {\cf20 // Test zero duration}\par
+{\bkmkstart AAAAAAAAXE}{\bkmkend AAAAAAAAXE}
+00288     {\cf17 auto} zero_sec = std::chrono::seconds(0);\par
+{\bkmkstart AAAAAAAAYZ}{\bkmkend AAAAAAAAYZ}
+00289     {\cf17 auto} zero_ms = std::chrono::milliseconds(0);\par
+{\bkmkstart AAAAAAAAZG}{\bkmkend AAAAAAAAZG}
+00290     {\cf17 auto} zero_us = std::chrono::microseconds(0);\par
 {\bkmkstart AAAAAAAAZO}{\bkmkend AAAAAAAAZO}
-00346     {\cf17 auto} duration3 = 3h * 2;\par
-{\bkmkstart AAAAAAAAZQ}{\bkmkend AAAAAAAAZQ}
-00347     {\cf17 auto} duration4 = 6h / 3;\par
+00291     {\cf17 auto} zero_ns = std::chrono::nanoseconds(0);\par
+{\bkmkstart AAAAAAAAZR}{\bkmkend AAAAAAAAZR}
+00292     \par
 {\bkmkstart AAAAAAAAZS}{\bkmkend AAAAAAAAZS}
-00348     \par
+00293     EXPECT_EQ(zero_sec.count(), 0);\par
 {\bkmkstart AAAAAAAAZU}{\bkmkend AAAAAAAAZU}
-00349     EXPECT_GT(duration1.count(), 0);\par
+00294     EXPECT_EQ(zero_ms.count(), 0);\par
+{\bkmkstart AAAAAAAAZV}{\bkmkend AAAAAAAAZV}
+00295     EXPECT_EQ(zero_us.count(), 0);\par
 {\bkmkstart AAAAAAAAZW}{\bkmkend AAAAAAAAZW}
-00350     EXPECT_GT(duration2.count(), 0);\par
+00296     EXPECT_EQ(zero_ns.count(), 0);\par
+{\bkmkstart AAAAAAAAZX}{\bkmkend AAAAAAAAZX}
+00297     \par
+{\bkmkstart AAAAAAAAZY}{\bkmkend AAAAAAAAZY}
+00298     {\cf20 // Test negative duration}\par
+{\bkmkstart AAAAAAAAZZ}{\bkmkend AAAAAAAAZZ}
+00299     {\cf17 auto} neg_sec = std::chrono::seconds(-1);\par
+{\bkmkstart AAAAAAABAA}{\bkmkend AAAAAAABAA}
+00300     {\cf17 auto} neg_ms = std::chrono::milliseconds(-1000);\par
 {\bkmkstart AAAAAAABAB}{\bkmkend AAAAAAABAB}
-00351     EXPECT_GT(duration3.count(), 0);\par
+00301     \par
 {\bkmkstart AAAAAAABAC}{\bkmkend AAAAAAABAC}
-00352     EXPECT_GT(duration4.count(), 0);\par
+00302     EXPECT_EQ(neg_sec.count(), -1);\par
 {\bkmkstart AAAAAAABAE}{\bkmkend AAAAAAABAE}
-00353     \par
-{\bkmkstart AAAAAAABAF}{\bkmkend AAAAAAABAF}
-00354     {\cf20 // Test literal arithmetic}\par
-{\bkmkstart AAAAAAABAG}{\bkmkend AAAAAAABAG}
-00355     {\cf17 auto} sum = 1h + 2h + 3h;\par
+00303     EXPECT_EQ(neg_ms.count(), -1000);\par
+{\bkmkstart AAAAAAABAH}{\bkmkend AAAAAAABAH}
+00304     \par
+{\bkmkstart AAAAAAABAJ}{\bkmkend AAAAAAABAJ}
+00305     {\cf20 // Test large duration}\par
 {\bkmkstart AAAAAAABAK}{\bkmkend AAAAAAABAK}
-00356     {\cf17 auto} diff = 10h - 5h;\par
-{\bkmkstart AAAAAAABAL}{\bkmkend AAAAAAABAL}
-00357     {\cf17 auto} mult = 2h * 3;\par
-{\bkmkstart AAAAAAABAN}{\bkmkend AAAAAAABAN}
-00358     {\cf17 auto} div = 12h / 4;\par
-{\bkmkstart AAAAAAABAP}{\bkmkend AAAAAAABAP}
-00359     \par
-{\bkmkstart AAAAAAABAQ}{\bkmkend AAAAAAABAQ}
-00360     EXPECT_EQ(sum.count(), 6);\par
-{\bkmkstart AAAAAAABAT}{\bkmkend AAAAAAABAT}
-00361     EXPECT_EQ(diff.count(), 5);\par
+00306     {\cf17 auto} large_sec = std::chrono::seconds(INT_MAX);\par
+{\bkmkstart AAAAAAABAM}{\bkmkend AAAAAAABAM}
+00307     {\cf17 auto} large_ms = std::chrono::milliseconds(INT_MAX);\par
+{\bkmkstart AAAAAAABAR}{\bkmkend AAAAAAABAR}
+00308     \par
+{\bkmkstart AAAAAAABAS}{\bkmkend AAAAAAABAS}
+00309     EXPECT_EQ(large_sec.count(), INT_MAX);\par
 {\bkmkstart AAAAAAABAU}{\bkmkend AAAAAAABAU}
-00362     EXPECT_EQ(mult.count(), 6);\par
-{\bkmkstart AAAAAAABAW}{\bkmkend AAAAAAABAW}
-00363     EXPECT_EQ(div.count(), 3);\par
+00310     EXPECT_EQ(large_ms.count(), INT_MAX);\par
 {\bkmkstart AAAAAAABAX}{\bkmkend AAAAAAABAX}
-00364 \}\par
-{\bkmkstart AAAAAAABAZ}{\bkmkend AAAAAAABAZ}
-00365 \par
-{\bkmkstart AAAAAAABBB}{\bkmkend AAAAAAABBB}
-00370 TEST_F(ChronoCoverageTest, TestClockPropertiesAdvanced) \{\par
+00311 \}\par
+{\bkmkstart AAAAAAABAY}{\bkmkend AAAAAAABAY}
+00312 \par
+{\bkmkstart AAAAAAABBA}{\bkmkend AAAAAAABBA}
+00317 TEST_F(ChronoCoverageTest, TestClockConversion) \{\par
+{\bkmkstart AAAAAAABBC}{\bkmkend AAAAAAABBC}
+00318     {\cf20 // Test system clock to time_t conversion}\par
 {\bkmkstart AAAAAAABBF}{\bkmkend AAAAAAABBF}
-00371     {\cf20 // Test clock period information}\par
+00319     {\cf17 auto} now_sys = std::chrono::system_clock::now();\par
 {\bkmkstart AAAAAAABBH}{\bkmkend AAAAAAABBH}
-00372     {\cf17 using }hr_clock = std::chrono::high_resolution_clock;\par
-{\bkmkstart AAAAAAABBK}{\bkmkend AAAAAAABBK}
-00373     {\cf17 using }sc_clock = std::chrono::steady_clock;\par
-{\bkmkstart AAAAAAABBM}{\bkmkend AAAAAAABBM}
-00374     {\cf17 using }sys_clock = std::chrono::system_clock;\par
+00320     {\cf17 auto} time_t_now = std::chrono::system_clock::to_time_t(now_sys);\par
+{\bkmkstart AAAAAAABBL}{\bkmkend AAAAAAABBL}
+00321     {\cf17 auto} back_to_sys = std::chrono::system_clock::from_time_t(time_t_now);\par
+{\bkmkstart AAAAAAABBO}{\bkmkend AAAAAAABBO}
+00322     \par
 {\bkmkstart AAAAAAABBP}{\bkmkend AAAAAAABBP}
-00375     \par
-{\bkmkstart AAAAAAABBQ}{\bkmkend AAAAAAABBQ}
-00376     {\cf20 // Test clock period ratios}\par
-{\bkmkstart AAAAAAABBT}{\bkmkend AAAAAAABBT}
-00377     {\cf17 auto} hr_period = hr_clock::period::num;\par
-{\bkmkstart AAAAAAABBW}{\bkmkend AAAAAAABBW}
-00378     {\cf17 auto} sc_period = sc_clock::period::num;\par
-{\bkmkstart AAAAAAABCA}{\bkmkend AAAAAAABCA}
-00379     {\cf17 auto} sys_period = sys_clock::period::num;\par
+00323     EXPECT_GT(time_t_now, 0);\par
+{\bkmkstart AAAAAAABBS}{\bkmkend AAAAAAABBS}
+00324     \par
+{\bkmkstart AAAAAAABBU}{\bkmkend AAAAAAABBU}
+00325     {\cf20 // Test duration conversions between different types}\par
+{\bkmkstart AAAAAAABBX}{\bkmkend AAAAAAABBX}
+00326     {\cf17 auto} seconds_val = std::chrono::seconds(1);\par
 {\bkmkstart AAAAAAABCD}{\bkmkend AAAAAAABCD}
-00380     \par
-{\bkmkstart AAAAAAABCF}{\bkmkend AAAAAAABCF}
-00381     EXPECT_GT(hr_period, 0);\par
-{\bkmkstart AAAAAAABCI}{\bkmkend AAAAAAABCI}
-00382     EXPECT_GT(sc_period, 0);\par
+00327     {\cf17 auto} milliseconds_val = std::chrono::duration_cast<std::chrono::milliseconds>(seconds_val);\par
 {\bkmkstart AAAAAAABCK}{\bkmkend AAAAAAABCK}
-00383     EXPECT_GT(sys_period, 0);\par
-{\bkmkstart AAAAAAABCM}{\bkmkend AAAAAAABCM}
-00384     \par
-{\bkmkstart AAAAAAABCN}{\bkmkend AAAAAAABCN}
-00385     {\cf20 // Test clock duration types}\par
-{\bkmkstart AAAAAAABCQ}{\bkmkend AAAAAAABCQ}
-00386     {\cf17 using }hr_duration = hr_clock::duration;\par
-{\bkmkstart AAAAAAABCV}{\bkmkend AAAAAAABCV}
-00387     {\cf17 using }sc_duration = sc_clock::duration;\par
+00328     {\cf17 auto} microseconds_val = std::chrono::duration_cast<std::chrono::microseconds>(seconds_val);\par
+{\bkmkstart AAAAAAABCR}{\bkmkend AAAAAAABCR}
+00329     {\cf17 auto} nanoseconds_val = std::chrono::duration_cast<std::chrono::nanoseconds>(seconds_val);\par
 {\bkmkstart AAAAAAABCY}{\bkmkend AAAAAAABCY}
-00388     {\cf17 using }sys_duration = sys_clock::duration;\par
+00330     \par
+{\bkmkstart AAAAAAABDA}{\bkmkend AAAAAAABDA}
+00331     EXPECT_EQ(milliseconds_val.count(), 1000);\par
+{\bkmkstart AAAAAAABDC}{\bkmkend AAAAAAABDC}
+00332     EXPECT_EQ(microseconds_val.count(), 1000000);\par
+{\bkmkstart AAAAAAABDD}{\bkmkend AAAAAAABDD}
+00333     EXPECT_EQ(nanoseconds_val.count(), 1000000000);\par
+{\bkmkstart AAAAAAABDE}{\bkmkend AAAAAAABDE}
+00334 \}\par
+{\bkmkstart AAAAAAABDF}{\bkmkend AAAAAAABDF}
+00335 \par
+{\bkmkstart AAAAAAABDG}{\bkmkend AAAAAAABDG}
+00340 TEST_F(ChronoCoverageTest, TestChronoLiteralsAdvanced) \{\par
+{\bkmkstart AAAAAAABDH}{\bkmkend AAAAAAABDH}
+00341     {\cf17 using namespace }std::chrono_literals;\par
+{\bkmkstart AAAAAAABDJ}{\bkmkend AAAAAAABDJ}
+00342     \par
+{\bkmkstart AAAAAAABDL}{\bkmkend AAAAAAABDL}
+00343     {\cf20 // Test various literal combinations}\par
 {\bkmkstart AAAAAAABDM}{\bkmkend AAAAAAABDM}
-00389     \par
+00344     {\cf17 auto} duration1 = 1h + 30min + 45s + 500ms;\par
 {\bkmkstart AAAAAAABDN}{\bkmkend AAAAAAABDN}
-00390     {\cf17 auto} hr_dur = hr_duration(1);\par
+00345     {\cf17 auto} duration2 = 2h - 15min + 30s;\par
+{\bkmkstart AAAAAAABDP}{\bkmkend AAAAAAABDP}
+00346     {\cf17 auto} duration3 = 3h * 2;\par
+{\bkmkstart AAAAAAABDQ}{\bkmkend AAAAAAABDQ}
+00347     {\cf17 auto} duration4 = 6h / 3;\par
+{\bkmkstart AAAAAAABDS}{\bkmkend AAAAAAABDS}
+00348     \par
+{\bkmkstart AAAAAAABDT}{\bkmkend AAAAAAABDT}
+00349     EXPECT_GT(duration1.count(), 0);\par
 {\bkmkstart AAAAAAABDU}{\bkmkend AAAAAAABDU}
-00391     {\cf17 auto} sc_dur = sc_duration(1);\par
-{\bkmkstart AAAAAAABDX}{\bkmkend AAAAAAABDX}
-00392     {\cf17 auto} sys_dur = sys_duration(1);\par
+00350     EXPECT_GT(duration2.count(), 0);\par
+{\bkmkstart AAAAAAABDV}{\bkmkend AAAAAAABDV}
+00351     EXPECT_GT(duration3.count(), 0);\par
+{\bkmkstart AAAAAAABDW}{\bkmkend AAAAAAABDW}
+00352     EXPECT_GT(duration4.count(), 0);\par
+{\bkmkstart AAAAAAABDY}{\bkmkend AAAAAAABDY}
+00353     \par
+{\bkmkstart AAAAAAABDZ}{\bkmkend AAAAAAABDZ}
+00354     {\cf20 // Test literal arithmetic}\par
+{\bkmkstart AAAAAAABEA}{\bkmkend AAAAAAABEA}
+00355     {\cf17 auto} sum = 1h + 2h + 3h;\par
+{\bkmkstart AAAAAAABEB}{\bkmkend AAAAAAABEB}
+00356     {\cf17 auto} diff = 10h - 5h;\par
 {\bkmkstart AAAAAAABEC}{\bkmkend AAAAAAABEC}
-00393     \par
+00357     {\cf17 auto} mult = 2h * 3;\par
 {\bkmkstart AAAAAAABED}{\bkmkend AAAAAAABED}
-00394     EXPECT_GT(hr_dur.count(), 0);\par
-{\bkmkstart AAAAAAABEF}{\bkmkend AAAAAAABEF}
-00395     EXPECT_GT(sc_dur.count(), 0);\par
+00358     {\cf17 auto} div = 12h / 4;\par
 {\bkmkstart AAAAAAABEG}{\bkmkend AAAAAAABEG}
-00396     EXPECT_GT(sys_dur.count(), 0);\par
+00359     \par
+{\bkmkstart AAAAAAABEH}{\bkmkend AAAAAAABEH}
+00360     EXPECT_EQ(sum.count(), 6);\par
 {\bkmkstart AAAAAAABEJ}{\bkmkend AAAAAAABEJ}
-00397 \}\par
-{\bkmkstart AAAAAAABEK}{\bkmkend AAAAAAABEK}
-00398 \par
+00361     EXPECT_EQ(diff.count(), 5);\par
+{\bkmkstart AAAAAAABEL}{\bkmkend AAAAAAABEL}
+00362     EXPECT_EQ(mult.count(), 6);\par
 {\bkmkstart AAAAAAABEN}{\bkmkend AAAAAAABEN}
-00403 TEST_F(ChronoCoverageTest, TestChronoErrorHandling) \{\par
+00363     EXPECT_EQ(div.count(), 3);\par
+{\bkmkstart AAAAAAABEP}{\bkmkend AAAAAAABEP}
+00364 \}\par
+{\bkmkstart AAAAAAABER}{\bkmkend AAAAAAABER}
+00365 \par
 {\bkmkstart AAAAAAABES}{\bkmkend AAAAAAABES}
-00404     {\cf20 // Test overflow protection}\par
-{\bkmkstart AAAAAAABEU}{\bkmkend AAAAAAABEU}
-00405     {\cf17 auto} max_duration = std::chrono::seconds(INT_MAX);\par
+00370 TEST_F(ChronoCoverageTest, TestClockPropertiesAdvanced) \{\par
+{\bkmkstart AAAAAAABEW}{\bkmkend AAAAAAABEW}
+00371     {\cf20 // Test clock period information}\par
+{\bkmkstart AAAAAAABEX}{\bkmkend AAAAAAABEX}
+00372     {\cf17 using }hr_clock = std::chrono::high_resolution_clock;\par
+{\bkmkstart AAAAAAABFA}{\bkmkend AAAAAAABFA}
+00373     {\cf17 using }sc_clock = std::chrono::steady_clock;\par
+{\bkmkstart AAAAAAABFD}{\bkmkend AAAAAAABFD}
+00374     {\cf17 using }sys_clock = std::chrono::system_clock;\par
+{\bkmkstart AAAAAAABFF}{\bkmkend AAAAAAABFF}
+00375     \par
+{\bkmkstart AAAAAAABFG}{\bkmkend AAAAAAABFG}
+00376     {\cf20 // Test clock period ratios}\par
+{\bkmkstart AAAAAAABFI}{\bkmkend AAAAAAABFI}
+00377     {\cf17 auto} hr_period = hr_clock::period::num;\par
+{\bkmkstart AAAAAAABFL}{\bkmkend AAAAAAABFL}
+00378     {\cf17 auto} sc_period = sc_clock::period::num;\par
+{\bkmkstart AAAAAAABFN}{\bkmkend AAAAAAABFN}
+00379     {\cf17 auto} sys_period = sys_clock::period::num;\par
+{\bkmkstart AAAAAAABFP}{\bkmkend AAAAAAABFP}
+00380     \par
+{\bkmkstart AAAAAAABFR}{\bkmkend AAAAAAABFR}
+00381     EXPECT_GT(hr_period, 0);\par
+{\bkmkstart AAAAAAABFT}{\bkmkend AAAAAAABFT}
+00382     EXPECT_GT(sc_period, 0);\par
+{\bkmkstart AAAAAAABFV}{\bkmkend AAAAAAABFV}
+00383     EXPECT_GT(sys_period, 0);\par
+{\bkmkstart AAAAAAABFW}{\bkmkend AAAAAAABFW}
+00384     \par
+{\bkmkstart AAAAAAABFY}{\bkmkend AAAAAAABFY}
+00385     {\cf20 // Test clock duration types}\par
+{\bkmkstart AAAAAAABGA}{\bkmkend AAAAAAABGA}
+00386     {\cf17 using }hr_duration = hr_clock::duration;\par
+{\bkmkstart AAAAAAABGD}{\bkmkend AAAAAAABGD}
+00387     {\cf17 using }sc_duration = sc_clock::duration;\par
+{\bkmkstart AAAAAAABGF}{\bkmkend AAAAAAABGF}
+00388     {\cf17 using }sys_duration = sys_clock::duration;\par
 {\bkmkstart AAAAAAABGI}{\bkmkend AAAAAAABGI}
-00406     {\cf17 auto} min_duration = std::chrono::seconds(INT_MIN);\par
+00389     \par
+{\bkmkstart AAAAAAABGJ}{\bkmkend AAAAAAABGJ}
+00390     {\cf17 auto} hr_dur = hr_duration(1);\par
+{\bkmkstart AAAAAAABGK}{\bkmkend AAAAAAABGK}
+00391     {\cf17 auto} sc_dur = sc_duration(1);\par
+{\bkmkstart AAAAAAABGM}{\bkmkend AAAAAAABGM}
+00392     {\cf17 auto} sys_dur = sys_duration(1);\par
+{\bkmkstart AAAAAAABGO}{\bkmkend AAAAAAABGO}
+00393     \par
 {\bkmkstart AAAAAAABGP}{\bkmkend AAAAAAABGP}
-00407     \par
-{\bkmkstart AAAAAAABGQ}{\bkmkend AAAAAAABGQ}
-00408     EXPECT_EQ(max_duration.count(), INT_MAX);\par
+00394     EXPECT_GT(hr_dur.count(), 0);\par
+{\bkmkstart AAAAAAABGR}{\bkmkend AAAAAAABGR}
+00395     EXPECT_GT(sc_dur.count(), 0);\par
+{\bkmkstart AAAAAAABGS}{\bkmkend AAAAAAABGS}
+00396     EXPECT_GT(sys_dur.count(), 0);\par
+{\bkmkstart AAAAAAABGU}{\bkmkend AAAAAAABGU}
+00397 \}\par
 {\bkmkstart AAAAAAABGV}{\bkmkend AAAAAAABGV}
-00409     EXPECT_EQ(min_duration.count(), INT_MIN);\par
-{\bkmkstart AAAAAAABGY}{\bkmkend AAAAAAABGY}
-00410     \par
+00398 \par
+{\bkmkstart AAAAAAABGW}{\bkmkend AAAAAAABGW}
+00403 TEST_F(ChronoCoverageTest, TestChronoErrorHandling) \{\par
+{\bkmkstart AAAAAAABGZ}{\bkmkend AAAAAAABGZ}
+00404     {\cf20 // Test overflow protection}\par
 {\bkmkstart AAAAAAABHB}{\bkmkend AAAAAAABHB}
-00411     {\cf20 // Test duration bounds}\par
-{\bkmkstart AAAAAAABHC}{\bkmkend AAAAAAABHC}
-00412     {\cf17 auto} zero_duration = std::chrono::seconds(0);\par
+00405     {\cf17 auto} max_duration = std::chrono::seconds(INT_MAX);\par
+{\bkmkstart AAAAAAABHE}{\bkmkend AAAAAAABHE}
+00406     {\cf17 auto} min_duration = std::chrono::seconds(INT_MIN);\par
+{\bkmkstart AAAAAAABHG}{\bkmkend AAAAAAABHG}
+00407     \par
 {\bkmkstart AAAAAAABHH}{\bkmkend AAAAAAABHH}
-00413     {\cf17 auto} small_duration = std::chrono::nanoseconds(1);\par
+00408     EXPECT_EQ(max_duration.count(), INT_MAX);\par
+{\bkmkstart AAAAAAABHK}{\bkmkend AAAAAAABHK}
+00409     EXPECT_EQ(min_duration.count(), INT_MIN);\par
 {\bkmkstart AAAAAAABHM}{\bkmkend AAAAAAABHM}
+00410     \par
+{\bkmkstart AAAAAAABHN}{\bkmkend AAAAAAABHN}
+00411     {\cf20 // Test duration bounds}\par
+{\bkmkstart AAAAAAABHP}{\bkmkend AAAAAAABHP}
+00412     {\cf17 auto} zero_duration = std::chrono::seconds(0);\par
+{\bkmkstart AAAAAAABHS}{\bkmkend AAAAAAABHS}
+00413     {\cf17 auto} small_duration = std::chrono::nanoseconds(1);\par
+{\bkmkstart AAAAAAABHU}{\bkmkend AAAAAAABHU}
 00414     {\cf17 auto} large_duration = std::chrono::hours(24);\par
-{\bkmkstart AAAAAAABII}{\bkmkend AAAAAAABII}
+{\bkmkstart AAAAAAABHW}{\bkmkend AAAAAAABHW}
 00415     \par
-{\bkmkstart AAAAAAABIJ}{\bkmkend AAAAAAABIJ}
+{\bkmkstart AAAAAAABHX}{\bkmkend AAAAAAABHX}
 00416     EXPECT_EQ(zero_duration.count(), 0);\par
-{\bkmkstart AAAAAAABIK}{\bkmkend AAAAAAABIK}
+{\bkmkstart AAAAAAABHZ}{\bkmkend AAAAAAABHZ}
 00417     EXPECT_EQ(small_duration.count(), 1);\par
-{\bkmkstart AAAAAAABIN}{\bkmkend AAAAAAABIN}
+{\bkmkstart AAAAAAABIA}{\bkmkend AAAAAAABIA}
 00418     EXPECT_EQ(large_duration.count(), 24);\par
-{\bkmkstart AAAAAAABIP}{\bkmkend AAAAAAABIP}
+{\bkmkstart AAAAAAABIC}{\bkmkend AAAAAAABIC}
 00419 \}\par
-{\bkmkstart AAAAAAABIQ}{\bkmkend AAAAAAABIQ}
+{\bkmkstart AAAAAAABID}{\bkmkend AAAAAAABID}
 00420 \par
-{\bkmkstart AAAAAAABIS}{\bkmkend AAAAAAABIS}
+{\bkmkstart AAAAAAABIE}{\bkmkend AAAAAAABIE}
 00425 TEST_F(ChronoCoverageTest, TestChronoPerformance) \{\par
-{\bkmkstart AAAAAAABIW}{\bkmkend AAAAAAABIW}
+{\bkmkstart AAAAAAABIG}{\bkmkend AAAAAAABIG}
 00426     {\cf20 // Test timing accuracy with multiple measurements}\par
-{\bkmkstart AAAAAAABIX}{\bkmkend AAAAAAABIX}
+{\bkmkstart AAAAAAABIH}{\bkmkend AAAAAAABIH}
 00427     std::vector<std::chrono::nanoseconds> measurements;\par
-{\bkmkstart AAAAAAABIZ}{\bkmkend AAAAAAABIZ}
+{\bkmkstart AAAAAAABIL}{\bkmkend AAAAAAABIL}
 00428     \par
-{\bkmkstart AAAAAAABJB}{\bkmkend AAAAAAABJB}
+{\bkmkstart AAAAAAABIM}{\bkmkend AAAAAAABIM}
 00429     {\cf19 for} ({\cf18 int} i = 0; i < 10; ++i) \{\par
-{\bkmkstart AAAAAAABJI}{\bkmkend AAAAAAABJI}
+{\bkmkstart AAAAAAABIS}{\bkmkend AAAAAAABIS}
 00430         {\cf17 auto} start = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAABJM}{\bkmkend AAAAAAABJM}
+{\bkmkstart AAAAAAABIU}{\bkmkend AAAAAAABIU}
 00431         std::this_thread::sleep_for(std::chrono::microseconds(100));\par
-{\bkmkstart AAAAAAABJO}{\bkmkend AAAAAAABJO}
+{\bkmkstart AAAAAAABIX}{\bkmkend AAAAAAABIX}
 00432         {\cf17 auto} end = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAABJR}{\bkmkend AAAAAAABJR}
+{\bkmkstart AAAAAAABJA}{\bkmkend AAAAAAABJA}
 00433         \par
-{\bkmkstart AAAAAAABJS}{\bkmkend AAAAAAABJS}
+{\bkmkstart AAAAAAABJB}{\bkmkend AAAAAAABJB}
 00434         {\cf17 auto} duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start);\par
-{\bkmkstart AAAAAAABJX}{\bkmkend AAAAAAABJX}
+{\bkmkstart AAAAAAABJF}{\bkmkend AAAAAAABJF}
 00435         measurements.push_back(duration);\par
-{\bkmkstart AAAAAAABJY}{\bkmkend AAAAAAABJY}
+{\bkmkstart AAAAAAABJG}{\bkmkend AAAAAAABJG}
 00436     \}\par
-{\bkmkstart AAAAAAABKA}{\bkmkend AAAAAAABKA}
+{\bkmkstart AAAAAAABJI}{\bkmkend AAAAAAABJI}
 00437     \par
-{\bkmkstart AAAAAAABKB}{\bkmkend AAAAAAABKB}
+{\bkmkstart AAAAAAABJK}{\bkmkend AAAAAAABJK}
 00438     {\cf20 // Verify all measurements are positive}\par
-{\bkmkstart AAAAAAABKC}{\bkmkend AAAAAAABKC}
+{\bkmkstart AAAAAAABJM}{\bkmkend AAAAAAABJM}
 00439     {\cf19 for} ({\cf17 const} {\cf17 auto}& measurement : measurements) \{\par
-{\bkmkstart AAAAAAABKF}{\bkmkend AAAAAAABKF}
+{\bkmkstart AAAAAAABJN}{\bkmkend AAAAAAABJN}
 00440         EXPECT_GT(measurement.count(), 0);\par
-{\bkmkstart AAAAAAABKJ}{\bkmkend AAAAAAABKJ}
+{\bkmkstart AAAAAAABJQ}{\bkmkend AAAAAAABJQ}
 00441     \}\par
-{\bkmkstart AAAAAAABKK}{\bkmkend AAAAAAABKK}
+{\bkmkstart AAAAAAABJR}{\bkmkend AAAAAAABJR}
 00442     \par
-{\bkmkstart AAAAAAABKL}{\bkmkend AAAAAAABKL}
+{\bkmkstart AAAAAAABJS}{\bkmkend AAAAAAABJS}
 00443     {\cf20 // Test duration statistics}\par
-{\bkmkstart AAAAAAABKO}{\bkmkend AAAAAAABKO}
+{\bkmkstart AAAAAAABJT}{\bkmkend AAAAAAABJT}
 00444     {\cf17 auto} total_duration = std::chrono::nanoseconds(0);\par
-{\bkmkstart AAAAAAABKU}{\bkmkend AAAAAAABKU}
+{\bkmkstart AAAAAAABJV}{\bkmkend AAAAAAABJV}
 00445     {\cf19 for} ({\cf17 const} {\cf17 auto}& measurement : measurements) \{\par
-{\bkmkstart AAAAAAABKX}{\bkmkend AAAAAAABKX}
+{\bkmkstart AAAAAAABJW}{\bkmkend AAAAAAABJW}
 00446         total_duration += measurement;\par
-{\bkmkstart AAAAAAABLA}{\bkmkend AAAAAAABLA}
+{\bkmkstart AAAAAAABJZ}{\bkmkend AAAAAAABJZ}
 00447     \}\par
-{\bkmkstart AAAAAAABLB}{\bkmkend AAAAAAABLB}
+{\bkmkstart AAAAAAABKB}{\bkmkend AAAAAAABKB}
 00448     \par
-{\bkmkstart AAAAAAABLD}{\bkmkend AAAAAAABLD}
+{\bkmkstart AAAAAAABKC}{\bkmkend AAAAAAABKC}
 00449     EXPECT_GT(total_duration.count(), 0);\par
-{\bkmkstart AAAAAAABLI}{\bkmkend AAAAAAABLI}
+{\bkmkstart AAAAAAABKE}{\bkmkend AAAAAAABKE}
 00450 \}\par
-{\bkmkstart AAAAAAABLJ}{\bkmkend AAAAAAABLJ}
+{\bkmkstart AAAAAAABKF}{\bkmkend AAAAAAABKF}
 00451 \par
-{\bkmkstart AAAAAAABLM}{\bkmkend AAAAAAABLM}
+{\bkmkstart AAAAAAABKH}{\bkmkend AAAAAAABKH}
 00452 \} {\cf20 // namespace}\par
 }
 }

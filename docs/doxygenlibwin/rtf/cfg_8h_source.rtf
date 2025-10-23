@@ -151,103 +151,103 @@
 cfg.h\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/cfg.h}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/cfg.h}
-{\bkmkstart AAAAAAAAHB}
-{\bkmkend AAAAAAAAHB}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAAIQ}
+{\bkmkend AAAAAAAAIQ}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIR" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
 \pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
-2 {\cf21 #include "{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 ds/graph.h}}}
+2 {\cf21 #include "{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 ds/graph.h}}}
 "}\par
 3 {\cf21 #include "{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 translator/ast.h}}}
 "}\par
 4 {\cf21 #include <unordered_map>}\par
 5 \par
-6 {\cf17 namespace }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGE" }{}}{\fldrslt {\cs37\ul\cf2 translator}}}
+6 {\cf17 namespace }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGG" }{}}{\fldrslt {\cs37\ul\cf2 translator}}}
  \{\par
 7 \par
-8 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 CFG}}}
+8 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIT" }{}}{\fldrslt {\cs37\ul\cf2 CFG}}}
  \{\par
-9     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHX" }{}}{\fldrslt {\cs37\ul\cf2 ds::Graph}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
+9     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIU" }{}}{\fldrslt {\cs37\ul\cf2 ds::Graph}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIV" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
 ;\par
 10     {\cf20 // label -> index mapping for convenience}\par
-11     std::unordered_map<int, int> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
+11     std::unordered_map<int, int> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
 ;\par
 12 \};\par
 13 \par
-14 {\cf17 inline} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 CFG}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIK" }{}}{\fldrslt {\cs37\ul\cf2 build_cfg}}}
-({\cf17 const} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIL" }{}}{\fldrslt {\cs37\ul\cf2 Program}}}
+14 {\cf17 inline} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIT" }{}}{\fldrslt {\cs37\ul\cf2 CFG}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIX" }{}}{\fldrslt {\cs37\ul\cf2 build_cfg}}}
+({\cf17 const} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGU" }{}}{\fldrslt {\cs37\ul\cf2 Program}}}
 & p)\{\par
-15     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 CFG}}}
- cfg; {\cf18 int} n = {\cf17 static_cast<}{\cf18 int}{\cf17 >}(p.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIN" }{}}{\fldrslt {\cs37\ul\cf2 stmts}}}
-.size()); cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
-.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 resize}}}
+15     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIT" }{}}{\fldrslt {\cs37\ul\cf2 CFG}}}
+ cfg; {\cf18 int} n = {\cf17 static_cast<}{\cf18 int}{\cf17 >}(p.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIK" }{}}{\fldrslt {\cs37\ul\cf2 stmts}}}
+.size()); cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIV" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
+.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 resize}}}
 (n);\par
-16     {\cf19 for} ({\cf18 int} i=0;i<n;i++)\{ cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
-[p.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIM" }{}}{\fldrslt {\cs37\ul\cf2 labels}}}
+16     {\cf19 for} ({\cf18 int} i=0;i<n;i++)\{ cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
+[p.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 labels}}}
 [i]] = i; \}\par
 17     {\cf17 auto} next_index = [&]({\cf18 int} i)->{\cf18 int}\{ {\cf19 return} (i+1<n)?(i+1):-1; \};\par
 18     {\cf19 for} ({\cf18 int} i=0;i<n;i++)\{\par
-19         {\cf17 auto}& s = p.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIN" }{}}{\fldrslt {\cs37\ul\cf2 stmts}}}
+19         {\cf17 auto}& s = p.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIK" }{}}{\fldrslt {\cs37\ul\cf2 stmts}}}
 [i];\par
 20         {\cf18 int} ni = next_index(i);\par
 21         {\cf19 switch} (s->kind())\{\par
-22             {\cf19 case} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHC" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Goto}}}
+22             {\cf19 case} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHG" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Goto}}}
 : \{\par
-23                 {\cf18 int} tgt = {\cf17 static_cast<}{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIO" }{}}{\fldrslt {\cs37\ul\cf2 GotoStmt}}}
-*{\cf17 >}(s.get())->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHV" }{}}{\fldrslt {\cs37\ul\cf2 target}}}
+23                 {\cf18 int} tgt = {\cf17 static_cast<}{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIY" }{}}{\fldrslt {\cs37\ul\cf2 GotoStmt}}}
+*{\cf17 >}(s.get())->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 target}}}
 ;\par
-24                 {\cf17 auto} it = cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
+24                 {\cf17 auto} it = cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
 .find(tgt);\par
-25                 {\cf19 if} (it!=cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
-.end()) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
-.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
+25                 {\cf19 if} (it!=cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
+.end()) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIV" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
+.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
 (i, it->second);\par
 26                 {\cf19 break};\par
 27             \}\par
-28             {\cf19 case} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHE" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::IfGoto}}}
+28             {\cf19 case} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHH" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::IfGoto}}}
 : \{\par
-29                 {\cf18 int} tgt = {\cf17 static_cast<}{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIP" }{}}{\fldrslt {\cs37\ul\cf2 IfGotoStmt}}}
+29                 {\cf18 int} tgt = {\cf17 static_cast<}{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIZ" }{}}{\fldrslt {\cs37\ul\cf2 IfGotoStmt}}}
 *{\cf17 >}(s.get())->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 target}}}
 ;\par
-30                 {\cf17 auto} it = cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
+30                 {\cf17 auto} it = cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
 .find(tgt);\par
-31                 {\cf19 if} (it!=cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
-.end()) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
-.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
+31                 {\cf19 if} (it!=cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
+.end()) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIV" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
+.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
 (i, it->second);\par
-32                 {\cf19 if} (ni!=-1) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
-.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
+32                 {\cf19 if} (ni!=-1) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIV" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
+.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
 (i, ni);\par
 33                 {\cf19 break};\par
 34             \}\par
-35             {\cf19 case} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHF" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Gosub}}}
+35             {\cf19 case} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Gosub}}}
 : \{\par
-36                 {\cf18 int} tgt = {\cf17 static_cast<}{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIQ" }{}}{\fldrslt {\cs37\ul\cf2 GosubStmt}}}
+36                 {\cf18 int} tgt = {\cf17 static_cast<}{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJA" }{}}{\fldrslt {\cs37\ul\cf2 GosubStmt}}}
 *{\cf17 >}(s.get())->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIF" }{}}{\fldrslt {\cs37\ul\cf2 target}}}
 ;\par
-37                 {\cf17 auto} it = cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
+37                 {\cf17 auto} it = cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
 .find(tgt);\par
-38                 {\cf19 if} (it!=cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
-.end()) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
-.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
+38                 {\cf19 if} (it!=cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 label_to_index}}}
+.end()) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIV" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
+.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
 (i, it->second);\par
-39                 {\cf19 if} (ni!=-1) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
-.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
+39                 {\cf19 if} (ni!=-1) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIV" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
+.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
 (i, ni);\par
 40                 {\cf19 break};\par
 41             \}\par
-42             {\cf19 case} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHG" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Return}}}
+42             {\cf19 case} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Return}}}
 : \{\par
 43                 {\cf20 // No default successor}\par
 44                 {\cf19 break};\par
 45             \}\par
 46             {\cf19 default}: \{\par
-47                 {\cf19 if} (ni!=-1) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
-.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
+47                 {\cf19 if} (ni!=-1) cfg.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIV" }{}}{\fldrslt {\cs37\ul\cf2 g}}}
+.{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
 (i, ni);\par
 48                 {\cf19 break};\par
 49             \}\par
