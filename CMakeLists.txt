@@ -21,6 +21,18 @@ target_link_libraries(translator PRIVATE translatorlib)
 add_executable(basic_translator src/Translateapp/src/Translateapp.cpp src/Translate/src/Translate.cpp)
 target_include_directories(basic_translator PRIVATE src)
 
+# 37-Basic Language Translator Application
+add_executable(language_translator 
+    apps/language_translator/main.cpp 
+    src/LanguageTranslator/src/LanguageTranslator.cpp
+    src/DoubleLinkedList/src/DoubleLinkedList.cpp
+    src/HashTable/src/HashTable.cpp
+    src/StackQueue/src/StackQueue.cpp
+    src/Heap/src/Heap.cpp
+    src/SparseMatrix/src/SparseMatrix.cpp
+)
+target_include_directories(language_translator PRIVATE src)
+
 # Safe Chrono Calculator Library
 add_library(safechronolib src/SafeChronoCalculator.cpp)
 target_include_directories(safechronolib PUBLIC src)

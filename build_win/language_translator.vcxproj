@@ -22,31 +22,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4817B609-CCFE-3D1C-8365-2BD8E67A96BC}</ProjectGuid>
+    <ProjectGuid>{D094C1B7-8530-3271-AD52-058849263243}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
-    <ProjectName>safechronolib</ProjectName>
+    <ProjectName>language_translator</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
@@ -60,21 +60,29 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">safechronolib.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">safechronolib</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">language_translator.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">language_translator</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">safechronolib.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">safechronolib</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">language_translator.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">language_translator</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\MinSizeRel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">safechronolib.dir\MinSizeRel\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">safechronolib</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">language_translator.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">language_translator</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\RelWithDebInfo\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">safechronolib.dir\RelWithDebInfo\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">safechronolib</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">language_translator.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">language_translator</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -111,9 +119,23 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <Lib>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-    </Lib>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/Debug/language_translator.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/Debug/language_translator.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -151,9 +173,23 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <Lib>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-    </Lib>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/Release/language_translator.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/Release/language_translator.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
@@ -191,9 +227,23 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <Lib>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-    </Lib>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/MinSizeRel/language_translator.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/MinSizeRel/language_translator.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
@@ -230,9 +280,23 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <Lib>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-    </Lib>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/RelWithDebInfo/language_translator.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/RelWithDebInfo/language_translator.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\CMakeLists.txt">
@@ -292,7 +356,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src\SafeChronoCalculator.cpp" />
+    <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\apps\language_translator\main.cpp" />
+    <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src\LanguageTranslator\src\LanguageTranslator.cpp" />
+    <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src\DoubleLinkedList\src\DoubleLinkedList.cpp" />
+    <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src\HashTable\src\HashTable.cpp" />
+    <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src\StackQueue\src\StackQueue.cpp" />
+    <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src\Heap\src\Heap.cpp" />
+    <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src\SparseMatrix\src\SparseMatrix.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

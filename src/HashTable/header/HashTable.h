@@ -1,133 +1,64 @@
 /**
  * @file HashTable.h
- * @brief Hash Table implementation for Simple Key-Value Database
+ * @brief Hash Table implementation
  */
 
 #ifndef HASH_TABLE_H
 #define HASH_TABLE_H
 
 #include <vector>
-#include <list>
 #include <functional>
-#include <string>
+#include <stdexcept>
 
 namespace Coruh
 {
     namespace DataStructures
     {
-        /**
-         * @class HashTable
-         * @brief Hash table with chaining for collision resolution
-         */
         template<typename K, typename V>
         class HashTable
         {
         private:
-            struct KeyValuePair
+            struct HashNode
             {
                 K key;
                 V value;
+                bool isDeleted;
                 
-                KeyValuePair(const K& k, const V& v) : key(k), value(v) {}
+                HashNode() : isDeleted(false) {}
+                HashNode(const K& k, const V& v) : key(k), value(v), isDeleted(false) {}
             };
             
-            std::vector<std::list<KeyValuePair>> buckets;
+            std::vector<HashNode> table;
+            size_t size_;
             size_t capacity;
-            size_t size;
-            std::hash<K> hasher;
+            double loadFactor;
             
-            /**
-             * Hash function
-             */
             size_t hash(const K& key) const;
-            
-            /**
-             * Resize table when load factor is too high
-             */
+            size_t findIndex(const K& key) const;
             void resize();
-            
+
         public:
-            /**
-             * Constructor
-             * @param initialCapacity Initial capacity
-             */
-            explicit HashTable(size_t initialCapacity = 16);
+            HashTable(size_t initialCapacity = 16, double loadFactor = 0.75);
+            ~HashTable() = default;
             
-            /**
-             * Insert key-value pair
-             * @param key Key
-             * @param value Value
-             */
+            // Basic operations
             void insert(const K& key, const V& value);
-            
-            /**
-             * Get value by key
-             * @param key Key
-             * @return Value if found
-             */
-            V get(const K& key) const;
-            
-            /**
-             * Check if key exists
-             * @param key Key to check
-             * @return true if key exists
-             */
             bool contains(const K& key) const;
-            
-            /**
-             * Remove key-value pair
-             * @param key Key to remove
-             * @return true if removed
-             */
-            bool remove(const K& key);
-            
-            /**
-             * Get table size
-             * @return Number of elements
-             */
-            size_t getSize() const;
-            
-            /**
-             * Get table capacity
-             * @return Table capacity
-             */
-            size_t getCapacity() const;
-            
-            /**
-             * Check if table is empty
-             * @return true if empty
-             */
-            bool isEmpty() const;
-            
-            /**
-             * Get load factor
-             * @return Load factor
-             */
-            double getLoadFactor() const;
-            
-            /**
-             * Clear all elements
-             */
+            V& get(const K& key);
+            const V& get(const K& key) const;
+            void remove(const K& key);
             void clear();
             
-            /**
-             * Display all key-value pairs
-             */
-            void display() const;
+            // Properties
+            size_t getSize() const;
+            bool isEmpty() const;
             
-            /**
-             * Get all keys
-             * @return Vector of all keys
-             */
-            std::vector<K> getAllKeys() const;
-            
-            /**
-             * Get all values
-             * @return Vector of all values
-             */
-            std::vector<V> getAllValues() const;
+            // Utility
+            void print() const;
         };
     }
 }
+
+#include "HashTable.cpp"
 
 #endif // HASH_TABLE_H

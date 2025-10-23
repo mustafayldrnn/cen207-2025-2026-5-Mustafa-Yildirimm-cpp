@@ -1,198 +1,182 @@
+/**
+ * @file DoubleLinkedList.cpp
+ * @brief Double Linked List implementation
+ */
+
 #include "../header/DoubleLinkedList.h"
 #include <iostream>
-#include <stdexcept>
 
-using namespace Coruh::DataStructures;
+namespace Coruh
+{
+    namespace DataStructures
+    {
+        template<typename T>
+        DoubleLinkedList<T>::DoubleLinkedList() : head(nullptr), tail(nullptr), size_(0) {}
 
-template<typename T>
-DoubleLinkedList<T>::DoubleLinkedList() : head(nullptr), tail(nullptr), current(nullptr), size(0) {}
-
-template<typename T>
-DoubleLinkedList<T>::~DoubleLinkedList() {
-    clear();
-}
-
-template<typename T>
-void DoubleLinkedList<T>::append(const T& value) {
-    auto newNode = std::make_shared<Node>(value);
-    
-    if (isEmpty()) {
-        head = tail = current = newNode;
-    } else {
-        tail->next = newNode;
-        newNode->prev = tail;
-        tail = newNode;
-    }
-    size++;
-}
-
-template<typename T>
-void DoubleLinkedList<T>::prepend(const T& value) {
-    auto newNode = std::make_shared<Node>(value);
-    
-    if (isEmpty()) {
-        head = tail = current = newNode;
-    } else {
-        newNode->next = head;
-        head->prev = newNode;
-        head = newNode;
-    }
-    size++;
-}
-
-template<typename T>
-bool DoubleLinkedList<T>::insert(size_t position, const T& value) {
-    if (position > size) {
-        return false;
-    }
-    
-    if (position == 0) {
-        prepend(value);
-        return true;
-    }
-    
-    if (position == size) {
-        append(value);
-        return true;
-    }
-    
-    auto newNode = std::make_shared<Node>(value);
-    auto current = head;
-    
-    for (size_t i = 0; i < position - 1; ++i) {
-        current = current->next;
-    }
-    
-    newNode->next = current->next;
-    newNode->prev = current;
-    current->next->prev = newNode;
-    current->next = newNode;
-    
-    size++;
-    return true;
-}
-
-template<typename T>
-bool DoubleLinkedList<T>::remove(size_t position) {
-    if (position >= size || isEmpty()) {
-        return false;
-    }
-    
-    if (size == 1) {
-        head = tail = current = nullptr;
-    } else if (position == 0) {
-        head = head->next;
-        head->prev = nullptr;
-        if (current == head->prev) {
-            current = head;
+        template<typename T>
+        DoubleLinkedList<T>::~DoubleLinkedList()
+        {
+            clear();
         }
-    } else if (position == size - 1) {
-        tail = tail->prev;
-        tail->next = nullptr;
-        if (current == tail->next) {
-            current = tail;
+
+        template<typename T>
+        void DoubleLinkedList<T>::append(const T& value)
+        {
+            Node* newNode = new Node(value);
+            
+            if (isEmpty()) {
+                head = tail = newNode;
+            } else {
+                tail->next = newNode;
+                newNode->prev = tail;
+                tail = newNode;
+            }
+            size_++;
         }
-    } else {
-        auto nodeToRemove = head;
-        for (size_t i = 0; i < position; ++i) {
-            nodeToRemove = nodeToRemove->next;
+
+        template<typename T>
+        void DoubleLinkedList<T>::prepend(const T& value)
+        {
+            Node* newNode = new Node(value);
+            
+            if (isEmpty()) {
+                head = tail = newNode;
+            } else {
+                newNode->next = head;
+                head->prev = newNode;
+                head = newNode;
+            }
+            size_++;
         }
-        
-        nodeToRemove->prev->next = nodeToRemove->next;
-        nodeToRemove->next->prev = nodeToRemove->prev;
-        
-        if (current == nodeToRemove) {
-            current = nodeToRemove->next;
+
+        template<typename T>
+        void DoubleLinkedList<T>::insert(size_t index, const T& value)
+        {
+            if (index > size_) {
+                throw std::out_of_range("Index out of range");
+            }
+            
+            if (index == 0) {
+                prepend(value);
+            } else if (index == size_) {
+                append(value);
+            } else {
+                Node* newNode = new Node(value);
+                Node* current = head;
+                
+                for (size_t i = 0; i < index; ++i) {
+                    current = current->next;
+                }
+                
+                newNode->next = current;
+                newNode->prev = current->prev;
+                current->prev->next = newNode;
+                current->prev = newNode;
+                size_++;
+            }
+        }
+
+        template<typename T>
+        void DoubleLinkedList<T>::remove(size_t index)
+        {
+            if (index >= size_) {
+                throw std::out_of_range("Index out of range");
+            }
+            
+            Node* current = head;
+            for (size_t i = 0; i < index; ++i) {
+                current = current->next;
+            }
+            
+            if (current->prev) {
+                current->prev->next = current->next;
+            } else {
+                head = current->next;
+            }
+            
+            if (current->next) {
+                current->next->prev = current->prev;
+            } else {
+                tail = current->prev;
+            }
+            
+            delete current;
+            size_--;
+        }
+
+        template<typename T>
+        void DoubleLinkedList<T>::clear()
+        {
+            while (head) {
+                Node* temp = head;
+                head = head->next;
+                delete temp;
+            }
+            head = tail = nullptr;
+            size_ = 0;
+        }
+
+        template<typename T>
+        T& DoubleLinkedList<T>::get(size_t index)
+        {
+            if (index >= size_) {
+                throw std::out_of_range("Index out of range");
+            }
+            
+            Node* current = head;
+            for (size_t i = 0; i < index; ++i) {
+                current = current->next;
+            }
+            return current->data;
+        }
+
+        template<typename T>
+        const T& DoubleLinkedList<T>::get(size_t index) const
+        {
+            if (index >= size_) {
+                throw std::out_of_range("Index out of range");
+            }
+            
+            Node* current = head;
+            for (size_t i = 0; i < index; ++i) {
+                current = current->next;
+            }
+            return current->data;
+        }
+
+        template<typename T>
+        T& DoubleLinkedList<T>::operator[](size_t index)
+        {
+            return get(index);
+        }
+
+        template<typename T>
+        const T& DoubleLinkedList<T>::operator[](size_t index) const
+        {
+            return get(index);
+        }
+
+        template<typename T>
+        size_t DoubleLinkedList<T>::getSize() const
+        {
+            return size_;
+        }
+
+        template<typename T>
+        bool DoubleLinkedList<T>::isEmpty() const
+        {
+            return size_ == 0;
+        }
+
+        template<typename T>
+        void DoubleLinkedList<T>::print() const
+        {
+            Node* current = head;
+            while (current) {
+                std::cout << current->data << " ";
+                current = current->next;
+            }
+            std::cout << std::endl;
         }
     }
-    
-    size--;
-    return true;
 }
-
-template<typename T>
-T DoubleLinkedList<T>::get(size_t position) const {
-    if (position >= size) {
-        throw std::out_of_range("Position out of range");
-    }
-    
-    auto current = head;
-    for (size_t i = 0; i < position; ++i) {
-        current = current->next;
-    }
-    
-    return current->data;
-}
-
-template<typename T>
-T DoubleLinkedList<T>::getCurrent() const {
-    if (!current) {
-        throw std::runtime_error("No current element");
-    }
-    return current->data;
-}
-
-template<typename T>
-bool DoubleLinkedList<T>::moveForward() {
-    if (!current || !current->next) {
-        return false;
-    }
-    current = current->next;
-    return true;
-}
-
-template<typename T>
-bool DoubleLinkedList<T>::moveBackward() {
-    if (!current || !current->prev) {
-        return false;
-    }
-    current = current->prev;
-    return true;
-}
-
-template<typename T>
-bool DoubleLinkedList<T>::canMoveForward() const {
-    return current && current->next;
-}
-
-template<typename T>
-bool DoubleLinkedList<T>::canMoveBackward() const {
-    return current && current->prev;
-}
-
-template<typename T>
-size_t DoubleLinkedList<T>::getSize() const {
-    return size;
-}
-
-template<typename T>
-bool DoubleLinkedList<T>::isEmpty() const {
-    return size == 0;
-}
-
-template<typename T>
-void DoubleLinkedList<T>::clear() {
-    while (head) {
-        head = head->next;
-    }
-    tail = current = nullptr;
-    size = 0;
-}
-
-template<typename T>
-void DoubleLinkedList<T>::display() const {
-    auto current = head;
-    std::cout << "List: ";
-    while (current) {
-        std::cout << current->data;
-        if (current->next) {
-            std::cout << " <-> ";
-        }
-        current = current->next;
-    }
-    std::cout << std::endl;
-}
-
-// Explicit template instantiation for common types
-template class DoubleLinkedList<std::string>;
-template class DoubleLinkedList<int>;
