@@ -42,6 +42,6 @@ namespace Coruh
     }
 }
 
-#include "SparseMatrix.cpp"
+// Template implementation is in the header file
 
 #endif // SPARSE_MATRIX_H

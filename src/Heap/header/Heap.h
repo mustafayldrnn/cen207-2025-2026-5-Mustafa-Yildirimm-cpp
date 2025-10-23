@@ -47,6 +47,6 @@ namespace Coruh
     }
 }
 
-#include "Heap.cpp"
+// Template implementation is in the header file
 
 #endif // HEAP_H

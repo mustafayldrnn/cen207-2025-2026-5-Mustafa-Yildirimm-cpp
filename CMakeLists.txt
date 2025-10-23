@@ -25,11 +25,6 @@ target_include_directories(basic_translator PRIVATE src)
 add_executable(language_translator 
     apps/language_translator/main.cpp 
     src/LanguageTranslator/src/LanguageTranslator.cpp
-    src/DoubleLinkedList/src/DoubleLinkedList.cpp
-    src/HashTable/src/HashTable.cpp
-    src/StackQueue/src/StackQueue.cpp
-    src/Heap/src/Heap.cpp
-    src/SparseMatrix/src/SparseMatrix.cpp
 )
 target_include_directories(language_translator PRIVATE src)
 
