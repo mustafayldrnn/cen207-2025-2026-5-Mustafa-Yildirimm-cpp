@@ -1,0 +1,156 @@
+\doxysection{C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/tests/test\+\_\+translator\+\_\+additional.cpp File Reference}
+\hypertarget{test__translator__additional_8cpp}{}\label{test__translator__additional_8cpp}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_translator\_additional.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_translator\_additional.cpp}}
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}translator/lexer.\+h"{}}\newline
+{\ttfamily \#include "{}translator/parser.\+h"{}}\newline
+{\ttfamily \#include "{}translator/codegen.\+h"{}}\newline
+{\ttfamily \#include "{}translator/ast.\+h"{}}\newline
+Include dependency graph for test\+\_\+translator\+\_\+additional.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__translator__additional_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}} (Parser\+Errors, Missing\+RParen)
+\item 
+\mbox{\hyperlink{test__translator__additional_8cpp_a58eeba6a901b6ce031a9adf726aa6f17}{TEST}} (Parser\+Errors, Unknown\+Statement)
+\item 
+\mbox{\hyperlink{test__translator__additional_8cpp_a5e01015d67e43affd1e6ac2198deeb5f}{TEST}} (Parser\+Errors, Let\+Missing\+Assign)
+\item 
+\mbox{\hyperlink{test__translator__additional_8cpp_af53a37441ac6ee09fb1973b0fccb3bea}{TEST}} (Parser\+Errors, Input\+Needs\+Identifier)
+\item 
+\mbox{\hyperlink{test__translator__additional_8cpp_a4ac96865b7fe2b0f8dcafb22e531ac3b}{TEST}} (Parser\+Errors, If\+Requires\+Then)
+\item 
+\mbox{\hyperlink{test__translator__additional_8cpp_a2c2b01219fa918d1e27ef67bd0b70ce8}{TEST}} (Parser\+Errors, If\+Then\+Requires\+Number)
+\item 
+\mbox{\hyperlink{test__translator__additional_8cpp_a1d4c7f9e64231d3818b91f504416a617}{TEST}} (Parser\+Errors, Goto\+Requires\+Number)
+\item 
+\mbox{\hyperlink{test__translator__additional_8cpp_a20a827b1d4c7d881b955e37b76465c6e}{TEST}} (Parser\+Program, Auto\+Labels\+When\+Missing)
+\item 
+\mbox{\hyperlink{test__translator__additional_8cpp_a324f13166bedacba2a9f028f5e4e6f53}{TEST}} (Lexer, Unknown\+Char\+Is\+Ignored)
+\item 
+\mbox{\hyperlink{test__translator__additional_8cpp_a5c1cdba96f253346ebc4f90039293ea6}{TEST}} (Codegen\+Paths, Empty\+Program\+Returns\+Early)
+\item 
+\mbox{\hyperlink{test__translator__additional_8cpp_a87666bc2c76582e15f883cb39424af64}{TEST}} (Codegen\+Paths, Input\+Goto\+If\+Gosub\+Return)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{test__translator__additional_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{test__translator__additional_8cpp_a5c1cdba96f253346ebc4f90039293ea6}\index{test\_translator\_additional.cpp@{test\_translator\_additional.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_translator\_additional.cpp@{test\_translator\_additional.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
+{\footnotesize\ttfamily \label{test__translator__additional_8cpp_a5c1cdba96f253346ebc4f90039293ea6} 
+TEST (\begin{DoxyParamCaption}\item[{Codegen\+Paths}]{}{, }\item[{Empty\+Program\+Returns\+Early}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__translator__additional_8cpp_source_l00097}{97}} of file \mbox{\hyperlink{test__translator__additional_8cpp_source}{test\+\_\+translator\+\_\+additional.\+cpp}}.
+
+\Hypertarget{test__translator__additional_8cpp_a87666bc2c76582e15f883cb39424af64}\index{test\_translator\_additional.cpp@{test\_translator\_additional.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_translator\_additional.cpp@{test\_translator\_additional.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
+{\footnotesize\ttfamily \label{test__translator__additional_8cpp_a87666bc2c76582e15f883cb39424af64} 
+TEST (\begin{DoxyParamCaption}\item[{Codegen\+Paths}]{}{, }\item[{Input\+Goto\+If\+Gosub\+Return}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__translator__additional_8cpp_source_l00105}{105}} of file \mbox{\hyperlink{test__translator__additional_8cpp_source}{test\+\_\+translator\+\_\+additional.\+cpp}}.
+
+\Hypertarget{test__translator__additional_8cpp_a324f13166bedacba2a9f028f5e4e6f53}\index{test\_translator\_additional.cpp@{test\_translator\_additional.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_translator\_additional.cpp@{test\_translator\_additional.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
+{\footnotesize\ttfamily \label{test__translator__additional_8cpp_a324f13166bedacba2a9f028f5e4e6f53} 
+TEST (\begin{DoxyParamCaption}\item[{Lexer}]{}{, }\item[{Unknown\+Char\+Is\+Ignored}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__translator__additional_8cpp_source_l00087}{87}} of file \mbox{\hyperlink{test__translator__additional_8cpp_source}{test\+\_\+translator\+\_\+additional.\+cpp}}.
+
+\Hypertarget{test__translator__additional_8cpp_a1d4c7f9e64231d3818b91f504416a617}\index{test\_translator\_additional.cpp@{test\_translator\_additional.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_translator\_additional.cpp@{test\_translator\_additional.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
+{\footnotesize\ttfamily \label{test__translator__additional_8cpp_a1d4c7f9e64231d3818b91f504416a617} 
+TEST (\begin{DoxyParamCaption}\item[{Parser\+Errors}]{}{, }\item[{Goto\+Requires\+Number}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__translator__additional_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{test__translator__additional_8cpp_source}{test\+\_\+translator\+\_\+additional.\+cpp}}.
+
+\Hypertarget{test__translator__additional_8cpp_a4ac96865b7fe2b0f8dcafb22e531ac3b}\index{test\_translator\_additional.cpp@{test\_translator\_additional.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_translator\_additional.cpp@{test\_translator\_additional.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
+{\footnotesize\ttfamily \label{test__translator__additional_8cpp_a4ac96865b7fe2b0f8dcafb22e531ac3b} 
+TEST (\begin{DoxyParamCaption}\item[{Parser\+Errors}]{}{, }\item[{If\+Requires\+Then}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__translator__additional_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{test__translator__additional_8cpp_source}{test\+\_\+translator\+\_\+additional.\+cpp}}.
+
+\Hypertarget{test__translator__additional_8cpp_a2c2b01219fa918d1e27ef67bd0b70ce8}\index{test\_translator\_additional.cpp@{test\_translator\_additional.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_translator\_additional.cpp@{test\_translator\_additional.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
+{\footnotesize\ttfamily \label{test__translator__additional_8cpp_a2c2b01219fa918d1e27ef67bd0b70ce8} 
+TEST (\begin{DoxyParamCaption}\item[{Parser\+Errors}]{}{, }\item[{If\+Then\+Requires\+Number}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__translator__additional_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{test__translator__additional_8cpp_source}{test\+\_\+translator\+\_\+additional.\+cpp}}.
+
+\Hypertarget{test__translator__additional_8cpp_af53a37441ac6ee09fb1973b0fccb3bea}\index{test\_translator\_additional.cpp@{test\_translator\_additional.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_translator\_additional.cpp@{test\_translator\_additional.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
+{\footnotesize\ttfamily \label{test__translator__additional_8cpp_af53a37441ac6ee09fb1973b0fccb3bea} 
+TEST (\begin{DoxyParamCaption}\item[{Parser\+Errors}]{}{, }\item[{Input\+Needs\+Identifier}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__translator__additional_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{test__translator__additional_8cpp_source}{test\+\_\+translator\+\_\+additional.\+cpp}}.
+
+\Hypertarget{test__translator__additional_8cpp_a5e01015d67e43affd1e6ac2198deeb5f}\index{test\_translator\_additional.cpp@{test\_translator\_additional.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_translator\_additional.cpp@{test\_translator\_additional.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
+{\footnotesize\ttfamily \label{test__translator__additional_8cpp_a5e01015d67e43affd1e6ac2198deeb5f} 
+TEST (\begin{DoxyParamCaption}\item[{Parser\+Errors}]{}{, }\item[{Let\+Missing\+Assign}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__translator__additional_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{test__translator__additional_8cpp_source}{test\+\_\+translator\+\_\+additional.\+cpp}}.
+
+\Hypertarget{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}\index{test\_translator\_additional.cpp@{test\_translator\_additional.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_translator\_additional.cpp@{test\_translator\_additional.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
+{\footnotesize\ttfamily \label{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181} 
+TEST (\begin{DoxyParamCaption}\item[{Parser\+Errors}]{}{, }\item[{Missing\+RParen}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__translator__additional_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{test__translator__additional_8cpp_source}{test\+\_\+translator\+\_\+additional.\+cpp}}.
+
+\Hypertarget{test__translator__additional_8cpp_a58eeba6a901b6ce031a9adf726aa6f17}\index{test\_translator\_additional.cpp@{test\_translator\_additional.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_translator\_additional.cpp@{test\_translator\_additional.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
+{\footnotesize\ttfamily \label{test__translator__additional_8cpp_a58eeba6a901b6ce031a9adf726aa6f17} 
+TEST (\begin{DoxyParamCaption}\item[{Parser\+Errors}]{}{, }\item[{Unknown\+Statement}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__translator__additional_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{test__translator__additional_8cpp_source}{test\+\_\+translator\+\_\+additional.\+cpp}}.
+
+\Hypertarget{test__translator__additional_8cpp_a20a827b1d4c7d881b955e37b76465c6e}\index{test\_translator\_additional.cpp@{test\_translator\_additional.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_translator\_additional.cpp@{test\_translator\_additional.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
+{\footnotesize\ttfamily \label{test__translator__additional_8cpp_a20a827b1d4c7d881b955e37b76465c6e} 
+TEST (\begin{DoxyParamCaption}\item[{Parser\+Program}]{}{, }\item[{Auto\+Labels\+When\+Missing}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__translator__additional_8cpp_source_l00077}{77}} of file \mbox{\hyperlink{test__translator__additional_8cpp_source}{test\+\_\+translator\+\_\+additional.\+cpp}}.
+
