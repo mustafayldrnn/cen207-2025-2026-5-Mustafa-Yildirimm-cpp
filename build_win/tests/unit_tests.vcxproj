@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/_deps/googletest-src/googletest/include" /external:I "C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/_deps/googletest-src/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -111,10 +111,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -153,7 +153,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/_deps/googletest-src/googletest/include" /external:I "C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/_deps/googletest-src/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -179,10 +179,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -221,7 +221,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/_deps/googletest-src/googletest/include" /external:I "C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/_deps/googletest-src/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -247,10 +247,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -289,7 +289,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/_deps/googletest-src/googletest/include" /external:I "C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/build_win/_deps/googletest-src/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -314,10 +314,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\..\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\src;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest\include;C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\build_win\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -419,8 +419,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\test_graph_bfs_dfs.cpp" />
     <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\test_hash_table.cpp" />
     <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\test_heap.cpp" />
+    <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\test_language_translator_comprehensive.cpp" />
     <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\test_lexer_parser_codegen.cpp" />
     <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\test_overflow_protection.cpp" />
+    <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\test_safe_chrono_calculator.cpp" />
+    <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\test_simple_coverage_boost.cpp" />
     <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\test_sparse_matrix.cpp" />
     <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\test_stack_queue.cpp" />
     <ClCompile Include="C:\Users\ahmet\OneDrive\Masaüstü\DataStructure\cen207-2025-2026-5-Mustafa-Yildirimm-cpp\tests\test_string_view_advanced_coverage.cpp" />

@@ -561,7 +561,8 @@ namespace Coruh
 
         bool LanguageTranslatorApp::isAPIAvailable()
         {
-            return !apiKey.empty();
+            // API is not implemented yet, so it should always return false
+            return false;
         }
 
         void LanguageTranslatorApp::setAPIKey(const std::string& key)

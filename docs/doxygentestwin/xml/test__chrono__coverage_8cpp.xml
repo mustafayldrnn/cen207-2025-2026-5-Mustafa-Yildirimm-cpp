@@ -59,7 +59,7 @@
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestHighResolutionClock)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestHighResolutionClock)<sp/>{</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>high_resolution_clock</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>std::chrono::high_resolution_clock::now();</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -72,7 +72,7 @@
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_GT(duration.count(),<sp/>0);</highlight></codeline>
 <codeline lineno="46"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestSteadyClock)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestSteadyClock)<sp/>{</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>steady_clock</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>std::chrono::steady_clock::now();</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -85,7 +85,7 @@
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_GT(duration.count(),<sp/>0);</highlight></codeline>
 <codeline lineno="63"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestSystemClock)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestSystemClock)<sp/>{</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>system_clock</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>now<sp/>=<sp/>std::chrono::system_clock::now();</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>time_t_now<sp/>=<sp/>std::chrono::system_clock::to_time_t(now);</highlight></codeline>
@@ -93,7 +93,7 @@
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_GT(time_t_now,<sp/>0);</highlight></codeline>
 <codeline lineno="75"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestDurationOperations)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestDurationOperations)<sp/>{</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>different<sp/>duration<sp/>types</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>duration1<sp/>=<sp/>std::chrono::seconds(1);</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>duration2<sp/>=<sp/>std::chrono::milliseconds(1000);</highlight></codeline>
@@ -108,7 +108,7 @@
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(diff.count(),<sp/>0);</highlight></codeline>
 <codeline lineno="94"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestTimePointOperations)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestTimePointOperations)<sp/>{</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>now<sp/>=<sp/>std::chrono::system_clock::now();</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>later<sp/>=<sp/>now<sp/>+<sp/>std::chrono::seconds(1);</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>earlier<sp/>=<sp/>now<sp/>-<sp/>std::chrono::seconds(1);</highlight></codeline>
@@ -117,7 +117,7 @@
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_LT(earlier,<sp/>now);</highlight></codeline>
 <codeline lineno="107"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestDurationCast)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestDurationCast)<sp/>{</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>seconds<sp/>=<sp/>std::chrono::seconds(1);</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>milliseconds<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(seconds);</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>microseconds<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(seconds);</highlight></codeline>
@@ -128,7 +128,7 @@
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(nanoseconds.count(),<sp/>1000000000);</highlight></codeline>
 <codeline lineno="122"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestClockProperties)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestClockProperties)<sp/>{</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>clock<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(std::chrono::high_resolution_clock::is_steady<sp/>||<sp/></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>!std::chrono::high_resolution_clock::is_steady);</highlight></codeline>
@@ -139,7 +139,7 @@
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>!std::chrono::system_clock::is_steady);</highlight></codeline>
 <codeline lineno="137"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestEdgeCases)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestEdgeCases)<sp/>{</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>zero<sp/>duration</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>zero_duration<sp/>=<sp/>std::chrono::seconds(0);</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(zero_duration.count(),<sp/>0);</highlight></codeline>
@@ -153,7 +153,7 @@
 <codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(large_duration.count(),<sp/>24);</highlight></codeline>
 <codeline lineno="155"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestChronoLiterals)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestChronoLiterals)<sp/>{</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std::chrono_literals;</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>duration1<sp/>=<sp/>1s;</highlight></codeline>
@@ -167,7 +167,7 @@
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(duration4.count(),<sp/>1000000000);</highlight></codeline>
 <codeline lineno="173"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight></codeline>
-<codeline lineno="179"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestChronoComparison)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestChronoComparison)<sp/>{</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>duration1<sp/>=<sp/>std::chrono::seconds(1);</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>duration2<sp/>=<sp/>std::chrono::seconds(2);</highlight></codeline>
 <codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>duration3<sp/>=<sp/>std::chrono::seconds(1);</highlight></codeline>
@@ -178,7 +178,7 @@
 <codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(duration1,<sp/>duration2);</highlight></codeline>
 <codeline lineno="188"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"></highlight></codeline>
-<codeline lineno="194"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestChronoArithmetic)<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestChronoArithmetic)<sp/>{</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>duration1<sp/>=<sp/>std::chrono::seconds(5);</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>duration2<sp/>=<sp/>std::chrono::seconds(3);</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -193,7 +193,7 @@
 <codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(div.count(),<sp/>2);</highlight></codeline>
 <codeline lineno="207"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
-<codeline lineno="213"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestAdvancedDurationOperations)<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestAdvancedDurationOperations)<sp/>{</highlight></codeline>
 <codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>different<sp/>duration<sp/>types<sp/>with<sp/>complex<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>hours<sp/>=<sp/>std::chrono::hours(2);</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>minutes<sp/>=<sp/>std::chrono::minutes(30);</highlight></codeline>
@@ -211,7 +211,7 @@
 <codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_GT(ratio.count(),<sp/>0);</highlight></codeline>
 <codeline lineno="229"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"></highlight></codeline>
-<codeline lineno="235"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestClockPrecision)<sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestClockPrecision)<sp/>{</highlight></codeline>
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>high<sp/>resolution<sp/>clock<sp/>precision</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start_hr<sp/>=<sp/>std::chrono::high_resolution_clock::now();</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>std::this_thread::sleep_for(std::chrono::microseconds(100));</highlight></codeline>
@@ -229,7 +229,7 @@
 <codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_GT(duration_sc.count(),<sp/>0);</highlight></codeline>
 <codeline lineno="251"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="252"><highlight class="normal"></highlight></codeline>
-<codeline lineno="257"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestTimePointArithmetic)<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestTimePointArithmetic)<sp/>{</highlight></codeline>
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>now<sp/>=<sp/>std::chrono::system_clock::now();</highlight></codeline>
 <codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>one_second<sp/>=<sp/>std::chrono::seconds(1);</highlight></codeline>
 <codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>one_minute<sp/>=<sp/>std::chrono::minutes(1);</highlight></codeline>
@@ -254,7 +254,7 @@
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_LT(past3,<sp/>now);</highlight></codeline>
 <codeline lineno="280"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="281"><highlight class="normal"></highlight></codeline>
-<codeline lineno="286"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestDurationSpecialCases)<sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestDurationSpecialCases)<sp/>{</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>zero<sp/>duration</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>zero_sec<sp/>=<sp/>std::chrono::seconds(0);</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>zero_ms<sp/>=<sp/>std::chrono::milliseconds(0);</highlight></codeline>
@@ -281,7 +281,7 @@
 <codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(large_ms.count(),<sp/>INT_MAX);</highlight></codeline>
 <codeline lineno="311"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="312"><highlight class="normal"></highlight></codeline>
-<codeline lineno="317"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestClockConversion)<sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestClockConversion)<sp/>{</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>system<sp/>clock<sp/>to<sp/>time_t<sp/>conversion</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>now_sys<sp/>=<sp/>std::chrono::system_clock::now();</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>time_t_now<sp/>=<sp/>std::chrono::system_clock::to_time_t(now_sys);</highlight></codeline>
@@ -300,7 +300,7 @@
 <codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(nanoseconds_val.count(),<sp/>1000000000);</highlight></codeline>
 <codeline lineno="334"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="335"><highlight class="normal"></highlight></codeline>
-<codeline lineno="340"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestChronoLiteralsAdvanced)<sp/>{</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestChronoLiteralsAdvanced)<sp/>{</highlight></codeline>
 <codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std::chrono_literals;</highlight></codeline>
 <codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>various<sp/>literal<sp/>combinations</highlight><highlight class="normal"></highlight></codeline>
@@ -326,7 +326,7 @@
 <codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(div.count(),<sp/>3);</highlight></codeline>
 <codeline lineno="364"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="365"><highlight class="normal"></highlight></codeline>
-<codeline lineno="370"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestClockPropertiesAdvanced)<sp/>{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestClockPropertiesAdvanced)<sp/>{</highlight></codeline>
 <codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>clock<sp/>period<sp/>information</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">hr_clock<sp/>=<sp/>std::chrono::high_resolution_clock;</highlight></codeline>
 <codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">sc_clock<sp/>=<sp/>std::chrono::steady_clock;</highlight></codeline>
@@ -355,7 +355,7 @@
 <codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_GT(sys_dur.count(),<sp/>0);</highlight></codeline>
 <codeline lineno="397"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="398"><highlight class="normal"></highlight></codeline>
-<codeline lineno="403"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestChronoErrorHandling)<sp/>{</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestChronoErrorHandling)<sp/>{</highlight></codeline>
 <codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>overflow<sp/>protection</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>max_duration<sp/>=<sp/>std::chrono::seconds(INT_MAX);</highlight></codeline>
 <codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>min_duration<sp/>=<sp/>std::chrono::seconds(INT_MIN);</highlight></codeline>
@@ -373,7 +373,7 @@
 <codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(large_duration.count(),<sp/>24);</highlight></codeline>
 <codeline lineno="419"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="420"><highlight class="normal"></highlight></codeline>
-<codeline lineno="425"><highlight class="normal">TEST_F(ChronoCoverageTest,<sp/>TestChronoPerformance)<sp/>{</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(ChronoCoverageTest,<sp/>TestChronoPerformance)<sp/>{</highlight></codeline>
 <codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>timing<sp/>accuracy<sp/>with<sp/>multiple<sp/>measurements</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::chrono::nanoseconds&gt;<sp/>measurements;</highlight></codeline>
 <codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>

@@ -101,7 +101,7 @@
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewComparisonOperators)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewComparisonOperators)<sp/>{</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv1(</highlight><highlight class="stringliteral">&quot;abc&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv2(</highlight><highlight class="stringliteral">&quot;def&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv3(</highlight><highlight class="stringliteral">&quot;abc&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -147,7 +147,7 @@
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(</highlight><highlight class="stringliteral">&quot;def&quot;</highlight><highlight class="normal"><sp/>!=<sp/>sv1);</highlight></codeline>
 <codeline lineno="85"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewStreamOutput)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewStreamOutput)<sp/>{</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>oss;</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -170,7 +170,7 @@
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(oss.str().find(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string::npos);</highlight></codeline>
 <codeline lineno="112"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewConstMethods)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewConstMethods)<sp/>{</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string_view<sp/>sv(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>const<sp/>access<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
@@ -207,7 +207,7 @@
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;World!&quot;</highlight><highlight class="normal">),<sp/>7);</highlight></codeline>
 <codeline lineno="153"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="154"><highlight class="normal"></highlight></codeline>
-<codeline lineno="159"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewSubstrEdgeCases)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewSubstrEdgeCases)<sp/>{</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>substr<sp/>with<sp/>zero<sp/>length</highlight><highlight class="normal"></highlight></codeline>
@@ -234,7 +234,7 @@
 <codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(sub5.empty());</highlight></codeline>
 <codeline lineno="184"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"></highlight></codeline>
-<codeline lineno="190"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewFindEdgeCases)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewFindEdgeCases)<sp/>{</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>find<sp/>with<sp/>empty<sp/>string</highlight><highlight class="normal"></highlight></codeline>
@@ -262,7 +262,7 @@
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(repeated.find(</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,<sp/>3),<sp/>std::string_view::npos);</highlight></codeline>
 <codeline lineno="216"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"></highlight></codeline>
-<codeline lineno="222"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewCopyEdgeCases)<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewCopyEdgeCases)<sp/>{</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[20];</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -292,7 +292,7 @@
 <codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_STREQ(small_buffer,<sp/></highlight><highlight class="stringliteral">&quot;He&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="250"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="251"><highlight class="normal"></highlight></codeline>
-<codeline lineno="256"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewStartsWithEndsWithEdgeCases)<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewStartsWithEndsWithEdgeCases)<sp/>{</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>with<sp/>empty<sp/>string_view</highlight><highlight class="normal"></highlight></codeline>
@@ -321,7 +321,7 @@
 <codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="charliteral">&apos;?&apos;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
 <codeline lineno="283"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="284"><highlight class="normal"></highlight></codeline>
-<codeline lineno="289"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewContainsEdgeCases)<sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewContainsEdgeCases)<sp/>{</highlight></codeline>
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>with<sp/>empty<sp/>string_view</highlight><highlight class="normal"></highlight></codeline>
@@ -350,7 +350,7 @@
 <codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(repeated.find(</highlight><highlight class="charliteral">&apos;b&apos;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
 <codeline lineno="316"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="317"><highlight class="normal"></highlight></codeline>
-<codeline lineno="322"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewRemovePrefixSuffixEdgeCases)<sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewRemovePrefixSuffixEdgeCases)<sp/>{</highlight></codeline>
 <codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>remove_prefix<sp/>with<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
@@ -377,7 +377,7 @@
 <codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(empty_sv.empty());</highlight></codeline>
 <codeline lineno="347"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="348"><highlight class="normal"></highlight></codeline>
-<codeline lineno="353"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewHashEdgeCases)<sp/>{</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewHashEdgeCases)<sp/>{</highlight></codeline>
 <codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>std::hash&lt;std::string_view&gt;<sp/>hasher;</highlight></codeline>
 <codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>empty<sp/>string_view</highlight><highlight class="normal"></highlight></codeline>
@@ -404,7 +404,7 @@
 <codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(hasher(sv3),<sp/>hasher(sv4));</highlight></codeline>
 <codeline lineno="378"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="379"><highlight class="normal"></highlight></codeline>
-<codeline lineno="384"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewIteratorEdgeCases)<sp/>{</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewIteratorEdgeCases)<sp/>{</highlight></codeline>
 <codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>empty<sp/>string_view<sp/>iterators</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>empty_sv;</highlight></codeline>
 <codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(empty_sv.begin(),<sp/>empty_sv.end());</highlight></codeline>
@@ -431,7 +431,7 @@
 <codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(rit,<sp/>sv.rend());</highlight></codeline>
 <codeline lineno="409"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="410"><highlight class="normal"></highlight></codeline>
-<codeline lineno="415"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewConstexprEdgeCases)<sp/>{</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewConstexprEdgeCases)<sp/>{</highlight></codeline>
 <codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>constexpr<sp/>with<sp/>empty<sp/>string</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>std::string_view<sp/>empty_sv(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(empty_sv.empty());</highlight></codeline>
@@ -459,34 +459,46 @@
 <codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>constexpr<sp/>contains<sp/>using<sp/>find</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(sv.find(</highlight><highlight class="stringliteral">&quot;lo,<sp/>Wo&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string_view::npos);</highlight></codeline>
 <codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(sv.find(</highlight><highlight class="stringliteral">&quot;xyz&quot;</highlight><highlight class="normal">)<sp/>==<sp/>std::string_view::npos);</highlight></codeline>
-<codeline lineno="443"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="444"><highlight class="normal"></highlight></codeline>
-<codeline lineno="449"><highlight class="normal">TEST_F(StringViewAdvancedCoverageTest,<sp/>TestStringViewPerformanceEdgeCases)<sp/>{</highlight></codeline>
-<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>with<sp/>very<sp/>large<sp/>string</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>large_string(100000,<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv(large_string);</highlight></codeline>
-<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>operations<sp/>that<sp/>should<sp/>be<sp/>fast</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>std::chrono::high_resolution_clock::now();</highlight></codeline>
-<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Perform<sp/>many<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>100;<sp/>++i)<sp/>{</highlight></codeline>
-<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sub<sp/>=<sp/>sv.substr(1000,<sp/>1000);</highlight></codeline>
-<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/>sv.find(</highlight><highlight class="stringliteral">&quot;AAA&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>contains<sp/>=<sp/>sv.find(</highlight><highlight class="stringliteral">&quot;BBB&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string_view::npos;</highlight></codeline>
-<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>starts<sp/>=<sp/>sv.find(</highlight><highlight class="stringliteral">&quot;AAAA&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0;</highlight></codeline>
-<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ends<sp/>=<sp/>sv.find(</highlight><highlight class="stringliteral">&quot;AAAA&quot;</highlight><highlight class="normal">)<sp/>==<sp/>(sv.size()<sp/>-<sp/>4);</highlight></codeline>
-<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)sub;<sp/>(void)pos;<sp/>(void)contains;<sp/>(void)starts;<sp/>(void)ends;</highlight></codeline>
-<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>end<sp/>=<sp/>std::chrono::high_resolution_clock::now();</highlight></codeline>
-<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>duration<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(end<sp/>-<sp/>start);</highlight></codeline>
-<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Should<sp/>complete<sp/>quickly</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_LT(duration.count(),<sp/>100000);<sp/></highlight><highlight class="comment">//<sp/>Less<sp/>than<sp/>0.1<sp/>second</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="472"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="473"><highlight class="normal"></highlight></codeline>
-<codeline lineno="474"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Runtime<sp/>tests<sp/>to<sp/>ensure<sp/>functionality<sp/>works</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(empty_sv.empty());</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(empty_sv.size(),<sp/>0);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(single_sv.size(),<sp/>1);</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(single_sv[0],<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(pos1,<sp/>7);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(pos2,<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">),<sp/>0);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;World!&quot;</highlight><highlight class="normal">),<sp/>7);</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(sv.find(</highlight><highlight class="stringliteral">&quot;lo,<sp/>Wo&quot;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sv.find(</highlight><highlight class="stringliteral">&quot;xyz&quot;</highlight><highlight class="normal">),<sp/>std::string_view::npos);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><ref refid="_language_translator__test_8cpp_1a76d6c85bf7b1d192d4c366cc40624a5e" kindref="member">TEST_F</ref>(StringViewAdvancedCoverageTest,<sp/>TestStringViewPerformanceEdgeCases)<sp/>{</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>with<sp/>very<sp/>large<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>large_string(100000,<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string_view<sp/>sv(large_string);</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Test<sp/>operations<sp/>that<sp/>should<sp/>be<sp/>fast</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>std::chrono::high_resolution_clock::now();</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Perform<sp/>many<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>100;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sub<sp/>=<sp/>sv.substr(1000,<sp/>1000);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/>sv.find(</highlight><highlight class="stringliteral">&quot;AAA&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>contains<sp/>=<sp/>sv.find(</highlight><highlight class="stringliteral">&quot;BBB&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string_view::npos;</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>starts<sp/>=<sp/>sv.find(</highlight><highlight class="stringliteral">&quot;AAAA&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ends<sp/>=<sp/>sv.find(</highlight><highlight class="stringliteral">&quot;AAAA&quot;</highlight><highlight class="normal">)<sp/>==<sp/>(sv.size()<sp/>-<sp/>4);</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)sub;<sp/>(void)pos;<sp/>(void)contains;<sp/>(void)starts;<sp/>(void)ends;</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>end<sp/>=<sp/>std::chrono::high_resolution_clock::now();</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>duration<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(end<sp/>-<sp/>start);</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Should<sp/>complete<sp/>quickly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_LT(duration.count(),<sp/>100000);<sp/></highlight><highlight class="comment">//<sp/>Less<sp/>than<sp/>0.1<sp/>second</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_string_view_advanced_coverage.cpp"/>
   </compounddef>

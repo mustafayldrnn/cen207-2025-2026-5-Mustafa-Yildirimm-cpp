@@ -22,7 +22,7 @@
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00028}00028\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00029}00029\ \};}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00030}00030\ }
-\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00035}00035\ TEST\_F(OverflowProtectionTest,\ TestSafeMultiplication)\ \{}
+\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00035}00035\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(OverflowProtectionTest,\ TestSafeMultiplication)\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00036}00036\ \ \ \ \ \textcolor{comment}{//\ Test\ safe\ multiplication\ algorithm\ similar\ to\ \_Whole\ and\ \_Part}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keyword}{auto}\ safeMultiply\ =\ [](\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ counter,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ multiplier,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ divisor)\ -\/>\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Prevent\ overflow\ by\ splitting\ the\ calculation}}
@@ -45,7 +45,7 @@
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00055}00055\ \ \ \ \ EXPECT\_EQ(safeMultiply(divisor,\ multiplier,\ divisor),\ multiplier);}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00056}00056\ \}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00057}00057\ }
-\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00062}00062\ TEST\_F(OverflowProtectionTest,\ TestOverflowDetection)\ \{}
+\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00062}00062\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(OverflowProtectionTest,\ TestOverflowDetection)\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00063}00063\ \ \ \ \ \textcolor{comment}{//\ Test\ overflow\ detection}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00064}00064\ \ \ \ \ \textcolor{keyword}{auto}\ detectOverflow\ =\ [](\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ a,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ b)\ -\/>\ \textcolor{keywordtype}{bool}\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Check\ if\ multiplication\ would\ overflow}}
@@ -68,7 +68,7 @@
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00082}00082\ \ \ \ \ EXPECT\_FALSE(detectOverflow(0,\ 1000));}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00083}00083\ \}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00084}00084\ }
-\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00089}00089\ TEST\_F(OverflowProtectionTest,\ TestChronoOverflowProtection)\ \{}
+\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00089}00089\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(OverflowProtectionTest,\ TestChronoOverflowProtection)\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{comment}{//\ Test\ chrono\ duration\ calculations\ with\ overflow\ protection}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keyword}{auto}\ safeChronoCalculation\ =\ [](\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ counter,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ frequency,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ periodDen)\ -\/>\ std::chrono::nanoseconds\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Safe\ calculation\ using\ \_Whole\ and\ \_Part\ algorithm}}
@@ -95,7 +95,7 @@
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00113}00113\ \ \ \ \ EXPECT\_EQ(safeChronoCalculation(0,\ frequency,\ periodDen).count(),\ 0);}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00114}00114\ \}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00115}00115\ }
-\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00120}00120\ TEST\_F(OverflowProtectionTest,\ TestLargeValueHandling)\ \{}
+\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00120}00120\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(OverflowProtectionTest,\ TestLargeValueHandling)\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00121}00121\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ very\ large\ counter\ values}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00122}00122\ \ \ \ \ \textcolor{keyword}{auto}\ handleLargeCounter\ =\ [](\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ counter,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ frequency)\ -\/>\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00123}00123\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Use\ safe\ division\ and\ multiplication}}
@@ -110,7 +110,7 @@
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00132}00132\ \ \ \ \ \};}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00133}00133\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00134}00134\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ large\ but\ safe\ values}}
-\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00135}00135\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ largeCounter\ =\ std::numeric\_limits<long\ long>::max()\ /\ 4;}
+\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00135}00135\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ largeCounter\ =\ std::numeric\_limits<long\ long>::max()\ /\ 8;\ \textcolor{comment}{//\ Use\ smaller\ value\ to\ avoid\ overflow}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00136}00136\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ frequency\ =\ 1000000;}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00137}00137\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00138}00138\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ result\ =\ handleLargeCounter(largeCounter,\ frequency);}
@@ -121,7 +121,7 @@
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00143}00143\ \ \ \ \ EXPECT\_EQ(handleLargeCounter(frequency,\ frequency),\ 1000000000);}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00144}00144\ \}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00145}00145\ }
-\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00150}00150\ TEST\_F(OverflowProtectionTest,\ TestFrequencySpecificCalculations)\ \{}
+\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00150}00150\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(OverflowProtectionTest,\ TestFrequencySpecificCalculations)\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00151}00151\ \ \ \ \ \textcolor{comment}{//\ Test\ for\ 10MHz\ frequency}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00152}00152\ \ \ \ \ \textcolor{keyword}{auto}\ calculateFor10MHz\ =\ [](\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ counter)\ -\/>\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00153}00153\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ frequency\ =\ 10000000;\ \textcolor{comment}{//\ 10MHz}}
@@ -157,7 +157,7 @@
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00183}00183\ \ \ \ \ EXPECT\_NE(result10MHz,\ result24MHz);\ \textcolor{comment}{//\ Should\ be\ different}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00184}00184\ \}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00185}00185\ }
-\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00190}00190\ TEST\_F(OverflowProtectionTest,\ TestOverflowPreventionAlgorithm)\ \{}
+\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00190}00190\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(OverflowProtectionTest,\ TestOverflowPreventionAlgorithm)\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00191}00191\ \ \ \ \ \textcolor{comment}{//\ Complete\ overflow\ prevention\ algorithm}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00192}00192\ \ \ \ \ \textcolor{keyword}{auto}\ overflowSafeCalculation\ =\ [](\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ counter,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ frequency,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ periodDen)\ -\/>\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00193}00193\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Check\ if\ direct\ multiplication\ would\ overflow}}
@@ -192,7 +192,7 @@
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00222}00222\ \ \ \ \ \ \ \ \ \{1000,\ 1000000,\ 1000000000,\ \textcolor{keyword}{true}\},}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00223}00223\ \ \ \ \ \ \ \ \ \{0,\ 1000000,\ 1000000000,\ \textcolor{keyword}{true}\},}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00224}00224\ \ \ \ \ \ \ \ \ \{1000000,\ 1000000,\ 1000000000,\ \textcolor{keyword}{true}\},}
-\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00225}00225\ \ \ \ \ \ \ \ \ \{std::numeric\_limits<long\ long>::max()\ /\ 2,\ 1000000,\ 1000000000,\ \textcolor{keyword}{true}\},}
+\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00225}00225\ \ \ \ \ \ \ \ \ \{std::numeric\_limits<long\ long>::max()\ /\ 8,\ 1000000,\ 1000000000,\ \textcolor{keyword}{true}\},\ \textcolor{comment}{//\ Use\ smaller\ value\ to\ avoid\ overflow}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00226}00226\ \ \ \ \ \ \ \ \ \{std::numeric\_limits<long\ long>::max(),\ 1,\ 1,\ \textcolor{keyword}{false}\}\ \textcolor{comment}{//\ This\ should\ fail}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00227}00227\ \ \ \ \ \};}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00228}00228\ \ \ \ \ }
@@ -210,7 +210,7 @@
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00240}00240\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00241}00241\ \}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00242}00242\ }
-\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00247}00247\ TEST\_F(OverflowProtectionTest,\ TestEdgeCases)\ \{}
+\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00247}00247\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(OverflowProtectionTest,\ TestEdgeCases)\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00248}00248\ \ \ \ \ \textcolor{comment}{//\ Test\ edge\ cases}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00249}00249\ \ \ \ \ \textcolor{keyword}{auto}\ testEdgeCase\ =\ [](\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ counter,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ frequency,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ periodDen)\ -\/>\ \textcolor{keywordtype}{bool}\ \{}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00250}00250\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
@@ -234,7 +234,7 @@
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00268}00268\ \ \ \ \ EXPECT\_TRUE(testEdgeCase(0,\ 1,\ 1));}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00269}00269\ \ \ \ \ EXPECT\_TRUE(testEdgeCase(1,\ 1,\ 1));}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00270}00270\ \ \ \ \ EXPECT\_TRUE(testEdgeCase(1000000,\ 1000000,\ 1000000000));}
-\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00271}00271\ \ \ \ \ EXPECT\_TRUE(testEdgeCase(std::numeric\_limits<long\ long>::max()\ /\ 4,\ 1000000,\ 1000000000));}
+\DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00271}00271\ \ \ \ \ EXPECT\_TRUE(testEdgeCase(std::numeric\_limits<long\ long>::max()\ /\ 8,\ 1000000,\ 1000000000));\ \textcolor{comment}{//\ Use\ smaller\ value\ to\ avoid\ overflow}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00272}00272\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00273}00273\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ zero\ frequency\ (should\ handle\ gracefully)}}
 \DoxyCodeLine{\Hypertarget{test__overflow__protection_8cpp_source_l00274}00274\ \ \ \ \ EXPECT\_FALSE(testEdgeCase(1000,\ 0,\ 1000000000));}

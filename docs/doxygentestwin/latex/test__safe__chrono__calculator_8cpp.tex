@@ -1,0 +1,173 @@
+\doxysection{C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/tests/test\+\_\+safe\+\_\+chrono\+\_\+calculator.cpp File Reference}
+\hypertarget{test__safe__chrono__calculator_8cpp}{}\label{test__safe__chrono__calculator_8cpp}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_safe\_chrono\_calculator.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_safe\_chrono\_calculator.cpp}}
+
+
+Test file for Safe\+Chrono\+Calculator to increase coverage.  
+
+
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}../src/\+Safe\+Chrono\+Calculator.\+h"{}}\newline
+Include dependency graph for test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__safe__chrono__calculator_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\+\_\+F}} (\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}, Test\+Safe\+Duration\+Calculation)
+\item 
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acd306c0c21160c456d45aaa8040e4d78}{TEST\+\_\+F}} (\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}, Test10\+MHz\+Calculation)
+\item 
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a9e9240567200b50628550147187b98f1}{TEST\+\_\+F}} (\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}, Test24\+MHz\+Calculation)
+\item 
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a5499308ed9483f2b9c807a58a21c8316}{TEST\+\_\+F}} (\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}, Test\+Overflow\+Detection)
+\item 
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a6b49b38b9ace8e0ed07e40687dae30cc}{TEST\+\_\+F}} (\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}, Test\+Error\+Handling)
+\item 
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a7e5ad27c9b992260df1f6083243fc05a}{TEST\+\_\+F}} (\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}, Test\+Edge\+Cases)
+\item 
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a548497d9aaa1d18d6fbeca4167240832}{TEST\+\_\+F}} (\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}, Test\+Performance)
+\item 
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a75a3ba58324f699a02bcc8d7cde35b65}{TEST\+\_\+F}} (\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}, Test\+Different\+Frequencies)
+\item 
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_aed0ecf53b54be60e380d6401e2f2c657}{TEST\+\_\+F}} (\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}, Test\+Overflow\+Error\+Handling)
+\item 
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a266f54628bd04783ff3ca6ae1b4ff817}{TEST\+\_\+F}} (\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}, Test\+Consistency)
+\item 
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_ab8e9721e31d415cb0d00bd87f32ae5e8}{TEST\+\_\+F}} (\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}, Test\+Boundary\+Values)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Test file for Safe\+Chrono\+Calculator to increase coverage. 
+
+This test file targets all uncovered functions in Safe\+Chrono\+Calculator to achieve maximum line coverage 
+
+Definition in file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{test__safe__chrono__calculator_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{test__safe__chrono__calculator_8cpp_acd306c0c21160c456d45aaa8040e4d78}\index{test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
+{\footnotesize\ttfamily \label{test__safe__chrono__calculator_8cpp_acd306c0c21160c456d45aaa8040e4d78} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}}]{}{, }\item[{Test10\+MHz\+Calculation}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source_l00044}{44}} of file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+
+\Hypertarget{test__safe__chrono__calculator_8cpp_a9e9240567200b50628550147187b98f1}\index{test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
+{\footnotesize\ttfamily \label{test__safe__chrono__calculator_8cpp_a9e9240567200b50628550147187b98f1} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}}]{}{, }\item[{Test24\+MHz\+Calculation}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+
+\Hypertarget{test__safe__chrono__calculator_8cpp_ab8e9721e31d415cb0d00bd87f32ae5e8}\index{test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
+{\footnotesize\ttfamily \label{test__safe__chrono__calculator_8cpp_ab8e9721e31d415cb0d00bd87f32ae5e8} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}}]{}{, }\item[{Test\+Boundary\+Values}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source_l00183}{183}} of file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+
+\Hypertarget{test__safe__chrono__calculator_8cpp_a266f54628bd04783ff3ca6ae1b4ff817}\index{test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
+{\footnotesize\ttfamily \label{test__safe__chrono__calculator_8cpp_a266f54628bd04783ff3ca6ae1b4ff817} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}}]{}{, }\item[{Test\+Consistency}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source_l00170}{170}} of file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+
+\Hypertarget{test__safe__chrono__calculator_8cpp_a75a3ba58324f699a02bcc8d7cde35b65}\index{test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
+{\footnotesize\ttfamily \label{test__safe__chrono__calculator_8cpp_a75a3ba58324f699a02bcc8d7cde35b65} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}}]{}{, }\item[{Test\+Different\+Frequencies}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source_l00141}{141}} of file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+
+\Hypertarget{test__safe__chrono__calculator_8cpp_a7e5ad27c9b992260df1f6083243fc05a}\index{test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
+{\footnotesize\ttfamily \label{test__safe__chrono__calculator_8cpp_a7e5ad27c9b992260df1f6083243fc05a} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}}]{}{, }\item[{Test\+Edge\+Cases}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source_l00108}{108}} of file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+
+\Hypertarget{test__safe__chrono__calculator_8cpp_a6b49b38b9ace8e0ed07e40687dae30cc}\index{test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
+{\footnotesize\ttfamily \label{test__safe__chrono__calculator_8cpp_a6b49b38b9ace8e0ed07e40687dae30cc} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}}]{}{, }\item[{Test\+Error\+Handling}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source_l00097}{97}} of file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+
+\Hypertarget{test__safe__chrono__calculator_8cpp_a5499308ed9483f2b9c807a58a21c8316}\index{test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
+{\footnotesize\ttfamily \label{test__safe__chrono__calculator_8cpp_a5499308ed9483f2b9c807a58a21c8316} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}}]{}{, }\item[{Test\+Overflow\+Detection}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source_l00068}{68}} of file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+
+\Hypertarget{test__safe__chrono__calculator_8cpp_aed0ecf53b54be60e380d6401e2f2c657}\index{test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
+{\footnotesize\ttfamily \label{test__safe__chrono__calculator_8cpp_aed0ecf53b54be60e380d6401e2f2c657} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}}]{}{, }\item[{Test\+Overflow\+Error\+Handling}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source_l00160}{160}} of file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+
+\Hypertarget{test__safe__chrono__calculator_8cpp_a548497d9aaa1d18d6fbeca4167240832}\index{test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
+{\footnotesize\ttfamily \label{test__safe__chrono__calculator_8cpp_a548497d9aaa1d18d6fbeca4167240832} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}}]{}{, }\item[{Test\+Performance}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source_l00124}{124}} of file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+
+\Hypertarget{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}\index{test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!test\_safe\_chrono\_calculator.cpp@{test\_safe\_chrono\_calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
+{\footnotesize\ttfamily \label{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_chrono_calculator_test}{Safe\+Chrono\+Calculator\+Test}}}]{}{, }\item[{Test\+Safe\+Duration\+Calculation}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_source}{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}}.
+

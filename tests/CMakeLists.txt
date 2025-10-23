@@ -9,6 +9,12 @@ target_sources(unit_tests PRIVATE
     ../src/LanguageTranslator/src/LanguageTranslator.cpp
 )
 
+# Add include directories for main library headers
+target_include_directories(unit_tests PRIVATE 
+    ../src
+    ../include
+)
+
 include(GoogleTest)
 gtest_discover_tests(unit_tests)
 

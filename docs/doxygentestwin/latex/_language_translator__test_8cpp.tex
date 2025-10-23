@@ -1,0 +1,362 @@
+\doxysection{C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/tests/\+Language\+Translator\+\_\+test.cpp File Reference}
+\hypertarget{_language_translator__test_8cpp}{}\label{_language_translator__test_8cpp}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/LanguageTranslator\_test.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/LanguageTranslator\_test.cpp}}
+
+
+Unit tests for Language Translator Application.  
+
+
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include "{}../src/\+Language\+Translator/header/\+Language\+Translator.\+h"{}}\newline
+Include dependency graph for Language\+Translator\+\_\+test.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{_language_translator__test_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Basic\+Word\+Translation)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a01842fdc845a57c3604723084973a354}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Phrase\+Translation)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_af1c7e4ba87fa8add2ee446946957b694}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Unknown\+Word\+Handling)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a6b52024db43860abc2fd6fbd3c182473}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Mixed\+Known\+Unknown\+Words)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a789e29248db0c9e425ac1687d311e44c}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Same\+Language\+Translation)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_aa95c679ed154cf3eb96d953ed986dda0}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Language\+Switching)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_ab3fb34b97f5faddc86bf3a79d027b4ba}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Get\+Supported\+Languages)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a8fe091a3f4ee13f4a7f8869b0d049d49}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Add\+New\+Language)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a5f7bc883353cb98eb40911831ed9282e}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, User\+Login)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a48028cbf2956d65839d23033248d7598}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, User\+Logout)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_ad0bc851a6c6ae060894d20fde253b467}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Invalid\+Login)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a936bc5b1b5b0f908a04ac4c3b049a5a4}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, User\+Registration)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a6f63f261fdea25e5f7c278a7f10babd7}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Translate\+Word\+Function)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a532fdc7427b172ae1c5435f02f0c8917}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Translate\+Phrase\+Function)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a0b3237b1d0584b7edd8eeb8dffa71c58}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, APIMode\+Toggle)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a67c4bd5e3c335f46a6cafb49146d48e2}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, APIKey\+Management)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a668bc4eeee33d76ec5428b8cfa3c9b02}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Empty\+String\+Translation)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_add28b54505d4878d1efb254a60d9c808}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Whitespace\+Handling)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a6f26cabf881f2eb4c628f3a689760c58}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Special\+Characters)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a1a1190f33597e647ac2d52b9bd10a355}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Case\+Insensitive\+Translation)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a366af1e39e13a9d63b8a5f53b15c4383}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Data\+Initialization)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a7c2cfde0fa92a026d830363ac3057693}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Data\+Save\+Load)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_aedb078ec7621007fc8b9a01497388760}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Dictionary\+File\+Loading)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_ab6df76e754da7ecff688baa543e618b5}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Load\+All\+Dictionaries)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_ad23d52081426bfcf81445ca7cc798515}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Long\+Text\+Translation)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_acafb21317616f917a069b84fe8bf6f67}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Repeated\+Translation)
+\item 
+\mbox{\hyperlink{_language_translator__test_8cpp_a2376c50e3a2c9c2bbcd29a7c1c8dd4af}{TEST\+\_\+F}} (\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}, Full\+Translation\+Workflow)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Unit tests for Language Translator Application. 
+
+
+
+Definition in file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{_language_translator__test_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_language_translator__test_8cpp_a8fe091a3f4ee13f4a7f8869b0d049d49}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [1/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a8fe091a3f4ee13f4a7f8869b0d049d49} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Add\+New\+Language}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00081}{81}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a67c4bd5e3c335f46a6cafb49146d48e2}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [2/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a67c4bd5e3c335f46a6cafb49146d48e2} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{APIKey\+Management}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00142}{142}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a0b3237b1d0584b7edd8eeb8dffa71c58}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [3/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a0b3237b1d0584b7edd8eeb8dffa71c58} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{APIMode\+Toggle}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00129}{129}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [4/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Basic\+Word\+Translation}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a1a1190f33597e647ac2d52b9bd10a355}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [5/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a1a1190f33597e647ac2d52b9bd10a355} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Case\+Insensitive\+Translation}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00172}{172}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a366af1e39e13a9d63b8a5f53b15c4383}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [6/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a366af1e39e13a9d63b8a5f53b15c4383} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Data\+Initialization}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00180}{180}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a7c2cfde0fa92a026d830363ac3057693}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [7/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a7c2cfde0fa92a026d830363ac3057693} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Data\+Save\+Load}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00186}{186}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_aedb078ec7621007fc8b9a01497388760}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [8/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_aedb078ec7621007fc8b9a01497388760} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Dictionary\+File\+Loading}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00196}{196}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a668bc4eeee33d76ec5428b8cfa3c9b02}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [9/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a668bc4eeee33d76ec5428b8cfa3c9b02} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Empty\+String\+Translation}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00153}{153}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a2376c50e3a2c9c2bbcd29a7c1c8dd4af}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [10/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a2376c50e3a2c9c2bbcd29a7c1c8dd4af} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Full\+Translation\+Workflow}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00235}{235}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_ab3fb34b97f5faddc86bf3a79d027b4ba}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [11/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_ab3fb34b97f5faddc86bf3a79d027b4ba} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Get\+Supported\+Languages}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00074}{74}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_ad0bc851a6c6ae060894d20fde253b467}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [12/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_ad0bc851a6c6ae060894d20fde253b467} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Invalid\+Login}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00104}{104}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_aa95c679ed154cf3eb96d953ed986dda0}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [13/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_aa95c679ed154cf3eb96d953ed986dda0} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Language\+Switching}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00064}{64}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_ab6df76e754da7ecff688baa543e618b5}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [14/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_ab6df76e754da7ecff688baa543e618b5} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Load\+All\+Dictionaries}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00205}{205}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_ad23d52081426bfcf81445ca7cc798515}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [15/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_ad23d52081426bfcf81445ca7cc798515} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Long\+Text\+Translation}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00214}{214}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a6b52024db43860abc2fd6fbd3c182473}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [16/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a6b52024db43860abc2fd6fbd3c182473} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Mixed\+Known\+Unknown\+Words}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a01842fdc845a57c3604723084973a354}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [17/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a01842fdc845a57c3604723084973a354} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Phrase\+Translation}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_acafb21317616f917a069b84fe8bf6f67}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [18/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_acafb21317616f917a069b84fe8bf6f67} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Repeated\+Translation}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00227}{227}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a789e29248db0c9e425ac1687d311e44c}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [19/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a789e29248db0c9e425ac1687d311e44c} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Same\+Language\+Translation}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00055}{55}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a6f26cabf881f2eb4c628f3a689760c58}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [20/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a6f26cabf881f2eb4c628f3a689760c58} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Special\+Characters}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00165}{165}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a532fdc7427b172ae1c5435f02f0c8917}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [21/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a532fdc7427b172ae1c5435f02f0c8917} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Translate\+Phrase\+Function}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00122}{122}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a6f63f261fdea25e5f7c278a7f10babd7}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [22/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a6f63f261fdea25e5f7c278a7f10babd7} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Translate\+Word\+Function}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00116}{116}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_af1c7e4ba87fa8add2ee446946957b694}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [23/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_af1c7e4ba87fa8add2ee446946957b694} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Unknown\+Word\+Handling}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a5f7bc883353cb98eb40911831ed9282e}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [24/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a5f7bc883353cb98eb40911831ed9282e} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{User\+Login}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00088}{88}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a48028cbf2956d65839d23033248d7598}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [25/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a48028cbf2956d65839d23033248d7598} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{User\+Logout}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00096}{96}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_a936bc5b1b5b0f908a04ac4c3b049a5a4}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [26/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_a936bc5b1b5b0f908a04ac4c3b049a5a4} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{User\+Registration}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00110}{110}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+
+\Hypertarget{_language_translator__test_8cpp_add28b54505d4878d1efb254a60d9c808}\index{LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!LanguageTranslator\_test.cpp@{LanguageTranslator\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [27/27]}}
+{\footnotesize\ttfamily \label{_language_translator__test_8cpp_add28b54505d4878d1efb254a60d9c808} 
+TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_language_translator_test}{Language\+Translator\+Test}}}]{}{, }\item[{Whitespace\+Handling}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_language_translator__test_8cpp_source_l00159}{159}} of file \mbox{\hyperlink{_language_translator__test_8cpp_source}{Language\+Translator\+\_\+test.\+cpp}}.
+

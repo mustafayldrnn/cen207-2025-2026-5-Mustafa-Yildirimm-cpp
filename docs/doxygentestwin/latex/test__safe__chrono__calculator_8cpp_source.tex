@@ -1,0 +1,192 @@
+\doxysection{test\+\_\+safe\+\_\+chrono\+\_\+calculator.\+cpp}
+\hypertarget{test__safe__chrono__calculator_8cpp_source}{}\label{test__safe__chrono__calculator_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_safe\_chrono\_calculator.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_safe\_chrono\_calculator.cpp}}
+\mbox{\hyperlink{test__safe__chrono__calculator_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}../src/SafeChronoCalculator.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00015}00015\ \textcolor{keyword}{using\ namespace\ }SafeChrono;}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00017}\mbox{\hyperlink{class_safe_chrono_calculator_test}{00017}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}}\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00018}00018\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00019}\mbox{\hyperlink{class_safe_chrono_calculator_test_af659918d4061a3359da420f487388fbd}{00019}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_safe_chrono_calculator_test_af659918d4061a3359da420f487388fbd}{SetUp}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ SafeChronoCalculator\ uses\ static\ methods,\ no\ instance\ needed}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00021}00021\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00022}00022\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00023}\mbox{\hyperlink{class_safe_chrono_calculator_test_a521a2df4e6885407df7b7bd37989e36f}{00023}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_safe_chrono_calculator_test_a521a2df4e6885407df7b7bd37989e36f}{TearDown}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ No\ cleanup\ needed\ for\ static\ methods}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00025}00025\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00026}00026\ \};}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00028}00028\ \textcolor{comment}{//\ Test\ basic\ safe\ duration\ calculation}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00029}\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{00029}}\ \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\_F}}(\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}},\ TestSafeDurationCalculation)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{comment}{//\ Test\ normal\ calculation}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{keyword}{auto}\ result\ =\ SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00032}00032\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00033}00033\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ different\ values}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00035}00035\ \ \ \ \ result\ =\ SafeChronoCalculator::safeCalculateDuration(5000,\ 2000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00036}00036\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00037}00037\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ large\ values}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00039}00039\ \ \ \ \ result\ =\ SafeChronoCalculator::safeCalculateDuration(1000000,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00040}00040\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00043}00043\ \textcolor{comment}{//\ Test\ 10MHz\ calculation}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00044}\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acd306c0c21160c456d45aaa8040e4d78}{00044}}\ \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\_F}}(\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}},\ Test10MHzCalculation)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00045}00045\ \ \ \ \ \textcolor{keyword}{auto}\ result\ =\ SafeChronoCalculator::calculateFor10MHz(1000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00046}00046\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00047}00047\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00048}00048\ \ \ \ \ result\ =\ SafeChronoCalculator::calculateFor10MHz(10000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00049}00049\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00050}00050\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00051}00051\ \ \ \ \ result\ =\ SafeChronoCalculator::calculateFor10MHz(100000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00052}00052\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00053}00053\ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00055}00055\ \textcolor{comment}{//\ Test\ 24MHz\ calculation}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00056}\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a9e9240567200b50628550147187b98f1}{00056}}\ \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\_F}}(\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}},\ Test24MHzCalculation)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keyword}{auto}\ result\ =\ SafeChronoCalculator::calculateFor24MHz(1000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00058}00058\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00059}00059\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00060}00060\ \ \ \ \ result\ =\ SafeChronoCalculator::calculateFor24MHz(10000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00061}00061\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00062}00062\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00063}00063\ \ \ \ \ result\ =\ SafeChronoCalculator::calculateFor24MHz(100000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00064}00064\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00065}00065\ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00067}00067\ \textcolor{comment}{//\ Test\ overflow\ detection}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00068}\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a5499308ed9483f2b9c807a58a21c8316}{00068}}\ \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\_F}}(\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}},\ TestOverflowDetection)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00069}00069\ \ \ \ \ \textcolor{comment}{//\ Test\ no\ overflow}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00070}00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ wouldOverflow\ =\ SafeChronoCalculator::wouldOverflow(1000,\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00071}00071\ \ \ \ \ EXPECT\_FALSE(wouldOverflow);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00072}00072\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ zero\ values}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00074}00074\ \ \ \ \ wouldOverflow\ =\ SafeChronoCalculator::wouldOverflow(0,\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00075}00075\ \ \ \ \ EXPECT\_FALSE(wouldOverflow);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00076}00076\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00077}00077\ \ \ \ \ wouldOverflow\ =\ SafeChronoCalculator::wouldOverflow(1000,\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00078}00078\ \ \ \ \ EXPECT\_FALSE(wouldOverflow);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00079}00079\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00080}00080\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ large\ values\ that\ might\ overflow}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ largeValue\ =\ std::numeric\_limits<long\ long>::max()\ /\ 2;}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00082}00082\ \ \ \ \ wouldOverflow\ =\ SafeChronoCalculator::wouldOverflow(largeValue,\ 3);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00083}00083\ \ \ \ \ EXPECT\_TRUE(wouldOverflow);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00084}00084\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00085}00085\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ negative\ values}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00086}00086\ \ \ \ \ wouldOverflow\ =\ SafeChronoCalculator::wouldOverflow(-\/1000,\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00087}00087\ \ \ \ \ EXPECT\_FALSE(wouldOverflow);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00088}00088\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00089}00089\ \ \ \ \ wouldOverflow\ =\ SafeChronoCalculator::wouldOverflow(1000,\ -\/1000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00090}00090\ \ \ \ \ EXPECT\_FALSE(wouldOverflow);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00091}00091\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00092}00092\ \ \ \ \ wouldOverflow\ =\ SafeChronoCalculator::wouldOverflow(-\/1000,\ -\/1000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00093}00093\ \ \ \ \ EXPECT\_FALSE(wouldOverflow);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00094}00094\ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00096}00096\ \textcolor{comment}{//\ Test\ error\ handling}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00097}\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a6b49b38b9ace8e0ed07e40687dae30cc}{00097}}\ \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\_F}}(\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}},\ TestErrorHandling)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00098}00098\ \ \ \ \ \textcolor{comment}{//\ Test\ invalid\ frequency}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00099}00099\ \ \ \ \ EXPECT\_THROW(SafeChronoCalculator::safeCalculateDuration(1000,\ 0,\ 1000000000),\ std::invalid\_argument);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00100}00100\ \ \ \ \ EXPECT\_THROW(SafeChronoCalculator::safeCalculateDuration(1000,\ -\/1000,\ 1000000000),\ std::invalid\_argument);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00101}00101\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00102}00102\ \ \ \ \ \textcolor{comment}{//\ Test\ invalid\ period\ denominator}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00103}00103\ \ \ \ \ EXPECT\_THROW(SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ 0),\ std::invalid\_argument);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00104}00104\ \ \ \ \ EXPECT\_THROW(SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ -\/1000),\ std::invalid\_argument);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00105}00105\ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00107}00107\ \textcolor{comment}{//\ Test\ edge\ cases}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00108}\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a7e5ad27c9b992260df1f6083243fc05a}{00108}}\ \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\_F}}(\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}},\ TestEdgeCases)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00109}00109\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ very\ small\ values}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00110}00110\ \ \ \ \ \textcolor{keyword}{auto}\ result\ =\ SafeChronoCalculator::safeCalculateDuration(1,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00111}00111\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00112}00112\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00113}00113\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ zero\ counter}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00114}00114\ \ \ \ \ result\ =\ SafeChronoCalculator::safeCalculateDuration(0,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00115}00115\ \ \ \ \ EXPECT\_EQ(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00116}00116\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00117}00117\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ maximum\ safe\ values}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00118}00118\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ maxSafe\ =\ std::numeric\_limits<long\ long>::max()\ /\ 2;}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00119}00119\ \ \ \ \ result\ =\ SafeChronoCalculator::safeCalculateDuration(maxSafe,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00120}00120\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00121}00121\ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00123}00123\ \textcolor{comment}{//\ Test\ performance}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00124}\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a548497d9aaa1d18d6fbeca4167240832}{00124}}\ \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\_F}}(\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}},\ TestPerformance)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00125}00125\ \ \ \ \ \textcolor{keyword}{auto}\ start\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00126}00126\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00127}00127\ \ \ \ \ \textcolor{comment}{//\ Perform\ many\ calculations}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00128}00128\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10000;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00129}00129\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ result\ =\ SafeChronoCalculator::safeCalculateDuration(i,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00130}00130\ \ \ \ \ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00131}00131\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00132}00132\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00133}00133\ \ \ \ \ \textcolor{keyword}{auto}\ end\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00134}00134\ \ \ \ \ \textcolor{keyword}{auto}\ duration\ =\ std::chrono::duration\_cast<std::chrono::milliseconds>(end\ -\/\ start);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00135}00135\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00136}00136\ \ \ \ \ \textcolor{comment}{//\ Should\ complete\ in\ reasonable\ time}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00137}00137\ \ \ \ \ EXPECT\_LT(duration.count(),\ 1000);\ \textcolor{comment}{//\ Less\ than\ 1\ second}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00138}00138\ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00140}00140\ \textcolor{comment}{//\ Test\ different\ frequency\ combinations}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00141}\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a75a3ba58324f699a02bcc8d7cde35b65}{00141}}\ \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\_F}}(\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}},\ TestDifferentFrequencies)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00142}00142\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ 1MHz}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00143}00143\ \ \ \ \ \textcolor{keyword}{auto}\ result\ =\ SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00144}00144\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00145}00145\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00146}00146\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ 5MHz}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00147}00147\ \ \ \ \ result\ =\ SafeChronoCalculator::safeCalculateDuration(1000,\ 5000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00148}00148\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00149}00149\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00150}00150\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ 50MHz}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00151}00151\ \ \ \ \ result\ =\ SafeChronoCalculator::safeCalculateDuration(1000,\ 50000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00152}00152\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00153}00153\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00154}00154\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ 100MHz}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00155}00155\ \ \ \ \ result\ =\ SafeChronoCalculator::safeCalculateDuration(1000,\ 100000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00156}00156\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00157}00157\ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00159}00159\ \textcolor{comment}{//\ Test\ overflow\ error\ handling}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00160}\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_aed0ecf53b54be60e380d6401e2f2c657}{00160}}\ \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\_F}}(\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}},\ TestOverflowErrorHandling)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00161}00161\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ values\ that\ would\ cause\ overflow}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00162}00162\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ veryLargeCounter\ =\ std::numeric\_limits<long\ long>::max();}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00163}00163\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ veryLargeFrequency\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00164}00164\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ veryLargePeriodDen\ =\ std::numeric\_limits<long\ long>::max();}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00165}00165\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00166}00166\ \ \ \ \ EXPECT\_THROW(SafeChronoCalculator::safeCalculateDuration(veryLargeCounter,\ veryLargeFrequency,\ veryLargePeriodDen),\ std::overflow\_error);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00167}00167\ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00168}00168\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00169}00169\ \textcolor{comment}{//\ Test\ consistency}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00170}\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_a266f54628bd04783ff3ca6ae1b4ff817}{00170}}\ \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\_F}}(\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}},\ TestConsistency)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00171}00171\ \ \ \ \ \textcolor{comment}{//\ Test\ that\ same\ inputs\ give\ same\ outputs}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00172}00172\ \ \ \ \ \textcolor{keyword}{auto}\ result1\ =\ SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00173}00173\ \ \ \ \ \textcolor{keyword}{auto}\ result2\ =\ SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00174}00174\ \ \ \ \ EXPECT\_EQ(result1.count(),\ result2.count());}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00175}00175\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00176}00176\ \ \ \ \ \textcolor{comment}{//\ Test\ that\ 10MHz\ and\ 24MHz\ give\ different\ results\ for\ same\ counter}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00177}00177\ \ \ \ \ \textcolor{keyword}{auto}\ result10MHz\ =\ SafeChronoCalculator::calculateFor10MHz(1000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00178}00178\ \ \ \ \ \textcolor{keyword}{auto}\ result24MHz\ =\ SafeChronoCalculator::calculateFor24MHz(1000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00179}00179\ \ \ \ \ EXPECT\_NE(result10MHz.count(),\ result24MHz.count());}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00180}00180\ \}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00181}00181\ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00182}00182\ \textcolor{comment}{//\ Test\ boundary\ values}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00183}\mbox{\hyperlink{test__safe__chrono__calculator_8cpp_ab8e9721e31d415cb0d00bd87f32ae5e8}{00183}}\ \mbox{\hyperlink{test__safe__chrono__calculator_8cpp_acfae8a9f57a8afe9ad2ed446c6ad2052}{TEST\_F}}(\mbox{\hyperlink{class_safe_chrono_calculator_test}{SafeChronoCalculatorTest}},\ TestBoundaryValues)\ \{}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00184}00184\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ minimum\ positive\ values}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00185}00185\ \ \ \ \ \textcolor{keyword}{auto}\ result\ =\ SafeChronoCalculator::safeCalculateDuration(1,\ 1,\ 1);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00186}00186\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00187}00187\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00188}00188\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ maximum\ safe\ values}}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00189}00189\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ maxSafe\ =\ std::numeric\_limits<long\ long>::max()\ /\ 4;}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00190}00190\ \ \ \ \ result\ =\ SafeChronoCalculator::safeCalculateDuration(maxSafe,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00191}00191\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__safe__chrono__calculator_8cpp_source_l00192}00192\ \}}
+
+\end{DoxyCode}

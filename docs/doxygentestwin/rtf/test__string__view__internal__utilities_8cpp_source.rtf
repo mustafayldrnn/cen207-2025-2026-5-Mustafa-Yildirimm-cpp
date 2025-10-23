@@ -151,745 +151,798 @@
 test_string_view_internal_utilities.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_string_view_internal_utilities.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_string_view_internal_utilities.cpp}
-{\bkmkstart AAAAAAABOU}
-{\bkmkend AAAAAAABOU}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABOV" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAADCS}
+{\bkmkend AAAAAAADCS}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCT" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAABPP}{\bkmkend AAAAAAABPP}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAADDM}{\bkmkend AAAAAAADDM}
 00001 \par
-{\bkmkstart AAAAAAABPT}{\bkmkend AAAAAAABPT}
+{\bkmkstart AAAAAAADDT}{\bkmkend AAAAAAADDT}
 00010 \par
-{\bkmkstart AAAAAAABPV}{\bkmkend AAAAAAABPV}
+{\bkmkstart AAAAAAADDV}{\bkmkend AAAAAAADDV}
 00011 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAABPZ}{\bkmkend AAAAAAABPZ}
+{\bkmkstart AAAAAAADEK}{\bkmkend AAAAAAADEK}
 00012 {\cf21 #include <string_view>}\par
-{\bkmkstart AAAAAAABQB}{\bkmkend AAAAAAABQB}
+{\bkmkstart AAAAAAADEW}{\bkmkend AAAAAAADEW}
 00013 {\cf21 #include <string>}\par
-{\bkmkstart AAAAAAABQC}{\bkmkend AAAAAAABQC}
+{\bkmkstart AAAAAAADFR}{\bkmkend AAAAAAADFR}
 00014 {\cf21 #include <iostream>}\par
-{\bkmkstart AAAAAAABQE}{\bkmkend AAAAAAABQE}
+{\bkmkstart AAAAAAADGH}{\bkmkend AAAAAAADGH}
 00015 {\cf21 #include <vector>}\par
-{\bkmkstart AAAAAAABQG}{\bkmkend AAAAAAABQG}
+{\bkmkstart AAAAAAADGY}{\bkmkend AAAAAAADGY}
 00016 {\cf21 #include <algorithm>}\par
-{\bkmkstart AAAAAAABQI}{\bkmkend AAAAAAABQI}
+{\bkmkstart AAAAAAADHP}{\bkmkend AAAAAAADHP}
 00017 {\cf21 #include <cstring>}\par
-{\bkmkstart AAAAAAABQJ}{\bkmkend AAAAAAABQJ}
+{\bkmkstart AAAAAAADIM}{\bkmkend AAAAAAADIM}
 00018 {\cf21 #include <limits>}\par
-{\bkmkstart AAAAAAABQK}{\bkmkend AAAAAAABQK}
+{\bkmkstart AAAAAAADJE}{\bkmkend AAAAAAADJE}
 00019 \par
-{\bkmkstart AAAAAAABQL}{\bkmkend AAAAAAABQL}
+{\bkmkstart AAAAAAADJG}{\bkmkend AAAAAAADJG}
 00020 {\cf17 namespace }\{\par
-{\bkmkstart AAAAAAABQM}{\bkmkend AAAAAAABQM}
+{\bkmkstart AAAAAAADJJ}{\bkmkend AAAAAAADJJ}
 00021 \par
-{\bkmkstart AAAAAAABQN}{\bkmkend AAAAAAABQN}
+{\bkmkstart AAAAAAADJM}{\bkmkend AAAAAAADJM}
 00026 {\cf17 class }StringViewInternalUtilitiesTest : {\cf17 public} ::testing::Test \{\par
-{\bkmkstart AAAAAAABQO}{\bkmkend AAAAAAABQO}
+{\bkmkstart AAAAAAADJR}{\bkmkend AAAAAAADJR}
 00027 {\cf17 protected}:\par
-{\bkmkstart AAAAAAABQP}{\bkmkend AAAAAAABQP}
+{\bkmkstart AAAAAAADJS}{\bkmkend AAAAAAADJS}
 00028     {\cf18 void} SetUp(){\cf17  override }\{\par
-{\bkmkstart AAAAAAABQQ}{\bkmkend AAAAAAABQQ}
+{\bkmkstart AAAAAAADKD}{\bkmkend AAAAAAADKD}
 00029         {\cf20 // Setup for each test}\par
-{\bkmkstart AAAAAAABQR}{\bkmkend AAAAAAABQR}
+{\bkmkstart AAAAAAADKF}{\bkmkend AAAAAAADKF}
 00030     \}\par
-{\bkmkstart AAAAAAABQS}{\bkmkend AAAAAAABQS}
+{\bkmkstart AAAAAAADKI}{\bkmkend AAAAAAADKI}
 00031     \par
-{\bkmkstart AAAAAAABQT}{\bkmkend AAAAAAABQT}
+{\bkmkstart AAAAAAADKK}{\bkmkend AAAAAAADKK}
 00032     {\cf18 void} TearDown(){\cf17  override }\{\par
-{\bkmkstart AAAAAAABQU}{\bkmkend AAAAAAABQU}
+{\bkmkstart AAAAAAADKR}{\bkmkend AAAAAAADKR}
 00033         {\cf20 // Cleanup after each test}\par
-{\bkmkstart AAAAAAABQV}{\bkmkend AAAAAAABQV}
+{\bkmkstart AAAAAAADKT}{\bkmkend AAAAAAADKT}
 00034     \}\par
-{\bkmkstart AAAAAAABQW}{\bkmkend AAAAAAABQW}
+{\bkmkstart AAAAAAADKV}{\bkmkend AAAAAAADKV}
 00035 \};\par
-{\bkmkstart AAAAAAABQX}{\bkmkend AAAAAAABQX}
+{\bkmkstart AAAAAAADKX}{\bkmkend AAAAAAADKX}
 00036 \par
-{\bkmkstart AAAAAAABQY}{\bkmkend AAAAAAABQY}
-00041 TEST_F(StringViewInternalUtilitiesTest, TestStringViewLengthFunction) \{\par
-{\bkmkstart AAAAAAABQZ}{\bkmkend AAAAAAABQZ}
+{\bkmkstart AAAAAAADKY}{\bkmkend AAAAAAADKY}
+00041 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+(StringViewInternalUtilitiesTest, TestStringViewLengthFunction) \{\par
+{\bkmkstart AAAAAAAEDA}{\bkmkend AAAAAAAEDA}
 00042     {\cf20 // Test with various C-strings to trigger internal length() function}\par
-{\bkmkstart AAAAAAABRA}{\bkmkend AAAAAAABRA}
+{\bkmkstart AAAAAAAEDB}{\bkmkend AAAAAAAEDB}
 00043     {\cf17 const} {\cf18 char}* cstr1 = {\cf22 "Hello"};\par
-{\bkmkstart AAAAAAABRB}{\bkmkend AAAAAAABRB}
+{\bkmkstart AAAAAAAEDC}{\bkmkend AAAAAAAEDC}
 00044     std::string_view sv1(cstr1);\par
-{\bkmkstart AAAAAAABRC}{\bkmkend AAAAAAABRC}
+{\bkmkstart AAAAAAAEDD}{\bkmkend AAAAAAAEDD}
 00045     EXPECT_EQ(sv1.size(), 5);\par
-{\bkmkstart AAAAAAABRD}{\bkmkend AAAAAAABRD}
+{\bkmkstart AAAAAAAEDE}{\bkmkend AAAAAAAEDE}
 00046     EXPECT_EQ(sv1.length(), 5);\par
-{\bkmkstart AAAAAAABRE}{\bkmkend AAAAAAABRE}
+{\bkmkstart AAAAAAAEDF}{\bkmkend AAAAAAAEDF}
 00047     \par
-{\bkmkstart AAAAAAABRF}{\bkmkend AAAAAAABRF}
+{\bkmkstart AAAAAAAEDG}{\bkmkend AAAAAAAEDG}
 00048     {\cf20 // Test with empty string}\par
-{\bkmkstart AAAAAAABRG}{\bkmkend AAAAAAABRG}
+{\bkmkstart AAAAAAAEDH}{\bkmkend AAAAAAAEDH}
 00049     {\cf17 const} {\cf18 char}* cstr2 = {\cf22 ""};\par
-{\bkmkstart AAAAAAABRH}{\bkmkend AAAAAAABRH}
+{\bkmkstart AAAAAAAEDI}{\bkmkend AAAAAAAEDI}
 00050     std::string_view sv2(cstr2);\par
-{\bkmkstart AAAAAAABRI}{\bkmkend AAAAAAABRI}
+{\bkmkstart AAAAAAAEDJ}{\bkmkend AAAAAAAEDJ}
 00051     EXPECT_EQ(sv2.size(), 0);\par
-{\bkmkstart AAAAAAABRJ}{\bkmkend AAAAAAABRJ}
+{\bkmkstart AAAAAAAEDK}{\bkmkend AAAAAAAEDK}
 00052     EXPECT_EQ(sv2.length(), 0);\par
-{\bkmkstart AAAAAAABRK}{\bkmkend AAAAAAABRK}
+{\bkmkstart AAAAAAAEDL}{\bkmkend AAAAAAAEDL}
 00053     \par
-{\bkmkstart AAAAAAABRL}{\bkmkend AAAAAAABRL}
+{\bkmkstart AAAAAAAEDM}{\bkmkend AAAAAAAEDM}
 00054     {\cf20 // Test with single character}\par
-{\bkmkstart AAAAAAABRM}{\bkmkend AAAAAAABRM}
+{\bkmkstart AAAAAAAEDN}{\bkmkend AAAAAAAEDN}
 00055     {\cf17 const} {\cf18 char}* cstr3 = {\cf22 "A"};\par
-{\bkmkstart AAAAAAABRN}{\bkmkend AAAAAAABRN}
+{\bkmkstart AAAAAAAEDO}{\bkmkend AAAAAAAEDO}
 00056     std::string_view sv3(cstr3);\par
-{\bkmkstart AAAAAAABRO}{\bkmkend AAAAAAABRO}
+{\bkmkstart AAAAAAAEDP}{\bkmkend AAAAAAAEDP}
 00057     EXPECT_EQ(sv3.size(), 1);\par
-{\bkmkstart AAAAAAABRP}{\bkmkend AAAAAAABRP}
+{\bkmkstart AAAAAAAEDQ}{\bkmkend AAAAAAAEDQ}
 00058     EXPECT_EQ(sv3.length(), 1);\par
-{\bkmkstart AAAAAAABRQ}{\bkmkend AAAAAAABRQ}
+{\bkmkstart AAAAAAAEDR}{\bkmkend AAAAAAAEDR}
 00059     \par
-{\bkmkstart AAAAAAABRR}{\bkmkend AAAAAAABRR}
+{\bkmkstart AAAAAAAEDS}{\bkmkend AAAAAAAEDS}
 00060     {\cf20 // Test with long string}\par
-{\bkmkstart AAAAAAABRS}{\bkmkend AAAAAAABRS}
+{\bkmkstart AAAAAAAEDT}{\bkmkend AAAAAAAEDT}
 00061     {\cf17 const} {\cf18 char}* cstr4 = {\cf22 "This is a very long string that should trigger the internal length function"};\par
-{\bkmkstart AAAAAAABRT}{\bkmkend AAAAAAABRT}
+{\bkmkstart AAAAAAAEDU}{\bkmkend AAAAAAAEDU}
 00062     std::string_view sv4(cstr4);\par
-{\bkmkstart AAAAAAABRU}{\bkmkend AAAAAAABRU}
-00063     EXPECT_EQ(sv4.size(), 70);\par
-{\bkmkstart AAAAAAABRV}{\bkmkend AAAAAAABRV}
-00064     EXPECT_EQ(sv4.length(), 70);\par
-{\bkmkstart AAAAAAABRW}{\bkmkend AAAAAAABRW}
+{\bkmkstart AAAAAAAEDV}{\bkmkend AAAAAAAEDV}
+00063     EXPECT_EQ(sv4.size(), 75);\par
+{\bkmkstart AAAAAAAEDW}{\bkmkend AAAAAAAEDW}
+00064     EXPECT_EQ(sv4.length(), 75);\par
+{\bkmkstart AAAAAAAEDX}{\bkmkend AAAAAAAEDX}
 00065     \par
-{\bkmkstart AAAAAAABRX}{\bkmkend AAAAAAABRX}
+{\bkmkstart AAAAAAAEDY}{\bkmkend AAAAAAAEDY}
 00066     {\cf20 // Test with string containing null characters (but null-terminated)}\par
-{\bkmkstart AAAAAAABRY}{\bkmkend AAAAAAABRY}
+{\bkmkstart AAAAAAAEDZ}{\bkmkend AAAAAAAEDZ}
 00067     {\cf17 const} {\cf18 char}* cstr5 = {\cf22 "Hello\\0World"};\par
-{\bkmkstart AAAAAAABRZ}{\bkmkend AAAAAAABRZ}
+{\bkmkstart AAAAAAAEEA}{\bkmkend AAAAAAAEEA}
 00068     std::string_view sv5(cstr5, 11); {\cf20 // Explicit length to include null}\par
-{\bkmkstart AAAAAAABSA}{\bkmkend AAAAAAABSA}
+{\bkmkstart AAAAAAAEEB}{\bkmkend AAAAAAAEEB}
 00069     EXPECT_EQ(sv5.size(), 11);\par
-{\bkmkstart AAAAAAABSB}{\bkmkend AAAAAAABSB}
+{\bkmkstart AAAAAAAEEC}{\bkmkend AAAAAAAEEC}
 00070     EXPECT_EQ(sv5.length(), 11);\par
-{\bkmkstart AAAAAAABSC}{\bkmkend AAAAAAABSC}
+{\bkmkstart AAAAAAAEED}{\bkmkend AAAAAAAEED}
 00071     \par
-{\bkmkstart AAAAAAABSD}{\bkmkend AAAAAAABSD}
+{\bkmkstart AAAAAAAEEE}{\bkmkend AAAAAAAEEE}
 00072     {\cf20 // Test with wide characters}\par
-{\bkmkstart AAAAAAABSE}{\bkmkend AAAAAAABSE}
+{\bkmkstart AAAAAAAEEF}{\bkmkend AAAAAAAEEF}
 00073     {\cf17 const} {\cf18 wchar_t}* wcstr = L{\cf22 "Hello"};\par
-{\bkmkstart AAAAAAABSF}{\bkmkend AAAAAAABSF}
+{\bkmkstart AAAAAAAEEG}{\bkmkend AAAAAAAEEG}
 00074     std::wstring_view wsv(wcstr);\par
-{\bkmkstart AAAAAAABSG}{\bkmkend AAAAAAABSG}
+{\bkmkstart AAAAAAAEEH}{\bkmkend AAAAAAAEEH}
 00075     EXPECT_EQ(wsv.size(), 5);\par
-{\bkmkstart AAAAAAABSH}{\bkmkend AAAAAAABSH}
+{\bkmkstart AAAAAAAEEI}{\bkmkend AAAAAAAEEI}
 00076     EXPECT_EQ(wsv.length(), 5);\par
-{\bkmkstart AAAAAAABSI}{\bkmkend AAAAAAABSI}
+{\bkmkstart AAAAAAAEEJ}{\bkmkend AAAAAAAEEJ}
 00077     \par
-{\bkmkstart AAAAAAABSJ}{\bkmkend AAAAAAABSJ}
+{\bkmkstart AAAAAAAEEK}{\bkmkend AAAAAAAEEK}
 00078     {\cf20 // Test with char16_t}\par
-{\bkmkstart AAAAAAABSK}{\bkmkend AAAAAAABSK}
+{\bkmkstart AAAAAAAEEL}{\bkmkend AAAAAAAEEL}
 00079     {\cf17 const} {\cf18 char16_t}* c16str = u{\cf22 "Hello"};\par
-{\bkmkstart AAAAAAABSL}{\bkmkend AAAAAAABSL}
+{\bkmkstart AAAAAAAEEM}{\bkmkend AAAAAAAEEM}
 00080     std::u16string_view sv16(c16str);\par
-{\bkmkstart AAAAAAABSM}{\bkmkend AAAAAAABSM}
+{\bkmkstart AAAAAAAEEO}{\bkmkend AAAAAAAEEO}
 00081     EXPECT_EQ(sv16.size(), 5);\par
-{\bkmkstart AAAAAAABSN}{\bkmkend AAAAAAABSN}
+{\bkmkstart AAAAAAAEEQ}{\bkmkend AAAAAAAEEQ}
 00082     EXPECT_EQ(sv16.length(), 5);\par
-{\bkmkstart AAAAAAABSO}{\bkmkend AAAAAAABSO}
+{\bkmkstart AAAAAAAEER}{\bkmkend AAAAAAAEER}
 00083     \par
-{\bkmkstart AAAAAAABSP}{\bkmkend AAAAAAABSP}
+{\bkmkstart AAAAAAAEES}{\bkmkend AAAAAAAEES}
 00084     {\cf20 // Test with char32_t}\par
-{\bkmkstart AAAAAAABSQ}{\bkmkend AAAAAAABSQ}
+{\bkmkstart AAAAAAAEEU}{\bkmkend AAAAAAAEEU}
 00085     {\cf17 const} {\cf18 char32_t}* c32str = U{\cf22 "Hello"};\par
-{\bkmkstart AAAAAAABSR}{\bkmkend AAAAAAABSR}
+{\bkmkstart AAAAAAAEEW}{\bkmkend AAAAAAAEEW}
 00086     std::u32string_view sv32(c32str);\par
-{\bkmkstart AAAAAAABSS}{\bkmkend AAAAAAABSS}
+{\bkmkstart AAAAAAAEEY}{\bkmkend AAAAAAAEEY}
 00087     EXPECT_EQ(sv32.size(), 5);\par
-{\bkmkstart AAAAAAABST}{\bkmkend AAAAAAABST}
+{\bkmkstart AAAAAAAEEZ}{\bkmkend AAAAAAAEEZ}
 00088     EXPECT_EQ(sv32.length(), 5);\par
-{\bkmkstart AAAAAAABSU}{\bkmkend AAAAAAABSU}
+{\bkmkstart AAAAAAAEFA}{\bkmkend AAAAAAAEFA}
 00089 \}\par
-{\bkmkstart AAAAAAABSV}{\bkmkend AAAAAAABSV}
+{\bkmkstart AAAAAAAEFB}{\bkmkend AAAAAAAEFB}
 00090 \par
-{\bkmkstart AAAAAAABSW}{\bkmkend AAAAAAABSW}
-00095 TEST_F(StringViewInternalUtilitiesTest, TestStringViewFindFunction) \{\par
-{\bkmkstart AAAAAAABSX}{\bkmkend AAAAAAABSX}
+{\bkmkstart AAAAAAAEFD}{\bkmkend AAAAAAAEFD}
+00095 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+(StringViewInternalUtilitiesTest, TestStringViewFindFunction) \{\par
+{\bkmkstart AAAAAAAEFG}{\bkmkend AAAAAAAEFG}
 00096     std::string_view sv({\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAABSY}{\bkmkend AAAAAAABSY}
+{\bkmkstart AAAAAAAEFJ}{\bkmkend AAAAAAAEFJ}
 00097     \par
-{\bkmkstart AAAAAAABSZ}{\bkmkend AAAAAAABSZ}
+{\bkmkstart AAAAAAAEFK}{\bkmkend AAAAAAAEFK}
 00098     {\cf20 // Test find with character - this should trigger internal find() function}\par
-{\bkmkstart AAAAAAABTA}{\bkmkend AAAAAAABTA}
+{\bkmkstart AAAAAAAEFM}{\bkmkend AAAAAAAEFM}
 00099     EXPECT_EQ(sv.find({\cf23 'H'}), 0);\par
-{\bkmkstart AAAAAAABTB}{\bkmkend AAAAAAABTB}
+{\bkmkstart AAAAAAAEFO}{\bkmkend AAAAAAAEFO}
 00100     EXPECT_EQ(sv.find({\cf23 'e'}), 1);\par
-{\bkmkstart AAAAAAABTC}{\bkmkend AAAAAAABTC}
+{\bkmkstart AAAAAAAEFQ}{\bkmkend AAAAAAAEFQ}
 00101     EXPECT_EQ(sv.find({\cf23 'l'}), 2);\par
-{\bkmkstart AAAAAAABTD}{\bkmkend AAAAAAABTD}
+{\bkmkstart AAAAAAAEFR}{\bkmkend AAAAAAAEFR}
 00102     EXPECT_EQ(sv.find({\cf23 'o'}), 4);\par
-{\bkmkstart AAAAAAABTE}{\bkmkend AAAAAAABTE}
+{\bkmkstart AAAAAAAEFU}{\bkmkend AAAAAAAEFU}
 00103     EXPECT_EQ(sv.find({\cf23 ','}), 5);\par
-{\bkmkstart AAAAAAABTF}{\bkmkend AAAAAAABTF}
+{\bkmkstart AAAAAAAEFW}{\bkmkend AAAAAAAEFW}
 00104     EXPECT_EQ(sv.find({\cf23 ' '}), 6);\par
-{\bkmkstart AAAAAAABTG}{\bkmkend AAAAAAABTG}
+{\bkmkstart AAAAAAAEFY}{\bkmkend AAAAAAAEFY}
 00105     EXPECT_EQ(sv.find({\cf23 'W'}), 7);\par
-{\bkmkstart AAAAAAABTH}{\bkmkend AAAAAAABTH}
-00106     EXPECT_EQ(sv.find({\cf23 'r'}), 8);\par
-{\bkmkstart AAAAAAABTJ}{\bkmkend AAAAAAABTJ}
-00107     EXPECT_EQ(sv.find({\cf23 'd'}), 10);\par
-{\bkmkstart AAAAAAABTM}{\bkmkend AAAAAAABTM}
+{\bkmkstart AAAAAAAEGB}{\bkmkend AAAAAAAEGB}
+00106     EXPECT_EQ(sv.find({\cf23 'r'}), 9);\par
+{\bkmkstart AAAAAAAEGE}{\bkmkend AAAAAAAEGE}
+00107     EXPECT_EQ(sv.find({\cf23 'd'}), 11);\par
+{\bkmkstart AAAAAAAEGG}{\bkmkend AAAAAAAEGG}
 00108     EXPECT_EQ(sv.find({\cf23 '!'}), 12);\par
-{\bkmkstart AAAAAAABTO}{\bkmkend AAAAAAABTO}
+{\bkmkstart AAAAAAAEGH}{\bkmkend AAAAAAAEGH}
 00109     EXPECT_EQ(sv.find({\cf23 'z'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAABTP}{\bkmkend AAAAAAABTP}
+{\bkmkstart AAAAAAAEGT}{\bkmkend AAAAAAAEGT}
 00110     \par
-{\bkmkstart AAAAAAABTQ}{\bkmkend AAAAAAABTQ}
+{\bkmkstart AAAAAAAEGU}{\bkmkend AAAAAAAEGU}
 00111     {\cf20 // Test find with string - this should also trigger internal find() function}\par
-{\bkmkstart AAAAAAABTS}{\bkmkend AAAAAAABTS}
+{\bkmkstart AAAAAAAEGV}{\bkmkend AAAAAAAEGV}
 00112     EXPECT_EQ(sv.find({\cf22 "Hello"}), 0);\par
-{\bkmkstart AAAAAAABTU}{\bkmkend AAAAAAABTU}
+{\bkmkstart AAAAAAAEGW}{\bkmkend AAAAAAAEGW}
 00113     EXPECT_EQ(sv.find({\cf22 "ello"}), 1);\par
-{\bkmkstart AAAAAAABTW}{\bkmkend AAAAAAABTW}
+{\bkmkstart AAAAAAAEGX}{\bkmkend AAAAAAAEGX}
 00114     EXPECT_EQ(sv.find({\cf22 "llo"}), 2);\par
-{\bkmkstart AAAAAAABUB}{\bkmkend AAAAAAABUB}
+{\bkmkstart AAAAAAAEGY}{\bkmkend AAAAAAAEGY}
 00115     EXPECT_EQ(sv.find({\cf22 "lo"}), 3);\par
-{\bkmkstart AAAAAAABUE}{\bkmkend AAAAAAABUE}
+{\bkmkstart AAAAAAAEHA}{\bkmkend AAAAAAAEHA}
 00116     EXPECT_EQ(sv.find({\cf22 "o"}), 4);\par
-{\bkmkstart AAAAAAABUH}{\bkmkend AAAAAAABUH}
+{\bkmkstart AAAAAAAEHD}{\bkmkend AAAAAAAEHD}
 00117     EXPECT_EQ(sv.find({\cf22 ", "}), 5);\par
-{\bkmkstart AAAAAAABUI}{\bkmkend AAAAAAABUI}
+{\bkmkstart AAAAAAAEHE}{\bkmkend AAAAAAAEHE}
 00118     EXPECT_EQ(sv.find({\cf22 "World"}), 7);\par
-{\bkmkstart AAAAAAABUL}{\bkmkend AAAAAAABUL}
+{\bkmkstart AAAAAAAEHG}{\bkmkend AAAAAAAEHG}
 00119     EXPECT_EQ(sv.find({\cf22 "orld"}), 8);\par
-{\bkmkstart AAAAAAABUN}{\bkmkend AAAAAAABUN}
+{\bkmkstart AAAAAAAEHH}{\bkmkend AAAAAAAEHH}
 00120     EXPECT_EQ(sv.find({\cf22 "rld"}), 9);\par
-{\bkmkstart AAAAAAABUP}{\bkmkend AAAAAAABUP}
+{\bkmkstart AAAAAAAEHJ}{\bkmkend AAAAAAAEHJ}
 00121     EXPECT_EQ(sv.find({\cf22 "ld"}), 10);\par
-{\bkmkstart AAAAAAABUR}{\bkmkend AAAAAAABUR}
-00122     EXPECT_EQ(sv.find({\cf22 "d"}), 10);\par
-{\bkmkstart AAAAAAABUU}{\bkmkend AAAAAAABUU}
+{\bkmkstart AAAAAAAEHL}{\bkmkend AAAAAAAEHL}
+00122     EXPECT_EQ(sv.find({\cf22 "d"}), 11);\par
+{\bkmkstart AAAAAAAEHN}{\bkmkend AAAAAAAEHN}
 00123     EXPECT_EQ(sv.find({\cf22 "!"}), 12);\par
-{\bkmkstart AAAAAAABUW}{\bkmkend AAAAAAABUW}
+{\bkmkstart AAAAAAAEHO}{\bkmkend AAAAAAAEHO}
 00124     EXPECT_EQ(sv.find({\cf22 "xyz"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAABUY}{\bkmkend AAAAAAABUY}
+{\bkmkstart AAAAAAAEHR}{\bkmkend AAAAAAAEHR}
 00125     \par
-{\bkmkstart AAAAAAABVA}{\bkmkend AAAAAAABVA}
+{\bkmkstart AAAAAAAEHS}{\bkmkend AAAAAAAEHS}
 00126     {\cf20 // Test find with position parameter}\par
-{\bkmkstart AAAAAAABVB}{\bkmkend AAAAAAABVB}
+{\bkmkstart AAAAAAAEHT}{\bkmkend AAAAAAAEHT}
 00127     EXPECT_EQ(sv.find({\cf23 'l'}, 3), 3);\par
-{\bkmkstart AAAAAAABVD}{\bkmkend AAAAAAABVD}
+{\bkmkstart AAAAAAAEHU}{\bkmkend AAAAAAAEHU}
 00128     EXPECT_EQ(sv.find({\cf23 'l'}, 4), 9);\par
-{\bkmkstart AAAAAAABVH}{\bkmkend AAAAAAABVH}
+{\bkmkstart AAAAAAAEHW}{\bkmkend AAAAAAAEHW}
 00129     EXPECT_EQ(sv.find({\cf23 'o'}, 5), 8);\par
-{\bkmkstart AAAAAAABVJ}{\bkmkend AAAAAAABVJ}
+{\bkmkstart AAAAAAAEHY}{\bkmkend AAAAAAAEHY}
 00130     EXPECT_EQ(sv.find({\cf22 "lo"}, 3), 3);\par
-{\bkmkstart AAAAAAABVL}{\bkmkend AAAAAAABVL}
+{\bkmkstart AAAAAAAEIB}{\bkmkend AAAAAAAEIB}
 00131     EXPECT_EQ(sv.find({\cf22 "lo"}, 4), std::string_view::npos);\par
-{\bkmkstart AAAAAAABVP}{\bkmkend AAAAAAABVP}
+{\bkmkstart AAAAAAAEID}{\bkmkend AAAAAAAEID}
 00132     \par
-{\bkmkstart AAAAAAABVQ}{\bkmkend AAAAAAABVQ}
+{\bkmkstart AAAAAAAEIF}{\bkmkend AAAAAAAEIF}
 00133     {\cf20 // Test find with empty string}\par
-{\bkmkstart AAAAAAABVS}{\bkmkend AAAAAAABVS}
+{\bkmkstart AAAAAAAEIG}{\bkmkend AAAAAAAEIG}
 00134     EXPECT_EQ(sv.find({\cf22 ""}), 0);\par
-{\bkmkstart AAAAAAABVT}{\bkmkend AAAAAAABVT}
+{\bkmkstart AAAAAAAEIL}{\bkmkend AAAAAAAEIL}
 00135     EXPECT_EQ(sv.find({\cf22 ""}, 5), 5);\par
-{\bkmkstart AAAAAAABVW}{\bkmkend AAAAAAABVW}
+{\bkmkstart AAAAAAAEIM}{\bkmkend AAAAAAAEIM}
 00136     \par
-{\bkmkstart AAAAAAABVX}{\bkmkend AAAAAAABVX}
+{\bkmkstart AAAAAAAEIN}{\bkmkend AAAAAAAEIN}
 00137     {\cf20 // Test find with single character at various positions}\par
-{\bkmkstart AAAAAAABWB}{\bkmkend AAAAAAABWB}
+{\bkmkstart AAAAAAAEIO}{\bkmkend AAAAAAAEIO}
 00138     std::string_view repeated({\cf22 "aaa"});\par
-{\bkmkstart AAAAAAABWD}{\bkmkend AAAAAAABWD}
+{\bkmkstart AAAAAAAEIQ}{\bkmkend AAAAAAAEIQ}
 00139     EXPECT_EQ(repeated.find({\cf23 'a'}), 0);\par
-{\bkmkstart AAAAAAABWF}{\bkmkend AAAAAAABWF}
+{\bkmkstart AAAAAAAEIS}{\bkmkend AAAAAAAEIS}
 00140     EXPECT_EQ(repeated.find({\cf23 'a'}, 1), 1);\par
-{\bkmkstart AAAAAAABWJ}{\bkmkend AAAAAAABWJ}
+{\bkmkstart AAAAAAAEIV}{\bkmkend AAAAAAAEIV}
 00141     EXPECT_EQ(repeated.find({\cf23 'a'}, 2), 2);\par
-{\bkmkstart AAAAAAABWK}{\bkmkend AAAAAAABWK}
+{\bkmkstart AAAAAAAEIW}{\bkmkend AAAAAAAEIW}
 00142     EXPECT_EQ(repeated.find({\cf23 'a'}, 3), std::string_view::npos);\par
-{\bkmkstart AAAAAAABWL}{\bkmkend AAAAAAABWL}
+{\bkmkstart AAAAAAAEIZ}{\bkmkend AAAAAAAEIZ}
 00143     \par
-{\bkmkstart AAAAAAABWM}{\bkmkend AAAAAAABWM}
+{\bkmkstart AAAAAAAEJA}{\bkmkend AAAAAAAEJA}
 00144     {\cf20 // Test find with wide characters}\par
-{\bkmkstart AAAAAAABWN}{\bkmkend AAAAAAABWN}
+{\bkmkstart AAAAAAAEJC}{\bkmkend AAAAAAAEJC}
 00145     std::wstring_view wsv(L{\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAABWP}{\bkmkend AAAAAAABWP}
+{\bkmkstart AAAAAAAEJF}{\bkmkend AAAAAAAEJF}
 00146     EXPECT_EQ(wsv.find(L{\cf23 'H'}), 0);\par
-{\bkmkstart AAAAAAABWQ}{\bkmkend AAAAAAABWQ}
+{\bkmkstart AAAAAAAEJH}{\bkmkend AAAAAAAEJH}
 00147     EXPECT_EQ(wsv.find(L{\cf23 'e'}), 1);\par
-{\bkmkstart AAAAAAABWT}{\bkmkend AAAAAAABWT}
+{\bkmkstart AAAAAAAEJK}{\bkmkend AAAAAAAEJK}
 00148     EXPECT_EQ(wsv.find(L{\cf23 'l'}), 2);\par
-{\bkmkstart AAAAAAABWV}{\bkmkend AAAAAAABWV}
+{\bkmkstart AAAAAAAEJM}{\bkmkend AAAAAAAEJM}
 00149     EXPECT_EQ(wsv.find(L{\cf23 'o'}), 4);\par
-{\bkmkstart AAAAAAABWY}{\bkmkend AAAAAAABWY}
+{\bkmkstart AAAAAAAEJO}{\bkmkend AAAAAAAEJO}
 00150     EXPECT_EQ(wsv.find(L{\cf23 'z'}), std::wstring_view::npos);\par
-{\bkmkstart AAAAAAABXB}{\bkmkend AAAAAAABXB}
+{\bkmkstart AAAAAAAEJQ}{\bkmkend AAAAAAAEJQ}
 00151     \par
-{\bkmkstart AAAAAAABXD}{\bkmkend AAAAAAABXD}
+{\bkmkstart AAAAAAAEJS}{\bkmkend AAAAAAAEJS}
 00152     {\cf20 // Test find with char16_t}\par
-{\bkmkstart AAAAAAABXE}{\bkmkend AAAAAAABXE}
+{\bkmkstart AAAAAAAEJT}{\bkmkend AAAAAAAEJT}
 00153     std::u16string_view sv16(u{\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAABXH}{\bkmkend AAAAAAABXH}
+{\bkmkstart AAAAAAAEJW}{\bkmkend AAAAAAAEJW}
 00154     EXPECT_EQ(sv16.find(u{\cf23 'H'}), 0);\par
-{\bkmkstart AAAAAAABXM}{\bkmkend AAAAAAABXM}
+{\bkmkstart AAAAAAAEJX}{\bkmkend AAAAAAAEJX}
 00155     EXPECT_EQ(sv16.find(u{\cf23 'e'}), 1);\par
-{\bkmkstart AAAAAAABXO}{\bkmkend AAAAAAABXO}
+{\bkmkstart AAAAAAAEKA}{\bkmkend AAAAAAAEKA}
 00156     EXPECT_EQ(sv16.find(u{\cf23 'l'}), 2);\par
-{\bkmkstart AAAAAAABXR}{\bkmkend AAAAAAABXR}
+{\bkmkstart AAAAAAAEKC}{\bkmkend AAAAAAAEKC}
 00157     EXPECT_EQ(sv16.find(u{\cf23 'o'}), 4);\par
-{\bkmkstart AAAAAAABXT}{\bkmkend AAAAAAABXT}
+{\bkmkstart AAAAAAAEKE}{\bkmkend AAAAAAAEKE}
 00158     EXPECT_EQ(sv16.find(u{\cf23 'z'}), std::u16string_view::npos);\par
-{\bkmkstart AAAAAAABXX}{\bkmkend AAAAAAABXX}
+{\bkmkstart AAAAAAAEKG}{\bkmkend AAAAAAAEKG}
 00159     \par
-{\bkmkstart AAAAAAABXY}{\bkmkend AAAAAAABXY}
+{\bkmkstart AAAAAAAEKH}{\bkmkend AAAAAAAEKH}
 00160     {\cf20 // Test find with char32_t}\par
-{\bkmkstart AAAAAAABYA}{\bkmkend AAAAAAABYA}
+{\bkmkstart AAAAAAAEKJ}{\bkmkend AAAAAAAEKJ}
 00161     std::u32string_view sv32(U{\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAABYD}{\bkmkend AAAAAAABYD}
+{\bkmkstart AAAAAAAEKM}{\bkmkend AAAAAAAEKM}
 00162     EXPECT_EQ(sv32.find(U{\cf23 'H'}), 0);\par
-{\bkmkstart AAAAAAABYG}{\bkmkend AAAAAAABYG}
+{\bkmkstart AAAAAAAEKO}{\bkmkend AAAAAAAEKO}
 00163     EXPECT_EQ(sv32.find(U{\cf23 'e'}), 1);\par
-{\bkmkstart AAAAAAABYI}{\bkmkend AAAAAAABYI}
+{\bkmkstart AAAAAAAEKP}{\bkmkend AAAAAAAEKP}
 00164     EXPECT_EQ(sv32.find(U{\cf23 'l'}), 2);\par
-{\bkmkstart AAAAAAABYK}{\bkmkend AAAAAAABYK}
+{\bkmkstart AAAAAAAEKR}{\bkmkend AAAAAAAEKR}
 00165     EXPECT_EQ(sv32.find(U{\cf23 'o'}), 4);\par
-{\bkmkstart AAAAAAABYM}{\bkmkend AAAAAAABYM}
+{\bkmkstart AAAAAAAEKU}{\bkmkend AAAAAAAEKU}
 00166     EXPECT_EQ(sv32.find(U{\cf23 'z'}), std::u32string_view::npos);\par
-{\bkmkstart AAAAAAABYQ}{\bkmkend AAAAAAABYQ}
+{\bkmkstart AAAAAAAEKX}{\bkmkend AAAAAAAEKX}
 00167 \}\par
-{\bkmkstart AAAAAAABYR}{\bkmkend AAAAAAABYR}
+{\bkmkstart AAAAAAAEKZ}{\bkmkend AAAAAAAEKZ}
 00168 \par
-{\bkmkstart AAAAAAABYS}{\bkmkend AAAAAAABYS}
-00173 TEST_F(StringViewInternalUtilitiesTest, TestStringViewAssignFunction) \{\par
-{\bkmkstart AAAAAAABYU}{\bkmkend AAAAAAABYU}
+{\bkmkstart AAAAAAAELB}{\bkmkend AAAAAAAELB}
+00173 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+(StringViewInternalUtilitiesTest, TestStringViewAssignFunction) \{\par
+{\bkmkstart AAAAAAAELG}{\bkmkend AAAAAAAELG}
 00174     {\cf20 // Test with string construction that might trigger internal assign() function}\par
-{\bkmkstart AAAAAAABYV}{\bkmkend AAAAAAABYV}
+{\bkmkstart AAAAAAAELH}{\bkmkend AAAAAAAELH}
 00175     std::string str1(10, {\cf23 'A'});\par
-{\bkmkstart AAAAAAABYZ}{\bkmkend AAAAAAABYZ}
+{\bkmkstart AAAAAAAELJ}{\bkmkend AAAAAAAELJ}
 00176     std::string_view sv1(str1);\par
-{\bkmkstart AAAAAAABZB}{\bkmkend AAAAAAABZB}
+{\bkmkstart AAAAAAAELM}{\bkmkend AAAAAAAELM}
 00177     EXPECT_EQ(sv1.size(), 10);\par
-{\bkmkstart AAAAAAABZD}{\bkmkend AAAAAAABZD}
+{\bkmkstart AAAAAAAELO}{\bkmkend AAAAAAAELO}
 00178     EXPECT_EQ(sv1[0], {\cf23 'A'});\par
-{\bkmkstart AAAAAAABZF}{\bkmkend AAAAAAABZF}
+{\bkmkstart AAAAAAAELP}{\bkmkend AAAAAAAELP}
 00179     EXPECT_EQ(sv1[9], {\cf23 'A'});\par
-{\bkmkstart AAAAAAABZH}{\bkmkend AAAAAAABZH}
+{\bkmkstart AAAAAAAELS}{\bkmkend AAAAAAAELS}
 00180     \par
-{\bkmkstart AAAAAAABZI}{\bkmkend AAAAAAABZI}
+{\bkmkstart AAAAAAAELT}{\bkmkend AAAAAAAELT}
 00181     {\cf20 // Test with string fill operations}\par
-{\bkmkstart AAAAAAABZL}{\bkmkend AAAAAAABZL}
+{\bkmkstart AAAAAAAELV}{\bkmkend AAAAAAAELV}
 00182     std::string str2;\par
-{\bkmkstart AAAAAAABZN}{\bkmkend AAAAAAABZN}
+{\bkmkstart AAAAAAAELW}{\bkmkend AAAAAAAELW}
 00183     str2.resize(5, {\cf23 'B'});\par
-{\bkmkstart AAAAAAABZP}{\bkmkend AAAAAAABZP}
+{\bkmkstart AAAAAAAELY}{\bkmkend AAAAAAAELY}
 00184     std::string_view sv2(str2);\par
-{\bkmkstart AAAAAAABZR}{\bkmkend AAAAAAABZR}
+{\bkmkstart AAAAAAAEMB}{\bkmkend AAAAAAAEMB}
 00185     EXPECT_EQ(sv2.size(), 5);\par
-{\bkmkstart AAAAAAABZT}{\bkmkend AAAAAAABZT}
+{\bkmkstart AAAAAAAEMG}{\bkmkend AAAAAAAEMG}
 00186     EXPECT_EQ(sv2[0], {\cf23 'B'});\par
-{\bkmkstart AAAAAAABZW}{\bkmkend AAAAAAABZW}
+{\bkmkstart AAAAAAAEMI}{\bkmkend AAAAAAAEMI}
 00187     EXPECT_EQ(sv2[4], {\cf23 'B'});\par
-{\bkmkstart AAAAAAABZY}{\bkmkend AAAAAAABZY}
+{\bkmkstart AAAAAAAEMK}{\bkmkend AAAAAAAEMK}
 00188     \par
-{\bkmkstart AAAAAAACAA}{\bkmkend AAAAAAACAA}
+{\bkmkstart AAAAAAAEMM}{\bkmkend AAAAAAAEMM}
 00189     {\cf20 // Test with vector operations that might trigger assign()}\par
-{\bkmkstart AAAAAAACAC}{\bkmkend AAAAAAACAC}
+{\bkmkstart AAAAAAAEMN}{\bkmkend AAAAAAAEMN}
 00190     std::vector<char> vec(8, {\cf23 'C'});\par
-{\bkmkstart AAAAAAACAE}{\bkmkend AAAAAAACAE}
+{\bkmkstart AAAAAAAEMR}{\bkmkend AAAAAAAEMR}
 00191     std::string_view sv3(vec.data(), vec.size());\par
-{\bkmkstart AAAAAAACAI}{\bkmkend AAAAAAACAI}
+{\bkmkstart AAAAAAAEMV}{\bkmkend AAAAAAAEMV}
 00192     EXPECT_EQ(sv3.size(), 8);\par
-{\bkmkstart AAAAAAACAL}{\bkmkend AAAAAAACAL}
+{\bkmkstart AAAAAAAEMX}{\bkmkend AAAAAAAEMX}
 00193     EXPECT_EQ(sv3[0], {\cf23 'C'});\par
-{\bkmkstart AAAAAAACAN}{\bkmkend AAAAAAACAN}
+{\bkmkstart AAAAAAAEMZ}{\bkmkend AAAAAAAEMZ}
 00194     EXPECT_EQ(sv3[7], {\cf23 'C'});\par
-{\bkmkstart AAAAAAACAP}{\bkmkend AAAAAAACAP}
+{\bkmkstart AAAAAAAENA}{\bkmkend AAAAAAAENA}
 00195     \par
-{\bkmkstart AAAAAAACAQ}{\bkmkend AAAAAAACAQ}
+{\bkmkstart AAAAAAAENC}{\bkmkend AAAAAAAENC}
 00196     {\cf20 // Test with array operations}\par
-{\bkmkstart AAAAAAACAS}{\bkmkend AAAAAAACAS}
+{\bkmkstart AAAAAAAENE}{\bkmkend AAAAAAAENE}
 00197     {\cf18 char} arr[6];\par
-{\bkmkstart AAAAAAACAV}{\bkmkend AAAAAAACAV}
+{\bkmkstart AAAAAAAENF}{\bkmkend AAAAAAAENF}
 00198     std::fill(arr, arr + 6, {\cf23 'D'});\par
-{\bkmkstart AAAAAAACAX}{\bkmkend AAAAAAACAX}
+{\bkmkstart AAAAAAAENJ}{\bkmkend AAAAAAAENJ}
 00199     std::string_view sv4(arr, 6);\par
-{\bkmkstart AAAAAAACAZ}{\bkmkend AAAAAAACAZ}
+{\bkmkstart AAAAAAAENM}{\bkmkend AAAAAAAENM}
 00200     EXPECT_EQ(sv4.size(), 6);\par
-{\bkmkstart AAAAAAACBC}{\bkmkend AAAAAAACBC}
+{\bkmkstart AAAAAAAENO}{\bkmkend AAAAAAAENO}
 00201     EXPECT_EQ(sv4[0], {\cf23 'D'});\par
-{\bkmkstart AAAAAAACBF}{\bkmkend AAAAAAACBF}
+{\bkmkstart AAAAAAAENQ}{\bkmkend AAAAAAAENQ}
 00202     EXPECT_EQ(sv4[5], {\cf23 'D'});\par
-{\bkmkstart AAAAAAACBH}{\bkmkend AAAAAAACBH}
+{\bkmkstart AAAAAAAENS}{\bkmkend AAAAAAAENS}
 00203     \par
-{\bkmkstart AAAAAAACBI}{\bkmkend AAAAAAACBI}
+{\bkmkstart AAAAAAAENU}{\bkmkend AAAAAAAENU}
 00204     {\cf20 // Test with memset operations}\par
-{\bkmkstart AAAAAAACBJ}{\bkmkend AAAAAAACBJ}
+{\bkmkstart AAAAAAAENW}{\bkmkend AAAAAAAENW}
 00205     {\cf18 char} buffer[12];\par
-{\bkmkstart AAAAAAACBL}{\bkmkend AAAAAAACBL}
+{\bkmkstart AAAAAAAENX}{\bkmkend AAAAAAAENX}
 00206     std::memset(buffer, {\cf23 'E'}, 12);\par
-{\bkmkstart AAAAAAACBO}{\bkmkend AAAAAAACBO}
+{\bkmkstart AAAAAAAENZ}{\bkmkend AAAAAAAENZ}
 00207     std::string_view sv5(buffer, 12);\par
-{\bkmkstart AAAAAAACBQ}{\bkmkend AAAAAAACBQ}
+{\bkmkstart AAAAAAAEOD}{\bkmkend AAAAAAAEOD}
 00208     EXPECT_EQ(sv5.size(), 12);\par
-{\bkmkstart AAAAAAACBR}{\bkmkend AAAAAAACBR}
+{\bkmkstart AAAAAAAEOF}{\bkmkend AAAAAAAEOF}
 00209     EXPECT_EQ(sv5[0], {\cf23 'E'});\par
-{\bkmkstart AAAAAAACBV}{\bkmkend AAAAAAACBV}
+{\bkmkstart AAAAAAAEOH}{\bkmkend AAAAAAAEOH}
 00210     EXPECT_EQ(sv5[11], {\cf23 'E'});\par
-{\bkmkstart AAAAAAACBY}{\bkmkend AAAAAAACBY}
+{\bkmkstart AAAAAAAEOJ}{\bkmkend AAAAAAAEOJ}
 00211     \par
-{\bkmkstart AAAAAAACBZ}{\bkmkend AAAAAAACBZ}
+{\bkmkstart AAAAAAAEOK}{\bkmkend AAAAAAAEOK}
 00212     {\cf20 // Test with wide characters}\par
-{\bkmkstart AAAAAAACCB}{\bkmkend AAAAAAACCB}
+{\bkmkstart AAAAAAAEOM}{\bkmkend AAAAAAAEOM}
 00213     std::wstring wstr(7, L{\cf23 'F'});\par
-{\bkmkstart AAAAAAACCD}{\bkmkend AAAAAAACCD}
+{\bkmkstart AAAAAAAEOP}{\bkmkend AAAAAAAEOP}
 00214     std::wstring_view wsv(wstr);\par
-{\bkmkstart AAAAAAACCH}{\bkmkend AAAAAAACCH}
+{\bkmkstart AAAAAAAEOS}{\bkmkend AAAAAAAEOS}
 00215     EXPECT_EQ(wsv.size(), 7);\par
-{\bkmkstart AAAAAAACCI}{\bkmkend AAAAAAACCI}
+{\bkmkstart AAAAAAAEOV}{\bkmkend AAAAAAAEOV}
 00216     EXPECT_EQ(wsv[0], L{\cf23 'F'});\par
-{\bkmkstart AAAAAAACCL}{\bkmkend AAAAAAACCL}
+{\bkmkstart AAAAAAAEOX}{\bkmkend AAAAAAAEOX}
 00217     EXPECT_EQ(wsv[6], L{\cf23 'F'});\par
-{\bkmkstart AAAAAAACCN}{\bkmkend AAAAAAACCN}
+{\bkmkstart AAAAAAAEOZ}{\bkmkend AAAAAAAEOZ}
 00218     \par
-{\bkmkstart AAAAAAACCP}{\bkmkend AAAAAAACCP}
+{\bkmkstart AAAAAAAEPA}{\bkmkend AAAAAAAEPA}
 00219     {\cf20 // Test with char16_t}\par
-{\bkmkstart AAAAAAACCR}{\bkmkend AAAAAAACCR}
+{\bkmkstart AAAAAAAEPC}{\bkmkend AAAAAAAEPC}
 00220     std::u16string u16str(9, u{\cf23 'G'});\par
-{\bkmkstart AAAAAAACCV}{\bkmkend AAAAAAACCV}
+{\bkmkstart AAAAAAAEPF}{\bkmkend AAAAAAAEPF}
 00221     std::u16string_view sv16(u16str);\par
-{\bkmkstart AAAAAAACCY}{\bkmkend AAAAAAACCY}
+{\bkmkstart AAAAAAAEPH}{\bkmkend AAAAAAAEPH}
 00222     EXPECT_EQ(sv16.size(), 9);\par
-{\bkmkstart AAAAAAACDC}{\bkmkend AAAAAAACDC}
+{\bkmkstart AAAAAAAEPI}{\bkmkend AAAAAAAEPI}
 00223     EXPECT_EQ(sv16[0], u{\cf23 'G'});\par
-{\bkmkstart AAAAAAACDE}{\bkmkend AAAAAAACDE}
+{\bkmkstart AAAAAAAEPM}{\bkmkend AAAAAAAEPM}
 00224     EXPECT_EQ(sv16[8], u{\cf23 'G'});\par
-{\bkmkstart AAAAAAACDI}{\bkmkend AAAAAAACDI}
+{\bkmkstart AAAAAAAEPO}{\bkmkend AAAAAAAEPO}
 00225     \par
-{\bkmkstart AAAAAAACDJ}{\bkmkend AAAAAAACDJ}
+{\bkmkstart AAAAAAAEPP}{\bkmkend AAAAAAAEPP}
 00226     {\cf20 // Test with char32_t}\par
-{\bkmkstart AAAAAAACDK}{\bkmkend AAAAAAACDK}
+{\bkmkstart AAAAAAAEPR}{\bkmkend AAAAAAAEPR}
 00227     std::u32string u32str(11, U{\cf23 'H'});\par
-{\bkmkstart AAAAAAACDM}{\bkmkend AAAAAAACDM}
+{\bkmkstart AAAAAAAEPT}{\bkmkend AAAAAAAEPT}
 00228     std::u32string_view sv32(u32str);\par
-{\bkmkstart AAAAAAACDO}{\bkmkend AAAAAAACDO}
+{\bkmkstart AAAAAAAEPX}{\bkmkend AAAAAAAEPX}
 00229     EXPECT_EQ(sv32.size(), 11);\par
-{\bkmkstart AAAAAAACDR}{\bkmkend AAAAAAACDR}
+{\bkmkstart AAAAAAAEPY}{\bkmkend AAAAAAAEPY}
 00230     EXPECT_EQ(sv32[0], U{\cf23 'H'});\par
-{\bkmkstart AAAAAAACDT}{\bkmkend AAAAAAACDT}
+{\bkmkstart AAAAAAAEPZ}{\bkmkend AAAAAAAEPZ}
 00231     EXPECT_EQ(sv32[10], U{\cf23 'H'});\par
-{\bkmkstart AAAAAAACDW}{\bkmkend AAAAAAACDW}
+{\bkmkstart AAAAAAAEQB}{\bkmkend AAAAAAAEQB}
 00232 \}\par
-{\bkmkstart AAAAAAACDY}{\bkmkend AAAAAAACDY}
+{\bkmkstart AAAAAAAEQC}{\bkmkend AAAAAAAEQC}
 00233 \par
-{\bkmkstart AAAAAAACDZ}{\bkmkend AAAAAAACDZ}
-00238 TEST_F(StringViewInternalUtilitiesTest, TestStringViewInternalOperations) \{\par
-{\bkmkstart AAAAAAACED}{\bkmkend AAAAAAACED}
+{\bkmkstart AAAAAAAEQE}{\bkmkend AAAAAAAEQE}
+00238 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+(StringViewInternalUtilitiesTest, TestStringViewInternalOperations) \{\par
+{\bkmkstart AAAAAAAEQJ}{\bkmkend AAAAAAAEQJ}
 00239     {\cf20 // Test operations that might trigger length() function}\par
-{\bkmkstart AAAAAAACEF}{\bkmkend AAAAAAACEF}
+{\bkmkstart AAAAAAAEQK}{\bkmkend AAAAAAAEQK}
 00240     {\cf17 const} {\cf18 char}* cstr = {\cf22 "Internal operations test"};\par
-{\bkmkstart AAAAAAACEH}{\bkmkend AAAAAAACEH}
+{\bkmkstart AAAAAAAEQN}{\bkmkend AAAAAAAEQN}
 00241     std::string_view sv(cstr);\par
-{\bkmkstart AAAAAAACEM}{\bkmkend AAAAAAACEM}
+{\bkmkstart AAAAAAAEQP}{\bkmkend AAAAAAAEQP}
 00242     \par
-{\bkmkstart AAAAAAACEP}{\bkmkend AAAAAAACEP}
+{\bkmkstart AAAAAAAEQQ}{\bkmkend AAAAAAAEQQ}
 00243     {\cf20 // Test size() and length() calls}\par
-{\bkmkstart AAAAAAACER}{\bkmkend AAAAAAACER}
+{\bkmkstart AAAAAAAEQS}{\bkmkend AAAAAAAEQS}
 00244     EXPECT_EQ(sv.size(), 24);\par
-{\bkmkstart AAAAAAACET}{\bkmkend AAAAAAACET}
+{\bkmkstart AAAAAAAEQV}{\bkmkend AAAAAAAEQV}
 00245     EXPECT_EQ(sv.length(), 24);\par
-{\bkmkstart AAAAAAACEW}{\bkmkend AAAAAAACEW}
+{\bkmkstart AAAAAAAEQW}{\bkmkend AAAAAAAEQW}
 00246     \par
-{\bkmkstart AAAAAAACEX}{\bkmkend AAAAAAACEX}
+{\bkmkstart AAAAAAAEQY}{\bkmkend AAAAAAAEQY}
 00247     {\cf20 // Test empty() which might use length()}\par
-{\bkmkstart AAAAAAACEZ}{\bkmkend AAAAAAACEZ}
+{\bkmkstart AAAAAAAERA}{\bkmkend AAAAAAAERA}
 00248     EXPECT_FALSE(sv.empty());\par
-{\bkmkstart AAAAAAACFB}{\bkmkend AAAAAAACFB}
+{\bkmkstart AAAAAAAERC}{\bkmkend AAAAAAAERC}
 00249     \par
-{\bkmkstart AAAAAAACFC}{\bkmkend AAAAAAACFC}
+{\bkmkstart AAAAAAAERD}{\bkmkend AAAAAAAERD}
 00250     std::string_view empty_sv({\cf22 ""});\par
-{\bkmkstart AAAAAAACFG}{\bkmkend AAAAAAACFG}
+{\bkmkstart AAAAAAAERG}{\bkmkend AAAAAAAERG}
 00251     EXPECT_TRUE(empty_sv.empty());\par
-{\bkmkstart AAAAAAACFI}{\bkmkend AAAAAAACFI}
+{\bkmkstart AAAAAAAERK}{\bkmkend AAAAAAAERK}
 00252     \par
-{\bkmkstart AAAAAAACFJ}{\bkmkend AAAAAAACFJ}
+{\bkmkstart AAAAAAAERL}{\bkmkend AAAAAAAERL}
 00253     {\cf20 // Test operations that might trigger find() function}\par
-{\bkmkstart AAAAAAACFK}{\bkmkend AAAAAAACFK}
+{\bkmkstart AAAAAAAERN}{\bkmkend AAAAAAAERN}
 00254     EXPECT_EQ(sv.find({\cf22 "Internal"}), 0);\par
-{\bkmkstart AAAAAAACFL}{\bkmkend AAAAAAACFL}
+{\bkmkstart AAAAAAAERP}{\bkmkend AAAAAAAERP}
 00255     EXPECT_EQ(sv.find({\cf22 "operations"}), 9);\par
-{\bkmkstart AAAAAAACFM}{\bkmkend AAAAAAACFM}
+{\bkmkstart AAAAAAAERR}{\bkmkend AAAAAAAERR}
 00256     EXPECT_EQ(sv.find({\cf22 "test"}), 20);\par
-{\bkmkstart AAAAAAACFN}{\bkmkend AAAAAAACFN}
+{\bkmkstart AAAAAAAERT}{\bkmkend AAAAAAAERT}
 00257     EXPECT_EQ(sv.find({\cf23 'I'}), 0);\par
-{\bkmkstart AAAAAAACFO}{\bkmkend AAAAAAACFO}
+{\bkmkstart AAAAAAAERU}{\bkmkend AAAAAAAERU}
 00258     EXPECT_EQ(sv.find({\cf23 'o'}), 9);\par
-{\bkmkstart AAAAAAACFP}{\bkmkend AAAAAAACFP}
-00259     EXPECT_EQ(sv.find({\cf23 't'}), 20);\par
-{\bkmkstart AAAAAAACFQ}{\bkmkend AAAAAAACFQ}
+{\bkmkstart AAAAAAAERX}{\bkmkend AAAAAAAERX}
+00259     EXPECT_EQ(sv.find({\cf23 't'}), 2);\par
+{\bkmkstart AAAAAAAERZ}{\bkmkend AAAAAAAERZ}
 00260     \par
-{\bkmkstart AAAAAAACFR}{\bkmkend AAAAAAACFR}
+{\bkmkstart AAAAAAAESB}{\bkmkend AAAAAAAESB}
 00261     {\cf20 // Test operations that might trigger assign() function}\par
-{\bkmkstart AAAAAAACFS}{\bkmkend AAAAAAACFS}
+{\bkmkstart AAAAAAAESD}{\bkmkend AAAAAAAESD}
 00262     std::string str(15, {\cf23 'X'});\par
-{\bkmkstart AAAAAAACFT}{\bkmkend AAAAAAACFT}
+{\bkmkstart AAAAAAAESE}{\bkmkend AAAAAAAESE}
 00263     std::string_view sv2(str);\par
-{\bkmkstart AAAAAAACFV}{\bkmkend AAAAAAACFV}
+{\bkmkstart AAAAAAAESG}{\bkmkend AAAAAAAESG}
 00264     EXPECT_EQ(sv2.size(), 15);\par
-{\bkmkstart AAAAAAACFX}{\bkmkend AAAAAAACFX}
+{\bkmkstart AAAAAAAESL}{\bkmkend AAAAAAAESL}
 00265     EXPECT_EQ(sv2[0], {\cf23 'X'});\par
-{\bkmkstart AAAAAAACGA}{\bkmkend AAAAAAACGA}
+{\bkmkstart AAAAAAAESM}{\bkmkend AAAAAAAESM}
 00266     EXPECT_EQ(sv2[14], {\cf23 'X'});\par
-{\bkmkstart AAAAAAACGC}{\bkmkend AAAAAAACGC}
+{\bkmkstart AAAAAAAESO}{\bkmkend AAAAAAAESO}
 00267     \par
-{\bkmkstart AAAAAAACGD}{\bkmkend AAAAAAACGD}
+{\bkmkstart AAAAAAAESQ}{\bkmkend AAAAAAAESQ}
 00268     {\cf20 // Test with different character types}\par
-{\bkmkstart AAAAAAACGF}{\bkmkend AAAAAAACGF}
+{\bkmkstart AAAAAAAESS}{\bkmkend AAAAAAAESS}
 00269     {\cf17 const} {\cf18 wchar_t}* wcstr = L{\cf22 "Wide string test"};\par
-{\bkmkstart AAAAAAACGH}{\bkmkend AAAAAAACGH}
+{\bkmkstart AAAAAAAESU}{\bkmkend AAAAAAAESU}
 00270     std::wstring_view wsv(wcstr);\par
-{\bkmkstart AAAAAAACGK}{\bkmkend AAAAAAACGK}
+{\bkmkstart AAAAAAAESX}{\bkmkend AAAAAAAESX}
 00271     EXPECT_EQ(wsv.size(), 16);\par
-{\bkmkstart AAAAAAACGM}{\bkmkend AAAAAAACGM}
+{\bkmkstart AAAAAAAETA}{\bkmkend AAAAAAAETA}
 00272     EXPECT_EQ(wsv.find(L{\cf23 'W'}), 0);\par
-{\bkmkstart AAAAAAACGP}{\bkmkend AAAAAAACGP}
+{\bkmkstart AAAAAAAETC}{\bkmkend AAAAAAAETC}
 00273     EXPECT_EQ(wsv.find(L{\cf23 't'}), 5);\par
-{\bkmkstart AAAAAAACGR}{\bkmkend AAAAAAACGR}
+{\bkmkstart AAAAAAAETF}{\bkmkend AAAAAAAETF}
 00274     \par
-{\bkmkstart AAAAAAACGS}{\bkmkend AAAAAAACGS}
+{\bkmkstart AAAAAAAETH}{\bkmkend AAAAAAAETH}
 00275     {\cf17 const} {\cf18 char16_t}* c16str = u{\cf22 "UTF-16 string test"};\par
-{\bkmkstart AAAAAAACGU}{\bkmkend AAAAAAACGU}
+{\bkmkstart AAAAAAAETJ}{\bkmkend AAAAAAAETJ}
 00276     std::u16string_view sv16(c16str);\par
-{\bkmkstart AAAAAAACGV}{\bkmkend AAAAAAACGV}
+{\bkmkstart AAAAAAAETN}{\bkmkend AAAAAAAETN}
 00277     EXPECT_EQ(sv16.size(), 18);\par
-{\bkmkstart AAAAAAACGY}{\bkmkend AAAAAAACGY}
+{\bkmkstart AAAAAAAETO}{\bkmkend AAAAAAAETO}
 00278     EXPECT_EQ(sv16.find(u{\cf23 'U'}), 0);\par
-{\bkmkstart AAAAAAACHA}{\bkmkend AAAAAAACHA}
+{\bkmkstart AAAAAAAETR}{\bkmkend AAAAAAAETR}
 00279     EXPECT_EQ(sv16.find(u{\cf23 't'}), 7);\par
-{\bkmkstart AAAAAAACHC}{\bkmkend AAAAAAACHC}
+{\bkmkstart AAAAAAAETS}{\bkmkend AAAAAAAETS}
 00280     \par
-{\bkmkstart AAAAAAACHE}{\bkmkend AAAAAAACHE}
+{\bkmkstart AAAAAAAETT}{\bkmkend AAAAAAAETT}
 00281     {\cf17 const} {\cf18 char32_t}* c32str = U{\cf22 "UTF-32 string test"};\par
-{\bkmkstart AAAAAAACHG}{\bkmkend AAAAAAACHG}
+{\bkmkstart AAAAAAAETV}{\bkmkend AAAAAAAETV}
 00282     std::u32string_view sv32(c32str);\par
-{\bkmkstart AAAAAAACHJ}{\bkmkend AAAAAAACHJ}
+{\bkmkstart AAAAAAAETY}{\bkmkend AAAAAAAETY}
 00283     EXPECT_EQ(sv32.size(), 18);\par
-{\bkmkstart AAAAAAACHL}{\bkmkend AAAAAAACHL}
+{\bkmkstart AAAAAAAETZ}{\bkmkend AAAAAAAETZ}
 00284     EXPECT_EQ(sv32.find(U{\cf23 'U'}), 0);\par
-{\bkmkstart AAAAAAACHN}{\bkmkend AAAAAAACHN}
+{\bkmkstart AAAAAAAEUA}{\bkmkend AAAAAAAEUA}
 00285     EXPECT_EQ(sv32.find(U{\cf23 't'}), 7);\par
-{\bkmkstart AAAAAAACHP}{\bkmkend AAAAAAACHP}
+{\bkmkstart AAAAAAAEUC}{\bkmkend AAAAAAAEUC}
 00286 \}\par
-{\bkmkstart AAAAAAACHR}{\bkmkend AAAAAAACHR}
+{\bkmkstart AAAAAAAEUD}{\bkmkend AAAAAAAEUD}
 00287 \par
-{\bkmkstart AAAAAAACHS}{\bkmkend AAAAAAACHS}
-00292 TEST_F(StringViewInternalUtilitiesTest, TestStringViewEdgeCasesForInternalFunctions) \{\par
-{\bkmkstart AAAAAAACHV}{\bkmkend AAAAAAACHV}
+{\bkmkstart AAAAAAAEUE}{\bkmkend AAAAAAAEUE}
+00292 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+(StringViewInternalUtilitiesTest, TestStringViewEdgeCasesForInternalFunctions) \{\par
+{\bkmkstart AAAAAAAEUG}{\bkmkend AAAAAAAEUG}
 00293     {\cf20 // Test with very long strings to trigger length() function}\par
-{\bkmkstart AAAAAAACHX}{\bkmkend AAAAAAACHX}
+{\bkmkstart AAAAAAAEUH}{\bkmkend AAAAAAAEUH}
 00294     std::string long_str(10000, {\cf23 'A'});\par
-{\bkmkstart AAAAAAACHZ}{\bkmkend AAAAAAACHZ}
+{\bkmkstart AAAAAAAEUL}{\bkmkend AAAAAAAEUL}
 00295     std::string_view long_sv(long_str);\par
-{\bkmkstart AAAAAAACIC}{\bkmkend AAAAAAACIC}
+{\bkmkstart AAAAAAAEUN}{\bkmkend AAAAAAAEUN}
 00296     EXPECT_EQ(long_sv.size(), 10000);\par
-{\bkmkstart AAAAAAACIF}{\bkmkend AAAAAAACIF}
+{\bkmkstart AAAAAAAEUP}{\bkmkend AAAAAAAEUP}
 00297     EXPECT_EQ(long_sv.length(), 10000);\par
-{\bkmkstart AAAAAAACIH}{\bkmkend AAAAAAACIH}
+{\bkmkstart AAAAAAAEUQ}{\bkmkend AAAAAAAEUQ}
 00298     \par
-{\bkmkstart AAAAAAACIJ}{\bkmkend AAAAAAACIJ}
+{\bkmkstart AAAAAAAEUR}{\bkmkend AAAAAAAEUR}
 00299     {\cf20 // Test find operations on long strings}\par
-{\bkmkstart AAAAAAACIL}{\bkmkend AAAAAAACIL}
+{\bkmkstart AAAAAAAEUU}{\bkmkend AAAAAAAEUU}
 00300     EXPECT_EQ(long_sv.find({\cf23 'A'}), 0);\par
-{\bkmkstart AAAAAAACIN}{\bkmkend AAAAAAACIN}
+{\bkmkstart AAAAAAAEUW}{\bkmkend AAAAAAAEUW}
 00301     EXPECT_EQ(long_sv.find({\cf23 'B'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAACIP}{\bkmkend AAAAAAACIP}
+{\bkmkstart AAAAAAAEUY}{\bkmkend AAAAAAAEUY}
 00302     EXPECT_EQ(long_sv.find({\cf22 "AAAA"}), 0);\par
-{\bkmkstart AAAAAAACIR}{\bkmkend AAAAAAACIR}
+{\bkmkstart AAAAAAAEVA}{\bkmkend AAAAAAAEVA}
 00303     EXPECT_EQ(long_sv.find({\cf22 "BBBB"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAACIU}{\bkmkend AAAAAAACIU}
+{\bkmkstart AAAAAAAEVD}{\bkmkend AAAAAAAEVD}
 00304     \par
-{\bkmkstart AAAAAAACIV}{\bkmkend AAAAAAACIV}
+{\bkmkstart AAAAAAAEVF}{\bkmkend AAAAAAAEVF}
 00305     {\cf20 // Test with strings containing special characters}\par
-{\bkmkstart AAAAAAACIX}{\bkmkend AAAAAAACIX}
+{\bkmkstart AAAAAAAEVG}{\bkmkend AAAAAAAEVG}
 00306     std::string special_str = {\cf22 "Hello\\0World\\0Test"};\par
-{\bkmkstart AAAAAAACJA}{\bkmkend AAAAAAACJA}
+{\bkmkstart AAAAAAAEVI}{\bkmkend AAAAAAAEVI}
 00307     std::string_view special_sv(special_str.data(), 16);\par
-{\bkmkstart AAAAAAACJD}{\bkmkend AAAAAAACJD}
+{\bkmkstart AAAAAAAEVJ}{\bkmkend AAAAAAAEVJ}
 00308     EXPECT_EQ(special_sv.size(), 16);\par
-{\bkmkstart AAAAAAACJF}{\bkmkend AAAAAAACJF}
+{\bkmkstart AAAAAAAEVK}{\bkmkend AAAAAAAEVK}
 00309     EXPECT_EQ(special_sv.find({\cf23 '\\0'}), 5);\par
-{\bkmkstart AAAAAAACJI}{\bkmkend AAAAAAACJI}
-00310     EXPECT_EQ(special_sv.find({\cf22 "World"}), 6);\par
-{\bkmkstart AAAAAAACJK}{\bkmkend AAAAAAACJK}
+{\bkmkstart AAAAAAAEVM}{\bkmkend AAAAAAAEVM}
+00310     EXPECT_EQ(special_sv.find({\cf22 "World"}), std::string_view::npos); {\cf20 // String contains null characters, so "World" search fails}\par
+{\bkmkstart AAAAAAAEVO}{\bkmkend AAAAAAAEVO}
 00311     \par
-{\bkmkstart AAAAAAACJM}{\bkmkend AAAAAAACJM}
+{\bkmkstart AAAAAAAEVP}{\bkmkend AAAAAAAEVP}
 00312     {\cf20 // Test with strings containing all possible characters}\par
-{\bkmkstart AAAAAAACJO}{\bkmkend AAAAAAACJO}
+{\bkmkstart AAAAAAAEVR}{\bkmkend AAAAAAAEVR}
 00313     std::string all_chars;\par
-{\bkmkstart AAAAAAACJQ}{\bkmkend AAAAAAACJQ}
+{\bkmkstart AAAAAAAEVT}{\bkmkend AAAAAAAEVT}
 00314     {\cf19 for} ({\cf18 int} i = 0; i < 256; ++i) \{\par
-{\bkmkstart AAAAAAACJT}{\bkmkend AAAAAAACJT}
+{\bkmkstart AAAAAAAEWH}{\bkmkend AAAAAAAEWH}
 00315         all_chars += {\cf17 static_cast<}{\cf18 char}{\cf17 >}(i);\par
-{\bkmkstart AAAAAAACJW}{\bkmkend AAAAAAACJW}
+{\bkmkstart AAAAAAAEWJ}{\bkmkend AAAAAAAEWJ}
 00316     \}\par
-{\bkmkstart AAAAAAACJX}{\bkmkend AAAAAAACJX}
+{\bkmkstart AAAAAAAEWK}{\bkmkend AAAAAAAEWK}
 00317     std::string_view all_sv(all_chars);\par
-{\bkmkstart AAAAAAACJY}{\bkmkend AAAAAAACJY}
+{\bkmkstart AAAAAAAEWM}{\bkmkend AAAAAAAEWM}
 00318     EXPECT_EQ(all_sv.size(), 256);\par
-{\bkmkstart AAAAAAACKA}{\bkmkend AAAAAAACKA}
+{\bkmkstart AAAAAAAEWP}{\bkmkend AAAAAAAEWP}
 00319     EXPECT_EQ(all_sv.find({\cf17 static_cast<}{\cf18 char}{\cf17 >}(0)), 0);\par
-{\bkmkstart AAAAAAACKE}{\bkmkend AAAAAAACKE}
+{\bkmkstart AAAAAAAEWT}{\bkmkend AAAAAAAEWT}
 00320     EXPECT_EQ(all_sv.find({\cf17 static_cast<}{\cf18 char}{\cf17 >}(255)), 255);\par
-{\bkmkstart AAAAAAACKG}{\bkmkend AAAAAAACKG}
+{\bkmkstart AAAAAAAEWV}{\bkmkend AAAAAAAEWV}
 00321     EXPECT_EQ(all_sv.find({\cf17 static_cast<}{\cf18 char}{\cf17 >}(128)), 128);\par
-{\bkmkstart AAAAAAACKI}{\bkmkend AAAAAAACKI}
+{\bkmkstart AAAAAAAEWW}{\bkmkend AAAAAAAEWW}
 00322     \par
-{\bkmkstart AAAAAAACKM}{\bkmkend AAAAAAACKM}
+{\bkmkstart AAAAAAAEWY}{\bkmkend AAAAAAAEWY}
 00323     {\cf20 // Test with empty string_view}\par
-{\bkmkstart AAAAAAACKO}{\bkmkend AAAAAAACKO}
+{\bkmkstart AAAAAAAEXA}{\bkmkend AAAAAAAEXA}
 00324     std::string_view empty_sv;\par
-{\bkmkstart AAAAAAACKQ}{\bkmkend AAAAAAACKQ}
+{\bkmkstart AAAAAAAEXC}{\bkmkend AAAAAAAEXC}
 00325     EXPECT_EQ(empty_sv.size(), 0);\par
-{\bkmkstart AAAAAAACKS}{\bkmkend AAAAAAACKS}
+{\bkmkstart AAAAAAAEXE}{\bkmkend AAAAAAAEXE}
 00326     EXPECT_EQ(empty_sv.length(), 0);\par
-{\bkmkstart AAAAAAACKV}{\bkmkend AAAAAAACKV}
+{\bkmkstart AAAAAAAEXF}{\bkmkend AAAAAAAEXF}
 00327     EXPECT_TRUE(empty_sv.empty());\par
-{\bkmkstart AAAAAAACKX}{\bkmkend AAAAAAACKX}
+{\bkmkstart AAAAAAAEXH}{\bkmkend AAAAAAAEXH}
 00328     EXPECT_EQ(empty_sv.find({\cf23 'A'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAACKZ}{\bkmkend AAAAAAACKZ}
+{\bkmkstart AAAAAAAEXK}{\bkmkend AAAAAAAEXK}
 00329     EXPECT_EQ(empty_sv.find({\cf22 ""}), 0);\par
-{\bkmkstart AAAAAAACLD}{\bkmkend AAAAAAACLD}
+{\bkmkstart AAAAAAAEXM}{\bkmkend AAAAAAAEXM}
 00330 \}\par
-{\bkmkstart AAAAAAACLF}{\bkmkend AAAAAAACLF}
+{\bkmkstart AAAAAAAEXO}{\bkmkend AAAAAAAEXO}
 00331 \par
-{\bkmkstart AAAAAAACLG}{\bkmkend AAAAAAACLG}
-00336 TEST_F(StringViewInternalUtilitiesTest, TestStringViewConstexprInternalFunctions) \{\par
-{\bkmkstart AAAAAAACLK}{\bkmkend AAAAAAACLK}
+{\bkmkstart AAAAAAAEXQ}{\bkmkend AAAAAAAEXQ}
+00336 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+(StringViewInternalUtilitiesTest, TestStringViewConstexprInternalFunctions) \{\par
+{\bkmkstart AAAAAAAEXU}{\bkmkend AAAAAAAEXU}
 00337     {\cf20 // Test constexpr operations that might trigger internal functions}\par
-{\bkmkstart AAAAAAACLM}{\bkmkend AAAAAAACLM}
+{\bkmkstart AAAAAAAEXW}{\bkmkend AAAAAAAEXW}
 00338     {\cf17 constexpr} std::string_view sv({\cf22 "Constexpr test"});\par
-{\bkmkstart AAAAAAACLO}{\bkmkend AAAAAAACLO}
+{\bkmkstart AAAAAAAEXX}{\bkmkend AAAAAAAEXX}
 00339     {\cf17 static_assert}(sv.size() == 14);\par
-{\bkmkstart AAAAAAACLR}{\bkmkend AAAAAAACLR}
+{\bkmkstart AAAAAAAEYC}{\bkmkend AAAAAAAEYC}
 00340     {\cf17 static_assert}(sv.length() == 14);\par
-{\bkmkstart AAAAAAACLS}{\bkmkend AAAAAAACLS}
+{\bkmkstart AAAAAAAEYF}{\bkmkend AAAAAAAEYF}
 00341     {\cf17 static_assert}(!sv.empty());\par
-{\bkmkstart AAAAAAACLV}{\bkmkend AAAAAAACLV}
+{\bkmkstart AAAAAAAEYH}{\bkmkend AAAAAAAEYH}
 00342     {\cf17 static_assert}(sv.find({\cf23 'C'}) == 0);\par
-{\bkmkstart AAAAAAACLX}{\bkmkend AAAAAAACLX}
+{\bkmkstart AAAAAAAEYJ}{\bkmkend AAAAAAAEYJ}
 00343     {\cf17 static_assert}(sv.find({\cf22 "test"}) == 10);\par
-{\bkmkstart AAAAAAACMB}{\bkmkend AAAAAAACMB}
+{\bkmkstart AAAAAAAEYL}{\bkmkend AAAAAAAEYL}
 00344     {\cf17 static_assert}(sv.find({\cf22 "xyz"}) == std::string_view::npos);\par
-{\bkmkstart AAAAAAACME}{\bkmkend AAAAAAACME}
+{\bkmkstart AAAAAAAEYO}{\bkmkend AAAAAAAEYO}
 00345     \par
-{\bkmkstart AAAAAAACMF}{\bkmkend AAAAAAACMF}
+{\bkmkstart AAAAAAAEYQ}{\bkmkend AAAAAAAEYQ}
 00346     {\cf20 // Test constexpr with wide characters}\par
-{\bkmkstart AAAAAAACMG}{\bkmkend AAAAAAACMG}
+{\bkmkstart AAAAAAAEYR}{\bkmkend AAAAAAAEYR}
 00347     {\cf17 constexpr} std::wstring_view wsv(L{\cf22 "Wide constexpr test"});\par
-{\bkmkstart AAAAAAACMK}{\bkmkend AAAAAAACMK}
+{\bkmkstart AAAAAAAEYT}{\bkmkend AAAAAAAEYT}
 00348     {\cf17 static_assert}(wsv.size() == 19);\par
-{\bkmkstart AAAAAAACML}{\bkmkend AAAAAAACML}
+{\bkmkstart AAAAAAAEYV}{\bkmkend AAAAAAAEYV}
 00349     {\cf17 static_assert}(wsv.length() == 19);\par
-{\bkmkstart AAAAAAACMN}{\bkmkend AAAAAAACMN}
+{\bkmkstart AAAAAAAEYX}{\bkmkend AAAAAAAEYX}
 00350     {\cf17 static_assert}(!wsv.empty());\par
-{\bkmkstart AAAAAAACMO}{\bkmkend AAAAAAACMO}
+{\bkmkstart AAAAAAAEYZ}{\bkmkend AAAAAAAEYZ}
 00351     {\cf17 static_assert}(wsv.find(L{\cf23 'W'}) == 0);\par
-{\bkmkstart AAAAAAACMQ}{\bkmkend AAAAAAACMQ}
+{\bkmkstart AAAAAAAEZB}{\bkmkend AAAAAAAEZB}
 00352     \par
-{\bkmkstart AAAAAAACMS}{\bkmkend AAAAAAACMS}
+{\bkmkstart AAAAAAAEZC}{\bkmkend AAAAAAAEZC}
 00353     {\cf20 // Test constexpr with char16_t}\par
-{\bkmkstart AAAAAAACMT}{\bkmkend AAAAAAACMT}
+{\bkmkstart AAAAAAAEZD}{\bkmkend AAAAAAAEZD}
 00354     {\cf17 constexpr} std::u16string_view sv16(u{\cf22 "UTF-16 constexpr test"});\par
-{\bkmkstart AAAAAAACMX}{\bkmkend AAAAAAACMX}
+{\bkmkstart AAAAAAAEZH}{\bkmkend AAAAAAAEZH}
 00355     {\cf17 static_assert}(sv16.size() == 21);\par
-{\bkmkstart AAAAAAACMY}{\bkmkend AAAAAAACMY}
+{\bkmkstart AAAAAAAEZJ}{\bkmkend AAAAAAAEZJ}
 00356     {\cf17 static_assert}(sv16.length() == 21);\par
-{\bkmkstart AAAAAAACNA}{\bkmkend AAAAAAACNA}
+{\bkmkstart AAAAAAAEZL}{\bkmkend AAAAAAAEZL}
 00357     {\cf17 static_assert}(!sv16.empty());\par
-{\bkmkstart AAAAAAACNB}{\bkmkend AAAAAAACNB}
+{\bkmkstart AAAAAAAEZM}{\bkmkend AAAAAAAEZM}
 00358     {\cf17 static_assert}(sv16.find(u{\cf23 'U'}) == 0);\par
-{\bkmkstart AAAAAAACND}{\bkmkend AAAAAAACND}
+{\bkmkstart AAAAAAAEZS}{\bkmkend AAAAAAAEZS}
 00359     \par
-{\bkmkstart AAAAAAACNE}{\bkmkend AAAAAAACNE}
+{\bkmkstart AAAAAAAEZT}{\bkmkend AAAAAAAEZT}
 00360     {\cf20 // Test constexpr with char32_t}\par
-{\bkmkstart AAAAAAACNG}{\bkmkend AAAAAAACNG}
+{\bkmkstart AAAAAAAEZU}{\bkmkend AAAAAAAEZU}
 00361     {\cf17 constexpr} std::u32string_view sv32(U{\cf22 "UTF-32 constexpr test"});\par
-{\bkmkstart AAAAAAACNI}{\bkmkend AAAAAAACNI}
+{\bkmkstart AAAAAAAEZX}{\bkmkend AAAAAAAEZX}
 00362     {\cf17 static_assert}(sv32.size() == 21);\par
-{\bkmkstart AAAAAAACNJ}{\bkmkend AAAAAAACNJ}
+{\bkmkstart AAAAAAAEZZ}{\bkmkend AAAAAAAEZZ}
 00363     {\cf17 static_assert}(sv32.length() == 21);\par
-{\bkmkstart AAAAAAACNM}{\bkmkend AAAAAAACNM}
+{\bkmkstart AAAAAAAFAB}{\bkmkend AAAAAAAFAB}
 00364     {\cf17 static_assert}(!sv32.empty());\par
-{\bkmkstart AAAAAAACNO}{\bkmkend AAAAAAACNO}
+{\bkmkstart AAAAAAAFAD}{\bkmkend AAAAAAAFAD}
 00365     {\cf17 static_assert}(sv32.find(U{\cf23 'U'}) == 0);\par
-{\bkmkstart AAAAAAACNQ}{\bkmkend AAAAAAACNQ}
-00366 \}\par
-{\bkmkstart AAAAAAACNR}{\bkmkend AAAAAAACNR}
-00367 \par
-{\bkmkstart AAAAAAACNU}{\bkmkend AAAAAAACNU}
-00372 TEST_F(StringViewInternalUtilitiesTest, TestStringViewPerformanceInternalFunctions) \{\par
-{\bkmkstart AAAAAAACNW}{\bkmkend AAAAAAACNW}
-00373     {\cf20 // Test with large strings to trigger internal functions}\par
-{\bkmkstart AAAAAAACNX}{\bkmkend AAAAAAACNX}
-00374     std::string large_string(100000, {\cf23 'P'});\par
-{\bkmkstart AAAAAAACOB}{\bkmkend AAAAAAACOB}
-00375     std::string_view large_sv(large_string);\par
-{\bkmkstart AAAAAAACOC}{\bkmkend AAAAAAACOC}
-00376     \par
-{\bkmkstart AAAAAAACOE}{\bkmkend AAAAAAACOE}
-00377     {\cf20 // Test size operations}\par
-{\bkmkstart AAAAAAACOF}{\bkmkend AAAAAAACOF}
-00378     EXPECT_EQ(large_sv.size(), 100000);\par
-{\bkmkstart AAAAAAACOI}{\bkmkend AAAAAAACOI}
-00379     EXPECT_EQ(large_sv.length(), 100000);\par
-{\bkmkstart AAAAAAACOL}{\bkmkend AAAAAAACOL}
-00380     \par
-{\bkmkstart AAAAAAACOM}{\bkmkend AAAAAAACOM}
-00381     {\cf20 // Test find operations on large strings}\par
-{\bkmkstart AAAAAAACON}{\bkmkend AAAAAAACON}
-00382     EXPECT_EQ(large_sv.find({\cf23 'P'}), 0);\par
-{\bkmkstart AAAAAAACOP}{\bkmkend AAAAAAACOP}
-00383     EXPECT_EQ(large_sv.find({\cf23 'Q'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAACOT}{\bkmkend AAAAAAACOT}
+{\bkmkstart AAAAAAAFAF}{\bkmkend AAAAAAAFAF}
+00366     \par
+{\bkmkstart AAAAAAAFAG}{\bkmkend AAAAAAAFAG}
+00367     {\cf20 // Runtime tests to ensure functionality works}\par
+{\bkmkstart AAAAAAAFAH}{\bkmkend AAAAAAAFAH}
+00368     EXPECT_EQ(sv.size(), 14);\par
+{\bkmkstart AAAAAAAFAK}{\bkmkend AAAAAAAFAK}
+00369     EXPECT_EQ(sv.length(), 14);\par
+{\bkmkstart AAAAAAAFAL}{\bkmkend AAAAAAAFAL}
+00370     EXPECT_FALSE(sv.empty());\par
+{\bkmkstart AAAAAAAFAN}{\bkmkend AAAAAAAFAN}
+00371     EXPECT_EQ(sv.find({\cf23 'C'}), 0);\par
+{\bkmkstart AAAAAAAFAP}{\bkmkend AAAAAAAFAP}
+00372     EXPECT_EQ(sv.find({\cf22 "test"}), 10);\par
+{\bkmkstart AAAAAAAFAR}{\bkmkend AAAAAAAFAR}
+00373     EXPECT_EQ(sv.find({\cf22 "xyz"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAFAT}{\bkmkend AAAAAAAFAT}
+00374     \par
+{\bkmkstart AAAAAAAFAU}{\bkmkend AAAAAAAFAU}
+00375     EXPECT_EQ(wsv.size(), 19);\par
+{\bkmkstart AAAAAAAFAX}{\bkmkend AAAAAAAFAX}
+00376     EXPECT_EQ(wsv.length(), 19);\par
+{\bkmkstart AAAAAAAFAY}{\bkmkend AAAAAAAFAY}
+00377     EXPECT_FALSE(wsv.empty());\par
+{\bkmkstart AAAAAAAFBA}{\bkmkend AAAAAAAFBA}
+00378     EXPECT_EQ(wsv.find(L{\cf23 'W'}), 0);\par
+{\bkmkstart AAAAAAAFBB}{\bkmkend AAAAAAAFBB}
+00379     \par
+{\bkmkstart AAAAAAAFBC}{\bkmkend AAAAAAAFBC}
+00380     EXPECT_EQ(sv16.size(), 21);\par
+{\bkmkstart AAAAAAAFBE}{\bkmkend AAAAAAAFBE}
+00381     EXPECT_EQ(sv16.length(), 21);\par
+{\bkmkstart AAAAAAAFBG}{\bkmkend AAAAAAAFBG}
+00382     EXPECT_FALSE(sv16.empty());\par
+{\bkmkstart AAAAAAAFBH}{\bkmkend AAAAAAAFBH}
+00383     EXPECT_EQ(sv16.find(u{\cf23 'U'}), 0);\par
+{\bkmkstart AAAAAAAFBJ}{\bkmkend AAAAAAAFBJ}
 00384     \par
-{\bkmkstart AAAAAAACOV}{\bkmkend AAAAAAACOV}
-00385     {\cf20 // Test with repeated patterns}\par
-{\bkmkstart AAAAAAACOW}{\bkmkend AAAAAAACOW}
-00386     std::string pattern_str;\par
-{\bkmkstart AAAAAAACOZ}{\bkmkend AAAAAAACOZ}
-00387     {\cf19 for} ({\cf18 int} i = 0; i < 1000; ++i) \{\par
-{\bkmkstart AAAAAAACPB}{\bkmkend AAAAAAACPB}
-00388         pattern_str += {\cf22 "ABC"};\par
-{\bkmkstart AAAAAAACPE}{\bkmkend AAAAAAACPE}
-00389     \}\par
-{\bkmkstart AAAAAAACPF}{\bkmkend AAAAAAACPF}
-00390     std::string_view pattern_sv(pattern_str);\par
-{\bkmkstart AAAAAAACPI}{\bkmkend AAAAAAACPI}
-00391     EXPECT_EQ(pattern_sv.size(), 3000);\par
-{\bkmkstart AAAAAAACPL}{\bkmkend AAAAAAACPL}
-00392     EXPECT_EQ(pattern_sv.find({\cf22 "ABC"}), 0);\par
-{\bkmkstart AAAAAAACPO}{\bkmkend AAAAAAACPO}
-00393     EXPECT_EQ(pattern_sv.find({\cf22 "BCA"}), 1);\par
-{\bkmkstart AAAAAAACPQ}{\bkmkend AAAAAAACPQ}
-00394     EXPECT_EQ(pattern_sv.find({\cf22 "CAB"}), 2);\par
-{\bkmkstart AAAAAAACPS}{\bkmkend AAAAAAACPS}
-00395     \par
-{\bkmkstart AAAAAAACPU}{\bkmkend AAAAAAACPU}
-00396     {\cf20 // Test with mixed character types}\par
-{\bkmkstart AAAAAAACPW}{\bkmkend AAAAAAACPW}
-00397     std::string mixed_str;\par
-{\bkmkstart AAAAAAACPY}{\bkmkend AAAAAAACPY}
-00398     {\cf19 for} ({\cf18 int} i = 0; i < 1000; ++i) \{\par
-{\bkmkstart AAAAAAACQB}{\bkmkend AAAAAAACQB}
-00399         mixed_str += {\cf17 static_cast<}{\cf18 char}{\cf17 >}(i % 256);\par
-{\bkmkstart AAAAAAACQE}{\bkmkend AAAAAAACQE}
-00400     \}\par
-{\bkmkstart AAAAAAACQF}{\bkmkend AAAAAAACQF}
-00401     std::string_view mixed_sv(mixed_str);\par
-{\bkmkstart AAAAAAACQI}{\bkmkend AAAAAAACQI}
-00402     EXPECT_EQ(mixed_sv.size(), 1000);\par
-{\bkmkstart AAAAAAACQM}{\bkmkend AAAAAAACQM}
-00403     EXPECT_EQ(mixed_sv.find({\cf17 static_cast<}{\cf18 char}{\cf17 >}(0)), 0);\par
-{\bkmkstart AAAAAAACQP}{\bkmkend AAAAAAACQP}
-00404     EXPECT_EQ(mixed_sv.find({\cf17 static_cast<}{\cf18 char}{\cf17 >}(255)), 255);\par
-{\bkmkstart AAAAAAACQR}{\bkmkend AAAAAAACQR}
-00405 \}\par
-{\bkmkstart AAAAAAACQS}{\bkmkend AAAAAAACQS}
-00406 \par
-{\bkmkstart AAAAAAACQU}{\bkmkend AAAAAAACQU}
-00407 \} {\cf20 // namespace}\par
+{\bkmkstart AAAAAAAFBK}{\bkmkend AAAAAAAFBK}
+00385     EXPECT_EQ(sv32.size(), 21);\par
+{\bkmkstart AAAAAAAFBM}{\bkmkend AAAAAAAFBM}
+00386     EXPECT_EQ(sv32.length(), 21);\par
+{\bkmkstart AAAAAAAFBP}{\bkmkend AAAAAAAFBP}
+00387     EXPECT_FALSE(sv32.empty());\par
+{\bkmkstart AAAAAAAFBQ}{\bkmkend AAAAAAAFBQ}
+00388     EXPECT_EQ(sv32.find(U{\cf23 'U'}), 0);\par
+{\bkmkstart AAAAAAAFBR}{\bkmkend AAAAAAAFBR}
+00389 \}\par
+{\bkmkstart AAAAAAAFBS}{\bkmkend AAAAAAAFBS}
+00390 \par
+{\bkmkstart AAAAAAAFBT}{\bkmkend AAAAAAAFBT}
+00395 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+(StringViewInternalUtilitiesTest, TestStringViewPerformanceInternalFunctions) \{\par
+{\bkmkstart AAAAAAAFBU}{\bkmkend AAAAAAAFBU}
+00396     {\cf20 // Test with large strings to trigger internal functions}\par
+{\bkmkstart AAAAAAAFBV}{\bkmkend AAAAAAAFBV}
+00397     std::string large_string(100000, {\cf23 'P'});\par
+{\bkmkstart AAAAAAAFBW}{\bkmkend AAAAAAAFBW}
+00398     std::string_view large_sv(large_string);\par
+{\bkmkstart AAAAAAAFBX}{\bkmkend AAAAAAAFBX}
+00399     \par
+{\bkmkstart AAAAAAAFBY}{\bkmkend AAAAAAAFBY}
+00400     {\cf20 // Test size operations}\par
+{\bkmkstart AAAAAAAFBZ}{\bkmkend AAAAAAAFBZ}
+00401     EXPECT_EQ(large_sv.size(), 100000);\par
+{\bkmkstart AAAAAAAFCA}{\bkmkend AAAAAAAFCA}
+00402     EXPECT_EQ(large_sv.length(), 100000);\par
+{\bkmkstart AAAAAAAFCB}{\bkmkend AAAAAAAFCB}
+00403     \par
+{\bkmkstart AAAAAAAFCC}{\bkmkend AAAAAAAFCC}
+00404     {\cf20 // Test find operations on large strings}\par
+{\bkmkstart AAAAAAAFCD}{\bkmkend AAAAAAAFCD}
+00405     EXPECT_EQ(large_sv.find({\cf23 'P'}), 0);\par
+{\bkmkstart AAAAAAAFCE}{\bkmkend AAAAAAAFCE}
+00406     EXPECT_EQ(large_sv.find({\cf23 'Q'}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAFCF}{\bkmkend AAAAAAAFCF}
+00407     \par
+{\bkmkstart AAAAAAAFCG}{\bkmkend AAAAAAAFCG}
+00408     {\cf20 // Test with repeated patterns}\par
+{\bkmkstart AAAAAAAFCK}{\bkmkend AAAAAAAFCK}
+00409     std::string pattern_str;\par
+{\bkmkstart AAAAAAAFDB}{\bkmkend AAAAAAAFDB}
+00410     {\cf19 for} ({\cf18 int} i = 0; i < 1000; ++i) \{\par
+{\bkmkstart AAAAAAAFDC}{\bkmkend AAAAAAAFDC}
+00411         pattern_str += {\cf22 "ABC"};\par
+{\bkmkstart AAAAAAAFDD}{\bkmkend AAAAAAAFDD}
+00412     \}\par
+{\bkmkstart AAAAAAAFDE}{\bkmkend AAAAAAAFDE}
+00413     std::string_view pattern_sv(pattern_str);\par
+{\bkmkstart AAAAAAAFDF}{\bkmkend AAAAAAAFDF}
+00414     EXPECT_EQ(pattern_sv.size(), 3000);\par
+{\bkmkstart AAAAAAAFDG}{\bkmkend AAAAAAAFDG}
+00415     EXPECT_EQ(pattern_sv.find({\cf22 "ABC"}), 0);\par
+{\bkmkstart AAAAAAAFDH}{\bkmkend AAAAAAAFDH}
+00416     EXPECT_EQ(pattern_sv.find({\cf22 "BCA"}), 1);\par
+{\bkmkstart AAAAAAAFDI}{\bkmkend AAAAAAAFDI}
+00417     EXPECT_EQ(pattern_sv.find({\cf22 "CAB"}), 2);\par
+{\bkmkstart AAAAAAAFDJ}{\bkmkend AAAAAAAFDJ}
+00418     \par
+{\bkmkstart AAAAAAAFDK}{\bkmkend AAAAAAAFDK}
+00419     {\cf20 // Test with mixed character types}\par
+{\bkmkstart AAAAAAAFDL}{\bkmkend AAAAAAAFDL}
+00420     std::string mixed_str;\par
+{\bkmkstart AAAAAAAFDM}{\bkmkend AAAAAAAFDM}
+00421     {\cf19 for} ({\cf18 int} i = 0; i < 1000; ++i) \{\par
+{\bkmkstart AAAAAAAFDN}{\bkmkend AAAAAAAFDN}
+00422         mixed_str += {\cf17 static_cast<}{\cf18 char}{\cf17 >}(i % 256);\par
+{\bkmkstart AAAAAAAFDO}{\bkmkend AAAAAAAFDO}
+00423     \}\par
+{\bkmkstart AAAAAAAFDP}{\bkmkend AAAAAAAFDP}
+00424     std::string_view mixed_sv(mixed_str);\par
+{\bkmkstart AAAAAAAFDQ}{\bkmkend AAAAAAAFDQ}
+00425     EXPECT_EQ(mixed_sv.size(), 1000);\par
+{\bkmkstart AAAAAAAFDR}{\bkmkend AAAAAAAFDR}
+00426     EXPECT_EQ(mixed_sv.find({\cf17 static_cast<}{\cf18 char}{\cf17 >}(0)), 0);\par
+{\bkmkstart AAAAAAAFDS}{\bkmkend AAAAAAAFDS}
+00427     EXPECT_EQ(mixed_sv.find({\cf17 static_cast<}{\cf18 char}{\cf17 >}(255)), 255);\par
+{\bkmkstart AAAAAAAFDT}{\bkmkend AAAAAAAFDT}
+00428 \}\par
+{\bkmkstart AAAAAAAFDU}{\bkmkend AAAAAAAFDU}
+00429 \par
+{\bkmkstart AAAAAAAFDV}{\bkmkend AAAAAAAFDV}
+00430 \} {\cf20 // namespace}\par
 }
 }

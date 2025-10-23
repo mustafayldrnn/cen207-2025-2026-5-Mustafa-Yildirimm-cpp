@@ -440,6 +440,18 @@ TEST_F(StringViewAdvancedCoverageTest, TestStringViewConstexprEdgeCases) {
     // Test constexpr contains using find
     static_assert(sv.find("lo, Wo") != std::string_view::npos);
     static_assert(sv.find("xyz") == std::string_view::npos);
+    
+    // Runtime tests to ensure functionality works
+    EXPECT_TRUE(empty_sv.empty());
+    EXPECT_EQ(empty_sv.size(), 0);
+    EXPECT_EQ(single_sv.size(), 1);
+    EXPECT_EQ(single_sv[0], 'A');
+    EXPECT_EQ(pos1, 7);
+    EXPECT_EQ(pos2, std::string_view::npos);
+    EXPECT_EQ(sv.find("Hello"), 0);
+    EXPECT_EQ(sv.find("World!"), 7);
+    EXPECT_NE(sv.find("lo, Wo"), std::string_view::npos);
+    EXPECT_EQ(sv.find("xyz"), std::string_view::npos);
 }
 
 /**

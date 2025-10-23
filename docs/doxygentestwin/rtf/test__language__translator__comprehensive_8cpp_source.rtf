@@ -1,0 +1,751 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s6\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs12\cgrid \sbasedon0 \snext0 heading 6;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\*\listtable
+{\list\listtemplateid1
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8662 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid1}
+{\list\listtemplateid2
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid2}
+{\list\listtemplateid3
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid3}
+}
+{\listoverridetable
+{\listoverride\listid1\listoverridecount0\ls1}
+{\listoverride\listid2\listoverridecount0\ls2}
+{\listoverride\listid3\listoverridecount0\ls3}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+test_language_translator_comprehensive.cpp\par \pard\plain 
+{\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_comprehensive.cpp}
+{\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_comprehensive.cpp}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAE" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAAJ}{\bkmkend AAAAAAAAAJ}
+00001 \par
+{\bkmkstart AAAAAAAAAL}{\bkmkend AAAAAAAAAL}
+00008 \par
+{\bkmkstart AAAAAAAAAM}{\bkmkend AAAAAAAAAM}
+00009 {\cf21 #include <gtest/gtest.h>}\par
+{\bkmkstart AAAAAAAAAP}{\bkmkend AAAAAAAAAP}
+00010 {\cf21 #include <fstream>}\par
+{\bkmkstart AAAAAAAAAV}{\bkmkend AAAAAAAAAV}
+00011 {\cf21 #include <sstream>}\par
+{\bkmkstart AAAAAAAAAX}{\bkmkend AAAAAAAAAX}
+00012 {\cf21 #include <filesystem>}\par
+{\bkmkstart AAAAAAAABC}{\bkmkend AAAAAAAABC}
+00013 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
+{\bkmkstart AAAAAAAABG}{\bkmkend AAAAAAAABG}
+00014 \par
+{\bkmkstart AAAAAAAABI}{\bkmkend AAAAAAAABI}
+00015 {\cf17 using namespace }Coruh::LanguageTranslator;\par
+{\bkmkstart AAAAAAAABO}{\bkmkend AAAAAAAABO}
+00016 \par
+{\bkmkstart AAAAAAAABQ}{\bkmkend AAAAAAAABQ}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 00017}}}
+ {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+ : {\cf17 public} ::testing::Test \{\par
+{\bkmkstart AAAAAAAABX}{\bkmkend AAAAAAAABX}
+00018 {\cf17 protected}:\par
+{\bkmkstart AAAAAAAABZ}{\bkmkend AAAAAAAABZ}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACA" }{}}{\fldrslt {\cs37\ul\cf2 00019}}}
+     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACA" }{}}{\fldrslt {\cs37\ul\cf2 SetUp}}}
+(){\cf17  override }\{\par
+{\bkmkstart AAAAAAAACC}{\bkmkend AAAAAAAACC}
+00020         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACG" }{}}{\fldrslt {\cs37\ul\cf2 app}}}
+ = std::make_unique<LanguageTranslatorApp>();\par
+{\bkmkstart AAAAAAAACS}{\bkmkend AAAAAAAACS}
+00021     \}\par
+{\bkmkstart AAAAAAAACU}{\bkmkend AAAAAAAACU}
+00022     \par
+{\bkmkstart AAAAAAAACW}{\bkmkend AAAAAAAACW}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 00023}}}
+     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 TearDown}}}
+(){\cf17  override }\{\par
+{\bkmkstart AAAAAAAACY}{\bkmkend AAAAAAAACY}
+00024         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACG" }{}}{\fldrslt {\cs37\ul\cf2 app}}}
+.reset();\par
+{\bkmkstart AAAAAAAACZ}{\bkmkend AAAAAAAACZ}
+00025     \}\par
+{\bkmkstart AAAAAAAADA}{\bkmkend AAAAAAAADA}
+00026     \par
+{\bkmkstart AAAAAAAADB}{\bkmkend AAAAAAAADB}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACG" }{}}{\fldrslt {\cs37\ul\cf2 00027}}}
+     std::unique_ptr<LanguageTranslatorApp> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACG" }{}}{\fldrslt {\cs37\ul\cf2 app}}}
+;\par
+{\bkmkstart AAAAAAAADC}{\bkmkend AAAAAAAADC}
+00028 \};\par
+{\bkmkstart AAAAAAAADD}{\bkmkend AAAAAAAADD}
+00029 \par
+{\bkmkstart AAAAAAAADE}{\bkmkend AAAAAAAADE}
+00030 {\cf20 // Test constructor and basic initialization}\par
+{\bkmkstart AAAAAAAADF}{\bkmkend AAAAAAAADF}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 00031}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestConstructor) \{\par
+{\bkmkstart AAAAAAAAPE}{\bkmkend AAAAAAAAPE}
+00032     EXPECT_FALSE(app->isUserLoggedIn());\par
+{\bkmkstart AAAAAAAAPG}{\bkmkend AAAAAAAAPG}
+00033     EXPECT_EQ(app->getSupportedLanguages().size(), 4); {\cf20 // English, Turkish, Spanish, French}\par
+{\bkmkstart AAAAAAAAPJ}{\bkmkend AAAAAAAAPJ}
+00034 \}\par
+{\bkmkstart AAAAAAAAPL}{\bkmkend AAAAAAAAPL}
+00035 \par
+{\bkmkstart AAAAAAAAPN}{\bkmkend AAAAAAAAPN}
+00036 {\cf20 // Test language management functions}\par
+{\bkmkstart AAAAAAAAPT}{\bkmkend AAAAAAAAPT}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAPU" }{}}{\fldrslt {\cs37\ul\cf2 00037}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestLanguageManagement) \{\par
+{\bkmkstart AAAAAAAAPY}{\bkmkend AAAAAAAAPY}
+00038     {\cf20 // Test setSourceLanguage}\par
+{\bkmkstart AAAAAAAAPZ}{\bkmkend AAAAAAAAPZ}
+00039     app->setSourceLanguage({\cf22 "Spanish"});\par
+{\bkmkstart AAAAAAAAQB}{\bkmkend AAAAAAAAQB}
+00040     app->setTargetLanguage({\cf22 "French"});\par
+{\bkmkstart AAAAAAAAQD}{\bkmkend AAAAAAAAQD}
+00041     \par
+{\bkmkstart AAAAAAAAQF}{\bkmkend AAAAAAAAQF}
+00042     {\cf20 // Test addLanguage}\par
+{\bkmkstart AAAAAAAAQG}{\bkmkend AAAAAAAAQG}
+00043     app->addLanguage({\cf22 "German"});\par
+{\bkmkstart AAAAAAAAQJ}{\bkmkend AAAAAAAAQJ}
+00044     {\cf17 auto} languages = app->getSupportedLanguages();\par
+{\bkmkstart AAAAAAAAQL}{\bkmkend AAAAAAAAQL}
+00045     EXPECT_TRUE(std::find(languages.begin(), languages.end(), {\cf22 "German"}) != languages.end());\par
+{\bkmkstart AAAAAAAAQO}{\bkmkend AAAAAAAAQO}
+00046 \}\par
+{\bkmkstart AAAAAAAAQP}{\bkmkend AAAAAAAAQP}
+00047 \par
+{\bkmkstart AAAAAAAAQR}{\bkmkend AAAAAAAAQR}
+00048 {\cf20 // Test user management functions}\par
+{\bkmkstart AAAAAAAAQT}{\bkmkend AAAAAAAAQT}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAQU" }{}}{\fldrslt {\cs37\ul\cf2 00049}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestUserManagement) \{\par
+{\bkmkstart AAAAAAAAQX}{\bkmkend AAAAAAAAQX}
+00050     {\cf20 // Test registration}\par
+{\bkmkstart AAAAAAAAQZ}{\bkmkend AAAAAAAAQZ}
+00051     EXPECT_TRUE(app->registerUser({\cf22 "testuser"}, {\cf22 "password123"}));\par
+{\bkmkstart AAAAAAAARD}{\bkmkend AAAAAAAARD}
+00052     EXPECT_TRUE(app->registerUser({\cf22 "testuser2"}, {\cf22 "password456"}));\par
+{\bkmkstart AAAAAAAARH}{\bkmkend AAAAAAAARH}
+00053     \par
+{\bkmkstart AAAAAAAARL}{\bkmkend AAAAAAAARL}
+00054     {\cf20 // Test login}\par
+{\bkmkstart AAAAAAAARM}{\bkmkend AAAAAAAARM}
+00055     EXPECT_TRUE(app->login({\cf22 "testuser"}, {\cf22 "password123"}));\par
+{\bkmkstart AAAAAAAARP}{\bkmkend AAAAAAAARP}
+00056     EXPECT_TRUE(app->isUserLoggedIn());\par
+{\bkmkstart AAAAAAAART}{\bkmkend AAAAAAAART}
+00057     \par
+{\bkmkstart AAAAAAAARV}{\bkmkend AAAAAAAARV}
+00058     {\cf20 // Test logout}\par
+{\bkmkstart AAAAAAAARW}{\bkmkend AAAAAAAARW}
+00059     app->logout();\par
+{\bkmkstart AAAAAAAASA}{\bkmkend AAAAAAAASA}
+00060     EXPECT_FALSE(app->isUserLoggedIn());\par
+{\bkmkstart AAAAAAAASF}{\bkmkend AAAAAAAASF}
+00061     \par
+{\bkmkstart AAAAAAAASH}{\bkmkend AAAAAAAASH}
+00062     {\cf20 // Test invalid login}\par
+{\bkmkstart AAAAAAAASI}{\bkmkend AAAAAAAASI}
+00063     EXPECT_FALSE(app->login({\cf22 "testuser"}, {\cf22 "wrongpassword"}));\par
+{\bkmkstart AAAAAAAASK}{\bkmkend AAAAAAAASK}
+00064     EXPECT_FALSE(app->login({\cf22 "nonexistent"}, {\cf22 "password"}));\par
+{\bkmkstart AAAAAAAASP}{\bkmkend AAAAAAAASP}
+00065 \}\par
+{\bkmkstart AAAAAAAASQ}{\bkmkend AAAAAAAASQ}
+00066 \par
+{\bkmkstart AAAAAAAASR}{\bkmkend AAAAAAAASR}
+00067 {\cf20 // Test phrase library functions}\par
+{\bkmkstart AAAAAAAAST}{\bkmkend AAAAAAAAST}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASU" }{}}{\fldrslt {\cs37\ul\cf2 00068}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestPhraseLibrary) \{\par
+{\bkmkstart AAAAAAAATA}{\bkmkend AAAAAAAATA}
+00069     {\cf20 // Test adding phrases}\par
+{\bkmkstart AAAAAAAATC}{\bkmkend AAAAAAAATC}
+00070     app->addPhrase({\cf22 "Hello, how are you?"}, {\cf22 "greetings"});\par
+{\bkmkstart AAAAAAAATF}{\bkmkend AAAAAAAATF}
+00071     app->addPhrase({\cf22 "Thank you very much"}, {\cf22 "politeness"});\par
+{\bkmkstart AAAAAAAATJ}{\bkmkend AAAAAAAATJ}
+00072     app->addPhrase({\cf22 "Where is the bathroom?"}, {\cf22 "travel"});\par
+{\bkmkstart AAAAAAAATK}{\bkmkend AAAAAAAATK}
+00073     \par
+{\bkmkstart AAAAAAAATM}{\bkmkend AAAAAAAATM}
+00074     {\cf20 // Test phrase translation}\par
+{\bkmkstart AAAAAAAATO}{\bkmkend AAAAAAAATO}
+00075     std::string result = app->translatePhrase({\cf22 "Hello, how are you?"});\par
+{\bkmkstart AAAAAAAATT}{\bkmkend AAAAAAAATT}
+00076     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAAUB}{\bkmkend AAAAAAAAUB}
+00077 \}\par
+{\bkmkstart AAAAAAAAUD}{\bkmkend AAAAAAAAUD}
+00078 \par
+{\bkmkstart AAAAAAAAUE}{\bkmkend AAAAAAAAUE}
+00079 {\cf20 // Test learning tips functions}\par
+{\bkmkstart AAAAAAAAUJ}{\bkmkend AAAAAAAAUJ}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAUK" }{}}{\fldrslt {\cs37\ul\cf2 00080}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestLearningTips) \{\par
+{\bkmkstart AAAAAAAAVP}{\bkmkend AAAAAAAAVP}
+00081     {\cf20 // Test adding learning tips}\par
+{\bkmkstart AAAAAAAAVQ}{\bkmkend AAAAAAAAVQ}
+00082     app->addLearningTip({\cf22 "Practice daily for better results"});\par
+{\bkmkstart AAAAAAAAVT}{\bkmkend AAAAAAAAVT}
+00083     app->addLearningTip({\cf22 "Use flashcards for vocabulary"});\par
+{\bkmkstart AAAAAAAAVV}{\bkmkend AAAAAAAAVV}
+00084     app->addLearningTip({\cf22 "Listen to native speakers"});\par
+{\bkmkstart AAAAAAAAVW}{\bkmkend AAAAAAAAVW}
+00085     \par
+{\bkmkstart AAAAAAAAWB}{\bkmkend AAAAAAAAWB}
+00086     {\cf20 // Test showing learning tips (should not crash)}\par
+{\bkmkstart AAAAAAAAWE}{\bkmkend AAAAAAAAWE}
+00087     EXPECT_NO_THROW(app->showLearningTips());\par
+{\bkmkstart AAAAAAAAWH}{\bkmkend AAAAAAAAWH}
+00088 \}\par
+{\bkmkstart AAAAAAAAWJ}{\bkmkend AAAAAAAAWJ}
+00089 \par
+{\bkmkstart AAAAAAAAWK}{\bkmkend AAAAAAAAWK}
+00090 {\cf20 // Test pronunciation guide functions}\par
+{\bkmkstart AAAAAAAAWN}{\bkmkend AAAAAAAAWN}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAWO" }{}}{\fldrslt {\cs37\ul\cf2 00091}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestPronunciationGuide) \{\par
+{\bkmkstart AAAAAAAAWT}{\bkmkend AAAAAAAAWT}
+00092     {\cf20 // Test adding pronunciation guides}\par
+{\bkmkstart AAAAAAAAWU}{\bkmkend AAAAAAAAWU}
+00093     app->addPronunciation({\cf22 "hello"}, {\cf22 "heh-LOH"});\par
+{\bkmkstart AAAAAAAAWY}{\bkmkend AAAAAAAAWY}
+00094     app->addPronunciation({\cf22 "world"}, {\cf22 "wurld"});\par
+{\bkmkstart AAAAAAAAXA}{\bkmkend AAAAAAAAXA}
+00095     app->addPronunciation({\cf22 "thank you"}, {\cf22 "thangk yoo"});\par
+{\bkmkstart AAAAAAAAXE}{\bkmkend AAAAAAAAXE}
+00096     \par
+{\bkmkstart AAAAAAAAXH}{\bkmkend AAAAAAAAXH}
+00097     {\cf20 // Test showing pronunciation guide (should not crash)}\par
+{\bkmkstart AAAAAAAAXI}{\bkmkend AAAAAAAAXI}
+00098     EXPECT_NO_THROW(app->showPronunciationGuide());\par
+{\bkmkstart AAAAAAAAXL}{\bkmkend AAAAAAAAXL}
+00099 \}\par
+{\bkmkstart AAAAAAAAXN}{\bkmkend AAAAAAAAXN}
+00100 \par
+{\bkmkstart AAAAAAAAXQ}{\bkmkend AAAAAAAAXQ}
+00101 {\cf20 // Test data management functions}\par
+{\bkmkstart AAAAAAAAXV}{\bkmkend AAAAAAAAXV}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXW" }{}}{\fldrslt {\cs37\ul\cf2 00102}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestDataManagement) \{\par
+{\bkmkstart AAAAAAAAYC}{\bkmkend AAAAAAAAYC}
+00103     {\cf20 // Test initializeDefaultData (should not crash)}\par
+{\bkmkstart AAAAAAAAYG}{\bkmkend AAAAAAAAYG}
+00104     EXPECT_NO_THROW(app->initializeDefaultData());\par
+{\bkmkstart AAAAAAAAYK}{\bkmkend AAAAAAAAYK}
+00105     \par
+{\bkmkstart AAAAAAAAYL}{\bkmkend AAAAAAAAYL}
+00106     {\cf20 // Test saveData (should not crash)}\par
+{\bkmkstart AAAAAAAAYN}{\bkmkend AAAAAAAAYN}
+00107     EXPECT_NO_THROW(app->saveData());\par
+{\bkmkstart AAAAAAAAYQ}{\bkmkend AAAAAAAAYQ}
+00108     \par
+{\bkmkstart AAAAAAAAYT}{\bkmkend AAAAAAAAYT}
+00109     {\cf20 // Test loadData (should not crash)}\par
+{\bkmkstart AAAAAAAAYV}{\bkmkend AAAAAAAAYV}
+00110     EXPECT_NO_THROW(app->loadData());\par
+{\bkmkstart AAAAAAAAZA}{\bkmkend AAAAAAAAZA}
+00111 \}\par
+{\bkmkstart AAAAAAAAZF}{\bkmkend AAAAAAAAZF}
+00112 \par
+{\bkmkstart AAAAAAAAZG}{\bkmkend AAAAAAAAZG}
+00113 {\cf20 // Test dictionary management functions}\par
+{\bkmkstart AAAAAAAAZK}{\bkmkend AAAAAAAAZK}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAZL" }{}}{\fldrslt {\cs37\ul\cf2 00114}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestDictionaryManagement) \{\par
+{\bkmkstart AAAAAAAAZP}{\bkmkend AAAAAAAAZP}
+00115     {\cf20 // Test loadAllDictionaries (should not crash)}\par
+{\bkmkstart AAAAAAAAZT}{\bkmkend AAAAAAAAZT}
+00116     EXPECT_NO_THROW(app->loadAllDictionaries());\par
+{\bkmkstart AAAAAAABAA}{\bkmkend AAAAAAABAA}
+00117     \par
+{\bkmkstart AAAAAAABAB}{\bkmkend AAAAAAABAB}
+00118     {\cf20 // Test loadDictionaryFromFile with non-existent file}\par
+{\bkmkstart AAAAAAABAD}{\bkmkend AAAAAAABAD}
+00119     EXPECT_FALSE(app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "nonexistent.txt"}));\par
+{\bkmkstart AAAAAAABAK}{\bkmkend AAAAAAABAK}
+00120     \par
+{\bkmkstart AAAAAAABAM}{\bkmkend AAAAAAABAM}
+00121     {\cf20 // Test loadDictionaryFromFile with valid file (if it exists)}\par
+{\bkmkstart AAAAAAABAP}{\bkmkend AAAAAAABAP}
+00122     std::filesystem::create_directory({\cf22 "dictionaries"});\par
+{\bkmkstart AAAAAAABAT}{\bkmkend AAAAAAABAT}
+00123     std::ofstream testFile({\cf22 "dictionaries/test_en_de.txt"});\par
+{\bkmkstart AAAAAAABAW}{\bkmkend AAAAAAABAW}
+00124     testFile << {\cf22 "hello=halo\\nworld=welt\\n"};\par
+{\bkmkstart AAAAAAABAZ}{\bkmkend AAAAAAABAZ}
+00125     testFile.close();\par
+{\bkmkstart AAAAAAABBB}{\bkmkend AAAAAAABBB}
+00126     \par
+{\bkmkstart AAAAAAABBE}{\bkmkend AAAAAAABBE}
+00127     EXPECT_TRUE(app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "dictionaries/test_en_de.txt"}));\par
+{\bkmkstart AAAAAAABBJ}{\bkmkend AAAAAAABBJ}
+00128     \par
+{\bkmkstart AAAAAAABBK}{\bkmkend AAAAAAABBK}
+00129     {\cf20 // Clean up}\par
+{\bkmkstart AAAAAAABBM}{\bkmkend AAAAAAABBM}
+00130     std::filesystem::remove({\cf22 "dictionaries/test_en_de.txt"});\par
+{\bkmkstart AAAAAAABBS}{\bkmkend AAAAAAABBS}
+00131 \}\par
+{\bkmkstart AAAAAAABBU}{\bkmkend AAAAAAABBU}
+00132 \par
+{\bkmkstart AAAAAAABBV}{\bkmkend AAAAAAABBV}
+00133 {\cf20 // Test API functions}\par
+{\bkmkstart AAAAAAABBY}{\bkmkend AAAAAAABBY}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABBZ" }{}}{\fldrslt {\cs37\ul\cf2 00134}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestAPIFunctions) \{\par
+{\bkmkstart AAAAAAABCF}{\bkmkend AAAAAAABCF}
+00135     {\cf20 // Test isAPIAvailable}\par
+{\bkmkstart AAAAAAABCU}{\bkmkend AAAAAAABCU}
+00136     EXPECT_FALSE(app->isAPIAvailable());\par
+{\bkmkstart AAAAAAABDB}{\bkmkend AAAAAAABDB}
+00137     \par
+{\bkmkstart AAAAAAABDD}{\bkmkend AAAAAAABDD}
+00138     {\cf20 // Test setAPIKey}\par
+{\bkmkstart AAAAAAABDH}{\bkmkend AAAAAAABDH}
+00139     app->setAPIKey({\cf22 "test-api-key-123"});\par
+{\bkmkstart AAAAAAABDK}{\bkmkend AAAAAAABDK}
+00140     \par
+{\bkmkstart AAAAAAABDM}{\bkmkend AAAAAAABDM}
+00141     {\cf20 // Test setAPIMode}\par
+{\bkmkstart AAAAAAABDQ}{\bkmkend AAAAAAABDQ}
+00142     app->setAPIMode({\cf17 true});\par
+{\bkmkstart AAAAAAABDU}{\bkmkend AAAAAAABDU}
+00143     app->setAPIMode({\cf17 false});\par
+{\bkmkstart AAAAAAABDX}{\bkmkend AAAAAAABDX}
+00144     \par
+{\bkmkstart AAAAAAABDZ}{\bkmkend AAAAAAABDZ}
+00145     {\cf20 // Test Google API translation (should return empty string)}\par
+{\bkmkstart AAAAAAABEB}{\bkmkend AAAAAAABEB}
+00146     std::string result = app->translateWithGoogleAPI({\cf22 "hello"}, {\cf22 "en"}, {\cf22 "tr"});\par
+{\bkmkstart AAAAAAABEI}{\bkmkend AAAAAAABEI}
+00147     EXPECT_TRUE(result.empty());\par
+{\bkmkstart AAAAAAABEO}{\bkmkend AAAAAAABEO}
+00148     \par
+{\bkmkstart AAAAAAABEQ}{\bkmkend AAAAAAABEQ}
+00149     {\cf20 // Test Microsoft API translation (should return empty string)}\par
+{\bkmkstart AAAAAAABET}{\bkmkend AAAAAAABET}
+00150     result = app->translateWithMicrosoftAPI({\cf22 "hello"}, {\cf22 "en"}, {\cf22 "tr"});\par
+{\bkmkstart AAAAAAABEY}{\bkmkend AAAAAAABEY}
+00151     EXPECT_TRUE(result.empty());\par
+{\bkmkstart AAAAAAABFC}{\bkmkend AAAAAAABFC}
+00152 \}\par
+{\bkmkstart AAAAAAABFE}{\bkmkend AAAAAAABFE}
+00153 \par
+{\bkmkstart AAAAAAABFG}{\bkmkend AAAAAAABFG}
+00154 {\cf20 // Test translation functions with various inputs}\par
+{\bkmkstart AAAAAAABFL}{\bkmkend AAAAAAABFL}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABFM" }{}}{\fldrslt {\cs37\ul\cf2 00155}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestTranslationFunctions) \{\par
+{\bkmkstart AAAAAAABFZ}{\bkmkend AAAAAAABFZ}
+00156     {\cf20 // Test translateWord}\par
+{\bkmkstart AAAAAAABGB}{\bkmkend AAAAAAABGB}
+00157     std::string result = app->translateWord({\cf22 "hello"});\par
+{\bkmkstart AAAAAAABGN}{\bkmkend AAAAAAABGN}
+00158     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAABGU}{\bkmkend AAAAAAABGU}
+00159     \par
+{\bkmkstart AAAAAAABGX}{\bkmkend AAAAAAABGX}
+00160     {\cf20 // Test translatePhrase}\par
+{\bkmkstart AAAAAAABHA}{\bkmkend AAAAAAABHA}
+00161     result = app->translatePhrase({\cf22 "good morning"});\par
+{\bkmkstart AAAAAAABHG}{\bkmkend AAAAAAABHG}
+00162     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAABHM}{\bkmkend AAAAAAABHM}
+00163     \par
+{\bkmkstart AAAAAAABHN}{\bkmkend AAAAAAABHN}
+00164     {\cf20 // Test translateText}\par
+{\bkmkstart AAAAAAABHR}{\bkmkend AAAAAAABHR}
+00165     result = app->translateText({\cf22 "hello world"});\par
+{\bkmkstart AAAAAAABHW}{\bkmkend AAAAAAABHW}
+00166     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAABID}{\bkmkend AAAAAAABID}
+00167     \par
+{\bkmkstart AAAAAAABIE}{\bkmkend AAAAAAABIE}
+00168     {\cf20 // Test with empty input}\par
+{\bkmkstart AAAAAAABIF}{\bkmkend AAAAAAABIF}
+00169     result = app->translateWord({\cf22 ""});\par
+{\bkmkstart AAAAAAABIL}{\bkmkend AAAAAAABIL}
+00170     EXPECT_TRUE(result.empty());\par
+{\bkmkstart AAAAAAABIS}{\bkmkend AAAAAAABIS}
+00171     \par
+{\bkmkstart AAAAAAABIV}{\bkmkend AAAAAAABIV}
+00172     result = app->translatePhrase({\cf22 ""});\par
+{\bkmkstart AAAAAAABJC}{\bkmkend AAAAAAABJC}
+00173     EXPECT_TRUE(result.empty());\par
+{\bkmkstart AAAAAAABJJ}{\bkmkend AAAAAAABJJ}
+00174     \par
+{\bkmkstart AAAAAAABJM}{\bkmkend AAAAAAABJM}
+00175     result = app->translateText({\cf22 ""});\par
+{\bkmkstart AAAAAAABJS}{\bkmkend AAAAAAABJS}
+00176     EXPECT_TRUE(result.empty());\par
+{\bkmkstart AAAAAAABJY}{\bkmkend AAAAAAABJY}
+00177 \}\par
+{\bkmkstart AAAAAAABKA}{\bkmkend AAAAAAABKA}
+00178 \par
+{\bkmkstart AAAAAAABKC}{\bkmkend AAAAAAABKC}
+00179 {\cf20 // Test edge cases and error handling}\par
+{\bkmkstart AAAAAAABKI}{\bkmkend AAAAAAABKI}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABKJ" }{}}{\fldrslt {\cs37\ul\cf2 00180}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestEdgeCases) \{\par
+{\bkmkstart AAAAAAABKT}{\bkmkend AAAAAAABKT}
+00181     {\cf20 // Test with very long text}\par
+{\bkmkstart AAAAAAABME}{\bkmkend AAAAAAABME}
+00182     std::string longText(1000, {\cf23 'a'});\par
+{\bkmkstart AAAAAAABMR}{\bkmkend AAAAAAABMR}
+00183     std::string result = app->translateText(longText);\par
+{\bkmkstart AAAAAAABNG}{\bkmkend AAAAAAABNG}
+00184     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAABNN}{\bkmkend AAAAAAABNN}
+00185     \par
+{\bkmkstart AAAAAAABNS}{\bkmkend AAAAAAABNS}
+00186     {\cf20 // Test with special characters}\par
+{\bkmkstart AAAAAAABNV}{\bkmkend AAAAAAABNV}
+00187     result = app->translateText({\cf22 "Hello, World! @#$%^&*()"});\par
+{\bkmkstart AAAAAAABOD}{\bkmkend AAAAAAABOD}
+00188     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAABOI}{\bkmkend AAAAAAABOI}
+00189     \par
+{\bkmkstart AAAAAAABOM}{\bkmkend AAAAAAABOM}
+00190     {\cf20 // Test with numbers}\par
+{\bkmkstart AAAAAAABOP}{\bkmkend AAAAAAABOP}
+00191     result = app->translateText({\cf22 "123 456 789"});\par
+{\bkmkstart AAAAAAABOT}{\bkmkend AAAAAAABOT}
+00192     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAABOZ}{\bkmkend AAAAAAABOZ}
+00193     \par
+{\bkmkstart AAAAAAABPC}{\bkmkend AAAAAAABPC}
+00194     {\cf20 // Test with mixed languages}\par
+{\bkmkstart AAAAAAABPF}{\bkmkend AAAAAAABPF}
+00195     result = app->translateText({\cf22 "hello merhaba hola"});\par
+{\bkmkstart AAAAAAABPM}{\bkmkend AAAAAAABPM}
+00196     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAABPT}{\bkmkend AAAAAAABPT}
+00197 \}\par
+{\bkmkstart AAAAAAABPX}{\bkmkend AAAAAAABPX}
+00198 \par
+{\bkmkstart AAAAAAABQA}{\bkmkend AAAAAAABQA}
+00199 {\cf20 // Test menu and choice handling}\par
+{\bkmkstart AAAAAAABQG}{\bkmkend AAAAAAABQG}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABQI" }{}}{\fldrslt {\cs37\ul\cf2 00200}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestMenuHandling) \{\par
+{\bkmkstart AAAAAAABQW}{\bkmkend AAAAAAABQW}
+00201     {\cf20 // Test handleUserChoice with various inputs}\par
+{\bkmkstart AAAAAAABRA}{\bkmkend AAAAAAABRA}
+00202     EXPECT_NO_THROW(app->handleUserChoice(0)); {\cf20 // Exit}\par
+{\bkmkstart AAAAAAABRJ}{\bkmkend AAAAAAABRJ}
+00203     EXPECT_NO_THROW(app->handleUserChoice(1)); {\cf20 // Login/Translate}\par
+{\bkmkstart AAAAAAABRP}{\bkmkend AAAAAAABRP}
+00204     EXPECT_NO_THROW(app->handleUserChoice(2)); {\cf20 // Register/Change Languages}\par
+{\bkmkstart AAAAAAABRT}{\bkmkend AAAAAAABRT}
+00205     EXPECT_NO_THROW(app->handleUserChoice(3)); {\cf20 // Phrase Library}\par
+{\bkmkstart AAAAAAABSB}{\bkmkend AAAAAAABSB}
+00206     EXPECT_NO_THROW(app->handleUserChoice(4)); {\cf20 // Learning Tips}\par
+{\bkmkstart AAAAAAABSF}{\bkmkend AAAAAAABSF}
+00207     EXPECT_NO_THROW(app->handleUserChoice(5)); {\cf20 // Pronunciation Guide}\par
+{\bkmkstart AAAAAAABSK}{\bkmkend AAAAAAABSK}
+00208     EXPECT_NO_THROW(app->handleUserChoice(6)); {\cf20 // Logout}\par
+{\bkmkstart AAAAAAABSQ}{\bkmkend AAAAAAABSQ}
+00209     EXPECT_NO_THROW(app->handleUserChoice(99)); {\cf20 // Invalid choice}\par
+{\bkmkstart AAAAAAABSV}{\bkmkend AAAAAAABSV}
+00210 \}\par
+{\bkmkstart AAAAAAABSZ}{\bkmkend AAAAAAABSZ}
+00211 \par
+{\bkmkstart AAAAAAABTB}{\bkmkend AAAAAAABTB}
+00212 {\cf20 // Test language selection}\par
+{\bkmkstart AAAAAAABTH}{\bkmkend AAAAAAABTH}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABTJ" }{}}{\fldrslt {\cs37\ul\cf2 00213}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestLanguageSelection) \{\par
+{\bkmkstart AAAAAAABTT}{\bkmkend AAAAAAABTT}
+00214     {\cf20 // Test showLanguageSelection (should not crash)}\par
+{\bkmkstart AAAAAAABTU}{\bkmkend AAAAAAABTU}
+00215     EXPECT_NO_THROW(app->showLanguageSelection());\par
+{\bkmkstart AAAAAAABUD}{\bkmkend AAAAAAABUD}
+00216 \}\par
+{\bkmkstart AAAAAAABUE}{\bkmkend AAAAAAABUE}
+00217 \par
+{\bkmkstart AAAAAAABUI}{\bkmkend AAAAAAABUI}
+00218 {\cf20 // Test phrase library display}\par
+{\bkmkstart AAAAAAABUO}{\bkmkend AAAAAAABUO}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABUP" }{}}{\fldrslt {\cs37\ul\cf2 00219}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestPhraseLibraryDisplay) \{\par
+{\bkmkstart AAAAAAABVB}{\bkmkend AAAAAAABVB}
+00220     {\cf20 // Test showPhraseLibrary (should not crash)}\par
+{\bkmkstart AAAAAAABVD}{\bkmkend AAAAAAABVD}
+00221     EXPECT_NO_THROW(app->showPhraseLibrary());\par
+{\bkmkstart AAAAAAABVJ}{\bkmkend AAAAAAABVJ}
+00222 \}\par
+{\bkmkstart AAAAAAABVM}{\bkmkend AAAAAAABVM}
+00223 \par
+{\bkmkstart AAAAAAABVP}{\bkmkend AAAAAAABVP}
+00224 {\cf20 // Test with different language combinations}\par
+{\bkmkstart AAAAAAABVS}{\bkmkend AAAAAAABVS}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABVT" }{}}{\fldrslt {\cs37\ul\cf2 00225}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestLanguageCombinations) \{\par
+{\bkmkstart AAAAAAABVZ}{\bkmkend AAAAAAABVZ}
+00226     {\cf20 // Test English to Turkish}\par
+{\bkmkstart AAAAAAABWB}{\bkmkend AAAAAAABWB}
+00227     app->setSourceLanguage({\cf22 "English"});\par
+{\bkmkstart AAAAAAABWG}{\bkmkend AAAAAAABWG}
+00228     app->setTargetLanguage({\cf22 "Turkish"});\par
+{\bkmkstart AAAAAAABWM}{\bkmkend AAAAAAABWM}
+00229     std::string result = app->translateText({\cf22 "hello world"});\par
+{\bkmkstart AAAAAAABWW}{\bkmkend AAAAAAABWW}
+00230     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAABXE}{\bkmkend AAAAAAABXE}
+00231     \par
+{\bkmkstart AAAAAAABXF}{\bkmkend AAAAAAABXF}
+00232     {\cf20 // Test English to Spanish}\par
+{\bkmkstart AAAAAAABXK}{\bkmkend AAAAAAABXK}
+00233     app->setSourceLanguage({\cf22 "English"});\par
+{\bkmkstart AAAAAAABXP}{\bkmkend AAAAAAABXP}
+00234     app->setTargetLanguage({\cf22 "Spanish"});\par
+{\bkmkstart AAAAAAABXS}{\bkmkend AAAAAAABXS}
+00235     result = app->translateText({\cf22 "hello world"});\par
+{\bkmkstart AAAAAAABXY}{\bkmkend AAAAAAABXY}
+00236     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAABYD}{\bkmkend AAAAAAABYD}
+00237     \par
+{\bkmkstart AAAAAAABYG}{\bkmkend AAAAAAABYG}
+00238     {\cf20 // Test English to French}\par
+{\bkmkstart AAAAAAABYI}{\bkmkend AAAAAAABYI}
+00239     app->setSourceLanguage({\cf22 "English"});\par
+{\bkmkstart AAAAAAABYM}{\bkmkend AAAAAAABYM}
+00240     app->setTargetLanguage({\cf22 "French"});\par
+{\bkmkstart AAAAAAABYP}{\bkmkend AAAAAAABYP}
+00241     result = app->translateText({\cf22 "hello world"});\par
+{\bkmkstart AAAAAAABYU}{\bkmkend AAAAAAABYU}
+00242     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAABYZ}{\bkmkend AAAAAAABYZ}
+00243     \par
+{\bkmkstart AAAAAAABZB}{\bkmkend AAAAAAABZB}
+00244     {\cf20 // Test Turkish to English}\par
+{\bkmkstart AAAAAAABZF}{\bkmkend AAAAAAABZF}
+00245     app->setSourceLanguage({\cf22 "Turkish"});\par
+{\bkmkstart AAAAAAABZJ}{\bkmkend AAAAAAABZJ}
+00246     app->setTargetLanguage({\cf22 "English"});\par
+{\bkmkstart AAAAAAABZL}{\bkmkend AAAAAAABZL}
+00247     result = app->translateText({\cf22 "merhaba dünya"});\par
+{\bkmkstart AAAAAAABZO}{\bkmkend AAAAAAABZO}
+00248     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAABZS}{\bkmkend AAAAAAABZS}
+00249 \}\par
+{\bkmkstart AAAAAAACAH}{\bkmkend AAAAAAACAH}
+00250 \par
+{\bkmkstart AAAAAAACAL}{\bkmkend AAAAAAACAL}
+00251 {\cf20 // Test performance with large datasets}\par
+{\bkmkstart AAAAAAACAP}{\bkmkend AAAAAAACAP}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACAR" }{}}{\fldrslt {\cs37\ul\cf2 00252}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 TEST_F}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorComprehensiveTest}}}
+, TestPerformance) \{\par
+{\bkmkstart AAAAAAACAT}{\bkmkend AAAAAAACAT}
+00253     {\cf20 // Add many phrases}\par
+{\bkmkstart AAAAAAACAU}{\bkmkend AAAAAAACAU}
+00254     {\cf19 for} ({\cf18 int} i = 0; i < 100; ++i) \{\par
+{\bkmkstart AAAAAAACAV}{\bkmkend AAAAAAACAV}
+00255         app->addPhrase({\cf22 "phrase "} + std::to_string(i), {\cf22 "category"} + std::to_string(i % 5));\par
+{\bkmkstart AAAAAAACAW}{\bkmkend AAAAAAACAW}
+00256     \}\par
+{\bkmkstart AAAAAAACAX}{\bkmkend AAAAAAACAX}
+00257     \par
+{\bkmkstart AAAAAAACAY}{\bkmkend AAAAAAACAY}
+00258     {\cf20 // Add many learning tips}\par
+{\bkmkstart AAAAAAACAZ}{\bkmkend AAAAAAACAZ}
+00259     {\cf19 for} ({\cf18 int} i = 0; i < 50; ++i) \{\par
+{\bkmkstart AAAAAAACBA}{\bkmkend AAAAAAACBA}
+00260         app->addLearningTip({\cf22 "tip "} + std::to_string(i));\par
+{\bkmkstart AAAAAAACBB}{\bkmkend AAAAAAACBB}
+00261     \}\par
+{\bkmkstart AAAAAAACBD}{\bkmkend AAAAAAACBD}
+00262     \par
+{\bkmkstart AAAAAAACBE}{\bkmkend AAAAAAACBE}
+00263     {\cf20 // Add many pronunciations}\par
+{\bkmkstart AAAAAAACBG}{\bkmkend AAAAAAACBG}
+00264     {\cf19 for} ({\cf18 int} i = 0; i < 50; ++i) \{\par
+{\bkmkstart AAAAAAACBO}{\bkmkend AAAAAAACBO}
+00265         app->addPronunciation({\cf22 "word"} + std::to_string(i), {\cf22 "pronunciation"} + std::to_string(i));\par
+{\bkmkstart AAAAAAACBW}{\bkmkend AAAAAAACBW}
+00266     \}\par
+{\bkmkstart AAAAAAACBZ}{\bkmkend AAAAAAACBZ}
+00267     \par
+{\bkmkstart AAAAAAACCC}{\bkmkend AAAAAAACCC}
+00268     {\cf20 // Test that everything still works}\par
+{\bkmkstart AAAAAAACCE}{\bkmkend AAAAAAACCE}
+00269     EXPECT_NO_THROW(app->showPhraseLibrary());\par
+{\bkmkstart AAAAAAACNJ}{\bkmkend AAAAAAACNJ}
+00270     EXPECT_NO_THROW(app->showLearningTips());\par
+{\bkmkstart AAAAAAACNU}{\bkmkend AAAAAAACNU}
+00271     EXPECT_NO_THROW(app->showPronunciationGuide());\par
+{\bkmkstart AAAAAAACNZ}{\bkmkend AAAAAAACNZ}
+00272 \}\par
+}
+}

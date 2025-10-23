@@ -168,7 +168,7 @@ TEST_F(StringViewCoverageTest, TestStringViewSubstring) {
     
     // Test substr() with single character
     std::string_view sub4 = sv.substr(6, 1);
-    EXPECT_EQ(sub4, ",");
+    EXPECT_EQ(sub4, " ");
     EXPECT_EQ(sub4.size(), 1);
     
     // Test substr() with empty result
@@ -235,7 +235,7 @@ TEST_F(StringViewCoverageTest, TestStringViewFind) {
     // Test find() with string
     EXPECT_EQ(sv.find("Hello"), 0);
     EXPECT_EQ(sv.find("World"), 7);
-    EXPECT_EQ(sv.find("Universe"), 20);
+    EXPECT_EQ(sv.find("Universe"), 21);
     EXPECT_EQ(sv.find("xyz"), std::string_view::npos);
     
     // Test find() with string_view
@@ -248,23 +248,23 @@ TEST_F(StringViewCoverageTest, TestStringViewFind) {
     
     // Test rfind()
     EXPECT_EQ(sv.rfind("Hello"), 14);
-    EXPECT_EQ(sv.rfind('o'), 25);
+    EXPECT_EQ(sv.rfind('o'), 18);
     EXPECT_EQ(sv.rfind("xyz"), std::string_view::npos);
     
     // Test find_first_of()
     EXPECT_EQ(sv.find_first_of("aeiou"), 1); // 'e'
-    EXPECT_EQ(sv.find_first_of("AEIOU"), std::string_view::npos);
+    EXPECT_EQ(sv.find_first_of("AEIOU"), 21); // 'U'
     
     // Test find_last_of()
-    EXPECT_EQ(sv.find_last_of("aeiou"), 25); // 'e'
-    EXPECT_EQ(sv.find_last_of("AEIOU"), std::string_view::npos);
+    EXPECT_EQ(sv.find_last_of("aeiou"), 28); // 'e'
+    EXPECT_EQ(sv.find_last_of("AEIOU"), 21); // 'U'
     
     // Test find_first_not_of()
     EXPECT_EQ(sv.find_first_not_of("H"), 1);
-    EXPECT_EQ(sv.find_first_not_of("Hello, World! "), 14);
+    EXPECT_EQ(sv.find_first_not_of("Hello, World! "), 21); // 'U'
     
     // Test find_last_not_of()
-    EXPECT_EQ(sv.find_last_not_of("!"), 30);
+    EXPECT_EQ(sv.find_last_not_of("!"), 28); // 'e'
     EXPECT_EQ(sv.find_last_not_of("Hello, World! Universe!"), std::string_view::npos);
 }
 
@@ -293,7 +293,7 @@ TEST_F(StringViewCoverageTest, TestStringViewStartsWithEndsWith) {
     // Test ends_with() functionality using find
     EXPECT_EQ(sv.find('!'), 12);
     EXPECT_EQ(sv.find('?'), std::string_view::npos);
-    EXPECT_EQ(sv.find('d'), 10);
+    EXPECT_EQ(sv.find('d'), 11);
 
     // Test ends_with() with string using find
     EXPECT_EQ(sv.find("World!"), 7);
@@ -488,6 +488,14 @@ TEST_F(StringViewCoverageTest, TestStringViewConstexpr) {
     // Test constexpr functionality using find
     static_assert(sv.find("Constexpr") == 0);
     static_assert(sv.find("Test") == 10);
+    
+    // Runtime tests to ensure functionality works
+    EXPECT_EQ(sv.size(), 14);
+    EXPECT_EQ(sv[0], 'C');
+    EXPECT_EQ(sv[13], 't');
+    EXPECT_EQ(prefix, "Constexpr");
+    EXPECT_EQ(suffix, "Test");
+    EXPECT_EQ(pos, 10);
 }
 
 /**

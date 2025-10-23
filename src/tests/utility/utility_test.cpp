@@ -1,4 +1,4 @@
-//#define ENABLE_UTILITY_TEST
+#define ENABLE_UTILITY_TEST
 
 #include "gtest/gtest.h"
 #include "../../utility/header/commonTypes.h"
