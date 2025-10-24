@@ -1,17 +1,17 @@
 \doxysection{test\+\_\+stack\+\_\+queue.\+cpp}
 \hypertarget{test__stack__queue_8cpp_source}{}\label{test__stack__queue_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_stack\_queue.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_stack\_queue.cpp}}
-\mbox{\hyperlink{test__stack__queue_8cpp}{Go to the documentation of this file.}}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}ds/stack.h"{}}}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}ds/queue.h"{}}}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00004}00004\ }
-\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00005}\mbox{\hyperlink{test__stack__queue_8cpp_a91e5af25a60f96a751929e559d41344b}{00005}}\ \mbox{\hyperlink{test__stack__queue_8cpp_a91e5af25a60f96a751929e559d41344b}{TEST}}(StackQueue,\ StackLIFO)\{}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00005}00005\ TEST(StackQueue,\ StackLIFO)\{}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00006}00006\ \ \ \ \ ds::Stack<int>\ st;\ st.push(1);\ st.push(2);\ st.push(3);}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00007}00007\ \ \ \ \ EXPECT\_EQ(st.top(),\ 3);\ st.pop();\ EXPECT\_EQ(st.top(),\ 2);\ st.pop();\ EXPECT\_EQ(st.top(),\ 1);}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00008}00008\ \}}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00009}00009\ }
-\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00010}\mbox{\hyperlink{test__stack__queue_8cpp_aad12174cbef62febb47cf062528e808b}{00010}}\ \mbox{\hyperlink{test__stack__queue_8cpp_a91e5af25a60f96a751929e559d41344b}{TEST}}(StackQueue,\ QueueFIFO)\{}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00010}00010\ TEST(StackQueue,\ QueueFIFO)\{}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00011}00011\ \ \ \ \ ds::Queue<int>\ q;\ q.enqueue(1);\ q.enqueue(2);\ q.enqueue(3);}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00012}00012\ \ \ \ \ EXPECT\_EQ(q.front(),\ 1);\ q.dequeue();\ EXPECT\_EQ(q.front(),\ 2);\ q.dequeue();\ EXPECT\_EQ(q.front(),\ 3);}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00013}00013\ \}}

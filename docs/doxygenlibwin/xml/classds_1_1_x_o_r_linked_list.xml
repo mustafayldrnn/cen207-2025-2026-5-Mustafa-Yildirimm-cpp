@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classds_1_1_x_o_r_linked_list" kind="class" language="C++" prot="public">
     <compoundname>ds::XORLinkedList</compoundname>
-    <includes refid="xor__linked__list_8h" local="no">xor_linked_list.h</includes>
     <innerclass refid="structds_1_1_x_o_r_linked_list_1_1_node" prot="private">ds::XORLinkedList::Node</innerclass>
     <templateparamlist>
       <param>
@@ -11,7 +10,7 @@
     </templateparamlist>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classds_1_1_x_o_r_linked_list_1af85d2ae57585cb42db59f56c04c054bd" prot="private" static="no" mutable="no">
-        <type><ref refid="structds_1_1_x_o_r_linked_list_1_1_node" kindref="compound">Node</ref> *</type>
+        <type>Node *</type>
         <definition>Node* ds::XORLinkedList&lt; T &gt;::head_</definition>
         <argsstring></argsstring>
         <name>head_</name>
@@ -26,7 +25,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/xor_linked_list.h" line="11" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/xor_linked_list.h" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classds_1_1_x_o_r_linked_list_1a95a97b23a09c589dd036b3d0806ca374" prot="private" static="no" mutable="no">
-        <type><ref refid="structds_1_1_x_o_r_linked_list_1_1_node" kindref="compound">Node</ref> *</type>
+        <type>Node *</type>
         <definition>Node* ds::XORLinkedList&lt; T &gt;::tail_</definition>
         <argsstring></argsstring>
         <name>tail_</name>
@@ -58,17 +57,17 @@
     </sectiondef>
     <sectiondef kind="private-static-func">
       <memberdef kind="function" id="classds_1_1_x_o_r_linked_list_1abf98b997a2880021132c67c3cae56bfb" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structds_1_1_x_o_r_linked_list_1_1_node" kindref="compound">Node</ref> *</type>
+        <type>Node *</type>
         <definition>static Node * ds::XORLinkedList&lt; T &gt;::XOR</definition>
         <argsstring>(Node *a, Node *b)</argsstring>
         <name>XOR</name>
         <qualifiedname>ds::XORLinkedList::XOR</qualifiedname>
         <param>
-          <type><ref refid="structds_1_1_x_o_r_linked_list_1_1_node" kindref="compound">Node</ref> *</type>
+          <type>Node *</type>
           <declname>a</declname>
         </param>
         <param>
-          <type><ref refid="structds_1_1_x_o_r_linked_list_1_1_node" kindref="compound">Node</ref> *</type>
+          <type>Node *</type>
           <declname>b</declname>
         </param>
         <briefdescription>
@@ -116,7 +115,7 @@
         <name>XORLinkedList</name>
         <qualifiedname>ds::XORLinkedList::XORLinkedList</qualifiedname>
         <param>
-          <type>const <ref refid="classds_1_1_x_o_r_linked_list" kindref="compound">XORLinkedList</ref> &amp;</type>
+          <type>const XORLinkedList &amp;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -127,13 +126,13 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/xor_linked_list.h" line="22" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_x_o_r_linked_list_1a37d39cef63d98f2f8171c7ea38723192" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classds_1_1_x_o_r_linked_list" kindref="compound">XORLinkedList</ref> &amp;</type>
+        <type>XORLinkedList &amp;</type>
         <definition>XORLinkedList &amp; ds::XORLinkedList&lt; T &gt;::operator=</definition>
         <argsstring>(const XORLinkedList &amp;)=delete</argsstring>
         <name>operator=</name>
         <qualifiedname>ds::XORLinkedList::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classds_1_1_x_o_r_linked_list" kindref="compound">XORLinkedList</ref> &amp;</type>
+          <type>const XORLinkedList &amp;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -319,20 +318,8 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="2">
-        <label>ds::XORLinkedList&lt; T &gt;::Node</label>
-        <link refid="structds_1_1_x_o_r_linked_list_1_1_node"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>+npx</edgelabel>
-        </childnode>
-      </node>
       <node id="1">
         <label>ds::XORLinkedList&lt; T &gt;</label>
-        <link refid="classds_1_1_x_o_r_linked_list"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>-head_</edgelabel>
-          <edgelabel>-tail_</edgelabel>
-        </childnode>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/xor_linked_list.h" line="9" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/xor_linked_list.h" bodystart="9" bodyend="101"/>

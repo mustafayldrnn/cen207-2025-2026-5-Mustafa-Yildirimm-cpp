@@ -9,7 +9,6 @@
     <derivedcompoundref refid="structtranslator_1_1_let_stmt" prot="public" virt="non-virtual">translator::LetStmt</derivedcompoundref>
     <derivedcompoundref refid="structtranslator_1_1_print_stmt" prot="public" virt="non-virtual">translator::PrintStmt</derivedcompoundref>
     <derivedcompoundref refid="structtranslator_1_1_return_stmt" prot="public" virt="non-virtual">translator::ReturnStmt</derivedcompoundref>
-    <includes refid="ast_8h" local="no">ast.h</includes>
     <sectiondef kind="public-func">
       <memberdef kind="function" id="structtranslator_1_1_stmt_1a0707842a254ce67ff9c72cda98226ec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -26,18 +25,11 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="38" column="19"/>
       </memberdef>
       <memberdef kind="function" id="structtranslator_1_1_stmt_1afb8f5d100524bc8cf234edae0ac57578" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref></type>
+        <type>StmtKind</type>
         <definition>virtual StmtKind translator::Stmt::kind</definition>
         <argsstring>() const =0</argsstring>
         <name>kind</name>
         <qualifiedname>translator::Stmt::kind</qualifiedname>
-        <reimplementedby refid="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac">kind</reimplementedby>
-        <reimplementedby refid="structtranslator_1_1_goto_stmt_1aae4b7271164ea8557ffdc4a79d8657f0">kind</reimplementedby>
-        <reimplementedby refid="structtranslator_1_1_if_goto_stmt_1a77a2dccf8e1b280dd39c2a9101cb17e6">kind</reimplementedby>
-        <reimplementedby refid="structtranslator_1_1_input_stmt_1a49fff20ac46a7ad799c335425a47b7f8">kind</reimplementedby>
-        <reimplementedby refid="structtranslator_1_1_let_stmt_1ad88e60c92df1de021f3fa562267fdb59">kind</reimplementedby>
-        <reimplementedby refid="structtranslator_1_1_print_stmt_1a2804d4e2524a83441edb292238c38fe9">kind</reimplementedby>
-        <reimplementedby refid="structtranslator_1_1_return_stmt_1a9344c9c9a74ac406decd1a74d4fc42af">kind</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -51,58 +43,9 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="2">
-        <label>translator::GosubStmt</label>
-        <link refid="structtranslator_1_1_gosub_stmt"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>translator::GotoStmt</label>
-        <link refid="structtranslator_1_1_goto_stmt"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>translator::IfGotoStmt</label>
-        <link refid="structtranslator_1_1_if_goto_stmt"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>translator::InputStmt</label>
-        <link refid="structtranslator_1_1_input_stmt"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>translator::LetStmt</label>
-        <link refid="structtranslator_1_1_let_stmt"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>translator::PrintStmt</label>
-        <link refid="structtranslator_1_1_print_stmt"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>translator::ReturnStmt</label>
-        <link refid="structtranslator_1_1_return_stmt"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>translator::Stmt</label>
-        <link refid="structtranslator_1_1_stmt"/>
-      </node>
-    </inheritancegraph>
     <collaborationgraph>
       <node id="1">
         <label>translator::Stmt</label>
-        <link refid="structtranslator_1_1_stmt"/>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="38" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="38" bodyend="38"/>

@@ -9,21 +9,21 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00008}00008\ }
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00009}00009\ \textcolor{keyword}{using\ namespace\ }Coruh::LanguageTranslator;}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00010}00010\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00011}\mbox{\hyperlink{class_language_translator_test}{00011}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}}\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00011}00011\ \textcolor{keyword}{class\ }LanguageTranslatorTest\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00012}00012\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00013}\mbox{\hyperlink{class_language_translator_test_a467f42063155d60ebd9ae14224566d84}{00013}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_language_translator_test_a467f42063155d60ebd9ae14224566d84}{SetUp}}()\textcolor{keyword}{\ override\ }\{}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_language_translator_test_aa89643cfe0507244b5462436749da167}{app}}\ =\ \textcolor{keyword}{new}\ LanguageTranslatorApp();}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00013}00013\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ app\ =\ \textcolor{keyword}{new}\ LanguageTranslatorApp();}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00015}00015\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00016}00016\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00017}\mbox{\hyperlink{class_language_translator_test_a019d0d6be8031292cfc8ce5bf5529652}{00017}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_language_translator_test_a019d0d6be8031292cfc8ce5bf5529652}{TearDown}}()\textcolor{keyword}{\ override\ }\{}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{class_language_translator_test_aa89643cfe0507244b5462436749da167}{app}};}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00017}00017\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ app;}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00019}00019\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00020}00020\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00021}\mbox{\hyperlink{class_language_translator_test_aa89643cfe0507244b5462436749da167}{00021}}\ \ \ \ \ LanguageTranslatorApp*\ \mbox{\hyperlink{class_language_translator_test_aa89643cfe0507244b5462436749da167}{app}};}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00021}00021\ \ \ \ \ LanguageTranslatorApp*\ app;}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00022}00022\ \};}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00023}00023\ }
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00024}00024\ \textcolor{comment}{//\ Basic\ Translation\ Tests}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00025}\mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{00025}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ BasicWordTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00025}00025\ TEST\_F(LanguageTranslatorTest,\ BasicWordTranslation)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00026}00026\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}merhaba"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00027}00027\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}world"{}}),\ \textcolor{stringliteral}{"{}dünya"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00028}00028\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}good"{}}),\ \textcolor{stringliteral}{"{}iyi"{}});}
@@ -31,21 +31,21 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00030}00030\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}house"{}}),\ \textcolor{stringliteral}{"{}ev"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00031}00031\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00032}00032\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00033}\mbox{\hyperlink{_language_translator__test_8cpp_a01842fdc845a57c3604723084973a354}{00033}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ PhraseTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00033}00033\ TEST\_F(LanguageTranslatorTest,\ PhraseTranslation)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00034}00034\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}good\ morning"{}}),\ \textcolor{stringliteral}{"{}günaydın"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00035}00035\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}thank\ you"{}}),\ \textcolor{stringliteral}{"{}teşekkür\ ederim"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00036}00036\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}how\ are\ you"{}}),\ \textcolor{stringliteral}{"{}nasılsın"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00037}00037\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}nice\ to\ meet\ you"{}}),\ \textcolor{stringliteral}{"{}tanıştığımıza\ memnun\ oldum"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00038}00038\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00039}00039\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00040}\mbox{\hyperlink{_language_translator__test_8cpp_af1c7e4ba87fa8add2ee446946957b694}{00040}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ UnknownWordHandling)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00040}00040\ TEST\_F(LanguageTranslatorTest,\ UnknownWordHandling)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{comment}{//\ Unknown\ words\ should\ return\ as-\/is}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00042}00042\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}unknownword"{}}),\ \textcolor{stringliteral}{"{}unknownword"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00043}00043\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}xyz123"{}}),\ \textcolor{stringliteral}{"{}xyz123"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00044}00044\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}"{}}),\ \textcolor{stringliteral}{"{}"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00045}00045\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00046}00046\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00047}\mbox{\hyperlink{_language_translator__test_8cpp_a6b52024db43860abc2fd6fbd3c182473}{00047}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ MixedKnownUnknownWords)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00047}00047\ TEST\_F(LanguageTranslatorTest,\ MixedKnownUnknownWords)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{comment}{//\ Mixed\ sentence\ with\ known\ and\ unknown\ words}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00049}00049\ \ \ \ \ std::string\ result\ =\ app-\/>translateText(\textcolor{stringliteral}{"{}hello\ unknownword\ world"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00050}00050\ \ \ \ \ EXPECT\_TRUE(result.find(\textcolor{stringliteral}{"{}merhaba"{}})\ !=\ std::string::npos);}
@@ -53,7 +53,7 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00052}00052\ \ \ \ \ EXPECT\_TRUE(result.find(\textcolor{stringliteral}{"{}dünya"{}})\ !=\ std::string::npos);}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00053}00053\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00054}00054\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00055}\mbox{\hyperlink{_language_translator__test_8cpp_a789e29248db0c9e425ac1687d311e44c}{00055}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ SameLanguageTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00055}00055\ TEST\_F(LanguageTranslatorTest,\ SameLanguageTranslation)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{comment}{//\ When\ source\ and\ target\ are\ same,\ return\ original\ text}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00057}00057\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00058}00058\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}English"{}});}
@@ -62,7 +62,7 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00061}00061\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00062}00062\ }
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00063}00063\ \textcolor{comment}{//\ Language\ Management\ Tests}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00064}\mbox{\hyperlink{_language_translator__test_8cpp_aa95c679ed154cf3eb96d953ed986dda0}{00064}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ LanguageSwitching)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00064}00064\ TEST\_F(LanguageTranslatorTest,\ LanguageSwitching)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00065}00065\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00066}00066\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Turkish"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00067}00067\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}merhaba"{}});}
@@ -72,21 +72,21 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00071}00071\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}hola"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00072}00072\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00073}00073\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00074}\mbox{\hyperlink{_language_translator__test_8cpp_ab3fb34b97f5faddc86bf3a79d027b4ba}{00074}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ GetSupportedLanguages)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00074}00074\ TEST\_F(LanguageTranslatorTest,\ GetSupportedLanguages)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keyword}{auto}\ languages\ =\ app-\/>getSupportedLanguages();}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00076}00076\ \ \ \ \ EXPECT\_FALSE(languages.empty());}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00077}00077\ \ \ \ \ EXPECT\_TRUE(std::find(languages.begin(),\ languages.end(),\ \textcolor{stringliteral}{"{}English"{}})\ !=\ languages.end());}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00078}00078\ \ \ \ \ EXPECT\_TRUE(std::find(languages.begin(),\ languages.end(),\ \textcolor{stringliteral}{"{}Turkish"{}})\ !=\ languages.end());}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00079}00079\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00080}00080\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00081}\mbox{\hyperlink{_language_translator__test_8cpp_a8fe091a3f4ee13f4a7f8869b0d049d49}{00081}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ AddNewLanguage)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00081}00081\ TEST\_F(LanguageTranslatorTest,\ AddNewLanguage)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00082}00082\ \ \ \ \ app-\/>addLanguage(\textcolor{stringliteral}{"{}Japanese"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00083}00083\ \ \ \ \ \textcolor{keyword}{auto}\ languages\ =\ app-\/>getSupportedLanguages();}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00084}00084\ \ \ \ \ EXPECT\_TRUE(std::find(languages.begin(),\ languages.end(),\ \textcolor{stringliteral}{"{}Japanese"{}})\ !=\ languages.end());}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00085}00085\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00086}00086\ }
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00087}00087\ \textcolor{comment}{//\ User\ Management\ Tests}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00088}\mbox{\hyperlink{_language_translator__test_8cpp_a5f7bc883353cb98eb40911831ed9282e}{00088}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ UserLogin)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00088}00088\ TEST\_F(LanguageTranslatorTest,\ UserLogin)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00089}00089\ \ \ \ \ EXPECT\_FALSE(app-\/>isUserLoggedIn());}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00090}00090\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keywordtype}{bool}\ loginResult\ =\ app-\/>login(\textcolor{stringliteral}{"{}admin"{}},\ \textcolor{stringliteral}{"{}admin"{}});}
@@ -94,7 +94,7 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00093}00093\ \ \ \ \ EXPECT\_TRUE(app-\/>isUserLoggedIn());}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00094}00094\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00095}00095\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00096}\mbox{\hyperlink{_language_translator__test_8cpp_a48028cbf2956d65839d23033248d7598}{00096}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ UserLogout)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00096}00096\ TEST\_F(LanguageTranslatorTest,\ UserLogout)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00097}00097\ \ \ \ \ app-\/>login(\textcolor{stringliteral}{"{}admin"{}},\ \textcolor{stringliteral}{"{}admin"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00098}00098\ \ \ \ \ EXPECT\_TRUE(app-\/>isUserLoggedIn());}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00099}00099\ \ \ \ \ }
@@ -102,32 +102,32 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00101}00101\ \ \ \ \ EXPECT\_FALSE(app-\/>isUserLoggedIn());}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00102}00102\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00103}00103\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00104}\mbox{\hyperlink{_language_translator__test_8cpp_ad0bc851a6c6ae060894d20fde253b467}{00104}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ InvalidLogin)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00104}00104\ TEST\_F(LanguageTranslatorTest,\ InvalidLogin)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00105}00105\ \ \ \ \ \textcolor{keywordtype}{bool}\ loginResult\ =\ app-\/>login(\textcolor{stringliteral}{"{}wronguser"{}},\ \textcolor{stringliteral}{"{}wrongpass"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00106}00106\ \ \ \ \ EXPECT\_FALSE(loginResult);}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00107}00107\ \ \ \ \ EXPECT\_FALSE(app-\/>isUserLoggedIn());}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00108}00108\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00109}00109\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00110}\mbox{\hyperlink{_language_translator__test_8cpp_a936bc5b1b5b0f908a04ac4c3b049a5a4}{00110}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ UserRegistration)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00110}00110\ TEST\_F(LanguageTranslatorTest,\ UserRegistration)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00111}00111\ \ \ \ \ \textcolor{keywordtype}{bool}\ registerResult\ =\ app-\/>registerUser(\textcolor{stringliteral}{"{}newuser"{}},\ \textcolor{stringliteral}{"{}newpass"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00112}00112\ \ \ \ \ EXPECT\_TRUE(registerResult);}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00113}00113\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00114}00114\ }
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00115}00115\ \textcolor{comment}{//\ Individual\ Translation\ Function\ Tests}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00116}\mbox{\hyperlink{_language_translator__test_8cpp_a6f63f261fdea25e5f7c278a7f10babd7}{00116}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ TranslateWordFunction)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00116}00116\ TEST\_F(LanguageTranslatorTest,\ TranslateWordFunction)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00117}00117\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}merhaba"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00118}00118\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}world"{}}),\ \textcolor{stringliteral}{"{}dünya"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00119}00119\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}unknown"{}}),\ \textcolor{stringliteral}{"{}unknown"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00120}00120\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00121}00121\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00122}\mbox{\hyperlink{_language_translator__test_8cpp_a532fdc7427b172ae1c5435f02f0c8917}{00122}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ TranslatePhraseFunction)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00122}00122\ TEST\_F(LanguageTranslatorTest,\ TranslatePhraseFunction)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00123}00123\ \ \ \ \ EXPECT\_EQ(app-\/>translatePhrase(\textcolor{stringliteral}{"{}good\ morning"{}}),\ \textcolor{stringliteral}{"{}günaydın"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00124}00124\ \ \ \ \ EXPECT\_EQ(app-\/>translatePhrase(\textcolor{stringliteral}{"{}thank\ you"{}}),\ \textcolor{stringliteral}{"{}teşekkür\ ederim"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00125}00125\ \ \ \ \ EXPECT\_EQ(app-\/>translatePhrase(\textcolor{stringliteral}{"{}unknown\ phrase"{}}),\ \textcolor{stringliteral}{"{}unknown\ phrase"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00126}00126\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00127}00127\ }
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00128}00128\ \textcolor{comment}{//\ API\ Tests}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00129}\mbox{\hyperlink{_language_translator__test_8cpp_a0b3237b1d0584b7edd8eeb8dffa71c58}{00129}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ APIModeToggle)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00129}00129\ TEST\_F(LanguageTranslatorTest,\ APIModeToggle)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00130}00130\ \ \ \ \ \textcolor{comment}{//\ API\ is\ not\ implemented\ yet,\ so\ it\ should\ always\ return\ false}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00131}00131\ \ \ \ \ EXPECT\_FALSE(app-\/>isAPIAvailable());}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00132}00132\ \ \ \ \ }
@@ -140,7 +140,7 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00139}00139\ \ \ \ \ EXPECT\_FALSE(app-\/>isAPIAvailable());}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00140}00140\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00141}00141\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00142}\mbox{\hyperlink{_language_translator__test_8cpp_a67c4bd5e3c335f46a6cafb49146d48e2}{00142}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ APIKeyManagement)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00142}00142\ TEST\_F(LanguageTranslatorTest,\ APIKeyManagement)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00143}00143\ \ \ \ \ app-\/>setAPIKey(\textcolor{stringliteral}{"{}test\_api\_key"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00144}00144\ \ \ \ \ app-\/>setAPIMode(\textcolor{keyword}{true});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00145}00145\ \ \ \ \ \textcolor{comment}{//\ API\ is\ not\ implemented\ yet,\ so\ it\ should\ always\ return\ false}}
@@ -151,26 +151,26 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00150}00150\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00151}00151\ }
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00152}00152\ \textcolor{comment}{//\ Edge\ Cases\ and\ Error\ Handling}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00153}\mbox{\hyperlink{_language_translator__test_8cpp_a668bc4eeee33d76ec5428b8cfa3c9b02}{00153}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ EmptyStringTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00153}00153\ TEST\_F(LanguageTranslatorTest,\ EmptyStringTranslation)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00154}00154\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}"{}}),\ \textcolor{stringliteral}{"{}"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00155}00155\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}"{}}),\ \textcolor{stringliteral}{"{}"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00156}00156\ \ \ \ \ EXPECT\_EQ(app-\/>translatePhrase(\textcolor{stringliteral}{"{}"{}}),\ \textcolor{stringliteral}{"{}"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00157}00157\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00158}00158\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00159}\mbox{\hyperlink{_language_translator__test_8cpp_add28b54505d4878d1efb254a60d9c808}{00159}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ WhitespaceHandling)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00159}00159\ TEST\_F(LanguageTranslatorTest,\ WhitespaceHandling)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00160}00160\ \ \ \ \ \textcolor{comment}{//\ Test\ whitespace\ handling\ -\/\ current\ implementation\ doesn't\ trim}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00161}00161\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}\ \ hello\ \ "{}}),\ \textcolor{stringliteral}{"{}merhaba\ "{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00162}00162\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}\ \ \ "{}}),\ \textcolor{stringliteral}{"{}\ \ \ "{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00163}00163\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00164}00164\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00165}\mbox{\hyperlink{_language_translator__test_8cpp_a6f26cabf881f2eb4c628f3a689760c58}{00165}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ SpecialCharacters)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00165}00165\ TEST\_F(LanguageTranslatorTest,\ SpecialCharacters)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00166}00166\ \ \ \ \ \textcolor{comment}{//\ Test\ special\ characters\ -\/\ current\ implementation\ doesn't\ handle\ punctuation}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00167}00167\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello!"{}}),\ \textcolor{stringliteral}{"{}hello!"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00168}00168\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello,\ world"{}}),\ \textcolor{stringliteral}{"{}hello,\ dünya"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00169}00169\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello.world"{}}),\ \textcolor{stringliteral}{"{}hello.world"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00170}00170\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00171}00171\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00172}\mbox{\hyperlink{_language_translator__test_8cpp_a1a1190f33597e647ac2d52b9bd10a355}{00172}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ CaseInsensitiveTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00172}00172\ TEST\_F(LanguageTranslatorTest,\ CaseInsensitiveTranslation)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00173}00173\ \ \ \ \ \textcolor{comment}{//\ Test\ case\ insensitive\ -\/\ current\ implementation\ is\ case\ sensitive}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00174}00174\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}HELLO"{}}),\ \textcolor{stringliteral}{"{}HELLO"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00175}00175\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}Hello"{}}),\ \textcolor{stringliteral}{"{}Hello"{}});}
@@ -178,13 +178,13 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00177}00177\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00178}00178\ }
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00179}00179\ \textcolor{comment}{//\ Data\ Management\ Tests}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00180}\mbox{\hyperlink{_language_translator__test_8cpp_a366af1e39e13a9d63b8a5f53b15c4383}{00180}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ DataInitialization)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00180}00180\ TEST\_F(LanguageTranslatorTest,\ DataInitialization)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00181}00181\ \ \ \ \ \textcolor{comment}{//\ Test\ that\ default\ data\ is\ loaded}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00182}00182\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}merhaba"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00183}00183\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}good\ morning"{}}),\ \textcolor{stringliteral}{"{}günaydın"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00184}00184\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00185}00185\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00186}\mbox{\hyperlink{_language_translator__test_8cpp_a7c2cfde0fa92a026d830363ac3057693}{00186}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ DataSaveLoad)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00186}00186\ TEST\_F(LanguageTranslatorTest,\ DataSaveLoad)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00187}00187\ \ \ \ \ \textcolor{comment}{//\ These\ functions\ should\ not\ crash}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00188}00188\ \ \ \ \ app-\/>saveData();}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00189}00189\ \ \ \ \ app-\/>loadData();}
@@ -194,7 +194,7 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00193}00193\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00194}00194\ }
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00195}00195\ \textcolor{comment}{//\ Dictionary\ Management\ Tests}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00196}\mbox{\hyperlink{_language_translator__test_8cpp_aedb078ec7621007fc8b9a01497388760}{00196}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ DictionaryFileLoading)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00196}00196\ TEST\_F(LanguageTranslatorTest,\ DictionaryFileLoading)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00197}00197\ \ \ \ \ \textcolor{comment}{//\ Test\ dictionary\ file\ loading\ (file\ may\ not\ exist,\ should\ handle\ gracefully)}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00198}00198\ \ \ \ \ \textcolor{keywordtype}{bool}\ result\ =\ app-\/>loadDictionaryFromFile(\textcolor{stringliteral}{"{}English"{}},\ \textcolor{stringliteral}{"{}Turkish"{}},\ \textcolor{stringliteral}{"{}nonexistent\_file.txt"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00199}00199\ \ \ \ \ EXPECT\_FALSE(result);\ \textcolor{comment}{//\ File\ doesn't\ exist}}
@@ -203,7 +203,7 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00202}00202\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}merhaba"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00203}00203\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00204}00204\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00205}\mbox{\hyperlink{_language_translator__test_8cpp_ab6df76e754da7ecff688baa543e618b5}{00205}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ LoadAllDictionaries)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00205}00205\ TEST\_F(LanguageTranslatorTest,\ LoadAllDictionaries)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00206}00206\ \ \ \ \ \textcolor{comment}{//\ This\ should\ not\ crash\ even\ if\ files\ don't\ exist}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00207}00207\ \ \ \ \ app-\/>loadAllDictionaries();}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00208}00208\ \ \ \ \ }
@@ -212,46 +212,49 @@
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00211}00211\ \}}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00212}00212\ }
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00213}00213\ \textcolor{comment}{//\ Performance\ and\ Stress\ Tests}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00214}\mbox{\hyperlink{_language_translator__test_8cpp_ad23d52081426bfcf81445ca7cc798515}{00214}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ LongTextTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00214}00214\ TEST\_F(LanguageTranslatorTest,\ LongTextTranslation)\ \{}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00215}00215\ \ \ \ \ std::string\ longText\ =\ \textcolor{stringliteral}{"{}hello\ world\ good\ morning\ thank\ you\ water\ food\ house\ car\ book\ computer\ phone\ friend\ family\ work"{}};}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00216}00216\ \ \ \ \ std::string\ result\ =\ app-\/>translateText(longText);}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00217}00217\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00218}00218\ \ \ \ \ \textcolor{comment}{//\ Should\ contain\ translated\ words\ (only\ some\ words\ are\ in\ dictionary)}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00219}00219\ \ \ \ \ EXPECT\_TRUE(result.find(\textcolor{stringliteral}{"{}merhaba"{}})\ !=\ std::string::npos);}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00220}00220\ \ \ \ \ EXPECT\_TRUE(result.find(\textcolor{stringliteral}{"{}dünya"{}})\ !=\ std::string::npos);}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00221}00221\ \ \ \ \ EXPECT\_TRUE(result.find(\textcolor{stringliteral}{"{}günaydın"{}})\ !=\ std::string::npos);}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00222}00222\ \ \ \ \ \textcolor{comment}{//\ Some\ words\ should\ be\ translated}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00223}00223\ \ \ \ \ EXPECT\_TRUE(result.find(\textcolor{stringliteral}{"{}araba"{}})\ !=\ std::string::npos);\ \textcolor{comment}{//\ car\ -\/>\ araba}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00224}00224\ \ \ \ \ EXPECT\_TRUE(result.find(\textcolor{stringliteral}{"{}kitap"{}})\ !=\ std::string::npos);\ \textcolor{comment}{//\ book\ -\/>\ kitap}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00225}00225\ \}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00226}00226\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00227}\mbox{\hyperlink{_language_translator__test_8cpp_acafb21317616f917a069b84fe8bf6f67}{00227}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ RepeatedTranslation)\ \{}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00228}00228\ \ \ \ \ \textcolor{comment}{//\ Test\ multiple\ translations\ of\ same\ text}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00229}00229\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 100;\ ++i)\ \{}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00230}00230\ \ \ \ \ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}merhaba"{}});}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00231}00231\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00232}00232\ \}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00233}00233\ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00234}00234\ \textcolor{comment}{//\ Integration\ Tests}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00235}\mbox{\hyperlink{_language_translator__test_8cpp_a2376c50e3a2c9c2bbcd29a7c1c8dd4af}{00235}}\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(\mbox{\hyperlink{class_language_translator_test}{LanguageTranslatorTest}},\ FullTranslationWorkflow)\ \{}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00236}00236\ \ \ \ \ \textcolor{comment}{//\ Login}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00237}00237\ \ \ \ \ app-\/>login(\textcolor{stringliteral}{"{}admin"{}},\ \textcolor{stringliteral}{"{}admin"{}});}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00238}00238\ \ \ \ \ EXPECT\_TRUE(app-\/>isUserLoggedIn());}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00239}00239\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00240}00240\ \ \ \ \ \textcolor{comment}{//\ Set\ languages}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00241}00241\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00242}00242\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Turkish"{}});}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00243}00243\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00244}00244\ \ \ \ \ \textcolor{comment}{//\ Translate}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00245}00245\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello\ world"{}}),\ \textcolor{stringliteral}{"{}merhaba\ dünya"{}});}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00218}00218\ \ \ \ \ \textcolor{comment}{//\ Should\ not\ be\ empty}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00219}00219\ \ \ \ \ EXPECT\_FALSE(result.empty());}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00220}00220\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00221}00221\ \ \ \ \ \textcolor{comment}{//\ Should\ contain\ at\ least\ one\ translated\ word\ (be\ more\ flexible)}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00222}00222\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasTranslation\ =\ (result.find(\textcolor{stringliteral}{"{}merhaba"{}})\ !=\ std::string::npos)\ ||}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00223}00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (result.find(\textcolor{stringliteral}{"{}dünya"{}})\ !=\ std::string::npos)\ ||}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00224}00224\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (result.find(\textcolor{stringliteral}{"{}günaydın"{}})\ !=\ std::string::npos)\ ||}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00225}00225\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (result.find(\textcolor{stringliteral}{"{}araba"{}})\ !=\ std::string::npos)\ ||}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00226}00226\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (result.find(\textcolor{stringliteral}{"{}kitap"{}})\ !=\ std::string::npos);}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00227}00227\ \ \ \ \ EXPECT\_TRUE(hasTranslation);}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00228}00228\ \}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00229}00229\ }
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00230}00230\ TEST\_F(LanguageTranslatorTest,\ RepeatedTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00231}00231\ \ \ \ \ \textcolor{comment}{//\ Test\ multiple\ translations\ of\ same\ text}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00232}00232\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 100;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00233}00233\ \ \ \ \ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}merhaba"{}});}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00234}00234\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00235}00235\ \}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00236}00236\ }
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00237}00237\ \textcolor{comment}{//\ Integration\ Tests}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00238}00238\ TEST\_F(LanguageTranslatorTest,\ FullTranslationWorkflow)\ \{}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00239}00239\ \ \ \ \ \textcolor{comment}{//\ Login}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00240}00240\ \ \ \ \ app-\/>login(\textcolor{stringliteral}{"{}admin"{}},\ \textcolor{stringliteral}{"{}admin"{}});}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00241}00241\ \ \ \ \ EXPECT\_TRUE(app-\/>isUserLoggedIn());}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00242}00242\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00243}00243\ \ \ \ \ \textcolor{comment}{//\ Set\ languages}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00244}00244\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00245}00245\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Turkish"{}});}
 \DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00246}00246\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00247}00247\ \ \ \ \ \textcolor{comment}{//\ Switch\ to\ Spanish}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00248}00248\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Spanish"{}});}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00249}00249\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello\ world"{}}),\ \textcolor{stringliteral}{"{}hola\ mundo"{}});}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00250}00250\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00251}00251\ \ \ \ \ \textcolor{comment}{//\ Logout}}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00252}00252\ \ \ \ \ app-\/>logout();}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00253}00253\ \ \ \ \ EXPECT\_FALSE(app-\/>isUserLoggedIn());}
-\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00254}00254\ \}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00247}00247\ \ \ \ \ \textcolor{comment}{//\ Translate}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00248}00248\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello\ world"{}}),\ \textcolor{stringliteral}{"{}merhaba\ dünya"{}});}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00249}00249\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00250}00250\ \ \ \ \ \textcolor{comment}{//\ Switch\ to\ Spanish}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00251}00251\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Spanish"{}});}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00252}00252\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello\ world"{}}),\ \textcolor{stringliteral}{"{}hola\ mundo"{}});}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00253}00253\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00254}00254\ \ \ \ \ \textcolor{comment}{//\ Logout}}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00255}00255\ \ \ \ \ app-\/>logout();}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00256}00256\ \ \ \ \ EXPECT\_FALSE(app-\/>isUserLoggedIn());}
+\DoxyCodeLine{\Hypertarget{_language_translator__test_8cpp_source_l00257}00257\ \}}
 
 \end{DoxyCode}

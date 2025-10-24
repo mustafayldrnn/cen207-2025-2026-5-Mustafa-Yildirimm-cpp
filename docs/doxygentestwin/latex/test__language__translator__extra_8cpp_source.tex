@@ -1,6 +1,6 @@
 \doxysection{test\+\_\+language\+\_\+translator\+\_\+extra.\+cpp}
 \hypertarget{test__language__translator__extra_8cpp_source}{}\label{test__language__translator__extra_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_language\_translator\_extra.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_language\_translator\_extra.cpp}}
-\mbox{\hyperlink{test__language__translator__extra_8cpp}{Go to the documentation of this file.}}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00001}00001\ \textcolor{comment}{//\ Ek\ kapsama:\ LanguageTranslatorApp\ için\ kayıt,\ sözlük\ yükleme\ ve\ çeşitli\ yollar}}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00002}00002\ }
@@ -11,13 +11,13 @@
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00007}00007\ }
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00008}00008\ \textcolor{keyword}{using\ namespace\ }Coruh::LanguageTranslator;}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00009}00009\ }
-\DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00010}\mbox{\hyperlink{test__language__translator__extra_8cpp_a706948d8674933c66cae894f5136294f}{00010}}\ \mbox{\hyperlink{test__language__translator__extra_8cpp_a706948d8674933c66cae894f5136294f}{TEST}}(LanguageTranslatorExtra,\ RegisterExistingUserFails)\{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00010}00010\ TEST(LanguageTranslatorExtra,\ RegisterExistingUserFails)\{}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00011}00011\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00012}00012\ \ \ \ \ \textcolor{comment}{//\ 'admin'\ zaten\ rezervli\ kabul\ ediliyor}}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00013}00013\ \ \ \ \ EXPECT\_FALSE(app.registerUser(\textcolor{stringliteral}{"{}admin"{}},\ \textcolor{stringliteral}{"{}anything"{}}));}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00014}00014\ \}}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00015}00015\ }
-\DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00016}\mbox{\hyperlink{test__language__translator__extra_8cpp_afc0169448db719b216885ce6997126fd}{00016}}\ \mbox{\hyperlink{test__language__translator__extra_8cpp_a706948d8674933c66cae894f5136294f}{TEST}}(LanguageTranslatorExtra,\ LoadDictionaryFromRealFile)\{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00016}00016\ TEST(LanguageTranslatorExtra,\ LoadDictionaryFromRealFile)\{}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00017}00017\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00018}00018\ \ \ \ \ app.setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00019}00019\ \ \ \ \ app.setTargetLanguage(\textcolor{stringliteral}{"{}Turkish"{}});}
@@ -39,7 +39,7 @@
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00035}00035\ \ \ \ \ EXPECT\_EQ(app.translateWord(\textcolor{stringliteral}{"{}space"{}}),\ \textcolor{stringliteral}{"{}bosluk"{}});}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00036}00036\ \}}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00037}00037\ }
-\DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00038}\mbox{\hyperlink{test__language__translator__extra_8cpp_a701921c52d0b8f95eea8cdf563e61663}{00038}}\ \mbox{\hyperlink{test__language__translator__extra_8cpp_a706948d8674933c66cae894f5136294f}{TEST}}(LanguageTranslatorExtra,\ AddLanguageNoDuplicate)\{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00038}00038\ TEST(LanguageTranslatorExtra,\ AddLanguageNoDuplicate)\{}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00039}00039\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{auto}\ before\ =\ app.getSupportedLanguages();}
 \DoxyCodeLine{\Hypertarget{test__language__translator__extra_8cpp_source_l00041}00041\ \ \ \ \ app.addLanguage(\textcolor{stringliteral}{"{}Klingon"{}});}

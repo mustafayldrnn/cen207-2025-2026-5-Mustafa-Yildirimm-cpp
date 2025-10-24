@@ -151,281 +151,257 @@
 test_translator_additional.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_translator_additional.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_translator_additional.cpp}
-{\bkmkstart AAAAAAAENW}
-{\bkmkend AAAAAAAENW}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAENX" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
-\par
+{\bkmkstart AAAAAAAFFK}
+{\bkmkend AAAAAAAFFK}
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAEOF}{\bkmkend AAAAAAAEOF}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAFFN}{\bkmkend AAAAAAAFFN}
 00001 {\cf20 // Ek kapsama: parser hata yolları, otomatik etiketler ve codegen dalları}\par
-{\bkmkstart AAAAAAAEOG}{\bkmkend AAAAAAAEOG}
+{\bkmkstart AAAAAAAFFP}{\bkmkend AAAAAAAFFP}
 00002 {\cf20 // Bu testler, lexer/parser/codegen için eksik kalan akışları hedefler.}\par
-{\bkmkstart AAAAAAAEOH}{\bkmkend AAAAAAAEOH}
+{\bkmkstart AAAAAAAFFQ}{\bkmkend AAAAAAAFFQ}
 00003 \par
-{\bkmkstart AAAAAAAEOJ}{\bkmkend AAAAAAAEOJ}
+{\bkmkstart AAAAAAAFFR}{\bkmkend AAAAAAAFFR}
 00004 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAEOS}{\bkmkend AAAAAAAEOS}
+{\bkmkstart AAAAAAAFFU}{\bkmkend AAAAAAAFFU}
 00005 {\cf21 #include <string>}\par
-{\bkmkstart AAAAAAAEOT}{\bkmkend AAAAAAAEOT}
+{\bkmkstart AAAAAAAFFY}{\bkmkend AAAAAAAFFY}
 00006 {\cf21 #include "translator/lexer.h"}\par
-{\bkmkstart AAAAAAAEOU}{\bkmkend AAAAAAAEOU}
+{\bkmkstart AAAAAAAFGH}{\bkmkend AAAAAAAFGH}
 00007 {\cf21 #include "translator/parser.h"}\par
-{\bkmkstart AAAAAAAEOV}{\bkmkend AAAAAAAEOV}
+{\bkmkstart AAAAAAAFGT}{\bkmkend AAAAAAAFGT}
 00008 {\cf21 #include "translator/codegen.h"}\par
-{\bkmkstart AAAAAAAEOW}{\bkmkend AAAAAAAEOW}
+{\bkmkstart AAAAAAAFGW}{\bkmkend AAAAAAAFGW}
 00009 {\cf21 #include "translator/ast.h"}\par
-{\bkmkstart AAAAAAAEOX}{\bkmkend AAAAAAAEOX}
+{\bkmkstart AAAAAAAFGX}{\bkmkend AAAAAAAFGX}
 00010 \par
-{\bkmkstart AAAAAAAEOY}{\bkmkend AAAAAAAEOY}
+{\bkmkstart AAAAAAAFGY}{\bkmkend AAAAAAAFGY}
 00011 {\cf17 using namespace }translator;\par
-{\bkmkstart AAAAAAAEOZ}{\bkmkend AAAAAAAEOZ}
+{\bkmkstart AAAAAAAFGZ}{\bkmkend AAAAAAAFGZ}
 00012 \par
-{\bkmkstart AAAAAAAEPA}{\bkmkend AAAAAAAEPA}
+{\bkmkstart AAAAAAAFHA}{\bkmkend AAAAAAAFHA}
 00013 {\cf20 // Yardımcı: kaynak metnini parse edip Program döndür}\par
-{\bkmkstart AAAAAAAEPB}{\bkmkend AAAAAAAEPB}
+{\bkmkstart AAAAAAAFHB}{\bkmkend AAAAAAAFHB}
 00014 {\cf17 static} Program parse_program_from({\cf17 const} {\cf18 char}* src)\{\par
-{\bkmkstart AAAAAAAEPC}{\bkmkend AAAAAAAEPC}
+{\bkmkstart AAAAAAAFHC}{\bkmkend AAAAAAAFHC}
 00015     Lexer lx(src);\par
-{\bkmkstart AAAAAAAEPD}{\bkmkend AAAAAAAEPD}
+{\bkmkstart AAAAAAAFHD}{\bkmkend AAAAAAAFHD}
 00016     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAEPE}{\bkmkend AAAAAAAEPE}
+{\bkmkstart AAAAAAAFHE}{\bkmkend AAAAAAAFHE}
 00017     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAEPF}{\bkmkend AAAAAAAEPF}
+{\bkmkstart AAAAAAAFHF}{\bkmkend AAAAAAAFHF}
 00018     {\cf19 return} ps.parseProgram();\par
-{\bkmkstart AAAAAAAEPG}{\bkmkend AAAAAAAEPG}
+{\bkmkstart AAAAAAAFHG}{\bkmkend AAAAAAAFHG}
 00019 \}\par
-{\bkmkstart AAAAAAAEPH}{\bkmkend AAAAAAAEPH}
+{\bkmkstart AAAAAAAFHH}{\bkmkend AAAAAAAFHH}
 00020 \par
-{\bkmkstart AAAAAAAEPI}{\bkmkend AAAAAAAEPI}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 00021}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(ParserErrors, MissingRParen)\{\par
-{\bkmkstart AAAAAAAEPK}{\bkmkend AAAAAAAEPK}
+{\bkmkstart AAAAAAAFHI}{\bkmkend AAAAAAAFHI}
+00021 TEST(ParserErrors, MissingRParen)\{\par
+{\bkmkstart AAAAAAAFHJ}{\bkmkend AAAAAAAFHJ}
 00022     {\cf17 const} {\cf18 char}* src = {\cf22 "10 PRINT (1 + 2\\n"}; {\cf20 // ')' eksik}\par
-{\bkmkstart AAAAAAAEPL}{\bkmkend AAAAAAAEPL}
+{\bkmkstart AAAAAAAFHK}{\bkmkend AAAAAAAFHK}
 00023     Lexer lx(src);\par
-{\bkmkstart AAAAAAAEPM}{\bkmkend AAAAAAAEPM}
+{\bkmkstart AAAAAAAFHL}{\bkmkend AAAAAAAFHL}
 00024     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAEPN}{\bkmkend AAAAAAAEPN}
+{\bkmkstart AAAAAAAFHM}{\bkmkend AAAAAAAFHM}
 00025     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAEPO}{\bkmkend AAAAAAAEPO}
+{\bkmkstart AAAAAAAFHN}{\bkmkend AAAAAAAFHN}
 00026     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAEPP}{\bkmkend AAAAAAAEPP}
+{\bkmkstart AAAAAAAFHO}{\bkmkend AAAAAAAFHO}
 00027 \}\par
-{\bkmkstart AAAAAAAEPQ}{\bkmkend AAAAAAAEPQ}
+{\bkmkstart AAAAAAAFHP}{\bkmkend AAAAAAAFHP}
 00028 \par
-{\bkmkstart AAAAAAAEPR}{\bkmkend AAAAAAAEPR}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPS" }{}}{\fldrslt {\cs37\ul\cf2 00029}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(ParserErrors, UnknownStatement)\{\par
-{\bkmkstart AAAAAAAEPT}{\bkmkend AAAAAAAEPT}
+{\bkmkstart AAAAAAAFHQ}{\bkmkend AAAAAAAFHQ}
+00029 TEST(ParserErrors, UnknownStatement)\{\par
+{\bkmkstart AAAAAAAFHR}{\bkmkend AAAAAAAFHR}
 00030     {\cf17 const} {\cf18 char}* src = {\cf22 "10 FOOBAR\\n"}; {\cf20 // desteklenmeyen ifade}\par
-{\bkmkstart AAAAAAAEPU}{\bkmkend AAAAAAAEPU}
+{\bkmkstart AAAAAAAFHS}{\bkmkend AAAAAAAFHS}
 00031     Lexer lx(src);\par
-{\bkmkstart AAAAAAAEPV}{\bkmkend AAAAAAAEPV}
+{\bkmkstart AAAAAAAFHT}{\bkmkend AAAAAAAFHT}
 00032     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAEPW}{\bkmkend AAAAAAAEPW}
+{\bkmkstart AAAAAAAFHU}{\bkmkend AAAAAAAFHU}
 00033     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAEPX}{\bkmkend AAAAAAAEPX}
+{\bkmkstart AAAAAAAFHV}{\bkmkend AAAAAAAFHV}
 00034     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAEPY}{\bkmkend AAAAAAAEPY}
+{\bkmkstart AAAAAAAFHW}{\bkmkend AAAAAAAFHW}
 00035 \}\par
-{\bkmkstart AAAAAAAEPZ}{\bkmkend AAAAAAAEPZ}
+{\bkmkstart AAAAAAAFHX}{\bkmkend AAAAAAAFHX}
 00036 \par
-{\bkmkstart AAAAAAAEQA}{\bkmkend AAAAAAAEQA}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEQB" }{}}{\fldrslt {\cs37\ul\cf2 00037}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(ParserErrors, LetMissingAssign)\{\par
-{\bkmkstart AAAAAAAEQC}{\bkmkend AAAAAAAEQC}
+{\bkmkstart AAAAAAAFHY}{\bkmkend AAAAAAAFHY}
+00037 TEST(ParserErrors, LetMissingAssign)\{\par
+{\bkmkstart AAAAAAAFHZ}{\bkmkend AAAAAAAFHZ}
 00038     {\cf17 const} {\cf18 char}* src = {\cf22 "10 LET X 5\\n"}; {\cf20 // '=' eksik}\par
-{\bkmkstart AAAAAAAEQD}{\bkmkend AAAAAAAEQD}
+{\bkmkstart AAAAAAAFIA}{\bkmkend AAAAAAAFIA}
 00039     Lexer lx(src);\par
-{\bkmkstart AAAAAAAEQE}{\bkmkend AAAAAAAEQE}
+{\bkmkstart AAAAAAAFIB}{\bkmkend AAAAAAAFIB}
 00040     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAEQF}{\bkmkend AAAAAAAEQF}
+{\bkmkstart AAAAAAAFIC}{\bkmkend AAAAAAAFIC}
 00041     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAEQG}{\bkmkend AAAAAAAEQG}
+{\bkmkstart AAAAAAAFID}{\bkmkend AAAAAAAFID}
 00042     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAEQH}{\bkmkend AAAAAAAEQH}
+{\bkmkstart AAAAAAAFIE}{\bkmkend AAAAAAAFIE}
 00043 \}\par
-{\bkmkstart AAAAAAAEQI}{\bkmkend AAAAAAAEQI}
+{\bkmkstart AAAAAAAFIF}{\bkmkend AAAAAAAFIF}
 00044 \par
-{\bkmkstart AAAAAAAEQJ}{\bkmkend AAAAAAAEQJ}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEQK" }{}}{\fldrslt {\cs37\ul\cf2 00045}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(ParserErrors, InputNeedsIdentifier)\{\par
-{\bkmkstart AAAAAAAEQL}{\bkmkend AAAAAAAEQL}
+{\bkmkstart AAAAAAAFIG}{\bkmkend AAAAAAAFIG}
+00045 TEST(ParserErrors, InputNeedsIdentifier)\{\par
+{\bkmkstart AAAAAAAFIH}{\bkmkend AAAAAAAFIH}
 00046     {\cf17 const} {\cf18 char}* src = {\cf22 "10 INPUT 123\\n"};\par
-{\bkmkstart AAAAAAAEQM}{\bkmkend AAAAAAAEQM}
+{\bkmkstart AAAAAAAFII}{\bkmkend AAAAAAAFII}
 00047     Lexer lx(src);\par
-{\bkmkstart AAAAAAAEQN}{\bkmkend AAAAAAAEQN}
+{\bkmkstart AAAAAAAFIJ}{\bkmkend AAAAAAAFIJ}
 00048     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAEQO}{\bkmkend AAAAAAAEQO}
+{\bkmkstart AAAAAAAFIK}{\bkmkend AAAAAAAFIK}
 00049     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAEQP}{\bkmkend AAAAAAAEQP}
+{\bkmkstart AAAAAAAFIL}{\bkmkend AAAAAAAFIL}
 00050     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAEQQ}{\bkmkend AAAAAAAEQQ}
+{\bkmkstart AAAAAAAFIM}{\bkmkend AAAAAAAFIM}
 00051 \}\par
-{\bkmkstart AAAAAAAEQR}{\bkmkend AAAAAAAEQR}
+{\bkmkstart AAAAAAAFIN}{\bkmkend AAAAAAAFIN}
 00052 \par
-{\bkmkstart AAAAAAAEQS}{\bkmkend AAAAAAAEQS}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEQT" }{}}{\fldrslt {\cs37\ul\cf2 00053}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(ParserErrors, IfRequiresThen)\{\par
-{\bkmkstart AAAAAAAEQU}{\bkmkend AAAAAAAEQU}
+{\bkmkstart AAAAAAAFIO}{\bkmkend AAAAAAAFIO}
+00053 TEST(ParserErrors, IfRequiresThen)\{\par
+{\bkmkstart AAAAAAAFIP}{\bkmkend AAAAAAAFIP}
 00054     {\cf17 const} {\cf18 char}* src = {\cf22 "10 IF 1 20\\n"}; {\cf20 // THEN eksik}\par
-{\bkmkstart AAAAAAAEQV}{\bkmkend AAAAAAAEQV}
+{\bkmkstart AAAAAAAFIQ}{\bkmkend AAAAAAAFIQ}
 00055     Lexer lx(src);\par
-{\bkmkstart AAAAAAAEQY}{\bkmkend AAAAAAAEQY}
+{\bkmkstart AAAAAAAFIR}{\bkmkend AAAAAAAFIR}
 00056     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAERA}{\bkmkend AAAAAAAERA}
+{\bkmkstart AAAAAAAFIS}{\bkmkend AAAAAAAFIS}
 00057     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAERB}{\bkmkend AAAAAAAERB}
+{\bkmkstart AAAAAAAFIT}{\bkmkend AAAAAAAFIT}
 00058     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAERC}{\bkmkend AAAAAAAERC}
+{\bkmkstart AAAAAAAFIU}{\bkmkend AAAAAAAFIU}
 00059 \}\par
-{\bkmkstart AAAAAAAERD}{\bkmkend AAAAAAAERD}
+{\bkmkstart AAAAAAAFIV}{\bkmkend AAAAAAAFIV}
 00060 \par
-{\bkmkstart AAAAAAAERE}{\bkmkend AAAAAAAERE}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAERF" }{}}{\fldrslt {\cs37\ul\cf2 00061}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(ParserErrors, IfThenRequiresNumber)\{\par
-{\bkmkstart AAAAAAAERH}{\bkmkend AAAAAAAERH}
+{\bkmkstart AAAAAAAFIW}{\bkmkend AAAAAAAFIW}
+00061 TEST(ParserErrors, IfThenRequiresNumber)\{\par
+{\bkmkstart AAAAAAAFIX}{\bkmkend AAAAAAAFIX}
 00062     {\cf17 const} {\cf18 char}* src = {\cf22 "10 IF 1 THEN X\\n"}; {\cf20 // sayı yerine kimlik}\par
-{\bkmkstart AAAAAAAERI}{\bkmkend AAAAAAAERI}
+{\bkmkstart AAAAAAAFIY}{\bkmkend AAAAAAAFIY}
 00063     Lexer lx(src);\par
-{\bkmkstart AAAAAAAERJ}{\bkmkend AAAAAAAERJ}
+{\bkmkstart AAAAAAAFIZ}{\bkmkend AAAAAAAFIZ}
 00064     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAERK}{\bkmkend AAAAAAAERK}
+{\bkmkstart AAAAAAAFJA}{\bkmkend AAAAAAAFJA}
 00065     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAERL}{\bkmkend AAAAAAAERL}
+{\bkmkstart AAAAAAAFJB}{\bkmkend AAAAAAAFJB}
 00066     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAERM}{\bkmkend AAAAAAAERM}
+{\bkmkstart AAAAAAAFJC}{\bkmkend AAAAAAAFJC}
 00067 \}\par
-{\bkmkstart AAAAAAAERO}{\bkmkend AAAAAAAERO}
+{\bkmkstart AAAAAAAFJD}{\bkmkend AAAAAAAFJD}
 00068 \par
-{\bkmkstart AAAAAAAERP}{\bkmkend AAAAAAAERP}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAERQ" }{}}{\fldrslt {\cs37\ul\cf2 00069}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(ParserErrors, GotoRequiresNumber)\{\par
-{\bkmkstart AAAAAAAERT}{\bkmkend AAAAAAAERT}
+{\bkmkstart AAAAAAAFJE}{\bkmkend AAAAAAAFJE}
+00069 TEST(ParserErrors, GotoRequiresNumber)\{\par
+{\bkmkstart AAAAAAAFJF}{\bkmkend AAAAAAAFJF}
 00070     {\cf17 const} {\cf18 char}* src = {\cf22 "10 GOTO X\\n"};\par
-{\bkmkstart AAAAAAAERU}{\bkmkend AAAAAAAERU}
+{\bkmkstart AAAAAAAFJG}{\bkmkend AAAAAAAFJG}
 00071     Lexer lx(src);\par
-{\bkmkstart AAAAAAAERV}{\bkmkend AAAAAAAERV}
+{\bkmkstart AAAAAAAFJH}{\bkmkend AAAAAAAFJH}
 00072     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAERW}{\bkmkend AAAAAAAERW}
+{\bkmkstart AAAAAAAFJI}{\bkmkend AAAAAAAFJI}
 00073     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAERX}{\bkmkend AAAAAAAERX}
+{\bkmkstart AAAAAAAFJJ}{\bkmkend AAAAAAAFJJ}
 00074     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAERY}{\bkmkend AAAAAAAERY}
+{\bkmkstart AAAAAAAFJK}{\bkmkend AAAAAAAFJK}
 00075 \}\par
-{\bkmkstart AAAAAAAERZ}{\bkmkend AAAAAAAERZ}
+{\bkmkstart AAAAAAAFJL}{\bkmkend AAAAAAAFJL}
 00076 \par
-{\bkmkstart AAAAAAAESA}{\bkmkend AAAAAAAESA}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAESB" }{}}{\fldrslt {\cs37\ul\cf2 00077}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(ParserProgram, AutoLabelsWhenMissing)\{\par
-{\bkmkstart AAAAAAAESC}{\bkmkend AAAAAAAESC}
+{\bkmkstart AAAAAAAFJM}{\bkmkend AAAAAAAFJM}
+00077 TEST(ParserProgram, AutoLabelsWhenMissing)\{\par
+{\bkmkstart AAAAAAAFJN}{\bkmkend AAAAAAAFJN}
 00078     {\cf20 // Satır numarası yoksa 10,20,... üretir}\par
-{\bkmkstart AAAAAAAESD}{\bkmkend AAAAAAAESD}
+{\bkmkstart AAAAAAAFJO}{\bkmkend AAAAAAAFJO}
 00079     {\cf17 const} {\cf18 char}* src = {\cf22 "LET X = 1\\nPRINT X\\n"};\par
-{\bkmkstart AAAAAAAESE}{\bkmkend AAAAAAAESE}
+{\bkmkstart AAAAAAAFJP}{\bkmkend AAAAAAAFJP}
 00080     {\cf17 auto} prog = parse_program_from(src);\par
-{\bkmkstart AAAAAAAESF}{\bkmkend AAAAAAAESF}
+{\bkmkstart AAAAAAAFJQ}{\bkmkend AAAAAAAFJQ}
 00081     ASSERT_EQ(prog.stmts.size(), 2u);\par
-{\bkmkstart AAAAAAAESG}{\bkmkend AAAAAAAESG}
+{\bkmkstart AAAAAAAFJR}{\bkmkend AAAAAAAFJR}
 00082     ASSERT_EQ(prog.labels.size(), 2u);\par
-{\bkmkstart AAAAAAAESH}{\bkmkend AAAAAAAESH}
+{\bkmkstart AAAAAAAFJS}{\bkmkend AAAAAAAFJS}
 00083     EXPECT_EQ(prog.labels[0], 10);\par
-{\bkmkstart AAAAAAAESI}{\bkmkend AAAAAAAESI}
+{\bkmkstart AAAAAAAFJT}{\bkmkend AAAAAAAFJT}
 00084     EXPECT_EQ(prog.labels[1], 20);\par
-{\bkmkstart AAAAAAAESJ}{\bkmkend AAAAAAAESJ}
+{\bkmkstart AAAAAAAFJU}{\bkmkend AAAAAAAFJU}
 00085 \}\par
-{\bkmkstart AAAAAAAESK}{\bkmkend AAAAAAAESK}
+{\bkmkstart AAAAAAAFJV}{\bkmkend AAAAAAAFJV}
 00086 \par
-{\bkmkstart AAAAAAAESL}{\bkmkend AAAAAAAESL}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAESM" }{}}{\fldrslt {\cs37\ul\cf2 00087}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(Lexer, UnknownCharIsIgnored)\{\par
-{\bkmkstart AAAAAAAESN}{\bkmkend AAAAAAAESN}
+{\bkmkstart AAAAAAAFJW}{\bkmkend AAAAAAAFJW}
+00087 TEST(Lexer, UnknownCharIsIgnored)\{\par
+{\bkmkstart AAAAAAAFJX}{\bkmkend AAAAAAAFJX}
 00088     {\cf20 // '@' bilinmeyen — token üretilmeden atlanmalı}\par
-{\bkmkstart AAAAAAAESO}{\bkmkend AAAAAAAESO}
+{\bkmkstart AAAAAAAFJY}{\bkmkend AAAAAAAFJY}
 00089     Lexer lx({\cf22 "10 LET X = 1 @ 2\\n"});\par
-{\bkmkstart AAAAAAAESP}{\bkmkend AAAAAAAESP}
+{\bkmkstart AAAAAAAFJZ}{\bkmkend AAAAAAAFJZ}
 00090     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAESQ}{\bkmkend AAAAAAAESQ}
+{\bkmkstart AAAAAAAFKA}{\bkmkend AAAAAAAFKA}
 00091     {\cf20 // Number tokenlarının en az iki kez gelmesini bekleriz}\par
-{\bkmkstart AAAAAAAESR}{\bkmkend AAAAAAAESR}
+{\bkmkstart AAAAAAAFKB}{\bkmkend AAAAAAAFKB}
 00092     {\cf18 int} number_count = 0;\par
-{\bkmkstart AAAAAAAESS}{\bkmkend AAAAAAAESS}
+{\bkmkstart AAAAAAAFKC}{\bkmkend AAAAAAAFKC}
 00093     {\cf19 for} ({\cf17 auto}& t : toks) {\cf19 if} (t.type == TokenType::Number) ++number_count;\par
-{\bkmkstart AAAAAAAEST}{\bkmkend AAAAAAAEST}
+{\bkmkstart AAAAAAAFKD}{\bkmkend AAAAAAAFKD}
 00094     EXPECT_GE(number_count, 2);\par
-{\bkmkstart AAAAAAAESU}{\bkmkend AAAAAAAESU}
+{\bkmkstart AAAAAAAFKE}{\bkmkend AAAAAAAFKE}
 00095 \}\par
-{\bkmkstart AAAAAAAESV}{\bkmkend AAAAAAAESV}
+{\bkmkstart AAAAAAAFKF}{\bkmkend AAAAAAAFKF}
 00096 \par
-{\bkmkstart AAAAAAAESW}{\bkmkend AAAAAAAESW}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAESX" }{}}{\fldrslt {\cs37\ul\cf2 00097}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(CodegenPaths, EmptyProgramReturnsEarly)\{\par
-{\bkmkstart AAAAAAAESY}{\bkmkend AAAAAAAESY}
+{\bkmkstart AAAAAAAFKG}{\bkmkend AAAAAAAFKG}
+00097 TEST(CodegenPaths, EmptyProgramReturnsEarly)\{\par
+{\bkmkstart AAAAAAAFKH}{\bkmkend AAAAAAAFKH}
 00098     {\cf20 // Boş program}\par
-{\bkmkstart AAAAAAAESZ}{\bkmkend AAAAAAAESZ}
+{\bkmkstart AAAAAAAFKI}{\bkmkend AAAAAAAFKI}
 00099     Program p; {\cf20 // labels ve stmts boş}\par
-{\bkmkstart AAAAAAAETA}{\bkmkend AAAAAAAETA}
+{\bkmkstart AAAAAAAFKJ}{\bkmkend AAAAAAAFKJ}
 00100     {\cf17 auto} out = Codegen::emit_cpp(p);\par
-{\bkmkstart AAAAAAAETB}{\bkmkend AAAAAAAETB}
+{\bkmkstart AAAAAAAFKK}{\bkmkend AAAAAAAFKK}
 00101     {\cf20 // erken return içermeli}\par
-{\bkmkstart AAAAAAAETC}{\bkmkend AAAAAAAETC}
+{\bkmkstart AAAAAAAFKL}{\bkmkend AAAAAAAFKL}
 00102     EXPECT_NE(out.find({\cf22 "return 0;"}), std::string::npos);\par
-{\bkmkstart AAAAAAAETD}{\bkmkend AAAAAAAETD}
+{\bkmkstart AAAAAAAFKM}{\bkmkend AAAAAAAFKM}
 00103 \}\par
-{\bkmkstart AAAAAAAETE}{\bkmkend AAAAAAAETE}
+{\bkmkstart AAAAAAAFKN}{\bkmkend AAAAAAAFKN}
 00104 \par
-{\bkmkstart AAAAAAAETF}{\bkmkend AAAAAAAETF}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAETG" }{}}{\fldrslt {\cs37\ul\cf2 00105}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEPJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(CodegenPaths, InputGotoIfGosubReturn)\{\par
-{\bkmkstart AAAAAAAETH}{\bkmkend AAAAAAAETH}
+{\bkmkstart AAAAAAAFKO}{\bkmkend AAAAAAAFKO}
+00105 TEST(CodegenPaths, InputGotoIfGosubReturn)\{\par
+{\bkmkstart AAAAAAAFKP}{\bkmkend AAAAAAAFKP}
 00106     {\cf17 const} {\cf18 char}* src =\par
-{\bkmkstart AAAAAAAETI}{\bkmkend AAAAAAAETI}
+{\bkmkstart AAAAAAAFKQ}{\bkmkend AAAAAAAFKQ}
 00107         {\cf22 "10 INPUT X\\n"}\par
-{\bkmkstart AAAAAAAETJ}{\bkmkend AAAAAAAETJ}
+{\bkmkstart AAAAAAAFKR}{\bkmkend AAAAAAAFKR}
 00108         {\cf22 "20 IF X THEN 40\\n"}\par
-{\bkmkstart AAAAAAAETK}{\bkmkend AAAAAAAETK}
+{\bkmkstart AAAAAAAFKS}{\bkmkend AAAAAAAFKS}
 00109         {\cf22 "30 GOTO 50\\n"}\par
-{\bkmkstart AAAAAAAETL}{\bkmkend AAAAAAAETL}
+{\bkmkstart AAAAAAAFKT}{\bkmkend AAAAAAAFKT}
 00110         {\cf22 "40 GOSUB 60\\n"}\par
-{\bkmkstart AAAAAAAETM}{\bkmkend AAAAAAAETM}
+{\bkmkstart AAAAAAAFKU}{\bkmkend AAAAAAAFKU}
 00111         {\cf22 "50 PRINT X\\n"}\par
-{\bkmkstart AAAAAAAETN}{\bkmkend AAAAAAAETN}
+{\bkmkstart AAAAAAAFKV}{\bkmkend AAAAAAAFKV}
 00112         {\cf22 "60 RETURN\\n"};\par
-{\bkmkstart AAAAAAAETO}{\bkmkend AAAAAAAETO}
+{\bkmkstart AAAAAAAFKW}{\bkmkend AAAAAAAFKW}
 00113     {\cf17 auto} prog = parse_program_from(src);\par
-{\bkmkstart AAAAAAAETP}{\bkmkend AAAAAAAETP}
+{\bkmkstart AAAAAAAFKX}{\bkmkend AAAAAAAFKX}
 00114     {\cf17 auto} out = Codegen::emit_cpp(prog);\par
-{\bkmkstart AAAAAAAETQ}{\bkmkend AAAAAAAETQ}
+{\bkmkstart AAAAAAAFKY}{\bkmkend AAAAAAAFKY}
 00115     {\cf20 // INPUT üretimi}\par
-{\bkmkstart AAAAAAAETR}{\bkmkend AAAAAAAETR}
+{\bkmkstart AAAAAAAFKZ}{\bkmkend AAAAAAAFKZ}
 00116     EXPECT_NE(out.find({\cf22 "std::cin >> tmp"}), std::string::npos);\par
-{\bkmkstart AAAAAAAETS}{\bkmkend AAAAAAAETS}
+{\bkmkstart AAAAAAAFLA}{\bkmkend AAAAAAAFLA}
 00117     {\cf20 // IF THEN else bir sonraki etikete gidiş}\par
-{\bkmkstart AAAAAAAETT}{\bkmkend AAAAAAAETT}
+{\bkmkstart AAAAAAAFLB}{\bkmkend AAAAAAAFLB}
 00118     EXPECT_NE(out.find({\cf22 "if (var[\\"X\\"])"}), std::string::npos);\par
-{\bkmkstart AAAAAAAETU}{\bkmkend AAAAAAAETU}
+{\bkmkstart AAAAAAAFLC}{\bkmkend AAAAAAAFLC}
 00119     EXPECT_NE(out.find({\cf22 "else pc = 30;"}), std::string::npos); {\cf20 // 20'den sonraki etiket 30}\par
-{\bkmkstart AAAAAAAETV}{\bkmkend AAAAAAAETV}
+{\bkmkstart AAAAAAAFLD}{\bkmkend AAAAAAAFLD}
 00120     {\cf20 // GOSUB çağrısı ve dönüş}\par
-{\bkmkstart AAAAAAAETW}{\bkmkend AAAAAAAETW}
+{\bkmkstart AAAAAAAFLE}{\bkmkend AAAAAAAFLE}
 00121     EXPECT_NE(out.find({\cf22 "call.push(50); pc = 60;"}), std::string::npos);\par
-{\bkmkstart AAAAAAAETX}{\bkmkend AAAAAAAETX}
+{\bkmkstart AAAAAAAFLF}{\bkmkend AAAAAAAFLF}
 00122     EXPECT_NE(out.find({\cf22 "if (call.empty()) return 0; pc = call.top(); call.pop();"}), std::string::npos);\par
-{\bkmkstart AAAAAAAETY}{\bkmkend AAAAAAAETY}
+{\bkmkstart AAAAAAAFLG}{\bkmkend AAAAAAAFLG}
 00123 \}\par
-{\bkmkstart AAAAAAAETZ}{\bkmkend AAAAAAAETZ}
+{\bkmkstart AAAAAAAFLH}{\bkmkend AAAAAAAFLH}
 00124 \par
 }
 }

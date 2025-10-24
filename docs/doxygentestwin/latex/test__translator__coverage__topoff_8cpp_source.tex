@@ -1,0 +1,97 @@
+\doxysection{test\+\_\+translator\+\_\+coverage\+\_\+topoff.\+cpp}
+\hypertarget{test__translator__coverage__topoff_8cpp_source}{}\label{test__translator__coverage__topoff_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_translator\_coverage\_topoff.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_translator\_coverage\_topoff.cpp}}
+\mbox{\hyperlink{test__translator__coverage__topoff_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}../src/translator/lexer.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}../src/translator/parser.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}../src/translator/codegen.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00013}00013\ \textcolor{keyword}{using\ namespace\ }translator;}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00015}00015\ \textcolor{comment}{//\ Covers:\ string\ literal\ scanning\ (multi-\/line),\ and\ single-\/char\ tokens\ -\/,*,/,),(}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00016}00016\ TEST(TranslatorCoverageTopOff,\ Lexer\_StringAndPunctuators)}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00017}00017\ \{}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{comment}{//\ String\ without\ closing\ quote\ on\ same\ line\ to\ exercise\ newline\ handling\ inside\ string}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ src\ =\ \textcolor{stringliteral}{"{}PRINT\ \(\backslash\)"{}hello\(\backslash\)nworld\(\backslash\)"{}\(\backslash\)nA\ =\ 1-\/2*3/4,(5)\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00020}00020\ \ \ \ \ Lexer\ lx(src);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ lx.tokenize();}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{comment}{//\ Ensure\ we\ saw\ a\ String\ token\ and\ various\ punctuators}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ sawString=\textcolor{keyword}{false},\ sawMinus=\textcolor{keyword}{false},\ sawStar=\textcolor{keyword}{false},\ sawSlash=\textcolor{keyword}{false},\ sawLParen=\textcolor{keyword}{false},\ sawRParen=\textcolor{keyword}{false},\ sawComma=\textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ t\ :\ toks)\ \{}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ sawString\ |=\ (t.type==TokenType::String);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ sawMinus\ \ |=\ (t.type==TokenType::Minus);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ sawStar\ \ \ |=\ (t.type==TokenType::Star);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ sawSlash\ \ |=\ (t.type==TokenType::Slash);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ sawLParen\ |=\ (t.type==TokenType::LParen);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ sawRParen\ |=\ (t.type==TokenType::RParen);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ sawComma\ \ |=\ (t.type==TokenType::Comma);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00033}00033\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00034}00034\ \ \ \ \ EXPECT\_TRUE(sawString);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00035}00035\ \ \ \ \ EXPECT\_TRUE(sawMinus);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00036}00036\ \ \ \ \ EXPECT\_TRUE(sawStar);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00037}00037\ \ \ \ \ EXPECT\_TRUE(sawSlash);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00038}00038\ \ \ \ \ EXPECT\_TRUE(sawLParen);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00039}00039\ \ \ \ \ EXPECT\_TRUE(sawRParen);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00040}00040\ \ \ \ \ EXPECT\_TRUE(sawComma);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00043}00043\ \textcolor{comment}{//\ Additional\ lexer\ micro-\/cases:\ bare\ identifier\ and\ same-\/line\ string\ termination}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00044}00044\ TEST(TranslatorCoverageTopOff,\ Lexer\_Identifier\_And\_SimpleString)}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00045}00045\ \{}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ src\ =\ \textcolor{stringliteral}{"{}foo\(\backslash\)nPRINT\ \(\backslash\)"{}x\(\backslash\)"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ Lexer(src).tokenize();}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ sawId=\textcolor{keyword}{false},\ sawString=\textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ t\ :\ toks)\ \{}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ sawId\ |=\ (t.type==TokenType::Identifier\ \&\&\ t.lexeme==\textcolor{stringliteral}{"{}foo"{}});}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ sawString\ |=\ (t.type==TokenType::String\ \&\&\ t.lexeme==\textcolor{stringliteral}{"{}x"{}});}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00052}00052\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00053}00053\ \ \ \ \ EXPECT\_TRUE(sawId);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00054}00054\ \ \ \ \ EXPECT\_TRUE(sawString);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00055}00055\ \}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00057}00057\ \textcolor{comment}{//\ Edge\ case:\ empty\ string\ literal\ to\ ensure\ closing-\/quote\ branch\ counted}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00058}00058\ TEST(TranslatorCoverageTopOff,\ Lexer\_EmptyString)}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00059}00059\ \{}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ src\ =\ \textcolor{stringliteral}{"{}PRINT\ \(\backslash\)"{}\(\backslash\)"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ Lexer(src).tokenize();}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00062}00062\ \ \ \ \ \textcolor{keywordtype}{int}\ stringCount\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00063}00063\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ t\ :\ toks)\ \textcolor{keywordflow}{if}\ (t.type==TokenType::String)\ ++stringCount;}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00064}00064\ \ \ \ \ EXPECT\_EQ(stringCount,\ 1);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00065}00065\ \}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00067}00067\ \textcolor{comment}{//\ Covers:\ parse\_term()\ loop\ for\ *\ and\ /;\ and\ codegen\ Let\ with\ BinaryExpr\ and\ next-\/label\ branch}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00068}00068\ TEST(TranslatorCoverageTopOff,\ Parser\_MulDiv\_And\_CodegenLet)}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00069}00069\ \{}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00070}00070\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ src\ =}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}10\ LET\ A\ =\ 2*3/4\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}20\ PRINT\ 1\(\backslash\)n"{}};\ \textcolor{comment}{//\ ensure\ next\_label\ exists\ after\ LET}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ Lexer(src).tokenize();}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00074}00074\ \ \ \ \ Program\ prog\ =\ Parser(std::move(toks)).parseProgram();}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{comment}{//\ Basic\ sanity}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00077}00077\ \ \ \ \ ASSERT\_EQ(prog.stmts.size(),\ 2u);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{comment}{//\ Emitting\ C++\ should\ include\ the\ binary\ expression\ with\ both\ ops\ and\ the\ LET\ assignment}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00080}00080\ \ \ \ \ std::string\ out\ =\ Codegen().emit\_cpp(prog);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00081}00081\ \ \ \ \ EXPECT\_NE(out.find(\textcolor{stringliteral}{"{}var[\(\backslash\)"{}A\(\backslash\)"{}]\ ="{}}),\ std::string::npos);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00082}00082\ \ \ \ \ EXPECT\_NE(out.find(\textcolor{stringliteral}{"{}*"{}}),\ std::string::npos);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00083}00083\ \ \ \ \ EXPECT\_NE(out.find(\textcolor{stringliteral}{"{}/"{}}),\ std::string::npos);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00084}00084\ \}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00086}00086\ \textcolor{comment}{//\ Covers:\ parser\ factor\ unexpected\ token\ throw\ (line\ with\ "{}Unexpected\ token\ in\ factor"{})}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00087}00087\ TEST(TranslatorCoverageTopOff,\ Parser\_UnexpectedTokenInFactor)}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00088}00088\ \{}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00089}00089\ \ \ \ \ \textcolor{comment}{//\ PRINT\ THEN\ -\/>\ when\ parsing\ expression\ after\ PRINT,\ first\ token\ is\ THEN\ and\ triggers\ factor\ error}}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ src\ =\ \textcolor{stringliteral}{"{}10\ PRINT\ THEN\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ Lexer(src).tokenize();}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00092}00092\ \ \ \ \ Parser\ p(std::move(toks));}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00093}00093\ \ \ \ \ EXPECT\_THROW(\{\ (void)p.parseProgram();\ \},\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__translator__coverage__topoff_8cpp_source_l00094}00094\ \}}
+
+\end{DoxyCode}

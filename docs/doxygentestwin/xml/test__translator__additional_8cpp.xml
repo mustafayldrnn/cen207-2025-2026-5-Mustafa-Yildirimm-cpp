@@ -298,7 +298,7 @@
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ps.parseProgram();</highlight></codeline>
 <codeline lineno="19"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21" refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" refkind="member"><highlight class="normal"><ref refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" kindref="member">TEST</ref>(ParserErrors,<sp/>MissingRParen){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">TEST(ParserErrors,<sp/>MissingRParen){</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;10<sp/>PRINT<sp/>(1<sp/>+<sp/>2\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>&apos;)&apos;<sp/>eksik</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>Lexer<sp/>lx(src);</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>toks<sp/>=<sp/>lx.tokenize();</highlight></codeline>
@@ -306,7 +306,7 @@
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_THROW((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)ps.parseProgram(),<sp/>std::runtime_error);</highlight></codeline>
 <codeline lineno="27"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="test__translator__additional_8cpp_1a58eeba6a901b6ce031a9adf726aa6f17" refkind="member"><highlight class="normal"><ref refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" kindref="member">TEST</ref>(ParserErrors,<sp/>UnknownStatement){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">TEST(ParserErrors,<sp/>UnknownStatement){</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;10<sp/>FOOBAR\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>desteklenmeyen<sp/>ifade</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>Lexer<sp/>lx(src);</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>toks<sp/>=<sp/>lx.tokenize();</highlight></codeline>
@@ -314,7 +314,7 @@
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_THROW((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)ps.parseProgram(),<sp/>std::runtime_error);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37" refid="test__translator__additional_8cpp_1a5e01015d67e43affd1e6ac2198deeb5f" refkind="member"><highlight class="normal"><ref refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" kindref="member">TEST</ref>(ParserErrors,<sp/>LetMissingAssign){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">TEST(ParserErrors,<sp/>LetMissingAssign){</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;10<sp/>LET<sp/>X<sp/>5\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>&apos;=&apos;<sp/>eksik</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>Lexer<sp/>lx(src);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>toks<sp/>=<sp/>lx.tokenize();</highlight></codeline>
@@ -322,7 +322,7 @@
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_THROW((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)ps.parseProgram(),<sp/>std::runtime_error);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45" refid="test__translator__additional_8cpp_1af53a37441ac6ee09fb1973b0fccb3bea" refkind="member"><highlight class="normal"><ref refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" kindref="member">TEST</ref>(ParserErrors,<sp/>InputNeedsIdentifier){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">TEST(ParserErrors,<sp/>InputNeedsIdentifier){</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;10<sp/>INPUT<sp/>123\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>Lexer<sp/>lx(src);</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>toks<sp/>=<sp/>lx.tokenize();</highlight></codeline>
@@ -330,7 +330,7 @@
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_THROW((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)ps.parseProgram(),<sp/>std::runtime_error);</highlight></codeline>
 <codeline lineno="51"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53" refid="test__translator__additional_8cpp_1a4ac96865b7fe2b0f8dcafb22e531ac3b" refkind="member"><highlight class="normal"><ref refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" kindref="member">TEST</ref>(ParserErrors,<sp/>IfRequiresThen){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">TEST(ParserErrors,<sp/>IfRequiresThen){</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;10<sp/>IF<sp/>1<sp/>20\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>THEN<sp/>eksik</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>Lexer<sp/>lx(src);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>toks<sp/>=<sp/>lx.tokenize();</highlight></codeline>
@@ -338,7 +338,7 @@
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_THROW((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)ps.parseProgram(),<sp/>std::runtime_error);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61" refid="test__translator__additional_8cpp_1a2c2b01219fa918d1e27ef67bd0b70ce8" refkind="member"><highlight class="normal"><ref refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" kindref="member">TEST</ref>(ParserErrors,<sp/>IfThenRequiresNumber){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">TEST(ParserErrors,<sp/>IfThenRequiresNumber){</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;10<sp/>IF<sp/>1<sp/>THEN<sp/>X\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>sayı<sp/>yerine<sp/>kimlik</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>Lexer<sp/>lx(src);</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>toks<sp/>=<sp/>lx.tokenize();</highlight></codeline>
@@ -346,7 +346,7 @@
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_THROW((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)ps.parseProgram(),<sp/>std::runtime_error);</highlight></codeline>
 <codeline lineno="67"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69" refid="test__translator__additional_8cpp_1a1d4c7f9e64231d3818b91f504416a617" refkind="member"><highlight class="normal"><ref refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" kindref="member">TEST</ref>(ParserErrors,<sp/>GotoRequiresNumber){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">TEST(ParserErrors,<sp/>GotoRequiresNumber){</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;10<sp/>GOTO<sp/>X\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>Lexer<sp/>lx(src);</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>toks<sp/>=<sp/>lx.tokenize();</highlight></codeline>
@@ -354,7 +354,7 @@
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_THROW((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)ps.parseProgram(),<sp/>std::runtime_error);</highlight></codeline>
 <codeline lineno="75"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77" refid="test__translator__additional_8cpp_1a20a827b1d4c7d881b955e37b76465c6e" refkind="member"><highlight class="normal"><ref refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" kindref="member">TEST</ref>(ParserProgram,<sp/>AutoLabelsWhenMissing){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">TEST(ParserProgram,<sp/>AutoLabelsWhenMissing){</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Satır<sp/>numarası<sp/>yoksa<sp/>10,20,...<sp/>üretir</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;LET<sp/>X<sp/>=<sp/>1\nPRINT<sp/>X\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>prog<sp/>=<sp/>parse_program_from(src);</highlight></codeline>
@@ -364,7 +364,7 @@
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(prog.labels[1],<sp/>20);</highlight></codeline>
 <codeline lineno="85"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87" refid="test__translator__additional_8cpp_1a324f13166bedacba2a9f028f5e4e6f53" refkind="member"><highlight class="normal"><ref refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" kindref="member">TEST</ref>(Lexer,<sp/>UnknownCharIsIgnored){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">TEST(Lexer,<sp/>UnknownCharIsIgnored){</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&apos;@&apos;<sp/>bilinmeyen<sp/>—<sp/>token<sp/>üretilmeden<sp/>atlanmalı</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>Lexer<sp/>lx(</highlight><highlight class="stringliteral">&quot;10<sp/>LET<sp/>X<sp/>=<sp/>1<sp/>@<sp/>2\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>toks<sp/>=<sp/>lx.tokenize();</highlight></codeline>
@@ -374,7 +374,7 @@
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_GE(number_count,<sp/>2);</highlight></codeline>
 <codeline lineno="95"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97" refid="test__translator__additional_8cpp_1a5c1cdba96f253346ebc4f90039293ea6" refkind="member"><highlight class="normal"><ref refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" kindref="member">TEST</ref>(CodegenPaths,<sp/>EmptyProgramReturnsEarly){</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">TEST(CodegenPaths,<sp/>EmptyProgramReturnsEarly){</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Boş<sp/>program</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>Program<sp/>p;<sp/></highlight><highlight class="comment">//<sp/>labels<sp/>ve<sp/>stmts<sp/>boş</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>out<sp/>=<sp/>Codegen::emit_cpp(p);</highlight></codeline>
@@ -382,7 +382,7 @@
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(out.find(</highlight><highlight class="stringliteral">&quot;return<sp/>0;&quot;</highlight><highlight class="normal">),<sp/>std::string::npos);</highlight></codeline>
 <codeline lineno="103"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105" refid="test__translator__additional_8cpp_1a87666bc2c76582e15f883cb39424af64" refkind="member"><highlight class="normal"><ref refid="test__translator__additional_8cpp_1ab4f8b86eeb7e109d3d6f656694e44181" kindref="member">TEST</ref>(CodegenPaths,<sp/>InputGotoIfGosubReturn){</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">TEST(CodegenPaths,<sp/>InputGotoIfGosubReturn){</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;10<sp/>INPUT<sp/>X\n&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;20<sp/>IF<sp/>X<sp/>THEN<sp/>40\n&quot;</highlight><highlight class="normal"></highlight></codeline>

@@ -49,7 +49,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ds/sparse_matrix.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4" refid="test__sparse__matrix_8cpp_1a4db3587556db215c5648c147df4e9c0e" refkind="member"><highlight class="normal"><ref refid="test__sparse__matrix_8cpp_1a4db3587556db215c5648c147df4e9c0e" kindref="member">TEST</ref>(SparseMatrix,<sp/>InsertAndLookup){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">TEST(SparseMatrix,<sp/>InsertAndLookup){</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::SparseMatrix&lt;int&gt;<sp/>sm(100,100);</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(sm.nonZeroCount(),<sp/>0u);</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>sm.set(2,3,10);<sp/>sm.set(50,50,7);</highlight></codeline>

@@ -80,11 +80,10 @@ $(function() {
   <div class="headertitle"><div class="title">test_xor_linked_list.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="test__xor__linked__list_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;gtest/gtest.h&gt;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;gtest/gtest.h&gt;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;ds/xor_linked_list.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="test__xor__linked__list_8cpp.html#a4f428f97178e949d4665e0961d6e8c7d">    4</a></span><a class="code hl_function" href="test__xor__linked__list_8cpp.html#a4f428f97178e949d4665e0961d6e8c7d">TEST</a>(XORLinkedList, InsertDeleteNavigate){</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>TEST(XORLinkedList, InsertDeleteNavigate){</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    ds::XORLinkedList&lt;int&gt; xl;</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    xl.push_back(1); xl.push_back(2); xl.push_front(0);</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">int</span> forward[3]; <span class="keywordtype">int</span> i=0; xl.for_each_forward([&amp;](<span class="keywordtype">int</span> v){ forward[i++]=v; <span class="keywordflow">return</span> <span class="keyword">true</span>; });</div>
@@ -95,9 +94,7 @@ $(function() {
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">int</span> after[2]; i=0; xl.for_each_forward([&amp;](<span class="keywordtype">int</span> v){ after[i++]=v; <span class="keywordflow">return</span> <span class="keyword">true</span>; });</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    EXPECT_EQ(after[0],0); EXPECT_EQ(after[1],2);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
-</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="ttc" id="atest__xor__linked__list_8cpp_html_a4f428f97178e949d4665e0961d6e8c7d"><div class="ttname"><a href="test__xor__linked__list_8cpp.html#a4f428f97178e949d4665e0961d6e8c7d">TEST</a></div><div class="ttdeci">TEST(XORLinkedList, InsertDeleteNavigate)</div><div class="ttdef"><b>Definition</b> <a href="#l00004">test_xor_linked_list.cpp:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

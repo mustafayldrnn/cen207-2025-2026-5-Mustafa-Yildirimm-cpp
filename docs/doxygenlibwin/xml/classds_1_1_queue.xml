@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classds_1_1_queue" kind="class" language="C++" prot="public">
     <compoundname>ds::Queue</compoundname>
-    <includes refid="queue_8h" local="no">queue.h</includes>
     <innerclass refid="structds_1_1_queue_1_1_node" prot="private">ds::Queue::Node</innerclass>
     <templateparamlist>
       <param>
@@ -11,7 +10,7 @@
     </templateparamlist>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classds_1_1_queue_1af3e1805acba3c9de41f864bd19238db8" prot="private" static="no" mutable="no">
-        <type><ref refid="structds_1_1_queue_1_1_node" kindref="compound">Node</ref> *</type>
+        <type>Node *</type>
         <definition>Node* ds::Queue&lt; T &gt;::head_</definition>
         <argsstring></argsstring>
         <name>head_</name>
@@ -26,7 +25,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="9" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classds_1_1_queue_1a72a469ed84ae8b3b36542d36d94df464" prot="private" static="no" mutable="no">
-        <type><ref refid="structds_1_1_queue_1_1_node" kindref="compound">Node</ref> *</type>
+        <type>Node *</type>
         <definition>Node* ds::Queue&lt; T &gt;::tail_</definition>
         <argsstring></argsstring>
         <name>tail_</name>
@@ -151,20 +150,8 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="2">
-        <label>ds::Queue&lt; T &gt;::Node</label>
-        <link refid="structds_1_1_queue_1_1_node"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>+next</edgelabel>
-        </childnode>
-      </node>
       <node id="1">
         <label>ds::Queue&lt; T &gt;</label>
-        <link refid="classds_1_1_queue"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>-head_</edgelabel>
-          <edgelabel>-tail_</edgelabel>
-        </childnode>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" line="7" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h" bodystart="7" bodyend="17"/>

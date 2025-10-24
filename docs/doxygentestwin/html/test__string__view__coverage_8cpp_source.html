@@ -104,7 +104,7 @@ $(function() {
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewConstruction) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>TEST_F(StringViewCoverageTest, TestStringViewConstruction) {</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// Test construction from C-string</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* cstr = <span class="stringliteral">&quot;Hello, World!&quot;</span>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::string_view sv1(cstr);</div>
@@ -134,7 +134,7 @@ $(function() {
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    EXPECT_EQ(sv5, <span class="stringliteral">&quot;Literal&quot;</span>);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewAccess) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>TEST_F(StringViewCoverageTest, TestStringViewAccess) {</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    std::string_view sv(<span class="stringliteral">&quot;Hello, World!&quot;</span>);</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// Test operator[]</span></div>
@@ -167,7 +167,7 @@ $(function() {
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    EXPECT_EQ(empty_sv.size(), 0);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewIterators) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>TEST_F(StringViewCoverageTest, TestStringViewIterators) {</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    std::string_view sv(<span class="stringliteral">&quot;Test&quot;</span>);</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// Test begin() and end()</span></div>
@@ -204,7 +204,7 @@ $(function() {
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    EXPECT_EQ(result, <span class="stringliteral">&quot;Test&quot;</span>);</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>}</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewSubstring) {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>TEST_F(StringViewCoverageTest, TestStringViewSubstring) {</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    std::string_view sv(<span class="stringliteral">&quot;Hello, World!&quot;</span>);</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    </div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="comment">// Test substr() with start position</span></div>
@@ -232,7 +232,7 @@ $(function() {
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    EXPECT_TRUE(sub5.empty());</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewComparison) {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>TEST_F(StringViewCoverageTest, TestStringViewComparison) {</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    std::string_view sv1(<span class="stringliteral">&quot;Hello&quot;</span>);</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    std::string_view sv2(<span class="stringliteral">&quot;Hello&quot;</span>);</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    std::string_view sv3(<span class="stringliteral">&quot;World&quot;</span>);</div>
@@ -271,7 +271,7 @@ $(function() {
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    EXPECT_EQ(cstr, sv1);</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>}</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewFind) {</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>TEST_F(StringViewCoverageTest, TestStringViewFind) {</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    std::string_view sv(<span class="stringliteral">&quot;Hello, World! Hello, Universe!&quot;</span>);</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="comment">// Test find() with character</span></div>
@@ -316,7 +316,7 @@ $(function() {
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    EXPECT_EQ(sv.find_last_not_of(<span class="stringliteral">&quot;Hello, World! Universe!&quot;</span>), std::string_view::npos);</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>}</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span></div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewStartsWithEndsWith) {</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>TEST_F(StringViewCoverageTest, TestStringViewStartsWithEndsWith) {</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    std::string_view sv(<span class="stringliteral">&quot;Hello, World!&quot;</span>);</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    </div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="comment">// Test starts_with() functionality using find (C++20 features not available)</span></div>
@@ -350,7 +350,7 @@ $(function() {
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    EXPECT_EQ(sv.find(suffix), 7);</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>}</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewContains) {</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>TEST_F(StringViewCoverageTest, TestStringViewContains) {</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    std::string_view sv(<span class="stringliteral">&quot;Hello, World!&quot;</span>);</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    </div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="comment">// Test contains() functionality using find (C++23 features not available)</span></div>
@@ -374,7 +374,7 @@ $(function() {
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    EXPECT_EQ(sv.find(not_found), std::string_view::npos);</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>}</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span></div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewRemovePrefixSuffix) {</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>TEST_F(StringViewCoverageTest, TestStringViewRemovePrefixSuffix) {</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    std::string_view sv(<span class="stringliteral">&quot;Hello, World!&quot;</span>);</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    </div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    <span class="comment">// Test remove_prefix()</span></div>
@@ -402,7 +402,7 @@ $(function() {
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    EXPECT_TRUE(empty_sv.empty());</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>}</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span></div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewCopy) {</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>TEST_F(StringViewCoverageTest, TestStringViewCopy) {</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    std::string_view sv(<span class="stringliteral">&quot;Hello, World!&quot;</span>);</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="keywordtype">char</span> buffer[20];</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    </div>
@@ -432,7 +432,7 @@ $(function() {
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    EXPECT_STREQ(small_buffer, <span class="stringliteral">&quot;He&quot;</span>);</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>}</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span></div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewHash) {</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>TEST_F(StringViewCoverageTest, TestStringViewHash) {</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    std::string_view sv1(<span class="stringliteral">&quot;Hello, World!&quot;</span>);</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    std::string_view sv2(<span class="stringliteral">&quot;Hello, World!&quot;</span>);</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    std::string_view sv3(<span class="stringliteral">&quot;Hello, Universe!&quot;</span>);</div>
@@ -454,7 +454,7 @@ $(function() {
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    EXPECT_EQ(hash1, hash2);</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>}</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span></div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewEdgeCases) {</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>TEST_F(StringViewCoverageTest, TestStringViewEdgeCases) {</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <span class="comment">// Test empty string_view</span></div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    std::string_view empty_sv;</div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    EXPECT_TRUE(empty_sv.empty());</div>
@@ -487,7 +487,7 @@ $(function() {
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>    EXPECT_EQ(special_sv[9], <span class="charliteral">&#39;)&#39;</span>);</div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>}</div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span></div>
-<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewConstexpr) {</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>TEST_F(StringViewCoverageTest, TestStringViewConstexpr) {</div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>    <span class="comment">// Test constexpr construction</span></div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>    <span class="keyword">constexpr</span> std::string_view sv(<span class="stringliteral">&quot;Constexpr Test&quot;</span>);</div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>    <span class="keyword">static_assert</span>(sv.size() == 14);</div>
@@ -518,7 +518,7 @@ $(function() {
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    EXPECT_EQ(pos, 10);</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>}</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span></div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><a class="code hl_function" href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a>(StringViewCoverageTest, TestStringViewPerformance) {</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>TEST_F(StringViewCoverageTest, TestStringViewPerformance) {</div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>    std::string large_string(10000, <span class="charliteral">&#39;A&#39;</span>);</div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    std::string_view sv(large_string);</div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    </div>
@@ -541,7 +541,6 @@ $(function() {
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>}</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>} <span class="comment">// namespace</span></div>
-<div class="ttc" id="a_language_translator__test_8cpp_html_a76d6c85bf7b1d192d4c366cc40624a5e"><div class="ttname"><a href="_language_translator__test_8cpp.html#a76d6c85bf7b1d192d4c366cc40624a5e">TEST_F</a></div><div class="ttdeci">TEST_F(LanguageTranslatorTest, BasicWordTranslation)</div><div class="ttdef"><b>Definition</b> <a href="_language_translator__test_8cpp_source.html#l00025">LanguageTranslator_test.cpp:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

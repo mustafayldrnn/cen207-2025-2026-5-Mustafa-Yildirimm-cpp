@@ -68,7 +68,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ds/doubly_linked_list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4" refid="test__doubly__linked__list_8cpp_1adb7e1b2bf93fe02a8f16a176da18b9de" refkind="member"><highlight class="normal"><ref refid="test__doubly__linked__list_8cpp_1adb7e1b2bf93fe02a8f16a176da18b9de" kindref="member">TEST</ref>(DoublyLinkedList,<sp/>InsertAndTraverse){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">TEST(DoublyLinkedList,<sp/>InsertAndTraverse){</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::DoublyLinkedList&lt;int&gt;<sp/>dll;</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(dll.empty());</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>dll.push_back(1);<sp/>dll.push_back(2);<sp/>dll.push_front(0);</highlight></codeline>
@@ -83,7 +83,7 @@
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(arr2[0],0);<sp/>EXPECT_EQ(arr2[1],5);<sp/>EXPECT_EQ(arr2[2],2);</highlight></codeline>
 <codeline lineno="17"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19" refid="test__doubly__linked__list_8cpp_1ada320146363519d8a670cf9c4ac98f98" refkind="member"><highlight class="normal"><ref refid="test__doubly__linked__list_8cpp_1adb7e1b2bf93fe02a8f16a176da18b9de" kindref="member">TEST</ref>(DoublyLinkedList,<sp/>EdgeCases){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">TEST(DoublyLinkedList,<sp/>EdgeCases){</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::DoublyLinkedList&lt;int&gt;<sp/>dll;</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>insert<sp/>into<sp/>empty<sp/>after<sp/>end<sp/>behaves<sp/>like<sp/>push_front</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>dll.insert_after(ds::DoublyLinkedList&lt;int&gt;::iterator(),<sp/>42);</highlight></codeline>

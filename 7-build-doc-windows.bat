@@ -47,7 +47,7 @@ echo Run Documentation Coverage Data Collector for Library (No Source Code Only 
 call python -m coverxygen --xml-dir ./docs/doxygenlibwin/xml --src-dir ./ --format lcov --output ./docs/coverxygenlibwin/lcov_doxygen_lib_win.info
 
 echo Run Documentation Coverage Data Collector for Unit Tests (Test Sources and Test Data Sets)
-call python -m coverxygen --xml-dir ./docs/doxygentestwin/xml --src-dir ./ --format lcov --output ./docs/coverxygentestwin/lcov_doxygen_test_win.info
+call python -m coverxygen --xml-dir ./docs/doxygentestwin/xml --src-dir tests --format lcov --output ./docs/coverxygentestwin/lcov_doxygen_test_win.info
 rem call python -m coverxygen --xml-dir ./docs/doxygen/xml --src-dir ./ --format lcov --output ./docs/coverxygen/lcov.info --prefix %currentDir%\
 
 rem echo Run lcov genhtml

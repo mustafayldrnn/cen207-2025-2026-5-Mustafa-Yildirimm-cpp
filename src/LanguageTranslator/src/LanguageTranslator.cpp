@@ -4,6 +4,8 @@
 #include <fstream>
 #include <sstream>
 #include <filesystem>
+#include <chrono>
+#include "../header/Persistence.h"
 // #include <json/json.h>  // Commented out for now - API not implemented yet
 
 namespace Coruh
@@ -35,7 +37,8 @@ namespace Coruh
                     std::cout << "3. Phrase Library\n";
                     std::cout << "4. Learning Tips\n";
                     std::cout << "5. Pronunciation Guide\n";
-                    std::cout << "6. Logout\n";
+                    std::cout << "6. Translation History\n";
+                    std::cout << "7. Logout\n";
                     std::cout << "0. Exit\n";
                 } else {
                     std::cout << "1. Login\n";
@@ -76,7 +79,10 @@ namespace Coruh
                     case 5: // Pronunciation Guide
                         showPronunciationGuide();
                         break;
-                    case 6: // Logout
+                    case 6: // History
+                        showHistory();
+                        break;
+                    case 7: // Logout
                         logout();
                         std::cout << "Logged out successfully.\n";
                         break;
@@ -189,7 +195,20 @@ namespace Coruh
                 }
             }
             
-            return translated.empty() ? text : translated;
+            std::string result = translated.empty() ? text : translated;
+
+            if (isLoggedIn && !text.empty()) {
+                TranslationRecord rec;
+                rec.sourceLang = currentSourceLanguage;
+                rec.targetLang = currentTargetLanguage;
+                rec.text = text;
+                rec.result = result;
+                rec.timestamp = static_cast<std::uint64_t>(std::chrono::duration_cast<std::chrono::seconds>(
+                    std::chrono::system_clock::now().time_since_epoch()).count());
+                history.push_back(std::move(rec));
+            }
+
+            return result;
         }
 
         std::string LanguageTranslatorApp::translateWord(const std::string& word)
@@ -218,7 +237,20 @@ namespace Coruh
 
         bool LanguageTranslatorApp::login(const std::string& username, const std::string& password)
         {
-            // Simple authentication (in real app, use proper password hashing)
+            for (const auto& u : users) {
+                if (u.username == username) {
+                    auto hash = Persistence::sha256Hex(u.salt + password);
+                    if (hash == u.passwordHash) {
+                        currentUser = username;
+                        isLoggedIn = true;
+                        if (!u.preferredSource.empty()) currentSourceLanguage = u.preferredSource;
+                        if (!u.preferredTarget.empty()) currentTargetLanguage = u.preferredTarget;
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            }
             if (username == "admin" && password == "admin") {
                 currentUser = username;
                 isLoggedIn = true;
@@ -229,11 +261,17 @@ namespace Coruh
 
         bool LanguageTranslatorApp::registerUser(const std::string& username, const std::string& password)
         {
-            // Simple registration (in real app, store in database)
+            for (const auto& u : users) if (u.username == username) return false;
             if (username == "admin") {
-                return false; // User already exists
+                return false; // reserved demo user
             }
-            // For demo purposes, accept any new user
+            UserProfile u;
+            u.username = username;
+            u.salt = Persistence::randomSalt();
+            u.passwordHash = Persistence::sha256Hex(u.salt + password);
+            u.preferredSource = currentSourceLanguage;
+            u.preferredTarget = currentTargetLanguage;
+            users.push_back(std::move(u));
             return true;
         }
 
@@ -301,6 +339,25 @@ namespace Coruh
         {
             pronunciationGuide[word] = guide;
             std::cout << "Pronunciation added: " << word << " -> " << guide << "\n";
+        }
+
+        void LanguageTranslatorApp::showHistory() const
+        {
+            std::cout << "\n=== Translation History ===\n";
+            if (history.empty()) {
+                std::cout << "No history.\n";
+                return;
+            }
+            for (const auto& r : history) {
+                std::cout << "[" << r.sourceLang << "->" << r.targetLang << "] "
+                          << r.text << " => " << r.result << "\n";
+            }
+        }
+
+        void LanguageTranslatorApp::clearHistory()
+        {
+            history.clear();
+            std::cout << "History cleared.\n";
         }
 
         void LanguageTranslatorApp::setSourceLanguage(const std::string& language)
@@ -473,13 +530,23 @@ namespace Coruh
 
         void LanguageTranslatorApp::saveData()
         {
-            // In a real application, save to files or database
+            std::filesystem::create_directory("data");
+            Persistence::writeUsers("data/users.bin", users);
+            Persistence::writeHistory("data/history.bin", history);
             std::cout << "Data saved successfully.\n";
         }
 
         void LanguageTranslatorApp::loadData()
         {
-            // In a real application, load from files or database
+            std::filesystem::create_directory("data");
+            std::vector<UserProfile> loadedUsers;
+            if (Persistence::readUsers("data/users.bin", loadedUsers)) {
+                users = std::move(loadedUsers);
+            }
+            std::vector<TranslationRecord> loadedHist;
+            if (Persistence::readHistory("data/history.bin", loadedHist)) {
+                history = std::move(loadedHist);
+            }
             std::cout << "Data loaded successfully.\n";
             loadAllDictionaries();
         }

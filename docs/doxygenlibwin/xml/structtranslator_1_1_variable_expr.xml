@@ -2,8 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="structtranslator_1_1_variable_expr" kind="struct" language="C++" prot="public">
     <compoundname>translator::VariableExpr</compoundname>
-    <basecompoundref refid="structtranslator_1_1_expr" prot="public" virt="non-virtual">translator::Expr</basecompoundref>
-    <includes refid="ast_8h" local="no">ast.h</includes>
+    <basecompoundref prot="public" virt="non-virtual">translator::Expr</basecompoundref>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structtranslator_1_1_variable_expr_1a5291773d6a8af4ee3e3abfa8e212ab4d" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -39,13 +38,12 @@
         </inbodydescription>
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="23" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="23" bodyend="23"/>
       </memberdef>
-      <memberdef kind="function" id="structtranslator_1_1_variable_expr_1a0dd6b31c1c5ac1801779da5eb115c95d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0" kindref="member">ExprKind</ref></type>
+      <memberdef kind="function" id="structtranslator_1_1_variable_expr_1a0dd6b31c1c5ac1801779da5eb115c95d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ExprKind</type>
         <definition>ExprKind translator::VariableExpr::kind</definition>
         <argsstring>() const override</argsstring>
         <name>kind</name>
         <qualifiedname>translator::VariableExpr::kind</qualifiedname>
-        <reimplements refid="structtranslator_1_1_expr_1aced195c2a0830ff10b582d02731c93b1">kind</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -59,33 +57,14 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="2">
-        <label>translator::Expr</label>
-        <link refid="structtranslator_1_1_expr"/>
-      </node>
-      <node id="1">
-        <label>translator::VariableExpr</label>
-        <link refid="structtranslator_1_1_variable_expr"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>translator::Expr</label>
-        <link refid="structtranslator_1_1_expr"/>
-      </node>
       <node id="1">
         <label>translator::VariableExpr</label>
-        <link refid="structtranslator_1_1_variable_expr"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="21" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="21" bodyend="25"/>
     <listofallmembers>
-      <member refid="structtranslator_1_1_variable_expr_1a0dd6b31c1c5ac1801779da5eb115c95d" prot="public" virt="virtual"><scope>translator::VariableExpr</scope><name>kind</name></member>
+      <member refid="structtranslator_1_1_variable_expr_1a0dd6b31c1c5ac1801779da5eb115c95d" prot="public" virt="non-virtual"><scope>translator::VariableExpr</scope><name>kind</name></member>
       <member refid="structtranslator_1_1_variable_expr_1a5291773d6a8af4ee3e3abfa8e212ab4d" prot="public" virt="non-virtual"><scope>translator::VariableExpr</scope><name>name</name></member>
       <member refid="structtranslator_1_1_variable_expr_1a2f077bd3bb494bd04446225c1e7e3df3" prot="public" virt="non-virtual"><scope>translator::VariableExpr</scope><name>VariableExpr</name></member>
       <member refid="structtranslator_1_1_expr_1a3a61309da992f896228d1ba682f79187" prot="public" virt="virtual"><scope>translator::VariableExpr</scope><name>~Expr</name></member>

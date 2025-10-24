@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classds_1_1_hash_table" kind="class" language="C++" prot="public">
     <compoundname>ds::HashTable</compoundname>
-    <includes refid="hash__table_8h" local="no">hash_table.h</includes>
     <innerclass refid="structds_1_1_hash_table_1_1_entry" prot="private">ds::HashTable::Entry</innerclass>
     <templateparamlist>
       <param>
@@ -14,7 +13,7 @@
     </templateparamlist>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classds_1_1_hash_table_1ae6b9272c3d706ba75c7f6fabcdc9ace8" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structds_1_1_hash_table_1_1_entry" kindref="compound">Entry</ref> &gt;</type>
+        <type>std::vector&lt; Entry &gt;</type>
         <definition>std::vector&lt;Entry&gt; ds::HashTable&lt; K, V &gt;::table_</definition>
         <argsstring></argsstring>
         <name>table_</name>
@@ -275,7 +274,6 @@
     <collaborationgraph>
       <node id="1">
         <label>ds::HashTable&lt; K, V &gt;</label>
-        <link refid="classds_1_1_hash_table"/>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/hash_table.h" line="12" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/hash_table.h" bodystart="12" bodyend="44"/>

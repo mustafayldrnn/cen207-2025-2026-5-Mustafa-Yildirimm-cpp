@@ -7,7 +7,8 @@
 #define TASK_SCHEDULER_H
 
 #include <string>
-#include "../StackQueue/header/StackQueue.h"
+// Fix relative include path to shared data structure
+#include "../../StackQueue/header/StackQueue.h"
 
 namespace Coruh
 {

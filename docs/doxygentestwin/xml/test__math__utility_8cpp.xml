@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="test__math__utility_8cpp" kind="file" language="C++">
+    <compoundname>test_math_utility.cpp</compoundname>
+    <includes local="no">gtest/gtest.h</includes>
+    <includes local="yes">../src/utility/header/mathUtility.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>../src/utility/header/mathUtility.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_math_utility.cpp</label>
+        <link refid="test__math__utility_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gtest/gtest.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_coruh_1_1_utility">Coruh::Utility</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__math__utility_8cpp_1a5ffa39ed4488411f077258ee00f4bd0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(MathUtilityTest, MeanMedianOddEven)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>MathUtilityTest</type>
+        </param>
+        <param>
+          <type>MeanMedianOddEven</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_math_utility.cpp" line="10" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_math_utility.cpp" bodystart="10" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="test__math__utility_8cpp_1a1c7e37d1a5ae435a72c9ea21a210360d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(MathUtilityTest, MinMaxAndComparator)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>MathUtilityTest</type>
+        </param>
+        <param>
+          <type>MinMaxAndComparator</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_math_utility.cpp" line="21" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_math_utility.cpp" bodystart="21" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../src/utility/header/mathUtility.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Coruh::Utility;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">TEST(MathUtilityTest,<sp/>MeanMedianOddEven)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a[]<sp/>{1,<sp/>3,<sp/>5,<sp/>7,<sp/>9};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_DOUBLE_EQ(MathUtility::calculateMean(a,<sp/>5),<sp/>5.0);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_DOUBLE_EQ(MathUtility::calculateMedian(a,<sp/>5),<sp/>5.0);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b[]<sp/>{10,<sp/>2,<sp/>8,<sp/>4};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_DOUBLE_EQ(MathUtility::calculateMean(b,<sp/>4),<sp/>(10.0<sp/>+<sp/>2.0<sp/>+<sp/>8.0<sp/>+<sp/>4.0)<sp/>/<sp/>4.0);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sorted<sp/>-&gt;<sp/>{2,4,8,10}<sp/>median<sp/>-&gt;<sp/>(4+8)/2<sp/>=<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_DOUBLE_EQ(MathUtility::calculateMedian(b,<sp/>4),<sp/>6.0);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">TEST(MathUtilityTest,<sp/>MinMaxAndComparator)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>values[]<sp/>{5.5,<sp/>-2.0,<sp/>3.0,<sp/>9.1,<sp/>0.0};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>minv<sp/>=<sp/>0,<sp/>maxv<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>MathUtility::calculateMinMax(values,<sp/>5,<sp/>&amp;minv,<sp/>&amp;maxv);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_DOUBLE_EQ(minv,<sp/>-2.0);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_DOUBLE_EQ(maxv,<sp/>9.1);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Comparator<sp/>semantics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>1.0,<sp/>y<sp/>=<sp/>2.0,<sp/>z<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_LT(MathUtility::compareDouble(&amp;x,<sp/>&amp;y),<sp/>0);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_GT(MathUtility::compareDouble(&amp;y,<sp/>&amp;x),<sp/>0);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(MathUtility::compareDouble(&amp;x,<sp/>&amp;z),<sp/>0);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_math_utility.cpp"/>
+  </compounddef>
+</doxygen>

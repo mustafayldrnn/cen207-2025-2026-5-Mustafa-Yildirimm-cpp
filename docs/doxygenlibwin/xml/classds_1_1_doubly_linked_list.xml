@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classds_1_1_doubly_linked_list" kind="class" language="C++" prot="public">
     <compoundname>ds::DoublyLinkedList</compoundname>
-    <includes refid="doubly__linked__list_8h" local="no">doubly_linked_list.h</includes>
     <innerclass refid="structds_1_1_doubly_linked_list_1_1iterator" prot="public">ds::DoublyLinkedList::iterator</innerclass>
     <innerclass refid="structds_1_1_doubly_linked_list_1_1_node" prot="private">ds::DoublyLinkedList::Node</innerclass>
     <templateparamlist>
@@ -12,7 +11,7 @@
     </templateparamlist>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classds_1_1_doubly_linked_list_1ab984830080da01385b6e0c8eb8e1b963" prot="private" static="no" mutable="no">
-        <type><ref refid="structds_1_1_doubly_linked_list_1_1_node" kindref="compound">Node</ref> *</type>
+        <type>Node *</type>
         <definition>Node* ds::DoublyLinkedList&lt; T &gt;::head_</definition>
         <argsstring></argsstring>
         <name>head_</name>
@@ -27,7 +26,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" line="10" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classds_1_1_doubly_linked_list_1aac0ac5dbd0e1a6f3d935a8357cf00a96" prot="private" static="no" mutable="no">
-        <type><ref refid="structds_1_1_doubly_linked_list_1_1_node" kindref="compound">Node</ref> *</type>
+        <type>Node *</type>
         <definition>Node* ds::DoublyLinkedList&lt; T &gt;::tail_</definition>
         <argsstring></argsstring>
         <name>tail_</name>
@@ -93,7 +92,7 @@
         <name>DoublyLinkedList</name>
         <qualifiedname>ds::DoublyLinkedList::DoublyLinkedList</qualifiedname>
         <param>
-          <type>const <ref refid="classds_1_1_doubly_linked_list" kindref="compound">DoublyLinkedList</ref> &amp;</type>
+          <type>const DoublyLinkedList &amp;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -104,13 +103,13 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" line="17" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_doubly_linked_list_1a5139026d2052aea99e34ec66356e8d2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classds_1_1_doubly_linked_list" kindref="compound">DoublyLinkedList</ref> &amp;</type>
+        <type>DoublyLinkedList &amp;</type>
         <definition>DoublyLinkedList &amp; ds::DoublyLinkedList&lt; T &gt;::operator=</definition>
         <argsstring>(const DoublyLinkedList &amp;)=delete</argsstring>
         <name>operator=</name>
         <qualifiedname>ds::DoublyLinkedList::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classds_1_1_doubly_linked_list" kindref="compound">DoublyLinkedList</ref> &amp;</type>
+          <type>const DoublyLinkedList &amp;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -121,7 +120,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" line="18" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_doubly_linked_list_1a0cd2cfe2104c7250369ee89c9616b923" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structds_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref></type>
+        <type>iterator</type>
         <definition>iterator ds::DoublyLinkedList&lt; T &gt;::begin</definition>
         <argsstring>() const</argsstring>
         <name>begin</name>
@@ -135,7 +134,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" line="34" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" bodystart="34" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_doubly_linked_list_1aed22012cf544c4546868ab5a545914f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structds_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref></type>
+        <type>iterator</type>
         <definition>iterator ds::DoublyLinkedList&lt; T &gt;::end</definition>
         <argsstring>() const</argsstring>
         <name>end</name>
@@ -149,7 +148,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" line="35" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" bodystart="35" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_doubly_linked_list_1aaad687c167f3f8a8b3264d183bab8064" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structds_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref></type>
+        <type>iterator</type>
         <definition>iterator ds::DoublyLinkedList&lt; T &gt;::rbegin</definition>
         <argsstring>() const</argsstring>
         <name>rbegin</name>
@@ -205,7 +204,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" line="41" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" bodystart="41" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_doubly_linked_list_1a1eef59637606e2427a92a1c345bcf7de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structds_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref></type>
+        <type>iterator</type>
         <definition>iterator ds::DoublyLinkedList&lt; T &gt;::push_back</definition>
         <argsstring>(const T &amp;v)</argsstring>
         <name>push_back</name>
@@ -223,7 +222,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" line="47" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" bodystart="47" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_doubly_linked_list_1a0bf5bd3a047a9f9af555efb35f0afcdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structds_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref></type>
+        <type>iterator</type>
         <definition>iterator ds::DoublyLinkedList&lt; T &gt;::push_front</definition>
         <argsstring>(const T &amp;v)</argsstring>
         <name>push_front</name>
@@ -241,13 +240,13 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" line="55" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" bodystart="55" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_doubly_linked_list_1a7e2d78d1d937fdd894fd9bc9e5448e1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structds_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref></type>
+        <type>iterator</type>
         <definition>iterator ds::DoublyLinkedList&lt; T &gt;::insert_after</definition>
         <argsstring>(iterator it, const T &amp;v)</argsstring>
         <name>insert_after</name>
         <qualifiedname>ds::DoublyLinkedList::insert_after</qualifiedname>
         <param>
-          <type><ref refid="structds_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref></type>
+          <type>iterator</type>
           <declname>it</declname>
         </param>
         <param>
@@ -263,13 +262,13 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" line="63" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" bodystart="63" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_doubly_linked_list_1a007e35bdeab28fea7dc5931dc57bc267" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structds_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref></type>
+        <type>iterator</type>
         <definition>iterator ds::DoublyLinkedList&lt; T &gt;::erase</definition>
         <argsstring>(iterator it)</argsstring>
         <name>erase</name>
         <qualifiedname>ds::DoublyLinkedList::erase</qualifiedname>
         <param>
-          <type><ref refid="structds_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref></type>
+          <type>iterator</type>
           <declname>it</declname>
         </param>
         <briefdescription>
@@ -286,21 +285,8 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="2">
-        <label>ds::DoublyLinkedList&lt; T &gt;::Node</label>
-        <link refid="structds_1_1_doubly_linked_list_1_1_node"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>+next</edgelabel>
-          <edgelabel>+prev</edgelabel>
-        </childnode>
-      </node>
       <node id="1">
         <label>ds::DoublyLinkedList&lt; T &gt;</label>
-        <link refid="classds_1_1_doubly_linked_list"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>-head_</edgelabel>
-          <edgelabel>-tail_</edgelabel>
-        </childnode>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" line="8" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/doubly_linked_list.h" bodystart="8" bodyend="78"/>

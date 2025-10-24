@@ -11,7 +11,7 @@
     <incdepgraph>
       <node id="7">
         <label>translator/ast.h</label>
-        <link refid="ast_8h"/>
+        <link refid="ast_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
@@ -35,7 +35,7 @@
       </node>
       <node id="5">
         <label>translator/token.h</label>
-        <link refid="token_8h"/>
+        <link refid="token_8h_source"/>
         <childnode refid="6" relation="include">
         </childnode>
       </node>
@@ -52,18 +52,6 @@
         <label>vector</label>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="2">
-        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp</label>
-        <link refid="parser_8cpp"/>
-      </node>
-      <node id="1">
-        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h</label>
-        <link refid="parser_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-    </invincdepgraph>
     <innerclass refid="classtranslator_1_1_parser" prot="public">translator::Parser</innerclass>
     <innernamespace refid="namespacetranslator">translator</innernamespace>
     <briefdescription>
@@ -75,30 +63,30 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="token_8h" kindref="compound">translator/token.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ast_8h" kindref="compound">translator/ast.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;translator/token.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;translator/ast.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetranslator" kindref="compound">translator</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">translator<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10" refid="classtranslator_1_1_parser" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtranslator_1_1_parser_1a2e2390931ab80b865ac31eee1501c8ff" kindref="member">Parser</ref><sp/>{</highlight></codeline>
-<codeline lineno="11" refid="classtranslator_1_1_parser_1a656fd7ad404746f72905ea7ca9c96130" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Token&gt;<sp/><ref refid="classtranslator_1_1_parser_1a656fd7ad404746f72905ea7ca9c96130" kindref="member">tokens_</ref>;</highlight></codeline>
-<codeline lineno="12" refid="classtranslator_1_1_parser_1af5354c7d27d4189bd1f9c33c710b74ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>std::size_t<sp/><ref refid="classtranslator_1_1_parser_1af5354c7d27d4189bd1f9c33c710b74ac" kindref="member">pos_</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Parser<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Token&gt;<sp/>tokens_;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>std::size_t<sp/>pos_<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="classtranslator_1_1_parser_1a01eed9fe50c7b02223c8aaf8140b4649" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_token" kindref="compound">Token</ref>&amp;<sp/><ref refid="classtranslator_1_1_parser_1a01eed9fe50c7b02223c8aaf8140b4649" kindref="member">peek</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_parser_1a656fd7ad404746f72905ea7ca9c96130" kindref="member">tokens_</ref>[<ref refid="classtranslator_1_1_parser_1af5354c7d27d4189bd1f9c33c710b74ac" kindref="member">pos_</ref>];<sp/>}</highlight></codeline>
-<codeline lineno="15" refid="classtranslator_1_1_parser_1a454ea6c16f64db09d8d2b9987e1e4833" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtranslator_1_1_token" kindref="compound">Token</ref>&amp;<sp/><ref refid="classtranslator_1_1_parser_1a454ea6c16f64db09d8d2b9987e1e4833" kindref="member">advance</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_parser_1a656fd7ad404746f72905ea7ca9c96130" kindref="member">tokens_</ref>[<ref refid="classtranslator_1_1_parser_1af5354c7d27d4189bd1f9c33c710b74ac" kindref="member">pos_</ref>++];<sp/>}</highlight></codeline>
-<codeline lineno="16" refid="classtranslator_1_1_parser_1a5719d1927d26586fc770de412025bdbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_parser_1a5719d1927d26586fc770de412025bdbb" kindref="member">match</ref>(<ref refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480" kindref="member">TokenType</ref><sp/>t)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classtranslator_1_1_parser_1a01eed9fe50c7b02223c8aaf8140b4649" kindref="member">peek</ref>().type<sp/>==<sp/>t)<sp/>{<sp/>++<ref refid="classtranslator_1_1_parser_1af5354c7d27d4189bd1f9c33c710b74ac" kindref="member">pos_</ref>;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="17" refid="classtranslator_1_1_parser_1ab2e3e753c664de21a74add33db1a5d26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_parser_1ab2e3e753c664de21a74add33db1a5d26" kindref="member">at_eof</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_parser_1a01eed9fe50c7b02223c8aaf8140b4649" kindref="member">peek</ref>().<ref refid="structtranslator_1_1_token_1a36c889bc7ded337a56b399f92ae1fc2a" kindref="member">type</ref><sp/>==<sp/><ref refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480a49650dcc55dc413da4032cbe44b15d37" kindref="member">TokenType::Eof</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Token&amp;<sp/>peek()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tokens_[pos_];<sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Token&amp;<sp/>advance()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tokens_[pos_++];<sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>match(TokenType<sp/>t)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(peek().type<sp/>==<sp/>t)<sp/>{<sp/>++pos_;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>at_eof()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>peek().type<sp/>==<sp/>TokenType::Eof;<sp/>}</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parsing<sp/>helpers</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Expr&gt;<sp/><ref refid="classtranslator_1_1_parser_1afd6a7894691a68ec5743314fef3a7f75" kindref="member">parse_expression</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Expr&gt;<sp/><ref refid="classtranslator_1_1_parser_1acfd7d04d3973badabd5a26214ed3c500" kindref="member">parse_term</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Expr&gt;<sp/><ref refid="classtranslator_1_1_parser_1abb54531b779933acfd0c644dcd868b45" kindref="member">parse_factor</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Expr&gt;<sp/>parse_expression()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Expr&gt;<sp/>parse_term()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Expr&gt;<sp/>parse_factor()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Stmt&gt;<sp/><ref refid="classtranslator_1_1_parser_1aec074fe4de2041a83946260a05780582" kindref="member">parse_statement</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>outLabel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Stmt&gt;<sp/>parse_statement(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>outLabel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="27" refid="classtranslator_1_1_parser_1a2e2390931ab80b865ac31eee1501c8ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_parser_1a2e2390931ab80b865ac31eee1501c8ff" kindref="member">Parser</ref>(std::vector&lt;Token&gt;<sp/>toks):<sp/><ref refid="classtranslator_1_1_parser_1a656fd7ad404746f72905ea7ca9c96130" kindref="member">tokens_</ref>(std::move(toks))<sp/>{}</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtranslator_1_1_program" kindref="compound">Program</ref><sp/><ref refid="classtranslator_1_1_parser_1a119007cefb979b4071cd7313c0c31062" kindref="member">parseProgram</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/>Parser(std::vector&lt;Token&gt;<sp/>toks):<sp/>tokens_(std::move(toks))<sp/>{}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>Program<sp/>parseProgram()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>translator</highlight><highlight class="normal"></highlight></codeline>

@@ -7,7 +7,8 @@
 #define BROWSER_HISTORY_H
 
 #include <string>
-#include "../DoubleLinkedList/header/DoubleLinkedList.h"
+// Fix relative include path to shared data structure
+#include "../../DoubleLinkedList/header/DoubleLinkedList.h"
 
 namespace Coruh
 {

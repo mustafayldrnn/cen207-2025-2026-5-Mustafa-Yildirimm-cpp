@@ -1,11 +1,11 @@
 \doxysection{test\+\_\+xor\+\_\+linked\+\_\+list.\+cpp}
 \hypertarget{test__xor__linked__list_8cpp_source}{}\label{test__xor__linked__list_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_xor\_linked\_list.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_xor\_linked\_list.cpp}}
-\mbox{\hyperlink{test__xor__linked__list_8cpp}{Go to the documentation of this file.}}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
 \DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}ds/xor\_linked\_list.h"{}}}
 \DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00003}00003\ }
-\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00004}\mbox{\hyperlink{test__xor__linked__list_8cpp_a4f428f97178e949d4665e0961d6e8c7d}{00004}}\ \mbox{\hyperlink{test__xor__linked__list_8cpp_a4f428f97178e949d4665e0961d6e8c7d}{TEST}}(XORLinkedList,\ InsertDeleteNavigate)\{}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00004}00004\ TEST(XORLinkedList,\ InsertDeleteNavigate)\{}
 \DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00005}00005\ \ \ \ \ ds::XORLinkedList<int>\ xl;}
 \DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00006}00006\ \ \ \ \ xl.push\_back(1);\ xl.push\_back(2);\ xl.push\_front(0);}
 \DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00007}00007\ \ \ \ \ \textcolor{keywordtype}{int}\ forward[3];\ \textcolor{keywordtype}{int}\ i=0;\ xl.for\_each\_forward([\&](\textcolor{keywordtype}{int}\ v)\{\ forward[i++]=v;\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \});}

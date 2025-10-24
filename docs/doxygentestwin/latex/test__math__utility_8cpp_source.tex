@@ -1,0 +1,38 @@
+\doxysection{test\+\_\+math\+\_\+utility.\+cpp}
+\hypertarget{test__math__utility_8cpp_source}{}\label{test__math__utility_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_math\_utility.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_math\_utility.cpp}}
+\mbox{\hyperlink{test__math__utility_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}../src/utility/header/mathUtility.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00008}00008\ \textcolor{keyword}{using\ namespace\ }Coruh::Utility;}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00010}00010\ TEST(MathUtilityTest,\ MeanMedianOddEven)\ \{}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00011}00011\ \ \ \ \ \textcolor{keywordtype}{double}\ a[]\ \{1,\ 3,\ 5,\ 7,\ 9\};}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00012}00012\ \ \ \ \ EXPECT\_DOUBLE\_EQ(MathUtility::calculateMean(a,\ 5),\ 5.0);}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00013}00013\ \ \ \ \ EXPECT\_DOUBLE\_EQ(MathUtility::calculateMedian(a,\ 5),\ 5.0);}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00015}00015\ \ \ \ \ \textcolor{keywordtype}{double}\ b[]\ \{10,\ 2,\ 8,\ 4\};}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00016}00016\ \ \ \ \ EXPECT\_DOUBLE\_EQ(MathUtility::calculateMean(b,\ 4),\ (10.0\ +\ 2.0\ +\ 8.0\ +\ 4.0)\ /\ 4.0);}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00017}00017\ \ \ \ \ \textcolor{comment}{//\ Sorted\ -\/>\ \{2,4,8,10\}\ median\ -\/>\ (4+8)/2\ =\ 6}}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00018}00018\ \ \ \ \ EXPECT\_DOUBLE\_EQ(MathUtility::calculateMedian(b,\ 4),\ 6.0);}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00019}00019\ \}}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00021}00021\ TEST(MathUtilityTest,\ MinMaxAndComparator)\ \{}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{double}\ values[]\ \{5.5,\ -\/2.0,\ 3.0,\ 9.1,\ 0.0\};}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{double}\ minv\ =\ 0,\ maxv\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00024}00024\ \ \ \ \ MathUtility::calculateMinMax(values,\ 5,\ \&minv,\ \&maxv);}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00025}00025\ \ \ \ \ EXPECT\_DOUBLE\_EQ(minv,\ -\/2.0);}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00026}00026\ \ \ \ \ EXPECT\_DOUBLE\_EQ(maxv,\ 9.1);}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{comment}{//\ Comparator\ semantics}}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{double}\ x\ =\ 1.0,\ y\ =\ 2.0,\ z\ =\ 1.0;}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00030}00030\ \ \ \ \ EXPECT\_LT(MathUtility::compareDouble(\&x,\ \&y),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00031}00031\ \ \ \ \ EXPECT\_GT(MathUtility::compareDouble(\&y,\ \&x),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00032}00032\ \ \ \ \ EXPECT\_EQ(MathUtility::compareDouble(\&x,\ \&z),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{test__math__utility_8cpp_source_l00034}00034\ }
+
+\end{DoxyCode}

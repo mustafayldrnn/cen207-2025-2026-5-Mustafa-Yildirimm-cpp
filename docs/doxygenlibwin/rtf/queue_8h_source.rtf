@@ -151,74 +151,26 @@
 queue.h\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/queue.h}
-{\bkmkstart AAAAAAAAAE}
-{\bkmkend AAAAAAAAAE}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
-\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
 {
 \par
 \pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
 2 {\cf21 #include <stdexcept>}\par
 3 \par
-4 {\cf17 namespace }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 ds}}}
- \{\par
+4 {\cf17 namespace }ds \{\par
 5 \par
 6 {\cf17 template} <{\cf17 typename} T>\par
-7 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 Queue}}}
- \{\par
-8     {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
- \{ T {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 v}}}
-; {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 next}}}
-; {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-({\cf17 const} T& x): {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 v}}}
-(x), {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 next}}}
-({\cf17 nullptr}) \{\} \};\par
-9     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
- = {\cf17 nullptr}; {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 tail_}}}
- = {\cf17 nullptr}; std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 sz_}}}
- = 0;\par
+7 {\cf17 class }Queue \{\par
+8     {\cf17 struct }Node \{ T v; Node* next; {\cf17 explicit} Node({\cf17 const} T& x): v(x), next(nullptr) \{\} \};\par
+9     Node* head_ = {\cf17 nullptr}; Node* tail_ = {\cf17 nullptr}; std::size_t sz_ = 0;\par
 10 {\cf17 public}:\par
-11     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 ~Queue}}}
-()\{ {\cf19 while}({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
-)\{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-* n = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
-->next; {\cf17 delete} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
-; {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
- = n; \} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 tail_}}}
- = {\cf17 nullptr}; \}\par
-12     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 enqueue}}}
-({\cf17 const} T& v)\{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-* n = {\cf17 new} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-(v); {\cf19 if} (!{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 tail_}}}
-) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
- = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 tail_}}}
- = n; {\cf19 else} \{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 tail_}}}
-->next = n; {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 tail_}}}
- = n; \} ++{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 sz_}}}
-; \}\par
-13     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 dequeue}}}
-()\{ {\cf19 if} (!{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
-) {\cf19 throw} std::runtime_error({\cf22 "queue empty"}); {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-* n = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
-->next; {\cf17 delete} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
-; {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
- = n; {\cf19 if} (!{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
-) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 tail_}}}
- = {\cf17 nullptr}; --{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 sz_}}}
-; \}\par
-14     T& {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 front}}}
-()\{ {\cf19 if} (!{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
-) {\cf19 throw} std::runtime_error({\cf22 "queue empty"}); {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
-->v; \}\par
-15     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACM" }{}}{\fldrslt {\cs37\ul\cf2 empty}}}
-(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 sz_}}}
-==0; \}\par
-16     std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
-(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 sz_}}}
-; \}\par
+11     ~Queue()\{ {\cf19 while}(head_)\{ Node* n = head_->next; {\cf17 delete} head_; head_ = n; \} tail_ = {\cf17 nullptr}; \}\par
+12     {\cf18 void} enqueue({\cf17 const} T& v)\{ Node* n = {\cf17 new} Node(v); {\cf19 if} (!tail_) head_ = tail_ = n; {\cf19 else} \{ tail_->next = n; tail_ = n; \} ++sz_; \}\par
+13     {\cf18 void} dequeue()\{ {\cf19 if} (!head_) {\cf19 throw} std::runtime_error({\cf22 "queue empty"}); Node* n = head_->next; {\cf17 delete} head_; head_ = n; {\cf19 if} (!head_) tail_ = {\cf17 nullptr}; --sz_; \}\par
+14     T& front()\{ {\cf19 if} (!head_) {\cf19 throw} std::runtime_error({\cf22 "queue empty"}); {\cf19 return} head_->v; \}\par
+15     {\cf18 bool} empty(){\cf17  const }\{ {\cf19 return} sz_==0; \}\par
+16     std::size_t size(){\cf17  const }\{ {\cf19 return} sz_; \}\par
 17 \};\par
 18 \par
 19 \} {\cf20 // namespace ds}\par

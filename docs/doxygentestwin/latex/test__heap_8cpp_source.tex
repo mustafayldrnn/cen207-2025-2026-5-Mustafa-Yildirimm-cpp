@@ -1,16 +1,16 @@
 \doxysection{test\+\_\+heap.\+cpp}
 \hypertarget{test__heap_8cpp_source}{}\label{test__heap_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_heap.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_heap.cpp}}
-\mbox{\hyperlink{test__heap_8cpp}{Go to the documentation of this file.}}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}ds/heap.h"{}}}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00003}00003\ }
-\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00004}\mbox{\hyperlink{test__heap_8cpp_a08467fa2935a81ad6427c6c0928147e5}{00004}}\ \mbox{\hyperlink{test__heap_8cpp_a08467fa2935a81ad6427c6c0928147e5}{TEST}}(BinaryHeap,\ PushPopOrder)\{}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00004}00004\ TEST(BinaryHeap,\ PushPopOrder)\{}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00005}00005\ \ \ \ \ ds::BinaryHeap<int>\ h;\ h.push(3);\ h.push(1);\ h.push(5);\ h.push(2);}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00006}00006\ \ \ \ \ EXPECT\_EQ(h.top(),\ 5);\ h.pop();\ EXPECT\_EQ(h.top(),\ 3);\ h.pop();\ EXPECT\_EQ(h.top(),\ 2);}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00007}00007\ \}}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00008}00008\ }
-\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00009}\mbox{\hyperlink{test__heap_8cpp_a8e9659c45df2039715e015ec0fd8da27}{00009}}\ \mbox{\hyperlink{test__heap_8cpp_a08467fa2935a81ad6427c6c0928147e5}{TEST}}(BinaryHeap,\ HeapSort)\{}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00009}00009\ TEST(BinaryHeap,\ HeapSort)\{}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00010}00010\ \ \ \ \ ds::BinaryHeap<int>\ h;\ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ v:\ \{5,1,4,2,3\})\ h.push(v);}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00011}00011\ \ \ \ \ \textcolor{keyword}{auto}\ sorted\ =\ h.heap\_sort\_copy();}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00012}00012\ \ \ \ \ \textcolor{comment}{//\ For\ max-\/heap,\ heap\_sort\_copy\ returns\ descending}}

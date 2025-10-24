@@ -75,12 +75,12 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ds/stack.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ds/queue.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5" refid="test__stack__queue_8cpp_1a91e5af25a60f96a751929e559d41344b" refkind="member"><highlight class="normal"><ref refid="test__stack__queue_8cpp_1a91e5af25a60f96a751929e559d41344b" kindref="member">TEST</ref>(StackQueue,<sp/>StackLIFO){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">TEST(StackQueue,<sp/>StackLIFO){</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::Stack&lt;int&gt;<sp/>st;<sp/>st.push(1);<sp/>st.push(2);<sp/>st.push(3);</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(st.top(),<sp/>3);<sp/>st.pop();<sp/>EXPECT_EQ(st.top(),<sp/>2);<sp/>st.pop();<sp/>EXPECT_EQ(st.top(),<sp/>1);</highlight></codeline>
 <codeline lineno="8"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10" refid="test__stack__queue_8cpp_1aad12174cbef62febb47cf062528e808b" refkind="member"><highlight class="normal"><ref refid="test__stack__queue_8cpp_1a91e5af25a60f96a751929e559d41344b" kindref="member">TEST</ref>(StackQueue,<sp/>QueueFIFO){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">TEST(StackQueue,<sp/>QueueFIFO){</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::Queue&lt;int&gt;<sp/>q;<sp/>q.enqueue(1);<sp/>q.enqueue(2);<sp/>q.enqueue(3);</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(q.front(),<sp/>1);<sp/>q.dequeue();<sp/>EXPECT_EQ(q.front(),<sp/>2);<sp/>q.dequeue();<sp/>EXPECT_EQ(q.front(),<sp/>3);</highlight></codeline>
 <codeline lineno="13"><highlight class="normal">}</highlight></codeline>

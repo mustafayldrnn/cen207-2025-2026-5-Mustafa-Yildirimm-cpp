@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classds_1_1_stack" kind="class" language="C++" prot="public">
     <compoundname>ds::Stack</compoundname>
-    <includes refid="stack_8h" local="no">stack.h</includes>
     <innerclass refid="structds_1_1_stack_1_1_node" prot="private">ds::Stack::Node</innerclass>
     <templateparamlist>
       <param>
@@ -11,7 +10,7 @@
     </templateparamlist>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classds_1_1_stack_1a3a436623966dd4dcccd0aea883db73c4" prot="private" static="no" mutable="no">
-        <type><ref refid="structds_1_1_stack_1_1_node" kindref="compound">Node</ref> *</type>
+        <type>Node *</type>
         <definition>Node* ds::Stack&lt; T &gt;::top_</definition>
         <argsstring></argsstring>
         <name>top_</name>
@@ -136,19 +135,8 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="2">
-        <label>ds::Stack&lt; T &gt;::Node</label>
-        <link refid="structds_1_1_stack_1_1_node"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>+next</edgelabel>
-        </childnode>
-      </node>
       <node id="1">
         <label>ds::Stack&lt; T &gt;</label>
-        <link refid="classds_1_1_stack"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>-top_</edgelabel>
-        </childnode>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" line="7" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/stack.h" bodystart="7" bodyend="17"/>

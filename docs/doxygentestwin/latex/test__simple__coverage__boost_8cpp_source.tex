@@ -16,19 +16,19 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00017}00017\ \textcolor{keyword}{using\ namespace\ }SafeChrono;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00018}00018\ \textcolor{keyword}{using\ namespace\ }Coruh::LanguageTranslator;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00019}00019\ }
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00020}\mbox{\hyperlink{class_simple_coverage_boost_test}{00020}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}}\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00020}00020\ \textcolor{keyword}{class\ }SimpleCoverageBoostTest\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00021}00021\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00022}\mbox{\hyperlink{class_simple_coverage_boost_test_a469782af2f16789cbd3e0c8329aa3519}{00022}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_simple_coverage_boost_test_a469782af2f16789cbd3e0c8329aa3519}{SetUp}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp()\textcolor{keyword}{\ override\ }\{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Setup\ for\ each\ test}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00024}00024\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00025}00025\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00026}\mbox{\hyperlink{class_simple_coverage_boost_test_a561435b8f4bd66761618fa6fd43cae97}{00026}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_simple_coverage_boost_test_a561435b8f4bd66761618fa6fd43cae97}{TearDown}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown()\textcolor{keyword}{\ override\ }\{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Cleanup\ after\ each\ test}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00028}00028\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00029}00029\ \};}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00030}00030\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00031}00031\ \textcolor{comment}{//\ Test\ SafeChronoCalculator\ static\ methods}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00032}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{00032}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestSafeChronoCalculator)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00032}00032\ TEST\_F(SimpleCoverageBoostTest,\ TestSafeChronoCalculator)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{comment}{//\ Test\ safe\ duration\ calculation}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keyword}{auto}\ result\ =\ SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ 1000000000);}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00035}00035\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
@@ -56,7 +56,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00057}00057\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00058}00058\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00059}00059\ \textcolor{comment}{//\ Test\ SafeChronoCalculator\ error\ handling}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00060}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_ac2e062ff1e32572ad2921bce25a845f5}{00060}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestSafeChronoCalculatorErrors)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00060}00060\ TEST\_F(SimpleCoverageBoostTest,\ TestSafeChronoCalculatorErrors)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{comment}{//\ Test\ invalid\ frequency}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00062}00062\ \ \ \ \ EXPECT\_THROW(SafeChronoCalculator::safeCalculateDuration(1000,\ 0,\ 1000000000),\ std::invalid\_argument);}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00063}00063\ \ \ \ \ EXPECT\_THROW(SafeChronoCalculator::safeCalculateDuration(1000,\ -\/1000,\ 1000000000),\ std::invalid\_argument);}
@@ -67,7 +67,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00068}00068\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00069}00069\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00070}00070\ \textcolor{comment}{//\ Test\ SafeChronoCalculator\ edge\ cases}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00071}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a58b5e9b2b9624a550e14d6daa00c3cee}{00071}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestSafeChronoCalculatorEdgeCases)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00071}00071\ TEST\_F(SimpleCoverageBoostTest,\ TestSafeChronoCalculatorEdgeCases)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ very\ small\ values}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{keyword}{auto}\ result\ =\ SafeChronoCalculator::safeCalculateDuration(1,\ 1000000,\ 1000000000);}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00074}00074\ \ \ \ \ EXPECT\_GT(result.count(),\ 0);}
@@ -83,7 +83,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00084}00084\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00085}00085\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00086}00086\ \textcolor{comment}{//\ Test\ SafeChronoCalculator\ performance}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00087}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a7a36ba86ee0624008e43c1d140b60f66}{00087}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestSafeChronoCalculatorPerformance)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00087}00087\ TEST\_F(SimpleCoverageBoostTest,\ TestSafeChronoCalculatorPerformance)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00088}00088\ \ \ \ \ \textcolor{keyword}{auto}\ start\ =\ std::chrono::high\_resolution\_clock::now();}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00089}00089\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{comment}{//\ Perform\ many\ calculations}}
@@ -100,7 +100,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00101}00101\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00102}00102\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00103}00103\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ basic\ functionality}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00104}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_ac86f1245424007877aa9f97be747c602}{00104}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppBasic)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00104}00104\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppBasic)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00105}00105\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00106}00106\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00107}00107\ \ \ \ \ \textcolor{comment}{//\ Test\ basic\ properties}}
@@ -120,7 +120,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00121}00121\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00122}00122\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00123}00123\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ translation}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00124}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_aaa873793df26c7ad716c80494a07c265}{00124}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00124}00124\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppTranslation)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00125}00125\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00126}00126\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00127}00127\ \ \ \ \ \textcolor{comment}{//\ Test\ translation\ functions}}
@@ -139,7 +139,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00140}00140\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00141}00141\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00142}00142\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ data\ management}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00143}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a30674bf35d29636822eda84b0987c194}{00143}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppDataManagement)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00143}00143\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppDataManagement)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00144}00144\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00145}00145\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00146}00146\ \ \ \ \ \textcolor{comment}{//\ Test\ data\ management\ functions\ (should\ not\ crash)}}
@@ -150,7 +150,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00151}00151\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00152}00152\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00153}00153\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ API\ functions}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00154}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a9c524b19d8d553554dcaf414c8c19773}{00154}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppAPI)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00154}00154\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppAPI)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00155}00155\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00156}00156\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00157}00157\ \ \ \ \ \textcolor{comment}{//\ Test\ API\ functions}}
@@ -169,7 +169,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00170}00170\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00171}00171\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00172}00172\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ phrase\ library}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00173}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a16cb5e923e8fe888866bbb269d538b4a}{00173}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppPhraseLibrary)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00173}00173\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppPhraseLibrary)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00174}00174\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00175}00175\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00176}00176\ \ \ \ \ \textcolor{comment}{//\ Test\ phrase\ library\ functions}}
@@ -182,7 +182,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00183}00183\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00184}00184\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00185}00185\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ learning\ tips}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00186}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a22234aa4396be3e241016dbf33dc1cf9}{00186}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppLearningTips)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00186}00186\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppLearningTips)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00187}00187\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00188}00188\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00189}00189\ \ \ \ \ \textcolor{comment}{//\ Test\ learning\ tips\ functions}}
@@ -194,7 +194,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00195}00195\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00196}00196\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00197}00197\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ pronunciation\ guide}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00198}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a64b679b175756b417d9fd611ea85f80c}{00198}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppPronunciationGuide)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00198}00198\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppPronunciationGuide)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00199}00199\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00200}00200\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00201}00201\ \ \ \ \ \textcolor{comment}{//\ Test\ pronunciation\ guide\ functions}}
@@ -206,7 +206,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00207}00207\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00208}00208\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00209}00209\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ language\ selection}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00210}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a53ae69e64d348b935dfb4e117c985ac5}{00210}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppLanguageSelection)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00210}00210\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppLanguageSelection)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00211}00211\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00212}00212\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00213}00213\ \ \ \ \ \textcolor{comment}{//\ Test\ language\ selection\ (should\ not\ crash)}}
@@ -217,7 +217,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00218}00218\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00219}00219\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00220}00220\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ edge\ cases}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00221}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a9c0517b6c503edd9412153b12c0b5969}{00221}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppEdgeCases)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00221}00221\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppEdgeCases)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00222}00222\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00223}00223\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00224}00224\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ very\ long\ text}}
@@ -235,7 +235,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00236}00236\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00237}00237\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00238}00238\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ menu\ handling}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00239}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_aff400b4188088fbf9571839e06a206a0}{00239}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppMenuHandling)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00239}00239\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppMenuHandling)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00240}00240\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00241}00241\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00242}00242\ \ \ \ \ \textcolor{comment}{//\ Test\ handleUserChoice\ with\ various\ inputs\ (should\ not\ crash)}}
@@ -250,7 +250,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00251}00251\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00252}00252\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00253}00253\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ performance}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00254}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_acb49ebff79973c691e2d28e14a0effd4}{00254}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppPerformance)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00254}00254\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppPerformance)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00255}00255\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00256}00256\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00257}00257\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ many\ phrases}}
@@ -275,7 +275,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00276}00276\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00277}00277\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00278}00278\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ consistency}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00279}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a978ced4824e451fcb8a4122190b0ea43}{00279}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppConsistency)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00279}00279\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppConsistency)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00280}00280\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00281}00281\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00282}00282\ \ \ \ \ \textcolor{comment}{//\ Test\ that\ same\ inputs\ give\ same\ outputs}}
@@ -286,7 +286,7 @@
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00287}00287\ \}}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00288}00288\ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00289}00289\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ with\ different\ language\ combinations}}
-\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00290}\mbox{\hyperlink{test__simple__coverage__boost_8cpp_a9911314ddeebed73c9381997a1137441}{00290}}\ \mbox{\hyperlink{test__simple__coverage__boost_8cpp_a27d3aed9db6678cf97a8232edea4ad37}{TEST\_F}}(\mbox{\hyperlink{class_simple_coverage_boost_test}{SimpleCoverageBoostTest}},\ TestLanguageTranslatorAppLanguageCombinations)\ \{}
+\DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00290}00290\ TEST\_F(SimpleCoverageBoostTest,\ TestLanguageTranslatorAppLanguageCombinations)\ \{}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00291}00291\ \ \ \ \ LanguageTranslatorApp\ app;}
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00292}00292\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__simple__coverage__boost_8cpp_source_l00293}00293\ \ \ \ \ \textcolor{comment}{//\ Test\ English\ to\ Turkish}}

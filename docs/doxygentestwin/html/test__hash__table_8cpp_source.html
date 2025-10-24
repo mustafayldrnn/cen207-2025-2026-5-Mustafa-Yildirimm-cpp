@@ -80,12 +80,11 @@ $(function() {
   <div class="headertitle"><div class="title">test_hash_table.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="test__hash__table_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;gtest/gtest.h&gt;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;gtest/gtest.h&gt;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;ds/hash_table.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="}">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="test__hash__table_8cpp.html#a5e435e6635fe896822884d80c8455e92">    5</a></span><a class="code hl_function" href="test__hash__table_8cpp.html#a5e435e6635fe896822884d80c8455e92">TEST</a>(HashTable, InsertFindErase){</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>TEST(HashTable, InsertFindErase){</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    ds::HashTable&lt;std::string,int&gt; ht(8);</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    EXPECT_TRUE(ht.insert(<span class="stringliteral">&quot;a&quot;</span>,1));</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    EXPECT_TRUE(ht.insert(<span class="stringliteral">&quot;b&quot;</span>,2));</div>
@@ -94,9 +93,7 @@ $(function() {
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    EXPECT_TRUE(ht.erase(<span class="stringliteral">&quot;a&quot;</span>));</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    EXPECT_EQ(ht.find(<span class="stringliteral">&quot;a&quot;</span>), <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
-</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="ttc" id="atest__hash__table_8cpp_html_a5e435e6635fe896822884d80c8455e92"><div class="ttname"><a href="test__hash__table_8cpp.html#a5e435e6635fe896822884d80c8455e92">TEST</a></div><div class="ttdeci">TEST(HashTable, InsertFindErase)</div><div class="ttdef"><b>Definition</b> <a href="#l00005">test_hash_table.cpp:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

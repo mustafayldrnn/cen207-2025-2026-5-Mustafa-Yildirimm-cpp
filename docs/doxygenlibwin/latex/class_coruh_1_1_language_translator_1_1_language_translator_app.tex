@@ -1,0 +1,134 @@
+\doxysection{Coruh\+::Language\+Translator\+::Language\+Translator\+App Class Reference}
+\hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app}{}\label{class_coruh_1_1_language_translator_1_1_language_translator_app}\index{Coruh::LanguageTranslator::LanguageTranslatorApp@{Coruh::LanguageTranslator::LanguageTranslatorApp}}
+
+
+Uygulama akışını yöneten ana sınıf.  
+
+
+
+
+{\ttfamily \#include $<$Language\+Translator.\+h$>$}
+
+
+
+Collaboration diagram for Coruh\+::Language\+Translator\+::Language\+Translator\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_coruh_1_1_language_translator_1_1_language_translator_app__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a5ed617b4a1ba48b54035061d7f080abf}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a5ed617b4a1ba48b54035061d7f080abf} 
+{\bfseries Language\+Translator\+App} ()
+\begin{DoxyCompactList}\small\item\em Uygulamayı varsayılan verilerle başlatır. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a3c58319ebc4b52530f96df35244e6766}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a3c58319ebc4b52530f96df35244e6766} 
+void {\bfseries run} ()
+\begin{DoxyCompactList}\small\item\em Uygulama döngüsünü çalıştırır. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a1e44c8c1f7023908862900efb5bb7bff}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a1e44c8c1f7023908862900efb5bb7bff} 
+void {\bfseries show\+Main\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Ana menüyü gösterir. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a8cfaed25014b5dbff221e2557d407f4d}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a8cfaed25014b5dbff221e2557d407f4d} 
+void {\bfseries handle\+User\+Choice} (int choice)
+\begin{DoxyCompactList}\small\item\em Menü seçimini işler. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a03ad354d985ea9953caeb220ba353675}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a03ad354d985ea9953caeb220ba353675} 
+std\+::string {\bfseries translate\+Text} (const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Metni aktif dil çiftine göre çevirir. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_afd506854467cc68e7a55c7f9ccb4d3c1}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_afd506854467cc68e7a55c7f9ccb4d3c1} 
+std\+::string {\bfseries translate\+Word} (const std\+::string \&word)
+\begin{DoxyCompactList}\small\item\em Tek kelime çevirir. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a06a91752cc8178f227d69060cf1d6c81}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a06a91752cc8178f227d69060cf1d6c81} 
+std\+::string {\bfseries translate\+Phrase} (const std\+::string \&phrase)
+\begin{DoxyCompactList}\small\item\em Kalıp/ifade çevirir. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_aed85d51b8fae05cd2ace0c6166b0e300}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_aed85d51b8fae05cd2ace0c6166b0e300} 
+void {\bfseries set\+Source\+Language} (const std\+::string \&language)
+\begin{DoxyCompactList}\small\item\em Kaynak dili ayarlar. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_aca0a3b739bf7a53e92616b62f838d813}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_aca0a3b739bf7a53e92616b62f838d813} 
+void {\bfseries set\+Target\+Language} (const std\+::string \&language)
+\begin{DoxyCompactList}\small\item\em Hedef dili ayarlar. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a98320f1bf6b3b67151deef4f18e79a10}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a98320f1bf6b3b67151deef4f18e79a10} 
+std\+::vector$<$ std\+::string $>$ {\bfseries get\+Supported\+Languages} () const
+\begin{DoxyCompactList}\small\item\em Desteklenen dilleri döndürür. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a974f8dcd015f7218cbcb08f86e540c72}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a974f8dcd015f7218cbcb08f86e540c72} 
+void {\bfseries show\+Language\+Selection} ()
+\begin{DoxyCompactList}\small\item\em Dil seçim ekranını gösterir. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_af4d3d14b521b942497457d78b58cef5a}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_af4d3d14b521b942497457d78b58cef5a} 
+void {\bfseries add\+Language} (const std\+::string \&language)
+\begin{DoxyCompactList}\small\item\em Yeni dil ekler. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_aebb1a131807481ffd3a86e81ba5d7149}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_aebb1a131807481ffd3a86e81ba5d7149} 
+bool {\bfseries login} (const std\+::string \&username, const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Kullanıcı girişi. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a1db0ba24cc5bb600bb0492759b56d688}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a1db0ba24cc5bb600bb0492759b56d688} 
+bool {\bfseries register\+User} (const std\+::string \&username, const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Kullanıcı kaydı. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_ae996bcbc37b5ebeff7fc5f23846599e6}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_ae996bcbc37b5ebeff7fc5f23846599e6} 
+void {\bfseries logout} ()
+\begin{DoxyCompactList}\small\item\em Oturumu kapatır. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_aae8aef776e538e0e04307f7cbb19cfff}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_aae8aef776e538e0e04307f7cbb19cfff} 
+bool {\bfseries is\+User\+Logged\+In} () const
+\begin{DoxyCompactList}\small\item\em Kullanıcı oturum durumunu döndürür. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a177ebb8e7174eb7c7a46baa2b38b8ff8}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a177ebb8e7174eb7c7a46baa2b38b8ff8} 
+void {\bfseries show\+Phrase\+Library} ()
+\begin{DoxyCompactList}\small\item\em Kalıp sözlüğü ekranı. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a8d954ac80aa0a6f317f5ae02a3ad8b0c}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a8d954ac80aa0a6f317f5ae02a3ad8b0c} 
+void {\bfseries add\+Phrase} (const std\+::string \&phrase, const std\+::string \&category)
+\begin{DoxyCompactList}\small\item\em Genel ifade ekler. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_abe5d9934ae504bc8e977d5fcb74e3e0f}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_abe5d9934ae504bc8e977d5fcb74e3e0f} 
+void {\bfseries show\+Learning\+Tips} ()
+\begin{DoxyCompactList}\small\item\em Öğrenme ipuçlarını listeler. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_ac09aa2c01d5c7029c3b8526361e9c040}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_ac09aa2c01d5c7029c3b8526361e9c040} 
+void {\bfseries add\+Learning\+Tip} (const std\+::string \&tip)
+\begin{DoxyCompactList}\small\item\em Öğrenme ipucu ekler. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a436167beacce45319adb33c3ad2f49dc}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a436167beacce45319adb33c3ad2f49dc} 
+void {\bfseries show\+Pronunciation\+Guide} ()
+\begin{DoxyCompactList}\small\item\em Telaffuz rehberini listeler. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a464e4097673d02dbc9d1d61d30c0cf1f}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a464e4097673d02dbc9d1d61d30c0cf1f} 
+void {\bfseries add\+Pronunciation} (const std\+::string \&word, const std\+::string \&guide)
+\begin{DoxyCompactList}\small\item\em Telaffuz girdisi ekler/günceller. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a9727ff9c9b9e0a81caeb2ce2e5ad7c62}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a9727ff9c9b9e0a81caeb2ce2e5ad7c62} 
+void {\bfseries show\+History} () const
+\begin{DoxyCompactList}\small\item\em Çeviri geçmişini listeler. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a36fcb69508cf44869a22b2ea9a7b4463}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a36fcb69508cf44869a22b2ea9a7b4463} 
+void {\bfseries clear\+History} ()
+\begin{DoxyCompactList}\small\item\em Çeviri geçmişini temizler. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_ac18f153739e7fb96366885f3aaf2458e}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_ac18f153739e7fb96366885f3aaf2458e} 
+void {\bfseries initialize\+Default\+Data} ()
+\begin{DoxyCompactList}\small\item\em Varsayılan verilerle başlatır. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a35984ddf5a72e84559b8961f4f7c33ad}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a35984ddf5a72e84559b8961f4f7c33ad} 
+void {\bfseries save\+Data} ()
+\begin{DoxyCompactList}\small\item\em Verileri kalıcı depoya yazar. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a83daac67d1d81e4c07ac792b7ce1e793}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a83daac67d1d81e4c07ac792b7ce1e793} 
+void {\bfseries load\+Data} ()
+\begin{DoxyCompactList}\small\item\em Verileri kalıcı depodan okur. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_adddfb15e169da4105623cb2162d7f3ec}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_adddfb15e169da4105623cb2162d7f3ec} 
+bool {\bfseries load\+Dictionary\+From\+File} (const std\+::string \&source\+Lang, const std\+::string \&target\+Lang, const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Dosyadan sözlük yükler. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_aa3f57c2f13453169c28cf1cb43e913df}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_aa3f57c2f13453169c28cf1cb43e913df} 
+void {\bfseries load\+All\+Dictionaries} ()
+\begin{DoxyCompactList}\small\item\em Tüm sözlükleri yükler. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_acd8648d60bbb51b35c35ffd92bb7537d}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_acd8648d60bbb51b35c35ffd92bb7537d} 
+std\+::string {\bfseries translate\+With\+Google\+API} (const std\+::string \&text, const std\+::string \&source\+Lang, const std\+::string \&target\+Lang)
+\begin{DoxyCompactList}\small\item\em Google API ile çeviri (stub). \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a42d55ad7d00fd049ec011b6b1c3d6a82}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a42d55ad7d00fd049ec011b6b1c3d6a82} 
+std\+::string {\bfseries translate\+With\+Microsoft\+API} (const std\+::string \&text, const std\+::string \&source\+Lang, const std\+::string \&target\+Lang)
+\begin{DoxyCompactList}\small\item\em Microsoft API ile çeviri (stub). \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_a9a2fc7b204faa69f23cbd8f157034468}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_a9a2fc7b204faa69f23cbd8f157034468} 
+bool {\bfseries is\+APIAvailable} ()
+\begin{DoxyCompactList}\small\item\em API kullanılabilirliği. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_af72ea9779aaca24d309641702b436c27}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_af72ea9779aaca24d309641702b436c27} 
+void {\bfseries set\+APIKey} (const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em API anahtarını ayarlar. \end{DoxyCompactList}\item 
+\Hypertarget{class_coruh_1_1_language_translator_1_1_language_translator_app_aa762886a074c30304b426dc66f109474}\label{class_coruh_1_1_language_translator_1_1_language_translator_app_aa762886a074c30304b426dc66f109474} 
+void {\bfseries set\+APIMode} (bool use\+API)
+\begin{DoxyCompactList}\small\item\em API modunu aç/kapatır. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Uygulama akışını yöneten ana sınıf. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/src/\+Language\+Translator/header/\mbox{\hyperlink{_language_translator_8h}{Language\+Translator.\+h}}\end{DoxyCompactItemize}

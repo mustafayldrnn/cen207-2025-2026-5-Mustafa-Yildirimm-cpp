@@ -25,6 +25,7 @@ target_include_directories(basic_translator PRIVATE src)
 add_executable(language_translator 
     apps/language_translator/main.cpp 
     src/LanguageTranslator/src/LanguageTranslator.cpp
+    src/LanguageTranslator/src/Persistence.cpp
 )
 target_include_directories(language_translator PRIVATE src)
 

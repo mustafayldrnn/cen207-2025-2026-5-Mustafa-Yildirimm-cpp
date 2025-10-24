@@ -2,10 +2,9 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classtranslator_1_1_symbol_table" kind="class" language="C++" prot="public">
     <compoundname>translator::SymbolTable</compoundname>
-    <includes refid="symbol__table_8h" local="no">symbol_table.h</includes>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classtranslator_1_1_symbol_table_1a66cace7834f5eb0eb9b31edd66a994fd" prot="private" static="no" mutable="no">
-        <type><ref refid="classds_1_1_hash_table" kindref="compound">ds::HashTable</ref>&lt; std::string, double &gt;</type>
+        <type>ds::HashTable&lt; std::string, double &gt;</type>
         <definition>ds::HashTable&lt;std::string, double&gt; translator::SymbolTable::table_</definition>
         <argsstring></argsstring>
         <name>table_</name>
@@ -88,16 +87,8 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="2">
-        <label>ds::HashTable&lt; std::string, double &gt;</label>
-        <link refid="classds_1_1_hash_table"/>
-      </node>
       <node id="1">
         <label>translator::SymbolTable</label>
-        <link refid="classtranslator_1_1_symbol_table"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>-table_</edgelabel>
-        </childnode>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="7" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="7" bodyend="13"/>

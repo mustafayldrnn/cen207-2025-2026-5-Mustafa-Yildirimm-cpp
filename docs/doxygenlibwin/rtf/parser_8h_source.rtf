@@ -151,70 +151,38 @@
 parser.h\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h}
-{\bkmkstart AAAAAAAAGW}
-{\bkmkend AAAAAAAAGW}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGX" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
-\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
 {
 \par
 \pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
 2 {\cf21 #include <vector>}\par
 3 {\cf21 #include <memory>}\par
 4 {\cf21 #include <cstddef>}\par
-5 {\cf21 #include "{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 translator/token.h}}}
-"}\par
-6 {\cf21 #include "{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGB" }{}}{\fldrslt {\cs37\ul\cf2 translator/ast.h}}}
-"}\par
+5 {\cf21 #include "translator/token.h"}\par
+6 {\cf21 #include "translator/ast.h"}\par
 7 \par
-8 {\cf17 namespace }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGI" }{}}{\fldrslt {\cs37\ul\cf2 translator}}}
- \{\par
+8 {\cf17 namespace }translator \{\par
 9 \par
-10 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIL" }{}}{\fldrslt {\cs37\ul\cf2 Parser}}}
- \{\par
-11     {\cf17 const} std::vector<Token> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIN" }{}}{\fldrslt {\cs37\ul\cf2 tokens_}}}
-;\par
-12     {\cf17 mutable} std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIR" }{}}{\fldrslt {\cs37\ul\cf2 pos_}}}
- = 0;\par
+10 {\cf17 class }Parser \{\par
+11     {\cf17 const} std::vector<Token> tokens_;\par
+12     {\cf17 mutable} std::size_t pos_ = 0;\par
 13 \par
-14     {\cf17 const} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIT" }{}}{\fldrslt {\cs37\ul\cf2 Token}}}
-& {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIU" }{}}{\fldrslt {\cs37\ul\cf2 peek}}}
-(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIN" }{}}{\fldrslt {\cs37\ul\cf2 tokens_}}}
-[{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIR" }{}}{\fldrslt {\cs37\ul\cf2 pos_}}}
-]; \}\par
-15     {\cf17 const} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIT" }{}}{\fldrslt {\cs37\ul\cf2 Token}}}
-& {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIV" }{}}{\fldrslt {\cs37\ul\cf2 advance}}}
-(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIN" }{}}{\fldrslt {\cs37\ul\cf2 tokens_}}}
-[{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIR" }{}}{\fldrslt {\cs37\ul\cf2 pos_}}}
-++]; \}\par
-16     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 match}}}
-({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIY" }{}}{\fldrslt {\cs37\ul\cf2 TokenType}}}
- t){\cf17  const }\{ {\cf19 if} ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIU" }{}}{\fldrslt {\cs37\ul\cf2 peek}}}
-().type == t) \{ ++{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIR" }{}}{\fldrslt {\cs37\ul\cf2 pos_}}}
-; {\cf19 return} {\cf17 true}; \} {\cf19 return} {\cf17 false}; \}\par
-17     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJB" }{}}{\fldrslt {\cs37\ul\cf2 at_eof}}}
-(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIU" }{}}{\fldrslt {\cs37\ul\cf2 peek}}}
-().{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJD" }{}}{\fldrslt {\cs37\ul\cf2 type}}}
- == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 TokenType::Eof}}}
-; \}\par
+14     {\cf17 const} Token& peek(){\cf17  const }\{ {\cf19 return} tokens_[pos_]; \}\par
+15     {\cf17 const} Token& advance(){\cf17  const }\{ {\cf19 return} tokens_[pos_++]; \}\par
+16     {\cf18 bool} match(TokenType t){\cf17  const }\{ {\cf19 if} (peek().type == t) \{ ++pos_; {\cf19 return} {\cf17 true}; \} {\cf19 return} {\cf17 false}; \}\par
+17     {\cf18 bool} at_eof(){\cf17  const }\{ {\cf19 return} peek().type == TokenType::Eof; \}\par
 18 \par
 19     {\cf20 // Parsing helpers}\par
-20     std::unique_ptr<Expr> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJH" }{}}{\fldrslt {\cs37\ul\cf2 parse_expression}}}
-() {\cf17 const};\par
-21     std::unique_ptr<Expr> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJK" }{}}{\fldrslt {\cs37\ul\cf2 parse_term}}}
-() {\cf17 const};\par
-22     std::unique_ptr<Expr> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJL" }{}}{\fldrslt {\cs37\ul\cf2 parse_factor}}}
-() {\cf17 const};\par
+20     std::unique_ptr<Expr> parse_expression() {\cf17 const};\par
+21     std::unique_ptr<Expr> parse_term() {\cf17 const};\par
+22     std::unique_ptr<Expr> parse_factor() {\cf17 const};\par
 23 \par
-24     std::unique_ptr<Stmt> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJN" }{}}{\fldrslt {\cs37\ul\cf2 parse_statement}}}
-({\cf18 int}& outLabel) {\cf17 const};\par
+24     std::unique_ptr<Stmt> parse_statement({\cf18 int}& outLabel) {\cf17 const};\par
 25 \par
 26 {\cf17 public}:\par
-27     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIL" }{}}{\fldrslt {\cs37\ul\cf2 Parser}}}
-(std::vector<Token> toks): {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIN" }{}}{\fldrslt {\cs37\ul\cf2 tokens_}}}
-(std::move(toks)) \{\}\par
-28     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHG" }{}}{\fldrslt {\cs37\ul\cf2 Program}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJP" }{}}{\fldrslt {\cs37\ul\cf2 parseProgram}}}
-() {\cf17 const};\par
+27     {\cf17 explicit} Parser(std::vector<Token> toks): tokens_(std::move(toks)) \{\}\par
+28     Program parseProgram() {\cf17 const};\par
 29 \};\par
 30 \par
 31 \} {\cf20 // namespace translator}\par

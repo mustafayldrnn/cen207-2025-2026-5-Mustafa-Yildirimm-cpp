@@ -2,8 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="structtranslator_1_1_gosub_stmt" kind="struct" language="C++" prot="public">
     <compoundname>translator::GosubStmt</compoundname>
-    <basecompoundref refid="structtranslator_1_1_stmt" prot="public" virt="non-virtual">translator::Stmt</basecompoundref>
-    <includes refid="ast_8h" local="no">ast.h</includes>
+    <basecompoundref prot="public" virt="non-virtual">translator::Stmt</basecompoundref>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structtranslator_1_1_gosub_stmt_1a168c003fcda2ceb2e8c2cd015df7ec85" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -39,13 +38,12 @@
         </inbodydescription>
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="69" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="69" bodyend="69"/>
       </memberdef>
-      <memberdef kind="function" id="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacetranslator_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref></type>
+      <memberdef kind="function" id="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>StmtKind</type>
         <definition>StmtKind translator::GosubStmt::kind</definition>
         <argsstring>() const override</argsstring>
         <name>kind</name>
         <qualifiedname>translator::GosubStmt::kind</qualifiedname>
-        <reimplements refid="structtranslator_1_1_stmt_1afb8f5d100524bc8cf234edae0ac57578">kind</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -59,34 +57,15 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="1">
-        <label>translator::GosubStmt</label>
-        <link refid="structtranslator_1_1_gosub_stmt"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>translator::Stmt</label>
-        <link refid="structtranslator_1_1_stmt"/>
-      </node>
-    </inheritancegraph>
     <collaborationgraph>
       <node id="1">
         <label>translator::GosubStmt</label>
-        <link refid="structtranslator_1_1_gosub_stmt"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>translator::Stmt</label>
-        <link refid="structtranslator_1_1_stmt"/>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="68" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="68" bodyend="71"/>
     <listofallmembers>
       <member refid="structtranslator_1_1_gosub_stmt_1aae89ce3fc1bbe274899085b0fbee9181" prot="public" virt="non-virtual"><scope>translator::GosubStmt</scope><name>GosubStmt</name></member>
-      <member refid="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac" prot="public" virt="virtual"><scope>translator::GosubStmt</scope><name>kind</name></member>
+      <member refid="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac" prot="public" virt="non-virtual"><scope>translator::GosubStmt</scope><name>kind</name></member>
       <member refid="structtranslator_1_1_gosub_stmt_1a168c003fcda2ceb2e8c2cd015df7ec85" prot="public" virt="non-virtual"><scope>translator::GosubStmt</scope><name>target</name></member>
       <member refid="structtranslator_1_1_stmt_1a0707842a254ce67ff9c72cda98226ec7" prot="public" virt="virtual"><scope>translator::GosubStmt</scope><name>~Stmt</name></member>
     </listofallmembers>

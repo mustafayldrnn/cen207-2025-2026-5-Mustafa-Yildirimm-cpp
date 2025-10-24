@@ -1,0 +1,65 @@
+\doxysection{C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/src/\+Language\+Translator/header/\+Persistence.h File Reference}
+\hypertarget{_persistence_8h}{}\label{_persistence_8h}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/LanguageTranslator/header/Persistence.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/LanguageTranslator/header/Persistence.h}}
+
+
+Language\+Translator verileri için ikili (binary) kalıcılık yardımcıları.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+Include dependency graph for Persistence.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{_persistence_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{_persistence_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_user_profile}{Coruh\+::\+Language\+Translator\+::\+User\+Profile}}
+\begin{DoxyCompactList}\small\item\em Kullanıcı profili bilgileri. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_translation_record}{Coruh\+::\+Language\+Translator\+::\+Translation\+Record}}
+\begin{DoxyCompactList}\small\item\em Çeviri geçmişi kaydı. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_tip_entry}{Coruh\+::\+Language\+Translator\+::\+Tip\+Entry}}
+\begin{DoxyCompactList}\small\item\em Öğrenme ipucu girdisi. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_phrase_entry}{Coruh\+::\+Language\+Translator\+::\+Phrase\+Entry}}
+\begin{DoxyCompactList}\small\item\em Genel ifade girdisi. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_pronunciation_entry}{Coruh\+::\+Language\+Translator\+::\+Pronunciation\+Entry}}
+\begin{DoxyCompactList}\small\item\em Telaffuz girdisi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_persistence_8h_a9ec1a9482d802ff4b74d4f65e1e54147}\label{_persistence_8h_a9ec1a9482d802ff4b74d4f65e1e54147} 
+bool {\bfseries Coruh\+::\+Language\+Translator\+::\+Persistence\+::write\+Users} (const std\+::string \&path, const std\+::vector$<$ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_user_profile}{User\+Profile}} $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Kullanıcı listesini ikili dosyaya yazar. \end{DoxyCompactList}\item 
+\Hypertarget{_persistence_8h_af0968d3b1840504d0d9cd69944b95397}\label{_persistence_8h_af0968d3b1840504d0d9cd69944b95397} 
+bool {\bfseries Coruh\+::\+Language\+Translator\+::\+Persistence\+::read\+Users} (const std\+::string \&path, std\+::vector$<$ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_user_profile}{User\+Profile}} $>$ \&out)
+\begin{DoxyCompactList}\small\item\em Kullanıcı listesini ikili dosyadan okur. \end{DoxyCompactList}\item 
+\Hypertarget{_persistence_8h_a7c255eebbcc1b5e3ad923eddae7b8400}\label{_persistence_8h_a7c255eebbcc1b5e3ad923eddae7b8400} 
+bool {\bfseries Coruh\+::\+Language\+Translator\+::\+Persistence\+::write\+History} (const std\+::string \&path, const std\+::vector$<$ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_translation_record}{Translation\+Record}} $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Çeviri geçmişini yazar. \end{DoxyCompactList}\item 
+\Hypertarget{_persistence_8h_a017a206629f11bff566a21395f6ffc2f}\label{_persistence_8h_a017a206629f11bff566a21395f6ffc2f} 
+bool {\bfseries Coruh\+::\+Language\+Translator\+::\+Persistence\+::read\+History} (const std\+::string \&path, std\+::vector$<$ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_translation_record}{Translation\+Record}} $>$ \&out)
+\begin{DoxyCompactList}\small\item\em Çeviri geçmişini okur. \end{DoxyCompactList}\item 
+\Hypertarget{_persistence_8h_a9fa7f276ccdf1eb80607d021c8dfb801}\label{_persistence_8h_a9fa7f276ccdf1eb80607d021c8dfb801} 
+std\+::string {\bfseries Coruh\+::\+Language\+Translator\+::\+Persistence\+::sha256\+Hex} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Girdi için hex SHA-\/256 (ders amaçlı pseudo) döndürür. \end{DoxyCompactList}\item 
+\Hypertarget{_persistence_8h_a2407bc3ad66791cf41f33f257669cd08}\label{_persistence_8h_a2407bc3ad66791cf41f33f257669cd08} 
+std\+::string {\bfseries Coruh\+::\+Language\+Translator\+::\+Persistence\+::random\+Salt} (std\+::size\+\_\+t len=16)
+\begin{DoxyCompactList}\small\item\em Rastgele salt üretir. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Language\+Translator verileri için ikili (binary) kalıcılık yardımcıları. 
+

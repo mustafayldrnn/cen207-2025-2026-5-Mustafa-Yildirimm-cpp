@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['find_0',['find',['../classds_1_1_hash_table.html#aa50954bdb669803b7e6c9b0e63db48ab',1,'ds::HashTable::find(const K &amp;k)'],['../classds_1_1_hash_table.html#afb487ac0b40053e9e74902fb035ea979',1,'ds::HashTable::find(const K &amp;k) const']]],
-  ['for_5feach_5fbackward_1',['for_each_backward',['../classds_1_1_x_o_r_linked_list.html#a0d1a92c0f54b886c03e6c955f613daad',1,'ds::XORLinkedList']]],
-  ['for_5feach_5fforward_2',['for_each_forward',['../classds_1_1_x_o_r_linked_list.html#a804666e16c5c7a7e687b8d7d7c12e69e',1,'ds::XORLinkedList']]],
-  ['front_3',['front',['../classds_1_1_queue.html#a3a74735b6ef905d487f3c3a1bad46843',1,'ds::Queue']]]
+  ['languagetranslatorapp_0',['LanguageTranslatorApp',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a5ed617b4a1ba48b54035061d7f080abf',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['loadalldictionaries_1',['loadAllDictionaries',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#aa3f57c2f13453169c28cf1cb43e913df',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['loaddata_2',['loadData',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a83daac67d1d81e4c07ac792b7ce1e793',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['loaddictionaryfromfile_3',['loadDictionaryFromFile',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#adddfb15e169da4105623cb2162d7f3ec',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['login_4',['login',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#aebb1a131807481ffd3a86e81ba5d7149',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['logout_5',['logout',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#ae996bcbc37b5ebeff7fc5f23846599e6',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]]
 ];

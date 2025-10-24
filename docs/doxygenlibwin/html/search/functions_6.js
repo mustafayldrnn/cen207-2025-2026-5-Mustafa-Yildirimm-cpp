@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['get_0',['get',['../classds_1_1_sparse_matrix.html#ae238cab6800d072fc4c76e8b0578a8e5',1,'ds::SparseMatrix']]],
-  ['gosubstmt_1',['GosubStmt',['../structtranslator_1_1_gosub_stmt.html#aae89ce3fc1bbe274899085b0fbee9181',1,'translator::GosubStmt']]],
-  ['gotostmt_2',['GotoStmt',['../structtranslator_1_1_goto_stmt.html#ae22d265c24459eb2537df432131f46d7',1,'translator::GotoStmt']]],
-  ['graph_3',['Graph',['../classds_1_1_graph.html#a9fc7c0ff07b23eeb275f4447afd79048',1,'ds::Graph']]]
+  ['randomsalt_0',['randomSalt',['../_persistence_8h.html#a2407bc3ad66791cf41f33f257669cd08',1,'Coruh::LanguageTranslator::Persistence']]],
+  ['readhistory_1',['readHistory',['../_persistence_8h.html#a017a206629f11bff566a21395f6ffc2f',1,'Coruh::LanguageTranslator::Persistence']]],
+  ['readusers_2',['readUsers',['../_persistence_8h.html#af0968d3b1840504d0d9cd69944b95397',1,'Coruh::LanguageTranslator::Persistence']]],
+  ['registeruser_3',['registerUser',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a1db0ba24cc5bb600bb0492759b56d688',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['run_4',['run',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a3c58319ebc4b52530f96df35244e6766',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]]
 ];

@@ -49,7 +49,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ds/graph.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4" refid="test__graph__bfs__dfs_8cpp_1aa82d36f8a18445fb4ddcbf39cb1ea41c" refkind="member"><highlight class="normal"><ref refid="test__graph__bfs__dfs_8cpp_1aa82d36f8a18445fb4ddcbf39cb1ea41c" kindref="member">TEST</ref>(Graph,<sp/>BFSandDFS){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">TEST(Graph,<sp/>BFSandDFS){</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::Graph<sp/>g(6);</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>g.add_edge(0,1,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/>g.add_edge(1,2,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/>g.add_edge(2,3,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/>g.add_edge(3,4,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/>g.add_edge(4,5,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dist<sp/>=<sp/>g.bfs_dist(0);</highlight></codeline>

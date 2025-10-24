@@ -151,115 +151,107 @@
 test_language_translator_extra.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_extra.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_extra.cpp}
-{\bkmkstart AAAAAAAAHL}
-{\bkmkend AAAAAAAAHL}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
-\par
+{\bkmkstart AAAAAAACQS}
+{\bkmkend AAAAAAACQS}
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAIW}{\bkmkend AAAAAAAAIW}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAACTE}{\bkmkend AAAAAAACTE}
 00001 {\cf20 // Ek kapsama: LanguageTranslatorApp için kayıt, sözlük yükleme ve çeşitli yollar}\par
-{\bkmkstart AAAAAAAAJD}{\bkmkend AAAAAAAAJD}
+{\bkmkstart AAAAAAACTH}{\bkmkend AAAAAAACTH}
 00002 \par
-{\bkmkstart AAAAAAAAJF}{\bkmkend AAAAAAAAJF}
+{\bkmkstart AAAAAAACTJ}{\bkmkend AAAAAAACTJ}
 00003 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAAKO}{\bkmkend AAAAAAAAKO}
+{\bkmkstart AAAAAAACUK}{\bkmkend AAAAAAACUK}
 00004 {\cf21 #include <fstream>}\par
-{\bkmkstart AAAAAAAALK}{\bkmkend AAAAAAAALK}
+{\bkmkstart AAAAAAACUY}{\bkmkend AAAAAAACUY}
 00005 {\cf21 #include <string>}\par
-{\bkmkstart AAAAAAAALT}{\bkmkend AAAAAAAALT}
+{\bkmkstart AAAAAAACVJ}{\bkmkend AAAAAAACVJ}
 00006 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
-{\bkmkstart AAAAAAAAMK}{\bkmkend AAAAAAAAMK}
+{\bkmkstart AAAAAAACXX}{\bkmkend AAAAAAACXX}
 00007 \par
-{\bkmkstart AAAAAAAAMM}{\bkmkend AAAAAAAAMM}
+{\bkmkstart AAAAAAACYA}{\bkmkend AAAAAAACYA}
 00008 {\cf17 using namespace }Coruh::LanguageTranslator;\par
-{\bkmkstart AAAAAAAAMS}{\bkmkend AAAAAAAAMS}
+{\bkmkstart AAAAAAACYM}{\bkmkend AAAAAAACYM}
 00009 \par
-{\bkmkstart AAAAAAAAMV}{\bkmkend AAAAAAAAMV}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMW" }{}}{\fldrslt {\cs37\ul\cf2 00010}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMW" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(LanguageTranslatorExtra, RegisterExistingUserFails)\{\par
-{\bkmkstart AAAAAAAAZS}{\bkmkend AAAAAAAAZS}
+{\bkmkstart AAAAAAACYN}{\bkmkend AAAAAAACYN}
+00010 TEST(LanguageTranslatorExtra, RegisterExistingUserFails)\{\par
+{\bkmkstart AAAAAAACYX}{\bkmkend AAAAAAACYX}
 00011     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAAAZW}{\bkmkend AAAAAAAAZW}
+{\bkmkstart AAAAAAACZG}{\bkmkend AAAAAAACZG}
 00012     {\cf20 // 'admin' zaten rezervli kabul ediliyor}\par
-{\bkmkstart AAAAAAAAZY}{\bkmkend AAAAAAAAZY}
+{\bkmkstart AAAAAAACZH}{\bkmkend AAAAAAACZH}
 00013     EXPECT_FALSE(app.registerUser({\cf22 "admin"}, {\cf22 "anything"}));\par
-{\bkmkstart AAAAAAABAB}{\bkmkend AAAAAAABAB}
+{\bkmkstart AAAAAAACZM}{\bkmkend AAAAAAACZM}
 00014 \}\par
-{\bkmkstart AAAAAAABAD}{\bkmkend AAAAAAABAD}
+{\bkmkstart AAAAAAACZO}{\bkmkend AAAAAAACZO}
 00015 \par
-{\bkmkstart AAAAAAABAF}{\bkmkend AAAAAAABAF}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABAG" }{}}{\fldrslt {\cs37\ul\cf2 00016}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMW" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(LanguageTranslatorExtra, LoadDictionaryFromRealFile)\{\par
-{\bkmkstart AAAAAAABAL}{\bkmkend AAAAAAABAL}
+{\bkmkstart AAAAAAACZQ}{\bkmkend AAAAAAACZQ}
+00016 TEST(LanguageTranslatorExtra, LoadDictionaryFromRealFile)\{\par
+{\bkmkstart AAAAAAACZX}{\bkmkend AAAAAAACZX}
 00017     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAABAO}{\bkmkend AAAAAAABAO}
+{\bkmkstart AAAAAAADAG}{\bkmkend AAAAAAADAG}
 00018     app.setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAABAP}{\bkmkend AAAAAAABAP}
+{\bkmkstart AAAAAAADAL}{\bkmkend AAAAAAADAL}
 00019     app.setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAABAR}{\bkmkend AAAAAAABAR}
+{\bkmkstart AAAAAAADAQ}{\bkmkend AAAAAAADAQ}
 00020 \par
-{\bkmkstart AAAAAAABAT}{\bkmkend AAAAAAABAT}
+{\bkmkstart AAAAAAADAS}{\bkmkend AAAAAAADAS}
 00021     {\cf20 // Geçici sözlük dosyası oluştur}\par
-{\bkmkstart AAAAAAABAU}{\bkmkend AAAAAAABAU}
+{\bkmkstart AAAAAAADBQ}{\bkmkend AAAAAAADBQ}
 00022     {\cf17 const} std::string fname = {\cf22 "temp_en_tr_dict_test.txt"};\par
-{\bkmkstart AAAAAAABBA}{\bkmkend AAAAAAABBA}
+{\bkmkstart AAAAAAADBR}{\bkmkend AAAAAAADBR}
 00023     \{\par
-{\bkmkstart AAAAAAABBC}{\bkmkend AAAAAAABBC}
+{\bkmkstart AAAAAAADBV}{\bkmkend AAAAAAADBV}
 00024         std::ofstream ofs(fname, std::ios::trunc);\par
-{\bkmkstart AAAAAAABBJ}{\bkmkend AAAAAAABBJ}
+{\bkmkstart AAAAAAADBW}{\bkmkend AAAAAAADBW}
 00025         ASSERT_TRUE(ofs.good());\par
-{\bkmkstart AAAAAAABBM}{\bkmkend AAAAAAABBM}
+{\bkmkstart AAAAAAADBX}{\bkmkend AAAAAAADBX}
 00026         ofs << {\cf22 "bye:gule\\n"};\par
-{\bkmkstart AAAAAAABBN}{\bkmkend AAAAAAABBN}
+{\bkmkstart AAAAAAADBY}{\bkmkend AAAAAAADBY}
 00027         ofs << {\cf22 "# comment line\\n"};\par
-{\bkmkstart AAAAAAABBQ}{\bkmkend AAAAAAABBQ}
+{\bkmkstart AAAAAAADBZ}{\bkmkend AAAAAAADBZ}
 00028         ofs << {\cf22 "  space : bosluk  \\n"}; {\cf20 // trim testi}\par
-{\bkmkstart AAAAAAABBS}{\bkmkend AAAAAAABBS}
+{\bkmkstart AAAAAAADCA}{\bkmkend AAAAAAADCA}
 00029     \}\par
-{\bkmkstart AAAAAAABBV}{\bkmkend AAAAAAABBV}
+{\bkmkstart AAAAAAADCB}{\bkmkend AAAAAAADCB}
 00030 \par
-{\bkmkstart AAAAAAABBX}{\bkmkend AAAAAAABBX}
+{\bkmkstart AAAAAAADCC}{\bkmkend AAAAAAADCC}
 00031     {\cf20 // Yükle ve doğrula}\par
-{\bkmkstart AAAAAAABBY}{\bkmkend AAAAAAABBY}
+{\bkmkstart AAAAAAADCD}{\bkmkend AAAAAAADCD}
 00032     ASSERT_TRUE(app.loadDictionaryFromFile({\cf22 "English"}, {\cf22 "Turkish"}, fname));\par
-{\bkmkstart AAAAAAABCC}{\bkmkend AAAAAAABCC}
+{\bkmkstart AAAAAAADCE}{\bkmkend AAAAAAADCE}
 00033     EXPECT_EQ(app.translateWord({\cf22 "bye"}), {\cf22 "gule"});\par
-{\bkmkstart AAAAAAABCG}{\bkmkend AAAAAAABCG}
+{\bkmkstart AAAAAAADCG}{\bkmkend AAAAAAADCG}
 00034     {\cf20 // Trim edilmiş anahtar/değerler de yüklenmiş olmalı}\par
-{\bkmkstart AAAAAAABCJ}{\bkmkend AAAAAAABCJ}
+{\bkmkstart AAAAAAADCH}{\bkmkend AAAAAAADCH}
 00035     EXPECT_EQ(app.translateWord({\cf22 "space"}), {\cf22 "bosluk"});\par
-{\bkmkstart AAAAAAABCQ}{\bkmkend AAAAAAABCQ}
+{\bkmkstart AAAAAAADCI}{\bkmkend AAAAAAADCI}
 00036 \}\par
-{\bkmkstart AAAAAAABCS}{\bkmkend AAAAAAABCS}
+{\bkmkstart AAAAAAADCJ}{\bkmkend AAAAAAADCJ}
 00037 \par
-{\bkmkstart AAAAAAABCW}{\bkmkend AAAAAAABCW}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABCX" }{}}{\fldrslt {\cs37\ul\cf2 00038}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMW" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
-(LanguageTranslatorExtra, AddLanguageNoDuplicate)\{\par
-{\bkmkstart AAAAAAABCZ}{\bkmkend AAAAAAABCZ}
+{\bkmkstart AAAAAAADCK}{\bkmkend AAAAAAADCK}
+00038 TEST(LanguageTranslatorExtra, AddLanguageNoDuplicate)\{\par
+{\bkmkstart AAAAAAADCL}{\bkmkend AAAAAAADCL}
 00039     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAABDB}{\bkmkend AAAAAAABDB}
+{\bkmkstart AAAAAAADCN}{\bkmkend AAAAAAADCN}
 00040     {\cf17 auto} before = app.getSupportedLanguages();\par
-{\bkmkstart AAAAAAABDD}{\bkmkend AAAAAAABDD}
+{\bkmkstart AAAAAAADCO}{\bkmkend AAAAAAADCO}
 00041     app.addLanguage({\cf22 "Klingon"});\par
-{\bkmkstart AAAAAAABDF}{\bkmkend AAAAAAABDF}
+{\bkmkstart AAAAAAADCP}{\bkmkend AAAAAAADCP}
 00042     {\cf17 auto} afterAdd = app.getSupportedLanguages();\par
-{\bkmkstart AAAAAAABDJ}{\bkmkend AAAAAAABDJ}
+{\bkmkstart AAAAAAADCQ}{\bkmkend AAAAAAADCQ}
 00043     EXPECT_GE(afterAdd.size(), before.size() + 1);\par
-{\bkmkstart AAAAAAABDL}{\bkmkend AAAAAAABDL}
+{\bkmkstart AAAAAAADCW}{\bkmkend AAAAAAADCW}
 00044     {\cf20 // Aynı dili tekrar ekleme — boyut değişmemeli}\par
-{\bkmkstart AAAAAAABDN}{\bkmkend AAAAAAABDN}
+{\bkmkstart AAAAAAADCX}{\bkmkend AAAAAAADCX}
 00045     app.addLanguage({\cf22 "Klingon"});\par
-{\bkmkstart AAAAAAABDQ}{\bkmkend AAAAAAABDQ}
+{\bkmkstart AAAAAAADCZ}{\bkmkend AAAAAAADCZ}
 00046     {\cf17 auto} afterDup = app.getSupportedLanguages();\par
-{\bkmkstart AAAAAAABDT}{\bkmkend AAAAAAABDT}
+{\bkmkstart AAAAAAADDB}{\bkmkend AAAAAAADDB}
 00047     EXPECT_EQ(afterDup.size(), afterAdd.size());\par
-{\bkmkstart AAAAAAABDX}{\bkmkend AAAAAAABDX}
+{\bkmkstart AAAAAAADDH}{\bkmkend AAAAAAADDH}
 00048 \}\par
-{\bkmkstart AAAAAAABDY}{\bkmkend AAAAAAABDY}
+{\bkmkstart AAAAAAADDI}{\bkmkend AAAAAAADDI}
 00049 \par
 }
 }

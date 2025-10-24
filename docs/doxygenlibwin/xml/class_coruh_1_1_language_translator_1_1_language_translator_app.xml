@@ -1,0 +1,932 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_coruh_1_1_language_translator_1_1_language_translator_app" kind="class" language="C++" prot="public">
+    <compoundname>Coruh::LanguageTranslator::LanguageTranslatorApp</compoundname>
+    <includes refid="_language_translator_8h" local="no">LanguageTranslator.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1ac5dec0ba10b797cf38f934361b76a65f" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::unordered_map&lt; std::string, std::string &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::unordered_map&lt;std::string, std::string&gt; &gt; Coruh::LanguageTranslator::LanguageTranslatorApp::wordDictionaries</definition>
+        <argsstring></argsstring>
+        <name>wordDictionaries</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::wordDictionaries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="28" column="32" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1ad77f7e667c879392de1c7f0eb9118ff5" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::unordered_map&lt; std::string, std::string &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::unordered_map&lt;std::string, std::string&gt; &gt; Coruh::LanguageTranslator::LanguageTranslatorApp::phraseDictionaries</definition>
+        <argsstring></argsstring>
+        <name>phraseDictionaries</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::phraseDictionaries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="29" column="32" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a13f5460748a50ab69dc4350032ab068b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Coruh::LanguageTranslator::LanguageTranslatorApp::supportedLanguages</definition>
+        <argsstring></argsstring>
+        <name>supportedLanguages</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::supportedLanguages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="32" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1aa86b1cad9a69fa6362942d33211a2f0f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Coruh::LanguageTranslator::LanguageTranslatorApp::currentSourceLanguage</definition>
+        <argsstring></argsstring>
+        <name>currentSourceLanguage</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::currentSourceLanguage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="33" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1adc41b2365e79a4e7320db409d4aa9465" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Coruh::LanguageTranslator::LanguageTranslatorApp::currentTargetLanguage</definition>
+        <argsstring></argsstring>
+        <name>currentTargetLanguage</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::currentTargetLanguage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="34" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1ad3088b49ed2da98352dce4cb4f810f2c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Coruh::LanguageTranslator::LanguageTranslatorApp::commonPhrases</definition>
+        <argsstring></argsstring>
+        <name>commonPhrases</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::commonPhrases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="37" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1ada5694e5267fa92812eaaab6cccec4f6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Coruh::LanguageTranslator::LanguageTranslatorApp::learningTips</definition>
+        <argsstring></argsstring>
+        <name>learningTips</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::learningTips</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="38" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1afae3e92a5ef6e8924eb5b8833084a236" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::string &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::string&gt; Coruh::LanguageTranslator::LanguageTranslatorApp::pronunciationGuide</definition>
+        <argsstring></argsstring>
+        <name>pronunciationGuide</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::pronunciationGuide</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="39" column="32" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a14f59f9002016c487ab842d1fdb92249" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Coruh::LanguageTranslator::LanguageTranslatorApp::currentUser</definition>
+        <argsstring></argsstring>
+        <name>currentUser</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::currentUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="41" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1aa772f5be7d7d1df3e596e8c704d9f0e0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Coruh::LanguageTranslator::LanguageTranslatorApp::isLoggedIn</definition>
+        <argsstring></argsstring>
+        <name>isLoggedIn</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::isLoggedIn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="42" column="18" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1ad7cb4a75dca18dd35ed64990ecca6ddf" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_coruh_1_1_language_translator_1_1_user_profile" kindref="compound">UserProfile</ref> &gt;</type>
+        <definition>std::vector&lt;UserProfile&gt; Coruh::LanguageTranslator::LanguageTranslatorApp::users</definition>
+        <argsstring></argsstring>
+        <name>users</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="43" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a71f9662143bf653bb8c710907e6ba9aa" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_coruh_1_1_language_translator_1_1_translation_record" kindref="compound">TranslationRecord</ref> &gt;</type>
+        <definition>std::vector&lt;TranslationRecord&gt; Coruh::LanguageTranslator::LanguageTranslatorApp::history</definition>
+        <argsstring></argsstring>
+        <name>history</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::history</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="44" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1ab556b1acd8839185a6c192f99e02af41" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Coruh::LanguageTranslator::LanguageTranslatorApp::apiKey</definition>
+        <argsstring></argsstring>
+        <name>apiKey</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::apiKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="47" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a4899e421750407b3ffb82f527b7a20ed" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Coruh::LanguageTranslator::LanguageTranslatorApp::useAPI</definition>
+        <argsstring></argsstring>
+        <name>useAPI</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::useAPI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="48" column="18" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1ad46434785f1b6afdfa47bac0de531d87" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Coruh::LanguageTranslator::LanguageTranslatorApp::apiProvider</definition>
+        <argsstring></argsstring>
+        <name>apiProvider</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::apiProvider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="49" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a5ed617b4a1ba48b54035061d7f080abf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Coruh::LanguageTranslator::LanguageTranslatorApp::LanguageTranslatorApp</definition>
+        <argsstring>()</argsstring>
+        <name>LanguageTranslatorApp</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::LanguageTranslatorApp</qualifiedname>
+        <briefdescription>
+<para>Uygulamayı varsayılan verilerle başlatır. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="53" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1aa7130212453aa19ff70bd2854aaf0846" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Coruh::LanguageTranslator::LanguageTranslatorApp::~LanguageTranslatorApp</definition>
+        <argsstring>()=default</argsstring>
+        <name>~LanguageTranslatorApp</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::~LanguageTranslatorApp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="54" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a3c58319ebc4b52530f96df35244e6766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::run</qualifiedname>
+        <briefdescription>
+<para>Uygulama döngüsünü çalıştırır. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="57" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a1e44c8c1f7023908862900efb5bb7bff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::showMainMenu</definition>
+        <argsstring>()</argsstring>
+        <name>showMainMenu</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::showMainMenu</qualifiedname>
+        <briefdescription>
+<para>Ana menüyü gösterir. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="59" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a8cfaed25014b5dbff221e2557d407f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::handleUserChoice</definition>
+        <argsstring>(int choice)</argsstring>
+        <name>handleUserChoice</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::handleUserChoice</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>choice</declname>
+        </param>
+        <briefdescription>
+<para>Menü seçimini işler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="61" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a03ad354d985ea9953caeb220ba353675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Coruh::LanguageTranslator::LanguageTranslatorApp::translateText</definition>
+        <argsstring>(const std::string &amp;text)</argsstring>
+        <name>translateText</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::translateText</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Metni aktif dil çiftine göre çevirir. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="65" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1afd506854467cc68e7a55c7f9ccb4d3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Coruh::LanguageTranslator::LanguageTranslatorApp::translateWord</definition>
+        <argsstring>(const std::string &amp;word)</argsstring>
+        <name>translateWord</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::translateWord</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>word</declname>
+        </param>
+        <briefdescription>
+<para>Tek kelime çevirir. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="67" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a06a91752cc8178f227d69060cf1d6c81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Coruh::LanguageTranslator::LanguageTranslatorApp::translatePhrase</definition>
+        <argsstring>(const std::string &amp;phrase)</argsstring>
+        <name>translatePhrase</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::translatePhrase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>phrase</declname>
+        </param>
+        <briefdescription>
+<para>Kalıp/ifade çevirir. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="69" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1aed85d51b8fae05cd2ace0c6166b0e300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::setSourceLanguage</definition>
+        <argsstring>(const std::string &amp;language)</argsstring>
+        <name>setSourceLanguage</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::setSourceLanguage</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Kaynak dili ayarlar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="73" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1aca0a3b739bf7a53e92616b62f838d813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::setTargetLanguage</definition>
+        <argsstring>(const std::string &amp;language)</argsstring>
+        <name>setTargetLanguage</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::setTargetLanguage</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Hedef dili ayarlar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="75" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a98320f1bf6b3b67151deef4f18e79a10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; Coruh::LanguageTranslator::LanguageTranslatorApp::getSupportedLanguages</definition>
+        <argsstring>() const</argsstring>
+        <name>getSupportedLanguages</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::getSupportedLanguages</qualifiedname>
+        <briefdescription>
+<para>Desteklenen dilleri döndürür. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="77" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a974f8dcd015f7218cbcb08f86e540c72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::showLanguageSelection</definition>
+        <argsstring>()</argsstring>
+        <name>showLanguageSelection</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::showLanguageSelection</qualifiedname>
+        <briefdescription>
+<para>Dil seçim ekranını gösterir. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="79" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1af4d3d14b521b942497457d78b58cef5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::addLanguage</definition>
+        <argsstring>(const std::string &amp;language)</argsstring>
+        <name>addLanguage</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::addLanguage</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Yeni dil ekler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="81" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1aebb1a131807481ffd3a86e81ba5d7149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Coruh::LanguageTranslator::LanguageTranslatorApp::login</definition>
+        <argsstring>(const std::string &amp;username, const std::string &amp;password)</argsstring>
+        <name>login</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::login</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Kullanıcı girişi. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="85" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a1db0ba24cc5bb600bb0492759b56d688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Coruh::LanguageTranslator::LanguageTranslatorApp::registerUser</definition>
+        <argsstring>(const std::string &amp;username, const std::string &amp;password)</argsstring>
+        <name>registerUser</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::registerUser</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Kullanıcı kaydı. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="87" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1ae996bcbc37b5ebeff7fc5f23846599e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::logout</definition>
+        <argsstring>()</argsstring>
+        <name>logout</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::logout</qualifiedname>
+        <briefdescription>
+<para>Oturumu kapatır. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="89" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1aae8aef776e538e0e04307f7cbb19cfff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Coruh::LanguageTranslator::LanguageTranslatorApp::isUserLoggedIn</definition>
+        <argsstring>() const</argsstring>
+        <name>isUserLoggedIn</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::isUserLoggedIn</qualifiedname>
+        <briefdescription>
+<para>Kullanıcı oturum durumunu döndürür. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="91" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a4ed5d4c536368652ce1f4aa83b5a4d16" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; Coruh::LanguageTranslator::LanguageTranslatorApp::currentUsername</definition>
+        <argsstring>() const</argsstring>
+        <name>currentUsername</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::currentUsername</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="92" column="31" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a177ebb8e7174eb7c7a46baa2b38b8ff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::showPhraseLibrary</definition>
+        <argsstring>()</argsstring>
+        <name>showPhraseLibrary</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::showPhraseLibrary</qualifiedname>
+        <briefdescription>
+<para>Kalıp sözlüğü ekranı. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="96" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a8d954ac80aa0a6f317f5ae02a3ad8b0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::addPhrase</definition>
+        <argsstring>(const std::string &amp;phrase, const std::string &amp;category)</argsstring>
+        <name>addPhrase</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::addPhrase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>phrase</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+<para>Genel ifade ekler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="98" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1abe5d9934ae504bc8e977d5fcb74e3e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::showLearningTips</definition>
+        <argsstring>()</argsstring>
+        <name>showLearningTips</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::showLearningTips</qualifiedname>
+        <briefdescription>
+<para>Öğrenme ipuçlarını listeler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="102" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1ac09aa2c01d5c7029c3b8526361e9c040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::addLearningTip</definition>
+        <argsstring>(const std::string &amp;tip)</argsstring>
+        <name>addLearningTip</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::addLearningTip</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tip</declname>
+        </param>
+        <briefdescription>
+<para>Öğrenme ipucu ekler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="104" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a436167beacce45319adb33c3ad2f49dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::showPronunciationGuide</definition>
+        <argsstring>()</argsstring>
+        <name>showPronunciationGuide</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::showPronunciationGuide</qualifiedname>
+        <briefdescription>
+<para>Telaffuz rehberini listeler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="108" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a464e4097673d02dbc9d1d61d30c0cf1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::addPronunciation</definition>
+        <argsstring>(const std::string &amp;word, const std::string &amp;guide)</argsstring>
+        <name>addPronunciation</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::addPronunciation</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>guide</declname>
+        </param>
+        <briefdescription>
+<para>Telaffuz girdisi ekler/günceller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="110" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a9727ff9c9b9e0a81caeb2ce2e5ad7c62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::showHistory</definition>
+        <argsstring>() const</argsstring>
+        <name>showHistory</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::showHistory</qualifiedname>
+        <briefdescription>
+<para>Çeviri geçmişini listeler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="114" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a36fcb69508cf44869a22b2ea9a7b4463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::clearHistory</definition>
+        <argsstring>()</argsstring>
+        <name>clearHistory</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::clearHistory</qualifiedname>
+        <briefdescription>
+<para>Çeviri geçmişini temizler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="116" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1ac18f153739e7fb96366885f3aaf2458e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::initializeDefaultData</definition>
+        <argsstring>()</argsstring>
+        <name>initializeDefaultData</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::initializeDefaultData</qualifiedname>
+        <briefdescription>
+<para>Varsayılan verilerle başlatır. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="120" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a35984ddf5a72e84559b8961f4f7c33ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::saveData</definition>
+        <argsstring>()</argsstring>
+        <name>saveData</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::saveData</qualifiedname>
+        <briefdescription>
+<para>Verileri kalıcı depoya yazar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="122" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a83daac67d1d81e4c07ac792b7ce1e793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::loadData</definition>
+        <argsstring>()</argsstring>
+        <name>loadData</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::loadData</qualifiedname>
+        <briefdescription>
+<para>Verileri kalıcı depodan okur. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="124" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1adddfb15e169da4105623cb2162d7f3ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Coruh::LanguageTranslator::LanguageTranslatorApp::loadDictionaryFromFile</definition>
+        <argsstring>(const std::string &amp;sourceLang, const std::string &amp;targetLang, const std::string &amp;filename)</argsstring>
+        <name>loadDictionaryFromFile</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::loadDictionaryFromFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sourceLang</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>targetLang</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Dosyadan sözlük yükler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="128" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1aa3f57c2f13453169c28cf1cb43e913df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::loadAllDictionaries</definition>
+        <argsstring>()</argsstring>
+        <name>loadAllDictionaries</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::loadAllDictionaries</qualifiedname>
+        <briefdescription>
+<para>Tüm sözlükleri yükler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="130" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1acd8648d60bbb51b35c35ffd92bb7537d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Coruh::LanguageTranslator::LanguageTranslatorApp::translateWithGoogleAPI</definition>
+        <argsstring>(const std::string &amp;text, const std::string &amp;sourceLang, const std::string &amp;targetLang)</argsstring>
+        <name>translateWithGoogleAPI</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::translateWithGoogleAPI</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sourceLang</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>targetLang</declname>
+        </param>
+        <briefdescription>
+<para>Google API ile çeviri (stub). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="134" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a42d55ad7d00fd049ec011b6b1c3d6a82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Coruh::LanguageTranslator::LanguageTranslatorApp::translateWithMicrosoftAPI</definition>
+        <argsstring>(const std::string &amp;text, const std::string &amp;sourceLang, const std::string &amp;targetLang)</argsstring>
+        <name>translateWithMicrosoftAPI</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::translateWithMicrosoftAPI</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sourceLang</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>targetLang</declname>
+        </param>
+        <briefdescription>
+<para>Microsoft API ile çeviri (stub). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="136" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1a9a2fc7b204faa69f23cbd8f157034468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Coruh::LanguageTranslator::LanguageTranslatorApp::isAPIAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>isAPIAvailable</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::isAPIAvailable</qualifiedname>
+        <briefdescription>
+<para>API kullanılabilirliği. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="138" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1af72ea9779aaca24d309641702b436c27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::setAPIKey</definition>
+        <argsstring>(const std::string &amp;key)</argsstring>
+        <name>setAPIKey</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::setAPIKey</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>API anahtarını ayarlar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="140" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1_language_translator_1_1_language_translator_app_1aa762886a074c30304b426dc66f109474" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coruh::LanguageTranslator::LanguageTranslatorApp::setAPIMode</definition>
+        <argsstring>(bool useAPI)</argsstring>
+        <name>setAPIMode</name>
+        <qualifiedname>Coruh::LanguageTranslator::LanguageTranslatorApp::setAPIMode</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>useAPI</declname>
+        </param>
+        <briefdescription>
+<para>API modunu aç/kapatır. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="142" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Uygulama akışını yöneten ana sınıf. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Coruh::LanguageTranslator::LanguageTranslatorApp</label>
+        <link refid="class_coruh_1_1_language_translator_1_1_language_translator_app"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" line="24" column="9" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h" bodystart="25" bodyend="143"/>
+    <listofallmembers>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1af4d3d14b521b942497457d78b58cef5a" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>addLanguage</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1ac09aa2c01d5c7029c3b8526361e9c040" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>addLearningTip</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a8d954ac80aa0a6f317f5ae02a3ad8b0c" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>addPhrase</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a464e4097673d02dbc9d1d61d30c0cf1f" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>addPronunciation</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1ab556b1acd8839185a6c192f99e02af41" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>apiKey</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1ad46434785f1b6afdfa47bac0de531d87" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>apiProvider</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a36fcb69508cf44869a22b2ea9a7b4463" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>clearHistory</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1ad3088b49ed2da98352dce4cb4f810f2c" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>commonPhrases</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1aa86b1cad9a69fa6362942d33211a2f0f" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>currentSourceLanguage</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1adc41b2365e79a4e7320db409d4aa9465" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>currentTargetLanguage</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a14f59f9002016c487ab842d1fdb92249" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>currentUser</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a4ed5d4c536368652ce1f4aa83b5a4d16" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>currentUsername</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a98320f1bf6b3b67151deef4f18e79a10" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>getSupportedLanguages</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a8cfaed25014b5dbff221e2557d407f4d" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>handleUserChoice</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a71f9662143bf653bb8c710907e6ba9aa" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>history</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1ac18f153739e7fb96366885f3aaf2458e" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>initializeDefaultData</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a9a2fc7b204faa69f23cbd8f157034468" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>isAPIAvailable</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1aa772f5be7d7d1df3e596e8c704d9f0e0" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>isLoggedIn</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1aae8aef776e538e0e04307f7cbb19cfff" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>isUserLoggedIn</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a5ed617b4a1ba48b54035061d7f080abf" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>LanguageTranslatorApp</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1ada5694e5267fa92812eaaab6cccec4f6" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>learningTips</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1aa3f57c2f13453169c28cf1cb43e913df" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>loadAllDictionaries</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a83daac67d1d81e4c07ac792b7ce1e793" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>loadData</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1adddfb15e169da4105623cb2162d7f3ec" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>loadDictionaryFromFile</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1aebb1a131807481ffd3a86e81ba5d7149" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>login</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1ae996bcbc37b5ebeff7fc5f23846599e6" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>logout</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1ad77f7e667c879392de1c7f0eb9118ff5" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>phraseDictionaries</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1afae3e92a5ef6e8924eb5b8833084a236" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>pronunciationGuide</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a1db0ba24cc5bb600bb0492759b56d688" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>registerUser</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a3c58319ebc4b52530f96df35244e6766" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>run</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a35984ddf5a72e84559b8961f4f7c33ad" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>saveData</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1af72ea9779aaca24d309641702b436c27" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>setAPIKey</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1aa762886a074c30304b426dc66f109474" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>setAPIMode</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1aed85d51b8fae05cd2ace0c6166b0e300" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>setSourceLanguage</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1aca0a3b739bf7a53e92616b62f838d813" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>setTargetLanguage</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a9727ff9c9b9e0a81caeb2ce2e5ad7c62" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>showHistory</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a974f8dcd015f7218cbcb08f86e540c72" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>showLanguageSelection</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1abe5d9934ae504bc8e977d5fcb74e3e0f" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>showLearningTips</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a1e44c8c1f7023908862900efb5bb7bff" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>showMainMenu</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a177ebb8e7174eb7c7a46baa2b38b8ff8" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>showPhraseLibrary</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a436167beacce45319adb33c3ad2f49dc" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>showPronunciationGuide</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a13f5460748a50ab69dc4350032ab068b" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>supportedLanguages</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a06a91752cc8178f227d69060cf1d6c81" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>translatePhrase</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a03ad354d985ea9953caeb220ba353675" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>translateText</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1acd8648d60bbb51b35c35ffd92bb7537d" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>translateWithGoogleAPI</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a42d55ad7d00fd049ec011b6b1c3d6a82" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>translateWithMicrosoftAPI</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1afd506854467cc68e7a55c7f9ccb4d3c1" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>translateWord</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1a4899e421750407b3ffb82f527b7a20ed" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>useAPI</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1ad7cb4a75dca18dd35ed64990ecca6ddf" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>users</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1ac5dec0ba10b797cf38f934361b76a65f" prot="private" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>wordDictionaries</name></member>
+      <member refid="class_coruh_1_1_language_translator_1_1_language_translator_app_1aa7130212453aa19ff70bd2854aaf0846" prot="public" virt="non-virtual"><scope>Coruh::LanguageTranslator::LanguageTranslatorApp</scope><name>~LanguageTranslatorApp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

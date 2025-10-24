@@ -89,7 +89,7 @@
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;translator/codegen.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;translator/cfg.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7" refid="test__lexer__parser__codegen_8cpp_1adf30c99a234f3dc66c477bb34f44466d" refkind="member"><highlight class="normal"><ref refid="test__lexer__parser__codegen_8cpp_1adf30c99a234f3dc66c477bb34f44466d" kindref="member">TEST</ref>(LexerParser,<sp/>BasicProgramParse){</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">TEST(LexerParser,<sp/>BasicProgramParse){</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/>R</highlight><highlight class="stringliteral">&quot;(10<sp/>LET<sp/>X<sp/>=<sp/>1<sp/>+<sp/>2</highlight></codeline>
 <codeline lineno="9"><highlight class="stringliteral">20<sp/>PRINT<sp/>X</highlight></codeline>
 <codeline lineno="10"><highlight class="stringliteral">30<sp/>IF<sp/>X<sp/>THEN<sp/>50</highlight></codeline>
@@ -106,14 +106,14 @@
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_EQ(prog.labels.front(),<sp/>10);</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_EQ(prog.labels.back(),<sp/>70);</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24" refid="test__lexer__parser__codegen_8cpp_1a2db3c295f5f7cc3059ada17fe2e34689" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CFG<sp/>build<sp/>and<sp/>reachability</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CFG<sp/>build<sp/>and<sp/>reachability</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cfg<sp/>=<sp/>translator::build_cfg(prog);</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dist<sp/>=<sp/>cfg.g.bfs_dist(0);</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ensure<sp/>start<sp/>is<sp/>reachable<sp/>and<sp/>some<sp/>edges<sp/>exist</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(dist[0],<sp/>0);</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><ref refid="test__lexer__parser__codegen_8cpp_1adf30c99a234f3dc66c477bb34f44466d" kindref="member">TEST</ref>(Codegen,<sp/>EmitsCPP){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">TEST(Codegen,<sp/>EmitsCPP){</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src<sp/>=<sp/>R</highlight><highlight class="stringliteral">&quot;(10<sp/>LET<sp/>X<sp/>=<sp/>1<sp/>+<sp/>2<sp/>*<sp/>3</highlight></codeline>
 <codeline lineno="33"><highlight class="stringliteral">20<sp/>PRINT<sp/>X</highlight></codeline>
 <codeline lineno="34"><highlight class="stringliteral">)&quot;;</highlight></codeline>

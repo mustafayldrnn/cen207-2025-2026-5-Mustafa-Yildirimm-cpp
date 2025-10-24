@@ -1,6 +1,6 @@
 \doxysection{test\+\_\+translator\+\_\+additional.\+cpp}
 \hypertarget{test__translator__additional_8cpp_source}{}\label{test__translator__additional_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_translator\_additional.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_translator\_additional.cpp}}
-\mbox{\hyperlink{test__translator__additional_8cpp}{Go to the documentation of this file.}}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00001}00001\ \textcolor{comment}{//\ Ek\ kapsama:\ parser\ hata\ yolları,\ otomatik\ etiketler\ ve\ codegen\ dalları}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00002}00002\ \textcolor{comment}{//\ Bu\ testler,\ lexer/parser/codegen\ için\ eksik\ kalan\ akışları\ hedefler.}}
@@ -22,7 +22,7 @@
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{keywordflow}{return}\ ps.parseProgram();}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00019}00019\ \}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00020}00020\ }
-\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00021}\mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{00021}}\ \mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}}(ParserErrors,\ MissingRParen)\{}
+\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00021}00021\ TEST(ParserErrors,\ MissingRParen)\{}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src\ =\ \textcolor{stringliteral}{"{}10\ PRINT\ (1\ +\ 2\(\backslash\)n"{}};\ \textcolor{comment}{//\ ')'\ eksik}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00023}00023\ \ \ \ \ Lexer\ lx(src);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ lx.tokenize();}
@@ -30,7 +30,7 @@
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00026}00026\ \ \ \ \ EXPECT\_THROW((\textcolor{keywordtype}{void})ps.parseProgram(),\ std::runtime\_error);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00027}00027\ \}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00028}00028\ }
-\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00029}\mbox{\hyperlink{test__translator__additional_8cpp_a58eeba6a901b6ce031a9adf726aa6f17}{00029}}\ \mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}}(ParserErrors,\ UnknownStatement)\{}
+\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00029}00029\ TEST(ParserErrors,\ UnknownStatement)\{}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src\ =\ \textcolor{stringliteral}{"{}10\ FOOBAR\(\backslash\)n"{}};\ \textcolor{comment}{//\ desteklenmeyen\ ifade}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00031}00031\ \ \ \ \ Lexer\ lx(src);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ lx.tokenize();}
@@ -38,7 +38,7 @@
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00034}00034\ \ \ \ \ EXPECT\_THROW((\textcolor{keywordtype}{void})ps.parseProgram(),\ std::runtime\_error);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00035}00035\ \}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00036}00036\ }
-\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00037}\mbox{\hyperlink{test__translator__additional_8cpp_a5e01015d67e43affd1e6ac2198deeb5f}{00037}}\ \mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}}(ParserErrors,\ LetMissingAssign)\{}
+\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00037}00037\ TEST(ParserErrors,\ LetMissingAssign)\{}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src\ =\ \textcolor{stringliteral}{"{}10\ LET\ X\ 5\(\backslash\)n"{}};\ \textcolor{comment}{//\ '='\ eksik}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00039}00039\ \ \ \ \ Lexer\ lx(src);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ lx.tokenize();}
@@ -46,7 +46,7 @@
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00042}00042\ \ \ \ \ EXPECT\_THROW((\textcolor{keywordtype}{void})ps.parseProgram(),\ std::runtime\_error);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00043}00043\ \}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00044}00044\ }
-\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00045}\mbox{\hyperlink{test__translator__additional_8cpp_af53a37441ac6ee09fb1973b0fccb3bea}{00045}}\ \mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}}(ParserErrors,\ InputNeedsIdentifier)\{}
+\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00045}00045\ TEST(ParserErrors,\ InputNeedsIdentifier)\{}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src\ =\ \textcolor{stringliteral}{"{}10\ INPUT\ 123\(\backslash\)n"{}};}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00047}00047\ \ \ \ \ Lexer\ lx(src);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ lx.tokenize();}
@@ -54,7 +54,7 @@
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00050}00050\ \ \ \ \ EXPECT\_THROW((\textcolor{keywordtype}{void})ps.parseProgram(),\ std::runtime\_error);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00051}00051\ \}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00052}00052\ }
-\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00053}\mbox{\hyperlink{test__translator__additional_8cpp_a4ac96865b7fe2b0f8dcafb22e531ac3b}{00053}}\ \mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}}(ParserErrors,\ IfRequiresThen)\{}
+\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00053}00053\ TEST(ParserErrors,\ IfRequiresThen)\{}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src\ =\ \textcolor{stringliteral}{"{}10\ IF\ 1\ 20\(\backslash\)n"{}};\ \textcolor{comment}{//\ THEN\ eksik}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00055}00055\ \ \ \ \ Lexer\ lx(src);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ lx.tokenize();}
@@ -62,7 +62,7 @@
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00058}00058\ \ \ \ \ EXPECT\_THROW((\textcolor{keywordtype}{void})ps.parseProgram(),\ std::runtime\_error);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00059}00059\ \}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00060}00060\ }
-\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00061}\mbox{\hyperlink{test__translator__additional_8cpp_a2c2b01219fa918d1e27ef67bd0b70ce8}{00061}}\ \mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}}(ParserErrors,\ IfThenRequiresNumber)\{}
+\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00061}00061\ TEST(ParserErrors,\ IfThenRequiresNumber)\{}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00062}00062\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src\ =\ \textcolor{stringliteral}{"{}10\ IF\ 1\ THEN\ X\(\backslash\)n"{}};\ \textcolor{comment}{//\ sayı\ yerine\ kimlik}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00063}00063\ \ \ \ \ Lexer\ lx(src);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00064}00064\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ lx.tokenize();}
@@ -70,7 +70,7 @@
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00066}00066\ \ \ \ \ EXPECT\_THROW((\textcolor{keywordtype}{void})ps.parseProgram(),\ std::runtime\_error);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00067}00067\ \}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00068}00068\ }
-\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00069}\mbox{\hyperlink{test__translator__additional_8cpp_a1d4c7f9e64231d3818b91f504416a617}{00069}}\ \mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}}(ParserErrors,\ GotoRequiresNumber)\{}
+\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00069}00069\ TEST(ParserErrors,\ GotoRequiresNumber)\{}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00070}00070\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src\ =\ \textcolor{stringliteral}{"{}10\ GOTO\ X\(\backslash\)n"{}};}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00071}00071\ \ \ \ \ Lexer\ lx(src);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ lx.tokenize();}
@@ -78,7 +78,7 @@
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00074}00074\ \ \ \ \ EXPECT\_THROW((\textcolor{keywordtype}{void})ps.parseProgram(),\ std::runtime\_error);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00075}00075\ \}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00076}00076\ }
-\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00077}\mbox{\hyperlink{test__translator__additional_8cpp_a20a827b1d4c7d881b955e37b76465c6e}{00077}}\ \mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}}(ParserProgram,\ AutoLabelsWhenMissing)\{}
+\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00077}00077\ TEST(ParserProgram,\ AutoLabelsWhenMissing)\{}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00078}00078\ \ \ \ \ \textcolor{comment}{//\ Satır\ numarası\ yoksa\ 10,20,...\ üretir}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src\ =\ \textcolor{stringliteral}{"{}LET\ X\ =\ 1\(\backslash\)nPRINT\ X\(\backslash\)n"{}};}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00080}00080\ \ \ \ \ \textcolor{keyword}{auto}\ prog\ =\ parse\_program\_from(src);}
@@ -88,7 +88,7 @@
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00084}00084\ \ \ \ \ EXPECT\_EQ(prog.labels[1],\ 20);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00085}00085\ \}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00086}00086\ }
-\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00087}\mbox{\hyperlink{test__translator__additional_8cpp_a324f13166bedacba2a9f028f5e4e6f53}{00087}}\ \mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}}(Lexer,\ UnknownCharIsIgnored)\{}
+\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00087}00087\ TEST(Lexer,\ UnknownCharIsIgnored)\{}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00088}00088\ \ \ \ \ \textcolor{comment}{//\ '@'\ bilinmeyen\ —\ token\ üretilmeden\ atlanmalı}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00089}00089\ \ \ \ \ Lexer\ lx(\textcolor{stringliteral}{"{}10\ LET\ X\ =\ 1\ @\ 2\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{keyword}{auto}\ toks\ =\ lx.tokenize();}
@@ -98,7 +98,7 @@
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00094}00094\ \ \ \ \ EXPECT\_GE(number\_count,\ 2);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00095}00095\ \}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00096}00096\ }
-\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00097}\mbox{\hyperlink{test__translator__additional_8cpp_a5c1cdba96f253346ebc4f90039293ea6}{00097}}\ \mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}}(CodegenPaths,\ EmptyProgramReturnsEarly)\{}
+\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00097}00097\ TEST(CodegenPaths,\ EmptyProgramReturnsEarly)\{}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00098}00098\ \ \ \ \ \textcolor{comment}{//\ Boş\ program}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00099}00099\ \ \ \ \ Program\ p;\ \textcolor{comment}{//\ labels\ ve\ stmts\ boş}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00100}00100\ \ \ \ \ \textcolor{keyword}{auto}\ out\ =\ Codegen::emit\_cpp(p);}
@@ -106,7 +106,7 @@
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00102}00102\ \ \ \ \ EXPECT\_NE(out.find(\textcolor{stringliteral}{"{}return\ 0;"{}}),\ std::string::npos);}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00103}00103\ \}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00104}00104\ }
-\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00105}\mbox{\hyperlink{test__translator__additional_8cpp_a87666bc2c76582e15f883cb39424af64}{00105}}\ \mbox{\hyperlink{test__translator__additional_8cpp_ab4f8b86eeb7e109d3d6f656694e44181}{TEST}}(CodegenPaths,\ InputGotoIfGosubReturn)\{}
+\DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00105}00105\ TEST(CodegenPaths,\ InputGotoIfGosubReturn)\{}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00106}00106\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src\ =}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00107}00107\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}10\ INPUT\ X\(\backslash\)n"{}}}
 \DoxyCodeLine{\Hypertarget{test__translator__additional_8cpp_source_l00108}00108\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}20\ IF\ X\ THEN\ 40\(\backslash\)n"{}}}

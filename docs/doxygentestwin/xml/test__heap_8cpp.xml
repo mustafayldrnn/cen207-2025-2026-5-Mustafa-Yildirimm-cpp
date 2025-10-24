@@ -68,12 +68,12 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ds/heap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4" refid="test__heap_8cpp_1a08467fa2935a81ad6427c6c0928147e5" refkind="member"><highlight class="normal"><ref refid="test__heap_8cpp_1a08467fa2935a81ad6427c6c0928147e5" kindref="member">TEST</ref>(BinaryHeap,<sp/>PushPopOrder){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">TEST(BinaryHeap,<sp/>PushPopOrder){</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::BinaryHeap&lt;int&gt;<sp/>h;<sp/>h.push(3);<sp/>h.push(1);<sp/>h.push(5);<sp/>h.push(2);</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(h.top(),<sp/>5);<sp/>h.pop();<sp/>EXPECT_EQ(h.top(),<sp/>3);<sp/>h.pop();<sp/>EXPECT_EQ(h.top(),<sp/>2);</highlight></codeline>
 <codeline lineno="7"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9" refid="test__heap_8cpp_1a8e9659c45df2039715e015ec0fd8da27" refkind="member"><highlight class="normal"><ref refid="test__heap_8cpp_1a08467fa2935a81ad6427c6c0928147e5" kindref="member">TEST</ref>(BinaryHeap,<sp/>HeapSort){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">TEST(BinaryHeap,<sp/>HeapSort){</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>ds::BinaryHeap&lt;int&gt;<sp/>h;<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v:<sp/>{5,1,4,2,3})<sp/>h.push(v);</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sorted<sp/>=<sp/>h.heap_sort_copy();</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>max-heap,<sp/>heap_sort_copy<sp/>returns<sp/>descending</highlight><highlight class="normal"></highlight></codeline>

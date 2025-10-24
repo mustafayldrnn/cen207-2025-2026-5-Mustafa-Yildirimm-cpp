@@ -2,10 +2,9 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classtranslator_1_1_parser" kind="class" language="C++" prot="public">
     <compoundname>translator::Parser</compoundname>
-    <includes refid="parser_8h" local="no">parser.h</includes>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classtranslator_1_1_parser_1a656fd7ad404746f72905ea7ca9c96130" prot="private" static="no" mutable="no">
-        <type>const std::vector&lt; <ref refid="structtranslator_1_1_token" kindref="compound">Token</ref> &gt;</type>
+        <type>const std::vector&lt; Token &gt;</type>
         <definition>const std::vector&lt;Token&gt; translator::Parser::tokens_</definition>
         <argsstring></argsstring>
         <name>tokens_</name>
@@ -36,7 +35,7 @@
     </sectiondef>
     <sectiondef kind="private-func">
       <memberdef kind="function" id="classtranslator_1_1_parser_1a01eed9fe50c7b02223c8aaf8140b4649" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const <ref refid="structtranslator_1_1_token" kindref="compound">Token</ref> &amp;</type>
+        <type>const Token &amp;</type>
         <definition>const Token &amp; translator::Parser::peek</definition>
         <argsstring>() const</argsstring>
         <name>peek</name>
@@ -50,7 +49,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="14" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="14" bodyend="14"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1a454ea6c16f64db09d8d2b9987e1e4833" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const <ref refid="structtranslator_1_1_token" kindref="compound">Token</ref> &amp;</type>
+        <type>const Token &amp;</type>
         <definition>const Token &amp; translator::Parser::advance</definition>
         <argsstring>() const</argsstring>
         <name>advance</name>
@@ -70,7 +69,7 @@
         <name>match</name>
         <qualifiedname>translator::Parser::match</qualifiedname>
         <param>
-          <type><ref refid="namespacetranslator_1a0eb119efce2d20d6019adb661cd4c480" kindref="member">TokenType</ref></type>
+          <type>TokenType</type>
           <declname>t</declname>
         </param>
         <briefdescription>
@@ -96,7 +95,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="17" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="17" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1afd6a7894691a68ec5743314fef3a7f75" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::unique_ptr&lt; <ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref> &gt;</type>
+        <type>std::unique_ptr&lt; Expr &gt;</type>
         <definition>std::unique_ptr&lt; Expr &gt; translator::Parser::parse_expression</definition>
         <argsstring>() const</argsstring>
         <name>parse_expression</name>
@@ -110,7 +109,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="20" column="21" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="9" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1acfd7d04d3973badabd5a26214ed3c500" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::unique_ptr&lt; <ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref> &gt;</type>
+        <type>std::unique_ptr&lt; Expr &gt;</type>
         <definition>std::unique_ptr&lt; Expr &gt; translator::Parser::parse_term</definition>
         <argsstring>() const</argsstring>
         <name>parse_term</name>
@@ -124,7 +123,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="21" column="21" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="19" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1abb54531b779933acfd0c644dcd868b45" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::unique_ptr&lt; <ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref> &gt;</type>
+        <type>std::unique_ptr&lt; Expr &gt;</type>
         <definition>std::unique_ptr&lt; Expr &gt; translator::Parser::parse_factor</definition>
         <argsstring>() const</argsstring>
         <name>parse_factor</name>
@@ -138,7 +137,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="22" column="21" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="29" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1aec074fe4de2041a83946260a05780582" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::unique_ptr&lt; <ref refid="structtranslator_1_1_stmt" kindref="compound">Stmt</ref> &gt;</type>
+        <type>std::unique_ptr&lt; Stmt &gt;</type>
         <definition>std::unique_ptr&lt; Stmt &gt; translator::Parser::parse_statement</definition>
         <argsstring>(int &amp;outLabel) const</argsstring>
         <name>parse_statement</name>
@@ -164,7 +163,7 @@
         <name>Parser</name>
         <qualifiedname>translator::Parser::Parser</qualifiedname>
         <param>
-          <type>std::vector&lt; <ref refid="structtranslator_1_1_token" kindref="compound">Token</ref> &gt;</type>
+          <type>std::vector&lt; Token &gt;</type>
           <declname>toks</declname>
         </param>
         <briefdescription>
@@ -176,7 +175,7 @@
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="27" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="27" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1a119007cefb979b4071cd7313c0c31062" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structtranslator_1_1_program" kindref="compound">Program</ref></type>
+        <type>Program</type>
         <definition>Program translator::Parser::parseProgram</definition>
         <argsstring>() const</argsstring>
         <name>parseProgram</name>
@@ -197,7 +196,6 @@
     <collaborationgraph>
       <node id="1">
         <label>translator::Parser</label>
-        <link refid="classtranslator_1_1_parser"/>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="10" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="10" bodyend="29"/>

@@ -1,0 +1,562 @@
+\doxysection{test\+\_\+advanced\+\_\+coverage\+\_\+boost.\+cpp}
+\hypertarget{test__advanced__coverage__boost_8cpp_source}{}\label{test__advanced__coverage__boost_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_advanced\_coverage\_boost.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_advanced\_coverage\_boost.cpp}}
+\mbox{\hyperlink{test__advanced__coverage__boost_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00017}00017\ \textcolor{comment}{//\ Include\ all\ headers\ for\ comprehensive\ testing}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00018}00018\ \textcolor{preprocessor}{\#include\ "{}../src/SafeChronoCalculator.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00019}00019\ \textcolor{preprocessor}{\#include\ "{}../src/LanguageTranslator/header/LanguageTranslator.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00020}00020\ \textcolor{preprocessor}{\#include\ "{}../include/ds/doubly\_linked\_list.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00021}00021\ \textcolor{preprocessor}{\#include\ "{}../include/ds/graph.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00022}00022\ \textcolor{preprocessor}{\#include\ "{}../include/ds/hash\_table.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00023}00023\ \textcolor{preprocessor}{\#include\ "{}../include/ds/heap.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00024}00024\ \textcolor{preprocessor}{\#include\ "{}../include/ds/queue.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00025}00025\ \textcolor{preprocessor}{\#include\ "{}../include/ds/sparse\_matrix.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00026}00026\ \textcolor{preprocessor}{\#include\ "{}../include/ds/stack.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00027}00027\ \textcolor{preprocessor}{\#include\ "{}../include/ds/xor\_linked\_list.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00029}00029\ \textcolor{keyword}{using\ namespace\ }SafeChrono;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00030}00030\ \textcolor{keyword}{using\ namespace\ }Coruh::LanguageTranslator;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00031}00031\ \textcolor{keyword}{using\ namespace\ }ds;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00033}00033\ \textcolor{keyword}{class\ }AdvancedCoverageBoostTest\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00034}00034\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00035}00035\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Setup\ for\ each\ test}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00038}00038\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Cleanup\ after\ each\ test}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00041}00041\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00042}00042\ \};}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00044}00044\ \textcolor{comment}{//\ Test\ SafeChronoCalculator\ comprehensive\ coverage}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00045}00045\ TEST\_F(AdvancedCoverageBoostTest,\ TestSafeChronoCalculatorComprehensive)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{comment}{//\ Test\ all\ static\ methods\ with\ various\ parameters}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{keyword}{auto}\ result1\ =\ SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00048}00048\ \ \ \ \ EXPECT\_GE(result1.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00049}00049\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keyword}{auto}\ result2\ =\ SafeChronoCalculator::calculateFor10MHz(5000);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00051}00051\ \ \ \ \ EXPECT\_GE(result2.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00052}00052\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keyword}{auto}\ result3\ =\ SafeChronoCalculator::calculateFor24MHz(5000);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00054}00054\ \ \ \ \ EXPECT\_GE(result3.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00055}00055\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{comment}{//\ Test\ overflow\ detection\ with\ various\ values}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ overflow1\ =\ SafeChronoCalculator::wouldOverflow(1000,\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00058}00058\ \ \ \ \ EXPECT\_FALSE(overflow1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00059}00059\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{keywordtype}{bool}\ overflow2\ =\ SafeChronoCalculator::wouldOverflow(0,\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00061}00061\ \ \ \ \ EXPECT\_FALSE(overflow2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00062}00062\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00063}00063\ \ \ \ \ \textcolor{keywordtype}{bool}\ overflow3\ =\ SafeChronoCalculator::wouldOverflow(1000,\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00064}00064\ \ \ \ \ EXPECT\_FALSE(overflow3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00065}00065\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00066}00066\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ negative\ values}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{keywordtype}{bool}\ overflow4\ =\ SafeChronoCalculator::wouldOverflow(-\/1000,\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00068}00068\ \ \ \ \ EXPECT\_FALSE(overflow4);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00069}00069\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00070}00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ overflow5\ =\ SafeChronoCalculator::wouldOverflow(1000,\ -\/1000);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00071}00071\ \ \ \ \ EXPECT\_FALSE(overflow5);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00072}00072\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ large\ values}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00074}00074\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ largeValue\ =\ std::numeric\_limits<long\ long>::max()\ /\ 4;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ overflow6\ =\ SafeChronoCalculator::wouldOverflow(largeValue,\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00076}00076\ \ \ \ \ EXPECT\_TRUE(overflow6);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00077}00077\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00079}00079\ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ comprehensive\ coverage}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00080}00080\ TEST\_F(AdvancedCoverageBoostTest,\ TestLanguageTranslatorAppComprehensive)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00081}00081\ \ \ \ \ LanguageTranslatorApp\ app;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00082}00082\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00083}00083\ \ \ \ \ \textcolor{comment}{//\ Test\ all\ basic\ functions}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00084}00084\ \ \ \ \ EXPECT\_FALSE(app.isUserLoggedIn());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00085}00085\ \ \ \ \ EXPECT\_FALSE(app.isAPIAvailable());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00086}00086\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00087}00087\ \ \ \ \ \textcolor{comment}{//\ Test\ language\ management}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00088}00088\ \ \ \ \ app.setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00089}00089\ \ \ \ \ app.setTargetLanguage(\textcolor{stringliteral}{"{}Turkish"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00090}00090\ \ \ \ \ app.addLanguage(\textcolor{stringliteral}{"{}German"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00091}00091\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00092}00092\ \ \ \ \ \textcolor{comment}{//\ Test\ user\ management}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00093}00093\ \ \ \ \ EXPECT\_TRUE(app.registerUser(\textcolor{stringliteral}{"{}user1"{}},\ \textcolor{stringliteral}{"{}pass1"{}}));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00094}00094\ \ \ \ \ EXPECT\_TRUE(app.registerUser(\textcolor{stringliteral}{"{}user2"{}},\ \textcolor{stringliteral}{"{}pass2"{}}));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00095}00095\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00096}00096\ \ \ \ \ \textcolor{comment}{//\ Test\ login/logout}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00097}00097\ \ \ \ \ app.login(\textcolor{stringliteral}{"{}user1"{}},\ \textcolor{stringliteral}{"{}pass1"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00098}00098\ \ \ \ \ app.logout();}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00099}00099\ \ \ \ \ EXPECT\_FALSE(app.isUserLoggedIn());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00100}00100\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{comment}{//\ Test\ translation\ functions}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00102}00102\ \ \ \ \ std::string\ result1\ =\ app.translateWord(\textcolor{stringliteral}{"{}hello"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00103}00103\ \ \ \ \ EXPECT\_FALSE(result1.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00104}00104\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00105}00105\ \ \ \ \ std::string\ result2\ =\ app.translatePhrase(\textcolor{stringliteral}{"{}good\ morning"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00106}00106\ \ \ \ \ EXPECT\_FALSE(result2.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00107}00107\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00108}00108\ \ \ \ \ std::string\ result3\ =\ app.translateText(\textcolor{stringliteral}{"{}hello\ world"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00109}00109\ \ \ \ \ EXPECT\_FALSE(result3.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00110}00110\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00111}00111\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ empty\ inputs}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00112}00112\ \ \ \ \ std::string\ result4\ =\ app.translateWord(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00113}00113\ \ \ \ \ EXPECT\_TRUE(result4.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00114}00114\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00115}00115\ \ \ \ \ std::string\ result5\ =\ app.translatePhrase(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00116}00116\ \ \ \ \ EXPECT\_TRUE(result5.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00117}00117\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00118}00118\ \ \ \ \ std::string\ result6\ =\ app.translateText(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00119}00119\ \ \ \ \ EXPECT\_TRUE(result6.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00120}00120\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00121}00121\ \ \ \ \ \textcolor{comment}{//\ Test\ phrase\ library}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00122}00122\ \ \ \ \ app.addPhrase(\textcolor{stringliteral}{"{}Hello,\ how\ are\ you?"{}},\ \textcolor{stringliteral}{"{}greetings"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00123}00123\ \ \ \ \ app.addPhrase(\textcolor{stringliteral}{"{}Thank\ you\ very\ much"{}},\ \textcolor{stringliteral}{"{}politeness"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00124}00124\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00125}00125\ \ \ \ \ \textcolor{comment}{//\ Test\ learning\ tips}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00126}00126\ \ \ \ \ app.addLearningTip(\textcolor{stringliteral}{"{}Practice\ daily"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00127}00127\ \ \ \ \ app.addLearningTip(\textcolor{stringliteral}{"{}Use\ flashcards"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00128}00128\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00129}00129\ \ \ \ \ \textcolor{comment}{//\ Test\ pronunciation\ guide}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00130}00130\ \ \ \ \ app.addPronunciation(\textcolor{stringliteral}{"{}hello"{}},\ \textcolor{stringliteral}{"{}heh-\/LOH"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00131}00131\ \ \ \ \ app.addPronunciation(\textcolor{stringliteral}{"{}world"{}},\ \textcolor{stringliteral}{"{}wurld"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00132}00132\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00133}00133\ \ \ \ \ \textcolor{comment}{//\ Test\ API\ functions}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00134}00134\ \ \ \ \ app.setAPIKey(\textcolor{stringliteral}{"{}test-\/key"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00135}00135\ \ \ \ \ app.setAPIMode(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00136}00136\ \ \ \ \ app.setAPIMode(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00137}00137\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00138}00138\ \ \ \ \ std::string\ apiResult1\ =\ app.translateWithGoogleAPI(\textcolor{stringliteral}{"{}hello"{}},\ \textcolor{stringliteral}{"{}en"{}},\ \textcolor{stringliteral}{"{}tr"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00139}00139\ \ \ \ \ EXPECT\_TRUE(apiResult1.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00140}00140\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00141}00141\ \ \ \ \ std::string\ apiResult2\ =\ app.translateWithMicrosoftAPI(\textcolor{stringliteral}{"{}hello"{}},\ \textcolor{stringliteral}{"{}en"{}},\ \textcolor{stringliteral}{"{}tr"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00142}00142\ \ \ \ \ EXPECT\_TRUE(apiResult2.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00143}00143\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00144}00144\ \ \ \ \ \textcolor{comment}{//\ Test\ data\ management}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00145}00145\ \ \ \ \ EXPECT\_NO\_THROW(app.initializeDefaultData());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00146}00146\ \ \ \ \ EXPECT\_NO\_THROW(app.saveData());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00147}00147\ \ \ \ \ EXPECT\_NO\_THROW(app.loadData());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00148}00148\ \ \ \ \ EXPECT\_NO\_THROW(app.loadAllDictionaries());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00149}00149\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00150}00150\ \ \ \ \ \textcolor{comment}{//\ Test\ menu\ handling}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00151}00151\ \ \ \ \ EXPECT\_NO\_THROW(app.handleUserChoice(0));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00152}00152\ \ \ \ \ EXPECT\_NO\_THROW(app.handleUserChoice(1));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00153}00153\ \ \ \ \ EXPECT\_NO\_THROW(app.handleUserChoice(2));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00154}00154\ \ \ \ \ EXPECT\_NO\_THROW(app.handleUserChoice(3));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00155}00155\ \ \ \ \ EXPECT\_NO\_THROW(app.handleUserChoice(4));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00156}00156\ \ \ \ \ EXPECT\_NO\_THROW(app.handleUserChoice(5));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00157}00157\ \ \ \ \ EXPECT\_NO\_THROW(app.handleUserChoice(6));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00158}00158\ \ \ \ \ EXPECT\_NO\_THROW(app.handleUserChoice(99));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00159}00159\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00160}00160\ \ \ \ \ \textcolor{comment}{//\ Test\ display\ functions}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00161}00161\ \ \ \ \ EXPECT\_NO\_THROW(app.showLanguageSelection());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00162}00162\ \ \ \ \ EXPECT\_NO\_THROW(app.showPhraseLibrary());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00163}00163\ \ \ \ \ EXPECT\_NO\_THROW(app.showLearningTips());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00164}00164\ \ \ \ \ EXPECT\_NO\_THROW(app.showPronunciationGuide());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00165}00165\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00167}00167\ \textcolor{comment}{//\ Test\ DoublyLinkedList\ comprehensive\ coverage}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00168}00168\ TEST\_F(AdvancedCoverageBoostTest,\ TestDoublyLinkedListComprehensive)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00169}00169\ \ \ \ \ DoublyLinkedList<int>\ list;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00170}00170\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00171}00171\ \ \ \ \ \textcolor{comment}{//\ Test\ empty\ list}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00172}00172\ \ \ \ \ EXPECT\_TRUE(list.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00173}00173\ \ \ \ \ EXPECT\_EQ(list.size(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00174}00174\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00175}00175\ \ \ \ \ \textcolor{comment}{//\ Test\ insertion}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00176}00176\ \ \ \ \ list.insertAtBeginning(1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00177}00177\ \ \ \ \ list.insertAtEnd(2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00178}00178\ \ \ \ \ list.insertAtPosition(1,\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00179}00179\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00180}00180\ \ \ \ \ EXPECT\_FALSE(list.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00181}00181\ \ \ \ \ EXPECT\_EQ(list.size(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00182}00182\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00183}00183\ \ \ \ \ \textcolor{comment}{//\ Test\ traversal}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00184}00184\ \ \ \ \ std::vector<int>\ elements;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00185}00185\ \ \ \ \ list.traverse([\&elements](\textcolor{keywordtype}{int}\ value)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00186}00186\ \ \ \ \ \ \ \ \ elements.push\_back(value);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00187}00187\ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00188}00188\ \ \ \ \ EXPECT\_EQ(elements.size(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00189}00189\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00190}00190\ \ \ \ \ \textcolor{comment}{//\ Test\ search}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00191}00191\ \ \ \ \ EXPECT\_TRUE(list.search(1));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00192}00192\ \ \ \ \ EXPECT\_TRUE(list.search(2));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00193}00193\ \ \ \ \ EXPECT\_TRUE(list.search(3));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00194}00194\ \ \ \ \ EXPECT\_FALSE(list.search(4));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00195}00195\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00196}00196\ \ \ \ \ \textcolor{comment}{//\ Test\ deletion}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00197}00197\ \ \ \ \ list.deleteFromBeginning();}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00198}00198\ \ \ \ \ EXPECT\_EQ(list.size(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00199}00199\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00200}00200\ \ \ \ \ list.deleteFromEnd();}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00201}00201\ \ \ \ \ EXPECT\_EQ(list.size(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00202}00202\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00203}00203\ \ \ \ \ list.deleteFromPosition(0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00204}00204\ \ \ \ \ EXPECT\_TRUE(list.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00205}00205\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00206}00206\ \ \ \ \ \textcolor{comment}{//\ Test\ edge\ cases}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00207}00207\ \ \ \ \ EXPECT\_THROW(list.deleteFromBeginning(),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00208}00208\ \ \ \ \ EXPECT\_THROW(list.deleteFromEnd(),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00209}00209\ \ \ \ \ EXPECT\_THROW(list.deleteFromPosition(0),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00210}00210\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00211}00211\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00212}00212\ \textcolor{comment}{//\ Test\ Graph\ comprehensive\ coverage}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00213}00213\ TEST\_F(AdvancedCoverageBoostTest,\ TestGraphComprehensive)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00214}00214\ \ \ \ \ Graph<int>\ graph(5);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00215}00215\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00216}00216\ \ \ \ \ \textcolor{comment}{//\ Test\ adding\ edges}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00217}00217\ \ \ \ \ graph.addEdge(0,\ 1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00218}00218\ \ \ \ \ graph.addEdge(1,\ 2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00219}00219\ \ \ \ \ graph.addEdge(2,\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00220}00220\ \ \ \ \ graph.addEdge(3,\ 4);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00221}00221\ \ \ \ \ graph.addEdge(4,\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00222}00222\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00223}00223\ \ \ \ \ \textcolor{comment}{//\ Test\ BFS}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00224}00224\ \ \ \ \ std::vector<int>\ bfsResult;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00225}00225\ \ \ \ \ graph.BFS(0,\ [\&bfsResult](\textcolor{keywordtype}{int}\ vertex)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00226}00226\ \ \ \ \ \ \ \ \ bfsResult.push\_back(vertex);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00227}00227\ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00228}00228\ \ \ \ \ EXPECT\_FALSE(bfsResult.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00229}00229\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00230}00230\ \ \ \ \ \textcolor{comment}{//\ Test\ DFS}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00231}00231\ \ \ \ \ std::vector<int>\ dfsResult;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00232}00232\ \ \ \ \ graph.DFS(0,\ [\&dfsResult](\textcolor{keywordtype}{int}\ vertex)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00233}00233\ \ \ \ \ \ \ \ \ dfsResult.push\_back(vertex);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00234}00234\ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00235}00235\ \ \ \ \ EXPECT\_FALSE(dfsResult.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00236}00236\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00237}00237\ \ \ \ \ \textcolor{comment}{//\ Test\ hasEdge}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00238}00238\ \ \ \ \ EXPECT\_TRUE(graph.hasEdge(0,\ 1));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00239}00239\ \ \ \ \ EXPECT\_TRUE(graph.hasEdge(1,\ 2));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00240}00240\ \ \ \ \ EXPECT\_FALSE(graph.hasEdge(0,\ 3));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00241}00241\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00242}00242\ \ \ \ \ \textcolor{comment}{//\ Test\ removeEdge}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00243}00243\ \ \ \ \ graph.removeEdge(0,\ 1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00244}00244\ \ \ \ \ EXPECT\_FALSE(graph.hasEdge(0,\ 1));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00245}00245\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00246}00246\ \ \ \ \ \textcolor{comment}{//\ Test\ getNeighbors}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00247}00247\ \ \ \ \ \textcolor{keyword}{auto}\ neighbors\ =\ graph.getNeighbors(1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00248}00248\ \ \ \ \ EXPECT\_FALSE(neighbors.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00249}00249\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00250}00250\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00251}00251\ \textcolor{comment}{//\ Test\ HashTable\ comprehensive\ coverage}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00252}00252\ TEST\_F(AdvancedCoverageBoostTest,\ TestHashTableComprehensive)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00253}00253\ \ \ \ \ HashTable<std::string,\ int>\ hashTable(10);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00254}00254\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00255}00255\ \ \ \ \ \textcolor{comment}{//\ Test\ insertion}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00256}00256\ \ \ \ \ hashTable.insert(\textcolor{stringliteral}{"{}key1"{}},\ 1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00257}00257\ \ \ \ \ hashTable.insert(\textcolor{stringliteral}{"{}key2"{}},\ 2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00258}00258\ \ \ \ \ hashTable.insert(\textcolor{stringliteral}{"{}key3"{}},\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00259}00259\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00260}00260\ \ \ \ \ \textcolor{comment}{//\ Test\ search}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00261}00261\ \ \ \ \ EXPECT\_TRUE(hashTable.search(\textcolor{stringliteral}{"{}key1"{}}));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00262}00262\ \ \ \ \ EXPECT\_TRUE(hashTable.search(\textcolor{stringliteral}{"{}key2"{}}));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00263}00263\ \ \ \ \ EXPECT\_TRUE(hashTable.search(\textcolor{stringliteral}{"{}key3"{}}));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00264}00264\ \ \ \ \ EXPECT\_FALSE(hashTable.search(\textcolor{stringliteral}{"{}key4"{}}));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00265}00265\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00266}00266\ \ \ \ \ \textcolor{comment}{//\ Test\ get}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00267}00267\ \ \ \ \ EXPECT\_EQ(hashTable.get(\textcolor{stringliteral}{"{}key1"{}}),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00268}00268\ \ \ \ \ EXPECT\_EQ(hashTable.get(\textcolor{stringliteral}{"{}key2"{}}),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00269}00269\ \ \ \ \ EXPECT\_EQ(hashTable.get(\textcolor{stringliteral}{"{}key3"{}}),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00270}00270\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00271}00271\ \ \ \ \ \textcolor{comment}{//\ Test\ update}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00272}00272\ \ \ \ \ hashTable.insert(\textcolor{stringliteral}{"{}key1"{}},\ 10);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00273}00273\ \ \ \ \ EXPECT\_EQ(hashTable.get(\textcolor{stringliteral}{"{}key1"{}}),\ 10);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00274}00274\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00275}00275\ \ \ \ \ \textcolor{comment}{//\ Test\ removal}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00276}00276\ \ \ \ \ hashTable.remove(\textcolor{stringliteral}{"{}key1"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00277}00277\ \ \ \ \ EXPECT\_FALSE(hashTable.search(\textcolor{stringliteral}{"{}key1"{}}));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00278}00278\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00279}00279\ \ \ \ \ \textcolor{comment}{//\ Test\ size}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00280}00280\ \ \ \ \ EXPECT\_EQ(hashTable.size(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00281}00281\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00282}00282\ \ \ \ \ \textcolor{comment}{//\ Test\ empty}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00283}00283\ \ \ \ \ EXPECT\_FALSE(hashTable.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00284}00284\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00285}00285\ \ \ \ \ \textcolor{comment}{//\ Test\ clear}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00286}00286\ \ \ \ \ hashTable.clear();}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00287}00287\ \ \ \ \ EXPECT\_TRUE(hashTable.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00288}00288\ \ \ \ \ EXPECT\_EQ(hashTable.size(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00289}00289\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00290}00290\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00291}00291\ \textcolor{comment}{//\ Test\ Heap\ comprehensive\ coverage}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00292}00292\ TEST\_F(AdvancedCoverageBoostTest,\ TestHeapComprehensive)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00293}00293\ \ \ \ \ Heap<int>\ heap;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00294}00294\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00295}00295\ \ \ \ \ \textcolor{comment}{//\ Test\ empty\ heap}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00296}00296\ \ \ \ \ EXPECT\_TRUE(heap.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00297}00297\ \ \ \ \ EXPECT\_EQ(heap.size(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00298}00298\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00299}00299\ \ \ \ \ \textcolor{comment}{//\ Test\ insertion}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00300}00300\ \ \ \ \ heap.insert(5);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00301}00301\ \ \ \ \ heap.insert(3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00302}00302\ \ \ \ \ heap.insert(8);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00303}00303\ \ \ \ \ heap.insert(1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00304}00304\ \ \ \ \ heap.insert(9);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00305}00305\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00306}00306\ \ \ \ \ EXPECT\_FALSE(heap.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00307}00307\ \ \ \ \ EXPECT\_EQ(heap.size(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00308}00308\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00309}00309\ \ \ \ \ \textcolor{comment}{//\ Test\ peek}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00310}00310\ \ \ \ \ EXPECT\_EQ(heap.peek(),\ 9);\ \textcolor{comment}{//\ Max\ heap}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00311}00311\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00312}00312\ \ \ \ \ \textcolor{comment}{//\ Test\ extraction}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00313}00313\ \ \ \ \ EXPECT\_EQ(heap.extractMax(),\ 9);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00314}00314\ \ \ \ \ EXPECT\_EQ(heap.extractMax(),\ 8);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00315}00315\ \ \ \ \ EXPECT\_EQ(heap.extractMax(),\ 5);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00316}00316\ \ \ \ \ EXPECT\_EQ(heap.extractMax(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00317}00317\ \ \ \ \ EXPECT\_EQ(heap.extractMax(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00318}00318\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00319}00319\ \ \ \ \ EXPECT\_TRUE(heap.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00320}00320\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00321}00321\ \ \ \ \ \textcolor{comment}{//\ Test\ edge\ cases}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00322}00322\ \ \ \ \ EXPECT\_THROW(heap.peek(),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00323}00323\ \ \ \ \ EXPECT\_THROW(heap.extractMax(),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00324}00324\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00325}00325\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00326}00326\ \textcolor{comment}{//\ Test\ Queue\ comprehensive\ coverage}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00327}00327\ TEST\_F(AdvancedCoverageBoostTest,\ TestQueueComprehensive)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00328}00328\ \ \ \ \ Queue<int>\ queue;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00329}00329\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00330}00330\ \ \ \ \ \textcolor{comment}{//\ Test\ empty\ queue}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00331}00331\ \ \ \ \ EXPECT\_TRUE(queue.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00332}00332\ \ \ \ \ EXPECT\_EQ(queue.size(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00333}00333\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00334}00334\ \ \ \ \ \textcolor{comment}{//\ Test\ enqueue}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00335}00335\ \ \ \ \ queue.enqueue(1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00336}00336\ \ \ \ \ queue.enqueue(2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00337}00337\ \ \ \ \ queue.enqueue(3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00338}00338\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00339}00339\ \ \ \ \ EXPECT\_FALSE(queue.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00340}00340\ \ \ \ \ EXPECT\_EQ(queue.size(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00341}00341\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00342}00342\ \ \ \ \ \textcolor{comment}{//\ Test\ front}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00343}00343\ \ \ \ \ EXPECT\_EQ(queue.front(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00344}00344\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00345}00345\ \ \ \ \ \textcolor{comment}{//\ Test\ dequeue}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00346}00346\ \ \ \ \ EXPECT\_EQ(queue.dequeue(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00347}00347\ \ \ \ \ EXPECT\_EQ(queue.dequeue(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00348}00348\ \ \ \ \ EXPECT\_EQ(queue.dequeue(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00349}00349\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00350}00350\ \ \ \ \ EXPECT\_TRUE(queue.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00351}00351\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00352}00352\ \ \ \ \ \textcolor{comment}{//\ Test\ edge\ cases}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00353}00353\ \ \ \ \ EXPECT\_THROW(queue.front(),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00354}00354\ \ \ \ \ EXPECT\_THROW(queue.dequeue(),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00355}00355\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00356}00356\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00357}00357\ \textcolor{comment}{//\ Test\ SparseMatrix\ comprehensive\ coverage}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00358}00358\ TEST\_F(AdvancedCoverageBoostTest,\ TestSparseMatrixComprehensive)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00359}00359\ \ \ \ \ SparseMatrix<int>\ matrix(5,\ 5,\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00360}00360\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00361}00361\ \ \ \ \ \textcolor{comment}{//\ Test\ empty\ matrix}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00362}00362\ \ \ \ \ EXPECT\_EQ(matrix.getNonZeroCount(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00363}00363\ \ \ \ \ EXPECT\_EQ(matrix.get(0,\ 0),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00364}00364\ \ \ \ \ EXPECT\_FALSE(matrix.hasValue(0,\ 0));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00365}00365\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00366}00366\ \ \ \ \ \textcolor{comment}{//\ Test\ setting\ values}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00367}00367\ \ \ \ \ matrix.set(1,\ 1,\ 10);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00368}00368\ \ \ \ \ matrix.set(2,\ 2,\ 20);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00369}00369\ \ \ \ \ matrix.set(3,\ 3,\ 30);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00370}00370\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00371}00371\ \ \ \ \ EXPECT\_EQ(matrix.getNonZeroCount(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00372}00372\ \ \ \ \ EXPECT\_EQ(matrix.get(1,\ 1),\ 10);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00373}00373\ \ \ \ \ EXPECT\_EQ(matrix.get(2,\ 2),\ 20);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00374}00374\ \ \ \ \ EXPECT\_EQ(matrix.get(3,\ 3),\ 30);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00375}00375\ \ \ \ \ EXPECT\_TRUE(matrix.hasValue(1,\ 1));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00376}00376\ \ \ \ \ EXPECT\_TRUE(matrix.hasValue(2,\ 2));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00377}00377\ \ \ \ \ EXPECT\_TRUE(matrix.hasValue(3,\ 3));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00378}00378\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00379}00379\ \ \ \ \ \textcolor{comment}{//\ Test\ removing\ values}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00380}00380\ \ \ \ \ matrix.remove(1,\ 1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00381}00381\ \ \ \ \ EXPECT\_EQ(matrix.getNonZeroCount(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00382}00382\ \ \ \ \ EXPECT\_FALSE(matrix.hasValue(1,\ 1));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00383}00383\ \ \ \ \ EXPECT\_EQ(matrix.get(1,\ 1),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00384}00384\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00385}00385\ \ \ \ \ \textcolor{comment}{//\ Test\ memory\ usage}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00386}00386\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ memoryUsage\ =\ matrix.getMemoryUsage();}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00387}00387\ \ \ \ \ EXPECT\_GT(memoryUsage,\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00388}00388\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00389}00389\ \ \ \ \ \textcolor{comment}{//\ Test\ getting\ all\ non-\/zero\ elements}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00390}00390\ \ \ \ \ \textcolor{keyword}{auto}\ nonZeroElements\ =\ matrix.getAllNonZero();}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00391}00391\ \ \ \ \ EXPECT\_EQ(nonZeroElements.size(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00392}00392\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00393}00393\ \ \ \ \ \textcolor{comment}{//\ Test\ out\ of\ bounds}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00394}00394\ \ \ \ \ EXPECT\_THROW(matrix.get(10,\ 10),\ std::out\_of\_range);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00395}00395\ \ \ \ \ EXPECT\_THROW(matrix.set(10,\ 10,\ 100),\ std::out\_of\_range);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00396}00396\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00397}00397\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00398}00398\ \textcolor{comment}{//\ Test\ Stack\ comprehensive\ coverage}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00399}00399\ TEST\_F(AdvancedCoverageBoostTest,\ TestStackComprehensive)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00400}00400\ \ \ \ \ Stack<int>\ stack;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00401}00401\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00402}00402\ \ \ \ \ \textcolor{comment}{//\ Test\ empty\ stack}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00403}00403\ \ \ \ \ EXPECT\_TRUE(stack.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00404}00404\ \ \ \ \ EXPECT\_EQ(stack.size(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00405}00405\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00406}00406\ \ \ \ \ \textcolor{comment}{//\ Test\ push}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00407}00407\ \ \ \ \ stack.push(1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00408}00408\ \ \ \ \ stack.push(2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00409}00409\ \ \ \ \ stack.push(3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00410}00410\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00411}00411\ \ \ \ \ EXPECT\_FALSE(stack.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00412}00412\ \ \ \ \ EXPECT\_EQ(stack.size(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00413}00413\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00414}00414\ \ \ \ \ \textcolor{comment}{//\ Test\ top}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00415}00415\ \ \ \ \ EXPECT\_EQ(stack.top(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00416}00416\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00417}00417\ \ \ \ \ \textcolor{comment}{//\ Test\ pop}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00418}00418\ \ \ \ \ EXPECT\_EQ(stack.pop(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00419}00419\ \ \ \ \ EXPECT\_EQ(stack.pop(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00420}00420\ \ \ \ \ EXPECT\_EQ(stack.pop(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00421}00421\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00422}00422\ \ \ \ \ EXPECT\_TRUE(stack.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00423}00423\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00424}00424\ \ \ \ \ \textcolor{comment}{//\ Test\ edge\ cases}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00425}00425\ \ \ \ \ EXPECT\_THROW(stack.top(),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00426}00426\ \ \ \ \ EXPECT\_THROW(stack.pop(),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00427}00427\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00428}00428\ \ \ \ \ \textcolor{comment}{//\ Test\ clear}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00429}00429\ \ \ \ \ stack.push(1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00430}00430\ \ \ \ \ stack.push(2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00431}00431\ \ \ \ \ stack.clear();}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00432}00432\ \ \ \ \ EXPECT\_TRUE(stack.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00433}00433\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00434}00434\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00435}00435\ \textcolor{comment}{//\ Test\ XORLinkedList\ comprehensive\ coverage}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00436}00436\ TEST\_F(AdvancedCoverageBoostTest,\ TestXORLinkedListComprehensive)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00437}00437\ \ \ \ \ XORLinkedList<int>\ list;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00438}00438\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00439}00439\ \ \ \ \ \textcolor{comment}{//\ Test\ empty\ list}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00440}00440\ \ \ \ \ EXPECT\_TRUE(list.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00441}00441\ \ \ \ \ EXPECT\_EQ(list.size(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00442}00442\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00443}00443\ \ \ \ \ \textcolor{comment}{//\ Test\ insertion}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00444}00444\ \ \ \ \ list.insertAtBeginning(1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00445}00445\ \ \ \ \ list.insertAtEnd(2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00446}00446\ \ \ \ \ list.insertAtPosition(1,\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00447}00447\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00448}00448\ \ \ \ \ EXPECT\_FALSE(list.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00449}00449\ \ \ \ \ EXPECT\_EQ(list.size(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00450}00450\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00451}00451\ \ \ \ \ \textcolor{comment}{//\ Test\ traversal}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00452}00452\ \ \ \ \ std::vector<int>\ elements;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00453}00453\ \ \ \ \ list.traverse([\&elements](\textcolor{keywordtype}{int}\ value)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00454}00454\ \ \ \ \ \ \ \ \ elements.push\_back(value);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00455}00455\ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00456}00456\ \ \ \ \ EXPECT\_EQ(elements.size(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00457}00457\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00458}00458\ \ \ \ \ \textcolor{comment}{//\ Test\ search}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00459}00459\ \ \ \ \ EXPECT\_TRUE(list.search(1));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00460}00460\ \ \ \ \ EXPECT\_TRUE(list.search(2));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00461}00461\ \ \ \ \ EXPECT\_TRUE(list.search(3));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00462}00462\ \ \ \ \ EXPECT\_FALSE(list.search(4));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00463}00463\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00464}00464\ \ \ \ \ \textcolor{comment}{//\ Test\ deletion}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00465}00465\ \ \ \ \ list.deleteFromBeginning();}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00466}00466\ \ \ \ \ EXPECT\_EQ(list.size(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00467}00467\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00468}00468\ \ \ \ \ list.deleteFromEnd();}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00469}00469\ \ \ \ \ EXPECT\_EQ(list.size(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00470}00470\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00471}00471\ \ \ \ \ list.deleteFromPosition(0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00472}00472\ \ \ \ \ EXPECT\_TRUE(list.isEmpty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00473}00473\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00474}00474\ \ \ \ \ \textcolor{comment}{//\ Test\ edge\ cases}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00475}00475\ \ \ \ \ EXPECT\_THROW(list.deleteFromBeginning(),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00476}00476\ \ \ \ \ EXPECT\_THROW(list.deleteFromEnd(),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00477}00477\ \ \ \ \ EXPECT\_THROW(list.deleteFromPosition(0),\ std::runtime\_error);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00478}00478\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00479}00479\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00480}00480\ \textcolor{comment}{//\ Test\ performance\ and\ stress\ testing}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00481}00481\ TEST\_F(AdvancedCoverageBoostTest,\ TestPerformanceStress)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00482}00482\ \ \ \ \ \textcolor{comment}{//\ Test\ SafeChronoCalculator\ performance}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00483}00483\ \ \ \ \ \textcolor{keyword}{auto}\ start\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00484}00484\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00485}00485\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <=\ 1000;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00486}00486\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ result\ =\ SafeChronoCalculator::safeCalculateDuration(i,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00487}00487\ \ \ \ \ \ \ \ \ EXPECT\_GE(result.count(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00488}00488\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00489}00489\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00490}00490\ \ \ \ \ \textcolor{keyword}{auto}\ end\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00491}00491\ \ \ \ \ \textcolor{keyword}{auto}\ duration\ =\ std::chrono::duration\_cast<std::chrono::milliseconds>(end\ -\/\ start);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00492}00492\ \ \ \ \ EXPECT\_LT(duration.count(),\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00493}00493\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00494}00494\ \ \ \ \ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ performance}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00495}00495\ \ \ \ \ LanguageTranslatorApp\ app;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00496}00496\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00497}00497\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 100;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00498}00498\ \ \ \ \ \ \ \ \ app.addPhrase(\textcolor{stringliteral}{"{}phrase\ "{}}\ +\ std::to\_string(i),\ \textcolor{stringliteral}{"{}category"{}}\ +\ std::to\_string(i\ \%\ 5));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00499}00499\ \ \ \ \ \ \ \ \ app.addLearningTip(\textcolor{stringliteral}{"{}tip\ "{}}\ +\ std::to\_string(i));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00500}00500\ \ \ \ \ \ \ \ \ app.addPronunciation(\textcolor{stringliteral}{"{}word"{}}\ +\ std::to\_string(i),\ \textcolor{stringliteral}{"{}pronunciation"{}}\ +\ std::to\_string(i));}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00501}00501\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00502}00502\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00503}00503\ \ \ \ \ EXPECT\_NO\_THROW(app.showPhraseLibrary());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00504}00504\ \ \ \ \ EXPECT\_NO\_THROW(app.showLearningTips());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00505}00505\ \ \ \ \ EXPECT\_NO\_THROW(app.showPronunciationGuide());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00506}00506\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00507}00507\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00508}00508\ \textcolor{comment}{//\ Test\ error\ handling\ and\ edge\ cases}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00509}00509\ TEST\_F(AdvancedCoverageBoostTest,\ TestErrorHandlingEdgeCases)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00510}00510\ \ \ \ \ \textcolor{comment}{//\ Test\ SafeChronoCalculator\ error\ handling}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00511}00511\ \ \ \ \ EXPECT\_THROW(SafeChronoCalculator::safeCalculateDuration(1000,\ 0,\ 1000000000),\ std::invalid\_argument);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00512}00512\ \ \ \ \ EXPECT\_THROW(SafeChronoCalculator::safeCalculateDuration(1000,\ -\/1000,\ 1000000000),\ std::invalid\_argument);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00513}00513\ \ \ \ \ EXPECT\_THROW(SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ 0),\ std::invalid\_argument);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00514}00514\ \ \ \ \ EXPECT\_THROW(SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ -\/1000),\ std::invalid\_argument);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00515}00515\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00516}00516\ \ \ \ \ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ edge\ cases}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00517}00517\ \ \ \ \ LanguageTranslatorApp\ app;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00518}00518\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00519}00519\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ very\ long\ text}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00520}00520\ \ \ \ \ std::string\ longText(1000,\ \textcolor{charliteral}{'a'});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00521}00521\ \ \ \ \ std::string\ result\ =\ app.translateText(longText);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00522}00522\ \ \ \ \ EXPECT\_FALSE(result.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00523}00523\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00524}00524\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ special\ characters}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00525}00525\ \ \ \ \ result\ =\ app.translateText(\textcolor{stringliteral}{"{}Hello,\ World!\ @\#\$\%\string^\&*()"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00526}00526\ \ \ \ \ EXPECT\_FALSE(result.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00527}00527\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00528}00528\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ numbers}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00529}00529\ \ \ \ \ result\ =\ app.translateText(\textcolor{stringliteral}{"{}123\ 456\ 789"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00530}00530\ \ \ \ \ EXPECT\_FALSE(result.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00531}00531\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00532}00532\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ mixed\ languages}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00533}00533\ \ \ \ \ result\ =\ app.translateText(\textcolor{stringliteral}{"{}hello\ merhaba\ hola"{}});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00534}00534\ \ \ \ \ EXPECT\_FALSE(result.empty());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00535}00535\ \}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00536}00536\ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00537}00537\ \textcolor{comment}{//\ Test\ consistency\ and\ reliability}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00538}00538\ TEST\_F(AdvancedCoverageBoostTest,\ TestConsistencyReliability)\ \{}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00539}00539\ \ \ \ \ \textcolor{comment}{//\ Test\ SafeChronoCalculator\ consistency}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00540}00540\ \ \ \ \ \textcolor{keyword}{auto}\ result1\ =\ SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00541}00541\ \ \ \ \ \textcolor{keyword}{auto}\ result2\ =\ SafeChronoCalculator::safeCalculateDuration(1000,\ 1000000,\ 1000000000);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00542}00542\ \ \ \ \ EXPECT\_EQ(result1.count(),\ result2.count());}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00543}00543\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00544}00544\ \ \ \ \ \textcolor{comment}{//\ Test\ LanguageTranslatorApp\ consistency}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00545}00545\ \ \ \ \ LanguageTranslatorApp\ app;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00546}00546\ \ \ \ \ std::string\ input\ =\ \textcolor{stringliteral}{"{}hello\ world"{}};}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00547}00547\ \ \ \ \ std::string\ result1\_lang\ =\ app.translateText(input);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00548}00548\ \ \ \ \ std::string\ result2\_lang\ =\ app.translateText(input);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00549}00549\ \ \ \ \ EXPECT\_EQ(result1\_lang,\ result2\_lang);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00550}00550\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00551}00551\ \ \ \ \ \textcolor{comment}{//\ Test\ data\ structure\ consistency}}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00552}00552\ \ \ \ \ DoublyLinkedList<int>\ list;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00553}00553\ \ \ \ \ list.insertAtEnd(1);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00554}00554\ \ \ \ \ list.insertAtEnd(2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00555}00555\ \ \ \ \ list.insertAtEnd(3);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00556}00556\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00557}00557\ \ \ \ \ std::vector<int>\ elements1,\ elements2;}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00558}00558\ \ \ \ \ list.traverse([\&elements1](\textcolor{keywordtype}{int}\ value)\ \{\ elements1.push\_back(value);\ \});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00559}00559\ \ \ \ \ list.traverse([\&elements2](\textcolor{keywordtype}{int}\ value)\ \{\ elements2.push\_back(value);\ \});}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00560}00560\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00561}00561\ \ \ \ \ EXPECT\_EQ(elements1,\ elements2);}
+\DoxyCodeLine{\Hypertarget{test__advanced__coverage__boost_8cpp_source_l00562}00562\ \}}
+
+\end{DoxyCode}

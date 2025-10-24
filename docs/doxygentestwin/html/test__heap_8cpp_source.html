@@ -80,27 +80,22 @@ $(function() {
   <div class="headertitle"><div class="title">test_heap.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="test__heap_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;gtest/gtest.h&gt;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;gtest/gtest.h&gt;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;ds/heap.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="test__heap_8cpp.html#a08467fa2935a81ad6427c6c0928147e5">    4</a></span><a class="code hl_function" href="test__heap_8cpp.html#a08467fa2935a81ad6427c6c0928147e5">TEST</a>(BinaryHeap, PushPopOrder){</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>TEST(BinaryHeap, PushPopOrder){</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    ds::BinaryHeap&lt;int&gt; h; h.push(3); h.push(1); h.push(5); h.push(2);</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    EXPECT_EQ(h.top(), 5); h.pop(); EXPECT_EQ(h.top(), 3); h.pop(); EXPECT_EQ(h.top(), 2);</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>}</div>
-</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="test__heap_8cpp.html#a8e9659c45df2039715e015ec0fd8da27">    9</a></span><a class="code hl_function" href="test__heap_8cpp.html#a08467fa2935a81ad6427c6c0928147e5">TEST</a>(BinaryHeap, HeapSort){</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>TEST(BinaryHeap, HeapSort){</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    ds::BinaryHeap&lt;int&gt; h; <span class="keywordflow">for</span> (<span class="keywordtype">int</span> v: {5,1,4,2,3}) h.push(v);</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">auto</span> sorted = h.heap_sort_copy();</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// For max-heap, heap_sort_copy returns descending</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    ASSERT_EQ(sorted.size(), 5u);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    EXPECT_EQ(sorted[0], 5); EXPECT_EQ(sorted[1], 4); EXPECT_EQ(sorted[2], 3); EXPECT_EQ(sorted[3], 2); EXPECT_EQ(sorted[4], 1);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
-</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="ttc" id="atest__heap_8cpp_html_a08467fa2935a81ad6427c6c0928147e5"><div class="ttname"><a href="test__heap_8cpp.html#a08467fa2935a81ad6427c6c0928147e5">TEST</a></div><div class="ttdeci">TEST(BinaryHeap, PushPopOrder)</div><div class="ttdef"><b>Definition</b> <a href="#l00004">test_heap.cpp:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

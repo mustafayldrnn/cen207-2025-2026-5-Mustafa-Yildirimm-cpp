@@ -2,8 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="structtranslator_1_1_number_expr" kind="struct" language="C++" prot="public">
     <compoundname>translator::NumberExpr</compoundname>
-    <basecompoundref refid="structtranslator_1_1_expr" prot="public" virt="non-virtual">translator::Expr</basecompoundref>
-    <includes refid="ast_8h" local="no">ast.h</includes>
+    <basecompoundref prot="public" virt="non-virtual">translator::Expr</basecompoundref>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structtranslator_1_1_number_expr_1acd4dc7cf346802fa3bf1a2872c4b477c" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -39,13 +38,12 @@
         </inbodydescription>
         <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="17" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="17" bodyend="17"/>
       </memberdef>
-      <memberdef kind="function" id="structtranslator_1_1_number_expr_1a6747a2814f5d6135f2506cf35bda7401" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacetranslator_1a916392d25d1c3daa053abe2e1792a4a0" kindref="member">ExprKind</ref></type>
+      <memberdef kind="function" id="structtranslator_1_1_number_expr_1a6747a2814f5d6135f2506cf35bda7401" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ExprKind</type>
         <definition>ExprKind translator::NumberExpr::kind</definition>
         <argsstring>() const override</argsstring>
         <name>kind</name>
         <qualifiedname>translator::NumberExpr::kind</qualifiedname>
-        <reimplements refid="structtranslator_1_1_expr_1aced195c2a0830ff10b582d02731c93b1">kind</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -59,33 +57,14 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="2">
-        <label>translator::Expr</label>
-        <link refid="structtranslator_1_1_expr"/>
-      </node>
-      <node id="1">
-        <label>translator::NumberExpr</label>
-        <link refid="structtranslator_1_1_number_expr"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>translator::Expr</label>
-        <link refid="structtranslator_1_1_expr"/>
-      </node>
       <node id="1">
         <label>translator::NumberExpr</label>
-        <link refid="structtranslator_1_1_number_expr"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="15" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="15" bodyend="19"/>
     <listofallmembers>
-      <member refid="structtranslator_1_1_number_expr_1a6747a2814f5d6135f2506cf35bda7401" prot="public" virt="virtual"><scope>translator::NumberExpr</scope><name>kind</name></member>
+      <member refid="structtranslator_1_1_number_expr_1a6747a2814f5d6135f2506cf35bda7401" prot="public" virt="non-virtual"><scope>translator::NumberExpr</scope><name>kind</name></member>
       <member refid="structtranslator_1_1_number_expr_1a1f3f3ffe225582173368a9fa08e9abb7" prot="public" virt="non-virtual"><scope>translator::NumberExpr</scope><name>NumberExpr</name></member>
       <member refid="structtranslator_1_1_number_expr_1acd4dc7cf346802fa3bf1a2872c4b477c" prot="public" virt="non-virtual"><scope>translator::NumberExpr</scope><name>value</name></member>
       <member refid="structtranslator_1_1_expr_1a3a61309da992f896228d1ba682f79187" prot="public" virt="virtual"><scope>translator::NumberExpr</scope><name>~Expr</name></member>

@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classds_1_1_sparse_matrix" kind="class" language="C++" prot="public">
     <compoundname>ds::SparseMatrix</compoundname>
-    <includes refid="sparse__matrix_8h" local="no">sparse_matrix.h</includes>
     <templateparamlist>
       <param>
         <type>typename T</type>
@@ -10,7 +9,7 @@
     </templateparamlist>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classds_1_1_sparse_matrix_1a4d4f238625b4c2ef2808c8c10616fee2" prot="private" static="no" mutable="no">
-        <type><ref refid="classds_1_1_hash_table" kindref="compound">HashTable</ref>&lt; long long, T &gt;</type>
+        <type>HashTable&lt; long long, T &gt;</type>
         <definition>HashTable&lt;long long, T&gt; ds::SparseMatrix&lt; T &gt;::data_</definition>
         <argsstring></argsstring>
         <name>data_</name>
@@ -195,16 +194,8 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="2">
-        <label>ds::HashTable&lt; long long, T &gt;</label>
-        <link refid="classds_1_1_hash_table"/>
-      </node>
       <node id="1">
         <label>ds::SparseMatrix&lt; T &gt;</label>
-        <link refid="classds_1_1_sparse_matrix"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>-data_</edgelabel>
-        </childnode>
       </node>
     </collaborationgraph>
     <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="8" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="8" bodyend="20"/>

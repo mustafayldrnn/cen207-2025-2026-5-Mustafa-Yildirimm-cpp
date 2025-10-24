@@ -26,7 +26,7 @@
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00034}00034\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00035}00035\ \};}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00036}00036\ }
-\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00041}00041\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(StringViewInternalUtilitiesTest,\ TestStringViewLengthFunction)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00041}00041\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewLengthFunction)\ \{}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ various\ C-\/strings\ to\ trigger\ internal\ length()\ function}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ cstr1\ =\ \textcolor{stringliteral}{"{}Hello"{}};}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00044}00044\ \ \ \ \ std::string\_view\ sv1(cstr1);}
@@ -76,7 +76,7 @@
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00088}00088\ \ \ \ \ EXPECT\_EQ(sv32.length(),\ 5);}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00089}00089\ \}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00090}00090\ }
-\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00095}00095\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(StringViewInternalUtilitiesTest,\ TestStringViewFindFunction)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00095}00095\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewFindFunction)\ \{}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00096}00096\ \ \ \ \ std::string\_view\ sv(\textcolor{stringliteral}{"{}Hello,\ World!"{}});}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00097}00097\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00098}00098\ \ \ \ \ \textcolor{comment}{//\ Test\ find\ with\ character\ -\/\ this\ should\ trigger\ internal\ find()\ function}}
@@ -150,7 +150,7 @@
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00166}00166\ \ \ \ \ EXPECT\_EQ(sv32.find(U\textcolor{charliteral}{'z'}),\ std::u32string\_view::npos);}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00167}00167\ \}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00168}00168\ }
-\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00173}00173\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(StringViewInternalUtilitiesTest,\ TestStringViewAssignFunction)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00173}00173\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewAssignFunction)\ \{}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00174}00174\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ string\ construction\ that\ might\ trigger\ internal\ assign()\ function}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00175}00175\ \ \ \ \ std::string\ str1(10,\ \textcolor{charliteral}{'A'});}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00176}00176\ \ \ \ \ std::string\_view\ sv1(str1);}
@@ -211,7 +211,7 @@
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00231}00231\ \ \ \ \ EXPECT\_EQ(sv32[10],\ U\textcolor{charliteral}{'H'});}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00232}00232\ \}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00233}00233\ }
-\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00238}00238\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(StringViewInternalUtilitiesTest,\ TestStringViewInternalOperations)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00238}00238\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewInternalOperations)\ \{}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00239}00239\ \ \ \ \ \textcolor{comment}{//\ Test\ operations\ that\ might\ trigger\ length()\ function}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00240}00240\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ cstr\ =\ \textcolor{stringliteral}{"{}Internal\ operations\ test"{}};}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00241}00241\ \ \ \ \ std::string\_view\ sv(cstr);}
@@ -261,7 +261,7 @@
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00285}00285\ \ \ \ \ EXPECT\_EQ(sv32.find(U\textcolor{charliteral}{'t'}),\ 7);}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00286}00286\ \}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00287}00287\ }
-\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00292}00292\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(StringViewInternalUtilitiesTest,\ TestStringViewEdgeCasesForInternalFunctions)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00292}00292\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewEdgeCasesForInternalFunctions)\ \{}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00293}00293\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ very\ long\ strings\ to\ trigger\ length()\ function}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00294}00294\ \ \ \ \ std::string\ long\_str(10000,\ \textcolor{charliteral}{'A'});}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00295}00295\ \ \ \ \ std::string\_view\ long\_sv(long\_str);}
@@ -301,7 +301,7 @@
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00329}00329\ \ \ \ \ EXPECT\_EQ(empty\_sv.find(\textcolor{stringliteral}{"{}"{}}),\ 0);}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00330}00330\ \}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00331}00331\ }
-\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00336}00336\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(StringViewInternalUtilitiesTest,\ TestStringViewConstexprInternalFunctions)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00336}00336\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewConstexprInternalFunctions)\ \{}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00337}00337\ \ \ \ \ \textcolor{comment}{//\ Test\ constexpr\ operations\ that\ might\ trigger\ internal\ functions}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00338}00338\ \ \ \ \ \textcolor{keyword}{constexpr}\ std::string\_view\ sv(\textcolor{stringliteral}{"{}Constexpr\ test"{}});}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00339}00339\ \ \ \ \ \textcolor{keyword}{static\_assert}(sv.size()\ ==\ 14);}
@@ -356,7 +356,7 @@
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00388}00388\ \ \ \ \ EXPECT\_EQ(sv32.find(U\textcolor{charliteral}{'U'}),\ 0);}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00389}00389\ \}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00390}00390\ }
-\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00395}00395\ \mbox{\hyperlink{_language_translator__test_8cpp_a76d6c85bf7b1d192d4c366cc40624a5e}{TEST\_F}}(StringViewInternalUtilitiesTest,\ TestStringViewPerformanceInternalFunctions)\ \{}
+\DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00395}00395\ TEST\_F(StringViewInternalUtilitiesTest,\ TestStringViewPerformanceInternalFunctions)\ \{}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00396}00396\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ large\ strings\ to\ trigger\ internal\ functions}}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00397}00397\ \ \ \ \ std::string\ large\_string(100000,\ \textcolor{charliteral}{'P'});}
 \DoxyCodeLine{\Hypertarget{test__string__view__internal__utilities_8cpp_source_l00398}00398\ \ \ \ \ std::string\_view\ large\_sv(large\_string);}
