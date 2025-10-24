@@ -11,18 +11,37 @@ Kullanıcı profili bilgileri.
 
 
 
-Collaboration diagram for Coruh\+::Language\+Translator\+::User\+Profile\+:
-\nopagebreak
+Collaboration diagram for Coruh\+::Language\+Translator\+::User\+Profile\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=206pt]{struct_coruh_1_1_language_translator_1_1_user_profile__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_coruh_1_1_language_translator_1_1_user_profile_acdf441214af6c7f9223e089b6b95f94f}\label{struct_coruh_1_1_language_translator_1_1_user_profile_acdf441214af6c7f9223e089b6b95f94f} 
+std\+::string {\bfseries username}
+\begin{DoxyCompactList}\small\item\em Kullanıcı adı \end{DoxyCompactList}\item 
+\Hypertarget{struct_coruh_1_1_language_translator_1_1_user_profile_af83fc6ee9afcfdd1b14763d5831bb865}\label{struct_coruh_1_1_language_translator_1_1_user_profile_af83fc6ee9afcfdd1b14763d5831bb865} 
+std\+::string {\bfseries salt}
+\begin{DoxyCompactList}\small\item\em Şifre hash\textquotesingle{}i için salt değeri. \end{DoxyCompactList}\item 
+\Hypertarget{struct_coruh_1_1_language_translator_1_1_user_profile_ada9638b73af7e9cb3b5539e8ec546bb7}\label{struct_coruh_1_1_language_translator_1_1_user_profile_ada9638b73af7e9cb3b5539e8ec546bb7} 
+std\+::string {\bfseries password\+Hash}
+\begin{DoxyCompactList}\small\item\em SHA-\/256 hex hash\textquotesingle{}i. \end{DoxyCompactList}\item 
+\Hypertarget{struct_coruh_1_1_language_translator_1_1_user_profile_a76e28d055efcfa63e91d90a4603e0135}\label{struct_coruh_1_1_language_translator_1_1_user_profile_a76e28d055efcfa63e91d90a4603e0135} 
+std\+::string {\bfseries preferred\+Source}
+\begin{DoxyCompactList}\small\item\em Tercih edilen kaynak dil. \end{DoxyCompactList}\item 
+\Hypertarget{struct_coruh_1_1_language_translator_1_1_user_profile_af55ed17d2200cbcdc254c48f3489ab43}\label{struct_coruh_1_1_language_translator_1_1_user_profile_af55ed17d2200cbcdc254c48f3489ab43} 
+std\+::string {\bfseries preferred\+Target}
+\begin{DoxyCompactList}\small\item\em Tercih edilen hedef dil. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Kullanıcı profili bilgileri. 
+
+Bu yapı, kullanıcı kimlik doğrulama ve tercih bilgilerini saklar. Güvenlik için şifre hash\textquotesingle{}i ve salt değeri içerir. 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

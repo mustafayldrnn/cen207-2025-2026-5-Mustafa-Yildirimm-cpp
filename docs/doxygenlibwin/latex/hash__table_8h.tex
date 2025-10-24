@@ -1,5 +1,10 @@
 \doxysection{C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/include/ds/hash\+\_\+table.h File Reference}
 \hypertarget{hash__table_8h}{}\label{hash__table_8h}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/include/ds/hash\_table.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/include/ds/hash\_table.h}}
+
+
+Kapalı adreslemeli hash tablosu implementasyonu.  
+
+
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$optional$>$}\newline
 {\ttfamily \#include $<$functional$>$}\newline
@@ -22,19 +27,57 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classds_1_1_hash_table}{ds\+::\+Hash\+Table$<$ K, V $>$}}
-\item 
+\begin{DoxyCompactList}\small\item\em Kapalı adreslemeli hash tablosu implementasyonu. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structds_1_1_hash_table_1_1_entry}{ds\+::\+Hash\+Table$<$ K, V $>$\+::\+Entry}}
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Namespaces}
-\begin{DoxyCompactItemize}
-\item 
-namespace \mbox{\hyperlink{namespaceds}{ds}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Hash tablosundaki her bir girişi temsil eden yapı \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum class \mbox{\hyperlink{namespaceds_ab8d36885b547ab0c7e429bd1d578a617}{ds\+::\+Slot\+State}} \{ \mbox{\hyperlink{namespaceds_ab8d36885b547ab0c7e429bd1d578a617ace2c8aed9c2fa0cfbed56cbda4d8bf07}{ds\+::\+Empty}}
-, \mbox{\hyperlink{namespaceds_ab8d36885b547ab0c7e429bd1d578a617abbd86c81e760279d9731d5cac811ba50}{ds\+::\+Occupied}}
-, \mbox{\hyperlink{namespaceds_ab8d36885b547ab0c7e429bd1d578a617a5fe6005bf6e415c950c011fb65f12b8f}{ds\+::\+Deleted}}
+enum class \mbox{\hyperlink{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617}{ds\+::\+Slot\+State}} \{ \mbox{\hyperlink{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}
+, \mbox{\hyperlink{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617abbd86c81e760279d9731d5cac811ba50}{Occupied}}
+, \mbox{\hyperlink{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617a5fe6005bf6e415c950c011fb65f12b8f}{Deleted}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Hash tablosundaki slot durumlarını belirten enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kapalı adreslemeli hash tablosu implementasyonu. 
+
+\begin{DoxyAuthor}{Author}
+Mustafa Yıldırım 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\label{doc-enum-members}
+\Hypertarget{hash__table_8h_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617}\index{hash\_table.h@{hash\_table.h}!SlotState@{SlotState}}
+\index{SlotState@{SlotState}!hash\_table.h@{hash\_table.h}}
+\doxysubsubsection{\texorpdfstring{SlotState}{SlotState}}
+{\footnotesize\ttfamily \label{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617} 
+enum class \mbox{\hyperlink{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617}{ds\+::\+Slot\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Hash tablosundaki slot durumlarını belirten enum. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Empty@{Empty}!hash\_table.h@{hash\_table.h}}\index{hash\_table.h@{hash\_table.h}!Empty@{Empty}}}\Hypertarget{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617ace2c8aed9c2fa0cfbed56cbda4d8bf07}\label{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617ace2c8aed9c2fa0cfbed56cbda4d8bf07} 
+Empty&Slot boş \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Occupied@{Occupied}!hash\_table.h@{hash\_table.h}}\index{hash\_table.h@{hash\_table.h}!Occupied@{Occupied}}}\Hypertarget{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617abbd86c81e760279d9731d5cac811ba50}\label{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617abbd86c81e760279d9731d5cac811ba50} 
+Occupied&Slot dolu. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Deleted@{Deleted}!hash\_table.h@{hash\_table.h}}\index{hash\_table.h@{hash\_table.h}!Deleted@{Deleted}}}\Hypertarget{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617a5fe6005bf6e415c950c011fb65f12b8f}\label{hash__table_8h_ab8d36885b547ab0c7e429bd1d578a617a5fe6005bf6e415c950c011fb65f12b8f} 
+Deleted&Slot silinmiş (lazy deletion) \\
+\hline
+
+\end{DoxyEnumFields}

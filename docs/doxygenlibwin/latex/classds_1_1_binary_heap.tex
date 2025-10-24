@@ -2,6 +2,11 @@
 \hypertarget{classds_1_1_binary_heap}{}\label{classds_1_1_binary_heap}\index{ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}}
 
 
+Manuel implementasyonlu binary heap.  
+
+
+
+
 {\ttfamily \#include $<$heap.\+h$>$}
 
 
@@ -17,32 +22,48 @@ Collaboration diagram for ds\+::Binary\+Heap\texorpdfstring{$<$}{<} T, Compare \
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{classds_1_1_binary_heap_ad20587f5fd34a78c2c53f79a7a874c43}{empty}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Heap\textquotesingle{}in boş olup olmadığını kontrol eder. \end{DoxyCompactList}\item 
 std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_binary_heap_a7b5bce7c78ca6e621247c672d17c6d1f}{size}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Heap\textquotesingle{}teki eleman sayısını döndürür. \end{DoxyCompactList}\item 
 const T \& \mbox{\hyperlink{classds_1_1_binary_heap_ae4fd1d06e57589a7465609c8df10ad29}{top}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Heap\textquotesingle{}in en üstündeki elemanı döndürür. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classds_1_1_binary_heap_a97c2f6999ad6446c6833cb8f45185dea}{push}} (const T \&v)
-\item 
+\begin{DoxyCompactList}\small\item\em Heap\textquotesingle{}e yeni eleman ekler. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classds_1_1_binary_heap_ab8da6f06f1a9a012cf1c4c53f2a8cf6d}{pop}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Heap\textquotesingle{}in en üstündeki elemanı çıkarır. \end{DoxyCompactList}\item 
 std\+::vector$<$ T $>$ \mbox{\hyperlink{classds_1_1_binary_heap_ad7467e086392e18c40c5423283ca38f6}{heap\+\_\+sort\+\_\+copy}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Heap\textquotesingle{}i sıralı dizi olarak döndürür (heap sort) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classds_1_1_binary_heap_a5ae353f634f177f593dd2e488779333a}{sift\+\_\+up}} (std\+::size\+\_\+t i)
-\item 
+\begin{DoxyCompactList}\small\item\em Elemanı yukarı doğru sıralar (sift-\/up) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classds_1_1_binary_heap_a3ca481ab3ae4a8f14cd2ef734cb5463e}{sift\+\_\+down}} (std\+::size\+\_\+t i)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Elemanı aşağı doğru sıralar (sift-\/down) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::vector$<$ T $>$ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\+\_\+}}
-\item 
-Compare \mbox{\hyperlink{classds_1_1_binary_heap_a10e019bc6948302123ecebd5ba1be449}{cmp\+\_\+}} \{\}
-\end{DoxyCompactItemize}
+\Hypertarget{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}\label{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b} 
+std\+::vector$<$ T $>$ {\bfseries a\+\_\+}
+\begin{DoxyCompactList}\small\item\em Heap elemanlarını tutan vektör. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_binary_heap_a10e019bc6948302123ecebd5ba1be449}\label{classds_1_1_binary_heap_a10e019bc6948302123ecebd5ba1be449} 
+Compare {\bfseries cmp\+\_\+} \{\}
+\begin{DoxyCompactList}\small\item\em Karşılaştırma fonksiyonu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename Compare = std\+::less$<$\+T$>$$>$\newline
+class ds\+::\+Binary\+Heap$<$ T, Compare $>$}
+Manuel implementasyonlu binary heap. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Eleman türü \\
+\hline
+{\em Compare} & Karşılaştırma fonksiyonu (varsayılan\+: std\+::less$<$\+T$>$)\\
+\hline
+\end{DoxyTemplParams}
+Bu sınıf, heap özelliklerini manuel olarak implement eder. Sift-\/up ve sift-\/down algoritmalarını kullanır. 
 
 \label{doc-func-members}
 \Hypertarget{classds_1_1_binary_heap_doc-func-members}
@@ -54,6 +75,13 @@ Compare \mbox{\hyperlink{classds_1_1_binary_heap_a10e019bc6948302123ecebd5ba1be4
 template$<$typename T, typename Compare = std\+::less$<$\+T$>$$>$ \\
 bool \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Compare $>$\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Heap\textquotesingle{}in boş olup olmadığını kontrol eder. 
+
+\begin{DoxyReturn}{Returns}
+true eğer heap boşsa 
+\end{DoxyReturn}
 \Hypertarget{classds_1_1_binary_heap_ad7467e086392e18c40c5423283ca38f6}\index{ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}!heap\_sort\_copy@{heap\_sort\_copy}}
 \index{heap\_sort\_copy@{heap\_sort\_copy}!ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}}
 \doxysubsubsection{\texorpdfstring{heap\_sort\_copy()}{heap\_sort\_copy()}}
@@ -61,13 +89,27 @@ bool \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Comp
 template$<$typename T, typename Compare = std\+::less$<$\+T$>$$>$ \\
 std\+::vector$<$ T $>$ \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Compare $>$\+::heap\+\_\+sort\+\_\+copy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\Hypertarget{classds_1_1_binary_heap_ab8da6f06f1a9a012cf1c4c53f2a8cf6d}\index{ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}!pop@{pop}}
+
+
+Heap\textquotesingle{}i sıralı dizi olarak döndürür (heap sort) 
+
+\begin{DoxyReturn}{Returns}
+Sıralı eleman dizisi
+\end{DoxyReturn}
+Bu fonksiyon heap\textquotesingle{}i bozmadan sıralı bir kopyasını döndürür. Heap sort algoritması kullanır. \Hypertarget{classds_1_1_binary_heap_ab8da6f06f1a9a012cf1c4c53f2a8cf6d}\index{ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}!pop@{pop}}
 \index{pop@{pop}!ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}}
 \doxysubsubsection{\texorpdfstring{pop()}{pop()}}
 {\footnotesize\ttfamily \label{classds_1_1_binary_heap_ab8da6f06f1a9a012cf1c4c53f2a8cf6d} 
 template$<$typename T, typename Compare = std\+::less$<$\+T$>$$>$ \\
 void \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Compare $>$\+::pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Heap\textquotesingle{}in en üstündeki elemanı çıkarır. 
+
+\begin{DoxyPrecond}{Precondition}
+Heap boş olmamalıdır 
+\end{DoxyPrecond}
 \Hypertarget{classds_1_1_binary_heap_a97c2f6999ad6446c6833cb8f45185dea}\index{ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}!push@{push}}
 \index{push@{push}!ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}}
 \doxysubsubsection{\texorpdfstring{push()}{push()}}
@@ -75,6 +117,15 @@ void \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Comp
 template$<$typename T, typename Compare = std\+::less$<$\+T$>$$>$ \\
 void \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Compare $>$\+::push (\begin{DoxyParamCaption}\item[{const T \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Heap\textquotesingle{}e yeni eleman ekler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Eklenecek eleman \\
+\hline
+\end{DoxyParams}
 \Hypertarget{classds_1_1_binary_heap_a3ca481ab3ae4a8f14cd2ef734cb5463e}\index{ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}!sift\_down@{sift\_down}}
 \index{sift\_down@{sift\_down}!ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}}
 \doxysubsubsection{\texorpdfstring{sift\_down()}{sift\_down()}}
@@ -82,6 +133,15 @@ void \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Comp
 template$<$typename T, typename Compare = std\+::less$<$\+T$>$$>$ \\
 void \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Compare $>$\+::sift\+\_\+down (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{i}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
+
+
+Elemanı aşağı doğru sıralar (sift-\/down) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Sıralanacak elemanın indeksi \\
+\hline
+\end{DoxyParams}
 \Hypertarget{classds_1_1_binary_heap_a5ae353f634f177f593dd2e488779333a}\index{ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}!sift\_up@{sift\_up}}
 \index{sift\_up@{sift\_up}!ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}}
 \doxysubsubsection{\texorpdfstring{sift\_up()}{sift\_up()}}
@@ -89,6 +149,15 @@ void \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Comp
 template$<$typename T, typename Compare = std\+::less$<$\+T$>$$>$ \\
 void \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Compare $>$\+::sift\+\_\+up (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{i}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
+
+
+Elemanı yukarı doğru sıralar (sift-\/up) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Sıralanacak elemanın indeksi \\
+\hline
+\end{DoxyParams}
 \Hypertarget{classds_1_1_binary_heap_a7b5bce7c78ca6e621247c672d17c6d1f}\index{ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}!size@{size}}
 \index{size@{size}!ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}}
 \doxysubsubsection{\texorpdfstring{size()}{size()}}
@@ -96,6 +165,13 @@ void \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Comp
 template$<$typename T, typename Compare = std\+::less$<$\+T$>$$>$ \\
 std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Compare $>$\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Heap\textquotesingle{}teki eleman sayısını döndürür. 
+
+\begin{DoxyReturn}{Returns}
+Eleman sayısı 
+\end{DoxyReturn}
 \Hypertarget{classds_1_1_binary_heap_ae4fd1d06e57589a7465609c8df10ad29}\index{ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}!top@{top}}
 \index{top@{top}!ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}}
 \doxysubsubsection{\texorpdfstring{top()}{top()}}
@@ -105,23 +181,14 @@ const T \& \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T
 
 
 
-\label{doc-variable-members}
-\Hypertarget{classds_1_1_binary_heap_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}\index{ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}!a\_@{a\_}}
-\index{a\_@{a\_}!ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}}
-\doxysubsubsection{\texorpdfstring{a\_}{a\_}}
-{\footnotesize\ttfamily \label{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b} 
-template$<$typename T, typename Compare = std\+::less$<$\+T$>$$>$ \\
-std\+::vector$<$T$>$ \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Compare $>$\+::a\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+Heap\textquotesingle{}in en üstündeki elemanı döndürür. 
 
-\Hypertarget{classds_1_1_binary_heap_a10e019bc6948302123ecebd5ba1be449}\index{ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}!cmp\_@{cmp\_}}
-\index{cmp\_@{cmp\_}!ds::BinaryHeap$<$ T, Compare $>$@{ds::BinaryHeap$<$ T, Compare $>$}}
-\doxysubsubsection{\texorpdfstring{cmp\_}{cmp\_}}
-{\footnotesize\ttfamily \label{classds_1_1_binary_heap_a10e019bc6948302123ecebd5ba1be449} 
-template$<$typename T, typename Compare = std\+::less$<$\+T$>$$>$ \\
-Compare \mbox{\hyperlink{classds_1_1_binary_heap}{ds\+::\+Binary\+Heap}}$<$ T, Compare $>$\+::cmp\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [private]}}
-
+\begin{DoxyReturn}{Returns}
+En üstteki elemanın referansı 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+Heap boş olmamalıdır 
+\end{DoxyPrecond}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

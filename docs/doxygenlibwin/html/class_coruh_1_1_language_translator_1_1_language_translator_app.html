@@ -79,129 +79,739 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_coruh_1_1_language_translator_1_1_language_translator_app-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Coruh::LanguageTranslator::LanguageTranslatorApp Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Uygulama akışını yöneten ana sınıf.  
+<p>Manages application flow: auth, translation, tips, phrases, pronunciation.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_language_translator_8h_source.html">LanguageTranslator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Coruh::LanguageTranslator::LanguageTranslatorApp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_coruh_1_1_language_translator_1_1_language_translator_app__coll__graph.svg" width="183" height="310"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_coruh_1_1_language_translator_1_1_language_translator_app__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ed617b4a1ba48b54035061d7f080abf" id="r_a5ed617b4a1ba48b54035061d7f080abf"><td class="memItemLeft" align="right" valign="top"><a id="a5ed617b4a1ba48b54035061d7f080abf" name="a5ed617b4a1ba48b54035061d7f080abf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>LanguageTranslatorApp</b> ()</td></tr>
-<tr class="memdesc:a5ed617b4a1ba48b54035061d7f080abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uygulamayı varsayılan verilerle başlatır. <br /></td></tr>
+<tr class="memdesc:a5ed617b4a1ba48b54035061d7f080abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Varsayılan verilerle uygulamayı başlatır. <br /></td></tr>
+<tr class="memitem:aa7130212453aa19ff70bd2854aaf0846" id="r_aa7130212453aa19ff70bd2854aaf0846"><td class="memItemLeft" align="right" valign="top"><a id="aa7130212453aa19ff70bd2854aaf0846" name="aa7130212453aa19ff70bd2854aaf0846"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~LanguageTranslatorApp</b> ()=default</td></tr>
+<tr class="memdesc:aa7130212453aa19ff70bd2854aaf0846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="memitem:a3c58319ebc4b52530f96df35244e6766" id="r_a3c58319ebc4b52530f96df35244e6766"><td class="memItemLeft" align="right" valign="top"><a id="a3c58319ebc4b52530f96df35244e6766" name="a3c58319ebc4b52530f96df35244e6766"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
-<tr class="memdesc:a3c58319ebc4b52530f96df35244e6766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uygulama döngüsünü çalıştırır. <br /></td></tr>
+<tr class="memdesc:a3c58319ebc4b52530f96df35244e6766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ana uygulama döngüsünü çalıştırır (yükle, menü, kaydet) <br /></td></tr>
 <tr class="memitem:a1e44c8c1f7023908862900efb5bb7bff" id="r_a1e44c8c1f7023908862900efb5bb7bff"><td class="memItemLeft" align="right" valign="top"><a id="a1e44c8c1f7023908862900efb5bb7bff" name="a1e44c8c1f7023908862900efb5bb7bff"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>showMainMenu</b> ()</td></tr>
 <tr class="memdesc:a1e44c8c1f7023908862900efb5bb7bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ana menüyü gösterir. <br /></td></tr>
-<tr class="memitem:a8cfaed25014b5dbff221e2557d407f4d" id="r_a8cfaed25014b5dbff221e2557d407f4d"><td class="memItemLeft" align="right" valign="top"><a id="a8cfaed25014b5dbff221e2557d407f4d" name="a8cfaed25014b5dbff221e2557d407f4d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handleUserChoice</b> (int choice)</td></tr>
-<tr class="memdesc:a8cfaed25014b5dbff221e2557d407f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menü seçimini işler. <br /></td></tr>
-<tr class="memitem:a03ad354d985ea9953caeb220ba353675" id="r_a03ad354d985ea9953caeb220ba353675"><td class="memItemLeft" align="right" valign="top"><a id="a03ad354d985ea9953caeb220ba353675" name="a03ad354d985ea9953caeb220ba353675"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>translateText</b> (const std::string &amp;text)</td></tr>
-<tr class="memdesc:a03ad354d985ea9953caeb220ba353675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metni aktif dil çiftine göre çevirir. <br /></td></tr>
-<tr class="memitem:afd506854467cc68e7a55c7f9ccb4d3c1" id="r_afd506854467cc68e7a55c7f9ccb4d3c1"><td class="memItemLeft" align="right" valign="top"><a id="afd506854467cc68e7a55c7f9ccb4d3c1" name="afd506854467cc68e7a55c7f9ccb4d3c1"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>translateWord</b> (const std::string &amp;word)</td></tr>
-<tr class="memdesc:afd506854467cc68e7a55c7f9ccb4d3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tek kelime çevirir. <br /></td></tr>
-<tr class="memitem:a06a91752cc8178f227d69060cf1d6c81" id="r_a06a91752cc8178f227d69060cf1d6c81"><td class="memItemLeft" align="right" valign="top"><a id="a06a91752cc8178f227d69060cf1d6c81" name="a06a91752cc8178f227d69060cf1d6c81"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>translatePhrase</b> (const std::string &amp;phrase)</td></tr>
-<tr class="memdesc:a06a91752cc8178f227d69060cf1d6c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kalıp/ifade çevirir. <br /></td></tr>
-<tr class="memitem:aed85d51b8fae05cd2ace0c6166b0e300" id="r_aed85d51b8fae05cd2ace0c6166b0e300"><td class="memItemLeft" align="right" valign="top"><a id="aed85d51b8fae05cd2ace0c6166b0e300" name="aed85d51b8fae05cd2ace0c6166b0e300"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSourceLanguage</b> (const std::string &amp;language)</td></tr>
-<tr class="memdesc:aed85d51b8fae05cd2ace0c6166b0e300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kaynak dili ayarlar. <br /></td></tr>
-<tr class="memitem:aca0a3b739bf7a53e92616b62f838d813" id="r_aca0a3b739bf7a53e92616b62f838d813"><td class="memItemLeft" align="right" valign="top"><a id="aca0a3b739bf7a53e92616b62f838d813" name="aca0a3b739bf7a53e92616b62f838d813"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setTargetLanguage</b> (const std::string &amp;language)</td></tr>
-<tr class="memdesc:aca0a3b739bf7a53e92616b62f838d813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hedef dili ayarlar. <br /></td></tr>
-<tr class="memitem:a98320f1bf6b3b67151deef4f18e79a10" id="r_a98320f1bf6b3b67151deef4f18e79a10"><td class="memItemLeft" align="right" valign="top"><a id="a98320f1bf6b3b67151deef4f18e79a10" name="a98320f1bf6b3b67151deef4f18e79a10"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSupportedLanguages</b> () const</td></tr>
-<tr class="memdesc:a98320f1bf6b3b67151deef4f18e79a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desteklenen dilleri döndürür. <br /></td></tr>
+<tr class="memitem:a8cfaed25014b5dbff221e2557d407f4d" id="r_a8cfaed25014b5dbff221e2557d407f4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cfaed25014b5dbff221e2557d407f4d">handleUserChoice</a> (int choice)</td></tr>
+<tr class="memdesc:a8cfaed25014b5dbff221e2557d407f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ana menü seçimini işler.  <br /></td></tr>
+<tr class="memitem:a03ad354d985ea9953caeb220ba353675" id="r_a03ad354d985ea9953caeb220ba353675"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03ad354d985ea9953caeb220ba353675">translateText</a> (const std::string &amp;text)</td></tr>
+<tr class="memdesc:a03ad354d985ea9953caeb220ba353675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktif dil çiftini kullanarak metni çevirir.  <br /></td></tr>
+<tr class="memitem:afd506854467cc68e7a55c7f9ccb4d3c1" id="r_afd506854467cc68e7a55c7f9ccb4d3c1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd506854467cc68e7a55c7f9ccb4d3c1">translateWord</a> (const std::string &amp;word)</td></tr>
+<tr class="memdesc:afd506854467cc68e7a55c7f9ccb4d3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tek bir kelimeyi çevirir.  <br /></td></tr>
+<tr class="memitem:a06a91752cc8178f227d69060cf1d6c81" id="r_a06a91752cc8178f227d69060cf1d6c81"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06a91752cc8178f227d69060cf1d6c81">translatePhrase</a> (const std::string &amp;phrase)</td></tr>
+<tr class="memdesc:a06a91752cc8178f227d69060cf1d6c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kelime öbeğini çevirir.  <br /></td></tr>
+<tr class="memitem:aed85d51b8fae05cd2ace0c6166b0e300" id="r_aed85d51b8fae05cd2ace0c6166b0e300"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed85d51b8fae05cd2ace0c6166b0e300">setSourceLanguage</a> (const std::string &amp;language)</td></tr>
+<tr class="memdesc:aed85d51b8fae05cd2ace0c6166b0e300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kaynak dili ayarlar.  <br /></td></tr>
+<tr class="memitem:aca0a3b739bf7a53e92616b62f838d813" id="r_aca0a3b739bf7a53e92616b62f838d813"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca0a3b739bf7a53e92616b62f838d813">setTargetLanguage</a> (const std::string &amp;language)</td></tr>
+<tr class="memdesc:aca0a3b739bf7a53e92616b62f838d813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hedef dili ayarlar.  <br /></td></tr>
+<tr class="memitem:a98320f1bf6b3b67151deef4f18e79a10" id="r_a98320f1bf6b3b67151deef4f18e79a10"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98320f1bf6b3b67151deef4f18e79a10">getSupportedLanguages</a> () const</td></tr>
+<tr class="memdesc:a98320f1bf6b3b67151deef4f18e79a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desteklenen dilleri döndürür.  <br /></td></tr>
 <tr class="memitem:a974f8dcd015f7218cbcb08f86e540c72" id="r_a974f8dcd015f7218cbcb08f86e540c72"><td class="memItemLeft" align="right" valign="top"><a id="a974f8dcd015f7218cbcb08f86e540c72" name="a974f8dcd015f7218cbcb08f86e540c72"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>showLanguageSelection</b> ()</td></tr>
-<tr class="memdesc:a974f8dcd015f7218cbcb08f86e540c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dil seçim ekranını gösterir. <br /></td></tr>
-<tr class="memitem:af4d3d14b521b942497457d78b58cef5a" id="r_af4d3d14b521b942497457d78b58cef5a"><td class="memItemLeft" align="right" valign="top"><a id="af4d3d14b521b942497457d78b58cef5a" name="af4d3d14b521b942497457d78b58cef5a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addLanguage</b> (const std::string &amp;language)</td></tr>
-<tr class="memdesc:af4d3d14b521b942497457d78b58cef5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yeni dil ekler. <br /></td></tr>
-<tr class="memitem:aebb1a131807481ffd3a86e81ba5d7149" id="r_aebb1a131807481ffd3a86e81ba5d7149"><td class="memItemLeft" align="right" valign="top"><a id="aebb1a131807481ffd3a86e81ba5d7149" name="aebb1a131807481ffd3a86e81ba5d7149"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>login</b> (const std::string &amp;username, const std::string &amp;password)</td></tr>
-<tr class="memdesc:aebb1a131807481ffd3a86e81ba5d7149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı girişi. <br /></td></tr>
-<tr class="memitem:a1db0ba24cc5bb600bb0492759b56d688" id="r_a1db0ba24cc5bb600bb0492759b56d688"><td class="memItemLeft" align="right" valign="top"><a id="a1db0ba24cc5bb600bb0492759b56d688" name="a1db0ba24cc5bb600bb0492759b56d688"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>registerUser</b> (const std::string &amp;username, const std::string &amp;password)</td></tr>
-<tr class="memdesc:a1db0ba24cc5bb600bb0492759b56d688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı kaydı. <br /></td></tr>
+<tr class="memdesc:a974f8dcd015f7218cbcb08f86e540c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dil seçim menüsünü gösterir. <br /></td></tr>
+<tr class="memitem:af4d3d14b521b942497457d78b58cef5a" id="r_af4d3d14b521b942497457d78b58cef5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4d3d14b521b942497457d78b58cef5a">addLanguage</a> (const std::string &amp;language)</td></tr>
+<tr class="memdesc:af4d3d14b521b942497457d78b58cef5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yeni dil ekler.  <br /></td></tr>
+<tr class="memitem:aebb1a131807481ffd3a86e81ba5d7149" id="r_aebb1a131807481ffd3a86e81ba5d7149"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebb1a131807481ffd3a86e81ba5d7149">login</a> (const std::string &amp;username, const std::string &amp;password)</td></tr>
+<tr class="memdesc:aebb1a131807481ffd3a86e81ba5d7149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı girişi yapar.  <br /></td></tr>
+<tr class="memitem:a1db0ba24cc5bb600bb0492759b56d688" id="r_a1db0ba24cc5bb600bb0492759b56d688"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1db0ba24cc5bb600bb0492759b56d688">registerUser</a> (const std::string &amp;username, const std::string &amp;password)</td></tr>
+<tr class="memdesc:a1db0ba24cc5bb600bb0492759b56d688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yeni kullanıcı kaydı yapar.  <br /></td></tr>
 <tr class="memitem:ae996bcbc37b5ebeff7fc5f23846599e6" id="r_ae996bcbc37b5ebeff7fc5f23846599e6"><td class="memItemLeft" align="right" valign="top"><a id="ae996bcbc37b5ebeff7fc5f23846599e6" name="ae996bcbc37b5ebeff7fc5f23846599e6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>logout</b> ()</td></tr>
-<tr class="memdesc:ae996bcbc37b5ebeff7fc5f23846599e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oturumu kapatır. <br /></td></tr>
-<tr class="memitem:aae8aef776e538e0e04307f7cbb19cfff" id="r_aae8aef776e538e0e04307f7cbb19cfff"><td class="memItemLeft" align="right" valign="top"><a id="aae8aef776e538e0e04307f7cbb19cfff" name="aae8aef776e538e0e04307f7cbb19cfff"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isUserLoggedIn</b> () const</td></tr>
-<tr class="memdesc:aae8aef776e538e0e04307f7cbb19cfff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı oturum durumunu döndürür. <br /></td></tr>
+<tr class="memdesc:ae996bcbc37b5ebeff7fc5f23846599e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı çıkışı yapar. <br /></td></tr>
+<tr class="memitem:aae8aef776e538e0e04307f7cbb19cfff" id="r_aae8aef776e538e0e04307f7cbb19cfff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae8aef776e538e0e04307f7cbb19cfff">isUserLoggedIn</a> () const</td></tr>
+<tr class="memdesc:aae8aef776e538e0e04307f7cbb19cfff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı giriş yapmış mı kontrol eder.  <br /></td></tr>
+<tr class="memitem:a4ed5d4c536368652ce1f4aa83b5a4d16" id="r_a4ed5d4c536368652ce1f4aa83b5a4d16"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ed5d4c536368652ce1f4aa83b5a4d16">currentUsername</a> () const</td></tr>
+<tr class="memdesc:a4ed5d4c536368652ce1f4aa83b5a4d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mevcut kullanıcı adını döndürür.  <br /></td></tr>
 <tr class="memitem:a177ebb8e7174eb7c7a46baa2b38b8ff8" id="r_a177ebb8e7174eb7c7a46baa2b38b8ff8"><td class="memItemLeft" align="right" valign="top"><a id="a177ebb8e7174eb7c7a46baa2b38b8ff8" name="a177ebb8e7174eb7c7a46baa2b38b8ff8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>showPhraseLibrary</b> ()</td></tr>
-<tr class="memdesc:a177ebb8e7174eb7c7a46baa2b38b8ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kalıp sözlüğü ekranı. <br /></td></tr>
-<tr class="memitem:a8d954ac80aa0a6f317f5ae02a3ad8b0c" id="r_a8d954ac80aa0a6f317f5ae02a3ad8b0c"><td class="memItemLeft" align="right" valign="top"><a id="a8d954ac80aa0a6f317f5ae02a3ad8b0c" name="a8d954ac80aa0a6f317f5ae02a3ad8b0c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addPhrase</b> (const std::string &amp;phrase, const std::string &amp;category)</td></tr>
-<tr class="memdesc:a8d954ac80aa0a6f317f5ae02a3ad8b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genel ifade ekler. <br /></td></tr>
+<tr class="memdesc:a177ebb8e7174eb7c7a46baa2b38b8ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kelime öbeği kütüphanesini gösterir. <br /></td></tr>
+<tr class="memitem:a8d954ac80aa0a6f317f5ae02a3ad8b0c" id="r_a8d954ac80aa0a6f317f5ae02a3ad8b0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d954ac80aa0a6f317f5ae02a3ad8b0c">addPhrase</a> (const std::string &amp;phrase, const std::string &amp;category)</td></tr>
+<tr class="memdesc:a8d954ac80aa0a6f317f5ae02a3ad8b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yeni kelime öbeği ekler.  <br /></td></tr>
 <tr class="memitem:abe5d9934ae504bc8e977d5fcb74e3e0f" id="r_abe5d9934ae504bc8e977d5fcb74e3e0f"><td class="memItemLeft" align="right" valign="top"><a id="abe5d9934ae504bc8e977d5fcb74e3e0f" name="abe5d9934ae504bc8e977d5fcb74e3e0f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>showLearningTips</b> ()</td></tr>
-<tr class="memdesc:abe5d9934ae504bc8e977d5fcb74e3e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öğrenme ipuçlarını listeler. <br /></td></tr>
-<tr class="memitem:ac09aa2c01d5c7029c3b8526361e9c040" id="r_ac09aa2c01d5c7029c3b8526361e9c040"><td class="memItemLeft" align="right" valign="top"><a id="ac09aa2c01d5c7029c3b8526361e9c040" name="ac09aa2c01d5c7029c3b8526361e9c040"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addLearningTip</b> (const std::string &amp;tip)</td></tr>
-<tr class="memdesc:ac09aa2c01d5c7029c3b8526361e9c040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öğrenme ipucu ekler. <br /></td></tr>
+<tr class="memdesc:abe5d9934ae504bc8e977d5fcb74e3e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öğrenme ipuçlarını gösterir. <br /></td></tr>
+<tr class="memitem:ac09aa2c01d5c7029c3b8526361e9c040" id="r_ac09aa2c01d5c7029c3b8526361e9c040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac09aa2c01d5c7029c3b8526361e9c040">addLearningTip</a> (const std::string &amp;tip)</td></tr>
+<tr class="memdesc:ac09aa2c01d5c7029c3b8526361e9c040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yeni öğrenme ipucu ekler.  <br /></td></tr>
 <tr class="memitem:a436167beacce45319adb33c3ad2f49dc" id="r_a436167beacce45319adb33c3ad2f49dc"><td class="memItemLeft" align="right" valign="top"><a id="a436167beacce45319adb33c3ad2f49dc" name="a436167beacce45319adb33c3ad2f49dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>showPronunciationGuide</b> ()</td></tr>
-<tr class="memdesc:a436167beacce45319adb33c3ad2f49dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Telaffuz rehberini listeler. <br /></td></tr>
-<tr class="memitem:a464e4097673d02dbc9d1d61d30c0cf1f" id="r_a464e4097673d02dbc9d1d61d30c0cf1f"><td class="memItemLeft" align="right" valign="top"><a id="a464e4097673d02dbc9d1d61d30c0cf1f" name="a464e4097673d02dbc9d1d61d30c0cf1f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addPronunciation</b> (const std::string &amp;word, const std::string &amp;guide)</td></tr>
-<tr class="memdesc:a464e4097673d02dbc9d1d61d30c0cf1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Telaffuz girdisi ekler/günceller. <br /></td></tr>
+<tr class="memdesc:a436167beacce45319adb33c3ad2f49dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Telaffuz rehberini gösterir. <br /></td></tr>
+<tr class="memitem:a464e4097673d02dbc9d1d61d30c0cf1f" id="r_a464e4097673d02dbc9d1d61d30c0cf1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a464e4097673d02dbc9d1d61d30c0cf1f">addPronunciation</a> (const std::string &amp;word, const std::string &amp;guide)</td></tr>
+<tr class="memdesc:a464e4097673d02dbc9d1d61d30c0cf1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yeni telaffuz rehberi ekler.  <br /></td></tr>
 <tr class="memitem:a9727ff9c9b9e0a81caeb2ce2e5ad7c62" id="r_a9727ff9c9b9e0a81caeb2ce2e5ad7c62"><td class="memItemLeft" align="right" valign="top"><a id="a9727ff9c9b9e0a81caeb2ce2e5ad7c62" name="a9727ff9c9b9e0a81caeb2ce2e5ad7c62"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>showHistory</b> () const</td></tr>
-<tr class="memdesc:a9727ff9c9b9e0a81caeb2ce2e5ad7c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çeviri geçmişini listeler. <br /></td></tr>
+<tr class="memdesc:a9727ff9c9b9e0a81caeb2ce2e5ad7c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çeviri geçmişini gösterir. <br /></td></tr>
 <tr class="memitem:a36fcb69508cf44869a22b2ea9a7b4463" id="r_a36fcb69508cf44869a22b2ea9a7b4463"><td class="memItemLeft" align="right" valign="top"><a id="a36fcb69508cf44869a22b2ea9a7b4463" name="a36fcb69508cf44869a22b2ea9a7b4463"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clearHistory</b> ()</td></tr>
 <tr class="memdesc:a36fcb69508cf44869a22b2ea9a7b4463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çeviri geçmişini temizler. <br /></td></tr>
 <tr class="memitem:ac18f153739e7fb96366885f3aaf2458e" id="r_ac18f153739e7fb96366885f3aaf2458e"><td class="memItemLeft" align="right" valign="top"><a id="ac18f153739e7fb96366885f3aaf2458e" name="ac18f153739e7fb96366885f3aaf2458e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeDefaultData</b> ()</td></tr>
-<tr class="memdesc:ac18f153739e7fb96366885f3aaf2458e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Varsayılan verilerle başlatır. <br /></td></tr>
+<tr class="memdesc:ac18f153739e7fb96366885f3aaf2458e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Varsayılan verileri başlatır. <br /></td></tr>
 <tr class="memitem:a35984ddf5a72e84559b8961f4f7c33ad" id="r_a35984ddf5a72e84559b8961f4f7c33ad"><td class="memItemLeft" align="right" valign="top"><a id="a35984ddf5a72e84559b8961f4f7c33ad" name="a35984ddf5a72e84559b8961f4f7c33ad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>saveData</b> ()</td></tr>
-<tr class="memdesc:a35984ddf5a72e84559b8961f4f7c33ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verileri kalıcı depoya yazar. <br /></td></tr>
+<tr class="memdesc:a35984ddf5a72e84559b8961f4f7c33ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verileri kaydeder. <br /></td></tr>
 <tr class="memitem:a83daac67d1d81e4c07ac792b7ce1e793" id="r_a83daac67d1d81e4c07ac792b7ce1e793"><td class="memItemLeft" align="right" valign="top"><a id="a83daac67d1d81e4c07ac792b7ce1e793" name="a83daac67d1d81e4c07ac792b7ce1e793"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadData</b> ()</td></tr>
-<tr class="memdesc:a83daac67d1d81e4c07ac792b7ce1e793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verileri kalıcı depodan okur. <br /></td></tr>
-<tr class="memitem:adddfb15e169da4105623cb2162d7f3ec" id="r_adddfb15e169da4105623cb2162d7f3ec"><td class="memItemLeft" align="right" valign="top"><a id="adddfb15e169da4105623cb2162d7f3ec" name="adddfb15e169da4105623cb2162d7f3ec"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadDictionaryFromFile</b> (const std::string &amp;sourceLang, const std::string &amp;targetLang, const std::string &amp;filename)</td></tr>
-<tr class="memdesc:adddfb15e169da4105623cb2162d7f3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dosyadan sözlük yükler. <br /></td></tr>
+<tr class="memdesc:a83daac67d1d81e4c07ac792b7ce1e793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verileri yükler. <br /></td></tr>
+<tr class="memitem:adddfb15e169da4105623cb2162d7f3ec" id="r_adddfb15e169da4105623cb2162d7f3ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adddfb15e169da4105623cb2162d7f3ec">loadDictionaryFromFile</a> (const std::string &amp;sourceLang, const std::string &amp;targetLang, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:adddfb15e169da4105623cb2162d7f3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dosyadan sözlük yükler.  <br /></td></tr>
 <tr class="memitem:aa3f57c2f13453169c28cf1cb43e913df" id="r_aa3f57c2f13453169c28cf1cb43e913df"><td class="memItemLeft" align="right" valign="top"><a id="aa3f57c2f13453169c28cf1cb43e913df" name="aa3f57c2f13453169c28cf1cb43e913df"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadAllDictionaries</b> ()</td></tr>
 <tr class="memdesc:aa3f57c2f13453169c28cf1cb43e913df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tüm sözlükleri yükler. <br /></td></tr>
-<tr class="memitem:acd8648d60bbb51b35c35ffd92bb7537d" id="r_acd8648d60bbb51b35c35ffd92bb7537d"><td class="memItemLeft" align="right" valign="top"><a id="acd8648d60bbb51b35c35ffd92bb7537d" name="acd8648d60bbb51b35c35ffd92bb7537d"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>translateWithGoogleAPI</b> (const std::string &amp;text, const std::string &amp;sourceLang, const std::string &amp;targetLang)</td></tr>
-<tr class="memdesc:acd8648d60bbb51b35c35ffd92bb7537d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Google API ile çeviri (stub). <br /></td></tr>
-<tr class="memitem:a42d55ad7d00fd049ec011b6b1c3d6a82" id="r_a42d55ad7d00fd049ec011b6b1c3d6a82"><td class="memItemLeft" align="right" valign="top"><a id="a42d55ad7d00fd049ec011b6b1c3d6a82" name="a42d55ad7d00fd049ec011b6b1c3d6a82"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>translateWithMicrosoftAPI</b> (const std::string &amp;text, const std::string &amp;sourceLang, const std::string &amp;targetLang)</td></tr>
-<tr class="memdesc:a42d55ad7d00fd049ec011b6b1c3d6a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Microsoft API ile çeviri (stub). <br /></td></tr>
-<tr class="memitem:a9a2fc7b204faa69f23cbd8f157034468" id="r_a9a2fc7b204faa69f23cbd8f157034468"><td class="memItemLeft" align="right" valign="top"><a id="a9a2fc7b204faa69f23cbd8f157034468" name="a9a2fc7b204faa69f23cbd8f157034468"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isAPIAvailable</b> ()</td></tr>
-<tr class="memdesc:a9a2fc7b204faa69f23cbd8f157034468"><td class="mdescLeft">&#160;</td><td class="mdescRight">API kullanılabilirliği. <br /></td></tr>
-<tr class="memitem:af72ea9779aaca24d309641702b436c27" id="r_af72ea9779aaca24d309641702b436c27"><td class="memItemLeft" align="right" valign="top"><a id="af72ea9779aaca24d309641702b436c27" name="af72ea9779aaca24d309641702b436c27"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAPIKey</b> (const std::string &amp;key)</td></tr>
-<tr class="memdesc:af72ea9779aaca24d309641702b436c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">API anahtarını ayarlar. <br /></td></tr>
-<tr class="memitem:aa762886a074c30304b426dc66f109474" id="r_aa762886a074c30304b426dc66f109474"><td class="memItemLeft" align="right" valign="top"><a id="aa762886a074c30304b426dc66f109474" name="aa762886a074c30304b426dc66f109474"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAPIMode</b> (bool useAPI)</td></tr>
-<tr class="memdesc:aa762886a074c30304b426dc66f109474"><td class="mdescLeft">&#160;</td><td class="mdescRight">API modunu aç/kapatır. <br /></td></tr>
+<tr class="memitem:acd8648d60bbb51b35c35ffd92bb7537d" id="r_acd8648d60bbb51b35c35ffd92bb7537d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd8648d60bbb51b35c35ffd92bb7537d">translateWithGoogleAPI</a> (const std::string &amp;text, const std::string &amp;sourceLang, const std::string &amp;targetLang)</td></tr>
+<tr class="memdesc:acd8648d60bbb51b35c35ffd92bb7537d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Google API ile çeviri yapar.  <br /></td></tr>
+<tr class="memitem:a42d55ad7d00fd049ec011b6b1c3d6a82" id="r_a42d55ad7d00fd049ec011b6b1c3d6a82"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42d55ad7d00fd049ec011b6b1c3d6a82">translateWithMicrosoftAPI</a> (const std::string &amp;text, const std::string &amp;sourceLang, const std::string &amp;targetLang)</td></tr>
+<tr class="memdesc:a42d55ad7d00fd049ec011b6b1c3d6a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Microsoft API ile çeviri yapar.  <br /></td></tr>
+<tr class="memitem:a9a2fc7b204faa69f23cbd8f157034468" id="r_a9a2fc7b204faa69f23cbd8f157034468"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a2fc7b204faa69f23cbd8f157034468">isAPIAvailable</a> ()</td></tr>
+<tr class="memdesc:a9a2fc7b204faa69f23cbd8f157034468"><td class="mdescLeft">&#160;</td><td class="mdescRight">API kullanılabilir mi kontrol eder.  <br /></td></tr>
+<tr class="memitem:af72ea9779aaca24d309641702b436c27" id="r_af72ea9779aaca24d309641702b436c27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af72ea9779aaca24d309641702b436c27">setAPIKey</a> (const std::string &amp;key)</td></tr>
+<tr class="memdesc:af72ea9779aaca24d309641702b436c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">API anahtarını ayarlar.  <br /></td></tr>
+<tr class="memitem:aa762886a074c30304b426dc66f109474" id="r_aa762886a074c30304b426dc66f109474"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa762886a074c30304b426dc66f109474">setAPIMode</a> (bool <a class="el" href="#a4899e421750407b3ffb82f527b7a20ed">useAPI</a>)</td></tr>
+<tr class="memdesc:aa762886a074c30304b426dc66f109474"><td class="mdescLeft">&#160;</td><td class="mdescRight">API kullanım modunu ayarlar.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac5dec0ba10b797cf38f934361b76a65f" id="r_ac5dec0ba10b797cf38f934361b76a65f"><td class="memItemLeft" align="right" valign="top"><a id="ac5dec0ba10b797cf38f934361b76a65f" name="ac5dec0ba10b797cf38f934361b76a65f"></a>
+std::unordered_map&lt; std::string, std::unordered_map&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>wordDictionaries</b></td></tr>
+<tr class="memdesc:ac5dec0ba10b797cf38f934361b76a65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kelime sözlükleri. <br /></td></tr>
+<tr class="memitem:ad77f7e667c879392de1c7f0eb9118ff5" id="r_ad77f7e667c879392de1c7f0eb9118ff5"><td class="memItemLeft" align="right" valign="top"><a id="ad77f7e667c879392de1c7f0eb9118ff5" name="ad77f7e667c879392de1c7f0eb9118ff5"></a>
+std::unordered_map&lt; std::string, std::unordered_map&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>phraseDictionaries</b></td></tr>
+<tr class="memdesc:ad77f7e667c879392de1c7f0eb9118ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kelime öbeği sözlükleri. <br /></td></tr>
+<tr class="memitem:a13f5460748a50ab69dc4350032ab068b" id="r_a13f5460748a50ab69dc4350032ab068b"><td class="memItemLeft" align="right" valign="top"><a id="a13f5460748a50ab69dc4350032ab068b" name="a13f5460748a50ab69dc4350032ab068b"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>supportedLanguages</b></td></tr>
+<tr class="memdesc:a13f5460748a50ab69dc4350032ab068b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desteklenen diller listesi. <br /></td></tr>
+<tr class="memitem:aa86b1cad9a69fa6362942d33211a2f0f" id="r_aa86b1cad9a69fa6362942d33211a2f0f"><td class="memItemLeft" align="right" valign="top"><a id="aa86b1cad9a69fa6362942d33211a2f0f" name="aa86b1cad9a69fa6362942d33211a2f0f"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>currentSourceLanguage</b></td></tr>
+<tr class="memdesc:aa86b1cad9a69fa6362942d33211a2f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mevcut kaynak dil. <br /></td></tr>
+<tr class="memitem:adc41b2365e79a4e7320db409d4aa9465" id="r_adc41b2365e79a4e7320db409d4aa9465"><td class="memItemLeft" align="right" valign="top"><a id="adc41b2365e79a4e7320db409d4aa9465" name="adc41b2365e79a4e7320db409d4aa9465"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>currentTargetLanguage</b></td></tr>
+<tr class="memdesc:adc41b2365e79a4e7320db409d4aa9465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mevcut hedef dil. <br /></td></tr>
+<tr class="memitem:ad3088b49ed2da98352dce4cb4f810f2c" id="r_ad3088b49ed2da98352dce4cb4f810f2c"><td class="memItemLeft" align="right" valign="top"><a id="ad3088b49ed2da98352dce4cb4f810f2c" name="ad3088b49ed2da98352dce4cb4f810f2c"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>commonPhrases</b></td></tr>
+<tr class="memdesc:ad3088b49ed2da98352dce4cb4f810f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yaygın kullanılan kelime öbekleri. <br /></td></tr>
+<tr class="memitem:ada5694e5267fa92812eaaab6cccec4f6" id="r_ada5694e5267fa92812eaaab6cccec4f6"><td class="memItemLeft" align="right" valign="top"><a id="ada5694e5267fa92812eaaab6cccec4f6" name="ada5694e5267fa92812eaaab6cccec4f6"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>learningTips</b></td></tr>
+<tr class="memdesc:ada5694e5267fa92812eaaab6cccec4f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öğrenme ipuçları <br /></td></tr>
+<tr class="memitem:afae3e92a5ef6e8924eb5b8833084a236" id="r_afae3e92a5ef6e8924eb5b8833084a236"><td class="memItemLeft" align="right" valign="top"><a id="afae3e92a5ef6e8924eb5b8833084a236" name="afae3e92a5ef6e8924eb5b8833084a236"></a>
+std::unordered_map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pronunciationGuide</b></td></tr>
+<tr class="memdesc:afae3e92a5ef6e8924eb5b8833084a236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Telaffuz rehberi. <br /></td></tr>
+<tr class="memitem:a14f59f9002016c487ab842d1fdb92249" id="r_a14f59f9002016c487ab842d1fdb92249"><td class="memItemLeft" align="right" valign="top"><a id="a14f59f9002016c487ab842d1fdb92249" name="a14f59f9002016c487ab842d1fdb92249"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>currentUser</b></td></tr>
+<tr class="memdesc:a14f59f9002016c487ab842d1fdb92249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mevcut kullanıcı adı <br /></td></tr>
+<tr class="memitem:aa772f5be7d7d1df3e596e8c704d9f0e0" id="r_aa772f5be7d7d1df3e596e8c704d9f0e0"><td class="memItemLeft" align="right" valign="top"><a id="aa772f5be7d7d1df3e596e8c704d9f0e0" name="aa772f5be7d7d1df3e596e8c704d9f0e0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isLoggedIn</b></td></tr>
+<tr class="memdesc:aa772f5be7d7d1df3e596e8c704d9f0e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı giriş yapmış mı? <br /></td></tr>
+<tr class="memitem:ad7cb4a75dca18dd35ed64990ecca6ddf" id="r_ad7cb4a75dca18dd35ed64990ecca6ddf"><td class="memItemLeft" align="right" valign="top"><a id="ad7cb4a75dca18dd35ed64990ecca6ddf" name="ad7cb4a75dca18dd35ed64990ecca6ddf"></a>
+std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_user_profile.html">UserProfile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>users</b></td></tr>
+<tr class="memdesc:ad7cb4a75dca18dd35ed64990ecca6ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kayıtlı kullanıcılar. <br /></td></tr>
+<tr class="memitem:a71f9662143bf653bb8c710907e6ba9aa" id="r_a71f9662143bf653bb8c710907e6ba9aa"><td class="memItemLeft" align="right" valign="top"><a id="a71f9662143bf653bb8c710907e6ba9aa" name="a71f9662143bf653bb8c710907e6ba9aa"></a>
+std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_translation_record.html">TranslationRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>history</b></td></tr>
+<tr class="memdesc:a71f9662143bf653bb8c710907e6ba9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çeviri geçmişi. <br /></td></tr>
+<tr class="memitem:ab556b1acd8839185a6c192f99e02af41" id="r_ab556b1acd8839185a6c192f99e02af41"><td class="memItemLeft" align="right" valign="top"><a id="ab556b1acd8839185a6c192f99e02af41" name="ab556b1acd8839185a6c192f99e02af41"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>apiKey</b></td></tr>
+<tr class="memdesc:ab556b1acd8839185a6c192f99e02af41"><td class="mdescLeft">&#160;</td><td class="mdescRight">API anahtarı <br /></td></tr>
+<tr class="memitem:a4899e421750407b3ffb82f527b7a20ed" id="r_a4899e421750407b3ffb82f527b7a20ed"><td class="memItemLeft" align="right" valign="top"><a id="a4899e421750407b3ffb82f527b7a20ed" name="a4899e421750407b3ffb82f527b7a20ed"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>useAPI</b></td></tr>
+<tr class="memdesc:a4899e421750407b3ffb82f527b7a20ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">API kullanılsın mı? <br /></td></tr>
+<tr class="memitem:ad46434785f1b6afdfa47bac0de531d87" id="r_ad46434785f1b6afdfa47bac0de531d87"><td class="memItemLeft" align="right" valign="top"><a id="ad46434785f1b6afdfa47bac0de531d87" name="ad46434785f1b6afdfa47bac0de531d87"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>apiProvider</b></td></tr>
+<tr class="memdesc:ad46434785f1b6afdfa47bac0de531d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">API sağlayıcısı ("google" veya "microsoft") <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Uygulama akışını yöneten ana sınıf. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Manages application flow: auth, translation, tips, phrases, pronunciation. </p>
+<p>Bu sınıf, çok dilli çeviri uygulamasının ana işlevlerini yönetir. Kullanıcı kimlik doğrulama, çeviri işlemleri, öğrenme ipuçları, kelime öbekleri ve telaffuz rehberi gibi özellikleri içerir. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="af4d3d14b521b942497457d78b58cef5a" name="af4d3d14b521b942497457d78b58cef5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d3d14b521b942497457d78b58cef5a">&#9670;&#160;</a></span>addLanguage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Coruh::LanguageTranslator::LanguageTranslatorApp::addLanguage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>language</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yeni dil ekler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">language</td><td>Eklenecek dil </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac09aa2c01d5c7029c3b8526361e9c040" name="ac09aa2c01d5c7029c3b8526361e9c040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09aa2c01d5c7029c3b8526361e9c040">&#9670;&#160;</a></span>addLearningTip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Coruh::LanguageTranslator::LanguageTranslatorApp::addLearningTip </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>tip</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yeni öğrenme ipucu ekler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tip</td><td>Öğrenme ipucu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d954ac80aa0a6f317f5ae02a3ad8b0c" name="a8d954ac80aa0a6f317f5ae02a3ad8b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d954ac80aa0a6f317f5ae02a3ad8b0c">&#9670;&#160;</a></span>addPhrase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Coruh::LanguageTranslator::LanguageTranslatorApp::addPhrase </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>phrase</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>category</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yeni kelime öbeği ekler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phrase</td><td>Kelime öbeği </td></tr>
+    <tr><td class="paramname">category</td><td>Kategori </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a464e4097673d02dbc9d1d61d30c0cf1f" name="a464e4097673d02dbc9d1d61d30c0cf1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a464e4097673d02dbc9d1d61d30c0cf1f">&#9670;&#160;</a></span>addPronunciation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Coruh::LanguageTranslator::LanguageTranslatorApp::addPronunciation </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>word</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>guide</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yeni telaffuz rehberi ekler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">word</td><td>Kelime </td></tr>
+    <tr><td class="paramname">guide</td><td>Telaffuz rehberi </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4ed5d4c536368652ce1f4aa83b5a4d16" name="a4ed5d4c536368652ce1f4aa83b5a4d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed5d4c536368652ce1f4aa83b5a4d16">&#9670;&#160;</a></span>currentUsername()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; Coruh::LanguageTranslator::LanguageTranslatorApp::currentUsername </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mevcut kullanıcı adını döndürür. </p>
+<dl class="section return"><dt>Returns</dt><dd>Kullanıcı adı </dd></dl>
+
+</div>
+</div>
+<a id="a98320f1bf6b3b67151deef4f18e79a10" name="a98320f1bf6b3b67151deef4f18e79a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98320f1bf6b3b67151deef4f18e79a10">&#9670;&#160;</a></span>getSupportedLanguages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Coruh::LanguageTranslator::LanguageTranslatorApp::getSupportedLanguages </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Desteklenen dilleri döndürür. </p>
+<dl class="section return"><dt>Returns</dt><dd>Desteklenen diller listesi </dd></dl>
+
+</div>
+</div>
+<a id="a8cfaed25014b5dbff221e2557d407f4d" name="a8cfaed25014b5dbff221e2557d407f4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cfaed25014b5dbff221e2557d407f4d">&#9670;&#160;</a></span>handleUserChoice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Coruh::LanguageTranslator::LanguageTranslatorApp::handleUserChoice </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>choice</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ana menü seçimini işler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">choice</td><td>Kullanıcının seçimi </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a2fc7b204faa69f23cbd8f157034468" name="a9a2fc7b204faa69f23cbd8f157034468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a2fc7b204faa69f23cbd8f157034468">&#9670;&#160;</a></span>isAPIAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::LanguageTranslatorApp::isAPIAvailable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>API kullanılabilir mi kontrol eder. </p>
+<dl class="section return"><dt>Returns</dt><dd>API kullanılabilir mi? </dd></dl>
+
+</div>
+</div>
+<a id="aae8aef776e538e0e04307f7cbb19cfff" name="aae8aef776e538e0e04307f7cbb19cfff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae8aef776e538e0e04307f7cbb19cfff">&#9670;&#160;</a></span>isUserLoggedIn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::LanguageTranslatorApp::isUserLoggedIn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kullanıcı giriş yapmış mı kontrol eder. </p>
+<dl class="section return"><dt>Returns</dt><dd>Giriş yapmış mı? </dd></dl>
+
+</div>
+</div>
+<a id="adddfb15e169da4105623cb2162d7f3ec" name="adddfb15e169da4105623cb2162d7f3ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adddfb15e169da4105623cb2162d7f3ec">&#9670;&#160;</a></span>loadDictionaryFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::LanguageTranslatorApp::loadDictionaryFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sourceLang</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>targetLang</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dosyadan sözlük yükler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sourceLang</td><td>Kaynak dil </td></tr>
+    <tr><td class="paramname">targetLang</td><td>Hedef dil </td></tr>
+    <tr><td class="paramname">filename</td><td>Dosya adı </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Yükleme başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="aebb1a131807481ffd3a86e81ba5d7149" name="aebb1a131807481ffd3a86e81ba5d7149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebb1a131807481ffd3a86e81ba5d7149">&#9670;&#160;</a></span>login()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::LanguageTranslatorApp::login </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>username</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kullanıcı girişi yapar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Kullanıcı adı </td></tr>
+    <tr><td class="paramname">password</td><td>Şifre </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Giriş başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="a1db0ba24cc5bb600bb0492759b56d688" name="a1db0ba24cc5bb600bb0492759b56d688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1db0ba24cc5bb600bb0492759b56d688">&#9670;&#160;</a></span>registerUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::LanguageTranslatorApp::registerUser </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>username</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yeni kullanıcı kaydı yapar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Kullanıcı adı </td></tr>
+    <tr><td class="paramname">password</td><td>Şifre </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Kayıt başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="af72ea9779aaca24d309641702b436c27" name="af72ea9779aaca24d309641702b436c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72ea9779aaca24d309641702b436c27">&#9670;&#160;</a></span>setAPIKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Coruh::LanguageTranslator::LanguageTranslatorApp::setAPIKey </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>API anahtarını ayarlar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>API anahtarı </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa762886a074c30304b426dc66f109474" name="aa762886a074c30304b426dc66f109474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa762886a074c30304b426dc66f109474">&#9670;&#160;</a></span>setAPIMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Coruh::LanguageTranslator::LanguageTranslatorApp::setAPIMode </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useAPI</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>API kullanım modunu ayarlar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useAPI</td><td>API kullanılsın mı? </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aed85d51b8fae05cd2ace0c6166b0e300" name="aed85d51b8fae05cd2ace0c6166b0e300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed85d51b8fae05cd2ace0c6166b0e300">&#9670;&#160;</a></span>setSourceLanguage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Coruh::LanguageTranslator::LanguageTranslatorApp::setSourceLanguage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>language</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kaynak dili ayarlar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">language</td><td>Kaynak dil </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca0a3b739bf7a53e92616b62f838d813" name="aca0a3b739bf7a53e92616b62f838d813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0a3b739bf7a53e92616b62f838d813">&#9670;&#160;</a></span>setTargetLanguage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Coruh::LanguageTranslator::LanguageTranslatorApp::setTargetLanguage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>language</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hedef dili ayarlar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">language</td><td>Hedef dil </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a06a91752cc8178f227d69060cf1d6c81" name="a06a91752cc8178f227d69060cf1d6c81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a91752cc8178f227d69060cf1d6c81">&#9670;&#160;</a></span>translatePhrase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Coruh::LanguageTranslator::LanguageTranslatorApp::translatePhrase </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>phrase</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kelime öbeğini çevirir. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phrase</td><td>Çevrilecek kelime öbeği </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Çevrilmiş kelime öbeği </dd></dl>
+
+</div>
+</div>
+<a id="a03ad354d985ea9953caeb220ba353675" name="a03ad354d985ea9953caeb220ba353675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ad354d985ea9953caeb220ba353675">&#9670;&#160;</a></span>translateText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Coruh::LanguageTranslator::LanguageTranslatorApp::translateText </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aktif dil çiftini kullanarak metni çevirir. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Çevrilecek metin </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Çevrilmiş metin </dd></dl>
+
+</div>
+</div>
+<a id="acd8648d60bbb51b35c35ffd92bb7537d" name="acd8648d60bbb51b35c35ffd92bb7537d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8648d60bbb51b35c35ffd92bb7537d">&#9670;&#160;</a></span>translateWithGoogleAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Coruh::LanguageTranslator::LanguageTranslatorApp::translateWithGoogleAPI </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sourceLang</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>targetLang</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Google API ile çeviri yapar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Çevrilecek metin </td></tr>
+    <tr><td class="paramname">sourceLang</td><td>Kaynak dil </td></tr>
+    <tr><td class="paramname">targetLang</td><td>Hedef dil </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Çevrilmiş metin </dd></dl>
+
+</div>
+</div>
+<a id="a42d55ad7d00fd049ec011b6b1c3d6a82" name="a42d55ad7d00fd049ec011b6b1c3d6a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42d55ad7d00fd049ec011b6b1c3d6a82">&#9670;&#160;</a></span>translateWithMicrosoftAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Coruh::LanguageTranslator::LanguageTranslatorApp::translateWithMicrosoftAPI </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sourceLang</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>targetLang</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Microsoft API ile çeviri yapar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Çevrilecek metin </td></tr>
+    <tr><td class="paramname">sourceLang</td><td>Kaynak dil </td></tr>
+    <tr><td class="paramname">targetLang</td><td>Hedef dil </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Çevrilmiş metin </dd></dl>
+
+</div>
+</div>
+<a id="afd506854467cc68e7a55c7f9ccb4d3c1" name="afd506854467cc68e7a55c7f9ccb4d3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd506854467cc68e7a55c7f9ccb4d3c1">&#9670;&#160;</a></span>translateWord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Coruh::LanguageTranslator::LanguageTranslatorApp::translateWord </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>word</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tek bir kelimeyi çevirir. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">word</td><td>Çevrilecek kelime </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Çevrilmiş kelime </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/<a class="el" href="_language_translator_8h_source.html">LanguageTranslator.h</a></li>
 </ul>
 </div><!-- contents -->

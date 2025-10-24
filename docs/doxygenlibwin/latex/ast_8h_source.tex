@@ -1,90 +1,129 @@
 \doxysection{ast.\+h}
 \hypertarget{ast_8h_source}{}\label{ast_8h_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/ast.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/ast.h}}
-
+\mbox{\hyperlink{ast_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <memory>}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }translator\ \{}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{keyword}{enum\ class}\ ExprKind\ \{\ Number,\ Variable,\ Binary\ \};}
-\DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }Expr\ \{}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~Expr()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{virtual}\ ExprKind\ kind()\ \textcolor{keyword}{const}\ =\ 0;}
-\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }translator\ \{}
 \DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \textcolor{keyword}{struct\ }NumberExpr\ :\ Expr\ \{}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ value;}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{explicit}\ NumberExpr(\textcolor{keywordtype}{double}\ v)\ :\ value(v)\ \{\}}
-\DoxyCodeLine{00018\ \ \ \ \ ExprKind\ kind()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ ExprKind::Number;\ \}}
-\DoxyCodeLine{00019\ \};}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \textcolor{keyword}{struct\ }VariableExpr\ :\ Expr\ \{}
-\DoxyCodeLine{00022\ \ \ \ \ std::string\ name;}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{explicit}\ VariableExpr(std::string\ n)\ :\ name(std::move(n))\ \{\}}
-\DoxyCodeLine{00024\ \ \ \ \ ExprKind\ kind()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ ExprKind::Variable;\ \}}
-\DoxyCodeLine{00025\ \};}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \textcolor{keyword}{struct\ }BinaryExpr\ :\ Expr\ \{}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{char}\ op;}
-\DoxyCodeLine{00029\ \ \ \ \ std::unique\_ptr<Expr>\ lhs;}
-\DoxyCodeLine{00030\ \ \ \ \ std::unique\_ptr<Expr>\ rhs;}
-\DoxyCodeLine{00031\ \ \ \ \ BinaryExpr(\textcolor{keywordtype}{char}\ op,\ std::unique\_ptr<Expr>\ l,\ std::unique\_ptr<Expr>\ r)}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ :\ op(op),\ lhs(std::move(l)),\ rhs(std::move(r))\ \{\}}
-\DoxyCodeLine{00033\ \ \ \ \ ExprKind\ kind()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ ExprKind::Binary;\ \}}
-\DoxyCodeLine{00034\ \};}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \textcolor{keyword}{enum\ class}\ StmtKind\ \{\ Let,\ Print,\ Input,\ Goto,\ IfGoto,\ Gosub,\ Return\ \};}
+\DoxyCodeLine{00018\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0}{ExprKind}}\ \{\ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0ab2ee912b91d69b435159c7c3f6df7f5f}{Number}},\ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0a47c14840d8e15331fa420b9b2f757cd9}{Variable}},\ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0a6ce976e8f061b2b5cfe4d0c50c3405dd}{Binary}}\ \ \ \ \ \ }
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_expr}{Expr}}\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structtranslator_1_1_expr}{\string~Expr}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0}{ExprKind}}\ \mbox{\hyperlink{structtranslator_1_1_expr_aced195c2a0830ff10b582d02731c93b1}{kind}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00036\ \};}
 \DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \textcolor{keyword}{struct\ }Stmt\ \{\ \textcolor{keyword}{virtual}\ \string~Stmt()\ =\ \textcolor{keywordflow}{default};\ \textcolor{keyword}{virtual}\ StmtKind\ kind()\ \textcolor{keyword}{const}\ =\ 0;\ \};}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \textcolor{keyword}{struct\ }LetStmt\ :\ Stmt\ \{}
-\DoxyCodeLine{00041\ \ \ \ \ std::string\ name;\ std::unique\_ptr<Expr>\ expr;}
-\DoxyCodeLine{00042\ \ \ \ \ LetStmt(std::string\ n,\ std::unique\_ptr<Expr>\ e)\ :\ name(std::move(n)),\ expr(std::move(e))\ \{\}}
-\DoxyCodeLine{00043\ \ \ \ \ StmtKind\ kind()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ StmtKind::Let;\ \}}
-\DoxyCodeLine{00044\ \};}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00046\ \textcolor{keyword}{struct\ }PrintStmt\ :\ Stmt\ \{}
-\DoxyCodeLine{00047\ \ \ \ \ std::vector<std::unique\_ptr<Expr>>\ items;}
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{explicit}\ PrintStmt(std::vector<std::unique\_ptr<Expr>>\ xs)\ :\ items(std::move(xs))\ \{\}}
-\DoxyCodeLine{00049\ \ \ \ \ StmtKind\ kind()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ StmtKind::Print;\ \}}
-\DoxyCodeLine{00050\ \};}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \textcolor{keyword}{struct\ }InputStmt\ :\ Stmt\ \{}
-\DoxyCodeLine{00053\ \ \ \ \ std::string\ name;\ \textcolor{keyword}{explicit}\ InputStmt(std::string\ n)\ :\ name(std::move(n))\ \{\}}
-\DoxyCodeLine{00054\ \ \ \ \ StmtKind\ kind()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ StmtKind::Input;\ \}}
+\DoxyCodeLine{00041\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_number_expr_a1f3f3ffe225582173368a9fa08e9abb7}{NumberExpr}}\ :\ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}}\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structtranslator_1_1_number_expr_acd4dc7cf346802fa3bf1a2872c4b477c}{value}};\ \ }
+\DoxyCodeLine{00043\ \ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{structtranslator_1_1_number_expr_a1f3f3ffe225582173368a9fa08e9abb7}{NumberExpr}}(\textcolor{keywordtype}{double}\ v)\ :\ \mbox{\hyperlink{structtranslator_1_1_number_expr_acd4dc7cf346802fa3bf1a2872c4b477c}{value}}(v)\ \{\}}
+\DoxyCodeLine{00049\ \ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0}{ExprKind}}\ \mbox{\hyperlink{structtranslator_1_1_number_expr_a6747a2814f5d6135f2506cf35bda7401}{kind}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0ab2ee912b91d69b435159c7c3f6df7f5f}{ExprKind::Number}};\ \}}
 \DoxyCodeLine{00055\ \};}
 \DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \textcolor{keyword}{struct\ }GotoStmt\ :\ Stmt\ \{}
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ target;\ \textcolor{keyword}{explicit}\ GotoStmt(\textcolor{keywordtype}{int}\ t)\ :\ target(t)\ \{\}}
-\DoxyCodeLine{00059\ \ \ \ \ StmtKind\ kind()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ StmtKind::Goto;\ \}}
-\DoxyCodeLine{00060\ \};}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \textcolor{keyword}{struct\ }IfGotoStmt\ :\ Stmt\ \{}
-\DoxyCodeLine{00063\ \ \ \ \ std::unique\_ptr<Expr>\ cond;\ \textcolor{keywordtype}{int}\ target;}
-\DoxyCodeLine{00064\ \ \ \ \ IfGotoStmt(std::unique\_ptr<Expr>\ c,\ \textcolor{keywordtype}{int}\ t)\ :\ cond(std::move(c)),\ target(t)\ \{\}}
-\DoxyCodeLine{00065\ \ \ \ \ StmtKind\ kind()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ StmtKind::IfGoto;\ \}}
-\DoxyCodeLine{00066\ \};}
-\DoxyCodeLine{00067\ }
-\DoxyCodeLine{00068\ \textcolor{keyword}{struct\ }GosubStmt\ :\ Stmt\ \{}
-\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ target;\ \textcolor{keyword}{explicit}\ GosubStmt(\textcolor{keywordtype}{int}\ t)\ :\ target(t)\ \{\}}
-\DoxyCodeLine{00070\ \ \ \ \ StmtKind\ kind()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ StmtKind::Gosub;\ \}}
-\DoxyCodeLine{00071\ \};}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00073\ \textcolor{keyword}{struct\ }ReturnStmt\ :\ Stmt\ \{}
-\DoxyCodeLine{00074\ \ \ \ \ StmtKind\ kind()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ StmtKind::Return;\ \}}
-\DoxyCodeLine{00075\ \};}
-\DoxyCodeLine{00076\ }
-\DoxyCodeLine{00077\ \textcolor{keyword}{struct\ }Program\ \{}
-\DoxyCodeLine{00078\ \ \ \ \ \textcolor{comment}{//\ Parallel\ arrays:\ one\ statement\ per\ label\ index}}
-\DoxyCodeLine{00079\ \ \ \ \ std::vector<int>\ labels;\ \textcolor{comment}{//\ e.g.,\ 10,\ 20,\ 30}}
-\DoxyCodeLine{00080\ \ \ \ \ std::vector<std::unique\_ptr<Stmt>>\ stmts;}
-\DoxyCodeLine{00081\ \ \ \ \ \textcolor{comment}{//\ Label\ -\/>\ index\ map\ will\ be\ provided\ via\ lookup\ helper.}}
-\DoxyCodeLine{00082\ \};}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00084\ \}\ \textcolor{comment}{//\ namespace\ translator}}
+\DoxyCodeLine{00060\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_variable_expr_a2f077bd3bb494bd04446225c1e7e3df3}{VariableExpr}}\ :\ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}}\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ std::string\ \mbox{\hyperlink{structtranslator_1_1_variable_expr_a5291773d6a8af4ee3e3abfa8e212ab4d}{name}};\ \ }
+\DoxyCodeLine{00062\ \ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{structtranslator_1_1_variable_expr_a2f077bd3bb494bd04446225c1e7e3df3}{VariableExpr}}(std::string\ n)\ :\ \mbox{\hyperlink{structtranslator_1_1_variable_expr_a5291773d6a8af4ee3e3abfa8e212ab4d}{name}}(std::move(n))\ \{\}}
+\DoxyCodeLine{00068\ \ \ \ \ }
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0}{ExprKind}}\ \mbox{\hyperlink{structtranslator_1_1_variable_expr_a0dd6b31c1c5ac1801779da5eb115c95d}{kind}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0a47c14840d8e15331fa420b9b2f757cd9}{ExprKind::Variable}};\ \}}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_binary_expr_af157e5409dd40ef3eafdba3fb823bb7f}{BinaryExpr}}\ :\ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}}\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structtranslator_1_1_binary_expr_a5f2cb60cdd8ab25136eba4b6c08ab305}{op}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00081\ \ \ \ \ std::unique\_ptr<Expr>\ \mbox{\hyperlink{structtranslator_1_1_binary_expr_a43a169916f11bd4686c74143ef3524f8}{lhs}};\ \ \ \ \ \ }
+\DoxyCodeLine{00082\ \ \ \ \ std::unique\_ptr<Expr>\ \mbox{\hyperlink{structtranslator_1_1_binary_expr_a899fc189d22f70035034243de177b9ed}{rhs}};\ \ \ \ \ \ }
+\DoxyCodeLine{00083\ \ \ \ \ }
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{structtranslator_1_1_binary_expr_af157e5409dd40ef3eafdba3fb823bb7f}{BinaryExpr}}(\textcolor{keywordtype}{char}\ \mbox{\hyperlink{structtranslator_1_1_binary_expr_a5f2cb60cdd8ab25136eba4b6c08ab305}{op}},\ std::unique\_ptr<Expr>\ l,\ std::unique\_ptr<Expr>\ r)}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{structtranslator_1_1_binary_expr_a5f2cb60cdd8ab25136eba4b6c08ab305}{op}}(\mbox{\hyperlink{structtranslator_1_1_binary_expr_a5f2cb60cdd8ab25136eba4b6c08ab305}{op}}),\ \mbox{\hyperlink{structtranslator_1_1_binary_expr_a43a169916f11bd4686c74143ef3524f8}{lhs}}(std::move(l)),\ \mbox{\hyperlink{structtranslator_1_1_binary_expr_a899fc189d22f70035034243de177b9ed}{rhs}}(std::move(r))\ \{\}}
+\DoxyCodeLine{00092\ \ \ \ \ }
+\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0}{ExprKind}}\ \mbox{\hyperlink{structtranslator_1_1_binary_expr_a4f09625d10e55dad82469d2510b4cc96}{kind}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0a6ce976e8f061b2b5cfe4d0c50c3405dd}{ExprKind::Binary}};\ \}}
+\DoxyCodeLine{00098\ \};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00103\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{StmtKind}}\ \{\ }
+\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3dacae6404c4aecf46684930fe2a86676a6}{Let}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3da13dba24862cf9128167a59100e154c8d}{Print}},\ \ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3da324118a6721dd6b8a9b9f4e327df2bf5}{Input}},\ \ \ \ \ \ }
+\DoxyCodeLine{00107\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3daae8fae3d74fdc80ef40995c3c6ca152e}{Goto}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3dabb4ff8fec829fa14d95445a6675e0f8c}{IfGoto}},\ \ \ \ \ }
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173}{Gosub}},\ \ \ \ \ \ }
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce}{Return}}\ \ \ \ \ \ }
+\DoxyCodeLine{00111\ \};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00118\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}}\ \{\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structtranslator_1_1_stmt}{\string~Stmt}}()\ =\ \textcolor{keywordflow}{default};\ }
+\DoxyCodeLine{00120\ \ \ \ \ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{StmtKind}}\ \mbox{\hyperlink{structtranslator_1_1_stmt_afb8f5d100524bc8cf234edae0ac57578}{kind}}()\ \textcolor{keyword}{const}\ =\ 0;\ }
+\DoxyCodeLine{00126\ \};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00131\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_let_stmt_a0bfebf9ceb1029382c8ca27259962790}{LetStmt}}\ :\ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}}\ \{}
+\DoxyCodeLine{00132\ \ \ \ \ std::string\ \mbox{\hyperlink{structtranslator_1_1_let_stmt_a2e254e84e516bfab49d9956eec8caa6d}{name}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00133\ \ \ \ \ std::unique\_ptr<Expr>\ \mbox{\hyperlink{structtranslator_1_1_let_stmt_ad9b43c0a057208438e598c102ea2695d}{expr}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00134\ \ \ \ \ }
+\DoxyCodeLine{00140\ \ \ \ \ \mbox{\hyperlink{structtranslator_1_1_let_stmt_a0bfebf9ceb1029382c8ca27259962790}{LetStmt}}(std::string\ n,\ std::unique\_ptr<Expr>\ e)\ :\ \mbox{\hyperlink{structtranslator_1_1_let_stmt_a2e254e84e516bfab49d9956eec8caa6d}{name}}(std::move(n)),\ \mbox{\hyperlink{structtranslator_1_1_let_stmt_ad9b43c0a057208438e598c102ea2695d}{expr}}(std::move(e))\ \{\}}
+\DoxyCodeLine{00141\ \ \ \ \ }
+\DoxyCodeLine{00146\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{StmtKind}}\ \mbox{\hyperlink{structtranslator_1_1_let_stmt_ad88e60c92df1de021f3fa562267fdb59}{kind}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3dacae6404c4aecf46684930fe2a86676a6}{StmtKind::Let}};\ \}}
+\DoxyCodeLine{00147\ \};}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00152\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_print_stmt_acf477bf52c1d1a6b3d4ddb399a4128a8}{PrintStmt}}\ :\ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}}\ \{}
+\DoxyCodeLine{00153\ \ \ \ \ std::vector<std::unique\_ptr<Expr>>\ \mbox{\hyperlink{structtranslator_1_1_print_stmt_a4e790939efbde0f2c720ca13fb1e25c5}{items}};\ \ }
+\DoxyCodeLine{00154\ \ \ \ \ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{structtranslator_1_1_print_stmt_acf477bf52c1d1a6b3d4ddb399a4128a8}{PrintStmt}}(std::vector<std::unique\_ptr<Expr>>\ xs)\ :\ \mbox{\hyperlink{structtranslator_1_1_print_stmt_a4e790939efbde0f2c720ca13fb1e25c5}{items}}(std::move(xs))\ \{\}}
+\DoxyCodeLine{00160\ \ \ \ \ }
+\DoxyCodeLine{00165\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{StmtKind}}\ \mbox{\hyperlink{structtranslator_1_1_print_stmt_a2804d4e2524a83441edb292238c38fe9}{kind}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3da13dba24862cf9128167a59100e154c8d}{StmtKind::Print}};\ \}}
+\DoxyCodeLine{00166\ \};}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00171\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_input_stmt_ae709f989a663c5e7cfe2abe65589b63b}{InputStmt}}\ :\ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}}\ \{}
+\DoxyCodeLine{00172\ \ \ \ \ std::string\ \mbox{\hyperlink{structtranslator_1_1_input_stmt_afb169d343ee04be4f15a594fa28b4b0e}{name}};\ \ }
+\DoxyCodeLine{00173\ \ \ \ \ }
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{structtranslator_1_1_input_stmt_ae709f989a663c5e7cfe2abe65589b63b}{InputStmt}}(std::string\ n)\ :\ \mbox{\hyperlink{structtranslator_1_1_input_stmt_afb169d343ee04be4f15a594fa28b4b0e}{name}}(std::move(n))\ \{\}}
+\DoxyCodeLine{00179\ \ \ \ \ }
+\DoxyCodeLine{00184\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{StmtKind}}\ \mbox{\hyperlink{structtranslator_1_1_input_stmt_a49fff20ac46a7ad799c335425a47b7f8}{kind}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3da324118a6721dd6b8a9b9f4e327df2bf5}{StmtKind::Input}};\ \}}
+\DoxyCodeLine{00185\ \};}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00190\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_goto_stmt_ae22d265c24459eb2537df432131f46d7}{GotoStmt}}\ :\ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}}\ \{}
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structtranslator_1_1_goto_stmt_a7f09790266e5d62bfc34b0709cab10c6}{target}};\ \ }
+\DoxyCodeLine{00192\ \ \ \ \ }
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{structtranslator_1_1_goto_stmt_ae22d265c24459eb2537df432131f46d7}{GotoStmt}}(\textcolor{keywordtype}{int}\ t)\ :\ \mbox{\hyperlink{structtranslator_1_1_goto_stmt_a7f09790266e5d62bfc34b0709cab10c6}{target}}(t)\ \{\}}
+\DoxyCodeLine{00198\ \ \ \ \ }
+\DoxyCodeLine{00203\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{StmtKind}}\ \mbox{\hyperlink{structtranslator_1_1_goto_stmt_aae4b7271164ea8557ffdc4a79d8657f0}{kind}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3daae8fae3d74fdc80ef40995c3c6ca152e}{StmtKind::Goto}};\ \}}
+\DoxyCodeLine{00204\ \};}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00209\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_a01828a7980e1ef2d5503aca3f106dc1f}{IfGotoStmt}}\ :\ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}}\ \{}
+\DoxyCodeLine{00210\ \ \ \ \ std::unique\_ptr<Expr>\ \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_a0799d00d21436cbcadd3a2e7ccb94275}{cond}};\ \ }
+\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_af2860bea6273fdf9e63c46627fb1876d}{target}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00212\ \ \ \ \ }
+\DoxyCodeLine{00218\ \ \ \ \ \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_a01828a7980e1ef2d5503aca3f106dc1f}{IfGotoStmt}}(std::unique\_ptr<Expr>\ c,\ \textcolor{keywordtype}{int}\ t)\ :\ \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_a0799d00d21436cbcadd3a2e7ccb94275}{cond}}(std::move(c)),\ \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_af2860bea6273fdf9e63c46627fb1876d}{target}}(t)\ \{\}}
+\DoxyCodeLine{00219\ \ \ \ \ }
+\DoxyCodeLine{00224\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{StmtKind}}\ \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_a77a2dccf8e1b280dd39c2a9101cb17e6}{kind}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3dabb4ff8fec829fa14d95445a6675e0f8c}{StmtKind::IfGoto}};\ \}}
+\DoxyCodeLine{00225\ \};}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00230\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_gosub_stmt_aae89ce3fc1bbe274899085b0fbee9181}{GosubStmt}}\ :\ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}}\ \{}
+\DoxyCodeLine{00231\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structtranslator_1_1_gosub_stmt_a168c003fcda2ceb2e8c2cd015df7ec85}{target}};\ \ }
+\DoxyCodeLine{00232\ \ \ \ \ }
+\DoxyCodeLine{00237\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{structtranslator_1_1_gosub_stmt_aae89ce3fc1bbe274899085b0fbee9181}{GosubStmt}}(\textcolor{keywordtype}{int}\ t)\ :\ \mbox{\hyperlink{structtranslator_1_1_gosub_stmt_a168c003fcda2ceb2e8c2cd015df7ec85}{target}}(t)\ \{\}}
+\DoxyCodeLine{00238\ \ \ \ \ }
+\DoxyCodeLine{00243\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{StmtKind}}\ \mbox{\hyperlink{structtranslator_1_1_gosub_stmt_a959e82453b6d5f6f8f7f92f63eb565ac}{kind}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173}{StmtKind::Gosub}};\ \}}
+\DoxyCodeLine{00244\ \};}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00249\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_return_stmt}{ReturnStmt}}\ :\ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}}\ \{}
+\DoxyCodeLine{00254\ \ \ \ \ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{StmtKind}}\ \mbox{\hyperlink{structtranslator_1_1_return_stmt_a9344c9c9a74ac406decd1a74d4fc42af}{kind}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce}{StmtKind::Return}};\ \}}
+\DoxyCodeLine{00255\ \};}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00262\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_program}{Program}}\ \{}
+\DoxyCodeLine{00263\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{structtranslator_1_1_program_a7475f175b7b501e7ec7d0a2f16a613c4}{labels}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00264\ \ \ \ \ std::vector<std::unique\_ptr<Stmt>>\ \mbox{\hyperlink{structtranslator_1_1_program_ae1becdf326699756afe2f60647e47382}{stmts}};\ \ \ \ \ }
+\DoxyCodeLine{00265\ \ \ \ \ \textcolor{comment}{//\ Label\ -\/>\ index\ map\ will\ be\ provided\ via\ lookup\ helper.}}
+\DoxyCodeLine{00266\ \};}
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00268\ \}\ \textcolor{comment}{//\ namespace\ translator}}
 
 \end{DoxyCode}

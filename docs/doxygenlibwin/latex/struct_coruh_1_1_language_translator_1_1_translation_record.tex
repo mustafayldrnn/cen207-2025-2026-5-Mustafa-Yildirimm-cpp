@@ -2,7 +2,7 @@
 \hypertarget{struct_coruh_1_1_language_translator_1_1_translation_record}{}\label{struct_coruh_1_1_language_translator_1_1_translation_record}\index{Coruh::LanguageTranslator::TranslationRecord@{Coruh::LanguageTranslator::TranslationRecord}}
 
 
-Çeviri geçmişi kaydı.  
+Çeviri geçmişi kaydı  
 
 
 
@@ -11,18 +11,37 @@
 
 
 
-Collaboration diagram for Coruh\+::Language\+Translator\+::Translation\+Record\+:
-\nopagebreak
+Collaboration diagram for Coruh\+::Language\+Translator\+::Translation\+Record\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=206pt]{struct_coruh_1_1_language_translator_1_1_translation_record__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_coruh_1_1_language_translator_1_1_translation_record_a3e375063d3a2e3a72858233a6778204a}\label{struct_coruh_1_1_language_translator_1_1_translation_record_a3e375063d3a2e3a72858233a6778204a} 
+std\+::string {\bfseries source\+Lang}
+\begin{DoxyCompactList}\small\item\em Kaynak dil. \end{DoxyCompactList}\item 
+\Hypertarget{struct_coruh_1_1_language_translator_1_1_translation_record_ab6924206a1e890e174f5a4598d30028a}\label{struct_coruh_1_1_language_translator_1_1_translation_record_ab6924206a1e890e174f5a4598d30028a} 
+std\+::string {\bfseries target\+Lang}
+\begin{DoxyCompactList}\small\item\em Hedef dil. \end{DoxyCompactList}\item 
+\Hypertarget{struct_coruh_1_1_language_translator_1_1_translation_record_ab0e3c1c7951a90a3e2b3a0af332fb9cd}\label{struct_coruh_1_1_language_translator_1_1_translation_record_ab0e3c1c7951a90a3e2b3a0af332fb9cd} 
+std\+::string {\bfseries text}
+\begin{DoxyCompactList}\small\item\em Çevrilen metin. \end{DoxyCompactList}\item 
+\Hypertarget{struct_coruh_1_1_language_translator_1_1_translation_record_ad4d237f2747f96c7fca166af8e5917cf}\label{struct_coruh_1_1_language_translator_1_1_translation_record_ad4d237f2747f96c7fca166af8e5917cf} 
+std\+::string {\bfseries result}
+\begin{DoxyCompactList}\small\item\em Çeviri sonucu. \end{DoxyCompactList}\item 
+\Hypertarget{struct_coruh_1_1_language_translator_1_1_translation_record_ad851b6f8e42f5901937f9e616e74f484}\label{struct_coruh_1_1_language_translator_1_1_translation_record_ad851b6f8e42f5901937f9e616e74f484} 
+std\+::uint64\+\_\+t {\bfseries timestamp}
+\begin{DoxyCompactList}\small\item\em Unix zaman damgası (saniye) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Çeviri geçmişi kaydı. 
+Çeviri geçmişi kaydı 
+
+Bu yapı, yapılan çevirilerin geçmişini saklar. Zaman damgası ile birlikte kaynak ve hedef dil bilgilerini içerir. 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

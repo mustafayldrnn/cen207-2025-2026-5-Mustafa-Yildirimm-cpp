@@ -151,9 +151,12 @@
 translator::SymbolTable Class Reference\par \pard\plain 
 {\tc\tcl2 \v translator::SymbolTable}
 {\xe \v translator::SymbolTable}
-{\bkmkstart AAAAAAAAKU}
-{\bkmkend AAAAAAAAKU}
+{\bkmkstart AAAAAAAAJI}
+{\bkmkend AAAAAAAAJI}
 \par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+İsim→değer eşlemesi yapan tablo. }}\par
 {
 {\f2 #include <symbol_table.h>}}\par
 Collaboration diagram for translator::SymbolTable:{
@@ -167,14 +170,29 @@ Public Member Functions\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKW" }{}}{\fldrslt {\cs37\ul\cf2 define}}}
+bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJK" }{}}{\fldrslt {\cs37\ul\cf2 define}}}
  (const std::string &name, double value)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Yeni değişken tanımı ekler veya üzerine yazar. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKX" }{}}{\fldrslt {\cs37\ul\cf2 assign}}}
+bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJN" }{}}{\fldrslt {\cs37\ul\cf2 assign}}}
  (const std::string &name, double value)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Var olan değişkene değer atar. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-const double * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKY" }{}}{\fldrslt {\cs37\ul\cf2 lookup}}}
+const double * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJP" }{}}{\fldrslt {\cs37\ul\cf2 lookup}}}
  (const std::string &name) const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Değişken adını arar ve değerinin adresini döndürür. }{
+}\par
+}\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Private Attributes\par
@@ -182,13 +200,32 @@ Private Attributes\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEI" }{}}{\fldrslt {\cs37\ul\cf2 ds::HashTable}}}
-< std::string, double > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKV" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADV" }{}}{\fldrslt {\cs37\ul\cf2 ds::HashTable}}}
+< std::string, double > {\b table_}{\bkmkstart AAAAAAAAJJ}
+{\bkmkend AAAAAAAAJJ}
 \par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Değişken isimlerini ve değerlerini tutan hash tablosu. }{
+}\par
+}\par}
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAAOJ}
-{\bkmkend AAAAAAAAOJ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+İsim→değer eşlemesi yapan tablo. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Bu sınıf, BASIC benzeri dildeki değişkenleri saklamak için hash tablosu kullanır. Değişken tanımlama ve atama işlemlerini destekler. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAAOA}
+{\bkmkend AAAAAAAAOA}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Member Function Documentation\par
 \pard\plain 
@@ -198,54 +235,102 @@ Member Function Documentation\par
 {\b 
 bool translator::SymbolTable::assign (const std::string & name, double value){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAKX}
-{\bkmkend AAAAAAAAKX}
+{\bkmkstart AAAAAAAAJN}
+{\bkmkend AAAAAAAAJN}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Var olan değişkene değer atar. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i name} \cell }{Değişken adı \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i value} \cell }{Atanacak değer \cell }
+{\row }
 }
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+true eğer atama başarılıysa \par
+}}}}
 {\xe \v define\:translator::SymbolTable}
 {\xe \v translator::SymbolTable\:define}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
 bool translator::SymbolTable::define (const std::string & name, double value){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAKW}
-{\bkmkend AAAAAAAAKW}
+{\bkmkstart AAAAAAAAJK}
+{\bkmkend AAAAAAAAJK}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Yeni değişken tanımı ekler veya üzerine yazar. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i name} \cell }{Değişken adı \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i value} \cell }{Değişken değeri \cell }
+{\row }
 }
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+true eğer yeni tanım eklendiyse, false eğer güncellendiyse \par
+}}}}
 {\xe \v lookup\:translator::SymbolTable}
 {\xe \v translator::SymbolTable\:lookup}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
 const double * translator::SymbolTable::lookup (const std::string & name) const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAKY}
-{\bkmkend AAAAAAAAKY}
+{\bkmkstart AAAAAAAAJP}
+{\bkmkend AAAAAAAAJP}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAAOK}
-{\bkmkend AAAAAAAAOK}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Member Data Documentation\par
-\pard\plain 
-{\xe \v table_\:translator::SymbolTable}
-{\xe \v translator::SymbolTable\:table_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEI" }{}}{\fldrslt {\cs37\ul\cf2 ds::HashTable}}}
-<std::string, double> translator::SymbolTable::table_{\f2 [private]}}}
 \par
-{\bkmkstart AAAAAAAAKV}
-{\bkmkend AAAAAAAAKV}
 {
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Değişken adını arar ve değerinin adresini döndürür. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i name} \cell }{Aranacak değişken adı \cell }
+{\row }
 }
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Değerin const pointer'ı, bulunamazsa nullptr \par
+}}}}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 The documentation for this class was generated from the following file:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKT" }{}}{\fldrslt {\cs37\ul\cf2 symbol_table.h}}}
+C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 symbol_table.h}}}
 \par
 }}

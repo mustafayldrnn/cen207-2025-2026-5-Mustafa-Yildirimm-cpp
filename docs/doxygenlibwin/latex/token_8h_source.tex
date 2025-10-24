@@ -1,21 +1,26 @@
 \doxysection{token.\+h}
 \hypertarget{token_8h_source}{}\label{token_8h_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/token.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/token.h}}
-
+\mbox{\hyperlink{token_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{keyword}{namespace\ }translator\ \{}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{enum\ class}\ TokenType\ \{}
-\DoxyCodeLine{00007\ \ \ \ \ Identifier,\ Number,\ String,}
-\DoxyCodeLine{00008\ \ \ \ \ KW\_LET,\ KW\_PRINT,\ KW\_INPUT,\ KW\_IF,\ KW\_THEN,\ KW\_GOTO,\ KW\_FOR,\ KW\_TO,\ KW\_NEXT,\ KW\_GOSUB,\ KW\_RETURN,}
-\DoxyCodeLine{00009\ \ \ \ \ Plus,\ Minus,\ Star,\ Slash,\ Assign,\ LParen,\ RParen,\ Comma,\ Newline,\ Eof}
-\DoxyCodeLine{00010\ \};}
-\DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{struct\ }Token\ \{\ TokenType\ type;\ std::string\ lexeme;\ \textcolor{keywordtype}{int}\ line;\ \};}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \}\ \textcolor{comment}{//\ namespace\ translator}}
-\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }translator\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480}{TokenType}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Identifier,\ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0ab2ee912b91d69b435159c7c3f6df7f5f}{Number}},\ String,}
+\DoxyCodeLine{00018\ \ \ \ \ KW\_LET,\ KW\_PRINT,\ KW\_INPUT,\ KW\_IF,\ KW\_THEN,\ KW\_GOTO,\ KW\_FOR,\ KW\_TO,\ KW\_NEXT,\ KW\_GOSUB,\ KW\_RETURN,}
+\DoxyCodeLine{00019\ \ \ \ \ Plus,\ Minus,\ Star,\ Slash,\ Assign,\ LParen,\ RParen,\ Comma,\ Newline,\ Eof}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_token}{Token}}\ \{\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480}{TokenType}}\ \mbox{\hyperlink{structtranslator_1_1_token_a36c889bc7ded337a56b399f92ae1fc2a}{type}};\ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ \mbox{\hyperlink{structtranslator_1_1_token_a462f6a4371b83edc64d5062861f9e5d2}{lexeme}};\ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structtranslator_1_1_token_abb1cffe27ee8e34cfe2c7c37d72e1294}{line}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \}\ \textcolor{comment}{//\ namespace\ translator}}
+\DoxyCodeLine{00034\ }
 
 \end{DoxyCode}

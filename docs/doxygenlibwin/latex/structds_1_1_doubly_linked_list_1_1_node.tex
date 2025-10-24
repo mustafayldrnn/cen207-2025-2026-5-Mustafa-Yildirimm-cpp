@@ -2,6 +2,11 @@
 \hypertarget{structds_1_1_doubly_linked_list_1_1_node}{}\label{structds_1_1_doubly_linked_list_1_1_node}\index{ds::DoublyLinkedList$<$ T $>$::Node@{ds::DoublyLinkedList$<$ T $>$::Node}}
 
 
+Liste düğümü  
+
+
+
+
 Collaboration diagram for ds\+::Doubly\+Linked\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::Node\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -13,17 +18,25 @@ Collaboration diagram for ds\+::Doubly\+Linked\+List\texorpdfstring{$<$}{<} T \t
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node_a05a753f1adb42b84be2842bfdbbbf51e}{Node}} (const T \&v)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Düğüm oluşturur. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-T \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node_a778706d5c27692d909d05ea77d374baf}{value}}
-\item 
-\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node_a64fc7c89bdd43437562cbec74df7ed3e}{prev}}
-\item 
-\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node_a7ab466296c647e5fbdf5beac843e9008}{next}}
-\end{DoxyCompactItemize}
+\Hypertarget{structds_1_1_doubly_linked_list_1_1_node_a778706d5c27692d909d05ea77d374baf}\label{structds_1_1_doubly_linked_list_1_1_node_a778706d5c27692d909d05ea77d374baf} 
+T {\bfseries value}
+\begin{DoxyCompactList}\small\item\em Düğümdeki değer. \end{DoxyCompactList}\item 
+\Hypertarget{structds_1_1_doubly_linked_list_1_1_node_a64fc7c89bdd43437562cbec74df7ed3e}\label{structds_1_1_doubly_linked_list_1_1_node_a64fc7c89bdd43437562cbec74df7ed3e} 
+\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries prev}
+\begin{DoxyCompactList}\small\item\em Önceki düğüm pointer\textquotesingle{}ı \end{DoxyCompactList}\item 
+\Hypertarget{structds_1_1_doubly_linked_list_1_1_node_a7ab466296c647e5fbdf5beac843e9008}\label{structds_1_1_doubly_linked_list_1_1_node_a7ab466296c647e5fbdf5beac843e9008} 
+\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries next}
+\begin{DoxyCompactList}\small\item\em Sonraki düğüm pointer\textquotesingle{}ı \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+struct ds\+::\+Doubly\+Linked\+List$<$ T $>$\+::\+Node}
+Liste düğümü 
 
 \label{doc-constructors}
 \Hypertarget{structds_1_1_doubly_linked_list_1_1_node_doc-constructors}
@@ -37,30 +50,13 @@ template$<$typename T$>$ \\
 
 
 
-\label{doc-variable-members}
-\Hypertarget{structds_1_1_doubly_linked_list_1_1_node_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structds_1_1_doubly_linked_list_1_1_node_a7ab466296c647e5fbdf5beac843e9008}\index{ds::DoublyLinkedList$<$ T $>$::Node@{ds::DoublyLinkedList$<$ T $>$::Node}!next@{next}}
-\index{next@{next}!ds::DoublyLinkedList$<$ T $>$::Node@{ds::DoublyLinkedList$<$ T $>$::Node}}
-\doxysubsubsection{\texorpdfstring{next}{next}}
-{\footnotesize\ttfamily \label{structds_1_1_doubly_linked_list_1_1_node_a7ab466296c647e5fbdf5beac843e9008} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::\+Node\+::next}
+Düğüm oluşturur. 
 
-\Hypertarget{structds_1_1_doubly_linked_list_1_1_node_a64fc7c89bdd43437562cbec74df7ed3e}\index{ds::DoublyLinkedList$<$ T $>$::Node@{ds::DoublyLinkedList$<$ T $>$::Node}!prev@{prev}}
-\index{prev@{prev}!ds::DoublyLinkedList$<$ T $>$::Node@{ds::DoublyLinkedList$<$ T $>$::Node}}
-\doxysubsubsection{\texorpdfstring{prev}{prev}}
-{\footnotesize\ttfamily \label{structds_1_1_doubly_linked_list_1_1_node_a64fc7c89bdd43437562cbec74df7ed3e} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::\+Node\+::prev}
 
-\Hypertarget{structds_1_1_doubly_linked_list_1_1_node_a778706d5c27692d909d05ea77d374baf}\index{ds::DoublyLinkedList$<$ T $>$::Node@{ds::DoublyLinkedList$<$ T $>$::Node}!value@{value}}
-\index{value@{value}!ds::DoublyLinkedList$<$ T $>$::Node@{ds::DoublyLinkedList$<$ T $>$::Node}}
-\doxysubsubsection{\texorpdfstring{value}{value}}
-{\footnotesize\ttfamily \label{structds_1_1_doubly_linked_list_1_1_node_a778706d5c27692d909d05ea77d374baf} 
-template$<$typename T$>$ \\
-T \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::\+Node\+::value}
-
+\begin{DoxyParams}{Parameters}
+{\em v} & Düğümde saklanacak değer \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

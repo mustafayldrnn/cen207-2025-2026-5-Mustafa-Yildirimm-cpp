@@ -2,6 +2,11 @@
 \hypertarget{classtranslator_1_1_codegen}{}\label{classtranslator_1_1_codegen}\index{translator::Codegen@{translator::Codegen}}
 
 
+C++ kaynak çıktısı üreten yardımcı sınıf.  
+
+
+
+
 {\ttfamily \#include $<$codegen.\+h$>$}
 
 
@@ -17,8 +22,13 @@ Collaboration diagram for translator\+::Codegen\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 static std\+::string \mbox{\hyperlink{classtranslator_1_1_codegen_a93cb9bf11dd99728319a5e5de334f6f8}{emit\+\_\+cpp}} (const \mbox{\hyperlink{structtranslator_1_1_program}{Program}} \&p)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Verilen \doxylink{structtranslator_1_1_program}{Program}\textquotesingle{}dan C++ kodu üretir. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+C++ kaynak çıktısı üreten yardımcı sınıf. 
+
+Bu sınıf, Abstract Syntax Tree\textquotesingle{}i alarak C++ kaynak kodu üretir. BASIC benzeri dildeki programları C++ koduna dönüştürür. 
 
 \label{doc-func-members}
 \Hypertarget{classtranslator_1_1_codegen_doc-func-members}
@@ -31,7 +41,19 @@ std\+::string translator\+::\+Codegen\+::emit\+\_\+cpp (\begin{DoxyParamCaption}
 
 
 
+Verilen \doxylink{structtranslator_1_1_program}{Program}\textquotesingle{}dan C++ kodu üretir. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Çevrilecek program AST\textquotesingle{}i \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Üretilen C++ kaynak kodu 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/src/translator/\mbox{\hyperlink{codegen_8h}{codegen.\+h}}\item 
-C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/src/translator/\mbox{\hyperlink{codegen_8cpp}{codegen.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/src/translator/codegen.\+cpp\end{DoxyCompactItemize}

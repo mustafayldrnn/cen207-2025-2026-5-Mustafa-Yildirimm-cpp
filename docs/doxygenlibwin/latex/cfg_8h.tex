@@ -1,5 +1,10 @@
 \doxysection{C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/src/translator/cfg.h File Reference}
 \hypertarget{cfg_8h}{}\label{cfg_8h}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/cfg.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/cfg.h}}
+
+
+Programdan kontrol akışı grafiği (CFG) üretimi yardımcıları  
+
+
 {\ttfamily \#include "{}ds/graph.\+h"{}}\newline
 {\ttfamily \#include "{}translator/ast.\+h"{}}\newline
 {\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
@@ -14,14 +19,47 @@ Include dependency graph for cfg.\+h\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structtranslator_1_1_c_f_g}{translator\+::\+CFG}}
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Namespaces}
-\begin{DoxyCompactItemize}
-\item 
-namespace \mbox{\hyperlink{namespacetranslator}{translator}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \doxylink{structtranslator_1_1_c_f_g}{CFG} yapısı (graf + etiket→indeks eşlemesi) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structtranslator_1_1_c_f_g}{CFG}} \mbox{\hyperlink{namespacetranslator_afb6980d157f0f87830df2b0f98548fee}{translator\+::build\+\_\+cfg}} (const \mbox{\hyperlink{structtranslator_1_1_program}{Program}} \&p)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{structtranslator_1_1_c_f_g}{CFG}} \mbox{\hyperlink{cfg_8h_afb6980d157f0f87830df2b0f98548fee}{translator\+::build\+\_\+cfg}} (const \mbox{\hyperlink{structtranslator_1_1_program}{Program}} \&p)
+\begin{DoxyCompactList}\small\item\em Programdan basit \doxylink{structtranslator_1_1_c_f_g}{CFG} oluşturur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Programdan kontrol akışı grafiği (CFG) üretimi yardımcıları 
+
+\begin{DoxyAuthor}{Author}
+Mustafa Yıldırım 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\label{doc-func-members}
+\Hypertarget{cfg_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{cfg_8h_afb6980d157f0f87830df2b0f98548fee}\index{cfg.h@{cfg.h}!build\_cfg@{build\_cfg}}
+\index{build\_cfg@{build\_cfg}!cfg.h@{cfg.h}}
+\doxysubsubsection{\texorpdfstring{build\_cfg()}{build\_cfg()}}
+{\footnotesize\ttfamily \label{cfg_8h_afb6980d157f0f87830df2b0f98548fee} 
+CFG translator\+::build\+\_\+cfg (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtranslator_1_1_program}{Program}} \&}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Programdan basit CFG oluşturur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Girdi programı \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Üretilen CFG
+\end{DoxyReturn}
+Bu fonksiyon, BASIC programındaki GOTO, IF-\/\+GOTO, GOSUB ve RETURN deyimlerini analiz ederek kontrol akışı grafını oluşturur. 

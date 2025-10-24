@@ -2,6 +2,11 @@
 \hypertarget{structtranslator_1_1_expr}{}\label{structtranslator_1_1_expr}\index{translator::Expr@{translator::Expr}}
 
 
+Tüm ifade türleri için taban tür.  
+
+
+
+
 {\ttfamily \#include $<$ast.\+h$>$}
 
 
@@ -25,22 +30,14 @@ Collaboration diagram for translator\+::Expr\+:\nopagebreak
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{structtranslator_1_1_expr_a3a61309da992f896228d1ba682f79187}{\texorpdfstring{$\sim$}{\string~}\+Expr}} ()=default
-\item 
-virtual \mbox{\hyperlink{namespacetranslator_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} \mbox{\hyperlink{structtranslator_1_1_expr_aced195c2a0830ff10b582d02731c93b1}{kind}} () const =0
-\end{DoxyCompactItemize}
+virtual \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} \mbox{\hyperlink{structtranslator_1_1_expr_aced195c2a0830ff10b582d02731c93b1}{kind}} () const =0
+\begin{DoxyCompactList}\small\item\em İfade türünü döndürür. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\label{doc-constructors}
-\Hypertarget{structtranslator_1_1_expr_doc-constructors}
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{structtranslator_1_1_expr_a3a61309da992f896228d1ba682f79187}\index{translator::Expr@{translator::Expr}!````~Expr@{\texorpdfstring{$\sim$}{\string~}Expr}}
-\index{````~Expr@{\texorpdfstring{$\sim$}{\string~}Expr}!translator::Expr@{translator::Expr}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Expr()}{\string~Expr()}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_expr_a3a61309da992f896228d1ba682f79187} 
-virtual translator\+::\+Expr\+::\texorpdfstring{$\sim$}{\string~}\+Expr (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+\doxysubsection{Detailed Description}
+Tüm ifade türleri için taban tür. 
 
-
+Abstract Syntax Tree\textquotesingle{}deki tüm ifadeler bu sınıftan türetilir. 
 
 \label{doc-func-members}
 \Hypertarget{structtranslator_1_1_expr_doc-func-members}
@@ -49,8 +46,15 @@ virtual translator\+::\+Expr\+::\texorpdfstring{$\sim$}{\string~}\+Expr (\begin{
 \index{kind@{kind}!translator::Expr@{translator::Expr}}
 \doxysubsubsection{\texorpdfstring{kind()}{kind()}}
 {\footnotesize\ttfamily \label{structtranslator_1_1_expr_aced195c2a0830ff10b582d02731c93b1} 
-virtual \mbox{\hyperlink{namespacetranslator_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} translator\+::\+Expr\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+virtual \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} translator\+::\+Expr\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+
+
+İfade türünü döndürür. 
+
+\begin{DoxyReturn}{Returns}
+İfade türü 
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{structtranslator_1_1_binary_expr_a4f09625d10e55dad82469d2510b4cc96}{translator\+::\+Binary\+Expr}}, \mbox{\hyperlink{structtranslator_1_1_number_expr_a6747a2814f5d6135f2506cf35bda7401}{translator\+::\+Number\+Expr}}, and \mbox{\hyperlink{structtranslator_1_1_variable_expr_a0dd6b31c1c5ac1801779da5eb115c95d}{translator\+::\+Variable\+Expr}}.

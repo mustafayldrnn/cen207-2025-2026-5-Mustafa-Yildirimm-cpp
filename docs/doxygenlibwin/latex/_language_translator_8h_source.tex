@@ -3,110 +3,133 @@
 \mbox{\hyperlink{_language_translator_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ LANGUAGE\_TRANSLATOR\_H}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ LANGUAGE\_TRANSLATOR\_H}}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <memory>}}
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
-\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_persistence_8h}{Persistence.h}}"{}}}
-\DoxyCodeLine{00014\ \textcolor{comment}{//\ \#include\ <curl/curl.h>\ \ //\ Commented\ out\ for\ now\ -\/\ API\ not\ implemented\ yet}}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }Coruh}
-\DoxyCodeLine{00017\ \{}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{namespace\ }LanguageTranslator}
-\DoxyCodeLine{00019\ \ \ \ \ \{}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a5ed617b4a1ba48b54035061d7f080abf}{LanguageTranslatorApp}}}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Multi-\/language\ dictionaries}}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ std::unordered\_map<std::string,\ std::unordered\_map<std::string,\ std::string>>\ wordDictionaries;}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ std::unordered\_map<std::string,\ std::unordered\_map<std::string,\ std::string>>\ phraseDictionaries;}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Language\ support}}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::string>\ supportedLanguages;}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ currentSourceLanguage;}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ currentTargetLanguage;}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Other\ features}}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::string>\ commonPhrases;}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::string>\ learningTips;}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ std::unordered\_map<std::string,\ std::string>\ pronunciationGuide;}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ currentUser;}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isLoggedIn;}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<UserProfile>\ users;\ \textcolor{comment}{//\ persisted\ users}}
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<TranslationRecord>\ history;\ \textcolor{comment}{//\ translation\ history}}
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ API\ settings}}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ apiKey;}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ useAPI;}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ apiProvider;\ \textcolor{comment}{//\ "{}google"{}\ or\ "{}microsoft"{}}}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a5ed617b4a1ba48b54035061d7f080abf}{LanguageTranslatorApp}}();}
-\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a5ed617b4a1ba48b54035061d7f080abf}{\string~LanguageTranslatorApp}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a3c58319ebc4b52530f96df35244e6766}{run}}();}
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a1e44c8c1f7023908862900efb5bb7bff}{showMainMenu}}();}
-\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a8cfaed25014b5dbff221e2557d407f4d}{handleUserChoice}}(\textcolor{keywordtype}{int}\ choice);}
-\DoxyCodeLine{00062\ }
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Translation\ functions}}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a03ad354d985ea9953caeb220ba353675}{translateText}}(\textcolor{keyword}{const}\ std::string\&\ text);}
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_afd506854467cc68e7a55c7f9ccb4d3c1}{translateWord}}(\textcolor{keyword}{const}\ std::string\&\ word);}
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a06a91752cc8178f227d69060cf1d6c81}{translatePhrase}}(\textcolor{keyword}{const}\ std::string\&\ phrase);}
-\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Language\ management}}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aed85d51b8fae05cd2ace0c6166b0e300}{setSourceLanguage}}(\textcolor{keyword}{const}\ std::string\&\ language);}
-\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aca0a3b739bf7a53e92616b62f838d813}{setTargetLanguage}}(\textcolor{keyword}{const}\ std::string\&\ language);}
-\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a98320f1bf6b3b67151deef4f18e79a10}{getSupportedLanguages}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a974f8dcd015f7218cbcb08f86e540c72}{showLanguageSelection}}();}
-\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_af4d3d14b521b942497457d78b58cef5a}{addLanguage}}(\textcolor{keyword}{const}\ std::string\&\ language);}
-\DoxyCodeLine{00082\ }
-\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ User\ management}}
-\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aebb1a131807481ffd3a86e81ba5d7149}{login}}(\textcolor{keyword}{const}\ std::string\&\ username,\ \textcolor{keyword}{const}\ std::string\&\ password);}
-\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a1db0ba24cc5bb600bb0492759b56d688}{registerUser}}(\textcolor{keyword}{const}\ std::string\&\ username,\ \textcolor{keyword}{const}\ std::string\&\ password);}
-\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ae996bcbc37b5ebeff7fc5f23846599e6}{logout}}();}
-\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aae8aef776e538e0e04307f7cbb19cfff}{isUserLoggedIn}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ currentUsername()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ currentUser;\ \}}
-\DoxyCodeLine{00093\ }
-\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Phrase\ library}}
-\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a177ebb8e7174eb7c7a46baa2b38b8ff8}{showPhraseLibrary}}();}
-\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a8d954ac80aa0a6f317f5ae02a3ad8b0c}{addPhrase}}(\textcolor{keyword}{const}\ std::string\&\ phrase,\ \textcolor{keyword}{const}\ std::string\&\ category);}
-\DoxyCodeLine{00099\ }
-\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Learning\ tips}}
-\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_abe5d9934ae504bc8e977d5fcb74e3e0f}{showLearningTips}}();}
-\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ac09aa2c01d5c7029c3b8526361e9c040}{addLearningTip}}(\textcolor{keyword}{const}\ std::string\&\ tip);}
-\DoxyCodeLine{00105\ }
-\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Pronunciation\ guide}}
-\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a436167beacce45319adb33c3ad2f49dc}{showPronunciationGuide}}();}
-\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a464e4097673d02dbc9d1d61d30c0cf1f}{addPronunciation}}(\textcolor{keyword}{const}\ std::string\&\ word,\ \textcolor{keyword}{const}\ std::string\&\ guide);}
-\DoxyCodeLine{00111\ }
-\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ History}}
-\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a9727ff9c9b9e0a81caeb2ce2e5ad7c62}{showHistory}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a36fcb69508cf44869a22b2ea9a7b4463}{clearHistory}}();}
-\DoxyCodeLine{00117\ }
-\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Data\ management}}
-\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ac18f153739e7fb96366885f3aaf2458e}{initializeDefaultData}}();}
-\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a35984ddf5a72e84559b8961f4f7c33ad}{saveData}}();}
-\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a83daac67d1d81e4c07ac792b7ce1e793}{loadData}}();}
-\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Dictionary\ management}}
-\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_adddfb15e169da4105623cb2162d7f3ec}{loadDictionaryFromFile}}(\textcolor{keyword}{const}\ std::string\&\ sourceLang,\ \textcolor{keyword}{const}\ std::string\&\ targetLang,\ \textcolor{keyword}{const}\ std::string\&\ filename);}
-\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aa3f57c2f13453169c28cf1cb43e913df}{loadAllDictionaries}}();}
-\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ API\ Translation}}
-\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_acd8648d60bbb51b35c35ffd92bb7537d}{translateWithGoogleAPI}}(\textcolor{keyword}{const}\ std::string\&\ text,\ \textcolor{keyword}{const}\ std::string\&\ sourceLang,\ \textcolor{keyword}{const}\ std::string\&\ targetLang);}
-\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a42d55ad7d00fd049ec011b6b1c3d6a82}{translateWithMicrosoftAPI}}(\textcolor{keyword}{const}\ std::string\&\ text,\ \textcolor{keyword}{const}\ std::string\&\ sourceLang,\ \textcolor{keyword}{const}\ std::string\&\ targetLang);}
-\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a9a2fc7b204faa69f23cbd8f157034468}{isAPIAvailable}}();}
-\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_af72ea9779aaca24d309641702b436c27}{setAPIKey}}(\textcolor{keyword}{const}\ std::string\&\ key);}
-\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aa762886a074c30304b426dc66f109474}{setAPIMode}}(\textcolor{keywordtype}{bool}\ useAPI);}
-\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00144\ \ \ \ \ \}}
-\DoxyCodeLine{00145\ \}}
-\DoxyCodeLine{00146\ }
-\DoxyCodeLine{00147\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LANGUAGE\_TRANSLATOR\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ LANGUAGE\_TRANSLATOR\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ LANGUAGE\_TRANSLATOR\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_persistence_8h}{Persistence.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }Coruh\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }LanguageTranslator\ \{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a5ed617b4a1ba48b54035061d7f080abf}{LanguageTranslatorApp}}\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Multi-\/language\ dictionaries}}
+\DoxyCodeLine{00032\ \ \ \ \ std::unordered\_map<std::string,\ std::unordered\_map<std::string,\ std::string>>\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ac5dec0ba10b797cf38f934361b76a65f}{wordDictionaries}};\ \ }
+\DoxyCodeLine{00033\ \ \ \ \ std::unordered\_map<std::string,\ std::unordered\_map<std::string,\ std::string>>\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ad77f7e667c879392de1c7f0eb9118ff5}{phraseDictionaries}};\ \ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ Language\ support}}
+\DoxyCodeLine{00036\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a13f5460748a50ab69dc4350032ab068b}{supportedLanguages}};\ \ }
+\DoxyCodeLine{00037\ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aa86b1cad9a69fa6362942d33211a2f0f}{currentSourceLanguage}};\ \ }
+\DoxyCodeLine{00038\ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_adc41b2365e79a4e7320db409d4aa9465}{currentTargetLanguage}};\ \ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ Other\ features}}
+\DoxyCodeLine{00041\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ad3088b49ed2da98352dce4cb4f810f2c}{commonPhrases}};\ \ }
+\DoxyCodeLine{00042\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ada5694e5267fa92812eaaab6cccec4f6}{learningTips}};\ \ }
+\DoxyCodeLine{00043\ \ \ \ \ std::unordered\_map<std::string,\ std::string>\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_afae3e92a5ef6e8924eb5b8833084a236}{pronunciationGuide}};\ \ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a14f59f9002016c487ab842d1fdb92249}{currentUser}};\ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aa772f5be7d7d1df3e596e8c704d9f0e0}{isLoggedIn}};\ \ }
+\DoxyCodeLine{00047\ \ \ \ \ std::vector<UserProfile>\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ad7cb4a75dca18dd35ed64990ecca6ddf}{users}};\ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ std::vector<TranslationRecord>\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a71f9662143bf653bb8c710907e6ba9aa}{history}};\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//\ API\ settings}}
+\DoxyCodeLine{00051\ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ab556b1acd8839185a6c192f99e02af41}{apiKey}};\ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a4899e421750407b3ffb82f527b7a20ed}{useAPI}};\ \ }
+\DoxyCodeLine{00053\ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ad46434785f1b6afdfa47bac0de531d87}{apiProvider}};\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a5ed617b4a1ba48b54035061d7f080abf}{LanguageTranslatorApp}}();}
+\DoxyCodeLine{00060\ \ \ \ \ }
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aa7130212453aa19ff70bd2854aaf0846}{\string~LanguageTranslatorApp}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a3c58319ebc4b52530f96df35244e6766}{run}}();}
+\DoxyCodeLine{00070\ \ \ \ \ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a1e44c8c1f7023908862900efb5bb7bff}{showMainMenu}}();}
+\DoxyCodeLine{00075\ \ \ \ \ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a8cfaed25014b5dbff221e2557d407f4d}{handleUserChoice}}(\textcolor{keywordtype}{int}\ choice);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{comment}{//\ Translation\ functions}}
+\DoxyCodeLine{00088\ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a03ad354d985ea9953caeb220ba353675}{translateText}}(\textcolor{keyword}{const}\ std::string\&\ text);}
+\DoxyCodeLine{00089\ \ \ \ \ }
+\DoxyCodeLine{00095\ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_afd506854467cc68e7a55c7f9ccb4d3c1}{translateWord}}(\textcolor{keyword}{const}\ std::string\&\ word);}
+\DoxyCodeLine{00096\ \ \ \ \ }
+\DoxyCodeLine{00102\ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a06a91752cc8178f227d69060cf1d6c81}{translatePhrase}}(\textcolor{keyword}{const}\ std::string\&\ phrase);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{comment}{//\ Language\ management}}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aed85d51b8fae05cd2ace0c6166b0e300}{setSourceLanguage}}(\textcolor{keyword}{const}\ std::string\&\ language);}
+\DoxyCodeLine{00110\ \ \ \ \ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aca0a3b739bf7a53e92616b62f838d813}{setTargetLanguage}}(\textcolor{keyword}{const}\ std::string\&\ language);}
+\DoxyCodeLine{00116\ \ \ \ \ }
+\DoxyCodeLine{00121\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a98320f1bf6b3b67151deef4f18e79a10}{getSupportedLanguages}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00122\ \ \ \ \ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a974f8dcd015f7218cbcb08f86e540c72}{showLanguageSelection}}();}
+\DoxyCodeLine{00127\ \ \ \ \ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_af4d3d14b521b942497457d78b58cef5a}{addLanguage}}(\textcolor{keyword}{const}\ std::string\&\ language);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{comment}{//\ User\ management}}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aebb1a131807481ffd3a86e81ba5d7149}{login}}(\textcolor{keyword}{const}\ std::string\&\ username,\ \textcolor{keyword}{const}\ std::string\&\ password);}
+\DoxyCodeLine{00142\ \ \ \ \ }
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a1db0ba24cc5bb600bb0492759b56d688}{registerUser}}(\textcolor{keyword}{const}\ std::string\&\ username,\ \textcolor{keyword}{const}\ std::string\&\ password);}
+\DoxyCodeLine{00150\ \ \ \ \ }
+\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ae996bcbc37b5ebeff7fc5f23846599e6}{logout}}();}
+\DoxyCodeLine{00155\ \ \ \ \ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aae8aef776e538e0e04307f7cbb19cfff}{isUserLoggedIn}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00161\ \ \ \ \ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a4ed5d4c536368652ce1f4aa83b5a4d16}{currentUsername}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a14f59f9002016c487ab842d1fdb92249}{currentUser}};\ \}}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{comment}{//\ Phrase\ library}}
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a177ebb8e7174eb7c7a46baa2b38b8ff8}{showPhraseLibrary}}();}
+\DoxyCodeLine{00173\ \ \ \ \ }
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a8d954ac80aa0a6f317f5ae02a3ad8b0c}{addPhrase}}(\textcolor{keyword}{const}\ std::string\&\ phrase,\ \textcolor{keyword}{const}\ std::string\&\ category);}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{comment}{//\ Learning\ tips}}
+\DoxyCodeLine{00185\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_abe5d9934ae504bc8e977d5fcb74e3e0f}{showLearningTips}}();}
+\DoxyCodeLine{00186\ \ \ \ \ }
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ac09aa2c01d5c7029c3b8526361e9c040}{addLearningTip}}(\textcolor{keyword}{const}\ std::string\&\ tip);}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{comment}{//\ Pronunciation\ guide}}
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a436167beacce45319adb33c3ad2f49dc}{showPronunciationGuide}}();}
+\DoxyCodeLine{00198\ \ \ \ \ }
+\DoxyCodeLine{00204\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a464e4097673d02dbc9d1d61d30c0cf1f}{addPronunciation}}(\textcolor{keyword}{const}\ std::string\&\ word,\ \textcolor{keyword}{const}\ std::string\&\ guide);}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{comment}{//\ History}}
+\DoxyCodeLine{00210\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a9727ff9c9b9e0a81caeb2ce2e5ad7c62}{showHistory}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00211\ \ \ \ \ }
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a36fcb69508cf44869a22b2ea9a7b4463}{clearHistory}}();}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00217\ \ \ \ \ \textcolor{comment}{//\ Data\ management}}
+\DoxyCodeLine{00221\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_ac18f153739e7fb96366885f3aaf2458e}{initializeDefaultData}}();}
+\DoxyCodeLine{00222\ \ \ \ \ }
+\DoxyCodeLine{00226\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a35984ddf5a72e84559b8961f4f7c33ad}{saveData}}();}
+\DoxyCodeLine{00227\ \ \ \ \ }
+\DoxyCodeLine{00231\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a83daac67d1d81e4c07ac792b7ce1e793}{loadData}}();}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00233\ \ \ \ \ \textcolor{comment}{//\ Dictionary\ management}}
+\DoxyCodeLine{00241\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_adddfb15e169da4105623cb2162d7f3ec}{loadDictionaryFromFile}}(\textcolor{keyword}{const}\ std::string\&\ sourceLang,\ \textcolor{keyword}{const}\ std::string\&\ targetLang,\ \textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00242\ \ \ \ \ }
+\DoxyCodeLine{00246\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aa3f57c2f13453169c28cf1cb43e913df}{loadAllDictionaries}}();}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00248\ \ \ \ \ \textcolor{comment}{//\ API\ Translation}}
+\DoxyCodeLine{00256\ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_acd8648d60bbb51b35c35ffd92bb7537d}{translateWithGoogleAPI}}(\textcolor{keyword}{const}\ std::string\&\ text,\ \textcolor{keyword}{const}\ std::string\&\ sourceLang,\ \textcolor{keyword}{const}\ std::string\&\ targetLang);}
+\DoxyCodeLine{00257\ \ \ \ \ }
+\DoxyCodeLine{00265\ \ \ \ \ std::string\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a42d55ad7d00fd049ec011b6b1c3d6a82}{translateWithMicrosoftAPI}}(\textcolor{keyword}{const}\ std::string\&\ text,\ \textcolor{keyword}{const}\ std::string\&\ sourceLang,\ \textcolor{keyword}{const}\ std::string\&\ targetLang);}
+\DoxyCodeLine{00266\ \ \ \ \ }
+\DoxyCodeLine{00271\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a9a2fc7b204faa69f23cbd8f157034468}{isAPIAvailable}}();}
+\DoxyCodeLine{00272\ \ \ \ \ }
+\DoxyCodeLine{00277\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_af72ea9779aaca24d309641702b436c27}{setAPIKey}}(\textcolor{keyword}{const}\ std::string\&\ key);}
+\DoxyCodeLine{00278\ \ \ \ \ }
+\DoxyCodeLine{00283\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_aa762886a074c30304b426dc66f109474}{setAPIMode}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_coruh_1_1_language_translator_1_1_language_translator_app_a4899e421750407b3ffb82f527b7a20ed}{useAPI}});}
+\DoxyCodeLine{00284\ \};}
+\DoxyCodeLine{00285\ }
+\DoxyCodeLine{00286\ \}\ \textcolor{comment}{//\ namespace\ LanguageTranslator}}
+\DoxyCodeLine{00287\ \}\ \textcolor{comment}{//\ namespace\ Coruh}}
+\DoxyCodeLine{00288\ }
+\DoxyCodeLine{00289\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LANGUAGE\_TRANSLATOR\_H}}
+\DoxyCodeLine{00290\ }
 
 \end{DoxyCode}

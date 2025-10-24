@@ -151,8 +151,8 @@
 ds::Stack< T > Class Template Reference\par \pard\plain 
 {\tc\tcl2 \v ds::Stack< T >}
 {\xe \v ds::Stack< T >}
-{\bkmkstart AAAAAAAACP}
-{\bkmkend AAAAAAAACP}
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
 \par
 {
 {\f2 #include <stack.h>}}\par
@@ -162,169 +162,97 @@ Collaboration diagram for ds::Stack< T >:{
 }
 \par
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Classes\par
-\pard\plain 
-
-{
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Public Member Functions\par
 \pard\plain 
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 ~Stack}}}
- ()\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 push}}}
- (const T &v)\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEC" }{}}{\fldrslt {\cs37\ul\cf2 empty}}}
- () const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEE" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
- () const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-T & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEH" }{}}{\fldrslt {\cs37\ul\cf2 top}}}
- ()\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEM" }{}}{\fldrslt {\cs37\ul\cf2 pop}}}
- ()\par
-}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Private Attributes\par
-\pard\plain 
 
+{\b ~Stack} (){\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+\par
 {
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Yıkıcı: tüm düğümleri serbest bırakır. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
- * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 top_}}}
- = nullptr\par
+
+void {\b push} (const T &v){\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sona (tepeye) bir eleman iter. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 sz_}}}
- = 0\par
+
+bool {\b empty} () const{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Yığın boş mu? }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+std::size_t {\b size} () const{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Eleman sayısı. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+T & {\b top} (){\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tepe elemanı döndürür. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b pop} (){\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tepe elemanı çıkarır. }{
+}\par
+}\par}
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAALZ}
-{\bkmkend AAAAAAAALZ}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Constructor & Destructor Documentation\par
+Detailed Description\par
 \pard\plain 
-{\xe \v ~Stack\:ds::Stack< T >}
-{\xe \v ds::Stack< T >\:~Stack}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 ds::Stack}}}
-< T >::~{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 Stack}}}
- (){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAADQ}
-{\bkmkend AAAAAAAADQ}
 {
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAAMC}
-{\bkmkend AAAAAAAAMC}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Member Function Documentation\par
-\pard\plain 
-{\xe \v empty\:ds::Stack< T >}
-{\xe \v ds::Stack< T >\:empty}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 ds::Stack}}}
-< T >::empty () const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEC}
-{\bkmkend AAAAAAAAEC}
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+template<typename T>\par
+class ds::Stack< T >\par
 }
-{\xe \v pop\:ds::Stack< T >}
-{\xe \v ds::Stack< T >\:pop}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 ds::Stack}}}
-< T >::pop (){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEM}
-{\bkmkend AAAAAAAAEM}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Template Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i T} \cell }{Eleman tipi \cell }
+{\row }
 }
-{\xe \v push\:ds::Stack< T >}
-{\xe \v ds::Stack< T >\:push}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 ds::Stack}}}
-< T >::push (const T & v){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAADS}
-{\bkmkend AAAAAAAADS}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v size\:ds::Stack< T >}
-{\xe \v ds::Stack< T >\:size}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 ds::Stack}}}
-< T >::size () const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEE}
-{\bkmkend AAAAAAAAEE}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v top\:ds::Stack< T >}
-{\xe \v ds::Stack< T >\:top}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> T & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 ds::Stack}}}
-< T >::top (){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEH}
-{\bkmkend AAAAAAAAEH}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAAMG}
-{\bkmkend AAAAAAAAMG}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Member Data Documentation\par
-\pard\plain 
-{\xe \v sz_\:ds::Stack< T >}
-{\xe \v ds::Stack< T >\:sz_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 ds::Stack}}}
-< T >::sz_ = 0{\f2 [private]}}}
-\par
-{\bkmkstart AAAAAAAADN}
-{\bkmkend AAAAAAAADN}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v top_\:ds::Stack< T >}
-{\xe \v ds::Stack< T >\:top_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 ds::Stack}}}
-< T >::top_ = nullptr{\f2 [private]}}}
-\par
-{\bkmkstart AAAAAAAADM}
-{\bkmkend AAAAAAAADM}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
+}}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 The documentation for this class was generated from the following file:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 stack.h}}}
+C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 stack.h}}}
 \par
 }}

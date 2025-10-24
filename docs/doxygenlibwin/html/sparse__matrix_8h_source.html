@@ -80,29 +80,76 @@ $(function() {
   <div class="headertitle"><div class="title">sparse_matrix.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;ds/hash_table.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>ds {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span>SparseMatrix {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">// Key as 64-bit composite r&lt;&lt;32 | c</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> key(std::size_t r, std::size_t c){ <span class="keywordflow">return</span> (<span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span> <span class="keywordtype">long</span><span class="keyword">&gt;</span>(r) &lt;&lt; 32) | <span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span> <span class="keywordtype">long</span><span class="keyword">&gt;</span>(c); }</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    HashTable&lt;long long, T&gt; data_;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    std::size_t rows_, cols_;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    SparseMatrix(std::size_t rows, std::size_t cols): data_(64), rows_(rows), cols_(cols) {}</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> set(std::size_t r, std::size_t c, <span class="keyword">const</span> T&amp; v){ data_.insert(key(r,c), v); }</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">const</span> T* get(std::size_t r, std::size_t c)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> data_.find(key(r,c)); }</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    std::size_t nonZeroCount()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> data_.size(); }</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::size_t rows()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> rows_; }</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::size_t cols()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> cols_; }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace ds</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<a href="sparse__matrix_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="hash__table_8h.html">ds/hash_table.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>ds {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classds_1_1_sparse_matrix.html">   23</a></span><span class="keyword">class </span><a class="code hl_function" href="classds_1_1_sparse_matrix.html#ab6f37bf5a7e19fadddc59a3f0d9ff2e6">SparseMatrix</a> {</div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classds_1_1_sparse_matrix.html#a3a11a8e14b05343ce581352fefc045d8">   30</a></span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code hl_function" href="classds_1_1_sparse_matrix.html#a3a11a8e14b05343ce581352fefc045d8">key</a>(std::size_t r, std::size_t c){ </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">return</span> (<span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span> <span class="keywordtype">long</span><span class="keyword">&gt;</span>(r) &lt;&lt; 32) | <span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span> <span class="keywordtype">long</span><span class="keyword">&gt;</span>(c); </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classds_1_1_sparse_matrix.html#a4d4f238625b4c2ef2808c8c10616fee2">   34</a></span>    <a class="code hl_class" href="classds_1_1_hash_table.html">HashTable&lt;long long, T&gt;</a> <a class="code hl_variable" href="classds_1_1_sparse_matrix.html#a4d4f238625b4c2ef2808c8c10616fee2">data_</a>;  </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classds_1_1_sparse_matrix.html#a9491432e44a4e92cc7ef89f097eb78aa">   35</a></span>    std::size_t <a class="code hl_variable" href="classds_1_1_sparse_matrix.html#a9491432e44a4e92cc7ef89f097eb78aa">rows_</a>;              </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classds_1_1_sparse_matrix.html#a5521d53f3422f84d573d0aaaef5a63f4">   36</a></span>    std::size_t <a class="code hl_variable" href="classds_1_1_sparse_matrix.html#a5521d53f3422f84d573d0aaaef5a63f4">cols_</a>;              </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classds_1_1_sparse_matrix.html#ab6f37bf5a7e19fadddc59a3f0d9ff2e6">   44</a></span>    <a class="code hl_function" href="classds_1_1_sparse_matrix.html#ab6f37bf5a7e19fadddc59a3f0d9ff2e6">SparseMatrix</a>(std::size_t <a class="code hl_function" href="classds_1_1_sparse_matrix.html#a626c4e3435266b08cc44477570f73021">rows</a>, std::size_t <a class="code hl_function" href="classds_1_1_sparse_matrix.html#a70e925fb8bb0416fcccb4cfb66aaf52d">cols</a>): <a class="code hl_variable" href="classds_1_1_sparse_matrix.html#a4d4f238625b4c2ef2808c8c10616fee2">data_</a>(64), <a class="code hl_variable" href="classds_1_1_sparse_matrix.html#a9491432e44a4e92cc7ef89f097eb78aa">rows_</a>(<a class="code hl_function" href="classds_1_1_sparse_matrix.html#a626c4e3435266b08cc44477570f73021">rows</a>), <a class="code hl_variable" href="classds_1_1_sparse_matrix.html#a5521d53f3422f84d573d0aaaef5a63f4">cols_</a>(<a class="code hl_function" href="classds_1_1_sparse_matrix.html#a70e925fb8bb0416fcccb4cfb66aaf52d">cols</a>) {}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classds_1_1_sparse_matrix.html#aebcc0633214ed572ebdc39ca47efde47">   52</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classds_1_1_sparse_matrix.html#aebcc0633214ed572ebdc39ca47efde47">set</a>(std::size_t r, std::size_t c, <span class="keyword">const</span> T&amp; v){ </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_variable" href="classds_1_1_sparse_matrix.html#a4d4f238625b4c2ef2808c8c10616fee2">data_</a>.insert(<a class="code hl_function" href="classds_1_1_sparse_matrix.html#a3a11a8e14b05343ce581352fefc045d8">key</a>(r,c), v); </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classds_1_1_sparse_matrix.html#ae238cab6800d072fc4c76e8b0578a8e5">   62</a></span>    <span class="keyword">const</span> T* <a class="code hl_function" href="classds_1_1_sparse_matrix.html#ae238cab6800d072fc4c76e8b0578a8e5">get</a>(std::size_t r, std::size_t c)<span class="keyword"> const </span>{ </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classds_1_1_sparse_matrix.html#a4d4f238625b4c2ef2808c8c10616fee2">data_</a>.find(<a class="code hl_function" href="classds_1_1_sparse_matrix.html#a3a11a8e14b05343ce581352fefc045d8">key</a>(r,c)); </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classds_1_1_sparse_matrix.html#a36f4a3217c358111b4526fefef641585">   70</a></span>    std::size_t <a class="code hl_function" href="classds_1_1_sparse_matrix.html#a36f4a3217c358111b4526fefef641585">nonZeroCount</a>()<span class="keyword"> const </span>{ </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classds_1_1_sparse_matrix.html#a4d4f238625b4c2ef2808c8c10616fee2">data_</a>.size(); </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classds_1_1_sparse_matrix.html#a626c4e3435266b08cc44477570f73021">   78</a></span>    std::size_t <a class="code hl_function" href="classds_1_1_sparse_matrix.html#a626c4e3435266b08cc44477570f73021">rows</a>()<span class="keyword"> const </span>{ </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classds_1_1_sparse_matrix.html#a9491432e44a4e92cc7ef89f097eb78aa">rows_</a>; </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classds_1_1_sparse_matrix.html#a70e925fb8bb0416fcccb4cfb66aaf52d">   86</a></span>    std::size_t <a class="code hl_function" href="classds_1_1_sparse_matrix.html#a70e925fb8bb0416fcccb4cfb66aaf52d">cols</a>()<span class="keyword"> const </span>{ </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classds_1_1_sparse_matrix.html#a5521d53f3422f84d573d0aaaef5a63f4">cols_</a>; </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>} <span class="comment">// namespace ds</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="ttc" id="aclassds_1_1_hash_table_html"><div class="ttname"><a href="classds_1_1_hash_table.html">ds::HashTable</a></div><div class="ttdoc">Kapalı adreslemeli hash tablosu implementasyonu.</div><div class="ttdef"><b>Definition</b> hash_table.h:35</div></div>
+<div class="ttc" id="aclassds_1_1_sparse_matrix_html_a36f4a3217c358111b4526fefef641585"><div class="ttname"><a href="classds_1_1_sparse_matrix.html#a36f4a3217c358111b4526fefef641585">ds::SparseMatrix::nonZeroCount</a></div><div class="ttdeci">std::size_t nonZeroCount() const</div><div class="ttdoc">Sıfır olmayan eleman sayısını döndürür.</div><div class="ttdef"><b>Definition</b> sparse_matrix.h:70</div></div>
+<div class="ttc" id="aclassds_1_1_sparse_matrix_html_a3a11a8e14b05343ce581352fefc045d8"><div class="ttname"><a href="classds_1_1_sparse_matrix.html#a3a11a8e14b05343ce581352fefc045d8">ds::SparseMatrix::key</a></div><div class="ttdeci">static long long key(std::size_t r, std::size_t c)</div><div class="ttdoc">Satır ve sütun indekslerini 64-bit key&#39;e dönüştürür.</div><div class="ttdef"><b>Definition</b> sparse_matrix.h:30</div></div>
+<div class="ttc" id="aclassds_1_1_sparse_matrix_html_a4d4f238625b4c2ef2808c8c10616fee2"><div class="ttname"><a href="classds_1_1_sparse_matrix.html#a4d4f238625b4c2ef2808c8c10616fee2">ds::SparseMatrix::data_</a></div><div class="ttdeci">HashTable&lt; long long, T &gt; data_</div><div class="ttdoc">Koordinat-eleman çiftlerini tutan hash tablosu.</div><div class="ttdef"><b>Definition</b> sparse_matrix.h:34</div></div>
+<div class="ttc" id="aclassds_1_1_sparse_matrix_html_a5521d53f3422f84d573d0aaaef5a63f4"><div class="ttname"><a href="classds_1_1_sparse_matrix.html#a5521d53f3422f84d573d0aaaef5a63f4">ds::SparseMatrix::cols_</a></div><div class="ttdeci">std::size_t cols_</div><div class="ttdoc">Matris sütun sayısı</div><div class="ttdef"><b>Definition</b> sparse_matrix.h:36</div></div>
+<div class="ttc" id="aclassds_1_1_sparse_matrix_html_a626c4e3435266b08cc44477570f73021"><div class="ttname"><a href="classds_1_1_sparse_matrix.html#a626c4e3435266b08cc44477570f73021">ds::SparseMatrix::rows</a></div><div class="ttdeci">std::size_t rows() const</div><div class="ttdoc">Matris satır sayısını döndürür.</div><div class="ttdef"><b>Definition</b> sparse_matrix.h:78</div></div>
+<div class="ttc" id="aclassds_1_1_sparse_matrix_html_a70e925fb8bb0416fcccb4cfb66aaf52d"><div class="ttname"><a href="classds_1_1_sparse_matrix.html#a70e925fb8bb0416fcccb4cfb66aaf52d">ds::SparseMatrix::cols</a></div><div class="ttdeci">std::size_t cols() const</div><div class="ttdoc">Matris sütun sayısını döndürür.</div><div class="ttdef"><b>Definition</b> sparse_matrix.h:86</div></div>
+<div class="ttc" id="aclassds_1_1_sparse_matrix_html_a9491432e44a4e92cc7ef89f097eb78aa"><div class="ttname"><a href="classds_1_1_sparse_matrix.html#a9491432e44a4e92cc7ef89f097eb78aa">ds::SparseMatrix::rows_</a></div><div class="ttdeci">std::size_t rows_</div><div class="ttdoc">Matris satır sayısı</div><div class="ttdef"><b>Definition</b> sparse_matrix.h:35</div></div>
+<div class="ttc" id="aclassds_1_1_sparse_matrix_html_ab6f37bf5a7e19fadddc59a3f0d9ff2e6"><div class="ttname"><a href="classds_1_1_sparse_matrix.html#ab6f37bf5a7e19fadddc59a3f0d9ff2e6">ds::SparseMatrix::SparseMatrix</a></div><div class="ttdeci">SparseMatrix(std::size_t rows, std::size_t cols)</div><div class="ttdoc">Seyrek matris oluşturur.</div><div class="ttdef"><b>Definition</b> sparse_matrix.h:44</div></div>
+<div class="ttc" id="aclassds_1_1_sparse_matrix_html_ae238cab6800d072fc4c76e8b0578a8e5"><div class="ttname"><a href="classds_1_1_sparse_matrix.html#ae238cab6800d072fc4c76e8b0578a8e5">ds::SparseMatrix::get</a></div><div class="ttdeci">const T * get(std::size_t r, std::size_t c) const</div><div class="ttdoc">Belirtilen koordinattaki elemanı okur.</div><div class="ttdef"><b>Definition</b> sparse_matrix.h:62</div></div>
+<div class="ttc" id="aclassds_1_1_sparse_matrix_html_aebcc0633214ed572ebdc39ca47efde47"><div class="ttname"><a href="classds_1_1_sparse_matrix.html#aebcc0633214ed572ebdc39ca47efde47">ds::SparseMatrix::set</a></div><div class="ttdeci">void set(std::size_t r, std::size_t c, const T &amp;v)</div><div class="ttdoc">Belirtilen koordinata eleman atar.</div><div class="ttdef"><b>Definition</b> sparse_matrix.h:52</div></div>
+<div class="ttc" id="ahash__table_8h_html"><div class="ttname"><a href="hash__table_8h.html">hash_table.h</a></div><div class="ttdoc">Kapalı adreslemeli hash tablosu implementasyonu.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

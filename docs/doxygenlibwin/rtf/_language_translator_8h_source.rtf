@@ -151,154 +151,195 @@
 LanguageTranslator.h\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/LanguageTranslator/header/LanguageTranslator.h}
-{\bkmkstart AAAAAAAAAI}
-{\bkmkend AAAAAAAAAI}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAAEY}
+{\bkmkend AAAAAAAAEY}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEZ" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
 \pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
-5 {\cf21 #ifndef LANGUAGE_TRANSLATOR_H}\par
-6 {\cf21 #define LANGUAGE_TRANSLATOR_H}\par
-7 \par
-8 {\cf21 #include <string>}\par
-9 {\cf21 #include <vector>}\par
-10 {\cf21 #include <unordered_map>}\par
-11 {\cf21 #include <memory>}\par
-12 {\cf21 #include <iostream>}\par
-13 {\cf21 #include "{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 Persistence.h}}}
+8 {\cf21 #ifndef LANGUAGE_TRANSLATOR_H}\par
+9 {\cf21 #define LANGUAGE_TRANSLATOR_H}\par
+10 \par
+11 {\cf21 #include <string>}\par
+12 {\cf21 #include <vector>}\par
+13 {\cf21 #include <unordered_map>}\par
+14 {\cf21 #include <memory>}\par
+15 {\cf21 #include <iostream>}\par
+16 {\cf21 #include "{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFC" }{}}{\fldrslt {\cs37\ul\cf2 Persistence.h}}}
 "}\par
-14 {\cf20 // #include <curl/curl.h>  // Commented out for now - API not implemented yet}\par
-15 \par
-16 {\cf17 namespace }Coruh\par
-17 \{\par
-18     {\cf17 namespace }LanguageTranslator\par
-19     \{\par
-24         {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorApp}}}
-\par
-25         \{\par
-26         {\cf17 private}:\par
-27             {\cf20 // Multi-language dictionaries}\par
-28             std::unordered_map<std::string, std::unordered_map<std::string, std::string>> wordDictionaries;\par
-29             std::unordered_map<std::string, std::unordered_map<std::string, std::string>> phraseDictionaries;\par
-30             \par
-31             {\cf20 // Language support}\par
-32             std::vector<std::string> supportedLanguages;\par
-33             std::string currentSourceLanguage;\par
-34             std::string currentTargetLanguage;\par
-35             \par
-36             {\cf20 // Other features}\par
-37             std::vector<std::string> commonPhrases;\par
-38             std::vector<std::string> learningTips;\par
-39             std::unordered_map<std::string, std::string> pronunciationGuide;\par
-40             \par
-41             std::string currentUser;\par
-42             {\cf18 bool} isLoggedIn;\par
-43             std::vector<UserProfile> users; {\cf20 // persisted users}\par
-44             std::vector<TranslationRecord> history; {\cf20 // translation history}\par
-45             \par
-46             {\cf20 // API settings}\par
-47             std::string apiKey;\par
-48             {\cf18 bool} useAPI;\par
-49             std::string apiProvider; {\cf20 // "google" or "microsoft"}\par
-50 \par
-51         {\cf17 public}:\par
-53             {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorApp}}}
+17 \par
+18 {\cf17 namespace }Coruh \{\par
+19 {\cf17 namespace }LanguageTranslator \{\par
+20 \par
+29 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorApp}}}
+ \{\par
+30 {\cf17 private}:\par
+31     {\cf20 // Multi-language dictionaries}\par
+32     std::unordered_map<std::string, std::unordered_map<std::string, std::string>> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHV" }{}}{\fldrslt {\cs37\ul\cf2 wordDictionaries}}}
+;  \par
+33     std::unordered_map<std::string, std::unordered_map<std::string, std::string>> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 phraseDictionaries}}}
+;  \par
+34 \par
+35     {\cf20 // Language support}\par
+36     std::vector<std::string> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHX" }{}}{\fldrslt {\cs37\ul\cf2 supportedLanguages}}}
+;  \par
+37     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 currentSourceLanguage}}}
+;  \par
+38     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 currentTargetLanguage}}}
+;  \par
+39 \par
+40     {\cf20 // Other features}\par
+41     std::vector<std::string> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIA" }{}}{\fldrslt {\cs37\ul\cf2 commonPhrases}}}
+;  \par
+42     std::vector<std::string> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 learningTips}}}
+;  \par
+43     std::unordered_map<std::string, std::string> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 pronunciationGuide}}}
+;  \par
+44 \par
+45     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAID" }{}}{\fldrslt {\cs37\ul\cf2 currentUser}}}
+;  \par
+46     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIE" }{}}{\fldrslt {\cs37\ul\cf2 isLoggedIn}}}
+;  \par
+47     std::vector<UserProfile> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIF" }{}}{\fldrslt {\cs37\ul\cf2 users}}}
+;   \par
+48     std::vector<TranslationRecord> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 history}}}
+; \par
+49 \par
+50     {\cf20 // API settings}\par
+51     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIH" }{}}{\fldrslt {\cs37\ul\cf2 apiKey}}}
+;  \par
+52     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAII" }{}}{\fldrslt {\cs37\ul\cf2 useAPI}}}
+;  \par
+53     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 apiProvider}}}
+; \par
+54 \par
+55 {\cf17 public}:\par
+59     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 LanguageTranslatorApp}}}
 ();\par
-54             {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 ~LanguageTranslatorApp}}}
+60     \par
+64     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIK" }{}}{\fldrslt {\cs37\ul\cf2 ~LanguageTranslatorApp}}}
 () = {\cf19 default};\par
-55 \par
-57             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 run}}}
+65 \par
+69     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJQ" }{}}{\fldrslt {\cs37\ul\cf2 run}}}
 ();\par
-59             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 showMainMenu}}}
+70     \par
+74     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJR" }{}}{\fldrslt {\cs37\ul\cf2 showMainMenu}}}
 ();\par
-61             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 handleUserChoice}}}
+75     \par
+80     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJS" }{}}{\fldrslt {\cs37\ul\cf2 handleUserChoice}}}
 ({\cf18 int} choice);\par
-62 \par
-63             {\cf20 // Translation functions}\par
-65             std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 translateText}}}
+81 \par
+82     {\cf20 // Translation functions}\par
+88     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJT" }{}}{\fldrslt {\cs37\ul\cf2 translateText}}}
 ({\cf17 const} std::string& text);\par
-67             std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAQ" }{}}{\fldrslt {\cs37\ul\cf2 translateWord}}}
+89     \par
+95     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJV" }{}}{\fldrslt {\cs37\ul\cf2 translateWord}}}
 ({\cf17 const} std::string& word);\par
-69             std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 translatePhrase}}}
+96     \par
+102     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKB" }{}}{\fldrslt {\cs37\ul\cf2 translatePhrase}}}
 ({\cf17 const} std::string& phrase);\par
-70             \par
-71             {\cf20 // Language management}\par
-73             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAS" }{}}{\fldrslt {\cs37\ul\cf2 setSourceLanguage}}}
+103 \par
+104     {\cf20 // Language management}\par
+109     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKE" }{}}{\fldrslt {\cs37\ul\cf2 setSourceLanguage}}}
 ({\cf17 const} std::string& language);\par
-75             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 setTargetLanguage}}}
+110     \par
+115     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKF" }{}}{\fldrslt {\cs37\ul\cf2 setTargetLanguage}}}
 ({\cf17 const} std::string& language);\par
-77             std::vector<std::string> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAU" }{}}{\fldrslt {\cs37\ul\cf2 getSupportedLanguages}}}
+116     \par
+121     std::vector<std::string> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKG" }{}}{\fldrslt {\cs37\ul\cf2 getSupportedLanguages}}}
 () {\cf17 const};\par
-79             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 showLanguageSelection}}}
+122     \par
+126     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKH" }{}}{\fldrslt {\cs37\ul\cf2 showLanguageSelection}}}
 ();\par
-81             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 addLanguage}}}
+127     \par
+132     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKI" }{}}{\fldrslt {\cs37\ul\cf2 addLanguage}}}
 ({\cf17 const} std::string& language);\par
-82 \par
-83             {\cf20 // User management}\par
-85             {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 login}}}
+133 \par
+134     {\cf20 // User management}\par
+141     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKJ" }{}}{\fldrslt {\cs37\ul\cf2 login}}}
 ({\cf17 const} std::string& username, {\cf17 const} std::string& password);\par
-87             {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 registerUser}}}
+142     \par
+149     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKK" }{}}{\fldrslt {\cs37\ul\cf2 registerUser}}}
 ({\cf17 const} std::string& username, {\cf17 const} std::string& password);\par
-89             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 logout}}}
+150     \par
+154     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKL" }{}}{\fldrslt {\cs37\ul\cf2 logout}}}
 ();\par
-91             {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 isUserLoggedIn}}}
+155     \par
+160     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKM" }{}}{\fldrslt {\cs37\ul\cf2 isUserLoggedIn}}}
 () {\cf17 const};\par
-92             {\cf17 const} std::string& currentUsername(){\cf17  const }\{ {\cf19 return} currentUser; \}\par
-93 \par
-94             {\cf20 // Phrase library}\par
-96             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 showPhraseLibrary}}}
+161     \par
+166     {\cf17 const} std::string& {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKN" }{}}{\fldrslt {\cs37\ul\cf2 currentUsername}}}
+(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAID" }{}}{\fldrslt {\cs37\ul\cf2 currentUser}}}
+; \}\par
+167 \par
+168     {\cf20 // Phrase library}\par
+172     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKO" }{}}{\fldrslt {\cs37\ul\cf2 showPhraseLibrary}}}
 ();\par
-98             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 addPhrase}}}
+173     \par
+179     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKP" }{}}{\fldrslt {\cs37\ul\cf2 addPhrase}}}
 ({\cf17 const} std::string& phrase, {\cf17 const} std::string& category);\par
-99 \par
-100             {\cf20 // Learning tips}\par
-102             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 showLearningTips}}}
+180 \par
+181     {\cf20 // Learning tips}\par
+185     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKQ" }{}}{\fldrslt {\cs37\ul\cf2 showLearningTips}}}
 ();\par
-104             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABE" }{}}{\fldrslt {\cs37\ul\cf2 addLearningTip}}}
+186     \par
+191     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKR" }{}}{\fldrslt {\cs37\ul\cf2 addLearningTip}}}
 ({\cf17 const} std::string& tip);\par
-105 \par
-106             {\cf20 // Pronunciation guide}\par
-108             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 showPronunciationGuide}}}
+192 \par
+193     {\cf20 // Pronunciation guide}\par
+197     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKS" }{}}{\fldrslt {\cs37\ul\cf2 showPronunciationGuide}}}
 ();\par
-110             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABG" }{}}{\fldrslt {\cs37\ul\cf2 addPronunciation}}}
+198     \par
+204     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKT" }{}}{\fldrslt {\cs37\ul\cf2 addPronunciation}}}
 ({\cf17 const} std::string& word, {\cf17 const} std::string& guide);\par
-111 \par
-112             {\cf20 // History}\par
-114             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 showHistory}}}
+205 \par
+206     {\cf20 // History}\par
+210     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKU" }{}}{\fldrslt {\cs37\ul\cf2 showHistory}}}
 () {\cf17 const};\par
-116             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 clearHistory}}}
+211     \par
+215     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKV" }{}}{\fldrslt {\cs37\ul\cf2 clearHistory}}}
 ();\par
-117 \par
-118             {\cf20 // Data management}\par
-120             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 initializeDefaultData}}}
+216 \par
+217     {\cf20 // Data management}\par
+221     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKW" }{}}{\fldrslt {\cs37\ul\cf2 initializeDefaultData}}}
 ();\par
-122             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 saveData}}}
+222     \par
+226     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKX" }{}}{\fldrslt {\cs37\ul\cf2 saveData}}}
 ();\par
-124             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 loadData}}}
+227     \par
+231     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKY" }{}}{\fldrslt {\cs37\ul\cf2 loadData}}}
 ();\par
-125             \par
-126             {\cf20 // Dictionary management}\par
-128             {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 loadDictionaryFromFile}}}
+232 \par
+233     {\cf20 // Dictionary management}\par
+241     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 loadDictionaryFromFile}}}
 ({\cf17 const} std::string& sourceLang, {\cf17 const} std::string& targetLang, {\cf17 const} std::string& filename);\par
-130             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABN" }{}}{\fldrslt {\cs37\ul\cf2 loadAllDictionaries}}}
+242     \par
+246     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALA" }{}}{\fldrslt {\cs37\ul\cf2 loadAllDictionaries}}}
 ();\par
-131             \par
-132             {\cf20 // API Translation}\par
-134             std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 translateWithGoogleAPI}}}
+247 \par
+248     {\cf20 // API Translation}\par
+256     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALB" }{}}{\fldrslt {\cs37\ul\cf2 translateWithGoogleAPI}}}
 ({\cf17 const} std::string& text, {\cf17 const} std::string& sourceLang, {\cf17 const} std::string& targetLang);\par
-136             std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABP" }{}}{\fldrslt {\cs37\ul\cf2 translateWithMicrosoftAPI}}}
+257     \par
+265     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALC" }{}}{\fldrslt {\cs37\ul\cf2 translateWithMicrosoftAPI}}}
 ({\cf17 const} std::string& text, {\cf17 const} std::string& sourceLang, {\cf17 const} std::string& targetLang);\par
-138             {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 isAPIAvailable}}}
+266     \par
+271     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALD" }{}}{\fldrslt {\cs37\ul\cf2 isAPIAvailable}}}
 ();\par
-140             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 setAPIKey}}}
+272     \par
+277     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALE" }{}}{\fldrslt {\cs37\ul\cf2 setAPIKey}}}
 ({\cf17 const} std::string& key);\par
-142             {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 setAPIMode}}}
-({\cf18 bool} useAPI);\par
-143         \};\par
-144     \}\par
-145 \}\par
-146 \par
-147 {\cf21 #endif }{\cf20 // LANGUAGE_TRANSLATOR_H}\par
+278     \par
+283     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALF" }{}}{\fldrslt {\cs37\ul\cf2 setAPIMode}}}
+({\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAII" }{}}{\fldrslt {\cs37\ul\cf2 useAPI}}}
+);\par
+284 \};\par
+285 \par
+286 \} {\cf20 // namespace LanguageTranslator}\par
+287 \} {\cf20 // namespace Coruh}\par
+288 \par
+289 {\cf21 #endif }{\cf20 // LANGUAGE_TRANSLATOR_H}\par
+290 \par
 }
 }

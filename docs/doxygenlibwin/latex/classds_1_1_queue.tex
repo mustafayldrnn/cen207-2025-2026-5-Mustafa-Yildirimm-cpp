@@ -10,116 +10,40 @@ Collaboration diagram for ds\+::Queue\texorpdfstring{$<$}{<} T \texorpdfstring{$
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=234pt]{classds_1_1_queue__coll__graph}
+\includegraphics[width=156pt]{classds_1_1_queue__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsubsection*{Classes}
-\begin{DoxyCompactItemize}
-\item 
-struct \mbox{\hyperlink{structds_1_1_queue_1_1_node}{Node}}
-\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classds_1_1_queue_a350273703e1de39445c099ae63532a41}{\texorpdfstring{$\sim$}{\string~}\+Queue}} ()
-\item 
-void \mbox{\hyperlink{classds_1_1_queue_a1732c7aa0f519e004f4e7bdf0dac87d2}{enqueue}} (const T \&v)
-\item 
-void \mbox{\hyperlink{classds_1_1_queue_a2a1a1d312073663a893ee0e433cdd5f7}{dequeue}} ()
-\item 
-T \& \mbox{\hyperlink{classds_1_1_queue_a3a74735b6ef905d487f3c3a1bad46843}{front}} ()
-\item 
-bool \mbox{\hyperlink{classds_1_1_queue_aee3b289f1a288d38124a2974a1a2999f}{empty}} () const
-\item 
-std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_queue_a557e831c44c39d8abf6b6cb55cb55aac}{size}} () const
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{structds_1_1_queue_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_queue_af3e1805acba3c9de41f864bd19238db8}{head\+\_\+}} = nullptr
-\item 
-\mbox{\hyperlink{structds_1_1_queue_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_queue_a72a469ed84ae8b3b36542d36d94df464}{tail\+\_\+}} = nullptr
-\item 
-std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_queue_aa9c993b85346dabd944f5b43205a8f15}{sz\+\_\+}} = 0
-\end{DoxyCompactItemize}
+\Hypertarget{classds_1_1_queue_a350273703e1de39445c099ae63532a41}\label{classds_1_1_queue_a350273703e1de39445c099ae63532a41} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Queue} ()
+\begin{DoxyCompactList}\small\item\em Yıkıcı\+: tüm düğümleri serbest bırakır. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_queue_a1732c7aa0f519e004f4e7bdf0dac87d2}\label{classds_1_1_queue_a1732c7aa0f519e004f4e7bdf0dac87d2} 
+void {\bfseries enqueue} (const T \&v)
+\begin{DoxyCompactList}\small\item\em Kuyruğun sonuna ekler. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_queue_a2a1a1d312073663a893ee0e433cdd5f7}\label{classds_1_1_queue_a2a1a1d312073663a893ee0e433cdd5f7} 
+void {\bfseries dequeue} ()
+\begin{DoxyCompactList}\small\item\em Baştaki elemanı çıkarır. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_queue_a3a74735b6ef905d487f3c3a1bad46843}\label{classds_1_1_queue_a3a74735b6ef905d487f3c3a1bad46843} 
+T \& {\bfseries front} ()
+\begin{DoxyCompactList}\small\item\em Baştaki elemanı döndürür. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_queue_aee3b289f1a288d38124a2974a1a2999f}\label{classds_1_1_queue_aee3b289f1a288d38124a2974a1a2999f} 
+bool {\bfseries empty} () const
+\begin{DoxyCompactList}\small\item\em Kuyruk boş mu? \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_queue_a557e831c44c39d8abf6b6cb55cb55aac}\label{classds_1_1_queue_a557e831c44c39d8abf6b6cb55cb55aac} 
+std\+::size\+\_\+t {\bfseries size} () const
+\begin{DoxyCompactList}\small\item\em Eleman sayısı. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\label{doc-constructors}
-\Hypertarget{classds_1_1_queue_doc-constructors}
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classds_1_1_queue_a350273703e1de39445c099ae63532a41}\index{ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}!````~Queue@{\texorpdfstring{$\sim$}{\string~}Queue}}
-\index{````~Queue@{\texorpdfstring{$\sim$}{\string~}Queue}!ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Queue()}{\string~Queue()}}
-{\footnotesize\ttfamily \label{classds_1_1_queue_a350273703e1de39445c099ae63532a41} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{classds_1_1_queue}{ds\+::\+Queue}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{classds_1_1_queue}{Queue}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class ds\+::\+Queue$<$ T $>$}
 
-
-
-\label{doc-func-members}
-\Hypertarget{classds_1_1_queue_doc-func-members}
-\doxysubsection{Member Function Documentation}
-\Hypertarget{classds_1_1_queue_a2a1a1d312073663a893ee0e433cdd5f7}\index{ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}!dequeue@{dequeue}}
-\index{dequeue@{dequeue}!ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{dequeue()}{dequeue()}}
-{\footnotesize\ttfamily \label{classds_1_1_queue_a2a1a1d312073663a893ee0e433cdd5f7} 
-template$<$typename T$>$ \\
-void \mbox{\hyperlink{classds_1_1_queue}{ds\+::\+Queue}}$<$ T $>$\+::dequeue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\Hypertarget{classds_1_1_queue_aee3b289f1a288d38124a2974a1a2999f}\index{ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}!empty@{empty}}
-\index{empty@{empty}!ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
-{\footnotesize\ttfamily \label{classds_1_1_queue_aee3b289f1a288d38124a2974a1a2999f} 
-template$<$typename T$>$ \\
-bool \mbox{\hyperlink{classds_1_1_queue}{ds\+::\+Queue}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-\Hypertarget{classds_1_1_queue_a1732c7aa0f519e004f4e7bdf0dac87d2}\index{ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}!enqueue@{enqueue}}
-\index{enqueue@{enqueue}!ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
-{\footnotesize\ttfamily \label{classds_1_1_queue_a1732c7aa0f519e004f4e7bdf0dac87d2} 
-template$<$typename T$>$ \\
-void \mbox{\hyperlink{classds_1_1_queue}{ds\+::\+Queue}}$<$ T $>$\+::enqueue (\begin{DoxyParamCaption}\item[{const T \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\Hypertarget{classds_1_1_queue_a3a74735b6ef905d487f3c3a1bad46843}\index{ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}!front@{front}}
-\index{front@{front}!ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{front()}{front()}}
-{\footnotesize\ttfamily \label{classds_1_1_queue_a3a74735b6ef905d487f3c3a1bad46843} 
-template$<$typename T$>$ \\
-T \& \mbox{\hyperlink{classds_1_1_queue}{ds\+::\+Queue}}$<$ T $>$\+::front (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\Hypertarget{classds_1_1_queue_a557e831c44c39d8abf6b6cb55cb55aac}\index{ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}!size@{size}}
-\index{size@{size}!ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{size()}{size()}}
-{\footnotesize\ttfamily \label{classds_1_1_queue_a557e831c44c39d8abf6b6cb55cb55aac} 
-template$<$typename T$>$ \\
-std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_queue}{ds\+::\+Queue}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-\label{doc-variable-members}
-\Hypertarget{classds_1_1_queue_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{classds_1_1_queue_af3e1805acba3c9de41f864bd19238db8}\index{ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}!head\_@{head\_}}
-\index{head\_@{head\_}!ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{head\_}{head\_}}
-{\footnotesize\ttfamily \label{classds_1_1_queue_af3e1805acba3c9de41f864bd19238db8} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{structds_1_1_queue_1_1_node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_queue}{ds\+::\+Queue}}$<$ T $>$\+::head\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
-
-\Hypertarget{classds_1_1_queue_aa9c993b85346dabd944f5b43205a8f15}\index{ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}!sz\_@{sz\_}}
-\index{sz\_@{sz\_}!ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{sz\_}{sz\_}}
-{\footnotesize\ttfamily \label{classds_1_1_queue_aa9c993b85346dabd944f5b43205a8f15} 
-template$<$typename T$>$ \\
-std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_queue}{ds\+::\+Queue}}$<$ T $>$\+::sz\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
-
-\Hypertarget{classds_1_1_queue_a72a469ed84ae8b3b36542d36d94df464}\index{ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}!tail\_@{tail\_}}
-\index{tail\_@{tail\_}!ds::Queue$<$ T $>$@{ds::Queue$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{tail\_}{tail\_}}
-{\footnotesize\ttfamily \label{classds_1_1_queue_a72a469ed84ae8b3b36542d36d94df464} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{structds_1_1_queue_1_1_node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_queue}{ds\+::\+Queue}}$<$ T $>$\+::tail\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
-
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Eleman tipi \\
+\hline
+\end{DoxyTemplParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

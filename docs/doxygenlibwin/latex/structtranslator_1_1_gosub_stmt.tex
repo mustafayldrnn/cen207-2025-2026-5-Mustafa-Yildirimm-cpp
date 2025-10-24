@@ -2,6 +2,11 @@
 \hypertarget{structtranslator_1_1_gosub_stmt}{}\label{structtranslator_1_1_gosub_stmt}\index{translator::GosubStmt@{translator::GosubStmt}}
 
 
+GOSUB deyimi.  
+
+
+
+
 {\ttfamily \#include $<$ast.\+h$>$}
 
 
@@ -26,20 +31,19 @@ Collaboration diagram for translator\+::Gosub\+Stmt\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structtranslator_1_1_gosub_stmt_aae89ce3fc1bbe274899085b0fbee9181}{Gosub\+Stmt}} (int t)
-\item 
-\mbox{\hyperlink{namespacetranslator_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} \mbox{\hyperlink{structtranslator_1_1_gosub_stmt_a959e82453b6d5f6f8f7f92f63eb565ac}{kind}} () const override
-\end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structtranslator_1_1_stmt}{translator\+::\+Stmt}}}
-\begin{DoxyCompactItemize}
-\item 
-virtual \mbox{\hyperlink{structtranslator_1_1_stmt_a0707842a254ce67ff9c72cda98226ec7}{\texorpdfstring{$\sim$}{\string~}\+Stmt}} ()=default
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Alt program çağırma deyimi oluşturur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} \mbox{\hyperlink{structtranslator_1_1_gosub_stmt_a959e82453b6d5f6f8f7f92f63eb565ac}{kind}} () const override
+\begin{DoxyCompactList}\small\item\em Deyim türünü döndürür. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{structtranslator_1_1_gosub_stmt_a168c003fcda2ceb2e8c2cd015df7ec85}{target}}
-\end{DoxyCompactItemize}
+\Hypertarget{structtranslator_1_1_gosub_stmt_a168c003fcda2ceb2e8c2cd015df7ec85}\label{structtranslator_1_1_gosub_stmt_a168c003fcda2ceb2e8c2cd015df7ec85} 
+int {\bfseries target}
+\begin{DoxyCompactList}\small\item\em Hedef alt program satır numarası \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+GOSUB deyimi. 
 
 \label{doc-constructors}
 \Hypertarget{structtranslator_1_1_gosub_stmt_doc-constructors}
@@ -52,6 +56,15 @@ translator\+::\+Gosub\+Stmt\+::\+Gosub\+Stmt (\begin{DoxyParamCaption}\item[{int
 
 
 
+Alt program çağırma deyimi oluşturur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Hedef satır numarası \\
+\hline
+\end{DoxyParams}
+
+
 \label{doc-func-members}
 \Hypertarget{structtranslator_1_1_gosub_stmt_doc-func-members}
 \doxysubsection{Member Function Documentation}
@@ -59,22 +72,18 @@ translator\+::\+Gosub\+Stmt\+::\+Gosub\+Stmt (\begin{DoxyParamCaption}\item[{int
 \index{kind@{kind}!translator::GosubStmt@{translator::GosubStmt}}
 \doxysubsubsection{\texorpdfstring{kind()}{kind()}}
 {\footnotesize\ttfamily \label{structtranslator_1_1_gosub_stmt_a959e82453b6d5f6f8f7f92f63eb565ac} 
-\mbox{\hyperlink{namespacetranslator_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} translator\+::\+Gosub\+Stmt\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} translator\+::\+Gosub\+Stmt\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+Deyim türünü döndürür. 
+
+\begin{DoxyReturn}{Returns}
+Gosub türü 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{structtranslator_1_1_stmt_afb8f5d100524bc8cf234edae0ac57578}{translator\+::\+Stmt}}.
-
-
-
-\label{doc-variable-members}
-\Hypertarget{structtranslator_1_1_gosub_stmt_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structtranslator_1_1_gosub_stmt_a168c003fcda2ceb2e8c2cd015df7ec85}\index{translator::GosubStmt@{translator::GosubStmt}!target@{target}}
-\index{target@{target}!translator::GosubStmt@{translator::GosubStmt}}
-\doxysubsubsection{\texorpdfstring{target}{target}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_gosub_stmt_a168c003fcda2ceb2e8c2cd015df7ec85} 
-int translator\+::\+Gosub\+Stmt\+::target}
 
 
 

@@ -72,18 +72,20 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a href="namespacetranslator.html">translator</a></li><li class="navelem"><a href="classtranslator_1_1_lexer.html">Lexer</a></li>  </ul>
+<li class="navelem"><b>translator</b></li><li class="navelem"><a href="classtranslator_1_1_lexer.html">Lexer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classtranslator_1_1_lexer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">translator::Lexer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Kaynaktan belirteç (<a class="el" href="structtranslator_1_1_token.html" title="Belirteç kaydı">Token</a>) üreten sınıf.  
+ <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="lexer_8h_source.html">lexer.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -94,83 +96,18 @@ Collaboration diagram for translator::Lexer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a11e345d58654102d3a9cb26967f774" id="r_a8a11e345d58654102d3a9cb26967f774"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a11e345d58654102d3a9cb26967f774">Lexer</a> (std::string src)</td></tr>
-<tr class="memitem:a89260e1e02eb2b01abcd1c7e31d480b9" id="r_a89260e1e02eb2b01abcd1c7e31d480b9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structtranslator_1_1_token.html">Token</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89260e1e02eb2b01abcd1c7e31d480b9">tokenize</a> () const</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a8dd38bc122462334b34032f50ca8a9e7" id="r_a8dd38bc122462334b34032f50ca8a9e7"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dd38bc122462334b34032f50ca8a9e7">src_</a></td></tr>
+<tr class="memitem:a8a11e345d58654102d3a9cb26967f774" id="r_a8a11e345d58654102d3a9cb26967f774"><td class="memItemLeft" align="right" valign="top"><a id="a8a11e345d58654102d3a9cb26967f774" name="a8a11e345d58654102d3a9cb26967f774"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Lexer</b> (std::string src)</td></tr>
+<tr class="memdesc:a8a11e345d58654102d3a9cb26967f774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kaynağı alarak bir lexer oluşturur. <br /></td></tr>
+<tr class="memitem:a89260e1e02eb2b01abcd1c7e31d480b9" id="r_a89260e1e02eb2b01abcd1c7e31d480b9"><td class="memItemLeft" align="right" valign="top"><a id="a89260e1e02eb2b01abcd1c7e31d480b9" name="a89260e1e02eb2b01abcd1c7e31d480b9"></a>
+std::vector&lt; <a class="el" href="structtranslator_1_1_token.html">Token</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tokenize</b> () const</td></tr>
+<tr class="memdesc:a89260e1e02eb2b01abcd1c7e31d480b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Girdi kaynağını belirteçlere dönüştürür. <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8a11e345d58654102d3a9cb26967f774" name="a8a11e345d58654102d3a9cb26967f774"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a11e345d58654102d3a9cb26967f774">&#9670;&#160;</a></span>Lexer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">translator::Lexer::Lexer </td>
-          <td>(</td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>src</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a89260e1e02eb2b01abcd1c7e31d480b9" name="a89260e1e02eb2b01abcd1c7e31d480b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89260e1e02eb2b01abcd1c7e31d480b9">&#9670;&#160;</a></span>tokenize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="structtranslator_1_1_token.html">Token</a> &gt; translator::Lexer::tokenize </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a8dd38bc122462334b34032f50ca8a9e7" name="a8dd38bc122462334b34032f50ca8a9e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dd38bc122462334b34032f50ca8a9e7">&#9670;&#160;</a></span>src_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string translator::Lexer::src_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Kaynaktan belirteç (<a class="el" href="structtranslator_1_1_token.html" title="Belirteç kaydı">Token</a>) üreten sınıf. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/<a class="el" href="lexer_8h_source.html">lexer.h</a></li>
-<li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/<a class="el" href="lexer_8cpp.html">lexer.cpp</a></li>
+<li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/<b>lexer.cpp</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

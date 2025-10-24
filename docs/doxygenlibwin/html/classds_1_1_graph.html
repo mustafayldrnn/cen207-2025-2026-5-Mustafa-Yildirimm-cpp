@@ -72,18 +72,20 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a href="namespaceds.html">ds</a></li><li class="navelem"><a href="classds_1_1_graph.html">Graph</a></li>  </ul>
+<li class="navelem"><b>ds</b></li><li class="navelem"><a href="classds_1_1_graph.html">Graph</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classds_1_1_graph-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ds::Graph Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Komşuluk listesi tabanlı grafik.  
+ <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="graph_8h_source.html">graph.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -94,263 +96,34 @@ Collaboration diagram for ds::Graph:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9fc7c0ff07b23eeb275f4447afd79048" id="r_a9fc7c0ff07b23eeb275f4447afd79048"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fc7c0ff07b23eeb275f4447afd79048">Graph</a> (int n=0)</td></tr>
-<tr class="memitem:ad0c233e6f3b8de9684a1cca850b85df5" id="r_ad0c233e6f3b8de9684a1cca850b85df5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0c233e6f3b8de9684a1cca850b85df5">resize</a> (int n)</td></tr>
-<tr class="memitem:a4b3a3bd8e6f96b36937c4ba175820d95" id="r_a4b3a3bd8e6f96b36937c4ba175820d95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b3a3bd8e6f96b36937c4ba175820d95">add_edge</a> (int u, int v, bool undirected=false)</td></tr>
-<tr class="memitem:a620124fd977deaae01a68ae117eed5dd" id="r_a620124fd977deaae01a68ae117eed5dd"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a620124fd977deaae01a68ae117eed5dd">neighbors</a> (int u) const</td></tr>
-<tr class="memitem:ad0be55636f291082daabb61bf3d6c893" id="r_ad0be55636f291082daabb61bf3d6c893"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0be55636f291082daabb61bf3d6c893">size</a> () const</td></tr>
-<tr class="memitem:a4f65eeeb7663df3a2cf8c7d63430a22a" id="r_a4f65eeeb7663df3a2cf8c7d63430a22a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f65eeeb7663df3a2cf8c7d63430a22a">bfs_dist</a> (int s) const</td></tr>
-<tr class="memitem:a0a55bcdcd40f74a90298ec34f8446b4e" id="r_a0a55bcdcd40f74a90298ec34f8446b4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a55bcdcd40f74a90298ec34f8446b4e">dfs_util</a> (int u, std::vector&lt; int &gt; &amp;vis, std::vector&lt; int &gt; &amp;order) const</td></tr>
-<tr class="memitem:abe1955e3d6f2d997b8ce8c279cd855bb" id="r_abe1955e3d6f2d997b8ce8c279cd855bb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe1955e3d6f2d997b8ce8c279cd855bb">dfs_order</a> (int s=0) const</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a30a376f3ad6e89e372c00d2142796560" id="r_a30a376f3ad6e89e372c00d2142796560"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30a376f3ad6e89e372c00d2142796560">adj_</a></td></tr>
+<tr class="memitem:a9fc7c0ff07b23eeb275f4447afd79048" id="r_a9fc7c0ff07b23eeb275f4447afd79048"><td class="memItemLeft" align="right" valign="top"><a id="a9fc7c0ff07b23eeb275f4447afd79048" name="a9fc7c0ff07b23eeb275f4447afd79048"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b> (int n=0)</td></tr>
+<tr class="memdesc:a9fc7c0ff07b23eeb275f4447afd79048"><td class="mdescLeft">&#160;</td><td class="mdescRight">n düğüm ile oluşturur. <br /></td></tr>
+<tr class="memitem:ad0c233e6f3b8de9684a1cca850b85df5" id="r_ad0c233e6f3b8de9684a1cca850b85df5"><td class="memItemLeft" align="right" valign="top"><a id="ad0c233e6f3b8de9684a1cca850b85df5" name="ad0c233e6f3b8de9684a1cca850b85df5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (int n)</td></tr>
+<tr class="memdesc:ad0c233e6f3b8de9684a1cca850b85df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Düğüm sayısını ayarlar. <br /></td></tr>
+<tr class="memitem:a4b3a3bd8e6f96b36937c4ba175820d95" id="r_a4b3a3bd8e6f96b36937c4ba175820d95"><td class="memItemLeft" align="right" valign="top"><a id="a4b3a3bd8e6f96b36937c4ba175820d95" name="a4b3a3bd8e6f96b36937c4ba175820d95"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_edge</b> (int u, int v, bool undirected=false)</td></tr>
+<tr class="memdesc:a4b3a3bd8e6f96b36937c4ba175820d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kenar ekler (opsiyonel yönsüz). <br /></td></tr>
+<tr class="memitem:a620124fd977deaae01a68ae117eed5dd" id="r_a620124fd977deaae01a68ae117eed5dd"><td class="memItemLeft" align="right" valign="top"><a id="a620124fd977deaae01a68ae117eed5dd" name="a620124fd977deaae01a68ae117eed5dd"></a>
+const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>neighbors</b> (int u) const</td></tr>
+<tr class="memdesc:a620124fd977deaae01a68ae117eed5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">u’nun komşuları. <br /></td></tr>
+<tr class="memitem:ad0be55636f291082daabb61bf3d6c893" id="r_ad0be55636f291082daabb61bf3d6c893"><td class="memItemLeft" align="right" valign="top"><a id="ad0be55636f291082daabb61bf3d6c893" name="ad0be55636f291082daabb61bf3d6c893"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="memdesc:ad0be55636f291082daabb61bf3d6c893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Düğüm sayısı. <br /></td></tr>
+<tr class="memitem:a4f65eeeb7663df3a2cf8c7d63430a22a" id="r_a4f65eeeb7663df3a2cf8c7d63430a22a"><td class="memItemLeft" align="right" valign="top"><a id="a4f65eeeb7663df3a2cf8c7d63430a22a" name="a4f65eeeb7663df3a2cf8c7d63430a22a"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bfs_dist</b> (int s) const</td></tr>
+<tr class="memdesc:a4f65eeeb7663df3a2cf8c7d63430a22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">s kaynağından BFS uzaklıkları. <br /></td></tr>
+<tr class="memitem:a0a55bcdcd40f74a90298ec34f8446b4e" id="r_a0a55bcdcd40f74a90298ec34f8446b4e"><td class="memItemLeft" align="right" valign="top"><a id="a0a55bcdcd40f74a90298ec34f8446b4e" name="a0a55bcdcd40f74a90298ec34f8446b4e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dfs_util</b> (int u, std::vector&lt; int &gt; &amp;vis, std::vector&lt; int &gt; &amp;order) const</td></tr>
+<tr class="memdesc:a0a55bcdcd40f74a90298ec34f8446b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">DFS yardımcı. <br /></td></tr>
+<tr class="memitem:abe1955e3d6f2d997b8ce8c279cd855bb" id="r_abe1955e3d6f2d997b8ce8c279cd855bb"><td class="memItemLeft" align="right" valign="top"><a id="abe1955e3d6f2d997b8ce8c279cd855bb" name="abe1955e3d6f2d997b8ce8c279cd855bb"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dfs_order</b> (int s=0) const</td></tr>
+<tr class="memdesc:abe1955e3d6f2d997b8ce8c279cd855bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">s’den DFS sırası. <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9fc7c0ff07b23eeb275f4447afd79048" name="a9fc7c0ff07b23eeb275f4447afd79048"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fc7c0ff07b23eeb275f4447afd79048">&#9670;&#160;</a></span>Graph()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ds::Graph::Graph </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a4b3a3bd8e6f96b36937c4ba175820d95" name="a4b3a3bd8e6f96b36937c4ba175820d95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b3a3bd8e6f96b36937c4ba175820d95">&#9670;&#160;</a></span>add_edge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ds::Graph::add_edge </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>u</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>undirected</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4f65eeeb7663df3a2cf8c7d63430a22a" name="a4f65eeeb7663df3a2cf8c7d63430a22a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f65eeeb7663df3a2cf8c7d63430a22a">&#9670;&#160;</a></span>bfs_dist()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; int &gt; ds::Graph::bfs_dist </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe1955e3d6f2d997b8ce8c279cd855bb" name="abe1955e3d6f2d997b8ce8c279cd855bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe1955e3d6f2d997b8ce8c279cd855bb">&#9670;&#160;</a></span>dfs_order()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; int &gt; ds::Graph::dfs_order </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>s</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0a55bcdcd40f74a90298ec34f8446b4e" name="a0a55bcdcd40f74a90298ec34f8446b4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a55bcdcd40f74a90298ec34f8446b4e">&#9670;&#160;</a></span>dfs_util()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ds::Graph::dfs_util </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>u</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vis</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>order</em></span>&#160;) const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a620124fd977deaae01a68ae117eed5dd" name="a620124fd977deaae01a68ae117eed5dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a620124fd977deaae01a68ae117eed5dd">&#9670;&#160;</a></span>neighbors()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; ds::Graph::neighbors </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>u</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad0c233e6f3b8de9684a1cca850b85df5" name="ad0c233e6f3b8de9684a1cca850b85df5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0c233e6f3b8de9684a1cca850b85df5">&#9670;&#160;</a></span>resize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ds::Graph::resize </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad0be55636f291082daabb61bf3d6c893" name="ad0be55636f291082daabb61bf3d6c893"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0be55636f291082daabb61bf3d6c893">&#9670;&#160;</a></span>size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ds::Graph::size </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a30a376f3ad6e89e372c00d2142796560" name="a30a376f3ad6e89e372c00d2142796560"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30a376f3ad6e89e372c00d2142796560">&#9670;&#160;</a></span>adj_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;int&gt; &gt; ds::Graph::adj_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Komşuluk listesi tabanlı grafik. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/<a class="el" href="graph_8h_source.html">graph.h</a></li>
 </ul>
 </div><!-- contents -->

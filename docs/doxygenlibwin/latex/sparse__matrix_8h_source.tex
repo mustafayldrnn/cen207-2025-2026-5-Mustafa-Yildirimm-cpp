@@ -1,29 +1,50 @@
 \doxysection{sparse\+\_\+matrix.\+h}
 \hypertarget{sparse__matrix_8h_source}{}\label{sparse__matrix_8h_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/include/ds/sparse\_matrix.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/include/ds/sparse\_matrix.h}}
-
+\mbox{\hyperlink{sparse__matrix_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <cstddef>}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}ds/hash\_table.h"{}}}
-\DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{keyword}{namespace\ }ds\ \{}
-\DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
-\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }SparseMatrix\ \{}
-\DoxyCodeLine{00009\ \ \ \ \ \textcolor{comment}{//\ Key\ as\ 64-\/bit\ composite\ r<<32\ |\ c}}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ key(std::size\_t\ r,\ std::size\_t\ c)\{\ \textcolor{keywordflow}{return}\ (\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\textcolor{keyword}{>}(r)\ <<\ 32)\ |\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\textcolor{keyword}{>}(c);\ \}}
-\DoxyCodeLine{00011\ \ \ \ \ HashTable<long\ long,\ T>\ data\_;}
-\DoxyCodeLine{00012\ \ \ \ \ std::size\_t\ rows\_,\ cols\_;}
-\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00014\ \ \ \ \ SparseMatrix(std::size\_t\ rows,\ std::size\_t\ cols):\ data\_(64),\ rows\_(rows),\ cols\_(cols)\ \{\}}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ set(std::size\_t\ r,\ std::size\_t\ c,\ \textcolor{keyword}{const}\ T\&\ v)\{\ data\_.insert(key(r,c),\ v);\ \}}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{const}\ T*\ get(std::size\_t\ r,\ std::size\_t\ c)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ data\_.find(key(r,c));\ \}}
-\DoxyCodeLine{00017\ \ \ \ \ std::size\_t\ nonZeroCount()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ data\_.size();\ \}}
-\DoxyCodeLine{00018\ \ \ \ \ std::size\_t\ rows()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ rows\_;\ \}}
-\DoxyCodeLine{00019\ \ \ \ \ std::size\_t\ cols()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ cols\_;\ \}}
-\DoxyCodeLine{00020\ \};}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \}\ \textcolor{comment}{//\ namespace\ ds}}
-\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{hash__table_8h}{ds/hash\_table.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }ds\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classds_1_1_sparse_matrix_ab6f37bf5a7e19fadddc59a3f0d9ff2e6}{SparseMatrix}}\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a3a11a8e14b05343ce581352fefc045d8}{key}}(std::size\_t\ r,\ std::size\_t\ c)\{\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\textcolor{keyword}{>}(r)\ <<\ 32)\ |\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\textcolor{keyword}{>}(c);\ }
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{classds_1_1_hash_table}{HashTable<long\ long,\ T>}}\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a4d4f238625b4c2ef2808c8c10616fee2}{data\_}};\ \ }
+\DoxyCodeLine{00035\ \ \ \ \ std::size\_t\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a9491432e44a4e92cc7ef89f097eb78aa}{rows\_}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ std::size\_t\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a5521d53f3422f84d573d0aaaef5a63f4}{cols\_}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{classds_1_1_sparse_matrix_ab6f37bf5a7e19fadddc59a3f0d9ff2e6}{SparseMatrix}}(std::size\_t\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a626c4e3435266b08cc44477570f73021}{rows}},\ std::size\_t\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a70e925fb8bb0416fcccb4cfb66aaf52d}{cols}}):\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a4d4f238625b4c2ef2808c8c10616fee2}{data\_}}(64),\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a9491432e44a4e92cc7ef89f097eb78aa}{rows\_}}(\mbox{\hyperlink{classds_1_1_sparse_matrix_a626c4e3435266b08cc44477570f73021}{rows}}),\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a5521d53f3422f84d573d0aaaef5a63f4}{cols\_}}(\mbox{\hyperlink{classds_1_1_sparse_matrix_a70e925fb8bb0416fcccb4cfb66aaf52d}{cols}})\ \{\}}
+\DoxyCodeLine{00045\ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_sparse_matrix_aebcc0633214ed572ebdc39ca47efde47}{set}}(std::size\_t\ r,\ std::size\_t\ c,\ \textcolor{keyword}{const}\ T\&\ v)\{\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classds_1_1_sparse_matrix_a4d4f238625b4c2ef2808c8c10616fee2}{data\_}}.insert(\mbox{\hyperlink{classds_1_1_sparse_matrix_a3a11a8e14b05343ce581352fefc045d8}{key}}(r,c),\ v);\ }
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{const}\ T*\ \mbox{\hyperlink{classds_1_1_sparse_matrix_ae238cab6800d072fc4c76e8b0578a8e5}{get}}(std::size\_t\ r,\ std::size\_t\ c)\textcolor{keyword}{\ const\ }\{\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a4d4f238625b4c2ef2808c8c10616fee2}{data\_}}.find(\mbox{\hyperlink{classds_1_1_sparse_matrix_a3a11a8e14b05343ce581352fefc045d8}{key}}(r,c));\ }
+\DoxyCodeLine{00064\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ }
+\DoxyCodeLine{00070\ \ \ \ \ std::size\_t\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a36f4a3217c358111b4526fefef641585}{nonZeroCount}}()\textcolor{keyword}{\ const\ }\{\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a4d4f238625b4c2ef2808c8c10616fee2}{data\_}}.size();\ }
+\DoxyCodeLine{00072\ \ \ \ \ \}}
+\DoxyCodeLine{00073\ \ \ \ \ }
+\DoxyCodeLine{00078\ \ \ \ \ std::size\_t\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a626c4e3435266b08cc44477570f73021}{rows}}()\textcolor{keyword}{\ const\ }\{\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a9491432e44a4e92cc7ef89f097eb78aa}{rows\_}};\ }
+\DoxyCodeLine{00080\ \ \ \ \ \}}
+\DoxyCodeLine{00081\ \ \ \ \ }
+\DoxyCodeLine{00086\ \ \ \ \ std::size\_t\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a70e925fb8bb0416fcccb4cfb66aaf52d}{cols}}()\textcolor{keyword}{\ const\ }\{\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classds_1_1_sparse_matrix_a5521d53f3422f84d573d0aaaef5a63f4}{cols\_}};\ }
+\DoxyCodeLine{00088\ \ \ \ \ \}}
+\DoxyCodeLine{00089\ \};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \}\ \textcolor{comment}{//\ namespace\ ds}}
+\DoxyCodeLine{00092\ }
 
 \end{DoxyCode}

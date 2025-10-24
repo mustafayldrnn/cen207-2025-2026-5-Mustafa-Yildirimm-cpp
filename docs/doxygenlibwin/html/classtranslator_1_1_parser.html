@@ -72,7 +72,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a href="namespacetranslator.html">translator</a></li><li class="navelem"><a href="classtranslator_1_1_parser.html">Parser</a></li>  </ul>
+<li class="navelem"><b>translator</b></li><li class="navelem"><a href="classtranslator_1_1_parser.html">Parser</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -86,6 +86,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>BASIC benzeri dilin sözdizim çözümleyicisi.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="parser_8h_source.html">parser.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for translator::Parser:</div>
@@ -96,25 +99,42 @@ Collaboration diagram for translator::Parser:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e2390931ab80b865ac31eee1501c8ff" id="r_a2e2390931ab80b865ac31eee1501c8ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e2390931ab80b865ac31eee1501c8ff">Parser</a> (std::vector&lt; <a class="el" href="structtranslator_1_1_token.html">Token</a> &gt; toks)</td></tr>
+<tr class="memdesc:a2e2390931ab80b865ac31eee1501c8ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Belirteç dizisi ile parser oluşturur.  <br /></td></tr>
 <tr class="memitem:a119007cefb979b4071cd7313c0c31062" id="r_a119007cefb979b4071cd7313c0c31062"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtranslator_1_1_program.html">Program</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a119007cefb979b4071cd7313c0c31062">parseProgram</a> () const</td></tr>
+<tr class="memdesc:a119007cefb979b4071cd7313c0c31062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Girişin tamamını <a class="el" href="structtranslator_1_1_program.html" title="Etiketlenmiş deyimlerden oluşan program.">Program</a> yapısına çözümler.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a01eed9fe50c7b02223c8aaf8140b4649" id="r_a01eed9fe50c7b02223c8aaf8140b4649"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structtranslator_1_1_token.html">Token</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01eed9fe50c7b02223c8aaf8140b4649">peek</a> () const</td></tr>
+<tr class="memdesc:a01eed9fe50c7b02223c8aaf8140b4649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mevcut token'ı döndürür (ilerlemeden)  <br /></td></tr>
 <tr class="memitem:a454ea6c16f64db09d8d2b9987e1e4833" id="r_a454ea6c16f64db09d8d2b9987e1e4833"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structtranslator_1_1_token.html">Token</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a454ea6c16f64db09d8d2b9987e1e4833">advance</a> () const</td></tr>
-<tr class="memitem:a5719d1927d26586fc770de412025bdbb" id="r_a5719d1927d26586fc770de412025bdbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5719d1927d26586fc770de412025bdbb">match</a> (<a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480">TokenType</a> t) const</td></tr>
+<tr class="memdesc:a454ea6c16f64db09d8d2b9987e1e4833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mevcut token'ı döndürür ve pozisyonu ilerletir.  <br /></td></tr>
+<tr class="memitem:a5719d1927d26586fc770de412025bdbb" id="r_a5719d1927d26586fc770de412025bdbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5719d1927d26586fc770de412025bdbb">match</a> (<a class="el" href="token_8h.html#a0eb119efce2d20d6019adb661cd4c480">TokenType</a> t) const</td></tr>
+<tr class="memdesc:a5719d1927d26586fc770de412025bdbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mevcut token'ın belirtilen türde olup olmadığını kontrol eder.  <br /></td></tr>
 <tr class="memitem:ab2e3e753c664de21a74add33db1a5d26" id="r_ab2e3e753c664de21a74add33db1a5d26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2e3e753c664de21a74add33db1a5d26">at_eof</a> () const</td></tr>
+<tr class="memdesc:ab2e3e753c664de21a74add33db1a5d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dosya sonuna gelinip gelinmediğini kontrol eder.  <br /></td></tr>
 <tr class="memitem:afd6a7894691a68ec5743314fef3a7f75" id="r_afd6a7894691a68ec5743314fef3a7f75"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structtranslator_1_1_expr.html">Expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd6a7894691a68ec5743314fef3a7f75">parse_expression</a> () const</td></tr>
+<tr class="memdesc:afd6a7894691a68ec5743314fef3a7f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">İfade çözümler.  <br /></td></tr>
 <tr class="memitem:acfd7d04d3973badabd5a26214ed3c500" id="r_acfd7d04d3973badabd5a26214ed3c500"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structtranslator_1_1_expr.html">Expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfd7d04d3973badabd5a26214ed3c500">parse_term</a> () const</td></tr>
+<tr class="memdesc:acfd7d04d3973badabd5a26214ed3c500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terim çözümler.  <br /></td></tr>
 <tr class="memitem:abb54531b779933acfd0c644dcd868b45" id="r_abb54531b779933acfd0c644dcd868b45"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structtranslator_1_1_expr.html">Expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb54531b779933acfd0c644dcd868b45">parse_factor</a> () const</td></tr>
+<tr class="memdesc:abb54531b779933acfd0c644dcd868b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Faktör çözümler.  <br /></td></tr>
 <tr class="memitem:aec074fe4de2041a83946260a05780582" id="r_aec074fe4de2041a83946260a05780582"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structtranslator_1_1_stmt.html">Stmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec074fe4de2041a83946260a05780582">parse_statement</a> (int &amp;outLabel) const</td></tr>
+<tr class="memdesc:aec074fe4de2041a83946260a05780582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deyim çözümler.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a656fd7ad404746f72905ea7ca9c96130" id="r_a656fd7ad404746f72905ea7ca9c96130"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structtranslator_1_1_token.html">Token</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a656fd7ad404746f72905ea7ca9c96130">tokens_</a></td></tr>
-<tr class="memitem:af5354c7d27d4189bd1f9c33c710b74ac" id="r_af5354c7d27d4189bd1f9c33c710b74ac"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5354c7d27d4189bd1f9c33c710b74ac">pos_</a> = 0</td></tr>
+<tr class="memitem:a656fd7ad404746f72905ea7ca9c96130" id="r_a656fd7ad404746f72905ea7ca9c96130"><td class="memItemLeft" align="right" valign="top"><a id="a656fd7ad404746f72905ea7ca9c96130" name="a656fd7ad404746f72905ea7ca9c96130"></a>
+const std::vector&lt; <a class="el" href="structtranslator_1_1_token.html">Token</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tokens_</b></td></tr>
+<tr class="memdesc:a656fd7ad404746f72905ea7ca9c96130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çözümlenecek token dizisi. <br /></td></tr>
+<tr class="memitem:af5354c7d27d4189bd1f9c33c710b74ac" id="r_af5354c7d27d4189bd1f9c33c710b74ac"><td class="memItemLeft" align="right" valign="top"><a id="af5354c7d27d4189bd1f9c33c710b74ac" name="af5354c7d27d4189bd1f9c33c710b74ac"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pos_</b> = 0</td></tr>
+<tr class="memdesc:af5354c7d27d4189bd1f9c33c710b74ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mevcut pozisyon. <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BASIC benzeri dilin sözdizim çözümleyicisi. </p>
+<p>Bu sınıf, token dizisini alarak Abstract Syntax Tree (AST) üretir. Recursive descent parsing algoritması kullanır. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2e2390931ab80b865ac31eee1501c8ff" name="a2e2390931ab80b865ac31eee1501c8ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e2390931ab80b865ac31eee1501c8ff">&#9670;&#160;</a></span>Parser()</h2>
 
@@ -137,6 +157,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Belirteç dizisi ile parser oluşturur. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toks</td><td>Çözümlenecek token dizisi </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -164,6 +192,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Mevcut token'ı döndürür ve pozisyonu ilerletir. </p>
+<dl class="section return"><dt>Returns</dt><dd>Mevcut token'ın referansı </dd></dl>
+
 </div>
 </div>
 <a id="ab2e3e753c664de21a74add33db1a5d26" name="ab2e3e753c664de21a74add33db1a5d26"></a>
@@ -189,6 +220,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Dosya sonuna gelinip gelinmediğini kontrol eder. </p>
+<dl class="section return"><dt>Returns</dt><dd>true eğer dosya sonundaysa </dd></dl>
+
 </div>
 </div>
 <a id="a5719d1927d26586fc770de412025bdbb" name="a5719d1927d26586fc770de412025bdbb"></a>
@@ -203,7 +237,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool translator::Parser::match </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480">TokenType</a></td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="token_8h.html#a0eb119efce2d20d6019adb661cd4c480">TokenType</a></td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -213,6 +247,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Mevcut token'ın belirtilen türde olup olmadığını kontrol eder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Kontrol edilecek token türü </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true eğer token türü eşleşirse ve pozisyon ilerletilirse </dd></dl>
 
 </div>
 </div>
@@ -239,6 +282,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>İfade çözümler. </p>
+<dl class="section return"><dt>Returns</dt><dd>Çözümlenen ifade AST'i </dd></dl>
+
 </div>
 </div>
 <a id="abb54531b779933acfd0c644dcd868b45" name="abb54531b779933acfd0c644dcd868b45"></a>
@@ -263,6 +309,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Faktör çözümler. </p>
+<dl class="section return"><dt>Returns</dt><dd>Çözümlenen faktör AST'i </dd></dl>
 
 </div>
 </div>
@@ -289,6 +338,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Deyim çözümler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outLabel</td><td>Çıktı etiketi referansı </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Çözümlenen deyim AST'i </dd></dl>
+
 </div>
 </div>
 <a id="acfd7d04d3973badabd5a26214ed3c500" name="acfd7d04d3973badabd5a26214ed3c500"></a>
@@ -314,6 +372,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Terim çözümler. </p>
+<dl class="section return"><dt>Returns</dt><dd>Çözümlenen terim AST'i </dd></dl>
+
 </div>
 </div>
 <a id="a119007cefb979b4071cd7313c0c31062" name="a119007cefb979b4071cd7313c0c31062"></a>
@@ -330,6 +391,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Girişin tamamını <a class="el" href="structtranslator_1_1_program.html" title="Etiketlenmiş deyimlerden oluşan program.">Program</a> yapısına çözümler. </p>
+<dl class="section return"><dt>Returns</dt><dd>Çözümlenen program AST'i </dd></dl>
 
 </div>
 </div>
@@ -356,56 +420,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="af5354c7d27d4189bd1f9c33c710b74ac" name="af5354c7d27d4189bd1f9c33c710b74ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5354c7d27d4189bd1f9c33c710b74ac">&#9670;&#160;</a></span>pos_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t translator::Parser::pos_ = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel mutable">mutable</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a656fd7ad404746f72905ea7ca9c96130" name="a656fd7ad404746f72905ea7ca9c96130"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a656fd7ad404746f72905ea7ca9c96130">&#9670;&#160;</a></span>tokens_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::vector&lt;<a class="el" href="structtranslator_1_1_token.html">Token</a>&gt; translator::Parser::tokens_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Mevcut token'ı döndürür (ilerlemeden) </p>
+<dl class="section return"><dt>Returns</dt><dd>Mevcut token'ın referansı </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/<a class="el" href="parser_8h_source.html">parser.h</a></li>
-<li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/<a class="el" href="parser_8cpp.html">parser.cpp</a></li>
+<li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/<b>parser.cpp</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

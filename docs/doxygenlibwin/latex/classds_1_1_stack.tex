@@ -10,107 +10,40 @@ Collaboration diagram for ds\+::Stack\texorpdfstring{$<$}{<} T \texorpdfstring{$
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=231pt]{classds_1_1_stack__coll__graph}
+\includegraphics[width=153pt]{classds_1_1_stack__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsubsection*{Classes}
-\begin{DoxyCompactItemize}
-\item 
-struct \mbox{\hyperlink{structds_1_1_stack_1_1_node}{Node}}
-\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classds_1_1_stack_a72c71228fcf07010c45061d514ec3b8b}{\texorpdfstring{$\sim$}{\string~}\+Stack}} ()
-\item 
-void \mbox{\hyperlink{classds_1_1_stack_ab4a7ca4fc3ba1304565946fb584cff09}{push}} (const T \&v)
-\item 
-bool \mbox{\hyperlink{classds_1_1_stack_a838bd932bf5696ad97c99756d4bed45f}{empty}} () const
-\item 
-std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_stack_aa51d9456a5513ee7fa7074a0065096f1}{size}} () const
-\item 
-T \& \mbox{\hyperlink{classds_1_1_stack_ab51dcca6ef286f03d5520a7fa264ca86}{top}} ()
-\item 
-void \mbox{\hyperlink{classds_1_1_stack_a28e85edcd47ae3f343be66afc8cdfb67}{pop}} ()
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{structds_1_1_stack_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\+\_\+}} = nullptr
-\item 
-std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_stack_ac63eeada020909894b5bc5e6a51277c5}{sz\+\_\+}} = 0
-\end{DoxyCompactItemize}
+\Hypertarget{classds_1_1_stack_a72c71228fcf07010c45061d514ec3b8b}\label{classds_1_1_stack_a72c71228fcf07010c45061d514ec3b8b} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Stack} ()
+\begin{DoxyCompactList}\small\item\em Yıkıcı\+: tüm düğümleri serbest bırakır. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_stack_ab4a7ca4fc3ba1304565946fb584cff09}\label{classds_1_1_stack_ab4a7ca4fc3ba1304565946fb584cff09} 
+void {\bfseries push} (const T \&v)
+\begin{DoxyCompactList}\small\item\em Sona (tepeye) bir eleman iter. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_stack_a838bd932bf5696ad97c99756d4bed45f}\label{classds_1_1_stack_a838bd932bf5696ad97c99756d4bed45f} 
+bool {\bfseries empty} () const
+\begin{DoxyCompactList}\small\item\em Yığın boş mu? \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_stack_aa51d9456a5513ee7fa7074a0065096f1}\label{classds_1_1_stack_aa51d9456a5513ee7fa7074a0065096f1} 
+std\+::size\+\_\+t {\bfseries size} () const
+\begin{DoxyCompactList}\small\item\em Eleman sayısı. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_stack_ab51dcca6ef286f03d5520a7fa264ca86}\label{classds_1_1_stack_ab51dcca6ef286f03d5520a7fa264ca86} 
+T \& {\bfseries top} ()
+\begin{DoxyCompactList}\small\item\em Tepe elemanı döndürür. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_stack_a28e85edcd47ae3f343be66afc8cdfb67}\label{classds_1_1_stack_a28e85edcd47ae3f343be66afc8cdfb67} 
+void {\bfseries pop} ()
+\begin{DoxyCompactList}\small\item\em Tepe elemanı çıkarır. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\label{doc-constructors}
-\Hypertarget{classds_1_1_stack_doc-constructors}
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classds_1_1_stack_a72c71228fcf07010c45061d514ec3b8b}\index{ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}!````~Stack@{\texorpdfstring{$\sim$}{\string~}Stack}}
-\index{````~Stack@{\texorpdfstring{$\sim$}{\string~}Stack}!ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Stack()}{\string~Stack()}}
-{\footnotesize\ttfamily \label{classds_1_1_stack_a72c71228fcf07010c45061d514ec3b8b} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{classds_1_1_stack}{ds\+::\+Stack}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{classds_1_1_stack}{Stack}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class ds\+::\+Stack$<$ T $>$}
 
-
-
-\label{doc-func-members}
-\Hypertarget{classds_1_1_stack_doc-func-members}
-\doxysubsection{Member Function Documentation}
-\Hypertarget{classds_1_1_stack_a838bd932bf5696ad97c99756d4bed45f}\index{ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}!empty@{empty}}
-\index{empty@{empty}!ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
-{\footnotesize\ttfamily \label{classds_1_1_stack_a838bd932bf5696ad97c99756d4bed45f} 
-template$<$typename T$>$ \\
-bool \mbox{\hyperlink{classds_1_1_stack}{ds\+::\+Stack}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-\Hypertarget{classds_1_1_stack_a28e85edcd47ae3f343be66afc8cdfb67}\index{ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}!pop@{pop}}
-\index{pop@{pop}!ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
-{\footnotesize\ttfamily \label{classds_1_1_stack_a28e85edcd47ae3f343be66afc8cdfb67} 
-template$<$typename T$>$ \\
-void \mbox{\hyperlink{classds_1_1_stack}{ds\+::\+Stack}}$<$ T $>$\+::pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\Hypertarget{classds_1_1_stack_ab4a7ca4fc3ba1304565946fb584cff09}\index{ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}!push@{push}}
-\index{push@{push}!ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{push()}{push()}}
-{\footnotesize\ttfamily \label{classds_1_1_stack_ab4a7ca4fc3ba1304565946fb584cff09} 
-template$<$typename T$>$ \\
-void \mbox{\hyperlink{classds_1_1_stack}{ds\+::\+Stack}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{const T \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\Hypertarget{classds_1_1_stack_aa51d9456a5513ee7fa7074a0065096f1}\index{ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}!size@{size}}
-\index{size@{size}!ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{size()}{size()}}
-{\footnotesize\ttfamily \label{classds_1_1_stack_aa51d9456a5513ee7fa7074a0065096f1} 
-template$<$typename T$>$ \\
-std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_stack}{ds\+::\+Stack}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-\Hypertarget{classds_1_1_stack_ab51dcca6ef286f03d5520a7fa264ca86}\index{ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}!top@{top}}
-\index{top@{top}!ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{top()}{top()}}
-{\footnotesize\ttfamily \label{classds_1_1_stack_ab51dcca6ef286f03d5520a7fa264ca86} 
-template$<$typename T$>$ \\
-T \& \mbox{\hyperlink{classds_1_1_stack}{ds\+::\+Stack}}$<$ T $>$\+::top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-\label{doc-variable-members}
-\Hypertarget{classds_1_1_stack_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{classds_1_1_stack_ac63eeada020909894b5bc5e6a51277c5}\index{ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}!sz\_@{sz\_}}
-\index{sz\_@{sz\_}!ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{sz\_}{sz\_}}
-{\footnotesize\ttfamily \label{classds_1_1_stack_ac63eeada020909894b5bc5e6a51277c5} 
-template$<$typename T$>$ \\
-std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_stack}{ds\+::\+Stack}}$<$ T $>$\+::sz\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
-
-\Hypertarget{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}\index{ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}!top\_@{top\_}}
-\index{top\_@{top\_}!ds::Stack$<$ T $>$@{ds::Stack$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{top\_}{top\_}}
-{\footnotesize\ttfamily \label{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{structds_1_1_stack_1_1_node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_stack}{ds\+::\+Stack}}$<$ T $>$\+::top\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
-
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Eleman tipi \\
+\hline
+\end{DoxyTemplParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

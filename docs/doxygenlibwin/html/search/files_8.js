@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]]
+  ['sparse_5fmatrix_2eh_0',['sparse_matrix.h',['../sparse__matrix_8h.html',1,'']]],
+  ['stack_2eh_1',['stack.h',['../stack_8h.html',1,'']]],
+  ['symbol_5ftable_2eh_2',['symbol_table.h',['../symbol__table_8h.html',1,'']]]
 ];

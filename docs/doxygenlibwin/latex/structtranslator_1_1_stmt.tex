@@ -2,6 +2,11 @@
 \hypertarget{structtranslator_1_1_stmt}{}\label{structtranslator_1_1_stmt}\index{translator::Stmt@{translator::Stmt}}
 
 
+Tüm deyimler için taban tür.  
+
+
+
+
 {\ttfamily \#include $<$ast.\+h$>$}
 
 
@@ -25,22 +30,14 @@ Collaboration diagram for translator\+::Stmt\+:\nopagebreak
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{structtranslator_1_1_stmt_a0707842a254ce67ff9c72cda98226ec7}{\texorpdfstring{$\sim$}{\string~}\+Stmt}} ()=default
-\item 
-virtual \mbox{\hyperlink{namespacetranslator_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} \mbox{\hyperlink{structtranslator_1_1_stmt_afb8f5d100524bc8cf234edae0ac57578}{kind}} () const =0
-\end{DoxyCompactItemize}
+virtual \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} \mbox{\hyperlink{structtranslator_1_1_stmt_afb8f5d100524bc8cf234edae0ac57578}{kind}} () const =0
+\begin{DoxyCompactList}\small\item\em Deyim türünü döndürür. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\label{doc-constructors}
-\Hypertarget{structtranslator_1_1_stmt_doc-constructors}
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{structtranslator_1_1_stmt_a0707842a254ce67ff9c72cda98226ec7}\index{translator::Stmt@{translator::Stmt}!````~Stmt@{\texorpdfstring{$\sim$}{\string~}Stmt}}
-\index{````~Stmt@{\texorpdfstring{$\sim$}{\string~}Stmt}!translator::Stmt@{translator::Stmt}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Stmt()}{\string~Stmt()}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_stmt_a0707842a254ce67ff9c72cda98226ec7} 
-virtual translator\+::\+Stmt\+::\texorpdfstring{$\sim$}{\string~}\+Stmt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+\doxysubsection{Detailed Description}
+Tüm deyimler için taban tür. 
 
-
+Abstract Syntax Tree\textquotesingle{}deki tüm deyimler bu sınıftan türetilir. 
 
 \label{doc-func-members}
 \Hypertarget{structtranslator_1_1_stmt_doc-func-members}
@@ -49,8 +46,15 @@ virtual translator\+::\+Stmt\+::\texorpdfstring{$\sim$}{\string~}\+Stmt (\begin{
 \index{kind@{kind}!translator::Stmt@{translator::Stmt}}
 \doxysubsubsection{\texorpdfstring{kind()}{kind()}}
 {\footnotesize\ttfamily \label{structtranslator_1_1_stmt_afb8f5d100524bc8cf234edae0ac57578} 
-virtual \mbox{\hyperlink{namespacetranslator_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} translator\+::\+Stmt\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+virtual \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} translator\+::\+Stmt\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+
+
+Deyim türünü döndürür. 
+
+\begin{DoxyReturn}{Returns}
+Deyim türü 
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{structtranslator_1_1_gosub_stmt_a959e82453b6d5f6f8f7f92f63eb565ac}{translator\+::\+Gosub\+Stmt}}, \mbox{\hyperlink{structtranslator_1_1_goto_stmt_aae4b7271164ea8557ffdc4a79d8657f0}{translator\+::\+Goto\+Stmt}}, \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_a77a2dccf8e1b280dd39c2a9101cb17e6}{translator\+::\+If\+Goto\+Stmt}}, \mbox{\hyperlink{structtranslator_1_1_input_stmt_a49fff20ac46a7ad799c335425a47b7f8}{translator\+::\+Input\+Stmt}}, \mbox{\hyperlink{structtranslator_1_1_let_stmt_ad88e60c92df1de021f3fa562267fdb59}{translator\+::\+Let\+Stmt}}, \mbox{\hyperlink{structtranslator_1_1_print_stmt_a2804d4e2524a83441edb292238c38fe9}{translator\+::\+Print\+Stmt}}, and \mbox{\hyperlink{structtranslator_1_1_return_stmt_a9344c9c9a74ac406decd1a74d4fc42af}{translator\+::\+Return\+Stmt}}.

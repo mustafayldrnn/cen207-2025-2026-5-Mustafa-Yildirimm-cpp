@@ -2,6 +2,11 @@
 \hypertarget{structtranslator_1_1_binary_expr}{}\label{structtranslator_1_1_binary_expr}\index{translator::BinaryExpr@{translator::BinaryExpr}}
 
 
+İkili işlem ifadesi.  
+
+
+
+
 {\ttfamily \#include $<$ast.\+h$>$}
 
 
@@ -26,24 +31,25 @@ Collaboration diagram for translator\+::Binary\+Expr\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structtranslator_1_1_binary_expr_af157e5409dd40ef3eafdba3fb823bb7f}{Binary\+Expr}} (char \mbox{\hyperlink{structtranslator_1_1_binary_expr_a5f2cb60cdd8ab25136eba4b6c08ab305}{op}}, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ l, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ r)
-\item 
-\mbox{\hyperlink{namespacetranslator_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} \mbox{\hyperlink{structtranslator_1_1_binary_expr_a4f09625d10e55dad82469d2510b4cc96}{kind}} () const override
-\end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structtranslator_1_1_expr}{translator\+::\+Expr}}}
-\begin{DoxyCompactItemize}
-\item 
-virtual \mbox{\hyperlink{structtranslator_1_1_expr_a3a61309da992f896228d1ba682f79187}{\texorpdfstring{$\sim$}{\string~}\+Expr}} ()=default
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em İkili işlem ifadesi oluşturur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} \mbox{\hyperlink{structtranslator_1_1_binary_expr_a4f09625d10e55dad82469d2510b4cc96}{kind}} () const override
+\begin{DoxyCompactList}\small\item\em İfade türünü döndürür. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-char \mbox{\hyperlink{structtranslator_1_1_binary_expr_a5f2cb60cdd8ab25136eba4b6c08ab305}{op}}
-\item 
-std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ \mbox{\hyperlink{structtranslator_1_1_binary_expr_a43a169916f11bd4686c74143ef3524f8}{lhs}}
-\item 
-std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ \mbox{\hyperlink{structtranslator_1_1_binary_expr_a899fc189d22f70035034243de177b9ed}{rhs}}
-\end{DoxyCompactItemize}
+\Hypertarget{structtranslator_1_1_binary_expr_a5f2cb60cdd8ab25136eba4b6c08ab305}\label{structtranslator_1_1_binary_expr_a5f2cb60cdd8ab25136eba4b6c08ab305} 
+char {\bfseries op}
+\begin{DoxyCompactList}\small\item\em İşlem operatörü \end{DoxyCompactList}\item 
+\Hypertarget{structtranslator_1_1_binary_expr_a43a169916f11bd4686c74143ef3524f8}\label{structtranslator_1_1_binary_expr_a43a169916f11bd4686c74143ef3524f8} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ {\bfseries lhs}
+\begin{DoxyCompactList}\small\item\em Sol operand. \end{DoxyCompactList}\item 
+\Hypertarget{structtranslator_1_1_binary_expr_a899fc189d22f70035034243de177b9ed}\label{structtranslator_1_1_binary_expr_a899fc189d22f70035034243de177b9ed} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ {\bfseries rhs}
+\begin{DoxyCompactList}\small\item\em Sağ operand. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+İkili işlem ifadesi. 
 
 \label{doc-constructors}
 \Hypertarget{structtranslator_1_1_binary_expr_doc-constructors}
@@ -56,6 +62,19 @@ translator\+::\+Binary\+Expr\+::\+Binary\+Expr (\begin{DoxyParamCaption}\item[{c
 
 
 
+İkili işlem ifadesi oluşturur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & İşlem operatörü \\
+\hline
+{\em l} & Sol operand \\
+\hline
+{\em r} & Sağ operand \\
+\hline
+\end{DoxyParams}
+
+
 \label{doc-func-members}
 \Hypertarget{structtranslator_1_1_binary_expr_doc-func-members}
 \doxysubsection{Member Function Documentation}
@@ -63,34 +82,18 @@ translator\+::\+Binary\+Expr\+::\+Binary\+Expr (\begin{DoxyParamCaption}\item[{c
 \index{kind@{kind}!translator::BinaryExpr@{translator::BinaryExpr}}
 \doxysubsubsection{\texorpdfstring{kind()}{kind()}}
 {\footnotesize\ttfamily \label{structtranslator_1_1_binary_expr_a4f09625d10e55dad82469d2510b4cc96} 
-\mbox{\hyperlink{namespacetranslator_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} translator\+::\+Binary\+Expr\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} translator\+::\+Binary\+Expr\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+İfade türünü döndürür. 
+
+\begin{DoxyReturn}{Returns}
+Binary türü 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{structtranslator_1_1_expr_aced195c2a0830ff10b582d02731c93b1}{translator\+::\+Expr}}.
-
-
-
-\label{doc-variable-members}
-\Hypertarget{structtranslator_1_1_binary_expr_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structtranslator_1_1_binary_expr_a43a169916f11bd4686c74143ef3524f8}\index{translator::BinaryExpr@{translator::BinaryExpr}!lhs@{lhs}}
-\index{lhs@{lhs}!translator::BinaryExpr@{translator::BinaryExpr}}
-\doxysubsubsection{\texorpdfstring{lhs}{lhs}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_binary_expr_a43a169916f11bd4686c74143ef3524f8} 
-std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{structtranslator_1_1_expr}{Expr}}$>$ translator\+::\+Binary\+Expr\+::lhs}
-
-\Hypertarget{structtranslator_1_1_binary_expr_a5f2cb60cdd8ab25136eba4b6c08ab305}\index{translator::BinaryExpr@{translator::BinaryExpr}!op@{op}}
-\index{op@{op}!translator::BinaryExpr@{translator::BinaryExpr}}
-\doxysubsubsection{\texorpdfstring{op}{op}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_binary_expr_a5f2cb60cdd8ab25136eba4b6c08ab305} 
-char translator\+::\+Binary\+Expr\+::op}
-
-\Hypertarget{structtranslator_1_1_binary_expr_a899fc189d22f70035034243de177b9ed}\index{translator::BinaryExpr@{translator::BinaryExpr}!rhs@{rhs}}
-\index{rhs@{rhs}!translator::BinaryExpr@{translator::BinaryExpr}}
-\doxysubsubsection{\texorpdfstring{rhs}{rhs}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_binary_expr_a899fc189d22f70035034243de177b9ed} 
-std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{structtranslator_1_1_expr}{Expr}}$>$ translator\+::\+Binary\+Expr\+::rhs}
 
 
 

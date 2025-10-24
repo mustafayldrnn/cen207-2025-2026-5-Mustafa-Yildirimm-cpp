@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['languagetranslatorapp_0',['LanguageTranslatorApp',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html',1,'Coruh::LanguageTranslator']]]
+  ['binaryexpr_0',['BinaryExpr',['../structtranslator_1_1_binary_expr.html',1,'translator']]],
+  ['binaryheap_1',['BinaryHeap',['../classds_1_1_binary_heap.html',1,'ds']]]
 ];

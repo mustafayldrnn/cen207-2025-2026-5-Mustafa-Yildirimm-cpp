@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="structtranslator_1_1_program" kind="struct" language="C++" prot="public">
     <compoundname>translator::Program</compoundname>
+    <includes refid="ast_8h" local="no">ast.h</includes>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structtranslator_1_1_program_1a7475f175b7b501e7ec7d0a2f16a613c4" prot="public" static="no" mutable="no">
         <type>std::vector&lt; int &gt;</type>
@@ -10,38 +11,43 @@
         <name>labels</name>
         <qualifiedname>translator::Program::labels</qualifiedname>
         <briefdescription>
+<para>Satır etiketleri (örn: 10, 20, 30) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="79" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="79" bodyend="-1"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="263" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="263" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtranslator_1_1_program_1ae1becdf326699756afe2f60647e47382" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; std::unique_ptr&lt; Stmt &gt; &gt;</type>
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="structtranslator_1_1_stmt" kindref="compound">Stmt</ref> &gt; &gt;</type>
         <definition>std::vector&lt;std::unique_ptr&lt;Stmt&gt; &gt; translator::Program::stmts</definition>
         <argsstring></argsstring>
         <name>stmts</name>
         <qualifiedname>translator::Program::stmts</qualifiedname>
         <briefdescription>
+<para>Her etikete karşılık gelen deyimler. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="80" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="80" bodyend="-1"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="264" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="264" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Etiketlenmiş deyimlerden oluşan program. </para>
     </briefdescription>
     <detaileddescription>
+<para><ref refid="structtranslator_1_1_program" kindref="compound">Program</ref>, paralel diziler kullanarak etiket-deyim çiftlerini tutar. </para>
     </detaileddescription>
     <collaborationgraph>
       <node id="1">
         <label>translator::Program</label>
+        <link refid="structtranslator_1_1_program"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="77" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="77" bodyend="82"/>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="262" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="262" bodyend="266"/>
     <listofallmembers>
       <member refid="structtranslator_1_1_program_1a7475f175b7b501e7ec7d0a2f16a613c4" prot="public" virt="non-virtual"><scope>translator::Program</scope><name>labels</name></member>
       <member refid="structtranslator_1_1_program_1ae1becdf326699756afe2f60647e47382" prot="public" virt="non-virtual"><scope>translator::Program</scope><name>stmts</name></member>

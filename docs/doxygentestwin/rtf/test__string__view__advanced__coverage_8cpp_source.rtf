@@ -151,859 +151,859 @@
 test_string_view_advanced_coverage.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_string_view_advanced_coverage.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_string_view_advanced_coverage.cpp}
-{\bkmkstart AAAAAAAFLI}
-{\bkmkend AAAAAAAFLI}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAFLJ" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAFTW}
+{\bkmkend AAAAAAAFTW}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAFTX" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAFLM}{\bkmkend AAAAAAAFLM}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAFVC}{\bkmkend AAAAAAAFVC}
 00001 \par
-{\bkmkstart AAAAAAAFLP}{\bkmkend AAAAAAAFLP}
-00008 \par
-{\bkmkstart AAAAAAAFLQ}{\bkmkend AAAAAAAFLQ}
-00009 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAFLT}{\bkmkend AAAAAAAFLT}
-00010 {\cf21 #include <string_view>}\par
-{\bkmkstart AAAAAAAFMB}{\bkmkend AAAAAAAFMB}
-00011 {\cf21 #include <string>}\par
-{\bkmkstart AAAAAAAFMG}{\bkmkend AAAAAAAFMG}
-00012 {\cf21 #include <iostream>}\par
-{\bkmkstart AAAAAAAFMK}{\bkmkend AAAAAAAFMK}
-00013 {\cf21 #include <vector>}\par
-{\bkmkstart AAAAAAAFMN}{\bkmkend AAAAAAAFMN}
-00014 {\cf21 #include <algorithm>}\par
-{\bkmkstart AAAAAAAFMQ}{\bkmkend AAAAAAAFMQ}
-00015 {\cf21 #include <cstring>}\par
-{\bkmkstart AAAAAAAFMT}{\bkmkend AAAAAAAFMT}
-00016 {\cf21 #include <limits>}\par
-{\bkmkstart AAAAAAAFNC}{\bkmkend AAAAAAAFNC}
-00017 {\cf21 #include <sstream>}\par
-{\bkmkstart AAAAAAAFNM}{\bkmkend AAAAAAAFNM}
-00018 {\cf21 #include <iomanip>}\par
-{\bkmkstart AAAAAAAFNX}{\bkmkend AAAAAAAFNX}
-00019 \par
-{\bkmkstart AAAAAAAFNZ}{\bkmkend AAAAAAAFNZ}
-00020 {\cf17 namespace }\{\par
-{\bkmkstart AAAAAAAFOC}{\bkmkend AAAAAAAFOC}
-00021 \par
-{\bkmkstart AAAAAAAFOF}{\bkmkend AAAAAAAFOF}
-00026 {\cf17 class }StringViewAdvancedCoverageTest : {\cf17 public} ::testing::Test \{\par
-{\bkmkstart AAAAAAAFOI}{\bkmkend AAAAAAAFOI}
-00027 {\cf17 protected}:\par
-{\bkmkstart AAAAAAAFOJ}{\bkmkend AAAAAAAFOJ}
-00028     {\cf18 void} SetUp(){\cf17  override }\{\par
-{\bkmkstart AAAAAAAFOS}{\bkmkend AAAAAAAFOS}
-00029         {\cf20 // Setup for each test}\par
-{\bkmkstart AAAAAAAFOU}{\bkmkend AAAAAAAFOU}
-00030     \}\par
-{\bkmkstart AAAAAAAFOV}{\bkmkend AAAAAAAFOV}
-00031     \par
-{\bkmkstart AAAAAAAFOW}{\bkmkend AAAAAAAFOW}
-00032     {\cf18 void} TearDown(){\cf17  override }\{\par
-{\bkmkstart AAAAAAAFPD}{\bkmkend AAAAAAAFPD}
-00033         {\cf20 // Cleanup after each test}\par
-{\bkmkstart AAAAAAAFPF}{\bkmkend AAAAAAAFPF}
-00034     \}\par
-{\bkmkstart AAAAAAAFPH}{\bkmkend AAAAAAAFPH}
-00035 \};\par
-{\bkmkstart AAAAAAAFPJ}{\bkmkend AAAAAAAFPJ}
-00036 \par
-{\bkmkstart AAAAAAAFPL}{\bkmkend AAAAAAAFPL}
-00041 TEST_F(StringViewAdvancedCoverageTest, TestStringViewComparisonOperators) \{\par
-{\bkmkstart AAAAAAAFQB}{\bkmkend AAAAAAAFQB}
-00042     std::string_view sv1({\cf22 "abc"});\par
-{\bkmkstart AAAAAAAFQF}{\bkmkend AAAAAAAFQF}
-00043     std::string_view sv2({\cf22 "def"});\par
-{\bkmkstart AAAAAAAFQI}{\bkmkend AAAAAAAFQI}
-00044     std::string_view sv3({\cf22 "abc"});\par
-{\bkmkstart AAAAAAAFQM}{\bkmkend AAAAAAAFQM}
-00045     \par
-{\bkmkstart AAAAAAAFQN}{\bkmkend AAAAAAAFQN}
-00046     {\cf20 // Test operator==}\par
-{\bkmkstart AAAAAAAFQP}{\bkmkend AAAAAAAFQP}
-00047     EXPECT_TRUE(sv1 == sv3);\par
-{\bkmkstart AAAAAAAFQR}{\bkmkend AAAAAAAFQR}
-00048     EXPECT_FALSE(sv1 == sv2);\par
-{\bkmkstart AAAAAAAFQT}{\bkmkend AAAAAAAFQT}
-00049     \par
-{\bkmkstart AAAAAAAFQV}{\bkmkend AAAAAAAFQV}
-00050     {\cf20 // Test operator!=}\par
-{\bkmkstart AAAAAAAFQW}{\bkmkend AAAAAAAFQW}
-00051     EXPECT_TRUE(sv1 != sv2);\par
-{\bkmkstart AAAAAAAFQX}{\bkmkend AAAAAAAFQX}
-00052     EXPECT_FALSE(sv1 != sv3);\par
-{\bkmkstart AAAAAAAFQY}{\bkmkend AAAAAAAFQY}
-00053     \par
-{\bkmkstart AAAAAAAFRA}{\bkmkend AAAAAAAFRA}
-00054     {\cf20 // Test operator<}\par
-{\bkmkstart AAAAAAAFRB}{\bkmkend AAAAAAAFRB}
-00055     EXPECT_TRUE(sv1 < sv2);\par
-{\bkmkstart AAAAAAAFRH}{\bkmkend AAAAAAAFRH}
-00056     EXPECT_FALSE(sv2 < sv1);\par
-{\bkmkstart AAAAAAAFRL}{\bkmkend AAAAAAAFRL}
-00057     EXPECT_FALSE(sv1 < sv3);\par
-{\bkmkstart AAAAAAAFRM}{\bkmkend AAAAAAAFRM}
-00058     \par
-{\bkmkstart AAAAAAAFRN}{\bkmkend AAAAAAAFRN}
-00059     {\cf20 // Test operator<=}\par
-{\bkmkstart AAAAAAAFRO}{\bkmkend AAAAAAAFRO}
-00060     EXPECT_TRUE(sv1 <= sv2);\par
-{\bkmkstart AAAAAAAFRP}{\bkmkend AAAAAAAFRP}
-00061     EXPECT_TRUE(sv1 <= sv3);\par
-{\bkmkstart AAAAAAAFRQ}{\bkmkend AAAAAAAFRQ}
-00062     EXPECT_FALSE(sv2 <= sv1);\par
-{\bkmkstart AAAAAAAFRS}{\bkmkend AAAAAAAFRS}
-00063     \par
-{\bkmkstart AAAAAAAFRT}{\bkmkend AAAAAAAFRT}
-00064     {\cf20 // Test operator>}\par
-{\bkmkstart AAAAAAAFRU}{\bkmkend AAAAAAAFRU}
-00065     EXPECT_TRUE(sv2 > sv1);\par
-{\bkmkstart AAAAAAAFRV}{\bkmkend AAAAAAAFRV}
-00066     EXPECT_FALSE(sv1 > sv2);\par
-{\bkmkstart AAAAAAAFRW}{\bkmkend AAAAAAAFRW}
-00067     EXPECT_FALSE(sv1 > sv3);\par
-{\bkmkstart AAAAAAAFRY}{\bkmkend AAAAAAAFRY}
-00068     \par
-{\bkmkstart AAAAAAAFSA}{\bkmkend AAAAAAAFSA}
-00069     {\cf20 // Test operator>=}\par
-{\bkmkstart AAAAAAAFSB}{\bkmkend AAAAAAAFSB}
-00070     EXPECT_TRUE(sv2 >= sv1);\par
-{\bkmkstart AAAAAAAFSC}{\bkmkend AAAAAAAFSC}
-00071     EXPECT_TRUE(sv1 >= sv3);\par
-{\bkmkstart AAAAAAAFSD}{\bkmkend AAAAAAAFSD}
-00072     EXPECT_FALSE(sv1 >= sv2);\par
-{\bkmkstart AAAAAAAFSE}{\bkmkend AAAAAAAFSE}
-00073     \par
-{\bkmkstart AAAAAAAFSF}{\bkmkend AAAAAAAFSF}
-00074     {\cf20 // Test with different types}\par
-{\bkmkstart AAAAAAAFSG}{\bkmkend AAAAAAAFSG}
-00075     std::string str = {\cf22 "abc"};\par
-{\bkmkstart AAAAAAAFSH}{\bkmkend AAAAAAAFSH}
-00076     {\cf17 const} {\cf18 char}* cstr = {\cf22 "abc"};\par
-{\bkmkstart AAAAAAAFSI}{\bkmkend AAAAAAAFSI}
-00077     \par
-{\bkmkstart AAAAAAAFSJ}{\bkmkend AAAAAAAFSJ}
-00078     EXPECT_TRUE(sv1 == str);\par
-{\bkmkstart AAAAAAAFSK}{\bkmkend AAAAAAAFSK}
-00079     EXPECT_TRUE(sv1 == cstr);\par
-{\bkmkstart AAAAAAAFSL}{\bkmkend AAAAAAAFSL}
-00080     EXPECT_TRUE(str == sv1);\par
-{\bkmkstart AAAAAAAFSM}{\bkmkend AAAAAAAFSM}
-00081     EXPECT_TRUE(cstr == sv1);\par
-{\bkmkstart AAAAAAAFSN}{\bkmkend AAAAAAAFSN}
-00082     \par
-{\bkmkstart AAAAAAAFSO}{\bkmkend AAAAAAAFSO}
-00083     EXPECT_TRUE(sv1 != {\cf22 "def"});\par
-{\bkmkstart AAAAAAAFSP}{\bkmkend AAAAAAAFSP}
-00084     EXPECT_TRUE({\cf22 "def"} != sv1);\par
-{\bkmkstart AAAAAAAFSQ}{\bkmkend AAAAAAAFSQ}
-00085 \}\par
-{\bkmkstart AAAAAAAFSR}{\bkmkend AAAAAAAFSR}
-00086 \par
-{\bkmkstart AAAAAAAFSS}{\bkmkend AAAAAAAFSS}
-00091 TEST_F(StringViewAdvancedCoverageTest, TestStringViewStreamOutput) \{\par
-{\bkmkstart AAAAAAAFST}{\bkmkend AAAAAAAFST}
-00092     std::string_view sv({\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAFSU}{\bkmkend AAAAAAAFSU}
-00093     std::ostringstream oss;\par
-{\bkmkstart AAAAAAAFSV}{\bkmkend AAAAAAAFSV}
-00094     \par
-{\bkmkstart AAAAAAAFSW}{\bkmkend AAAAAAAFSW}
-00095     {\cf20 // Test basic stream output}\par
-{\bkmkstart AAAAAAAFSX}{\bkmkend AAAAAAAFSX}
-00096     oss << sv;\par
-{\bkmkstart AAAAAAAFSY}{\bkmkend AAAAAAAFSY}
-00097     EXPECT_EQ(oss.str(), {\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAFSZ}{\bkmkend AAAAAAAFSZ}
-00098     \par
-{\bkmkstart AAAAAAAFTA}{\bkmkend AAAAAAAFTA}
-00099     {\cf20 // Test with multiple string_views}\par
-{\bkmkstart AAAAAAAFTB}{\bkmkend AAAAAAAFTB}
-00100     oss.str({\cf22 ""});\par
-{\bkmkstart AAAAAAAFTC}{\bkmkend AAAAAAAFTC}
-00101     std::string_view sv1({\cf22 "Hello"});\par
-{\bkmkstart AAAAAAAFTD}{\bkmkend AAAAAAAFTD}
-00102     std::string_view sv2({\cf22 ", "});\par
-{\bkmkstart AAAAAAAFTE}{\bkmkend AAAAAAAFTE}
-00103     std::string_view sv3({\cf22 "World!"});\par
-{\bkmkstart AAAAAAAFTF}{\bkmkend AAAAAAAFTF}
-00104     oss << sv1 << sv2 << sv3;\par
-{\bkmkstart AAAAAAAFTG}{\bkmkend AAAAAAAFTG}
-00105     EXPECT_EQ(oss.str(), {\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAFTH}{\bkmkend AAAAAAAFTH}
-00106     \par
-{\bkmkstart AAAAAAAFTI}{\bkmkend AAAAAAAFTI}
-00107     {\cf20 // Test with formatting}\par
-{\bkmkstart AAAAAAAFTJ}{\bkmkend AAAAAAAFTJ}
-00108     oss.str({\cf22 ""});\par
-{\bkmkstart AAAAAAAFTK}{\bkmkend AAAAAAAFTK}
-00109     oss << std::setw(20) << sv;\par
-{\bkmkstart AAAAAAAFTL}{\bkmkend AAAAAAAFTL}
-00110     EXPECT_EQ(oss.str().length(), 20);\par
-{\bkmkstart AAAAAAAFTM}{\bkmkend AAAAAAAFTM}
-00111     EXPECT_TRUE(oss.str().find({\cf22 "Hello, World!"}) != std::string::npos);\par
-{\bkmkstart AAAAAAAFTN}{\bkmkend AAAAAAAFTN}
-00112 \}\par
-{\bkmkstart AAAAAAAFTO}{\bkmkend AAAAAAAFTO}
-00113 \par
-{\bkmkstart AAAAAAAFTP}{\bkmkend AAAAAAAFTP}
-00118 TEST_F(StringViewAdvancedCoverageTest, TestStringViewConstMethods) \{\par
-{\bkmkstart AAAAAAAFTQ}{\bkmkend AAAAAAAFTQ}
-00119     {\cf17 const} std::string_view sv({\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAFTR}{\bkmkend AAAAAAAFTR}
-00120     \par
-{\bkmkstart AAAAAAAFTS}{\bkmkend AAAAAAAFTS}
-00121     {\cf20 // Test const access methods}\par
-{\bkmkstart AAAAAAAFTT}{\bkmkend AAAAAAAFTT}
-00122     EXPECT_EQ(sv[0], {\cf23 'H'});\par
-{\bkmkstart AAAAAAAFTU}{\bkmkend AAAAAAAFTU}
-00123     EXPECT_EQ(sv.at(0), {\cf23 'H'});\par
-{\bkmkstart AAAAAAAFTV}{\bkmkend AAAAAAAFTV}
-00124     EXPECT_EQ(sv.front(), {\cf23 'H'});\par
-{\bkmkstart AAAAAAAFTW}{\bkmkend AAAAAAAFTW}
-00125     EXPECT_EQ(sv.back(), {\cf23 '!'});\par
-{\bkmkstart AAAAAAAFTX}{\bkmkend AAAAAAAFTX}
-00126     EXPECT_EQ(sv.data()[0], {\cf23 'H'});\par
-{\bkmkstart AAAAAAAFTY}{\bkmkend AAAAAAAFTY}
-00127     \par
-{\bkmkstart AAAAAAAFTZ}{\bkmkend AAAAAAAFTZ}
-00128     {\cf20 // Test const size methods}\par
-{\bkmkstart AAAAAAAFUA}{\bkmkend AAAAAAAFUA}
-00129     EXPECT_EQ(sv.size(), 13);\par
-{\bkmkstart AAAAAAAFUB}{\bkmkend AAAAAAAFUB}
-00130     EXPECT_EQ(sv.length(), 13);\par
-{\bkmkstart AAAAAAAFUC}{\bkmkend AAAAAAAFUC}
-00131     EXPECT_FALSE(sv.empty());\par
-{\bkmkstart AAAAAAAFUD}{\bkmkend AAAAAAAFUD}
-00132     \par
-{\bkmkstart AAAAAAAFUE}{\bkmkend AAAAAAAFUE}
-00133     {\cf20 // Test const iterator methods}\par
-{\bkmkstart AAAAAAAFUF}{\bkmkend AAAAAAAFUF}
-00134     EXPECT_NE(sv.begin(), sv.end());\par
-{\bkmkstart AAAAAAAFUG}{\bkmkend AAAAAAAFUG}
-00135     EXPECT_NE(sv.cbegin(), sv.cend());\par
-{\bkmkstart AAAAAAAFUH}{\bkmkend AAAAAAAFUH}
-00136     EXPECT_NE(sv.rbegin(), sv.rend());\par
-{\bkmkstart AAAAAAAFUI}{\bkmkend AAAAAAAFUI}
-00137     EXPECT_NE(sv.crbegin(), sv.crend());\par
-{\bkmkstart AAAAAAAFUJ}{\bkmkend AAAAAAAFUJ}
-00138     \par
-{\bkmkstart AAAAAAAFUK}{\bkmkend AAAAAAAFUK}
-00139     {\cf20 // Test const find methods}\par
-{\bkmkstart AAAAAAAFUL}{\bkmkend AAAAAAAFUL}
-00140     EXPECT_EQ(sv.find({\cf23 'H'}), 0);\par
-{\bkmkstart AAAAAAAFUM}{\bkmkend AAAAAAAFUM}
-00141     EXPECT_EQ(sv.find({\cf22 "Hello"}), 0);\par
-{\bkmkstart AAAAAAAFUN}{\bkmkend AAAAAAAFUN}
-00142     EXPECT_EQ(sv.rfind({\cf23 '!'}), 12);\par
-{\bkmkstart AAAAAAAFUO}{\bkmkend AAAAAAAFUO}
-00143     EXPECT_EQ(sv.find_first_of({\cf22 "aeiou"}), 1);\par
-{\bkmkstart AAAAAAAFUP}{\bkmkend AAAAAAAFUP}
-00144     EXPECT_EQ(sv.find_last_of({\cf22 "aeiou"}), 8);\par
-{\bkmkstart AAAAAAAFUQ}{\bkmkend AAAAAAAFUQ}
-00145     EXPECT_EQ(sv.find_first_not_of({\cf22 "H"}), 1);\par
-{\bkmkstart AAAAAAAFUR}{\bkmkend AAAAAAAFUR}
-00146     EXPECT_EQ(sv.find_last_not_of({\cf22 "!"}), 11);\par
-{\bkmkstart AAAAAAAFUS}{\bkmkend AAAAAAAFUS}
-00147     \par
-{\bkmkstart AAAAAAAFUT}{\bkmkend AAAAAAAFUT}
-00148     {\cf20 // Test const contains methods using find}\par
-{\bkmkstart AAAAAAAFUU}{\bkmkend AAAAAAAFUU}
-00149     EXPECT_NE(sv.find({\cf23 'H'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAFUV}{\bkmkend AAAAAAAFUV}
-00150     EXPECT_NE(sv.find({\cf22 "Hello"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAFUW}{\bkmkend AAAAAAAFUW}
-00151     EXPECT_EQ(sv.find({\cf22 "Hello"}), 0);\par
-{\bkmkstart AAAAAAAFUX}{\bkmkend AAAAAAAFUX}
-00152     EXPECT_EQ(sv.find({\cf22 "World!"}), 7);\par
-{\bkmkstart AAAAAAAFUY}{\bkmkend AAAAAAAFUY}
-00153 \}\par
-{\bkmkstart AAAAAAAFUZ}{\bkmkend AAAAAAAFUZ}
-00154 \par
-{\bkmkstart AAAAAAAFVA}{\bkmkend AAAAAAAFVA}
-00159 TEST_F(StringViewAdvancedCoverageTest, TestStringViewSubstrEdgeCases) \{\par
-{\bkmkstart AAAAAAAFVB}{\bkmkend AAAAAAAFVB}
-00160     std::string_view sv({\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAFVC}{\bkmkend AAAAAAAFVC}
-00161     \par
-{\bkmkstart AAAAAAAFVD}{\bkmkend AAAAAAAFVD}
-00162     {\cf20 // Test substr with zero length}\par
-{\bkmkstart AAAAAAAFVE}{\bkmkend AAAAAAAFVE}
-00163     std::string_view sub1 = sv.substr(0, 0);\par
-{\bkmkstart AAAAAAAFVF}{\bkmkend AAAAAAAFVF}
-00164     EXPECT_TRUE(sub1.empty());\par
-{\bkmkstart AAAAAAAFVG}{\bkmkend AAAAAAAFVG}
-00165     EXPECT_EQ(sub1.size(), 0);\par
-{\bkmkstart AAAAAAAFVH}{\bkmkend AAAAAAAFVH}
-00166     \par
-{\bkmkstart AAAAAAAFVI}{\bkmkend AAAAAAAFVI}
-00167     {\cf20 // Test substr with length beyond string}\par
-{\bkmkstart AAAAAAAFVJ}{\bkmkend AAAAAAAFVJ}
-00168     std::string_view sub2 = sv.substr(10, 100);\par
-{\bkmkstart AAAAAAAFVK}{\bkmkend AAAAAAAFVK}
-00169     EXPECT_EQ(sub2, {\cf22 "d!"});\par
-{\bkmkstart AAAAAAAFVL}{\bkmkend AAAAAAAFVL}
-00170     EXPECT_EQ(sub2.size(), 3);\par
-{\bkmkstart AAAAAAAFVM}{\bkmkend AAAAAAAFVM}
-00171     \par
-{\bkmkstart AAAAAAAFVN}{\bkmkend AAAAAAAFVN}
-00172     {\cf20 // Test substr at end of string}\par
-{\bkmkstart AAAAAAAFVO}{\bkmkend AAAAAAAFVO}
-00173     std::string_view sub3 = sv.substr(12, 1);\par
-{\bkmkstart AAAAAAAFVP}{\bkmkend AAAAAAAFVP}
-00174     EXPECT_EQ(sub3, {\cf22 "!"});\par
-{\bkmkstart AAAAAAAFVQ}{\bkmkend AAAAAAAFVQ}
-00175     EXPECT_EQ(sub3.size(), 1);\par
 {\bkmkstart AAAAAAAFVR}{\bkmkend AAAAAAAFVR}
-00176     \par
+00008 \par
 {\bkmkstart AAAAAAAFVS}{\bkmkend AAAAAAAFVS}
-00177     {\cf20 // Test substr with npos}\par
-{\bkmkstart AAAAAAAFVT}{\bkmkend AAAAAAAFVT}
-00178     std::string_view sub4 = sv.substr(std::string_view::npos);\par
-{\bkmkstart AAAAAAAFVU}{\bkmkend AAAAAAAFVU}
-00179     EXPECT_TRUE(sub4.empty());\par
-{\bkmkstart AAAAAAAFVV}{\bkmkend AAAAAAAFVV}
-00180     \par
-{\bkmkstart AAAAAAAFVW}{\bkmkend AAAAAAAFVW}
-00181     {\cf20 // Test substr with very large position}\par
-{\bkmkstart AAAAAAAFVX}{\bkmkend AAAAAAAFVX}
-00182     std::string_view sub5 = sv.substr(1000);\par
-{\bkmkstart AAAAAAAFVY}{\bkmkend AAAAAAAFVY}
-00183     EXPECT_TRUE(sub5.empty());\par
-{\bkmkstart AAAAAAAFVZ}{\bkmkend AAAAAAAFVZ}
-00184 \}\par
-{\bkmkstart AAAAAAAFWA}{\bkmkend AAAAAAAFWA}
-00185 \par
-{\bkmkstart AAAAAAAFWB}{\bkmkend AAAAAAAFWB}
-00190 TEST_F(StringViewAdvancedCoverageTest, TestStringViewFindEdgeCases) \{\par
-{\bkmkstart AAAAAAAFWC}{\bkmkend AAAAAAAFWC}
-00191     std::string_view sv({\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAFWD}{\bkmkend AAAAAAAFWD}
-00192     \par
-{\bkmkstart AAAAAAAFWE}{\bkmkend AAAAAAAFWE}
-00193     {\cf20 // Test find with empty string}\par
-{\bkmkstart AAAAAAAFWF}{\bkmkend AAAAAAAFWF}
-00194     std::string_view empty_sv;\par
-{\bkmkstart AAAAAAAFWG}{\bkmkend AAAAAAAFWG}
-00195     EXPECT_EQ(empty_sv.find({\cf23 'H'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAFWH}{\bkmkend AAAAAAAFWH}
-00196     EXPECT_EQ(empty_sv.find({\cf22 "Hello"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAFWI}{\bkmkend AAAAAAAFWI}
-00197     \par
-{\bkmkstart AAAAAAAFWJ}{\bkmkend AAAAAAAFWJ}
-00198     {\cf20 // Test find with position beyond string}\par
-{\bkmkstart AAAAAAAFWK}{\bkmkend AAAAAAAFWK}
-00199     EXPECT_EQ(sv.find({\cf23 'H'}, 100), std::string_view::npos);\par
-{\bkmkstart AAAAAAAFWL}{\bkmkend AAAAAAAFWL}
-00200     EXPECT_EQ(sv.find({\cf22 "Hello"}, 100), std::string_view::npos);\par
-{\bkmkstart AAAAAAAFWM}{\bkmkend AAAAAAAFWM}
-00201     \par
-{\bkmkstart AAAAAAAFWN}{\bkmkend AAAAAAAFWN}
-00202     {\cf20 // Test find with empty search string}\par
+00009 {\cf21 #include <gtest/gtest.h>}\par
 {\bkmkstart AAAAAAAFWO}{\bkmkend AAAAAAAFWO}
-00203     EXPECT_EQ(sv.find({\cf22 ""}), 0);\par
-{\bkmkstart AAAAAAAFWP}{\bkmkend AAAAAAAFWP}
-00204     EXPECT_EQ(sv.find({\cf22 ""}, 5), 5);\par
-{\bkmkstart AAAAAAAFWQ}{\bkmkend AAAAAAAFWQ}
-00205     \par
-{\bkmkstart AAAAAAAFWR}{\bkmkend AAAAAAAFWR}
-00206     {\cf20 // Test find with single character at boundaries}\par
-{\bkmkstart AAAAAAAFWS}{\bkmkend AAAAAAAFWS}
-00207     EXPECT_EQ(sv.find({\cf23 'H'}), 0);\par
-{\bkmkstart AAAAAAAFWT}{\bkmkend AAAAAAAFWT}
-00208     EXPECT_EQ(sv.find({\cf23 '!'}), 12);\par
-{\bkmkstart AAAAAAAFWU}{\bkmkend AAAAAAAFWU}
-00209     \par
-{\bkmkstart AAAAAAAFWV}{\bkmkend AAAAAAAFWV}
-00210     {\cf20 // Test find with repeated characters}\par
-{\bkmkstart AAAAAAAFWW}{\bkmkend AAAAAAAFWW}
-00211     std::string_view repeated({\cf22 "aaa"});\par
-{\bkmkstart AAAAAAAFWX}{\bkmkend AAAAAAAFWX}
-00212     EXPECT_EQ(repeated.find({\cf23 'a'}), 0);\par
-{\bkmkstart AAAAAAAFWY}{\bkmkend AAAAAAAFWY}
-00213     EXPECT_EQ(repeated.find({\cf23 'a'}, 1), 1);\par
-{\bkmkstart AAAAAAAFWZ}{\bkmkend AAAAAAAFWZ}
-00214     EXPECT_EQ(repeated.find({\cf23 'a'}, 2), 2);\par
-{\bkmkstart AAAAAAAFXA}{\bkmkend AAAAAAAFXA}
-00215     EXPECT_EQ(repeated.find({\cf23 'a'}, 3), std::string_view::npos);\par
+00010 {\cf21 #include <string_view>}\par
 {\bkmkstart AAAAAAAFXB}{\bkmkend AAAAAAAFXB}
-00216 \}\par
-{\bkmkstart AAAAAAAFXC}{\bkmkend AAAAAAAFXC}
-00217 \par
-{\bkmkstart AAAAAAAFXD}{\bkmkend AAAAAAAFXD}
-00222 TEST_F(StringViewAdvancedCoverageTest, TestStringViewCopyEdgeCases) \{\par
-{\bkmkstart AAAAAAAFXE}{\bkmkend AAAAAAAFXE}
-00223     std::string_view sv({\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAFXF}{\bkmkend AAAAAAAFXF}
-00224     {\cf18 char} buffer[20];\par
-{\bkmkstart AAAAAAAFXG}{\bkmkend AAAAAAAFXG}
-00225     \par
-{\bkmkstart AAAAAAAFXH}{\bkmkend AAAAAAAFXH}
-00226     {\cf20 // Test copy with zero length}\par
-{\bkmkstart AAAAAAAFXI}{\bkmkend AAAAAAAFXI}
-00227     {\cf18 size_t} copied = sv.copy(buffer, 0);\par
-{\bkmkstart AAAAAAAFXJ}{\bkmkend AAAAAAAFXJ}
-00228     EXPECT_EQ(copied, 0);\par
-{\bkmkstart AAAAAAAFXK}{\bkmkend AAAAAAAFXK}
-00229     \par
-{\bkmkstart AAAAAAAFXL}{\bkmkend AAAAAAAFXL}
-00230     {\cf20 // Test copy with position beyond string}\par
+00011 {\cf21 #include <string>}\par
 {\bkmkstart AAAAAAAFXM}{\bkmkend AAAAAAAFXM}
-00231     copied = sv.copy(buffer, 5, 100);\par
-{\bkmkstart AAAAAAAFXN}{\bkmkend AAAAAAAFXN}
-00232     EXPECT_EQ(copied, 0);\par
-{\bkmkstart AAAAAAAFXO}{\bkmkend AAAAAAAFXO}
-00233     \par
-{\bkmkstart AAAAAAAFXP}{\bkmkend AAAAAAAFXP}
-00234     {\cf20 // Test copy with npos position}\par
-{\bkmkstart AAAAAAAFXQ}{\bkmkend AAAAAAAFXQ}
-00235     copied = sv.copy(buffer, 5, std::string_view::npos);\par
-{\bkmkstart AAAAAAAFXS}{\bkmkend AAAAAAAFXS}
-00236     EXPECT_EQ(copied, 0);\par
-{\bkmkstart AAAAAAAFXT}{\bkmkend AAAAAAAFXT}
-00237     \par
-{\bkmkstart AAAAAAAFXU}{\bkmkend AAAAAAAFXU}
-00238     {\cf20 // Test copy with exact length}\par
-{\bkmkstart AAAAAAAFXV}{\bkmkend AAAAAAAFXV}
-00239     copied = sv.copy(buffer, sv.size());\par
-{\bkmkstart AAAAAAAFXX}{\bkmkend AAAAAAAFXX}
-00240     EXPECT_EQ(copied, sv.size());\par
-{\bkmkstart AAAAAAAFXZ}{\bkmkend AAAAAAAFXZ}
-00241     buffer[copied] = {\cf23 '\\0'};\par
-{\bkmkstart AAAAAAAFYA}{\bkmkend AAAAAAAFYA}
-00242     EXPECT_STREQ(buffer, {\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAFYC}{\bkmkend AAAAAAAFYC}
-00243     \par
-{\bkmkstart AAAAAAAFYD}{\bkmkend AAAAAAAFYD}
-00244     {\cf20 // Test copy with small buffer}\par
-{\bkmkstart AAAAAAAFYF}{\bkmkend AAAAAAAFYF}
-00245     {\cf18 char} small_buffer[3];\par
-{\bkmkstart AAAAAAAFYI}{\bkmkend AAAAAAAFYI}
-00246     copied = sv.copy(small_buffer, 2);\par
-{\bkmkstart AAAAAAAFYK}{\bkmkend AAAAAAAFYK}
-00247     EXPECT_EQ(copied, 2);\par
-{\bkmkstart AAAAAAAFYL}{\bkmkend AAAAAAAFYL}
-00248     small_buffer[copied] = {\cf23 '\\0'};\par
-{\bkmkstart AAAAAAAFYM}{\bkmkend AAAAAAAFYM}
-00249     EXPECT_STREQ(small_buffer, {\cf22 "He"});\par
-{\bkmkstart AAAAAAAFYP}{\bkmkend AAAAAAAFYP}
-00250 \}\par
-{\bkmkstart AAAAAAAFYQ}{\bkmkend AAAAAAAFYQ}
-00251 \par
-{\bkmkstart AAAAAAAFYR}{\bkmkend AAAAAAAFYR}
-00256 TEST_F(StringViewAdvancedCoverageTest, TestStringViewStartsWithEndsWithEdgeCases) \{\par
-{\bkmkstart AAAAAAAFYV}{\bkmkend AAAAAAAFYV}
-00257     std::string_view sv({\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAFYX}{\bkmkend AAAAAAAFYX}
-00258     \par
-{\bkmkstart AAAAAAAFYY}{\bkmkend AAAAAAAFYY}
-00259     {\cf20 // Test with empty string_view}\par
-{\bkmkstart AAAAAAAFYZ}{\bkmkend AAAAAAAFYZ}
-00260     std::string_view empty_sv;\par
-{\bkmkstart AAAAAAAFZA}{\bkmkend AAAAAAAFZA}
-00261     EXPECT_EQ(empty_sv.find({\cf22 ""}), 0);\par
-{\bkmkstart AAAAAAAFZE}{\bkmkend AAAAAAAFZE}
-00262     EXPECT_EQ(empty_sv.find({\cf22 ""}), 0);\par
-{\bkmkstart AAAAAAAFZF}{\bkmkend AAAAAAAFZF}
-00263     EXPECT_EQ(empty_sv.find({\cf22 "Hello"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAFZJ}{\bkmkend AAAAAAAFZJ}
-00264     EXPECT_EQ(empty_sv.find({\cf22 "World!"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAFZK}{\bkmkend AAAAAAAFZK}
-00265     \par
-{\bkmkstart AAAAAAAFZM}{\bkmkend AAAAAAAFZM}
-00266     {\cf20 // Test with empty search string}\par
-{\bkmkstart AAAAAAAFZN}{\bkmkend AAAAAAAFZN}
-00267     EXPECT_EQ(sv.find({\cf22 ""}), 0);\par
-{\bkmkstart AAAAAAAFZP}{\bkmkend AAAAAAAFZP}
-00268     EXPECT_EQ(sv.find({\cf22 ""}), 0);\par
-{\bkmkstart AAAAAAAFZR}{\bkmkend AAAAAAAFZR}
-00269     \par
-{\bkmkstart AAAAAAAFZS}{\bkmkend AAAAAAAFZS}
-00270     {\cf20 // Test with exact match}\par
-{\bkmkstart AAAAAAAFZU}{\bkmkend AAAAAAAFZU}
-00271     EXPECT_EQ(sv.find({\cf22 "Hello, World!"}), 0);\par
-{\bkmkstart AAAAAAAFZX}{\bkmkend AAAAAAAFZX}
-00272     EXPECT_EQ(sv.find({\cf22 "Hello, World!"}), 0);\par
-{\bkmkstart AAAAAAAFZZ}{\bkmkend AAAAAAAFZZ}
-00273     \par
-{\bkmkstart AAAAAAAGAA}{\bkmkend AAAAAAAGAA}
-00274     {\cf20 // Test with longer search string}\par
-{\bkmkstart AAAAAAAGAB}{\bkmkend AAAAAAAGAB}
-00275     EXPECT_EQ(sv.find({\cf22 "Hello, World! Extra"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGAF}{\bkmkend AAAAAAAGAF}
-00276     EXPECT_EQ(sv.find({\cf22 "Extra Hello, World!"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGAG}{\bkmkend AAAAAAAGAG}
-00277     \par
-{\bkmkstart AAAAAAAGAH}{\bkmkend AAAAAAAGAH}
-00278     {\cf20 // Test with single character}\par
-{\bkmkstart AAAAAAAGAI}{\bkmkend AAAAAAAGAI}
-00279     EXPECT_EQ(sv.find({\cf23 'H'}), 0);\par
-{\bkmkstart AAAAAAAGAK}{\bkmkend AAAAAAAGAK}
-00280     EXPECT_EQ(sv.find({\cf23 '!'}), 12);\par
-{\bkmkstart AAAAAAAGAM}{\bkmkend AAAAAAAGAM}
-00281     EXPECT_EQ(sv.find({\cf23 'h'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGAN}{\bkmkend AAAAAAAGAN}
-00282     EXPECT_EQ(sv.find({\cf23 '?'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGAP}{\bkmkend AAAAAAAGAP}
-00283 \}\par
-{\bkmkstart AAAAAAAGAQ}{\bkmkend AAAAAAAGAQ}
-00284 \par
-{\bkmkstart AAAAAAAGAR}{\bkmkend AAAAAAAGAR}
-00289 TEST_F(StringViewAdvancedCoverageTest, TestStringViewContainsEdgeCases) \{\par
-{\bkmkstart AAAAAAAGAT}{\bkmkend AAAAAAAGAT}
-00290     std::string_view sv({\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAGAU}{\bkmkend AAAAAAAGAU}
-00291     \par
-{\bkmkstart AAAAAAAGAV}{\bkmkend AAAAAAAGAV}
-00292     {\cf20 // Test with empty string_view}\par
-{\bkmkstart AAAAAAAGAW}{\bkmkend AAAAAAAGAW}
-00293     std::string_view empty_sv;\par
-{\bkmkstart AAAAAAAGAX}{\bkmkend AAAAAAAGAX}
-00294     EXPECT_NE(empty_sv.find({\cf22 ""}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGAY}{\bkmkend AAAAAAAGAY}
-00295     EXPECT_EQ(empty_sv.find({\cf22 "Hello"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGAZ}{\bkmkend AAAAAAAGAZ}
-00296     \par
-{\bkmkstart AAAAAAAGBA}{\bkmkend AAAAAAAGBA}
-00297     {\cf20 // Test with empty search string}\par
-{\bkmkstart AAAAAAAGBB}{\bkmkend AAAAAAAGBB}
-00298     EXPECT_NE(sv.find({\cf22 ""}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGBC}{\bkmkend AAAAAAAGBC}
-00299     \par
-{\bkmkstart AAAAAAAGBD}{\bkmkend AAAAAAAGBD}
-00300     {\cf20 // Test with exact match}\par
-{\bkmkstart AAAAAAAGBE}{\bkmkend AAAAAAAGBE}
-00301     EXPECT_NE(sv.find({\cf22 "Hello, World!"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGBF}{\bkmkend AAAAAAAGBF}
-00302     \par
-{\bkmkstart AAAAAAAGBG}{\bkmkend AAAAAAAGBG}
-00303     {\cf20 // Test with longer search string}\par
-{\bkmkstart AAAAAAAGBH}{\bkmkend AAAAAAAGBH}
-00304     EXPECT_EQ(sv.find({\cf22 "Hello, World! Extra"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGBI}{\bkmkend AAAAAAAGBI}
-00305     \par
-{\bkmkstart AAAAAAAGBJ}{\bkmkend AAAAAAAGBJ}
-00306     {\cf20 // Test with single character}\par
-{\bkmkstart AAAAAAAGBK}{\bkmkend AAAAAAAGBK}
-00307     EXPECT_NE(sv.find({\cf23 'H'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGBL}{\bkmkend AAAAAAAGBL}
-00308     EXPECT_NE(sv.find({\cf23 '!'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGBM}{\bkmkend AAAAAAAGBM}
-00309     EXPECT_EQ(sv.find({\cf23 'z'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGBN}{\bkmkend AAAAAAAGBN}
-00310     \par
-{\bkmkstart AAAAAAAGBO}{\bkmkend AAAAAAAGBO}
-00311     {\cf20 // Test with repeated characters}\par
-{\bkmkstart AAAAAAAGBP}{\bkmkend AAAAAAAGBP}
-00312     std::string_view repeated({\cf22 "aaa"});\par
-{\bkmkstart AAAAAAAGBQ}{\bkmkend AAAAAAAGBQ}
-00313     EXPECT_NE(repeated.find({\cf23 'a'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGBR}{\bkmkend AAAAAAAGBR}
-00314     EXPECT_NE(repeated.find({\cf22 "aa"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGBS}{\bkmkend AAAAAAAGBS}
-00315     EXPECT_EQ(repeated.find({\cf23 'b'}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGBT}{\bkmkend AAAAAAAGBT}
-00316 \}\par
-{\bkmkstart AAAAAAAGBU}{\bkmkend AAAAAAAGBU}
-00317 \par
-{\bkmkstart AAAAAAAGBV}{\bkmkend AAAAAAAGBV}
-00322 TEST_F(StringViewAdvancedCoverageTest, TestStringViewRemovePrefixSuffixEdgeCases) \{\par
-{\bkmkstart AAAAAAAGBW}{\bkmkend AAAAAAAGBW}
-00323     std::string_view sv({\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAGBX}{\bkmkend AAAAAAAGBX}
-00324     \par
-{\bkmkstart AAAAAAAGBY}{\bkmkend AAAAAAAGBY}
-00325     {\cf20 // Test remove_prefix with zero}\par
-{\bkmkstart AAAAAAAGBZ}{\bkmkend AAAAAAAGBZ}
-00326     sv.remove_prefix(0);\par
-{\bkmkstart AAAAAAAGCA}{\bkmkend AAAAAAAGCA}
-00327     EXPECT_EQ(sv, {\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAGCB}{\bkmkend AAAAAAAGCB}
-00328     \par
-{\bkmkstart AAAAAAAGCC}{\bkmkend AAAAAAAGCC}
-00329     {\cf20 // Test remove_suffix with zero}\par
-{\bkmkstart AAAAAAAGCD}{\bkmkend AAAAAAAGCD}
-00330     sv.remove_suffix(0);\par
-{\bkmkstart AAAAAAAGCE}{\bkmkend AAAAAAAGCE}
-00331     EXPECT_EQ(sv, {\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAGCF}{\bkmkend AAAAAAAGCF}
-00332     \par
-{\bkmkstart AAAAAAAGCG}{\bkmkend AAAAAAAGCG}
-00333     {\cf20 // Test remove_prefix with full length}\par
-{\bkmkstart AAAAAAAGCH}{\bkmkend AAAAAAAGCH}
-00334     sv.remove_prefix(sv.size());\par
-{\bkmkstart AAAAAAAGCI}{\bkmkend AAAAAAAGCI}
-00335     EXPECT_TRUE(sv.empty());\par
-{\bkmkstart AAAAAAAGCJ}{\bkmkend AAAAAAAGCJ}
-00336     \par
-{\bkmkstart AAAAAAAGCK}{\bkmkend AAAAAAAGCK}
-00337     {\cf20 // Reset and test remove_suffix with full length}\par
-{\bkmkstart AAAAAAAGCL}{\bkmkend AAAAAAAGCL}
-00338     sv = {\cf22 "Hello, World!"};\par
-{\bkmkstart AAAAAAAGCM}{\bkmkend AAAAAAAGCM}
-00339     sv.remove_suffix(sv.size());\par
-{\bkmkstart AAAAAAAGCN}{\bkmkend AAAAAAAGCN}
-00340     EXPECT_TRUE(sv.empty());\par
-{\bkmkstart AAAAAAAGCO}{\bkmkend AAAAAAAGCO}
-00341     \par
-{\bkmkstart AAAAAAAGCP}{\bkmkend AAAAAAAGCP}
-00342     {\cf20 // Test with empty string_view}\par
-{\bkmkstart AAAAAAAGCQ}{\bkmkend AAAAAAAGCQ}
-00343     std::string_view empty_sv;\par
-{\bkmkstart AAAAAAAGCR}{\bkmkend AAAAAAAGCR}
-00344     empty_sv.remove_prefix(0);\par
-{\bkmkstart AAAAAAAGCS}{\bkmkend AAAAAAAGCS}
-00345     empty_sv.remove_suffix(0);\par
-{\bkmkstart AAAAAAAGCT}{\bkmkend AAAAAAAGCT}
-00346     EXPECT_TRUE(empty_sv.empty());\par
-{\bkmkstart AAAAAAAGCU}{\bkmkend AAAAAAAGCU}
-00347 \}\par
-{\bkmkstart AAAAAAAGCV}{\bkmkend AAAAAAAGCV}
-00348 \par
-{\bkmkstart AAAAAAAGCW}{\bkmkend AAAAAAAGCW}
-00353 TEST_F(StringViewAdvancedCoverageTest, TestStringViewHashEdgeCases) \{\par
-{\bkmkstart AAAAAAAGCX}{\bkmkend AAAAAAAGCX}
-00354     std::hash<std::string_view> hasher;\par
-{\bkmkstart AAAAAAAGCY}{\bkmkend AAAAAAAGCY}
-00355     \par
-{\bkmkstart AAAAAAAGCZ}{\bkmkend AAAAAAAGCZ}
-00356     {\cf20 // Test empty string_view}\par
-{\bkmkstart AAAAAAAGDA}{\bkmkend AAAAAAAGDA}
-00357     std::string_view empty_sv;\par
-{\bkmkstart AAAAAAAGDB}{\bkmkend AAAAAAAGDB}
-00358     {\cf17 auto} empty_hash = hasher(empty_sv);\par
-{\bkmkstart AAAAAAAGDC}{\bkmkend AAAAAAAGDC}
-00359     EXPECT_EQ(empty_hash, hasher(empty_sv));\par
-{\bkmkstart AAAAAAAGDD}{\bkmkend AAAAAAAGDD}
-00360     \par
-{\bkmkstart AAAAAAAGDE}{\bkmkend AAAAAAAGDE}
-00361     {\cf20 // Test single character}\par
-{\bkmkstart AAAAAAAGDF}{\bkmkend AAAAAAAGDF}
-00362     std::string_view single_sv({\cf22 "A"});\par
-{\bkmkstart AAAAAAAGDG}{\bkmkend AAAAAAAGDG}
-00363     {\cf17 auto} single_hash = hasher(single_sv);\par
-{\bkmkstart AAAAAAAGDH}{\bkmkend AAAAAAAGDH}
-00364     EXPECT_NE(empty_hash, single_hash);\par
-{\bkmkstart AAAAAAAGDI}{\bkmkend AAAAAAAGDI}
-00365     \par
-{\bkmkstart AAAAAAAGDJ}{\bkmkend AAAAAAAGDJ}
-00366     {\cf20 // Test same content different sources}\par
-{\bkmkstart AAAAAAAGDL}{\bkmkend AAAAAAAGDL}
-00367     std::string str = {\cf22 "Hello"};\par
-{\bkmkstart AAAAAAAGDM}{\bkmkend AAAAAAAGDM}
-00368     {\cf17 const} {\cf18 char}* cstr = {\cf22 "Hello"};\par
-{\bkmkstart AAAAAAAGDN}{\bkmkend AAAAAAAGDN}
-00369     std::string_view sv1(str);\par
-{\bkmkstart AAAAAAAGDO}{\bkmkend AAAAAAAGDO}
-00370     std::string_view sv2(cstr);\par
-{\bkmkstart AAAAAAAGDP}{\bkmkend AAAAAAAGDP}
-00371     \par
-{\bkmkstart AAAAAAAGDQ}{\bkmkend AAAAAAAGDQ}
-00372     EXPECT_EQ(hasher(sv1), hasher(sv2));\par
-{\bkmkstart AAAAAAAGDR}{\bkmkend AAAAAAAGDR}
-00373     \par
-{\bkmkstart AAAAAAAGDS}{\bkmkend AAAAAAAGDS}
-00374     {\cf20 // Test different content same length}\par
-{\bkmkstart AAAAAAAGDT}{\bkmkend AAAAAAAGDT}
-00375     std::string_view sv3({\cf22 "Hello"});\par
-{\bkmkstart AAAAAAAGDU}{\bkmkend AAAAAAAGDU}
-00376     std::string_view sv4({\cf22 "World"});\par
-{\bkmkstart AAAAAAAGDV}{\bkmkend AAAAAAAGDV}
-00377     EXPECT_NE(hasher(sv3), hasher(sv4));\par
-{\bkmkstart AAAAAAAGDX}{\bkmkend AAAAAAAGDX}
-00378 \}\par
-{\bkmkstart AAAAAAAGDY}{\bkmkend AAAAAAAGDY}
-00379 \par
-{\bkmkstart AAAAAAAGDZ}{\bkmkend AAAAAAAGDZ}
-00384 TEST_F(StringViewAdvancedCoverageTest, TestStringViewIteratorEdgeCases) \{\par
-{\bkmkstart AAAAAAAGEA}{\bkmkend AAAAAAAGEA}
-00385     {\cf20 // Test empty string_view iterators}\par
-{\bkmkstart AAAAAAAGEB}{\bkmkend AAAAAAAGEB}
-00386     std::string_view empty_sv;\par
-{\bkmkstart AAAAAAAGEC}{\bkmkend AAAAAAAGEC}
-00387     EXPECT_EQ(empty_sv.begin(), empty_sv.end());\par
-{\bkmkstart AAAAAAAGED}{\bkmkend AAAAAAAGED}
-00388     EXPECT_EQ(empty_sv.cbegin(), empty_sv.cend());\par
-{\bkmkstart AAAAAAAGEF}{\bkmkend AAAAAAAGEF}
-00389     EXPECT_EQ(empty_sv.rbegin(), empty_sv.rend());\par
-{\bkmkstart AAAAAAAGEG}{\bkmkend AAAAAAAGEG}
-00390     EXPECT_EQ(empty_sv.crbegin(), empty_sv.crend());\par
-{\bkmkstart AAAAAAAGEH}{\bkmkend AAAAAAAGEH}
-00391     \par
-{\bkmkstart AAAAAAAGEI}{\bkmkend AAAAAAAGEI}
-00392     {\cf20 // Test single character iterators}\par
-{\bkmkstart AAAAAAAGEJ}{\bkmkend AAAAAAAGEJ}
-00393     std::string_view single_sv({\cf22 "A"});\par
-{\bkmkstart AAAAAAAGEK}{\bkmkend AAAAAAAGEK}
-00394     EXPECT_NE(single_sv.begin(), single_sv.end());\par
-{\bkmkstart AAAAAAAGEL}{\bkmkend AAAAAAAGEL}
-00395     EXPECT_EQ(single_sv.begin() + 1, single_sv.end());\par
-{\bkmkstart AAAAAAAGEM}{\bkmkend AAAAAAAGEM}
-00396     EXPECT_EQ(*single_sv.begin(), {\cf23 'A'});\par
-{\bkmkstart AAAAAAAGEO}{\bkmkend AAAAAAAGEO}
-00397     EXPECT_EQ(*(single_sv.end() - 1), {\cf23 'A'});\par
-{\bkmkstart AAAAAAAGEP}{\bkmkend AAAAAAAGEP}
-00398     \par
-{\bkmkstart AAAAAAAGEQ}{\bkmkend AAAAAAAGEQ}
-00399     {\cf20 // Test reverse iterators}\par
-{\bkmkstart AAAAAAAGER}{\bkmkend AAAAAAAGER}
-00400     std::string_view sv({\cf22 "ABC"});\par
-{\bkmkstart AAAAAAAGES}{\bkmkend AAAAAAAGES}
-00401     {\cf17 auto} rit = sv.rbegin();\par
-{\bkmkstart AAAAAAAGEU}{\bkmkend AAAAAAAGEU}
-00402     EXPECT_EQ(*rit, {\cf23 'C'});\par
-{\bkmkstart AAAAAAAGEW}{\bkmkend AAAAAAAGEW}
-00403     ++rit;\par
-{\bkmkstart AAAAAAAGEY}{\bkmkend AAAAAAAGEY}
-00404     EXPECT_EQ(*rit, {\cf23 'B'});\par
-{\bkmkstart AAAAAAAGFA}{\bkmkend AAAAAAAGFA}
-00405     ++rit;\par
-{\bkmkstart AAAAAAAGFB}{\bkmkend AAAAAAAGFB}
-00406     EXPECT_EQ(*rit, {\cf23 'A'});\par
-{\bkmkstart AAAAAAAGFC}{\bkmkend AAAAAAAGFC}
-00407     ++rit;\par
-{\bkmkstart AAAAAAAGFD}{\bkmkend AAAAAAAGFD}
-00408     EXPECT_EQ(rit, sv.rend());\par
-{\bkmkstart AAAAAAAGFE}{\bkmkend AAAAAAAGFE}
-00409 \}\par
-{\bkmkstart AAAAAAAGFF}{\bkmkend AAAAAAAGFF}
-00410 \par
-{\bkmkstart AAAAAAAGFH}{\bkmkend AAAAAAAGFH}
-00415 TEST_F(StringViewAdvancedCoverageTest, TestStringViewConstexprEdgeCases) \{\par
-{\bkmkstart AAAAAAAGFJ}{\bkmkend AAAAAAAGFJ}
-00416     {\cf20 // Test constexpr with empty string}\par
-{\bkmkstart AAAAAAAGFK}{\bkmkend AAAAAAAGFK}
-00417     {\cf17 constexpr} std::string_view empty_sv({\cf22 ""});\par
-{\bkmkstart AAAAAAAGFL}{\bkmkend AAAAAAAGFL}
-00418     {\cf17 static_assert}(empty_sv.empty());\par
-{\bkmkstart AAAAAAAGFN}{\bkmkend AAAAAAAGFN}
-00419     {\cf17 static_assert}(empty_sv.size() == 0);\par
-{\bkmkstart AAAAAAAGFR}{\bkmkend AAAAAAAGFR}
-00420     \par
-{\bkmkstart AAAAAAAGFS}{\bkmkend AAAAAAAGFS}
-00421     {\cf20 // Test constexpr with single character}\par
-{\bkmkstart AAAAAAAGFT}{\bkmkend AAAAAAAGFT}
-00422     {\cf17 constexpr} std::string_view single_sv({\cf22 "A"});\par
-{\bkmkstart AAAAAAAGFU}{\bkmkend AAAAAAAGFU}
-00423     {\cf17 static_assert}(single_sv.size() == 1);\par
-{\bkmkstart AAAAAAAGFW}{\bkmkend AAAAAAAGFW}
-00424     {\cf17 static_assert}(single_sv[0] == {\cf23 'A'});\par
-{\bkmkstart AAAAAAAGFZ}{\bkmkend AAAAAAAGFZ}
-00425     \par
-{\bkmkstart AAAAAAAGGB}{\bkmkend AAAAAAAGGB}
-00426     {\cf20 // Test constexpr find operations}\par
-{\bkmkstart AAAAAAAGGC}{\bkmkend AAAAAAAGGC}
-00427     {\cf17 constexpr} std::string_view sv({\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAGGE}{\bkmkend AAAAAAAGGE}
-00428     {\cf17 constexpr} {\cf18 size_t} pos1 = sv.find({\cf22 "World"});\par
-{\bkmkstart AAAAAAAGGF}{\bkmkend AAAAAAAGGF}
-00429     {\cf17 static_assert}(pos1 == 7);\par
-{\bkmkstart AAAAAAAGGG}{\bkmkend AAAAAAAGGG}
-00430     \par
-{\bkmkstart AAAAAAAGGH}{\bkmkend AAAAAAAGGH}
-00431     {\cf17 constexpr} {\cf18 size_t} pos2 = sv.find({\cf22 "xyz"});\par
-{\bkmkstart AAAAAAAGGI}{\bkmkend AAAAAAAGGI}
-00432     {\cf17 static_assert}(pos2 == std::string_view::npos);\par
-{\bkmkstart AAAAAAAGGJ}{\bkmkend AAAAAAAGGJ}
-00433     \par
-{\bkmkstart AAAAAAAGGK}{\bkmkend AAAAAAAGGK}
-00434     {\cf20 // Test constexpr functionality using find}\par
-{\bkmkstart AAAAAAAGGL}{\bkmkend AAAAAAAGGL}
-00435     {\cf17 static_assert}(sv.find({\cf22 "Hello"}) == 0);\par
-{\bkmkstart AAAAAAAGGN}{\bkmkend AAAAAAAGGN}
-00436     {\cf17 static_assert}(sv.find({\cf22 "World!"}) == 7);\par
-{\bkmkstart AAAAAAAGGP}{\bkmkend AAAAAAAGGP}
-00437     {\cf17 static_assert}(sv.find({\cf22 "World"}) == 7);\par
-{\bkmkstart AAAAAAAGGQ}{\bkmkend AAAAAAAGGQ}
-00438     {\cf17 static_assert}(sv.find({\cf22 "Hello"}) == 0);\par
-{\bkmkstart AAAAAAAGGS}{\bkmkend AAAAAAAGGS}
-00439     \par
-{\bkmkstart AAAAAAAGGT}{\bkmkend AAAAAAAGGT}
-00440     {\cf20 // Test constexpr contains using find}\par
-{\bkmkstart AAAAAAAGGU}{\bkmkend AAAAAAAGGU}
-00441     {\cf17 static_assert}(sv.find({\cf22 "lo, Wo"}) != std::string_view::npos);\par
-{\bkmkstart AAAAAAAGGW}{\bkmkend AAAAAAAGGW}
-00442     {\cf17 static_assert}(sv.find({\cf22 "xyz"}) == std::string_view::npos);\par
-{\bkmkstart AAAAAAAGGZ}{\bkmkend AAAAAAAGGZ}
-00443     \par
-{\bkmkstart AAAAAAAGHB}{\bkmkend AAAAAAAGHB}
-00444     {\cf20 // Runtime tests to ensure functionality works}\par
-{\bkmkstart AAAAAAAGHD}{\bkmkend AAAAAAAGHD}
-00445     EXPECT_TRUE(empty_sv.empty());\par
-{\bkmkstart AAAAAAAGHE}{\bkmkend AAAAAAAGHE}
-00446     EXPECT_EQ(empty_sv.size(), 0);\par
-{\bkmkstart AAAAAAAGHF}{\bkmkend AAAAAAAGHF}
-00447     EXPECT_EQ(single_sv.size(), 1);\par
-{\bkmkstart AAAAAAAGHG}{\bkmkend AAAAAAAGHG}
-00448     EXPECT_EQ(single_sv[0], {\cf23 'A'});\par
-{\bkmkstart AAAAAAAGHH}{\bkmkend AAAAAAAGHH}
-00449     EXPECT_EQ(pos1, 7);\par
-{\bkmkstart AAAAAAAGHI}{\bkmkend AAAAAAAGHI}
-00450     EXPECT_EQ(pos2, std::string_view::npos);\par
-{\bkmkstart AAAAAAAGHK}{\bkmkend AAAAAAAGHK}
-00451     EXPECT_EQ(sv.find({\cf22 "Hello"}), 0);\par
-{\bkmkstart AAAAAAAGHL}{\bkmkend AAAAAAAGHL}
-00452     EXPECT_EQ(sv.find({\cf22 "World!"}), 7);\par
-{\bkmkstart AAAAAAAGHN}{\bkmkend AAAAAAAGHN}
-00453     EXPECT_NE(sv.find({\cf22 "lo, Wo"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGHP}{\bkmkend AAAAAAAGHP}
-00454     EXPECT_EQ(sv.find({\cf22 "xyz"}), std::string_view::npos);\par
-{\bkmkstart AAAAAAAGHT}{\bkmkend AAAAAAAGHT}
-00455 \}\par
-{\bkmkstart AAAAAAAGHU}{\bkmkend AAAAAAAGHU}
-00456 \par
-{\bkmkstart AAAAAAAGHW}{\bkmkend AAAAAAAGHW}
-00461 TEST_F(StringViewAdvancedCoverageTest, TestStringViewPerformanceEdgeCases) \{\par
-{\bkmkstart AAAAAAAGHY}{\bkmkend AAAAAAAGHY}
-00462     {\cf20 // Test with very large string}\par
-{\bkmkstart AAAAAAAGIB}{\bkmkend AAAAAAAGIB}
-00463     std::string large_string(100000, {\cf23 'A'});\par
-{\bkmkstart AAAAAAAGIE}{\bkmkend AAAAAAAGIE}
-00464     std::string_view sv(large_string);\par
-{\bkmkstart AAAAAAAGIG}{\bkmkend AAAAAAAGIG}
-00465     \par
-{\bkmkstart AAAAAAAGIH}{\bkmkend AAAAAAAGIH}
-00466     {\cf20 // Test operations that should be fast}\par
-{\bkmkstart AAAAAAAGIJ}{\bkmkend AAAAAAAGIJ}
-00467     {\cf17 auto} start = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAAGIN}{\bkmkend AAAAAAAGIN}
-00468     \par
-{\bkmkstart AAAAAAAGIO}{\bkmkend AAAAAAAGIO}
-00469     {\cf20 // Perform many operations}\par
-{\bkmkstart AAAAAAAGIQ}{\bkmkend AAAAAAAGIQ}
-00470     {\cf19 for} ({\cf18 int} i = 0; i < 100; ++i) \{\par
-{\bkmkstart AAAAAAAGIS}{\bkmkend AAAAAAAGIS}
-00471         {\cf17 auto} sub = sv.substr(1000, 1000);\par
-{\bkmkstart AAAAAAAGIV}{\bkmkend AAAAAAAGIV}
-00472         {\cf17 auto} pos = sv.find({\cf22 "AAA"});\par
-{\bkmkstart AAAAAAAGJB}{\bkmkend AAAAAAAGJB}
-00473         {\cf17 auto} contains = sv.find({\cf22 "BBB"}) != std::string_view::npos;\par
-{\bkmkstart AAAAAAAGJE}{\bkmkend AAAAAAAGJE}
-00474         {\cf17 auto} starts = sv.find({\cf22 "AAAA"}) == 0;\par
-{\bkmkstart AAAAAAAGKA}{\bkmkend AAAAAAAGKA}
-00475         {\cf17 auto} ends = sv.find({\cf22 "AAAA"}) == (sv.size() - 4);\par
+00012 {\cf21 #include <iostream>}\par
+{\bkmkstart AAAAAAAFYT}{\bkmkend AAAAAAAFYT}
+00013 {\cf21 #include <vector>}\par
+{\bkmkstart AAAAAAAGKO}{\bkmkend AAAAAAAGKO}
+00014 {\cf21 #include <algorithm>}\par
+{\bkmkstart AAAAAAAGLE}{\bkmkend AAAAAAAGLE}
+00015 {\cf21 #include <cstring>}\par
+{\bkmkstart AAAAAAAGLR}{\bkmkend AAAAAAAGLR}
+00016 {\cf21 #include <limits>}\par
+{\bkmkstart AAAAAAAGMB}{\bkmkend AAAAAAAGMB}
+00017 {\cf21 #include <sstream>}\par
+{\bkmkstart AAAAAAAGML}{\bkmkend AAAAAAAGML}
+00018 {\cf21 #include <iomanip>}\par
+{\bkmkstart AAAAAAAGMX}{\bkmkend AAAAAAAGMX}
+00019 \par
+{\bkmkstart AAAAAAAGMY}{\bkmkend AAAAAAAGMY}
+00020 {\cf17 namespace }\{\par
+{\bkmkstart AAAAAAAGNA}{\bkmkend AAAAAAAGNA}
+00021 \par
+{\bkmkstart AAAAAAAGNC}{\bkmkend AAAAAAAGNC}
+00026 {\cf17 class }StringViewAdvancedCoverageTest : {\cf17 public} ::testing::Test \{\par
+{\bkmkstart AAAAAAAGNG}{\bkmkend AAAAAAAGNG}
+00027 {\cf17 protected}:\par
+{\bkmkstart AAAAAAAGNI}{\bkmkend AAAAAAAGNI}
+00028     {\cf18 void} SetUp(){\cf17  override }\{\par
+{\bkmkstart AAAAAAAGNN}{\bkmkend AAAAAAAGNN}
+00029         {\cf20 // Setup for each test}\par
+{\bkmkstart AAAAAAAGNO}{\bkmkend AAAAAAAGNO}
+00030     \}\par
+{\bkmkstart AAAAAAAGNP}{\bkmkend AAAAAAAGNP}
+00031     \par
+{\bkmkstart AAAAAAAGNQ}{\bkmkend AAAAAAAGNQ}
+00032     {\cf18 void} TearDown(){\cf17  override }\{\par
+{\bkmkstart AAAAAAAGNS}{\bkmkend AAAAAAAGNS}
+00033         {\cf20 // Cleanup after each test}\par
+{\bkmkstart AAAAAAAGNT}{\bkmkend AAAAAAAGNT}
+00034     \}\par
+{\bkmkstart AAAAAAAGNU}{\bkmkend AAAAAAAGNU}
+00035 \};\par
+{\bkmkstart AAAAAAAGNV}{\bkmkend AAAAAAAGNV}
+00036 \par
+{\bkmkstart AAAAAAAGNW}{\bkmkend AAAAAAAGNW}
+00041 TEST_F(StringViewAdvancedCoverageTest, TestStringViewComparisonOperators) \{\par
+{\bkmkstart AAAAAAAGNY}{\bkmkend AAAAAAAGNY}
+00042     std::string_view sv1({\cf22 "abc"});\par
+{\bkmkstart AAAAAAAGNZ}{\bkmkend AAAAAAAGNZ}
+00043     std::string_view sv2({\cf22 "def"});\par
+{\bkmkstart AAAAAAAGOA}{\bkmkend AAAAAAAGOA}
+00044     std::string_view sv3({\cf22 "abc"});\par
+{\bkmkstart AAAAAAAGOB}{\bkmkend AAAAAAAGOB}
+00045     \par
+{\bkmkstart AAAAAAAGOC}{\bkmkend AAAAAAAGOC}
+00046     {\cf20 // Test operator==}\par
+{\bkmkstart AAAAAAAGOD}{\bkmkend AAAAAAAGOD}
+00047     EXPECT_TRUE(sv1 == sv3);\par
+{\bkmkstart AAAAAAAGOE}{\bkmkend AAAAAAAGOE}
+00048     EXPECT_FALSE(sv1 == sv2);\par
+{\bkmkstart AAAAAAAGOF}{\bkmkend AAAAAAAGOF}
+00049     \par
+{\bkmkstart AAAAAAAGOG}{\bkmkend AAAAAAAGOG}
+00050     {\cf20 // Test operator!=}\par
+{\bkmkstart AAAAAAAGOH}{\bkmkend AAAAAAAGOH}
+00051     EXPECT_TRUE(sv1 != sv2);\par
+{\bkmkstart AAAAAAAGOJ}{\bkmkend AAAAAAAGOJ}
+00052     EXPECT_FALSE(sv1 != sv3);\par
+{\bkmkstart AAAAAAAGOL}{\bkmkend AAAAAAAGOL}
+00053     \par
+{\bkmkstart AAAAAAAGOM}{\bkmkend AAAAAAAGOM}
+00054     {\cf20 // Test operator<}\par
+{\bkmkstart AAAAAAAGON}{\bkmkend AAAAAAAGON}
+00055     EXPECT_TRUE(sv1 < sv2);\par
 {\bkmkstart AAAAAAAGOO}{\bkmkend AAAAAAAGOO}
-00476         (void)sub; (void)pos; (void)contains; (void)starts; (void)ends;\par
+00056     EXPECT_FALSE(sv2 < sv1);\par
+{\bkmkstart AAAAAAAGOQ}{\bkmkend AAAAAAAGOQ}
+00057     EXPECT_FALSE(sv1 < sv3);\par
+{\bkmkstart AAAAAAAGOR}{\bkmkend AAAAAAAGOR}
+00058     \par
+{\bkmkstart AAAAAAAGOS}{\bkmkend AAAAAAAGOS}
+00059     {\cf20 // Test operator<=}\par
 {\bkmkstart AAAAAAAGOT}{\bkmkend AAAAAAAGOT}
-00477     \}\par
-{\bkmkstart AAAAAAAGOU}{\bkmkend AAAAAAAGOU}
-00478     \par
+00060     EXPECT_TRUE(sv1 <= sv2);\par
 {\bkmkstart AAAAAAAGOV}{\bkmkend AAAAAAAGOV}
-00479     {\cf17 auto} end = std::chrono::high_resolution_clock::now();\par
+00061     EXPECT_TRUE(sv1 <= sv3);\par
+{\bkmkstart AAAAAAAGOW}{\bkmkend AAAAAAAGOW}
+00062     EXPECT_FALSE(sv2 <= sv1);\par
+{\bkmkstart AAAAAAAGOX}{\bkmkend AAAAAAAGOX}
+00063     \par
 {\bkmkstart AAAAAAAGOY}{\bkmkend AAAAAAAGOY}
-00480     {\cf17 auto} duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);\par
-{\bkmkstart AAAAAAAGPC}{\bkmkend AAAAAAAGPC}
-00481     \par
-{\bkmkstart AAAAAAAGPD}{\bkmkend AAAAAAAGPD}
-00482     {\cf20 // Should complete quickly}\par
+00064     {\cf20 // Test operator>}\par
+{\bkmkstart AAAAAAAGOZ}{\bkmkend AAAAAAAGOZ}
+00065     EXPECT_TRUE(sv2 > sv1);\par
+{\bkmkstart AAAAAAAGPB}{\bkmkend AAAAAAAGPB}
+00066     EXPECT_FALSE(sv1 > sv2);\par
 {\bkmkstart AAAAAAAGPE}{\bkmkend AAAAAAAGPE}
-00483     EXPECT_LT(duration.count(), 100000); {\cf20 // Less than 0.1 second}\par
+00067     EXPECT_FALSE(sv1 > sv3);\par
 {\bkmkstart AAAAAAAGPF}{\bkmkend AAAAAAAGPF}
-00484 \}\par
-{\bkmkstart AAAAAAAGPG}{\bkmkend AAAAAAAGPG}
-00485 \par
+00068     \par
 {\bkmkstart AAAAAAAGPH}{\bkmkend AAAAAAAGPH}
+00069     {\cf20 // Test operator>=}\par
+{\bkmkstart AAAAAAAGPI}{\bkmkend AAAAAAAGPI}
+00070     EXPECT_TRUE(sv2 >= sv1);\par
+{\bkmkstart AAAAAAAGPJ}{\bkmkend AAAAAAAGPJ}
+00071     EXPECT_TRUE(sv1 >= sv3);\par
+{\bkmkstart AAAAAAAGPL}{\bkmkend AAAAAAAGPL}
+00072     EXPECT_FALSE(sv1 >= sv2);\par
+{\bkmkstart AAAAAAAGPM}{\bkmkend AAAAAAAGPM}
+00073     \par
+{\bkmkstart AAAAAAAGPN}{\bkmkend AAAAAAAGPN}
+00074     {\cf20 // Test with different types}\par
+{\bkmkstart AAAAAAAGPO}{\bkmkend AAAAAAAGPO}
+00075     std::string str = {\cf22 "abc"};\par
+{\bkmkstart AAAAAAAGPR}{\bkmkend AAAAAAAGPR}
+00076     {\cf17 const} {\cf18 char}* cstr = {\cf22 "abc"};\par
+{\bkmkstart AAAAAAAGPS}{\bkmkend AAAAAAAGPS}
+00077     \par
+{\bkmkstart AAAAAAAGPT}{\bkmkend AAAAAAAGPT}
+00078     EXPECT_TRUE(sv1 == str);\par
+{\bkmkstart AAAAAAAGPU}{\bkmkend AAAAAAAGPU}
+00079     EXPECT_TRUE(sv1 == cstr);\par
+{\bkmkstart AAAAAAAGPV}{\bkmkend AAAAAAAGPV}
+00080     EXPECT_TRUE(str == sv1);\par
+{\bkmkstart AAAAAAAGPW}{\bkmkend AAAAAAAGPW}
+00081     EXPECT_TRUE(cstr == sv1);\par
+{\bkmkstart AAAAAAAGPX}{\bkmkend AAAAAAAGPX}
+00082     \par
+{\bkmkstart AAAAAAAGPY}{\bkmkend AAAAAAAGPY}
+00083     EXPECT_TRUE(sv1 != {\cf22 "def"});\par
+{\bkmkstart AAAAAAAGPZ}{\bkmkend AAAAAAAGPZ}
+00084     EXPECT_TRUE({\cf22 "def"} != sv1);\par
+{\bkmkstart AAAAAAAGQA}{\bkmkend AAAAAAAGQA}
+00085 \}\par
+{\bkmkstart AAAAAAAGQB}{\bkmkend AAAAAAAGQB}
+00086 \par
+{\bkmkstart AAAAAAAGQC}{\bkmkend AAAAAAAGQC}
+00091 TEST_F(StringViewAdvancedCoverageTest, TestStringViewStreamOutput) \{\par
+{\bkmkstart AAAAAAAGQD}{\bkmkend AAAAAAAGQD}
+00092     std::string_view sv({\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGQE}{\bkmkend AAAAAAAGQE}
+00093     std::ostringstream oss;\par
+{\bkmkstart AAAAAAAGQF}{\bkmkend AAAAAAAGQF}
+00094     \par
+{\bkmkstart AAAAAAAGQG}{\bkmkend AAAAAAAGQG}
+00095     {\cf20 // Test basic stream output}\par
+{\bkmkstart AAAAAAAGQH}{\bkmkend AAAAAAAGQH}
+00096     oss << sv;\par
+{\bkmkstart AAAAAAAGQI}{\bkmkend AAAAAAAGQI}
+00097     EXPECT_EQ(oss.str(), {\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGQJ}{\bkmkend AAAAAAAGQJ}
+00098     \par
+{\bkmkstart AAAAAAAGQK}{\bkmkend AAAAAAAGQK}
+00099     {\cf20 // Test with multiple string_views}\par
+{\bkmkstart AAAAAAAGQL}{\bkmkend AAAAAAAGQL}
+00100     oss.str({\cf22 ""});\par
+{\bkmkstart AAAAAAAGQM}{\bkmkend AAAAAAAGQM}
+00101     std::string_view sv1({\cf22 "Hello"});\par
+{\bkmkstart AAAAAAAGQN}{\bkmkend AAAAAAAGQN}
+00102     std::string_view sv2({\cf22 ", "});\par
+{\bkmkstart AAAAAAAGQO}{\bkmkend AAAAAAAGQO}
+00103     std::string_view sv3({\cf22 "World!"});\par
+{\bkmkstart AAAAAAAGQP}{\bkmkend AAAAAAAGQP}
+00104     oss << sv1 << sv2 << sv3;\par
+{\bkmkstart AAAAAAAGQQ}{\bkmkend AAAAAAAGQQ}
+00105     EXPECT_EQ(oss.str(), {\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGQR}{\bkmkend AAAAAAAGQR}
+00106     \par
+{\bkmkstart AAAAAAAGQS}{\bkmkend AAAAAAAGQS}
+00107     {\cf20 // Test with formatting}\par
+{\bkmkstart AAAAAAAGQT}{\bkmkend AAAAAAAGQT}
+00108     oss.str({\cf22 ""});\par
+{\bkmkstart AAAAAAAGQU}{\bkmkend AAAAAAAGQU}
+00109     oss << std::setw(20) << sv;\par
+{\bkmkstart AAAAAAAGQV}{\bkmkend AAAAAAAGQV}
+00110     EXPECT_EQ(oss.str().length(), 20);\par
+{\bkmkstart AAAAAAAGQW}{\bkmkend AAAAAAAGQW}
+00111     EXPECT_TRUE(oss.str().find({\cf22 "Hello, World!"}) != std::string::npos);\par
+{\bkmkstart AAAAAAAGQX}{\bkmkend AAAAAAAGQX}
+00112 \}\par
+{\bkmkstart AAAAAAAGQY}{\bkmkend AAAAAAAGQY}
+00113 \par
+{\bkmkstart AAAAAAAGQZ}{\bkmkend AAAAAAAGQZ}
+00118 TEST_F(StringViewAdvancedCoverageTest, TestStringViewConstMethods) \{\par
+{\bkmkstart AAAAAAAGRA}{\bkmkend AAAAAAAGRA}
+00119     {\cf17 const} std::string_view sv({\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGRB}{\bkmkend AAAAAAAGRB}
+00120     \par
+{\bkmkstart AAAAAAAGRC}{\bkmkend AAAAAAAGRC}
+00121     {\cf20 // Test const access methods}\par
+{\bkmkstart AAAAAAAGRD}{\bkmkend AAAAAAAGRD}
+00122     EXPECT_EQ(sv[0], {\cf23 'H'});\par
+{\bkmkstart AAAAAAAGRE}{\bkmkend AAAAAAAGRE}
+00123     EXPECT_EQ(sv.at(0), {\cf23 'H'});\par
+{\bkmkstart AAAAAAAGRF}{\bkmkend AAAAAAAGRF}
+00124     EXPECT_EQ(sv.front(), {\cf23 'H'});\par
+{\bkmkstart AAAAAAAGRG}{\bkmkend AAAAAAAGRG}
+00125     EXPECT_EQ(sv.back(), {\cf23 '!'});\par
+{\bkmkstart AAAAAAAGRH}{\bkmkend AAAAAAAGRH}
+00126     EXPECT_EQ(sv.data()[0], {\cf23 'H'});\par
+{\bkmkstart AAAAAAAGRI}{\bkmkend AAAAAAAGRI}
+00127     \par
+{\bkmkstart AAAAAAAGRJ}{\bkmkend AAAAAAAGRJ}
+00128     {\cf20 // Test const size methods}\par
+{\bkmkstart AAAAAAAGRK}{\bkmkend AAAAAAAGRK}
+00129     EXPECT_EQ(sv.size(), 13);\par
+{\bkmkstart AAAAAAAGRL}{\bkmkend AAAAAAAGRL}
+00130     EXPECT_EQ(sv.length(), 13);\par
+{\bkmkstart AAAAAAAGRM}{\bkmkend AAAAAAAGRM}
+00131     EXPECT_FALSE(sv.empty());\par
+{\bkmkstart AAAAAAAGRN}{\bkmkend AAAAAAAGRN}
+00132     \par
+{\bkmkstart AAAAAAAGRO}{\bkmkend AAAAAAAGRO}
+00133     {\cf20 // Test const iterator methods}\par
+{\bkmkstart AAAAAAAGRP}{\bkmkend AAAAAAAGRP}
+00134     EXPECT_NE(sv.begin(), sv.end());\par
+{\bkmkstart AAAAAAAGRQ}{\bkmkend AAAAAAAGRQ}
+00135     EXPECT_NE(sv.cbegin(), sv.cend());\par
+{\bkmkstart AAAAAAAGRR}{\bkmkend AAAAAAAGRR}
+00136     EXPECT_NE(sv.rbegin(), sv.rend());\par
+{\bkmkstart AAAAAAAGRS}{\bkmkend AAAAAAAGRS}
+00137     EXPECT_NE(sv.crbegin(), sv.crend());\par
+{\bkmkstart AAAAAAAGRT}{\bkmkend AAAAAAAGRT}
+00138     \par
+{\bkmkstart AAAAAAAGRU}{\bkmkend AAAAAAAGRU}
+00139     {\cf20 // Test const find methods}\par
+{\bkmkstart AAAAAAAGRV}{\bkmkend AAAAAAAGRV}
+00140     EXPECT_EQ(sv.find({\cf23 'H'}), 0);\par
+{\bkmkstart AAAAAAAGRW}{\bkmkend AAAAAAAGRW}
+00141     EXPECT_EQ(sv.find({\cf22 "Hello"}), 0);\par
+{\bkmkstart AAAAAAAGRX}{\bkmkend AAAAAAAGRX}
+00142     EXPECT_EQ(sv.rfind({\cf23 '!'}), 12);\par
+{\bkmkstart AAAAAAAGRY}{\bkmkend AAAAAAAGRY}
+00143     EXPECT_EQ(sv.find_first_of({\cf22 "aeiou"}), 1);\par
+{\bkmkstart AAAAAAAGRZ}{\bkmkend AAAAAAAGRZ}
+00144     EXPECT_EQ(sv.find_last_of({\cf22 "aeiou"}), 8);\par
+{\bkmkstart AAAAAAAGSA}{\bkmkend AAAAAAAGSA}
+00145     EXPECT_EQ(sv.find_first_not_of({\cf22 "H"}), 1);\par
+{\bkmkstart AAAAAAAGSB}{\bkmkend AAAAAAAGSB}
+00146     EXPECT_EQ(sv.find_last_not_of({\cf22 "!"}), 11);\par
+{\bkmkstart AAAAAAAGSC}{\bkmkend AAAAAAAGSC}
+00147     \par
+{\bkmkstart AAAAAAAGSD}{\bkmkend AAAAAAAGSD}
+00148     {\cf20 // Test const contains methods using find}\par
+{\bkmkstart AAAAAAAGSE}{\bkmkend AAAAAAAGSE}
+00149     EXPECT_NE(sv.find({\cf23 'H'}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGSF}{\bkmkend AAAAAAAGSF}
+00150     EXPECT_NE(sv.find({\cf22 "Hello"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGSG}{\bkmkend AAAAAAAGSG}
+00151     EXPECT_EQ(sv.find({\cf22 "Hello"}), 0);\par
+{\bkmkstart AAAAAAAGSH}{\bkmkend AAAAAAAGSH}
+00152     EXPECT_EQ(sv.find({\cf22 "World!"}), 7);\par
+{\bkmkstart AAAAAAAGSI}{\bkmkend AAAAAAAGSI}
+00153 \}\par
+{\bkmkstart AAAAAAAGSJ}{\bkmkend AAAAAAAGSJ}
+00154 \par
+{\bkmkstart AAAAAAAGSK}{\bkmkend AAAAAAAGSK}
+00159 TEST_F(StringViewAdvancedCoverageTest, TestStringViewSubstrEdgeCases) \{\par
+{\bkmkstart AAAAAAAGSL}{\bkmkend AAAAAAAGSL}
+00160     std::string_view sv({\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGSM}{\bkmkend AAAAAAAGSM}
+00161     \par
+{\bkmkstart AAAAAAAGSN}{\bkmkend AAAAAAAGSN}
+00162     {\cf20 // Test substr with zero length}\par
+{\bkmkstart AAAAAAAGSO}{\bkmkend AAAAAAAGSO}
+00163     std::string_view sub1 = sv.substr(0, 0);\par
+{\bkmkstart AAAAAAAGSP}{\bkmkend AAAAAAAGSP}
+00164     EXPECT_TRUE(sub1.empty());\par
+{\bkmkstart AAAAAAAGSQ}{\bkmkend AAAAAAAGSQ}
+00165     EXPECT_EQ(sub1.size(), 0);\par
+{\bkmkstart AAAAAAAGSS}{\bkmkend AAAAAAAGSS}
+00166     \par
+{\bkmkstart AAAAAAAGSU}{\bkmkend AAAAAAAGSU}
+00167     {\cf20 // Test substr with length beyond string}\par
+{\bkmkstart AAAAAAAGSV}{\bkmkend AAAAAAAGSV}
+00168     std::string_view sub2 = sv.substr(10, 100);\par
+{\bkmkstart AAAAAAAGSX}{\bkmkend AAAAAAAGSX}
+00169     EXPECT_EQ(sub2, {\cf22 "d!"});\par
+{\bkmkstart AAAAAAAGSY}{\bkmkend AAAAAAAGSY}
+00170     EXPECT_EQ(sub2.size(), 3);\par
+{\bkmkstart AAAAAAAGSZ}{\bkmkend AAAAAAAGSZ}
+00171     \par
+{\bkmkstart AAAAAAAGTB}{\bkmkend AAAAAAAGTB}
+00172     {\cf20 // Test substr at end of string}\par
+{\bkmkstart AAAAAAAGTC}{\bkmkend AAAAAAAGTC}
+00173     std::string_view sub3 = sv.substr(12, 1);\par
+{\bkmkstart AAAAAAAGTH}{\bkmkend AAAAAAAGTH}
+00174     EXPECT_EQ(sub3, {\cf22 "!"});\par
+{\bkmkstart AAAAAAAGTI}{\bkmkend AAAAAAAGTI}
+00175     EXPECT_EQ(sub3.size(), 1);\par
+{\bkmkstart AAAAAAAGTK}{\bkmkend AAAAAAAGTK}
+00176     \par
+{\bkmkstart AAAAAAAGTL}{\bkmkend AAAAAAAGTL}
+00177     {\cf20 // Test substr with npos}\par
+{\bkmkstart AAAAAAAGTM}{\bkmkend AAAAAAAGTM}
+00178     std::string_view sub4 = sv.substr(std::string_view::npos);\par
+{\bkmkstart AAAAAAAGTQ}{\bkmkend AAAAAAAGTQ}
+00179     EXPECT_TRUE(sub4.empty());\par
+{\bkmkstart AAAAAAAGTS}{\bkmkend AAAAAAAGTS}
+00180     \par
+{\bkmkstart AAAAAAAGTT}{\bkmkend AAAAAAAGTT}
+00181     {\cf20 // Test substr with very large position}\par
+{\bkmkstart AAAAAAAGTU}{\bkmkend AAAAAAAGTU}
+00182     std::string_view sub5 = sv.substr(1000);\par
+{\bkmkstart AAAAAAAGTV}{\bkmkend AAAAAAAGTV}
+00183     EXPECT_TRUE(sub5.empty());\par
+{\bkmkstart AAAAAAAGTW}{\bkmkend AAAAAAAGTW}
+00184 \}\par
+{\bkmkstart AAAAAAAGTX}{\bkmkend AAAAAAAGTX}
+00185 \par
+{\bkmkstart AAAAAAAGTY}{\bkmkend AAAAAAAGTY}
+00190 TEST_F(StringViewAdvancedCoverageTest, TestStringViewFindEdgeCases) \{\par
+{\bkmkstart AAAAAAAGTZ}{\bkmkend AAAAAAAGTZ}
+00191     std::string_view sv({\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGUA}{\bkmkend AAAAAAAGUA}
+00192     \par
+{\bkmkstart AAAAAAAGUB}{\bkmkend AAAAAAAGUB}
+00193     {\cf20 // Test find with empty string}\par
+{\bkmkstart AAAAAAAGUC}{\bkmkend AAAAAAAGUC}
+00194     std::string_view empty_sv;\par
+{\bkmkstart AAAAAAAGUD}{\bkmkend AAAAAAAGUD}
+00195     EXPECT_EQ(empty_sv.find({\cf23 'H'}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGUE}{\bkmkend AAAAAAAGUE}
+00196     EXPECT_EQ(empty_sv.find({\cf22 "Hello"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGUF}{\bkmkend AAAAAAAGUF}
+00197     \par
+{\bkmkstart AAAAAAAGUG}{\bkmkend AAAAAAAGUG}
+00198     {\cf20 // Test find with position beyond string}\par
+{\bkmkstart AAAAAAAGUH}{\bkmkend AAAAAAAGUH}
+00199     EXPECT_EQ(sv.find({\cf23 'H'}, 100), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGUI}{\bkmkend AAAAAAAGUI}
+00200     EXPECT_EQ(sv.find({\cf22 "Hello"}, 100), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGUJ}{\bkmkend AAAAAAAGUJ}
+00201     \par
+{\bkmkstart AAAAAAAGUK}{\bkmkend AAAAAAAGUK}
+00202     {\cf20 // Test find with empty search string}\par
+{\bkmkstart AAAAAAAGUL}{\bkmkend AAAAAAAGUL}
+00203     EXPECT_EQ(sv.find({\cf22 ""}), 0);\par
+{\bkmkstart AAAAAAAGUM}{\bkmkend AAAAAAAGUM}
+00204     EXPECT_EQ(sv.find({\cf22 ""}, 5), 5);\par
+{\bkmkstart AAAAAAAGUN}{\bkmkend AAAAAAAGUN}
+00205     \par
+{\bkmkstart AAAAAAAGUO}{\bkmkend AAAAAAAGUO}
+00206     {\cf20 // Test find with single character at boundaries}\par
+{\bkmkstart AAAAAAAGUP}{\bkmkend AAAAAAAGUP}
+00207     EXPECT_EQ(sv.find({\cf23 'H'}), 0);\par
+{\bkmkstart AAAAAAAGUQ}{\bkmkend AAAAAAAGUQ}
+00208     EXPECT_EQ(sv.find({\cf23 '!'}), 12);\par
+{\bkmkstart AAAAAAAGUR}{\bkmkend AAAAAAAGUR}
+00209     \par
+{\bkmkstart AAAAAAAGUS}{\bkmkend AAAAAAAGUS}
+00210     {\cf20 // Test find with repeated characters}\par
+{\bkmkstart AAAAAAAGUT}{\bkmkend AAAAAAAGUT}
+00211     std::string_view repeated({\cf22 "aaa"});\par
+{\bkmkstart AAAAAAAGUU}{\bkmkend AAAAAAAGUU}
+00212     EXPECT_EQ(repeated.find({\cf23 'a'}), 0);\par
+{\bkmkstart AAAAAAAGUV}{\bkmkend AAAAAAAGUV}
+00213     EXPECT_EQ(repeated.find({\cf23 'a'}, 1), 1);\par
+{\bkmkstart AAAAAAAGUW}{\bkmkend AAAAAAAGUW}
+00214     EXPECT_EQ(repeated.find({\cf23 'a'}, 2), 2);\par
+{\bkmkstart AAAAAAAGUX}{\bkmkend AAAAAAAGUX}
+00215     EXPECT_EQ(repeated.find({\cf23 'a'}, 3), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGUY}{\bkmkend AAAAAAAGUY}
+00216 \}\par
+{\bkmkstart AAAAAAAGUZ}{\bkmkend AAAAAAAGUZ}
+00217 \par
+{\bkmkstart AAAAAAAGVA}{\bkmkend AAAAAAAGVA}
+00222 TEST_F(StringViewAdvancedCoverageTest, TestStringViewCopyEdgeCases) \{\par
+{\bkmkstart AAAAAAAGVB}{\bkmkend AAAAAAAGVB}
+00223     std::string_view sv({\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGVC}{\bkmkend AAAAAAAGVC}
+00224     {\cf18 char} buffer[20];\par
+{\bkmkstart AAAAAAAGVD}{\bkmkend AAAAAAAGVD}
+00225     \par
+{\bkmkstart AAAAAAAGVE}{\bkmkend AAAAAAAGVE}
+00226     {\cf20 // Test copy with zero length}\par
+{\bkmkstart AAAAAAAGVF}{\bkmkend AAAAAAAGVF}
+00227     {\cf18 size_t} copied = sv.copy(buffer, 0);\par
+{\bkmkstart AAAAAAAGVG}{\bkmkend AAAAAAAGVG}
+00228     EXPECT_EQ(copied, 0);\par
+{\bkmkstart AAAAAAAGVH}{\bkmkend AAAAAAAGVH}
+00229     \par
+{\bkmkstart AAAAAAAGVI}{\bkmkend AAAAAAAGVI}
+00230     {\cf20 // Test copy with position beyond string}\par
+{\bkmkstart AAAAAAAGVJ}{\bkmkend AAAAAAAGVJ}
+00231     copied = sv.copy(buffer, 5, 100);\par
+{\bkmkstart AAAAAAAGVK}{\bkmkend AAAAAAAGVK}
+00232     EXPECT_EQ(copied, 0);\par
+{\bkmkstart AAAAAAAGVL}{\bkmkend AAAAAAAGVL}
+00233     \par
+{\bkmkstart AAAAAAAGVM}{\bkmkend AAAAAAAGVM}
+00234     {\cf20 // Test copy with npos position}\par
+{\bkmkstart AAAAAAAGVN}{\bkmkend AAAAAAAGVN}
+00235     copied = sv.copy(buffer, 5, std::string_view::npos);\par
+{\bkmkstart AAAAAAAGVO}{\bkmkend AAAAAAAGVO}
+00236     EXPECT_EQ(copied, 0);\par
+{\bkmkstart AAAAAAAGVP}{\bkmkend AAAAAAAGVP}
+00237     \par
+{\bkmkstart AAAAAAAGVQ}{\bkmkend AAAAAAAGVQ}
+00238     {\cf20 // Test copy with exact length}\par
+{\bkmkstart AAAAAAAGVR}{\bkmkend AAAAAAAGVR}
+00239     copied = sv.copy(buffer, sv.size());\par
+{\bkmkstart AAAAAAAGVS}{\bkmkend AAAAAAAGVS}
+00240     EXPECT_EQ(copied, sv.size());\par
+{\bkmkstart AAAAAAAGVT}{\bkmkend AAAAAAAGVT}
+00241     buffer[copied] = {\cf23 '\\0'};\par
+{\bkmkstart AAAAAAAGVU}{\bkmkend AAAAAAAGVU}
+00242     EXPECT_STREQ(buffer, {\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGVV}{\bkmkend AAAAAAAGVV}
+00243     \par
+{\bkmkstart AAAAAAAGVW}{\bkmkend AAAAAAAGVW}
+00244     {\cf20 // Test copy with small buffer}\par
+{\bkmkstart AAAAAAAGVX}{\bkmkend AAAAAAAGVX}
+00245     {\cf18 char} small_buffer[3];\par
+{\bkmkstart AAAAAAAGVY}{\bkmkend AAAAAAAGVY}
+00246     copied = sv.copy(small_buffer, 2);\par
+{\bkmkstart AAAAAAAGVZ}{\bkmkend AAAAAAAGVZ}
+00247     EXPECT_EQ(copied, 2);\par
+{\bkmkstart AAAAAAAGWA}{\bkmkend AAAAAAAGWA}
+00248     small_buffer[copied] = {\cf23 '\\0'};\par
+{\bkmkstart AAAAAAAGWB}{\bkmkend AAAAAAAGWB}
+00249     EXPECT_STREQ(small_buffer, {\cf22 "He"});\par
+{\bkmkstart AAAAAAAGWC}{\bkmkend AAAAAAAGWC}
+00250 \}\par
+{\bkmkstart AAAAAAAGWD}{\bkmkend AAAAAAAGWD}
+00251 \par
+{\bkmkstart AAAAAAAGWE}{\bkmkend AAAAAAAGWE}
+00256 TEST_F(StringViewAdvancedCoverageTest, TestStringViewStartsWithEndsWithEdgeCases) \{\par
+{\bkmkstart AAAAAAAGWF}{\bkmkend AAAAAAAGWF}
+00257     std::string_view sv({\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGWG}{\bkmkend AAAAAAAGWG}
+00258     \par
+{\bkmkstart AAAAAAAGWH}{\bkmkend AAAAAAAGWH}
+00259     {\cf20 // Test with empty string_view}\par
+{\bkmkstart AAAAAAAGWI}{\bkmkend AAAAAAAGWI}
+00260     std::string_view empty_sv;\par
+{\bkmkstart AAAAAAAGWJ}{\bkmkend AAAAAAAGWJ}
+00261     EXPECT_EQ(empty_sv.find({\cf22 ""}), 0);\par
+{\bkmkstart AAAAAAAGWK}{\bkmkend AAAAAAAGWK}
+00262     EXPECT_EQ(empty_sv.find({\cf22 ""}), 0);\par
+{\bkmkstart AAAAAAAGWL}{\bkmkend AAAAAAAGWL}
+00263     EXPECT_EQ(empty_sv.find({\cf22 "Hello"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGWM}{\bkmkend AAAAAAAGWM}
+00264     EXPECT_EQ(empty_sv.find({\cf22 "World!"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGWN}{\bkmkend AAAAAAAGWN}
+00265     \par
+{\bkmkstart AAAAAAAGWO}{\bkmkend AAAAAAAGWO}
+00266     {\cf20 // Test with empty search string}\par
+{\bkmkstart AAAAAAAGWP}{\bkmkend AAAAAAAGWP}
+00267     EXPECT_EQ(sv.find({\cf22 ""}), 0);\par
+{\bkmkstart AAAAAAAGWQ}{\bkmkend AAAAAAAGWQ}
+00268     EXPECT_EQ(sv.find({\cf22 ""}), 0);\par
+{\bkmkstart AAAAAAAGWR}{\bkmkend AAAAAAAGWR}
+00269     \par
+{\bkmkstart AAAAAAAGWS}{\bkmkend AAAAAAAGWS}
+00270     {\cf20 // Test with exact match}\par
+{\bkmkstart AAAAAAAGWT}{\bkmkend AAAAAAAGWT}
+00271     EXPECT_EQ(sv.find({\cf22 "Hello, World!"}), 0);\par
+{\bkmkstart AAAAAAAGWU}{\bkmkend AAAAAAAGWU}
+00272     EXPECT_EQ(sv.find({\cf22 "Hello, World!"}), 0);\par
+{\bkmkstart AAAAAAAGWV}{\bkmkend AAAAAAAGWV}
+00273     \par
+{\bkmkstart AAAAAAAGWW}{\bkmkend AAAAAAAGWW}
+00274     {\cf20 // Test with longer search string}\par
+{\bkmkstart AAAAAAAGWX}{\bkmkend AAAAAAAGWX}
+00275     EXPECT_EQ(sv.find({\cf22 "Hello, World! Extra"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGWY}{\bkmkend AAAAAAAGWY}
+00276     EXPECT_EQ(sv.find({\cf22 "Extra Hello, World!"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGWZ}{\bkmkend AAAAAAAGWZ}
+00277     \par
+{\bkmkstart AAAAAAAGXA}{\bkmkend AAAAAAAGXA}
+00278     {\cf20 // Test with single character}\par
+{\bkmkstart AAAAAAAGXB}{\bkmkend AAAAAAAGXB}
+00279     EXPECT_EQ(sv.find({\cf23 'H'}), 0);\par
+{\bkmkstart AAAAAAAGXC}{\bkmkend AAAAAAAGXC}
+00280     EXPECT_EQ(sv.find({\cf23 '!'}), 12);\par
+{\bkmkstart AAAAAAAGXD}{\bkmkend AAAAAAAGXD}
+00281     EXPECT_EQ(sv.find({\cf23 'h'}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGXE}{\bkmkend AAAAAAAGXE}
+00282     EXPECT_EQ(sv.find({\cf23 '?'}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGXF}{\bkmkend AAAAAAAGXF}
+00283 \}\par
+{\bkmkstart AAAAAAAGXG}{\bkmkend AAAAAAAGXG}
+00284 \par
+{\bkmkstart AAAAAAAGXH}{\bkmkend AAAAAAAGXH}
+00289 TEST_F(StringViewAdvancedCoverageTest, TestStringViewContainsEdgeCases) \{\par
+{\bkmkstart AAAAAAAGXI}{\bkmkend AAAAAAAGXI}
+00290     std::string_view sv({\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGXJ}{\bkmkend AAAAAAAGXJ}
+00291     \par
+{\bkmkstart AAAAAAAGXK}{\bkmkend AAAAAAAGXK}
+00292     {\cf20 // Test with empty string_view}\par
+{\bkmkstart AAAAAAAGXL}{\bkmkend AAAAAAAGXL}
+00293     std::string_view empty_sv;\par
+{\bkmkstart AAAAAAAGXM}{\bkmkend AAAAAAAGXM}
+00294     EXPECT_NE(empty_sv.find({\cf22 ""}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGXN}{\bkmkend AAAAAAAGXN}
+00295     EXPECT_EQ(empty_sv.find({\cf22 "Hello"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGXO}{\bkmkend AAAAAAAGXO}
+00296     \par
+{\bkmkstart AAAAAAAGXP}{\bkmkend AAAAAAAGXP}
+00297     {\cf20 // Test with empty search string}\par
+{\bkmkstart AAAAAAAGXQ}{\bkmkend AAAAAAAGXQ}
+00298     EXPECT_NE(sv.find({\cf22 ""}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGXR}{\bkmkend AAAAAAAGXR}
+00299     \par
+{\bkmkstart AAAAAAAGXS}{\bkmkend AAAAAAAGXS}
+00300     {\cf20 // Test with exact match}\par
+{\bkmkstart AAAAAAAGXT}{\bkmkend AAAAAAAGXT}
+00301     EXPECT_NE(sv.find({\cf22 "Hello, World!"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGXU}{\bkmkend AAAAAAAGXU}
+00302     \par
+{\bkmkstart AAAAAAAGXV}{\bkmkend AAAAAAAGXV}
+00303     {\cf20 // Test with longer search string}\par
+{\bkmkstart AAAAAAAGXW}{\bkmkend AAAAAAAGXW}
+00304     EXPECT_EQ(sv.find({\cf22 "Hello, World! Extra"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGXX}{\bkmkend AAAAAAAGXX}
+00305     \par
+{\bkmkstart AAAAAAAGXY}{\bkmkend AAAAAAAGXY}
+00306     {\cf20 // Test with single character}\par
+{\bkmkstart AAAAAAAGXZ}{\bkmkend AAAAAAAGXZ}
+00307     EXPECT_NE(sv.find({\cf23 'H'}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGYB}{\bkmkend AAAAAAAGYB}
+00308     EXPECT_NE(sv.find({\cf23 '!'}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGYC}{\bkmkend AAAAAAAGYC}
+00309     EXPECT_EQ(sv.find({\cf23 'z'}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGYE}{\bkmkend AAAAAAAGYE}
+00310     \par
+{\bkmkstart AAAAAAAGYF}{\bkmkend AAAAAAAGYF}
+00311     {\cf20 // Test with repeated characters}\par
+{\bkmkstart AAAAAAAGYG}{\bkmkend AAAAAAAGYG}
+00312     std::string_view repeated({\cf22 "aaa"});\par
+{\bkmkstart AAAAAAAGYI}{\bkmkend AAAAAAAGYI}
+00313     EXPECT_NE(repeated.find({\cf23 'a'}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGYJ}{\bkmkend AAAAAAAGYJ}
+00314     EXPECT_NE(repeated.find({\cf22 "aa"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGYK}{\bkmkend AAAAAAAGYK}
+00315     EXPECT_EQ(repeated.find({\cf23 'b'}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAGYL}{\bkmkend AAAAAAAGYL}
+00316 \}\par
+{\bkmkstart AAAAAAAGYM}{\bkmkend AAAAAAAGYM}
+00317 \par
+{\bkmkstart AAAAAAAGYN}{\bkmkend AAAAAAAGYN}
+00322 TEST_F(StringViewAdvancedCoverageTest, TestStringViewRemovePrefixSuffixEdgeCases) \{\par
+{\bkmkstart AAAAAAAGYP}{\bkmkend AAAAAAAGYP}
+00323     std::string_view sv({\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGYS}{\bkmkend AAAAAAAGYS}
+00324     \par
+{\bkmkstart AAAAAAAGYU}{\bkmkend AAAAAAAGYU}
+00325     {\cf20 // Test remove_prefix with zero}\par
+{\bkmkstart AAAAAAAGYV}{\bkmkend AAAAAAAGYV}
+00326     sv.remove_prefix(0);\par
+{\bkmkstart AAAAAAAGYW}{\bkmkend AAAAAAAGYW}
+00327     EXPECT_EQ(sv, {\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGYX}{\bkmkend AAAAAAAGYX}
+00328     \par
+{\bkmkstart AAAAAAAGYY}{\bkmkend AAAAAAAGYY}
+00329     {\cf20 // Test remove_suffix with zero}\par
+{\bkmkstart AAAAAAAGYZ}{\bkmkend AAAAAAAGYZ}
+00330     sv.remove_suffix(0);\par
+{\bkmkstart AAAAAAAGZA}{\bkmkend AAAAAAAGZA}
+00331     EXPECT_EQ(sv, {\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAGZB}{\bkmkend AAAAAAAGZB}
+00332     \par
+{\bkmkstart AAAAAAAGZD}{\bkmkend AAAAAAAGZD}
+00333     {\cf20 // Test remove_prefix with full length}\par
+{\bkmkstart AAAAAAAGZE}{\bkmkend AAAAAAAGZE}
+00334     sv.remove_prefix(sv.size());\par
+{\bkmkstart AAAAAAAGZH}{\bkmkend AAAAAAAGZH}
+00335     EXPECT_TRUE(sv.empty());\par
+{\bkmkstart AAAAAAAGZK}{\bkmkend AAAAAAAGZK}
+00336     \par
+{\bkmkstart AAAAAAAGZL}{\bkmkend AAAAAAAGZL}
+00337     {\cf20 // Reset and test remove_suffix with full length}\par
+{\bkmkstart AAAAAAAGZM}{\bkmkend AAAAAAAGZM}
+00338     sv = {\cf22 "Hello, World!"};\par
+{\bkmkstart AAAAAAAGZN}{\bkmkend AAAAAAAGZN}
+00339     sv.remove_suffix(sv.size());\par
+{\bkmkstart AAAAAAAGZP}{\bkmkend AAAAAAAGZP}
+00340     EXPECT_TRUE(sv.empty());\par
+{\bkmkstart AAAAAAAGZQ}{\bkmkend AAAAAAAGZQ}
+00341     \par
+{\bkmkstart AAAAAAAGZR}{\bkmkend AAAAAAAGZR}
+00342     {\cf20 // Test with empty string_view}\par
+{\bkmkstart AAAAAAAGZS}{\bkmkend AAAAAAAGZS}
+00343     std::string_view empty_sv;\par
+{\bkmkstart AAAAAAAGZT}{\bkmkend AAAAAAAGZT}
+00344     empty_sv.remove_prefix(0);\par
+{\bkmkstart AAAAAAAGZU}{\bkmkend AAAAAAAGZU}
+00345     empty_sv.remove_suffix(0);\par
+{\bkmkstart AAAAAAAGZX}{\bkmkend AAAAAAAGZX}
+00346     EXPECT_TRUE(empty_sv.empty());\par
+{\bkmkstart AAAAAAAHAA}{\bkmkend AAAAAAAHAA}
+00347 \}\par
+{\bkmkstart AAAAAAAHAB}{\bkmkend AAAAAAAHAB}
+00348 \par
+{\bkmkstart AAAAAAAHAC}{\bkmkend AAAAAAAHAC}
+00353 TEST_F(StringViewAdvancedCoverageTest, TestStringViewHashEdgeCases) \{\par
+{\bkmkstart AAAAAAAHAG}{\bkmkend AAAAAAAHAG}
+00354     std::hash<std::string_view> hasher;\par
+{\bkmkstart AAAAAAAHAJ}{\bkmkend AAAAAAAHAJ}
+00355     \par
+{\bkmkstart AAAAAAAHAK}{\bkmkend AAAAAAAHAK}
+00356     {\cf20 // Test empty string_view}\par
+{\bkmkstart AAAAAAAHAL}{\bkmkend AAAAAAAHAL}
+00357     std::string_view empty_sv;\par
+{\bkmkstart AAAAAAAHAO}{\bkmkend AAAAAAAHAO}
+00358     {\cf17 auto} empty_hash = hasher(empty_sv);\par
+{\bkmkstart AAAAAAAHAQ}{\bkmkend AAAAAAAHAQ}
+00359     EXPECT_EQ(empty_hash, hasher(empty_sv));\par
+{\bkmkstart AAAAAAAHAY}{\bkmkend AAAAAAAHAY}
+00360     \par
+{\bkmkstart AAAAAAAHAZ}{\bkmkend AAAAAAAHAZ}
+00361     {\cf20 // Test single character}\par
+{\bkmkstart AAAAAAAHBA}{\bkmkend AAAAAAAHBA}
+00362     std::string_view single_sv({\cf22 "A"});\par
+{\bkmkstart AAAAAAAHBD}{\bkmkend AAAAAAAHBD}
+00363     {\cf17 auto} single_hash = hasher(single_sv);\par
+{\bkmkstart AAAAAAAHBG}{\bkmkend AAAAAAAHBG}
+00364     EXPECT_NE(empty_hash, single_hash);\par
+{\bkmkstart AAAAAAAHBH}{\bkmkend AAAAAAAHBH}
+00365     \par
+{\bkmkstart AAAAAAAHBJ}{\bkmkend AAAAAAAHBJ}
+00366     {\cf20 // Test same content different sources}\par
+{\bkmkstart AAAAAAAHBK}{\bkmkend AAAAAAAHBK}
+00367     std::string str = {\cf22 "Hello"};\par
+{\bkmkstart AAAAAAAHBL}{\bkmkend AAAAAAAHBL}
+00368     {\cf17 const} {\cf18 char}* cstr = {\cf22 "Hello"};\par
+{\bkmkstart AAAAAAAHBN}{\bkmkend AAAAAAAHBN}
+00369     std::string_view sv1(str);\par
+{\bkmkstart AAAAAAAHBR}{\bkmkend AAAAAAAHBR}
+00370     std::string_view sv2(cstr);\par
+{\bkmkstart AAAAAAAHBT}{\bkmkend AAAAAAAHBT}
+00371     \par
+{\bkmkstart AAAAAAAHBU}{\bkmkend AAAAAAAHBU}
+00372     EXPECT_EQ(hasher(sv1), hasher(sv2));\par
+{\bkmkstart AAAAAAAHBZ}{\bkmkend AAAAAAAHBZ}
+00373     \par
+{\bkmkstart AAAAAAAHCA}{\bkmkend AAAAAAAHCA}
+00374     {\cf20 // Test different content same length}\par
+{\bkmkstart AAAAAAAHCC}{\bkmkend AAAAAAAHCC}
+00375     std::string_view sv3({\cf22 "Hello"});\par
+{\bkmkstart AAAAAAAHCJ}{\bkmkend AAAAAAAHCJ}
+00376     std::string_view sv4({\cf22 "World"});\par
+{\bkmkstart AAAAAAAHCL}{\bkmkend AAAAAAAHCL}
+00377     EXPECT_NE(hasher(sv3), hasher(sv4));\par
+{\bkmkstart AAAAAAAHCO}{\bkmkend AAAAAAAHCO}
+00378 \}\par
+{\bkmkstart AAAAAAAHCQ}{\bkmkend AAAAAAAHCQ}
+00379 \par
+{\bkmkstart AAAAAAAHCR}{\bkmkend AAAAAAAHCR}
+00384 TEST_F(StringViewAdvancedCoverageTest, TestStringViewIteratorEdgeCases) \{\par
+{\bkmkstart AAAAAAAHCT}{\bkmkend AAAAAAAHCT}
+00385     {\cf20 // Test empty string_view iterators}\par
+{\bkmkstart AAAAAAAHCV}{\bkmkend AAAAAAAHCV}
+00386     std::string_view empty_sv;\par
+{\bkmkstart AAAAAAAHCW}{\bkmkend AAAAAAAHCW}
+00387     EXPECT_EQ(empty_sv.begin(), empty_sv.end());\par
+{\bkmkstart AAAAAAAHCY}{\bkmkend AAAAAAAHCY}
+00388     EXPECT_EQ(empty_sv.cbegin(), empty_sv.cend());\par
+{\bkmkstart AAAAAAAHDA}{\bkmkend AAAAAAAHDA}
+00389     EXPECT_EQ(empty_sv.rbegin(), empty_sv.rend());\par
+{\bkmkstart AAAAAAAHDC}{\bkmkend AAAAAAAHDC}
+00390     EXPECT_EQ(empty_sv.crbegin(), empty_sv.crend());\par
+{\bkmkstart AAAAAAAHDE}{\bkmkend AAAAAAAHDE}
+00391     \par
+{\bkmkstart AAAAAAAHDF}{\bkmkend AAAAAAAHDF}
+00392     {\cf20 // Test single character iterators}\par
+{\bkmkstart AAAAAAAHDG}{\bkmkend AAAAAAAHDG}
+00393     std::string_view single_sv({\cf22 "A"});\par
+{\bkmkstart AAAAAAAHDJ}{\bkmkend AAAAAAAHDJ}
+00394     EXPECT_NE(single_sv.begin(), single_sv.end());\par
+{\bkmkstart AAAAAAAHDM}{\bkmkend AAAAAAAHDM}
+00395     EXPECT_EQ(single_sv.begin() + 1, single_sv.end());\par
+{\bkmkstart AAAAAAAHDP}{\bkmkend AAAAAAAHDP}
+00396     EXPECT_EQ(*single_sv.begin(), {\cf23 'A'});\par
+{\bkmkstart AAAAAAAHDR}{\bkmkend AAAAAAAHDR}
+00397     EXPECT_EQ(*(single_sv.end() - 1), {\cf23 'A'});\par
+{\bkmkstart AAAAAAAHDT}{\bkmkend AAAAAAAHDT}
+00398     \par
+{\bkmkstart AAAAAAAHDV}{\bkmkend AAAAAAAHDV}
+00399     {\cf20 // Test reverse iterators}\par
+{\bkmkstart AAAAAAAHDY}{\bkmkend AAAAAAAHDY}
+00400     std::string_view sv({\cf22 "ABC"});\par
+{\bkmkstart AAAAAAAHDZ}{\bkmkend AAAAAAAHDZ}
+00401     {\cf17 auto} rit = sv.rbegin();\par
+{\bkmkstart AAAAAAAHEB}{\bkmkend AAAAAAAHEB}
+00402     EXPECT_EQ(*rit, {\cf23 'C'});\par
+{\bkmkstart AAAAAAAHEC}{\bkmkend AAAAAAAHEC}
+00403     ++rit;\par
+{\bkmkstart AAAAAAAHED}{\bkmkend AAAAAAAHED}
+00404     EXPECT_EQ(*rit, {\cf23 'B'});\par
+{\bkmkstart AAAAAAAHEE}{\bkmkend AAAAAAAHEE}
+00405     ++rit;\par
+{\bkmkstart AAAAAAAHEH}{\bkmkend AAAAAAAHEH}
+00406     EXPECT_EQ(*rit, {\cf23 'A'});\par
+{\bkmkstart AAAAAAAHEK}{\bkmkend AAAAAAAHEK}
+00407     ++rit;\par
+{\bkmkstart AAAAAAAHEL}{\bkmkend AAAAAAAHEL}
+00408     EXPECT_EQ(rit, sv.rend());\par
+{\bkmkstart AAAAAAAHEN}{\bkmkend AAAAAAAHEN}
+00409 \}\par
+{\bkmkstart AAAAAAAHEO}{\bkmkend AAAAAAAHEO}
+00410 \par
+{\bkmkstart AAAAAAAHEP}{\bkmkend AAAAAAAHEP}
+00415 TEST_F(StringViewAdvancedCoverageTest, TestStringViewConstexprEdgeCases) \{\par
+{\bkmkstart AAAAAAAHEV}{\bkmkend AAAAAAAHEV}
+00416     {\cf20 // Test constexpr with empty string}\par
+{\bkmkstart AAAAAAAHEW}{\bkmkend AAAAAAAHEW}
+00417     {\cf17 constexpr} std::string_view empty_sv({\cf22 ""});\par
+{\bkmkstart AAAAAAAHEY}{\bkmkend AAAAAAAHEY}
+00418     {\cf17 static_assert}(empty_sv.empty());\par
+{\bkmkstart AAAAAAAHEZ}{\bkmkend AAAAAAAHEZ}
+00419     {\cf17 static_assert}(empty_sv.size() == 0);\par
+{\bkmkstart AAAAAAAHFE}{\bkmkend AAAAAAAHFE}
+00420     \par
+{\bkmkstart AAAAAAAHFF}{\bkmkend AAAAAAAHFF}
+00421     {\cf20 // Test constexpr with single character}\par
+{\bkmkstart AAAAAAAHFH}{\bkmkend AAAAAAAHFH}
+00422     {\cf17 constexpr} std::string_view single_sv({\cf22 "A"});\par
+{\bkmkstart AAAAAAAHFJ}{\bkmkend AAAAAAAHFJ}
+00423     {\cf17 static_assert}(single_sv.size() == 1);\par
+{\bkmkstart AAAAAAAHFL}{\bkmkend AAAAAAAHFL}
+00424     {\cf17 static_assert}(single_sv[0] == {\cf23 'A'});\par
+{\bkmkstart AAAAAAAHFO}{\bkmkend AAAAAAAHFO}
+00425     \par
+{\bkmkstart AAAAAAAHFQ}{\bkmkend AAAAAAAHFQ}
+00426     {\cf20 // Test constexpr find operations}\par
+{\bkmkstart AAAAAAAHFR}{\bkmkend AAAAAAAHFR}
+00427     {\cf17 constexpr} std::string_view sv({\cf22 "Hello, World!"});\par
+{\bkmkstart AAAAAAAHFS}{\bkmkend AAAAAAAHFS}
+00428     {\cf17 constexpr} {\cf18 size_t} pos1 = sv.find({\cf22 "World"});\par
+{\bkmkstart AAAAAAAHFV}{\bkmkend AAAAAAAHFV}
+00429     {\cf17 static_assert}(pos1 == 7);\par
+{\bkmkstart AAAAAAAHFY}{\bkmkend AAAAAAAHFY}
+00430     \par
+{\bkmkstart AAAAAAAHGA}{\bkmkend AAAAAAAHGA}
+00431     {\cf17 constexpr} {\cf18 size_t} pos2 = sv.find({\cf22 "xyz"});\par
+{\bkmkstart AAAAAAAHGB}{\bkmkend AAAAAAAHGB}
+00432     {\cf17 static_assert}(pos2 == std::string_view::npos);\par
+{\bkmkstart AAAAAAAHGD}{\bkmkend AAAAAAAHGD}
+00433     \par
+{\bkmkstart AAAAAAAHGE}{\bkmkend AAAAAAAHGE}
+00434     {\cf20 // Test constexpr functionality using find}\par
+{\bkmkstart AAAAAAAHGG}{\bkmkend AAAAAAAHGG}
+00435     {\cf17 static_assert}(sv.find({\cf22 "Hello"}) == 0);\par
+{\bkmkstart AAAAAAAHGH}{\bkmkend AAAAAAAHGH}
+00436     {\cf17 static_assert}(sv.find({\cf22 "World!"}) == 7);\par
+{\bkmkstart AAAAAAAHGJ}{\bkmkend AAAAAAAHGJ}
+00437     {\cf17 static_assert}(sv.find({\cf22 "World"}) == 7);\par
+{\bkmkstart AAAAAAAHGL}{\bkmkend AAAAAAAHGL}
+00438     {\cf17 static_assert}(sv.find({\cf22 "Hello"}) == 0);\par
+{\bkmkstart AAAAAAAHGO}{\bkmkend AAAAAAAHGO}
+00439     \par
+{\bkmkstart AAAAAAAHGP}{\bkmkend AAAAAAAHGP}
+00440     {\cf20 // Test constexpr contains using find}\par
+{\bkmkstart AAAAAAAHGQ}{\bkmkend AAAAAAAHGQ}
+00441     {\cf17 static_assert}(sv.find({\cf22 "lo, Wo"}) != std::string_view::npos);\par
+{\bkmkstart AAAAAAAHGR}{\bkmkend AAAAAAAHGR}
+00442     {\cf17 static_assert}(sv.find({\cf22 "xyz"}) == std::string_view::npos);\par
+{\bkmkstart AAAAAAAHGU}{\bkmkend AAAAAAAHGU}
+00443     \par
+{\bkmkstart AAAAAAAHGV}{\bkmkend AAAAAAAHGV}
+00444     {\cf20 // Runtime tests to ensure functionality works}\par
+{\bkmkstart AAAAAAAHGX}{\bkmkend AAAAAAAHGX}
+00445     EXPECT_TRUE(empty_sv.empty());\par
+{\bkmkstart AAAAAAAHGZ}{\bkmkend AAAAAAAHGZ}
+00446     EXPECT_EQ(empty_sv.size(), 0);\par
+{\bkmkstart AAAAAAAHHC}{\bkmkend AAAAAAAHHC}
+00447     EXPECT_EQ(single_sv.size(), 1);\par
+{\bkmkstart AAAAAAAHHF}{\bkmkend AAAAAAAHHF}
+00448     EXPECT_EQ(single_sv[0], {\cf23 'A'});\par
+{\bkmkstart AAAAAAAHHG}{\bkmkend AAAAAAAHHG}
+00449     EXPECT_EQ(pos1, 7);\par
+{\bkmkstart AAAAAAAHHH}{\bkmkend AAAAAAAHHH}
+00450     EXPECT_EQ(pos2, std::string_view::npos);\par
+{\bkmkstart AAAAAAAHHJ}{\bkmkend AAAAAAAHHJ}
+00451     EXPECT_EQ(sv.find({\cf22 "Hello"}), 0);\par
+{\bkmkstart AAAAAAAHHK}{\bkmkend AAAAAAAHHK}
+00452     EXPECT_EQ(sv.find({\cf22 "World!"}), 7);\par
+{\bkmkstart AAAAAAAHHM}{\bkmkend AAAAAAAHHM}
+00453     EXPECT_NE(sv.find({\cf22 "lo, Wo"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAHHQ}{\bkmkend AAAAAAAHHQ}
+00454     EXPECT_EQ(sv.find({\cf22 "xyz"}), std::string_view::npos);\par
+{\bkmkstart AAAAAAAHHS}{\bkmkend AAAAAAAHHS}
+00455 \}\par
+{\bkmkstart AAAAAAAHHT}{\bkmkend AAAAAAAHHT}
+00456 \par
+{\bkmkstart AAAAAAAHHV}{\bkmkend AAAAAAAHHV}
+00461 TEST_F(StringViewAdvancedCoverageTest, TestStringViewPerformanceEdgeCases) \{\par
+{\bkmkstart AAAAAAAHHY}{\bkmkend AAAAAAAHHY}
+00462     {\cf20 // Test with very large string}\par
+{\bkmkstart AAAAAAAHIA}{\bkmkend AAAAAAAHIA}
+00463     std::string large_string(100000, {\cf23 'A'});\par
+{\bkmkstart AAAAAAAHIF}{\bkmkend AAAAAAAHIF}
+00464     std::string_view sv(large_string);\par
+{\bkmkstart AAAAAAAHIH}{\bkmkend AAAAAAAHIH}
+00465     \par
+{\bkmkstart AAAAAAAHIJ}{\bkmkend AAAAAAAHIJ}
+00466     {\cf20 // Test operations that should be fast}\par
+{\bkmkstart AAAAAAAHIL}{\bkmkend AAAAAAAHIL}
+00467     {\cf17 auto} start = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAHIM}{\bkmkend AAAAAAAHIM}
+00468     \par
+{\bkmkstart AAAAAAAHIN}{\bkmkend AAAAAAAHIN}
+00469     {\cf20 // Perform many operations}\par
+{\bkmkstart AAAAAAAHIO}{\bkmkend AAAAAAAHIO}
+00470     {\cf19 for} ({\cf18 int} i = 0; i < 100; ++i) \{\par
+{\bkmkstart AAAAAAAHIP}{\bkmkend AAAAAAAHIP}
+00471         {\cf17 auto} sub = sv.substr(1000, 1000);\par
+{\bkmkstart AAAAAAAHIT}{\bkmkend AAAAAAAHIT}
+00472         {\cf17 auto} pos = sv.find({\cf22 "AAA"});\par
+{\bkmkstart AAAAAAAHIU}{\bkmkend AAAAAAAHIU}
+00473         {\cf17 auto} contains = sv.find({\cf22 "BBB"}) != std::string_view::npos;\par
+{\bkmkstart AAAAAAAHJA}{\bkmkend AAAAAAAHJA}
+00474         {\cf17 auto} starts = sv.find({\cf22 "AAAA"}) == 0;\par
+{\bkmkstart AAAAAAAHJC}{\bkmkend AAAAAAAHJC}
+00475         {\cf17 auto} ends = sv.find({\cf22 "AAAA"}) == (sv.size() - 4);\par
+{\bkmkstart AAAAAAAHJE}{\bkmkend AAAAAAAHJE}
+00476         (void)sub; (void)pos; (void)contains; (void)starts; (void)ends;\par
+{\bkmkstart AAAAAAAHJH}{\bkmkend AAAAAAAHJH}
+00477     \}\par
+{\bkmkstart AAAAAAAHJI}{\bkmkend AAAAAAAHJI}
+00478     \par
+{\bkmkstart AAAAAAAHJJ}{\bkmkend AAAAAAAHJJ}
+00479     {\cf17 auto} end = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAHJN}{\bkmkend AAAAAAAHJN}
+00480     {\cf17 auto} duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);\par
+{\bkmkstart AAAAAAAHJU}{\bkmkend AAAAAAAHJU}
+00481     \par
+{\bkmkstart AAAAAAAHJW}{\bkmkend AAAAAAAHJW}
+00482     {\cf20 // Should complete quickly}\par
+{\bkmkstart AAAAAAAHJX}{\bkmkend AAAAAAAHJX}
+00483     EXPECT_LT(duration.count(), 100000); {\cf20 // Less than 0.1 second}\par
+{\bkmkstart AAAAAAAHKA}{\bkmkend AAAAAAAHKA}
+00484 \}\par
+{\bkmkstart AAAAAAAHKB}{\bkmkend AAAAAAAHKB}
+00485 \par
+{\bkmkstart AAAAAAAHKC}{\bkmkend AAAAAAAHKC}
 00486 \} {\cf20 // namespace}\par
 }
 }

@@ -151,257 +151,257 @@
 test_translator_additional.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_translator_additional.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_translator_additional.cpp}
-{\bkmkstart AAAAAAAFFK}
-{\bkmkend AAAAAAAFFK}
+{\bkmkstart AAAAAAAHHD}
+{\bkmkend AAAAAAAHHD}
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAFFN}{\bkmkend AAAAAAAFFN}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAHJL}{\bkmkend AAAAAAAHJL}
 00001 {\cf20 // Ek kapsama: parser hata yolları, otomatik etiketler ve codegen dalları}\par
-{\bkmkstart AAAAAAAFFP}{\bkmkend AAAAAAAFFP}
+{\bkmkstart AAAAAAAHJP}{\bkmkend AAAAAAAHJP}
 00002 {\cf20 // Bu testler, lexer/parser/codegen için eksik kalan akışları hedefler.}\par
-{\bkmkstart AAAAAAAFFQ}{\bkmkend AAAAAAAFFQ}
+{\bkmkstart AAAAAAAHJR}{\bkmkend AAAAAAAHJR}
 00003 \par
-{\bkmkstart AAAAAAAFFR}{\bkmkend AAAAAAAFFR}
+{\bkmkstart AAAAAAAHJS}{\bkmkend AAAAAAAHJS}
 00004 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAFFU}{\bkmkend AAAAAAAFFU}
+{\bkmkstart AAAAAAAHKO}{\bkmkend AAAAAAAHKO}
 00005 {\cf21 #include <string>}\par
-{\bkmkstart AAAAAAAFFY}{\bkmkend AAAAAAAFFY}
+{\bkmkstart AAAAAAAHKV}{\bkmkend AAAAAAAHKV}
 00006 {\cf21 #include "translator/lexer.h"}\par
-{\bkmkstart AAAAAAAFGH}{\bkmkend AAAAAAAFGH}
+{\bkmkstart AAAAAAAHLH}{\bkmkend AAAAAAAHLH}
 00007 {\cf21 #include "translator/parser.h"}\par
-{\bkmkstart AAAAAAAFGT}{\bkmkend AAAAAAAFGT}
+{\bkmkstart AAAAAAAHLS}{\bkmkend AAAAAAAHLS}
 00008 {\cf21 #include "translator/codegen.h"}\par
-{\bkmkstart AAAAAAAFGW}{\bkmkend AAAAAAAFGW}
+{\bkmkstart AAAAAAAHMB}{\bkmkend AAAAAAAHMB}
 00009 {\cf21 #include "translator/ast.h"}\par
-{\bkmkstart AAAAAAAFGX}{\bkmkend AAAAAAAFGX}
+{\bkmkstart AAAAAAAHML}{\bkmkend AAAAAAAHML}
 00010 \par
-{\bkmkstart AAAAAAAFGY}{\bkmkend AAAAAAAFGY}
+{\bkmkstart AAAAAAAHMN}{\bkmkend AAAAAAAHMN}
 00011 {\cf17 using namespace }translator;\par
-{\bkmkstart AAAAAAAFGZ}{\bkmkend AAAAAAAFGZ}
+{\bkmkstart AAAAAAAHMP}{\bkmkend AAAAAAAHMP}
 00012 \par
-{\bkmkstart AAAAAAAFHA}{\bkmkend AAAAAAAFHA}
+{\bkmkstart AAAAAAAHMQ}{\bkmkend AAAAAAAHMQ}
 00013 {\cf20 // Yardımcı: kaynak metnini parse edip Program döndür}\par
-{\bkmkstart AAAAAAAFHB}{\bkmkend AAAAAAAFHB}
+{\bkmkstart AAAAAAAHMR}{\bkmkend AAAAAAAHMR}
 00014 {\cf17 static} Program parse_program_from({\cf17 const} {\cf18 char}* src)\{\par
-{\bkmkstart AAAAAAAFHC}{\bkmkend AAAAAAAFHC}
+{\bkmkstart AAAAAAAHMU}{\bkmkend AAAAAAAHMU}
 00015     Lexer lx(src);\par
-{\bkmkstart AAAAAAAFHD}{\bkmkend AAAAAAAFHD}
+{\bkmkstart AAAAAAAHMV}{\bkmkend AAAAAAAHMV}
 00016     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAFHE}{\bkmkend AAAAAAAFHE}
+{\bkmkstart AAAAAAAHMW}{\bkmkend AAAAAAAHMW}
 00017     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAFHF}{\bkmkend AAAAAAAFHF}
+{\bkmkstart AAAAAAAHMX}{\bkmkend AAAAAAAHMX}
 00018     {\cf19 return} ps.parseProgram();\par
-{\bkmkstart AAAAAAAFHG}{\bkmkend AAAAAAAFHG}
+{\bkmkstart AAAAAAAHMY}{\bkmkend AAAAAAAHMY}
 00019 \}\par
-{\bkmkstart AAAAAAAFHH}{\bkmkend AAAAAAAFHH}
+{\bkmkstart AAAAAAAHMZ}{\bkmkend AAAAAAAHMZ}
 00020 \par
-{\bkmkstart AAAAAAAFHI}{\bkmkend AAAAAAAFHI}
+{\bkmkstart AAAAAAAHNA}{\bkmkend AAAAAAAHNA}
 00021 TEST(ParserErrors, MissingRParen)\{\par
-{\bkmkstart AAAAAAAFHJ}{\bkmkend AAAAAAAFHJ}
+{\bkmkstart AAAAAAAHNB}{\bkmkend AAAAAAAHNB}
 00022     {\cf17 const} {\cf18 char}* src = {\cf22 "10 PRINT (1 + 2\\n"}; {\cf20 // ')' eksik}\par
-{\bkmkstart AAAAAAAFHK}{\bkmkend AAAAAAAFHK}
+{\bkmkstart AAAAAAAHNC}{\bkmkend AAAAAAAHNC}
 00023     Lexer lx(src);\par
-{\bkmkstart AAAAAAAFHL}{\bkmkend AAAAAAAFHL}
+{\bkmkstart AAAAAAAHND}{\bkmkend AAAAAAAHND}
 00024     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAFHM}{\bkmkend AAAAAAAFHM}
+{\bkmkstart AAAAAAAHNE}{\bkmkend AAAAAAAHNE}
 00025     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAFHN}{\bkmkend AAAAAAAFHN}
+{\bkmkstart AAAAAAAHNF}{\bkmkend AAAAAAAHNF}
 00026     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAFHO}{\bkmkend AAAAAAAFHO}
+{\bkmkstart AAAAAAAHNG}{\bkmkend AAAAAAAHNG}
 00027 \}\par
-{\bkmkstart AAAAAAAFHP}{\bkmkend AAAAAAAFHP}
+{\bkmkstart AAAAAAAHNH}{\bkmkend AAAAAAAHNH}
 00028 \par
-{\bkmkstart AAAAAAAFHQ}{\bkmkend AAAAAAAFHQ}
+{\bkmkstart AAAAAAAHNI}{\bkmkend AAAAAAAHNI}
 00029 TEST(ParserErrors, UnknownStatement)\{\par
-{\bkmkstart AAAAAAAFHR}{\bkmkend AAAAAAAFHR}
+{\bkmkstart AAAAAAAHNJ}{\bkmkend AAAAAAAHNJ}
 00030     {\cf17 const} {\cf18 char}* src = {\cf22 "10 FOOBAR\\n"}; {\cf20 // desteklenmeyen ifade}\par
-{\bkmkstart AAAAAAAFHS}{\bkmkend AAAAAAAFHS}
+{\bkmkstart AAAAAAAHNK}{\bkmkend AAAAAAAHNK}
 00031     Lexer lx(src);\par
-{\bkmkstart AAAAAAAFHT}{\bkmkend AAAAAAAFHT}
+{\bkmkstart AAAAAAAHNL}{\bkmkend AAAAAAAHNL}
 00032     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAFHU}{\bkmkend AAAAAAAFHU}
+{\bkmkstart AAAAAAAHNM}{\bkmkend AAAAAAAHNM}
 00033     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAFHV}{\bkmkend AAAAAAAFHV}
+{\bkmkstart AAAAAAAHNN}{\bkmkend AAAAAAAHNN}
 00034     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAFHW}{\bkmkend AAAAAAAFHW}
+{\bkmkstart AAAAAAAHNO}{\bkmkend AAAAAAAHNO}
 00035 \}\par
-{\bkmkstart AAAAAAAFHX}{\bkmkend AAAAAAAFHX}
+{\bkmkstart AAAAAAAHNP}{\bkmkend AAAAAAAHNP}
 00036 \par
-{\bkmkstart AAAAAAAFHY}{\bkmkend AAAAAAAFHY}
+{\bkmkstart AAAAAAAHNQ}{\bkmkend AAAAAAAHNQ}
 00037 TEST(ParserErrors, LetMissingAssign)\{\par
-{\bkmkstart AAAAAAAFHZ}{\bkmkend AAAAAAAFHZ}
+{\bkmkstart AAAAAAAHNR}{\bkmkend AAAAAAAHNR}
 00038     {\cf17 const} {\cf18 char}* src = {\cf22 "10 LET X 5\\n"}; {\cf20 // '=' eksik}\par
-{\bkmkstart AAAAAAAFIA}{\bkmkend AAAAAAAFIA}
+{\bkmkstart AAAAAAAHNS}{\bkmkend AAAAAAAHNS}
 00039     Lexer lx(src);\par
-{\bkmkstart AAAAAAAFIB}{\bkmkend AAAAAAAFIB}
+{\bkmkstart AAAAAAAHNT}{\bkmkend AAAAAAAHNT}
 00040     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAFIC}{\bkmkend AAAAAAAFIC}
+{\bkmkstart AAAAAAAHNU}{\bkmkend AAAAAAAHNU}
 00041     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAFID}{\bkmkend AAAAAAAFID}
+{\bkmkstart AAAAAAAHNV}{\bkmkend AAAAAAAHNV}
 00042     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAFIE}{\bkmkend AAAAAAAFIE}
+{\bkmkstart AAAAAAAHNW}{\bkmkend AAAAAAAHNW}
 00043 \}\par
-{\bkmkstart AAAAAAAFIF}{\bkmkend AAAAAAAFIF}
+{\bkmkstart AAAAAAAHNX}{\bkmkend AAAAAAAHNX}
 00044 \par
-{\bkmkstart AAAAAAAFIG}{\bkmkend AAAAAAAFIG}
+{\bkmkstart AAAAAAAHNY}{\bkmkend AAAAAAAHNY}
 00045 TEST(ParserErrors, InputNeedsIdentifier)\{\par
-{\bkmkstart AAAAAAAFIH}{\bkmkend AAAAAAAFIH}
+{\bkmkstart AAAAAAAHNZ}{\bkmkend AAAAAAAHNZ}
 00046     {\cf17 const} {\cf18 char}* src = {\cf22 "10 INPUT 123\\n"};\par
-{\bkmkstart AAAAAAAFII}{\bkmkend AAAAAAAFII}
+{\bkmkstart AAAAAAAHOA}{\bkmkend AAAAAAAHOA}
 00047     Lexer lx(src);\par
-{\bkmkstart AAAAAAAFIJ}{\bkmkend AAAAAAAFIJ}
+{\bkmkstart AAAAAAAHOB}{\bkmkend AAAAAAAHOB}
 00048     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAFIK}{\bkmkend AAAAAAAFIK}
+{\bkmkstart AAAAAAAHOC}{\bkmkend AAAAAAAHOC}
 00049     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAFIL}{\bkmkend AAAAAAAFIL}
+{\bkmkstart AAAAAAAHOD}{\bkmkend AAAAAAAHOD}
 00050     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAFIM}{\bkmkend AAAAAAAFIM}
+{\bkmkstart AAAAAAAHOE}{\bkmkend AAAAAAAHOE}
 00051 \}\par
-{\bkmkstart AAAAAAAFIN}{\bkmkend AAAAAAAFIN}
+{\bkmkstart AAAAAAAHOF}{\bkmkend AAAAAAAHOF}
 00052 \par
-{\bkmkstart AAAAAAAFIO}{\bkmkend AAAAAAAFIO}
+{\bkmkstart AAAAAAAHOG}{\bkmkend AAAAAAAHOG}
 00053 TEST(ParserErrors, IfRequiresThen)\{\par
-{\bkmkstart AAAAAAAFIP}{\bkmkend AAAAAAAFIP}
+{\bkmkstart AAAAAAAHOH}{\bkmkend AAAAAAAHOH}
 00054     {\cf17 const} {\cf18 char}* src = {\cf22 "10 IF 1 20\\n"}; {\cf20 // THEN eksik}\par
-{\bkmkstart AAAAAAAFIQ}{\bkmkend AAAAAAAFIQ}
+{\bkmkstart AAAAAAAHOI}{\bkmkend AAAAAAAHOI}
 00055     Lexer lx(src);\par
-{\bkmkstart AAAAAAAFIR}{\bkmkend AAAAAAAFIR}
+{\bkmkstart AAAAAAAHOJ}{\bkmkend AAAAAAAHOJ}
 00056     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAFIS}{\bkmkend AAAAAAAFIS}
+{\bkmkstart AAAAAAAHOK}{\bkmkend AAAAAAAHOK}
 00057     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAFIT}{\bkmkend AAAAAAAFIT}
+{\bkmkstart AAAAAAAHOL}{\bkmkend AAAAAAAHOL}
 00058     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAFIU}{\bkmkend AAAAAAAFIU}
+{\bkmkstart AAAAAAAHOM}{\bkmkend AAAAAAAHOM}
 00059 \}\par
-{\bkmkstart AAAAAAAFIV}{\bkmkend AAAAAAAFIV}
+{\bkmkstart AAAAAAAHON}{\bkmkend AAAAAAAHON}
 00060 \par
-{\bkmkstart AAAAAAAFIW}{\bkmkend AAAAAAAFIW}
+{\bkmkstart AAAAAAAHOO}{\bkmkend AAAAAAAHOO}
 00061 TEST(ParserErrors, IfThenRequiresNumber)\{\par
-{\bkmkstart AAAAAAAFIX}{\bkmkend AAAAAAAFIX}
+{\bkmkstart AAAAAAAHOP}{\bkmkend AAAAAAAHOP}
 00062     {\cf17 const} {\cf18 char}* src = {\cf22 "10 IF 1 THEN X\\n"}; {\cf20 // sayı yerine kimlik}\par
-{\bkmkstart AAAAAAAFIY}{\bkmkend AAAAAAAFIY}
+{\bkmkstart AAAAAAAHOQ}{\bkmkend AAAAAAAHOQ}
 00063     Lexer lx(src);\par
-{\bkmkstart AAAAAAAFIZ}{\bkmkend AAAAAAAFIZ}
+{\bkmkstart AAAAAAAHOR}{\bkmkend AAAAAAAHOR}
 00064     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAFJA}{\bkmkend AAAAAAAFJA}
+{\bkmkstart AAAAAAAHOS}{\bkmkend AAAAAAAHOS}
 00065     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAFJB}{\bkmkend AAAAAAAFJB}
+{\bkmkstart AAAAAAAHOT}{\bkmkend AAAAAAAHOT}
 00066     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAFJC}{\bkmkend AAAAAAAFJC}
+{\bkmkstart AAAAAAAHOU}{\bkmkend AAAAAAAHOU}
 00067 \}\par
-{\bkmkstart AAAAAAAFJD}{\bkmkend AAAAAAAFJD}
+{\bkmkstart AAAAAAAHOV}{\bkmkend AAAAAAAHOV}
 00068 \par
-{\bkmkstart AAAAAAAFJE}{\bkmkend AAAAAAAFJE}
+{\bkmkstart AAAAAAAHOW}{\bkmkend AAAAAAAHOW}
 00069 TEST(ParserErrors, GotoRequiresNumber)\{\par
-{\bkmkstart AAAAAAAFJF}{\bkmkend AAAAAAAFJF}
+{\bkmkstart AAAAAAAHOX}{\bkmkend AAAAAAAHOX}
 00070     {\cf17 const} {\cf18 char}* src = {\cf22 "10 GOTO X\\n"};\par
-{\bkmkstart AAAAAAAFJG}{\bkmkend AAAAAAAFJG}
+{\bkmkstart AAAAAAAHOY}{\bkmkend AAAAAAAHOY}
 00071     Lexer lx(src);\par
-{\bkmkstart AAAAAAAFJH}{\bkmkend AAAAAAAFJH}
+{\bkmkstart AAAAAAAHOZ}{\bkmkend AAAAAAAHOZ}
 00072     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAFJI}{\bkmkend AAAAAAAFJI}
+{\bkmkstart AAAAAAAHPA}{\bkmkend AAAAAAAHPA}
 00073     Parser ps(std::move(toks));\par
-{\bkmkstart AAAAAAAFJJ}{\bkmkend AAAAAAAFJJ}
+{\bkmkstart AAAAAAAHPB}{\bkmkend AAAAAAAHPB}
 00074     EXPECT_THROW(({\cf18 void})ps.parseProgram(), std::runtime_error);\par
-{\bkmkstart AAAAAAAFJK}{\bkmkend AAAAAAAFJK}
+{\bkmkstart AAAAAAAHPC}{\bkmkend AAAAAAAHPC}
 00075 \}\par
-{\bkmkstart AAAAAAAFJL}{\bkmkend AAAAAAAFJL}
+{\bkmkstart AAAAAAAHPD}{\bkmkend AAAAAAAHPD}
 00076 \par
-{\bkmkstart AAAAAAAFJM}{\bkmkend AAAAAAAFJM}
+{\bkmkstart AAAAAAAHPE}{\bkmkend AAAAAAAHPE}
 00077 TEST(ParserProgram, AutoLabelsWhenMissing)\{\par
-{\bkmkstart AAAAAAAFJN}{\bkmkend AAAAAAAFJN}
+{\bkmkstart AAAAAAAHPF}{\bkmkend AAAAAAAHPF}
 00078     {\cf20 // Satır numarası yoksa 10,20,... üretir}\par
-{\bkmkstart AAAAAAAFJO}{\bkmkend AAAAAAAFJO}
+{\bkmkstart AAAAAAAHPG}{\bkmkend AAAAAAAHPG}
 00079     {\cf17 const} {\cf18 char}* src = {\cf22 "LET X = 1\\nPRINT X\\n"};\par
-{\bkmkstart AAAAAAAFJP}{\bkmkend AAAAAAAFJP}
+{\bkmkstart AAAAAAAHPH}{\bkmkend AAAAAAAHPH}
 00080     {\cf17 auto} prog = parse_program_from(src);\par
-{\bkmkstart AAAAAAAFJQ}{\bkmkend AAAAAAAFJQ}
+{\bkmkstart AAAAAAAHPI}{\bkmkend AAAAAAAHPI}
 00081     ASSERT_EQ(prog.stmts.size(), 2u);\par
-{\bkmkstart AAAAAAAFJR}{\bkmkend AAAAAAAFJR}
+{\bkmkstart AAAAAAAHPJ}{\bkmkend AAAAAAAHPJ}
 00082     ASSERT_EQ(prog.labels.size(), 2u);\par
-{\bkmkstart AAAAAAAFJS}{\bkmkend AAAAAAAFJS}
+{\bkmkstart AAAAAAAHPK}{\bkmkend AAAAAAAHPK}
 00083     EXPECT_EQ(prog.labels[0], 10);\par
-{\bkmkstart AAAAAAAFJT}{\bkmkend AAAAAAAFJT}
+{\bkmkstart AAAAAAAHPL}{\bkmkend AAAAAAAHPL}
 00084     EXPECT_EQ(prog.labels[1], 20);\par
-{\bkmkstart AAAAAAAFJU}{\bkmkend AAAAAAAFJU}
+{\bkmkstart AAAAAAAHPM}{\bkmkend AAAAAAAHPM}
 00085 \}\par
-{\bkmkstart AAAAAAAFJV}{\bkmkend AAAAAAAFJV}
+{\bkmkstart AAAAAAAHPN}{\bkmkend AAAAAAAHPN}
 00086 \par
-{\bkmkstart AAAAAAAFJW}{\bkmkend AAAAAAAFJW}
+{\bkmkstart AAAAAAAHPO}{\bkmkend AAAAAAAHPO}
 00087 TEST(Lexer, UnknownCharIsIgnored)\{\par
-{\bkmkstart AAAAAAAFJX}{\bkmkend AAAAAAAFJX}
+{\bkmkstart AAAAAAAHPP}{\bkmkend AAAAAAAHPP}
 00088     {\cf20 // '@' bilinmeyen — token üretilmeden atlanmalı}\par
-{\bkmkstart AAAAAAAFJY}{\bkmkend AAAAAAAFJY}
+{\bkmkstart AAAAAAAHPQ}{\bkmkend AAAAAAAHPQ}
 00089     Lexer lx({\cf22 "10 LET X = 1 @ 2\\n"});\par
-{\bkmkstart AAAAAAAFJZ}{\bkmkend AAAAAAAFJZ}
+{\bkmkstart AAAAAAAHPR}{\bkmkend AAAAAAAHPR}
 00090     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAFKA}{\bkmkend AAAAAAAFKA}
+{\bkmkstart AAAAAAAHPS}{\bkmkend AAAAAAAHPS}
 00091     {\cf20 // Number tokenlarının en az iki kez gelmesini bekleriz}\par
-{\bkmkstart AAAAAAAFKB}{\bkmkend AAAAAAAFKB}
+{\bkmkstart AAAAAAAHPT}{\bkmkend AAAAAAAHPT}
 00092     {\cf18 int} number_count = 0;\par
-{\bkmkstart AAAAAAAFKC}{\bkmkend AAAAAAAFKC}
+{\bkmkstart AAAAAAAHPU}{\bkmkend AAAAAAAHPU}
 00093     {\cf19 for} ({\cf17 auto}& t : toks) {\cf19 if} (t.type == TokenType::Number) ++number_count;\par
-{\bkmkstart AAAAAAAFKD}{\bkmkend AAAAAAAFKD}
+{\bkmkstart AAAAAAAHPV}{\bkmkend AAAAAAAHPV}
 00094     EXPECT_GE(number_count, 2);\par
-{\bkmkstart AAAAAAAFKE}{\bkmkend AAAAAAAFKE}
+{\bkmkstart AAAAAAAHPW}{\bkmkend AAAAAAAHPW}
 00095 \}\par
-{\bkmkstart AAAAAAAFKF}{\bkmkend AAAAAAAFKF}
+{\bkmkstart AAAAAAAHPX}{\bkmkend AAAAAAAHPX}
 00096 \par
-{\bkmkstart AAAAAAAFKG}{\bkmkend AAAAAAAFKG}
+{\bkmkstart AAAAAAAHPY}{\bkmkend AAAAAAAHPY}
 00097 TEST(CodegenPaths, EmptyProgramReturnsEarly)\{\par
-{\bkmkstart AAAAAAAFKH}{\bkmkend AAAAAAAFKH}
+{\bkmkstart AAAAAAAHPZ}{\bkmkend AAAAAAAHPZ}
 00098     {\cf20 // Boş program}\par
-{\bkmkstart AAAAAAAFKI}{\bkmkend AAAAAAAFKI}
+{\bkmkstart AAAAAAAHQA}{\bkmkend AAAAAAAHQA}
 00099     Program p; {\cf20 // labels ve stmts boş}\par
-{\bkmkstart AAAAAAAFKJ}{\bkmkend AAAAAAAFKJ}
+{\bkmkstart AAAAAAAHQB}{\bkmkend AAAAAAAHQB}
 00100     {\cf17 auto} out = Codegen::emit_cpp(p);\par
-{\bkmkstart AAAAAAAFKK}{\bkmkend AAAAAAAFKK}
+{\bkmkstart AAAAAAAHQC}{\bkmkend AAAAAAAHQC}
 00101     {\cf20 // erken return içermeli}\par
-{\bkmkstart AAAAAAAFKL}{\bkmkend AAAAAAAFKL}
+{\bkmkstart AAAAAAAHQD}{\bkmkend AAAAAAAHQD}
 00102     EXPECT_NE(out.find({\cf22 "return 0;"}), std::string::npos);\par
-{\bkmkstart AAAAAAAFKM}{\bkmkend AAAAAAAFKM}
+{\bkmkstart AAAAAAAHQE}{\bkmkend AAAAAAAHQE}
 00103 \}\par
-{\bkmkstart AAAAAAAFKN}{\bkmkend AAAAAAAFKN}
+{\bkmkstart AAAAAAAHQF}{\bkmkend AAAAAAAHQF}
 00104 \par
-{\bkmkstart AAAAAAAFKO}{\bkmkend AAAAAAAFKO}
+{\bkmkstart AAAAAAAHQG}{\bkmkend AAAAAAAHQG}
 00105 TEST(CodegenPaths, InputGotoIfGosubReturn)\{\par
-{\bkmkstart AAAAAAAFKP}{\bkmkend AAAAAAAFKP}
+{\bkmkstart AAAAAAAHQH}{\bkmkend AAAAAAAHQH}
 00106     {\cf17 const} {\cf18 char}* src =\par
-{\bkmkstart AAAAAAAFKQ}{\bkmkend AAAAAAAFKQ}
+{\bkmkstart AAAAAAAHQI}{\bkmkend AAAAAAAHQI}
 00107         {\cf22 "10 INPUT X\\n"}\par
-{\bkmkstart AAAAAAAFKR}{\bkmkend AAAAAAAFKR}
+{\bkmkstart AAAAAAAHQJ}{\bkmkend AAAAAAAHQJ}
 00108         {\cf22 "20 IF X THEN 40\\n"}\par
-{\bkmkstart AAAAAAAFKS}{\bkmkend AAAAAAAFKS}
+{\bkmkstart AAAAAAAHQK}{\bkmkend AAAAAAAHQK}
 00109         {\cf22 "30 GOTO 50\\n"}\par
-{\bkmkstart AAAAAAAFKT}{\bkmkend AAAAAAAFKT}
+{\bkmkstart AAAAAAAHQL}{\bkmkend AAAAAAAHQL}
 00110         {\cf22 "40 GOSUB 60\\n"}\par
-{\bkmkstart AAAAAAAFKU}{\bkmkend AAAAAAAFKU}
+{\bkmkstart AAAAAAAHQM}{\bkmkend AAAAAAAHQM}
 00111         {\cf22 "50 PRINT X\\n"}\par
-{\bkmkstart AAAAAAAFKV}{\bkmkend AAAAAAAFKV}
+{\bkmkstart AAAAAAAHQN}{\bkmkend AAAAAAAHQN}
 00112         {\cf22 "60 RETURN\\n"};\par
-{\bkmkstart AAAAAAAFKW}{\bkmkend AAAAAAAFKW}
+{\bkmkstart AAAAAAAHQO}{\bkmkend AAAAAAAHQO}
 00113     {\cf17 auto} prog = parse_program_from(src);\par
-{\bkmkstart AAAAAAAFKX}{\bkmkend AAAAAAAFKX}
+{\bkmkstart AAAAAAAHQP}{\bkmkend AAAAAAAHQP}
 00114     {\cf17 auto} out = Codegen::emit_cpp(prog);\par
-{\bkmkstart AAAAAAAFKY}{\bkmkend AAAAAAAFKY}
+{\bkmkstart AAAAAAAHQQ}{\bkmkend AAAAAAAHQQ}
 00115     {\cf20 // INPUT üretimi}\par
-{\bkmkstart AAAAAAAFKZ}{\bkmkend AAAAAAAFKZ}
+{\bkmkstart AAAAAAAHQR}{\bkmkend AAAAAAAHQR}
 00116     EXPECT_NE(out.find({\cf22 "std::cin >> tmp"}), std::string::npos);\par
-{\bkmkstart AAAAAAAFLA}{\bkmkend AAAAAAAFLA}
+{\bkmkstart AAAAAAAHQS}{\bkmkend AAAAAAAHQS}
 00117     {\cf20 // IF THEN else bir sonraki etikete gidiş}\par
-{\bkmkstart AAAAAAAFLB}{\bkmkend AAAAAAAFLB}
+{\bkmkstart AAAAAAAHQT}{\bkmkend AAAAAAAHQT}
 00118     EXPECT_NE(out.find({\cf22 "if (var[\\"X\\"])"}), std::string::npos);\par
-{\bkmkstart AAAAAAAFLC}{\bkmkend AAAAAAAFLC}
+{\bkmkstart AAAAAAAHQU}{\bkmkend AAAAAAAHQU}
 00119     EXPECT_NE(out.find({\cf22 "else pc = 30;"}), std::string::npos); {\cf20 // 20'den sonraki etiket 30}\par
-{\bkmkstart AAAAAAAFLD}{\bkmkend AAAAAAAFLD}
+{\bkmkstart AAAAAAAHQV}{\bkmkend AAAAAAAHQV}
 00120     {\cf20 // GOSUB çağrısı ve dönüş}\par
-{\bkmkstart AAAAAAAFLE}{\bkmkend AAAAAAAFLE}
+{\bkmkstart AAAAAAAHQW}{\bkmkend AAAAAAAHQW}
 00121     EXPECT_NE(out.find({\cf22 "call.push(50); pc = 60;"}), std::string::npos);\par
-{\bkmkstart AAAAAAAFLF}{\bkmkend AAAAAAAFLF}
+{\bkmkstart AAAAAAAHQX}{\bkmkend AAAAAAAHQX}
 00122     EXPECT_NE(out.find({\cf22 "if (call.empty()) return 0; pc = call.top(); call.pop();"}), std::string::npos);\par
-{\bkmkstart AAAAAAAFLG}{\bkmkend AAAAAAAFLG}
+{\bkmkstart AAAAAAAHQY}{\bkmkend AAAAAAAHQY}
 00123 \}\par
-{\bkmkstart AAAAAAAFLH}{\bkmkend AAAAAAAFLH}
+{\bkmkstart AAAAAAAHQZ}{\bkmkend AAAAAAAHQZ}
 00124 \par
 }
 }

@@ -2,6 +2,11 @@
 \hypertarget{structtranslator_1_1_program}{}\label{structtranslator_1_1_program}\index{translator::Program@{translator::Program}}
 
 
+Etiketlenmiş deyimlerden oluşan program.  
+
+
+
+
 {\ttfamily \#include $<$ast.\+h$>$}
 
 
@@ -16,28 +21,18 @@ Collaboration diagram for translator\+::Program\+:\nopagebreak
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::vector$<$ int $>$ \mbox{\hyperlink{structtranslator_1_1_program_a7475f175b7b501e7ec7d0a2f16a613c4}{labels}}
-\item 
-std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}} $>$ $>$ \mbox{\hyperlink{structtranslator_1_1_program_ae1becdf326699756afe2f60647e47382}{stmts}}
-\end{DoxyCompactItemize}
+\Hypertarget{structtranslator_1_1_program_a7475f175b7b501e7ec7d0a2f16a613c4}\label{structtranslator_1_1_program_a7475f175b7b501e7ec7d0a2f16a613c4} 
+std\+::vector$<$ int $>$ {\bfseries labels}
+\begin{DoxyCompactList}\small\item\em Satır etiketleri (örn\+: 10, 20, 30) \end{DoxyCompactList}\item 
+\Hypertarget{structtranslator_1_1_program_ae1becdf326699756afe2f60647e47382}\label{structtranslator_1_1_program_ae1becdf326699756afe2f60647e47382} 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}} $>$ $>$ {\bfseries stmts}
+\begin{DoxyCompactList}\small\item\em Her etikete karşılık gelen deyimler. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\label{doc-variable-members}
-\Hypertarget{structtranslator_1_1_program_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structtranslator_1_1_program_a7475f175b7b501e7ec7d0a2f16a613c4}\index{translator::Program@{translator::Program}!labels@{labels}}
-\index{labels@{labels}!translator::Program@{translator::Program}}
-\doxysubsubsection{\texorpdfstring{labels}{labels}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_program_a7475f175b7b501e7ec7d0a2f16a613c4} 
-std\+::vector$<$int$>$ translator\+::\+Program\+::labels}
+\doxysubsection{Detailed Description}
+Etiketlenmiş deyimlerden oluşan program. 
 
-\Hypertarget{structtranslator_1_1_program_ae1becdf326699756afe2f60647e47382}\index{translator::Program@{translator::Program}!stmts@{stmts}}
-\index{stmts@{stmts}!translator::Program@{translator::Program}}
-\doxysubsubsection{\texorpdfstring{stmts}{stmts}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_program_ae1becdf326699756afe2f60647e47382} 
-std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}}$>$ $>$ translator\+::\+Program\+::stmts}
-
-
+\doxylink{structtranslator_1_1_program}{Program}, paralel diziler kullanarak etiket-\/deyim çiftlerini tutar. 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

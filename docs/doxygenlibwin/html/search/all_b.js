@@ -1,11 +1,21 @@
 var searchData=
 [
-  ['tipentry_0',['TipEntry',['../struct_coruh_1_1_language_translator_1_1_tip_entry.html',1,'Coruh::LanguageTranslator']]],
-  ['translatephrase_1',['translatePhrase',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a06a91752cc8178f227d69060cf1d6c81',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['translatetext_2',['translateText',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a03ad354d985ea9953caeb220ba353675',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['translatewithgoogleapi_3',['translateWithGoogleAPI',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#acd8648d60bbb51b35c35ffd92bb7537d',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['translatewithmicrosoftapi_4',['translateWithMicrosoftAPI',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a42d55ad7d00fd049ec011b6b1c3d6a82',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['translateword_5',['translateWord',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#afd506854467cc68e7a55c7f9ccb4d3c1',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['translationrecord_6',['TranslationRecord',['../struct_coruh_1_1_language_translator_1_1_translation_record.html',1,'Coruh::LanguageTranslator']]],
-  ['translator_20c_2017_7',['BASIC Translator (C++17)',['../index.html',1,'']]]
+  ['label_5fto_5findex_0',['label_to_index',['../structtranslator_1_1_c_f_g.html#a8c3d964ad916e1f10065308e716ff291',1,'translator::CFG']]],
+  ['labels_1',['labels',['../structtranslator_1_1_program.html#a7475f175b7b501e7ec7d0a2f16a613c4',1,'translator::Program']]],
+  ['languagetranslator_2eh_2',['LanguageTranslator.h',['../_language_translator_8h.html',1,'']]],
+  ['languagetranslatorapp_3',['LanguageTranslatorApp',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html',1,'Coruh::LanguageTranslator::LanguageTranslatorApp'],['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a5ed617b4a1ba48b54035061d7f080abf',1,'Coruh::LanguageTranslator::LanguageTranslatorApp::LanguageTranslatorApp()']]],
+  ['learningtips_4',['learningTips',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#ada5694e5267fa92812eaaab6cccec4f6',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['let_5',['Let',['../ast_8h.html#ae91056a6e5d3941ec5899084a4007a3dacae6404c4aecf46684930fe2a86676a6',1,'translator']]],
+  ['letstmt_6',['LetStmt',['../structtranslator_1_1_let_stmt.html',1,'translator::LetStmt'],['../structtranslator_1_1_let_stmt.html#a0bfebf9ceb1029382c8ca27259962790',1,'translator::LetStmt::LetStmt()']]],
+  ['lexeme_7',['lexeme',['../structtranslator_1_1_token.html#a462f6a4371b83edc64d5062861f9e5d2',1,'translator::Token']]],
+  ['lexer_8',['Lexer',['../classtranslator_1_1_lexer.html',1,'translator::Lexer'],['../classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774',1,'translator::Lexer::Lexer()']]],
+  ['lexer_2eh_9',['lexer.h',['../lexer_8h.html',1,'']]],
+  ['lhs_10',['lhs',['../structtranslator_1_1_binary_expr.html#a43a169916f11bd4686c74143ef3524f8',1,'translator::BinaryExpr']]],
+  ['line_11',['line',['../structtranslator_1_1_token.html#abb1cffe27ee8e34cfe2c7c37d72e1294',1,'translator::Token']]],
+  ['loadalldictionaries_12',['loadAllDictionaries',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#aa3f57c2f13453169c28cf1cb43e913df',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['loaddata_13',['loadData',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a83daac67d1d81e4c07ac792b7ce1e793',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['loaddictionaryfromfile_14',['loadDictionaryFromFile',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#adddfb15e169da4105623cb2162d7f3ec',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['login_15',['login',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#aebb1a131807481ffd3a86e81ba5d7149',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['logout_16',['logout',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#ae996bcbc37b5ebeff7fc5f23846599e6',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['lookup_17',['lookup',['../classtranslator_1_1_symbol_table.html#ae1876c1c25f5dffb5eadccc190ad93f3',1,'translator::SymbolTable']]]
 ];

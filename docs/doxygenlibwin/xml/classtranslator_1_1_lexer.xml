@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classtranslator_1_1_lexer" kind="class" language="C++" prot="public">
     <compoundname>translator::Lexer</compoundname>
+    <includes refid="lexer_8h" local="no">lexer.h</includes>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classtranslator_1_1_lexer_1a8dd38bc122462334b34032f50ca8a9e7" prot="private" static="no" mutable="no">
         <type>const std::string</type>
@@ -15,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" line="9" column="23" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" bodystart="9" bodyend="-1"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" line="14" column="23" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" bodystart="14" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -30,38 +31,42 @@
           <declname>src</declname>
         </param>
         <briefdescription>
+<para>Kaynağı alarak bir lexer oluşturur. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" line="11" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" bodystart="11" bodyend="11"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" line="17" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" bodystart="17" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_lexer_1a89260e1e02eb2b01abcd1c7e31d480b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; Token &gt;</type>
+        <type>std::vector&lt; <ref refid="structtranslator_1_1_token" kindref="compound">Token</ref> &gt;</type>
         <definition>std::vector&lt; Token &gt; translator::Lexer::tokenize</definition>
         <argsstring>() const</argsstring>
         <name>tokenize</name>
         <qualifiedname>translator::Lexer::tokenize</qualifiedname>
         <briefdescription>
+<para>Girdi kaynağını belirteçlere dönüştürür. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" line="12" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.cpp" bodystart="9" bodyend="52"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" line="19" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.cpp" bodystart="9" bodyend="52"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Kaynaktan belirteç (<ref refid="structtranslator_1_1_token" kindref="compound">Token</ref>) üreten sınıf. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
       <node id="1">
         <label>translator::Lexer</label>
+        <link refid="classtranslator_1_1_lexer"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" line="8" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" bodystart="8" bodyend="13"/>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" line="13" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h" bodystart="13" bodyend="20"/>
     <listofallmembers>
       <member refid="classtranslator_1_1_lexer_1a8a11e345d58654102d3a9cb26967f774" prot="public" virt="non-virtual"><scope>translator::Lexer</scope><name>Lexer</name></member>
       <member refid="classtranslator_1_1_lexer_1a8dd38bc122462334b34032f50ca8a9e7" prot="private" virt="non-virtual"><scope>translator::Lexer</scope><name>src_</name></member>

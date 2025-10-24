@@ -80,22 +80,27 @@ $(function() {
   <div class="headertitle"><div class="title">lexer.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;translator/token.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>translator {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span>Lexer {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">const</span> std::string src_;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">explicit</span> Lexer(std::string src): src_(std::move(src)) {}</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    std::vector&lt;Token&gt; tokenize() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>};</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>} <span class="comment">// namespace translator</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<a href="lexer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="token_8h.html">translator/token.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>translator {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classtranslator_1_1_lexer.html">   13</a></span><span class="keyword">class </span><a class="code hl_function" href="classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774">Lexer</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">const</span> std::string src_;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774">   17</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774">Lexer</a>(std::string src): src_(std::move(src)) {}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::vector&lt;Token&gt; <a class="code hl_function" href="classtranslator_1_1_lexer.html#a89260e1e02eb2b01abcd1c7e31d480b9">tokenize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace translator</span></div>
+<div class="ttc" id="aclasstranslator_1_1_lexer_html_a89260e1e02eb2b01abcd1c7e31d480b9"><div class="ttname"><a href="classtranslator_1_1_lexer.html#a89260e1e02eb2b01abcd1c7e31d480b9">translator::Lexer::tokenize</a></div><div class="ttdeci">std::vector&lt; Token &gt; tokenize() const</div><div class="ttdoc">Girdi kaynağını belirteçlere dönüştürür.</div><div class="ttdef"><b>Definition</b> lexer.cpp:9</div></div>
+<div class="ttc" id="aclasstranslator_1_1_lexer_html_a8a11e345d58654102d3a9cb26967f774"><div class="ttname"><a href="classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774">translator::Lexer::Lexer</a></div><div class="ttdeci">Lexer(std::string src)</div><div class="ttdoc">Kaynağı alarak bir lexer oluşturur.</div><div class="ttdef"><b>Definition</b> lexer.h:17</div></div>
+<div class="ttc" id="atoken_8h_html"><div class="ttname"><a href="token_8h.html">token.h</a></div><div class="ttdoc">Leksik belirteç türleri ve veri yapısı</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -151,9 +151,12 @@
 ds::Graph Class Reference\par \pard\plain 
 {\tc\tcl2 \v ds::Graph}
 {\xe \v ds::Graph}
-{\bkmkstart AAAAAAAAGP}
-{\bkmkend AAAAAAAAGP}
+{\bkmkstart AAAAAAAAGW}
+{\bkmkend AAAAAAAAGW}
 \par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Komşuluk listesi tabanlı grafik. }}\par
 {
 {\f2 #include <graph.h>}}\par
 Collaboration diagram for ds::Graph:{
@@ -167,159 +170,97 @@ Public Member Functions\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADY" }{}}{\fldrslt {\cs37\ul\cf2 Graph}}}
- (int n=0)\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEF" }{}}{\fldrslt {\cs37\ul\cf2 resize}}}
- (int n)\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEJ" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
- (int u, int v, bool undirected=false)\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-const std::vector< int > & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 neighbors}}}
- (int u) const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEQ" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
- () const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::vector< int > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEU" }{}}{\fldrslt {\cs37\ul\cf2 bfs_dist}}}
- (int s) const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEZ" }{}}{\fldrslt {\cs37\ul\cf2 dfs_util}}}
- (int u, std::vector< int > &vis, std::vector< int > &order) const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::vector< int > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFD" }{}}{\fldrslt {\cs37\ul\cf2 dfs_order}}}
- (int s=0) const\par
-}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Private Attributes\par
-\pard\plain 
 
+{\b Graph} (int n=0){\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+\par
 {
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+n düğüm ile oluşturur. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::vector< std::vector< int > > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEB" }{}}{\fldrslt {\cs37\ul\cf2 adj_}}}
+
+void {\b resize} (int n){\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
 \par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Düğüm sayısını ayarlar. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b add_edge} (int u, int v, bool undirected=false){\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kenar ekler (opsiyonel yönsüz). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::vector< int > & {\b neighbors} (int u) const{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+u’nun komşuları. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+int {\b size} () const{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Düğüm sayısı. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+std::vector< int > {\b bfs_dist} (int s) const{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+s kaynağından BFS uzaklıkları. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b dfs_util} (int u, std::vector< int > &vis, std::vector< int > &order) const{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+DFS yardımcı. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+std::vector< int > {\b dfs_order} (int s=0) const{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+s’den DFS sırası. }{
+}\par
+}\par}
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAALT}
-{\bkmkend AAAAAAAALT}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Constructor & Destructor Documentation\par
+Detailed Description\par
 \pard\plain 
-{\xe \v Graph\:ds::Graph}
-{\xe \v ds::Graph\:Graph}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-ds::Graph::Graph (int n = {\f2 0}){\f2 [inline]}, {\f2 [explicit]}}}
-\par
-{\bkmkstart AAAAAAAADY}
-{\bkmkend AAAAAAAADY}
 {
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAALV}
-{\bkmkend AAAAAAAALV}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Member Function Documentation\par
-\pard\plain 
-{\xe \v add_edge\:ds::Graph}
-{\xe \v ds::Graph\:add_edge}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-void ds::Graph::add_edge (int u, int v, bool undirected = {\f2 false}){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEJ}
-{\bkmkend AAAAAAAAEJ}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v bfs_dist\:ds::Graph}
-{\xe \v ds::Graph\:bfs_dist}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-std::vector< int > ds::Graph::bfs_dist (int s) const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEU}
-{\bkmkend AAAAAAAAEU}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v dfs_order\:ds::Graph}
-{\xe \v ds::Graph\:dfs_order}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-std::vector< int > ds::Graph::dfs_order (int s = {\f2 0}) const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAFD}
-{\bkmkend AAAAAAAAFD}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v dfs_util\:ds::Graph}
-{\xe \v ds::Graph\:dfs_util}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-void ds::Graph::dfs_util (int u, std::vector< int > & vis, std::vector< int > & order) const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEZ}
-{\bkmkend AAAAAAAAEZ}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v neighbors\:ds::Graph}
-{\xe \v ds::Graph\:neighbors}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-const std::vector< int > & ds::Graph::neighbors (int u) const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEP}
-{\bkmkend AAAAAAAAEP}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v resize\:ds::Graph}
-{\xe \v ds::Graph\:resize}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-void ds::Graph::resize (int n){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEF}
-{\bkmkend AAAAAAAAEF}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v size\:ds::Graph}
-{\xe \v ds::Graph\:size}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-int ds::Graph::size () const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEQ}
-{\bkmkend AAAAAAAAEQ}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAALY}
-{\bkmkend AAAAAAAALY}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Member Data Documentation\par
-\pard\plain 
-{\xe \v adj_\:ds::Graph}
-{\xe \v ds::Graph\:adj_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-std::vector<std::vector<int> > ds::Graph::adj_{\f2 [private]}}}
-\par
-{\bkmkstart AAAAAAAAEB}
-{\bkmkend AAAAAAAAEB}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Komşuluk listesi tabanlı grafik. \par
+}}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 The documentation for this class was generated from the following file:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACK" }{}}{\fldrslt {\cs37\ul\cf2 graph.h}}}
+C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 graph.h}}}
 \par
 }}

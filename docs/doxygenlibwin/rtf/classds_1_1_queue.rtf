@@ -151,8 +151,8 @@
 ds::Queue< T > Class Template Reference\par \pard\plain 
 {\tc\tcl2 \v ds::Queue< T >}
 {\xe \v ds::Queue< T >}
-{\bkmkstart AAAAAAAACI}
-{\bkmkend AAAAAAAACI}
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
 \par
 {
 {\f2 #include <queue.h>}}\par
@@ -162,186 +162,97 @@ Collaboration diagram for ds::Queue< T >:{
 }
 \par
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Classes\par
-\pard\plain 
-
-{
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Public Member Functions\par
 \pard\plain 
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ~Queue}}}
- ()\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 enqueue}}}
- (const T &v)\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 dequeue}}}
- ()\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-T & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADU" }{}}{\fldrslt {\cs37\ul\cf2 front}}}
- ()\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADW" }{}}{\fldrslt {\cs37\ul\cf2 empty}}}
- () const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADZ" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
- () const\par
-}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Private Attributes\par
-\pard\plain 
 
+{\b ~Queue} (){\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+\par
 {
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Yıkıcı: tüm düğümleri serbest bırakır. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
- * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
- = nullptr\par
+
+void {\b enqueue} (const T &v){\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kuyruğun sonuna ekler. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
- * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADD" }{}}{\fldrslt {\cs37\ul\cf2 tail_}}}
- = nullptr\par
+
+void {\b dequeue} (){\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Baştaki elemanı çıkarır. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADE" }{}}{\fldrslt {\cs37\ul\cf2 sz_}}}
- = 0\par
+
+T & {\b front} (){\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Baştaki elemanı döndürür. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+bool {\b empty} () const{\bkmkstart AAAAAAAAEB}
+{\bkmkend AAAAAAAAEB}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kuyruk boş mu? }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+std::size_t {\b size} () const{\bkmkstart AAAAAAAAEC}
+{\bkmkend AAAAAAAAEC}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Eleman sayısı. }{
+}\par
+}\par}
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAAMA}
-{\bkmkend AAAAAAAAMA}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Constructor & Destructor Documentation\par
+Detailed Description\par
 \pard\plain 
-{\xe \v ~Queue\:ds::Queue< T >}
-{\xe \v ds::Queue< T >\:~Queue}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 ds::Queue}}}
-< T >::~{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 Queue}}}
- (){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAADG}
-{\bkmkend AAAAAAAADG}
 {
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAAMD}
-{\bkmkend AAAAAAAAMD}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Member Function Documentation\par
-\pard\plain 
-{\xe \v dequeue\:ds::Queue< T >}
-{\xe \v ds::Queue< T >\:dequeue}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 ds::Queue}}}
-< T >::dequeue (){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAADO}
-{\bkmkend AAAAAAAADO}
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+template<typename T>\par
+class ds::Queue< T >\par
 }
-{\xe \v empty\:ds::Queue< T >}
-{\xe \v ds::Queue< T >\:empty}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 ds::Queue}}}
-< T >::empty () const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAADW}
-{\bkmkend AAAAAAAADW}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Template Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i T} \cell }{Eleman tipi \cell }
+{\row }
 }
-{\xe \v enqueue\:ds::Queue< T >}
-{\xe \v ds::Queue< T >\:enqueue}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 ds::Queue}}}
-< T >::enqueue (const T & v){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAADJ}
-{\bkmkend AAAAAAAADJ}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v front\:ds::Queue< T >}
-{\xe \v ds::Queue< T >\:front}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> T & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 ds::Queue}}}
-< T >::front (){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAADU}
-{\bkmkend AAAAAAAADU}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v size\:ds::Queue< T >}
-{\xe \v ds::Queue< T >\:size}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 ds::Queue}}}
-< T >::size () const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAADZ}
-{\bkmkend AAAAAAAADZ}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAAMF}
-{\bkmkend AAAAAAAAMF}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Member Data Documentation\par
-\pard\plain 
-{\xe \v head_\:ds::Queue< T >}
-{\xe \v ds::Queue< T >\:head_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 ds::Queue}}}
-< T >::head_ = nullptr{\f2 [private]}}}
-\par
-{\bkmkstart AAAAAAAACY}
-{\bkmkend AAAAAAAACY}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v sz_\:ds::Queue< T >}
-{\xe \v ds::Queue< T >\:sz_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 ds::Queue}}}
-< T >::sz_ = 0{\f2 [private]}}}
-\par
-{\bkmkstart AAAAAAAADE}
-{\bkmkend AAAAAAAADE}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v tail_\:ds::Queue< T >}
-{\xe \v ds::Queue< T >\:tail_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 ds::Queue}}}
-< T >::tail_ = nullptr{\f2 [private]}}}
-\par
-{\bkmkstart AAAAAAAADD}
-{\bkmkend AAAAAAAADD}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
+}}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 The documentation for this class was generated from the following file:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 queue.h}}}
+C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 queue.h}}}
 \par
 }}

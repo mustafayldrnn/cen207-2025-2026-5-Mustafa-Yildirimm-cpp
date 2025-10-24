@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['v_0',['v',['../structds_1_1_queue_1_1_node.html#adc7c79369a2204b2e53a958325b91cee',1,'ds::Queue::Node::v'],['../structds_1_1_stack_1_1_node.html#ae249e60d8b34bd85b94bf1d111e8db1c',1,'ds::Stack::Node::v']]],
-  ['value_1',['value',['../structds_1_1_doubly_linked_list_1_1_node.html#a778706d5c27692d909d05ea77d374baf',1,'ds::DoublyLinkedList::Node::value'],['../structds_1_1_hash_table_1_1_entry.html#a613402a3aca9f6fb7571bb7b350f3d95',1,'ds::HashTable::Entry::value'],['../structds_1_1_x_o_r_linked_list_1_1_node.html#a4b9e3ae8849a87d45ad64f8bd70c6f5e',1,'ds::XORLinkedList::Node::value'],['../structtranslator_1_1_number_expr.html#acd4dc7cf346802fa3bf1a2872c4b477c',1,'translator::NumberExpr::value']]]
+  ['useapi_0',['useAPI',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a4899e421750407b3ffb82f527b7a20ed',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['username_1',['username',['../struct_coruh_1_1_language_translator_1_1_user_profile.html#acdf441214af6c7f9223e089b6b95f94f',1,'Coruh::LanguageTranslator::UserProfile']]],
+  ['users_2',['users',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#ad7cb4a75dca18dd35ed64990ecca6ddf',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]]
 ];

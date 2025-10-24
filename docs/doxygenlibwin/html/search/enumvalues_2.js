@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['comma_0',['Comma',['../namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a58be47db9455679e6a44df2eff9c9fa6',1,'translator']]]
+  ['empty_0',['Empty',['../hash__table_8h.html#ab8d36885b547ab0c7e429bd1d578a617ace2c8aed9c2fa0cfbed56cbda4d8bf07',1,'ds']]]
 ];

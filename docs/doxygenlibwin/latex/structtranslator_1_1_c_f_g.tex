@@ -2,6 +2,11 @@
 \hypertarget{structtranslator_1_1_c_f_g}{}\label{structtranslator_1_1_c_f_g}\index{translator::CFG@{translator::CFG}}
 
 
+\doxylink{structtranslator_1_1_c_f_g}{CFG} yapısı (graf + etiket→indeks eşlemesi)  
+
+
+
+
 {\ttfamily \#include $<$cfg.\+h$>$}
 
 
@@ -16,28 +21,18 @@ Collaboration diagram for translator\+::CFG\+:\nopagebreak
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classds_1_1_graph}{ds\+::\+Graph}} \mbox{\hyperlink{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f}{g}}
-\item 
-std\+::unordered\+\_\+map$<$ int, int $>$ \mbox{\hyperlink{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291}{label\+\_\+to\+\_\+index}}
-\end{DoxyCompactItemize}
+\Hypertarget{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f}\label{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f} 
+\mbox{\hyperlink{classds_1_1_graph}{ds\+::\+Graph}} {\bfseries g}
+\begin{DoxyCompactList}\small\item\em Kontrol akışı grafı \end{DoxyCompactList}\item 
+\Hypertarget{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291}\label{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291} 
+std\+::unordered\+\_\+map$<$ int, int $>$ {\bfseries label\+\_\+to\+\_\+index}
+\begin{DoxyCompactList}\small\item\em Etiket→indeks eşlemesi. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\label{doc-variable-members}
-\Hypertarget{structtranslator_1_1_c_f_g_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f}\index{translator::CFG@{translator::CFG}!g@{g}}
-\index{g@{g}!translator::CFG@{translator::CFG}}
-\doxysubsubsection{\texorpdfstring{g}{g}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f} 
-\mbox{\hyperlink{classds_1_1_graph}{ds\+::\+Graph}} translator\+::\+CFG\+::g}
+\doxysubsection{Detailed Description}
+\doxylink{structtranslator_1_1_c_f_g}{CFG} yapısı (graf + etiket→indeks eşlemesi) 
 
-\Hypertarget{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291}\index{translator::CFG@{translator::CFG}!label\_to\_index@{label\_to\_index}}
-\index{label\_to\_index@{label\_to\_index}!translator::CFG@{translator::CFG}}
-\doxysubsubsection{\texorpdfstring{label\_to\_index}{label\_to\_index}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291} 
-std\+::unordered\+\_\+map$<$int, int$>$ translator\+::\+CFG\+::label\+\_\+to\+\_\+index}
-
-
+Control Flow Graph, programın kontrol akışını temsil eden graf yapısıdır. Her düğüm bir deyimi, her kenar ise kontrol akışını temsil eder. 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

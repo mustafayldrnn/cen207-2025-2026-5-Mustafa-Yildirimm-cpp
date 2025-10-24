@@ -72,7 +72,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a href="namespaceds.html">ds</a></li><li class="navelem"><a href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a></li>  </ul>
+<li class="navelem"><b>ds</b></li><li class="navelem"><a href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -86,6 +86,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Çift yönlü bağlı liste kapsayıcısı  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="doubly__linked__list_8h_source.html">doubly_linked_list.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for ds::DoublyLinkedList&lt; T &gt;:</div>
@@ -96,114 +99,68 @@ Collaboration diagram for ds::DoublyLinkedList&lt; T &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:iterator" id="r_iterator"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds_1_1_doubly_linked_list_1_1iterator.html">iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çift yönlü iterator.  <a href="structds_1_1_doubly_linked_list_1_1iterator.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Node" id="r_Node"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds_1_1_doubly_linked_list_1_1_node.html">Node</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liste düğümü  <a href="structds_1_1_doubly_linked_list_1_1_node.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5ff7741bb2cbf5168485b6b2ece42bbd" id="r_a5ff7741bb2cbf5168485b6b2ece42bbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ff7741bb2cbf5168485b6b2ece42bbd">DoublyLinkedList</a> ()=default</td></tr>
-<tr class="memitem:a16cada9d8162d86ba8b82dbaf7e1918b" id="r_a16cada9d8162d86ba8b82dbaf7e1918b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16cada9d8162d86ba8b82dbaf7e1918b">~DoublyLinkedList</a> ()</td></tr>
-<tr class="memitem:a7cbccc3d21845cd07e4473c66a6b3f22" id="r_a7cbccc3d21845cd07e4473c66a6b3f22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cbccc3d21845cd07e4473c66a6b3f22">DoublyLinkedList</a> (const <a class="el" href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a> &amp;)=delete</td></tr>
-<tr class="memitem:a5139026d2052aea99e34ec66356e8d2c" id="r_a5139026d2052aea99e34ec66356e8d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5139026d2052aea99e34ec66356e8d2c">operator=</a> (const <a class="el" href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a> &amp;)=delete</td></tr>
+<tr class="memitem:a5ff7741bb2cbf5168485b6b2ece42bbd" id="r_a5ff7741bb2cbf5168485b6b2ece42bbd"><td class="memItemLeft" align="right" valign="top"><a id="a5ff7741bb2cbf5168485b6b2ece42bbd" name="a5ff7741bb2cbf5168485b6b2ece42bbd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DoublyLinkedList</b> ()=default</td></tr>
+<tr class="memdesc:a5ff7741bb2cbf5168485b6b2ece42bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Varsayılan constructor. <br /></td></tr>
+<tr class="memitem:a16cada9d8162d86ba8b82dbaf7e1918b" id="r_a16cada9d8162d86ba8b82dbaf7e1918b"><td class="memItemLeft" align="right" valign="top"><a id="a16cada9d8162d86ba8b82dbaf7e1918b" name="a16cada9d8162d86ba8b82dbaf7e1918b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~DoublyLinkedList</b> ()</td></tr>
+<tr class="memdesc:a16cada9d8162d86ba8b82dbaf7e1918b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor - tüm düğümleri serbest bırakır. <br /></td></tr>
+<tr class="memitem:a7cbccc3d21845cd07e4473c66a6b3f22" id="r_a7cbccc3d21845cd07e4473c66a6b3f22"><td class="memItemLeft" align="right" valign="top"><a id="a7cbccc3d21845cd07e4473c66a6b3f22" name="a7cbccc3d21845cd07e4473c66a6b3f22"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DoublyLinkedList</b> (const <a class="el" href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a7cbccc3d21845cd07e4473c66a6b3f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor (silinmiş) <br /></td></tr>
+<tr class="memitem:a5139026d2052aea99e34ec66356e8d2c" id="r_a5139026d2052aea99e34ec66356e8d2c"><td class="memItemLeft" align="right" valign="top"><a id="a5139026d2052aea99e34ec66356e8d2c" name="a5139026d2052aea99e34ec66356e8d2c"></a>
+<a class="el" href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a5139026d2052aea99e34ec66356e8d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator (silinmiş) <br /></td></tr>
 <tr class="memitem:a0cd2cfe2104c7250369ee89c9616b923" id="r_a0cd2cfe2104c7250369ee89c9616b923"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structds_1_1_doubly_linked_list_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cd2cfe2104c7250369ee89c9616b923">begin</a> () const</td></tr>
+<tr class="memdesc:a0cd2cfe2104c7250369ee89c9616b923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Başlangıç iteratörü  <br /></td></tr>
 <tr class="memitem:aed22012cf544c4546868ab5a545914f9" id="r_aed22012cf544c4546868ab5a545914f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structds_1_1_doubly_linked_list_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed22012cf544c4546868ab5a545914f9">end</a> () const</td></tr>
+<tr class="memdesc:aed22012cf544c4546868ab5a545914f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sondan bir sonrası iteratörü  <br /></td></tr>
 <tr class="memitem:aaad687c167f3f8a8b3264d183bab8064" id="r_aaad687c167f3f8a8b3264d183bab8064"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structds_1_1_doubly_linked_list_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaad687c167f3f8a8b3264d183bab8064">rbegin</a> () const</td></tr>
+<tr class="memdesc:aaad687c167f3f8a8b3264d183bab8064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sondan geri iterasyon için başlangıç  <br /></td></tr>
 <tr class="memitem:a161308040d6174300cdcf4f138c97c51" id="r_a161308040d6174300cdcf4f138c97c51"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a161308040d6174300cdcf4f138c97c51">size</a> () const</td></tr>
+<tr class="memdesc:a161308040d6174300cdcf4f138c97c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liste eleman sayısını döndürür.  <br /></td></tr>
 <tr class="memitem:ae6b33a59dd79d4b4d578ad4ddcf64a97" id="r_ae6b33a59dd79d4b4d578ad4ddcf64a97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6b33a59dd79d4b4d578ad4ddcf64a97">empty</a> () const</td></tr>
+<tr class="memdesc:ae6b33a59dd79d4b4d578ad4ddcf64a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listenin boş olup olmadığını kontrol eder.  <br /></td></tr>
 <tr class="memitem:a06c0989d05c4bd2bea24fe4e157cb7ea" id="r_a06c0989d05c4bd2bea24fe4e157cb7ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06c0989d05c4bd2bea24fe4e157cb7ea">clear</a> ()</td></tr>
+<tr class="memdesc:a06c0989d05c4bd2bea24fe4e157cb7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tüm elemanları serbest bırakır.  <br /></td></tr>
 <tr class="memitem:a1eef59637606e2427a92a1c345bcf7de" id="r_a1eef59637606e2427a92a1c345bcf7de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structds_1_1_doubly_linked_list_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1eef59637606e2427a92a1c345bcf7de">push_back</a> (const T &amp;v)</td></tr>
+<tr class="memdesc:a1eef59637606e2427a92a1c345bcf7de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listeye sona eleman ekler.  <br /></td></tr>
 <tr class="memitem:a0bf5bd3a047a9f9af555efb35f0afcdb" id="r_a0bf5bd3a047a9f9af555efb35f0afcdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structds_1_1_doubly_linked_list_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bf5bd3a047a9f9af555efb35f0afcdb">push_front</a> (const T &amp;v)</td></tr>
+<tr class="memdesc:a0bf5bd3a047a9f9af555efb35f0afcdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listeye başa eleman ekler.  <br /></td></tr>
 <tr class="memitem:a7e2d78d1d937fdd894fd9bc9e5448e1f" id="r_a7e2d78d1d937fdd894fd9bc9e5448e1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structds_1_1_doubly_linked_list_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e2d78d1d937fdd894fd9bc9e5448e1f">insert_after</a> (<a class="el" href="structds_1_1_doubly_linked_list_1_1iterator.html">iterator</a> it, const T &amp;v)</td></tr>
+<tr class="memdesc:a7e2d78d1d937fdd894fd9bc9e5448e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verilen düğümden sonra eleman ekler.  <br /></td></tr>
 <tr class="memitem:a007e35bdeab28fea7dc5931dc57bc267" id="r_a007e35bdeab28fea7dc5931dc57bc267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structds_1_1_doubly_linked_list_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a007e35bdeab28fea7dc5931dc57bc267">erase</a> (<a class="el" href="structds_1_1_doubly_linked_list_1_1iterator.html">iterator</a> it)</td></tr>
+<tr class="memdesc:a007e35bdeab28fea7dc5931dc57bc267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verilen konumdaki düğümü kaldırır.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab984830080da01385b6e0c8eb8e1b963" id="r_ab984830080da01385b6e0c8eb8e1b963"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structds_1_1_doubly_linked_list_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab984830080da01385b6e0c8eb8e1b963">head_</a> = nullptr</td></tr>
-<tr class="memitem:aac0ac5dbd0e1a6f3d935a8357cf00a96" id="r_aac0ac5dbd0e1a6f3d935a8357cf00a96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structds_1_1_doubly_linked_list_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac0ac5dbd0e1a6f3d935a8357cf00a96">tail_</a> = nullptr</td></tr>
-<tr class="memitem:a8d9e5866bbdd5647b9ce4858bd9c60af" id="r_a8d9e5866bbdd5647b9ce4858bd9c60af"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d9e5866bbdd5647b9ce4858bd9c60af">size_</a> = 0</td></tr>
+<tr class="memitem:ab984830080da01385b6e0c8eb8e1b963" id="r_ab984830080da01385b6e0c8eb8e1b963"><td class="memItemLeft" align="right" valign="top"><a id="ab984830080da01385b6e0c8eb8e1b963" name="ab984830080da01385b6e0c8eb8e1b963"></a>
+<a class="el" href="structds_1_1_doubly_linked_list_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>head_</b> = nullptr</td></tr>
+<tr class="memdesc:ab984830080da01385b6e0c8eb8e1b963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liste başı pointer'ı <br /></td></tr>
+<tr class="memitem:aac0ac5dbd0e1a6f3d935a8357cf00a96" id="r_aac0ac5dbd0e1a6f3d935a8357cf00a96"><td class="memItemLeft" align="right" valign="top"><a id="aac0ac5dbd0e1a6f3d935a8357cf00a96" name="aac0ac5dbd0e1a6f3d935a8357cf00a96"></a>
+<a class="el" href="structds_1_1_doubly_linked_list_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>tail_</b> = nullptr</td></tr>
+<tr class="memdesc:aac0ac5dbd0e1a6f3d935a8357cf00a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liste sonu pointer'ı <br /></td></tr>
+<tr class="memitem:a8d9e5866bbdd5647b9ce4858bd9c60af" id="r_a8d9e5866bbdd5647b9ce4858bd9c60af"><td class="memItemLeft" align="right" valign="top"><a id="a8d9e5866bbdd5647b9ce4858bd9c60af" name="a8d9e5866bbdd5647b9ce4858bd9c60af"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size_</b> = 0</td></tr>
+<tr class="memdesc:a8d9e5866bbdd5647b9ce4858bd9c60af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liste eleman sayısı <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5ff7741bb2cbf5168485b6b2ece42bbd" name="a5ff7741bb2cbf5168485b6b2ece42bbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ff7741bb2cbf5168485b6b2ece42bbd">&#9670;&#160;</a></span>DoublyLinkedList() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classds_1_1_doubly_linked_list.html">ds::DoublyLinkedList</a>&lt; T &gt;::DoublyLinkedList </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a16cada9d8162d86ba8b82dbaf7e1918b" name="a16cada9d8162d86ba8b82dbaf7e1918b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16cada9d8162d86ba8b82dbaf7e1918b">&#9670;&#160;</a></span>~DoublyLinkedList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classds_1_1_doubly_linked_list.html">ds::DoublyLinkedList</a>&lt; T &gt;::~<a class="el" href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a> </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7cbccc3d21845cd07e4473c66a6b3f22" name="a7cbccc3d21845cd07e4473c66a6b3f22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cbccc3d21845cd07e4473c66a6b3f22">&#9670;&#160;</a></span>DoublyLinkedList() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classds_1_1_doubly_linked_list.html">ds::DoublyLinkedList</a>&lt; T &gt;::DoublyLinkedList </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+class ds::DoublyLinkedList&lt; T &gt;</div><p>Çift yönlü bağlı liste kapsayıcısı </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Eleman tipi</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Bu sınıf, çift yönlü bağlı liste veri yapısını implement eder. Her düğüm, önceki ve sonraki düğümlere referans tutar. Iterator desteği ile STL uyumlu erişim sağlar. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a0cd2cfe2104c7250369ee89c9616b923" name="a0cd2cfe2104c7250369ee89c9616b923"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cd2cfe2104c7250369ee89c9616b923">&#9670;&#160;</a></span>begin()</h2>
 
@@ -228,6 +185,9 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Başlangıç iteratörü </p>
+<dl class="section return"><dt>Returns</dt><dd>İlk düğümü gösteren iterator </dd></dl>
 
 </div>
 </div>
@@ -256,6 +216,9 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Tüm elemanları serbest bırakır. </p>
+<p>Liste başından sonuna kadar tüm düğümleri siler ve listeyi boş duruma getirir. </p>
+
 </div>
 </div>
 <a id="ae6b33a59dd79d4b4d578ad4ddcf64a97" name="ae6b33a59dd79d4b4d578ad4ddcf64a97"></a>
@@ -282,6 +245,9 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Listenin boş olup olmadığını kontrol eder. </p>
+<dl class="section return"><dt>Returns</dt><dd>true eğer liste boşsa </dd></dl>
 
 </div>
 </div>
@@ -310,6 +276,9 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Sondan bir sonrası iteratörü </p>
+<dl class="section return"><dt>Returns</dt><dd>Liste sonundaki null iterator </dd></dl>
+
 </div>
 </div>
 <a id="a007e35bdeab28fea7dc5931dc57bc267" name="a007e35bdeab28fea7dc5931dc57bc267"></a>
@@ -336,6 +305,15 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Verilen konumdaki düğümü kaldırır. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">it</td><td>Silinecek düğümü gösteren iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Sonraki düğümü gösteren iterator </dd></dl>
 
 </div>
 </div>
@@ -368,32 +346,15 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a5139026d2052aea99e34ec66356e8d2c" name="a5139026d2052aea99e34ec66356e8d2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5139026d2052aea99e34ec66356e8d2c">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a> &amp; <a class="el" href="classds_1_1_doubly_linked_list.html">ds::DoublyLinkedList</a>&lt; T &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classds_1_1_doubly_linked_list.html">DoublyLinkedList</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Verilen düğümden sonra eleman ekler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">it</td><td>Referans alınacak iterator </td></tr>
+    <tr><td class="paramname">v</td><td>Eklenecek değer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Yeni eklenen düğümü gösteren iterator </dd></dl>
 
 </div>
 </div>
@@ -422,6 +383,15 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Listeye sona eleman ekler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Eklenecek değer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Yeni eklenen düğümü gösteren iterator </dd></dl>
+
 </div>
 </div>
 <a id="a0bf5bd3a047a9f9af555efb35f0afcdb" name="a0bf5bd3a047a9f9af555efb35f0afcdb"></a>
@@ -448,6 +418,15 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Listeye başa eleman ekler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Eklenecek değer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Yeni eklenen düğümü gösteren iterator </dd></dl>
 
 </div>
 </div>
@@ -476,6 +455,9 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Sondan geri iterasyon için başlangıç </p>
+<dl class="section return"><dt>Returns</dt><dd>Son düğümü gösteren iterator </dd></dl>
+
 </div>
 </div>
 <a id="a161308040d6174300cdcf4f138c97c51" name="a161308040d6174300cdcf4f138c97c51"></a>
@@ -503,78 +485,8 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="ab984830080da01385b6e0c8eb8e1b963" name="ab984830080da01385b6e0c8eb8e1b963"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab984830080da01385b6e0c8eb8e1b963">&#9670;&#160;</a></span>head_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structds_1_1_doubly_linked_list_1_1_node.html">Node</a>* <a class="el" href="classds_1_1_doubly_linked_list.html">ds::DoublyLinkedList</a>&lt; T &gt;::head_ = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8d9e5866bbdd5647b9ce4858bd9c60af" name="a8d9e5866bbdd5647b9ce4858bd9c60af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d9e5866bbdd5647b9ce4858bd9c60af">&#9670;&#160;</a></span>size_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="classds_1_1_doubly_linked_list.html">ds::DoublyLinkedList</a>&lt; T &gt;::size_ = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aac0ac5dbd0e1a6f3d935a8357cf00a96" name="aac0ac5dbd0e1a6f3d935a8357cf00a96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac0ac5dbd0e1a6f3d935a8357cf00a96">&#9670;&#160;</a></span>tail_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structds_1_1_doubly_linked_list_1_1_node.html">Node</a>* <a class="el" href="classds_1_1_doubly_linked_list.html">ds::DoublyLinkedList</a>&lt; T &gt;::tail_ = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Liste eleman sayısını döndürür. </p>
+<dl class="section return"><dt>Returns</dt><dd>Eleman sayısı </dd></dl>
 
 </div>
 </div>

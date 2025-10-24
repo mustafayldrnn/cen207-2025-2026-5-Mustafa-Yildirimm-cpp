@@ -2,6 +2,11 @@
 \hypertarget{structtranslator_1_1_goto_stmt}{}\label{structtranslator_1_1_goto_stmt}\index{translator::GotoStmt@{translator::GotoStmt}}
 
 
+GOTO deyimi.  
+
+
+
+
 {\ttfamily \#include $<$ast.\+h$>$}
 
 
@@ -26,20 +31,19 @@ Collaboration diagram for translator\+::Goto\+Stmt\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structtranslator_1_1_goto_stmt_ae22d265c24459eb2537df432131f46d7}{Goto\+Stmt}} (int t)
-\item 
-\mbox{\hyperlink{namespacetranslator_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} \mbox{\hyperlink{structtranslator_1_1_goto_stmt_aae4b7271164ea8557ffdc4a79d8657f0}{kind}} () const override
-\end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structtranslator_1_1_stmt}{translator\+::\+Stmt}}}
-\begin{DoxyCompactItemize}
-\item 
-virtual \mbox{\hyperlink{structtranslator_1_1_stmt_a0707842a254ce67ff9c72cda98226ec7}{\texorpdfstring{$\sim$}{\string~}\+Stmt}} ()=default
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Atlama deyimi oluşturur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} \mbox{\hyperlink{structtranslator_1_1_goto_stmt_aae4b7271164ea8557ffdc4a79d8657f0}{kind}} () const override
+\begin{DoxyCompactList}\small\item\em Deyim türünü döndürür. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{structtranslator_1_1_goto_stmt_a7f09790266e5d62bfc34b0709cab10c6}{target}}
-\end{DoxyCompactItemize}
+\Hypertarget{structtranslator_1_1_goto_stmt_a7f09790266e5d62bfc34b0709cab10c6}\label{structtranslator_1_1_goto_stmt_a7f09790266e5d62bfc34b0709cab10c6} 
+int {\bfseries target}
+\begin{DoxyCompactList}\small\item\em Hedef satır numarası \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+GOTO deyimi. 
 
 \label{doc-constructors}
 \Hypertarget{structtranslator_1_1_goto_stmt_doc-constructors}
@@ -52,6 +56,15 @@ translator\+::\+Goto\+Stmt\+::\+Goto\+Stmt (\begin{DoxyParamCaption}\item[{int}]
 
 
 
+Atlama deyimi oluşturur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Hedef satır numarası \\
+\hline
+\end{DoxyParams}
+
+
 \label{doc-func-members}
 \Hypertarget{structtranslator_1_1_goto_stmt_doc-func-members}
 \doxysubsection{Member Function Documentation}
@@ -59,22 +72,18 @@ translator\+::\+Goto\+Stmt\+::\+Goto\+Stmt (\begin{DoxyParamCaption}\item[{int}]
 \index{kind@{kind}!translator::GotoStmt@{translator::GotoStmt}}
 \doxysubsubsection{\texorpdfstring{kind()}{kind()}}
 {\footnotesize\ttfamily \label{structtranslator_1_1_goto_stmt_aae4b7271164ea8557ffdc4a79d8657f0} 
-\mbox{\hyperlink{namespacetranslator_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} translator\+::\+Goto\+Stmt\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} translator\+::\+Goto\+Stmt\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+Deyim türünü döndürür. 
+
+\begin{DoxyReturn}{Returns}
+Goto türü 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{structtranslator_1_1_stmt_afb8f5d100524bc8cf234edae0ac57578}{translator\+::\+Stmt}}.
-
-
-
-\label{doc-variable-members}
-\Hypertarget{structtranslator_1_1_goto_stmt_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structtranslator_1_1_goto_stmt_a7f09790266e5d62bfc34b0709cab10c6}\index{translator::GotoStmt@{translator::GotoStmt}!target@{target}}
-\index{target@{target}!translator::GotoStmt@{translator::GotoStmt}}
-\doxysubsubsection{\texorpdfstring{target}{target}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_goto_stmt_a7f09790266e5d62bfc34b0709cab10c6} 
-int translator\+::\+Goto\+Stmt\+::target}
 
 
 

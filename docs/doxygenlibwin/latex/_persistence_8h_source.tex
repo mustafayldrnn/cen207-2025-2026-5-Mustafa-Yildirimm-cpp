@@ -3,59 +3,77 @@
 \mbox{\hyperlink{_persistence_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <cstdint>}}
-\DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }Coruh\ \{}
-\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }LanguageTranslator\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <cstdint>}}
 \DoxyCodeLine{00014\ }
-\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_user_profile}{UserProfile}}\ \{}
-\DoxyCodeLine{00017\ \ \ \ \ std::string\ username;}
-\DoxyCodeLine{00018\ \ \ \ \ std::string\ salt;}
-\DoxyCodeLine{00019\ \ \ \ \ std::string\ passwordHash;\ \textcolor{comment}{//\ hex\ sha256}}
-\DoxyCodeLine{00020\ \ \ \ \ std::string\ preferredSource;}
-\DoxyCodeLine{00021\ \ \ \ \ std::string\ preferredTarget;}
-\DoxyCodeLine{00022\ \};}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00025\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_translation_record}{TranslationRecord}}\ \{}
-\DoxyCodeLine{00026\ \ \ \ \ std::string\ sourceLang;}
-\DoxyCodeLine{00027\ \ \ \ \ std::string\ targetLang;}
-\DoxyCodeLine{00028\ \ \ \ \ std::string\ text;}
-\DoxyCodeLine{00029\ \ \ \ \ std::string\ result;}
-\DoxyCodeLine{00030\ \ \ \ \ std::uint64\_t\ timestamp;\ \textcolor{comment}{//\ unix\ seconds}}
-\DoxyCodeLine{00031\ \};}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00034\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_tip_entry}{TipEntry}}\ \{\ std::string\ tip;\ \};}
-\DoxyCodeLine{00036\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_phrase_entry}{PhraseEntry}}\ \{\ std::string\ phrase;\ std::string\ category;\ \};}
-\DoxyCodeLine{00038\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_pronunciation_entry}{PronunciationEntry}}\ \{\ std::string\ word;\ std::string\ ipa;\ std::string\ audioPath;\ \};}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \textcolor{keyword}{namespace\ }Persistence\ \{}
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//\ Generic\ binary\ vector\ read/write\ of\ simple\ string-\/based\ records}}
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_a9ec1a9482d802ff4b74d4f65e1e54147}{writeUsers}}(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keyword}{const}\ std::vector<UserProfile>\&\ data);}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_af0968d3b1840504d0d9cd69944b95397}{readUsers}}(\textcolor{keyword}{const}\ std::string\&\ path,\ std::vector<UserProfile>\&\ out);}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_a7c255eebbcc1b5e3ad923eddae7b8400}{writeHistory}}(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keyword}{const}\ std::vector<TranslationRecord>\&\ data);}
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_a017a206629f11bff566a21395f6ffc2f}{readHistory}}(\textcolor{keyword}{const}\ std::string\&\ path,\ std::vector<TranslationRecord>\&\ out);}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ writeTips(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keyword}{const}\ std::vector<TipEntry>\&\ data);}
-\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ readTips(\textcolor{keyword}{const}\ std::string\&\ path,\ std::vector<TipEntry>\&\ out);}
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }Coruh\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }LanguageTranslator\ \{}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_user_profile}{UserProfile}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_user_profile_acdf441214af6c7f9223e089b6b95f94f}{username}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_user_profile_af83fc6ee9afcfdd1b14763d5831bb865}{salt}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_user_profile_ada9638b73af7e9cb3b5539e8ec546bb7}{passwordHash}};\ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_user_profile_a76e28d055efcfa63e91d90a4603e0135}{preferredSource}};\ }
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_user_profile_af55ed17d2200cbcdc254c48f3489ab43}{preferredTarget}};\ }
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_translation_record}{TranslationRecord}}\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_translation_record_a3e375063d3a2e3a72858233a6778204a}{sourceLang}};\ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_translation_record_ab6924206a1e890e174f5a4598d30028a}{targetLang}};\ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_translation_record_ab0e3c1c7951a90a3e2b3a0af332fb9cd}{text}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_translation_record_ad4d237f2747f96c7fca166af8e5917cf}{result}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ std::uint64\_t\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_translation_record_ad851b6f8e42f5901937f9e616e74f484}{timestamp}};\ \ \ \ }
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_tip_entry}{TipEntry}}\ \{\ }
+\DoxyCodeLine{00052\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_tip_entry_ae98a77b3d22bd39c66260758d15c6dc1}{tip}};\ \ }
+\DoxyCodeLine{00053\ \};}
 \DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{bool}\ writePhrases(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keyword}{const}\ std::vector<PhraseEntry>\&\ data);}
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ readPhrases(\textcolor{keyword}{const}\ std::string\&\ path,\ std::vector<PhraseEntry>\&\ out);}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ writePronunciations(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keyword}{const}\ std::vector<PronunciationEntry>\&\ data);}
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{bool}\ readPronunciations(\textcolor{keyword}{const}\ std::string\&\ path,\ std::vector<PronunciationEntry>\&\ out);}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{comment}{//\ Utils}}
-\DoxyCodeLine{00063\ \ \ \ \ std::string\ \mbox{\hyperlink{_persistence_8h_a9fa7f276ccdf1eb80607d021c8dfb801}{sha256Hex}}(\textcolor{keyword}{const}\ std::string\&\ input);}
-\DoxyCodeLine{00065\ \ \ \ \ std::string\ \mbox{\hyperlink{_persistence_8h_a2407bc3ad66791cf41f33f257669cd08}{randomSalt}}(std::size\_t\ len\ =\ 16);}
-\DoxyCodeLine{00066\ \}}
-\DoxyCodeLine{00067\ }
-\DoxyCodeLine{00068\ \}\ \textcolor{comment}{//\ namespace\ LanguageTranslator}}
-\DoxyCodeLine{00069\ \}\ \textcolor{comment}{//\ namespace\ Coruh}}
+\DoxyCodeLine{00060\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_phrase_entry}{PhraseEntry}}\ \{\ }
+\DoxyCodeLine{00061\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_phrase_entry_af96846c573bbee8d24dbb41db7632006}{phrase}};\ \ \ \ }
+\DoxyCodeLine{00062\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_phrase_entry_ac47fe93883e8900c87461c3b9a125bac}{category}};\ \ }
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_pronunciation_entry}{PronunciationEntry}}\ \{\ }
+\DoxyCodeLine{00072\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_pronunciation_entry_a01bb1a89caf41f824ac574edf05d8306}{word}};\ \ \ \ \ \ }
+\DoxyCodeLine{00073\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_pronunciation_entry_a75d106c3698ab491d1376d5e61780c00}{ipa}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00074\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_coruh_1_1_language_translator_1_1_pronunciation_entry_a1e3dcb356e91603338f6df3eaf4e6103}{audioPath}};\ }
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00084\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_persistence}{Persistence}}\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{comment}{//\ Generic\ binary\ vector\ read/write\ of\ simple\ string-\/based\ records}}
+\DoxyCodeLine{00086\ \ \ \ \ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_a9ec1a9482d802ff4b74d4f65e1e54147}{writeUsers}}(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keyword}{const}\ std::vector<UserProfile>\&\ data);}
+\DoxyCodeLine{00094\ \ \ \ \ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_af0968d3b1840504d0d9cd69944b95397}{readUsers}}(\textcolor{keyword}{const}\ std::string\&\ path,\ std::vector<UserProfile>\&\ out);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_a7c255eebbcc1b5e3ad923eddae7b8400}{writeHistory}}(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keyword}{const}\ std::vector<TranslationRecord>\&\ data);}
+\DoxyCodeLine{00110\ \ \ \ \ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_a017a206629f11bff566a21395f6ffc2f}{readHistory}}(\textcolor{keyword}{const}\ std::string\&\ path,\ std::vector<TranslationRecord>\&\ out);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_a348c4242ac7312bd17ccefa31d5de1e1}{writeTips}}(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keyword}{const}\ std::vector<TipEntry>\&\ data);}
+\DoxyCodeLine{00126\ \ \ \ \ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_aa478da1635b6bbd33988d2a866ab0ed5}{readTips}}(\textcolor{keyword}{const}\ std::string\&\ path,\ std::vector<TipEntry>\&\ out);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_a07c5f30bc254f9726e89140e961708ac}{writePhrases}}(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keyword}{const}\ std::vector<PhraseEntry>\&\ data);}
+\DoxyCodeLine{00142\ \ \ \ \ }
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_a0a69722e1b2cd620213110896361d1b8}{readPhrases}}(\textcolor{keyword}{const}\ std::string\&\ path,\ std::vector<PhraseEntry>\&\ out);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_a86f828e22261ea38bf2987b85f2c531e}{writePronunciations}}(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keyword}{const}\ std::vector<PronunciationEntry>\&\ data);}
+\DoxyCodeLine{00158\ \ \ \ \ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_persistence_8h_ae87ba97358bd7e21093e8e4be0a551ff}{readPronunciations}}(\textcolor{keyword}{const}\ std::string\&\ path,\ std::vector<PronunciationEntry>\&\ out);}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{comment}{//\ Utils}}
+\DoxyCodeLine{00176\ \ \ \ \ std::string\ \mbox{\hyperlink{_persistence_8h_a9fa7f276ccdf1eb80607d021c8dfb801}{sha256Hex}}(\textcolor{keyword}{const}\ std::string\&\ input);}
+\DoxyCodeLine{00177\ \ \ \ \ }
+\DoxyCodeLine{00185\ \ \ \ \ std::string\ \mbox{\hyperlink{_persistence_8h_a2407bc3ad66791cf41f33f257669cd08}{randomSalt}}(std::size\_t\ len\ =\ 16);}
+\DoxyCodeLine{00186\ \}}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \}\ \textcolor{comment}{//\ namespace\ LanguageTranslator}}
+\DoxyCodeLine{00189\ \}\ \textcolor{comment}{//\ namespace\ Coruh}}
 
 \end{DoxyCode}

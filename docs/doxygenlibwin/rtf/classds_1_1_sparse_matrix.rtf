@@ -151,9 +151,12 @@
 ds::SparseMatrix< T > Class Template Reference\par \pard\plain 
 {\tc\tcl2 \v ds::SparseMatrix< T >}
 {\xe \v ds::SparseMatrix< T >}
-{\bkmkstart AAAAAAAALC}
-{\bkmkend AAAAAAAALC}
+{\bkmkstart AAAAAAAAMG}
+{\bkmkend AAAAAAAAMG}
 \par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Hash tablosu tabanlı seyrek matris. }}\par
 {
 {\f2 #include <sparse_matrix.h>}}\par
 Collaboration diagram for ds::SparseMatrix< T >:{
@@ -167,25 +170,55 @@ Public Member Functions\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADV" }{}}{\fldrslt {\cs37\ul\cf2 SparseMatrix}}}
- (std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAER" }{}}{\fldrslt {\cs37\ul\cf2 rows}}}
-, std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAES" }{}}{\fldrslt {\cs37\ul\cf2 cols}}}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 SparseMatrix}}}
+ (std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAED" }{}}{\fldrslt {\cs37\ul\cf2 rows}}}
+, std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEF" }{}}{\fldrslt {\cs37\ul\cf2 cols}}}
 )\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Seyrek matris oluşturur. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEX" }{}}{\fldrslt {\cs37\ul\cf2 set}}}
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEH" }{}}{\fldrslt {\cs37\ul\cf2 set}}}
  (std::size_t r, std::size_t c, const T &v)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Belirtilen koordinata eleman atar. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-const T * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEY" }{}}{\fldrslt {\cs37\ul\cf2 get}}}
+const T * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEN" }{}}{\fldrslt {\cs37\ul\cf2 get}}}
  (std::size_t r, std::size_t c) const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Belirtilen koordinattaki elemanı okur. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFC" }{}}{\fldrslt {\cs37\ul\cf2 nonZeroCount}}}
+std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEQ" }{}}{\fldrslt {\cs37\ul\cf2 nonZeroCount}}}
  () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sıfır olmayan eleman sayısını döndürür. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAER" }{}}{\fldrslt {\cs37\ul\cf2 rows}}}
+std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAED" }{}}{\fldrslt {\cs37\ul\cf2 rows}}}
  () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Matris satır sayısını döndürür. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAES" }{}}{\fldrslt {\cs37\ul\cf2 cols}}}
+std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEF" }{}}{\fldrslt {\cs37\ul\cf2 cols}}}
  () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Matris sütun sayısını döndürür. }{
+}\par
+}\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Static Private Member Functions\par
@@ -193,8 +226,13 @@ Static Private Member Functions\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-static long long {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAED" }{}}{\fldrslt {\cs37\ul\cf2 key}}}
+static long long {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 key}}}
  (std::size_t r, std::size_t c)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Satır ve sütun indekslerini 64-bit key'e dönüştürür. }{
+}\par
+}\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Private Attributes\par
@@ -202,19 +240,68 @@ Private Attributes\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEI" }{}}{\fldrslt {\cs37\ul\cf2 HashTable}}}
-< long long, T > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 data_}}}
+
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADV" }{}}{\fldrslt {\cs37\ul\cf2 HashTable}}}
+< long long, T > {\b data_}{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
 \par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Koordinat-eleman çiftlerini tutan hash tablosu. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEN" }{}}{\fldrslt {\cs37\ul\cf2 rows_}}}
+
+std::size_t {\b rows_}{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
 \par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Matris satır sayısı }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 cols_}}}
+
+std::size_t {\b cols_}{\bkmkstart AAAAAAAAEA}
+{\bkmkend AAAAAAAAEA}
 \par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Matris sütun sayısı }{
+}\par
+}\par}
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAALS}
-{\bkmkend AAAAAAAALS}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+template<typename T>\par
+class ds::SparseMatrix< T >\par
+}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Hash tablosu tabanlı seyrek matris. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Template Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i T} \cell }{Eleman türü\cell }
+{\row }
+}
+Bu sınıf, hash tablosu kullanarak seyrek matris implementasyonu sağlar. Koordinatları 64-bit composite key olarak saklar (r<<32 | c). \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAAMX}
+{\bkmkend AAAAAAAAMX}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Constructor & Destructor Documentation\par
 \pard\plain 
@@ -222,17 +309,38 @@ Constructor & Destructor Documentation\par
 {\xe \v ds::SparseMatrix< T >\:SparseMatrix}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALC" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
+template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMG" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
 < T >::SparseMatrix (std::size_t rows, std::size_t cols){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAADV}
-{\bkmkend AAAAAAAADV}
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Seyrek matris oluşturur. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i rows} \cell }{Satır sayısı \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i cols} \cell }{Sütun sayısı \cell }
+{\row }
 }
+}}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAALU}
-{\bkmkend AAAAAAAALU}
+{\bkmkstart AAAAAAAAMY}
+{\bkmkend AAAAAAAAMY}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Member Function Documentation\par
 \pard\plain 
@@ -240,120 +348,179 @@ Member Function Documentation\par
 {\xe \v ds::SparseMatrix< T >\:cols}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALC" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
+template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMG" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
 < T >::cols () const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAES}
-{\bkmkend AAAAAAAAES}
+{\bkmkstart AAAAAAAAEF}
+{\bkmkend AAAAAAAAEF}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Matris sütun sayısını döndürür. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Sütun sayısı \par
+}}}}
 {\xe \v get\:ds::SparseMatrix< T >}
 {\xe \v ds::SparseMatrix< T >\:get}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> const T * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALC" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
+template<typename T> const T * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMG" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
 < T >::get (std::size_t r, std::size_t c) const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEY}
-{\bkmkend AAAAAAAAEY}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v key\:ds::SparseMatrix< T >}
-{\xe \v ds::SparseMatrix< T >\:key}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> long long {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALC" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
-< T >::key (std::size_t r, std::size_t c){\f2 [inline]}, {\f2 [static]}, {\f2 [private]}}}
-\par
-{\bkmkstart AAAAAAAAED}
-{\bkmkend AAAAAAAAED}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v nonZeroCount\:ds::SparseMatrix< T >}
-{\xe \v ds::SparseMatrix< T >\:nonZeroCount}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALC" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
-< T >::nonZeroCount () const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAFC}
-{\bkmkend AAAAAAAAFC}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v rows\:ds::SparseMatrix< T >}
-{\xe \v ds::SparseMatrix< T >\:rows}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALC" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
-< T >::rows () const{\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAER}
-{\bkmkend AAAAAAAAER}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v set\:ds::SparseMatrix< T >}
-{\xe \v ds::SparseMatrix< T >\:set}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALC" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
-< T >::set (std::size_t r, std::size_t c, const T & v){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAEX}
-{\bkmkend AAAAAAAAEX}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAALX}
-{\bkmkend AAAAAAAALX}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Member Data Documentation\par
-\pard\plain 
-{\xe \v cols_\:ds::SparseMatrix< T >}
-{\xe \v ds::SparseMatrix< T >\:cols_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALC" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
-< T >::cols_{\f2 [private]}}}
-\par
-{\bkmkstart AAAAAAAAEO}
-{\bkmkend AAAAAAAAEO}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v data_\:ds::SparseMatrix< T >}
-{\xe \v ds::SparseMatrix< T >\:data_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEI" }{}}{\fldrslt {\cs37\ul\cf2 HashTable}}}
-<long long, T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALC" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
-< T >::data_{\f2 [private]}}}
-\par
-{\bkmkstart AAAAAAAAEK}
-{\bkmkend AAAAAAAAEK}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v rows_\:ds::SparseMatrix< T >}
-{\xe \v ds::SparseMatrix< T >\:rows_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALC" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
-< T >::rows_{\f2 [private]}}}
 \par
 {\bkmkstart AAAAAAAAEN}
 {\bkmkend AAAAAAAAEN}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Belirtilen koordinattaki elemanı okur. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i r} \cell }{Satır indeksi \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i c} \cell }{Sütun indeksi \cell }
+{\row }
 }
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Elemanın pointer'ı, yoksa nullptr \par
+}}}}
+{\xe \v key\:ds::SparseMatrix< T >}
+{\xe \v ds::SparseMatrix< T >\:key}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T> long long {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMG" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
+< T >::key (std::size_t r, std::size_t c){\f2 [inline]}, {\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Satır ve sütun indekslerini 64-bit key'e dönüştürür. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i r} \cell }{Satır indeksi \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i c} \cell }{Sütun indeksi \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+64-bit composite key \par
+}}}}
+{\xe \v nonZeroCount\:ds::SparseMatrix< T >}
+{\xe \v ds::SparseMatrix< T >\:nonZeroCount}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMG" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
+< T >::nonZeroCount () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEQ}
+{\bkmkend AAAAAAAAEQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sıfır olmayan eleman sayısını döndürür. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Sıfır olmayan eleman sayısı \par
+}}}}
+{\xe \v rows\:ds::SparseMatrix< T >}
+{\xe \v ds::SparseMatrix< T >\:rows}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMG" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
+< T >::rows () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAED}
+{\bkmkend AAAAAAAAED}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Matris satır sayısını döndürür. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Satır sayısı \par
+}}}}
+{\xe \v set\:ds::SparseMatrix< T >}
+{\xe \v ds::SparseMatrix< T >\:set}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T> void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMG" }{}}{\fldrslt {\cs37\ul\cf2 ds::SparseMatrix}}}
+< T >::set (std::size_t r, std::size_t c, const T & v){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEH}
+{\bkmkend AAAAAAAAEH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Belirtilen koordinata eleman atar. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i r} \cell }{Satır indeksi \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i c} \cell }{Sütun indeksi \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i v} \cell }{Atanacak değer \cell }
+{\row }
+}
+}}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 The documentation for this class was generated from the following file:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABZ" }{}}{\fldrslt {\cs37\ul\cf2 sparse_matrix.h}}}
+C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 sparse_matrix.h}}}
 \par
 }}

@@ -2,6 +2,11 @@
 \hypertarget{classds_1_1_doubly_linked_list}{}\label{classds_1_1_doubly_linked_list}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
 
 
+Çift yönlü bağlı liste kapsayıcısı  
+
+
+
+
 {\ttfamily \#include $<$doubly\+\_\+linked\+\_\+list.\+h$>$}
 
 
@@ -17,76 +22,69 @@ Collaboration diagram for ds\+::Doubly\+Linked\+List\texorpdfstring{$<$}{<} T \t
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}}
-\item 
+\begin{DoxyCompactList}\small\item\em Çift yönlü iterator. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Liste düğümü \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classds_1_1_doubly_linked_list_a5ff7741bb2cbf5168485b6b2ece42bbd}{Doubly\+Linked\+List}} ()=default
-\item 
-\mbox{\hyperlink{classds_1_1_doubly_linked_list_a16cada9d8162d86ba8b82dbaf7e1918b}{\texorpdfstring{$\sim$}{\string~}\+Doubly\+Linked\+List}} ()
-\item 
-\mbox{\hyperlink{classds_1_1_doubly_linked_list_a7cbccc3d21845cd07e4473c66a6b3f22}{Doubly\+Linked\+List}} (const \mbox{\hyperlink{classds_1_1_doubly_linked_list}{Doubly\+Linked\+List}} \&)=delete
-\item 
-\mbox{\hyperlink{classds_1_1_doubly_linked_list}{Doubly\+Linked\+List}} \& \mbox{\hyperlink{classds_1_1_doubly_linked_list_a5139026d2052aea99e34ec66356e8d2c}{operator=}} (const \mbox{\hyperlink{classds_1_1_doubly_linked_list}{Doubly\+Linked\+List}} \&)=delete
-\item 
+\Hypertarget{classds_1_1_doubly_linked_list_a5ff7741bb2cbf5168485b6b2ece42bbd}\label{classds_1_1_doubly_linked_list_a5ff7741bb2cbf5168485b6b2ece42bbd} 
+{\bfseries Doubly\+Linked\+List} ()=default
+\begin{DoxyCompactList}\small\item\em Varsayılan constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_doubly_linked_list_a16cada9d8162d86ba8b82dbaf7e1918b}\label{classds_1_1_doubly_linked_list_a16cada9d8162d86ba8b82dbaf7e1918b} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Doubly\+Linked\+List} ()
+\begin{DoxyCompactList}\small\item\em Destructor -\/ tüm düğümleri serbest bırakır. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_doubly_linked_list_a7cbccc3d21845cd07e4473c66a6b3f22}\label{classds_1_1_doubly_linked_list_a7cbccc3d21845cd07e4473c66a6b3f22} 
+{\bfseries Doubly\+Linked\+List} (const \mbox{\hyperlink{classds_1_1_doubly_linked_list}{Doubly\+Linked\+List}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor (silinmiş) \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_doubly_linked_list_a5139026d2052aea99e34ec66356e8d2c}\label{classds_1_1_doubly_linked_list_a5139026d2052aea99e34ec66356e8d2c} 
+\mbox{\hyperlink{classds_1_1_doubly_linked_list}{Doubly\+Linked\+List}} \& {\bfseries operator=} (const \mbox{\hyperlink{classds_1_1_doubly_linked_list}{Doubly\+Linked\+List}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy assignment operator (silinmiş) \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list_a0cd2cfe2104c7250369ee89c9616b923}{begin}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Başlangıç iteratörü \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list_aed22012cf544c4546868ab5a545914f9}{end}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Sondan bir sonrası iteratörü \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list_aaad687c167f3f8a8b3264d183bab8064}{rbegin}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Sondan geri iterasyon için başlangıç \end{DoxyCompactList}\item 
 std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_doubly_linked_list_a161308040d6174300cdcf4f138c97c51}{size}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Liste eleman sayısını döndürür. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classds_1_1_doubly_linked_list_ae6b33a59dd79d4b4d578ad4ddcf64a97}{empty}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Listenin boş olup olmadığını kontrol eder. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classds_1_1_doubly_linked_list_a06c0989d05c4bd2bea24fe4e157cb7ea}{clear}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Tüm elemanları serbest bırakır. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list_a1eef59637606e2427a92a1c345bcf7de}{push\+\_\+back}} (const T \&v)
-\item 
+\begin{DoxyCompactList}\small\item\em Listeye sona eleman ekler. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list_a0bf5bd3a047a9f9af555efb35f0afcdb}{push\+\_\+front}} (const T \&v)
-\item 
+\begin{DoxyCompactList}\small\item\em Listeye başa eleman ekler. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list_a7e2d78d1d937fdd894fd9bc9e5448e1f}{insert\+\_\+after}} (\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} it, const T \&v)
-\item 
+\begin{DoxyCompactList}\small\item\em Verilen düğümden sonra eleman ekler. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list_a007e35bdeab28fea7dc5931dc57bc267}{erase}} (\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} it)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Verilen konumdaki düğümü kaldırır. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_doubly_linked_list_ab984830080da01385b6e0c8eb8e1b963}{head\+\_\+}} = nullptr
-\item 
-\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_doubly_linked_list_aac0ac5dbd0e1a6f3d935a8357cf00a96}{tail\+\_\+}} = nullptr
-\item 
-std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_doubly_linked_list_a8d9e5866bbdd5647b9ce4858bd9c60af}{size\+\_\+}} = 0
-\end{DoxyCompactItemize}
+\Hypertarget{classds_1_1_doubly_linked_list_ab984830080da01385b6e0c8eb8e1b963}\label{classds_1_1_doubly_linked_list_ab984830080da01385b6e0c8eb8e1b963} 
+\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries head\+\_\+} = nullptr
+\begin{DoxyCompactList}\small\item\em Liste başı pointer\textquotesingle{}ı \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_doubly_linked_list_aac0ac5dbd0e1a6f3d935a8357cf00a96}\label{classds_1_1_doubly_linked_list_aac0ac5dbd0e1a6f3d935a8357cf00a96} 
+\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries tail\+\_\+} = nullptr
+\begin{DoxyCompactList}\small\item\em Liste sonu pointer\textquotesingle{}ı \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_doubly_linked_list_a8d9e5866bbdd5647b9ce4858bd9c60af}\label{classds_1_1_doubly_linked_list_a8d9e5866bbdd5647b9ce4858bd9c60af} 
+std\+::size\+\_\+t {\bfseries size\+\_\+} = 0
+\begin{DoxyCompactList}\small\item\em Liste eleman sayısı \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\label{doc-constructors}
-\Hypertarget{classds_1_1_doubly_linked_list_doc-constructors}
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classds_1_1_doubly_linked_list_a5ff7741bb2cbf5168485b6b2ece42bbd}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!DoublyLinkedList@{DoublyLinkedList}}
-\index{DoublyLinkedList@{DoublyLinkedList}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{DoublyLinkedList()}{DoublyLinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{classds_1_1_doubly_linked_list_a5ff7741bb2cbf5168485b6b2ece42bbd} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::\+Doubly\+Linked\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
-
-\Hypertarget{classds_1_1_doubly_linked_list_a16cada9d8162d86ba8b82dbaf7e1918b}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!````~DoublyLinkedList@{\texorpdfstring{$\sim$}{\string~}DoublyLinkedList}}
-\index{````~DoublyLinkedList@{\texorpdfstring{$\sim$}{\string~}DoublyLinkedList}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DoublyLinkedList()}{\string~DoublyLinkedList()}}
-{\footnotesize\ttfamily \label{classds_1_1_doubly_linked_list_a16cada9d8162d86ba8b82dbaf7e1918b} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{classds_1_1_doubly_linked_list}{Doubly\+Linked\+List}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\Hypertarget{classds_1_1_doubly_linked_list_a7cbccc3d21845cd07e4473c66a6b3f22}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!DoublyLinkedList@{DoublyLinkedList}}
-\index{DoublyLinkedList@{DoublyLinkedList}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{DoublyLinkedList()}{DoublyLinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{classds_1_1_doubly_linked_list_a7cbccc3d21845cd07e4473c66a6b3f22} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::\+Doubly\+Linked\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classds_1_1_doubly_linked_list}{Doubly\+Linked\+List}}$<$ T $>$ \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class ds\+::\+Doubly\+Linked\+List$<$ T $>$}
+Çift yönlü bağlı liste kapsayıcısı 
 
 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Eleman tipi\\
+\hline
+\end{DoxyTemplParams}
+Bu sınıf, çift yönlü bağlı liste veri yapısını implement eder. Her düğüm, önceki ve sonraki düğümlere referans tutar. Iterator desteği ile STL uyumlu erişim sağlar. 
 
 \label{doc-func-members}
 \Hypertarget{classds_1_1_doubly_linked_list_doc-func-members}
@@ -98,6 +96,13 @@ template$<$typename T$>$ \\
 template$<$typename T$>$ \\
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Başlangıç iteratörü 
+
+\begin{DoxyReturn}{Returns}
+İlk düğümü gösteren iterator 
+\end{DoxyReturn}
 \Hypertarget{classds_1_1_doubly_linked_list_a06c0989d05c4bd2bea24fe4e157cb7ea}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!clear@{clear}}
 \index{clear@{clear}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{clear()}{clear()}}
@@ -105,13 +110,24 @@ template$<$typename T$>$ \\
 template$<$typename T$>$ \\
 void \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\Hypertarget{classds_1_1_doubly_linked_list_ae6b33a59dd79d4b4d578ad4ddcf64a97}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!empty@{empty}}
+
+
+Tüm elemanları serbest bırakır. 
+
+Liste başından sonuna kadar tüm düğümleri siler ve listeyi boş duruma getirir. \Hypertarget{classds_1_1_doubly_linked_list_ae6b33a59dd79d4b4d578ad4ddcf64a97}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!empty@{empty}}
 \index{empty@{empty}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{empty()}{empty()}}
 {\footnotesize\ttfamily \label{classds_1_1_doubly_linked_list_ae6b33a59dd79d4b4d578ad4ddcf64a97} 
 template$<$typename T$>$ \\
 bool \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Listenin boş olup olmadığını kontrol eder. 
+
+\begin{DoxyReturn}{Returns}
+true eğer liste boşsa 
+\end{DoxyReturn}
 \Hypertarget{classds_1_1_doubly_linked_list_aed22012cf544c4546868ab5a545914f9}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!end@{end}}
 \index{end@{end}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{end()}{end()}}
@@ -119,6 +135,13 @@ bool \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+Li
 template$<$typename T$>$ \\
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Sondan bir sonrası iteratörü 
+
+\begin{DoxyReturn}{Returns}
+Liste sonundaki null iterator 
+\end{DoxyReturn}
 \Hypertarget{classds_1_1_doubly_linked_list_a007e35bdeab28fea7dc5931dc57bc267}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!erase@{erase}}
 \index{erase@{erase}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{erase()}{erase()}}
@@ -126,6 +149,18 @@ template$<$typename T$>$ \\
 template$<$typename T$>$ \\
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}}}]{it}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Verilen konumdaki düğümü kaldırır. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & Silinecek düğümü gösteren iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sonraki düğümü gösteren iterator 
+\end{DoxyReturn}
 \Hypertarget{classds_1_1_doubly_linked_list_a7e2d78d1d937fdd894fd9bc9e5448e1f}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!insert\_after@{insert\_after}}
 \index{insert\_after@{insert\_after}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{insert\_after()}{insert\_after()}}
@@ -133,13 +168,20 @@ template$<$typename T$>$ \\
 template$<$typename T$>$ \\
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::insert\+\_\+after (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}}}]{it}{, }\item[{const T \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\Hypertarget{classds_1_1_doubly_linked_list_a5139026d2052aea99e34ec66356e8d2c}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!operator=@{operator=}}
-\index{operator=@{operator=}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \label{classds_1_1_doubly_linked_list_a5139026d2052aea99e34ec66356e8d2c} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{classds_1_1_doubly_linked_list}{Doubly\+Linked\+List}} \& \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classds_1_1_doubly_linked_list}{Doubly\+Linked\+List}}$<$ T $>$ \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+
+Verilen düğümden sonra eleman ekler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & Referans alınacak iterator \\
+\hline
+{\em v} & Eklenecek değer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Yeni eklenen düğümü gösteren iterator 
+\end{DoxyReturn}
 \Hypertarget{classds_1_1_doubly_linked_list_a1eef59637606e2427a92a1c345bcf7de}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!push\_back@{push\_back}}
 \index{push\_back@{push\_back}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
@@ -147,6 +189,18 @@ template$<$typename T$>$ \\
 template$<$typename T$>$ \\
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Listeye sona eleman ekler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Eklenecek değer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Yeni eklenen düğümü gösteren iterator 
+\end{DoxyReturn}
 \Hypertarget{classds_1_1_doubly_linked_list_a0bf5bd3a047a9f9af555efb35f0afcdb}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!push\_front@{push\_front}}
 \index{push\_front@{push\_front}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{push\_front()}{push\_front()}}
@@ -154,6 +208,18 @@ template$<$typename T$>$ \\
 template$<$typename T$>$ \\
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{const T \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Listeye başa eleman ekler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Eklenecek değer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Yeni eklenen düğümü gösteren iterator 
+\end{DoxyReturn}
 \Hypertarget{classds_1_1_doubly_linked_list_aaad687c167f3f8a8b3264d183bab8064}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!rbegin@{rbegin}}
 \index{rbegin@{rbegin}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{rbegin()}{rbegin()}}
@@ -161,6 +227,13 @@ template$<$typename T$>$ \\
 template$<$typename T$>$ \\
 \mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1iterator}{iterator}} \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::rbegin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Sondan geri iterasyon için başlangıç 
+
+\begin{DoxyReturn}{Returns}
+Son düğümü gösteren iterator 
+\end{DoxyReturn}
 \Hypertarget{classds_1_1_doubly_linked_list_a161308040d6174300cdcf4f138c97c51}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!size@{size}}
 \index{size@{size}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{size()}{size()}}
@@ -170,30 +243,11 @@ std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doub
 
 
 
-\label{doc-variable-members}
-\Hypertarget{classds_1_1_doubly_linked_list_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{classds_1_1_doubly_linked_list_ab984830080da01385b6e0c8eb8e1b963}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!head\_@{head\_}}
-\index{head\_@{head\_}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{head\_}{head\_}}
-{\footnotesize\ttfamily \label{classds_1_1_doubly_linked_list_ab984830080da01385b6e0c8eb8e1b963} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::head\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+Liste eleman sayısını döndürür. 
 
-\Hypertarget{classds_1_1_doubly_linked_list_a8d9e5866bbdd5647b9ce4858bd9c60af}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!size\_@{size\_}}
-\index{size\_@{size\_}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{size\_}{size\_}}
-{\footnotesize\ttfamily \label{classds_1_1_doubly_linked_list_a8d9e5866bbdd5647b9ce4858bd9c60af} 
-template$<$typename T$>$ \\
-std\+::size\+\_\+t \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::size\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
-
-\Hypertarget{classds_1_1_doubly_linked_list_aac0ac5dbd0e1a6f3d935a8357cf00a96}\index{ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}!tail\_@{tail\_}}
-\index{tail\_@{tail\_}!ds::DoublyLinkedList$<$ T $>$@{ds::DoublyLinkedList$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{tail\_}{tail\_}}
-{\footnotesize\ttfamily \label{classds_1_1_doubly_linked_list_aac0ac5dbd0e1a6f3d935a8357cf00a96} 
-template$<$typename T$>$ \\
-\mbox{\hyperlink{structds_1_1_doubly_linked_list_1_1_node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_doubly_linked_list}{ds\+::\+Doubly\+Linked\+List}}$<$ T $>$\+::tail\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
-
+\begin{DoxyReturn}{Returns}
+Eleman sayısı 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

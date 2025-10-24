@@ -1,37 +1,45 @@
 \doxysection{parser.\+h}
 \hypertarget{parser_8h_source}{}\label{parser_8h_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/parser.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/parser.h}}
-
+\mbox{\hyperlink{parser_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <memory>}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cstddef>}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}translator/token.h"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}translator/ast.h"{}}}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }translator\ \{}
-\DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }Parser\ \{}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<Token>\ tokens\_;}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{mutable}\ std::size\_t\ pos\_\ =\ 0;}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{const}\ Token\&\ peek()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ tokens\_[pos\_];\ \}}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{const}\ Token\&\ advance()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ tokens\_[pos\_++];\ \}}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{bool}\ match(TokenType\ t)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{if}\ (peek().type\ ==\ t)\ \{\ ++pos\_;\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \}\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ at\_eof()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ peek().type\ ==\ TokenType::Eof;\ \}}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ Parsing\ helpers}}
-\DoxyCodeLine{00020\ \ \ \ \ std::unique\_ptr<Expr>\ parse\_expression()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00021\ \ \ \ \ std::unique\_ptr<Expr>\ parse\_term()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00022\ \ \ \ \ std::unique\_ptr<Expr>\ parse\_factor()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \ \ \ \ std::unique\_ptr<Stmt>\ parse\_statement(\textcolor{keywordtype}{int}\&\ outLabel)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{explicit}\ Parser(std::vector<Token>\ toks):\ tokens\_(std::move(toks))\ \{\}}
-\DoxyCodeLine{00028\ \ \ \ \ Program\ parseProgram()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00029\ \};}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \}\ \textcolor{comment}{//\ namespace\ translator}}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{token_8h}{translator/token.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ast_8h}{translator/ast.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }translator\ \{}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtranslator_1_1_parser_a2e2390931ab80b865ac31eee1501c8ff}{Parser}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<Token>\ \mbox{\hyperlink{classtranslator_1_1_parser_a656fd7ad404746f72905ea7ca9c96130}{tokens\_}};\ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{mutable}\ std::size\_t\ \mbox{\hyperlink{classtranslator_1_1_parser_af5354c7d27d4189bd1f9c33c710b74ac}{pos\_}}\ =\ 0;\ \ \ \ \ \ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structtranslator_1_1_token}{Token}}\&\ \mbox{\hyperlink{classtranslator_1_1_parser_a01eed9fe50c7b02223c8aaf8140b4649}{peek}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classtranslator_1_1_parser_a656fd7ad404746f72905ea7ca9c96130}{tokens\_}}[\mbox{\hyperlink{classtranslator_1_1_parser_af5354c7d27d4189bd1f9c33c710b74ac}{pos\_}}];\ \}}
+\DoxyCodeLine{00032\ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structtranslator_1_1_token}{Token}}\&\ \mbox{\hyperlink{classtranslator_1_1_parser_a454ea6c16f64db09d8d2b9987e1e4833}{advance}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classtranslator_1_1_parser_a656fd7ad404746f72905ea7ca9c96130}{tokens\_}}[\mbox{\hyperlink{classtranslator_1_1_parser_af5354c7d27d4189bd1f9c33c710b74ac}{pos\_}}++];\ \}}
+\DoxyCodeLine{00038\ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtranslator_1_1_parser_a5719d1927d26586fc770de412025bdbb}{match}}(\mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480}{TokenType}}\ t)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classtranslator_1_1_parser_a01eed9fe50c7b02223c8aaf8140b4649}{peek}}().type\ ==\ t)\ \{\ ++\mbox{\hyperlink{classtranslator_1_1_parser_af5354c7d27d4189bd1f9c33c710b74ac}{pos\_}};\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \}\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00045\ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtranslator_1_1_parser_ab2e3e753c664de21a74add33db1a5d26}{at\_eof}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classtranslator_1_1_parser_a01eed9fe50c7b02223c8aaf8140b4649}{peek}}().\mbox{\hyperlink{structtranslator_1_1_token_a36c889bc7ded337a56b399f92ae1fc2a}{type}}\ ==\ TokenType::Eof;\ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ Parsing\ helpers}}
+\DoxyCodeLine{00057\ \ \ \ \ std::unique\_ptr<Expr>\ \mbox{\hyperlink{classtranslator_1_1_parser_afd6a7894691a68ec5743314fef3a7f75}{parse\_expression}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ std::unique\_ptr<Expr>\ \mbox{\hyperlink{classtranslator_1_1_parser_acfd7d04d3973badabd5a26214ed3c500}{parse\_term}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ std::unique\_ptr<Expr>\ \mbox{\hyperlink{classtranslator_1_1_parser_abb54531b779933acfd0c644dcd868b45}{parse\_factor}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \ \ std::unique\_ptr<Stmt>\ \mbox{\hyperlink{classtranslator_1_1_parser_aec074fe4de2041a83946260a05780582}{parse\_statement}}(\textcolor{keywordtype}{int}\&\ outLabel)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classtranslator_1_1_parser_a2e2390931ab80b865ac31eee1501c8ff}{Parser}}(std::vector<Token>\ toks):\ \mbox{\hyperlink{classtranslator_1_1_parser_a656fd7ad404746f72905ea7ca9c96130}{tokens\_}}(std::move(toks))\ \{\}}
+\DoxyCodeLine{00084\ \ \ \ \ }
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{structtranslator_1_1_program}{Program}}\ \mbox{\hyperlink{classtranslator_1_1_parser_a119007cefb979b4071cd7313c0c31062}{parseProgram}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ \};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \}\ \textcolor{comment}{//\ namespace\ translator}}
+\DoxyCodeLine{00093\ }
 
 \end{DoxyCode}

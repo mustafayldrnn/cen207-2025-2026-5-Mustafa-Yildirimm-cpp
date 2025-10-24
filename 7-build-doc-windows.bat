@@ -44,7 +44,7 @@ call doxygen DoxyfileTestWin
 echo Not: coverxygen uses doxygen xml output for coverage
 
 echo Run Documentation Coverage Data Collector for Library (No Source Code Only Headers)
-call python -m coverxygen --xml-dir ./docs/doxygenlibwin/xml --src-dir ./ --format lcov --output ./docs/coverxygenlibwin/lcov_doxygen_lib_win.info
+call python -m coverxygen --xml-dir ./docs/doxygenlibwin/xml --src-dir src/LanguageTranslator/header;include/ds;src/utility/header --format lcov --output ./docs/coverxygenlibwin/lcov_doxygen_lib_win.info
 
 echo Run Documentation Coverage Data Collector for Unit Tests (Test Sources and Test Data Sets)
 call python -m coverxygen --xml-dir ./docs/doxygentestwin/xml --src-dir tests --format lcov --output ./docs/coverxygentestwin/lcov_doxygen_test_win.info
@@ -84,3 +84,4 @@ tar -czvf release_win\windows-doxygen-test-documentation.tar.gz -C docs\doxygent
 echo ....................
 echo Operation Completed!
 pause
+

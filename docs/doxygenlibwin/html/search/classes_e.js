@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variableexpr_0',['VariableExpr',['../structtranslator_1_1_variable_expr.html',1,'translator']]]
+  ['userprofile_0',['UserProfile',['../struct_coruh_1_1_language_translator_1_1_user_profile.html',1,'Coruh::LanguageTranslator']]]
 ];

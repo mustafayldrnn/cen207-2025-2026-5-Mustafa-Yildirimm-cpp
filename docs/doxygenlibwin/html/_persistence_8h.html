@@ -79,12 +79,13 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Persistence.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>LanguageTranslator verileri için ikili (binary) kalıcılık yardımcıları.  
+<p>LanguageTranslator verileri için ikili (binary) kalıcılık yardımcıları  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
@@ -107,7 +108,7 @@ Classes</h2></td></tr>
 <tr class="memitem:Coruh_3A_3ALanguageTranslator_3A_3AUserProfile" id="r_Coruh_3A_3ALanguageTranslator_3A_3AUserProfile"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_coruh_1_1_language_translator_1_1_user_profile.html">Coruh::LanguageTranslator::UserProfile</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı profili bilgileri.  <a href="struct_coruh_1_1_language_translator_1_1_user_profile.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Coruh_3A_3ALanguageTranslator_3A_3ATranslationRecord" id="r_Coruh_3A_3ALanguageTranslator_3A_3ATranslationRecord"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_coruh_1_1_language_translator_1_1_translation_record.html">Coruh::LanguageTranslator::TranslationRecord</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çeviri geçmişi kaydı.  <a href="struct_coruh_1_1_language_translator_1_1_translation_record.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çeviri geçmişi kaydı  <a href="struct_coruh_1_1_language_translator_1_1_translation_record.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Coruh_3A_3ALanguageTranslator_3A_3ATipEntry" id="r_Coruh_3A_3ALanguageTranslator_3A_3ATipEntry"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_coruh_1_1_language_translator_1_1_tip_entry.html">Coruh::LanguageTranslator::TipEntry</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öğrenme ipucu girdisi.  <a href="struct_coruh_1_1_language_translator_1_1_tip_entry.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Coruh_3A_3ALanguageTranslator_3A_3APhraseEntry" id="r_Coruh_3A_3ALanguageTranslator_3A_3APhraseEntry"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_coruh_1_1_language_translator_1_1_phrase_entry.html">Coruh::LanguageTranslator::PhraseEntry</a></td></tr>
@@ -115,30 +116,409 @@ Classes</h2></td></tr>
 <tr class="memitem:Coruh_3A_3ALanguageTranslator_3A_3APronunciationEntry" id="r_Coruh_3A_3ALanguageTranslator_3A_3APronunciationEntry"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_coruh_1_1_language_translator_1_1_pronunciation_entry.html">Coruh::LanguageTranslator::PronunciationEntry</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Telaffuz girdisi.  <a href="struct_coruh_1_1_language_translator_1_1_pronunciation_entry.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:Persistence" id="r_Persistence"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_persistence.html">Persistence</a></td></tr>
+<tr class="memdesc:namespace_persistence"><td class="mdescLeft">&#160;</td><td class="mdescRight">Veri kalıcılığı işlemleri için yardımcı fonksiyonlar. <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9ec1a9482d802ff4b74d4f65e1e54147" id="r_a9ec1a9482d802ff4b74d4f65e1e54147"><td class="memItemLeft" align="right" valign="top"><a id="a9ec1a9482d802ff4b74d4f65e1e54147" name="a9ec1a9482d802ff4b74d4f65e1e54147"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Coruh::LanguageTranslator::Persistence::writeUsers</b> (const std::string &amp;path, const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_user_profile.html">UserProfile</a> &gt; &amp;data)</td></tr>
-<tr class="memdesc:a9ec1a9482d802ff4b74d4f65e1e54147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı listesini ikili dosyaya yazar. <br /></td></tr>
-<tr class="memitem:af0968d3b1840504d0d9cd69944b95397" id="r_af0968d3b1840504d0d9cd69944b95397"><td class="memItemLeft" align="right" valign="top"><a id="af0968d3b1840504d0d9cd69944b95397" name="af0968d3b1840504d0d9cd69944b95397"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Coruh::LanguageTranslator::Persistence::readUsers</b> (const std::string &amp;path, std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_user_profile.html">UserProfile</a> &gt; &amp;out)</td></tr>
-<tr class="memdesc:af0968d3b1840504d0d9cd69944b95397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı listesini ikili dosyadan okur. <br /></td></tr>
-<tr class="memitem:a7c255eebbcc1b5e3ad923eddae7b8400" id="r_a7c255eebbcc1b5e3ad923eddae7b8400"><td class="memItemLeft" align="right" valign="top"><a id="a7c255eebbcc1b5e3ad923eddae7b8400" name="a7c255eebbcc1b5e3ad923eddae7b8400"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Coruh::LanguageTranslator::Persistence::writeHistory</b> (const std::string &amp;path, const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_translation_record.html">TranslationRecord</a> &gt; &amp;data)</td></tr>
-<tr class="memdesc:a7c255eebbcc1b5e3ad923eddae7b8400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çeviri geçmişini yazar. <br /></td></tr>
-<tr class="memitem:a017a206629f11bff566a21395f6ffc2f" id="r_a017a206629f11bff566a21395f6ffc2f"><td class="memItemLeft" align="right" valign="top"><a id="a017a206629f11bff566a21395f6ffc2f" name="a017a206629f11bff566a21395f6ffc2f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Coruh::LanguageTranslator::Persistence::readHistory</b> (const std::string &amp;path, std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_translation_record.html">TranslationRecord</a> &gt; &amp;out)</td></tr>
-<tr class="memdesc:a017a206629f11bff566a21395f6ffc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çeviri geçmişini okur. <br /></td></tr>
-<tr class="memitem:a9fa7f276ccdf1eb80607d021c8dfb801" id="r_a9fa7f276ccdf1eb80607d021c8dfb801"><td class="memItemLeft" align="right" valign="top"><a id="a9fa7f276ccdf1eb80607d021c8dfb801" name="a9fa7f276ccdf1eb80607d021c8dfb801"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>Coruh::LanguageTranslator::Persistence::sha256Hex</b> (const std::string &amp;input)</td></tr>
-<tr class="memdesc:a9fa7f276ccdf1eb80607d021c8dfb801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Girdi için hex SHA-256 (ders amaçlı pseudo) döndürür. <br /></td></tr>
-<tr class="memitem:a2407bc3ad66791cf41f33f257669cd08" id="r_a2407bc3ad66791cf41f33f257669cd08"><td class="memItemLeft" align="right" valign="top"><a id="a2407bc3ad66791cf41f33f257669cd08" name="a2407bc3ad66791cf41f33f257669cd08"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>Coruh::LanguageTranslator::Persistence::randomSalt</b> (std::size_t len=16)</td></tr>
-<tr class="memdesc:a2407bc3ad66791cf41f33f257669cd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rastgele salt üretir. <br /></td></tr>
+<tr class="memitem:a9ec1a9482d802ff4b74d4f65e1e54147" id="r_a9ec1a9482d802ff4b74d4f65e1e54147"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ec1a9482d802ff4b74d4f65e1e54147">Coruh::LanguageTranslator::Persistence::writeUsers</a> (const std::string &amp;path, const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_user_profile.html">UserProfile</a> &gt; &amp;data)</td></tr>
+<tr class="memdesc:a9ec1a9482d802ff4b74d4f65e1e54147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı listesini ikili dosyaya yazar.  <br /></td></tr>
+<tr class="memitem:af0968d3b1840504d0d9cd69944b95397" id="r_af0968d3b1840504d0d9cd69944b95397"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0968d3b1840504d0d9cd69944b95397">Coruh::LanguageTranslator::Persistence::readUsers</a> (const std::string &amp;path, std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_user_profile.html">UserProfile</a> &gt; &amp;out)</td></tr>
+<tr class="memdesc:af0968d3b1840504d0d9cd69944b95397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kullanıcı listesini ikili dosyadan okur.  <br /></td></tr>
+<tr class="memitem:a7c255eebbcc1b5e3ad923eddae7b8400" id="r_a7c255eebbcc1b5e3ad923eddae7b8400"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c255eebbcc1b5e3ad923eddae7b8400">Coruh::LanguageTranslator::Persistence::writeHistory</a> (const std::string &amp;path, const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_translation_record.html">TranslationRecord</a> &gt; &amp;data)</td></tr>
+<tr class="memdesc:a7c255eebbcc1b5e3ad923eddae7b8400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çeviri geçmişini ikili dosyaya yazar.  <br /></td></tr>
+<tr class="memitem:a017a206629f11bff566a21395f6ffc2f" id="r_a017a206629f11bff566a21395f6ffc2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a017a206629f11bff566a21395f6ffc2f">Coruh::LanguageTranslator::Persistence::readHistory</a> (const std::string &amp;path, std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_translation_record.html">TranslationRecord</a> &gt; &amp;out)</td></tr>
+<tr class="memdesc:a017a206629f11bff566a21395f6ffc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Çeviri geçmişini ikili dosyadan okur.  <br /></td></tr>
+<tr class="memitem:a348c4242ac7312bd17ccefa31d5de1e1" id="r_a348c4242ac7312bd17ccefa31d5de1e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a348c4242ac7312bd17ccefa31d5de1e1">Coruh::LanguageTranslator::Persistence::writeTips</a> (const std::string &amp;path, const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_tip_entry.html">TipEntry</a> &gt; &amp;data)</td></tr>
+<tr class="memdesc:a348c4242ac7312bd17ccefa31d5de1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öğrenme ipuçlarını ikili dosyaya yazar.  <br /></td></tr>
+<tr class="memitem:aa478da1635b6bbd33988d2a866ab0ed5" id="r_aa478da1635b6bbd33988d2a866ab0ed5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa478da1635b6bbd33988d2a866ab0ed5">Coruh::LanguageTranslator::Persistence::readTips</a> (const std::string &amp;path, std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_tip_entry.html">TipEntry</a> &gt; &amp;out)</td></tr>
+<tr class="memdesc:aa478da1635b6bbd33988d2a866ab0ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öğrenme ipuçlarını ikili dosyadan okur.  <br /></td></tr>
+<tr class="memitem:a07c5f30bc254f9726e89140e961708ac" id="r_a07c5f30bc254f9726e89140e961708ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07c5f30bc254f9726e89140e961708ac">Coruh::LanguageTranslator::Persistence::writePhrases</a> (const std::string &amp;path, const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_phrase_entry.html">PhraseEntry</a> &gt; &amp;data)</td></tr>
+<tr class="memdesc:a07c5f30bc254f9726e89140e961708ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kelime öbeklerini ikili dosyaya yazar.  <br /></td></tr>
+<tr class="memitem:a0a69722e1b2cd620213110896361d1b8" id="r_a0a69722e1b2cd620213110896361d1b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a69722e1b2cd620213110896361d1b8">Coruh::LanguageTranslator::Persistence::readPhrases</a> (const std::string &amp;path, std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_phrase_entry.html">PhraseEntry</a> &gt; &amp;out)</td></tr>
+<tr class="memdesc:a0a69722e1b2cd620213110896361d1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kelime öbeklerini ikili dosyadan okur.  <br /></td></tr>
+<tr class="memitem:a86f828e22261ea38bf2987b85f2c531e" id="r_a86f828e22261ea38bf2987b85f2c531e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86f828e22261ea38bf2987b85f2c531e">Coruh::LanguageTranslator::Persistence::writePronunciations</a> (const std::string &amp;path, const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_pronunciation_entry.html">PronunciationEntry</a> &gt; &amp;data)</td></tr>
+<tr class="memdesc:a86f828e22261ea38bf2987b85f2c531e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Telaffuz rehberini ikili dosyaya yazar.  <br /></td></tr>
+<tr class="memitem:ae87ba97358bd7e21093e8e4be0a551ff" id="r_ae87ba97358bd7e21093e8e4be0a551ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae87ba97358bd7e21093e8e4be0a551ff">Coruh::LanguageTranslator::Persistence::readPronunciations</a> (const std::string &amp;path, std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_pronunciation_entry.html">PronunciationEntry</a> &gt; &amp;out)</td></tr>
+<tr class="memdesc:ae87ba97358bd7e21093e8e4be0a551ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Telaffuz rehberini ikili dosyadan okur.  <br /></td></tr>
+<tr class="memitem:a9fa7f276ccdf1eb80607d021c8dfb801" id="r_a9fa7f276ccdf1eb80607d021c8dfb801"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fa7f276ccdf1eb80607d021c8dfb801">Coruh::LanguageTranslator::Persistence::sha256Hex</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:a9fa7f276ccdf1eb80607d021c8dfb801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Girdi için hex SHA-256 (ders amaçlı pseudo) döndürür.  <br /></td></tr>
+<tr class="memitem:a2407bc3ad66791cf41f33f257669cd08" id="r_a2407bc3ad66791cf41f33f257669cd08"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2407bc3ad66791cf41f33f257669cd08">Coruh::LanguageTranslator::Persistence::randomSalt</a> (std::size_t len=16)</td></tr>
+<tr class="memdesc:a2407bc3ad66791cf41f33f257669cd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rastgele salt üretir.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>LanguageTranslator verileri için ikili (binary) kalıcılık yardımcıları. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>LanguageTranslator verileri için ikili (binary) kalıcılık yardımcıları </p>
+<dl class="section author"><dt>Author</dt><dd>Mustafa Yıldırım </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a2407bc3ad66791cf41f33f257669cd08" name="a2407bc3ad66791cf41f33f257669cd08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2407bc3ad66791cf41f33f257669cd08">&#9670;&#160;</a></span>randomSalt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Coruh::LanguageTranslator::Persistence::randomSalt </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>len</em></span><span class="paramdefsep"> = </span><span class="paramdefval">16</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rastgele salt üretir. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">len</td><td>Salt uzunluğu (varsayılan: 16) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Rastgele salt string'i</dd></dl>
+<p>Bu fonksiyon, şifre hash'leme için güvenli salt değeri üretir. </p>
+
+</div>
+</div>
+<a id="a017a206629f11bff566a21395f6ffc2f" name="a017a206629f11bff566a21395f6ffc2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a017a206629f11bff566a21395f6ffc2f">&#9670;&#160;</a></span>readHistory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::Persistence::readHistory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_translation_record.html">TranslationRecord</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Çeviri geçmişini ikili dosyadan okur. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Dosya yolu </td></tr>
+    <tr><td class="paramname">out</td><td>Okunan verilerin yazılacağı vektör </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Okuma işlemi başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="a0a69722e1b2cd620213110896361d1b8" name="a0a69722e1b2cd620213110896361d1b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a69722e1b2cd620213110896361d1b8">&#9670;&#160;</a></span>readPhrases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::Persistence::readPhrases </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_phrase_entry.html">PhraseEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kelime öbeklerini ikili dosyadan okur. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Dosya yolu </td></tr>
+    <tr><td class="paramname">out</td><td>Okunan verilerin yazılacağı vektör </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Okuma işlemi başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="ae87ba97358bd7e21093e8e4be0a551ff" name="ae87ba97358bd7e21093e8e4be0a551ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae87ba97358bd7e21093e8e4be0a551ff">&#9670;&#160;</a></span>readPronunciations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::Persistence::readPronunciations </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_pronunciation_entry.html">PronunciationEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Telaffuz rehberini ikili dosyadan okur. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Dosya yolu </td></tr>
+    <tr><td class="paramname">out</td><td>Okunan verilerin yazılacağı vektör </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Okuma işlemi başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="aa478da1635b6bbd33988d2a866ab0ed5" name="aa478da1635b6bbd33988d2a866ab0ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa478da1635b6bbd33988d2a866ab0ed5">&#9670;&#160;</a></span>readTips()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::Persistence::readTips </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_tip_entry.html">TipEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Öğrenme ipuçlarını ikili dosyadan okur. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Dosya yolu </td></tr>
+    <tr><td class="paramname">out</td><td>Okunan verilerin yazılacağı vektör </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Okuma işlemi başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="af0968d3b1840504d0d9cd69944b95397" name="af0968d3b1840504d0d9cd69944b95397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0968d3b1840504d0d9cd69944b95397">&#9670;&#160;</a></span>readUsers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::Persistence::readUsers </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_user_profile.html">UserProfile</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kullanıcı listesini ikili dosyadan okur. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Dosya yolu </td></tr>
+    <tr><td class="paramname">out</td><td>Okunan verilerin yazılacağı vektör </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Okuma işlemi başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="a9fa7f276ccdf1eb80607d021c8dfb801" name="a9fa7f276ccdf1eb80607d021c8dfb801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa7f276ccdf1eb80607d021c8dfb801">&#9670;&#160;</a></span>sha256Hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Coruh::LanguageTranslator::Persistence::sha256Hex </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Girdi için hex SHA-256 (ders amaçlı pseudo) döndürür. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Hash'lenecek girdi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SHA-256 hex string'i</dd></dl>
+<p>Bu fonksiyon, eğitim amaçlı basitleştirilmiş bir hash fonksiyonudur. Gerçek uygulamalarda güvenli hash kütüphaneleri kullanılmalıdır. </p>
+
+</div>
+</div>
+<a id="a7c255eebbcc1b5e3ad923eddae7b8400" name="a7c255eebbcc1b5e3ad923eddae7b8400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c255eebbcc1b5e3ad923eddae7b8400">&#9670;&#160;</a></span>writeHistory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::Persistence::writeHistory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_translation_record.html">TranslationRecord</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Çeviri geçmişini ikili dosyaya yazar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Dosya yolu </td></tr>
+    <tr><td class="paramname">data</td><td>Yazılacak çeviri geçmişi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Yazma işlemi başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="a07c5f30bc254f9726e89140e961708ac" name="a07c5f30bc254f9726e89140e961708ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07c5f30bc254f9726e89140e961708ac">&#9670;&#160;</a></span>writePhrases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::Persistence::writePhrases </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_phrase_entry.html">PhraseEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kelime öbeklerini ikili dosyaya yazar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Dosya yolu </td></tr>
+    <tr><td class="paramname">data</td><td>Yazılacak kelime öbekleri listesi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Yazma işlemi başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="a86f828e22261ea38bf2987b85f2c531e" name="a86f828e22261ea38bf2987b85f2c531e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86f828e22261ea38bf2987b85f2c531e">&#9670;&#160;</a></span>writePronunciations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::Persistence::writePronunciations </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_pronunciation_entry.html">PronunciationEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Telaffuz rehberini ikili dosyaya yazar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Dosya yolu </td></tr>
+    <tr><td class="paramname">data</td><td>Yazılacak telaffuz rehberi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Yazma işlemi başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="a348c4242ac7312bd17ccefa31d5de1e1" name="a348c4242ac7312bd17ccefa31d5de1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348c4242ac7312bd17ccefa31d5de1e1">&#9670;&#160;</a></span>writeTips()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::Persistence::writeTips </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_tip_entry.html">TipEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Öğrenme ipuçlarını ikili dosyaya yazar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Dosya yolu </td></tr>
+    <tr><td class="paramname">data</td><td>Yazılacak ipuçları listesi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Yazma işlemi başarılı mı? </dd></dl>
+
+</div>
+</div>
+<a id="a9ec1a9482d802ff4b74d4f65e1e54147" name="a9ec1a9482d802ff4b74d4f65e1e54147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ec1a9482d802ff4b74d4f65e1e54147">&#9670;&#160;</a></span>writeUsers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coruh::LanguageTranslator::Persistence::writeUsers </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_coruh_1_1_language_translator_1_1_user_profile.html">UserProfile</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kullanıcı listesini ikili dosyaya yazar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Dosya yolu </td></tr>
+    <tr><td class="paramname">data</td><td>Yazılacak kullanıcı listesi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Yazma işlemi başarılı mı? </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0

@@ -151,93 +151,244 @@
 ast.h\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h}
-{\bkmkstart AAAAAAAABT}
-{\bkmkend AAAAAAAABT}
+{\bkmkstart AAAAAAAAFD}
+{\bkmkend AAAAAAAAFD}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFE" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+\par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
-2 {\cf21 #include <memory>}\par
-3 {\cf21 #include <string>}\par
-4 {\cf21 #include <vector>}\par
-5 \par
-6 {\cf17 namespace }translator \{\par
-7 \par
-8 {\cf17 enum class} ExprKind \{ Number, Variable, Binary \};\par
-9 \par
-10 {\cf17 struct }Expr \{\par
-11     {\cf17 virtual} ~Expr() = {\cf19 default};\par
-12     {\cf17 virtual} ExprKind kind() {\cf17 const} = 0;\par
-13 \};\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+8 {\cf21 #pragma once}\par
+9 {\cf21 #include <memory>}\par
+10 {\cf21 #include <string>}\par
+11 {\cf21 #include <vector>}\par
+12 \par
+13 {\cf17 namespace }translator \{\par
 14 \par
-15 {\cf17 struct }NumberExpr : Expr \{\par
-16     {\cf18 double} value;\par
-17     {\cf17 explicit} NumberExpr({\cf18 double} v) : value(v) \{\}\par
-18     ExprKind kind(){\cf17  const override }\{ {\cf19 return} ExprKind::Number; \}\par
-19 \};\par
-20 \par
-21 {\cf17 struct }VariableExpr : Expr \{\par
-22     std::string name;\par
-23     {\cf17 explicit} VariableExpr(std::string n) : name(std::move(n)) \{\}\par
-24     ExprKind kind(){\cf17  const override }\{ {\cf19 return} ExprKind::Variable; \}\par
-25 \};\par
-26 \par
-27 {\cf17 struct }BinaryExpr : Expr \{\par
-28     {\cf18 char} op;\par
-29     std::unique_ptr<Expr> lhs;\par
-30     std::unique_ptr<Expr> rhs;\par
-31     BinaryExpr({\cf18 char} op, std::unique_ptr<Expr> l, std::unique_ptr<Expr> r)\par
-32         : op(op), lhs(std::move(l)), rhs(std::move(r)) \{\}\par
-33     ExprKind kind(){\cf17  const override }\{ {\cf19 return} ExprKind::Binary; \}\par
-34 \};\par
-35 \par
-36 {\cf17 enum class} StmtKind \{ Let, Print, Input, Goto, IfGoto, Gosub, Return \};\par
+18 {\cf17 enum class} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFH" }{}}{\fldrslt {\cs37\ul\cf2 ExprKind}}}
+ \{ \par
+19     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFI" }{}}{\fldrslt {\cs37\ul\cf2 Number}}}
+,     \par
+20     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFJ" }{}}{\fldrslt {\cs37\ul\cf2 Variable}}}
+,   \par
+21     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFK" }{}}{\fldrslt {\cs37\ul\cf2 Binary}}}
+      \par
+22 \};\par
+23 \par
+29 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFL" }{}}{\fldrslt {\cs37\ul\cf2 Expr}}}
+ \{\par
+30     {\cf17 virtual} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFL" }{}}{\fldrslt {\cs37\ul\cf2 ~Expr}}}
+() = {\cf19 default};\par
+35     {\cf17 virtual} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFH" }{}}{\fldrslt {\cs37\ul\cf2 ExprKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFM" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+() {\cf17 const} = 0;\par
+36 \};\par
 37 \par
-38 {\cf17 struct }Stmt \{ {\cf17 virtual} ~Stmt() = {\cf19 default}; {\cf17 virtual} StmtKind kind() {\cf17 const} = 0; \};\par
-39 \par
-40 {\cf17 struct }LetStmt : Stmt \{\par
-41     std::string name; std::unique_ptr<Expr> expr;\par
-42     LetStmt(std::string n, std::unique_ptr<Expr> e) : name(std::move(n)), expr(std::move(e)) \{\}\par
-43     StmtKind kind(){\cf17  const override }\{ {\cf19 return} StmtKind::Let; \}\par
-44 \};\par
-45 \par
-46 {\cf17 struct }PrintStmt : Stmt \{\par
-47     std::vector<std::unique_ptr<Expr>> items;\par
-48     {\cf17 explicit} PrintStmt(std::vector<std::unique_ptr<Expr>> xs) : items(std::move(xs)) \{\}\par
-49     StmtKind kind(){\cf17  const override }\{ {\cf19 return} StmtKind::Print; \}\par
-50 \};\par
-51 \par
-52 {\cf17 struct }InputStmt : Stmt \{\par
-53     std::string name; {\cf17 explicit} InputStmt(std::string n) : name(std::move(n)) \{\}\par
-54     StmtKind kind(){\cf17  const override }\{ {\cf19 return} StmtKind::Input; \}\par
+41 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFN" }{}}{\fldrslt {\cs37\ul\cf2 NumberExpr}}}
+ : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFL" }{}}{\fldrslt {\cs37\ul\cf2 Expr}}}
+ \{\par
+42     {\cf18 double} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFO" }{}}{\fldrslt {\cs37\ul\cf2 value}}}
+;  \par
+43     \par
+48     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFN" }{}}{\fldrslt {\cs37\ul\cf2 NumberExpr}}}
+({\cf18 double} v) : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFO" }{}}{\fldrslt {\cs37\ul\cf2 value}}}
+(v) \{\}\par
+49     \par
+54     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFH" }{}}{\fldrslt {\cs37\ul\cf2 ExprKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFP" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+(){\cf17  const override }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFI" }{}}{\fldrslt {\cs37\ul\cf2 ExprKind::Number}}}
+; \}\par
 55 \};\par
 56 \par
-57 {\cf17 struct }GotoStmt : Stmt \{\par
-58     {\cf18 int} target; {\cf17 explicit} GotoStmt({\cf18 int} t) : target(t) \{\}\par
-59     StmtKind kind(){\cf17  const override }\{ {\cf19 return} StmtKind::Goto; \}\par
-60 \};\par
-61 \par
-62 {\cf17 struct }IfGotoStmt : Stmt \{\par
-63     std::unique_ptr<Expr> cond; {\cf18 int} target;\par
-64     IfGotoStmt(std::unique_ptr<Expr> c, {\cf18 int} t) : cond(std::move(c)), target(t) \{\}\par
-65     StmtKind kind(){\cf17  const override }\{ {\cf19 return} StmtKind::IfGoto; \}\par
-66 \};\par
-67 \par
-68 {\cf17 struct }GosubStmt : Stmt \{\par
-69     {\cf18 int} target; {\cf17 explicit} GosubStmt({\cf18 int} t) : target(t) \{\}\par
-70     StmtKind kind(){\cf17  const override }\{ {\cf19 return} StmtKind::Gosub; \}\par
-71 \};\par
-72 \par
-73 {\cf17 struct }ReturnStmt : Stmt \{\par
-74     StmtKind kind(){\cf17  const override }\{ {\cf19 return} StmtKind::Return; \}\par
-75 \};\par
-76 \par
-77 {\cf17 struct }Program \{\par
-78     {\cf20 // Parallel arrays: one statement per label index}\par
-79     std::vector<int> labels; {\cf20 // e.g., 10, 20, 30}\par
-80     std::vector<std::unique_ptr<Stmt>> stmts;\par
-81     {\cf20 // Label -> index map will be provided via lookup helper.}\par
-82 \};\par
-83 \par
-84 \} {\cf20 // namespace translator}\par
+60 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFR" }{}}{\fldrslt {\cs37\ul\cf2 VariableExpr}}}
+ : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFL" }{}}{\fldrslt {\cs37\ul\cf2 Expr}}}
+ \{\par
+61     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFT" }{}}{\fldrslt {\cs37\ul\cf2 name}}}
+;  \par
+62     \par
+67     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFR" }{}}{\fldrslt {\cs37\ul\cf2 VariableExpr}}}
+(std::string n) : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFT" }{}}{\fldrslt {\cs37\ul\cf2 name}}}
+(std::move(n)) \{\}\par
+68     \par
+73     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFH" }{}}{\fldrslt {\cs37\ul\cf2 ExprKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFU" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+(){\cf17  const override }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFJ" }{}}{\fldrslt {\cs37\ul\cf2 ExprKind::Variable}}}
+; \}\par
+74 \};\par
+75 \par
+79 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFV" }{}}{\fldrslt {\cs37\ul\cf2 BinaryExpr}}}
+ : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFL" }{}}{\fldrslt {\cs37\ul\cf2 Expr}}}
+ \{\par
+80     {\cf18 char} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFW" }{}}{\fldrslt {\cs37\ul\cf2 op}}}
+;                        \par
+81     std::unique_ptr<Expr> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFY" }{}}{\fldrslt {\cs37\ul\cf2 lhs}}}
+;      \par
+82     std::unique_ptr<Expr> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFZ" }{}}{\fldrslt {\cs37\ul\cf2 rhs}}}
+;      \par
+83     \par
+90     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFV" }{}}{\fldrslt {\cs37\ul\cf2 BinaryExpr}}}
+({\cf18 char} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFW" }{}}{\fldrslt {\cs37\ul\cf2 op}}}
+, std::unique_ptr<Expr> l, std::unique_ptr<Expr> r)\par
+91         : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFW" }{}}{\fldrslt {\cs37\ul\cf2 op}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFW" }{}}{\fldrslt {\cs37\ul\cf2 op}}}
+), {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFY" }{}}{\fldrslt {\cs37\ul\cf2 lhs}}}
+(std::move(l)), {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFZ" }{}}{\fldrslt {\cs37\ul\cf2 rhs}}}
+(std::move(r)) \{\}\par
+92     \par
+97     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFH" }{}}{\fldrslt {\cs37\ul\cf2 ExprKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGC" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+(){\cf17  const override }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFK" }{}}{\fldrslt {\cs37\ul\cf2 ExprKind::Binary}}}
+; \}\par
+98 \};\par
+99 \par
+103 {\cf17 enum class} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind}}}
+ \{ \par
+104     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGE" }{}}{\fldrslt {\cs37\ul\cf2 Let}}}
+,        \par
+105     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGF" }{}}{\fldrslt {\cs37\ul\cf2 Print}}}
+,      \par
+106     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGG" }{}}{\fldrslt {\cs37\ul\cf2 Input}}}
+,      \par
+107     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGH" }{}}{\fldrslt {\cs37\ul\cf2 Goto}}}
+,       \par
+108     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGI" }{}}{\fldrslt {\cs37\ul\cf2 IfGoto}}}
+,     \par
+109     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 Gosub}}}
+,      \par
+110     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGK" }{}}{\fldrslt {\cs37\ul\cf2 Return}}}
+      \par
+111 \};\par
+112 \par
+118 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 Stmt}}}
+ \{ \par
+119     {\cf17 virtual} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 ~Stmt}}}
+() = {\cf19 default}; \par
+120     \par
+125     {\cf17 virtual} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGM" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+() {\cf17 const} = 0; \par
+126 \};\par
+127 \par
+131 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGN" }{}}{\fldrslt {\cs37\ul\cf2 LetStmt}}}
+ : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 Stmt}}}
+ \{\par
+132     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGO" }{}}{\fldrslt {\cs37\ul\cf2 name}}}
+;                    \par
+133     std::unique_ptr<Expr> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGP" }{}}{\fldrslt {\cs37\ul\cf2 expr}}}
+;          \par
+134     \par
+140     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGN" }{}}{\fldrslt {\cs37\ul\cf2 LetStmt}}}
+(std::string n, std::unique_ptr<Expr> e) : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGO" }{}}{\fldrslt {\cs37\ul\cf2 name}}}
+(std::move(n)), {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGP" }{}}{\fldrslt {\cs37\ul\cf2 expr}}}
+(std::move(e)) \{\}\par
+141     \par
+146     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGQ" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+(){\cf17  const override }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGE" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Let}}}
+; \}\par
+147 \};\par
+148 \par
+152 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGR" }{}}{\fldrslt {\cs37\ul\cf2 PrintStmt}}}
+ : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 Stmt}}}
+ \{\par
+153     std::vector<std::unique_ptr<Expr>> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 items}}}
+;  \par
+154     \par
+159     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGR" }{}}{\fldrslt {\cs37\ul\cf2 PrintStmt}}}
+(std::vector<std::unique_ptr<Expr>> xs) : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 items}}}
+(std::move(xs)) \{\}\par
+160     \par
+165     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGT" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+(){\cf17  const override }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGF" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Print}}}
+; \}\par
+166 \};\par
+167 \par
+171 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGV" }{}}{\fldrslt {\cs37\ul\cf2 InputStmt}}}
+ : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 Stmt}}}
+ \{\par
+172     std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGY" }{}}{\fldrslt {\cs37\ul\cf2 name}}}
+;  \par
+173     \par
+178     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGV" }{}}{\fldrslt {\cs37\ul\cf2 InputStmt}}}
+(std::string n) : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGY" }{}}{\fldrslt {\cs37\ul\cf2 name}}}
+(std::move(n)) \{\}\par
+179     \par
+184     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHC" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+(){\cf17  const override }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGG" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Input}}}
+; \}\par
+185 \};\par
+186 \par
+190 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 GotoStmt}}}
+ : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 Stmt}}}
+ \{\par
+191     {\cf18 int} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHF" }{}}{\fldrslt {\cs37\ul\cf2 target}}}
+;  \par
+192     \par
+197     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 GotoStmt}}}
+({\cf18 int} t) : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHF" }{}}{\fldrslt {\cs37\ul\cf2 target}}}
+(t) \{\}\par
+198     \par
+203     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHG" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+(){\cf17  const override }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGH" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Goto}}}
+; \}\par
+204 \};\par
+205 \par
+209 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 IfGotoStmt}}}
+ : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 Stmt}}}
+ \{\par
+210     std::unique_ptr<Expr> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 cond}}}
+;  \par
+211     {\cf18 int} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 target}}}
+;                  \par
+212     \par
+218     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 IfGotoStmt}}}
+(std::unique_ptr<Expr> c, {\cf18 int} t) : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 cond}}}
+(std::move(c)), {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 target}}}
+(t) \{\}\par
+219     \par
+224     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+(){\cf17  const override }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGI" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::IfGoto}}}
+; \}\par
+225 \};\par
+226 \par
+230 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHO" }{}}{\fldrslt {\cs37\ul\cf2 GosubStmt}}}
+ : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 Stmt}}}
+ \{\par
+231     {\cf18 int} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHP" }{}}{\fldrslt {\cs37\ul\cf2 target}}}
+;  \par
+232     \par
+237     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHO" }{}}{\fldrslt {\cs37\ul\cf2 GosubStmt}}}
+({\cf18 int} t) : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHP" }{}}{\fldrslt {\cs37\ul\cf2 target}}}
+(t) \{\}\par
+238     \par
+243     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+(){\cf17  const override }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Gosub}}}
+; \}\par
+244 \};\par
+245 \par
+249 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 ReturnStmt}}}
+ : {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 Stmt}}}
+ \{\par
+254     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHT" }{}}{\fldrslt {\cs37\ul\cf2 kind}}}
+(){\cf17  const override }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGK" }{}}{\fldrslt {\cs37\ul\cf2 StmtKind::Return}}}
+; \}\par
+255 \};\par
+256 \par
+262 {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHB" }{}}{\fldrslt {\cs37\ul\cf2 Program}}}
+ \{\par
+263     std::vector<int> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHH" }{}}{\fldrslt {\cs37\ul\cf2 labels}}}
+;                      \par
+264     std::vector<std::unique_ptr<Stmt>> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHE" }{}}{\fldrslt {\cs37\ul\cf2 stmts}}}
+;     \par
+265     {\cf20 // Label -> index map will be provided via lookup helper.}\par
+266 \};\par
+267 \par
+268 \} {\cf20 // namespace translator}\par
 }
 }

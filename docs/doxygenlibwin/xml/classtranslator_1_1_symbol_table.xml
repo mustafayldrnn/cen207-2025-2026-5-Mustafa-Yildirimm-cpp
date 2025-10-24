@@ -2,20 +2,22 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classtranslator_1_1_symbol_table" kind="class" language="C++" prot="public">
     <compoundname>translator::SymbolTable</compoundname>
+    <includes refid="symbol__table_8h" local="no">symbol_table.h</includes>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classtranslator_1_1_symbol_table_1a66cace7834f5eb0eb9b31edd66a994fd" prot="private" static="no" mutable="no">
-        <type>ds::HashTable&lt; std::string, double &gt;</type>
+        <type><ref refid="classds_1_1_hash_table" kindref="compound">ds::HashTable</ref>&lt; std::string, double &gt;</type>
         <definition>ds::HashTable&lt;std::string, double&gt; translator::SymbolTable::table_</definition>
         <argsstring></argsstring>
         <name>table_</name>
         <qualifiedname>translator::SymbolTable::table_</qualifiedname>
         <briefdescription>
+<para>Değişken isimlerini ve değerlerini tutan hash tablosu. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="8" column="19" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="8" bodyend="-1"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="21" column="19" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="21" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -34,12 +36,33 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Yeni değişken tanımı ekler veya üzerine yazar. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Değişken adı </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Değişken değeri </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true eğer yeni tanım eklendiyse, false eğer güncellendiyse </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="10" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="10" bodyend="10"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="30" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="30" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_symbol_table_1a7e854ae1ff78c87a4ac95fed5047735b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -56,12 +79,33 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Var olan değişkene değer atar. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Değişken adı </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Atanacak değer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true eğer atama başarılıysa </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="11" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="11" bodyend="11"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="38" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="38" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_symbol_table_1ae1876c1c25f5dffb5eadccc190ad93f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double *</type>
@@ -74,24 +118,47 @@
           <declname>name</declname>
         </param>
         <briefdescription>
+<para>Değişken adını arar ve değerinin adresini döndürür. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Aranacak değişken adı </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Değerin const pointer&apos;ı, bulunamazsa nullptr </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="12" column="18" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="12" bodyend="12"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="45" column="18" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="45" bodyend="45"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>İsim→değer eşlemesi yapan tablo. </para>
     </briefdescription>
     <detaileddescription>
+<para>Bu sınıf, BASIC benzeri dildeki değişkenleri saklamak için hash tablosu kullanır. Değişken tanımlama ve atama işlemlerini destekler. </para>
     </detaileddescription>
     <collaborationgraph>
+      <node id="2">
+        <label>ds::HashTable&lt; std::string, double &gt;</label>
+        <link refid="classds_1_1_hash_table"/>
+      </node>
       <node id="1">
         <label>translator::SymbolTable</label>
+        <link refid="classtranslator_1_1_symbol_table"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-table_</edgelabel>
+        </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="7" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="7" bodyend="13"/>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" line="20" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/symbol_table.h" bodystart="20" bodyend="46"/>
     <listofallmembers>
       <member refid="classtranslator_1_1_symbol_table_1a7e854ae1ff78c87a4ac95fed5047735b" prot="public" virt="non-virtual"><scope>translator::SymbolTable</scope><name>assign</name></member>
       <member refid="classtranslator_1_1_symbol_table_1ac8dee7076ef5eb32c01014489f8bace5" prot="public" virt="non-virtual"><scope>translator::SymbolTable</scope><name>define</name></member>

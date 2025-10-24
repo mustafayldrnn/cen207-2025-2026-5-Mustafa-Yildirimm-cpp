@@ -2,6 +2,11 @@
 \hypertarget{structtranslator_1_1_input_stmt}{}\label{structtranslator_1_1_input_stmt}\index{translator::InputStmt@{translator::InputStmt}}
 
 
+INPUT deyimi.  
+
+
+
+
 {\ttfamily \#include $<$ast.\+h$>$}
 
 
@@ -26,20 +31,19 @@ Collaboration diagram for translator\+::Input\+Stmt\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structtranslator_1_1_input_stmt_ae709f989a663c5e7cfe2abe65589b63b}{Input\+Stmt}} (std\+::string n)
-\item 
-\mbox{\hyperlink{namespacetranslator_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} \mbox{\hyperlink{structtranslator_1_1_input_stmt_a49fff20ac46a7ad799c335425a47b7f8}{kind}} () const override
-\end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structtranslator_1_1_stmt}{translator\+::\+Stmt}}}
-\begin{DoxyCompactItemize}
-\item 
-virtual \mbox{\hyperlink{structtranslator_1_1_stmt_a0707842a254ce67ff9c72cda98226ec7}{\texorpdfstring{$\sim$}{\string~}\+Stmt}} ()=default
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Giriş deyimi oluşturur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} \mbox{\hyperlink{structtranslator_1_1_input_stmt_a49fff20ac46a7ad799c335425a47b7f8}{kind}} () const override
+\begin{DoxyCompactList}\small\item\em Deyim türünü döndürür. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{structtranslator_1_1_input_stmt_afb169d343ee04be4f15a594fa28b4b0e}{name}}
-\end{DoxyCompactItemize}
+\Hypertarget{structtranslator_1_1_input_stmt_afb169d343ee04be4f15a594fa28b4b0e}\label{structtranslator_1_1_input_stmt_afb169d343ee04be4f15a594fa28b4b0e} 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Giriş alınacak değişken adı \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+INPUT deyimi. 
 
 \label{doc-constructors}
 \Hypertarget{structtranslator_1_1_input_stmt_doc-constructors}
@@ -52,6 +56,15 @@ translator\+::\+Input\+Stmt\+::\+Input\+Stmt (\begin{DoxyParamCaption}\item[{std
 
 
 
+Giriş deyimi oluşturur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Değişken adı \\
+\hline
+\end{DoxyParams}
+
+
 \label{doc-func-members}
 \Hypertarget{structtranslator_1_1_input_stmt_doc-func-members}
 \doxysubsection{Member Function Documentation}
@@ -59,22 +72,18 @@ translator\+::\+Input\+Stmt\+::\+Input\+Stmt (\begin{DoxyParamCaption}\item[{std
 \index{kind@{kind}!translator::InputStmt@{translator::InputStmt}}
 \doxysubsubsection{\texorpdfstring{kind()}{kind()}}
 {\footnotesize\ttfamily \label{structtranslator_1_1_input_stmt_a49fff20ac46a7ad799c335425a47b7f8} 
-\mbox{\hyperlink{namespacetranslator_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} translator\+::\+Input\+Stmt\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} translator\+::\+Input\+Stmt\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+Deyim türünü döndürür. 
+
+\begin{DoxyReturn}{Returns}
+Input türü 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{structtranslator_1_1_stmt_afb8f5d100524bc8cf234edae0ac57578}{translator\+::\+Stmt}}.
-
-
-
-\label{doc-variable-members}
-\Hypertarget{structtranslator_1_1_input_stmt_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structtranslator_1_1_input_stmt_afb169d343ee04be4f15a594fa28b4b0e}\index{translator::InputStmt@{translator::InputStmt}!name@{name}}
-\index{name@{name}!translator::InputStmt@{translator::InputStmt}}
-\doxysubsubsection{\texorpdfstring{name}{name}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_input_stmt_afb169d343ee04be4f15a594fa28b4b0e} 
-std\+::string translator\+::\+Input\+Stmt\+::name}
 
 
 

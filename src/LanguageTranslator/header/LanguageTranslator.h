@@ -1,6 +1,9 @@
 /**
  * @file LanguageTranslator.h
- * @brief Konsol tabanlı dil çevirici uygulamasının ana arabirimi.
+ * @brief Console-based language translator main interface
+ * @author Mustafa Yıldırım
+ * @date 2025
+ * @version 1.0
  */
 #ifndef LANGUAGE_TRANSLATOR_H
 #define LANGUAGE_TRANSLATOR_H
@@ -11,137 +14,277 @@
 #include <memory>
 #include <iostream>
 #include "Persistence.h"
-// #include <curl/curl.h>  // Commented out for now - API not implemented yet
 
-namespace Coruh
-{
-    namespace LanguageTranslator
-    {
-        /**
-         * @class LanguageTranslatorApp
-         * @brief Uygulama akışını yöneten ana sınıf.
-         */
-        class LanguageTranslatorApp
-        {
-        private:
-            // Multi-language dictionaries
-            std::unordered_map<std::string, std::unordered_map<std::string, std::string>> wordDictionaries;
-            std::unordered_map<std::string, std::unordered_map<std::string, std::string>> phraseDictionaries;
-            
-            // Language support
-            std::vector<std::string> supportedLanguages;
-            std::string currentSourceLanguage;
-            std::string currentTargetLanguage;
-            
-            // Other features
-            std::vector<std::string> commonPhrases;
-            std::vector<std::string> learningTips;
-            std::unordered_map<std::string, std::string> pronunciationGuide;
-            
-            std::string currentUser;
-            bool isLoggedIn;
-            std::vector<UserProfile> users; // persisted users
-            std::vector<TranslationRecord> history; // translation history
-            
-            // API settings
-            std::string apiKey;
-            bool useAPI;
-            std::string apiProvider; // "google" or "microsoft"
+namespace Coruh {
+namespace LanguageTranslator {
 
-        public:
-            /** @brief Uygulamayı varsayılan verilerle başlatır. */
-            LanguageTranslatorApp();
-            ~LanguageTranslatorApp() = default;
+/**
+ * @class LanguageTranslatorApp
+ * @brief Manages application flow: auth, translation, tips, phrases, pronunciation
+ * 
+ * Bu sınıf, çok dilli çeviri uygulamasının ana işlevlerini yönetir.
+ * Kullanıcı kimlik doğrulama, çeviri işlemleri, öğrenme ipuçları,
+ * kelime öbekleri ve telaffuz rehberi gibi özellikleri içerir.
+ */
+class LanguageTranslatorApp {
+private:
+    // Multi-language dictionaries
+    std::unordered_map<std::string, std::unordered_map<std::string, std::string>> wordDictionaries;  ///< Kelime sözlükleri
+    std::unordered_map<std::string, std::unordered_map<std::string, std::string>> phraseDictionaries;  ///< Kelime öbeği sözlükleri
 
-            /** @brief Uygulama döngüsünü çalıştırır. */
-            void run();
-            /** @brief Ana menüyü gösterir. */
-            void showMainMenu();
-            /** @brief Menü seçimini işler. */
-            void handleUserChoice(int choice);
+    // Language support
+    std::vector<std::string> supportedLanguages;  ///< Desteklenen diller listesi
+    std::string currentSourceLanguage;  ///< Mevcut kaynak dil
+    std::string currentTargetLanguage;  ///< Mevcut hedef dil
 
-            // Translation functions
-            /** @brief Metni aktif dil çiftine göre çevirir. */
-            std::string translateText(const std::string& text);
-            /** @brief Tek kelime çevirir. */
-            std::string translateWord(const std::string& word);
-            /** @brief Kalıp/ifade çevirir. */
-            std::string translatePhrase(const std::string& phrase);
-            
-            // Language management
-            /** @brief Kaynak dili ayarlar. */
-            void setSourceLanguage(const std::string& language);
-            /** @brief Hedef dili ayarlar. */
-            void setTargetLanguage(const std::string& language);
-            /** @brief Desteklenen dilleri döndürür. */
-            std::vector<std::string> getSupportedLanguages() const;
-            /** @brief Dil seçim ekranını gösterir. */
-            void showLanguageSelection();
-            /** @brief Yeni dil ekler. */
-            void addLanguage(const std::string& language);
+    // Other features
+    std::vector<std::string> commonPhrases;  ///< Yaygın kullanılan kelime öbekleri
+    std::vector<std::string> learningTips;  ///< Öğrenme ipuçları
+    std::unordered_map<std::string, std::string> pronunciationGuide;  ///< Telaffuz rehberi
 
-            // User management
-            /** @brief Kullanıcı girişi. */
-            bool login(const std::string& username, const std::string& password);
-            /** @brief Kullanıcı kaydı. */
-            bool registerUser(const std::string& username, const std::string& password);
-            /** @brief Oturumu kapatır. */
-            void logout();
-            /** @brief Kullanıcı oturum durumunu döndürür. */
-            bool isUserLoggedIn() const;
-            const std::string& currentUsername() const { return currentUser; }
+    std::string currentUser;  ///< Mevcut kullanıcı adı
+    bool isLoggedIn;  ///< Kullanıcı giriş yapmış mı?
+    std::vector<UserProfile> users;   ///< Kayıtlı kullanıcılar
+    std::vector<TranslationRecord> history; ///< Çeviri geçmişi
 
-            // Phrase library
-            /** @brief Kalıp sözlüğü ekranı. */
-            void showPhraseLibrary();
-            /** @brief Genel ifade ekler. */
-            void addPhrase(const std::string& phrase, const std::string& category);
+    // API settings
+    std::string apiKey;  ///< API anahtarı
+    bool useAPI;  ///< API kullanılsın mı?
+    std::string apiProvider; ///< API sağlayıcısı ("google" veya "microsoft")
 
-            // Learning tips
-            /** @brief Öğrenme ipuçlarını listeler. */
-            void showLearningTips();
-            /** @brief Öğrenme ipucu ekler. */
-            void addLearningTip(const std::string& tip);
+public:
+    /**
+     * @brief Varsayılan verilerle uygulamayı başlatır
+     */
+    LanguageTranslatorApp();
+    
+    /**
+     * @brief Destructor
+     */
+    ~LanguageTranslatorApp() = default;
 
-            // Pronunciation guide
-            /** @brief Telaffuz rehberini listeler. */
-            void showPronunciationGuide();
-            /** @brief Telaffuz girdisi ekler/günceller. */
-            void addPronunciation(const std::string& word, const std::string& guide);
+    /**
+     * @brief Ana uygulama döngüsünü çalıştırır (yükle, menü, kaydet)
+     */
+    void run();
+    
+    /**
+     * @brief Ana menüyü gösterir
+     */
+    void showMainMenu();
+    
+    /**
+     * @brief Ana menü seçimini işler
+     * @param choice Kullanıcının seçimi
+     */
+    void handleUserChoice(int choice);
 
-            // History
-            /** @brief Çeviri geçmişini listeler. */
-            void showHistory() const;
-            /** @brief Çeviri geçmişini temizler. */
-            void clearHistory();
+    // Translation functions
+    /**
+     * @brief Aktif dil çiftini kullanarak metni çevirir
+     * @param text Çevrilecek metin
+     * @return Çevrilmiş metin
+     */
+    std::string translateText(const std::string& text);
+    
+    /**
+     * @brief Tek bir kelimeyi çevirir
+     * @param word Çevrilecek kelime
+     * @return Çevrilmiş kelime
+     */
+    std::string translateWord(const std::string& word);
+    
+    /**
+     * @brief Kelime öbeğini çevirir
+     * @param phrase Çevrilecek kelime öbeği
+     * @return Çevrilmiş kelime öbeği
+     */
+    std::string translatePhrase(const std::string& phrase);
 
-            // Data management
-            /** @brief Varsayılan verilerle başlatır. */
-            void initializeDefaultData();
-            /** @brief Verileri kalıcı depoya yazar. */
-            void saveData();
-            /** @brief Verileri kalıcı depodan okur. */
-            void loadData();
-            
-            // Dictionary management
-            /** @brief Dosyadan sözlük yükler. */
-            bool loadDictionaryFromFile(const std::string& sourceLang, const std::string& targetLang, const std::string& filename);
-            /** @brief Tüm sözlükleri yükler. */
-            void loadAllDictionaries();
-            
-            // API Translation
-            /** @brief Google API ile çeviri (stub). */
-            std::string translateWithGoogleAPI(const std::string& text, const std::string& sourceLang, const std::string& targetLang);
-            /** @brief Microsoft API ile çeviri (stub). */
-            std::string translateWithMicrosoftAPI(const std::string& text, const std::string& sourceLang, const std::string& targetLang);
-            /** @brief API kullanılabilirliği. */
-            bool isAPIAvailable();
-            /** @brief API anahtarını ayarlar. */
-            void setAPIKey(const std::string& key);
-            /** @brief API modunu aç/kapatır. */
-            void setAPIMode(bool useAPI);
-        };
-    }
-}
+    // Language management
+    /**
+     * @brief Kaynak dili ayarlar
+     * @param language Kaynak dil
+     */
+    void setSourceLanguage(const std::string& language);
+    
+    /**
+     * @brief Hedef dili ayarlar
+     * @param language Hedef dil
+     */
+    void setTargetLanguage(const std::string& language);
+    
+    /**
+     * @brief Desteklenen dilleri döndürür
+     * @return Desteklenen diller listesi
+     */
+    std::vector<std::string> getSupportedLanguages() const;
+    
+    /**
+     * @brief Dil seçim menüsünü gösterir
+     */
+    void showLanguageSelection();
+    
+    /**
+     * @brief Yeni dil ekler
+     * @param language Eklenecek dil
+     */
+    void addLanguage(const std::string& language);
+
+    // User management
+    /**
+     * @brief Kullanıcı girişi yapar
+     * @param username Kullanıcı adı
+     * @param password Şifre
+     * @return Giriş başarılı mı?
+     */
+    bool login(const std::string& username, const std::string& password);
+    
+    /**
+     * @brief Yeni kullanıcı kaydı yapar
+     * @param username Kullanıcı adı
+     * @param password Şifre
+     * @return Kayıt başarılı mı?
+     */
+    bool registerUser(const std::string& username, const std::string& password);
+    
+    /**
+     * @brief Kullanıcı çıkışı yapar
+     */
+    void logout();
+    
+    /**
+     * @brief Kullanıcı giriş yapmış mı kontrol eder
+     * @return Giriş yapmış mı?
+     */
+    bool isUserLoggedIn() const;
+    
+    /**
+     * @brief Mevcut kullanıcı adını döndürür
+     * @return Kullanıcı adı
+     */
+    const std::string& currentUsername() const { return currentUser; }
+
+    // Phrase library
+    /**
+     * @brief Kelime öbeği kütüphanesini gösterir
+     */
+    void showPhraseLibrary();
+    
+    /**
+     * @brief Yeni kelime öbeği ekler
+     * @param phrase Kelime öbeği
+     * @param category Kategori
+     */
+    void addPhrase(const std::string& phrase, const std::string& category);
+
+    // Learning tips
+    /**
+     * @brief Öğrenme ipuçlarını gösterir
+     */
+    void showLearningTips();
+    
+    /**
+     * @brief Yeni öğrenme ipucu ekler
+     * @param tip Öğrenme ipucu
+     */
+    void addLearningTip(const std::string& tip);
+
+    // Pronunciation guide
+    /**
+     * @brief Telaffuz rehberini gösterir
+     */
+    void showPronunciationGuide();
+    
+    /**
+     * @brief Yeni telaffuz rehberi ekler
+     * @param word Kelime
+     * @param guide Telaffuz rehberi
+     */
+    void addPronunciation(const std::string& word, const std::string& guide);
+
+    // History
+    /**
+     * @brief Çeviri geçmişini gösterir
+     */
+    void showHistory() const;
+    
+    /**
+     * @brief Çeviri geçmişini temizler
+     */
+    void clearHistory();
+
+    // Data management
+    /**
+     * @brief Varsayılan verileri başlatır
+     */
+    void initializeDefaultData();
+    
+    /**
+     * @brief Verileri kaydeder
+     */
+    void saveData();
+    
+    /**
+     * @brief Verileri yükler
+     */
+    void loadData();
+
+    // Dictionary management
+    /**
+     * @brief Dosyadan sözlük yükler
+     * @param sourceLang Kaynak dil
+     * @param targetLang Hedef dil
+     * @param filename Dosya adı
+     * @return Yükleme başarılı mı?
+     */
+    bool loadDictionaryFromFile(const std::string& sourceLang, const std::string& targetLang, const std::string& filename);
+    
+    /**
+     * @brief Tüm sözlükleri yükler
+     */
+    void loadAllDictionaries();
+
+    // API Translation
+    /**
+     * @brief Google API ile çeviri yapar
+     * @param text Çevrilecek metin
+     * @param sourceLang Kaynak dil
+     * @param targetLang Hedef dil
+     * @return Çevrilmiş metin
+     */
+    std::string translateWithGoogleAPI(const std::string& text, const std::string& sourceLang, const std::string& targetLang);
+    
+    /**
+     * @brief Microsoft API ile çeviri yapar
+     * @param text Çevrilecek metin
+     * @param sourceLang Kaynak dil
+     * @param targetLang Hedef dil
+     * @return Çevrilmiş metin
+     */
+    std::string translateWithMicrosoftAPI(const std::string& text, const std::string& sourceLang, const std::string& targetLang);
+    
+    /**
+     * @brief API kullanılabilir mi kontrol eder
+     * @return API kullanılabilir mi?
+     */
+    bool isAPIAvailable();
+    
+    /**
+     * @brief API anahtarını ayarlar
+     * @param key API anahtarı
+     */
+    void setAPIKey(const std::string& key);
+    
+    /**
+     * @brief API kullanım modunu ayarlar
+     * @param useAPI API kullanılsın mı?
+     */
+    void setAPIMode(bool useAPI);
+};
+
+} // namespace LanguageTranslator
+} // namespace Coruh
 
 #endif // LANGUAGE_TRANSLATOR_H
+

@@ -72,7 +72,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a href="namespaceds.html">ds</a></li><li class="navelem"><a href="classds_1_1_sparse_matrix.html">SparseMatrix</a></li>  </ul>
+<li class="navelem"><b>ds</b></li><li class="navelem"><a href="classds_1_1_sparse_matrix.html">SparseMatrix</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -86,33 +86,59 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Hash tablosu tabanlı seyrek matris.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for ds::SparseMatrix&lt; T &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classds_1_1_sparse_matrix__coll__graph.svg" width="152" height="643"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classds_1_1_sparse_matrix__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6f37bf5a7e19fadddc59a3f0d9ff2e6" id="r_ab6f37bf5a7e19fadddc59a3f0d9ff2e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6f37bf5a7e19fadddc59a3f0d9ff2e6">SparseMatrix</a> (std::size_t <a class="el" href="#a626c4e3435266b08cc44477570f73021">rows</a>, std::size_t <a class="el" href="#a70e925fb8bb0416fcccb4cfb66aaf52d">cols</a>)</td></tr>
+<tr class="memdesc:ab6f37bf5a7e19fadddc59a3f0d9ff2e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seyrek matris oluşturur.  <br /></td></tr>
 <tr class="memitem:aebcc0633214ed572ebdc39ca47efde47" id="r_aebcc0633214ed572ebdc39ca47efde47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebcc0633214ed572ebdc39ca47efde47">set</a> (std::size_t r, std::size_t c, const T &amp;v)</td></tr>
+<tr class="memdesc:aebcc0633214ed572ebdc39ca47efde47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Belirtilen koordinata eleman atar.  <br /></td></tr>
 <tr class="memitem:ae238cab6800d072fc4c76e8b0578a8e5" id="r_ae238cab6800d072fc4c76e8b0578a8e5"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae238cab6800d072fc4c76e8b0578a8e5">get</a> (std::size_t r, std::size_t c) const</td></tr>
+<tr class="memdesc:ae238cab6800d072fc4c76e8b0578a8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Belirtilen koordinattaki elemanı okur.  <br /></td></tr>
 <tr class="memitem:a36f4a3217c358111b4526fefef641585" id="r_a36f4a3217c358111b4526fefef641585"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36f4a3217c358111b4526fefef641585">nonZeroCount</a> () const</td></tr>
+<tr class="memdesc:a36f4a3217c358111b4526fefef641585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sıfır olmayan eleman sayısını döndürür.  <br /></td></tr>
 <tr class="memitem:a626c4e3435266b08cc44477570f73021" id="r_a626c4e3435266b08cc44477570f73021"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a626c4e3435266b08cc44477570f73021">rows</a> () const</td></tr>
+<tr class="memdesc:a626c4e3435266b08cc44477570f73021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matris satır sayısını döndürür.  <br /></td></tr>
 <tr class="memitem:a70e925fb8bb0416fcccb4cfb66aaf52d" id="r_a70e925fb8bb0416fcccb4cfb66aaf52d"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70e925fb8bb0416fcccb4cfb66aaf52d">cols</a> () const</td></tr>
+<tr class="memdesc:a70e925fb8bb0416fcccb4cfb66aaf52d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matris sütun sayısını döndürür.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a3a11a8e14b05343ce581352fefc045d8" id="r_a3a11a8e14b05343ce581352fefc045d8"><td class="memItemLeft" align="right" valign="top">static long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a11a8e14b05343ce581352fefc045d8">key</a> (std::size_t r, std::size_t c)</td></tr>
+<tr class="memdesc:a3a11a8e14b05343ce581352fefc045d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Satır ve sütun indekslerini 64-bit key'e dönüştürür.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a4d4f238625b4c2ef2808c8c10616fee2" id="r_a4d4f238625b4c2ef2808c8c10616fee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classds_1_1_hash_table.html">HashTable</a>&lt; long long, T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d4f238625b4c2ef2808c8c10616fee2">data_</a></td></tr>
-<tr class="memitem:a9491432e44a4e92cc7ef89f097eb78aa" id="r_a9491432e44a4e92cc7ef89f097eb78aa"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9491432e44a4e92cc7ef89f097eb78aa">rows_</a></td></tr>
-<tr class="memitem:a5521d53f3422f84d573d0aaaef5a63f4" id="r_a5521d53f3422f84d573d0aaaef5a63f4"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5521d53f3422f84d573d0aaaef5a63f4">cols_</a></td></tr>
+<tr class="memitem:a4d4f238625b4c2ef2808c8c10616fee2" id="r_a4d4f238625b4c2ef2808c8c10616fee2"><td class="memItemLeft" align="right" valign="top"><a id="a4d4f238625b4c2ef2808c8c10616fee2" name="a4d4f238625b4c2ef2808c8c10616fee2"></a>
+<a class="el" href="classds_1_1_hash_table.html">HashTable</a>&lt; long long, T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>data_</b></td></tr>
+<tr class="memdesc:a4d4f238625b4c2ef2808c8c10616fee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Koordinat-eleman çiftlerini tutan hash tablosu. <br /></td></tr>
+<tr class="memitem:a9491432e44a4e92cc7ef89f097eb78aa" id="r_a9491432e44a4e92cc7ef89f097eb78aa"><td class="memItemLeft" align="right" valign="top"><a id="a9491432e44a4e92cc7ef89f097eb78aa" name="a9491432e44a4e92cc7ef89f097eb78aa"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>rows_</b></td></tr>
+<tr class="memdesc:a9491432e44a4e92cc7ef89f097eb78aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matris satır sayısı <br /></td></tr>
+<tr class="memitem:a5521d53f3422f84d573d0aaaef5a63f4" id="r_a5521d53f3422f84d573d0aaaef5a63f4"><td class="memItemLeft" align="right" valign="top"><a id="a5521d53f3422f84d573d0aaaef5a63f4" name="a5521d53f3422f84d573d0aaaef5a63f4"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>cols_</b></td></tr>
+<tr class="memdesc:a5521d53f3422f84d573d0aaaef5a63f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matris sütun sayısı <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+class ds::SparseMatrix&lt; T &gt;</div><p>Hash tablosu tabanlı seyrek matris. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Eleman türü</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Bu sınıf, hash tablosu kullanarak seyrek matris implementasyonu sağlar. Koordinatları 64-bit composite key olarak saklar (r&lt;&lt;32 | c). </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab6f37bf5a7e19fadddc59a3f0d9ff2e6" name="ab6f37bf5a7e19fadddc59a3f0d9ff2e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6f37bf5a7e19fadddc59a3f0d9ff2e6">&#9670;&#160;</a></span>SparseMatrix()</h2>
 
@@ -142,6 +168,15 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Seyrek matris oluşturur. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rows</td><td>Satır sayısı </td></tr>
+    <tr><td class="paramname">cols</td><td>Sütun sayısı </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -169,6 +204,9 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Matris sütun sayısını döndürür. </p>
+<dl class="section return"><dt>Returns</dt><dd>Sütun sayısı </dd></dl>
 
 </div>
 </div>
@@ -201,6 +239,16 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Belirtilen koordinattaki elemanı okur. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Satır indeksi </td></tr>
+    <tr><td class="paramname">c</td><td>Sütun indeksi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Elemanın pointer'ı, yoksa nullptr </dd></dl>
+
 </div>
 </div>
 <a id="a3a11a8e14b05343ce581352fefc045d8" name="a3a11a8e14b05343ce581352fefc045d8"></a>
@@ -232,6 +280,16 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Satır ve sütun indekslerini 64-bit key'e dönüştürür. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Satır indeksi </td></tr>
+    <tr><td class="paramname">c</td><td>Sütun indeksi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>64-bit composite key </dd></dl>
+
 </div>
 </div>
 <a id="a36f4a3217c358111b4526fefef641585" name="a36f4a3217c358111b4526fefef641585"></a>
@@ -259,6 +317,9 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Sıfır olmayan eleman sayısını döndürür. </p>
+<dl class="section return"><dt>Returns</dt><dd>Sıfır olmayan eleman sayısı </dd></dl>
+
 </div>
 </div>
 <a id="a626c4e3435266b08cc44477570f73021" name="a626c4e3435266b08cc44477570f73021"></a>
@@ -285,6 +346,9 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Matris satır sayısını döndürür. </p>
+<dl class="section return"><dt>Returns</dt><dd>Satır sayısı </dd></dl>
 
 </div>
 </div>
@@ -322,78 +386,15 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a5521d53f3422f84d573d0aaaef5a63f4" name="a5521d53f3422f84d573d0aaaef5a63f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5521d53f3422f84d573d0aaaef5a63f4">&#9670;&#160;</a></span>cols_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="classds_1_1_sparse_matrix.html">ds::SparseMatrix</a>&lt; T &gt;::cols_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4d4f238625b4c2ef2808c8c10616fee2" name="a4d4f238625b4c2ef2808c8c10616fee2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d4f238625b4c2ef2808c8c10616fee2">&#9670;&#160;</a></span>data_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classds_1_1_hash_table.html">HashTable</a>&lt;long long, T&gt; <a class="el" href="classds_1_1_sparse_matrix.html">ds::SparseMatrix</a>&lt; T &gt;::data_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9491432e44a4e92cc7ef89f097eb78aa" name="a9491432e44a4e92cc7ef89f097eb78aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9491432e44a4e92cc7ef89f097eb78aa">&#9670;&#160;</a></span>rows_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="classds_1_1_sparse_matrix.html">ds::SparseMatrix</a>&lt; T &gt;::rows_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Belirtilen koordinata eleman atar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Satır indeksi </td></tr>
+    <tr><td class="paramname">c</td><td>Sütun indeksi </td></tr>
+    <tr><td class="paramname">v</td><td>Atanacak değer </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

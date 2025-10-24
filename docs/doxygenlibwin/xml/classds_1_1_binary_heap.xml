@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classds_1_1_binary_heap" kind="class" language="C++" prot="public">
     <compoundname>ds::BinaryHeap</compoundname>
+    <includes refid="heap_8h" local="no">heap.h</includes>
     <templateparamlist>
       <param>
         <type>typename T</type>
@@ -19,12 +20,13 @@
         <name>a_</name>
         <qualifiedname>ds::BinaryHeap::a_</qualifiedname>
         <briefdescription>
+<para>Heap elemanlarını tutan vektör. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="9" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="9" bodyend="-1"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="25" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classds_1_1_binary_heap_1a10e019bc6948302123ecebd5ba1be449" prot="private" static="no" mutable="no">
         <type>Compare</type>
@@ -34,12 +36,13 @@
         <qualifiedname>ds::BinaryHeap::cmp_</qualifiedname>
         <initializer>{}</initializer>
         <briefdescription>
+<para>Karşılaştırma fonksiyonu. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="10" column="13" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="10" bodyend="10"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="26" column="13" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="26" bodyend="26"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -54,12 +57,23 @@
           <declname>i</declname>
         </param>
         <briefdescription>
+<para>Elemanı yukarı doğru sıralar (sift-up) </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sıralanacak elemanın indeksi </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="11" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="11" bodyend="13"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="32" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="32" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_binary_heap_1a3ca481ab3ae4a8f14cd2ef734cb5463e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -72,12 +86,23 @@
           <declname>i</declname>
         </param>
         <briefdescription>
+<para>Elemanı aşağı doğru sıralar (sift-down) </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sıralanacak elemanın indeksi </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="14" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="14" bodyend="17"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="45" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="45" bodyend="55"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -88,12 +113,16 @@
         <name>empty</name>
         <qualifiedname>ds::BinaryHeap::empty</qualifiedname>
         <briefdescription>
+<para>Heap&apos;in boş olup olmadığını kontrol eder. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>true eğer heap boşsa </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="19" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="19" bodyend="19"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="62" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="62" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_binary_heap_1a7b5bce7c78ca6e621247c672d17c6d1f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t</type>
@@ -102,12 +131,16 @@
         <name>size</name>
         <qualifiedname>ds::BinaryHeap::size</qualifiedname>
         <briefdescription>
+<para>Heap&apos;teki eleman sayısını döndürür. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Eleman sayısı </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="20" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="20" bodyend="20"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="68" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="68" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_binary_heap_1ae4fd1d06e57589a7465609c8df10ad29" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const T &amp;</type>
@@ -116,12 +149,18 @@
         <name>top</name>
         <qualifiedname>ds::BinaryHeap::top</qualifiedname>
         <briefdescription>
+<para>Heap&apos;in en üstündeki elemanı döndürür. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>En üstteki elemanın referansı </para>
+</simplesect>
+<simplesect kind="pre"><para>Heap boş olmamalıdır </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="21" column="13" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="21" bodyend="21"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="75" column="13" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="75" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_binary_heap_1a97c2f6999ad6446c6833cb8f45185dea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -134,12 +173,23 @@
           <declname>v</declname>
         </param>
         <briefdescription>
+<para>Heap&apos;e yeni eleman ekler. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Eklenecek eleman </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="22" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="22" bodyend="22"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="81" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="81" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_binary_heap_1ab8da6f06f1a9a012cf1c4c53f2a8cf6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -148,12 +198,16 @@
         <name>pop</name>
         <qualifiedname>ds::BinaryHeap::pop</qualifiedname>
         <briefdescription>
+<para>Heap&apos;in en üstündeki elemanı çıkarır. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="pre"><para>Heap boş olmamalıdır </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="23" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="23" bodyend="23"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="90" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="90" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_binary_heap_1ad7467e086392e18c40c5423283ca38f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; T &gt;</type>
@@ -162,24 +216,48 @@
         <name>heap_sort_copy</name>
         <qualifiedname>ds::BinaryHeap::heap_sort_copy</qualifiedname>
         <briefdescription>
+<para>Heap&apos;i sıralı dizi olarak döndürür (heap sort) </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Sıralı eleman dizisi</para>
+</simplesect>
+Bu fonksiyon heap&apos;i bozmadan sıralı bir kopyasını döndürür. Heap sort algoritması kullanır. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="24" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="24" bodyend="24"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="103" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="103" bodyend="127"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Manuel implementasyonlu binary heap. </para>
     </briefdescription>
     <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Eleman türü </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Compare</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Karşılaştırma fonksiyonu (varsayılan: std::less&lt;T&gt;)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Bu sınıf, heap özelliklerini manuel olarak implement eder. Sift-up ve sift-down algoritmalarını kullanır. </para>
     </detaileddescription>
     <collaborationgraph>
       <node id="1">
         <label>ds::BinaryHeap&lt; T, Compare &gt;</label>
+        <link refid="classds_1_1_binary_heap"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="8" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="8" bodyend="25"/>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" line="24" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h" bodystart="24" bodyend="128"/>
     <listofallmembers>
       <member refid="classds_1_1_binary_heap_1a47028623394d46a8b882eb07aa729f7b" prot="private" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>a_</name></member>
       <member refid="classds_1_1_binary_heap_1a10e019bc6948302123ecebd5ba1be449" prot="private" virt="non-virtual"><scope>ds::BinaryHeap</scope><name>cmp_</name></member>

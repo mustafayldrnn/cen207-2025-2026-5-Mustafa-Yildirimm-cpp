@@ -2,7 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="structtranslator_1_1_gosub_stmt" kind="struct" language="C++" prot="public">
     <compoundname>translator::GosubStmt</compoundname>
-    <basecompoundref prot="public" virt="non-virtual">translator::Stmt</basecompoundref>
+    <basecompoundref refid="structtranslator_1_1_stmt" prot="public" virt="non-virtual">translator::Stmt</basecompoundref>
+    <includes refid="ast_8h" local="no">ast.h</includes>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structtranslator_1_1_gosub_stmt_1a168c003fcda2ceb2e8c2cd015df7ec85" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -11,12 +12,13 @@
         <name>target</name>
         <qualifiedname>translator::GosubStmt::target</qualifiedname>
         <briefdescription>
+<para>Hedef alt program satır numarası </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="69" column="9" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="69" bodyend="-1"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="231" column="9" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="231" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -31,41 +33,77 @@
           <declname>t</declname>
         </param>
         <briefdescription>
+<para>Alt program çağırma deyimi oluşturur. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hedef satır numarası </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="69" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="69" bodyend="69"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="237" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="237" bodyend="237"/>
       </memberdef>
-      <memberdef kind="function" id="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>StmtKind</type>
+      <memberdef kind="function" id="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="ast_8h_1ae91056a6e5d3941ec5899084a4007a3d" kindref="member">StmtKind</ref></type>
         <definition>StmtKind translator::GosubStmt::kind</definition>
         <argsstring>() const override</argsstring>
         <name>kind</name>
         <qualifiedname>translator::GosubStmt::kind</qualifiedname>
+        <reimplements refid="structtranslator_1_1_stmt_1afb8f5d100524bc8cf234edae0ac57578">kind</reimplements>
         <briefdescription>
+<para>Deyim türünü döndürür. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Gosub türü </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="70" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="70" bodyend="70"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="243" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="243" bodyend="243"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>GOSUB deyimi. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>translator::GosubStmt</label>
+        <link refid="structtranslator_1_1_gosub_stmt"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>translator::Stmt</label>
+        <link refid="structtranslator_1_1_stmt"/>
+      </node>
+    </inheritancegraph>
     <collaborationgraph>
       <node id="1">
         <label>translator::GosubStmt</label>
+        <link refid="structtranslator_1_1_gosub_stmt"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>translator::Stmt</label>
+        <link refid="structtranslator_1_1_stmt"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="68" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="68" bodyend="71"/>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" line="230" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h" bodystart="230" bodyend="244"/>
     <listofallmembers>
       <member refid="structtranslator_1_1_gosub_stmt_1aae89ce3fc1bbe274899085b0fbee9181" prot="public" virt="non-virtual"><scope>translator::GosubStmt</scope><name>GosubStmt</name></member>
-      <member refid="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac" prot="public" virt="non-virtual"><scope>translator::GosubStmt</scope><name>kind</name></member>
+      <member refid="structtranslator_1_1_gosub_stmt_1a959e82453b6d5f6f8f7f92f63eb565ac" prot="public" virt="virtual"><scope>translator::GosubStmt</scope><name>kind</name></member>
       <member refid="structtranslator_1_1_gosub_stmt_1a168c003fcda2ceb2e8c2cd015df7ec85" prot="public" virt="non-virtual"><scope>translator::GosubStmt</scope><name>target</name></member>
       <member refid="structtranslator_1_1_stmt_1a0707842a254ce67ff9c72cda98226ec7" prot="public" virt="virtual"><scope>translator::GosubStmt</scope><name>~Stmt</name></member>
     </listofallmembers>

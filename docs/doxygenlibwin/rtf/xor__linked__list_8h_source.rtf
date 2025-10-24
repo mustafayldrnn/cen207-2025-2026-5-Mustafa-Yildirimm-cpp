@@ -151,113 +151,144 @@
 xor_linked_list.h\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/xor_linked_list.h}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/xor_linked_list.h}
-{\bkmkstart AAAAAAAAAG}
-{\bkmkend AAAAAAAAAG}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+\par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
-2 {\cf21 #include <cstdint>}\par
-3 {\cf21 #include <cstddef>}\par
-4 {\cf21 #include <iterator>}\par
-5 \par
-6 {\cf17 namespace }ds \{\par
-7 \par
-8 {\cf17 template} <{\cf17 typename} T>\par
-9 {\cf17 class }XORLinkedList \{\par
-10     {\cf17 struct }Node \{ T value; Node* npx; {\cf17 explicit} Node({\cf17 const} T& v): value(v), npx(nullptr) \{\} \};\par
-11     Node* head_ = {\cf17 nullptr};\par
-12     Node* tail_ = {\cf17 nullptr};\par
-13     std::size_t size_ = 0;\par
-14 \par
-15     {\cf17 static} Node* XOR(Node* a, Node* b)\{\par
-16         {\cf19 return} {\cf17 reinterpret_cast<}Node*{\cf17 >}({\cf17 reinterpret_cast<}uintptr_t{\cf17 >}(a) ^ {\cf17 reinterpret_cast<}uintptr_t{\cf17 >}(b));\par
-17     \}\par
-18 \par
-19 {\cf17 public}:\par
-20     XORLinkedList() = {\cf19 default};\par
-21     ~XORLinkedList()\{ clear(); \}\par
-22     XORLinkedList({\cf17 const} XORLinkedList&) = {\cf17 delete};\par
-23     XORLinkedList& operator=({\cf17 const} XORLinkedList&) = {\cf17 delete};\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+5 {\cf21 #pragma once}\par
+6 {\cf21 #include <cstdint>}\par
+7 {\cf21 #include <cstddef>}\par
+8 {\cf21 #include <iterator>}\par
+9 \par
+10 {\cf17 namespace }ds \{\par
+11 \par
+13 {\cf17 template} <{\cf17 typename} T>\par
+14 {\cf17 class }XORLinkedList \{\par
+15     {\cf17 struct }Node \{ T value; Node* npx; {\cf17 explicit} Node({\cf17 const} T& v): value(v), npx({\cf17 nullptr}) \{\} \};\par
+16     Node* head_ = {\cf17 nullptr};\par
+17     Node* tail_ = {\cf17 nullptr};\par
+18     std::size_t size_ = 0;\par
+19 \par
+21     {\cf17 static} Node* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(Node* a, Node* b)\{\par
+22         {\cf19 return} {\cf17 reinterpret_cast<}Node*{\cf17 >}({\cf17 reinterpret_cast<}uintptr_t{\cf17 >}(a) ^ {\cf17 reinterpret_cast<}uintptr_t{\cf17 >}(b));\par
+23     \}\par
 24 \par
-25     {\cf18 void} clear()\{\par
-26         Node* prev = {\cf17 nullptr}; Node* cur = head_;\par
-27         {\cf19 while} (cur)\{ Node* next = XOR(prev, cur->npx); prev = cur; cur = next; {\cf17 delete} prev; \}\par
-28         head_ = tail_ = {\cf17 nullptr}; size_ = 0;\par
-29     \}\par
+25 {\cf17 public}:\par
+26     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAU" }{}}{\fldrslt {\cs37\ul\cf2 XORLinkedList}}}
+() = {\cf19 default};\par
+27     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAU" }{}}{\fldrslt {\cs37\ul\cf2 ~XORLinkedList}}}
+()\{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 clear}}}
+(); \}\par
+28     XORLinkedList({\cf17 const} XORLinkedList&) = {\cf17 delete};\par
+29     XORLinkedList& operator=({\cf17 const} XORLinkedList&) = {\cf17 delete};\par
 30 \par
-31     std::size_t size(){\cf17  const }\{ {\cf19 return} size_; \}\par
-32     {\cf18 bool} empty(){\cf17  const }\{ {\cf19 return} size_ == 0; \}\par
-33 \par
-34     {\cf18 void} push_back({\cf17 const} T& v)\{\par
-35         Node* n = {\cf17 new} Node(v);\par
-36         {\cf19 if} (!head_) \{ head_ = tail_ = n; \}\par
-37         {\cf19 else} \{\par
-38             n->npx = tail_;\par
-39             tail_->npx = XOR(tail_->npx, n);\par
-40             tail_ = n;\par
-41         \}\par
-42         ++size_;\par
-43     \}\par
-44 \par
-45     {\cf18 void} push_front({\cf17 const} T& v)\{\par
-46         Node* n = {\cf17 new} Node(v);\par
-47         {\cf19 if} (!head_) \{ head_ = tail_ = n; \}\par
-48         {\cf19 else} \{\par
-49             n->npx = head_;\par
-50             head_->npx = XOR(n, head_->npx);\par
-51             head_ = n;\par
-52         \}\par
-53         ++size_;\par
-54     \}\par
-55 \par
-56     {\cf18 bool} pop_back()\{\par
-57         {\cf19 if} (!tail_) {\cf19 return} {\cf17 false};\par
-58         Node* prev = XOR(tail_->npx, {\cf17 nullptr});\par
-59         {\cf19 if} (!prev)\{ {\cf17 delete} tail_; head_ = tail_ = {\cf17 nullptr}; \}\par
-60         {\cf19 else} \{ prev->npx = XOR(prev->npx, tail_); {\cf17 delete} tail_; tail_ = prev; \}\par
-61         --size_; {\cf19 return} {\cf17 true};\par
-62     \}\par
-63 \par
-64     {\cf18 bool} pop_front()\{\par
-65         {\cf19 if} (!head_) {\cf19 return} {\cf17 false};\par
-66         Node* next = XOR({\cf17 nullptr}, head_->npx);\par
-67         {\cf19 if} (!next)\{ {\cf17 delete} head_; head_ = tail_ = {\cf17 nullptr}; \}\par
-68         {\cf19 else} \{ next->npx = XOR(head_, next->npx); {\cf17 delete} head_; head_ = next; \}\par
-69         --size_; {\cf19 return} {\cf17 true};\par
-70     \}\par
-71 \par
-72     {\cf20 // Forward iteration: returns values via callback, stop if cb returns false}\par
-73     {\cf17 template} <{\cf17 typename} F>\par
-74     {\cf18 void} for_each_forward(F cb){\cf17  const }\{\par
-75         Node* prev = {\cf17 nullptr}; Node* cur = head_;\par
-76         {\cf19 while} (cur)\{ {\cf19 if} (!cb(cur->value)) {\cf19 break}; Node* next = XOR(prev, cur->npx); prev = cur; cur = next; \}\par
-77     \}\par
-78 \par
-79     {\cf17 template} <{\cf17 typename} F>\par
-80     {\cf18 void} for_each_backward(F cb){\cf17  const }\{\par
-81         Node* next = {\cf17 nullptr}; Node* cur = tail_;\par
-82         {\cf19 while} (cur)\{ {\cf19 if} (!cb(cur->value)) {\cf19 break}; Node* prev = XOR(cur->npx, next); next = cur; cur = prev; \}\par
+32     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 clear}}}
+()\{\par
+33         Node* prev = {\cf17 nullptr}; Node* cur = head_;\par
+34         {\cf19 while} (cur)\{ Node* next = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(prev, cur->npx); prev = cur; cur = next; {\cf17 delete} prev; \}\par
+35         head_ = tail_ = {\cf17 nullptr}; size_ = 0;\par
+36     \}\par
+37 \par
+39     std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABP" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
+(){\cf17  const }\{ {\cf19 return} size_; \}\par
+41     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 empty}}}
+(){\cf17  const }\{ {\cf19 return} size_ == 0; \}\par
+42 \par
+44     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 push_back}}}
+({\cf17 const} T& v)\{\par
+45         Node* n = {\cf17 new} Node(v);\par
+46         {\cf19 if} (!head_) \{ head_ = tail_ = n; \}\par
+47         {\cf19 else} \{\par
+48             n->npx = tail_;\par
+49             tail_->npx = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(tail_->npx, n);\par
+50             tail_ = n;\par
+51         \}\par
+52         ++size_;\par
+53     \}\par
+54 \par
+56     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABZ" }{}}{\fldrslt {\cs37\ul\cf2 push_front}}}
+({\cf17 const} T& v)\{\par
+57         Node* n = {\cf17 new} Node(v);\par
+58         {\cf19 if} (!head_) \{ head_ = tail_ = n; \}\par
+59         {\cf19 else} \{\par
+60             n->npx = head_;\par
+61             head_->npx = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(n, head_->npx);\par
+62             head_ = n;\par
+63         \}\par
+64         ++size_;\par
+65     \}\par
+66 \par
+68     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 pop_back}}}
+()\{\par
+69         {\cf19 if} (!tail_) {\cf19 return} {\cf17 false};\par
+70         Node* prev = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(tail_->npx, {\cf17 nullptr});\par
+71         {\cf19 if} (!prev)\{ {\cf17 delete} tail_; head_ = tail_ = {\cf17 nullptr}; \}\par
+72         {\cf19 else} \{ prev->npx = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(prev->npx, tail_); {\cf17 delete} tail_; tail_ = prev; \}\par
+73         --size_; {\cf19 return} {\cf17 true};\par
+74     \}\par
+75 \par
+77     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACK" }{}}{\fldrslt {\cs37\ul\cf2 pop_front}}}
+()\{\par
+78         {\cf19 if} (!head_) {\cf19 return} {\cf17 false};\par
+79         Node* next = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+({\cf17 nullptr}, head_->npx);\par
+80         {\cf19 if} (!next)\{ {\cf17 delete} head_; head_ = tail_ = {\cf17 nullptr}; \}\par
+81         {\cf19 else} \{ next->npx = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(head_, next->npx); {\cf17 delete} head_; head_ = next; \}\par
+82         --size_; {\cf19 return} {\cf17 true};\par
 83     \}\par
 84 \par
-85     {\cf20 // Remove first element equal to v; returns true if removed}\par
-86     {\cf18 bool} remove_first({\cf17 const} T& v)\{\par
-87         Node* prev = {\cf17 nullptr}; Node* cur = head_;\par
-88         {\cf19 while} (cur)\{\par
-89             {\cf19 if} (cur->value == v)\{\par
-90                 Node* next = XOR(prev, cur->npx);\par
-91                 {\cf19 if} (prev) prev->npx = XOR(XOR(prev->npx, cur), next);\par
-92                 {\cf19 else} head_ = next;\par
-93                 {\cf19 if} (next) next->npx = XOR(prev, XOR(cur, next->npx));\par
-94                 {\cf19 else} tail_ = prev;\par
-95                 {\cf17 delete} cur; --size_; {\cf19 return} {\cf17 true};\par
-96             \}\par
-97             Node* next = XOR(prev, cur->npx); prev = cur; cur = next;\par
-98         \}\par
-99         {\cf19 return} {\cf17 false};\par
-100     \}\par
-101 \};\par
-102 \par
-103 \} {\cf20 // namespace ds}\par
-104 \par
+85     {\cf20 // Forward iteration: returns values via callback, stop if cb returns false}\par
+87     {\cf17 template} <{\cf17 typename} F>\par
+88     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 for_each_forward}}}
+(F cb){\cf17  const }\{\par
+89         Node* prev = {\cf17 nullptr}; Node* cur = head_;\par
+90         {\cf19 while} (cur)\{ {\cf19 if} (!cb(cur->value)) {\cf19 break}; Node* next = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(prev, cur->npx); prev = cur; cur = next; \}\par
+91     \}\par
+92 \par
+94     {\cf17 template} <{\cf17 typename} F>\par
+95     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADD" }{}}{\fldrslt {\cs37\ul\cf2 for_each_backward}}}
+(F cb){\cf17  const }\{\par
+96         Node* next = {\cf17 nullptr}; Node* cur = tail_;\par
+97         {\cf19 while} (cur)\{ {\cf19 if} (!cb(cur->value)) {\cf19 break}; Node* prev = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(cur->npx, next); next = cur; cur = prev; \}\par
+98     \}\par
+99 \par
+100     {\cf20 // Remove first element equal to v; returns true if removed}\par
+102     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 remove_first}}}
+({\cf17 const} T& v)\{\par
+103         Node* prev = {\cf17 nullptr}; Node* cur = head_;\par
+104         {\cf19 while} (cur)\{\par
+105             {\cf19 if} (cur->value == v)\{\par
+106                 Node* next = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(prev, cur->npx);\par
+107                 {\cf19 if} (prev) prev->npx = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(prev->npx, cur), next);\par
+108                 {\cf19 else} head_ = next;\par
+109                 {\cf19 if} (next) next->npx = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(prev, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(cur, next->npx));\par
+110                 {\cf19 else} tail_ = prev;\par
+111                 {\cf17 delete} cur; --size_; {\cf19 return} {\cf17 true};\par
+112             \}\par
+113             Node* next = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 XOR}}}
+(prev, cur->npx); prev = cur; cur = next;\par
+114         \}\par
+115         {\cf19 return} {\cf17 false};\par
+116     \}\par
+117 \};\par
+118 \par
+119 \} {\cf20 // namespace ds}\par
 }
 }

@@ -72,7 +72,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a href="namespacetranslator.html">translator</a></li><li class="navelem"><a href="classtranslator_1_1_codegen.html">Codegen</a></li>  </ul>
+<li class="navelem"><b>translator</b></li><li class="navelem"><a href="classtranslator_1_1_codegen.html">Codegen</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>C++ kaynak çıktısı üreten yardımcı sınıf.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="codegen_8h_source.html">codegen.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for translator::Codegen:</div>
@@ -94,8 +97,12 @@ Collaboration diagram for translator::Codegen:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a93cb9bf11dd99728319a5e5de334f6f8" id="r_a93cb9bf11dd99728319a5e5de334f6f8"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93cb9bf11dd99728319a5e5de334f6f8">emit_cpp</a> (const <a class="el" href="structtranslator_1_1_program.html">Program</a> &amp;p)</td></tr>
+<tr class="memdesc:a93cb9bf11dd99728319a5e5de334f6f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verilen <a class="el" href="structtranslator_1_1_program.html" title="Etiketlenmiş deyimlerden oluşan program.">Program</a>'dan C++ kodu üretir.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>C++ kaynak çıktısı üreten yardımcı sınıf. </p>
+<p>Bu sınıf, Abstract Syntax Tree'i alarak C++ kaynak kodu üretir. BASIC benzeri dildeki programları C++ koduna dönüştürür. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a93cb9bf11dd99728319a5e5de334f6f8" name="a93cb9bf11dd99728319a5e5de334f6f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93cb9bf11dd99728319a5e5de334f6f8">&#9670;&#160;</a></span>emit_cpp()</h2>
 
@@ -119,11 +126,20 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Verilen <a class="el" href="structtranslator_1_1_program.html" title="Etiketlenmiş deyimlerden oluşan program.">Program</a>'dan C++ kodu üretir. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Çevrilecek program AST'i </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Üretilen C++ kaynak kodu </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/<a class="el" href="codegen_8h_source.html">codegen.h</a></li>
-<li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/<a class="el" href="codegen_8cpp.html">codegen.cpp</a></li>
+<li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/<b>codegen.cpp</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

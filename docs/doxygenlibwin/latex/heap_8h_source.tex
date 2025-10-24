@@ -1,34 +1,87 @@
 \doxysection{heap.\+h}
 \hypertarget{heap_8h_source}{}\label{heap_8h_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/include/ds/heap.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/include/ds/heap.h}}
-
+\mbox{\hyperlink{heap_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <functional>}}
-\DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{keyword}{namespace\ }ds\ \{}
-\DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T,\ \textcolor{keyword}{typename}\ Compare\ =\ std::less<T>>}
-\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }BinaryHeap\ \{}
-\DoxyCodeLine{00009\ \ \ \ \ std::vector<T>\ a\_;}
-\DoxyCodeLine{00010\ \ \ \ \ Compare\ cmp\_\{\};}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ sift\_up(std::size\_t\ i)\{}
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (i>0)\{\ std::size\_t\ p=(i-\/1)/2;\ \textcolor{keywordflow}{if}\ (!cmp\_(a\_[p],\ a\_[i]))\ \textcolor{keywordflow}{break};\ std::swap(a\_[p],\ a\_[i]);\ i=p;\ \}}
-\DoxyCodeLine{00013\ \ \ \ \ \}}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ sift\_down(std::size\_t\ i)\{}
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ std::size\_t\ n\ =\ a\_.size();}
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\{\ std::size\_t\ l=2*i+1,\ r=2*i+2,\ m=i;\ \textcolor{keywordflow}{if}\ (l<n\ \&\&\ cmp\_(a\_[m],\ a\_[l]))\ m=l;\ \textcolor{keywordflow}{if}\ (r<n\ \&\&\ cmp\_(a\_[m],\ a\_[r]))\ m=r;\ \textcolor{keywordflow}{if}\ (m==i)\ \textcolor{keywordflow}{break};\ std::swap(a\_[i],\ a\_[m]);\ i=m;\ \}}
-\DoxyCodeLine{00017\ \ \ \ \ \}}
-\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ empty()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ a\_.empty();\ \}}
-\DoxyCodeLine{00020\ \ \ \ \ std::size\_t\ size()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ a\_.size();\ \}}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{const}\ T\&\ top()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ a\_.front();\ \}}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ push(\textcolor{keyword}{const}\ T\&\ v)\{\ a\_.push\_back(v);\ sift\_up(a\_.size()-\/1);\ \}}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ pop()\{\ std::swap(a\_.front(),\ a\_.back());\ a\_.pop\_back();\ \textcolor{keywordflow}{if}(!a\_.empty())\ sift\_down(0);\ \}}
-\DoxyCodeLine{00024\ \ \ \ \ std::vector<T>\ heap\_sort\_copy()\textcolor{keyword}{\ const\ }\{\ \textcolor{keyword}{auto}\ b=a\_;\ std::vector<T>\ out;\ out.reserve(b.size());\ \textcolor{keyword}{auto}\ cmp=cmp\_;\ \textcolor{keyword}{auto}\ sift\_down=[\&](std::size\_t\ i)\{\ std::size\_t\ n=b.size();\ \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\{\ std::size\_t\ l=2*i+1,r=2*i+2,m=i;\ \textcolor{keywordflow}{if}(l<n\&\&cmp(b[m],b[l]))\ m=l;\ \textcolor{keywordflow}{if}(r<n\&\&cmp(b[m],b[r]))\ m=r;\ \textcolor{keywordflow}{if}(m==i)\ \textcolor{keywordflow}{break};\ std::swap(b[i],b[m]);\ i=m;\ \}\};\ \textcolor{keywordflow}{for}\ (std::size\_t\ i=b.size()/2;i-\/-\/>0;)\ sift\_down(i);\ \textcolor{keywordflow}{while}(!b.empty())\{\ std::swap(b.front(),\ b.back());\ out.push\_back(b.back());\ b.pop\_back();\ \textcolor{keywordflow}{if}(!b.empty())\ sift\_down(0);\}\ \textcolor{keywordflow}{return}\ out;\ \}}
-\DoxyCodeLine{00025\ \};}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \}\ \textcolor{comment}{//\ namespace\ ds}}
-\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }ds\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T,\ \textcolor{keyword}{typename}\ Compare\ =\ std::less<T>>}
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classds_1_1_binary_heap}{BinaryHeap}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ std::vector<T>\ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}};\ \ }
+\DoxyCodeLine{00026\ \ \ \ \ Compare\ \mbox{\hyperlink{classds_1_1_binary_heap_a10e019bc6948302123ecebd5ba1be449}{cmp\_}}\{\};\ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_binary_heap_a5ae353f634f177f593dd2e488779333a}{sift\_up}}(std::size\_t\ i)\{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (i>0)\{\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ std::size\_t\ p=(i-\/1)/2;\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classds_1_1_binary_heap_a10e019bc6948302123ecebd5ba1be449}{cmp\_}}(\mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}[p],\ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}[i]))\ \textcolor{keywordflow}{break};\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ std::swap(\mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}[p],\ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}[i]);\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ i=p;\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \}}
+\DoxyCodeLine{00040\ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_binary_heap_a3ca481ab3ae4a8f14cd2ef734cb5463e}{sift\_down}}(std::size\_t\ i)\{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ std::size\_t\ n\ =\ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}.size();}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\{\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ std::size\_t\ l=2*i+1,\ r=2*i+2,\ m=i;\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (l<n\ \&\&\ \mbox{\hyperlink{classds_1_1_binary_heap_a10e019bc6948302123ecebd5ba1be449}{cmp\_}}(\mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}[m],\ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}[l]))\ m=l;\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (r<n\ \&\&\ \mbox{\hyperlink{classds_1_1_binary_heap_a10e019bc6948302123ecebd5ba1be449}{cmp\_}}(\mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}[m],\ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}[r]))\ m=r;\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m==i)\ \textcolor{keywordflow}{break};\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ std::swap(\mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}[i],\ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}[m]);\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ i=m;\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classds_1_1_binary_heap_ad20587f5fd34a78c2c53f79a7a874c43}{empty}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}.empty();\ \}}
+\DoxyCodeLine{00063\ \ \ \ \ }
+\DoxyCodeLine{00068\ \ \ \ \ std::size\_t\ \mbox{\hyperlink{classds_1_1_binary_heap_a7b5bce7c78ca6e621247c672d17c6d1f}{size}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}.size();\ \}}
+\DoxyCodeLine{00069\ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{const}\ T\&\ \mbox{\hyperlink{classds_1_1_binary_heap_ae4fd1d06e57589a7465609c8df10ad29}{top}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}.front();\ \}}
+\DoxyCodeLine{00076\ \ \ \ \ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_binary_heap_a97c2f6999ad6446c6833cb8f45185dea}{push}}(\textcolor{keyword}{const}\ T\&\ v)\{\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}.push\_back(v);\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classds_1_1_binary_heap_a5ae353f634f177f593dd2e488779333a}{sift\_up}}(\mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}.size()-\/1);\ }
+\DoxyCodeLine{00084\ \ \ \ \ \}}
+\DoxyCodeLine{00085\ \ \ \ \ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_binary_heap_ab8da6f06f1a9a012cf1c4c53f2a8cf6d}{pop}}()\{\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ std::swap(\mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}.front(),\ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}.back());\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}.pop\_back();\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}}.empty())\ \mbox{\hyperlink{classds_1_1_binary_heap_a3ca481ab3ae4a8f14cd2ef734cb5463e}{sift\_down}}(0);\ }
+\DoxyCodeLine{00094\ \ \ \ \ \}}
+\DoxyCodeLine{00095\ \ \ \ \ }
+\DoxyCodeLine{00103\ \ \ \ \ std::vector<T>\ \mbox{\hyperlink{classds_1_1_binary_heap_ad7467e086392e18c40c5423283ca38f6}{heap\_sort\_copy}}()\textcolor{keyword}{\ const\ }\{\ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ b=\mbox{\hyperlink{classds_1_1_binary_heap_a47028623394d46a8b882eb07aa729f7b}{a\_}};\ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ std::vector<T>\ out;\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ out.reserve(b.size());\ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ cmp=\mbox{\hyperlink{classds_1_1_binary_heap_a10e019bc6948302123ecebd5ba1be449}{cmp\_}};\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classds_1_1_binary_heap_a3ca481ab3ae4a8f14cd2ef734cb5463e}{sift\_down}}=[\&](std::size\_t\ i)\{\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ std::size\_t\ n=b.size();\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\{\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::size\_t\ l=2*i+1,r=2*i+2,m=i;\ }
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(l<n\&\&cmp(b[m],b[l]))\ m=l;\ }
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(r<n\&\&cmp(b[m],b[r]))\ m=r;\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(m==i)\ \textcolor{keywordflow}{break};\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::swap(b[i],b[m]);\ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i=m;\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \};\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (std::size\_t\ i=b.size()/2;i-\/-\/>0;)\ \mbox{\hyperlink{classds_1_1_binary_heap_a3ca481ab3ae4a8f14cd2ef734cb5463e}{sift\_down}}(i);\ }
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(!b.empty())\{\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ std::swap(b.front(),\ b.back());\ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ out.push\_back(b.back());\ }
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ b.pop\_back();\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!b.empty())\ \mbox{\hyperlink{classds_1_1_binary_heap_a3ca481ab3ae4a8f14cd2ef734cb5463e}{sift\_down}}(0);}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \}\ }
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ out;\ }
+\DoxyCodeLine{00127\ \ \ \ \ \}}
+\DoxyCodeLine{00128\ \};}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \}\ \textcolor{comment}{//\ namespace\ ds}}
+\DoxyCodeLine{00131\ }
 
 \end{DoxyCode}

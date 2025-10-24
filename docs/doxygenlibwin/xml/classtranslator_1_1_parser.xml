@@ -2,20 +2,22 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classtranslator_1_1_parser" kind="class" language="C++" prot="public">
     <compoundname>translator::Parser</compoundname>
+    <includes refid="parser_8h" local="no">parser.h</includes>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classtranslator_1_1_parser_1a656fd7ad404746f72905ea7ca9c96130" prot="private" static="no" mutable="no">
-        <type>const std::vector&lt; Token &gt;</type>
+        <type>const std::vector&lt; <ref refid="structtranslator_1_1_token" kindref="compound">Token</ref> &gt;</type>
         <definition>const std::vector&lt;Token&gt; translator::Parser::tokens_</definition>
         <argsstring></argsstring>
         <name>tokens_</name>
         <qualifiedname>translator::Parser::tokens_</qualifiedname>
         <briefdescription>
+<para>Çözümlenecek token dizisi. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="11" column="23" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="11" bodyend="-1"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="24" column="23" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtranslator_1_1_parser_1af5354c7d27d4189bd1f9c33c710b74ac" prot="private" static="no" mutable="yes">
         <type>std::size_t</type>
@@ -25,42 +27,51 @@
         <qualifiedname>translator::Parser::pos_</qualifiedname>
         <initializer>= 0</initializer>
         <briefdescription>
+<para>Mevcut pozisyon. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="12" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="12" bodyend="-1"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="25" column="25" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="25" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
       <memberdef kind="function" id="classtranslator_1_1_parser_1a01eed9fe50c7b02223c8aaf8140b4649" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const Token &amp;</type>
+        <type>const <ref refid="structtranslator_1_1_token" kindref="compound">Token</ref> &amp;</type>
         <definition>const Token &amp; translator::Parser::peek</definition>
         <argsstring>() const</argsstring>
         <name>peek</name>
         <qualifiedname>translator::Parser::peek</qualifiedname>
         <briefdescription>
+<para>Mevcut token&apos;ı döndürür (ilerlemeden) </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Mevcut token&apos;ın referansı </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="14" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="14" bodyend="14"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="31" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="31" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1a454ea6c16f64db09d8d2b9987e1e4833" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const Token &amp;</type>
+        <type>const <ref refid="structtranslator_1_1_token" kindref="compound">Token</ref> &amp;</type>
         <definition>const Token &amp; translator::Parser::advance</definition>
         <argsstring>() const</argsstring>
         <name>advance</name>
         <qualifiedname>translator::Parser::advance</qualifiedname>
         <briefdescription>
+<para>Mevcut token&apos;ı döndürür ve pozisyonu ilerletir. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Mevcut token&apos;ın referansı </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="15" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="15" bodyend="15"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="37" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="37" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1a5719d1927d26586fc770de412025bdbb" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -69,16 +80,29 @@
         <name>match</name>
         <qualifiedname>translator::Parser::match</qualifiedname>
         <param>
-          <type>TokenType</type>
+          <type><ref refid="token_8h_1a0eb119efce2d20d6019adb661cd4c480" kindref="member">TokenType</ref></type>
           <declname>t</declname>
         </param>
         <briefdescription>
+<para>Mevcut token&apos;ın belirtilen türde olup olmadığını kontrol eder. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kontrol edilecek token türü </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true eğer token türü eşleşirse ve pozisyon ilerletilirse </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="16" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="16" bodyend="16"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="44" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="44" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1ab2e3e753c664de21a74add33db1a5d26" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -87,57 +111,73 @@
         <name>at_eof</name>
         <qualifiedname>translator::Parser::at_eof</qualifiedname>
         <briefdescription>
+<para>Dosya sonuna gelinip gelinmediğini kontrol eder. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>true eğer dosya sonundaysa </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="17" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="17" bodyend="17"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="50" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="50" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1afd6a7894691a68ec5743314fef3a7f75" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::unique_ptr&lt; Expr &gt;</type>
+        <type>std::unique_ptr&lt; <ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref> &gt;</type>
         <definition>std::unique_ptr&lt; Expr &gt; translator::Parser::parse_expression</definition>
         <argsstring>() const</argsstring>
         <name>parse_expression</name>
         <qualifiedname>translator::Parser::parse_expression</qualifiedname>
         <briefdescription>
+<para>İfade çözümler. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Çözümlenen ifade AST&apos;i </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="20" column="21" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="9" bodyend="17"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="57" column="21" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="9" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1acfd7d04d3973badabd5a26214ed3c500" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::unique_ptr&lt; Expr &gt;</type>
+        <type>std::unique_ptr&lt; <ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref> &gt;</type>
         <definition>std::unique_ptr&lt; Expr &gt; translator::Parser::parse_term</definition>
         <argsstring>() const</argsstring>
         <name>parse_term</name>
         <qualifiedname>translator::Parser::parse_term</qualifiedname>
         <briefdescription>
+<para>Terim çözümler. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Çözümlenen terim AST&apos;i </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="21" column="21" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="19" bodyend="27"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="63" column="21" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="19" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1abb54531b779933acfd0c644dcd868b45" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::unique_ptr&lt; Expr &gt;</type>
+        <type>std::unique_ptr&lt; <ref refid="structtranslator_1_1_expr" kindref="compound">Expr</ref> &gt;</type>
         <definition>std::unique_ptr&lt; Expr &gt; translator::Parser::parse_factor</definition>
         <argsstring>() const</argsstring>
         <name>parse_factor</name>
         <qualifiedname>translator::Parser::parse_factor</qualifiedname>
         <briefdescription>
+<para>Faktör çözümler. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Çözümlenen faktör AST&apos;i </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="22" column="21" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="29" bodyend="35"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="69" column="21" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="29" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1aec074fe4de2041a83946260a05780582" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::unique_ptr&lt; Stmt &gt;</type>
+        <type>std::unique_ptr&lt; <ref refid="structtranslator_1_1_stmt" kindref="compound">Stmt</ref> &gt;</type>
         <definition>std::unique_ptr&lt; Stmt &gt; translator::Parser::parse_statement</definition>
         <argsstring>(int &amp;outLabel) const</argsstring>
         <name>parse_statement</name>
@@ -147,12 +187,25 @@
           <declname>outLabel</declname>
         </param>
         <briefdescription>
+<para>Deyim çözümler. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outLabel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Çıktı etiketi referansı </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Çözümlenen deyim AST&apos;i </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="24" column="21" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="37" bodyend="101"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="76" column="21" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="37" bodyend="101"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -163,42 +216,60 @@
         <name>Parser</name>
         <qualifiedname>translator::Parser::Parser</qualifiedname>
         <param>
-          <type>std::vector&lt; Token &gt;</type>
+          <type>std::vector&lt; <ref refid="structtranslator_1_1_token" kindref="compound">Token</ref> &gt;</type>
           <declname>toks</declname>
         </param>
         <briefdescription>
+<para>Belirteç dizisi ile parser oluşturur. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Çözümlenecek token dizisi </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="27" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="27" bodyend="27"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="83" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="83" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="classtranslator_1_1_parser_1a119007cefb979b4071cd7313c0c31062" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>Program</type>
+        <type><ref refid="structtranslator_1_1_program" kindref="compound">Program</ref></type>
         <definition>Program translator::Parser::parseProgram</definition>
         <argsstring>() const</argsstring>
         <name>parseProgram</name>
         <qualifiedname>translator::Parser::parseProgram</qualifiedname>
         <briefdescription>
+<para>Girişin tamamını <ref refid="structtranslator_1_1_program" kindref="compound">Program</ref> yapısına çözümler. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Çözümlenen program AST&apos;i </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="28" column="13" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="103" bodyend="122"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="89" column="13" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp" bodystart="103" bodyend="122"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>BASIC benzeri dilin sözdizim çözümleyicisi. </para>
     </briefdescription>
     <detaileddescription>
+<para>Bu sınıf, token dizisini alarak Abstract Syntax Tree (AST) üretir. Recursive descent parsing algoritması kullanır. </para>
     </detaileddescription>
     <collaborationgraph>
       <node id="1">
         <label>translator::Parser</label>
+        <link refid="classtranslator_1_1_parser"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="10" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="10" bodyend="29"/>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" line="23" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h" bodystart="23" bodyend="90"/>
     <listofallmembers>
       <member refid="classtranslator_1_1_parser_1a454ea6c16f64db09d8d2b9987e1e4833" prot="private" virt="non-virtual"><scope>translator::Parser</scope><name>advance</name></member>
       <member refid="classtranslator_1_1_parser_1ab2e3e753c664de21a74add33db1a5d26" prot="private" virt="non-virtual"><scope>translator::Parser</scope><name>at_eof</name></member>

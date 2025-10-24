@@ -1,22 +1,26 @@
 \doxysection{symbol\+\_\+table.\+h}
 \hypertarget{symbol__table_8h_source}{}\label{symbol__table_8h_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/symbol\_table.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/symbol\_table.h}}
-
+\mbox{\hyperlink{symbol__table_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}ds/hash\_table.h"{}}}
-\DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{keyword}{namespace\ }translator\ \{}
-\DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }SymbolTable\ \{}
-\DoxyCodeLine{00008\ \ \ \ \ ds::HashTable<std::string,\ double>\ table\_;}
-\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ define(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{double}\ value)\{\ \textcolor{keywordflow}{return}\ table\_.insert(name,\ value);\ \}}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{bool}\ assign(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{double}\ value)\{\ \textcolor{keywordflow}{return}\ table\_.insert(name,\ value);\ \}}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}*\ lookup(\textcolor{keyword}{const}\ std::string\&\ name)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ table\_.find(name);\ \}}
-\DoxyCodeLine{00013\ \};}
-\DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \}\ \textcolor{comment}{//\ namespace\ translator}}
-\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{hash__table_8h}{ds/hash\_table.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }translator\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtranslator_1_1_symbol_table}{SymbolTable}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classds_1_1_hash_table}{ds::HashTable<std::string,\ double>}}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_a66cace7834f5eb0eb9b31edd66a994fd}{table\_}};\ \ }
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_ac8dee7076ef5eb32c01014489f8bace5}{define}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{double}\ value)\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_a66cace7834f5eb0eb9b31edd66a994fd}{table\_}}.insert(name,\ value);\ \}}
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_a7e854ae1ff78c87a4ac95fed5047735b}{assign}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{double}\ value)\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_a66cace7834f5eb0eb9b31edd66a994fd}{table\_}}.insert(name,\ value);\ \}}
+\DoxyCodeLine{00039\ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}*\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_ae1876c1c25f5dffb5eadccc190ad93f3}{lookup}}(\textcolor{keyword}{const}\ std::string\&\ name)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classtranslator_1_1_symbol_table_a66cace7834f5eb0eb9b31edd66a994fd}{table\_}}.find(name);\ \}}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \}\ \textcolor{comment}{//\ namespace\ translator}}
+\DoxyCodeLine{00049\ }
 
 \end{DoxyCode}

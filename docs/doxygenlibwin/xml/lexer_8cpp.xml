@@ -15,7 +15,7 @@
       </node>
       <node id="2">
         <label>translator/lexer.h</label>
-        <link refid="lexer_8h_source"/>
+        <link refid="lexer_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
@@ -25,7 +25,7 @@
       </node>
       <node id="5">
         <label>translator/token.h</label>
-        <link refid="token_8h_source"/>
+        <link refid="token_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -83,7 +83,7 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;translator/lexer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lexer_8h" kindref="compound">translator/lexer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cctype&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">translator<sp/>{</highlight></codeline>
@@ -91,9 +91,9 @@
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_ident_start(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::isalpha(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(c))<sp/>||<sp/>c==</highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_ident_char(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::isalnum(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(c))<sp/>||<sp/>c==</highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal">std::vector&lt;Token&gt;<sp/>Lexer::tokenize()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">std::vector&lt;Token&gt;<sp/><ref refid="classtranslator_1_1_lexer_1a89260e1e02eb2b01abcd1c7e31d480b9" kindref="member">Lexer::tokenize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Token&gt;<sp/>out;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line=1;<sp/>std::size_t<sp/>i=0,<sp/>n=src_.size();</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>add=[&amp;](TokenType<sp/>t,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>lx){<sp/>out.push_back({t,lx,line});<sp/>};</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>add=[&amp;](<ref refid="token_8h_1a0eb119efce2d20d6019adb661cd4c480" kindref="member">TokenType</ref><sp/>t,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>lx){<sp/>out.push_back({t,lx,line});<sp/>};</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i&lt;n){<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>src_[i];</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c==</highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">){<sp/>++i;<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c==</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">){<sp/>add(TokenType::Newline,<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);<sp/>++i;<sp/>++line;<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;<sp/>}</highlight></codeline>

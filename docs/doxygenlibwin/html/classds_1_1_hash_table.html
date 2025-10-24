@@ -72,7 +72,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a href="namespaceds.html">ds</a></li><li class="navelem"><a href="classds_1_1_hash_table.html">HashTable</a></li>  </ul>
+<li class="navelem"><b>ds</b></li><li class="navelem"><a href="classds_1_1_hash_table.html">HashTable</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -87,6 +87,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Kapalı adreslemeli hash tablosu implementasyonu.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="hash__table_8h_source.html">hash_table.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for ds::HashTable&lt; K, V &gt;:</div>
@@ -97,32 +100,64 @@ Collaboration diagram for ds::HashTable&lt; K, V &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:Entry" id="r_Entry"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds_1_1_hash_table_1_1_entry.html">Entry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash tablosundaki her bir girişi temsil eden yapı  <a href="structds_1_1_hash_table_1_1_entry.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a47881f4560d8482207d0c72061df0176" id="r_a47881f4560d8482207d0c72061df0176"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47881f4560d8482207d0c72061df0176">HashTable</a> (std::size_t cap=16)</td></tr>
+<tr class="memdesc:a47881f4560d8482207d0c72061df0176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash tablosu oluşturur.  <br /></td></tr>
 <tr class="memitem:a3bb53d07891669bf56c915bc60b1f929" id="r_a3bb53d07891669bf56c915bc60b1f929"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bb53d07891669bf56c915bc60b1f929">size</a> () const</td></tr>
+<tr class="memdesc:a3bb53d07891669bf56c915bc60b1f929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tablodaki eleman sayısını döndürür.  <br /></td></tr>
 <tr class="memitem:a9441a212b9899e91aad5e3c915005395" id="r_a9441a212b9899e91aad5e3c915005395"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9441a212b9899e91aad5e3c915005395">empty</a> () const</td></tr>
+<tr class="memdesc:a9441a212b9899e91aad5e3c915005395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tablonun boş olup olmadığını kontrol eder.  <br /></td></tr>
 <tr class="memitem:a11c32f21e0c681b3eee2e7cba0532dcc" id="r_a11c32f21e0c681b3eee2e7cba0532dcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11c32f21e0c681b3eee2e7cba0532dcc">insert</a> (const K &amp;k, const V &amp;v)</td></tr>
+<tr class="memdesc:a11c32f21e0c681b3eee2e7cba0532dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anahtar-değer çifti ekler veya günceller.  <br /></td></tr>
 <tr class="memitem:aa50954bdb669803b7e6c9b0e63db48ab" id="r_aa50954bdb669803b7e6c9b0e63db48ab"><td class="memItemLeft" align="right" valign="top">V *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa50954bdb669803b7e6c9b0e63db48ab">find</a> (const K &amp;k)</td></tr>
+<tr class="memdesc:aa50954bdb669803b7e6c9b0e63db48ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anahtar ile değer arar.  <br /></td></tr>
 <tr class="memitem:afb487ac0b40053e9e74902fb035ea979" id="r_afb487ac0b40053e9e74902fb035ea979"><td class="memItemLeft" align="right" valign="top">const V *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb487ac0b40053e9e74902fb035ea979">find</a> (const K &amp;k) const</td></tr>
+<tr class="memdesc:afb487ac0b40053e9e74902fb035ea979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anahtar ile değer arar (const versiyonu)  <br /></td></tr>
 <tr class="memitem:a0acc1f9c857e04c3769939702b0e19c5" id="r_a0acc1f9c857e04c3769939702b0e19c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0acc1f9c857e04c3769939702b0e19c5">contains</a> (const K &amp;k) const</td></tr>
+<tr class="memdesc:a0acc1f9c857e04c3769939702b0e19c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anahtarın tabloda olup olmadığını kontrol eder.  <br /></td></tr>
 <tr class="memitem:a13001e8242174229d97e1b470704962c" id="r_a13001e8242174229d97e1b470704962c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13001e8242174229d97e1b470704962c">erase</a> (const K &amp;k)</td></tr>
+<tr class="memdesc:a13001e8242174229d97e1b470704962c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anahtarı tablodan siler.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a228a82ca4a7e5438ee5725a441a84902" id="r_a228a82ca4a7e5438ee5725a441a84902"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a228a82ca4a7e5438ee5725a441a84902">idx</a> (const K &amp;k) const</td></tr>
+<tr class="memdesc:a228a82ca4a7e5438ee5725a441a84902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anahtar için hash indeksini hesaplar.  <br /></td></tr>
 <tr class="memitem:a2b378cb65c687e96a785f3bd311197ea" id="r_a2b378cb65c687e96a785f3bd311197ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b378cb65c687e96a785f3bd311197ea">rehash</a> (std::size_t new_cap)</td></tr>
-<tr class="memitem:a9b34ffbaba50d07a6951faf2dae7b476" id="r_a9b34ffbaba50d07a6951faf2dae7b476"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b34ffbaba50d07a6951faf2dae7b476">ensure</a> ()</td></tr>
+<tr class="memdesc:a2b378cb65c687e96a785f3bd311197ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tabloyu yeniden boyutlandırır ve elemanları yeniden yerleştirir.  <br /></td></tr>
+<tr class="memitem:a9b34ffbaba50d07a6951faf2dae7b476" id="r_a9b34ffbaba50d07a6951faf2dae7b476"><td class="memItemLeft" align="right" valign="top"><a id="a9b34ffbaba50d07a6951faf2dae7b476" name="a9b34ffbaba50d07a6951faf2dae7b476"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ensure</b> ()</td></tr>
+<tr class="memdesc:a9b34ffbaba50d07a6951faf2dae7b476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yük faktörünü kontrol eder ve gerekirse rehash yapar. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae6b9272c3d706ba75c7f6fabcdc9ace8" id="r_ae6b9272c3d706ba75c7f6fabcdc9ace8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structds_1_1_hash_table_1_1_entry.html">Entry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6b9272c3d706ba75c7f6fabcdc9ace8">table_</a></td></tr>
-<tr class="memitem:a9b7d14e05e82361e2166dac9be580190" id="r_a9b7d14e05e82361e2166dac9be580190"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b7d14e05e82361e2166dac9be580190">count_</a> = 0</td></tr>
-<tr class="memitem:a9791021117665e725c0bc73c7e258a33" id="r_a9791021117665e725c0bc73c7e258a33"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9791021117665e725c0bc73c7e258a33">max_load_</a> = 0.7f</td></tr>
-<tr class="memitem:a26b863af6d4339774e71afe1e7c33080" id="r_a26b863af6d4339774e71afe1e7c33080"><td class="memItemLeft" align="right" valign="top">std::hash&lt; K &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26b863af6d4339774e71afe1e7c33080">hasher_</a> {}</td></tr>
+<tr class="memitem:ae6b9272c3d706ba75c7f6fabcdc9ace8" id="r_ae6b9272c3d706ba75c7f6fabcdc9ace8"><td class="memItemLeft" align="right" valign="top"><a id="ae6b9272c3d706ba75c7f6fabcdc9ace8" name="ae6b9272c3d706ba75c7f6fabcdc9ace8"></a>
+std::vector&lt; <a class="el" href="structds_1_1_hash_table_1_1_entry.html">Entry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>table_</b></td></tr>
+<tr class="memdesc:ae6b9272c3d706ba75c7f6fabcdc9ace8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash tablosu. <br /></td></tr>
+<tr class="memitem:a9b7d14e05e82361e2166dac9be580190" id="r_a9b7d14e05e82361e2166dac9be580190"><td class="memItemLeft" align="right" valign="top"><a id="a9b7d14e05e82361e2166dac9be580190" name="a9b7d14e05e82361e2166dac9be580190"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>count_</b> = 0</td></tr>
+<tr class="memdesc:a9b7d14e05e82361e2166dac9be580190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mevcut eleman sayısı <br /></td></tr>
+<tr class="memitem:a9791021117665e725c0bc73c7e258a33" id="r_a9791021117665e725c0bc73c7e258a33"><td class="memItemLeft" align="right" valign="top"><a id="a9791021117665e725c0bc73c7e258a33" name="a9791021117665e725c0bc73c7e258a33"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>max_load_</b> = 0.7f</td></tr>
+<tr class="memdesc:a9791021117665e725c0bc73c7e258a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maksimum yük faktörü <br /></td></tr>
+<tr class="memitem:a26b863af6d4339774e71afe1e7c33080" id="r_a26b863af6d4339774e71afe1e7c33080"><td class="memItemLeft" align="right" valign="top"><a id="a26b863af6d4339774e71afe1e7c33080" name="a26b863af6d4339774e71afe1e7c33080"></a>
+std::hash&lt; K &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>hasher_</b> {}</td></tr>
+<tr class="memdesc:a26b863af6d4339774e71afe1e7c33080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash fonksiyonu. <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename K, typename V&gt;<br />
+class ds::HashTable&lt; K, V &gt;</div><p>Kapalı adreslemeli hash tablosu implementasyonu. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">K</td><td>Anahtar türü </td></tr>
+    <tr><td class="paramname">V</td><td>Değer türü</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Bu sınıf, kapalı adresleme (closed addressing) tekniği kullanarak hash tablosu implementasyonu sağlar. Linear probing ile çakışma çözümü yapar. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a47881f4560d8482207d0c72061df0176" name="a47881f4560d8482207d0c72061df0176"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47881f4560d8482207d0c72061df0176">&#9670;&#160;</a></span>HashTable()</h2>
 
@@ -147,6 +182,15 @@ template&lt;typename K, typename V&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Hash tablosu oluşturur. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cap</td><td>Başlangıç kapasitesi (varsayılan: 16)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Kapasite 2'nin kuvveti olacak şekilde ayarlanır. </p>
 
 </div>
 </div>
@@ -176,6 +220,15 @@ template&lt;typename K, typename V&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Anahtarın tabloda olup olmadığını kontrol eder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Kontrol edilecek anahtar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true eğer anahtar bulunursa </dd></dl>
+
 </div>
 </div>
 <a id="a9441a212b9899e91aad5e3c915005395" name="a9441a212b9899e91aad5e3c915005395"></a>
@@ -203,32 +256,8 @@ template&lt;typename K, typename V&gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a9b34ffbaba50d07a6951faf2dae7b476" name="a9b34ffbaba50d07a6951faf2dae7b476"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b34ffbaba50d07a6951faf2dae7b476">&#9670;&#160;</a></span>ensure()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename K, typename V&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classds_1_1_hash_table.html">ds::HashTable</a>&lt; K, V &gt;::ensure </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Tablonun boş olup olmadığını kontrol eder. </p>
+<dl class="section return"><dt>Returns</dt><dd>true eğer tablo boşsa </dd></dl>
 
 </div>
 </div>
@@ -257,6 +286,15 @@ template&lt;typename K, typename V&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Anahtarı tablodan siler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Silinecek anahtar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true eğer anahtar bulunup silindiyse </dd></dl>
+
 </div>
 </div>
 <a id="aa50954bdb669803b7e6c9b0e63db48ab" name="aa50954bdb669803b7e6c9b0e63db48ab"></a>
@@ -283,6 +321,15 @@ template&lt;typename K, typename V&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Anahtar ile değer arar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Aranacak anahtar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Değerin pointer'ı, bulunamazsa nullptr </dd></dl>
 
 </div>
 </div>
@@ -311,6 +358,15 @@ template&lt;typename K, typename V&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Anahtar ile değer arar (const versiyonu) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Aranacak anahtar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Değerin const pointer'ı, bulunamazsa nullptr </dd></dl>
+
 </div>
 </div>
 <a id="a228a82ca4a7e5438ee5725a441a84902" name="a228a82ca4a7e5438ee5725a441a84902"></a>
@@ -337,6 +393,15 @@ template&lt;typename K, typename V&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Anahtar için hash indeksini hesaplar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Anahtar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Hash indeksi </dd></dl>
 
 </div>
 </div>
@@ -369,6 +434,16 @@ template&lt;typename K, typename V&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Anahtar-değer çifti ekler veya günceller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Anahtar </td></tr>
+    <tr><td class="paramname">v</td><td>Değer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true eğer yeni eleman eklendiyse, false eğer güncellendiyse </dd></dl>
+
 </div>
 </div>
 <a id="a2b378cb65c687e96a785f3bd311197ea" name="a2b378cb65c687e96a785f3bd311197ea"></a>
@@ -395,6 +470,14 @@ template&lt;typename K, typename V&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Tabloyu yeniden boyutlandırır ve elemanları yeniden yerleştirir. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_cap</td><td>Yeni kapasite </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -423,102 +506,8 @@ template&lt;typename K, typename V&gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a9b7d14e05e82361e2166dac9be580190" name="a9b7d14e05e82361e2166dac9be580190"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b7d14e05e82361e2166dac9be580190">&#9670;&#160;</a></span>count_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename K, typename V&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="classds_1_1_hash_table.html">ds::HashTable</a>&lt; K, V &gt;::count_ = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a26b863af6d4339774e71afe1e7c33080" name="a26b863af6d4339774e71afe1e7c33080"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26b863af6d4339774e71afe1e7c33080">&#9670;&#160;</a></span>hasher_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename K, typename V&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::hash&lt;K&gt; <a class="el" href="classds_1_1_hash_table.html">ds::HashTable</a>&lt; K, V &gt;::hasher_ {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9791021117665e725c0bc73c7e258a33" name="a9791021117665e725c0bc73c7e258a33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9791021117665e725c0bc73c7e258a33">&#9670;&#160;</a></span>max_load_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename K, typename V&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float <a class="el" href="classds_1_1_hash_table.html">ds::HashTable</a>&lt; K, V &gt;::max_load_ = 0.7f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae6b9272c3d706ba75c7f6fabcdc9ace8" name="ae6b9272c3d706ba75c7f6fabcdc9ace8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6b9272c3d706ba75c7f6fabcdc9ace8">&#9670;&#160;</a></span>table_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename K, typename V&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structds_1_1_hash_table_1_1_entry.html">Entry</a>&gt; <a class="el" href="classds_1_1_hash_table.html">ds::HashTable</a>&lt; K, V &gt;::table_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Tablodaki eleman sayısını döndürür. </p>
+<dl class="section return"><dt>Returns</dt><dd>Eleman sayısı </dd></dl>
 
 </div>
 </div>

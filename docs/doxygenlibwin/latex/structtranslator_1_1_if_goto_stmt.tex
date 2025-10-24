@@ -2,6 +2,11 @@
 \hypertarget{structtranslator_1_1_if_goto_stmt}{}\label{structtranslator_1_1_if_goto_stmt}\index{translator::IfGotoStmt@{translator::IfGotoStmt}}
 
 
+IF THEN GOTO deyimi.  
+
+
+
+
 {\ttfamily \#include $<$ast.\+h$>$}
 
 
@@ -26,22 +31,22 @@ Collaboration diagram for translator\+::If\+Goto\+Stmt\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_a01828a7980e1ef2d5503aca3f106dc1f}{If\+Goto\+Stmt}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ c, int t)
-\item 
-\mbox{\hyperlink{namespacetranslator_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_a77a2dccf8e1b280dd39c2a9101cb17e6}{kind}} () const override
-\end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structtranslator_1_1_stmt}{translator\+::\+Stmt}}}
-\begin{DoxyCompactItemize}
-\item 
-virtual \mbox{\hyperlink{structtranslator_1_1_stmt_a0707842a254ce67ff9c72cda98226ec7}{\texorpdfstring{$\sim$}{\string~}\+Stmt}} ()=default
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Koşullu atlama deyimi oluşturur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_a77a2dccf8e1b280dd39c2a9101cb17e6}{kind}} () const override
+\begin{DoxyCompactList}\small\item\em Deyim türünü döndürür. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_a0799d00d21436cbcadd3a2e7ccb94275}{cond}}
-\item 
-int \mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_af2860bea6273fdf9e63c46627fb1876d}{target}}
-\end{DoxyCompactItemize}
+\Hypertarget{structtranslator_1_1_if_goto_stmt_a0799d00d21436cbcadd3a2e7ccb94275}\label{structtranslator_1_1_if_goto_stmt_a0799d00d21436cbcadd3a2e7ccb94275} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$ {\bfseries cond}
+\begin{DoxyCompactList}\small\item\em Koşul ifadesi. \end{DoxyCompactList}\item 
+\Hypertarget{structtranslator_1_1_if_goto_stmt_af2860bea6273fdf9e63c46627fb1876d}\label{structtranslator_1_1_if_goto_stmt_af2860bea6273fdf9e63c46627fb1876d} 
+int {\bfseries target}
+\begin{DoxyCompactList}\small\item\em Hedef satır numarası \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+IF THEN GOTO deyimi. 
 
 \label{doc-constructors}
 \Hypertarget{structtranslator_1_1_if_goto_stmt_doc-constructors}
@@ -54,6 +59,17 @@ translator\+::\+If\+Goto\+Stmt\+::\+If\+Goto\+Stmt (\begin{DoxyParamCaption}\ite
 
 
 
+Koşullu atlama deyimi oluşturur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Koşul ifadesi \\
+\hline
+{\em t} & Hedef satır numarası \\
+\hline
+\end{DoxyParams}
+
+
 \label{doc-func-members}
 \Hypertarget{structtranslator_1_1_if_goto_stmt_doc-func-members}
 \doxysubsection{Member Function Documentation}
@@ -61,28 +77,18 @@ translator\+::\+If\+Goto\+Stmt\+::\+If\+Goto\+Stmt (\begin{DoxyParamCaption}\ite
 \index{kind@{kind}!translator::IfGotoStmt@{translator::IfGotoStmt}}
 \doxysubsubsection{\texorpdfstring{kind()}{kind()}}
 {\footnotesize\ttfamily \label{structtranslator_1_1_if_goto_stmt_a77a2dccf8e1b280dd39c2a9101cb17e6} 
-\mbox{\hyperlink{namespacetranslator_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} translator\+::\+If\+Goto\+Stmt\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3d}{Stmt\+Kind}} translator\+::\+If\+Goto\+Stmt\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+Deyim türünü döndürür. 
+
+\begin{DoxyReturn}{Returns}
+If\+Goto türü 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{structtranslator_1_1_stmt_afb8f5d100524bc8cf234edae0ac57578}{translator\+::\+Stmt}}.
-
-
-
-\label{doc-variable-members}
-\Hypertarget{structtranslator_1_1_if_goto_stmt_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structtranslator_1_1_if_goto_stmt_a0799d00d21436cbcadd3a2e7ccb94275}\index{translator::IfGotoStmt@{translator::IfGotoStmt}!cond@{cond}}
-\index{cond@{cond}!translator::IfGotoStmt@{translator::IfGotoStmt}}
-\doxysubsubsection{\texorpdfstring{cond}{cond}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_if_goto_stmt_a0799d00d21436cbcadd3a2e7ccb94275} 
-std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{structtranslator_1_1_expr}{Expr}}$>$ translator\+::\+If\+Goto\+Stmt\+::cond}
-
-\Hypertarget{structtranslator_1_1_if_goto_stmt_af2860bea6273fdf9e63c46627fb1876d}\index{translator::IfGotoStmt@{translator::IfGotoStmt}!target@{target}}
-\index{target@{target}!translator::IfGotoStmt@{translator::IfGotoStmt}}
-\doxysubsubsection{\texorpdfstring{target}{target}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_if_goto_stmt_af2860bea6273fdf9e63c46627fb1876d} 
-int translator\+::\+If\+Goto\+Stmt\+::target}
 
 
 

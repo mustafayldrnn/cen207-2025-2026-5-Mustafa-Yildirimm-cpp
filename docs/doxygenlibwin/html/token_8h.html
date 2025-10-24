@@ -79,11 +79,13 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">token.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Leksik belirteç türleri ve veri yapısı  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for token.h:</div>
@@ -93,7 +95,7 @@ Include dependency graph for token.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="token_8h__dep__incl.svg" width="456" height="363"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="token_8h__dep__incl.svg" width="456" height="224"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="token_8h_source.html">Go to the source code of this file.</a></p>
@@ -101,47 +103,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:translator_3A_3AToken" id="r_translator_3A_3AToken"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtranslator_1_1_token.html">translator::Token</a></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:translator" id="r_translator"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetranslator.html">translator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Belirteç kaydı  <a href="structtranslator_1_1_token.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a0eb119efce2d20d6019adb661cd4c480" id="r_a0eb119efce2d20d6019adb661cd4c480"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480">translator::TokenType</a> { <br />
-&#160;&#160;<a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a29ee5d1ebcc033234938a5234f1f2075">translator::Identifier</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480ab2ee912b91d69b435159c7c3f6df7f5f">translator::Number</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a27118326006d3829667a400ad23d5d98">translator::String</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a90997b7f299d862f6bcbb1ac11d6cd24">translator::KW_LET</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a4f1a5bb6f9136f5f9231ef51ed1db995">translator::KW_PRINT</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a369d5563133c61595496807e8b3aa19d">translator::KW_INPUT</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480aff705823708ecc4645c4220d09620ae9">translator::KW_IF</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480aaad4a74ae5c704a58a3b563dc11d2fb8">translator::KW_THEN</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a68a2ea2db0d1f282955130bb75c25172">translator::KW_GOTO</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a97f42a58579d6cbe9b1c9eb0f0de750f">translator::KW_FOR</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a221d6d4f9619e1cb8f5e563eb8c4e903">translator::KW_TO</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a5b810bf9b287af6a80bc2756f5f650c8">translator::KW_NEXT</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480aa83315e9d302480b6b4128b714921a1a">translator::KW_GOSUB</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a3a387a428e7d6557200c4c5eea812c11">translator::KW_RETURN</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a32ba78fe43257d3e7f88e3935a8ea0d4">translator::Plus</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a453fb623e752c5993f65bc410fd74fe5">translator::Minus</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a26f93e6e68e28a698377e941cb59f29a">translator::Star</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a358cfe58715d680d9ab09f82e4010cbc">translator::Slash</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a185b7133db22230701a857c059360cc2">translator::Assign</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a876a9d4efdf66785e41cb452f0402c79">translator::LParen</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480ad011e3feb19babda65e8951ff7189c0c">translator::RParen</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a58be47db9455679e6a44df2eff9c9fa6">translator::Comma</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a755fee300780823fcf4df98383331745">translator::Newline</a>
-, <a class="el" href="namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480a49650dcc55dc413da4032cbe44b15d37">translator::Eof</a>
-<br />
- }</td></tr>
+<tr class="memitem:a0eb119efce2d20d6019adb661cd4c480" id="r_a0eb119efce2d20d6019adb661cd4c480"><td class="memItemLeft" align="right" valign="top"><a id="a0eb119efce2d20d6019adb661cd4c480" name="a0eb119efce2d20d6019adb661cd4c480"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eb119efce2d20d6019adb661cd4c480">translator::TokenType</a> </td></tr>
+<tr class="memdesc:a0eb119efce2d20d6019adb661cd4c480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tüm belirteç türleri. <br /></td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Leksik belirteç türleri ve veri yapısı </p>
+<dl class="section author"><dt>Author</dt><dd>Mustafa Yıldırım </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0

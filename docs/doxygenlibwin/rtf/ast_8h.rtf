@@ -151,8 +151,12 @@
 C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h File Reference\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/ast.h}
-{\bkmkstart AAAAAAAAGD}
-{\bkmkend AAAAAAAAGD}
+{\bkmkstart AAAAAAAAFE}
+{\bkmkend AAAAAAAAFE}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Basit ifade ve deyim ağaçları (AST) tanımları }}\par
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <memory>}\par
 {\f2 #include <string>}\par
@@ -178,52 +182,70 @@ Classes\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 translator::Expr}}}
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALF" }{}}{\fldrslt {\cs37\ul\cf2 translator::NumberExpr}}}
-\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALG" }{}}{\fldrslt {\cs37\ul\cf2 translator::VariableExpr}}}
-\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALH" }{}}{\fldrslt {\cs37\ul\cf2 translator::BinaryExpr}}}
-\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHT" }{}}{\fldrslt {\cs37\ul\cf2 translator::Stmt}}}
-\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALI" }{}}{\fldrslt {\cs37\ul\cf2 translator::LetStmt}}}
-\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALJ" }{}}{\fldrslt {\cs37\ul\cf2 translator::PrintStmt}}}
-\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALK" }{}}{\fldrslt {\cs37\ul\cf2 translator::InputStmt}}}
-\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHH" }{}}{\fldrslt {\cs37\ul\cf2 translator::GotoStmt}}}
-\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 translator::IfGotoStmt}}}
-\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 translator::GosubStmt}}}
-\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIT" }{}}{\fldrslt {\cs37\ul\cf2 translator::ReturnStmt}}}
-\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGY" }{}}{\fldrslt {\cs37\ul\cf2 translator::Program}}}
-\par
-}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Namespaces\par
-\pard\plain 
-
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFL" }{}}{\fldrslt {\cs37\ul\cf2 translator::Expr}}}
 {
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tüm ifade türleri için taban tür. }}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-namespace {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGG" }{}}{\fldrslt {\cs37\ul\cf2 translator}}}
-\par
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAML" }{}}{\fldrslt {\cs37\ul\cf2 translator::NumberExpr}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sayısal sabit ifadesi. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMM" }{}}{\fldrslt {\cs37\ul\cf2 translator::VariableExpr}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Değişken ifadesi. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMN" }{}}{\fldrslt {\cs37\ul\cf2 translator::BinaryExpr}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+İkili işlem ifadesi. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 translator::Stmt}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tüm deyimler için taban tür. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMO" }{}}{\fldrslt {\cs37\ul\cf2 translator::LetStmt}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+LET atama deyimi. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMP" }{}}{\fldrslt {\cs37\ul\cf2 translator::PrintStmt}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+PRINT deyimi. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMQ" }{}}{\fldrslt {\cs37\ul\cf2 translator::InputStmt}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+INPUT deyimi. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHL" }{}}{\fldrslt {\cs37\ul\cf2 translator::GotoStmt}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GOTO deyimi. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHN" }{}}{\fldrslt {\cs37\ul\cf2 translator::IfGotoStmt}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+IF THEN GOTO deyimi. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHS" }{}}{\fldrslt {\cs37\ul\cf2 translator::GosubStmt}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GOSUB deyimi. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 translator::ReturnStmt}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RETURN deyimi. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHB" }{}}{\fldrslt {\cs37\ul\cf2 translator::Program}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Etiketlenmiş deyimlerden oluşan program. }}\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Enumerations\par
@@ -231,30 +253,179 @@ Enumerations\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-enum class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGH" }{}}{\fldrslt {\cs37\ul\cf2 translator::ExprKind}}}
- \{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGI" }{}}{\fldrslt {\cs37\ul\cf2 translator::Number}}}
+enum class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFH" }{}}{\fldrslt {\cs37\ul\cf2 translator::ExprKind}}}
+ \{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFI" }{}}{\fldrslt {\cs37\ul\cf2 Number}}}
 
-, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 translator::Variable}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFJ" }{}}{\fldrslt {\cs37\ul\cf2 Variable}}}
 
-, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGK" }{}}{\fldrslt {\cs37\ul\cf2 translator::Binary}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFK" }{}}{\fldrslt {\cs37\ul\cf2 Binary}}}
 
  \}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+İfade türleri. }}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-enum class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 translator::StmtKind}}}
- \{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHN" }{}}{\fldrslt {\cs37\ul\cf2 translator::Let}}}
+enum class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 translator::StmtKind}}}
+ \{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGE" }{}}{\fldrslt {\cs37\ul\cf2 Let}}}
 
-, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHO" }{}}{\fldrslt {\cs37\ul\cf2 translator::Print}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGF" }{}}{\fldrslt {\cs37\ul\cf2 Print}}}
 
-, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHP" }{}}{\fldrslt {\cs37\ul\cf2 translator::Input}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGG" }{}}{\fldrslt {\cs37\ul\cf2 Input}}}
 
-, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHF" }{}}{\fldrslt {\cs37\ul\cf2 translator::Goto}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGH" }{}}{\fldrslt {\cs37\ul\cf2 Goto}}}
 
-, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 translator::IfGoto}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGI" }{}}{\fldrslt {\cs37\ul\cf2 IfGoto}}}
 
-, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 translator::Gosub}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 Gosub}}}
 
-, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHS" }{}}{\fldrslt {\cs37\ul\cf2 translator::Return}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGK" }{}}{\fldrslt {\cs37\ul\cf2 Return}}}
 
  \}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Deyim türleri. }}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Basit ifade ve deyim ağaçları (AST) tanımları \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Author\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Mustafa Yıldırım \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Date\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+2025 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Version\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0 \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAAMR}
+{\bkmkend AAAAAAAAMR}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumeration Type Documentation\par
+\pard\plain 
+{\xe \v ExprKind\:ast.h}
+{\xe \v ast.h\:ExprKind}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFH" }{}}{\fldrslt {\cs37\ul\cf2 translator::ExprKind}}}
+{\f2 [strong]}}}
+\par
+{\bkmkstart AAAAAAAAFH}
+{\bkmkend AAAAAAAAFH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+İfade türleri. }}\par
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v Number\:ast.h}
+{\xe \v ast.h\:Number}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid Number{\bkmkstart AAAAAAAAFI}
+{\bkmkend AAAAAAAAFI}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sayısal sabit. \par
+}\cell }{\row }
+{\xe \v Variable\:ast.h}
+{\xe \v ast.h\:Variable}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid Variable{\bkmkstart AAAAAAAAFJ}
+{\bkmkend AAAAAAAAFJ}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Değişken referansı \par
+}\cell }{\row }
+{\xe \v Binary\:ast.h}
+{\xe \v ast.h\:Binary}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid Binary{\bkmkstart AAAAAAAAFK}
+{\bkmkend AAAAAAAAFK}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+İkili işlem. \par
+}\cell }{\row }
+}
+}
+{\xe \v StmtKind\:ast.h}
+{\xe \v ast.h\:StmtKind}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 translator::StmtKind}}}
+{\f2 [strong]}}}
+\par
+{\bkmkstart AAAAAAAAGD}
+{\bkmkend AAAAAAAAGD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Deyim türleri. }}\par
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v Let\:ast.h}
+{\xe \v ast.h\:Let}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid Let{\bkmkstart AAAAAAAAGE}
+{\bkmkend AAAAAAAAGE}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Atama deyimi. \par
+}\cell }{\row }
+{\xe \v Print\:ast.h}
+{\xe \v ast.h\:Print}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid Print{\bkmkstart AAAAAAAAGF}
+{\bkmkend AAAAAAAAGF}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Yazdırma deyimi. \par
+}\cell }{\row }
+{\xe \v Input\:ast.h}
+{\xe \v ast.h\:Input}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid Input{\bkmkstart AAAAAAAAGG}
+{\bkmkend AAAAAAAAGG}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Giriş deyimi. \par
+}\cell }{\row }
+{\xe \v Goto\:ast.h}
+{\xe \v ast.h\:Goto}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid Goto{\bkmkstart AAAAAAAAGH}
+{\bkmkend AAAAAAAAGH}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Atlama deyimi. \par
+}\cell }{\row }
+{\xe \v IfGoto\:ast.h}
+{\xe \v ast.h\:IfGoto}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid IfGoto{\bkmkstart AAAAAAAAGI}
+{\bkmkend AAAAAAAAGI}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Koşullu atlama deyimi. \par
+}\cell }{\row }
+{\xe \v Gosub\:ast.h}
+{\xe \v ast.h\:Gosub}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid Gosub{\bkmkstart AAAAAAAAGJ}
+{\bkmkend AAAAAAAAGJ}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Alt program çağırma deyimi. \par
+}\cell }{\row }
+{\xe \v Return\:ast.h}
+{\xe \v ast.h\:Return}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid Return{\bkmkstart AAAAAAAAGK}
+{\bkmkend AAAAAAAAGK}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Alt programdan dönüş deyimi. \par
+}\cell }{\row }
+}
 }
 }

@@ -151,9 +151,12 @@
 ds::DoublyLinkedList< T > Class Template Reference\par \pard\plain 
 {\tc\tcl2 \v ds::DoublyLinkedList< T >}
 {\xe \v ds::DoublyLinkedList< T >}
-{\bkmkstart AAAAAAAAKZ}
-{\bkmkend AAAAAAAAKZ}
+{\bkmkstart AAAAAAAAMH}
+{\bkmkend AAAAAAAAMH}
 \par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Çift yönlü bağlı liste kapsayıcısı }}\par
 {
 {\f2 #include <doubly_linked_list.h>}}\par
 Collaboration diagram for ds::DoublyLinkedList< T >:{
@@ -167,10 +170,15 @@ Classes\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Çift yönlü iterator. }}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-\par
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Liste düğümü }}\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Public Member Functions\par
@@ -178,59 +186,137 @@ Public Member Functions\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
- ()=default\par
+
+{\b DoublyLinkedList} ()=default{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Varsayılan constructor. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 ~DoublyLinkedList}}}
+
+{\b ~DoublyLinkedList} (){\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Destructor - tüm düğümleri serbest bırakır. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b DoublyLinkedList} (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
+ &)=delete{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Copy constructor (silinmiş) }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
+ & {\b operator=} (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
+ &)=delete{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Copy assignment operator (silinmiş) }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 begin}}}
+ () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Başlangıç iteratörü }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAER" }{}}{\fldrslt {\cs37\ul\cf2 end}}}
+ () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sondan bir sonrası iteratörü }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAES" }{}}{\fldrslt {\cs37\ul\cf2 rbegin}}}
+ () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sondan geri iterasyon için başlangıç }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAET" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
+ () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Liste eleman sayısını döndürür. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEU" }{}}{\fldrslt {\cs37\ul\cf2 empty}}}
+ () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Listenin boş olup olmadığını kontrol eder. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADF" }{}}{\fldrslt {\cs37\ul\cf2 clear}}}
  ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tüm elemanları serbest bırakır. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
- (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
- &)=delete\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
- & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABN" }{}}{\fldrslt {\cs37\ul\cf2 operator=}}}
- (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
- &)=delete\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 begin}}}
- () const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 end}}}
- () const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADX" }{}}{\fldrslt {\cs37\ul\cf2 rbegin}}}
- () const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEA" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
- () const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEG" }{}}{\fldrslt {\cs37\ul\cf2 empty}}}
- () const\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 clear}}}
- ()\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
  {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEV" }{}}{\fldrslt {\cs37\ul\cf2 push_back}}}
  (const T &v)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Listeye sona eleman ekler. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFB" }{}}{\fldrslt {\cs37\ul\cf2 push_front}}}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEW" }{}}{\fldrslt {\cs37\ul\cf2 push_front}}}
  (const T &v)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Listeye başa eleman ekler. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFF" }{}}{\fldrslt {\cs37\ul\cf2 insert_after}}}
- ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEX" }{}}{\fldrslt {\cs37\ul\cf2 insert_after}}}
+ ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
  it, const T &v)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Verilen düğümden sonra eleman ekler. }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFO" }{}}{\fldrslt {\cs37\ul\cf2 erase}}}
- ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFA" }{}}{\fldrslt {\cs37\ul\cf2 erase}}}
+ ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
  it)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Verilen konumdaki düğümü kaldırır. }{
+}\par
+}\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Private Attributes\par
@@ -238,64 +324,69 @@ Private Attributes\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
- * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 head_}}}
- = nullptr\par
+
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
+ * {\b head_} = nullptr{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Liste başı pointer'ı }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
- * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 tail_}}}
- = nullptr\par
+
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
+ * {\b tail_} = nullptr{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Liste sonu pointer'ı }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 size_}}}
- = 0\par
+
+std::size_t {\b size_} = 0{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Liste eleman sayısı }{
+}\par
+}\par}
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAAME}
-{\bkmkend AAAAAAAAME}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Constructor & Destructor Documentation\par
+Detailed Description\par
 \pard\plain 
-{\xe \v DoublyLinkedList\:ds::DoublyLinkedList< T >}
-{\xe \v ds::DoublyLinkedList< T >\:DoublyLinkedList}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
-< T >::DoublyLinkedList (){\f2 [default]}}}
-\par
-{\bkmkstart AAAAAAAAAH}
-{\bkmkend AAAAAAAAAH}
 {
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v ~DoublyLinkedList\:ds::DoublyLinkedList< T >}
-{\xe \v ds::DoublyLinkedList< T >\:~DoublyLinkedList}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
-< T >::~{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
- (){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAABB}
-{\bkmkend AAAAAAAABB}
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+template<typename T>\par
+class ds::DoublyLinkedList< T >\par
 }
-{\xe \v DoublyLinkedList\:ds::DoublyLinkedList< T >}
-{\xe \v ds::DoublyLinkedList< T >\:DoublyLinkedList}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
-< T >::DoublyLinkedList (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
-< T > & ){\f2 [delete]}}}
-\par
-{\bkmkstart AAAAAAAABH}
-{\bkmkend AAAAAAAABH}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Çift yönlü bağlı liste kapsayıcısı \par
 }
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Template Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i T} \cell }{Eleman tipi\cell }
+{\row }
+}
+Bu sınıf, çift yönlü bağlı liste veri yapısını implement eder. Her düğüm, önceki ve sonraki düğümlere referans tutar. Iterator desteği ile STL uyumlu erişim sağlar. \par
+}}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAAMI}
-{\bkmkend AAAAAAAAMI}
+{\bkmkstart AAAAAAAANB}
+{\bkmkend AAAAAAAANB}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Member Function Documentation\par
 \pard\plain 
@@ -303,192 +394,263 @@ Member Function Documentation\par
 {\xe \v ds::DoublyLinkedList< T >\:begin}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
+template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
 < T >::begin () const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAADR}
-{\bkmkend AAAAAAAADR}
+{\bkmkstart AAAAAAAAEP}
+{\bkmkend AAAAAAAAEP}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Başlangıç iteratörü }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+İlk düğümü gösteren iterator \par
+}}}}
 {\xe \v clear\:ds::DoublyLinkedList< T >}
 {\xe \v ds::DoublyLinkedList< T >\:clear}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
+template<typename T> void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
 < T >::clear (){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAABF}
-{\bkmkend AAAAAAAABF}
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tüm elemanları serbest bırakır. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Liste başından sonuna kadar tüm düğümleri siler ve listeyi boş duruma getirir. \par
+}}
 {\xe \v empty\:ds::DoublyLinkedList< T >}
 {\xe \v ds::DoublyLinkedList< T >\:empty}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
+template<typename T> bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
 < T >::empty () const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAEG}
-{\bkmkend AAAAAAAAEG}
+{\bkmkstart AAAAAAAAEU}
+{\bkmkend AAAAAAAAEU}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Listenin boş olup olmadığını kontrol eder. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+true eğer liste boşsa \par
+}}}}
 {\xe \v end\:ds::DoublyLinkedList< T >}
 {\xe \v ds::DoublyLinkedList< T >\:end}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
+template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
 < T >::end () const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAADT}
-{\bkmkend AAAAAAAADT}
+{\bkmkstart AAAAAAAAER}
+{\bkmkend AAAAAAAAER}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sondan bir sonrası iteratörü }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Liste sonundaki null iterator \par
+}}}}
 {\xe \v erase\:ds::DoublyLinkedList< T >}
 {\xe \v ds::DoublyLinkedList< T >\:erase}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
-< T >::erase ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
+< T >::erase ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
  it){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAFO}
-{\bkmkend AAAAAAAAFO}
+{\bkmkstart AAAAAAAAFA}
+{\bkmkend AAAAAAAAFA}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Verilen konumdaki düğümü kaldırır. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i it} \cell }{Silinecek düğümü gösteren iterator \cell }
+{\row }
 }
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Sonraki düğümü gösteren iterator \par
+}}}}
 {\xe \v insert_after\:ds::DoublyLinkedList< T >}
 {\xe \v ds::DoublyLinkedList< T >\:insert_after}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
-< T >::insert_after ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
+< T >::insert_after ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
  it, const T & v){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAFF}
-{\bkmkend AAAAAAAAFF}
+{\bkmkstart AAAAAAAAEX}
+{\bkmkend AAAAAAAAEX}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v operator=\:ds::DoublyLinkedList< T >}
-{\xe \v ds::DoublyLinkedList< T >\:operator=}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
- & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
-< T >::operator= (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 DoublyLinkedList}}}
-< T > & ){\f2 [delete]}}}
 \par
-{\bkmkstart AAAAAAAABN}
-{\bkmkend AAAAAAAABN}
 {
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Verilen düğümden sonra eleman ekler. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i it} \cell }{Referans alınacak iterator \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i v} \cell }{Eklenecek değer \cell }
+{\row }
 }
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Yeni eklenen düğümü gösteren iterator \par
+}}}}
 {\xe \v push_back\:ds::DoublyLinkedList< T >}
 {\xe \v ds::DoublyLinkedList< T >\:push_back}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
+template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
 < T >::push_back (const T & v){\f2 [inline]}}}
 \par
 {\bkmkstart AAAAAAAAEV}
 {\bkmkend AAAAAAAAEV}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Listeye sona eleman ekler. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i v} \cell }{Eklenecek değer \cell }
+{\row }
 }
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Yeni eklenen düğümü gösteren iterator \par
+}}}}
 {\xe \v push_front\:ds::DoublyLinkedList< T >}
 {\xe \v ds::DoublyLinkedList< T >\:push_front}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
+template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
 < T >::push_front (const T & v){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAFB}
-{\bkmkend AAAAAAAAFB}
+{\bkmkstart AAAAAAAAEW}
+{\bkmkend AAAAAAAAEW}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Listeye başa eleman ekler. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i v} \cell }{Eklenecek değer \cell }
+{\row }
 }
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Yeni eklenen düğümü gösteren iterator \par
+}}}}
 {\xe \v rbegin\:ds::DoublyLinkedList< T >}
 {\xe \v ds::DoublyLinkedList< T >\:rbegin}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
+template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 iterator}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
 < T >::rbegin () const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAADX}
-{\bkmkend AAAAAAAADX}
+{\bkmkstart AAAAAAAAES}
+{\bkmkend AAAAAAAAES}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sondan geri iterasyon için başlangıç }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Son düğümü gösteren iterator \par
+}}}}
 {\xe \v size\:ds::DoublyLinkedList< T >}
 {\xe \v ds::DoublyLinkedList< T >\:size}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
+template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAMH" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
 < T >::size () const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAEA}
-{\bkmkend AAAAAAAAEA}
+{\bkmkstart AAAAAAAAET}
+{\bkmkend AAAAAAAAET}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAAMM}
-{\bkmkend AAAAAAAAMM}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Member Data Documentation\par
-\pard\plain 
-{\xe \v head_\:ds::DoublyLinkedList< T >}
-{\xe \v ds::DoublyLinkedList< T >\:head_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
-< T >::head_ = nullptr{\f2 [private]}}}
 \par
-{\bkmkstart AAAAAAAAAN}
-{\bkmkend AAAAAAAAAN}
 {
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v size_\:ds::DoublyLinkedList< T >}
-{\xe \v ds::DoublyLinkedList< T >\:size_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
-< T >::size_ = 0{\f2 [private]}}}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Liste eleman sayısını döndürür. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 \par
-{\bkmkstart AAAAAAAAAT}
-{\bkmkend AAAAAAAAAT}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
-{\xe \v tail_\:ds::DoublyLinkedList< T >}
-{\xe \v ds::DoublyLinkedList< T >\:tail_}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
-* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 ds::DoublyLinkedList}}}
-< T >::tail_ = nullptr{\f2 [private]}}}
-\par
-{\bkmkstart AAAAAAAAAO}
-{\bkmkend AAAAAAAAAO}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Eleman sayısı \par
+}}}}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 The documentation for this class was generated from the following file:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 doubly_linked_list.h}}}
+C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 doubly_linked_list.h}}}
 \par
 }}

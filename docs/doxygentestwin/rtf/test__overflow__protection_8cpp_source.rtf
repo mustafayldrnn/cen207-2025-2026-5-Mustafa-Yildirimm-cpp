@@ -151,473 +151,473 @@
 test_overflow_protection.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_overflow_protection.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_overflow_protection.cpp}
-{\bkmkstart AAAAAAADLR}
-{\bkmkend AAAAAAADLR}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADLS" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAADNL}
+{\bkmkend AAAAAAADNL}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADNM" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAADLT}{\bkmkend AAAAAAADLT}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAADNN}{\bkmkend AAAAAAADNN}
 00001 \par
-{\bkmkstart AAAAAAADLU}{\bkmkend AAAAAAADLU}
-00008 \par
-{\bkmkstart AAAAAAADLV}{\bkmkend AAAAAAADLV}
-00009 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAADLW}{\bkmkend AAAAAAADLW}
-00010 {\cf21 #include <chrono>}\par
-{\bkmkstart AAAAAAADLX}{\bkmkend AAAAAAADLX}
-00011 {\cf21 #include <limits>}\par
-{\bkmkstart AAAAAAADLY}{\bkmkend AAAAAAADLY}
-00012 {\cf21 #include <iostream>}\par
-{\bkmkstart AAAAAAADLZ}{\bkmkend AAAAAAADLZ}
-00013 \par
-{\bkmkstart AAAAAAADMA}{\bkmkend AAAAAAADMA}
-00014 {\cf17 namespace }\{\par
-{\bkmkstart AAAAAAADMB}{\bkmkend AAAAAAADMB}
-00015 \par
-{\bkmkstart AAAAAAADMC}{\bkmkend AAAAAAADMC}
-00020 {\cf17 class }OverflowProtectionTest : {\cf17 public} ::testing::Test \{\par
-{\bkmkstart AAAAAAADMD}{\bkmkend AAAAAAADMD}
-00021 {\cf17 protected}:\par
-{\bkmkstart AAAAAAADME}{\bkmkend AAAAAAADME}
-00022     {\cf18 void} SetUp(){\cf17  override }\{\par
-{\bkmkstart AAAAAAADMF}{\bkmkend AAAAAAADMF}
-00023         {\cf20 // Setup for each test}\par
-{\bkmkstart AAAAAAADMG}{\bkmkend AAAAAAADMG}
-00024     \}\par
-{\bkmkstart AAAAAAADMH}{\bkmkend AAAAAAADMH}
-00025     \par
-{\bkmkstart AAAAAAADMI}{\bkmkend AAAAAAADMI}
-00026     {\cf18 void} TearDown(){\cf17  override }\{\par
-{\bkmkstart AAAAAAADMJ}{\bkmkend AAAAAAADMJ}
-00027         {\cf20 // Cleanup after each test}\par
-{\bkmkstart AAAAAAADMK}{\bkmkend AAAAAAADMK}
-00028     \}\par
-{\bkmkstart AAAAAAADML}{\bkmkend AAAAAAADML}
-00029 \};\par
-{\bkmkstart AAAAAAADMM}{\bkmkend AAAAAAADMM}
-00030 \par
-{\bkmkstart AAAAAAADMN}{\bkmkend AAAAAAADMN}
-00035 TEST_F(OverflowProtectionTest, TestSafeMultiplication) \{\par
-{\bkmkstart AAAAAAADMO}{\bkmkend AAAAAAADMO}
-00036     {\cf20 // Test safe multiplication algorithm similar to _Whole and _Part}\par
-{\bkmkstart AAAAAAADMP}{\bkmkend AAAAAAADMP}
-00037     {\cf17 auto} safeMultiply = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} multiplier, {\cf18 long} {\cf18 long} divisor) -> {\cf18 long} {\cf18 long} \{\par
-{\bkmkstart AAAAAAADMQ}{\bkmkend AAAAAAADMQ}
-00038         {\cf20 // Prevent overflow by splitting the calculation}\par
-{\bkmkstart AAAAAAADMR}{\bkmkend AAAAAAADMR}
-00039         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / divisor) * multiplier;\par
-{\bkmkstart AAAAAAADMS}{\bkmkend AAAAAAADMS}
-00040         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % divisor) * multiplier / divisor;\par
-{\bkmkstart AAAAAAADMT}{\bkmkend AAAAAAADMT}
-00041         {\cf19 return} whole + part;\par
-{\bkmkstart AAAAAAADMU}{\bkmkend AAAAAAADMU}
-00042     \};\par
-{\bkmkstart AAAAAAADMV}{\bkmkend AAAAAAADMV}
-00043     \par
-{\bkmkstart AAAAAAADMW}{\bkmkend AAAAAAADMW}
-00044     {\cf20 // Test with large values that could cause overflow}\par
-{\bkmkstart AAAAAAADMX}{\bkmkend AAAAAAADMX}
-00045     {\cf17 const} {\cf18 long} {\cf18 long} largeCounter = std::numeric_limits<long long>::max() / 2;\par
-{\bkmkstart AAAAAAADMY}{\bkmkend AAAAAAADMY}
-00046     {\cf17 const} {\cf18 long} {\cf18 long} multiplier = 1000000;\par
-{\bkmkstart AAAAAAADMZ}{\bkmkend AAAAAAADMZ}
-00047     {\cf17 const} {\cf18 long} {\cf18 long} divisor = 1000000;\par
-{\bkmkstart AAAAAAADNA}{\bkmkend AAAAAAADNA}
-00048     \par
-{\bkmkstart AAAAAAADNB}{\bkmkend AAAAAAADNB}
-00049     {\cf20 // This should not overflow with safe algorithm}\par
-{\bkmkstart AAAAAAADND}{\bkmkend AAAAAAADND}
-00050     {\cf18 long} {\cf18 long} result = safeMultiply(largeCounter, multiplier, divisor);\par
-{\bkmkstart AAAAAAADNE}{\bkmkend AAAAAAADNE}
-00051     EXPECT_GT(result, 0);\par
-{\bkmkstart AAAAAAADNF}{\bkmkend AAAAAAADNF}
-00052     \par
-{\bkmkstart AAAAAAADNG}{\bkmkend AAAAAAADNG}
-00053     {\cf20 // Test edge cases}\par
-{\bkmkstart AAAAAAADNH}{\bkmkend AAAAAAADNH}
-00054     EXPECT_EQ(safeMultiply(0, multiplier, divisor), 0);\par
-{\bkmkstart AAAAAAADNI}{\bkmkend AAAAAAADNI}
-00055     EXPECT_EQ(safeMultiply(divisor, multiplier, divisor), multiplier);\par
-{\bkmkstart AAAAAAADNJ}{\bkmkend AAAAAAADNJ}
-00056 \}\par
-{\bkmkstart AAAAAAADNK}{\bkmkend AAAAAAADNK}
-00057 \par
-{\bkmkstart AAAAAAADNL}{\bkmkend AAAAAAADNL}
-00062 TEST_F(OverflowProtectionTest, TestOverflowDetection) \{\par
-{\bkmkstart AAAAAAADNM}{\bkmkend AAAAAAADNM}
-00063     {\cf20 // Test overflow detection}\par
-{\bkmkstart AAAAAAADNN}{\bkmkend AAAAAAADNN}
-00064     {\cf17 auto} detectOverflow = []({\cf18 long} {\cf18 long} a, {\cf18 long} {\cf18 long} b) -> {\cf18 bool} \{\par
 {\bkmkstart AAAAAAADNO}{\bkmkend AAAAAAADNO}
-00065         {\cf20 // Check if multiplication would overflow}\par
+00008 \par
 {\bkmkstart AAAAAAADNP}{\bkmkend AAAAAAADNP}
-00066         {\cf19 if} (a > 0 && b > 0) \{\par
-{\bkmkstart AAAAAAADNQ}{\bkmkend AAAAAAADNQ}
-00067             {\cf19 return} a > std::numeric_limits<long long>::max() / b;\par
-{\bkmkstart AAAAAAADNR}{\bkmkend AAAAAAADNR}
-00068         \} {\cf19 else} {\cf19 if} (a < 0 && b < 0) \{\par
+00009 {\cf21 #include <gtest/gtest.h>}\par
 {\bkmkstart AAAAAAADNS}{\bkmkend AAAAAAADNS}
-00069             {\cf19 return} a < std::numeric_limits<long long>::max() / b;\par
+00010 {\cf21 #include <chrono>}\par
 {\bkmkstart AAAAAAADNT}{\bkmkend AAAAAAADNT}
-00070         \} {\cf19 else} {\cf19 if} (a < 0 && b > 0) \{\par
+00011 {\cf21 #include <limits>}\par
 {\bkmkstart AAAAAAADNU}{\bkmkend AAAAAAADNU}
-00071             {\cf19 return} a < std::numeric_limits<long long>::min() / b;\par
+00012 {\cf21 #include <iostream>}\par
 {\bkmkstart AAAAAAADNV}{\bkmkend AAAAAAADNV}
-00072         \} {\cf19 else} {\cf19 if} (a > 0 && b < 0) \{\par
+00013 \par
 {\bkmkstart AAAAAAADNW}{\bkmkend AAAAAAADNW}
-00073             {\cf19 return} b < std::numeric_limits<long long>::min() / a;\par
+00014 {\cf17 namespace }\{\par
 {\bkmkstart AAAAAAADNX}{\bkmkend AAAAAAADNX}
-00074         \}\par
+00015 \par
 {\bkmkstart AAAAAAADNY}{\bkmkend AAAAAAADNY}
-00075         {\cf19 return} {\cf17 false};\par
+00020 {\cf17 class }OverflowProtectionTest : {\cf17 public} ::testing::Test \{\par
 {\bkmkstart AAAAAAADNZ}{\bkmkend AAAAAAADNZ}
-00076     \};\par
+00021 {\cf17 protected}:\par
 {\bkmkstart AAAAAAADOA}{\bkmkend AAAAAAADOA}
-00077     \par
-{\bkmkstart AAAAAAADOB}{\bkmkend AAAAAAADOB}
-00078     {\cf20 // Test cases that should detect overflow}\par
+00022     {\cf18 void} SetUp(){\cf17  override }\{\par
 {\bkmkstart AAAAAAADOC}{\bkmkend AAAAAAADOC}
-00079     EXPECT_TRUE(detectOverflow(std::numeric_limits<long long>::max(), 2));\par
-{\bkmkstart AAAAAAADOH}{\bkmkend AAAAAAADOH}
-00080     EXPECT_TRUE(detectOverflow(std::numeric_limits<long long>::min(), 2));\par
+00023         {\cf20 // Setup for each test}\par
+{\bkmkstart AAAAAAADOD}{\bkmkend AAAAAAADOD}
+00024     \}\par
+{\bkmkstart AAAAAAADOE}{\bkmkend AAAAAAADOE}
+00025     \par
+{\bkmkstart AAAAAAADOF}{\bkmkend AAAAAAADOF}
+00026     {\cf18 void} TearDown(){\cf17  override }\{\par
 {\bkmkstart AAAAAAADOI}{\bkmkend AAAAAAADOI}
-00081     EXPECT_FALSE(detectOverflow(1000, 1000));\par
+00027         {\cf20 // Cleanup after each test}\par
 {\bkmkstart AAAAAAADOJ}{\bkmkend AAAAAAADOJ}
-00082     EXPECT_FALSE(detectOverflow(0, 1000));\par
+00028     \}\par
 {\bkmkstart AAAAAAADOK}{\bkmkend AAAAAAADOK}
-00083 \}\par
+00029 \};\par
 {\bkmkstart AAAAAAADOL}{\bkmkend AAAAAAADOL}
-00084 \par
+00030 \par
 {\bkmkstart AAAAAAADOM}{\bkmkend AAAAAAADOM}
-00089 TEST_F(OverflowProtectionTest, TestChronoOverflowProtection) \{\par
-{\bkmkstart AAAAAAADON}{\bkmkend AAAAAAADON}
-00090     {\cf20 // Test chrono duration calculations with overflow protection}\par
+00035 TEST_F(OverflowProtectionTest, TestSafeMultiplication) \{\par
 {\bkmkstart AAAAAAADOO}{\bkmkend AAAAAAADOO}
-00091     {\cf17 auto} safeChronoCalculation = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency, {\cf18 long} {\cf18 long} periodDen) -> std::chrono::nanoseconds \{\par
+00036     {\cf20 // Test safe multiplication algorithm similar to _Whole and _Part}\par
 {\bkmkstart AAAAAAADOP}{\bkmkend AAAAAAADOP}
-00092         {\cf20 // Safe calculation using _Whole and _Part algorithm}\par
+00037     {\cf17 auto} safeMultiply = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} multiplier, {\cf18 long} {\cf18 long} divisor) -> {\cf18 long} {\cf18 long} \{\par
 {\bkmkstart AAAAAAADOQ}{\bkmkend AAAAAAADOQ}
-00093         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
+00038         {\cf20 // Prevent overflow by splitting the calculation}\par
 {\bkmkstart AAAAAAADOR}{\bkmkend AAAAAAADOR}
-00094         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
+00039         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / divisor) * multiplier;\par
 {\bkmkstart AAAAAAADOS}{\bkmkend AAAAAAADOS}
-00095         \par
+00040         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % divisor) * multiplier / divisor;\par
 {\bkmkstart AAAAAAADOT}{\bkmkend AAAAAAADOT}
-00096         {\cf20 // Check for overflow before creating duration}\par
+00041         {\cf19 return} whole + part;\par
 {\bkmkstart AAAAAAADOU}{\bkmkend AAAAAAADOU}
-00097         {\cf19 if} (whole > std::numeric_limits<long long>::max() - part) \{\par
+00042     \};\par
 {\bkmkstart AAAAAAADOV}{\bkmkend AAAAAAADOV}
-00098             {\cf19 throw} std::overflow_error({\cf22 "Duration calculation would overflow"});\par
-{\bkmkstart AAAAAAADOW}{\bkmkend AAAAAAADOW}
-00099         \}\par
+00043     \par
 {\bkmkstart AAAAAAADOX}{\bkmkend AAAAAAADOX}
-00100         \par
+00044     {\cf20 // Test with large values that could cause overflow}\par
 {\bkmkstart AAAAAAADOY}{\bkmkend AAAAAAADOY}
-00101         {\cf19 return} std::chrono::nanoseconds(whole + part);\par
-{\bkmkstart AAAAAAADOZ}{\bkmkend AAAAAAADOZ}
-00102     \};\par
+00045     {\cf17 const} {\cf18 long} {\cf18 long} largeCounter = std::numeric_limits<long long>::max() / 2;\par
 {\bkmkstart AAAAAAADPA}{\bkmkend AAAAAAADPA}
-00103     \par
+00046     {\cf17 const} {\cf18 long} {\cf18 long} multiplier = 1000000;\par
 {\bkmkstart AAAAAAADPB}{\bkmkend AAAAAAADPB}
-00104     {\cf20 // Test with safe values}\par
+00047     {\cf17 const} {\cf18 long} {\cf18 long} divisor = 1000000;\par
 {\bkmkstart AAAAAAADPC}{\bkmkend AAAAAAADPC}
-00105     {\cf17 const} {\cf18 long} {\cf18 long} counter = 1000000;\par
+00048     \par
 {\bkmkstart AAAAAAADPD}{\bkmkend AAAAAAADPD}
-00106     {\cf17 const} {\cf18 long} {\cf18 long} frequency = 1000000;\par
+00049     {\cf20 // This should not overflow with safe algorithm}\par
 {\bkmkstart AAAAAAADPE}{\bkmkend AAAAAAADPE}
-00107     {\cf17 const} {\cf18 long} {\cf18 long} periodDen = 1000000000; {\cf20 // nanoseconds}\par
+00050     {\cf18 long} {\cf18 long} result = safeMultiply(largeCounter, multiplier, divisor);\par
 {\bkmkstart AAAAAAADPF}{\bkmkend AAAAAAADPF}
-00108     \par
+00051     EXPECT_GT(result, 0);\par
 {\bkmkstart AAAAAAADPG}{\bkmkend AAAAAAADPG}
-00109     {\cf17 auto} duration = safeChronoCalculation(counter, frequency, periodDen);\par
+00052     \par
 {\bkmkstart AAAAAAADPH}{\bkmkend AAAAAAADPH}
-00110     EXPECT_EQ(duration.count(), 1000000000); {\cf20 // 1 second in nanoseconds}\par
+00053     {\cf20 // Test edge cases}\par
 {\bkmkstart AAAAAAADPI}{\bkmkend AAAAAAADPI}
-00111     \par
+00054     EXPECT_EQ(safeMultiply(0, multiplier, divisor), 0);\par
 {\bkmkstart AAAAAAADPJ}{\bkmkend AAAAAAADPJ}
-00112     {\cf20 // Test with edge case}\par
-{\bkmkstart AAAAAAADPK}{\bkmkend AAAAAAADPK}
-00113     EXPECT_EQ(safeChronoCalculation(0, frequency, periodDen).count(), 0);\par
+00055     EXPECT_EQ(safeMultiply(divisor, multiplier, divisor), multiplier);\par
 {\bkmkstart AAAAAAADPL}{\bkmkend AAAAAAADPL}
-00114 \}\par
+00056 \}\par
 {\bkmkstart AAAAAAADPM}{\bkmkend AAAAAAADPM}
-00115 \par
+00057 \par
 {\bkmkstart AAAAAAADPN}{\bkmkend AAAAAAADPN}
-00120 TEST_F(OverflowProtectionTest, TestLargeValueHandling) \{\par
+00062 TEST_F(OverflowProtectionTest, TestOverflowDetection) \{\par
 {\bkmkstart AAAAAAADPO}{\bkmkend AAAAAAADPO}
-00121     {\cf20 // Test with very large counter values}\par
+00063     {\cf20 // Test overflow detection}\par
 {\bkmkstart AAAAAAADPP}{\bkmkend AAAAAAADPP}
-00122     {\cf17 auto} handleLargeCounter = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency) -> {\cf18 long} {\cf18 long} \{\par
+00064     {\cf17 auto} detectOverflow = []({\cf18 long} {\cf18 long} a, {\cf18 long} {\cf18 long} b) -> {\cf18 bool} \{\par
+{\bkmkstart AAAAAAADPQ}{\bkmkend AAAAAAADPQ}
+00065         {\cf20 // Check if multiplication would overflow}\par
 {\bkmkstart AAAAAAADPR}{\bkmkend AAAAAAADPR}
-00123         {\cf20 // Use safe division and multiplication}\par
+00066         {\cf19 if} (a > 0 && b > 0) \{\par
 {\bkmkstart AAAAAAADPS}{\bkmkend AAAAAAADPS}
-00124         {\cf17 const} {\cf18 long} {\cf18 long} quotient = counter / frequency;\par
-{\bkmkstart AAAAAAADPT}{\bkmkend AAAAAAADPT}
-00125         {\cf17 const} {\cf18 long} {\cf18 long} remainder = counter % frequency;\par
-{\bkmkstart AAAAAAADPU}{\bkmkend AAAAAAADPU}
-00126         \par
-{\bkmkstart AAAAAAADPV}{\bkmkend AAAAAAADPV}
-00127         {\cf20 // Safe multiplication with overflow check}\par
+00067             {\cf19 return} a > std::numeric_limits<long long>::max() / b;\par
 {\bkmkstart AAAAAAADPW}{\bkmkend AAAAAAADPW}
-00128         {\cf17 const} {\cf18 long} {\cf18 long} maxSafeMultiplier = std::numeric_limits<long long>::max() / frequency;\par
-{\bkmkstart AAAAAAADQB}{\bkmkend AAAAAAADQB}
-00129         {\cf17 const} {\cf18 long} {\cf18 long} multiplier = std::min(1000000000LL, maxSafeMultiplier);\par
+00068         \} {\cf19 else} {\cf19 if} (a < 0 && b < 0) \{\par
+{\bkmkstart AAAAAAADPY}{\bkmkend AAAAAAADPY}
+00069             {\cf19 return} a < std::numeric_limits<long long>::max() / b;\par
+{\bkmkstart AAAAAAADQA}{\bkmkend AAAAAAADQA}
+00070         \} {\cf19 else} {\cf19 if} (a < 0 && b > 0) \{\par
 {\bkmkstart AAAAAAADQC}{\bkmkend AAAAAAADQC}
-00130         \par
+00071             {\cf19 return} a < std::numeric_limits<long long>::min() / b;\par
 {\bkmkstart AAAAAAADQD}{\bkmkend AAAAAAADQD}
-00131         {\cf19 return} quotient * multiplier + (remainder * multiplier) / frequency;\par
+00072         \} {\cf19 else} {\cf19 if} (a > 0 && b < 0) \{\par
 {\bkmkstart AAAAAAADQE}{\bkmkend AAAAAAADQE}
-00132     \};\par
-{\bkmkstart AAAAAAADQF}{\bkmkend AAAAAAADQF}
-00133     \par
+00073             {\cf19 return} b < std::numeric_limits<long long>::min() / a;\par
 {\bkmkstart AAAAAAADQG}{\bkmkend AAAAAAADQG}
-00134     {\cf20 // Test with large but safe values}\par
-{\bkmkstart AAAAAAADQH}{\bkmkend AAAAAAADQH}
-00135     {\cf17 const} {\cf18 long} {\cf18 long} largeCounter = std::numeric_limits<long long>::max() / 8; {\cf20 // Use smaller value to avoid overflow}\par
+00074         \}\par
 {\bkmkstart AAAAAAADQI}{\bkmkend AAAAAAADQI}
-00136     {\cf17 const} {\cf18 long} {\cf18 long} frequency = 1000000;\par
-{\bkmkstart AAAAAAADQJ}{\bkmkend AAAAAAADQJ}
-00137     \par
+00075         {\cf19 return} {\cf17 false};\par
 {\bkmkstart AAAAAAADQK}{\bkmkend AAAAAAADQK}
-00138     {\cf18 long} {\cf18 long} result = handleLargeCounter(largeCounter, frequency);\par
-{\bkmkstart AAAAAAADQL}{\bkmkend AAAAAAADQL}
-00139     EXPECT_GT(result, 0);\par
+00076     \};\par
 {\bkmkstart AAAAAAADQM}{\bkmkend AAAAAAADQM}
-00140     \par
+00077     \par
 {\bkmkstart AAAAAAADQN}{\bkmkend AAAAAAADQN}
-00141     {\cf20 // Test boundary conditions}\par
+00078     {\cf20 // Test cases that should detect overflow}\par
 {\bkmkstart AAAAAAADQO}{\bkmkend AAAAAAADQO}
-00142     EXPECT_EQ(handleLargeCounter(0, frequency), 0);\par
-{\bkmkstart AAAAAAADQP}{\bkmkend AAAAAAADQP}
-00143     EXPECT_EQ(handleLargeCounter(frequency, frequency), 1000000000);\par
-{\bkmkstart AAAAAAADQQ}{\bkmkend AAAAAAADQQ}
-00144 \}\par
-{\bkmkstart AAAAAAADQR}{\bkmkend AAAAAAADQR}
-00145 \par
-{\bkmkstart AAAAAAADQS}{\bkmkend AAAAAAADQS}
-00150 TEST_F(OverflowProtectionTest, TestFrequencySpecificCalculations) \{\par
-{\bkmkstart AAAAAAADQT}{\bkmkend AAAAAAADQT}
-00151     {\cf20 // Test for 10MHz frequency}\par
-{\bkmkstart AAAAAAADQU}{\bkmkend AAAAAAADQU}
-00152     {\cf17 auto} calculateFor10MHz = []({\cf18 long} {\cf18 long} counter) -> {\cf18 long} {\cf18 long} \{\par
+00079     EXPECT_TRUE(detectOverflow(std::numeric_limits<long long>::max(), 2));\par
 {\bkmkstart AAAAAAADQV}{\bkmkend AAAAAAADQV}
-00153         {\cf17 const} {\cf18 long} {\cf18 long} frequency = 10000000; {\cf20 // 10MHz}\par
+00080     EXPECT_TRUE(detectOverflow(std::numeric_limits<long long>::min(), 2));\par
 {\bkmkstart AAAAAAADQW}{\bkmkend AAAAAAADQW}
-00154         {\cf17 const} {\cf18 long} {\cf18 long} periodDen = 1000000000; {\cf20 // nanoseconds}\par
-{\bkmkstart AAAAAAADQX}{\bkmkend AAAAAAADQX}
-00155         \par
+00081     EXPECT_FALSE(detectOverflow(1000, 1000));\par
 {\bkmkstart AAAAAAADQY}{\bkmkend AAAAAAADQY}
-00156         {\cf20 // Safe calculation}\par
-{\bkmkstart AAAAAAADQZ}{\bkmkend AAAAAAADQZ}
-00157         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
+00082     EXPECT_FALSE(detectOverflow(0, 1000));\par
 {\bkmkstart AAAAAAADRA}{\bkmkend AAAAAAADRA}
-00158         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
-{\bkmkstart AAAAAAADRB}{\bkmkend AAAAAAADRB}
-00159         \par
+00083 \}\par
 {\bkmkstart AAAAAAADRC}{\bkmkend AAAAAAADRC}
-00160         {\cf19 return} whole + part;\par
+00084 \par
 {\bkmkstart AAAAAAADRD}{\bkmkend AAAAAAADRD}
-00161     \};\par
-{\bkmkstart AAAAAAADRE}{\bkmkend AAAAAAADRE}
-00162     \par
-{\bkmkstart AAAAAAADRF}{\bkmkend AAAAAAADRF}
-00163     {\cf20 // Test for 24MHz frequency}\par
-{\bkmkstart AAAAAAADRG}{\bkmkend AAAAAAADRG}
-00164     {\cf17 auto} calculateFor24MHz = []({\cf18 long} {\cf18 long} counter) -> {\cf18 long} {\cf18 long} \{\par
+00089 TEST_F(OverflowProtectionTest, TestChronoOverflowProtection) \{\par
 {\bkmkstart AAAAAAADRH}{\bkmkend AAAAAAADRH}
-00165         {\cf17 const} {\cf18 long} {\cf18 long} frequency = 24000000; {\cf20 // 24MHz}\par
+00090     {\cf20 // Test chrono duration calculations with overflow protection}\par
 {\bkmkstart AAAAAAADRI}{\bkmkend AAAAAAADRI}
-00166         {\cf17 const} {\cf18 long} {\cf18 long} periodDen = 1000000000; {\cf20 // nanoseconds}\par
-{\bkmkstart AAAAAAADRJ}{\bkmkend AAAAAAADRJ}
-00167         \par
-{\bkmkstart AAAAAAADRK}{\bkmkend AAAAAAADRK}
-00168         {\cf20 // Safe calculation}\par
-{\bkmkstart AAAAAAADRL}{\bkmkend AAAAAAADRL}
-00169         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
-{\bkmkstart AAAAAAADRM}{\bkmkend AAAAAAADRM}
-00170         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
+00091     {\cf17 auto} safeChronoCalculation = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency, {\cf18 long} {\cf18 long} periodDen) -> std::chrono::nanoseconds \{\par
 {\bkmkstart AAAAAAADRN}{\bkmkend AAAAAAADRN}
-00171         \par
+00092         {\cf20 // Safe calculation using _Whole and _Part algorithm}\par
 {\bkmkstart AAAAAAADRO}{\bkmkend AAAAAAADRO}
-00172         {\cf19 return} whole + part;\par
-{\bkmkstart AAAAAAADRP}{\bkmkend AAAAAAADRP}
-00173     \};\par
+00093         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
 {\bkmkstart AAAAAAADRQ}{\bkmkend AAAAAAADRQ}
-00174     \par
-{\bkmkstart AAAAAAADRR}{\bkmkend AAAAAAADRR}
-00175     {\cf20 // Test calculations}\par
-{\bkmkstart AAAAAAADRS}{\bkmkend AAAAAAADRS}
-00176     {\cf17 const} {\cf18 long} {\cf18 long} testCounter = 1000000;\par
-{\bkmkstart AAAAAAADRT}{\bkmkend AAAAAAADRT}
-00177     \par
-{\bkmkstart AAAAAAADRU}{\bkmkend AAAAAAADRU}
-00178     {\cf18 long} {\cf18 long} result10MHz = calculateFor10MHz(testCounter);\par
+00094         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
 {\bkmkstart AAAAAAADRV}{\bkmkend AAAAAAADRV}
-00179     {\cf18 long} {\cf18 long} result24MHz = calculateFor24MHz(testCounter);\par
+00095         \par
 {\bkmkstart AAAAAAADRW}{\bkmkend AAAAAAADRW}
-00180     \par
+00096         {\cf20 // Check for overflow before creating duration}\par
 {\bkmkstart AAAAAAADRX}{\bkmkend AAAAAAADRX}
-00181     EXPECT_GT(result10MHz, 0);\par
-{\bkmkstart AAAAAAADRY}{\bkmkend AAAAAAADRY}
-00182     EXPECT_GT(result24MHz, 0);\par
-{\bkmkstart AAAAAAADRZ}{\bkmkend AAAAAAADRZ}
-00183     EXPECT_NE(result10MHz, result24MHz); {\cf20 // Should be different}\par
-{\bkmkstart AAAAAAADSA}{\bkmkend AAAAAAADSA}
-00184 \}\par
-{\bkmkstart AAAAAAADSB}{\bkmkend AAAAAAADSB}
-00185 \par
+00097         {\cf19 if} (whole > std::numeric_limits<long long>::max() - part) \{\par
 {\bkmkstart AAAAAAADSC}{\bkmkend AAAAAAADSC}
-00190 TEST_F(OverflowProtectionTest, TestOverflowPreventionAlgorithm) \{\par
-{\bkmkstart AAAAAAADSD}{\bkmkend AAAAAAADSD}
-00191     {\cf20 // Complete overflow prevention algorithm}\par
-{\bkmkstart AAAAAAADSE}{\bkmkend AAAAAAADSE}
-00192     {\cf17 auto} overflowSafeCalculation = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency, {\cf18 long} {\cf18 long} periodDen) -> {\cf18 long} {\cf18 long} \{\par
-{\bkmkstart AAAAAAADSF}{\bkmkend AAAAAAADSF}
-00193         {\cf20 // Check if direct multiplication would overflow}\par
+00098             {\cf19 throw} std::overflow_error({\cf22 "Duration calculation would overflow"});\par
 {\bkmkstart AAAAAAADSG}{\bkmkend AAAAAAADSG}
-00194         {\cf19 if} (counter > 0 && periodDen > 0) \{\par
+00099         \}\par
 {\bkmkstart AAAAAAADSH}{\bkmkend AAAAAAADSH}
-00195             {\cf19 if} (counter > std::numeric_limits<long long>::max() / periodDen) \{\par
+00100         \par
 {\bkmkstart AAAAAAADSI}{\bkmkend AAAAAAADSI}
-00196                 {\cf20 // Use safe algorithm}\par
-{\bkmkstart AAAAAAADSJ}{\bkmkend AAAAAAADSJ}
-00197                 {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
-{\bkmkstart AAAAAAADSK}{\bkmkend AAAAAAADSK}
-00198                 {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
-{\bkmkstart AAAAAAADSL}{\bkmkend AAAAAAADSL}
-00199                 \par
+00101         {\cf19 return} std::chrono::nanoseconds(whole + part);\par
 {\bkmkstart AAAAAAADSM}{\bkmkend AAAAAAADSM}
-00200                 {\cf20 // Check if result would overflow}\par
-{\bkmkstart AAAAAAADSN}{\bkmkend AAAAAAADSN}
-00201                 {\cf19 if} (whole > std::numeric_limits<long long>::max() - part) \{\par
+00102     \};\par
 {\bkmkstart AAAAAAADSO}{\bkmkend AAAAAAADSO}
-00202                     {\cf19 throw} std::overflow_error({\cf22 "Calculation would overflow even with safe algorithm"});\par
-{\bkmkstart AAAAAAADSP}{\bkmkend AAAAAAADSP}
-00203                 \}\par
+00103     \par
 {\bkmkstart AAAAAAADSQ}{\bkmkend AAAAAAADSQ}
-00204                 \par
+00104     {\cf20 // Test with safe values}\par
 {\bkmkstart AAAAAAADSR}{\bkmkend AAAAAAADSR}
-00205                 {\cf19 return} whole + part;\par
+00105     {\cf17 const} {\cf18 long} {\cf18 long} counter = 1000000;\par
 {\bkmkstart AAAAAAADSS}{\bkmkend AAAAAAADSS}
-00206             \}\par
-{\bkmkstart AAAAAAADST}{\bkmkend AAAAAAADST}
-00207         \}\par
+00106     {\cf17 const} {\cf18 long} {\cf18 long} frequency = 1000000;\par
 {\bkmkstart AAAAAAADSU}{\bkmkend AAAAAAADSU}
-00208         \par
-{\bkmkstart AAAAAAADSV}{\bkmkend AAAAAAADSV}
-00209         {\cf20 // Safe to use direct multiplication}\par
+00107     {\cf17 const} {\cf18 long} {\cf18 long} periodDen = 1000000000; {\cf20 // nanoseconds}\par
 {\bkmkstart AAAAAAADSW}{\bkmkend AAAAAAADSW}
-00210         {\cf19 return} (counter * periodDen) / frequency;\par
-{\bkmkstart AAAAAAADSX}{\bkmkend AAAAAAADSX}
-00211     \};\par
+00108     \par
 {\bkmkstart AAAAAAADSY}{\bkmkend AAAAAAADSY}
-00212     \par
-{\bkmkstart AAAAAAADSZ}{\bkmkend AAAAAAADSZ}
-00213     {\cf20 // Test with various values - only test cases that should succeed}\par
+00109     {\cf17 auto} duration = safeChronoCalculation(counter, frequency, periodDen);\par
 {\bkmkstart AAAAAAADTA}{\bkmkend AAAAAAADTA}
-00214     {\cf17 struct }TestCase \{\par
+00110     EXPECT_EQ(duration.count(), 1000000000); {\cf20 // 1 second in nanoseconds}\par
 {\bkmkstart AAAAAAADTB}{\bkmkend AAAAAAADTB}
-00215         {\cf18 long} {\cf18 long} counter;\par
+00111     \par
 {\bkmkstart AAAAAAADTC}{\bkmkend AAAAAAADTC}
-00216         {\cf18 long} {\cf18 long} frequency;\par
-{\bkmkstart AAAAAAADTD}{\bkmkend AAAAAAADTD}
-00217         {\cf18 long} {\cf18 long} periodDen;\par
+00112     {\cf20 // Test with edge case}\par
 {\bkmkstart AAAAAAADTE}{\bkmkend AAAAAAADTE}
-00218     \};\par
-{\bkmkstart AAAAAAADTF}{\bkmkend AAAAAAADTF}
-00219     \par
-{\bkmkstart AAAAAAADTG}{\bkmkend AAAAAAADTG}
-00220     std::vector<TestCase> testCases = \{\par
+00113     EXPECT_EQ(safeChronoCalculation(0, frequency, periodDen).count(), 0);\par
 {\bkmkstart AAAAAAADTH}{\bkmkend AAAAAAADTH}
-00221         \{1000, 1000000, 1000000000\},\par
+00114 \}\par
 {\bkmkstart AAAAAAADTI}{\bkmkend AAAAAAADTI}
-00222         \{0, 1000000, 1000000000\},\par
-{\bkmkstart AAAAAAADTJ}{\bkmkend AAAAAAADTJ}
-00223         \{1000000, 1000000, 1000000000\},\par
+00115 \par
 {\bkmkstart AAAAAAADTK}{\bkmkend AAAAAAADTK}
-00224         \{std::numeric_limits<long long>::max() / 16, 1000000, 1000000000\} {\cf20 // Use even smaller value}\par
-{\bkmkstart AAAAAAADTL}{\bkmkend AAAAAAADTL}
-00225     \};\par
-{\bkmkstart AAAAAAADTM}{\bkmkend AAAAAAADTM}
-00226     \par
-{\bkmkstart AAAAAAADTN}{\bkmkend AAAAAAADTN}
-00227     {\cf19 for} ({\cf17 const} {\cf17 auto}& testCase : testCases) \{\par
-{\bkmkstart AAAAAAADTO}{\bkmkend AAAAAAADTO}
-00228         EXPECT_NO_THROW(\{\par
+00120 TEST_F(OverflowProtectionTest, TestLargeValueHandling) \{\par
 {\bkmkstart AAAAAAADTP}{\bkmkend AAAAAAADTP}
-00229             {\cf18 long} {\cf18 long} result = overflowSafeCalculation(testCase.counter, testCase.frequency, testCase.periodDen);\par
+00121     {\cf20 // Test with very large counter values}\par
 {\bkmkstart AAAAAAADTQ}{\bkmkend AAAAAAADTQ}
-00230             EXPECT_GE(result, 0);\par
-{\bkmkstart AAAAAAADTR}{\bkmkend AAAAAAADTR}
-00231         \});\par
-{\bkmkstart AAAAAAADTS}{\bkmkend AAAAAAADTS}
-00232     \}\par
+00122     {\cf17 auto} handleLargeCounter = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency) -> {\cf18 long} {\cf18 long} \{\par
 {\bkmkstart AAAAAAADTT}{\bkmkend AAAAAAADTT}
-00233 \}\par
+00123         {\cf20 // Use safe division and multiplication}\par
 {\bkmkstart AAAAAAADTU}{\bkmkend AAAAAAADTU}
-00234 \par
+00124         {\cf17 const} {\cf18 long} {\cf18 long} quotient = counter / frequency;\par
 {\bkmkstart AAAAAAADTV}{\bkmkend AAAAAAADTV}
-00239 TEST_F(OverflowProtectionTest, TestEdgeCases) \{\par
-{\bkmkstart AAAAAAADTW}{\bkmkend AAAAAAADTW}
-00240     {\cf20 // Test edge cases}\par
-{\bkmkstart AAAAAAADTX}{\bkmkend AAAAAAADTX}
-00241     {\cf17 auto} testEdgeCase = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency, {\cf18 long} {\cf18 long} periodDen) -> {\cf18 bool} \{\par
+00125         {\cf17 const} {\cf18 long} {\cf18 long} remainder = counter % frequency;\par
 {\bkmkstart AAAAAAADTY}{\bkmkend AAAAAAADTY}
-00242         {\cf19 try} \{\par
-{\bkmkstart AAAAAAADTZ}{\bkmkend AAAAAAADTZ}
-00243             {\cf20 // Safe calculation}\par
+00126         \par
 {\bkmkstart AAAAAAADUA}{\bkmkend AAAAAAADUA}
-00244             {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
-{\bkmkstart AAAAAAADUB}{\bkmkend AAAAAAADUB}
-00245             {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
+00127         {\cf20 // Safe multiplication with overflow check}\par
 {\bkmkstart AAAAAAADUC}{\bkmkend AAAAAAADUC}
-00246             \par
-{\bkmkstart AAAAAAADUD}{\bkmkend AAAAAAADUD}
-00247             {\cf20 // Check for overflow}\par
-{\bkmkstart AAAAAAADUE}{\bkmkend AAAAAAADUE}
-00248             {\cf19 if} (whole > std::numeric_limits<long long>::max() - part) \{\par
+00128         {\cf17 const} {\cf18 long} {\cf18 long} maxSafeMultiplier = std::numeric_limits<long long>::max() / frequency;\par
+{\bkmkstart AAAAAAADUK}{\bkmkend AAAAAAADUK}
+00129         {\cf17 const} {\cf18 long} {\cf18 long} multiplier = std::min(1000000000LL, maxSafeMultiplier);\par
+{\bkmkstart AAAAAAADUL}{\bkmkend AAAAAAADUL}
+00130         \par
+{\bkmkstart AAAAAAADUM}{\bkmkend AAAAAAADUM}
+00131         {\cf19 return} quotient * multiplier + (remainder * multiplier) / frequency;\par
+{\bkmkstart AAAAAAADUN}{\bkmkend AAAAAAADUN}
+00132     \};\par
 {\bkmkstart AAAAAAADUO}{\bkmkend AAAAAAADUO}
-00249                 {\cf19 return} {\cf17 false};\par
+00133     \par
 {\bkmkstart AAAAAAADUP}{\bkmkend AAAAAAADUP}
-00250             \}\par
+00134     {\cf20 // Test with large but safe values}\par
 {\bkmkstart AAAAAAADUQ}{\bkmkend AAAAAAADUQ}
-00251             \par
-{\bkmkstart AAAAAAADUR}{\bkmkend AAAAAAADUR}
-00252             {\cf18 long} {\cf18 long} result = whole + part;\par
-{\bkmkstart AAAAAAADUS}{\bkmkend AAAAAAADUS}
-00253             {\cf19 return} result >= 0;\par
-{\bkmkstart AAAAAAADUT}{\bkmkend AAAAAAADUT}
-00254         \} {\cf19 catch} (...) \{\par
-{\bkmkstart AAAAAAADUU}{\bkmkend AAAAAAADUU}
-00255             {\cf19 return} {\cf17 false};\par
-{\bkmkstart AAAAAAADUV}{\bkmkend AAAAAAADUV}
-00256         \}\par
+00135     {\cf17 const} {\cf18 long} {\cf18 long} largeCounter = std::numeric_limits<long long>::max() / 8; {\cf20 // Use smaller value to avoid overflow}\par
 {\bkmkstart AAAAAAADUW}{\bkmkend AAAAAAADUW}
-00257     \};\par
-{\bkmkstart AAAAAAADUX}{\bkmkend AAAAAAADUX}
-00258     \par
+00136     {\cf17 const} {\cf18 long} {\cf18 long} frequency = 1000000;\par
 {\bkmkstart AAAAAAADUY}{\bkmkend AAAAAAADUY}
-00259     {\cf20 // Test various edge cases}\par
+00137     \par
 {\bkmkstart AAAAAAADUZ}{\bkmkend AAAAAAADUZ}
-00260     EXPECT_TRUE(testEdgeCase(0, 1, 1));\par
+00138     {\cf18 long} {\cf18 long} result = handleLargeCounter(largeCounter, frequency);\par
 {\bkmkstart AAAAAAADVC}{\bkmkend AAAAAAADVC}
-00261     EXPECT_TRUE(testEdgeCase(1, 1, 1));\par
+00139     EXPECT_GT(result, 0);\par
 {\bkmkstart AAAAAAADVE}{\bkmkend AAAAAAADVE}
-00262     EXPECT_TRUE(testEdgeCase(1000000, 1000000, 1000000000));\par
-{\bkmkstart AAAAAAADVG}{\bkmkend AAAAAAADVG}
-00263     EXPECT_TRUE(testEdgeCase(std::numeric_limits<long long>::max() / 16, 1000000, 1000000000)); {\cf20 // Use even smaller value}\par
+00140     \par
+{\bkmkstart AAAAAAADVF}{\bkmkend AAAAAAADVF}
+00141     {\cf20 // Test boundary conditions}\par
+{\bkmkstart AAAAAAADVI}{\bkmkend AAAAAAADVI}
+00142     EXPECT_EQ(handleLargeCounter(0, frequency), 0);\par
+{\bkmkstart AAAAAAADVJ}{\bkmkend AAAAAAADVJ}
+00143     EXPECT_EQ(handleLargeCounter(frequency, frequency), 1000000000);\par
+{\bkmkstart AAAAAAADVO}{\bkmkend AAAAAAADVO}
+00144 \}\par
+{\bkmkstart AAAAAAADVP}{\bkmkend AAAAAAADVP}
+00145 \par
+{\bkmkstart AAAAAAADVR}{\bkmkend AAAAAAADVR}
+00150 TEST_F(OverflowProtectionTest, TestFrequencySpecificCalculations) \{\par
+{\bkmkstart AAAAAAADVS}{\bkmkend AAAAAAADVS}
+00151     {\cf20 // Test for 10MHz frequency}\par
+{\bkmkstart AAAAAAADVT}{\bkmkend AAAAAAADVT}
+00152     {\cf17 auto} calculateFor10MHz = []({\cf18 long} {\cf18 long} counter) -> {\cf18 long} {\cf18 long} \{\par
 {\bkmkstart AAAAAAADVU}{\bkmkend AAAAAAADVU}
-00264     \par
+00153         {\cf17 const} {\cf18 long} {\cf18 long} frequency = 10000000; {\cf20 // 10MHz}\par
 {\bkmkstart AAAAAAADVV}{\bkmkend AAAAAAADVV}
-00265     {\cf20 // Test with zero frequency (should handle gracefully)}\par
+00154         {\cf17 const} {\cf18 long} {\cf18 long} periodDen = 1000000000; {\cf20 // nanoseconds}\par
+{\bkmkstart AAAAAAADVW}{\bkmkend AAAAAAADVW}
+00155         \par
 {\bkmkstart AAAAAAADVX}{\bkmkend AAAAAAADVX}
-00266     EXPECT_FALSE(testEdgeCase(1000, 0, 1000000000));\par
+00156         {\cf20 // Safe calculation}\par
+{\bkmkstart AAAAAAADVY}{\bkmkend AAAAAAADVY}
+00157         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
 {\bkmkstart AAAAAAADVZ}{\bkmkend AAAAAAADVZ}
-00267 \}\par
+00158         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
 {\bkmkstart AAAAAAADWA}{\bkmkend AAAAAAADWA}
-00268 \par
+00159         \par
 {\bkmkstart AAAAAAADWB}{\bkmkend AAAAAAADWB}
+00160         {\cf19 return} whole + part;\par
+{\bkmkstart AAAAAAADWC}{\bkmkend AAAAAAADWC}
+00161     \};\par
+{\bkmkstart AAAAAAADWD}{\bkmkend AAAAAAADWD}
+00162     \par
+{\bkmkstart AAAAAAADWE}{\bkmkend AAAAAAADWE}
+00163     {\cf20 // Test for 24MHz frequency}\par
+{\bkmkstart AAAAAAADWF}{\bkmkend AAAAAAADWF}
+00164     {\cf17 auto} calculateFor24MHz = []({\cf18 long} {\cf18 long} counter) -> {\cf18 long} {\cf18 long} \{\par
+{\bkmkstart AAAAAAADWG}{\bkmkend AAAAAAADWG}
+00165         {\cf17 const} {\cf18 long} {\cf18 long} frequency = 24000000; {\cf20 // 24MHz}\par
+{\bkmkstart AAAAAAADWH}{\bkmkend AAAAAAADWH}
+00166         {\cf17 const} {\cf18 long} {\cf18 long} periodDen = 1000000000; {\cf20 // nanoseconds}\par
+{\bkmkstart AAAAAAADWI}{\bkmkend AAAAAAADWI}
+00167         \par
+{\bkmkstart AAAAAAADWJ}{\bkmkend AAAAAAADWJ}
+00168         {\cf20 // Safe calculation}\par
+{\bkmkstart AAAAAAADWK}{\bkmkend AAAAAAADWK}
+00169         {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
+{\bkmkstart AAAAAAADWL}{\bkmkend AAAAAAADWL}
+00170         {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
+{\bkmkstart AAAAAAADWM}{\bkmkend AAAAAAADWM}
+00171         \par
+{\bkmkstart AAAAAAADWN}{\bkmkend AAAAAAADWN}
+00172         {\cf19 return} whole + part;\par
+{\bkmkstart AAAAAAADWO}{\bkmkend AAAAAAADWO}
+00173     \};\par
+{\bkmkstart AAAAAAADWP}{\bkmkend AAAAAAADWP}
+00174     \par
+{\bkmkstart AAAAAAADWQ}{\bkmkend AAAAAAADWQ}
+00175     {\cf20 // Test calculations}\par
+{\bkmkstart AAAAAAADWR}{\bkmkend AAAAAAADWR}
+00176     {\cf17 const} {\cf18 long} {\cf18 long} testCounter = 1000000;\par
+{\bkmkstart AAAAAAADWS}{\bkmkend AAAAAAADWS}
+00177     \par
+{\bkmkstart AAAAAAADWT}{\bkmkend AAAAAAADWT}
+00178     {\cf18 long} {\cf18 long} result10MHz = calculateFor10MHz(testCounter);\par
+{\bkmkstart AAAAAAADWU}{\bkmkend AAAAAAADWU}
+00179     {\cf18 long} {\cf18 long} result24MHz = calculateFor24MHz(testCounter);\par
+{\bkmkstart AAAAAAADWV}{\bkmkend AAAAAAADWV}
+00180     \par
+{\bkmkstart AAAAAAADWW}{\bkmkend AAAAAAADWW}
+00181     EXPECT_GT(result10MHz, 0);\par
+{\bkmkstart AAAAAAADWX}{\bkmkend AAAAAAADWX}
+00182     EXPECT_GT(result24MHz, 0);\par
+{\bkmkstart AAAAAAADWY}{\bkmkend AAAAAAADWY}
+00183     EXPECT_NE(result10MHz, result24MHz); {\cf20 // Should be different}\par
+{\bkmkstart AAAAAAADWZ}{\bkmkend AAAAAAADWZ}
+00184 \}\par
+{\bkmkstart AAAAAAADXA}{\bkmkend AAAAAAADXA}
+00185 \par
+{\bkmkstart AAAAAAADXB}{\bkmkend AAAAAAADXB}
+00190 TEST_F(OverflowProtectionTest, TestOverflowPreventionAlgorithm) \{\par
+{\bkmkstart AAAAAAADXC}{\bkmkend AAAAAAADXC}
+00191     {\cf20 // Complete overflow prevention algorithm}\par
+{\bkmkstart AAAAAAADXD}{\bkmkend AAAAAAADXD}
+00192     {\cf17 auto} overflowSafeCalculation = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency, {\cf18 long} {\cf18 long} periodDen) -> {\cf18 long} {\cf18 long} \{\par
+{\bkmkstart AAAAAAADXE}{\bkmkend AAAAAAADXE}
+00193         {\cf20 // Check if direct multiplication would overflow}\par
+{\bkmkstart AAAAAAADXF}{\bkmkend AAAAAAADXF}
+00194         {\cf19 if} (counter > 0 && periodDen > 0) \{\par
+{\bkmkstart AAAAAAADXG}{\bkmkend AAAAAAADXG}
+00195             {\cf19 if} (counter > std::numeric_limits<long long>::max() / periodDen) \{\par
+{\bkmkstart AAAAAAADXH}{\bkmkend AAAAAAADXH}
+00196                 {\cf20 // Use safe algorithm}\par
+{\bkmkstart AAAAAAADXI}{\bkmkend AAAAAAADXI}
+00197                 {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
+{\bkmkstart AAAAAAADXJ}{\bkmkend AAAAAAADXJ}
+00198                 {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
+{\bkmkstart AAAAAAADXK}{\bkmkend AAAAAAADXK}
+00199                 \par
+{\bkmkstart AAAAAAADXL}{\bkmkend AAAAAAADXL}
+00200                 {\cf20 // Check if result would overflow}\par
+{\bkmkstart AAAAAAADXM}{\bkmkend AAAAAAADXM}
+00201                 {\cf19 if} (whole > std::numeric_limits<long long>::max() - part) \{\par
+{\bkmkstart AAAAAAADXN}{\bkmkend AAAAAAADXN}
+00202                     {\cf19 throw} std::overflow_error({\cf22 "Calculation would overflow even with safe algorithm"});\par
+{\bkmkstart AAAAAAADXO}{\bkmkend AAAAAAADXO}
+00203                 \}\par
+{\bkmkstart AAAAAAADXP}{\bkmkend AAAAAAADXP}
+00204                 \par
+{\bkmkstart AAAAAAADXQ}{\bkmkend AAAAAAADXQ}
+00205                 {\cf19 return} whole + part;\par
+{\bkmkstart AAAAAAADXR}{\bkmkend AAAAAAADXR}
+00206             \}\par
+{\bkmkstart AAAAAAADXS}{\bkmkend AAAAAAADXS}
+00207         \}\par
+{\bkmkstart AAAAAAADXT}{\bkmkend AAAAAAADXT}
+00208         \par
+{\bkmkstart AAAAAAADXU}{\bkmkend AAAAAAADXU}
+00209         {\cf20 // Safe to use direct multiplication}\par
+{\bkmkstart AAAAAAADXV}{\bkmkend AAAAAAADXV}
+00210         {\cf19 return} (counter * periodDen) / frequency;\par
+{\bkmkstart AAAAAAADXW}{\bkmkend AAAAAAADXW}
+00211     \};\par
+{\bkmkstart AAAAAAADXX}{\bkmkend AAAAAAADXX}
+00212     \par
+{\bkmkstart AAAAAAADXY}{\bkmkend AAAAAAADXY}
+00213     {\cf20 // Test with various values - only test cases that should succeed}\par
+{\bkmkstart AAAAAAADXZ}{\bkmkend AAAAAAADXZ}
+00214     {\cf17 struct }TestCase \{\par
+{\bkmkstart AAAAAAADYA}{\bkmkend AAAAAAADYA}
+00215         {\cf18 long} {\cf18 long} counter;\par
+{\bkmkstart AAAAAAADYB}{\bkmkend AAAAAAADYB}
+00216         {\cf18 long} {\cf18 long} frequency;\par
+{\bkmkstart AAAAAAADYC}{\bkmkend AAAAAAADYC}
+00217         {\cf18 long} {\cf18 long} periodDen;\par
+{\bkmkstart AAAAAAADYD}{\bkmkend AAAAAAADYD}
+00218     \};\par
+{\bkmkstart AAAAAAADYE}{\bkmkend AAAAAAADYE}
+00219     \par
+{\bkmkstart AAAAAAADYF}{\bkmkend AAAAAAADYF}
+00220     std::vector<TestCase> testCases = \{\par
+{\bkmkstart AAAAAAADYG}{\bkmkend AAAAAAADYG}
+00221         \{1000, 1000000, 1000000000\},\par
+{\bkmkstart AAAAAAADYH}{\bkmkend AAAAAAADYH}
+00222         \{0, 1000000, 1000000000\},\par
+{\bkmkstart AAAAAAADYI}{\bkmkend AAAAAAADYI}
+00223         \{1000000, 1000000, 1000000000\},\par
+{\bkmkstart AAAAAAADYJ}{\bkmkend AAAAAAADYJ}
+00224         \{std::numeric_limits<long long>::max() / 16, 1000000, 1000000000\} {\cf20 // Use even smaller value}\par
+{\bkmkstart AAAAAAADYK}{\bkmkend AAAAAAADYK}
+00225     \};\par
+{\bkmkstart AAAAAAADYL}{\bkmkend AAAAAAADYL}
+00226     \par
+{\bkmkstart AAAAAAADYM}{\bkmkend AAAAAAADYM}
+00227     {\cf19 for} ({\cf17 const} {\cf17 auto}& testCase : testCases) \{\par
+{\bkmkstart AAAAAAADYN}{\bkmkend AAAAAAADYN}
+00228         EXPECT_NO_THROW(\{\par
+{\bkmkstart AAAAAAADYO}{\bkmkend AAAAAAADYO}
+00229             {\cf18 long} {\cf18 long} result = overflowSafeCalculation(testCase.counter, testCase.frequency, testCase.periodDen);\par
+{\bkmkstart AAAAAAADYP}{\bkmkend AAAAAAADYP}
+00230             EXPECT_GE(result, 0);\par
+{\bkmkstart AAAAAAADYQ}{\bkmkend AAAAAAADYQ}
+00231         \});\par
+{\bkmkstart AAAAAAADYR}{\bkmkend AAAAAAADYR}
+00232     \}\par
+{\bkmkstart AAAAAAADYS}{\bkmkend AAAAAAADYS}
+00233 \}\par
+{\bkmkstart AAAAAAADYT}{\bkmkend AAAAAAADYT}
+00234 \par
+{\bkmkstart AAAAAAADYU}{\bkmkend AAAAAAADYU}
+00239 TEST_F(OverflowProtectionTest, TestEdgeCases) \{\par
+{\bkmkstart AAAAAAADYV}{\bkmkend AAAAAAADYV}
+00240     {\cf20 // Test edge cases}\par
+{\bkmkstart AAAAAAADYW}{\bkmkend AAAAAAADYW}
+00241     {\cf17 auto} testEdgeCase = []({\cf18 long} {\cf18 long} counter, {\cf18 long} {\cf18 long} frequency, {\cf18 long} {\cf18 long} periodDen) -> {\cf18 bool} \{\par
+{\bkmkstart AAAAAAADYX}{\bkmkend AAAAAAADYX}
+00242         {\cf19 try} \{\par
+{\bkmkstart AAAAAAADYY}{\bkmkend AAAAAAADYY}
+00243             {\cf20 // Safe calculation}\par
+{\bkmkstart AAAAAAADYZ}{\bkmkend AAAAAAADYZ}
+00244             {\cf17 const} {\cf18 long} {\cf18 long} whole = (counter / frequency) * periodDen;\par
+{\bkmkstart AAAAAAADZA}{\bkmkend AAAAAAADZA}
+00245             {\cf17 const} {\cf18 long} {\cf18 long} part = (counter % frequency) * periodDen / frequency;\par
+{\bkmkstart AAAAAAADZB}{\bkmkend AAAAAAADZB}
+00246             \par
+{\bkmkstart AAAAAAADZC}{\bkmkend AAAAAAADZC}
+00247             {\cf20 // Check for overflow}\par
+{\bkmkstart AAAAAAADZD}{\bkmkend AAAAAAADZD}
+00248             {\cf19 if} (whole > std::numeric_limits<long long>::max() - part) \{\par
+{\bkmkstart AAAAAAADZE}{\bkmkend AAAAAAADZE}
+00249                 {\cf19 return} {\cf17 false};\par
+{\bkmkstart AAAAAAADZF}{\bkmkend AAAAAAADZF}
+00250             \}\par
+{\bkmkstart AAAAAAADZG}{\bkmkend AAAAAAADZG}
+00251             \par
+{\bkmkstart AAAAAAADZH}{\bkmkend AAAAAAADZH}
+00252             {\cf18 long} {\cf18 long} result = whole + part;\par
+{\bkmkstart AAAAAAADZI}{\bkmkend AAAAAAADZI}
+00253             {\cf19 return} result >= 0;\par
+{\bkmkstart AAAAAAADZJ}{\bkmkend AAAAAAADZJ}
+00254         \} {\cf19 catch} (...) \{\par
+{\bkmkstart AAAAAAADZK}{\bkmkend AAAAAAADZK}
+00255             {\cf19 return} {\cf17 false};\par
+{\bkmkstart AAAAAAADZL}{\bkmkend AAAAAAADZL}
+00256         \}\par
+{\bkmkstart AAAAAAADZM}{\bkmkend AAAAAAADZM}
+00257     \};\par
+{\bkmkstart AAAAAAADZN}{\bkmkend AAAAAAADZN}
+00258     \par
+{\bkmkstart AAAAAAADZO}{\bkmkend AAAAAAADZO}
+00259     {\cf20 // Test various edge cases}\par
+{\bkmkstart AAAAAAADZP}{\bkmkend AAAAAAADZP}
+00260     EXPECT_TRUE(testEdgeCase(0, 1, 1));\par
+{\bkmkstart AAAAAAADZQ}{\bkmkend AAAAAAADZQ}
+00261     EXPECT_TRUE(testEdgeCase(1, 1, 1));\par
+{\bkmkstart AAAAAAADZR}{\bkmkend AAAAAAADZR}
+00262     EXPECT_TRUE(testEdgeCase(1000000, 1000000, 1000000000));\par
+{\bkmkstart AAAAAAADZS}{\bkmkend AAAAAAADZS}
+00263     EXPECT_TRUE(testEdgeCase(std::numeric_limits<long long>::max() / 16, 1000000, 1000000000)); {\cf20 // Use even smaller value}\par
+{\bkmkstart AAAAAAADZT}{\bkmkend AAAAAAADZT}
+00264     \par
+{\bkmkstart AAAAAAADZU}{\bkmkend AAAAAAADZU}
+00265     {\cf20 // Test with zero frequency (should handle gracefully)}\par
+{\bkmkstart AAAAAAADZV}{\bkmkend AAAAAAADZV}
+00266     EXPECT_FALSE(testEdgeCase(1000, 0, 1000000000));\par
+{\bkmkstart AAAAAAADZW}{\bkmkend AAAAAAADZW}
+00267 \}\par
+{\bkmkstart AAAAAAADZX}{\bkmkend AAAAAAADZX}
+00268 \par
+{\bkmkstart AAAAAAADZY}{\bkmkend AAAAAAADZY}
 00269 \} {\cf20 // namespace}\par
 }
 }

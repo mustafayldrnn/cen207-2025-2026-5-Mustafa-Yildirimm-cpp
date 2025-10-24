@@ -151,56 +151,147 @@
 hash_table.h\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/hash_table.h}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/hash_table.h}
-{\bkmkstart AAAAAAAAAD}
-{\bkmkend AAAAAAAAAD}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+\par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
-2 {\cf21 #include <vector>}\par
-3 {\cf21 #include <optional>}\par
-4 {\cf21 #include <functional>}\par
-5 {\cf21 #include <stdexcept>}\par
-6 \par
-7 {\cf17 namespace }ds \{\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
 8 \par
-9 {\cf17 enum class} SlotState \{ Empty, Occupied, Deleted \};\par
-10 \par
-11 {\cf17 template} <{\cf17 typename} K, {\cf17 typename} V>\par
-12 {\cf17 class }HashTable \{\par
-13     {\cf17 struct }Entry \{ K key; V value; SlotState state = SlotState::Empty; \};\par
-14     std::vector<Entry> table_;\par
-15     std::size_t count_ = 0;\par
-16     {\cf18 float} max_load_ = 0.7f;\par
-17     std::hash<K> hasher_\{\};\par
-18 \par
-19     std::size_t idx({\cf17 const} K& k){\cf17  const }\{ {\cf19 return} hasher_(k) & (table_.size() - 1); \}\par
-20     {\cf18 void} rehash(std::size_t new_cap)\{\par
-21         std::vector<Entry> old = std::move(table_);\par
-22         table_.assign(new_cap, Entry\{\}); count_ = 0;\par
-23         {\cf19 for} ({\cf17 auto}& e : old)\{ {\cf19 if} (e.state == SlotState::Occupied) insert(e.key, e.value); \}\par
-24     \}\par
-25     {\cf18 void} ensure()\{ {\cf19 if} (count_ + 1 > {\cf17 static_cast<}std::size_t{\cf17 >}(max_load_ * table_.size())) rehash(table_.size()<<1); \}\par
-26 \par
-27 {\cf17 public}:\par
-28     {\cf17 explicit} HashTable(std::size_t cap = 16)\{ std::size_t c=1; {\cf19 while}(c<cap) c<<=1; table_.assign(c, Entry\{\}); \}\par
-29     std::size_t size(){\cf17  const }\{ {\cf19 return} count_; \}\par
-30     {\cf18 bool} empty(){\cf17  const }\{ {\cf19 return} count_==0; \}\par
-31 \par
-32     {\cf18 bool} insert({\cf17 const} K& k, {\cf17 const} V& v)\{ ensure(); std::size_t i = idx(k); std::size_t first_del = table_.size();\par
-33         {\cf19 while}({\cf17 true})\{ {\cf17 auto}& e = table_[i]; {\cf19 if} (e.state == SlotState::Empty)\{ {\cf19 if} (first_del != table_.size()) \{ table_[first_del] = \{k,v,SlotState::Occupied\}; \} {\cf19 else} \{ e = \{k,v,SlotState::Occupied\}; \} ++count_; {\cf19 return} {\cf17 true}; \}\par
-34             {\cf19 if} (e.state == SlotState::Deleted)\{ {\cf19 if} (first_del == table_.size()) first_del = i; \}\par
-35             {\cf19 else} {\cf19 if} (e.key == k)\{ e.value = v; {\cf19 return} {\cf17 false}; \}\par
-36             i = (i + 1) & (table_.size()-1);\par
-37         \}\par
-38     \}\par
-39 \par
-40     V* find({\cf17 const} K& k)\{ std::size_t i = idx(k); {\cf19 while}({\cf17 true})\{ {\cf17 auto}& e = table_[i]; {\cf19 if} (e.state == SlotState::Empty) {\cf19 return} {\cf17 nullptr}; {\cf19 if} (e.state == SlotState::Occupied && e.key == k) {\cf19 return} &e.value; i = (i + 1) & (table_.size()-1);\} \}\par
-41     {\cf17 const} V* find({\cf17 const} K& k){\cf17  const }\{ {\cf19 return} {\cf17 const_cast<}HashTable*{\cf17 >}({\cf17 this})->find(k); \}\par
-42     {\cf18 bool} contains({\cf17 const} K& k){\cf17  const }\{ {\cf19 return} find(k) != {\cf17 nullptr}; \}\par
-43     {\cf18 bool} erase({\cf17 const} K& k)\{ std::size_t i = idx(k); {\cf19 while}({\cf17 true})\{ {\cf17 auto}& e = table_[i]; {\cf19 if} (e.state == SlotState::Empty) {\cf19 return} {\cf17 false}; {\cf19 if} (e.state == SlotState::Occupied && e.key == k)\{ e.state = SlotState::Deleted; --count_; {\cf19 return} {\cf17 true}; \} i = (i + 1) & (table_.size()-1);\} \}\par
-44 \};\par
-45 \par
-46 \} {\cf20 // namespace ds}\par
-47 \par
+9 {\cf21 #pragma once}\par
+10 {\cf21 #include <vector>}\par
+11 {\cf21 #include <optional>}\par
+12 {\cf21 #include <functional>}\par
+13 {\cf21 #include <stdexcept>}\par
+14 \par
+15 {\cf17 namespace }ds \{\par
+16 \par
+20 {\cf17 enum class} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 SlotState}}}
+ \{ \par
+21     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Empty}}}
+,      \par
+22     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 Occupied}}}
+,   \par
+23     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 Deleted}}}
+     \par
+24 \};\par
+25 \par
+34 {\cf17 template} <{\cf17 typename} K, {\cf17 typename} V>\par
+35 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 HashTable}}}
+ \{\par
+39     {\cf17 struct }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 Entry}}}
+ \{ \par
+40         K {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 key}}}
+;                          \par
+41         V {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAQ" }{}}{\fldrslt {\cs37\ul\cf2 value}}}
+;                        \par
+42         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 SlotState}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAS" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+ = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 SlotState::Empty}}}
+;  \par
+43     \};\par
+44     \par
+45     std::vector<Entry> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+;          \par
+46     std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 count_}}}
+ = 0;             \par
+47     {\cf18 float} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 max_load_}}}
+ = 0.7f;             \par
+48     std::hash<K> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 hasher_}}}
+\{\};             \par
+49 \par
+55     std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 idx}}}
+({\cf17 const} K& k){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 hasher_}}}
+(k) & ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+.size() - 1); \}\par
+56     \par
+61     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABE" }{}}{\fldrslt {\cs37\ul\cf2 rehash}}}
+(std::size_t new_cap)\{\par
+62         std::vector<Entry> old = std::move({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+);\par
+63         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+.assign(new_cap, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 Entry}}}
+\{\}); {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 count_}}}
+ = 0;\par
+64         {\cf19 for} ({\cf17 auto}& e : old)\{ {\cf19 if} (e.state == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 SlotState::Occupied}}}
+) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 insert}}}
+(e.key, e.value); \}\par
+65     \}\par
+66     \par
+70     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABN" }{}}{\fldrslt {\cs37\ul\cf2 ensure}}}
+()\{ {\cf19 if} ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 count_}}}
+ + 1 > {\cf17 static_cast<}std::size_t{\cf17 >}({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 max_load_}}}
+ * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+.size())) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABE" }{}}{\fldrslt {\cs37\ul\cf2 rehash}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+.size()<<1); \}\par
+71 \par
+72 {\cf17 public}:\par
+79     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 HashTable}}}
+(std::size_t cap = 16)\{ std::size_t c=1; {\cf19 while}(c<cap) c<<=1; {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+.assign(c, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 Entry}}}
+\{\}); \}\par
+80     \par
+85     std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
+(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 count_}}}
+; \}\par
+86     \par
+91     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABV" }{}}{\fldrslt {\cs37\ul\cf2 empty}}}
+(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 count_}}}
+==0; \}\par
+92 \par
+99     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 insert}}}
+({\cf17 const} K& k, {\cf17 const} V& v)\{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABN" }{}}{\fldrslt {\cs37\ul\cf2 ensure}}}
+(); std::size_t i = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 idx}}}
+(k); std::size_t first_del = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+.size();\par
+100         {\cf19 while}({\cf17 true})\{ {\cf17 auto}& e = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+[i]; {\cf19 if} (e.state == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 SlotState::Empty}}}
+)\{ {\cf19 if} (first_del != {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+.size()) \{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+[first_del] = \{k,v,{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 SlotState::Occupied}}}
+\}; \} {\cf19 else} \{ e = \{k,v,{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 SlotState::Occupied}}}
+\}; \} ++{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 count_}}}
+; {\cf19 return} {\cf17 true}; \}\par
+101             {\cf19 if} (e.state == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 SlotState::Deleted}}}
+)\{ {\cf19 if} (first_del == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+.size()) first_del = i; \}\par
+102             {\cf19 else} {\cf19 if} (e.key == k)\{ e.value = v; {\cf19 return} {\cf17 false}; \}\par
+103             i = (i + 1) & ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+.size()-1);\par
+104         \}\par
+105     \}\par
+106 \par
+112     V* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADB" }{}}{\fldrslt {\cs37\ul\cf2 find}}}
+({\cf17 const} K& k)\{ std::size_t i = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 idx}}}
+(k); {\cf19 while}({\cf17 true})\{ {\cf17 auto}& e = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+[i]; {\cf19 if} (e.state == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 SlotState::Empty}}}
+) {\cf19 return} {\cf17 nullptr}; {\cf19 if} (e.state == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 SlotState::Occupied}}}
+ && e.key == k) {\cf19 return} &e.value; i = (i + 1) & ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+.size()-1);\} \}\par
+113     \par
+119     {\cf17 const} V* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 find}}}
+({\cf17 const} K& k){\cf17  const }\{ {\cf19 return} {\cf17 const_cast<}{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 HashTable}}}
+*{\cf17 >}({\cf17 this})->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 find}}}
+(k); \}\par
+120     \par
+126     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 contains}}}
+({\cf17 const} K& k){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADB" }{}}{\fldrslt {\cs37\ul\cf2 find}}}
+(k) != {\cf17 nullptr}; \}\par
+127     \par
+133     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 erase}}}
+({\cf17 const} K& k)\{ std::size_t i = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 idx}}}
+(k); {\cf19 while}({\cf17 true})\{ {\cf17 auto}& e = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+[i]; {\cf19 if} (e.state == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 SlotState::Empty}}}
+) {\cf19 return} {\cf17 false}; {\cf19 if} (e.state == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 SlotState::Occupied}}}
+ && e.key == k)\{ e.state = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 SlotState::Deleted}}}
+; --{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 count_}}}
+; {\cf19 return} {\cf17 true}; \} i = (i + 1) & ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 table_}}}
+.size()-1);\} \}\par
+134 \};\par
+135 \par
+136 \} {\cf20 // namespace ds}\par
+137 \par
 }
 }

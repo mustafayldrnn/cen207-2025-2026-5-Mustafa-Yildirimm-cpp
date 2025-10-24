@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
   <compounddef id="classds_1_1_sparse_matrix" kind="class" language="C++" prot="public">
     <compoundname>ds::SparseMatrix</compoundname>
+    <includes refid="sparse__matrix_8h" local="no">sparse_matrix.h</includes>
     <templateparamlist>
       <param>
         <type>typename T</type>
@@ -9,18 +10,19 @@
     </templateparamlist>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classds_1_1_sparse_matrix_1a4d4f238625b4c2ef2808c8c10616fee2" prot="private" static="no" mutable="no">
-        <type>HashTable&lt; long long, T &gt;</type>
+        <type><ref refid="classds_1_1_hash_table" kindref="compound">HashTable</ref>&lt; long long, T &gt;</type>
         <definition>HashTable&lt;long long, T&gt; ds::SparseMatrix&lt; T &gt;::data_</definition>
         <argsstring></argsstring>
         <name>data_</name>
         <qualifiedname>ds::SparseMatrix::data_</qualifiedname>
         <briefdescription>
+<para>Koordinat-eleman çiftlerini tutan hash tablosu. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="11" column="15" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="11" bodyend="-1"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="34" column="15" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classds_1_1_sparse_matrix_1a9491432e44a4e92cc7ef89f097eb78aa" prot="private" static="no" mutable="no">
         <type>std::size_t</type>
@@ -29,12 +31,13 @@
         <name>rows_</name>
         <qualifiedname>ds::SparseMatrix::rows_</qualifiedname>
         <briefdescription>
+<para>Matris satır sayısı </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="12" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="12" bodyend="-1"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="35" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classds_1_1_sparse_matrix_1a5521d53f3422f84d573d0aaaef5a63f4" prot="private" static="no" mutable="no">
         <type>std::size_t</type>
@@ -43,12 +46,13 @@
         <name>cols_</name>
         <qualifiedname>ds::SparseMatrix::cols_</qualifiedname>
         <briefdescription>
+<para>Matris sütun sayısı </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="12" column="23" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="12" bodyend="-1"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="36" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="36" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -67,12 +71,33 @@
           <declname>c</declname>
         </param>
         <briefdescription>
+<para>Satır ve sütun indekslerini 64-bit key&apos;e dönüştürür. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Satır indeksi </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sütun indeksi </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>64-bit composite key </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="10" column="29" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="10" bodyend="10"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="30" column="29" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="30" bodyend="32"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -91,12 +116,31 @@
           <declname>cols</declname>
         </param>
         <briefdescription>
+<para>Seyrek matris oluşturur. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Satır sayısı </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sütun sayısı </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="14" column="5" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="14" bodyend="14"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="44" column="5" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="44" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_sparse_matrix_1aebcc0633214ed572ebdc39ca47efde47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -117,12 +161,39 @@
           <declname>v</declname>
         </param>
         <briefdescription>
+<para>Belirtilen koordinata eleman atar. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Satır indeksi </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sütun indeksi </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Atanacak değer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="15" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="15" bodyend="15"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="52" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="52" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_sparse_matrix_1ae238cab6800d072fc4c76e8b0578a8e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const T *</type>
@@ -139,12 +210,33 @@
           <declname>c</declname>
         </param>
         <briefdescription>
+<para>Belirtilen koordinattaki elemanı okur. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Satır indeksi </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sütun indeksi </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Elemanın pointer&apos;ı, yoksa nullptr </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="16" column="13" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="16" bodyend="16"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="62" column="13" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="62" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_sparse_matrix_1a36f4a3217c358111b4526fefef641585" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t</type>
@@ -153,12 +245,16 @@
         <name>nonZeroCount</name>
         <qualifiedname>ds::SparseMatrix::nonZeroCount</qualifiedname>
         <briefdescription>
+<para>Sıfır olmayan eleman sayısını döndürür. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Sıfır olmayan eleman sayısı </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="17" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="17" bodyend="17"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="70" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="70" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_sparse_matrix_1a626c4e3435266b08cc44477570f73021" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t</type>
@@ -167,12 +263,16 @@
         <name>rows</name>
         <qualifiedname>ds::SparseMatrix::rows</qualifiedname>
         <briefdescription>
+<para>Matris satır sayısını döndürür. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Satır sayısı </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="18" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="18" bodyend="18"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="78" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="78" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="classds_1_1_sparse_matrix_1a70e925fb8bb0416fcccb4cfb66aaf52d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t</type>
@@ -181,24 +281,47 @@
         <name>cols</name>
         <qualifiedname>ds::SparseMatrix::cols</qualifiedname>
         <briefdescription>
+<para>Matris sütun sayısını döndürür. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Sütun sayısı </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="19" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="19" bodyend="19"/>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="86" column="17" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="86" bodyend="88"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Hash tablosu tabanlı seyrek matris. </para>
     </briefdescription>
     <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Eleman türü</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Bu sınıf, hash tablosu kullanarak seyrek matris implementasyonu sağlar. Koordinatları 64-bit composite key olarak saklar (r&lt;&lt;32 | c). </para>
     </detaileddescription>
     <collaborationgraph>
+      <node id="2">
+        <label>ds::HashTable&lt; long long, T &gt;</label>
+        <link refid="classds_1_1_hash_table"/>
+      </node>
       <node id="1">
         <label>ds::SparseMatrix&lt; T &gt;</label>
+        <link refid="classds_1_1_sparse_matrix"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-data_</edgelabel>
+        </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="8" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="8" bodyend="20"/>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" line="23" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/sparse_matrix.h" bodystart="23" bodyend="89"/>
     <listofallmembers>
       <member refid="classds_1_1_sparse_matrix_1a70e925fb8bb0416fcccb4cfb66aaf52d" prot="public" virt="non-virtual"><scope>ds::SparseMatrix</scope><name>cols</name></member>
       <member refid="classds_1_1_sparse_matrix_1a5521d53f3422f84d573d0aaaef5a63f4" prot="private" virt="non-virtual"><scope>ds::SparseMatrix</scope><name>cols_</name></member>

@@ -1,15 +1,21 @@
 var searchData=
 [
-  ['rbegin_0',['rbegin',['../classds_1_1_doubly_linked_list.html#aaad687c167f3f8a8b3264d183bab8064',1,'ds::DoublyLinkedList']]],
-  ['readme_2emd_1',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['reference_2',['reference',['../structds_1_1_doubly_linked_list_1_1iterator.html#a8fa14f9d1a85839f9e2a4a6f24086a65',1,'ds::DoublyLinkedList::iterator']]],
-  ['rehash_3',['rehash',['../classds_1_1_hash_table.html#a2b378cb65c687e96a785f3bd311197ea',1,'ds::HashTable']]],
-  ['remove_5ffirst_4',['remove_first',['../classds_1_1_x_o_r_linked_list.html#a0fc97e0767d2528236dcdf7e60d42de3',1,'ds::XORLinkedList']]],
-  ['resize_5',['resize',['../classds_1_1_graph.html#ad0c233e6f3b8de9684a1cca850b85df5',1,'ds::Graph']]],
-  ['return_6',['Return',['../namespacetranslator.html#ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce',1,'translator']]],
-  ['returnstmt_7',['ReturnStmt',['../structtranslator_1_1_return_stmt.html',1,'translator']]],
-  ['rhs_8',['rhs',['../structtranslator_1_1_binary_expr.html#a899fc189d22f70035034243de177b9ed',1,'translator::BinaryExpr']]],
-  ['rows_9',['rows',['../classds_1_1_sparse_matrix.html#a626c4e3435266b08cc44477570f73021',1,'ds::SparseMatrix']]],
-  ['rows_5f_10',['rows_',['../classds_1_1_sparse_matrix.html#a9491432e44a4e92cc7ef89f097eb78aa',1,'ds::SparseMatrix']]],
-  ['rparen_11',['RParen',['../namespacetranslator.html#a0eb119efce2d20d6019adb661cd4c480ad011e3feb19babda65e8951ff7189c0c',1,'translator']]]
+  ['randomsalt_0',['randomSalt',['../_persistence_8h.html#a2407bc3ad66791cf41f33f257669cd08',1,'Coruh::LanguageTranslator::Persistence']]],
+  ['rbegin_1',['rbegin',['../classds_1_1_doubly_linked_list.html#aaad687c167f3f8a8b3264d183bab8064',1,'ds::DoublyLinkedList']]],
+  ['readhistory_2',['readHistory',['../_persistence_8h.html#a017a206629f11bff566a21395f6ffc2f',1,'Coruh::LanguageTranslator::Persistence']]],
+  ['readphrases_3',['readPhrases',['../_persistence_8h.html#a0a69722e1b2cd620213110896361d1b8',1,'Coruh::LanguageTranslator::Persistence']]],
+  ['readpronunciations_4',['readPronunciations',['../_persistence_8h.html#ae87ba97358bd7e21093e8e4be0a551ff',1,'Coruh::LanguageTranslator::Persistence']]],
+  ['readtips_5',['readTips',['../_persistence_8h.html#aa478da1635b6bbd33988d2a866ab0ed5',1,'Coruh::LanguageTranslator::Persistence']]],
+  ['readusers_6',['readUsers',['../_persistence_8h.html#af0968d3b1840504d0d9cd69944b95397',1,'Coruh::LanguageTranslator::Persistence']]],
+  ['registeruser_7',['registerUser',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a1db0ba24cc5bb600bb0492759b56d688',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['rehash_8',['rehash',['../classds_1_1_hash_table.html#a2b378cb65c687e96a785f3bd311197ea',1,'ds::HashTable']]],
+  ['remove_5ffirst_9',['remove_first',['../classds_1_1_x_o_r_linked_list.html#a0fc97e0767d2528236dcdf7e60d42de3',1,'ds::XORLinkedList']]],
+  ['resize_10',['resize',['../classds_1_1_graph.html#ad0c233e6f3b8de9684a1cca850b85df5',1,'ds::Graph']]],
+  ['result_11',['result',['../struct_coruh_1_1_language_translator_1_1_translation_record.html#ad4d237f2747f96c7fca166af8e5917cf',1,'Coruh::LanguageTranslator::TranslationRecord']]],
+  ['return_12',['Return',['../ast_8h.html#ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce',1,'translator']]],
+  ['returnstmt_13',['ReturnStmt',['../structtranslator_1_1_return_stmt.html',1,'translator']]],
+  ['rhs_14',['rhs',['../structtranslator_1_1_binary_expr.html#a899fc189d22f70035034243de177b9ed',1,'translator::BinaryExpr']]],
+  ['rows_15',['rows',['../classds_1_1_sparse_matrix.html#a626c4e3435266b08cc44477570f73021',1,'ds::SparseMatrix']]],
+  ['rows_5f_16',['rows_',['../classds_1_1_sparse_matrix.html#a9491432e44a4e92cc7ef89f097eb78aa',1,'ds::SparseMatrix']]],
+  ['run_17',['run',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a3c58319ebc4b52530f96df35244e6766',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]]
 ];

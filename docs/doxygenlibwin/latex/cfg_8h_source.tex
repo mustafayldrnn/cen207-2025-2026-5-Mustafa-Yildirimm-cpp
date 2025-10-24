@@ -1,61 +1,73 @@
 \doxysection{cfg.\+h}
 \hypertarget{cfg_8h_source}{}\label{cfg_8h_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/cfg.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/cfg.h}}
-
+\mbox{\hyperlink{cfg_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}ds/graph.h"{}}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}translator/ast.h"{}}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }translator\ \{}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{keyword}{struct\ }CFG\ \{}
-\DoxyCodeLine{00009\ \ \ \ \ ds::Graph\ g;}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ label\ -\/>\ index\ mapping\ for\ convenience}}
-\DoxyCodeLine{00011\ \ \ \ \ std::unordered\_map<int,\ int>\ label\_to\_index;}
-\DoxyCodeLine{00012\ \};}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \textcolor{keyword}{inline}\ CFG\ build\_cfg(\textcolor{keyword}{const}\ Program\&\ p)\{}
-\DoxyCodeLine{00015\ \ \ \ \ CFG\ cfg;\ \textcolor{keywordtype}{int}\ n\ =\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(p.stmts.size());\ cfg.g.resize(n);}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i=0;i<n;i++)\{\ cfg.label\_to\_index[p.labels[i]]\ =\ i;\ \}}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{auto}\ next\_index\ =\ [\&](\textcolor{keywordtype}{int}\ i)-\/>\textcolor{keywordtype}{int}\{\ \textcolor{keywordflow}{return}\ (i+1<n)?(i+1):-\/1;\ \};}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i=0;i<n;i++)\{}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\&\ s\ =\ p.stmts[i];}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ ni\ =\ next\_index(i);}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (s-\/>kind())\{}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ StmtKind::Goto:\ \{}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ tgt\ =\ \textcolor{keyword}{static\_cast<}GotoStmt*\textcolor{keyword}{>}(s.get())-\/>target;}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ cfg.label\_to\_index.find(tgt);}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it!=cfg.label\_to\_index.end())\ cfg.g.add\_edge(i,\ it-\/>second);}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ StmtKind::IfGoto:\ \{}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ tgt\ =\ \textcolor{keyword}{static\_cast<}IfGotoStmt*\textcolor{keyword}{>}(s.get())-\/>target;}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ cfg.label\_to\_index.find(tgt);}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it!=cfg.label\_to\_index.end())\ cfg.g.add\_edge(i,\ it-\/>second);}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ni!=-\/1)\ cfg.g.add\_edge(i,\ ni);}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ StmtKind::Gosub:\ \{}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ tgt\ =\ \textcolor{keyword}{static\_cast<}GosubStmt*\textcolor{keyword}{>}(s.get())-\/>target;}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ cfg.label\_to\_index.find(tgt);}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it!=cfg.label\_to\_index.end())\ cfg.g.add\_edge(i,\ it-\/>second);}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ni!=-\/1)\ cfg.g.add\_edge(i,\ ni);}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ StmtKind::Return:\ \{}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ No\ default\ successor}}
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:\ \{}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ni!=-\/1)\ cfg.g.add\_edge(i,\ ni);}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00051\ \ \ \ \ \}}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordflow}{return}\ cfg;}
-\DoxyCodeLine{00053\ \}}
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \}\ \textcolor{comment}{//\ namespace\ translator}}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{graph_8h}{ds/graph.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ast_8h}{translator/ast.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }translator\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_c_f_g}{CFG}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classds_1_1_graph}{ds::Graph}}\ \mbox{\hyperlink{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f}{g}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ std::unordered\_map<int,\ int>\ \mbox{\hyperlink{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291}{label\_to\_index}};\ \ \ \ }
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structtranslator_1_1_c_f_g}{CFG}}\ \mbox{\hyperlink{cfg_8h_afb6980d157f0f87830df2b0f98548fee}{build\_cfg}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structtranslator_1_1_program}{Program}}\&\ p)\{}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{structtranslator_1_1_c_f_g}{CFG}}\ cfg;\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ n\ =\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(p.\mbox{\hyperlink{structtranslator_1_1_program_ae1becdf326699756afe2f60647e47382}{stmts}}.size());\ }
+\DoxyCodeLine{00037\ \ \ \ \ cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f}{g}}.\mbox{\hyperlink{classds_1_1_graph_ad0c233e6f3b8de9684a1cca850b85df5}{resize}}(n);}
+\DoxyCodeLine{00038\ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Etiket→indeks\ eşlemesini\ oluştur}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i=0;i<n;i++)\{\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291}{label\_to\_index}}[p.\mbox{\hyperlink{structtranslator_1_1_program_a7475f175b7b501e7ec7d0a2f16a613c4}{labels}}[i]]\ =\ i;\ }
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ Bir\ sonraki\ indeksi\ hesaplayan\ lambda}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{auto}\ next\_index\ =\ [\&](\textcolor{keywordtype}{int}\ i)-\/>\textcolor{keywordtype}{int}\{\ \textcolor{keywordflow}{return}\ (i+1<n)?(i+1):-\/1;\ \};}
+\DoxyCodeLine{00046\ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ Her\ deyim\ için\ kontrol\ akışını\ analiz\ et}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i=0;i<n;i++)\{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\&\ s\ =\ p.\mbox{\hyperlink{structtranslator_1_1_program_ae1becdf326699756afe2f60647e47382}{stmts}}[i];}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ ni\ =\ next\_index(i);}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (s-\/>kind())\{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3daae8fae3d74fdc80ef40995c3c6ca152e}{StmtKind::Goto}}:\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ tgt\ =\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{structtranslator_1_1_goto_stmt}{GotoStmt}}*\textcolor{keyword}{>}(s.get())-\/>\mbox{\hyperlink{structtranslator_1_1_goto_stmt_a7f09790266e5d62bfc34b0709cab10c6}{target}};}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291}{label\_to\_index}}.find(tgt);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it!=cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291}{label\_to\_index}}.end())\ cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f}{g}}.\mbox{\hyperlink{classds_1_1_graph_a4b3a3bd8e6f96b36937c4ba175820d95}{add\_edge}}(i,\ it-\/>second);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3dabb4ff8fec829fa14d95445a6675e0f8c}{StmtKind::IfGoto}}:\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ tgt\ =\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{structtranslator_1_1_if_goto_stmt}{IfGotoStmt}}*\textcolor{keyword}{>}(s.get())-\/>\mbox{\hyperlink{structtranslator_1_1_if_goto_stmt_af2860bea6273fdf9e63c46627fb1876d}{target}};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291}{label\_to\_index}}.find(tgt);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it!=cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291}{label\_to\_index}}.end())\ cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f}{g}}.\mbox{\hyperlink{classds_1_1_graph_a4b3a3bd8e6f96b36937c4ba175820d95}{add\_edge}}(i,\ it-\/>second);}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ni!=-\/1)\ cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f}{g}}.\mbox{\hyperlink{classds_1_1_graph_a4b3a3bd8e6f96b36937c4ba175820d95}{add\_edge}}(i,\ ni);}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173}{StmtKind::Gosub}}:\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ tgt\ =\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{structtranslator_1_1_gosub_stmt}{GosubStmt}}*\textcolor{keyword}{>}(s.get())-\/>\mbox{\hyperlink{structtranslator_1_1_gosub_stmt_a168c003fcda2ceb2e8c2cd015df7ec85}{target}};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291}{label\_to\_index}}.find(tgt);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it!=cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_a8c3d964ad916e1f10065308e716ff291}{label\_to\_index}}.end())\ cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f}{g}}.\mbox{\hyperlink{classds_1_1_graph_a4b3a3bd8e6f96b36937c4ba175820d95}{add\_edge}}(i,\ it-\/>second);}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ni!=-\/1)\ cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f}{g}}.\mbox{\hyperlink{classds_1_1_graph_a4b3a3bd8e6f96b36937c4ba175820d95}{add\_edge}}(i,\ ni);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{ast_8h_ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce}{StmtKind::Return}}:\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Return\ deyiminde\ varsayılan\ ardıl\ yok}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Diğer\ deyimler\ için\ varsayılan\ ardıl}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ni!=-\/1)\ cfg.\mbox{\hyperlink{structtranslator_1_1_c_f_g_ac5fa55fea40f70bbd878019831610c3f}{g}}.\mbox{\hyperlink{classds_1_1_graph_a4b3a3bd8e6f96b36937c4ba175820d95}{add\_edge}}(i,\ ni);}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{return}\ cfg;}
+\DoxyCodeLine{00085\ \}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \}\ \textcolor{comment}{//\ namespace\ translator}}
 
 \end{DoxyCode}

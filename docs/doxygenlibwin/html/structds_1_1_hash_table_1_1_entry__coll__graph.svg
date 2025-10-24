@@ -6,12 +6,23 @@
 <!-- Title: ds::HashTable&lt; K, V &gt;::Entry Pages: 1 -->
 <svg width="108pt" height="104pt"
  viewBox="0.00 0.00 108.00 104.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 100)">
 <title>ds::HashTable&lt; K, V &gt;::Entry</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Hash tablosundaki her bir girişi temsil eden yapı">
 <polygon fill="#999999" stroke="none" points="99.5,-96 0,-96 0,0 99.5,0 99.5,-96"/>
 <text xml:space="preserve" text-anchor="start" x="4" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">ds::HashTable&lt; K, V</text>
 <text xml:space="preserve" text-anchor="start" x="30.62" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt;::Entry</text>
@@ -30,4 +41,19 @@
 </g>
 </g>
 </g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

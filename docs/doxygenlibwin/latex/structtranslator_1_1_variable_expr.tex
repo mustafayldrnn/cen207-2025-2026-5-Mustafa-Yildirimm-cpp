@@ -2,6 +2,11 @@
 \hypertarget{structtranslator_1_1_variable_expr}{}\label{structtranslator_1_1_variable_expr}\index{translator::VariableExpr@{translator::VariableExpr}}
 
 
+Değişken ifadesi.  
+
+
+
+
 {\ttfamily \#include $<$ast.\+h$>$}
 
 
@@ -26,20 +31,19 @@ Collaboration diagram for translator\+::Variable\+Expr\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structtranslator_1_1_variable_expr_a2f077bd3bb494bd04446225c1e7e3df3}{Variable\+Expr}} (std\+::string n)
-\item 
-\mbox{\hyperlink{namespacetranslator_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} \mbox{\hyperlink{structtranslator_1_1_variable_expr_a0dd6b31c1c5ac1801779da5eb115c95d}{kind}} () const override
-\end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structtranslator_1_1_expr}{translator\+::\+Expr}}}
-\begin{DoxyCompactItemize}
-\item 
-virtual \mbox{\hyperlink{structtranslator_1_1_expr_a3a61309da992f896228d1ba682f79187}{\texorpdfstring{$\sim$}{\string~}\+Expr}} ()=default
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Değişken ifadesi oluşturur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} \mbox{\hyperlink{structtranslator_1_1_variable_expr_a0dd6b31c1c5ac1801779da5eb115c95d}{kind}} () const override
+\begin{DoxyCompactList}\small\item\em İfade türünü döndürür. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{structtranslator_1_1_variable_expr_a5291773d6a8af4ee3e3abfa8e212ab4d}{name}}
-\end{DoxyCompactItemize}
+\Hypertarget{structtranslator_1_1_variable_expr_a5291773d6a8af4ee3e3abfa8e212ab4d}\label{structtranslator_1_1_variable_expr_a5291773d6a8af4ee3e3abfa8e212ab4d} 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Değişken adı \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Değişken ifadesi. 
 
 \label{doc-constructors}
 \Hypertarget{structtranslator_1_1_variable_expr_doc-constructors}
@@ -52,6 +56,15 @@ translator\+::\+Variable\+Expr\+::\+Variable\+Expr (\begin{DoxyParamCaption}\ite
 
 
 
+Değişken ifadesi oluşturur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Değişken adı \\
+\hline
+\end{DoxyParams}
+
+
 \label{doc-func-members}
 \Hypertarget{structtranslator_1_1_variable_expr_doc-func-members}
 \doxysubsection{Member Function Documentation}
@@ -59,22 +72,18 @@ translator\+::\+Variable\+Expr\+::\+Variable\+Expr (\begin{DoxyParamCaption}\ite
 \index{kind@{kind}!translator::VariableExpr@{translator::VariableExpr}}
 \doxysubsubsection{\texorpdfstring{kind()}{kind()}}
 {\footnotesize\ttfamily \label{structtranslator_1_1_variable_expr_a0dd6b31c1c5ac1801779da5eb115c95d} 
-\mbox{\hyperlink{namespacetranslator_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} translator\+::\+Variable\+Expr\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0}{Expr\+Kind}} translator\+::\+Variable\+Expr\+::kind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+İfade türünü döndürür. 
+
+\begin{DoxyReturn}{Returns}
+Variable türü 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{structtranslator_1_1_expr_aced195c2a0830ff10b582d02731c93b1}{translator\+::\+Expr}}.
-
-
-
-\label{doc-variable-members}
-\Hypertarget{structtranslator_1_1_variable_expr_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structtranslator_1_1_variable_expr_a5291773d6a8af4ee3e3abfa8e212ab4d}\index{translator::VariableExpr@{translator::VariableExpr}!name@{name}}
-\index{name@{name}!translator::VariableExpr@{translator::VariableExpr}}
-\doxysubsubsection{\texorpdfstring{name}{name}}
-{\footnotesize\ttfamily \label{structtranslator_1_1_variable_expr_a5291773d6a8af4ee3e3abfa8e212ab4d} 
-std\+::string translator\+::\+Variable\+Expr\+::name}
 
 
 
