@@ -24,3 +24,75 @@ TEST(DoublyLinkedList, EdgeCases){
     auto it = dll.begin(); EXPECT_EQ(*it, 42);
 }
 
+TEST(DoublyLinkedList, SizeAndEmpty){
+    ds::DoublyLinkedList<int> dll;
+    EXPECT_TRUE(dll.empty());
+    EXPECT_EQ(dll.size(), 0u);
+    
+    dll.push_back(10);
+    EXPECT_FALSE(dll.empty());
+    EXPECT_EQ(dll.size(), 1u);
+    
+    dll.push_front(20);
+    EXPECT_EQ(dll.size(), 2u);
+    
+    dll.erase(dll.begin());
+    EXPECT_EQ(dll.size(), 1u);
+    
+    dll.clear();
+    EXPECT_TRUE(dll.empty());
+    EXPECT_EQ(dll.size(), 0u);
+}
+
+TEST(DoublyLinkedList, ReverseTraversal){
+    ds::DoublyLinkedList<int> dll;
+    dll.push_back(1);
+    dll.push_back(2);
+    dll.push_back(3);
+    
+    // Test reverse iteration
+    auto it = dll.rbegin();
+    EXPECT_EQ(*it, 3);
+    --it;
+    EXPECT_EQ(*it, 2);
+    --it;
+    EXPECT_EQ(*it, 1);
+}
+
+TEST(DoublyLinkedList, InsertAfterEnd){
+    ds::DoublyLinkedList<int> dll;
+    dll.push_back(1);
+    dll.push_back(2);
+    
+    // Insert after the last element
+    auto it = dll.begin();
+    ++it; // Now pointing to second element
+    dll.insert_after(it, 3);
+    
+    EXPECT_EQ(dll.size(), 3u);
+    
+    // Verify order
+    int arr[3]; int i = 0;
+    for(auto it2 = dll.begin(); it2 != dll.end(); ++it2) {
+        arr[i++] = *it2;
+    }
+    EXPECT_EQ(arr[0], 1);
+    EXPECT_EQ(arr[1], 2);
+    EXPECT_EQ(arr[2], 3);
+}
+
+TEST(DoublyLinkedList, EraseAllElements){
+    ds::DoublyLinkedList<int> dll;
+    dll.push_back(1);
+    dll.push_back(2);
+    dll.push_back(3);
+    
+    // Erase all elements one by one
+    while(!dll.empty()) {
+        dll.erase(dll.begin());
+    }
+    
+    EXPECT_TRUE(dll.empty());
+    EXPECT_EQ(dll.size(), 0u);
+}
+

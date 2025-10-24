@@ -99,26 +99,27 @@ private:
      * @return Safe duration calculation
      */
     static std::chrono::nanoseconds safeCalculateWithWholeAndPart(
-        long long counter, 
-        long long frequency, 
+        long long counter,
+        long long frequency,
         long long periodDen) {
-        
-        // Check if direct multiplication would be safe
-        if (!wouldOverflow(counter, periodDen)) {
-            // Safe to use direct calculation
-            return std::chrono::nanoseconds((counter * periodDen) / frequency);
+        // Prefer a widened arithmetic path to avoid intermediate overflow.
+        // Use long double as a portable wider type on MSVC/GCC/Clang.
+        // Clamp to the representable range of long long nanoseconds.
+        long double num = static_cast<long double>(counter) * static_cast<long double>(periodDen);
+        long double val = num / static_cast<long double>(frequency);
+
+        const long double ll_min = static_cast<long double>(std::numeric_limits<long long>::min());
+        const long double ll_max = static_cast<long double>(std::numeric_limits<long long>::max());
+
+        if (val > ll_max) {
+            // Saturate instead of overflowing or throwing to keep behavior well-defined
+            return std::chrono::nanoseconds(std::numeric_limits<long long>::max());
         }
-        
-        // Use _Whole and _Part algorithm to prevent overflow
-        const long long whole = (counter / frequency) * periodDen;
-        const long long part = (counter % frequency) * periodDen / frequency;
-        
-        // Check if the result would overflow
-        if (whole > std::numeric_limits<long long>::max() - part) {
-            throw std::overflow_error("Duration calculation would overflow even with safe algorithm");
+        if (val < ll_min) {
+            return std::chrono::nanoseconds(std::numeric_limits<long long>::min());
         }
-        
-        return std::chrono::nanoseconds(whole + part);
+
+        return std::chrono::nanoseconds(static_cast<long long>(val));
     }
 };
 
