@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['binary_0',['Binary',['../ast_8h.html#a916392d25d1c3daa053abe2e1792a4a0a6ce976e8f061b2b5cfe4d0c50c3405dd',1,'translator']]]
+  ['assign_0',['Assign',['../token_8h.html#a0eb119efce2d20d6019adb661cd4c480a185b7133db22230701a857c059360cc2',1,'translator']]]
 ];

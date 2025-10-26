@@ -151,8 +151,8 @@
 ds::XORLinkedList< T > Class Template Reference\par \pard\plain 
 {\tc\tcl2 \v ds::XORLinkedList< T >}
 {\xe \v ds::XORLinkedList< T >}
-{\bkmkstart AAAAAAAAAU}
-{\bkmkend AAAAAAAAAU}
+{\bkmkstart AAAAAAAAOD}
+{\bkmkend AAAAAAAAOD}
 \par
 {
 {\f2 #include <xor_linked_list.h>}}\par
@@ -162,14 +162,68 @@ Collaboration diagram for ds::XORLinkedList< T >:{
 }
 \par
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+İç düğüm yapısı XOR tekniği ile hem önceki hem sonraki işaretçiyi tek alanda tutar. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Public Member Functions\par
 \pard\plain 
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-void {\b clear} (){\bkmkstart AAAAAAAABB}
-{\bkmkend AAAAAAAABB}
+{\b XORLinkedList} ()=default{\bkmkstart AAAAAAAAEU}
+{\bkmkend AAAAAAAAEU}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Varsayılan kurucu. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b ~XORLinkedList} (){\bkmkstart AAAAAAAAFF}
+{\bkmkend AAAAAAAAFF}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Yıkıcı: tüm düğümleri serbest bırakır. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XORLinkedList} (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAOD" }{}}{\fldrslt {\cs37\ul\cf2 XORLinkedList}}}
+ &)=delete{\bkmkstart AAAAAAAAFH}
+{\bkmkend AAAAAAAAFH}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kopyalama devre dışı (tek sahiplik varsayımı). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAOD" }{}}{\fldrslt {\cs37\ul\cf2 XORLinkedList}}}
+ & {\b operator=} (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAOD" }{}}{\fldrslt {\cs37\ul\cf2 XORLinkedList}}}
+ &)=delete{\bkmkstart AAAAAAAAFI}
+{\bkmkend AAAAAAAAFI}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Atama devre dışı (tek sahiplik varsayımı). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b clear} (){\bkmkstart AAAAAAAAFG}
+{\bkmkend AAAAAAAAFG}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -178,8 +232,8 @@ Tüm düğümleri serbest bırakır. }{
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-std::size_t {\b size} () const{\bkmkstart AAAAAAAABP}
-{\bkmkend AAAAAAAABP}
+std::size_t {\b size} () const{\bkmkstart AAAAAAAAFJ}
+{\bkmkend AAAAAAAAFJ}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -188,8 +242,8 @@ Eleman sayısı }{
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-bool {\b empty} () const{\bkmkstart AAAAAAAABQ}
-{\bkmkend AAAAAAAABQ}
+bool {\b empty} () const{\bkmkstart AAAAAAAAFK}
+{\bkmkend AAAAAAAAFK}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -198,8 +252,8 @@ Boş mu? }{
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-void {\b push_back} (const T &v){\bkmkstart AAAAAAAABS}
-{\bkmkend AAAAAAAABS}
+void {\b push_back} (const T &v){\bkmkstart AAAAAAAAFL}
+{\bkmkend AAAAAAAAFL}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -208,8 +262,8 @@ Sona ekler. }{
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-void {\b push_front} (const T &v){\bkmkstart AAAAAAAABZ}
-{\bkmkend AAAAAAAABZ}
+void {\b push_front} (const T &v){\bkmkstart AAAAAAAAFN}
+{\bkmkend AAAAAAAAFN}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -218,8 +272,8 @@ Başa ekler. }{
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-bool {\b pop_back} (){\bkmkstart AAAAAAAACE}
-{\bkmkend AAAAAAAACE}
+bool {\b pop_back} (){\bkmkstart AAAAAAAAFO}
+{\bkmkend AAAAAAAAFO}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -228,8 +282,8 @@ Sondan bir eleman çıkarır. }{
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-bool {\b pop_front} (){\bkmkstart AAAAAAAACK}
-{\bkmkend AAAAAAAACK}
+bool {\b pop_front} (){\bkmkstart AAAAAAAAFP}
+{\bkmkend AAAAAAAAFP}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -238,8 +292,8 @@ Baştan bir eleman çıkarır. }{
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-template<typename F> void {\b for_each_forward} (F cb) const{\bkmkstart AAAAAAAACX}
-{\bkmkend AAAAAAAACX}
+template<typename F> void {\b for_each_forward} (F cb) const{\bkmkstart AAAAAAAAFQ}
+{\bkmkend AAAAAAAAFQ}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -248,8 +302,8 @@ Baştan sona dolaşım (callback false döndürürse durur). }{
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-template<typename F> void {\b for_each_backward} (F cb) const{\bkmkstart AAAAAAAADD}
-{\bkmkend AAAAAAAADD}
+template<typename F> void {\b for_each_backward} (F cb) const{\bkmkstart AAAAAAAAFR}
+{\bkmkend AAAAAAAAFR}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -258,8 +312,8 @@ Sondan başa dolaşım (callback false döndürürse durur). }{
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-bool {\b remove_first} (const T &v){\bkmkstart AAAAAAAADO}
-{\bkmkend AAAAAAAADO}
+bool {\b remove_first} (const T &v){\bkmkstart AAAAAAAAFS}
+{\bkmkend AAAAAAAAFS}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -274,12 +328,53 @@ Static Private Member Functions\par
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-static Node * {\b XOR} (Node *a, Node *b){\bkmkstart AAAAAAAAAR}
-{\bkmkend AAAAAAAAAR}
+static {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
+ * {\b XOR} ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
+ *a, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
+ *b){\bkmkstart AAAAAAAAFD}
+{\bkmkend AAAAAAAAFD}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 İşaretçileri XOR’layarak tek işaretçide saklar. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
+ * {\b head_} = nullptr{\bkmkstart AAAAAAAAFA}
+{\bkmkend AAAAAAAAFA}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+İlk düğüm. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEY" }{}}{\fldrslt {\cs37\ul\cf2 Node}}}
+ * {\b tail_} = nullptr{\bkmkstart AAAAAAAAFB}
+{\bkmkend AAAAAAAAFB}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Son düğüm. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+std::size_t {\b size_} = 0{\bkmkstart AAAAAAAAFC}
+{\bkmkend AAAAAAAAFC}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Eleman sayısı }{
 }\par
 }\par}
 }
@@ -309,6 +404,6 @@ Template Parameters\par}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 The documentation for this class was generated from the following file:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 xor_linked_list.h}}}
+include/ds/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 xor_linked_list.h}}}
 \par
 }}

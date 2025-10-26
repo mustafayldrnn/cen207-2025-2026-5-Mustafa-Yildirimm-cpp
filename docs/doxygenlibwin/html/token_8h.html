@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BASIC Translator Windows Library API Documentation: C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/token.h File Reference</title>
+<title>BASIC Translator Windows Library API Documentation: src/translator/token.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a href="dir_dfe968290d3b0ee03e08f374edd30ee3.html">Masaüstü</a></li><li class="navelem"><a href="dir_87f260dbaa04f06c7d57423ba5ebac9d.html">DataStructure</a></li><li class="navelem"><a href="dir_b00da2fab6b604b485869b7d5702ce53.html">cen207-2025-2026-5-Mustafa-Yildirimm-cpp</a></li><li class="navelem"><a href="dir_235080e4fc6f8d1f814973dc40d3997a.html">src</a></li><li class="navelem"><a href="dir_b83ed387cd3bb998e500a8fe99c544d9.html">translator</a></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_1e7213103a57207a880321a525d2b8cb.html">translator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -90,12 +90,12 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for token.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="token_8h__incl.svg" width="243" height="160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="token_8h__incl.svg" width="155" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="token_8h__dep__incl.svg" width="456" height="224"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="token_8h__dep__incl.svg" width="352" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="token_8h_source.html">Go to the source code of this file.</a></p>
@@ -107,15 +107,121 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a0eb119efce2d20d6019adb661cd4c480" id="r_a0eb119efce2d20d6019adb661cd4c480"><td class="memItemLeft" align="right" valign="top"><a id="a0eb119efce2d20d6019adb661cd4c480" name="a0eb119efce2d20d6019adb661cd4c480"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eb119efce2d20d6019adb661cd4c480">translator::TokenType</a> </td></tr>
-<tr class="memdesc:a0eb119efce2d20d6019adb661cd4c480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tüm belirteç türleri. <br /></td></tr>
+<tr class="memitem:a0eb119efce2d20d6019adb661cd4c480" id="r_a0eb119efce2d20d6019adb661cd4c480"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eb119efce2d20d6019adb661cd4c480">translator::TokenType</a> { <br />
+&#160;&#160;<a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a29ee5d1ebcc033234938a5234f1f2075">Identifier</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480ab2ee912b91d69b435159c7c3f6df7f5f">Number</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a27118326006d3829667a400ad23d5d98">String</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a90997b7f299d862f6bcbb1ac11d6cd24">KW_LET</a>
+, <br />
+&#160;&#160;<a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a4f1a5bb6f9136f5f9231ef51ed1db995">KW_PRINT</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a369d5563133c61595496807e8b3aa19d">KW_INPUT</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480aff705823708ecc4645c4220d09620ae9">KW_IF</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480aaad4a74ae5c704a58a3b563dc11d2fb8">KW_THEN</a>
+, <br />
+&#160;&#160;<a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a68a2ea2db0d1f282955130bb75c25172">KW_GOTO</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a97f42a58579d6cbe9b1c9eb0f0de750f">KW_FOR</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a221d6d4f9619e1cb8f5e563eb8c4e903">KW_TO</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a5b810bf9b287af6a80bc2756f5f650c8">KW_NEXT</a>
+, <br />
+&#160;&#160;<a class="el" href="#a0eb119efce2d20d6019adb661cd4c480aa83315e9d302480b6b4128b714921a1a">KW_GOSUB</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a3a387a428e7d6557200c4c5eea812c11">KW_RETURN</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a32ba78fe43257d3e7f88e3935a8ea0d4">Plus</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a453fb623e752c5993f65bc410fd74fe5">Minus</a>
+, <br />
+&#160;&#160;<a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a26f93e6e68e28a698377e941cb59f29a">Star</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a358cfe58715d680d9ab09f82e4010cbc">Slash</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a185b7133db22230701a857c059360cc2">Assign</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a876a9d4efdf66785e41cb452f0402c79">LParen</a>
+, <br />
+&#160;&#160;<a class="el" href="#a0eb119efce2d20d6019adb661cd4c480ad011e3feb19babda65e8951ff7189c0c">RParen</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a58be47db9455679e6a44df2eff9c9fa6">Comma</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a755fee300780823fcf4df98383331745">Newline</a>
+, <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480a49650dcc55dc413da4032cbe44b15d37">Eof</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a0eb119efce2d20d6019adb661cd4c480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tüm belirteç türleri.  <a href="#a0eb119efce2d20d6019adb661cd4c480">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Leksik belirteç türleri ve veri yapısı </p>
 <dl class="section author"><dt>Author</dt><dd>Mustafa Yıldırım </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-</div></div><!-- contents -->
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
+<a id="a0eb119efce2d20d6019adb661cd4c480" name="a0eb119efce2d20d6019adb661cd4c480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb119efce2d20d6019adb661cd4c480">&#9670;&#160;</a></span>TokenType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a0eb119efce2d20d6019adb661cd4c480">translator::TokenType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tüm belirteç türleri. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a29ee5d1ebcc033234938a5234f1f2075" name="a0eb119efce2d20d6019adb661cd4c480a29ee5d1ebcc033234938a5234f1f2075"></a>Identifier&#160;</td><td class="fielddoc"><p>Değişken adları </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480ab2ee912b91d69b435159c7c3f6df7f5f" name="a0eb119efce2d20d6019adb661cd4c480ab2ee912b91d69b435159c7c3f6df7f5f"></a>Number&#160;</td><td class="fielddoc"><p>Sayısal sabitler. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a27118326006d3829667a400ad23d5d98" name="a0eb119efce2d20d6019adb661cd4c480a27118326006d3829667a400ad23d5d98"></a>String&#160;</td><td class="fielddoc"><p>Çift tırnak içindeki metinler. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a90997b7f299d862f6bcbb1ac11d6cd24" name="a0eb119efce2d20d6019adb661cd4c480a90997b7f299d862f6bcbb1ac11d6cd24"></a>KW_LET&#160;</td><td class="fielddoc"><p>LET anahtar sözcüğü </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a4f1a5bb6f9136f5f9231ef51ed1db995" name="a0eb119efce2d20d6019adb661cd4c480a4f1a5bb6f9136f5f9231ef51ed1db995"></a>KW_PRINT&#160;</td><td class="fielddoc"><p>PRINT anahtar sözcüğü </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a369d5563133c61595496807e8b3aa19d" name="a0eb119efce2d20d6019adb661cd4c480a369d5563133c61595496807e8b3aa19d"></a>KW_INPUT&#160;</td><td class="fielddoc"><p>INPUT anahtar sözcüğü </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480aff705823708ecc4645c4220d09620ae9" name="a0eb119efce2d20d6019adb661cd4c480aff705823708ecc4645c4220d09620ae9"></a>KW_IF&#160;</td><td class="fielddoc"><p>IF anahtar sözcüğü </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480aaad4a74ae5c704a58a3b563dc11d2fb8" name="a0eb119efce2d20d6019adb661cd4c480aaad4a74ae5c704a58a3b563dc11d2fb8"></a>KW_THEN&#160;</td><td class="fielddoc"><p>THEN anahtar sözcüğü </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a68a2ea2db0d1f282955130bb75c25172" name="a0eb119efce2d20d6019adb661cd4c480a68a2ea2db0d1f282955130bb75c25172"></a>KW_GOTO&#160;</td><td class="fielddoc"><p>GOTO anahtar sözcüğü </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a97f42a58579d6cbe9b1c9eb0f0de750f" name="a0eb119efce2d20d6019adb661cd4c480a97f42a58579d6cbe9b1c9eb0f0de750f"></a>KW_FOR&#160;</td><td class="fielddoc"><p>FOR anahtar sözcüğü </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a221d6d4f9619e1cb8f5e563eb8c4e903" name="a0eb119efce2d20d6019adb661cd4c480a221d6d4f9619e1cb8f5e563eb8c4e903"></a>KW_TO&#160;</td><td class="fielddoc"><p>TO anahtar sözcüğü </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a5b810bf9b287af6a80bc2756f5f650c8" name="a0eb119efce2d20d6019adb661cd4c480a5b810bf9b287af6a80bc2756f5f650c8"></a>KW_NEXT&#160;</td><td class="fielddoc"><p>NEXT anahtar sözcüğü </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480aa83315e9d302480b6b4128b714921a1a" name="a0eb119efce2d20d6019adb661cd4c480aa83315e9d302480b6b4128b714921a1a"></a>KW_GOSUB&#160;</td><td class="fielddoc"><p>GOSUB anahtar sözcüğü </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a3a387a428e7d6557200c4c5eea812c11" name="a0eb119efce2d20d6019adb661cd4c480a3a387a428e7d6557200c4c5eea812c11"></a>KW_RETURN&#160;</td><td class="fielddoc"><p>RETURN anahtar sözcüğü </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a32ba78fe43257d3e7f88e3935a8ea0d4" name="a0eb119efce2d20d6019adb661cd4c480a32ba78fe43257d3e7f88e3935a8ea0d4"></a>Plus&#160;</td><td class="fielddoc"><p>'+' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a453fb623e752c5993f65bc410fd74fe5" name="a0eb119efce2d20d6019adb661cd4c480a453fb623e752c5993f65bc410fd74fe5"></a>Minus&#160;</td><td class="fielddoc"><p>'-' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a26f93e6e68e28a698377e941cb59f29a" name="a0eb119efce2d20d6019adb661cd4c480a26f93e6e68e28a698377e941cb59f29a"></a>Star&#160;</td><td class="fielddoc"><p>'*' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a358cfe58715d680d9ab09f82e4010cbc" name="a0eb119efce2d20d6019adb661cd4c480a358cfe58715d680d9ab09f82e4010cbc"></a>Slash&#160;</td><td class="fielddoc"><p>'/' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a185b7133db22230701a857c059360cc2" name="a0eb119efce2d20d6019adb661cd4c480a185b7133db22230701a857c059360cc2"></a>Assign&#160;</td><td class="fielddoc"><p>'=' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a876a9d4efdf66785e41cb452f0402c79" name="a0eb119efce2d20d6019adb661cd4c480a876a9d4efdf66785e41cb452f0402c79"></a>LParen&#160;</td><td class="fielddoc"><p>'(' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480ad011e3feb19babda65e8951ff7189c0c" name="a0eb119efce2d20d6019adb661cd4c480ad011e3feb19babda65e8951ff7189c0c"></a>RParen&#160;</td><td class="fielddoc"><p>')' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a58be47db9455679e6a44df2eff9c9fa6" name="a0eb119efce2d20d6019adb661cd4c480a58be47db9455679e6a44df2eff9c9fa6"></a>Comma&#160;</td><td class="fielddoc"><p>',' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a755fee300780823fcf4df98383331745" name="a0eb119efce2d20d6019adb661cd4c480a755fee300780823fcf4df98383331745"></a>Newline&#160;</td><td class="fielddoc"><p>Satır sonu. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0eb119efce2d20d6019adb661cd4c480a49650dcc55dc413da4032cbe44b15d37" name="a0eb119efce2d20d6019adb661cd4c480a49650dcc55dc413da4032cbe44b15d37"></a>Eof&#160;</td><td class="fielddoc"><p>Girdi sonu (end-of-file) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0

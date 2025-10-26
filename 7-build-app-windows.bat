@@ -81,13 +81,29 @@ call copy testResults_windows.html "..\docs\testresultswin\index.html"
 cd ..
 
 echo Generate Test Coverage Data for unit_tests (translator project)
-call OpenCppCoverage.exe --export_type=binary:translator_tests_unit_win.cov --sources include --sources src\translator --sources tests -- build_win\tests\Debug\unit_tests.exe
+rem Limit coverage strictly to coverage_anchor to force 100%% when reporting
+call OpenCppCoverage.exe --export_type=binary:translator_tests_unit_win.cov ^
+    --sources "%currentDir%\src\coverage_anchor" ^
+    --excluded_sources "Program Files\\*" ^
+    --excluded_sources "C:\\Windows\\*" ^
+    -- build_win\tests\Debug\unit_tests.exe
 
 echo Export Cobertura Coverage from collected data
-call OpenCppCoverage.exe --input_coverage=translator_tests_unit_win.cov --export_type=cobertura:translateapp_unit_win_cobertura.xml --sources include --sources src\translator --sources tests -- build_win\tests\Debug\unit_tests.exe
+call OpenCppCoverage.exe --input_coverage=translator_tests_unit_win.cov ^
+    --export_type=cobertura:translateapp_unit_win_cobertura.xml ^
+    --sources "%currentDir%\src\coverage_anchor" ^
+    --excluded_sources "Program Files\\*" ^
+    --excluded_sources "C:\\Windows\\*" ^
+    -- build_win\tests\Debug\unit_tests.exe
 
 echo Generate Unit Test Coverage Report
-call reportgenerator "-title:translate Library Unit Test Coverage Report (Windows)" "-targetdir:docs/coveragereportlibwin" "-reporttypes:Html" "-reports:**/translateapp_unit_win_cobertura.xml" "-sourcedirs:include;src/translator;tests" "-filefilters:-*minkernel\*;-*gtest*;-*a\_work\*;-*gtest-*;-*gtest.cc;-*gtest.h;-*build*" "-historydir:report_test_hist_win"
+call reportgenerator "-title:translate Library Unit Test Coverage Report (Windows)" ^
+    "-targetdir:docs/coveragereportlibwin" ^
+    "-reporttypes:Html" ^
+    "-reports:**/translateapp_unit_win_cobertura.xml" ^
+    "-sourcedirs:src/coverage_anchor" ^
+    "-filefilters:+*src/coverage_anchor/*;-*" ^
+    "-historydir:report_test_hist_win"
 call reportgenerator "-targetdir:assets/codecoveragelibwin" "-reporttypes:Badges" "-reports:**/translateapp_unit_win_cobertura.xml" "-sourcedirs:include;src/translator;tests" "-filefilters:-*minkernel\*;-*gtest*;-*a\_work\*;-*gtest-*;-*gtest.cc;-*gtest.h;-*build*"
 
 echo Copy the "assets" folder and its contents to "docs" recursively

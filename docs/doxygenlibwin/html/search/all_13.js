@@ -1,7 +1,7 @@
 var searchData=
 [
   ['table_5f_0',['table_',['../classds_1_1_hash_table.html#ae6b9272c3d706ba75c7f6fabcdc9ace8',1,'ds::HashTable::table_'],['../classtranslator_1_1_symbol_table.html#a66cace7834f5eb0eb9b31edd66a994fd',1,'translator::SymbolTable::table_']]],
-  ['tail_5f_1',['tail_',['../classds_1_1_doubly_linked_list.html#aac0ac5dbd0e1a6f3d935a8357cf00a96',1,'ds::DoublyLinkedList']]],
+  ['tail_5f_1',['tail_',['../classds_1_1_doubly_linked_list.html#aac0ac5dbd0e1a6f3d935a8357cf00a96',1,'ds::DoublyLinkedList::tail_'],['../classds_1_1_queue.html#a72a469ed84ae8b3b36542d36d94df464',1,'ds::Queue::tail_'],['../classds_1_1_x_o_r_linked_list.html#a95a97b23a09c589dd036b3d0806ca374',1,'ds::XORLinkedList::tail_']]],
   ['target_2',['target',['../structtranslator_1_1_goto_stmt.html#a7f09790266e5d62bfc34b0709cab10c6',1,'translator::GotoStmt::target'],['../structtranslator_1_1_if_goto_stmt.html#af2860bea6273fdf9e63c46627fb1876d',1,'translator::IfGotoStmt::target'],['../structtranslator_1_1_gosub_stmt.html#a168c003fcda2ceb2e8c2cd015df7ec85',1,'translator::GosubStmt::target']]],
   ['targetlang_3',['targetLang',['../struct_coruh_1_1_language_translator_1_1_translation_record.html#ab6924206a1e890e174f5a4598d30028a',1,'Coruh::LanguageTranslator::TranslationRecord']]],
   ['text_4',['text',['../struct_coruh_1_1_language_translator_1_1_translation_record.html#ab0e3c1c7951a90a3e2b3a0af332fb9cd',1,'Coruh::LanguageTranslator::TranslationRecord']]],
@@ -14,12 +14,13 @@ var searchData=
   ['tokens_5f_11',['tokens_',['../classtranslator_1_1_parser.html#a656fd7ad404746f72905ea7ca9c96130',1,'translator::Parser']]],
   ['tokentype_12',['TokenType',['../token_8h.html#a0eb119efce2d20d6019adb661cd4c480',1,'translator']]],
   ['top_13',['top',['../classds_1_1_binary_heap.html#ae4fd1d06e57589a7465609c8df10ad29',1,'ds::BinaryHeap::top()'],['../classds_1_1_stack.html#ab51dcca6ef286f03d5520a7fa264ca86',1,'ds::Stack::top()']]],
-  ['translatephrase_14',['translatePhrase',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a06a91752cc8178f227d69060cf1d6c81',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['translatetext_15',['translateText',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a03ad354d985ea9953caeb220ba353675',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['translatewithgoogleapi_16',['translateWithGoogleAPI',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#acd8648d60bbb51b35c35ffd92bb7537d',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['translatewithmicrosoftapi_17',['translateWithMicrosoftAPI',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a42d55ad7d00fd049ec011b6b1c3d6a82',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['translateword_18',['translateWord',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#afd506854467cc68e7a55c7f9ccb4d3c1',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['translationrecord_19',['TranslationRecord',['../struct_coruh_1_1_language_translator_1_1_translation_record.html',1,'Coruh::LanguageTranslator']]],
-  ['translator_20c_2017_20',['BASIC Translator (C++17)',['../index.html',1,'']]],
-  ['type_21',['type',['../structtranslator_1_1_token.html#a36c889bc7ded337a56b399f92ae1fc2a',1,'translator::Token']]]
+  ['top_5f_14',['top_',['../classds_1_1_stack.html#a3a436623966dd4dcccd0aea883db73c4',1,'ds::Stack']]],
+  ['translatephrase_15',['translatePhrase',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a06a91752cc8178f227d69060cf1d6c81',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['translatetext_16',['translateText',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a03ad354d985ea9953caeb220ba353675',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['translatewithgoogleapi_17',['translateWithGoogleAPI',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#acd8648d60bbb51b35c35ffd92bb7537d',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['translatewithmicrosoftapi_18',['translateWithMicrosoftAPI',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a42d55ad7d00fd049ec011b6b1c3d6a82',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['translateword_19',['translateWord',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#afd506854467cc68e7a55c7f9ccb4d3c1',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['translationrecord_20',['TranslationRecord',['../struct_coruh_1_1_language_translator_1_1_translation_record.html',1,'Coruh::LanguageTranslator']]],
+  ['translator_20c_2017_21',['BASIC Translator (C++17)',['../index.html',1,'']]],
+  ['type_22',['type',['../structtranslator_1_1_token.html#a36c889bc7ded337a56b399f92ae1fc2a',1,'translator::Token']]]
 ];

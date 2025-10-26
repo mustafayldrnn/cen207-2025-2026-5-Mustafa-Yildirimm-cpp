@@ -149,11 +149,11 @@
 {\comment begin body}
 \pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
 heap.h\par \pard\plain 
-{\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h}
-{\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/heap.h}
-{\bkmkstart AAAAAAAAAG}
-{\bkmkend AAAAAAAAAG}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\tc\tcl2 \v include/ds/heap.h}
+{\xe \v include/ds/heap.h}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
@@ -166,93 +166,93 @@ heap.h\par \pard\plain
 13 {\cf17 namespace }ds \{\par
 14 \par
 23 {\cf17 template} <{\cf17 typename} T, {\cf17 typename} Compare = std::less<T>>\par
-24 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 BinaryHeap}}}
+24 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 BinaryHeap}}}
  \{\par
-25     std::vector<T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+25     std::vector<T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 ;  \par
-26     Compare {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 cmp_}}}
+26     Compare {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 cmp_}}}
 \{\};     \par
 27     \par
-32     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 sift_up}}}
+32     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 sift_up}}}
 (std::size_t i)\{\par
 33         {\cf19 while} (i>0)\{ \par
 34             std::size_t p=(i-1)/2; \par
-35             {\cf19 if} (!{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 cmp_}}}
-({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
-[p], {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+35             {\cf19 if} (!{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 cmp_}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+[p], {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 [i])) {\cf19 break}; \par
-36             std::swap({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
-[p], {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+36             std::swap({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+[p], {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 [i]); \par
 37             i=p; \par
 38         \}\par
 39     \}\par
 40     \par
-45     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 sift_down}}}
+45     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 sift_down}}}
 (std::size_t i)\{\par
-46         std::size_t n = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+46         std::size_t n = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 .size();\par
 47         {\cf19 while}({\cf17 true})\{ \par
 48             std::size_t l=2*i+1, r=2*i+2, m=i; \par
-49             {\cf19 if} (l<n && {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 cmp_}}}
-({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
-[m], {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+49             {\cf19 if} (l<n && {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 cmp_}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+[m], {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 [l])) m=l; \par
-50             {\cf19 if} (r<n && {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 cmp_}}}
-({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
-[m], {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+50             {\cf19 if} (r<n && {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 cmp_}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+[m], {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 [r])) m=r; \par
 51             {\cf19 if} (m==i) {\cf19 break}; \par
-52             std::swap({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
-[i], {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+52             std::swap({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+[i], {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 [m]); \par
 53             i=m; \par
 54         \}\par
 55     \}\par
 56     \par
 57 {\cf17 public}:\par
-62     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACJ" }{}}{\fldrslt {\cs37\ul\cf2 empty}}}
-(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+62     {\cf18 bool} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 empty}}}
+(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 .empty(); \}\par
 63     \par
-68     std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACM" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
-(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+68     std::size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
+(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 .size(); \}\par
 69     \par
-75     {\cf17 const} T& {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACO" }{}}{\fldrslt {\cs37\ul\cf2 top}}}
-(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+75     {\cf17 const} T& {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 top}}}
+(){\cf17  const }\{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 .front(); \}\par
 76     \par
-81     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACQ" }{}}{\fldrslt {\cs37\ul\cf2 push}}}
+81     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 push}}}
 ({\cf17 const} T& v)\{ \par
-82         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+82         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 .push_back(v); \par
-83         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 sift_up}}}
-({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+83         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 sift_up}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 .size()-1); \par
 84     \}\par
 85     \par
-90     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADA" }{}}{\fldrslt {\cs37\ul\cf2 pop}}}
+90     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABW" }{}}{\fldrslt {\cs37\ul\cf2 pop}}}
 ()\{ \par
-91         std::swap({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
-.front(), {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+91         std::swap({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+.front(), {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 .back()); \par
-92         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+92         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 .pop_back(); \par
-93         {\cf19 if}(!{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
-.empty()) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 sift_down}}}
+93         {\cf19 if}(!{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+.empty()) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 sift_down}}}
 (0); \par
 94     \}\par
 95     \par
-103     std::vector<T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 heap_sort_copy}}}
+103     std::vector<T> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACH" }{}}{\fldrslt {\cs37\ul\cf2 heap_sort_copy}}}
 (){\cf17  const }\{ \par
-104         {\cf17 auto} b={\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
+104         {\cf17 auto} b={\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 a_}}}
 ; \par
 105         std::vector<T> out; \par
 106         out.reserve(b.size()); \par
-107         {\cf17 auto} cmp={\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 cmp_}}}
+107         {\cf17 auto} cmp={\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 cmp_}}}
 ; \par
-108         {\cf17 auto} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 sift_down}}}
+108         {\cf17 auto} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 sift_down}}}
 =[&](std::size_t i)\{ \par
 109             std::size_t n=b.size(); \par
 110             {\cf19 while}({\cf17 true})\{ \par
@@ -264,13 +264,13 @@ heap.h\par \pard\plain
 116                 i=m; \par
 117             \}\par
 118         \}; \par
-119         {\cf19 for} (std::size_t i=b.size()/2;i-->0;) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 sift_down}}}
+119         {\cf19 for} (std::size_t i=b.size()/2;i-->0;) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 sift_down}}}
 (i); \par
 120         {\cf19 while}(!b.empty())\{ \par
 121             std::swap(b.front(), b.back()); \par
 122             out.push_back(b.back()); \par
 123             b.pop_back(); \par
-124             {\cf19 if}(!b.empty()) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 sift_down}}}
+124             {\cf19 if}(!b.empty()) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 sift_down}}}
 (0);\par
 125         \} \par
 126         {\cf19 return} out; \par

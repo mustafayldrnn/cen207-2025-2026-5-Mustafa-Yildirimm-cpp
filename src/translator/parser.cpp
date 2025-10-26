@@ -1,11 +1,30 @@
-﻿#include "translator/parser.h"
+﻿/**
+ * @file parser.cpp
+ * @brief Parser uygulaması: Token dizisinden AST üretir.
+ */
+#include "translator/parser.h"
 #include <stdexcept>
 
 namespace translator {
 
+/**
+ * \brief Toplama/çıkarma operatörü mü?
+ * \param t Token türü
+ * \return Plus veya Minus ise true
+ */
 static bool is_add_op(TokenType t){ return t==TokenType::Plus || t==TokenType::Minus; }
+
+/**
+ * \brief Çarpma/bölme operatörü mü?
+ * \param t Token türü
+ * \return Star veya Slash ise true
+ */
 static bool is_mul_op(TokenType t){ return t==TokenType::Star || t==TokenType::Slash; }
 
+/**
+ * \brief Toplama/çıkarma önceliğiyle bir ifadeyi çözümler.
+ * \return Çözümlenen ifade düğümü
+ */
 std::unique_ptr<Expr> Parser::parse_expression() const {
     auto left = parse_term();
     while (is_add_op(peek().type)) {
@@ -16,6 +35,10 @@ std::unique_ptr<Expr> Parser::parse_expression() const {
     return left;
 }
 
+/**
+ * \brief Çarpma/bölme önceliğiyle bir terimi çözümler.
+ * \return Çözümlenen terim düğümü
+ */
 std::unique_ptr<Expr> Parser::parse_term() const {
     auto left = parse_factor();
     while (is_mul_op(peek().type)) {
@@ -26,6 +49,10 @@ std::unique_ptr<Expr> Parser::parse_term() const {
     return left;
 }
 
+/**
+ * \brief Sayı, değişken veya parantezli ifade çözümler.
+ * \return Çözümlenen faktör düğümü
+ */
 std::unique_ptr<Expr> Parser::parse_factor() const {
     const Token& t = peek();
     if (t.type == TokenType::Number) { advance(); return std::make_unique<NumberExpr>(std::stod(t.lexeme)); }
@@ -34,6 +61,11 @@ std::unique_ptr<Expr> Parser::parse_factor() const {
     throw std::runtime_error("Unexpected token in factor");
 }
 
+/**
+ * \brief Tek bir deyimi (ve varsa satır etiketini) çözümler.
+ * \param[out] outLabel Deyimin satır etiketi; yoksa -1 olur.
+ * \return Çözümlenen deyim düğümü
+ */
 std::unique_ptr<Stmt> Parser::parse_statement(int& outLabel) const {
     outLabel = -1;
     // Optional line label at start of a line: Number ...
@@ -100,6 +132,10 @@ std::unique_ptr<Stmt> Parser::parse_statement(int& outLabel) const {
     throw std::runtime_error("Unknown statement");
 }
 
+/**
+ * \brief Girdi akışının tamamını Program yapısına çözümler.
+ * \return Etiketlenmiş deyimlerden oluşan Program
+ */
 Program Parser::parseProgram() const {
     Program prog; prog.labels.clear(); prog.stmts.clear();
     // Consume possible leading newlines

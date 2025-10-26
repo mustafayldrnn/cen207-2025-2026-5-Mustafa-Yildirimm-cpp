@@ -10,8 +10,15 @@ namespace ds {
 /** @tparam T Eleman tipi */
 template <typename T>
 class Queue {
-    struct Node { T v; Node* next; explicit Node(const T& x): v(x), next(nullptr) {} };
-    Node* head_ = nullptr; Node* tail_ = nullptr; std::size_t sz_ = 0;
+    /** @brief Bağlı liste düğümü. */
+    struct Node { 
+        T v;           ///< Düğümdeki değer
+        Node* next;    ///< Sonraki düğüm
+        explicit Node(const T& x): v(x), next(nullptr) {} 
+    };
+    Node* head_ = nullptr;   ///< İlk düğüm
+    Node* tail_ = nullptr;   ///< Son düğüm
+    std::size_t sz_ = 0;     ///< Eleman sayısı
 public:
     /** @brief Yıkıcı: tüm düğümleri serbest bırakır. */
     ~Queue(){ while(head_){ Node* n = head_->next; delete head_; head_ = n; } tail_ = nullptr; }

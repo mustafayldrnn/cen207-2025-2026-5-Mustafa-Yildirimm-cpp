@@ -9,8 +9,9 @@ var searchData=
   ['advance_6',['advance',['../classtranslator_1_1_parser.html#a454ea6c16f64db09d8d2b9987e1e4833',1,'translator::Parser']]],
   ['apikey_7',['apiKey',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#ab556b1acd8839185a6c192f99e02af41',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
   ['apiprovider_8',['apiProvider',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#ad46434785f1b6afdfa47bac0de531d87',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['assign_9',['assign',['../classtranslator_1_1_symbol_table.html#a7e854ae1ff78c87a4ac95fed5047735b',1,'translator::SymbolTable']]],
-  ['ast_2eh_10',['ast.h',['../ast_8h.html',1,'']]],
-  ['at_5feof_11',['at_eof',['../classtranslator_1_1_parser.html#ab2e3e753c664de21a74add33db1a5d26',1,'translator::Parser']]],
-  ['audiopath_12',['audioPath',['../struct_coruh_1_1_language_translator_1_1_pronunciation_entry.html#a1e3dcb356e91603338f6df3eaf4e6103',1,'Coruh::LanguageTranslator::PronunciationEntry']]]
+  ['assign_9',['Assign',['../token_8h.html#a0eb119efce2d20d6019adb661cd4c480a185b7133db22230701a857c059360cc2',1,'translator']]],
+  ['assign_10',['assign',['../classtranslator_1_1_symbol_table.html#a7e854ae1ff78c87a4ac95fed5047735b',1,'translator::SymbolTable']]],
+  ['ast_2eh_11',['ast.h',['../ast_8h.html',1,'']]],
+  ['at_5feof_12',['at_eof',['../classtranslator_1_1_parser.html#ab2e3e753c664de21a74add33db1a5d26',1,'translator::Parser']]],
+  ['audiopath_13',['audioPath',['../struct_coruh_1_1_language_translator_1_1_pronunciation_entry.html#a1e3dcb356e91603338f6df3eaf4e6103',1,'Coruh::LanguageTranslator::PronunciationEntry']]]
 ];

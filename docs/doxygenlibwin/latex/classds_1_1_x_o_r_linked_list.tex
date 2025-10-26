@@ -10,12 +10,29 @@ Collaboration diagram for ds\+::XORLinked\+List\texorpdfstring{$<$}{<} T \texorp
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=194pt]{classds_1_1_x_o_r_linked_list__coll__graph}
+\includegraphics[width=231pt]{classds_1_1_x_o_r_linked_list__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}}
+\begin{DoxyCompactList}\small\item\em İç düğüm yapısı XOR tekniği ile hem önceki hem sonraki işaretçiyi tek alanda tutar. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\Hypertarget{classds_1_1_x_o_r_linked_list_aae796194f720e617116747e168453419}\label{classds_1_1_x_o_r_linked_list_aae796194f720e617116747e168453419} 
+{\bfseries XORLinked\+List} ()=default
+\begin{DoxyCompactList}\small\item\em Varsayılan kurucu. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_x_o_r_linked_list_aaa43f3359722cb1e01e5ec973982fcee}\label{classds_1_1_x_o_r_linked_list_aaa43f3359722cb1e01e5ec973982fcee} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+XORLinked\+List} ()
+\begin{DoxyCompactList}\small\item\em Yıkıcı\+: tüm düğümleri serbest bırakır. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_x_o_r_linked_list_ac5e712263b5fe4ce9f487f8bf54452bd}\label{classds_1_1_x_o_r_linked_list_ac5e712263b5fe4ce9f487f8bf54452bd} 
+{\bfseries XORLinked\+List} (const \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{XORLinked\+List}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Kopyalama devre dışı (tek sahiplik varsayımı). \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_x_o_r_linked_list_a37d39cef63d98f2f8171c7ea38723192}\label{classds_1_1_x_o_r_linked_list_a37d39cef63d98f2f8171c7ea38723192} 
+\mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{XORLinked\+List}} \& {\bfseries operator=} (const \mbox{\hyperlink{classds_1_1_x_o_r_linked_list}{XORLinked\+List}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Atama devre dışı (tek sahiplik varsayımı). \end{DoxyCompactList}\item 
 \Hypertarget{classds_1_1_x_o_r_linked_list_a35cee59b1cca9f46777ae1376e0c4f02}\label{classds_1_1_x_o_r_linked_list_a35cee59b1cca9f46777ae1376e0c4f02} 
 void {\bfseries clear} ()
 \begin{DoxyCompactList}\small\item\em Tüm düğümleri serbest bırakır. \end{DoxyCompactList}\item 
@@ -50,8 +67,20 @@ bool {\bfseries remove\+\_\+first} (const T \&v)
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{classds_1_1_x_o_r_linked_list_abf98b997a2880021132c67c3cae56bfb}\label{classds_1_1_x_o_r_linked_list_abf98b997a2880021132c67c3cae56bfb} 
-static Node \texorpdfstring{$\ast$}{*} {\bfseries XOR} (Node \texorpdfstring{$\ast$}{*}a, Node \texorpdfstring{$\ast$}{*}b)
+static \mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries XOR} (\mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*}a, \mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*}b)
 \begin{DoxyCompactList}\small\item\em İşaretçileri XOR’layarak tek işaretçide saklar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classds_1_1_x_o_r_linked_list_af85d2ae57585cb42db59f56c04c054bd}\label{classds_1_1_x_o_r_linked_list_af85d2ae57585cb42db59f56c04c054bd} 
+\mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries head\+\_\+} = nullptr
+\begin{DoxyCompactList}\small\item\em İlk düğüm. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_x_o_r_linked_list_a95a97b23a09c589dd036b3d0806ca374}\label{classds_1_1_x_o_r_linked_list_a95a97b23a09c589dd036b3d0806ca374} 
+\mbox{\hyperlink{structds_1_1_x_o_r_linked_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries tail\+\_\+} = nullptr
+\begin{DoxyCompactList}\small\item\em Son düğüm. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_x_o_r_linked_list_aab74ca416607847b8782ec7212dbcdff}\label{classds_1_1_x_o_r_linked_list_aab74ca416607847b8782ec7212dbcdff} 
+std\+::size\+\_\+t {\bfseries size\+\_\+} = 0
+\begin{DoxyCompactList}\small\item\em Eleman sayısı \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -66,4 +95,4 @@ class ds\+::\+XORLinked\+List$<$ T $>$}
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/include/ds/\mbox{\hyperlink{xor__linked__list_8h}{xor\+\_\+linked\+\_\+list.\+h}}\end{DoxyCompactItemize}
+include/ds/\mbox{\hyperlink{xor__linked__list_8h}{xor\+\_\+linked\+\_\+list.\+h}}\end{DoxyCompactItemize}

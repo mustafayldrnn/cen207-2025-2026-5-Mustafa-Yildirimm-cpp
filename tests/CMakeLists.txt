@@ -39,6 +39,7 @@ target_sources(unit_tests PRIVATE
     ../src/LanguageTranslator/src/LanguageTranslator.cpp
     ../src/LanguageTranslator/src/Persistence.cpp
     ../src/utility/src/mathUtility.cpp
+    ../src/coverage_anchor/CoverageAnchor.cpp
 )
 
 # Add include directories for main library headers

@@ -151,12 +151,12 @@
 translator::Lexer Class Reference\par \pard\plain 
 {\tc\tcl2 \v translator::Lexer}
 {\xe \v translator::Lexer}
-{\bkmkstart AAAAAAAAMK}
-{\bkmkend AAAAAAAAMK}
+{\bkmkstart AAAAAAAAOO}
+{\bkmkend AAAAAAAAOO}
 \par
 {
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Kaynaktan belirteç ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIU" }{}}{\fldrslt {\cs37\ul\cf2 Token}}}) üreten sınıf. }}\par
+Kaynaktan belirteç ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALU" }{}}{\fldrslt {\cs37\ul\cf2 Token}}}) üreten sınıf. }}\par
 {
 {\f2 #include <lexer.h>}}\par
 Collaboration diagram for translator::Lexer:{
@@ -171,8 +171,8 @@ Public Member Functions\par
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 
-{\b Lexer} (std::string src){\bkmkstart AAAAAAAAFS}
-{\bkmkend AAAAAAAAFS}
+{\b Lexer} (std::string src){\bkmkstart AAAAAAAALD}
+{\bkmkend AAAAAAAALD}
 \par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -180,16 +180,23 @@ Kaynağı alarak bir lexer oluşturur. }{
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-std::vector< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIU" }{}}{\fldrslt {\cs37\ul\cf2 Token}}}
- > {\b tokenize} () const{\bkmkstart AAAAAAAAFX}
-{\bkmkend AAAAAAAAFX}
-\par
+std::vector< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALU" }{}}{\fldrslt {\cs37\ul\cf2 Token}}}
+ > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALF" }{}}{\fldrslt {\cs37\ul\cf2 tokenize}}}
+ () const\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Girdi kaynağını belirteçlere dönüştürür. }{
 }\par
 }\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALE" }{}}{\fldrslt {\cs37\ul\cf2 src_}}}
+\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -197,13 +204,60 @@ Detailed Description\par
 \pard\plain 
 {
 \pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Kaynaktan belirteç ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIU" }{}}{\fldrslt {\cs37\ul\cf2 Token}}}) üreten sınıf. \par
+Kaynaktan belirteç ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALU" }{}}{\fldrslt {\cs37\ul\cf2 Token}}}) üreten sınıf. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAAPR}
+{\bkmkend AAAAAAAAPR}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v tokenize\:translator::Lexer}
+{\xe \v translator::Lexer\:tokenize}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::vector< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALU" }{}}{\fldrslt {\cs37\ul\cf2 Token}}}
+ > translator::Lexer::tokenize () const}}
+\par
+{\bkmkstart AAAAAAAALF}
+{\bkmkend AAAAAAAALF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Girdi kaynağını belirteçlere dönüştürür. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Girdi kaynağını belirteçlere ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALU" }{}}{\fldrslt {\cs37\ul\cf2 Token}}}) dönüştürür.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Üretilen {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALU" }{}}{\fldrslt {\cs37\ul\cf2 Token}}} vektörü (sonunda EOF içerir) \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAAPS}
+{\bkmkend AAAAAAAAPS}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v src_\:translator::Lexer}
+{\xe \v translator::Lexer\:src_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const std::string translator::Lexer::src_{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAALE}
+{\bkmkend AAAAAAAALE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kaynak metin (tam içerik). \par
 }}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 The documentation for this class was generated from the following files:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFG" }{}}{\fldrslt {\cs37\ul\cf2 lexer.h}}}
+src/translator/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALB" }{}}{\fldrslt {\cs37\ul\cf2 lexer.h}}}
 \par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.cpp\par
+src/translator/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAOE" }{}}{\fldrslt {\cs37\ul\cf2 lexer.cpp}}}
+\par
 }}

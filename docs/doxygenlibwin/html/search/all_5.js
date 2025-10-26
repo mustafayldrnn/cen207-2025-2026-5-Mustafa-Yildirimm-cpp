@@ -7,8 +7,9 @@ var searchData=
   ['enqueue_4',['enqueue',['../classds_1_1_queue.html#a1732c7aa0f519e004f4e7bdf0dac87d2',1,'ds::Queue']]],
   ['ensure_5',['ensure',['../classds_1_1_hash_table.html#a9b34ffbaba50d07a6951faf2dae7b476',1,'ds::HashTable']]],
   ['entry_6',['Entry',['../structds_1_1_hash_table_1_1_entry.html',1,'ds::HashTable']]],
-  ['erase_7',['erase',['../classds_1_1_doubly_linked_list.html#a007e35bdeab28fea7dc5931dc57bc267',1,'ds::DoublyLinkedList::erase()'],['../classds_1_1_hash_table.html#a13001e8242174229d97e1b470704962c',1,'ds::HashTable::erase()']]],
-  ['expr_8',['Expr',['../structtranslator_1_1_expr.html',1,'translator']]],
-  ['expr_9',['expr',['../structtranslator_1_1_let_stmt.html#ad9b43c0a057208438e598c102ea2695d',1,'translator::LetStmt']]],
-  ['exprkind_10',['ExprKind',['../ast_8h.html#a916392d25d1c3daa053abe2e1792a4a0',1,'translator']]]
+  ['eof_7',['Eof',['../token_8h.html#a0eb119efce2d20d6019adb661cd4c480a49650dcc55dc413da4032cbe44b15d37',1,'translator']]],
+  ['erase_8',['erase',['../classds_1_1_doubly_linked_list.html#a007e35bdeab28fea7dc5931dc57bc267',1,'ds::DoublyLinkedList::erase()'],['../classds_1_1_hash_table.html#a13001e8242174229d97e1b470704962c',1,'ds::HashTable::erase()']]],
+  ['expr_9',['Expr',['../structtranslator_1_1_expr.html',1,'translator']]],
+  ['expr_10',['expr',['../structtranslator_1_1_let_stmt.html#ad9b43c0a057208438e598c102ea2695d',1,'translator::LetStmt']]],
+  ['exprkind_11',['ExprKind',['../ast_8h.html#a916392d25d1c3daa053abe2e1792a4a0',1,'translator']]]
 ];

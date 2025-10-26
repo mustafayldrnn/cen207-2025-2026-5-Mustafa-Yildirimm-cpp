@@ -1,5 +1,5 @@
 \doxysection{stack.\+h}
-\hypertarget{stack_8h_source}{}\label{stack_8h_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/include/ds/stack.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/include/ds/stack.h}}
+\hypertarget{stack_8h_source}{}\label{stack_8h_source}\index{include/ds/stack.h@{include/ds/stack.h}}
 \mbox{\hyperlink{stack_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
@@ -10,17 +10,22 @@
 \DoxyCodeLine{00009\ }
 \DoxyCodeLine{00011\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
 \DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classds_1_1_stack}{Stack}}\ \{}
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{struct\ }Node\ \{\ T\ v;\ Node*\ next;\ \textcolor{keyword}{explicit}\ Node(\textcolor{keyword}{const}\ T\&\ x):\ v(x),\ next(\textcolor{keyword}{nullptr})\ \{\}\ \};}
-\DoxyCodeLine{00014\ \ \ \ \ Node*\ top\_\ =\ \textcolor{keyword}{nullptr};\ std::size\_t\ sz\_\ =\ 0;}
-\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classds_1_1_stack_a72c71228fcf07010c45061d514ec3b8b}{\string~Stack}}()\{\ \textcolor{keywordflow}{while}(top\_)\ \{\ Node*\ n\ =\ top\_-\/>next;\ \textcolor{keyword}{delete}\ top\_;\ top\_\ =\ n;\ \}\ \}}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_stack_ab4a7ca4fc3ba1304565946fb584cff09}{push}}(\textcolor{keyword}{const}\ T\&\ v)\{\ Node*\ n\ =\ \textcolor{keyword}{new}\ Node(v);\ n-\/>next\ =\ top\_;\ top\_\ =\ n;\ ++sz\_;\ \}}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classds_1_1_stack_a838bd932bf5696ad97c99756d4bed45f}{empty}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ sz\_==0;\ \}}
-\DoxyCodeLine{00023\ \ \ \ \ std::size\_t\ \mbox{\hyperlink{classds_1_1_stack_aa51d9456a5513ee7fa7074a0065096f1}{size}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ sz\_;\ \}}
-\DoxyCodeLine{00025\ \ \ \ \ T\&\ \mbox{\hyperlink{classds_1_1_stack_ab51dcca6ef286f03d5520a7fa264ca86}{top}}()\{\ \textcolor{keywordflow}{if}\ (!top\_)\ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}stack\ empty"{}});\ \textcolor{keywordflow}{return}\ top\_-\/>v;\ \}}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_stack_a28e85edcd47ae3f343be66afc8cdfb67}{pop}}()\{\ \textcolor{keywordflow}{if}\ (!top\_)\ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}stack\ empty"{}});\ Node*\ n\ =\ top\_-\/>next;\ \textcolor{keyword}{delete}\ top\_;\ top\_\ =\ n;\ -\/-\/sz\_;\ \}}
-\DoxyCodeLine{00028\ \};}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \}\ \textcolor{comment}{//\ namespace\ ds}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{struct\ }Node\ \{\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{structds_1_1_stack_1_1_node_ae249e60d8b34bd85b94bf1d111e8db1c}{v}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ Node*\ \mbox{\hyperlink{structds_1_1_stack_1_1_node_a612a173847b88c101b077a4dee540429}{next}};\ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ Node(\textcolor{keyword}{const}\ T\&\ x):\ \mbox{\hyperlink{structds_1_1_stack_1_1_node_ae249e60d8b34bd85b94bf1d111e8db1c}{v}}(x),\ \mbox{\hyperlink{structds_1_1_stack_1_1_node_a612a173847b88c101b077a4dee540429}{next}}(nullptr)\ \{\}\ }
+\DoxyCodeLine{00018\ \ \ \ \ \};}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{structds_1_1_stack_1_1_node}{Node}}*\ \mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}}\ =\ \textcolor{keyword}{nullptr};\ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ std::size\_t\ \mbox{\hyperlink{classds_1_1_stack_ac63eeada020909894b5bc5e6a51277c5}{sz\_}}\ =\ 0;\ \ \ \ \ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classds_1_1_stack_a72c71228fcf07010c45061d514ec3b8b}{\string~Stack}}()\{\ \textcolor{keywordflow}{while}(\mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}})\ \{\ \mbox{\hyperlink{structds_1_1_stack_1_1_node}{Node}}*\ n\ =\ \mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}}-\/>next;\ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}};\ \mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}}\ =\ n;\ \}\ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_stack_ab4a7ca4fc3ba1304565946fb584cff09}{push}}(\textcolor{keyword}{const}\ T\&\ v)\{\ \mbox{\hyperlink{structds_1_1_stack_1_1_node}{Node}}*\ n\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{structds_1_1_stack_1_1_node}{Node}}(v);\ n-\/>\mbox{\hyperlink{structds_1_1_stack_1_1_node_a612a173847b88c101b077a4dee540429}{next}}\ =\ \mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}};\ \mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}}\ =\ n;\ ++\mbox{\hyperlink{classds_1_1_stack_ac63eeada020909894b5bc5e6a51277c5}{sz\_}};\ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classds_1_1_stack_a838bd932bf5696ad97c99756d4bed45f}{empty}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classds_1_1_stack_ac63eeada020909894b5bc5e6a51277c5}{sz\_}}==0;\ \}}
+\DoxyCodeLine{00029\ \ \ \ \ std::size\_t\ \mbox{\hyperlink{classds_1_1_stack_aa51d9456a5513ee7fa7074a0065096f1}{size}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classds_1_1_stack_ac63eeada020909894b5bc5e6a51277c5}{sz\_}};\ \}}
+\DoxyCodeLine{00031\ \ \ \ \ T\&\ \mbox{\hyperlink{classds_1_1_stack_ab51dcca6ef286f03d5520a7fa264ca86}{top}}()\{\ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}})\ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}stack\ empty"{}});\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}}-\/>v;\ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classds_1_1_stack_a28e85edcd47ae3f343be66afc8cdfb67}{pop}}()\{\ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}})\ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}stack\ empty"{}});\ \mbox{\hyperlink{structds_1_1_stack_1_1_node}{Node}}*\ n\ =\ \mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}}-\/>next;\ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}};\ \mbox{\hyperlink{classds_1_1_stack_a3a436623966dd4dcccd0aea883db73c4}{top\_}}\ =\ n;\ -\/-\/\mbox{\hyperlink{classds_1_1_stack_ac63eeada020909894b5bc5e6a51277c5}{sz\_}};\ \}}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \}\ \textcolor{comment}{//\ namespace\ ds}}
 
 \end{DoxyCode}

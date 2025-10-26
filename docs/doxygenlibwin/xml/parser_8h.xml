@@ -7,7 +7,7 @@
     <includes local="no">cstddef</includes>
     <includes refid="token_8h" local="yes">translator/token.h</includes>
     <includes refid="ast_8h" local="yes">translator/ast.h</includes>
-    <includedby refid="parser_8cpp" local="yes">C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.cpp</includedby>
+    <includedby refid="parser_8cpp" local="yes">src/translator/parser.cpp</includedby>
     <incdepgraph>
       <node id="7">
         <label>translator/ast.h</label>
@@ -20,7 +20,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h</label>
+        <label>src/translator/parser.h</label>
         <link refid="parser_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -52,6 +52,18 @@
         <label>vector</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/translator/parser.cpp</label>
+        <link refid="parser_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/translator/parser.h</label>
+        <link refid="parser_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innerclass refid="classtranslator_1_1_parser" prot="public">translator::Parser</innerclass>
     <innernamespace refid="namespacetranslator">translator</innernamespace>
     <briefdescription>
@@ -87,7 +99,7 @@
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="44" refid="classtranslator_1_1_parser_1a5719d1927d26586fc770de412025bdbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_parser_1a5719d1927d26586fc770de412025bdbb" kindref="member">match</ref>(<ref refid="token_8h_1a0eb119efce2d20d6019adb661cd4c480" kindref="member">TokenType</ref><sp/>t)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classtranslator_1_1_parser_1a01eed9fe50c7b02223c8aaf8140b4649" kindref="member">peek</ref>().type<sp/>==<sp/>t)<sp/>{<sp/>++<ref refid="classtranslator_1_1_parser_1af5354c7d27d4189bd1f9c33c710b74ac" kindref="member">pos_</ref>;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="50" refid="classtranslator_1_1_parser_1ab2e3e753c664de21a74add33db1a5d26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_parser_1ab2e3e753c664de21a74add33db1a5d26" kindref="member">at_eof</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_parser_1a01eed9fe50c7b02223c8aaf8140b4649" kindref="member">peek</ref>().<ref refid="structtranslator_1_1_token_1a36c889bc7ded337a56b399f92ae1fc2a" kindref="member">type</ref><sp/>==<sp/>TokenType::Eof;<sp/>}</highlight></codeline>
+<codeline lineno="50" refid="classtranslator_1_1_parser_1ab2e3e753c664de21a74add33db1a5d26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_parser_1ab2e3e753c664de21a74add33db1a5d26" kindref="member">at_eof</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtranslator_1_1_parser_1a01eed9fe50c7b02223c8aaf8140b4649" kindref="member">peek</ref>().<ref refid="structtranslator_1_1_token_1a36c889bc7ded337a56b399f92ae1fc2a" kindref="member">type</ref><sp/>==<sp/><ref refid="token_8h_1a0eb119efce2d20d6019adb661cd4c480a49650dcc55dc413da4032cbe44b15d37" kindref="member">TokenType::Eof</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parsing<sp/>helpers</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Expr&gt;<sp/><ref refid="classtranslator_1_1_parser_1afd6a7894691a68ec5743314fef3a7f75" kindref="member">parse_expression</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
@@ -107,6 +119,6 @@
 <codeline lineno="92"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>translator</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/parser.h"/>
+    <location file="src/translator/parser.h"/>
   </compounddef>
 </doxygen>

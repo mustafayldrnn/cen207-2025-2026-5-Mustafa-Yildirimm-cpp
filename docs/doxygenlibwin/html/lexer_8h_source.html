@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BASIC Translator Windows Library API Documentation: C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/lexer.h Source File</title>
+<title>BASIC Translator Windows Library API Documentation: src/translator/lexer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a href="dir_dfe968290d3b0ee03e08f374edd30ee3.html">Masaüstü</a></li><li class="navelem"><a href="dir_87f260dbaa04f06c7d57423ba5ebac9d.html">DataStructure</a></li><li class="navelem"><a href="dir_b00da2fab6b604b485869b7d5702ce53.html">cen207-2025-2026-5-Mustafa-Yildirimm-cpp</a></li><li class="navelem"><a href="dir_235080e4fc6f8d1f814973dc40d3997a.html">src</a></li><li class="navelem"><a href="dir_b83ed387cd3bb998e500a8fe99c544d9.html">translator</a></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_1e7213103a57207a880321a525d2b8cb.html">translator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -90,16 +90,17 @@ $(function() {
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
 <div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classtranslator_1_1_lexer.html">   13</a></span><span class="keyword">class </span><a class="code hl_function" href="classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774">Lexer</a> {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">const</span> std::string src_;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774">   17</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774">Lexer</a>(std::string src): src_(std::move(src)) {}</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::vector&lt;Token&gt; <a class="code hl_function" href="classtranslator_1_1_lexer.html#a89260e1e02eb2b01abcd1c7e31d480b9">tokenize</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classtranslator_1_1_lexer.html#a8dd38bc122462334b34032f50ca8a9e7">   15</a></span>    <span class="keyword">const</span> std::string <a class="code hl_variable" href="classtranslator_1_1_lexer.html#a8dd38bc122462334b34032f50ca8a9e7">src_</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774">   18</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774">Lexer</a>(std::string src): <a class="code hl_variable" href="classtranslator_1_1_lexer.html#a8dd38bc122462334b34032f50ca8a9e7">src_</a>(std::move(src)) {}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::vector&lt;Token&gt; <a class="code hl_function" href="classtranslator_1_1_lexer.html#a89260e1e02eb2b01abcd1c7e31d480b9">tokenize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace translator</span></div>
-<div class="ttc" id="aclasstranslator_1_1_lexer_html_a89260e1e02eb2b01abcd1c7e31d480b9"><div class="ttname"><a href="classtranslator_1_1_lexer.html#a89260e1e02eb2b01abcd1c7e31d480b9">translator::Lexer::tokenize</a></div><div class="ttdeci">std::vector&lt; Token &gt; tokenize() const</div><div class="ttdoc">Girdi kaynağını belirteçlere dönüştürür.</div><div class="ttdef"><b>Definition</b> lexer.cpp:9</div></div>
-<div class="ttc" id="aclasstranslator_1_1_lexer_html_a8a11e345d58654102d3a9cb26967f774"><div class="ttname"><a href="classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774">translator::Lexer::Lexer</a></div><div class="ttdeci">Lexer(std::string src)</div><div class="ttdoc">Kaynağı alarak bir lexer oluşturur.</div><div class="ttdef"><b>Definition</b> lexer.h:17</div></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>} <span class="comment">// namespace translator</span></div>
+<div class="ttc" id="aclasstranslator_1_1_lexer_html_a89260e1e02eb2b01abcd1c7e31d480b9"><div class="ttname"><a href="classtranslator_1_1_lexer.html#a89260e1e02eb2b01abcd1c7e31d480b9">translator::Lexer::tokenize</a></div><div class="ttdeci">std::vector&lt; Token &gt; tokenize() const</div><div class="ttdoc">Girdi kaynağını belirteçlere dönüştürür.</div><div class="ttdef"><b>Definition</b> lexer.cpp:28</div></div>
+<div class="ttc" id="aclasstranslator_1_1_lexer_html_a8a11e345d58654102d3a9cb26967f774"><div class="ttname"><a href="classtranslator_1_1_lexer.html#a8a11e345d58654102d3a9cb26967f774">translator::Lexer::Lexer</a></div><div class="ttdeci">Lexer(std::string src)</div><div class="ttdoc">Kaynağı alarak bir lexer oluşturur.</div><div class="ttdef"><b>Definition</b> lexer.h:18</div></div>
+<div class="ttc" id="aclasstranslator_1_1_lexer_html_a8dd38bc122462334b34032f50ca8a9e7"><div class="ttname"><a href="classtranslator_1_1_lexer.html#a8dd38bc122462334b34032f50ca8a9e7">translator::Lexer::src_</a></div><div class="ttdeci">const std::string src_</div><div class="ttdef"><b>Definition</b> lexer.h:15</div></div>
 <div class="ttc" id="atoken_8h_html"><div class="ttname"><a href="token_8h.html">token.h</a></div><div class="ttdoc">Leksik belirteç türleri ve veri yapısı</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

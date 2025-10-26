@@ -12,10 +12,19 @@ namespace ds {
 /** @tparam T Eleman tipi */
 template <typename T>
 class XORLinkedList {
-    struct Node { T value; Node* npx; explicit Node(const T& v): value(v), npx(nullptr) {} };
-    Node* head_ = nullptr;
-    Node* tail_ = nullptr;
-    std::size_t size_ = 0;
+    /**
+     * @brief İç düğüm yapısı
+     * XOR tekniği ile hem önceki hem sonraki işaretçiyi tek alanda tutar.
+     */
+    struct Node { 
+        T value;      ///< Düğüme ait değer
+        Node* npx;    ///< prev XOR next işaretçisi
+        explicit Node(const T& v): value(v), npx(nullptr) {} 
+    };
+
+    Node* head_ = nullptr;     ///< İlk düğüm
+    Node* tail_ = nullptr;     ///< Son düğüm
+    std::size_t size_ = 0;     ///< Eleman sayısı
 
     /** @brief İşaretçileri XOR’layarak tek işaretçide saklar. */
     static Node* XOR(Node* a, Node* b){
@@ -23,9 +32,13 @@ class XORLinkedList {
     }
 
 public:
+    /** @brief Varsayılan kurucu. */
     XORLinkedList() = default;
+    /** @brief Yıkıcı: tüm düğümleri serbest bırakır. */
     ~XORLinkedList(){ clear(); }
+    /** @brief Kopyalama devre dışı (tek sahiplik varsayımı). */
     XORLinkedList(const XORLinkedList&) = delete;
+    /** @brief Atama devre dışı (tek sahiplik varsayımı). */
     XORLinkedList& operator=(const XORLinkedList&) = delete;
 
     /** @brief Tüm düğümleri serbest bırakır. */

@@ -11,6 +11,7 @@ namespace translator {
 
 /** @brief Kaynaktan belirteç (Token) üreten sınıf. */
 class Lexer {
+    /** Kaynak metin (tam içerik). */
     const std::string src_;
 public:
     /** @brief Kaynağı alarak bir lexer oluşturur. */

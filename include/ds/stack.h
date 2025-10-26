@@ -10,8 +10,14 @@ namespace ds {
 /** @tparam T Eleman tipi */
 template <typename T>
 class Stack {
-    struct Node { T v; Node* next; explicit Node(const T& x): v(x), next(nullptr) {} };
-    Node* top_ = nullptr; std::size_t sz_ = 0;
+    /** @brief Bağlı liste düğümü. */
+    struct Node { 
+        T v;           ///< Düğümdeki değer
+        Node* next;    ///< Bir alttaki düğüm
+        explicit Node(const T& x): v(x), next(nullptr) {} 
+    };
+    Node* top_ = nullptr;    ///< Tepe düğümü
+    std::size_t sz_ = 0;     ///< Eleman sayısı
 public:
     /** @brief Yıkıcı: tüm düğümleri serbest bırakır. */
     ~Stack(){ while(top_) { Node* n = top_->next; delete top_; top_ = n; } }

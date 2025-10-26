@@ -283,7 +283,10 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pos_</b> = 0</
 </div><div class="memdoc">
 
 <p>İfade çözümler. </p>
-<dl class="section return"><dt>Returns</dt><dd>Çözümlenen ifade AST'i </dd></dl>
+<p>Toplama/çıkarma önceliğiyle bir ifadeyi çözümler.</p>
+<dl class="section return"><dt>Returns</dt><dd>Çözümlenen ifade AST'i</dd>
+<dd>
+Çözümlenen ifade düğümü </dd></dl>
 
 </div>
 </div>
@@ -311,7 +314,10 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pos_</b> = 0</
 </div><div class="memdoc">
 
 <p>Faktör çözümler. </p>
-<dl class="section return"><dt>Returns</dt><dd>Çözümlenen faktör AST'i </dd></dl>
+<p>Sayı, değişken veya parantezli ifade çözümler.</p>
+<dl class="section return"><dt>Returns</dt><dd>Çözümlenen faktör AST'i</dd>
+<dd>
+Çözümlenen faktör düğümü </dd></dl>
 
 </div>
 </div>
@@ -339,13 +345,21 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pos_</b> = 0</
 </div><div class="memdoc">
 
 <p>Deyim çözümler. </p>
+<p>Tek bir deyimi (ve varsa satır etiketini) çözümler.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">outLabel</td><td>Çıktı etiketi referansı </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Çözümlenen deyim AST'i </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Çözümlenen deyim AST'i</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">outLabel</td><td>Deyimin satır etiketi; yoksa -1 olur. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Çözümlenen deyim düğümü </dd></dl>
 
 </div>
 </div>
@@ -373,7 +387,10 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pos_</b> = 0</
 </div><div class="memdoc">
 
 <p>Terim çözümler. </p>
-<dl class="section return"><dt>Returns</dt><dd>Çözümlenen terim AST'i </dd></dl>
+<p>Çarpma/bölme önceliğiyle bir terimi çözümler.</p>
+<dl class="section return"><dt>Returns</dt><dd>Çözümlenen terim AST'i</dd>
+<dd>
+Çözümlenen terim düğümü </dd></dl>
 
 </div>
 </div>
@@ -393,7 +410,10 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pos_</b> = 0</
 </div><div class="memdoc">
 
 <p>Girişin tamamını <a class="el" href="structtranslator_1_1_program.html" title="Etiketlenmiş deyimlerden oluşan program.">Program</a> yapısına çözümler. </p>
-<dl class="section return"><dt>Returns</dt><dd>Çözümlenen program AST'i </dd></dl>
+<p>Girdi akışının tamamını <a class="el" href="structtranslator_1_1_program.html" title="Etiketlenmiş deyimlerden oluşan program.">Program</a> yapısına çözümler.</p>
+<dl class="section return"><dt>Returns</dt><dd>Çözümlenen program AST'i</dd>
+<dd>
+Etiketlenmiş deyimlerden oluşan <a class="el" href="structtranslator_1_1_program.html" title="Etiketlenmiş deyimlerden oluşan program.">Program</a> </dd></dl>
 
 </div>
 </div>
@@ -426,8 +446,8 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pos_</b> = 0</
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/<a class="el" href="parser_8h_source.html">parser.h</a></li>
-<li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/<b>parser.cpp</b></li>
+<li>src/translator/<a class="el" href="parser_8h_source.html">parser.h</a></li>
+<li>src/translator/<a class="el" href="parser_8cpp.html">parser.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

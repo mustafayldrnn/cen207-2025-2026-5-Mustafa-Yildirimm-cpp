@@ -1,8 +1,17 @@
+/**
+ * @file codegen.cpp
+ * @brief AST'yi C++ kaynak koduna dönüştüren yordamların uygulaması.
+ */
 #include "translator/codegen.h"
 #include <sstream>
 
 namespace translator {
 
+/**
+ * \brief İfadeyi (Expr) C++ koduna yazar.
+ * \param os Çıktı akışı
+ * \param e  Yazdırılacak ifade düğümü
+ */
 static void emit_expr(std::ostream& os, const Expr* e){
     switch (e->kind()){
         case ExprKind::Number: os << static_cast<const NumberExpr*>(e)->value; break;
@@ -15,6 +24,11 @@ static void emit_expr(std::ostream& os, const Expr* e){
     }
 }
 
+/**
+ * \brief Verilen Program AST'sinden C++ kodu üretir.
+ * \param p Etiketlenmiş deyimlerden oluşan Program
+ * \return Derlenebilir C++ kaynak kodu
+ */
 std::string Codegen::emit_cpp(const Program& p){
     std::ostringstream ss;
     ss << "#include <iostream>\n";
@@ -89,4 +103,3 @@ std::string Codegen::emit_cpp(const Program& p){
 }
 
 } // namespace translator
-

@@ -78,7 +78,9 @@ $(function() {
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classds_1_1_queue-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ds::Queue&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -88,9 +90,14 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for ds::Queue&lt; T &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classds_1_1_queue__coll__graph.svg" width="112" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classds_1_1_queue__coll__graph.svg" width="216" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:Node" id="r_Node"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds_1_1_queue_1_1_node.html">Node</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bağlı liste düğümü.  <a href="structds_1_1_queue_1_1_node.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a350273703e1de39445c099ae63532a41" id="r_a350273703e1de39445c099ae63532a41"><td class="memItemLeft" align="right" valign="top"><a id="a350273703e1de39445c099ae63532a41" name="a350273703e1de39445c099ae63532a41"></a>
@@ -111,6 +118,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const</t
 <tr class="memitem:a557e831c44c39d8abf6b6cb55cb55aac" id="r_a557e831c44c39d8abf6b6cb55cb55aac"><td class="memItemLeft" align="right" valign="top"><a id="a557e831c44c39d8abf6b6cb55cb55aac" name="a557e831c44c39d8abf6b6cb55cb55aac"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
 <tr class="memdesc:a557e831c44c39d8abf6b6cb55cb55aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eleman sayısı. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af3e1805acba3c9de41f864bd19238db8" id="r_af3e1805acba3c9de41f864bd19238db8"><td class="memItemLeft" align="right" valign="top"><a id="af3e1805acba3c9de41f864bd19238db8" name="af3e1805acba3c9de41f864bd19238db8"></a>
+<a class="el" href="structds_1_1_queue_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>head_</b> = nullptr</td></tr>
+<tr class="memdesc:af3e1805acba3c9de41f864bd19238db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">İlk düğüm. <br /></td></tr>
+<tr class="memitem:a72a469ed84ae8b3b36542d36d94df464" id="r_a72a469ed84ae8b3b36542d36d94df464"><td class="memItemLeft" align="right" valign="top"><a id="a72a469ed84ae8b3b36542d36d94df464" name="a72a469ed84ae8b3b36542d36d94df464"></a>
+<a class="el" href="structds_1_1_queue_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>tail_</b> = nullptr</td></tr>
+<tr class="memdesc:a72a469ed84ae8b3b36542d36d94df464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Son düğüm. <br /></td></tr>
+<tr class="memitem:aa9c993b85346dabd944f5b43205a8f15" id="r_aa9c993b85346dabd944f5b43205a8f15"><td class="memItemLeft" align="right" valign="top"><a id="aa9c993b85346dabd944f5b43205a8f15" name="aa9c993b85346dabd944f5b43205a8f15"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>sz_</b> = 0</td></tr>
+<tr class="memdesc:aa9c993b85346dabd944f5b43205a8f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eleman sayısı <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
@@ -121,7 +140,7 @@ class ds::Queue&lt; T &gt;</div><dl class="tparams"><dt>Template Parameters</dt>
   </dd>
 </dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/<a class="el" href="queue_8h_source.html">queue.h</a></li>
+<li>include/ds/<a class="el" href="queue_8h_source.html">queue.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

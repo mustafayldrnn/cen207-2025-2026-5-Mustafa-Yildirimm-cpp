@@ -1,5 +1,5 @@
 \doxysection{token.\+h}
-\hypertarget{token_8h_source}{}\label{token_8h_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/token.h@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/src/translator/token.h}}
+\hypertarget{token_8h_source}{}\label{token_8h_source}\index{src/translator/token.h@{src/translator/token.h}}
 \mbox{\hyperlink{token_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
@@ -9,18 +9,38 @@
 \DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }translator\ \{}
 \DoxyCodeLine{00012\ }
 \DoxyCodeLine{00016\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480}{TokenType}}\ \{}
-\DoxyCodeLine{00017\ \ \ \ \ Identifier,\ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0ab2ee912b91d69b435159c7c3f6df7f5f}{Number}},\ String,}
-\DoxyCodeLine{00018\ \ \ \ \ KW\_LET,\ KW\_PRINT,\ KW\_INPUT,\ KW\_IF,\ KW\_THEN,\ KW\_GOTO,\ KW\_FOR,\ KW\_TO,\ KW\_NEXT,\ KW\_GOSUB,\ KW\_RETURN,}
-\DoxyCodeLine{00019\ \ \ \ \ Plus,\ Minus,\ Star,\ Slash,\ Assign,\ LParen,\ RParen,\ Comma,\ Newline,\ Eof}
-\DoxyCodeLine{00020\ \};}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00027\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_token}{Token}}\ \{\ }
-\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480}{TokenType}}\ \mbox{\hyperlink{structtranslator_1_1_token_a36c889bc7ded337a56b399f92ae1fc2a}{type}};\ \ \ \ \ \ }
-\DoxyCodeLine{00029\ \ \ \ \ std::string\ \mbox{\hyperlink{structtranslator_1_1_token_a462f6a4371b83edc64d5062861f9e5d2}{lexeme}};\ \ }
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structtranslator_1_1_token_abb1cffe27ee8e34cfe2c7c37d72e1294}{line}};\ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00031\ \};}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \}\ \textcolor{comment}{//\ namespace\ translator}}
-\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a29ee5d1ebcc033234938a5234f1f2075}{Identifier}},\ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{ast_8h_a916392d25d1c3daa053abe2e1792a4a0ab2ee912b91d69b435159c7c3f6df7f5f}{Number}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a27118326006d3829667a400ad23d5d98}{String}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a90997b7f299d862f6bcbb1ac11d6cd24}{KW\_LET}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a4f1a5bb6f9136f5f9231ef51ed1db995}{KW\_PRINT}},\ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a369d5563133c61595496807e8b3aa19d}{KW\_INPUT}},\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480aff705823708ecc4645c4220d09620ae9}{KW\_IF}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480aaad4a74ae5c704a58a3b563dc11d2fb8}{KW\_THEN}},\ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a68a2ea2db0d1f282955130bb75c25172}{KW\_GOTO}},\ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a97f42a58579d6cbe9b1c9eb0f0de750f}{KW\_FOR}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a221d6d4f9619e1cb8f5e563eb8c4e903}{KW\_TO}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a5b810bf9b287af6a80bc2756f5f650c8}{KW\_NEXT}},\ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480aa83315e9d302480b6b4128b714921a1a}{KW\_GOSUB}},\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a3a387a428e7d6557200c4c5eea812c11}{KW\_RETURN}},\ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a32ba78fe43257d3e7f88e3935a8ea0d4}{Plus}},\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a453fb623e752c5993f65bc410fd74fe5}{Minus}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a26f93e6e68e28a698377e941cb59f29a}{Star}},\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a358cfe58715d680d9ab09f82e4010cbc}{Slash}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a185b7133db22230701a857c059360cc2}{Assign}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a876a9d4efdf66785e41cb452f0402c79}{LParen}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480ad011e3feb19babda65e8951ff7189c0c}{RParen}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a58be47db9455679e6a44df2eff9c9fa6}{Comma}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a755fee300780823fcf4df98383331745}{Newline}},\ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480a49650dcc55dc413da4032cbe44b15d37}{Eof}}\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtranslator_1_1_token}{Token}}\ \{\ }
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{token_8h_a0eb119efce2d20d6019adb661cd4c480}{TokenType}}\ \mbox{\hyperlink{structtranslator_1_1_token_a36c889bc7ded337a56b399f92ae1fc2a}{type}};\ \ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ std::string\ \mbox{\hyperlink{structtranslator_1_1_token_a462f6a4371b83edc64d5062861f9e5d2}{lexeme}};\ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structtranslator_1_1_token_abb1cffe27ee8e34cfe2c7c37d72e1294}{line}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \}\ \textcolor{comment}{//\ namespace\ translator}}
 
 \end{DoxyCode}

@@ -1,11 +1,30 @@
+/**
+ * @file lexer.cpp
+ * @brief Lexer uygulaması: girdi kaynağını Token listesine dönüştürür.
+ */
 #include "translator/lexer.h"
 #include <cctype>
 
 namespace translator {
 
+/**
+ * \brief Bir karakterin tanımlayıcı başlangıcı olup olmadığını kontrol eder.
+ * \param c Karakter
+ * \return Harf ya da '_' ise true
+ */
 static bool is_ident_start(char c){ return std::isalpha(static_cast<unsigned char>(c)) || c=='_'; }
+
+/**
+ * \brief Bir karakterin tanımlayıcı içinde geçerli olup olmadığını kontrol eder.
+ * \param c Karakter
+ * \return Harf, rakam veya '_' ise true
+ */
 static bool is_ident_char(char c){ return std::isalnum(static_cast<unsigned char>(c)) || c=='_'; }
 
+/**
+ * \brief Girdi kaynağını belirteçlere (Token) dönüştürür.
+ * \return Üretilen Token vektörü (sonunda EOF içerir)
+ */
 std::vector<Token> Lexer::tokenize() const {
     std::vector<Token> out; int line=1; std::size_t i=0, n=src_.size();
     auto add=[&](TokenType t, const std::string& lx){ out.push_back({t,lx,line}); };
@@ -52,4 +71,3 @@ std::vector<Token> Lexer::tokenize() const {
 }
 
 } // namespace translator
-

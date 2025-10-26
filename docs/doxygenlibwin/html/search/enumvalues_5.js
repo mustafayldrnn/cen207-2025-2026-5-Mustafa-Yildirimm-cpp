@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['let_0',['Let',['../ast_8h.html#ae91056a6e5d3941ec5899084a4007a3dacae6404c4aecf46684930fe2a86676a6',1,'translator']]]
+  ['gosub_0',['Gosub',['../ast_8h.html#ae91056a6e5d3941ec5899084a4007a3dafdbb6bdcfd26d3294a1a068ffc19d173',1,'translator']]],
+  ['goto_1',['Goto',['../ast_8h.html#ae91056a6e5d3941ec5899084a4007a3daae8fae3d74fdc80ef40995c3c6ca152e',1,'translator']]]
 ];

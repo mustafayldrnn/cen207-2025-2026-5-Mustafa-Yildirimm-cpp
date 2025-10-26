@@ -137,8 +137,12 @@ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$
 
 İfade çözümler. 
 
+Toplama/çıkarma önceliğiyle bir ifadeyi çözümler.
+
 \begin{DoxyReturn}{Returns}
-Çözümlenen ifade AST\textquotesingle{}i 
+Çözümlenen ifade AST\textquotesingle{}i
+
+Çözümlenen ifade düğümü 
 \end{DoxyReturn}
 \Hypertarget{classtranslator_1_1_parser_abb54531b779933acfd0c644dcd868b45}\index{translator::Parser@{translator::Parser}!parse\_factor@{parse\_factor}}
 \index{parse\_factor@{parse\_factor}!translator::Parser@{translator::Parser}}
@@ -150,8 +154,12 @@ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$
 
 Faktör çözümler. 
 
+Sayı, değişken veya parantezli ifade çözümler.
+
 \begin{DoxyReturn}{Returns}
-Çözümlenen faktör AST\textquotesingle{}i 
+Çözümlenen faktör AST\textquotesingle{}i
+
+Çözümlenen faktör düğümü 
 \end{DoxyReturn}
 \Hypertarget{classtranslator_1_1_parser_aec074fe4de2041a83946260a05780582}\index{translator::Parser@{translator::Parser}!parse\_statement@{parse\_statement}}
 \index{parse\_statement@{parse\_statement}!translator::Parser@{translator::Parser}}
@@ -163,13 +171,23 @@ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_stmt}{Stmt}} $>$
 
 Deyim çözümler. 
 
+Tek bir deyimi (ve varsa satır etiketini) çözümler.
+
 
 \begin{DoxyParams}{Parameters}
 {\em out\+Label} & Çıktı etiketi referansı \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Çözümlenen deyim AST\textquotesingle{}i 
+Çözümlenen deyim AST\textquotesingle{}i
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{out}}  & {\em out\+Label} & Deyimin satır etiketi; yoksa -\/1 olur. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Çözümlenen deyim düğümü 
 \end{DoxyReturn}
 \Hypertarget{classtranslator_1_1_parser_acfd7d04d3973badabd5a26214ed3c500}\index{translator::Parser@{translator::Parser}!parse\_term@{parse\_term}}
 \index{parse\_term@{parse\_term}!translator::Parser@{translator::Parser}}
@@ -181,8 +199,12 @@ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtranslator_1_1_expr}{Expr}} $>$
 
 Terim çözümler. 
 
+Çarpma/bölme önceliğiyle bir terimi çözümler.
+
 \begin{DoxyReturn}{Returns}
-Çözümlenen terim AST\textquotesingle{}i 
+Çözümlenen terim AST\textquotesingle{}i
+
+Çözümlenen terim düğümü 
 \end{DoxyReturn}
 \Hypertarget{classtranslator_1_1_parser_a119007cefb979b4071cd7313c0c31062}\index{translator::Parser@{translator::Parser}!parseProgram@{parseProgram}}
 \index{parseProgram@{parseProgram}!translator::Parser@{translator::Parser}}
@@ -194,8 +216,12 @@ Terim çözümler.
 
 Girişin tamamını \doxylink{structtranslator_1_1_program}{Program} yapısına çözümler. 
 
+Girdi akışının tamamını \doxylink{structtranslator_1_1_program}{Program} yapısına çözümler.
+
 \begin{DoxyReturn}{Returns}
-Çözümlenen program AST\textquotesingle{}i 
+Çözümlenen program AST\textquotesingle{}i
+
+Etiketlenmiş deyimlerden oluşan \doxylink{structtranslator_1_1_program}{Program} 
 \end{DoxyReturn}
 \Hypertarget{classtranslator_1_1_parser_a01eed9fe50c7b02223c8aaf8140b4649}\index{translator::Parser@{translator::Parser}!peek@{peek}}
 \index{peek@{peek}!translator::Parser@{translator::Parser}}
@@ -214,5 +240,5 @@ Mevcut token\textquotesingle{}ın referansı
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/src/translator/\mbox{\hyperlink{parser_8h}{parser.\+h}}\item 
-C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/src/translator/parser.\+cpp\end{DoxyCompactItemize}
+src/translator/\mbox{\hyperlink{parser_8h}{parser.\+h}}\item 
+src/translator/\mbox{\hyperlink{parser_8cpp}{parser.\+cpp}}\end{DoxyCompactItemize}

@@ -18,6 +18,7 @@
 <para>Verilen <ref refid="structtranslator_1_1_program" kindref="compound">Program</ref>&apos;dan C++ kodu üretir. </para>
         </briefdescription>
         <detaileddescription>
+<para>Verilen <ref refid="structtranslator_1_1_program" kindref="compound">Program</ref> AST&apos;sinden C++ kodu üretir.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p</parametername>
@@ -27,13 +28,24 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Üretilen C++ kaynak kodu </para>
+<simplesect kind="return"><para>Üretilen C++ kaynak kodu</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Etiketlenmiş deyimlerden oluşan <ref refid="structtranslator_1_1_program" kindref="compound">Program</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Derlenebilir C++ kaynak kodu </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/codegen.h" line="27" column="24" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/codegen.cpp" bodystart="18" bodyend="89"/>
+        <location file="src/translator/codegen.h" line="27" column="24" bodyfile="src/translator/codegen.cpp" bodystart="32" bodyend="103"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -48,7 +60,7 @@
         <link refid="classtranslator_1_1_codegen"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/codegen.h" line="20" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/src/translator/codegen.h" bodystart="20" bodyend="28"/>
+    <location file="src/translator/codegen.h" line="20" column="1" bodyfile="src/translator/codegen.h" bodystart="20" bodyend="28"/>
     <listofallmembers>
       <member refid="classtranslator_1_1_codegen_1a93cb9bf11dd99728319a5e5de334f6f8" prot="public" virt="non-virtual"><scope>translator::Codegen</scope><name>emit_cpp</name></member>
     </listofallmembers>
