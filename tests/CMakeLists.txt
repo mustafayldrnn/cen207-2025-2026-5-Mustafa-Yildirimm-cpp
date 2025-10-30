@@ -36,6 +36,10 @@ set(TEST_SOURCES
 
 add_executable(unit_tests ${TEST_SOURCES})
 target_link_libraries(unit_tests PRIVATE translatorlib safechronolib GTest::gtest_main)
+if(MSVC)
+  target_compile_options(unit_tests PRIVATE /FS)
+endif()
+set_property(TARGET unit_tests PROPERTY CXX_STANDARD 20)
 
 # Add LanguageTranslator and other source files to tests
 # Note: translatorlib already includes lexer, parser, codegen
