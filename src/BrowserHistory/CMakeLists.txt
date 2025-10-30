@@ -13,10 +13,10 @@ add_library(${LIBNAME} STATIC
 target_include_directories(${LIBNAME} PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/header
     ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}/include
 )
 
-# Link with DoubleLinkedList
-target_link_libraries(${LIBNAME} doublelinkedlist)
+# No external link required; uses header-only ds::DoublyLinkedList under include/ds
 
 # Set properties
 set_target_properties(${LIBNAME} PROPERTIES

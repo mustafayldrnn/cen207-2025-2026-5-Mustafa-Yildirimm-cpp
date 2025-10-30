@@ -33,6 +33,9 @@ target_include_directories(language_translator PRIVATE src)
 add_library(safechronolib src/SafeChronoCalculator.cpp)
 target_include_directories(safechronolib PUBLIC src)
 
+# Data structure libs used by BrowserHistory
+add_subdirectory(src/BrowserHistory)
+
 if(TRANSLATOR_ENABLE_TESTS)
   include(FetchContent)
   set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)

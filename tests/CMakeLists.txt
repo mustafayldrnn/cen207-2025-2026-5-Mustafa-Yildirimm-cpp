@@ -45,8 +45,10 @@ target_sources(unit_tests PRIVATE
     ../src/utility/src/mathUtility.cpp
     ../src/coverage_anchor/CoverageAnchor.cpp
     ../src/SafeChronoCalculator.cpp
-    ../src/BrowserHistory/src/BrowserHistory.cpp
 )
+
+# Link BrowserHistory as a library instead of compiling its .cpp directly
+target_link_libraries(unit_tests PRIVATE browserhistory)
 
 # Add include directories for main library headers
 target_include_directories(unit_tests PRIVATE 
