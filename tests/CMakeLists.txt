@@ -37,10 +37,7 @@ target_link_libraries(unit_tests PRIVATE translatorlib safechronolib GTest::gtes
 if(MSVC)
   target_compile_options(unit_tests PRIVATE /FS)
 endif()
-<<<<<<< Updated upstream
 set_property(TARGET unit_tests PROPERTY CXX_STANDARD 20)
-=======
->>>>>>> Stashed changes
 
 # Add LanguageTranslator and other source files to tests
 # Note: translatorlib already includes lexer, parser, codegen

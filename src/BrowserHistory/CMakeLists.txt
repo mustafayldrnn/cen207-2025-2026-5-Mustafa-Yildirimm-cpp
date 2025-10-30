@@ -20,9 +20,14 @@ target_include_directories(${LIBNAME} PUBLIC
 
 # Set properties
 set_target_properties(${LIBNAME} PROPERTIES
-    CXX_STANDARD 11
+    CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
 )
+
+if(MSVC)
+  target_compile_options(${LIBNAME} PRIVATE /Zi /Od)
+  target_link_options(${LIBNAME} PRIVATE /DEBUG:FULL)
+endif()
 
 # Install
 install(TARGETS ${LIBNAME}

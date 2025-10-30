@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include "BrowserHistory/header/BrowserHistory.h"
+#include <sstream>
 
 using Coruh::Applications::BrowserHistory;
 
@@ -52,4 +53,49 @@ TEST(BrowserHistory, NavigateAfterBackPrunesForward) {
     // forward should now be d.com only
     EXPECT_TRUE(bh.canGoForward());
     EXPECT_EQ(bh.goForward(), "d.com");
+}
+
+TEST(BrowserHistory, ClearAndDisplay) {
+    BrowserHistory bh;
+    bh.navigateTo("start.com");
+    bh.navigateTo("next.com");
+    EXPECT_EQ(bh.getHistorySize(), 2u);
+
+    // Capture display output
+    std::ostringstream oss; auto* old = std::cout.rdbuf(oss.rdbuf());
+    bh.displayHistory();
+    std::cout.rdbuf(old);
+    auto out = oss.str();
+    EXPECT_FALSE(out.empty());
+
+    // Clear and verify
+    bh.clearHistory();
+    EXPECT_EQ(bh.getHistorySize(), 0u);
+    EXPECT_EQ(bh.getCurrentUrl(), "");
+    EXPECT_FALSE(bh.canGoBack());
+    EXPECT_FALSE(bh.canGoForward());
+}
+
+TEST(BrowserHistory, EmptyNavigateIgnored) {
+    BrowserHistory bh;
+    bh.navigateTo("");
+    EXPECT_EQ(bh.getHistorySize(), 0u);
+    EXPECT_EQ(bh.getCurrentUrl(), "");
+    EXPECT_EQ(bh.goBack(), "");
+    EXPECT_EQ(bh.goForward(), "");
+}
+
+TEST(BrowserHistory, LargeNavigationBackAndForth) {
+    BrowserHistory bh;
+    for (int i = 0; i < 100; ++i) {
+        bh.navigateTo("p" + std::to_string(i));
+    }
+    EXPECT_EQ(bh.getHistorySize(), 100u);
+    // Go back to the first
+    while (bh.canGoBack()) bh.goBack();
+    EXPECT_FALSE(bh.canGoBack());
+    // Go forward to the last
+    while (bh.canGoForward()) bh.goForward();
+    EXPECT_FALSE(bh.canGoForward());
+    EXPECT_EQ(bh.getHistorySize(), 100u);
 }

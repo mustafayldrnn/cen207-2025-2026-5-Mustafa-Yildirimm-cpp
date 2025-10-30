@@ -125,7 +125,7 @@ call reportgenerator "-title:translate Library Unit Test Coverage Report (Window
     "-reporttypes:Html" ^
     "-reports:**/translateapp_unit_win_cobertura.xml" ^
     "-sourcedirs:src;include" ^
-    "-filefilters:+*src/*;+*include/*;-*\\tests\\*;-*build*;-*gtest*" ^
+    "-filefilters:+*src/BrowserHistory/*;+*src/*;+*include/*;-*\\tests\\*;-*build*;-*gtest*" ^
     "-historydir:report_test_hist_win"
 call reportgenerator "-targetdir:assets/codecoveragelibwin" "-reporttypes:Badges" "-reports:**/translateapp_unit_win_cobertura.xml" "-sourcedirs:src;include" "-filefilters:-*minkernel\*;-*gtest*;-*a\_work\*;-*gtest-*;-*gtest.cc;-*gtest.h;-*build*;-*tests*"
 
@@ -188,6 +188,7 @@ echo ....................
 echo Operation Completed!
 echo ....................
 pause
+
 
 
 
