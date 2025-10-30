@@ -194,3 +194,4 @@ TEST_F(LanguageTranslatorHistoryTest, TestHistoryCleanupOnLogout) {
     
     // History should persist across login sessions
 }
+

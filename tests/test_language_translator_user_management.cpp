@@ -152,3 +152,4 @@ TEST_F(LanguageTranslatorUserManagementTest, TestUserPreferredLanguages) {
     // User's preferred languages should be loaded (implementation dependent)
     EXPECT_TRUE(app->isUserLoggedIn());
 }
+

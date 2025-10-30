@@ -215,3 +215,4 @@ TEST_F(LanguageTranslatorDictionaryTest, TestLargeDictionaryLoading) {
     app->setTargetLanguage("German");
     EXPECT_EQ(app->translateWord("word50"), "wort50");
 }
+
