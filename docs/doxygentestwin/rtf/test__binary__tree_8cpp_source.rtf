@@ -151,585 +151,585 @@
 test_binary_tree.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_binary_tree.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_binary_tree.cpp}
-{\bkmkstart AAAAAAAAAK}
-{\bkmkend AAAAAAAAAK}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAAR}{\bkmkend AAAAAAAAAR}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAAD}{\bkmkend AAAAAAAAAD}
 00001 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAABC}{\bkmkend AAAAAAAABC}
+{\bkmkstart AAAAAAAAAI}{\bkmkend AAAAAAAAAI}
 00002 {\cf21 #include <vector>}\par
-{\bkmkstart AAAAAAAABS}{\bkmkend AAAAAAAABS}
+{\bkmkstart AAAAAAAAAJ}{\bkmkend AAAAAAAAAJ}
 00003 {\cf21 #include "ds/binary_tree.h"}\par
-{\bkmkstart AAAAAAAACG}{\bkmkend AAAAAAAACG}
+{\bkmkstart AAAAAAAAAM}{\bkmkend AAAAAAAAAM}
 00004 \par
-{\bkmkstart AAAAAAAACJ}{\bkmkend AAAAAAAACJ}
+{\bkmkstart AAAAAAAAAN}{\bkmkend AAAAAAAAAN}
 00005 {\cf17 using namespace }ds;\par
-{\bkmkstart AAAAAAAACL}{\bkmkend AAAAAAAACL}
+{\bkmkstart AAAAAAAAAO}{\bkmkend AAAAAAAAAO}
 00006 \par
-{\bkmkstart AAAAAAAADS}{\bkmkend AAAAAAAADS}
+{\bkmkstart AAAAAAAAAP}{\bkmkend AAAAAAAAAP}
 00007 TEST(BinaryTree, ConstructionAndDestruction)\{\par
-{\bkmkstart AAAAAAAAEC}{\bkmkend AAAAAAAAEC}
+{\bkmkstart AAAAAAAAAT}{\bkmkend AAAAAAAAAT}
 00008     BinaryTree<int> tree;\par
-{\bkmkstart AAAAAAAAEG}{\bkmkend AAAAAAAAEG}
+{\bkmkstart AAAAAAAAAU}{\bkmkend AAAAAAAAAU}
 00009     EXPECT_TRUE(tree.empty());\par
-{\bkmkstart AAAAAAAAEI}{\bkmkend AAAAAAAAEI}
+{\bkmkstart AAAAAAAAAW}{\bkmkend AAAAAAAAAW}
 00010     EXPECT_EQ(tree.size(), 0);\par
-{\bkmkstart AAAAAAAAEL}{\bkmkend AAAAAAAAEL}
+{\bkmkstart AAAAAAAAAX}{\bkmkend AAAAAAAAAX}
 00011     EXPECT_EQ(tree.height(), -1);\par
-{\bkmkstart AAAAAAAAEN}{\bkmkend AAAAAAAAEN}
+{\bkmkstart AAAAAAAAAY}{\bkmkend AAAAAAAAAY}
 00012 \}\par
-{\bkmkstart AAAAAAAAEO}{\bkmkend AAAAAAAAEO}
+{\bkmkstart AAAAAAAABA}{\bkmkend AAAAAAAABA}
 00013 \par
-{\bkmkstart AAAAAAAAEQ}{\bkmkend AAAAAAAAEQ}
+{\bkmkstart AAAAAAAABB}{\bkmkend AAAAAAAABB}
 00014 TEST(BinaryTree, CreateRoot)\{\par
-{\bkmkstart AAAAAAAAET}{\bkmkend AAAAAAAAET}
+{\bkmkstart AAAAAAAABC}{\bkmkend AAAAAAAABC}
 00015     BinaryTree<int> tree;\par
-{\bkmkstart AAAAAAAAEV}{\bkmkend AAAAAAAAEV}
+{\bkmkstart AAAAAAAABD}{\bkmkend AAAAAAAABD}
 00016     {\cf17 auto}* root = tree.createRoot(10);\par
-{\bkmkstart AAAAAAAAEX}{\bkmkend AAAAAAAAEX}
+{\bkmkstart AAAAAAAABH}{\bkmkend AAAAAAAABH}
 00017     EXPECT_EQ(root->value, 10);\par
-{\bkmkstart AAAAAAAAFA}{\bkmkend AAAAAAAAFA}
+{\bkmkstart AAAAAAAABI}{\bkmkend AAAAAAAABI}
 00018     EXPECT_FALSE(tree.empty());\par
-{\bkmkstart AAAAAAAAFB}{\bkmkend AAAAAAAAFB}
+{\bkmkstart AAAAAAAABK}{\bkmkend AAAAAAAABK}
 00019     EXPECT_EQ(tree.size(), 1);\par
-{\bkmkstart AAAAAAAAFG}{\bkmkend AAAAAAAAFG}
+{\bkmkstart AAAAAAAABO}{\bkmkend AAAAAAAABO}
 00020     EXPECT_EQ(tree.height(), 0);\par
-{\bkmkstart AAAAAAAAFJ}{\bkmkend AAAAAAAAFJ}
+{\bkmkstart AAAAAAAABP}{\bkmkend AAAAAAAABP}
 00021 \}\par
-{\bkmkstart AAAAAAAAFK}{\bkmkend AAAAAAAAFK}
+{\bkmkstart AAAAAAAABQ}{\bkmkend AAAAAAAABQ}
 00022 \par
-{\bkmkstart AAAAAAAAFM}{\bkmkend AAAAAAAAFM}
+{\bkmkstart AAAAAAAABT}{\bkmkend AAAAAAAABT}
 00023 TEST(BinaryTree, BuildTree)\{\par
-{\bkmkstart AAAAAAAAFP}{\bkmkend AAAAAAAAFP}
+{\bkmkstart AAAAAAAABV}{\bkmkend AAAAAAAABV}
 00024     BinaryTree<int> tree;\par
-{\bkmkstart AAAAAAAAFR}{\bkmkend AAAAAAAAFR}
+{\bkmkstart AAAAAAAABX}{\bkmkend AAAAAAAABX}
 00025     \par
-{\bkmkstart AAAAAAAAFT}{\bkmkend AAAAAAAAFT}
+{\bkmkstart AAAAAAAABY}{\bkmkend AAAAAAAABY}
 00026     {\cf20 // Build tree:}\par
-{\bkmkstart AAAAAAAAFV}{\bkmkend AAAAAAAAFV}
+{\bkmkstart AAAAAAAABZ}{\bkmkend AAAAAAAABZ}
 00027     {\cf20 //       10}\par
-{\bkmkstart AAAAAAAAFX}{\bkmkend AAAAAAAAFX}
+{\bkmkstart AAAAAAAACA}{\bkmkend AAAAAAAACA}
 00028     {\cf20 //      /  \\}\par
-{\bkmkstart AAAAAAAAGA}{\bkmkend AAAAAAAAGA}
+{\bkmkstart AAAAAAAACB}{\bkmkend AAAAAAAACB}
 00029 {\cf20     //     5   15}\par
-{\bkmkstart AAAAAAAAGD}{\bkmkend AAAAAAAAGD}
+{\bkmkstart AAAAAAAACC}{\bkmkend AAAAAAAACC}
 00030     {\cf20 //    / \\}\par
-{\bkmkstart AAAAAAAAGF}{\bkmkend AAAAAAAAGF}
+{\bkmkstart AAAAAAAACD}{\bkmkend AAAAAAAACD}
 00031 {\cf20     //   3   7}\par
-{\bkmkstart AAAAAAAAGG}{\bkmkend AAAAAAAAGG}
+{\bkmkstart AAAAAAAACE}{\bkmkend AAAAAAAACE}
 00032     \par
-{\bkmkstart AAAAAAAAGH}{\bkmkend AAAAAAAAGH}
+{\bkmkstart AAAAAAAACF}{\bkmkend AAAAAAAACF}
 00033     {\cf17 auto}* root = tree.createRoot(10);\par
-{\bkmkstart AAAAAAAAGM}{\bkmkend AAAAAAAAGM}
+{\bkmkstart AAAAAAAACH}{\bkmkend AAAAAAAACH}
 00034     root->left = {\cf17 new} TreeNode<int>(5);\par
-{\bkmkstart AAAAAAAAGP}{\bkmkend AAAAAAAAGP}
+{\bkmkstart AAAAAAAACI}{\bkmkend AAAAAAAACI}
 00035     root->right = {\cf17 new} TreeNode<int>(15);\par
-{\bkmkstart AAAAAAAAGR}{\bkmkend AAAAAAAAGR}
+{\bkmkstart AAAAAAAACJ}{\bkmkend AAAAAAAACJ}
 00036     root->left->left = {\cf17 new} TreeNode<int>(3);\par
-{\bkmkstart AAAAAAAAGU}{\bkmkend AAAAAAAAGU}
+{\bkmkstart AAAAAAAACK}{\bkmkend AAAAAAAACK}
 00037     root->left->right = {\cf17 new} TreeNode<int>(7);\par
-{\bkmkstart AAAAAAAAGW}{\bkmkend AAAAAAAAGW}
+{\bkmkstart AAAAAAAACM}{\bkmkend AAAAAAAACM}
 00038     \par
-{\bkmkstart AAAAAAAAGY}{\bkmkend AAAAAAAAGY}
+{\bkmkstart AAAAAAAACO}{\bkmkend AAAAAAAACO}
 00039     EXPECT_EQ(tree.size(), 5);\par
-{\bkmkstart AAAAAAAAHC}{\bkmkend AAAAAAAAHC}
+{\bkmkstart AAAAAAAACQ}{\bkmkend AAAAAAAACQ}
 00040     EXPECT_EQ(tree.height(), 2);\par
-{\bkmkstart AAAAAAAAHD}{\bkmkend AAAAAAAAHD}
+{\bkmkstart AAAAAAAACR}{\bkmkend AAAAAAAACR}
 00041 \}\par
-{\bkmkstart AAAAAAAAHF}{\bkmkend AAAAAAAAHF}
+{\bkmkstart AAAAAAAACS}{\bkmkend AAAAAAAACS}
 00042 \par
-{\bkmkstart AAAAAAAAHG}{\bkmkend AAAAAAAAHG}
+{\bkmkstart AAAAAAAACU}{\bkmkend AAAAAAAACU}
 00043 TEST(BinaryTree, InorderTraversal)\{\par
-{\bkmkstart AAAAAAAAHH}{\bkmkend AAAAAAAAHH}
+{\bkmkstart AAAAAAAACW}{\bkmkend AAAAAAAACW}
 00044     BinaryTree<int> tree;\par
-{\bkmkstart AAAAAAAAHI}{\bkmkend AAAAAAAAHI}
+{\bkmkstart AAAAAAAACZ}{\bkmkend AAAAAAAACZ}
 00045     \par
-{\bkmkstart AAAAAAAAHK}{\bkmkend AAAAAAAAHK}
+{\bkmkstart AAAAAAAADA}{\bkmkend AAAAAAAADA}
 00046     {\cf20 // Build tree:}\par
-{\bkmkstart AAAAAAAAHL}{\bkmkend AAAAAAAAHL}
+{\bkmkstart AAAAAAAADC}{\bkmkend AAAAAAAADC}
 00047     {\cf20 //       10}\par
-{\bkmkstart AAAAAAAAHN}{\bkmkend AAAAAAAAHN}
+{\bkmkstart AAAAAAAADE}{\bkmkend AAAAAAAADE}
 00048     {\cf20 //      /  \\}\par
-{\bkmkstart AAAAAAAAHP}{\bkmkend AAAAAAAAHP}
+{\bkmkstart AAAAAAAADF}{\bkmkend AAAAAAAADF}
 00049 {\cf20     //     5   15}\par
-{\bkmkstart AAAAAAAAHQ}{\bkmkend AAAAAAAAHQ}
+{\bkmkstart AAAAAAAADG}{\bkmkend AAAAAAAADG}
 00050     {\cf20 //    / \\}\par
-{\bkmkstart AAAAAAAAHS}{\bkmkend AAAAAAAAHS}
+{\bkmkstart AAAAAAAADH}{\bkmkend AAAAAAAADH}
 00051 {\cf20     //   3   7}\par
-{\bkmkstart AAAAAAAAHV}{\bkmkend AAAAAAAAHV}
+{\bkmkstart AAAAAAAADJ}{\bkmkend AAAAAAAADJ}
 00052     \par
-{\bkmkstart AAAAAAAAHW}{\bkmkend AAAAAAAAHW}
+{\bkmkstart AAAAAAAADK}{\bkmkend AAAAAAAADK}
 00053     {\cf17 auto}* root = tree.createRoot(10);\par
-{\bkmkstart AAAAAAAAIA}{\bkmkend AAAAAAAAIA}
+{\bkmkstart AAAAAAAADM}{\bkmkend AAAAAAAADM}
 00054     root->left = {\cf17 new} TreeNode<int>(5);\par
-{\bkmkstart AAAAAAAAIJ}{\bkmkend AAAAAAAAIJ}
+{\bkmkstart AAAAAAAADQ}{\bkmkend AAAAAAAADQ}
 00055     root->right = {\cf17 new} TreeNode<int>(15);\par
-{\bkmkstart AAAAAAAAIP}{\bkmkend AAAAAAAAIP}
+{\bkmkstart AAAAAAAADR}{\bkmkend AAAAAAAADR}
 00056     root->left->left = {\cf17 new} TreeNode<int>(3);\par
-{\bkmkstart AAAAAAAAIR}{\bkmkend AAAAAAAAIR}
+{\bkmkstart AAAAAAAADU}{\bkmkend AAAAAAAADU}
 00057     root->left->right = {\cf17 new} TreeNode<int>(7);\par
-{\bkmkstart AAAAAAAAIV}{\bkmkend AAAAAAAAIV}
+{\bkmkstart AAAAAAAADW}{\bkmkend AAAAAAAADW}
 00058     \par
-{\bkmkstart AAAAAAAAIX}{\bkmkend AAAAAAAAIX}
+{\bkmkstart AAAAAAAADX}{\bkmkend AAAAAAAADX}
 00059     std::vector<int> result;\par
-{\bkmkstart AAAAAAAAJA}{\bkmkend AAAAAAAAJA}
+{\bkmkstart AAAAAAAADZ}{\bkmkend AAAAAAAADZ}
 00060     tree.inorder([&result]({\cf17 const} {\cf18 int}& val) \{\par
-{\bkmkstart AAAAAAAAJK}{\bkmkend AAAAAAAAJK}
+{\bkmkstart AAAAAAAAEF}{\bkmkend AAAAAAAAEF}
 00061         result.push_back(val);\par
-{\bkmkstart AAAAAAAAJN}{\bkmkend AAAAAAAAJN}
+{\bkmkstart AAAAAAAAEG}{\bkmkend AAAAAAAAEG}
 00062     \});\par
-{\bkmkstart AAAAAAAAJO}{\bkmkend AAAAAAAAJO}
+{\bkmkstart AAAAAAAAEH}{\bkmkend AAAAAAAAEH}
 00063     \par
-{\bkmkstart AAAAAAAAJR}{\bkmkend AAAAAAAAJR}
+{\bkmkstart AAAAAAAAEI}{\bkmkend AAAAAAAAEI}
 00064     {\cf20 // Inorder: 3, 5, 7, 10, 15}\par
-{\bkmkstart AAAAAAAAJT}{\bkmkend AAAAAAAAJT}
+{\bkmkstart AAAAAAAAEK}{\bkmkend AAAAAAAAEK}
 00065     ASSERT_EQ(result.size(), 5u);\par
-{\bkmkstart AAAAAAAAJW}{\bkmkend AAAAAAAAJW}
+{\bkmkstart AAAAAAAAEL}{\bkmkend AAAAAAAAEL}
 00066     EXPECT_EQ(result[0], 3);\par
-{\bkmkstart AAAAAAAAJY}{\bkmkend AAAAAAAAJY}
+{\bkmkstart AAAAAAAAEM}{\bkmkend AAAAAAAAEM}
 00067     EXPECT_EQ(result[1], 5);\par
-{\bkmkstart AAAAAAAAKD}{\bkmkend AAAAAAAAKD}
+{\bkmkstart AAAAAAAAEO}{\bkmkend AAAAAAAAEO}
 00068     EXPECT_EQ(result[2], 7);\par
-{\bkmkstart AAAAAAAAKE}{\bkmkend AAAAAAAAKE}
+{\bkmkstart AAAAAAAAEP}{\bkmkend AAAAAAAAEP}
 00069     EXPECT_EQ(result[3], 10);\par
-{\bkmkstart AAAAAAAAKJ}{\bkmkend AAAAAAAAKJ}
+{\bkmkstart AAAAAAAAER}{\bkmkend AAAAAAAAER}
 00070     EXPECT_EQ(result[4], 15);\par
-{\bkmkstart AAAAAAAAKK}{\bkmkend AAAAAAAAKK}
+{\bkmkstart AAAAAAAAES}{\bkmkend AAAAAAAAES}
 00071 \}\par
-{\bkmkstart AAAAAAAAKM}{\bkmkend AAAAAAAAKM}
+{\bkmkstart AAAAAAAAET}{\bkmkend AAAAAAAAET}
 00072 \par
-{\bkmkstart AAAAAAAAKO}{\bkmkend AAAAAAAAKO}
+{\bkmkstart AAAAAAAAEU}{\bkmkend AAAAAAAAEU}
 00073 TEST(BinaryTree, PreorderTraversal)\{\par
-{\bkmkstart AAAAAAAAKU}{\bkmkend AAAAAAAAKU}
+{\bkmkstart AAAAAAAAEX}{\bkmkend AAAAAAAAEX}
 00074     BinaryTree<int> tree;\par
-{\bkmkstart AAAAAAAAKZ}{\bkmkend AAAAAAAAKZ}
+{\bkmkstart AAAAAAAAEZ}{\bkmkend AAAAAAAAEZ}
 00075     \par
-{\bkmkstart AAAAAAAALB}{\bkmkend AAAAAAAALB}
+{\bkmkstart AAAAAAAAFA}{\bkmkend AAAAAAAAFA}
 00076     {\cf20 // Build tree:}\par
-{\bkmkstart AAAAAAAALF}{\bkmkend AAAAAAAALF}
+{\bkmkstart AAAAAAAAFC}{\bkmkend AAAAAAAAFC}
 00077     {\cf20 //       10}\par
-{\bkmkstart AAAAAAAALG}{\bkmkend AAAAAAAALG}
+{\bkmkstart AAAAAAAAFE}{\bkmkend AAAAAAAAFE}
 00078     {\cf20 //      /  \\}\par
-{\bkmkstart AAAAAAAALJ}{\bkmkend AAAAAAAALJ}
+{\bkmkstart AAAAAAAAFF}{\bkmkend AAAAAAAAFF}
 00079 {\cf20     //     5   15}\par
-{\bkmkstart AAAAAAAALW}{\bkmkend AAAAAAAALW}
+{\bkmkstart AAAAAAAAFH}{\bkmkend AAAAAAAAFH}
 00080     {\cf20 //    / \\}\par
-{\bkmkstart AAAAAAAALZ}{\bkmkend AAAAAAAALZ}
+{\bkmkstart AAAAAAAAFI}{\bkmkend AAAAAAAAFI}
 00081 {\cf20     //   3   7}\par
-{\bkmkstart AAAAAAAAMC}{\bkmkend AAAAAAAAMC}
+{\bkmkstart AAAAAAAAFK}{\bkmkend AAAAAAAAFK}
 00082     \par
-{\bkmkstart AAAAAAAAMG}{\bkmkend AAAAAAAAMG}
+{\bkmkstart AAAAAAAAFL}{\bkmkend AAAAAAAAFL}
 00083     {\cf17 auto}* root = tree.createRoot(10);\par
-{\bkmkstart AAAAAAAAMM}{\bkmkend AAAAAAAAMM}
+{\bkmkstart AAAAAAAAFN}{\bkmkend AAAAAAAAFN}
 00084     root->left = {\cf17 new} TreeNode<int>(5);\par
-{\bkmkstart AAAAAAAAMR}{\bkmkend AAAAAAAAMR}
+{\bkmkstart AAAAAAAAFP}{\bkmkend AAAAAAAAFP}
 00085     root->right = {\cf17 new} TreeNode<int>(15);\par
-{\bkmkstart AAAAAAAANA}{\bkmkend AAAAAAAANA}
+{\bkmkstart AAAAAAAAFS}{\bkmkend AAAAAAAAFS}
 00086     root->left->left = {\cf17 new} TreeNode<int>(3);\par
-{\bkmkstart AAAAAAAANE}{\bkmkend AAAAAAAANE}
+{\bkmkstart AAAAAAAAFU}{\bkmkend AAAAAAAAFU}
 00087     root->left->right = {\cf17 new} TreeNode<int>(7);\par
-{\bkmkstart AAAAAAAANH}{\bkmkend AAAAAAAANH}
+{\bkmkstart AAAAAAAAFW}{\bkmkend AAAAAAAAFW}
 00088     \par
-{\bkmkstart AAAAAAAANJ}{\bkmkend AAAAAAAANJ}
+{\bkmkstart AAAAAAAAFY}{\bkmkend AAAAAAAAFY}
 00089     std::vector<int> result;\par
-{\bkmkstart AAAAAAAANM}{\bkmkend AAAAAAAANM}
+{\bkmkstart AAAAAAAAGA}{\bkmkend AAAAAAAAGA}
 00090     tree.preorder([&result]({\cf17 const} {\cf18 int}& val) \{\par
-{\bkmkstart AAAAAAAANT}{\bkmkend AAAAAAAANT}
+{\bkmkstart AAAAAAAAGC}{\bkmkend AAAAAAAAGC}
 00091         result.push_back(val);\par
-{\bkmkstart AAAAAAAANU}{\bkmkend AAAAAAAANU}
+{\bkmkstart AAAAAAAAGE}{\bkmkend AAAAAAAAGE}
 00092     \});\par
-{\bkmkstart AAAAAAAANV}{\bkmkend AAAAAAAANV}
+{\bkmkstart AAAAAAAAGG}{\bkmkend AAAAAAAAGG}
 00093     \par
-{\bkmkstart AAAAAAAANX}{\bkmkend AAAAAAAANX}
+{\bkmkstart AAAAAAAAGH}{\bkmkend AAAAAAAAGH}
 00094     {\cf20 // Preorder: 10, 5, 3, 7, 15}\par
-{\bkmkstart AAAAAAAANY}{\bkmkend AAAAAAAANY}
+{\bkmkstart AAAAAAAAGJ}{\bkmkend AAAAAAAAGJ}
 00095     ASSERT_EQ(result.size(), 5u);\par
-{\bkmkstart AAAAAAAAOB}{\bkmkend AAAAAAAAOB}
+{\bkmkstart AAAAAAAAGK}{\bkmkend AAAAAAAAGK}
 00096     EXPECT_EQ(result[0], 10);\par
-{\bkmkstart AAAAAAAAOG}{\bkmkend AAAAAAAAOG}
+{\bkmkstart AAAAAAAAGO}{\bkmkend AAAAAAAAGO}
 00097     EXPECT_EQ(result[1], 5);\par
-{\bkmkstart AAAAAAAAOL}{\bkmkend AAAAAAAAOL}
+{\bkmkstart AAAAAAAAGP}{\bkmkend AAAAAAAAGP}
 00098     EXPECT_EQ(result[2], 3);\par
-{\bkmkstart AAAAAAAAOP}{\bkmkend AAAAAAAAOP}
+{\bkmkstart AAAAAAAAGR}{\bkmkend AAAAAAAAGR}
 00099     EXPECT_EQ(result[3], 7);\par
-{\bkmkstart AAAAAAAAOT}{\bkmkend AAAAAAAAOT}
+{\bkmkstart AAAAAAAAGT}{\bkmkend AAAAAAAAGT}
 00100     EXPECT_EQ(result[4], 15);\par
-{\bkmkstart AAAAAAAAOX}{\bkmkend AAAAAAAAOX}
+{\bkmkstart AAAAAAAAGU}{\bkmkend AAAAAAAAGU}
 00101 \}\par
-{\bkmkstart AAAAAAAAPA}{\bkmkend AAAAAAAAPA}
+{\bkmkstart AAAAAAAAGV}{\bkmkend AAAAAAAAGV}
 00102 \par
-{\bkmkstart AAAAAAAAPB}{\bkmkend AAAAAAAAPB}
+{\bkmkstart AAAAAAAAGX}{\bkmkend AAAAAAAAGX}
 00103 TEST(BinaryTree, PostorderTraversal)\{\par
-{\bkmkstart AAAAAAAAPH}{\bkmkend AAAAAAAAPH}
+{\bkmkstart AAAAAAAAGY}{\bkmkend AAAAAAAAGY}
 00104     BinaryTree<int> tree;\par
-{\bkmkstart AAAAAAAAPN}{\bkmkend AAAAAAAAPN}
+{\bkmkstart AAAAAAAAGZ}{\bkmkend AAAAAAAAGZ}
 00105     \par
-{\bkmkstart AAAAAAAAPO}{\bkmkend AAAAAAAAPO}
+{\bkmkstart AAAAAAAAHA}{\bkmkend AAAAAAAAHA}
 00106     {\cf20 // Build tree:}\par
-{\bkmkstart AAAAAAAAPR}{\bkmkend AAAAAAAAPR}
+{\bkmkstart AAAAAAAAHB}{\bkmkend AAAAAAAAHB}
 00107     {\cf20 //       10}\par
-{\bkmkstart AAAAAAAAPT}{\bkmkend AAAAAAAAPT}
+{\bkmkstart AAAAAAAAHC}{\bkmkend AAAAAAAAHC}
 00108     {\cf20 //      /  \\}\par
-{\bkmkstart AAAAAAAAPV}{\bkmkend AAAAAAAAPV}
+{\bkmkstart AAAAAAAAHE}{\bkmkend AAAAAAAAHE}
 00109 {\cf20     //     5   15}\par
-{\bkmkstart AAAAAAAAQA}{\bkmkend AAAAAAAAQA}
+{\bkmkstart AAAAAAAAHF}{\bkmkend AAAAAAAAHF}
 00110     {\cf20 //    / \\}\par
-{\bkmkstart AAAAAAAAQC}{\bkmkend AAAAAAAAQC}
+{\bkmkstart AAAAAAAAHG}{\bkmkend AAAAAAAAHG}
 00111 {\cf20     //   3   7}\par
-{\bkmkstart AAAAAAAAQE}{\bkmkend AAAAAAAAQE}
+{\bkmkstart AAAAAAAAHH}{\bkmkend AAAAAAAAHH}
 00112     \par
-{\bkmkstart AAAAAAAAQG}{\bkmkend AAAAAAAAQG}
+{\bkmkstart AAAAAAAAHJ}{\bkmkend AAAAAAAAHJ}
 00113     {\cf17 auto}* root = tree.createRoot(10);\par
-{\bkmkstart AAAAAAAAQL}{\bkmkend AAAAAAAAQL}
+{\bkmkstart AAAAAAAAHM}{\bkmkend AAAAAAAAHM}
 00114     root->left = {\cf17 new} TreeNode<int>(5);\par
-{\bkmkstart AAAAAAAAQR}{\bkmkend AAAAAAAAQR}
+{\bkmkstart AAAAAAAAHO}{\bkmkend AAAAAAAAHO}
 00115     root->right = {\cf17 new} TreeNode<int>(15);\par
-{\bkmkstart AAAAAAAAQX}{\bkmkend AAAAAAAAQX}
+{\bkmkstart AAAAAAAAHQ}{\bkmkend AAAAAAAAHQ}
 00116     root->left->left = {\cf17 new} TreeNode<int>(3);\par
-{\bkmkstart AAAAAAAARG}{\bkmkend AAAAAAAARG}
+{\bkmkstart AAAAAAAAHS}{\bkmkend AAAAAAAAHS}
 00117     root->left->right = {\cf17 new} TreeNode<int>(7);\par
-{\bkmkstart AAAAAAAARL}{\bkmkend AAAAAAAARL}
+{\bkmkstart AAAAAAAAHT}{\bkmkend AAAAAAAAHT}
 00118     \par
-{\bkmkstart AAAAAAAARQ}{\bkmkend AAAAAAAARQ}
+{\bkmkstart AAAAAAAAHU}{\bkmkend AAAAAAAAHU}
 00119     std::vector<int> result;\par
-{\bkmkstart AAAAAAAARY}{\bkmkend AAAAAAAARY}
+{\bkmkstart AAAAAAAAHZ}{\bkmkend AAAAAAAAHZ}
 00120     tree.postorder([&result]({\cf17 const} {\cf18 int}& val) \{\par
-{\bkmkstart AAAAAAAASG}{\bkmkend AAAAAAAASG}
+{\bkmkstart AAAAAAAAIB}{\bkmkend AAAAAAAAIB}
 00121         result.push_back(val);\par
-{\bkmkstart AAAAAAAASL}{\bkmkend AAAAAAAASL}
+{\bkmkstart AAAAAAAAIE}{\bkmkend AAAAAAAAIE}
 00122     \});\par
-{\bkmkstart AAAAAAAASP}{\bkmkend AAAAAAAASP}
+{\bkmkstart AAAAAAAAIF}{\bkmkend AAAAAAAAIF}
 00123     \par
-{\bkmkstart AAAAAAAASS}{\bkmkend AAAAAAAASS}
+{\bkmkstart AAAAAAAAIG}{\bkmkend AAAAAAAAIG}
 00124     {\cf20 // Postorder: 3, 7, 5, 15, 10}\par
-{\bkmkstart AAAAAAAASV}{\bkmkend AAAAAAAASV}
+{\bkmkstart AAAAAAAAIH}{\bkmkend AAAAAAAAIH}
 00125     ASSERT_EQ(result.size(), 5u);\par
-{\bkmkstart AAAAAAAASZ}{\bkmkend AAAAAAAASZ}
+{\bkmkstart AAAAAAAAIJ}{\bkmkend AAAAAAAAIJ}
 00126     EXPECT_EQ(result[0], 3);\par
-{\bkmkstart AAAAAAAATC}{\bkmkend AAAAAAAATC}
+{\bkmkstart AAAAAAAAIL}{\bkmkend AAAAAAAAIL}
 00127     EXPECT_EQ(result[1], 7);\par
-{\bkmkstart AAAAAAAATF}{\bkmkend AAAAAAAATF}
+{\bkmkstart AAAAAAAAIO}{\bkmkend AAAAAAAAIO}
 00128     EXPECT_EQ(result[2], 5);\par
-{\bkmkstart AAAAAAAATI}{\bkmkend AAAAAAAATI}
+{\bkmkstart AAAAAAAAIQ}{\bkmkend AAAAAAAAIQ}
 00129     EXPECT_EQ(result[3], 15);\par
-{\bkmkstart AAAAAAAATL}{\bkmkend AAAAAAAATL}
+{\bkmkstart AAAAAAAAIS}{\bkmkend AAAAAAAAIS}
 00130     EXPECT_EQ(result[4], 10);\par
-{\bkmkstart AAAAAAAATS}{\bkmkend AAAAAAAATS}
+{\bkmkstart AAAAAAAAIT}{\bkmkend AAAAAAAAIT}
 00131 \}\par
-{\bkmkstart AAAAAAAATU}{\bkmkend AAAAAAAATU}
+{\bkmkstart AAAAAAAAIV}{\bkmkend AAAAAAAAIV}
 00132 \par
-{\bkmkstart AAAAAAAAUA}{\bkmkend AAAAAAAAUA}
+{\bkmkstart AAAAAAAAIW}{\bkmkend AAAAAAAAIW}
 00133 TEST(BinaryTree, LevelOrderTraversal)\{\par
-{\bkmkstart AAAAAAAAUJ}{\bkmkend AAAAAAAAUJ}
+{\bkmkstart AAAAAAAAIZ}{\bkmkend AAAAAAAAIZ}
 00134     BinaryTree<int> tree;\par
-{\bkmkstart AAAAAAAAUP}{\bkmkend AAAAAAAAUP}
+{\bkmkstart AAAAAAAAJB}{\bkmkend AAAAAAAAJB}
 00135     \par
-{\bkmkstart AAAAAAAAUX}{\bkmkend AAAAAAAAUX}
+{\bkmkstart AAAAAAAAJF}{\bkmkend AAAAAAAAJF}
 00136     {\cf20 // Build tree:}\par
-{\bkmkstart AAAAAAAAUY}{\bkmkend AAAAAAAAUY}
+{\bkmkstart AAAAAAAAJG}{\bkmkend AAAAAAAAJG}
 00137     {\cf20 //       10}\par
-{\bkmkstart AAAAAAAAVQ}{\bkmkend AAAAAAAAVQ}
+{\bkmkstart AAAAAAAAJI}{\bkmkend AAAAAAAAJI}
 00138     {\cf20 //      /  \\}\par
-{\bkmkstart AAAAAAAAVS}{\bkmkend AAAAAAAAVS}
+{\bkmkstart AAAAAAAAJJ}{\bkmkend AAAAAAAAJJ}
 00139 {\cf20     //     5   15}\par
-{\bkmkstart AAAAAAAAVT}{\bkmkend AAAAAAAAVT}
+{\bkmkstart AAAAAAAAJK}{\bkmkend AAAAAAAAJK}
 00140     {\cf20 //    / \\}\par
-{\bkmkstart AAAAAAAAVW}{\bkmkend AAAAAAAAVW}
+{\bkmkstart AAAAAAAAJL}{\bkmkend AAAAAAAAJL}
 00141 {\cf20     //   3   7}\par
-{\bkmkstart AAAAAAAAWA}{\bkmkend AAAAAAAAWA}
+{\bkmkstart AAAAAAAAJN}{\bkmkend AAAAAAAAJN}
 00142     \par
-{\bkmkstart AAAAAAAAWF}{\bkmkend AAAAAAAAWF}
+{\bkmkstart AAAAAAAAJO}{\bkmkend AAAAAAAAJO}
 00143     {\cf17 auto}* root = tree.createRoot(10);\par
-{\bkmkstart AAAAAAAAWQ}{\bkmkend AAAAAAAAWQ}
+{\bkmkstart AAAAAAAAJQ}{\bkmkend AAAAAAAAJQ}
 00144     root->left = {\cf17 new} TreeNode<int>(5);\par
-{\bkmkstart AAAAAAAAWV}{\bkmkend AAAAAAAAWV}
+{\bkmkstart AAAAAAAAJT}{\bkmkend AAAAAAAAJT}
 00145     root->right = {\cf17 new} TreeNode<int>(15);\par
-{\bkmkstart AAAAAAAAXA}{\bkmkend AAAAAAAAXA}
+{\bkmkstart AAAAAAAAJV}{\bkmkend AAAAAAAAJV}
 00146     root->left->left = {\cf17 new} TreeNode<int>(3);\par
-{\bkmkstart AAAAAAAAXM}{\bkmkend AAAAAAAAXM}
+{\bkmkstart AAAAAAAAJX}{\bkmkend AAAAAAAAJX}
 00147     root->left->right = {\cf17 new} TreeNode<int>(7);\par
-{\bkmkstart AAAAAAAAXU}{\bkmkend AAAAAAAAXU}
+{\bkmkstart AAAAAAAAJZ}{\bkmkend AAAAAAAAJZ}
 00148     \par
-{\bkmkstart AAAAAAAAXW}{\bkmkend AAAAAAAAXW}
+{\bkmkstart AAAAAAAAKA}{\bkmkend AAAAAAAAKA}
 00149     std::vector<int> result;\par
-{\bkmkstart AAAAAAAAYF}{\bkmkend AAAAAAAAYF}
+{\bkmkstart AAAAAAAAKB}{\bkmkend AAAAAAAAKB}
 00150     tree.levelOrder([&result]({\cf17 const} {\cf18 int}& val) \{\par
-{\bkmkstart AAAAAAAAYP}{\bkmkend AAAAAAAAYP}
+{\bkmkstart AAAAAAAAKF}{\bkmkend AAAAAAAAKF}
 00151         result.push_back(val);\par
-{\bkmkstart AAAAAAAAYY}{\bkmkend AAAAAAAAYY}
+{\bkmkstart AAAAAAAAKH}{\bkmkend AAAAAAAAKH}
 00152     \});\par
-{\bkmkstart AAAAAAAAYZ}{\bkmkend AAAAAAAAYZ}
+{\bkmkstart AAAAAAAAKJ}{\bkmkend AAAAAAAAKJ}
 00153     \par
-{\bkmkstart AAAAAAAAZA}{\bkmkend AAAAAAAAZA}
+{\bkmkstart AAAAAAAAKK}{\bkmkend AAAAAAAAKK}
 00154     {\cf20 // Level-order: 10, 5, 15, 3, 7}\par
-{\bkmkstart AAAAAAAAZE}{\bkmkend AAAAAAAAZE}
+{\bkmkstart AAAAAAAAKL}{\bkmkend AAAAAAAAKL}
 00155     ASSERT_EQ(result.size(), 5u);\par
-{\bkmkstart AAAAAAAAZJ}{\bkmkend AAAAAAAAZJ}
+{\bkmkstart AAAAAAAAKN}{\bkmkend AAAAAAAAKN}
 00156     EXPECT_EQ(result[0], 10);\par
-{\bkmkstart AAAAAAAAZN}{\bkmkend AAAAAAAAZN}
+{\bkmkstart AAAAAAAAKP}{\bkmkend AAAAAAAAKP}
 00157     EXPECT_EQ(result[1], 5);\par
-{\bkmkstart AAAAAAAAZR}{\bkmkend AAAAAAAAZR}
+{\bkmkstart AAAAAAAAKR}{\bkmkend AAAAAAAAKR}
 00158     EXPECT_EQ(result[2], 15);\par
-{\bkmkstart AAAAAAAAZX}{\bkmkend AAAAAAAAZX}
+{\bkmkstart AAAAAAAAKU}{\bkmkend AAAAAAAAKU}
 00159     EXPECT_EQ(result[3], 3);\par
-{\bkmkstart AAAAAAABAD}{\bkmkend AAAAAAABAD}
+{\bkmkstart AAAAAAAAKW}{\bkmkend AAAAAAAAKW}
 00160     EXPECT_EQ(result[4], 7);\par
-{\bkmkstart AAAAAAABAJ}{\bkmkend AAAAAAABAJ}
+{\bkmkstart AAAAAAAAKX}{\bkmkend AAAAAAAAKX}
 00161 \}\par
-{\bkmkstart AAAAAAABAN}{\bkmkend AAAAAAABAN}
+{\bkmkstart AAAAAAAAKY}{\bkmkend AAAAAAAAKY}
 00162 \par
-{\bkmkstart AAAAAAABAP}{\bkmkend AAAAAAABAP}
+{\bkmkstart AAAAAAAALA}{\bkmkend AAAAAAAALA}
 00163 TEST(BinaryTree, InorderIterative)\{\par
-{\bkmkstart AAAAAAABAT}{\bkmkend AAAAAAABAT}
+{\bkmkstart AAAAAAAALC}{\bkmkend AAAAAAAALC}
 00164     BinaryTree<int> tree;\par
-{\bkmkstart AAAAAAABBN}{\bkmkend AAAAAAABBN}
+{\bkmkstart AAAAAAAALE}{\bkmkend AAAAAAAALE}
 00165     \par
-{\bkmkstart AAAAAAABBP}{\bkmkend AAAAAAABBP}
+{\bkmkstart AAAAAAAALG}{\bkmkend AAAAAAAALG}
 00166     {\cf17 auto}* root = tree.createRoot(10);\par
-{\bkmkstart AAAAAAABBU}{\bkmkend AAAAAAABBU}
+{\bkmkstart AAAAAAAALJ}{\bkmkend AAAAAAAALJ}
 00167     root->left = {\cf17 new} TreeNode<int>(5);\par
-{\bkmkstart AAAAAAABBY}{\bkmkend AAAAAAABBY}
+{\bkmkstart AAAAAAAALL}{\bkmkend AAAAAAAALL}
 00168     root->right = {\cf17 new} TreeNode<int>(15);\par
-{\bkmkstart AAAAAAABCB}{\bkmkend AAAAAAABCB}
+{\bkmkstart AAAAAAAALN}{\bkmkend AAAAAAAALN}
 00169     root->left->left = {\cf17 new} TreeNode<int>(3);\par
-{\bkmkstart AAAAAAABCD}{\bkmkend AAAAAAABCD}
+{\bkmkstart AAAAAAAALQ}{\bkmkend AAAAAAAALQ}
 00170     root->left->right = {\cf17 new} TreeNode<int>(7);\par
-{\bkmkstart AAAAAAABCG}{\bkmkend AAAAAAABCG}
+{\bkmkstart AAAAAAAALS}{\bkmkend AAAAAAAALS}
 00171     \par
-{\bkmkstart AAAAAAABCH}{\bkmkend AAAAAAABCH}
+{\bkmkstart AAAAAAAALT}{\bkmkend AAAAAAAALT}
 00172     std::vector<int> result;\par
-{\bkmkstart AAAAAAABCN}{\bkmkend AAAAAAABCN}
+{\bkmkstart AAAAAAAALW}{\bkmkend AAAAAAAALW}
 00173     tree.inorderIterative([&result]({\cf17 const} {\cf18 int}& val) \{\par
-{\bkmkstart AAAAAAABCS}{\bkmkend AAAAAAABCS}
+{\bkmkstart AAAAAAAALZ}{\bkmkend AAAAAAAALZ}
 00174         result.push_back(val);\par
-{\bkmkstart AAAAAAABCX}{\bkmkend AAAAAAABCX}
+{\bkmkstart AAAAAAAAMB}{\bkmkend AAAAAAAAMB}
 00175     \});\par
-{\bkmkstart AAAAAAABCY}{\bkmkend AAAAAAABCY}
+{\bkmkstart AAAAAAAAMC}{\bkmkend AAAAAAAAMC}
 00176     \par
-{\bkmkstart AAAAAAABDA}{\bkmkend AAAAAAABDA}
+{\bkmkstart AAAAAAAAME}{\bkmkend AAAAAAAAME}
 00177     {\cf20 // Should match recursive inorder: 3, 5, 7, 10, 15}\par
-{\bkmkstart AAAAAAABDD}{\bkmkend AAAAAAABDD}
+{\bkmkstart AAAAAAAAMH}{\bkmkend AAAAAAAAMH}
 00178     ASSERT_EQ(result.size(), 5u);\par
-{\bkmkstart AAAAAAABDK}{\bkmkend AAAAAAABDK}
+{\bkmkstart AAAAAAAAMJ}{\bkmkend AAAAAAAAMJ}
 00179     EXPECT_EQ(result[0], 3);\par
-{\bkmkstart AAAAAAABDM}{\bkmkend AAAAAAABDM}
+{\bkmkstart AAAAAAAAML}{\bkmkend AAAAAAAAML}
 00180     EXPECT_EQ(result[1], 5);\par
-{\bkmkstart AAAAAAABDQ}{\bkmkend AAAAAAABDQ}
+{\bkmkstart AAAAAAAAMN}{\bkmkend AAAAAAAAMN}
 00181     EXPECT_EQ(result[2], 7);\par
-{\bkmkstart AAAAAAABDW}{\bkmkend AAAAAAABDW}
+{\bkmkstart AAAAAAAAMP}{\bkmkend AAAAAAAAMP}
 00182     EXPECT_EQ(result[3], 10);\par
-{\bkmkstart AAAAAAABDZ}{\bkmkend AAAAAAABDZ}
+{\bkmkstart AAAAAAAAMR}{\bkmkend AAAAAAAAMR}
 00183     EXPECT_EQ(result[4], 15);\par
-{\bkmkstart AAAAAAABED}{\bkmkend AAAAAAABED}
+{\bkmkstart AAAAAAAAMT}{\bkmkend AAAAAAAAMT}
 00184 \}\par
-{\bkmkstart AAAAAAABEM}{\bkmkend AAAAAAABEM}
+{\bkmkstart AAAAAAAAMV}{\bkmkend AAAAAAAAMV}
 00185 \par
-{\bkmkstart AAAAAAABEN}{\bkmkend AAAAAAABEN}
+{\bkmkstart AAAAAAAAMW}{\bkmkend AAAAAAAAMW}
 00186 TEST(BinaryTree, PreorderIterative)\{\par
-{\bkmkstart AAAAAAABES}{\bkmkend AAAAAAABES}
+{\bkmkstart AAAAAAAANA}{\bkmkend AAAAAAAANA}
 00187     BinaryTree<int> tree;\par
-{\bkmkstart AAAAAAABEY}{\bkmkend AAAAAAABEY}
+{\bkmkstart AAAAAAAANC}{\bkmkend AAAAAAAANC}
 00188     \par
-{\bkmkstart AAAAAAABFC}{\bkmkend AAAAAAABFC}
+{\bkmkstart AAAAAAAAND}{\bkmkend AAAAAAAAND}
 00189     {\cf17 auto}* root = tree.createRoot(10);\par
-{\bkmkstart AAAAAAABFG}{\bkmkend AAAAAAABFG}
+{\bkmkstart AAAAAAAANF}{\bkmkend AAAAAAAANF}
 00190     root->left = {\cf17 new} TreeNode<int>(5);\par
-{\bkmkstart AAAAAAABFP}{\bkmkend AAAAAAABFP}
+{\bkmkstart AAAAAAAANH}{\bkmkend AAAAAAAANH}
 00191     root->right = {\cf17 new} TreeNode<int>(15);\par
-{\bkmkstart AAAAAAABFV}{\bkmkend AAAAAAABFV}
+{\bkmkstart AAAAAAAANJ}{\bkmkend AAAAAAAANJ}
 00192     root->left->left = {\cf17 new} TreeNode<int>(3);\par
-{\bkmkstart AAAAAAABFZ}{\bkmkend AAAAAAABFZ}
+{\bkmkstart AAAAAAAANL}{\bkmkend AAAAAAAANL}
 00193     root->left->right = {\cf17 new} TreeNode<int>(7);\par
-{\bkmkstart AAAAAAABGJ}{\bkmkend AAAAAAABGJ}
+{\bkmkstart AAAAAAAANO}{\bkmkend AAAAAAAANO}
 00194     \par
-{\bkmkstart AAAAAAABGM}{\bkmkend AAAAAAABGM}
+{\bkmkstart AAAAAAAANP}{\bkmkend AAAAAAAANP}
 00195     std::vector<int> result;\par
-{\bkmkstart AAAAAAABHX}{\bkmkend AAAAAAABHX}
+{\bkmkstart AAAAAAAANS}{\bkmkend AAAAAAAANS}
 00196     tree.preorderIterative([&result]({\cf17 const} {\cf18 int}& val) \{\par
-{\bkmkstart AAAAAAABIB}{\bkmkend AAAAAAABIB}
+{\bkmkstart AAAAAAAANU}{\bkmkend AAAAAAAANU}
 00197         result.push_back(val);\par
-{\bkmkstart AAAAAAABID}{\bkmkend AAAAAAABID}
+{\bkmkstart AAAAAAAANW}{\bkmkend AAAAAAAANW}
 00198     \});\par
-{\bkmkstart AAAAAAABIF}{\bkmkend AAAAAAABIF}
+{\bkmkstart AAAAAAAANX}{\bkmkend AAAAAAAANX}
 00199     \par
-{\bkmkstart AAAAAAABII}{\bkmkend AAAAAAABII}
+{\bkmkstart AAAAAAAANY}{\bkmkend AAAAAAAANY}
 00200     {\cf20 // Should match recursive preorder: 10, 5, 3, 7, 15}\par
-{\bkmkstart AAAAAAABIJ}{\bkmkend AAAAAAABIJ}
+{\bkmkstart AAAAAAAANZ}{\bkmkend AAAAAAAANZ}
 00201     ASSERT_EQ(result.size(), 5u);\par
-{\bkmkstart AAAAAAABIM}{\bkmkend AAAAAAABIM}
+{\bkmkstart AAAAAAAAOC}{\bkmkend AAAAAAAAOC}
 00202     EXPECT_EQ(result[0], 10);\par
-{\bkmkstart AAAAAAABIQ}{\bkmkend AAAAAAABIQ}
+{\bkmkstart AAAAAAAAOE}{\bkmkend AAAAAAAAOE}
 00203     EXPECT_EQ(result[1], 5);\par
-{\bkmkstart AAAAAAABIR}{\bkmkend AAAAAAABIR}
+{\bkmkstart AAAAAAAAOG}{\bkmkend AAAAAAAAOG}
 00204     EXPECT_EQ(result[2], 3);\par
-{\bkmkstart AAAAAAABIT}{\bkmkend AAAAAAABIT}
+{\bkmkstart AAAAAAAAOH}{\bkmkend AAAAAAAAOH}
 00205     EXPECT_EQ(result[3], 7);\par
-{\bkmkstart AAAAAAABIX}{\bkmkend AAAAAAABIX}
+{\bkmkstart AAAAAAAAOJ}{\bkmkend AAAAAAAAOJ}
 00206     EXPECT_EQ(result[4], 15);\par
-{\bkmkstart AAAAAAABJA}{\bkmkend AAAAAAABJA}
+{\bkmkstart AAAAAAAAOL}{\bkmkend AAAAAAAAOL}
 00207 \}\par
-{\bkmkstart AAAAAAABJD}{\bkmkend AAAAAAABJD}
+{\bkmkstart AAAAAAAAOM}{\bkmkend AAAAAAAAOM}
 00208 \par
-{\bkmkstart AAAAAAABJE}{\bkmkend AAAAAAABJE}
+{\bkmkstart AAAAAAAAON}{\bkmkend AAAAAAAAON}
 00209 TEST(BinaryTree, HeightCalculation)\{\par
-{\bkmkstart AAAAAAABJJ}{\bkmkend AAAAAAABJJ}
+{\bkmkstart AAAAAAAAOR}{\bkmkend AAAAAAAAOR}
 00210     BinaryTree<int> tree;\par
-{\bkmkstart AAAAAAABJN}{\bkmkend AAAAAAABJN}
+{\bkmkstart AAAAAAAAOT}{\bkmkend AAAAAAAAOT}
 00211     \par
-{\bkmkstart AAAAAAABJP}{\bkmkend AAAAAAABJP}
+{\bkmkstart AAAAAAAAOU}{\bkmkend AAAAAAAAOU}
 00212     {\cf20 // Empty tree}\par
-{\bkmkstart AAAAAAABJQ}{\bkmkend AAAAAAABJQ}
+{\bkmkstart AAAAAAAAOW}{\bkmkend AAAAAAAAOW}
 00213     EXPECT_EQ(tree.height(), -1);\par
-{\bkmkstart AAAAAAABJS}{\bkmkend AAAAAAABJS}
+{\bkmkstart AAAAAAAAOY}{\bkmkend AAAAAAAAOY}
 00214     \par
-{\bkmkstart AAAAAAABJV}{\bkmkend AAAAAAABJV}
+{\bkmkstart AAAAAAAAOZ}{\bkmkend AAAAAAAAOZ}
 00215     {\cf20 // Single node}\par
-{\bkmkstart AAAAAAABJZ}{\bkmkend AAAAAAABJZ}
+{\bkmkstart AAAAAAAAPB}{\bkmkend AAAAAAAAPB}
 00216     tree.createRoot(10);\par
-{\bkmkstart AAAAAAABKG}{\bkmkend AAAAAAABKG}
+{\bkmkstart AAAAAAAAPE}{\bkmkend AAAAAAAAPE}
 00217     EXPECT_EQ(tree.height(), 0);\par
-{\bkmkstart AAAAAAABKO}{\bkmkend AAAAAAABKO}
+{\bkmkstart AAAAAAAAPI}{\bkmkend AAAAAAAAPI}
 00218     \par
-{\bkmkstart AAAAAAABKR}{\bkmkend AAAAAAABKR}
+{\bkmkstart AAAAAAAAPJ}{\bkmkend AAAAAAAAPJ}
 00219     {\cf20 // Add left child}\par
-{\bkmkstart AAAAAAABKT}{\bkmkend AAAAAAABKT}
+{\bkmkstart AAAAAAAAPL}{\bkmkend AAAAAAAAPL}
 00220     {\cf17 auto}* root = tree.root();\par
-{\bkmkstart AAAAAAABKW}{\bkmkend AAAAAAABKW}
+{\bkmkstart AAAAAAAAPN}{\bkmkend AAAAAAAAPN}
 00221     root->left = {\cf17 new} TreeNode<int>(5);\par
-{\bkmkstart AAAAAAABLC}{\bkmkend AAAAAAABLC}
+{\bkmkstart AAAAAAAAPO}{\bkmkend AAAAAAAAPO}
 00222     EXPECT_EQ(tree.height(), 1);\par
-{\bkmkstart AAAAAAABLF}{\bkmkend AAAAAAABLF}
+{\bkmkstart AAAAAAAAPS}{\bkmkend AAAAAAAAPS}
 00223     \par
-{\bkmkstart AAAAAAABLH}{\bkmkend AAAAAAABLH}
+{\bkmkstart AAAAAAAAPT}{\bkmkend AAAAAAAAPT}
 00224     {\cf20 // Add right child (height stays 1)}\par
-{\bkmkstart AAAAAAABLJ}{\bkmkend AAAAAAABLJ}
+{\bkmkstart AAAAAAAAPU}{\bkmkend AAAAAAAAPU}
 00225     root->right = {\cf17 new} TreeNode<int>(15);\par
-{\bkmkstart AAAAAAABLP}{\bkmkend AAAAAAABLP}
+{\bkmkstart AAAAAAAAPX}{\bkmkend AAAAAAAAPX}
 00226     EXPECT_EQ(tree.height(), 1);\par
-{\bkmkstart AAAAAAABLR}{\bkmkend AAAAAAABLR}
+{\bkmkstart AAAAAAAAQA}{\bkmkend AAAAAAAAQA}
 00227     \par
-{\bkmkstart AAAAAAABLT}{\bkmkend AAAAAAABLT}
+{\bkmkstart AAAAAAAAQC}{\bkmkend AAAAAAAAQC}
 00228     {\cf20 // Add grandchild}\par
-{\bkmkstart AAAAAAABLW}{\bkmkend AAAAAAABLW}
+{\bkmkstart AAAAAAAAQE}{\bkmkend AAAAAAAAQE}
 00229     root->left->left = {\cf17 new} TreeNode<int>(3);\par
-{\bkmkstart AAAAAAABME}{\bkmkend AAAAAAABME}
+{\bkmkstart AAAAAAAAQF}{\bkmkend AAAAAAAAQF}
 00230     EXPECT_EQ(tree.height(), 2);\par
-{\bkmkstart AAAAAAABMI}{\bkmkend AAAAAAABMI}
+{\bkmkstart AAAAAAAAQJ}{\bkmkend AAAAAAAAQJ}
 00231 \}\par
-{\bkmkstart AAAAAAABMK}{\bkmkend AAAAAAABMK}
+{\bkmkstart AAAAAAAAQL}{\bkmkend AAAAAAAAQL}
 00232 \par
-{\bkmkstart AAAAAAABMM}{\bkmkend AAAAAAABMM}
+{\bkmkstart AAAAAAAAQM}{\bkmkend AAAAAAAAQM}
 00233 TEST(BinaryTree, SizeCalculation)\{\par
-{\bkmkstart AAAAAAABMR}{\bkmkend AAAAAAABMR}
+{\bkmkstart AAAAAAAAQO}{\bkmkend AAAAAAAAQO}
 00234     BinaryTree<int> tree;\par
-{\bkmkstart AAAAAAABMU}{\bkmkend AAAAAAABMU}
+{\bkmkstart AAAAAAAAQQ}{\bkmkend AAAAAAAAQQ}
 00235     \par
-{\bkmkstart AAAAAAABMX}{\bkmkend AAAAAAABMX}
+{\bkmkstart AAAAAAAAQR}{\bkmkend AAAAAAAAQR}
 00236     EXPECT_EQ(tree.size(), 0);\par
-{\bkmkstart AAAAAAABNB}{\bkmkend AAAAAAABNB}
+{\bkmkstart AAAAAAAAQT}{\bkmkend AAAAAAAAQT}
 00237     \par
-{\bkmkstart AAAAAAABND}{\bkmkend AAAAAAABND}
+{\bkmkstart AAAAAAAAQU}{\bkmkend AAAAAAAAQU}
 00238     tree.createRoot(10);\par
-{\bkmkstart AAAAAAABNI}{\bkmkend AAAAAAABNI}
+{\bkmkstart AAAAAAAAQV}{\bkmkend AAAAAAAAQV}
 00239     EXPECT_EQ(tree.size(), 1);\par
-{\bkmkstart AAAAAAABNK}{\bkmkend AAAAAAABNK}
+{\bkmkstart AAAAAAAAQY}{\bkmkend AAAAAAAAQY}
 00240     \par
-{\bkmkstart AAAAAAABNN}{\bkmkend AAAAAAABNN}
+{\bkmkstart AAAAAAAARA}{\bkmkend AAAAAAAARA}
 00241     {\cf17 auto}* root = tree.root();\par
-{\bkmkstart AAAAAAABNP}{\bkmkend AAAAAAABNP}
+{\bkmkstart AAAAAAAARB}{\bkmkend AAAAAAAARB}
 00242     root->left = {\cf17 new} TreeNode<int>(5);\par
-{\bkmkstart AAAAAAABNR}{\bkmkend AAAAAAABNR}
+{\bkmkstart AAAAAAAARF}{\bkmkend AAAAAAAARF}
 00243     root->right = {\cf17 new} TreeNode<int>(15);\par
-{\bkmkstart AAAAAAABNV}{\bkmkend AAAAAAABNV}
+{\bkmkstart AAAAAAAARG}{\bkmkend AAAAAAAARG}
 00244     EXPECT_EQ(tree.size(), 3);\par
-{\bkmkstart AAAAAAABNY}{\bkmkend AAAAAAABNY}
+{\bkmkstart AAAAAAAARJ}{\bkmkend AAAAAAAARJ}
 00245     \par
-{\bkmkstart AAAAAAABOA}{\bkmkend AAAAAAABOA}
+{\bkmkstart AAAAAAAARK}{\bkmkend AAAAAAAARK}
 00246     root->left->left = {\cf17 new} TreeNode<int>(3);\par
-{\bkmkstart AAAAAAABOC}{\bkmkend AAAAAAABOC}
+{\bkmkstart AAAAAAAARM}{\bkmkend AAAAAAAARM}
 00247     root->left->right = {\cf17 new} TreeNode<int>(7);\par
-{\bkmkstart AAAAAAABOF}{\bkmkend AAAAAAABOF}
+{\bkmkstart AAAAAAAARP}{\bkmkend AAAAAAAARP}
 00248     EXPECT_EQ(tree.size(), 5);\par
-{\bkmkstart AAAAAAABOI}{\bkmkend AAAAAAABOI}
+{\bkmkstart AAAAAAAARR}{\bkmkend AAAAAAAARR}
 00249 \}\par
-{\bkmkstart AAAAAAABOJ}{\bkmkend AAAAAAABOJ}
+{\bkmkstart AAAAAAAART}{\bkmkend AAAAAAAART}
 00250 \par
-{\bkmkstart AAAAAAABOL}{\bkmkend AAAAAAABOL}
+{\bkmkstart AAAAAAAARV}{\bkmkend AAAAAAAARV}
 00251 TEST(BinaryTree, ComplexTree)\{\par
-{\bkmkstart AAAAAAABOP}{\bkmkend AAAAAAABOP}
+{\bkmkstart AAAAAAAARX}{\bkmkend AAAAAAAARX}
 00252     BinaryTree<std::string> tree;\par
-{\bkmkstart AAAAAAABOW}{\bkmkend AAAAAAABOW}
+{\bkmkstart AAAAAAAARZ}{\bkmkend AAAAAAAARZ}
 00253     \par
-{\bkmkstart AAAAAAABOZ}{\bkmkend AAAAAAABOZ}
+{\bkmkstart AAAAAAAASA}{\bkmkend AAAAAAAASA}
 00254     {\cf20 // Build a more complex tree}\par
-{\bkmkstart AAAAAAABPC}{\bkmkend AAAAAAABPC}
+{\bkmkstart AAAAAAAASB}{\bkmkend AAAAAAAASB}
 00255     {\cf20 //            "A"}\par
-{\bkmkstart AAAAAAABPF}{\bkmkend AAAAAAABPF}
+{\bkmkstart AAAAAAAASD}{\bkmkend AAAAAAAASD}
 00256     {\cf20 //           /   \\}\par
-{\bkmkstart AAAAAAABPH}{\bkmkend AAAAAAABPH}
+{\bkmkstart AAAAAAAASE}{\bkmkend AAAAAAAASE}
 00257 {\cf20     //         "B"   "C"}\par
-{\bkmkstart AAAAAAABPJ}{\bkmkend AAAAAAABPJ}
+{\bkmkstart AAAAAAAASF}{\bkmkend AAAAAAAASF}
 00258     {\cf20 //        /   \\     \\}\par
-{\bkmkstart AAAAAAABPM}{\bkmkend AAAAAAABPM}
+{\bkmkstart AAAAAAAASG}{\bkmkend AAAAAAAASG}
 00259 {\cf20     //      "D"   "E"   "F"}\par
-{\bkmkstart AAAAAAABPP}{\bkmkend AAAAAAABPP}
+{\bkmkstart AAAAAAAASJ}{\bkmkend AAAAAAAASJ}
 00260     {\cf20 //             \\}\par
-{\bkmkstart AAAAAAABPR}{\bkmkend AAAAAAABPR}
+{\bkmkstart AAAAAAAASL}{\bkmkend AAAAAAAASL}
 00261 {\cf20     //             "G"}\par
-{\bkmkstart AAAAAAABPU}{\bkmkend AAAAAAABPU}
+{\bkmkstart AAAAAAAASM}{\bkmkend AAAAAAAASM}
 00262     \par
-{\bkmkstart AAAAAAABPV}{\bkmkend AAAAAAABPV}
+{\bkmkstart AAAAAAAASN}{\bkmkend AAAAAAAASN}
 00263     {\cf17 auto}* root = tree.createRoot({\cf22 "A"});\par
-{\bkmkstart AAAAAAABPY}{\bkmkend AAAAAAABPY}
+{\bkmkstart AAAAAAAASQ}{\bkmkend AAAAAAAASQ}
 00264     root->left = {\cf17 new} TreeNode<std::string>({\cf22 "B"});\par
-{\bkmkstart AAAAAAABQE}{\bkmkend AAAAAAABQE}
+{\bkmkstart AAAAAAAASS}{\bkmkend AAAAAAAASS}
 00265     root->right = {\cf17 new} TreeNode<std::string>({\cf22 "C"});\par
-{\bkmkstart AAAAAAABQI}{\bkmkend AAAAAAABQI}
+{\bkmkstart AAAAAAAASU}{\bkmkend AAAAAAAASU}
 00266     root->left->left = {\cf17 new} TreeNode<std::string>({\cf22 "D"});\par
-{\bkmkstart AAAAAAABQO}{\bkmkend AAAAAAABQO}
+{\bkmkstart AAAAAAAASW}{\bkmkend AAAAAAAASW}
 00267     root->left->right = {\cf17 new} TreeNode<std::string>({\cf22 "E"});\par
-{\bkmkstart AAAAAAABQT}{\bkmkend AAAAAAABQT}
+{\bkmkstart AAAAAAAASY}{\bkmkend AAAAAAAASY}
 00268     root->right->right = {\cf17 new} TreeNode<std::string>({\cf22 "F"});\par
-{\bkmkstart AAAAAAABRG}{\bkmkend AAAAAAABRG}
+{\bkmkstart AAAAAAAATB}{\bkmkend AAAAAAAATB}
 00269     root->left->right->right = {\cf17 new} TreeNode<std::string>({\cf22 "G"});\par
-{\bkmkstart AAAAAAABRK}{\bkmkend AAAAAAABRK}
+{\bkmkstart AAAAAAAATF}{\bkmkend AAAAAAAATF}
 00270     \par
-{\bkmkstart AAAAAAABRL}{\bkmkend AAAAAAABRL}
+{\bkmkstart AAAAAAAATG}{\bkmkend AAAAAAAATG}
 00271     EXPECT_EQ(tree.size(), 7);\par
-{\bkmkstart AAAAAAABRN}{\bkmkend AAAAAAABRN}
+{\bkmkstart AAAAAAAATJ}{\bkmkend AAAAAAAATJ}
 00272     EXPECT_EQ(tree.height(), 3);\par
-{\bkmkstart AAAAAAABRQ}{\bkmkend AAAAAAABRQ}
+{\bkmkstart AAAAAAAATK}{\bkmkend AAAAAAAATK}
 00273     \par
-{\bkmkstart AAAAAAABRS}{\bkmkend AAAAAAABRS}
+{\bkmkstart AAAAAAAATM}{\bkmkend AAAAAAAATM}
 00274     std::vector<std::string> inorder;\par
-{\bkmkstart AAAAAAABRX}{\bkmkend AAAAAAABRX}
+{\bkmkstart AAAAAAAATO}{\bkmkend AAAAAAAATO}
 00275     tree.inorder([&inorder]({\cf17 const} std::string& val) \{\par
-{\bkmkstart AAAAAAABSD}{\bkmkend AAAAAAABSD}
+{\bkmkstart AAAAAAAATT}{\bkmkend AAAAAAAATT}
 00276         inorder.push_back(val);\par
-{\bkmkstart AAAAAAABSG}{\bkmkend AAAAAAABSG}
+{\bkmkstart AAAAAAAATW}{\bkmkend AAAAAAAATW}
 00277     \});\par
-{\bkmkstart AAAAAAABSI}{\bkmkend AAAAAAABSI}
+{\bkmkstart AAAAAAAATX}{\bkmkend AAAAAAAATX}
 00278     \par
-{\bkmkstart AAAAAAABSK}{\bkmkend AAAAAAABSK}
+{\bkmkstart AAAAAAAATY}{\bkmkend AAAAAAAATY}
 00279     ASSERT_EQ(inorder.size(), 7u);\par
-{\bkmkstart AAAAAAABSP}{\bkmkend AAAAAAABSP}
+{\bkmkstart AAAAAAAATZ}{\bkmkend AAAAAAAATZ}
 00280     {\cf20 // Inorder: D, B, E, G, A, C, F}\par
-{\bkmkstart AAAAAAABSQ}{\bkmkend AAAAAAABSQ}
+{\bkmkstart AAAAAAAAUA}{\bkmkend AAAAAAAAUA}
 00281     EXPECT_EQ(inorder[0], {\cf22 "D"});\par
-{\bkmkstart AAAAAAABST}{\bkmkend AAAAAAABST}
+{\bkmkstart AAAAAAAAUB}{\bkmkend AAAAAAAAUB}
 00282     EXPECT_EQ(inorder[1], {\cf22 "B"});\par
-{\bkmkstart AAAAAAABSY}{\bkmkend AAAAAAABSY}
+{\bkmkstart AAAAAAAAUC}{\bkmkend AAAAAAAAUC}
 00283     EXPECT_EQ(inorder[2], {\cf22 "E"});\par
-{\bkmkstart AAAAAAABTC}{\bkmkend AAAAAAABTC}
+{\bkmkstart AAAAAAAAUE}{\bkmkend AAAAAAAAUE}
 00284     EXPECT_EQ(inorder[3], {\cf22 "G"});\par
-{\bkmkstart AAAAAAABTE}{\bkmkend AAAAAAABTE}
+{\bkmkstart AAAAAAAAUF}{\bkmkend AAAAAAAAUF}
 00285     EXPECT_EQ(inorder[4], {\cf22 "A"});\par
-{\bkmkstart AAAAAAABTH}{\bkmkend AAAAAAABTH}
+{\bkmkstart AAAAAAAAUG}{\bkmkend AAAAAAAAUG}
 00286     EXPECT_EQ(inorder[5], {\cf22 "C"});\par
-{\bkmkstart AAAAAAABTJ}{\bkmkend AAAAAAABTJ}
+{\bkmkstart AAAAAAAAUJ}{\bkmkend AAAAAAAAUJ}
 00287     EXPECT_EQ(inorder[6], {\cf22 "F"});\par
-{\bkmkstart AAAAAAABTM}{\bkmkend AAAAAAABTM}
+{\bkmkstart AAAAAAAAUL}{\bkmkend AAAAAAAAUL}
 00288 \}\par
 }
 }

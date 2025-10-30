@@ -151,119 +151,119 @@
 test_browser_history.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_browser_history.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_browser_history.cpp}
-{\bkmkstart AAAAAAAACX}
-{\bkmkend AAAAAAAACX}
+{\bkmkstart AAAAAAAAWB}
+{\bkmkend AAAAAAAAWB}
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAEB}{\bkmkend AAAAAAAAEB}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAXQ}{\bkmkend AAAAAAAAXQ}
 00001 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAAFE}{\bkmkend AAAAAAAAFE}
+{\bkmkstart AAAAAAAAYN}{\bkmkend AAAAAAAAYN}
 00002 {\cf21 #include "BrowserHistory/header/BrowserHistory.h"}\par
-{\bkmkstart AAAAAAAAIB}{\bkmkend AAAAAAAAIB}
+{\bkmkstart AAAAAAABAM}{\bkmkend AAAAAAABAM}
 00003 \par
-{\bkmkstart AAAAAAAAIE}{\bkmkend AAAAAAAAIE}
+{\bkmkstart AAAAAAABAN}{\bkmkend AAAAAAABAN}
 00004 {\cf17 using }Coruh::Applications::BrowserHistory;\par
-{\bkmkstart AAAAAAAAIG}{\bkmkend AAAAAAAAIG}
+{\bkmkstart AAAAAAABAP}{\bkmkend AAAAAAABAP}
 00005 \par
-{\bkmkstart AAAAAAAAIH}{\bkmkend AAAAAAAAIH}
+{\bkmkstart AAAAAAABAQ}{\bkmkend AAAAAAABAQ}
 00006 TEST(BrowserHistory, EmptyAndSinglePage) \{\par
-{\bkmkstart AAAAAAAAIT}{\bkmkend AAAAAAAAIT}
+{\bkmkstart AAAAAAABAU}{\bkmkend AAAAAAABAU}
 00007     BrowserHistory bh;\par
-{\bkmkstart AAAAAAAAIW}{\bkmkend AAAAAAAAIW}
+{\bkmkstart AAAAAAABAV}{\bkmkend AAAAAAABAV}
 00008     EXPECT_EQ(bh.getHistorySize(), 0u);\par
-{\bkmkstart AAAAAAAAIY}{\bkmkend AAAAAAAAIY}
+{\bkmkstart AAAAAAABAY}{\bkmkend AAAAAAABAY}
 00009     EXPECT_FALSE(bh.canGoBack());\par
-{\bkmkstart AAAAAAAAJC}{\bkmkend AAAAAAAAJC}
+{\bkmkstart AAAAAAABBA}{\bkmkend AAAAAAABBA}
 00010     EXPECT_FALSE(bh.canGoForward());\par
-{\bkmkstart AAAAAAAAJF}{\bkmkend AAAAAAAAJF}
+{\bkmkstart AAAAAAABBC}{\bkmkend AAAAAAABBC}
 00011     EXPECT_EQ(bh.getCurrentUrl(), {\cf22 ""});\par
-{\bkmkstart AAAAAAAAJH}{\bkmkend AAAAAAAAJH}
+{\bkmkstart AAAAAAABBF}{\bkmkend AAAAAAABBF}
 00012 \par
-{\bkmkstart AAAAAAAAJI}{\bkmkend AAAAAAAAJI}
+{\bkmkstart AAAAAAABBG}{\bkmkend AAAAAAABBG}
 00013     bh.navigateTo({\cf22 "a.com"});\par
-{\bkmkstart AAAAAAAAJJ}{\bkmkend AAAAAAAAJJ}
+{\bkmkstart AAAAAAABBH}{\bkmkend AAAAAAABBH}
 00014     EXPECT_EQ(bh.getHistorySize(), 1u);\par
-{\bkmkstart AAAAAAAAJL}{\bkmkend AAAAAAAAJL}
+{\bkmkstart AAAAAAABBJ}{\bkmkend AAAAAAABBJ}
 00015     EXPECT_EQ(bh.getCurrentUrl(), {\cf22 "a.com"});\par
-{\bkmkstart AAAAAAAAJQ}{\bkmkend AAAAAAAAJQ}
+{\bkmkstart AAAAAAABBK}{\bkmkend AAAAAAABBK}
 00016     EXPECT_FALSE(bh.canGoBack());\par
-{\bkmkstart AAAAAAAAJU}{\bkmkend AAAAAAAAJU}
+{\bkmkstart AAAAAAABBM}{\bkmkend AAAAAAABBM}
 00017     EXPECT_FALSE(bh.canGoForward());\par
-{\bkmkstart AAAAAAAAJX}{\bkmkend AAAAAAAAJX}
+{\bkmkstart AAAAAAABBN}{\bkmkend AAAAAAABBN}
 00018     EXPECT_EQ(bh.goBack(), {\cf22 ""});\par
-{\bkmkstart AAAAAAAAJZ}{\bkmkend AAAAAAAAJZ}
+{\bkmkstart AAAAAAABBS}{\bkmkend AAAAAAABBS}
 00019     EXPECT_EQ(bh.goForward(), {\cf22 ""});\par
-{\bkmkstart AAAAAAAAKF}{\bkmkend AAAAAAAAKF}
+{\bkmkstart AAAAAAABBV}{\bkmkend AAAAAAABBV}
 00020 \}\par
-{\bkmkstart AAAAAAAAKG}{\bkmkend AAAAAAAAKG}
+{\bkmkstart AAAAAAABBW}{\bkmkend AAAAAAABBW}
 00021 \par
-{\bkmkstart AAAAAAAAKI}{\bkmkend AAAAAAAAKI}
+{\bkmkstart AAAAAAABBX}{\bkmkend AAAAAAABBX}
 00022 TEST(BrowserHistory, BackAndForward) \{\par
-{\bkmkstart AAAAAAAAKN}{\bkmkend AAAAAAAAKN}
+{\bkmkstart AAAAAAABBY}{\bkmkend AAAAAAABBY}
 00023     BrowserHistory bh;\par
-{\bkmkstart AAAAAAAAKT}{\bkmkend AAAAAAAAKT}
+{\bkmkstart AAAAAAABBZ}{\bkmkend AAAAAAABBZ}
 00024     bh.navigateTo({\cf22 "a.com"});\par
-{\bkmkstart AAAAAAAAKV}{\bkmkend AAAAAAAAKV}
+{\bkmkstart AAAAAAABCB}{\bkmkend AAAAAAABCB}
 00025     bh.navigateTo({\cf22 "b.com"});\par
-{\bkmkstart AAAAAAAAKX}{\bkmkend AAAAAAAAKX}
+{\bkmkstart AAAAAAABCE}{\bkmkend AAAAAAABCE}
 00026     bh.navigateTo({\cf22 "c.com"});\par
-{\bkmkstart AAAAAAAALC}{\bkmkend AAAAAAAALC}
+{\bkmkstart AAAAAAABCF}{\bkmkend AAAAAAABCF}
 00027 \par
-{\bkmkstart AAAAAAAALE}{\bkmkend AAAAAAAALE}
+{\bkmkstart AAAAAAABCH}{\bkmkend AAAAAAABCH}
 00028     EXPECT_TRUE(bh.canGoBack());\par
-{\bkmkstart AAAAAAAALH}{\bkmkend AAAAAAAALH}
+{\bkmkstart AAAAAAABCK}{\bkmkend AAAAAAABCK}
 00029     EXPECT_FALSE(bh.canGoForward());\par
-{\bkmkstart AAAAAAAALL}{\bkmkend AAAAAAAALL}
+{\bkmkstart AAAAAAABCM}{\bkmkend AAAAAAABCM}
 00030 \par
-{\bkmkstart AAAAAAAALM}{\bkmkend AAAAAAAALM}
+{\bkmkstart AAAAAAABCN}{\bkmkend AAAAAAABCN}
 00031     EXPECT_EQ(bh.goBack(), {\cf22 "b.com"});\par
-{\bkmkstart AAAAAAAALO}{\bkmkend AAAAAAAALO}
+{\bkmkstart AAAAAAABCP}{\bkmkend AAAAAAABCP}
 00032     EXPECT_EQ(bh.getCurrentUrl(), {\cf22 "b.com"});\par
-{\bkmkstart AAAAAAAALS}{\bkmkend AAAAAAAALS}
+{\bkmkstart AAAAAAABCT}{\bkmkend AAAAAAABCT}
 00033     EXPECT_TRUE(bh.canGoForward());\par
-{\bkmkstart AAAAAAAALX}{\bkmkend AAAAAAAALX}
+{\bkmkstart AAAAAAABCU}{\bkmkend AAAAAAABCU}
 00034     EXPECT_EQ(bh.goForward(), {\cf22 "c.com"});\par
-{\bkmkstart AAAAAAAAMB}{\bkmkend AAAAAAAAMB}
+{\bkmkstart AAAAAAABCW}{\bkmkend AAAAAAABCW}
 00035 \}\par
-{\bkmkstart AAAAAAAAMD}{\bkmkend AAAAAAAAMD}
+{\bkmkstart AAAAAAABCX}{\bkmkend AAAAAAABCX}
 00036 \par
-{\bkmkstart AAAAAAAAMF}{\bkmkend AAAAAAAAMF}
+{\bkmkstart AAAAAAABCZ}{\bkmkend AAAAAAABCZ}
 00037 TEST(BrowserHistory, NavigateAfterBackPrunesForward) \{\par
-{\bkmkstart AAAAAAAAMO}{\bkmkend AAAAAAAAMO}
+{\bkmkstart AAAAAAABDD}{\bkmkend AAAAAAABDD}
 00038     BrowserHistory bh;\par
-{\bkmkstart AAAAAAAAMS}{\bkmkend AAAAAAAAMS}
+{\bkmkstart AAAAAAABDG}{\bkmkend AAAAAAABDG}
 00039     bh.navigateTo({\cf22 "a.com"});\par
-{\bkmkstart AAAAAAAAMX}{\bkmkend AAAAAAAAMX}
+{\bkmkstart AAAAAAABDK}{\bkmkend AAAAAAABDK}
 00040     bh.navigateTo({\cf22 "b.com"});\par
-{\bkmkstart AAAAAAAAND}{\bkmkend AAAAAAAAND}
+{\bkmkstart AAAAAAABDM}{\bkmkend AAAAAAABDM}
 00041     bh.navigateTo({\cf22 "c.com"});\par
-{\bkmkstart AAAAAAAANG}{\bkmkend AAAAAAAANG}
+{\bkmkstart AAAAAAABDP}{\bkmkend AAAAAAABDP}
 00042 \par
-{\bkmkstart AAAAAAAANZ}{\bkmkend AAAAAAAANZ}
+{\bkmkstart AAAAAAABDT}{\bkmkend AAAAAAABDT}
 00043     {\cf20 // Go back to b.com then navigate to d.com -> forward (c.com) should be dropped}\par
-{\bkmkstart AAAAAAAAOC}{\bkmkend AAAAAAAAOC}
+{\bkmkstart AAAAAAABDW}{\bkmkend AAAAAAABDW}
 00044     EXPECT_EQ(bh.goBack(), {\cf22 "b.com"});\par
-{\bkmkstart AAAAAAAAOK}{\bkmkend AAAAAAAAOK}
+{\bkmkstart AAAAAAABEA}{\bkmkend AAAAAAABEA}
 00045     bh.navigateTo({\cf22 "d.com"});\par
-{\bkmkstart AAAAAAAAOO}{\bkmkend AAAAAAAAOO}
+{\bkmkstart AAAAAAABEB}{\bkmkend AAAAAAABEB}
 00046 \par
-{\bkmkstart AAAAAAAAOS}{\bkmkend AAAAAAAAOS}
+{\bkmkstart AAAAAAABEE}{\bkmkend AAAAAAABEE}
 00047     EXPECT_EQ(bh.getCurrentUrl(), {\cf22 "d.com"});\par
-{\bkmkstart AAAAAAAAOY}{\bkmkend AAAAAAAAOY}
+{\bkmkstart AAAAAAABEJ}{\bkmkend AAAAAAABEJ}
 00048     EXPECT_TRUE(bh.canGoBack());\par
-{\bkmkstart AAAAAAAAPK}{\bkmkend AAAAAAAAPK}
+{\bkmkstart AAAAAAABEN}{\bkmkend AAAAAAABEN}
 00049     EXPECT_FALSE(bh.canGoForward());\par
-{\bkmkstart AAAAAAAAPQ}{\bkmkend AAAAAAAAPQ}
+{\bkmkstart AAAAAAABER}{\bkmkend AAAAAAABER}
 00050 \par
-{\bkmkstart AAAAAAAAPS}{\bkmkend AAAAAAAAPS}
+{\bkmkstart AAAAAAABET}{\bkmkend AAAAAAABET}
 00051     EXPECT_EQ(bh.goBack(), {\cf22 "b.com"});\par
-{\bkmkstart AAAAAAAAPY}{\bkmkend AAAAAAAAPY}
+{\bkmkstart AAAAAAABEW}{\bkmkend AAAAAAABEW}
 00052     {\cf20 // forward should now be d.com only}\par
-{\bkmkstart AAAAAAAAQB}{\bkmkend AAAAAAAAQB}
+{\bkmkstart AAAAAAABEZ}{\bkmkend AAAAAAABEZ}
 00053     EXPECT_TRUE(bh.canGoForward());\par
-{\bkmkstart AAAAAAAAQH}{\bkmkend AAAAAAAAQH}
+{\bkmkstart AAAAAAABFB}{\bkmkend AAAAAAABFB}
 00054     EXPECT_EQ(bh.goForward(), {\cf22 "d.com"});\par
-{\bkmkstart AAAAAAAAQM}{\bkmkend AAAAAAAAQM}
+{\bkmkstart AAAAAAABFG}{\bkmkend AAAAAAABFG}
 00055 \}\par
 }
 }

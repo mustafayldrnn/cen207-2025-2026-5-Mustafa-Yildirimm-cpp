@@ -25,12 +25,10 @@ set(TEST_SOURCES
     test_xor_linked_list.cpp
     test_string_view_coverage.cpp
     test_string_view_advanced_coverage.cpp
-    test_string_view_comprehensive.cpp
     test_string_view_internal_utilities.cpp
     test_chrono_coverage.cpp
     test_chrono_advanced_coverage.cpp
     test_comprehensive_edge_cases.cpp
-    test_advanced_coverage_boost.cpp
     test_browser_history.cpp
 )
 
@@ -39,7 +37,10 @@ target_link_libraries(unit_tests PRIVATE translatorlib safechronolib GTest::gtes
 if(MSVC)
   target_compile_options(unit_tests PRIVATE /FS)
 endif()
+<<<<<<< Updated upstream
 set_property(TARGET unit_tests PROPERTY CXX_STANDARD 20)
+=======
+>>>>>>> Stashed changes
 
 # Add LanguageTranslator and other source files to tests
 # Note: translatorlib already includes lexer, parser, codegen

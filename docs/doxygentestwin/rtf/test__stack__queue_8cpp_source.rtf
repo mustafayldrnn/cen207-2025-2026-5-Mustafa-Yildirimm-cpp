@@ -151,185 +151,185 @@
 test_stack_queue.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_stack_queue.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_stack_queue.cpp}
-{\bkmkstart AAAAAAAFCQ}
-{\bkmkend AAAAAAAFCQ}
+{\bkmkstart AAAAAAAGQL}
+{\bkmkend AAAAAAAGQL}
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAFFB}{\bkmkend AAAAAAAFFB}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAGRX}{\bkmkend AAAAAAAGRX}
 00001 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAFGF}{\bkmkend AAAAAAAFGF}
+{\bkmkstart AAAAAAAGTC}{\bkmkend AAAAAAAGTC}
 00002 {\cf21 #include "ds/stack.h"}\par
-{\bkmkstart AAAAAAAFGS}{\bkmkend AAAAAAAFGS}
+{\bkmkstart AAAAAAAGTO}{\bkmkend AAAAAAAGTO}
 00003 {\cf21 #include "ds/queue.h"}\par
-{\bkmkstart AAAAAAAFHE}{\bkmkend AAAAAAAFHE}
+{\bkmkstart AAAAAAAGUB}{\bkmkend AAAAAAAGUB}
 00004 \par
-{\bkmkstart AAAAAAAFHF}{\bkmkend AAAAAAAFHF}
+{\bkmkstart AAAAAAAGUD}{\bkmkend AAAAAAAGUD}
 00005 TEST(StackQueue, StackLIFO)\{\par
-{\bkmkstart AAAAAAAFHT}{\bkmkend AAAAAAAFHT}
+{\bkmkstart AAAAAAAGUL}{\bkmkend AAAAAAAGUL}
 00006     ds::Stack<int> st; st.push(1); st.push(2); st.push(3);\par
-{\bkmkstart AAAAAAAFHX}{\bkmkend AAAAAAAFHX}
+{\bkmkstart AAAAAAAGUR}{\bkmkend AAAAAAAGUR}
 00007     EXPECT_EQ(st.top(), 3); st.pop(); EXPECT_EQ(st.top(), 2); st.pop(); EXPECT_EQ(st.top(), 1);\par
-{\bkmkstart AAAAAAAFIE}{\bkmkend AAAAAAAFIE}
+{\bkmkstart AAAAAAAGVT}{\bkmkend AAAAAAAGVT}
 00008 \}\par
-{\bkmkstart AAAAAAAFIF}{\bkmkend AAAAAAAFIF}
+{\bkmkstart AAAAAAAGVU}{\bkmkend AAAAAAAGVU}
 00009 \par
-{\bkmkstart AAAAAAAFIH}{\bkmkend AAAAAAAFIH}
+{\bkmkstart AAAAAAAGVV}{\bkmkend AAAAAAAGVV}
 00010 TEST(StackQueue, QueueFIFO)\{\par
-{\bkmkstart AAAAAAAFIL}{\bkmkend AAAAAAAFIL}
+{\bkmkstart AAAAAAAGVZ}{\bkmkend AAAAAAAGVZ}
 00011     ds::Queue<int> q; q.enqueue(1); q.enqueue(2); q.enqueue(3);\par
-{\bkmkstart AAAAAAAFIR}{\bkmkend AAAAAAAFIR}
+{\bkmkstart AAAAAAAGWE}{\bkmkend AAAAAAAGWE}
 00012     EXPECT_EQ(q.front(), 1); q.dequeue(); EXPECT_EQ(q.front(), 2); q.dequeue(); EXPECT_EQ(q.front(), 3);\par
-{\bkmkstart AAAAAAAFIW}{\bkmkend AAAAAAAFIW}
+{\bkmkstart AAAAAAAGWF}{\bkmkend AAAAAAAGWF}
 00013 \}\par
-{\bkmkstart AAAAAAAFIY}{\bkmkend AAAAAAAFIY}
+{\bkmkstart AAAAAAAGWG}{\bkmkend AAAAAAAGWG}
 00014 \par
-{\bkmkstart AAAAAAAFJA}{\bkmkend AAAAAAAFJA}
+{\bkmkstart AAAAAAAGWI}{\bkmkend AAAAAAAGWI}
 00015 TEST(StackQueue, StackSizeAndEmpty)\{\par
-{\bkmkstart AAAAAAAFJD}{\bkmkend AAAAAAAFJD}
+{\bkmkstart AAAAAAAGWJ}{\bkmkend AAAAAAAGWJ}
 00016     ds::Stack<int> st;\par
-{\bkmkstart AAAAAAAFJI}{\bkmkend AAAAAAAFJI}
+{\bkmkstart AAAAAAAGWL}{\bkmkend AAAAAAAGWL}
 00017     EXPECT_TRUE(st.empty());\par
-{\bkmkstart AAAAAAAFJK}{\bkmkend AAAAAAAFJK}
+{\bkmkstart AAAAAAAGWO}{\bkmkend AAAAAAAGWO}
 00018     EXPECT_EQ(st.size(), 0u);\par
-{\bkmkstart AAAAAAAFJM}{\bkmkend AAAAAAAFJM}
+{\bkmkstart AAAAAAAGWP}{\bkmkend AAAAAAAGWP}
 00019     \par
-{\bkmkstart AAAAAAAFJO}{\bkmkend AAAAAAAFJO}
+{\bkmkstart AAAAAAAGWQ}{\bkmkend AAAAAAAGWQ}
 00020     st.push(10);\par
-{\bkmkstart AAAAAAAFJP}{\bkmkend AAAAAAAFJP}
+{\bkmkstart AAAAAAAGWR}{\bkmkend AAAAAAAGWR}
 00021     EXPECT_FALSE(st.empty());\par
-{\bkmkstart AAAAAAAFJR}{\bkmkend AAAAAAAFJR}
+{\bkmkstart AAAAAAAGWS}{\bkmkend AAAAAAAGWS}
 00022     EXPECT_EQ(st.size(), 1u);\par
-{\bkmkstart AAAAAAAFJV}{\bkmkend AAAAAAAFJV}
+{\bkmkstart AAAAAAAGWT}{\bkmkend AAAAAAAGWT}
 00023     \par
-{\bkmkstart AAAAAAAFJX}{\bkmkend AAAAAAAFJX}
+{\bkmkstart AAAAAAAGWV}{\bkmkend AAAAAAAGWV}
 00024     st.push(20);\par
-{\bkmkstart AAAAAAAFJZ}{\bkmkend AAAAAAAFJZ}
+{\bkmkstart AAAAAAAGWW}{\bkmkend AAAAAAAGWW}
 00025     EXPECT_EQ(st.size(), 2u);\par
-{\bkmkstart AAAAAAAFKC}{\bkmkend AAAAAAAFKC}
+{\bkmkstart AAAAAAAGWY}{\bkmkend AAAAAAAGWY}
 00026     \par
-{\bkmkstart AAAAAAAFKD}{\bkmkend AAAAAAAFKD}
+{\bkmkstart AAAAAAAGWZ}{\bkmkend AAAAAAAGWZ}
 00027     st.pop();\par
-{\bkmkstart AAAAAAAFKG}{\bkmkend AAAAAAAFKG}
+{\bkmkstart AAAAAAAGXB}{\bkmkend AAAAAAAGXB}
 00028     EXPECT_EQ(st.size(), 1u);\par
-{\bkmkstart AAAAAAAFKJ}{\bkmkend AAAAAAAFKJ}
+{\bkmkstart AAAAAAAGXC}{\bkmkend AAAAAAAGXC}
 00029     \par
-{\bkmkstart AAAAAAAFKL}{\bkmkend AAAAAAAFKL}
+{\bkmkstart AAAAAAAGXD}{\bkmkend AAAAAAAGXD}
 00030     st.pop();\par
-{\bkmkstart AAAAAAAFKN}{\bkmkend AAAAAAAFKN}
+{\bkmkstart AAAAAAAGXF}{\bkmkend AAAAAAAGXF}
 00031     EXPECT_TRUE(st.empty());\par
-{\bkmkstart AAAAAAAFKQ}{\bkmkend AAAAAAAFKQ}
+{\bkmkstart AAAAAAAGXG}{\bkmkend AAAAAAAGXG}
 00032     EXPECT_EQ(st.size(), 0u);\par
-{\bkmkstart AAAAAAAFKT}{\bkmkend AAAAAAAFKT}
+{\bkmkstart AAAAAAAGXJ}{\bkmkend AAAAAAAGXJ}
 00033 \}\par
-{\bkmkstart AAAAAAAFKU}{\bkmkend AAAAAAAFKU}
+{\bkmkstart AAAAAAAGXK}{\bkmkend AAAAAAAGXK}
 00034 \par
-{\bkmkstart AAAAAAAFKW}{\bkmkend AAAAAAAFKW}
+{\bkmkstart AAAAAAAGXM}{\bkmkend AAAAAAAGXM}
 00035 TEST(StackQueue, QueueSizeAndEmpty)\{\par
-{\bkmkstart AAAAAAAFLE}{\bkmkend AAAAAAAFLE}
+{\bkmkstart AAAAAAAGXP}{\bkmkend AAAAAAAGXP}
 00036     ds::Queue<int> q;\par
-{\bkmkstart AAAAAAAFLH}{\bkmkend AAAAAAAFLH}
+{\bkmkstart AAAAAAAGXQ}{\bkmkend AAAAAAAGXQ}
 00037     EXPECT_TRUE(q.empty());\par
-{\bkmkstart AAAAAAAFLJ}{\bkmkend AAAAAAAFLJ}
+{\bkmkstart AAAAAAAGXT}{\bkmkend AAAAAAAGXT}
 00038     EXPECT_EQ(q.size(), 0u);\par
-{\bkmkstart AAAAAAAFLK}{\bkmkend AAAAAAAFLK}
+{\bkmkstart AAAAAAAGXV}{\bkmkend AAAAAAAGXV}
 00039     \par
-{\bkmkstart AAAAAAAFLL}{\bkmkend AAAAAAAFLL}
+{\bkmkstart AAAAAAAGXW}{\bkmkend AAAAAAAGXW}
 00040     q.enqueue(10);\par
-{\bkmkstart AAAAAAAFLM}{\bkmkend AAAAAAAFLM}
+{\bkmkstart AAAAAAAGXX}{\bkmkend AAAAAAAGXX}
 00041     EXPECT_FALSE(q.empty());\par
-{\bkmkstart AAAAAAAFLN}{\bkmkend AAAAAAAFLN}
+{\bkmkstart AAAAAAAGXZ}{\bkmkend AAAAAAAGXZ}
 00042     EXPECT_EQ(q.size(), 1u);\par
-{\bkmkstart AAAAAAAFLO}{\bkmkend AAAAAAAFLO}
+{\bkmkstart AAAAAAAGYB}{\bkmkend AAAAAAAGYB}
 00043     \par
-{\bkmkstart AAAAAAAFLP}{\bkmkend AAAAAAAFLP}
+{\bkmkstart AAAAAAAGYC}{\bkmkend AAAAAAAGYC}
 00044     q.enqueue(20);\par
-{\bkmkstart AAAAAAAFLQ}{\bkmkend AAAAAAAFLQ}
+{\bkmkstart AAAAAAAGYE}{\bkmkend AAAAAAAGYE}
 00045     EXPECT_EQ(q.size(), 2u);\par
-{\bkmkstart AAAAAAAFLR}{\bkmkend AAAAAAAFLR}
+{\bkmkstart AAAAAAAGYF}{\bkmkend AAAAAAAGYF}
 00046     \par
-{\bkmkstart AAAAAAAFLS}{\bkmkend AAAAAAAFLS}
+{\bkmkstart AAAAAAAGYG}{\bkmkend AAAAAAAGYG}
 00047     q.dequeue();\par
-{\bkmkstart AAAAAAAFLT}{\bkmkend AAAAAAAFLT}
+{\bkmkstart AAAAAAAGYI}{\bkmkend AAAAAAAGYI}
 00048     EXPECT_EQ(q.size(), 1u);\par
-{\bkmkstart AAAAAAAFLU}{\bkmkend AAAAAAAFLU}
+{\bkmkstart AAAAAAAGYK}{\bkmkend AAAAAAAGYK}
 00049     \par
-{\bkmkstart AAAAAAAFLV}{\bkmkend AAAAAAAFLV}
+{\bkmkstart AAAAAAAGYM}{\bkmkend AAAAAAAGYM}
 00050     q.dequeue();\par
-{\bkmkstart AAAAAAAFLW}{\bkmkend AAAAAAAFLW}
+{\bkmkstart AAAAAAAGYN}{\bkmkend AAAAAAAGYN}
 00051     EXPECT_TRUE(q.empty());\par
-{\bkmkstart AAAAAAAFLY}{\bkmkend AAAAAAAFLY}
+{\bkmkstart AAAAAAAGYU}{\bkmkend AAAAAAAGYU}
 00052     EXPECT_EQ(q.size(), 0u);\par
-{\bkmkstart AAAAAAAFLZ}{\bkmkend AAAAAAAFLZ}
+{\bkmkstart AAAAAAAGYX}{\bkmkend AAAAAAAGYX}
 00053 \}\par
-{\bkmkstart AAAAAAAFMB}{\bkmkend AAAAAAAFMB}
+{\bkmkstart AAAAAAAGZA}{\bkmkend AAAAAAAGZA}
 00054 \par
-{\bkmkstart AAAAAAAFMC}{\bkmkend AAAAAAAFMC}
+{\bkmkstart AAAAAAAGZB}{\bkmkend AAAAAAAGZB}
 00055 TEST(StackQueue, StackLargeDataset)\{\par
-{\bkmkstart AAAAAAAFMF}{\bkmkend AAAAAAAFMF}
+{\bkmkstart AAAAAAAGZF}{\bkmkend AAAAAAAGZF}
 00056     ds::Stack<int> st;\par
-{\bkmkstart AAAAAAAFMI}{\bkmkend AAAAAAAFMI}
+{\bkmkstart AAAAAAAGZH}{\bkmkend AAAAAAAGZH}
 00057     {\cf20 // Push 100 elements}\par
-{\bkmkstart AAAAAAAFMJ}{\bkmkend AAAAAAAFMJ}
+{\bkmkstart AAAAAAAGZJ}{\bkmkend AAAAAAAGZJ}
 00058     {\cf19 for}({\cf18 int} i = 0; i < 100; ++i) \{\par
-{\bkmkstart AAAAAAAFMK}{\bkmkend AAAAAAAFMK}
+{\bkmkstart AAAAAAAGZO}{\bkmkend AAAAAAAGZO}
 00059         st.push(i);\par
-{\bkmkstart AAAAAAAFMM}{\bkmkend AAAAAAAFMM}
+{\bkmkstart AAAAAAAGZS}{\bkmkend AAAAAAAGZS}
 00060     \}\par
-{\bkmkstart AAAAAAAFMN}{\bkmkend AAAAAAAFMN}
+{\bkmkstart AAAAAAAGZU}{\bkmkend AAAAAAAGZU}
 00061     EXPECT_EQ(st.size(), 100u);\par
-{\bkmkstart AAAAAAAFMP}{\bkmkend AAAAAAAFMP}
+{\bkmkstart AAAAAAAGZX}{\bkmkend AAAAAAAGZX}
 00062     EXPECT_EQ(st.top(), 99);\par
-{\bkmkstart AAAAAAAFMS}{\bkmkend AAAAAAAFMS}
+{\bkmkstart AAAAAAAHAA}{\bkmkend AAAAAAAHAA}
 00063     \par
-{\bkmkstart AAAAAAAFMT}{\bkmkend AAAAAAAFMT}
+{\bkmkstart AAAAAAAHAB}{\bkmkend AAAAAAAHAB}
 00064     {\cf20 // Pop all elements}\par
-{\bkmkstart AAAAAAAFMU}{\bkmkend AAAAAAAFMU}
+{\bkmkstart AAAAAAAHAC}{\bkmkend AAAAAAAHAC}
 00065     {\cf19 for}({\cf18 int} i = 99; i >= 0; --i) \{\par
-{\bkmkstart AAAAAAAFMW}{\bkmkend AAAAAAAFMW}
+{\bkmkstart AAAAAAAHAE}{\bkmkend AAAAAAAHAE}
 00066         EXPECT_EQ(st.top(), i);\par
-{\bkmkstart AAAAAAAFMY}{\bkmkend AAAAAAAFMY}
+{\bkmkstart AAAAAAAHAH}{\bkmkend AAAAAAAHAH}
 00067         st.pop();\par
-{\bkmkstart AAAAAAAFMZ}{\bkmkend AAAAAAAFMZ}
+{\bkmkstart AAAAAAAHAJ}{\bkmkend AAAAAAAHAJ}
 00068     \}\par
-{\bkmkstart AAAAAAAFNA}{\bkmkend AAAAAAAFNA}
+{\bkmkstart AAAAAAAHAM}{\bkmkend AAAAAAAHAM}
 00069     EXPECT_TRUE(st.empty());\par
-{\bkmkstart AAAAAAAFNE}{\bkmkend AAAAAAAFNE}
+{\bkmkstart AAAAAAAHAO}{\bkmkend AAAAAAAHAO}
 00070 \}\par
-{\bkmkstart AAAAAAAFNF}{\bkmkend AAAAAAAFNF}
+{\bkmkstart AAAAAAAHAP}{\bkmkend AAAAAAAHAP}
 00071 \par
-{\bkmkstart AAAAAAAFNG}{\bkmkend AAAAAAAFNG}
+{\bkmkstart AAAAAAAHAR}{\bkmkend AAAAAAAHAR}
 00072 TEST(StackQueue, QueueLargeDataset)\{\par
-{\bkmkstart AAAAAAAFNH}{\bkmkend AAAAAAAFNH}
+{\bkmkstart AAAAAAAHAT}{\bkmkend AAAAAAAHAT}
 00073     ds::Queue<int> q;\par
-{\bkmkstart AAAAAAAFNJ}{\bkmkend AAAAAAAFNJ}
+{\bkmkstart AAAAAAAHAX}{\bkmkend AAAAAAAHAX}
 00074     {\cf20 // Enqueue 100 elements}\par
-{\bkmkstart AAAAAAAFNK}{\bkmkend AAAAAAAFNK}
+{\bkmkstart AAAAAAAHAY}{\bkmkend AAAAAAAHAY}
 00075     {\cf19 for}({\cf18 int} i = 0; i < 100; ++i) \{\par
-{\bkmkstart AAAAAAAFNL}{\bkmkend AAAAAAAFNL}
+{\bkmkstart AAAAAAAHBA}{\bkmkend AAAAAAAHBA}
 00076         q.enqueue(i);\par
-{\bkmkstart AAAAAAAFNN}{\bkmkend AAAAAAAFNN}
+{\bkmkstart AAAAAAAHBC}{\bkmkend AAAAAAAHBC}
 00077     \}\par
-{\bkmkstart AAAAAAAFNP}{\bkmkend AAAAAAAFNP}
+{\bkmkstart AAAAAAAHBE}{\bkmkend AAAAAAAHBE}
 00078     EXPECT_EQ(q.size(), 100u);\par
-{\bkmkstart AAAAAAAFNR}{\bkmkend AAAAAAAFNR}
+{\bkmkstart AAAAAAAHBF}{\bkmkend AAAAAAAHBF}
 00079     EXPECT_EQ(q.front(), 0);\par
-{\bkmkstart AAAAAAAFNT}{\bkmkend AAAAAAAFNT}
+{\bkmkstart AAAAAAAHBI}{\bkmkend AAAAAAAHBI}
 00080     \par
-{\bkmkstart AAAAAAAFNV}{\bkmkend AAAAAAAFNV}
+{\bkmkstart AAAAAAAHBL}{\bkmkend AAAAAAAHBL}
 00081     {\cf20 // Dequeue all elements}\par
-{\bkmkstart AAAAAAAFNX}{\bkmkend AAAAAAAFNX}
+{\bkmkstart AAAAAAAHBM}{\bkmkend AAAAAAAHBM}
 00082     {\cf19 for}({\cf18 int} i = 0; i < 100; ++i) \{\par
-{\bkmkstart AAAAAAAFNZ}{\bkmkend AAAAAAAFNZ}
+{\bkmkstart AAAAAAAHBN}{\bkmkend AAAAAAAHBN}
 00083         EXPECT_EQ(q.front(), i);\par
-{\bkmkstart AAAAAAAFOC}{\bkmkend AAAAAAAFOC}
+{\bkmkstart AAAAAAAHBR}{\bkmkend AAAAAAAHBR}
 00084         q.dequeue();\par
-{\bkmkstart AAAAAAAFOD}{\bkmkend AAAAAAAFOD}
+{\bkmkstart AAAAAAAHBT}{\bkmkend AAAAAAAHBT}
 00085     \}\par
-{\bkmkstart AAAAAAAFOE}{\bkmkend AAAAAAAFOE}
+{\bkmkstart AAAAAAAHBU}{\bkmkend AAAAAAAHBU}
 00086     EXPECT_TRUE(q.empty());\par
-{\bkmkstart AAAAAAAFOG}{\bkmkend AAAAAAAFOG}
+{\bkmkstart AAAAAAAHBW}{\bkmkend AAAAAAAHBW}
 00087 \}\par
-{\bkmkstart AAAAAAAFOI}{\bkmkend AAAAAAAFOI}
+{\bkmkstart AAAAAAAHBX}{\bkmkend AAAAAAAHBX}
 00088 \par
 }
 }

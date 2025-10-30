@@ -151,193 +151,193 @@
 test_translator_coverage_topoff.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_translator_coverage_topoff.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_translator_coverage_topoff.cpp}
-{\bkmkstart AAAAAAAJNQ}
-{\bkmkend AAAAAAAJNQ}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAJNR" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAITH}
+{\bkmkend AAAAAAAITH}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAITJ" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAJNS}{\bkmkend AAAAAAAJNS}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAIVP}{\bkmkend AAAAAAAIVP}
 00001 \par
-{\bkmkstart AAAAAAAJNT}{\bkmkend AAAAAAAJNT}
+{\bkmkstart AAAAAAAIVW}{\bkmkend AAAAAAAIVW}
 00005 \par
-{\bkmkstart AAAAAAAJNU}{\bkmkend AAAAAAAJNU}
+{\bkmkstart AAAAAAAIVX}{\bkmkend AAAAAAAIVX}
 00006 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAJNV}{\bkmkend AAAAAAAJNV}
+{\bkmkstart AAAAAAAIYN}{\bkmkend AAAAAAAIYN}
 00007 {\cf21 #include <string>}\par
-{\bkmkstart AAAAAAAJNW}{\bkmkend AAAAAAAJNW}
+{\bkmkstart AAAAAAAIZA}{\bkmkend AAAAAAAIZA}
 00008 {\cf21 #include <vector>}\par
-{\bkmkstart AAAAAAAJNX}{\bkmkend AAAAAAAJNX}
+{\bkmkstart AAAAAAAIZL}{\bkmkend AAAAAAAIZL}
 00009 {\cf21 #include "../src/translator/lexer.h"}\par
-{\bkmkstart AAAAAAAJNY}{\bkmkend AAAAAAAJNY}
+{\bkmkstart AAAAAAAIZP}{\bkmkend AAAAAAAIZP}
 00010 {\cf21 #include "../src/translator/parser.h"}\par
-{\bkmkstart AAAAAAAJNZ}{\bkmkend AAAAAAAJNZ}
+{\bkmkstart AAAAAAAIZQ}{\bkmkend AAAAAAAIZQ}
 00011 {\cf21 #include "../src/translator/codegen.h"}\par
-{\bkmkstart AAAAAAAJOA}{\bkmkend AAAAAAAJOA}
+{\bkmkstart AAAAAAAJAP}{\bkmkend AAAAAAAJAP}
 00012 \par
-{\bkmkstart AAAAAAAJOB}{\bkmkend AAAAAAAJOB}
+{\bkmkstart AAAAAAAJAQ}{\bkmkend AAAAAAAJAQ}
 00013 {\cf17 using namespace }translator;\par
-{\bkmkstart AAAAAAAJOC}{\bkmkend AAAAAAAJOC}
+{\bkmkstart AAAAAAAJAU}{\bkmkend AAAAAAAJAU}
 00014 \par
-{\bkmkstart AAAAAAAJOD}{\bkmkend AAAAAAAJOD}
+{\bkmkstart AAAAAAAJAW}{\bkmkend AAAAAAAJAW}
 00015 {\cf20 // Covers: string literal scanning (multi-line), and single-char tokens -,*,/,),(}\par
-{\bkmkstart AAAAAAAJOE}{\bkmkend AAAAAAAJOE}
+{\bkmkstart AAAAAAAJAX}{\bkmkend AAAAAAAJAX}
 00016 TEST(TranslatorCoverageTopOff, Lexer_StringAndPunctuators)\par
-{\bkmkstart AAAAAAAJOF}{\bkmkend AAAAAAAJOF}
+{\bkmkstart AAAAAAAJBJ}{\bkmkend AAAAAAAJBJ}
 00017 \{\par
-{\bkmkstart AAAAAAAJOG}{\bkmkend AAAAAAAJOG}
+{\bkmkstart AAAAAAAJBL}{\bkmkend AAAAAAAJBL}
 00018     {\cf20 // String without closing quote on same line to exercise newline handling inside string}\par
-{\bkmkstart AAAAAAAJOH}{\bkmkend AAAAAAAJOH}
+{\bkmkstart AAAAAAAJBM}{\bkmkend AAAAAAAJBM}
 00019     {\cf17 const} std::string src = {\cf22 "PRINT \\"hello\\nworld\\"\\nA = 1-2*3/4,(5)\\n"};\par
-{\bkmkstart AAAAAAAJOI}{\bkmkend AAAAAAAJOI}
+{\bkmkstart AAAAAAAJBR}{\bkmkend AAAAAAAJBR}
 00020     Lexer lx(src);\par
-{\bkmkstart AAAAAAAJOJ}{\bkmkend AAAAAAAJOJ}
+{\bkmkstart AAAAAAAJBU}{\bkmkend AAAAAAAJBU}
 00021     {\cf17 auto} toks = lx.tokenize();\par
-{\bkmkstart AAAAAAAJOK}{\bkmkend AAAAAAAJOK}
+{\bkmkstart AAAAAAAJBW}{\bkmkend AAAAAAAJBW}
 00022 \par
-{\bkmkstart AAAAAAAJOL}{\bkmkend AAAAAAAJOL}
+{\bkmkstart AAAAAAAJBY}{\bkmkend AAAAAAAJBY}
 00023     {\cf20 // Ensure we saw a String token and various punctuators}\par
-{\bkmkstart AAAAAAAJOM}{\bkmkend AAAAAAAJOM}
+{\bkmkstart AAAAAAAJBZ}{\bkmkend AAAAAAAJBZ}
 00024     {\cf18 bool} sawString={\cf17 false}, sawMinus={\cf17 false}, sawStar={\cf17 false}, sawSlash={\cf17 false}, sawLParen={\cf17 false}, sawRParen={\cf17 false}, sawComma={\cf17 false};\par
-{\bkmkstart AAAAAAAJON}{\bkmkend AAAAAAAJON}
+{\bkmkstart AAAAAAAJCF}{\bkmkend AAAAAAAJCF}
 00025     {\cf19 for} ({\cf17 const} {\cf17 auto}& t : toks) \{\par
-{\bkmkstart AAAAAAAJOO}{\bkmkend AAAAAAAJOO}
+{\bkmkstart AAAAAAAJCI}{\bkmkend AAAAAAAJCI}
 00026         sawString |= (t.type==TokenType::String);\par
-{\bkmkstart AAAAAAAJOP}{\bkmkend AAAAAAAJOP}
+{\bkmkstart AAAAAAAJCK}{\bkmkend AAAAAAAJCK}
 00027         sawMinus  |= (t.type==TokenType::Minus);\par
-{\bkmkstart AAAAAAAJOQ}{\bkmkend AAAAAAAJOQ}
+{\bkmkstart AAAAAAAJCL}{\bkmkend AAAAAAAJCL}
 00028         sawStar   |= (t.type==TokenType::Star);\par
-{\bkmkstart AAAAAAAJOR}{\bkmkend AAAAAAAJOR}
+{\bkmkstart AAAAAAAJCW}{\bkmkend AAAAAAAJCW}
 00029         sawSlash  |= (t.type==TokenType::Slash);\par
-{\bkmkstart AAAAAAAJOS}{\bkmkend AAAAAAAJOS}
+{\bkmkstart AAAAAAAJDB}{\bkmkend AAAAAAAJDB}
 00030         sawLParen |= (t.type==TokenType::LParen);\par
-{\bkmkstart AAAAAAAJOT}{\bkmkend AAAAAAAJOT}
+{\bkmkstart AAAAAAAJDF}{\bkmkend AAAAAAAJDF}
 00031         sawRParen |= (t.type==TokenType::RParen);\par
-{\bkmkstart AAAAAAAJOU}{\bkmkend AAAAAAAJOU}
+{\bkmkstart AAAAAAAJDH}{\bkmkend AAAAAAAJDH}
 00032         sawComma  |= (t.type==TokenType::Comma);\par
-{\bkmkstart AAAAAAAJOV}{\bkmkend AAAAAAAJOV}
+{\bkmkstart AAAAAAAJDK}{\bkmkend AAAAAAAJDK}
 00033     \}\par
-{\bkmkstart AAAAAAAJOW}{\bkmkend AAAAAAAJOW}
+{\bkmkstart AAAAAAAJDL}{\bkmkend AAAAAAAJDL}
 00034     EXPECT_TRUE(sawString);\par
-{\bkmkstart AAAAAAAJOX}{\bkmkend AAAAAAAJOX}
+{\bkmkstart AAAAAAAJDP}{\bkmkend AAAAAAAJDP}
 00035     EXPECT_TRUE(sawMinus);\par
-{\bkmkstart AAAAAAAJOY}{\bkmkend AAAAAAAJOY}
+{\bkmkstart AAAAAAAJDQ}{\bkmkend AAAAAAAJDQ}
 00036     EXPECT_TRUE(sawStar);\par
-{\bkmkstart AAAAAAAJOZ}{\bkmkend AAAAAAAJOZ}
+{\bkmkstart AAAAAAAJDS}{\bkmkend AAAAAAAJDS}
 00037     EXPECT_TRUE(sawSlash);\par
-{\bkmkstart AAAAAAAJPA}{\bkmkend AAAAAAAJPA}
+{\bkmkstart AAAAAAAJDT}{\bkmkend AAAAAAAJDT}
 00038     EXPECT_TRUE(sawLParen);\par
-{\bkmkstart AAAAAAAJPB}{\bkmkend AAAAAAAJPB}
+{\bkmkstart AAAAAAAJDV}{\bkmkend AAAAAAAJDV}
 00039     EXPECT_TRUE(sawRParen);\par
-{\bkmkstart AAAAAAAJPC}{\bkmkend AAAAAAAJPC}
+{\bkmkstart AAAAAAAJDX}{\bkmkend AAAAAAAJDX}
 00040     EXPECT_TRUE(sawComma);\par
-{\bkmkstart AAAAAAAJPD}{\bkmkend AAAAAAAJPD}
+{\bkmkstart AAAAAAAJDY}{\bkmkend AAAAAAAJDY}
 00041 \}\par
-{\bkmkstart AAAAAAAJPE}{\bkmkend AAAAAAAJPE}
+{\bkmkstart AAAAAAAJEC}{\bkmkend AAAAAAAJEC}
 00042 \par
-{\bkmkstart AAAAAAAJPF}{\bkmkend AAAAAAAJPF}
+{\bkmkstart AAAAAAAJED}{\bkmkend AAAAAAAJED}
 00043 {\cf20 // Additional lexer micro-cases: bare identifier and same-line string termination}\par
-{\bkmkstart AAAAAAAJPG}{\bkmkend AAAAAAAJPG}
+{\bkmkstart AAAAAAAJEF}{\bkmkend AAAAAAAJEF}
 00044 TEST(TranslatorCoverageTopOff, Lexer_Identifier_And_SimpleString)\par
-{\bkmkstart AAAAAAAJPH}{\bkmkend AAAAAAAJPH}
+{\bkmkstart AAAAAAAJEM}{\bkmkend AAAAAAAJEM}
 00045 \{\par
-{\bkmkstart AAAAAAAJPI}{\bkmkend AAAAAAAJPI}
+{\bkmkstart AAAAAAAJEN}{\bkmkend AAAAAAAJEN}
 00046     {\cf17 const} std::string src = {\cf22 "foo\\nPRINT \\"x\\"\\n"};\par
-{\bkmkstart AAAAAAAJPJ}{\bkmkend AAAAAAAJPJ}
+{\bkmkstart AAAAAAAJET}{\bkmkend AAAAAAAJET}
 00047     {\cf17 auto} toks = Lexer(src).tokenize();\par
-{\bkmkstart AAAAAAAJPK}{\bkmkend AAAAAAAJPK}
+{\bkmkstart AAAAAAAJEZ}{\bkmkend AAAAAAAJEZ}
 00048     {\cf18 bool} sawId={\cf17 false}, sawString={\cf17 false};\par
-{\bkmkstart AAAAAAAJPL}{\bkmkend AAAAAAAJPL}
+{\bkmkstart AAAAAAAJFC}{\bkmkend AAAAAAAJFC}
 00049     {\cf19 for} ({\cf17 const} {\cf17 auto}& t : toks) \{\par
-{\bkmkstart AAAAAAAJPM}{\bkmkend AAAAAAAJPM}
+{\bkmkstart AAAAAAAJFG}{\bkmkend AAAAAAAJFG}
 00050         sawId |= (t.type==TokenType::Identifier && t.lexeme=={\cf22 "foo"});\par
-{\bkmkstart AAAAAAAJPN}{\bkmkend AAAAAAAJPN}
+{\bkmkstart AAAAAAAJFI}{\bkmkend AAAAAAAJFI}
 00051         sawString |= (t.type==TokenType::String && t.lexeme=={\cf22 "x"});\par
-{\bkmkstart AAAAAAAJPO}{\bkmkend AAAAAAAJPO}
+{\bkmkstart AAAAAAAJFL}{\bkmkend AAAAAAAJFL}
 00052     \}\par
-{\bkmkstart AAAAAAAJPP}{\bkmkend AAAAAAAJPP}
+{\bkmkstart AAAAAAAJFN}{\bkmkend AAAAAAAJFN}
 00053     EXPECT_TRUE(sawId);\par
-{\bkmkstart AAAAAAAJPQ}{\bkmkend AAAAAAAJPQ}
+{\bkmkstart AAAAAAAJFO}{\bkmkend AAAAAAAJFO}
 00054     EXPECT_TRUE(sawString);\par
-{\bkmkstart AAAAAAAJPR}{\bkmkend AAAAAAAJPR}
+{\bkmkstart AAAAAAAJFP}{\bkmkend AAAAAAAJFP}
 00055 \}\par
-{\bkmkstart AAAAAAAJPS}{\bkmkend AAAAAAAJPS}
+{\bkmkstart AAAAAAAJFQ}{\bkmkend AAAAAAAJFQ}
 00056 \par
-{\bkmkstart AAAAAAAJPT}{\bkmkend AAAAAAAJPT}
+{\bkmkstart AAAAAAAJFS}{\bkmkend AAAAAAAJFS}
 00057 {\cf20 // Edge case: empty string literal to ensure closing-quote branch counted}\par
-{\bkmkstart AAAAAAAJPU}{\bkmkend AAAAAAAJPU}
+{\bkmkstart AAAAAAAJFT}{\bkmkend AAAAAAAJFT}
 00058 TEST(TranslatorCoverageTopOff, Lexer_EmptyString)\par
-{\bkmkstart AAAAAAAJPV}{\bkmkend AAAAAAAJPV}
+{\bkmkstart AAAAAAAJFU}{\bkmkend AAAAAAAJFU}
 00059 \{\par
-{\bkmkstart AAAAAAAJPW}{\bkmkend AAAAAAAJPW}
+{\bkmkstart AAAAAAAJFV}{\bkmkend AAAAAAAJFV}
 00060     {\cf17 const} std::string src = {\cf22 "PRINT \\"\\"\\n"};\par
-{\bkmkstart AAAAAAAJPX}{\bkmkend AAAAAAAJPX}
+{\bkmkstart AAAAAAAJFX}{\bkmkend AAAAAAAJFX}
 00061     {\cf17 auto} toks = Lexer(src).tokenize();\par
-{\bkmkstart AAAAAAAJPY}{\bkmkend AAAAAAAJPY}
+{\bkmkstart AAAAAAAJFY}{\bkmkend AAAAAAAJFY}
 00062     {\cf18 int} stringCount = 0;\par
-{\bkmkstart AAAAAAAJPZ}{\bkmkend AAAAAAAJPZ}
+{\bkmkstart AAAAAAAJGA}{\bkmkend AAAAAAAJGA}
 00063     {\cf19 for} ({\cf17 const} {\cf17 auto}& t : toks) {\cf19 if} (t.type==TokenType::String) ++stringCount;\par
-{\bkmkstart AAAAAAAJQA}{\bkmkend AAAAAAAJQA}
+{\bkmkstart AAAAAAAJGE}{\bkmkend AAAAAAAJGE}
 00064     EXPECT_EQ(stringCount, 1);\par
-{\bkmkstart AAAAAAAJQB}{\bkmkend AAAAAAAJQB}
+{\bkmkstart AAAAAAAJGG}{\bkmkend AAAAAAAJGG}
 00065 \}\par
-{\bkmkstart AAAAAAAJQC}{\bkmkend AAAAAAAJQC}
+{\bkmkstart AAAAAAAJGI}{\bkmkend AAAAAAAJGI}
 00066 \par
-{\bkmkstart AAAAAAAJQD}{\bkmkend AAAAAAAJQD}
+{\bkmkstart AAAAAAAJGK}{\bkmkend AAAAAAAJGK}
 00067 {\cf20 // Covers: parse_term() loop for * and /; and codegen Let with BinaryExpr and next-label branch}\par
-{\bkmkstart AAAAAAAJQE}{\bkmkend AAAAAAAJQE}
+{\bkmkstart AAAAAAAJGL}{\bkmkend AAAAAAAJGL}
 00068 TEST(TranslatorCoverageTopOff, Parser_MulDiv_And_CodegenLet)\par
-{\bkmkstart AAAAAAAJQF}{\bkmkend AAAAAAAJQF}
+{\bkmkstart AAAAAAAJGN}{\bkmkend AAAAAAAJGN}
 00069 \{\par
-{\bkmkstart AAAAAAAJQG}{\bkmkend AAAAAAAJQG}
+{\bkmkstart AAAAAAAJGO}{\bkmkend AAAAAAAJGO}
 00070     {\cf17 const} std::string src =\par
-{\bkmkstart AAAAAAAJQH}{\bkmkend AAAAAAAJQH}
+{\bkmkstart AAAAAAAJGS}{\bkmkend AAAAAAAJGS}
 00071         {\cf22 "10 LET A = 2*3/4\\n"}\par
-{\bkmkstart AAAAAAAJQI}{\bkmkend AAAAAAAJQI}
+{\bkmkstart AAAAAAAJGX}{\bkmkend AAAAAAAJGX}
 00072         {\cf22 "20 PRINT 1\\n"}; {\cf20 // ensure next_label exists after LET}\par
-{\bkmkstart AAAAAAAJQJ}{\bkmkend AAAAAAAJQJ}
+{\bkmkstart AAAAAAAJGZ}{\bkmkend AAAAAAAJGZ}
 00073     {\cf17 auto} toks = Lexer(src).tokenize();\par
-{\bkmkstart AAAAAAAJQK}{\bkmkend AAAAAAAJQK}
+{\bkmkstart AAAAAAAJHC}{\bkmkend AAAAAAAJHC}
 00074     Program prog = Parser(std::move(toks)).parseProgram();\par
-{\bkmkstart AAAAAAAJQL}{\bkmkend AAAAAAAJQL}
+{\bkmkstart AAAAAAAJHJ}{\bkmkend AAAAAAAJHJ}
 00075 \par
-{\bkmkstart AAAAAAAJQM}{\bkmkend AAAAAAAJQM}
+{\bkmkstart AAAAAAAJHL}{\bkmkend AAAAAAAJHL}
 00076     {\cf20 // Basic sanity}\par
-{\bkmkstart AAAAAAAJQN}{\bkmkend AAAAAAAJQN}
+{\bkmkstart AAAAAAAJHP}{\bkmkend AAAAAAAJHP}
 00077     ASSERT_EQ(prog.stmts.size(), 2u);\par
-{\bkmkstart AAAAAAAJQO}{\bkmkend AAAAAAAJQO}
+{\bkmkstart AAAAAAAJHT}{\bkmkend AAAAAAAJHT}
 00078 \par
-{\bkmkstart AAAAAAAJQP}{\bkmkend AAAAAAAJQP}
+{\bkmkstart AAAAAAAJHU}{\bkmkend AAAAAAAJHU}
 00079     {\cf20 // Emitting C++ should include the binary expression with both ops and the LET assignment}\par
-{\bkmkstart AAAAAAAJQQ}{\bkmkend AAAAAAAJQQ}
+{\bkmkstart AAAAAAAJHX}{\bkmkend AAAAAAAJHX}
 00080     std::string out = Codegen().emit_cpp(prog);\par
-{\bkmkstart AAAAAAAJQR}{\bkmkend AAAAAAAJQR}
+{\bkmkstart AAAAAAAJIG}{\bkmkend AAAAAAAJIG}
 00081     EXPECT_NE(out.find({\cf22 "var[\\"A\\"] ="}), std::string::npos);\par
-{\bkmkstart AAAAAAAJQS}{\bkmkend AAAAAAAJQS}
+{\bkmkstart AAAAAAAJIJ}{\bkmkend AAAAAAAJIJ}
 00082     EXPECT_NE(out.find({\cf22 "*"}), std::string::npos);\par
-{\bkmkstart AAAAAAAJQT}{\bkmkend AAAAAAAJQT}
+{\bkmkstart AAAAAAAJIL}{\bkmkend AAAAAAAJIL}
 00083     EXPECT_NE(out.find({\cf22 "/"}), std::string::npos);\par
-{\bkmkstart AAAAAAAJQU}{\bkmkend AAAAAAAJQU}
+{\bkmkstart AAAAAAAJIP}{\bkmkend AAAAAAAJIP}
 00084 \}\par
-{\bkmkstart AAAAAAAJQV}{\bkmkend AAAAAAAJQV}
+{\bkmkstart AAAAAAAJIQ}{\bkmkend AAAAAAAJIQ}
 00085 \par
-{\bkmkstart AAAAAAAJQW}{\bkmkend AAAAAAAJQW}
+{\bkmkstart AAAAAAAJIR}{\bkmkend AAAAAAAJIR}
 00086 {\cf20 // Covers: parser factor unexpected token throw (line with "Unexpected token in factor")}\par
-{\bkmkstart AAAAAAAJQX}{\bkmkend AAAAAAAJQX}
+{\bkmkstart AAAAAAAJIS}{\bkmkend AAAAAAAJIS}
 00087 TEST(TranslatorCoverageTopOff, Parser_UnexpectedTokenInFactor)\par
-{\bkmkstart AAAAAAAJQY}{\bkmkend AAAAAAAJQY}
+{\bkmkstart AAAAAAAJIW}{\bkmkend AAAAAAAJIW}
 00088 \{\par
-{\bkmkstart AAAAAAAJQZ}{\bkmkend AAAAAAAJQZ}
+{\bkmkstart AAAAAAAJIY}{\bkmkend AAAAAAAJIY}
 00089     {\cf20 // PRINT THEN -> when parsing expression after PRINT, first token is THEN and triggers factor error}\par
-{\bkmkstart AAAAAAAJRA}{\bkmkend AAAAAAAJRA}
+{\bkmkstart AAAAAAAJIZ}{\bkmkend AAAAAAAJIZ}
 00090     {\cf17 const} std::string src = {\cf22 "10 PRINT THEN\\n"};\par
-{\bkmkstart AAAAAAAJRB}{\bkmkend AAAAAAAJRB}
+{\bkmkstart AAAAAAAJJF}{\bkmkend AAAAAAAJJF}
 00091     {\cf17 auto} toks = Lexer(src).tokenize();\par
-{\bkmkstart AAAAAAAJRC}{\bkmkend AAAAAAAJRC}
+{\bkmkstart AAAAAAAJJH}{\bkmkend AAAAAAAJJH}
 00092     Parser p(std::move(toks));\par
-{\bkmkstart AAAAAAAJRD}{\bkmkend AAAAAAAJRD}
+{\bkmkstart AAAAAAAJJI}{\bkmkend AAAAAAAJJI}
 00093     EXPECT_THROW(\{ (void)p.parseProgram(); \}, std::runtime_error);\par
-{\bkmkstart AAAAAAAJRE}{\bkmkend AAAAAAAJRE}
+{\bkmkstart AAAAAAAJJM}{\bkmkend AAAAAAAJJM}
 00094 \}\par
 }
 }

@@ -151,397 +151,397 @@
 test_language_translator_history.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_history.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_history.cpp}
-{\bkmkstart AAAAAAADTR}
-{\bkmkend AAAAAAADTR}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADTS" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAFIB}
+{\bkmkend AAAAAAAFIB}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAFID" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAADUL}{\bkmkend AAAAAAADUL}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAFKR}{\bkmkend AAAAAAAFKR}
 00001 \par
-{\bkmkstart AAAAAAADUM}{\bkmkend AAAAAAADUM}
+{\bkmkstart AAAAAAAFKW}{\bkmkend AAAAAAAFKW}
 00006 \par
-{\bkmkstart AAAAAAADUN}{\bkmkend AAAAAAADUN}
+{\bkmkstart AAAAAAAFKX}{\bkmkend AAAAAAAFKX}
 00007 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAADVA}{\bkmkend AAAAAAADVA}
+{\bkmkstart AAAAAAAFLT}{\bkmkend AAAAAAAFLT}
 00008 {\cf21 #include <filesystem>}\par
-{\bkmkstart AAAAAAADVH}{\bkmkend AAAAAAADVH}
+{\bkmkstart AAAAAAAFMI}{\bkmkend AAAAAAAFMI}
 00009 {\cf21 #include <chrono>}\par
-{\bkmkstart AAAAAAADVS}{\bkmkend AAAAAAADVS}
+{\bkmkstart AAAAAAAFNG}{\bkmkend AAAAAAAFNG}
 00010 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
-{\bkmkstart AAAAAAADWB}{\bkmkend AAAAAAADWB}
+{\bkmkstart AAAAAAAFOG}{\bkmkend AAAAAAAFOG}
 00011 \par
-{\bkmkstart AAAAAAADWC}{\bkmkend AAAAAAADWC}
+{\bkmkstart AAAAAAAFOH}{\bkmkend AAAAAAAFOH}
 00012 {\cf17 using namespace }Coruh::LanguageTranslator;\par
-{\bkmkstart AAAAAAADWD}{\bkmkend AAAAAAADWD}
+{\bkmkstart AAAAAAAFOM}{\bkmkend AAAAAAAFOM}
 00013 \par
-{\bkmkstart AAAAAAADWE}{\bkmkend AAAAAAADWE}
+{\bkmkstart AAAAAAAFON}{\bkmkend AAAAAAAFON}
 00014 {\cf17 class }LanguageTranslatorHistoryTest : {\cf17 public} ::testing::Test \{\par
-{\bkmkstart AAAAAAADWH}{\bkmkend AAAAAAADWH}
+{\bkmkstart AAAAAAAFOX}{\bkmkend AAAAAAAFOX}
 00015 {\cf17 protected}:\par
-{\bkmkstart AAAAAAADWK}{\bkmkend AAAAAAADWK}
+{\bkmkstart AAAAAAAFOZ}{\bkmkend AAAAAAAFOZ}
 00016     {\cf18 void} SetUp(){\cf17  override }\{\par
-{\bkmkstart AAAAAAADWR}{\bkmkend AAAAAAADWR}
+{\bkmkstart AAAAAAAFPM}{\bkmkend AAAAAAAFPM}
 00017         {\cf20 // Clean up any existing data files}\par
-{\bkmkstart AAAAAAADWS}{\bkmkend AAAAAAADWS}
+{\bkmkstart AAAAAAAFPO}{\bkmkend AAAAAAAFPO}
 00018         {\cf19 if} (std::filesystem::exists({\cf22 "data/history.bin"})) \{\par
-{\bkmkstart AAAAAAADWV}{\bkmkend AAAAAAADWV}
+{\bkmkstart AAAAAAAFPS}{\bkmkend AAAAAAAFPS}
 00019             std::filesystem::remove({\cf22 "data/history.bin"});\par
-{\bkmkstart AAAAAAADWY}{\bkmkend AAAAAAADWY}
+{\bkmkstart AAAAAAAFPY}{\bkmkend AAAAAAAFPY}
 00020         \}\par
-{\bkmkstart AAAAAAADWZ}{\bkmkend AAAAAAADWZ}
+{\bkmkstart AAAAAAAFQA}{\bkmkend AAAAAAAFQA}
 00021         app = std::make_unique<LanguageTranslatorApp>();\par
-{\bkmkstart AAAAAAADXE}{\bkmkend AAAAAAADXE}
+{\bkmkstart AAAAAAAFQG}{\bkmkend AAAAAAAFQG}
 00022         \par
-{\bkmkstart AAAAAAADXF}{\bkmkend AAAAAAADXF}
+{\bkmkstart AAAAAAAFQH}{\bkmkend AAAAAAAFQH}
 00023         {\cf20 // Login a user to enable history tracking}\par
-{\bkmkstart AAAAAAADXG}{\bkmkend AAAAAAADXG}
+{\bkmkstart AAAAAAAFQM}{\bkmkend AAAAAAAFQM}
 00024         app->registerUser({\cf22 "testuser"}, {\cf22 "password"});\par
-{\bkmkstart AAAAAAADXI}{\bkmkend AAAAAAADXI}
+{\bkmkstart AAAAAAAFQP}{\bkmkend AAAAAAAFQP}
 00025         app->login({\cf22 "testuser"}, {\cf22 "password"});\par
-{\bkmkstart AAAAAAADXM}{\bkmkend AAAAAAADXM}
+{\bkmkstart AAAAAAAFQR}{\bkmkend AAAAAAAFQR}
 00026     \}\par
-{\bkmkstart AAAAAAADXO}{\bkmkend AAAAAAADXO}
+{\bkmkstart AAAAAAAFQS}{\bkmkend AAAAAAAFQS}
 00027     \par
-{\bkmkstart AAAAAAADXP}{\bkmkend AAAAAAADXP}
+{\bkmkstart AAAAAAAFQU}{\bkmkend AAAAAAAFQU}
 00028     {\cf18 void} TearDown(){\cf17  override }\{\par
-{\bkmkstart AAAAAAADXT}{\bkmkend AAAAAAADXT}
+{\bkmkstart AAAAAAAFRJ}{\bkmkend AAAAAAAFRJ}
 00029         app.reset();\par
-{\bkmkstart AAAAAAADXV}{\bkmkend AAAAAAADXV}
+{\bkmkstart AAAAAAAFRL}{\bkmkend AAAAAAAFRL}
 00030     \}\par
-{\bkmkstart AAAAAAADXY}{\bkmkend AAAAAAADXY}
+{\bkmkstart AAAAAAAFRN}{\bkmkend AAAAAAAFRN}
 00031     \par
-{\bkmkstart AAAAAAADXZ}{\bkmkend AAAAAAADXZ}
+{\bkmkstart AAAAAAAFRP}{\bkmkend AAAAAAAFRP}
 00032     std::unique_ptr<LanguageTranslatorApp> app;\par
-{\bkmkstart AAAAAAADYG}{\bkmkend AAAAAAADYG}
+{\bkmkstart AAAAAAAFRX}{\bkmkend AAAAAAAFRX}
 00033 \};\par
-{\bkmkstart AAAAAAADYH}{\bkmkend AAAAAAADYH}
+{\bkmkstart AAAAAAAFRY}{\bkmkend AAAAAAAFRY}
 00034 \par
-{\bkmkstart AAAAAAADYJ}{\bkmkend AAAAAAADYJ}
+{\bkmkstart AAAAAAAFRZ}{\bkmkend AAAAAAAFRZ}
 00035 {\cf20 // Test history tracking for translations}\par
-{\bkmkstart AAAAAAADYL}{\bkmkend AAAAAAADYL}
+{\bkmkstart AAAAAAAFSD}{\bkmkend AAAAAAAFSD}
 00036 TEST_F(LanguageTranslatorHistoryTest, TestTranslationHistoryTracking) \{\par
-{\bkmkstart AAAAAAADYZ}{\bkmkend AAAAAAADYZ}
+{\bkmkstart AAAAAAAFSO}{\bkmkend AAAAAAAFSO}
 00037     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAADZE}{\bkmkend AAAAAAADZE}
+{\bkmkstart AAAAAAAFSV}{\bkmkend AAAAAAAFSV}
 00038     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAADZL}{\bkmkend AAAAAAADZL}
+{\bkmkstart AAAAAAAFSY}{\bkmkend AAAAAAAFSY}
 00039     \par
-{\bkmkstart AAAAAAADZM}{\bkmkend AAAAAAADZM}
+{\bkmkstart AAAAAAAFSZ}{\bkmkend AAAAAAAFSZ}
 00040     app->translateText({\cf22 "hello"});\par
-{\bkmkstart AAAAAAADZO}{\bkmkend AAAAAAADZO}
+{\bkmkstart AAAAAAAFTG}{\bkmkend AAAAAAAFTG}
 00041     app->translateText({\cf22 "world"});\par
-{\bkmkstart AAAAAAADZX}{\bkmkend AAAAAAADZX}
+{\bkmkstart AAAAAAAFTH}{\bkmkend AAAAAAAFTH}
 00042     app->translateText({\cf22 "good morning"});\par
-{\bkmkstart AAAAAAAEAB}{\bkmkend AAAAAAAEAB}
+{\bkmkstart AAAAAAAFTK}{\bkmkend AAAAAAAFTK}
 00043     \par
-{\bkmkstart AAAAAAAEAC}{\bkmkend AAAAAAAEAC}
+{\bkmkstart AAAAAAAFTM}{\bkmkend AAAAAAAFTM}
 00044     {\cf20 // History should be tracked for logged-in users}\par
-{\bkmkstart AAAAAAAEAE}{\bkmkend AAAAAAAEAE}
+{\bkmkstart AAAAAAAFTP}{\bkmkend AAAAAAAFTP}
 00045     EXPECT_TRUE(app->isUserLoggedIn());\par
-{\bkmkstart AAAAAAAEAG}{\bkmkend AAAAAAAEAG}
+{\bkmkstart AAAAAAAFTQ}{\bkmkend AAAAAAAFTQ}
 00046 \}\par
-{\bkmkstart AAAAAAAEAH}{\bkmkend AAAAAAAEAH}
+{\bkmkstart AAAAAAAFTS}{\bkmkend AAAAAAAFTS}
 00047 \par
-{\bkmkstart AAAAAAAEAI}{\bkmkend AAAAAAAEAI}
+{\bkmkstart AAAAAAAFTT}{\bkmkend AAAAAAAFTT}
 00048 {\cf20 // Test history with different language pairs}\par
-{\bkmkstart AAAAAAAEAK}{\bkmkend AAAAAAAEAK}
+{\bkmkstart AAAAAAAFTU}{\bkmkend AAAAAAAFTU}
 00049 TEST_F(LanguageTranslatorHistoryTest, TestHistoryWithDifferentLanguagePairs) \{\par
-{\bkmkstart AAAAAAAEAN}{\bkmkend AAAAAAAEAN}
+{\bkmkstart AAAAAAAFTY}{\bkmkend AAAAAAAFTY}
 00050     {\cf20 // English to Turkish}\par
-{\bkmkstart AAAAAAAEAP}{\bkmkend AAAAAAAEAP}
+{\bkmkstart AAAAAAAFUA}{\bkmkend AAAAAAAFUA}
 00051     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEAR}{\bkmkend AAAAAAAEAR}
+{\bkmkstart AAAAAAAFUB}{\bkmkend AAAAAAAFUB}
 00052     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAEAS}{\bkmkend AAAAAAAEAS}
+{\bkmkstart AAAAAAAFUD}{\bkmkend AAAAAAAFUD}
 00053     app->translateText({\cf22 "hello"});\par
-{\bkmkstart AAAAAAAEAU}{\bkmkend AAAAAAAEAU}
+{\bkmkstart AAAAAAAFUG}{\bkmkend AAAAAAAFUG}
 00054     \par
-{\bkmkstart AAAAAAAEAW}{\bkmkend AAAAAAAEAW}
+{\bkmkstart AAAAAAAFUH}{\bkmkend AAAAAAAFUH}
 00055     {\cf20 // English to Spanish}\par
-{\bkmkstart AAAAAAAEAY}{\bkmkend AAAAAAAEAY}
+{\bkmkstart AAAAAAAFUJ}{\bkmkend AAAAAAAFUJ}
 00056     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEBA}{\bkmkend AAAAAAAEBA}
+{\bkmkstart AAAAAAAFUM}{\bkmkend AAAAAAAFUM}
 00057     app->setTargetLanguage({\cf22 "Spanish"});\par
-{\bkmkstart AAAAAAAEBC}{\bkmkend AAAAAAAEBC}
+{\bkmkstart AAAAAAAFUP}{\bkmkend AAAAAAAFUP}
 00058     app->translateText({\cf22 "hello"});\par
-{\bkmkstart AAAAAAAEBF}{\bkmkend AAAAAAAEBF}
+{\bkmkstart AAAAAAAFUR}{\bkmkend AAAAAAAFUR}
 00059     \par
-{\bkmkstart AAAAAAAEBG}{\bkmkend AAAAAAAEBG}
+{\bkmkstart AAAAAAAFUS}{\bkmkend AAAAAAAFUS}
 00060     {\cf20 // French to English}\par
-{\bkmkstart AAAAAAAEBH}{\bkmkend AAAAAAAEBH}
+{\bkmkstart AAAAAAAFUT}{\bkmkend AAAAAAAFUT}
 00061     app->setSourceLanguage({\cf22 "French"});\par
-{\bkmkstart AAAAAAAEBI}{\bkmkend AAAAAAAEBI}
+{\bkmkstart AAAAAAAFUV}{\bkmkend AAAAAAAFUV}
 00062     app->setTargetLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEBJ}{\bkmkend AAAAAAAEBJ}
+{\bkmkstart AAAAAAAFUY}{\bkmkend AAAAAAAFUY}
 00063     app->translateText({\cf22 "bonjour"});\par
-{\bkmkstart AAAAAAAEBK}{\bkmkend AAAAAAAEBK}
+{\bkmkstart AAAAAAAFVB}{\bkmkend AAAAAAAFVB}
 00064 \}\par
-{\bkmkstart AAAAAAAEBL}{\bkmkend AAAAAAAEBL}
+{\bkmkstart AAAAAAAFVD}{\bkmkend AAAAAAAFVD}
 00065 \par
-{\bkmkstart AAAAAAAEBP}{\bkmkend AAAAAAAEBP}
+{\bkmkstart AAAAAAAFVE}{\bkmkend AAAAAAAFVE}
 00066 {\cf20 // Test history for logged out users}\par
-{\bkmkstart AAAAAAAEBQ}{\bkmkend AAAAAAAEBQ}
+{\bkmkstart AAAAAAAFVG}{\bkmkend AAAAAAAFVG}
 00067 TEST_F(LanguageTranslatorHistoryTest, TestHistoryWithoutLogin) \{\par
-{\bkmkstart AAAAAAAEBR}{\bkmkend AAAAAAAEBR}
+{\bkmkstart AAAAAAAFVJ}{\bkmkend AAAAAAAFVJ}
 00068     app->logout();\par
-{\bkmkstart AAAAAAAEBS}{\bkmkend AAAAAAAEBS}
+{\bkmkstart AAAAAAAFVM}{\bkmkend AAAAAAAFVM}
 00069     EXPECT_FALSE(app->isUserLoggedIn());\par
-{\bkmkstart AAAAAAAEBT}{\bkmkend AAAAAAAEBT}
+{\bkmkstart AAAAAAAFVP}{\bkmkend AAAAAAAFVP}
 00070     \par
-{\bkmkstart AAAAAAAEBU}{\bkmkend AAAAAAAEBU}
+{\bkmkstart AAAAAAAFVR}{\bkmkend AAAAAAAFVR}
 00071     {\cf20 // History should not be tracked when logged out}\par
-{\bkmkstart AAAAAAAEBW}{\bkmkend AAAAAAAEBW}
+{\bkmkstart AAAAAAAFVU}{\bkmkend AAAAAAAFVU}
 00072     app->translateText({\cf22 "hello"});\par
-{\bkmkstart AAAAAAAEBX}{\bkmkend AAAAAAAEBX}
+{\bkmkstart AAAAAAAFVW}{\bkmkend AAAAAAAFVW}
 00073 \}\par
-{\bkmkstart AAAAAAAEBZ}{\bkmkend AAAAAAAEBZ}
+{\bkmkstart AAAAAAAFVY}{\bkmkend AAAAAAAFVY}
 00074 \par
-{\bkmkstart AAAAAAAECA}{\bkmkend AAAAAAAECA}
+{\bkmkstart AAAAAAAFWA}{\bkmkend AAAAAAAFWA}
 00075 {\cf20 // Test history clearing}\par
-{\bkmkstart AAAAAAAECB}{\bkmkend AAAAAAAECB}
+{\bkmkstart AAAAAAAFWD}{\bkmkend AAAAAAAFWD}
 00076 TEST_F(LanguageTranslatorHistoryTest, TestClearHistory) \{\par
-{\bkmkstart AAAAAAAECC}{\bkmkend AAAAAAAECC}
+{\bkmkstart AAAAAAAFWK}{\bkmkend AAAAAAAFWK}
 00077     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAECD}{\bkmkend AAAAAAAECD}
+{\bkmkstart AAAAAAAFWM}{\bkmkend AAAAAAAFWM}
 00078     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAECE}{\bkmkend AAAAAAAECE}
+{\bkmkstart AAAAAAAFWP}{\bkmkend AAAAAAAFWP}
 00079     app->translateText({\cf22 "hello"});\par
-{\bkmkstart AAAAAAAECF}{\bkmkend AAAAAAAECF}
+{\bkmkstart AAAAAAAFWS}{\bkmkend AAAAAAAFWS}
 00080     app->translateText({\cf22 "world"});\par
-{\bkmkstart AAAAAAAECG}{\bkmkend AAAAAAAECG}
+{\bkmkstart AAAAAAAFWV}{\bkmkend AAAAAAAFWV}
 00081     \par
-{\bkmkstart AAAAAAAECH}{\bkmkend AAAAAAAECH}
+{\bkmkstart AAAAAAAFWW}{\bkmkend AAAAAAAFWW}
 00082     {\cf20 // Clear history}\par
-{\bkmkstart AAAAAAAECI}{\bkmkend AAAAAAAECI}
+{\bkmkstart AAAAAAAFWY}{\bkmkend AAAAAAAFWY}
 00083     app->clearHistory();\par
-{\bkmkstart AAAAAAAECJ}{\bkmkend AAAAAAAECJ}
+{\bkmkstart AAAAAAAFXB}{\bkmkend AAAAAAAFXB}
 00084     \par
-{\bkmkstart AAAAAAAECK}{\bkmkend AAAAAAAECK}
+{\bkmkstart AAAAAAAFXD}{\bkmkend AAAAAAAFXD}
 00085     {\cf20 // History should be empty}\par
-{\bkmkstart AAAAAAAECL}{\bkmkend AAAAAAAECL}
+{\bkmkstart AAAAAAAFXE}{\bkmkend AAAAAAAFXE}
 00086 \}\par
-{\bkmkstart AAAAAAAECM}{\bkmkend AAAAAAAECM}
+{\bkmkstart AAAAAAAFXG}{\bkmkend AAAAAAAFXG}
 00087 \par
-{\bkmkstart AAAAAAAECN}{\bkmkend AAAAAAAECN}
+{\bkmkstart AAAAAAAFXH}{\bkmkend AAAAAAAFXH}
 00088 {\cf20 // Test history persistence}\par
-{\bkmkstart AAAAAAAECO}{\bkmkend AAAAAAAECO}
+{\bkmkstart AAAAAAAFXI}{\bkmkend AAAAAAAFXI}
 00089 TEST_F(LanguageTranslatorHistoryTest, TestHistoryPersistence) \{\par
-{\bkmkstart AAAAAAAECP}{\bkmkend AAAAAAAECP}
+{\bkmkstart AAAAAAAFXL}{\bkmkend AAAAAAAFXL}
 00090     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAECR}{\bkmkend AAAAAAAECR}
+{\bkmkstart AAAAAAAFXN}{\bkmkend AAAAAAAFXN}
 00091     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAECS}{\bkmkend AAAAAAAECS}
+{\bkmkstart AAAAAAAFXQ}{\bkmkend AAAAAAAFXQ}
 00092     app->translateText({\cf22 "test translation"});\par
-{\bkmkstart AAAAAAAECU}{\bkmkend AAAAAAAECU}
+{\bkmkstart AAAAAAAFXS}{\bkmkend AAAAAAAFXS}
 00093     \par
-{\bkmkstart AAAAAAAECV}{\bkmkend AAAAAAAECV}
+{\bkmkstart AAAAAAAFXT}{\bkmkend AAAAAAAFXT}
 00094     {\cf20 // Save data}\par
-{\bkmkstart AAAAAAAECW}{\bkmkend AAAAAAAECW}
+{\bkmkstart AAAAAAAFXV}{\bkmkend AAAAAAAFXV}
 00095     app->saveData();\par
-{\bkmkstart AAAAAAAECX}{\bkmkend AAAAAAAECX}
+{\bkmkstart AAAAAAAFXX}{\bkmkend AAAAAAAFXX}
 00096     \par
-{\bkmkstart AAAAAAAECY}{\bkmkend AAAAAAAECY}
+{\bkmkstart AAAAAAAFXY}{\bkmkend AAAAAAAFXY}
 00097     {\cf20 // Create new app instance and load data}\par
-{\bkmkstart AAAAAAAECZ}{\bkmkend AAAAAAAECZ}
+{\bkmkstart AAAAAAAFYB}{\bkmkend AAAAAAAFYB}
 00098     {\cf17 auto} newApp = std::make_unique<LanguageTranslatorApp>();\par
-{\bkmkstart AAAAAAAEDA}{\bkmkend AAAAAAAEDA}
+{\bkmkstart AAAAAAAFYN}{\bkmkend AAAAAAAFYN}
 00099     newApp->loadData();\par
-{\bkmkstart AAAAAAAEDC}{\bkmkend AAAAAAAEDC}
+{\bkmkstart AAAAAAAFYP}{\bkmkend AAAAAAAFYP}
 00100     \par
-{\bkmkstart AAAAAAAEDD}{\bkmkend AAAAAAAEDD}
+{\bkmkstart AAAAAAAFYR}{\bkmkend AAAAAAAFYR}
 00101     {\cf20 // History should be loaded}\par
-{\bkmkstart AAAAAAAEDI}{\bkmkend AAAAAAAEDI}
+{\bkmkstart AAAAAAAFYS}{\bkmkend AAAAAAAFYS}
 00102 \}\par
-{\bkmkstart AAAAAAAEDK}{\bkmkend AAAAAAAEDK}
+{\bkmkstart AAAAAAAFYT}{\bkmkend AAAAAAAFYT}
 00103 \par
-{\bkmkstart AAAAAAAEDL}{\bkmkend AAAAAAAEDL}
+{\bkmkstart AAAAAAAFYV}{\bkmkend AAAAAAAFYV}
 00104 {\cf20 // Test history with empty translations}\par
-{\bkmkstart AAAAAAAEDM}{\bkmkend AAAAAAAEDM}
+{\bkmkstart AAAAAAAFYY}{\bkmkend AAAAAAAFYY}
 00105 TEST_F(LanguageTranslatorHistoryTest, TestHistoryWithEmptyTranslations) \{\par
-{\bkmkstart AAAAAAAEDN}{\bkmkend AAAAAAAEDN}
+{\bkmkstart AAAAAAAFZB}{\bkmkend AAAAAAAFZB}
 00106     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEDO}{\bkmkend AAAAAAAEDO}
+{\bkmkstart AAAAAAAFZF}{\bkmkend AAAAAAAFZF}
 00107     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAEDQ}{\bkmkend AAAAAAAEDQ}
+{\bkmkstart AAAAAAAFZI}{\bkmkend AAAAAAAFZI}
 00108     \par
-{\bkmkstart AAAAAAAEDS}{\bkmkend AAAAAAAEDS}
+{\bkmkstart AAAAAAAFZK}{\bkmkend AAAAAAAFZK}
 00109     app->translateText({\cf22 ""});\par
-{\bkmkstart AAAAAAAEDV}{\bkmkend AAAAAAAEDV}
+{\bkmkstart AAAAAAAFZP}{\bkmkend AAAAAAAFZP}
 00110     app->translateText({\cf22 "   "});\par
-{\bkmkstart AAAAAAAEDW}{\bkmkend AAAAAAAEDW}
+{\bkmkstart AAAAAAAFZR}{\bkmkend AAAAAAAFZR}
 00111 \}\par
-{\bkmkstart AAAAAAAEDX}{\bkmkend AAAAAAAEDX}
+{\bkmkstart AAAAAAAFZS}{\bkmkend AAAAAAAFZS}
 00112 \par
-{\bkmkstart AAAAAAAEDY}{\bkmkend AAAAAAAEDY}
+{\bkmkstart AAAAAAAFZU}{\bkmkend AAAAAAAFZU}
 00113 {\cf20 // Test history with special characters}\par
-{\bkmkstart AAAAAAAEDZ}{\bkmkend AAAAAAAEDZ}
+{\bkmkstart AAAAAAAFZX}{\bkmkend AAAAAAAFZX}
 00114 TEST_F(LanguageTranslatorHistoryTest, TestHistoryWithSpecialCharacters) \{\par
-{\bkmkstart AAAAAAAEEC}{\bkmkend AAAAAAAEEC}
+{\bkmkstart AAAAAAAGAA}{\bkmkend AAAAAAAGAA}
 00115     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEEE}{\bkmkend AAAAAAAEEE}
+{\bkmkstart AAAAAAAGAB}{\bkmkend AAAAAAAGAB}
 00116     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAEEG}{\bkmkend AAAAAAAEEG}
+{\bkmkstart AAAAAAAGAI}{\bkmkend AAAAAAAGAI}
 00117     \par
-{\bkmkstart AAAAAAAEEI}{\bkmkend AAAAAAAEEI}
+{\bkmkstart AAAAAAAGAK}{\bkmkend AAAAAAAGAK}
 00118     app->translateText({\cf22 "Hello, World!"});\par
-{\bkmkstart AAAAAAAEEK}{\bkmkend AAAAAAAEEK}
+{\bkmkstart AAAAAAAGAL}{\bkmkend AAAAAAAGAL}
 00119     app->translateText({\cf22 "What's up?"});\par
-{\bkmkstart AAAAAAAEEN}{\bkmkend AAAAAAAEEN}
+{\bkmkstart AAAAAAAGAM}{\bkmkend AAAAAAAGAM}
 00120     app->translateText({\cf22 "@#$%^&*()"});\par
-{\bkmkstart AAAAAAAEEQ}{\bkmkend AAAAAAAEEQ}
+{\bkmkstart AAAAAAAGAN}{\bkmkend AAAAAAAGAN}
 00121 \}\par
-{\bkmkstart AAAAAAAEES}{\bkmkend AAAAAAAEES}
+{\bkmkstart AAAAAAAGAO}{\bkmkend AAAAAAAGAO}
 00122 \par
-{\bkmkstart AAAAAAAEET}{\bkmkend AAAAAAAEET}
+{\bkmkstart AAAAAAAGAP}{\bkmkend AAAAAAAGAP}
 00123 {\cf20 // Test history with long text}\par
-{\bkmkstart AAAAAAAEEV}{\bkmkend AAAAAAAEEV}
+{\bkmkstart AAAAAAAGAQ}{\bkmkend AAAAAAAGAQ}
 00124 TEST_F(LanguageTranslatorHistoryTest, TestHistoryWithLongText) \{\par
-{\bkmkstart AAAAAAAEEY}{\bkmkend AAAAAAAEEY}
+{\bkmkstart AAAAAAAGAR}{\bkmkend AAAAAAAGAR}
 00125     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEEZ}{\bkmkend AAAAAAAEEZ}
+{\bkmkstart AAAAAAAGAT}{\bkmkend AAAAAAAGAT}
 00126     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAEFB}{\bkmkend AAAAAAAEFB}
+{\bkmkstart AAAAAAAGAU}{\bkmkend AAAAAAAGAU}
 00127     \par
-{\bkmkstart AAAAAAAEFC}{\bkmkend AAAAAAAEFC}
+{\bkmkstart AAAAAAAGAV}{\bkmkend AAAAAAAGAV}
 00128     std::string longText(500, {\cf23 'a'});\par
-{\bkmkstart AAAAAAAEFD}{\bkmkend AAAAAAAEFD}
+{\bkmkstart AAAAAAAGAY}{\bkmkend AAAAAAAGAY}
 00129     app->translateText(longText);\par
-{\bkmkstart AAAAAAAEFE}{\bkmkend AAAAAAAEFE}
+{\bkmkstart AAAAAAAGBA}{\bkmkend AAAAAAAGBA}
 00130 \}\par
-{\bkmkstart AAAAAAAEFF}{\bkmkend AAAAAAAEFF}
+{\bkmkstart AAAAAAAGBB}{\bkmkend AAAAAAAGBB}
 00131 \par
-{\bkmkstart AAAAAAAEFG}{\bkmkend AAAAAAAEFG}
+{\bkmkstart AAAAAAAGBC}{\bkmkend AAAAAAAGBC}
 00132 {\cf20 // Test history viewing}\par
-{\bkmkstart AAAAAAAEFH}{\bkmkend AAAAAAAEFH}
+{\bkmkstart AAAAAAAGBD}{\bkmkend AAAAAAAGBD}
 00133 TEST_F(LanguageTranslatorHistoryTest, TestShowHistory) \{\par
-{\bkmkstart AAAAAAAEFI}{\bkmkend AAAAAAAEFI}
+{\bkmkstart AAAAAAAGBG}{\bkmkend AAAAAAAGBG}
 00134     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEFJ}{\bkmkend AAAAAAAEFJ}
+{\bkmkstart AAAAAAAGBI}{\bkmkend AAAAAAAGBI}
 00135     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAEFK}{\bkmkend AAAAAAAEFK}
+{\bkmkstart AAAAAAAGBK}{\bkmkend AAAAAAAGBK}
 00136     app->translateText({\cf22 "hello"});\par
-{\bkmkstart AAAAAAAEFL}{\bkmkend AAAAAAAEFL}
+{\bkmkstart AAAAAAAGBN}{\bkmkend AAAAAAAGBN}
 00137     app->translateText({\cf22 "world"});\par
-{\bkmkstart AAAAAAAEFM}{\bkmkend AAAAAAAEFM}
+{\bkmkstart AAAAAAAGBQ}{\bkmkend AAAAAAAGBQ}
 00138     \par
-{\bkmkstart AAAAAAAEFN}{\bkmkend AAAAAAAEFN}
+{\bkmkstart AAAAAAAGBS}{\bkmkend AAAAAAAGBS}
 00139     {\cf20 // Show history (should not crash)}\par
-{\bkmkstart AAAAAAAEFO}{\bkmkend AAAAAAAEFO}
+{\bkmkstart AAAAAAAGBT}{\bkmkend AAAAAAAGBT}
 00140     EXPECT_NO_THROW(app->showHistory());\par
-{\bkmkstart AAAAAAAEFP}{\bkmkend AAAAAAAEFP}
+{\bkmkstart AAAAAAAGBY}{\bkmkend AAAAAAAGBY}
 00141 \}\par
-{\bkmkstart AAAAAAAEFQ}{\bkmkend AAAAAAAEFQ}
+{\bkmkstart AAAAAAAGBZ}{\bkmkend AAAAAAAGBZ}
 00142 \par
-{\bkmkstart AAAAAAAEFR}{\bkmkend AAAAAAAEFR}
+{\bkmkstart AAAAAAAGCB}{\bkmkend AAAAAAAGCB}
 00143 {\cf20 // Test history with multiple users}\par
-{\bkmkstart AAAAAAAEFS}{\bkmkend AAAAAAAEFS}
+{\bkmkstart AAAAAAAGCC}{\bkmkend AAAAAAAGCC}
 00144 TEST_F(LanguageTranslatorHistoryTest, TestHistoryMultipleUsers) \{\par
-{\bkmkstart AAAAAAAEFT}{\bkmkend AAAAAAAEFT}
+{\bkmkstart AAAAAAAGCE}{\bkmkend AAAAAAAGCE}
 00145     {\cf20 // User 1}\par
-{\bkmkstart AAAAAAAEFU}{\bkmkend AAAAAAAEFU}
+{\bkmkstart AAAAAAAGCF}{\bkmkend AAAAAAAGCF}
 00146     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEFV}{\bkmkend AAAAAAAEFV}
+{\bkmkstart AAAAAAAGCI}{\bkmkend AAAAAAAGCI}
 00147     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAEFW}{\bkmkend AAAAAAAEFW}
+{\bkmkstart AAAAAAAGCK}{\bkmkend AAAAAAAGCK}
 00148     app->translateText({\cf22 "hello"});\par
-{\bkmkstart AAAAAAAEFX}{\bkmkend AAAAAAAEFX}
+{\bkmkstart AAAAAAAGCL}{\bkmkend AAAAAAAGCL}
 00149     \par
-{\bkmkstart AAAAAAAEFY}{\bkmkend AAAAAAAEFY}
+{\bkmkstart AAAAAAAGCN}{\bkmkend AAAAAAAGCN}
 00150     {\cf20 // User 2}\par
-{\bkmkstart AAAAAAAEFZ}{\bkmkend AAAAAAAEFZ}
+{\bkmkstart AAAAAAAGCO}{\bkmkend AAAAAAAGCO}
 00151     app->logout();\par
-{\bkmkstart AAAAAAAEGA}{\bkmkend AAAAAAAEGA}
+{\bkmkstart AAAAAAAGCP}{\bkmkend AAAAAAAGCP}
 00152     app->registerUser({\cf22 "user2"}, {\cf22 "pass"});\par
-{\bkmkstart AAAAAAAEGB}{\bkmkend AAAAAAAEGB}
+{\bkmkstart AAAAAAAGCR}{\bkmkend AAAAAAAGCR}
 00153     app->login({\cf22 "user2"}, {\cf22 "pass"});\par
-{\bkmkstart AAAAAAAEGD}{\bkmkend AAAAAAAEGD}
+{\bkmkstart AAAAAAAGCS}{\bkmkend AAAAAAAGCS}
 00154     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEGE}{\bkmkend AAAAAAAEGE}
+{\bkmkstart AAAAAAAGCT}{\bkmkend AAAAAAAGCT}
 00155     app->setTargetLanguage({\cf22 "Spanish"});\par
-{\bkmkstart AAAAAAAEGF}{\bkmkend AAAAAAAEGF}
+{\bkmkstart AAAAAAAGCZ}{\bkmkend AAAAAAAGCZ}
 00156     app->translateText({\cf22 "hola"});\par
-{\bkmkstart AAAAAAAEGH}{\bkmkend AAAAAAAEGH}
+{\bkmkstart AAAAAAAGDC}{\bkmkend AAAAAAAGDC}
 00157     \par
-{\bkmkstart AAAAAAAEGK}{\bkmkend AAAAAAAEGK}
+{\bkmkstart AAAAAAAGDD}{\bkmkend AAAAAAAGDD}
 00158     {\cf20 // Each user should have their own history}\par
-{\bkmkstart AAAAAAAEGL}{\bkmkend AAAAAAAEGL}
+{\bkmkstart AAAAAAAGDE}{\bkmkend AAAAAAAGDE}
 00159 \}\par
-{\bkmkstart AAAAAAAEGM}{\bkmkend AAAAAAAEGM}
+{\bkmkstart AAAAAAAGDF}{\bkmkend AAAAAAAGDF}
 00160 \par
-{\bkmkstart AAAAAAAEGN}{\bkmkend AAAAAAAEGN}
+{\bkmkstart AAAAAAAGDH}{\bkmkend AAAAAAAGDH}
 00161 {\cf20 // Test history with same translation multiple times}\par
-{\bkmkstart AAAAAAAEGO}{\bkmkend AAAAAAAEGO}
+{\bkmkstart AAAAAAAGDK}{\bkmkend AAAAAAAGDK}
 00162 TEST_F(LanguageTranslatorHistoryTest, TestHistoryRepeatedTranslations) \{\par
-{\bkmkstart AAAAAAAEGQ}{\bkmkend AAAAAAAEGQ}
+{\bkmkstart AAAAAAAGDN}{\bkmkend AAAAAAAGDN}
 00163     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEGR}{\bkmkend AAAAAAAEGR}
+{\bkmkstart AAAAAAAGDQ}{\bkmkend AAAAAAAGDQ}
 00164     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAEGT}{\bkmkend AAAAAAAEGT}
+{\bkmkstart AAAAAAAGDR}{\bkmkend AAAAAAAGDR}
 00165     \par
-{\bkmkstart AAAAAAAEGU}{\bkmkend AAAAAAAEGU}
+{\bkmkstart AAAAAAAGDS}{\bkmkend AAAAAAAGDS}
 00166     {\cf19 for} ({\cf18 int} i = 0; i < 10; ++i) \{\par
-{\bkmkstart AAAAAAAEGX}{\bkmkend AAAAAAAEGX}
+{\bkmkstart AAAAAAAGDV}{\bkmkend AAAAAAAGDV}
 00167         app->translateText({\cf22 "hello"});\par
-{\bkmkstart AAAAAAAEGZ}{\bkmkend AAAAAAAEGZ}
+{\bkmkstart AAAAAAAGDY}{\bkmkend AAAAAAAGDY}
 00168     \}\par
-{\bkmkstart AAAAAAAEHA}{\bkmkend AAAAAAAEHA}
+{\bkmkstart AAAAAAAGDZ}{\bkmkend AAAAAAAGDZ}
 00169 \}\par
-{\bkmkstart AAAAAAAEHB}{\bkmkend AAAAAAAEHB}
+{\bkmkstart AAAAAAAGEA}{\bkmkend AAAAAAAGEA}
 00170 \par
-{\bkmkstart AAAAAAAEHC}{\bkmkend AAAAAAAEHC}
+{\bkmkstart AAAAAAAGEB}{\bkmkend AAAAAAAGEB}
 00171 {\cf20 // Test history with different translation types}\par
-{\bkmkstart AAAAAAAEHE}{\bkmkend AAAAAAAEHE}
+{\bkmkstart AAAAAAAGED}{\bkmkend AAAAAAAGED}
 00172 TEST_F(LanguageTranslatorHistoryTest, TestHistoryWithTranslationTypes) \{\par
-{\bkmkstart AAAAAAAEHH}{\bkmkend AAAAAAAEHH}
+{\bkmkstart AAAAAAAGEG}{\bkmkend AAAAAAAGEG}
 00173     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEHI}{\bkmkend AAAAAAAEHI}
+{\bkmkstart AAAAAAAGEI}{\bkmkend AAAAAAAGEI}
 00174     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAEHK}{\bkmkend AAAAAAAEHK}
+{\bkmkstart AAAAAAAGEK}{\bkmkend AAAAAAAGEK}
 00175     \par
-{\bkmkstart AAAAAAAEHN}{\bkmkend AAAAAAAEHN}
+{\bkmkstart AAAAAAAGEO}{\bkmkend AAAAAAAGEO}
 00176     {\cf20 // Word translation}\par
-{\bkmkstart AAAAAAAEHO}{\bkmkend AAAAAAAEHO}
+{\bkmkstart AAAAAAAGEQ}{\bkmkend AAAAAAAGEQ}
 00177     app->translateWord({\cf22 "hello"});\par
-{\bkmkstart AAAAAAAEHP}{\bkmkend AAAAAAAEHP}
+{\bkmkstart AAAAAAAGEW}{\bkmkend AAAAAAAGEW}
 00178     \par
-{\bkmkstart AAAAAAAEHQ}{\bkmkend AAAAAAAEHQ}
+{\bkmkstart AAAAAAAGEY}{\bkmkend AAAAAAAGEY}
 00179     {\cf20 // Phrase translation}\par
-{\bkmkstart AAAAAAAEHR}{\bkmkend AAAAAAAEHR}
+{\bkmkstart AAAAAAAGFA}{\bkmkend AAAAAAAGFA}
 00180     app->translatePhrase({\cf22 "good morning"});\par
-{\bkmkstart AAAAAAAEHS}{\bkmkend AAAAAAAEHS}
+{\bkmkstart AAAAAAAGFB}{\bkmkend AAAAAAAGFB}
 00181     \par
-{\bkmkstart AAAAAAAEHT}{\bkmkend AAAAAAAEHT}
+{\bkmkstart AAAAAAAGFC}{\bkmkend AAAAAAAGFC}
 00182     {\cf20 // Text translation}\par
-{\bkmkstart AAAAAAAEHU}{\bkmkend AAAAAAAEHU}
+{\bkmkstart AAAAAAAGFD}{\bkmkend AAAAAAAGFD}
 00183     app->translateText({\cf22 "hello world"});\par
-{\bkmkstart AAAAAAAEHV}{\bkmkend AAAAAAAEHV}
+{\bkmkstart AAAAAAAGFE}{\bkmkend AAAAAAAGFE}
 00184 \}\par
-{\bkmkstart AAAAAAAEHW}{\bkmkend AAAAAAAEHW}
+{\bkmkstart AAAAAAAGFF}{\bkmkend AAAAAAAGFF}
 00185 \par
-{\bkmkstart AAAAAAAEHX}{\bkmkend AAAAAAAEHX}
+{\bkmkstart AAAAAAAGFG}{\bkmkend AAAAAAAGFG}
 00186 {\cf20 // Test history cleanup on logout}\par
-{\bkmkstart AAAAAAAEHY}{\bkmkend AAAAAAAEHY}
+{\bkmkstart AAAAAAAGFH}{\bkmkend AAAAAAAGFH}
 00187 TEST_F(LanguageTranslatorHistoryTest, TestHistoryCleanupOnLogout) \{\par
-{\bkmkstart AAAAAAAEHZ}{\bkmkend AAAAAAAEHZ}
+{\bkmkstart AAAAAAAGFI}{\bkmkend AAAAAAAGFI}
 00188     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAEIA}{\bkmkend AAAAAAAEIA}
+{\bkmkstart AAAAAAAGFJ}{\bkmkend AAAAAAAGFJ}
 00189     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAEIB}{\bkmkend AAAAAAAEIB}
+{\bkmkstart AAAAAAAGFK}{\bkmkend AAAAAAAGFK}
 00190     app->translateText({\cf22 "test"});\par
-{\bkmkstart AAAAAAAEIC}{\bkmkend AAAAAAAEIC}
+{\bkmkstart AAAAAAAGFL}{\bkmkend AAAAAAAGFL}
 00191     \par
-{\bkmkstart AAAAAAAEID}{\bkmkend AAAAAAAEID}
+{\bkmkstart AAAAAAAGFM}{\bkmkend AAAAAAAGFM}
 00192     app->logout();\par
-{\bkmkstart AAAAAAAEIE}{\bkmkend AAAAAAAEIE}
+{\bkmkstart AAAAAAAGFO}{\bkmkend AAAAAAAGFO}
 00193     app->login({\cf22 "testuser"}, {\cf22 "password"});\par
-{\bkmkstart AAAAAAAEIF}{\bkmkend AAAAAAAEIF}
+{\bkmkstart AAAAAAAGFQ}{\bkmkend AAAAAAAGFQ}
 00194     \par
-{\bkmkstart AAAAAAAEIG}{\bkmkend AAAAAAAEIG}
+{\bkmkstart AAAAAAAGFR}{\bkmkend AAAAAAAGFR}
 00195     {\cf20 // History should persist across login sessions}\par
-{\bkmkstart AAAAAAAEIH}{\bkmkend AAAAAAAEIH}
+{\bkmkstart AAAAAAAGFS}{\bkmkend AAAAAAAGFS}
 00196 \}\par
-{\bkmkstart AAAAAAAEII}{\bkmkend AAAAAAAEII}
+{\bkmkstart AAAAAAAGFU}{\bkmkend AAAAAAAGFU}
 00197 \par
 }
 }

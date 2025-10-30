@@ -151,241 +151,241 @@
 test_xor_linked_list.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_xor_linked_list.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_xor_linked_list.cpp}
-{\bkmkstart AAAAAAAIZJ}
-{\bkmkend AAAAAAAIZJ}
+{\bkmkstart AAAAAAAJGP}
+{\bkmkend AAAAAAAJGP}
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAIZQ}{\bkmkend AAAAAAAIZQ}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAJJE}{\bkmkend AAAAAAAJJE}
 00001 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAJAA}{\bkmkend AAAAAAAJAA}
+{\bkmkstart AAAAAAAJKS}{\bkmkend AAAAAAAJKS}
 00002 {\cf21 #include "ds/xor_linked_list.h"}\par
-{\bkmkstart AAAAAAAJAD}{\bkmkend AAAAAAAJAD}
+{\bkmkstart AAAAAAAJLJ}{\bkmkend AAAAAAAJLJ}
 00003 \par
-{\bkmkstart AAAAAAAJAE}{\bkmkend AAAAAAAJAE}
+{\bkmkstart AAAAAAAJLK}{\bkmkend AAAAAAAJLK}
 00004 TEST(XORLinkedList, InsertDeleteNavigate)\{\par
-{\bkmkstart AAAAAAAJAK}{\bkmkend AAAAAAAJAK}
+{\bkmkstart AAAAAAAJLU}{\bkmkend AAAAAAAJLU}
 00005     ds::XORLinkedList<int> xl;\par
-{\bkmkstart AAAAAAAJAN}{\bkmkend AAAAAAAJAN}
+{\bkmkstart AAAAAAAJLX}{\bkmkend AAAAAAAJLX}
 00006     xl.push_back(1); xl.push_back(2); xl.push_front(0);\par
-{\bkmkstart AAAAAAAJAO}{\bkmkend AAAAAAAJAO}
+{\bkmkstart AAAAAAAJLZ}{\bkmkend AAAAAAAJLZ}
 00007     {\cf18 int} forward[3]; {\cf18 int} i=0; xl.for_each_forward([&]({\cf18 int} v)\{ forward[i++]=v; {\cf19 return} {\cf17 true}; \});\par
-{\bkmkstart AAAAAAAJAT}{\bkmkend AAAAAAAJAT}
+{\bkmkstart AAAAAAAJMN}{\bkmkend AAAAAAAJMN}
 00008     EXPECT_EQ(forward[0],0); EXPECT_EQ(forward[1],1); EXPECT_EQ(forward[2],2);\par
-{\bkmkstart AAAAAAAJAW}{\bkmkend AAAAAAAJAW}
+{\bkmkstart AAAAAAAJMO}{\bkmkend AAAAAAAJMO}
 00009     {\cf18 int} backward[3]; i=0; xl.for_each_backward([&]({\cf18 int} v)\{ backward[i++]=v; {\cf19 return} {\cf17 true}; \});\par
-{\bkmkstart AAAAAAAJAY}{\bkmkend AAAAAAAJAY}
+{\bkmkstart AAAAAAAJMP}{\bkmkend AAAAAAAJMP}
 00010     EXPECT_EQ(backward[0],2); EXPECT_EQ(backward[1],1); EXPECT_EQ(backward[2],0);\par
-{\bkmkstart AAAAAAAJBB}{\bkmkend AAAAAAAJBB}
+{\bkmkstart AAAAAAAJMQ}{\bkmkend AAAAAAAJMQ}
 00011     EXPECT_TRUE(xl.remove_first(1));\par
-{\bkmkstart AAAAAAAJBD}{\bkmkend AAAAAAAJBD}
+{\bkmkstart AAAAAAAJMR}{\bkmkend AAAAAAAJMR}
 00012     {\cf18 int} after[2]; i=0; xl.for_each_forward([&]({\cf18 int} v)\{ after[i++]=v; {\cf19 return} {\cf17 true}; \});\par
-{\bkmkstart AAAAAAAJBI}{\bkmkend AAAAAAAJBI}
+{\bkmkstart AAAAAAAJMS}{\bkmkend AAAAAAAJMS}
 00013     EXPECT_EQ(after[0],0); EXPECT_EQ(after[1],2);\par
-{\bkmkstart AAAAAAAJBK}{\bkmkend AAAAAAAJBK}
+{\bkmkstart AAAAAAAJMT}{\bkmkend AAAAAAAJMT}
 00014 \}\par
-{\bkmkstart AAAAAAAJBL}{\bkmkend AAAAAAAJBL}
+{\bkmkstart AAAAAAAJMU}{\bkmkend AAAAAAAJMU}
 00015 \par
-{\bkmkstart AAAAAAAJBM}{\bkmkend AAAAAAAJBM}
+{\bkmkstart AAAAAAAJMV}{\bkmkend AAAAAAAJMV}
 00016 TEST(XORLinkedList, SizeAndEmpty)\{\par
-{\bkmkstart AAAAAAAJBP}{\bkmkend AAAAAAAJBP}
+{\bkmkstart AAAAAAAJMW}{\bkmkend AAAAAAAJMW}
 00017     ds::XORLinkedList<int> xl;\par
-{\bkmkstart AAAAAAAJBR}{\bkmkend AAAAAAAJBR}
+{\bkmkstart AAAAAAAJMX}{\bkmkend AAAAAAAJMX}
 00018     EXPECT_TRUE(xl.empty());\par
-{\bkmkstart AAAAAAAJBU}{\bkmkend AAAAAAAJBU}
+{\bkmkstart AAAAAAAJMY}{\bkmkend AAAAAAAJMY}
 00019     EXPECT_EQ(xl.size(), 0u);\par
-{\bkmkstart AAAAAAAJBW}{\bkmkend AAAAAAAJBW}
+{\bkmkstart AAAAAAAJMZ}{\bkmkend AAAAAAAJMZ}
 00020     \par
-{\bkmkstart AAAAAAAJBY}{\bkmkend AAAAAAAJBY}
+{\bkmkstart AAAAAAAJNA}{\bkmkend AAAAAAAJNA}
 00021     xl.push_back(10);\par
-{\bkmkstart AAAAAAAJBZ}{\bkmkend AAAAAAAJBZ}
+{\bkmkstart AAAAAAAJNB}{\bkmkend AAAAAAAJNB}
 00022     EXPECT_FALSE(xl.empty());\par
-{\bkmkstart AAAAAAAJCB}{\bkmkend AAAAAAAJCB}
+{\bkmkstart AAAAAAAJNC}{\bkmkend AAAAAAAJNC}
 00023     EXPECT_EQ(xl.size(), 1u);\par
-{\bkmkstart AAAAAAAJCC}{\bkmkend AAAAAAAJCC}
+{\bkmkstart AAAAAAAJND}{\bkmkend AAAAAAAJND}
 00024     \par
-{\bkmkstart AAAAAAAJCE}{\bkmkend AAAAAAAJCE}
+{\bkmkstart AAAAAAAJNE}{\bkmkend AAAAAAAJNE}
 00025     xl.push_front(20);\par
-{\bkmkstart AAAAAAAJCF}{\bkmkend AAAAAAAJCF}
+{\bkmkstart AAAAAAAJNF}{\bkmkend AAAAAAAJNF}
 00026     EXPECT_EQ(xl.size(), 2u);\par
-{\bkmkstart AAAAAAAJCH}{\bkmkend AAAAAAAJCH}
+{\bkmkstart AAAAAAAJNG}{\bkmkend AAAAAAAJNG}
 00027     \par
-{\bkmkstart AAAAAAAJCI}{\bkmkend AAAAAAAJCI}
+{\bkmkstart AAAAAAAJNH}{\bkmkend AAAAAAAJNH}
 00028     xl.remove_first(10);\par
-{\bkmkstart AAAAAAAJCJ}{\bkmkend AAAAAAAJCJ}
+{\bkmkstart AAAAAAAJNI}{\bkmkend AAAAAAAJNI}
 00029     EXPECT_EQ(xl.size(), 1u);\par
-{\bkmkstart AAAAAAAJCL}{\bkmkend AAAAAAAJCL}
+{\bkmkstart AAAAAAAJNJ}{\bkmkend AAAAAAAJNJ}
 00030     \par
-{\bkmkstart AAAAAAAJCM}{\bkmkend AAAAAAAJCM}
+{\bkmkstart AAAAAAAJNK}{\bkmkend AAAAAAAJNK}
 00031     xl.remove_first(20);\par
-{\bkmkstart AAAAAAAJCO}{\bkmkend AAAAAAAJCO}
+{\bkmkstart AAAAAAAJNL}{\bkmkend AAAAAAAJNL}
 00032     EXPECT_TRUE(xl.empty());\par
-{\bkmkstart AAAAAAAJCQ}{\bkmkend AAAAAAAJCQ}
+{\bkmkstart AAAAAAAJNM}{\bkmkend AAAAAAAJNM}
 00033     EXPECT_EQ(xl.size(), 0u);\par
-{\bkmkstart AAAAAAAJCS}{\bkmkend AAAAAAAJCS}
+{\bkmkstart AAAAAAAJNN}{\bkmkend AAAAAAAJNN}
 00034 \}\par
-{\bkmkstart AAAAAAAJCT}{\bkmkend AAAAAAAJCT}
+{\bkmkstart AAAAAAAJNO}{\bkmkend AAAAAAAJNO}
 00035 \par
-{\bkmkstart AAAAAAAJCU}{\bkmkend AAAAAAAJCU}
+{\bkmkstart AAAAAAAJNP}{\bkmkend AAAAAAAJNP}
 00036 TEST(XORLinkedList, PushFrontBack)\{\par
-{\bkmkstart AAAAAAAJCW}{\bkmkend AAAAAAAJCW}
+{\bkmkstart AAAAAAAJNQ}{\bkmkend AAAAAAAJNQ}
 00037     ds::XORLinkedList<int> xl;\par
-{\bkmkstart AAAAAAAJCY}{\bkmkend AAAAAAAJCY}
+{\bkmkstart AAAAAAAJNR}{\bkmkend AAAAAAAJNR}
 00038     xl.push_front(1);\par
-{\bkmkstart AAAAAAAJDA}{\bkmkend AAAAAAAJDA}
+{\bkmkstart AAAAAAAJNS}{\bkmkend AAAAAAAJNS}
 00039     xl.push_front(2);\par
-{\bkmkstart AAAAAAAJDC}{\bkmkend AAAAAAAJDC}
+{\bkmkstart AAAAAAAJNT}{\bkmkend AAAAAAAJNT}
 00040     xl.push_back(3);\par
-{\bkmkstart AAAAAAAJDD}{\bkmkend AAAAAAAJDD}
+{\bkmkstart AAAAAAAJNU}{\bkmkend AAAAAAAJNU}
 00041     xl.push_back(4);\par
-{\bkmkstart AAAAAAAJDF}{\bkmkend AAAAAAAJDF}
+{\bkmkstart AAAAAAAJNV}{\bkmkend AAAAAAAJNV}
 00042     \par
-{\bkmkstart AAAAAAAJDH}{\bkmkend AAAAAAAJDH}
+{\bkmkstart AAAAAAAJNW}{\bkmkend AAAAAAAJNW}
 00043     EXPECT_EQ(xl.size(), 4u);\par
-{\bkmkstart AAAAAAAJDJ}{\bkmkend AAAAAAAJDJ}
+{\bkmkstart AAAAAAAJNX}{\bkmkend AAAAAAAJNX}
 00044     \par
-{\bkmkstart AAAAAAAJDL}{\bkmkend AAAAAAAJDL}
+{\bkmkstart AAAAAAAJNY}{\bkmkend AAAAAAAJNY}
 00045     {\cf20 // Forward traversal should be: 2, 1, 3, 4}\par
-{\bkmkstart AAAAAAAJDM}{\bkmkend AAAAAAAJDM}
+{\bkmkstart AAAAAAAJNZ}{\bkmkend AAAAAAAJNZ}
 00046     {\cf18 int} forward[4]; {\cf18 int} i = 0;\par
-{\bkmkstart AAAAAAAJDO}{\bkmkend AAAAAAAJDO}
+{\bkmkstart AAAAAAAJOA}{\bkmkend AAAAAAAJOA}
 00047     xl.for_each_forward([&]({\cf18 int} v)\{ forward[i++] = v; {\cf19 return} {\cf17 true}; \});\par
-{\bkmkstart AAAAAAAJDS}{\bkmkend AAAAAAAJDS}
+{\bkmkstart AAAAAAAJOB}{\bkmkend AAAAAAAJOB}
 00048     EXPECT_EQ(forward[0], 2);\par
-{\bkmkstart AAAAAAAJDU}{\bkmkend AAAAAAAJDU}
+{\bkmkstart AAAAAAAJOC}{\bkmkend AAAAAAAJOC}
 00049     EXPECT_EQ(forward[1], 1);\par
-{\bkmkstart AAAAAAAJDW}{\bkmkend AAAAAAAJDW}
+{\bkmkstart AAAAAAAJOD}{\bkmkend AAAAAAAJOD}
 00050     EXPECT_EQ(forward[2], 3);\par
-{\bkmkstart AAAAAAAJDY}{\bkmkend AAAAAAAJDY}
+{\bkmkstart AAAAAAAJOE}{\bkmkend AAAAAAAJOE}
 00051     EXPECT_EQ(forward[3], 4);\par
-{\bkmkstart AAAAAAAJDZ}{\bkmkend AAAAAAAJDZ}
+{\bkmkstart AAAAAAAJOF}{\bkmkend AAAAAAAJOF}
 00052     \par
-{\bkmkstart AAAAAAAJEA}{\bkmkend AAAAAAAJEA}
+{\bkmkstart AAAAAAAJOG}{\bkmkend AAAAAAAJOG}
 00053     {\cf20 // Backward traversal should be: 4, 3, 1, 2}\par
-{\bkmkstart AAAAAAAJEC}{\bkmkend AAAAAAAJEC}
+{\bkmkstart AAAAAAAJOH}{\bkmkend AAAAAAAJOH}
 00054     {\cf18 int} backward[4]; i = 0;\par
-{\bkmkstart AAAAAAAJED}{\bkmkend AAAAAAAJED}
+{\bkmkstart AAAAAAAJOI}{\bkmkend AAAAAAAJOI}
 00055     xl.for_each_backward([&]({\cf18 int} v)\{ backward[i++] = v; {\cf19 return} {\cf17 true}; \});\par
-{\bkmkstart AAAAAAAJEF}{\bkmkend AAAAAAAJEF}
+{\bkmkstart AAAAAAAJOJ}{\bkmkend AAAAAAAJOJ}
 00056     EXPECT_EQ(backward[0], 4);\par
-{\bkmkstart AAAAAAAJEG}{\bkmkend AAAAAAAJEG}
+{\bkmkstart AAAAAAAJOK}{\bkmkend AAAAAAAJOK}
 00057     EXPECT_EQ(backward[1], 3);\par
-{\bkmkstart AAAAAAAJEH}{\bkmkend AAAAAAAJEH}
+{\bkmkstart AAAAAAAJOL}{\bkmkend AAAAAAAJOL}
 00058     EXPECT_EQ(backward[2], 1);\par
-{\bkmkstart AAAAAAAJEJ}{\bkmkend AAAAAAAJEJ}
+{\bkmkstart AAAAAAAJOM}{\bkmkend AAAAAAAJOM}
 00059     EXPECT_EQ(backward[3], 2);\par
-{\bkmkstart AAAAAAAJEL}{\bkmkend AAAAAAAJEL}
+{\bkmkstart AAAAAAAJON}{\bkmkend AAAAAAAJON}
 00060 \}\par
-{\bkmkstart AAAAAAAJEN}{\bkmkend AAAAAAAJEN}
+{\bkmkstart AAAAAAAJOO}{\bkmkend AAAAAAAJOO}
 00061 \par
-{\bkmkstart AAAAAAAJEO}{\bkmkend AAAAAAAJEO}
+{\bkmkstart AAAAAAAJOP}{\bkmkend AAAAAAAJOP}
 00062 TEST(XORLinkedList, RemoveFirst)\{\par
-{\bkmkstart AAAAAAAJEQ}{\bkmkend AAAAAAAJEQ}
+{\bkmkstart AAAAAAAJOQ}{\bkmkend AAAAAAAJOQ}
 00063     ds::XORLinkedList<int> xl;\par
-{\bkmkstart AAAAAAAJES}{\bkmkend AAAAAAAJES}
+{\bkmkstart AAAAAAAJOR}{\bkmkend AAAAAAAJOR}
 00064     xl.push_back(1);\par
-{\bkmkstart AAAAAAAJEU}{\bkmkend AAAAAAAJEU}
+{\bkmkstart AAAAAAAJOS}{\bkmkend AAAAAAAJOS}
 00065     xl.push_back(2);\par
-{\bkmkstart AAAAAAAJEV}{\bkmkend AAAAAAAJEV}
+{\bkmkstart AAAAAAAJOT}{\bkmkend AAAAAAAJOT}
 00066     xl.push_back(1); {\cf20 // Duplicate}\par
-{\bkmkstart AAAAAAAJEX}{\bkmkend AAAAAAAJEX}
+{\bkmkstart AAAAAAAJOU}{\bkmkend AAAAAAAJOU}
 00067     xl.push_back(3);\par
-{\bkmkstart AAAAAAAJEY}{\bkmkend AAAAAAAJEY}
+{\bkmkstart AAAAAAAJOV}{\bkmkend AAAAAAAJOV}
 00068     \par
-{\bkmkstart AAAAAAAJEZ}{\bkmkend AAAAAAAJEZ}
+{\bkmkstart AAAAAAAJOW}{\bkmkend AAAAAAAJOW}
 00069     EXPECT_EQ(xl.size(), 4u);\par
-{\bkmkstart AAAAAAAJFC}{\bkmkend AAAAAAAJFC}
+{\bkmkstart AAAAAAAJOX}{\bkmkend AAAAAAAJOX}
 00070     \par
-{\bkmkstart AAAAAAAJFD}{\bkmkend AAAAAAAJFD}
+{\bkmkstart AAAAAAAJOY}{\bkmkend AAAAAAAJOY}
 00071     {\cf20 // Remove first occurrence of 1}\par
-{\bkmkstart AAAAAAAJFF}{\bkmkend AAAAAAAJFF}
+{\bkmkstart AAAAAAAJOZ}{\bkmkend AAAAAAAJOZ}
 00072     EXPECT_TRUE(xl.remove_first(1));\par
-{\bkmkstart AAAAAAAJFH}{\bkmkend AAAAAAAJFH}
+{\bkmkstart AAAAAAAJPA}{\bkmkend AAAAAAAJPA}
 00073     EXPECT_EQ(xl.size(), 3u);\par
-{\bkmkstart AAAAAAAJFJ}{\bkmkend AAAAAAAJFJ}
+{\bkmkstart AAAAAAAJPB}{\bkmkend AAAAAAAJPB}
 00074     \par
-{\bkmkstart AAAAAAAJFL}{\bkmkend AAAAAAAJFL}
+{\bkmkstart AAAAAAAJPC}{\bkmkend AAAAAAAJPC}
 00075     {\cf20 // Verify only first occurrence was removed}\par
-{\bkmkstart AAAAAAAJFN}{\bkmkend AAAAAAAJFN}
+{\bkmkstart AAAAAAAJPD}{\bkmkend AAAAAAAJPD}
 00076     {\cf18 int} forward[3]; {\cf18 int} i = 0;\par
-{\bkmkstart AAAAAAAJFP}{\bkmkend AAAAAAAJFP}
+{\bkmkstart AAAAAAAJPE}{\bkmkend AAAAAAAJPE}
 00077     xl.for_each_forward([&]({\cf18 int} v)\{ forward[i++] = v; {\cf19 return} {\cf17 true}; \});\par
-{\bkmkstart AAAAAAAJFS}{\bkmkend AAAAAAAJFS}
+{\bkmkstart AAAAAAAJPF}{\bkmkend AAAAAAAJPF}
 00078     EXPECT_EQ(forward[0], 2);\par
-{\bkmkstart AAAAAAAJFV}{\bkmkend AAAAAAAJFV}
+{\bkmkstart AAAAAAAJPG}{\bkmkend AAAAAAAJPG}
 00079     EXPECT_EQ(forward[1], 1); {\cf20 // Second occurrence should still be there}\par
-{\bkmkstart AAAAAAAJFX}{\bkmkend AAAAAAAJFX}
+{\bkmkstart AAAAAAAJPH}{\bkmkend AAAAAAAJPH}
 00080     EXPECT_EQ(forward[2], 3);\par
-{\bkmkstart AAAAAAAJFZ}{\bkmkend AAAAAAAJFZ}
+{\bkmkstart AAAAAAAJPI}{\bkmkend AAAAAAAJPI}
 00081 \}\par
-{\bkmkstart AAAAAAAJGA}{\bkmkend AAAAAAAJGA}
+{\bkmkstart AAAAAAAJPJ}{\bkmkend AAAAAAAJPJ}
 00082 \par
-{\bkmkstart AAAAAAAJGC}{\bkmkend AAAAAAAJGC}
+{\bkmkstart AAAAAAAJPK}{\bkmkend AAAAAAAJPK}
 00083 TEST(XORLinkedList, RemoveNonExistent)\{\par
-{\bkmkstart AAAAAAAJGE}{\bkmkend AAAAAAAJGE}
+{\bkmkstart AAAAAAAJPL}{\bkmkend AAAAAAAJPL}
 00084     ds::XORLinkedList<int> xl;\par
-{\bkmkstart AAAAAAAJGG}{\bkmkend AAAAAAAJGG}
+{\bkmkstart AAAAAAAJPM}{\bkmkend AAAAAAAJPM}
 00085     xl.push_back(1);\par
-{\bkmkstart AAAAAAAJGI}{\bkmkend AAAAAAAJGI}
+{\bkmkstart AAAAAAAJPN}{\bkmkend AAAAAAAJPN}
 00086     xl.push_back(2);\par
-{\bkmkstart AAAAAAAJGK}{\bkmkend AAAAAAAJGK}
+{\bkmkstart AAAAAAAJPO}{\bkmkend AAAAAAAJPO}
 00087     \par
-{\bkmkstart AAAAAAAJGM}{\bkmkend AAAAAAAJGM}
+{\bkmkstart AAAAAAAJPP}{\bkmkend AAAAAAAJPP}
 00088     EXPECT_FALSE(xl.remove_first(99)); {\cf20 // Non-existent element}\par
-{\bkmkstart AAAAAAAJGO}{\bkmkend AAAAAAAJGO}
+{\bkmkstart AAAAAAAJPQ}{\bkmkend AAAAAAAJPQ}
 00089     EXPECT_EQ(xl.size(), 2u); {\cf20 // Size should remain unchanged}\par
-{\bkmkstart AAAAAAAJGQ}{\bkmkend AAAAAAAJGQ}
+{\bkmkstart AAAAAAAJPR}{\bkmkend AAAAAAAJPR}
 00090 \}\par
-{\bkmkstart AAAAAAAJGR}{\bkmkend AAAAAAAJGR}
+{\bkmkstart AAAAAAAJPS}{\bkmkend AAAAAAAJPS}
 00091 \par
-{\bkmkstart AAAAAAAJGS}{\bkmkend AAAAAAAJGS}
+{\bkmkstart AAAAAAAJPT}{\bkmkend AAAAAAAJPT}
 00092 TEST(XORLinkedList, LargeDataset)\{\par
-{\bkmkstart AAAAAAAJGU}{\bkmkend AAAAAAAJGU}
+{\bkmkstart AAAAAAAJPU}{\bkmkend AAAAAAAJPU}
 00093     ds::XORLinkedList<int> xl;\par
-{\bkmkstart AAAAAAAJGX}{\bkmkend AAAAAAAJGX}
+{\bkmkstart AAAAAAAJPV}{\bkmkend AAAAAAAJPV}
 00094     {\cf20 // Add 100 elements}\par
-{\bkmkstart AAAAAAAJGY}{\bkmkend AAAAAAAJGY}
+{\bkmkstart AAAAAAAJPW}{\bkmkend AAAAAAAJPW}
 00095     {\cf19 for}({\cf18 int} i = 0; i < 100; ++i) \{\par
-{\bkmkstart AAAAAAAJHC}{\bkmkend AAAAAAAJHC}
+{\bkmkstart AAAAAAAJPX}{\bkmkend AAAAAAAJPX}
 00096         xl.push_back(i);\par
-{\bkmkstart AAAAAAAJHD}{\bkmkend AAAAAAAJHD}
+{\bkmkstart AAAAAAAJPY}{\bkmkend AAAAAAAJPY}
 00097     \}\par
-{\bkmkstart AAAAAAAJHE}{\bkmkend AAAAAAAJHE}
+{\bkmkstart AAAAAAAJPZ}{\bkmkend AAAAAAAJPZ}
 00098     EXPECT_EQ(xl.size(), 100u);\par
-{\bkmkstart AAAAAAAJHG}{\bkmkend AAAAAAAJHG}
+{\bkmkstart AAAAAAAJQA}{\bkmkend AAAAAAAJQA}
 00099     \par
-{\bkmkstart AAAAAAAJHH}{\bkmkend AAAAAAAJHH}
+{\bkmkstart AAAAAAAJQB}{\bkmkend AAAAAAAJQB}
 00100     {\cf20 // Verify forward traversal}\par
-{\bkmkstart AAAAAAAJHI}{\bkmkend AAAAAAAJHI}
+{\bkmkstart AAAAAAAJQC}{\bkmkend AAAAAAAJQC}
 00101     {\cf18 int} count = 0;\par
-{\bkmkstart AAAAAAAJHK}{\bkmkend AAAAAAAJHK}
+{\bkmkstart AAAAAAAJQD}{\bkmkend AAAAAAAJQD}
 00102     xl.for_each_forward([&]({\cf18 int} v)\{ \par
-{\bkmkstart AAAAAAAJHM}{\bkmkend AAAAAAAJHM}
+{\bkmkstart AAAAAAAJQE}{\bkmkend AAAAAAAJQE}
 00103         EXPECT_EQ(v, count++); \par
-{\bkmkstart AAAAAAAJHO}{\bkmkend AAAAAAAJHO}
+{\bkmkstart AAAAAAAJQF}{\bkmkend AAAAAAAJQF}
 00104         {\cf19 return} {\cf17 true}; \par
-{\bkmkstart AAAAAAAJHP}{\bkmkend AAAAAAAJHP}
+{\bkmkstart AAAAAAAJQG}{\bkmkend AAAAAAAJQG}
 00105     \});\par
-{\bkmkstart AAAAAAAJHR}{\bkmkend AAAAAAAJHR}
+{\bkmkstart AAAAAAAJQH}{\bkmkend AAAAAAAJQH}
 00106     EXPECT_EQ(count, 100);\par
-{\bkmkstart AAAAAAAJHV}{\bkmkend AAAAAAAJHV}
+{\bkmkstart AAAAAAAJQI}{\bkmkend AAAAAAAJQI}
 00107     \par
-{\bkmkstart AAAAAAAJHX}{\bkmkend AAAAAAAJHX}
+{\bkmkstart AAAAAAAJQJ}{\bkmkend AAAAAAAJQJ}
 00108     {\cf20 // Verify backward traversal}\par
-{\bkmkstart AAAAAAAJHY}{\bkmkend AAAAAAAJHY}
+{\bkmkstart AAAAAAAJQK}{\bkmkend AAAAAAAJQK}
 00109     count = 99;\par
-{\bkmkstart AAAAAAAJIC}{\bkmkend AAAAAAAJIC}
+{\bkmkstart AAAAAAAJQL}{\bkmkend AAAAAAAJQL}
 00110     xl.for_each_backward([&]({\cf18 int} v)\{ \par
-{\bkmkstart AAAAAAAJIE}{\bkmkend AAAAAAAJIE}
+{\bkmkstart AAAAAAAJQM}{\bkmkend AAAAAAAJQM}
 00111         EXPECT_EQ(v, count--); \par
-{\bkmkstart AAAAAAAJIF}{\bkmkend AAAAAAAJIF}
+{\bkmkstart AAAAAAAJQN}{\bkmkend AAAAAAAJQN}
 00112         {\cf19 return} {\cf17 true}; \par
-{\bkmkstart AAAAAAAJIH}{\bkmkend AAAAAAAJIH}
+{\bkmkstart AAAAAAAJQO}{\bkmkend AAAAAAAJQO}
 00113     \});\par
-{\bkmkstart AAAAAAAJII}{\bkmkend AAAAAAAJII}
+{\bkmkstart AAAAAAAJQP}{\bkmkend AAAAAAAJQP}
 00114     EXPECT_EQ(count, -1);\par
-{\bkmkstart AAAAAAAJIK}{\bkmkend AAAAAAAJIK}
+{\bkmkstart AAAAAAAJQQ}{\bkmkend AAAAAAAJQQ}
 00115 \}\par
-{\bkmkstart AAAAAAAJIL}{\bkmkend AAAAAAAJIL}
+{\bkmkstart AAAAAAAJQR}{\bkmkend AAAAAAAJQR}
 00116 \par
 }
 }

@@ -151,439 +151,439 @@
 test_language_translator_dictionary.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_dictionary.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_dictionary.cpp}
-{\bkmkstart AAAAAAAENE}
-{\bkmkend AAAAAAAENE}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAENF" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAADRA}
+{\bkmkend AAAAAAADRA}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADRB" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAENG}{\bkmkend AAAAAAAENG}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAADRG}{\bkmkend AAAAAAADRG}
 00001 \par
-{\bkmkstart AAAAAAAENH}{\bkmkend AAAAAAAENH}
+{\bkmkstart AAAAAAADRH}{\bkmkend AAAAAAADRH}
 00006 \par
-{\bkmkstart AAAAAAAENI}{\bkmkend AAAAAAAENI}
+{\bkmkstart AAAAAAADRJ}{\bkmkend AAAAAAADRJ}
 00007 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAENJ}{\bkmkend AAAAAAAENJ}
+{\bkmkstart AAAAAAADRK}{\bkmkend AAAAAAADRK}
 00008 {\cf21 #include <fstream>}\par
-{\bkmkstart AAAAAAAENM}{\bkmkend AAAAAAAENM}
+{\bkmkstart AAAAAAADRL}{\bkmkend AAAAAAADRL}
 00009 {\cf21 #include <filesystem>}\par
-{\bkmkstart AAAAAAAENN}{\bkmkend AAAAAAAENN}
+{\bkmkstart AAAAAAADRT}{\bkmkend AAAAAAADRT}
 00010 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
-{\bkmkstart AAAAAAAENO}{\bkmkend AAAAAAAENO}
+{\bkmkstart AAAAAAADSC}{\bkmkend AAAAAAADSC}
 00011 \par
-{\bkmkstart AAAAAAAENP}{\bkmkend AAAAAAAENP}
+{\bkmkstart AAAAAAADSD}{\bkmkend AAAAAAADSD}
 00012 {\cf17 using namespace }Coruh::LanguageTranslator;\par
-{\bkmkstart AAAAAAAEOG}{\bkmkend AAAAAAAEOG}
+{\bkmkstart AAAAAAADSH}{\bkmkend AAAAAAADSH}
 00013 \par
-{\bkmkstart AAAAAAAEOI}{\bkmkend AAAAAAAEOI}
+{\bkmkstart AAAAAAADSI}{\bkmkend AAAAAAADSI}
 00014 {\cf17 class }LanguageTranslatorDictionaryTest : {\cf17 public} ::testing::Test \{\par
-{\bkmkstart AAAAAAAEOL}{\bkmkend AAAAAAAEOL}
+{\bkmkstart AAAAAAADSN}{\bkmkend AAAAAAADSN}
 00015 {\cf17 protected}:\par
-{\bkmkstart AAAAAAAEOM}{\bkmkend AAAAAAAEOM}
+{\bkmkstart AAAAAAADSP}{\bkmkend AAAAAAADSP}
 00016     {\cf18 void} SetUp(){\cf17  override }\{\par
-{\bkmkstart AAAAAAAEOR}{\bkmkend AAAAAAAEOR}
+{\bkmkstart AAAAAAADSS}{\bkmkend AAAAAAADSS}
 00017         {\cf20 // Create dictionaries directory}\par
-{\bkmkstart AAAAAAAEOS}{\bkmkend AAAAAAAEOS}
+{\bkmkstart AAAAAAADSU}{\bkmkend AAAAAAADSU}
 00018         std::filesystem::create_directory({\cf22 "dictionaries"});\par
-{\bkmkstart AAAAAAAEOW}{\bkmkend AAAAAAAEOW}
+{\bkmkstart AAAAAAADSX}{\bkmkend AAAAAAADSX}
 00019         app = std::make_unique<LanguageTranslatorApp>();\par
-{\bkmkstart AAAAAAAEOY}{\bkmkend AAAAAAAEOY}
+{\bkmkstart AAAAAAADTF}{\bkmkend AAAAAAADTF}
 00020     \}\par
-{\bkmkstart AAAAAAAEOZ}{\bkmkend AAAAAAAEOZ}
+{\bkmkstart AAAAAAADTG}{\bkmkend AAAAAAADTG}
 00021     \par
-{\bkmkstart AAAAAAAEPA}{\bkmkend AAAAAAAEPA}
+{\bkmkstart AAAAAAADTH}{\bkmkend AAAAAAADTH}
 00022     {\cf18 void} TearDown(){\cf17  override }\{\par
-{\bkmkstart AAAAAAAEPB}{\bkmkend AAAAAAAEPB}
+{\bkmkstart AAAAAAADTL}{\bkmkend AAAAAAADTL}
 00023         {\cf20 // Clean up test files}\par
-{\bkmkstart AAAAAAAEPC}{\bkmkend AAAAAAAEPC}
+{\bkmkstart AAAAAAADTN}{\bkmkend AAAAAAADTN}
 00024         {\cf19 if} (std::filesystem::exists({\cf22 "dictionaries/test_en_de.txt"})) \{\par
-{\bkmkstart AAAAAAAEPD}{\bkmkend AAAAAAAEPD}
+{\bkmkstart AAAAAAADTT}{\bkmkend AAAAAAADTT}
 00025             std::filesystem::remove({\cf22 "dictionaries/test_en_de.txt"});\par
-{\bkmkstart AAAAAAAEPF}{\bkmkend AAAAAAAEPF}
+{\bkmkstart AAAAAAADTW}{\bkmkend AAAAAAADTW}
 00026         \}\par
-{\bkmkstart AAAAAAAEPG}{\bkmkend AAAAAAAEPG}
+{\bkmkstart AAAAAAADTY}{\bkmkend AAAAAAADTY}
 00027         {\cf19 if} (std::filesystem::exists({\cf22 "dictionaries/test_empty.txt"})) \{\par
-{\bkmkstart AAAAAAAEPI}{\bkmkend AAAAAAAEPI}
+{\bkmkstart AAAAAAADUC}{\bkmkend AAAAAAADUC}
 00028             std::filesystem::remove({\cf22 "dictionaries/test_empty.txt"});\par
-{\bkmkstart AAAAAAAEPL}{\bkmkend AAAAAAAEPL}
+{\bkmkstart AAAAAAADUF}{\bkmkend AAAAAAADUF}
 00029         \}\par
-{\bkmkstart AAAAAAAEPN}{\bkmkend AAAAAAAEPN}
+{\bkmkstart AAAAAAADUG}{\bkmkend AAAAAAADUG}
 00030         {\cf19 if} (std::filesystem::exists({\cf22 "dictionaries/test_comments.txt"})) \{\par
-{\bkmkstart AAAAAAAEPQ}{\bkmkend AAAAAAAEPQ}
+{\bkmkstart AAAAAAADUJ}{\bkmkend AAAAAAADUJ}
 00031             std::filesystem::remove({\cf22 "dictionaries/test_comments.txt"});\par
-{\bkmkstart AAAAAAAEPS}{\bkmkend AAAAAAAEPS}
+{\bkmkstart AAAAAAADUL}{\bkmkend AAAAAAADUL}
 00032         \}\par
-{\bkmkstart AAAAAAAEPU}{\bkmkend AAAAAAAEPU}
+{\bkmkstart AAAAAAADUM}{\bkmkend AAAAAAADUM}
 00033         app.reset();\par
-{\bkmkstart AAAAAAAEPV}{\bkmkend AAAAAAAEPV}
+{\bkmkstart AAAAAAADUN}{\bkmkend AAAAAAADUN}
 00034     \}\par
-{\bkmkstart AAAAAAAEPX}{\bkmkend AAAAAAAEPX}
+{\bkmkstart AAAAAAADUO}{\bkmkend AAAAAAADUO}
 00035     \par
-{\bkmkstart AAAAAAAEPZ}{\bkmkend AAAAAAAEPZ}
+{\bkmkstart AAAAAAADUP}{\bkmkend AAAAAAADUP}
 00036     std::unique_ptr<LanguageTranslatorApp> app;\par
-{\bkmkstart AAAAAAAEQD}{\bkmkend AAAAAAAEQD}
+{\bkmkstart AAAAAAADUY}{\bkmkend AAAAAAADUY}
 00037 \};\par
-{\bkmkstart AAAAAAAEQE}{\bkmkend AAAAAAAEQE}
+{\bkmkstart AAAAAAADUZ}{\bkmkend AAAAAAADUZ}
 00038 \par
-{\bkmkstart AAAAAAAEQF}{\bkmkend AAAAAAAEQF}
+{\bkmkstart AAAAAAADVA}{\bkmkend AAAAAAADVA}
 00039 {\cf20 // Test dictionary file loading with valid format}\par
-{\bkmkstart AAAAAAAEQI}{\bkmkend AAAAAAAEQI}
+{\bkmkstart AAAAAAADVB}{\bkmkend AAAAAAADVB}
 00040 TEST_F(LanguageTranslatorDictionaryTest, TestLoadValidDictionaryFile) \{\par
-{\bkmkstart AAAAAAAEQP}{\bkmkend AAAAAAAEQP}
+{\bkmkstart AAAAAAAEAD}{\bkmkend AAAAAAAEAD}
 00041     {\cf20 // Create a test dictionary file}\par
-{\bkmkstart AAAAAAAEQR}{\bkmkend AAAAAAAEQR}
+{\bkmkstart AAAAAAAEAE}{\bkmkend AAAAAAAEAE}
 00042     std::ofstream file({\cf22 "dictionaries/test_en_de.txt"});\par
-{\bkmkstart AAAAAAAEQT}{\bkmkend AAAAAAAEQT}
+{\bkmkstart AAAAAAAEAF}{\bkmkend AAAAAAAEAF}
 00043     file << {\cf22 "hello=halo\\n"};\par
-{\bkmkstart AAAAAAAEQV}{\bkmkend AAAAAAAEQV}
+{\bkmkstart AAAAAAAEAG}{\bkmkend AAAAAAAEAG}
 00044     file << {\cf22 "world=welt\\n"};\par
-{\bkmkstart AAAAAAAEQW}{\bkmkend AAAAAAAEQW}
+{\bkmkstart AAAAAAAEAH}{\bkmkend AAAAAAAEAH}
 00045     file << {\cf22 "good=gut\\n"};\par
-{\bkmkstart AAAAAAAEQY}{\bkmkend AAAAAAAEQY}
+{\bkmkstart AAAAAAAEAI}{\bkmkend AAAAAAAEAI}
 00046     file << {\cf22 "morning=morgen\\n"};\par
-{\bkmkstart AAAAAAAEQZ}{\bkmkend AAAAAAAEQZ}
+{\bkmkstart AAAAAAAEAJ}{\bkmkend AAAAAAAEAJ}
 00047     file.close();\par
-{\bkmkstart AAAAAAAERB}{\bkmkend AAAAAAAERB}
+{\bkmkstart AAAAAAAEAK}{\bkmkend AAAAAAAEAK}
 00048     \par
-{\bkmkstart AAAAAAAERC}{\bkmkend AAAAAAAERC}
+{\bkmkstart AAAAAAAEAL}{\bkmkend AAAAAAAEAL}
 00049     EXPECT_TRUE(app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "dictionaries/test_en_de.txt"}));\par
-{\bkmkstart AAAAAAAERI}{\bkmkend AAAAAAAERI}
+{\bkmkstart AAAAAAAEAM}{\bkmkend AAAAAAAEAM}
 00050     \par
-{\bkmkstart AAAAAAAERJ}{\bkmkend AAAAAAAERJ}
+{\bkmkstart AAAAAAAEAN}{\bkmkend AAAAAAAEAN}
 00051     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAERL}{\bkmkend AAAAAAAERL}
+{\bkmkstart AAAAAAAEAO}{\bkmkend AAAAAAAEAO}
 00052     app->setTargetLanguage({\cf22 "German"});\par
-{\bkmkstart AAAAAAAERN}{\bkmkend AAAAAAAERN}
+{\bkmkstart AAAAAAAEAP}{\bkmkend AAAAAAAEAP}
 00053     EXPECT_EQ(app->translateWord({\cf22 "hello"}), {\cf22 "halo"});\par
-{\bkmkstart AAAAAAAERP}{\bkmkend AAAAAAAERP}
+{\bkmkstart AAAAAAAEAQ}{\bkmkend AAAAAAAEAQ}
 00054     EXPECT_EQ(app->translateWord({\cf22 "world"}), {\cf22 "welt"});\par
-{\bkmkstart AAAAAAAERW}{\bkmkend AAAAAAAERW}
+{\bkmkstart AAAAAAAEAR}{\bkmkend AAAAAAAEAR}
 00055 \}\par
-{\bkmkstart AAAAAAAERX}{\bkmkend AAAAAAAERX}
+{\bkmkstart AAAAAAAEAS}{\bkmkend AAAAAAAEAS}
 00056 \par
-{\bkmkstart AAAAAAAERY}{\bkmkend AAAAAAAERY}
+{\bkmkstart AAAAAAAEAT}{\bkmkend AAAAAAAEAT}
 00057 {\cf20 // Test dictionary file loading with comments}\par
-{\bkmkstart AAAAAAAESA}{\bkmkend AAAAAAAESA}
+{\bkmkstart AAAAAAAEAU}{\bkmkend AAAAAAAEAU}
 00058 TEST_F(LanguageTranslatorDictionaryTest, TestLoadDictionaryWithComments) \{\par
-{\bkmkstart AAAAAAAESD}{\bkmkend AAAAAAAESD}
+{\bkmkstart AAAAAAAEAV}{\bkmkend AAAAAAAEAV}
 00059     std::ofstream file({\cf22 "dictionaries/test_comments.txt"});\par
-{\bkmkstart AAAAAAAESH}{\bkmkend AAAAAAAESH}
+{\bkmkstart AAAAAAAEAW}{\bkmkend AAAAAAAEAW}
 00060     file << {\cf22 "# This is a comment\\n"};\par
-{\bkmkstart AAAAAAAESJ}{\bkmkend AAAAAAAESJ}
+{\bkmkstart AAAAAAAEAX}{\bkmkend AAAAAAAEAX}
 00061     file << {\cf22 "hello=halo\\n"};\par
-{\bkmkstart AAAAAAAESK}{\bkmkend AAAAAAAESK}
+{\bkmkstart AAAAAAAEAY}{\bkmkend AAAAAAAEAY}
 00062     file << {\cf22 "# Another comment\\n"};\par
-{\bkmkstart AAAAAAAESM}{\bkmkend AAAAAAAESM}
+{\bkmkstart AAAAAAAEAZ}{\bkmkend AAAAAAAEAZ}
 00063     file << {\cf22 "world=welt\\n"};\par
-{\bkmkstart AAAAAAAESO}{\bkmkend AAAAAAAESO}
+{\bkmkstart AAAAAAAEBA}{\bkmkend AAAAAAAEBA}
 00064     file.close();\par
-{\bkmkstart AAAAAAAESP}{\bkmkend AAAAAAAESP}
+{\bkmkstart AAAAAAAEBB}{\bkmkend AAAAAAAEBB}
 00065     \par
-{\bkmkstart AAAAAAAESR}{\bkmkend AAAAAAAESR}
+{\bkmkstart AAAAAAAEBC}{\bkmkend AAAAAAAEBC}
 00066     EXPECT_TRUE(app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "dictionaries/test_comments.txt"}));\par
-{\bkmkstart AAAAAAAESU}{\bkmkend AAAAAAAESU}
+{\bkmkstart AAAAAAAEBD}{\bkmkend AAAAAAAEBD}
 00067     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAESW}{\bkmkend AAAAAAAESW}
+{\bkmkstart AAAAAAAEBE}{\bkmkend AAAAAAAEBE}
 00068     app->setTargetLanguage({\cf22 "German"});\par
-{\bkmkstart AAAAAAAESZ}{\bkmkend AAAAAAAESZ}
+{\bkmkstart AAAAAAAEBF}{\bkmkend AAAAAAAEBF}
 00069     EXPECT_EQ(app->translateWord({\cf22 "hello"}), {\cf22 "halo"});\par
-{\bkmkstart AAAAAAAETB}{\bkmkend AAAAAAAETB}
+{\bkmkstart AAAAAAAEBG}{\bkmkend AAAAAAAEBG}
 00070 \}\par
-{\bkmkstart AAAAAAAETD}{\bkmkend AAAAAAAETD}
+{\bkmkstart AAAAAAAEBH}{\bkmkend AAAAAAAEBH}
 00071 \par
-{\bkmkstart AAAAAAAETE}{\bkmkend AAAAAAAETE}
+{\bkmkstart AAAAAAAEBI}{\bkmkend AAAAAAAEBI}
 00072 {\cf20 // Test empty dictionary file}\par
-{\bkmkstart AAAAAAAETF}{\bkmkend AAAAAAAETF}
+{\bkmkstart AAAAAAAEBJ}{\bkmkend AAAAAAAEBJ}
 00073 TEST_F(LanguageTranslatorDictionaryTest, TestLoadEmptyDictionaryFile) \{\par
-{\bkmkstart AAAAAAAETH}{\bkmkend AAAAAAAETH}
+{\bkmkstart AAAAAAAEBK}{\bkmkend AAAAAAAEBK}
 00074     std::ofstream file({\cf22 "dictionaries/test_empty.txt"});\par
-{\bkmkstart AAAAAAAETL}{\bkmkend AAAAAAAETL}
+{\bkmkstart AAAAAAAEBL}{\bkmkend AAAAAAAEBL}
 00075     file.close();\par
-{\bkmkstart AAAAAAAETN}{\bkmkend AAAAAAAETN}
+{\bkmkstart AAAAAAAEBM}{\bkmkend AAAAAAAEBM}
 00076     \par
-{\bkmkstart AAAAAAAETO}{\bkmkend AAAAAAAETO}
+{\bkmkstart AAAAAAAEBN}{\bkmkend AAAAAAAEBN}
 00077     {\cf20 // Should not crash, might return false or true}\par
-{\bkmkstart AAAAAAAETP}{\bkmkend AAAAAAAETP}
+{\bkmkstart AAAAAAAEBO}{\bkmkend AAAAAAAEBO}
 00078     app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "dictionaries/test_empty.txt"});\par
-{\bkmkstart AAAAAAAETR}{\bkmkend AAAAAAAETR}
+{\bkmkstart AAAAAAAEBP}{\bkmkend AAAAAAAEBP}
 00079 \}\par
-{\bkmkstart AAAAAAAETS}{\bkmkend AAAAAAAETS}
+{\bkmkstart AAAAAAAEBQ}{\bkmkend AAAAAAAEBQ}
 00080 \par
-{\bkmkstart AAAAAAAETU}{\bkmkend AAAAAAAETU}
+{\bkmkstart AAAAAAAEBR}{\bkmkend AAAAAAAEBR}
 00081 {\cf20 // Test loading non-existent file}\par
-{\bkmkstart AAAAAAAETW}{\bkmkend AAAAAAAETW}
+{\bkmkstart AAAAAAAEBS}{\bkmkend AAAAAAAEBS}
 00082 TEST_F(LanguageTranslatorDictionaryTest, TestLoadNonExistentFile) \{\par
-{\bkmkstart AAAAAAAETZ}{\bkmkend AAAAAAAETZ}
+{\bkmkstart AAAAAAAEBT}{\bkmkend AAAAAAAEBT}
 00083     EXPECT_FALSE(app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "dictionaries/nonexistent.txt"}));\par
-{\bkmkstart AAAAAAAEUC}{\bkmkend AAAAAAAEUC}
+{\bkmkstart AAAAAAAEBU}{\bkmkend AAAAAAAEBU}
 00084 \}\par
-{\bkmkstart AAAAAAAEUE}{\bkmkend AAAAAAAEUE}
+{\bkmkstart AAAAAAAEBV}{\bkmkend AAAAAAAEBV}
 00085 \par
-{\bkmkstart AAAAAAAEUF}{\bkmkend AAAAAAAEUF}
+{\bkmkstart AAAAAAAEBW}{\bkmkend AAAAAAAEBW}
 00086 {\cf20 // Test dictionary loading with whitespace trimming}\par
-{\bkmkstart AAAAAAAEUG}{\bkmkend AAAAAAAEUG}
+{\bkmkstart AAAAAAAEBX}{\bkmkend AAAAAAAEBX}
 00087 TEST_F(LanguageTranslatorDictionaryTest, TestDictionaryWhitespaceTrimming) \{\par
-{\bkmkstart AAAAAAAFBM}{\bkmkend AAAAAAAFBM}
+{\bkmkstart AAAAAAAEBY}{\bkmkend AAAAAAAEBY}
 00088     std::ofstream file({\cf22 "dictionaries/test_en_de.txt"});\par
-{\bkmkstart AAAAAAAFBW}{\bkmkend AAAAAAAFBW}
+{\bkmkstart AAAAAAAEBZ}{\bkmkend AAAAAAAEBZ}
 00089     file << {\cf22 "  hello  :  halo  \\n"};\par
-{\bkmkstart AAAAAAAFBX}{\bkmkend AAAAAAAFBX}
+{\bkmkstart AAAAAAAECA}{\bkmkend AAAAAAAECA}
 00090     file << {\cf22 "world:welt\\n"};\par
-{\bkmkstart AAAAAAAFBZ}{\bkmkend AAAAAAAFBZ}
+{\bkmkstart AAAAAAAECB}{\bkmkend AAAAAAAECB}
 00091     file.close();\par
-{\bkmkstart AAAAAAAFCB}{\bkmkend AAAAAAAFCB}
+{\bkmkstart AAAAAAAECC}{\bkmkend AAAAAAAECC}
 00092     \par
-{\bkmkstart AAAAAAAFCD}{\bkmkend AAAAAAAFCD}
+{\bkmkstart AAAAAAAECD}{\bkmkend AAAAAAAECD}
 00093     app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "dictionaries/test_en_de.txt"});\par
-{\bkmkstart AAAAAAAFCG}{\bkmkend AAAAAAAFCG}
+{\bkmkstart AAAAAAAECE}{\bkmkend AAAAAAAECE}
 00094     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFCI}{\bkmkend AAAAAAAFCI}
+{\bkmkstart AAAAAAAECF}{\bkmkend AAAAAAAECF}
 00095     app->setTargetLanguage({\cf22 "German"});\par
-{\bkmkstart AAAAAAAFCN}{\bkmkend AAAAAAAFCN}
+{\bkmkstart AAAAAAAECG}{\bkmkend AAAAAAAECG}
 00096     EXPECT_EQ(app->translateWord({\cf22 "hello"}), {\cf22 "halo"});\par
-{\bkmkstart AAAAAAAFCS}{\bkmkend AAAAAAAFCS}
+{\bkmkstart AAAAAAAECH}{\bkmkend AAAAAAAECH}
 00097     EXPECT_EQ(app->translateWord({\cf22 "world"}), {\cf22 "welt"});\par
-{\bkmkstart AAAAAAAFCX}{\bkmkend AAAAAAAFCX}
+{\bkmkstart AAAAAAAECI}{\bkmkend AAAAAAAECI}
 00098 \}\par
-{\bkmkstart AAAAAAAFCY}{\bkmkend AAAAAAAFCY}
+{\bkmkstart AAAAAAAECJ}{\bkmkend AAAAAAAECJ}
 00099 \par
-{\bkmkstart AAAAAAAFCZ}{\bkmkend AAAAAAAFCZ}
+{\bkmkstart AAAAAAAECK}{\bkmkend AAAAAAAECK}
 00100 {\cf20 // Test multiple dictionary loading}\par
-{\bkmkstart AAAAAAAFDD}{\bkmkend AAAAAAAFDD}
+{\bkmkstart AAAAAAAECL}{\bkmkend AAAAAAAECL}
 00101 TEST_F(LanguageTranslatorDictionaryTest, TestLoadMultipleDictionaries) \{\par
-{\bkmkstart AAAAAAAFDH}{\bkmkend AAAAAAAFDH}
+{\bkmkstart AAAAAAAECM}{\bkmkend AAAAAAAECM}
 00102     {\cf20 // Load English to Turkish}\par
-{\bkmkstart AAAAAAAFDI}{\bkmkend AAAAAAAFDI}
+{\bkmkstart AAAAAAAECN}{\bkmkend AAAAAAAECN}
 00103     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFDN}{\bkmkend AAAAAAAFDN}
+{\bkmkstart AAAAAAAECO}{\bkmkend AAAAAAAECO}
 00104     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAFDP}{\bkmkend AAAAAAAFDP}
+{\bkmkstart AAAAAAAECP}{\bkmkend AAAAAAAECP}
 00105     EXPECT_EQ(app->translateWord({\cf22 "hello"}), {\cf22 "merhaba"});\par
-{\bkmkstart AAAAAAAFDS}{\bkmkend AAAAAAAFDS}
+{\bkmkstart AAAAAAAECQ}{\bkmkend AAAAAAAECQ}
 00106     \par
-{\bkmkstart AAAAAAAFDV}{\bkmkend AAAAAAAFDV}
+{\bkmkstart AAAAAAAECR}{\bkmkend AAAAAAAECR}
 00107     {\cf20 // Load English to Spanish}\par
-{\bkmkstart AAAAAAAFDY}{\bkmkend AAAAAAAFDY}
+{\bkmkstart AAAAAAAECS}{\bkmkend AAAAAAAECS}
 00108     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFEA}{\bkmkend AAAAAAAFEA}
+{\bkmkstart AAAAAAAECT}{\bkmkend AAAAAAAECT}
 00109     app->setTargetLanguage({\cf22 "Spanish"});\par
-{\bkmkstart AAAAAAAFEC}{\bkmkend AAAAAAAFEC}
+{\bkmkstart AAAAAAAECU}{\bkmkend AAAAAAAECU}
 00110     EXPECT_EQ(app->translateWord({\cf22 "hello"}), {\cf22 "hola"});\par
-{\bkmkstart AAAAAAAFEH}{\bkmkend AAAAAAAFEH}
+{\bkmkstart AAAAAAAECV}{\bkmkend AAAAAAAECV}
 00111     \par
-{\bkmkstart AAAAAAAFEJ}{\bkmkend AAAAAAAFEJ}
+{\bkmkstart AAAAAAAECW}{\bkmkend AAAAAAAECW}
 00112     {\cf20 // Load English to French}\par
-{\bkmkstart AAAAAAAFEM}{\bkmkend AAAAAAAFEM}
+{\bkmkstart AAAAAAAECX}{\bkmkend AAAAAAAECX}
 00113     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFEN}{\bkmkend AAAAAAAFEN}
+{\bkmkstart AAAAAAAECY}{\bkmkend AAAAAAAECY}
 00114     app->setTargetLanguage({\cf22 "French"});\par
-{\bkmkstart AAAAAAAFEP}{\bkmkend AAAAAAAFEP}
+{\bkmkstart AAAAAAAECZ}{\bkmkend AAAAAAAECZ}
 00115     EXPECT_EQ(app->translateWord({\cf22 "hello"}), {\cf22 "bonjour"});\par
-{\bkmkstart AAAAAAAFEU}{\bkmkend AAAAAAAFEU}
+{\bkmkstart AAAAAAAEDA}{\bkmkend AAAAAAAEDA}
 00116 \}\par
-{\bkmkstart AAAAAAAFEV}{\bkmkend AAAAAAAFEV}
+{\bkmkstart AAAAAAAEDB}{\bkmkend AAAAAAAEDB}
 00117 \par
-{\bkmkstart AAAAAAAFEW}{\bkmkend AAAAAAAFEW}
+{\bkmkstart AAAAAAAEDC}{\bkmkend AAAAAAAEDC}
 00118 {\cf20 // Test all dictionaries loading}\par
-{\bkmkstart AAAAAAAFEX}{\bkmkend AAAAAAAFEX}
+{\bkmkstart AAAAAAAEDD}{\bkmkend AAAAAAAEDD}
 00119 TEST_F(LanguageTranslatorDictionaryTest, TestLoadAllDictionaries) \{\par
-{\bkmkstart AAAAAAAFEZ}{\bkmkend AAAAAAAFEZ}
+{\bkmkstart AAAAAAAEDE}{\bkmkend AAAAAAAEDE}
 00120     EXPECT_NO_THROW(app->loadAllDictionaries());\par
-{\bkmkstart AAAAAAAFFD}{\bkmkend AAAAAAAFFD}
+{\bkmkstart AAAAAAAEDF}{\bkmkend AAAAAAAEDF}
 00121     \par
-{\bkmkstart AAAAAAAFFE}{\bkmkend AAAAAAAFFE}
+{\bkmkstart AAAAAAAEDG}{\bkmkend AAAAAAAEDG}
 00122     {\cf20 // Should have loaded multiple language pairs}\par
-{\bkmkstart AAAAAAAFFG}{\bkmkend AAAAAAAFFG}
+{\bkmkstart AAAAAAAEDH}{\bkmkend AAAAAAAEDH}
 00123     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFFI}{\bkmkend AAAAAAAFFI}
+{\bkmkstart AAAAAAAEDI}{\bkmkend AAAAAAAEDI}
 00124     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAFFM}{\bkmkend AAAAAAAFFM}
+{\bkmkstart AAAAAAAEDJ}{\bkmkend AAAAAAAEDJ}
 00125     EXPECT_EQ(app->translateWord({\cf22 "hello"}), {\cf22 "merhaba"});\par
-{\bkmkstart AAAAAAAFFQ}{\bkmkend AAAAAAAFFQ}
+{\bkmkstart AAAAAAAEDK}{\bkmkend AAAAAAAEDK}
 00126 \}\par
-{\bkmkstart AAAAAAAFFR}{\bkmkend AAAAAAAFFR}
+{\bkmkstart AAAAAAAEDL}{\bkmkend AAAAAAAEDL}
 00127 \par
-{\bkmkstart AAAAAAAFFS}{\bkmkend AAAAAAAFFS}
+{\bkmkstart AAAAAAAEDM}{\bkmkend AAAAAAAEDM}
 00128 {\cf20 // Test word translation with existing dictionary}\par
-{\bkmkstart AAAAAAAFFU}{\bkmkend AAAAAAAFFU}
+{\bkmkstart AAAAAAAEDN}{\bkmkend AAAAAAAEDN}
 00129 TEST_F(LanguageTranslatorDictionaryTest, TestWordTranslation) \{\par
-{\bkmkstart AAAAAAAFFX}{\bkmkend AAAAAAAFFX}
+{\bkmkstart AAAAAAAEDO}{\bkmkend AAAAAAAEDO}
 00130     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFFZ}{\bkmkend AAAAAAAFFZ}
+{\bkmkstart AAAAAAAEDP}{\bkmkend AAAAAAAEDP}
 00131     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAFGA}{\bkmkend AAAAAAAFGA}
+{\bkmkstart AAAAAAAEDQ}{\bkmkend AAAAAAAEDQ}
 00132     \par
-{\bkmkstart AAAAAAAFGC}{\bkmkend AAAAAAAFGC}
+{\bkmkstart AAAAAAAEDR}{\bkmkend AAAAAAAEDR}
 00133     EXPECT_EQ(app->translateWord({\cf22 "hello"}), {\cf22 "merhaba"});\par
-{\bkmkstart AAAAAAAFGG}{\bkmkend AAAAAAAFGG}
+{\bkmkstart AAAAAAAEDS}{\bkmkend AAAAAAAEDS}
 00134     EXPECT_EQ(app->translateWord({\cf22 "world"}), {\cf22 "dünya"});\par
-{\bkmkstart AAAAAAAFGH}{\bkmkend AAAAAAAFGH}
+{\bkmkstart AAAAAAAEDT}{\bkmkend AAAAAAAEDT}
 00135     EXPECT_EQ(app->translateWord({\cf22 "good"}), {\cf22 "iyi"});\par
-{\bkmkstart AAAAAAAFGJ}{\bkmkend AAAAAAAFGJ}
+{\bkmkstart AAAAAAAEDU}{\bkmkend AAAAAAAEDU}
 00136     EXPECT_EQ(app->translateWord({\cf22 "water"}), {\cf22 "su"});\par
-{\bkmkstart AAAAAAAFGL}{\bkmkend AAAAAAAFGL}
+{\bkmkstart AAAAAAAEDV}{\bkmkend AAAAAAAEDV}
 00137 \}\par
-{\bkmkstart AAAAAAAFGN}{\bkmkend AAAAAAAFGN}
+{\bkmkstart AAAAAAAEDW}{\bkmkend AAAAAAAEDW}
 00138 \par
-{\bkmkstart AAAAAAAFGP}{\bkmkend AAAAAAAFGP}
+{\bkmkstart AAAAAAAEDX}{\bkmkend AAAAAAAEDX}
 00139 {\cf20 // Test phrase translation}\par
-{\bkmkstart AAAAAAAFGQ}{\bkmkend AAAAAAAFGQ}
+{\bkmkstart AAAAAAAEDY}{\bkmkend AAAAAAAEDY}
 00140 TEST_F(LanguageTranslatorDictionaryTest, TestPhraseTranslation) \{\par
-{\bkmkstart AAAAAAAFGR}{\bkmkend AAAAAAAFGR}
+{\bkmkstart AAAAAAAEDZ}{\bkmkend AAAAAAAEDZ}
 00141     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFGT}{\bkmkend AAAAAAAFGT}
+{\bkmkstart AAAAAAAEEA}{\bkmkend AAAAAAAEEA}
 00142     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAFGU}{\bkmkend AAAAAAAFGU}
+{\bkmkstart AAAAAAAEEB}{\bkmkend AAAAAAAEEB}
 00143     \par
-{\bkmkstart AAAAAAAFGV}{\bkmkend AAAAAAAFGV}
+{\bkmkstart AAAAAAAEEC}{\bkmkend AAAAAAAEEC}
 00144     EXPECT_EQ(app->translatePhrase({\cf22 "good morning"}), {\cf22 "günaydın"});\par
-{\bkmkstart AAAAAAAFGW}{\bkmkend AAAAAAAFGW}
+{\bkmkstart AAAAAAAEED}{\bkmkend AAAAAAAEED}
 00145     EXPECT_EQ(app->translatePhrase({\cf22 "thank you"}), {\cf22 "teşekkür ederim"});\par
-{\bkmkstart AAAAAAAFGX}{\bkmkend AAAAAAAFGX}
+{\bkmkstart AAAAAAAEEE}{\bkmkend AAAAAAAEEE}
 00146     EXPECT_EQ(app->translatePhrase({\cf22 "how are you"}), {\cf22 "nasılsın"});\par
-{\bkmkstart AAAAAAAFGY}{\bkmkend AAAAAAAFGY}
+{\bkmkstart AAAAAAAEEF}{\bkmkend AAAAAAAEEF}
 00147 \}\par
-{\bkmkstart AAAAAAAFGZ}{\bkmkend AAAAAAAFGZ}
+{\bkmkstart AAAAAAAEEG}{\bkmkend AAAAAAAEEG}
 00148 \par
-{\bkmkstart AAAAAAAFHA}{\bkmkend AAAAAAAFHA}
+{\bkmkstart AAAAAAAEEH}{\bkmkend AAAAAAAEEH}
 00149 {\cf20 // Test unknown word handling}\par
-{\bkmkstart AAAAAAAFHB}{\bkmkend AAAAAAAFHB}
+{\bkmkstart AAAAAAAEEI}{\bkmkend AAAAAAAEEI}
 00150 TEST_F(LanguageTranslatorDictionaryTest, TestUnknownWordHandling) \{\par
-{\bkmkstart AAAAAAAFHC}{\bkmkend AAAAAAAFHC}
+{\bkmkstart AAAAAAAEEJ}{\bkmkend AAAAAAAEEJ}
 00151     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFHG}{\bkmkend AAAAAAAFHG}
+{\bkmkstart AAAAAAAEEK}{\bkmkend AAAAAAAEEK}
 00152     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAFHH}{\bkmkend AAAAAAAFHH}
+{\bkmkstart AAAAAAAEEL}{\bkmkend AAAAAAAEEL}
 00153     \par
-{\bkmkstart AAAAAAAFHI}{\bkmkend AAAAAAAFHI}
+{\bkmkstart AAAAAAAEEM}{\bkmkend AAAAAAAEEM}
 00154     EXPECT_EQ(app->translateWord({\cf22 "unknownword"}), {\cf22 "unknownword"});\par
-{\bkmkstart AAAAAAAFHM}{\bkmkend AAAAAAAFHM}
+{\bkmkstart AAAAAAAEEN}{\bkmkend AAAAAAAEEN}
 00155     EXPECT_EQ(app->translateWord({\cf22 "xyz123"}), {\cf22 "xyz123"});\par
-{\bkmkstart AAAAAAAFHO}{\bkmkend AAAAAAAFHO}
+{\bkmkstart AAAAAAAEEO}{\bkmkend AAAAAAAEEO}
 00156 \}\par
-{\bkmkstart AAAAAAAFHP}{\bkmkend AAAAAAAFHP}
+{\bkmkstart AAAAAAAEEP}{\bkmkend AAAAAAAEEP}
 00157 \par
-{\bkmkstart AAAAAAAFHQ}{\bkmkend AAAAAAAFHQ}
+{\bkmkstart AAAAAAAEEQ}{\bkmkend AAAAAAAEEQ}
 00158 {\cf20 // Test translation with different language pairs}\par
-{\bkmkstart AAAAAAAFHS}{\bkmkend AAAAAAAFHS}
+{\bkmkstart AAAAAAAEER}{\bkmkend AAAAAAAEER}
 00159 TEST_F(LanguageTranslatorDictionaryTest, TestTranslationLanguagePairs) \{\par
-{\bkmkstart AAAAAAAFHW}{\bkmkend AAAAAAAFHW}
+{\bkmkstart AAAAAAAEES}{\bkmkend AAAAAAAEES}
 00160     {\cf20 // English to Spanish}\par
-{\bkmkstart AAAAAAAFHZ}{\bkmkend AAAAAAAFHZ}
+{\bkmkstart AAAAAAAEET}{\bkmkend AAAAAAAEET}
 00161     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFIC}{\bkmkend AAAAAAAFIC}
+{\bkmkstart AAAAAAAEEU}{\bkmkend AAAAAAAEEU}
 00162     app->setTargetLanguage({\cf22 "Spanish"});\par
-{\bkmkstart AAAAAAAFID}{\bkmkend AAAAAAAFID}
+{\bkmkstart AAAAAAAEEV}{\bkmkend AAAAAAAEEV}
 00163     EXPECT_EQ(app->translateWord({\cf22 "hello"}), {\cf22 "hola"});\par
-{\bkmkstart AAAAAAAFII}{\bkmkend AAAAAAAFII}
+{\bkmkstart AAAAAAAEEW}{\bkmkend AAAAAAAEEW}
 00164     EXPECT_EQ(app->translateWord({\cf22 "world"}), {\cf22 "mundo"});\par
-{\bkmkstart AAAAAAAFIO}{\bkmkend AAAAAAAFIO}
+{\bkmkstart AAAAAAAEEX}{\bkmkend AAAAAAAEEX}
 00165     \par
-{\bkmkstart AAAAAAAFIP}{\bkmkend AAAAAAAFIP}
+{\bkmkstart AAAAAAAEEY}{\bkmkend AAAAAAAEEY}
 00166     {\cf20 // English to French}\par
-{\bkmkstart AAAAAAAFIQ}{\bkmkend AAAAAAAFIQ}
+{\bkmkstart AAAAAAAEEZ}{\bkmkend AAAAAAAEEZ}
 00167     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFIT}{\bkmkend AAAAAAAFIT}
+{\bkmkstart AAAAAAAEFA}{\bkmkend AAAAAAAEFA}
 00168     app->setTargetLanguage({\cf22 "French"});\par
-{\bkmkstart AAAAAAAFIV}{\bkmkend AAAAAAAFIV}
+{\bkmkstart AAAAAAAEFB}{\bkmkend AAAAAAAEFB}
 00169     EXPECT_EQ(app->translateWord({\cf22 "hello"}), {\cf22 "bonjour"});\par
-{\bkmkstart AAAAAAAFIX}{\bkmkend AAAAAAAFIX}
+{\bkmkstart AAAAAAAEFC}{\bkmkend AAAAAAAEFC}
 00170     EXPECT_EQ(app->translateWord({\cf22 "world"}), {\cf22 "monde"});\par
-{\bkmkstart AAAAAAAFJB}{\bkmkend AAAAAAAFJB}
+{\bkmkstart AAAAAAAEFD}{\bkmkend AAAAAAAEFD}
 00171 \}\par
-{\bkmkstart AAAAAAAFJC}{\bkmkend AAAAAAAFJC}
+{\bkmkstart AAAAAAAEFE}{\bkmkend AAAAAAAEFE}
 00172 \par
-{\bkmkstart AAAAAAAFJE}{\bkmkend AAAAAAAFJE}
+{\bkmkstart AAAAAAAEFF}{\bkmkend AAAAAAAEFF}
 00173 {\cf20 // Test same language translation}\par
-{\bkmkstart AAAAAAAFJG}{\bkmkend AAAAAAAFJG}
+{\bkmkstart AAAAAAAEFG}{\bkmkend AAAAAAAEFG}
 00174 TEST_F(LanguageTranslatorDictionaryTest, TestSameLanguageTranslation) \{\par
-{\bkmkstart AAAAAAAFJL}{\bkmkend AAAAAAAFJL}
+{\bkmkstart AAAAAAAEFH}{\bkmkend AAAAAAAEFH}
 00175     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFJQ}{\bkmkend AAAAAAAFJQ}
+{\bkmkstart AAAAAAAEFI}{\bkmkend AAAAAAAEFI}
 00176     app->setTargetLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFJU}{\bkmkend AAAAAAAFJU}
+{\bkmkstart AAAAAAAEFJ}{\bkmkend AAAAAAAEFJ}
 00177     EXPECT_EQ(app->translateWord({\cf22 "hello"}), {\cf22 "hello"});\par
-{\bkmkstart AAAAAAAFKA}{\bkmkend AAAAAAAFKA}
+{\bkmkstart AAAAAAAEFK}{\bkmkend AAAAAAAEFK}
 00178     EXPECT_EQ(app->translateText({\cf22 "hello world"}), {\cf22 "hello world"});\par
-{\bkmkstart AAAAAAAFKF}{\bkmkend AAAAAAAFKF}
+{\bkmkstart AAAAAAAEFL}{\bkmkend AAAAAAAEFL}
 00179 \}\par
-{\bkmkstart AAAAAAAFKH}{\bkmkend AAAAAAAFKH}
+{\bkmkstart AAAAAAAEFM}{\bkmkend AAAAAAAEFM}
 00180 \par
-{\bkmkstart AAAAAAAFKI}{\bkmkend AAAAAAAFKI}
+{\bkmkstart AAAAAAAEFN}{\bkmkend AAAAAAAEFN}
 00181 {\cf20 // Test dictionary with malformed entries}\par
-{\bkmkstart AAAAAAAFKK}{\bkmkend AAAAAAAFKK}
+{\bkmkstart AAAAAAAEFO}{\bkmkend AAAAAAAEFO}
 00182 TEST_F(LanguageTranslatorDictionaryTest, TestMalformedDictionaryEntries) \{\par
-{\bkmkstart AAAAAAAFKO}{\bkmkend AAAAAAAFKO}
+{\bkmkstart AAAAAAAEFP}{\bkmkend AAAAAAAEFP}
 00183     std::ofstream file({\cf22 "dictionaries/test_en_de.txt"});\par
-{\bkmkstart AAAAAAAFKV}{\bkmkend AAAAAAAFKV}
+{\bkmkstart AAAAAAAEFQ}{\bkmkend AAAAAAAEFQ}
 00184     file << {\cf22 "nocolon\\n"};\par
-{\bkmkstart AAAAAAAFKY}{\bkmkend AAAAAAAFKY}
+{\bkmkstart AAAAAAAEFR}{\bkmkend AAAAAAAEFR}
 00185     file << {\cf22 "only=word=\\n"};\par
-{\bkmkstart AAAAAAAFLA}{\bkmkend AAAAAAAFLA}
+{\bkmkstart AAAAAAAEFS}{\bkmkend AAAAAAAEFS}
 00186     file << {\cf22 "valid:entry\\n"};\par
-{\bkmkstart AAAAAAAFLD}{\bkmkend AAAAAAAFLD}
+{\bkmkstart AAAAAAAEFT}{\bkmkend AAAAAAAEFT}
 00187     file.close();\par
-{\bkmkstart AAAAAAAFLF}{\bkmkend AAAAAAAFLF}
+{\bkmkstart AAAAAAAEFU}{\bkmkend AAAAAAAEFU}
 00188     \par
-{\bkmkstart AAAAAAAFLG}{\bkmkend AAAAAAAFLG}
+{\bkmkstart AAAAAAAEFV}{\bkmkend AAAAAAAEFV}
 00189     app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "dictionaries/test_en_de.txt"});\par
-{\bkmkstart AAAAAAAFLI}{\bkmkend AAAAAAAFLI}
+{\bkmkstart AAAAAAAEFW}{\bkmkend AAAAAAAEFW}
 00190     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFTG}{\bkmkend AAAAAAAFTG}
+{\bkmkstart AAAAAAAEFX}{\bkmkend AAAAAAAEFX}
 00191     app->setTargetLanguage({\cf22 "German"});\par
-{\bkmkstart AAAAAAAFTJ}{\bkmkend AAAAAAAFTJ}
+{\bkmkstart AAAAAAAEFY}{\bkmkend AAAAAAAEFY}
 00192     {\cf20 // Should handle malformed entries gracefully}\par
-{\bkmkstart AAAAAAAFTN}{\bkmkend AAAAAAAFTN}
+{\bkmkstart AAAAAAAEFZ}{\bkmkend AAAAAAAEFZ}
 00193 \}\par
-{\bkmkstart AAAAAAAFTO}{\bkmkend AAAAAAAFTO}
+{\bkmkstart AAAAAAAEGA}{\bkmkend AAAAAAAEGA}
 00194 \par
-{\bkmkstart AAAAAAAFTQ}{\bkmkend AAAAAAAFTQ}
+{\bkmkstart AAAAAAAEGB}{\bkmkend AAAAAAAEGB}
 00195 {\cf20 // Test translation with mixed case}\par
-{\bkmkstart AAAAAAAFTS}{\bkmkend AAAAAAAFTS}
+{\bkmkstart AAAAAAAEGC}{\bkmkend AAAAAAAEGC}
 00196 TEST_F(LanguageTranslatorDictionaryTest, TestMixedCaseTranslation) \{\par
-{\bkmkstart AAAAAAAFUA}{\bkmkend AAAAAAAFUA}
+{\bkmkstart AAAAAAAEGD}{\bkmkend AAAAAAAEGD}
 00197     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFUG}{\bkmkend AAAAAAAFUG}
+{\bkmkstart AAAAAAAEGE}{\bkmkend AAAAAAAEGE}
 00198     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAFUK}{\bkmkend AAAAAAAFUK}
+{\bkmkstart AAAAAAAEGF}{\bkmkend AAAAAAAEGF}
 00199     \par
-{\bkmkstart AAAAAAAFUM}{\bkmkend AAAAAAAFUM}
+{\bkmkstart AAAAAAAEGG}{\bkmkend AAAAAAAEGG}
 00200     {\cf20 // Dictionary is case-sensitive}\par
-{\bkmkstart AAAAAAAFUP}{\bkmkend AAAAAAAFUP}
+{\bkmkstart AAAAAAAEGH}{\bkmkend AAAAAAAEGH}
 00201     EXPECT_EQ(app->translateWord({\cf22 "HELLO"}), {\cf22 "HELLO"});\par
-{\bkmkstart AAAAAAAFUX}{\bkmkend AAAAAAAFUX}
+{\bkmkstart AAAAAAAEGI}{\bkmkend AAAAAAAEGI}
 00202     EXPECT_EQ(app->translateWord({\cf22 "Hello"}), {\cf22 "Hello"});\par
-{\bkmkstart AAAAAAAFVB}{\bkmkend AAAAAAAFVB}
+{\bkmkstart AAAAAAAEGJ}{\bkmkend AAAAAAAEGJ}
 00203 \}\par
-{\bkmkstart AAAAAAAFVD}{\bkmkend AAAAAAAFVD}
+{\bkmkstart AAAAAAAEGK}{\bkmkend AAAAAAAEGK}
 00204 \par
-{\bkmkstart AAAAAAAFVE}{\bkmkend AAAAAAAFVE}
+{\bkmkstart AAAAAAAEGL}{\bkmkend AAAAAAAEGL}
 00205 {\cf20 // Test large dictionary loading}\par
-{\bkmkstart AAAAAAAFVG}{\bkmkend AAAAAAAFVG}
+{\bkmkstart AAAAAAAEGM}{\bkmkend AAAAAAAEGM}
 00206 TEST_F(LanguageTranslatorDictionaryTest, TestLargeDictionaryLoading) \{\par
-{\bkmkstart AAAAAAAFVK}{\bkmkend AAAAAAAFVK}
+{\bkmkstart AAAAAAAEGN}{\bkmkend AAAAAAAEGN}
 00207     std::ofstream file({\cf22 "dictionaries/test_en_de.txt"});\par
-{\bkmkstart AAAAAAAFVP}{\bkmkend AAAAAAAFVP}
+{\bkmkstart AAAAAAAEGO}{\bkmkend AAAAAAAEGO}
 00208     {\cf19 for} ({\cf18 int} i = 0; i < 100; ++i) \{\par
-{\bkmkstart AAAAAAAFVW}{\bkmkend AAAAAAAFVW}
+{\bkmkstart AAAAAAAEGP}{\bkmkend AAAAAAAEGP}
 00209         file << {\cf22 "word"} << i << {\cf22 "=wort"} << i << {\cf22 "\\n"};\par
-{\bkmkstart AAAAAAAFWA}{\bkmkend AAAAAAAFWA}
+{\bkmkstart AAAAAAAEGQ}{\bkmkend AAAAAAAEGQ}
 00210     \}\par
-{\bkmkstart AAAAAAAFWC}{\bkmkend AAAAAAAFWC}
+{\bkmkstart AAAAAAAEGR}{\bkmkend AAAAAAAEGR}
 00211     file.close();\par
-{\bkmkstart AAAAAAAFWE}{\bkmkend AAAAAAAFWE}
+{\bkmkstart AAAAAAAEGS}{\bkmkend AAAAAAAEGS}
 00212     \par
-{\bkmkstart AAAAAAAFWG}{\bkmkend AAAAAAAFWG}
+{\bkmkstart AAAAAAAEGT}{\bkmkend AAAAAAAEGT}
 00213     app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "dictionaries/test_en_de.txt"});\par
-{\bkmkstart AAAAAAAFWL}{\bkmkend AAAAAAAFWL}
+{\bkmkstart AAAAAAAEGU}{\bkmkend AAAAAAAEGU}
 00214     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFWN}{\bkmkend AAAAAAAFWN}
+{\bkmkstart AAAAAAAEGV}{\bkmkend AAAAAAAEGV}
 00215     app->setTargetLanguage({\cf22 "German"});\par
-{\bkmkstart AAAAAAAFWR}{\bkmkend AAAAAAAFWR}
+{\bkmkstart AAAAAAAEGW}{\bkmkend AAAAAAAEGW}
 00216     EXPECT_EQ(app->translateWord({\cf22 "word50"}), {\cf22 "wort50"});\par
-{\bkmkstart AAAAAAAFWX}{\bkmkend AAAAAAAFWX}
+{\bkmkstart AAAAAAAEGX}{\bkmkend AAAAAAAEGX}
 00217 \}\par
-{\bkmkstart AAAAAAAFXB}{\bkmkend AAAAAAAFXB}
+{\bkmkstart AAAAAAAEGY}{\bkmkend AAAAAAAEGY}
 00218 \par
 }
 }

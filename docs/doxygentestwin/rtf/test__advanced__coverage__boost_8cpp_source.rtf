@@ -151,1123 +151,1123 @@
 test_advanced_coverage_boost.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_advanced_coverage_boost.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_advanced_coverage_boost.cpp}
-{\bkmkstart AAAAAAAAAA}
-{\bkmkend AAAAAAAAAA}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAAWC}
+{\bkmkend AAAAAAAAWC}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAWD" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAAF}{\bkmkend AAAAAAAAAF}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAXL}{\bkmkend AAAAAAAAXL}
 00001 \par
-{\bkmkstart AAAAAAAAAH}{\bkmkend AAAAAAAAAH}
+{\bkmkstart AAAAAAAAXO}{\bkmkend AAAAAAAAXO}
 00008 \par
-{\bkmkstart AAAAAAAAAJ}{\bkmkend AAAAAAAAAJ}
-00009 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAAAM}{\bkmkend AAAAAAAAAM}
-00010 {\cf21 #include <chrono>}\par
-{\bkmkstart AAAAAAAAAN}{\bkmkend AAAAAAAAAN}
-00011 {\cf21 #include <thread>}\par
-{\bkmkstart AAAAAAAAAQ}{\bkmkend AAAAAAAAAQ}
-00012 {\cf21 #include <iostream>}\par
-{\bkmkstart AAAAAAAAAU}{\bkmkend AAAAAAAAAU}
-00013 {\cf21 #include <vector>}\par
-{\bkmkstart AAAAAAAAAX}{\bkmkend AAAAAAAAAX}
-00014 {\cf21 #include <string>}\par
-{\bkmkstart AAAAAAAABE}{\bkmkend AAAAAAAABE}
-00015 {\cf21 #include <memory>}\par
-{\bkmkstart AAAAAAAABM}{\bkmkend AAAAAAAABM}
-00016 \par
-{\bkmkstart AAAAAAAABN}{\bkmkend AAAAAAAABN}
-00017 {\cf20 // Include all headers for comprehensive testing}\par
-{\bkmkstart AAAAAAAABO}{\bkmkend AAAAAAAABO}
-00018 {\cf21 #include "../src/SafeChronoCalculator.h"}\par
-{\bkmkstart AAAAAAAACC}{\bkmkend AAAAAAAACC}
-00019 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
-{\bkmkstart AAAAAAAACS}{\bkmkend AAAAAAAACS}
-00020 {\cf21 #include "../include/ds/doubly_linked_list.h"}\par
-{\bkmkstart AAAAAAAADE}{\bkmkend AAAAAAAADE}
-00021 {\cf21 #include "../include/ds/graph.h"}\par
-{\bkmkstart AAAAAAAAEJ}{\bkmkend AAAAAAAAEJ}
-00022 {\cf21 #include "../include/ds/hash_table.h"}\par
-{\bkmkstart AAAAAAAAGC}{\bkmkend AAAAAAAAGC}
-00023 {\cf21 #include "../include/ds/heap.h"}\par
-{\bkmkstart AAAAAAAAHR}{\bkmkend AAAAAAAAHR}
-00024 {\cf21 #include "../include/ds/queue.h"}\par
-{\bkmkstart AAAAAAAAIZ}{\bkmkend AAAAAAAAIZ}
-00025 {\cf21 #include "../include/ds/sparse_matrix.h"}\par
-{\bkmkstart AAAAAAAAKS}{\bkmkend AAAAAAAAKS}
-00026 {\cf21 #include "../include/ds/stack.h"}\par
-{\bkmkstart AAAAAAAAMV}{\bkmkend AAAAAAAAMV}
-00027 {\cf21 #include "../include/ds/xor_linked_list.h"}\par
-{\bkmkstart AAAAAAAAOZ}{\bkmkend AAAAAAAAOZ}
-00028 \par
-{\bkmkstart AAAAAAAAPC}{\bkmkend AAAAAAAAPC}
-00029 {\cf17 using namespace }SafeChrono;\par
-{\bkmkstart AAAAAAAAPG}{\bkmkend AAAAAAAAPG}
-00030 {\cf17 using namespace }Coruh::LanguageTranslator;\par
-{\bkmkstart AAAAAAAAPZ}{\bkmkend AAAAAAAAPZ}
-00031 {\cf17 using namespace }ds;\par
-{\bkmkstart AAAAAAAAQF}{\bkmkend AAAAAAAAQF}
-00032 \par
-{\bkmkstart AAAAAAAAQI}{\bkmkend AAAAAAAAQI}
-00033 {\cf17 class }AdvancedCoverageBoostTest : {\cf17 public} ::testing::Test \{\par
-{\bkmkstart AAAAAAAAQT}{\bkmkend AAAAAAAAQT}
-00034 {\cf17 protected}:\par
-{\bkmkstart AAAAAAAAQW}{\bkmkend AAAAAAAAQW}
-00035     {\cf18 void} SetUp(){\cf17  override }\{\par
-{\bkmkstart AAAAAAAARK}{\bkmkend AAAAAAAARK}
-00036         {\cf20 // Setup for each test}\par
-{\bkmkstart AAAAAAAARP}{\bkmkend AAAAAAAARP}
-00037     \}\par
-{\bkmkstart AAAAAAAART}{\bkmkend AAAAAAAART}
-00038     \par
-{\bkmkstart AAAAAAAARV}{\bkmkend AAAAAAAARV}
-00039     {\cf18 void} TearDown(){\cf17  override }\{\par
-{\bkmkstart AAAAAAAASE}{\bkmkend AAAAAAAASE}
-00040         {\cf20 // Cleanup after each test}\par
-{\bkmkstart AAAAAAAASH}{\bkmkend AAAAAAAASH}
-00041     \}\par
-{\bkmkstart AAAAAAAASJ}{\bkmkend AAAAAAAASJ}
-00042 \};\par
-{\bkmkstart AAAAAAAASM}{\bkmkend AAAAAAAASM}
-00043 \par
-{\bkmkstart AAAAAAAASQ}{\bkmkend AAAAAAAASQ}
-00044 {\cf20 // Test SafeChronoCalculator comprehensive coverage}\par
-{\bkmkstart AAAAAAAASU}{\bkmkend AAAAAAAASU}
-00045 TEST_F(AdvancedCoverageBoostTest, TestSafeChronoCalculatorComprehensive) \{\par
-{\bkmkstart AAAAAAAATX}{\bkmkend AAAAAAAATX}
-00046     {\cf20 // Test all static methods with various parameters}\par
-{\bkmkstart AAAAAAAAUC}{\bkmkend AAAAAAAAUC}
-00047     {\cf17 auto} result1 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAAAUN}{\bkmkend AAAAAAAAUN}
-00048     EXPECT_GE(result1.count(), 0);\par
-{\bkmkstart AAAAAAAAUS}{\bkmkend AAAAAAAAUS}
-00049     \par
-{\bkmkstart AAAAAAAAUU}{\bkmkend AAAAAAAAUU}
-00050     {\cf17 auto} result2 = SafeChronoCalculator::calculateFor10MHz(5000);\par
-{\bkmkstart AAAAAAAAVB}{\bkmkend AAAAAAAAVB}
-00051     EXPECT_GE(result2.count(), 0);\par
-{\bkmkstart AAAAAAAAVJ}{\bkmkend AAAAAAAAVJ}
-00052     \par
-{\bkmkstart AAAAAAAAVN}{\bkmkend AAAAAAAAVN}
-00053     {\cf17 auto} result3 = SafeChronoCalculator::calculateFor24MHz(5000);\par
-{\bkmkstart AAAAAAAAWB}{\bkmkend AAAAAAAAWB}
-00054     EXPECT_GE(result3.count(), 0);\par
-{\bkmkstart AAAAAAAAWG}{\bkmkend AAAAAAAAWG}
-00055     \par
-{\bkmkstart AAAAAAAAWI}{\bkmkend AAAAAAAAWI}
-00056     {\cf20 // Test overflow detection with various values}\par
-{\bkmkstart AAAAAAAAWN}{\bkmkend AAAAAAAAWN}
-00057     {\cf18 bool} overflow1 = SafeChronoCalculator::wouldOverflow(1000, 1000);\par
-{\bkmkstart AAAAAAAAXC}{\bkmkend AAAAAAAAXC}
-00058     EXPECT_FALSE(overflow1);\par
 {\bkmkstart AAAAAAAAXP}{\bkmkend AAAAAAAAXP}
-00059     \par
-{\bkmkstart AAAAAAAAXT}{\bkmkend AAAAAAAAXT}
-00060     {\cf18 bool} overflow2 = SafeChronoCalculator::wouldOverflow(0, 1000);\par
-{\bkmkstart AAAAAAAAYB}{\bkmkend AAAAAAAAYB}
-00061     EXPECT_FALSE(overflow2);\par
-{\bkmkstart AAAAAAAAYK}{\bkmkend AAAAAAAAYK}
-00062     \par
+00009 {\cf21 #include <gtest/gtest.h>}\par
 {\bkmkstart AAAAAAAAYM}{\bkmkend AAAAAAAAYM}
-00063     {\cf18 bool} overflow3 = SafeChronoCalculator::wouldOverflow(1000, 0);\par
-{\bkmkstart AAAAAAAAYX}{\bkmkend AAAAAAAAYX}
-00064     EXPECT_FALSE(overflow3);\par
-{\bkmkstart AAAAAAAAZC}{\bkmkend AAAAAAAAZC}
-00065     \par
-{\bkmkstart AAAAAAAAZG}{\bkmkend AAAAAAAAZG}
-00066     {\cf20 // Test with negative values}\par
-{\bkmkstart AAAAAAAAZH}{\bkmkend AAAAAAAAZH}
-00067     {\cf18 bool} overflow4 = SafeChronoCalculator::wouldOverflow(-1000, 1000);\par
-{\bkmkstart AAAAAAAAZS}{\bkmkend AAAAAAAAZS}
-00068     EXPECT_FALSE(overflow4);\par
-{\bkmkstart AAAAAAABAC}{\bkmkend AAAAAAABAC}
-00069     \par
-{\bkmkstart AAAAAAABAH}{\bkmkend AAAAAAABAH}
-00070     {\cf18 bool} overflow5 = SafeChronoCalculator::wouldOverflow(1000, -1000);\par
-{\bkmkstart AAAAAAABAV}{\bkmkend AAAAAAABAV}
-00071     EXPECT_FALSE(overflow5);\par
-{\bkmkstart AAAAAAABBB}{\bkmkend AAAAAAABBB}
-00072     \par
-{\bkmkstart AAAAAAABBC}{\bkmkend AAAAAAABBC}
-00073     {\cf20 // Test with large values}\par
-{\bkmkstart AAAAAAABBE}{\bkmkend AAAAAAABBE}
-00074     {\cf18 long} {\cf18 long} largeValue = std::numeric_limits<long long>::max() / 4;\par
-{\bkmkstart AAAAAAABEG}{\bkmkend AAAAAAABEG}
-00075     {\cf18 bool} overflow6 = SafeChronoCalculator::wouldOverflow(largeValue, 3);\par
-{\bkmkstart AAAAAAABEV}{\bkmkend AAAAAAABEV}
-00076     EXPECT_TRUE(overflow6);\par
-{\bkmkstart AAAAAAABFD}{\bkmkend AAAAAAABFD}
-00077 \}\par
-{\bkmkstart AAAAAAABFJ}{\bkmkend AAAAAAABFJ}
-00078 \par
-{\bkmkstart AAAAAAABFN}{\bkmkend AAAAAAABFN}
-00079 {\cf20 // Test LanguageTranslatorApp comprehensive coverage}\par
-{\bkmkstart AAAAAAABFQ}{\bkmkend AAAAAAABFQ}
-00080 TEST_F(AdvancedCoverageBoostTest, TestLanguageTranslatorAppComprehensive) \{\par
-{\bkmkstart AAAAAAABGF}{\bkmkend AAAAAAABGF}
-00081     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAABHC}{\bkmkend AAAAAAABHC}
-00082     \par
-{\bkmkstart AAAAAAABHE}{\bkmkend AAAAAAABHE}
-00083     {\cf20 // Test all basic functions}\par
-{\bkmkstart AAAAAAABHJ}{\bkmkend AAAAAAABHJ}
-00084     EXPECT_FALSE(app.isUserLoggedIn());\par
-{\bkmkstart AAAAAAABHP}{\bkmkend AAAAAAABHP}
-00085     EXPECT_FALSE(app.isAPIAvailable());\par
-{\bkmkstart AAAAAAABHU}{\bkmkend AAAAAAABHU}
-00086     \par
-{\bkmkstart AAAAAAABHW}{\bkmkend AAAAAAABHW}
-00087     {\cf20 // Test language management}\par
-{\bkmkstart AAAAAAABHY}{\bkmkend AAAAAAABHY}
-00088     app.setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAABIA}{\bkmkend AAAAAAABIA}
-00089     app.setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAABIG}{\bkmkend AAAAAAABIG}
-00090     app.addLanguage({\cf22 "German"});\par
-{\bkmkstart AAAAAAABIL}{\bkmkend AAAAAAABIL}
-00091     \par
-{\bkmkstart AAAAAAABIN}{\bkmkend AAAAAAABIN}
-00092     {\cf20 // Test user management}\par
-{\bkmkstart AAAAAAABIP}{\bkmkend AAAAAAABIP}
-00093     EXPECT_TRUE(app.registerUser({\cf22 "user1"}, {\cf22 "pass1"}));\par
-{\bkmkstart AAAAAAABIU}{\bkmkend AAAAAAABIU}
-00094     EXPECT_TRUE(app.registerUser({\cf22 "user2"}, {\cf22 "pass2"}));\par
-{\bkmkstart AAAAAAABIY}{\bkmkend AAAAAAABIY}
-00095     \par
-{\bkmkstart AAAAAAABIZ}{\bkmkend AAAAAAABIZ}
-00096     {\cf20 // Test login/logout}\par
-{\bkmkstart AAAAAAABJC}{\bkmkend AAAAAAABJC}
-00097     app.login({\cf22 "user1"}, {\cf22 "pass1"});\par
-{\bkmkstart AAAAAAABJH}{\bkmkend AAAAAAABJH}
-00098     app.logout();\par
-{\bkmkstart AAAAAAABJL}{\bkmkend AAAAAAABJL}
-00099     EXPECT_FALSE(app.isUserLoggedIn());\par
-{\bkmkstart AAAAAAABJT}{\bkmkend AAAAAAABJT}
-00100     \par
-{\bkmkstart AAAAAAABJW}{\bkmkend AAAAAAABJW}
-00101     {\cf20 // Test translation functions}\par
-{\bkmkstart AAAAAAABJY}{\bkmkend AAAAAAABJY}
-00102     std::string result1 = app.translateWord({\cf22 "hello"});\par
-{\bkmkstart AAAAAAABKI}{\bkmkend AAAAAAABKI}
-00103     EXPECT_FALSE(result1.empty());\par
-{\bkmkstart AAAAAAABKN}{\bkmkend AAAAAAABKN}
-00104     \par
-{\bkmkstart AAAAAAABKP}{\bkmkend AAAAAAABKP}
-00105     std::string result2 = app.translatePhrase({\cf22 "good morning"});\par
-{\bkmkstart AAAAAAABKY}{\bkmkend AAAAAAABKY}
-00106     EXPECT_FALSE(result2.empty());\par
-{\bkmkstart AAAAAAABLD}{\bkmkend AAAAAAABLD}
-00107     \par
-{\bkmkstart AAAAAAABLE}{\bkmkend AAAAAAABLE}
-00108     std::string result3 = app.translateText({\cf22 "hello world"});\par
-{\bkmkstart AAAAAAABLN}{\bkmkend AAAAAAABLN}
-00109     EXPECT_FALSE(result3.empty());\par
-{\bkmkstart AAAAAAABLU}{\bkmkend AAAAAAABLU}
-00110     \par
-{\bkmkstart AAAAAAABLY}{\bkmkend AAAAAAABLY}
-00111     {\cf20 // Test with empty inputs}\par
-{\bkmkstart AAAAAAABMB}{\bkmkend AAAAAAABMB}
-00112     std::string result4 = app.translateWord({\cf22 ""});\par
-{\bkmkstart AAAAAAABML}{\bkmkend AAAAAAABML}
-00113     EXPECT_TRUE(result4.empty());\par
-{\bkmkstart AAAAAAABMO}{\bkmkend AAAAAAABMO}
-00114     \par
-{\bkmkstart AAAAAAABMQ}{\bkmkend AAAAAAABMQ}
-00115     std::string result5 = app.translatePhrase({\cf22 ""});\par
-{\bkmkstart AAAAAAABMZ}{\bkmkend AAAAAAABMZ}
-00116     EXPECT_TRUE(result5.empty());\par
-{\bkmkstart AAAAAAABNE}{\bkmkend AAAAAAABNE}
-00117     \par
+00010 {\cf21 #include <chrono>}\par
+{\bkmkstart AAAAAAAAZZ}{\bkmkend AAAAAAAAZZ}
+00011 {\cf21 #include <thread>}\par
+{\bkmkstart AAAAAAABAJ}{\bkmkend AAAAAAABAJ}
+00012 {\cf21 #include <iostream>}\par
+{\bkmkstart AAAAAAABBU}{\bkmkend AAAAAAABBU}
+00013 {\cf21 #include <vector>}\par
+{\bkmkstart AAAAAAABDV}{\bkmkend AAAAAAABDV}
+00014 {\cf21 #include <string>}\par
+{\bkmkstart AAAAAAABFV}{\bkmkend AAAAAAABFV}
+00015 {\cf21 #include <memory>}\par
+{\bkmkstart AAAAAAABHT}{\bkmkend AAAAAAABHT}
+00016 \par
+{\bkmkstart AAAAAAABHX}{\bkmkend AAAAAAABHX}
+00017 {\cf20 // Include all headers for comprehensive testing}\par
+{\bkmkstart AAAAAAABIB}{\bkmkend AAAAAAABIB}
+00018 {\cf21 #include "../src/SafeChronoCalculator.h"}\par
+{\bkmkstart AAAAAAABKW}{\bkmkend AAAAAAABKW}
+00019 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
+{\bkmkstart AAAAAAABLO}{\bkmkend AAAAAAABLO}
+00020 {\cf21 #include "../include/ds/doubly_linked_list.h"}\par
+{\bkmkstart AAAAAAABLZ}{\bkmkend AAAAAAABLZ}
+00021 {\cf21 #include "../include/ds/graph.h"}\par
+{\bkmkstart AAAAAAABMK}{\bkmkend AAAAAAABMK}
+00022 {\cf21 #include "../include/ds/hash_table.h"}\par
 {\bkmkstart AAAAAAABNG}{\bkmkend AAAAAAABNG}
-00118     std::string result6 = app.translateText({\cf22 ""});\par
-{\bkmkstart AAAAAAABNM}{\bkmkend AAAAAAABNM}
-00119     EXPECT_TRUE(result6.empty());\par
-{\bkmkstart AAAAAAABNQ}{\bkmkend AAAAAAABNQ}
-00120     \par
-{\bkmkstart AAAAAAABNS}{\bkmkend AAAAAAABNS}
-00121     {\cf20 // Test phrase library}\par
-{\bkmkstart AAAAAAABNU}{\bkmkend AAAAAAABNU}
-00122     app.addPhrase({\cf22 "Hello, how are you?"}, {\cf22 "greetings"});\par
-{\bkmkstart AAAAAAABNZ}{\bkmkend AAAAAAABNZ}
-00123     app.addPhrase({\cf22 "Thank you very much"}, {\cf22 "politeness"});\par
+00023 {\cf21 #include "../include/ds/heap.h"}\par
+{\bkmkstart AAAAAAABNL}{\bkmkend AAAAAAABNL}
+00024 {\cf21 #include "../include/ds/queue.h"}\par
 {\bkmkstart AAAAAAABOE}{\bkmkend AAAAAAABOE}
-00124     \par
-{\bkmkstart AAAAAAABOG}{\bkmkend AAAAAAABOG}
-00125     {\cf20 // Test learning tips}\par
-{\bkmkstart AAAAAAABON}{\bkmkend AAAAAAABON}
-00126     app.addLearningTip({\cf22 "Practice daily"});\par
-{\bkmkstart AAAAAAABOQ}{\bkmkend AAAAAAABOQ}
-00127     app.addLearningTip({\cf22 "Use flashcards"});\par
-{\bkmkstart AAAAAAABOT}{\bkmkend AAAAAAABOT}
-00128     \par
-{\bkmkstart AAAAAAABOU}{\bkmkend AAAAAAABOU}
-00129     {\cf20 // Test pronunciation guide}\par
-{\bkmkstart AAAAAAABOV}{\bkmkend AAAAAAABOV}
-00130     app.addPronunciation({\cf22 "hello"}, {\cf22 "heh-LOH"});\par
-{\bkmkstart AAAAAAABPD}{\bkmkend AAAAAAABPD}
-00131     app.addPronunciation({\cf22 "world"}, {\cf22 "wurld"});\par
-{\bkmkstart AAAAAAABPI}{\bkmkend AAAAAAABPI}
-00132     \par
-{\bkmkstart AAAAAAABPL}{\bkmkend AAAAAAABPL}
-00133     {\cf20 // Test API functions}\par
-{\bkmkstart AAAAAAABPO}{\bkmkend AAAAAAABPO}
-00134     app.setAPIKey({\cf22 "test-key"});\par
-{\bkmkstart AAAAAAABPT}{\bkmkend AAAAAAABPT}
-00135     app.setAPIMode({\cf17 true});\par
-{\bkmkstart AAAAAAABQB}{\bkmkend AAAAAAABQB}
-00136     app.setAPIMode({\cf17 false});\par
-{\bkmkstart AAAAAAABQD}{\bkmkend AAAAAAABQD}
-00137     \par
-{\bkmkstart AAAAAAABQF}{\bkmkend AAAAAAABQF}
-00138     std::string apiResult1 = app.translateWithGoogleAPI({\cf22 "hello"}, {\cf22 "en"}, {\cf22 "tr"});\par
-{\bkmkstart AAAAAAABQL}{\bkmkend AAAAAAABQL}
-00139     EXPECT_TRUE(apiResult1.empty());\par
-{\bkmkstart AAAAAAABQQ}{\bkmkend AAAAAAABQQ}
-00140     \par
-{\bkmkstart AAAAAAABQV}{\bkmkend AAAAAAABQV}
-00141     std::string apiResult2 = app.translateWithMicrosoftAPI({\cf22 "hello"}, {\cf22 "en"}, {\cf22 "tr"});\par
-{\bkmkstart AAAAAAABRA}{\bkmkend AAAAAAABRA}
-00142     EXPECT_TRUE(apiResult2.empty());\par
+00025 {\cf21 #include "../include/ds/sparse_matrix.h"}\par
+{\bkmkstart AAAAAAABPC}{\bkmkend AAAAAAABPC}
+00026 {\cf21 #include "../include/ds/stack.h"}\par
 {\bkmkstart AAAAAAABRC}{\bkmkend AAAAAAABRC}
-00143     \par
-{\bkmkstart AAAAAAABRD}{\bkmkend AAAAAAABRD}
-00144     {\cf20 // Test data management}\par
-{\bkmkstart AAAAAAABRE}{\bkmkend AAAAAAABRE}
-00145     EXPECT_NO_THROW(app.initializeDefaultData());\par
-{\bkmkstart AAAAAAABRJ}{\bkmkend AAAAAAABRJ}
-00146     EXPECT_NO_THROW(app.saveData());\par
-{\bkmkstart AAAAAAABRV}{\bkmkend AAAAAAABRV}
-00147     EXPECT_NO_THROW(app.loadData());\par
-{\bkmkstart AAAAAAABSA}{\bkmkend AAAAAAABSA}
-00148     EXPECT_NO_THROW(app.loadAllDictionaries());\par
-{\bkmkstart AAAAAAABSH}{\bkmkend AAAAAAABSH}
-00149     \par
-{\bkmkstart AAAAAAABSJ}{\bkmkend AAAAAAABSJ}
-00150     {\cf20 // Test menu handling}\par
+00027 {\cf21 #include "../include/ds/xor_linked_list.h"}\par
 {\bkmkstart AAAAAAABSM}{\bkmkend AAAAAAABSM}
-00151     EXPECT_NO_THROW(app.handleUserChoice(0));\par
-{\bkmkstart AAAAAAABSU}{\bkmkend AAAAAAABSU}
-00152     EXPECT_NO_THROW(app.handleUserChoice(1));\par
-{\bkmkstart AAAAAAABTA}{\bkmkend AAAAAAABTA}
-00153     EXPECT_NO_THROW(app.handleUserChoice(2));\par
-{\bkmkstart AAAAAAABTF}{\bkmkend AAAAAAABTF}
-00154     EXPECT_NO_THROW(app.handleUserChoice(3));\par
+00028 \par
+{\bkmkstart AAAAAAABSN}{\bkmkend AAAAAAABSN}
+00029 {\cf17 using namespace }SafeChrono;\par
+{\bkmkstart AAAAAAABSR}{\bkmkend AAAAAAABSR}
+00030 {\cf17 using namespace }Coruh::LanguageTranslator;\par
+{\bkmkstart AAAAAAABTB}{\bkmkend AAAAAAABTB}
+00031 {\cf17 using namespace }ds;\par
+{\bkmkstart AAAAAAABTD}{\bkmkend AAAAAAABTD}
+00032 \par
+{\bkmkstart AAAAAAABTE}{\bkmkend AAAAAAABTE}
+00033 {\cf17 class }AdvancedCoverageBoostTest : {\cf17 public} ::testing::Test \{\par
 {\bkmkstart AAAAAAABTI}{\bkmkend AAAAAAABTI}
-00155     EXPECT_NO_THROW(app.handleUserChoice(4));\par
-{\bkmkstart AAAAAAABTL}{\bkmkend AAAAAAABTL}
-00156     EXPECT_NO_THROW(app.handleUserChoice(5));\par
-{\bkmkstart AAAAAAABTR}{\bkmkend AAAAAAABTR}
-00157     EXPECT_NO_THROW(app.handleUserChoice(6));\par
+00034 {\cf17 protected}:\par
+{\bkmkstart AAAAAAABTK}{\bkmkend AAAAAAABTK}
+00035     {\cf18 void} SetUp(){\cf17  override }\{\par
+{\bkmkstart AAAAAAABTS}{\bkmkend AAAAAAABTS}
+00036         {\cf20 // Setup for each test}\par
 {\bkmkstart AAAAAAABTU}{\bkmkend AAAAAAABTU}
-00158     EXPECT_NO_THROW(app.handleUserChoice(99));\par
-{\bkmkstart AAAAAAABTX}{\bkmkend AAAAAAABTX}
-00159     \par
-{\bkmkstart AAAAAAABTZ}{\bkmkend AAAAAAABTZ}
-00160     {\cf20 // Test display functions}\par
+00037     \}\par
+{\bkmkstart AAAAAAABTV}{\bkmkend AAAAAAABTV}
+00038     \par
+{\bkmkstart AAAAAAABTY}{\bkmkend AAAAAAABTY}
+00039     {\cf18 void} TearDown(){\cf17  override }\{\par
 {\bkmkstart AAAAAAABUA}{\bkmkend AAAAAAABUA}
-00161     EXPECT_NO_THROW(app.showLanguageSelection());\par
+00040         {\cf20 // Cleanup after each test}\par
 {\bkmkstart AAAAAAABUB}{\bkmkend AAAAAAABUB}
-00162     EXPECT_NO_THROW(app.showPhraseLibrary());\par
+00041     \}\par
+{\bkmkstart AAAAAAABUC}{\bkmkend AAAAAAABUC}
+00042 \};\par
 {\bkmkstart AAAAAAABUD}{\bkmkend AAAAAAABUD}
-00163     EXPECT_NO_THROW(app.showLearningTips());\par
+00043 \par
+{\bkmkstart AAAAAAABUE}{\bkmkend AAAAAAABUE}
+00044 {\cf20 // Test SafeChronoCalculator comprehensive coverage}\par
 {\bkmkstart AAAAAAABUG}{\bkmkend AAAAAAABUG}
-00164     EXPECT_NO_THROW(app.showPronunciationGuide());\par
-{\bkmkstart AAAAAAABUJ}{\bkmkend AAAAAAABUJ}
-00165 \}\par
-{\bkmkstart AAAAAAABUL}{\bkmkend AAAAAAABUL}
-00166 \par
-{\bkmkstart AAAAAAABUM}{\bkmkend AAAAAAABUM}
-00167 {\cf20 // Test DoublyLinkedList comprehensive coverage}\par
-{\bkmkstart AAAAAAABUP}{\bkmkend AAAAAAABUP}
-00168 TEST_F(AdvancedCoverageBoostTest, TestDoublyLinkedListComprehensive) \{\par
+00045 TEST_F(AdvancedCoverageBoostTest, TestSafeChronoCalculatorComprehensive) \{\par
+{\bkmkstart AAAAAAABUI}{\bkmkend AAAAAAABUI}
+00046     {\cf20 // Test all static methods with various parameters}\par
+{\bkmkstart AAAAAAABUK}{\bkmkend AAAAAAABUK}
+00047     {\cf17 auto} result1 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAABUO}{\bkmkend AAAAAAABUO}
+00048     EXPECT_GE(result1.count(), 0);\par
+{\bkmkstart AAAAAAABUR}{\bkmkend AAAAAAABUR}
+00049     \par
 {\bkmkstart AAAAAAABUS}{\bkmkend AAAAAAABUS}
-00169     DoublyLinkedList<int> list;\par
-{\bkmkstart AAAAAAABUY}{\bkmkend AAAAAAABUY}
-00170     \par
-{\bkmkstart AAAAAAABVA}{\bkmkend AAAAAAABVA}
-00171     {\cf20 // Test empty list}\par
-{\bkmkstart AAAAAAABVE}{\bkmkend AAAAAAABVE}
-00172     EXPECT_TRUE(list.isEmpty());\par
-{\bkmkstart AAAAAAABVG}{\bkmkend AAAAAAABVG}
-00173     EXPECT_EQ(list.size(), 0);\par
-{\bkmkstart AAAAAAABVK}{\bkmkend AAAAAAABVK}
-00174     \par
-{\bkmkstart AAAAAAABVM}{\bkmkend AAAAAAABVM}
-00175     {\cf20 // Test insertion}\par
+00050     {\cf17 auto} result2 = SafeChronoCalculator::calculateFor10MHz(5000);\par
+{\bkmkstart AAAAAAABUU}{\bkmkend AAAAAAABUU}
+00051     EXPECT_GE(result2.count(), 0);\par
+{\bkmkstart AAAAAAABUW}{\bkmkend AAAAAAABUW}
+00052     \par
+{\bkmkstart AAAAAAABUX}{\bkmkend AAAAAAABUX}
+00053     {\cf17 auto} result3 = SafeChronoCalculator::calculateFor24MHz(5000);\par
+{\bkmkstart AAAAAAABVB}{\bkmkend AAAAAAABVB}
+00054     EXPECT_GE(result3.count(), 0);\par
+{\bkmkstart AAAAAAABVD}{\bkmkend AAAAAAABVD}
+00055     \par
+{\bkmkstart AAAAAAABVF}{\bkmkend AAAAAAABVF}
+00056     {\cf20 // Test overflow detection with various values}\par
+{\bkmkstart AAAAAAABVH}{\bkmkend AAAAAAABVH}
+00057     {\cf18 bool} overflow1 = SafeChronoCalculator::wouldOverflow(1000, 1000);\par
+{\bkmkstart AAAAAAABVL}{\bkmkend AAAAAAABVL}
+00058     EXPECT_FALSE(overflow1);\par
 {\bkmkstart AAAAAAABVP}{\bkmkend AAAAAAABVP}
-00176     list.insertAtBeginning(1);\par
+00059     \par
 {\bkmkstart AAAAAAABVR}{\bkmkend AAAAAAABVR}
-00177     list.insertAtEnd(2);\par
-{\bkmkstart AAAAAAABVT}{\bkmkend AAAAAAABVT}
-00178     list.insertAtPosition(1, 3);\par
+00060     {\cf18 bool} overflow2 = SafeChronoCalculator::wouldOverflow(0, 1000);\par
 {\bkmkstart AAAAAAABVX}{\bkmkend AAAAAAABVX}
-00179     \par
-{\bkmkstart AAAAAAABVY}{\bkmkend AAAAAAABVY}
-00180     EXPECT_FALSE(list.isEmpty());\par
+00061     EXPECT_FALSE(overflow2);\par
+{\bkmkstart AAAAAAABVZ}{\bkmkend AAAAAAABVZ}
+00062     \par
 {\bkmkstart AAAAAAABWA}{\bkmkend AAAAAAABWA}
-00181     EXPECT_EQ(list.size(), 3);\par
+00063     {\cf18 bool} overflow3 = SafeChronoCalculator::wouldOverflow(1000, 0);\par
+{\bkmkstart AAAAAAABWC}{\bkmkend AAAAAAABWC}
+00064     EXPECT_FALSE(overflow3);\par
 {\bkmkstart AAAAAAABWD}{\bkmkend AAAAAAABWD}
-00182     \par
-{\bkmkstart AAAAAAABWF}{\bkmkend AAAAAAABWF}
-00183     {\cf20 // Test traversal}\par
-{\bkmkstart AAAAAAABWI}{\bkmkend AAAAAAABWI}
-00184     std::vector<int> elements;\par
-{\bkmkstart AAAAAAABWP}{\bkmkend AAAAAAABWP}
-00185     list.traverse([&elements]({\cf18 int} value) \{\par
-{\bkmkstart AAAAAAABWZ}{\bkmkend AAAAAAABWZ}
-00186         elements.push_back(value);\par
-{\bkmkstart AAAAAAABXF}{\bkmkend AAAAAAABXF}
-00187     \});\par
-{\bkmkstart AAAAAAABXG}{\bkmkend AAAAAAABXG}
-00188     EXPECT_EQ(elements.size(), 3);\par
-{\bkmkstart AAAAAAABXK}{\bkmkend AAAAAAABXK}
-00189     \par
-{\bkmkstart AAAAAAABXL}{\bkmkend AAAAAAABXL}
-00190     {\cf20 // Test search}\par
-{\bkmkstart AAAAAAABXP}{\bkmkend AAAAAAABXP}
-00191     EXPECT_TRUE(list.search(1));\par
-{\bkmkstart AAAAAAABXT}{\bkmkend AAAAAAABXT}
-00192     EXPECT_TRUE(list.search(2));\par
-{\bkmkstart AAAAAAABXY}{\bkmkend AAAAAAABXY}
-00193     EXPECT_TRUE(list.search(3));\par
+00065     \par
+{\bkmkstart AAAAAAABWJ}{\bkmkend AAAAAAABWJ}
+00066     {\cf20 // Test with negative values}\par
+{\bkmkstart AAAAAAABWK}{\bkmkend AAAAAAABWK}
+00067     {\cf18 bool} overflow4 = SafeChronoCalculator::wouldOverflow(-1000, 1000);\par
+{\bkmkstart AAAAAAABWQ}{\bkmkend AAAAAAABWQ}
+00068     EXPECT_FALSE(overflow4);\par
+{\bkmkstart AAAAAAABWR}{\bkmkend AAAAAAABWR}
+00069     \par
+{\bkmkstart AAAAAAABWS}{\bkmkend AAAAAAABWS}
+00070     {\cf18 bool} overflow5 = SafeChronoCalculator::wouldOverflow(1000, -1000);\par
+{\bkmkstart AAAAAAABWT}{\bkmkend AAAAAAABWT}
+00071     EXPECT_FALSE(overflow5);\par
+{\bkmkstart AAAAAAABWU}{\bkmkend AAAAAAABWU}
+00072     \par
+{\bkmkstart AAAAAAABWV}{\bkmkend AAAAAAABWV}
+00073     {\cf20 // Test with large values}\par
+{\bkmkstart AAAAAAABWW}{\bkmkend AAAAAAABWW}
+00074     {\cf18 long} {\cf18 long} largeValue = std::numeric_limits<long long>::max() / 4;\par
+{\bkmkstart AAAAAAABXQ}{\bkmkend AAAAAAABXQ}
+00075     {\cf18 bool} overflow6 = SafeChronoCalculator::wouldOverflow(largeValue, 3);\par
+{\bkmkstart AAAAAAABXS}{\bkmkend AAAAAAABXS}
+00076     EXPECT_TRUE(overflow6);\par
+{\bkmkstart AAAAAAABXU}{\bkmkend AAAAAAABXU}
+00077 \}\par
+{\bkmkstart AAAAAAABXZ}{\bkmkend AAAAAAABXZ}
+00078 \par
 {\bkmkstart AAAAAAABYC}{\bkmkend AAAAAAABYC}
-00194     EXPECT_FALSE(list.search(4));\par
-{\bkmkstart AAAAAAABYG}{\bkmkend AAAAAAABYG}
-00195     \par
-{\bkmkstart AAAAAAABYJ}{\bkmkend AAAAAAABYJ}
-00196     {\cf20 // Test deletion}\par
-{\bkmkstart AAAAAAABYN}{\bkmkend AAAAAAABYN}
-00197     list.deleteFromBeginning();\par
-{\bkmkstart AAAAAAABYP}{\bkmkend AAAAAAABYP}
-00198     EXPECT_EQ(list.size(), 2);\par
+00079 {\cf20 // Test LanguageTranslatorApp comprehensive coverage}\par
+{\bkmkstart AAAAAAABYE}{\bkmkend AAAAAAABYE}
+00080 TEST_F(AdvancedCoverageBoostTest, TestLanguageTranslatorAppComprehensive) \{\par
 {\bkmkstart AAAAAAABYT}{\bkmkend AAAAAAABYT}
-00199     \par
-{\bkmkstart AAAAAAABYU}{\bkmkend AAAAAAABYU}
-00200     list.deleteFromEnd();\par
-{\bkmkstart AAAAAAABYY}{\bkmkend AAAAAAABYY}
-00201     EXPECT_EQ(list.size(), 1);\par
-{\bkmkstart AAAAAAABZC}{\bkmkend AAAAAAABZC}
-00202     \par
+00081     LanguageTranslatorApp app;\par
+{\bkmkstart AAAAAAABZE}{\bkmkend AAAAAAABZE}
+00082     \par
 {\bkmkstart AAAAAAABZF}{\bkmkend AAAAAAABZF}
-00203     list.deleteFromPosition(0);\par
-{\bkmkstart AAAAAAABZK}{\bkmkend AAAAAAABZK}
-00204     EXPECT_TRUE(list.isEmpty());\par
+00083     {\cf20 // Test all basic functions}\par
+{\bkmkstart AAAAAAABZI}{\bkmkend AAAAAAABZI}
+00084     EXPECT_FALSE(app.isUserLoggedIn());\par
+{\bkmkstart AAAAAAABZL}{\bkmkend AAAAAAABZL}
+00085     EXPECT_FALSE(app.isAPIAvailable());\par
+{\bkmkstart AAAAAAABZN}{\bkmkend AAAAAAABZN}
+00086     \par
+{\bkmkstart AAAAAAABZO}{\bkmkend AAAAAAABZO}
+00087     {\cf20 // Test language management}\par
 {\bkmkstart AAAAAAABZQ}{\bkmkend AAAAAAABZQ}
-00205     \par
-{\bkmkstart AAAAAAABZS}{\bkmkend AAAAAAABZS}
-00206     {\cf20 // Test edge cases}\par
-{\bkmkstart AAAAAAABZV}{\bkmkend AAAAAAABZV}
-00207     EXPECT_THROW(list.deleteFromBeginning(), std::runtime_error);\par
-{\bkmkstart AAAAAAACAD}{\bkmkend AAAAAAACAD}
-00208     EXPECT_THROW(list.deleteFromEnd(), std::runtime_error);\par
+00088     app.setSourceLanguage({\cf22 "English"});\par
+{\bkmkstart AAAAAAABZU}{\bkmkend AAAAAAABZU}
+00089     app.setTargetLanguage({\cf22 "Turkish"});\par
+{\bkmkstart AAAAAAABZW}{\bkmkend AAAAAAABZW}
+00090     app.addLanguage({\cf22 "German"});\par
+{\bkmkstart AAAAAAABZX}{\bkmkend AAAAAAABZX}
+00091     \par
+{\bkmkstart AAAAAAABZZ}{\bkmkend AAAAAAABZZ}
+00092     {\cf20 // Test user management}\par
+{\bkmkstart AAAAAAACAA}{\bkmkend AAAAAAACAA}
+00093     EXPECT_TRUE(app.registerUser({\cf22 "user1"}, {\cf22 "pass1"}));\par
+{\bkmkstart AAAAAAACAC}{\bkmkend AAAAAAACAC}
+00094     EXPECT_TRUE(app.registerUser({\cf22 "user2"}, {\cf22 "pass2"}));\par
+{\bkmkstart AAAAAAACAF}{\bkmkend AAAAAAACAF}
+00095     \par
 {\bkmkstart AAAAAAACAG}{\bkmkend AAAAAAACAG}
-00209     EXPECT_THROW(list.deleteFromPosition(0), std::runtime_error);\par
+00096     {\cf20 // Test login/logout}\par
+{\bkmkstart AAAAAAACAH}{\bkmkend AAAAAAACAH}
+00097     app.login({\cf22 "user1"}, {\cf22 "pass1"});\par
 {\bkmkstart AAAAAAACAJ}{\bkmkend AAAAAAACAJ}
-00210 \}\par
+00098     app.logout();\par
+{\bkmkstart AAAAAAACAK}{\bkmkend AAAAAAACAK}
+00099     EXPECT_FALSE(app.isUserLoggedIn());\par
 {\bkmkstart AAAAAAACAM}{\bkmkend AAAAAAACAM}
-00211 \par
-{\bkmkstart AAAAAAACAP}{\bkmkend AAAAAAACAP}
-00212 {\cf20 // Test Graph comprehensive coverage}\par
-{\bkmkstart AAAAAAACAS}{\bkmkend AAAAAAACAS}
-00213 TEST_F(AdvancedCoverageBoostTest, TestGraphComprehensive) \{\par
-{\bkmkstart AAAAAAACBB}{\bkmkend AAAAAAACBB}
-00214     Graph<int> graph(5);\par
+00100     \par
+{\bkmkstart AAAAAAACAO}{\bkmkend AAAAAAACAO}
+00101     {\cf20 // Test translation functions}\par
+{\bkmkstart AAAAAAACAQ}{\bkmkend AAAAAAACAQ}
+00102     std::string result1 = app.translateWord({\cf22 "hello"});\par
+{\bkmkstart AAAAAAACAU}{\bkmkend AAAAAAACAU}
+00103     EXPECT_FALSE(result1.empty());\par
+{\bkmkstart AAAAAAACAV}{\bkmkend AAAAAAACAV}
+00104     \par
+{\bkmkstart AAAAAAACAX}{\bkmkend AAAAAAACAX}
+00105     std::string result2 = app.translatePhrase({\cf22 "good morning"});\par
+{\bkmkstart AAAAAAACAZ}{\bkmkend AAAAAAACAZ}
+00106     EXPECT_FALSE(result2.empty());\par
+{\bkmkstart AAAAAAACBA}{\bkmkend AAAAAAACBA}
+00107     \par
+{\bkmkstart AAAAAAACBC}{\bkmkend AAAAAAACBC}
+00108     std::string result3 = app.translateText({\cf22 "hello world"});\par
+{\bkmkstart AAAAAAACBG}{\bkmkend AAAAAAACBG}
+00109     EXPECT_FALSE(result3.empty());\par
 {\bkmkstart AAAAAAACBH}{\bkmkend AAAAAAACBH}
-00215     \par
+00110     \par
+{\bkmkstart AAAAAAACBI}{\bkmkend AAAAAAACBI}
+00111     {\cf20 // Test with empty inputs}\par
 {\bkmkstart AAAAAAACBJ}{\bkmkend AAAAAAACBJ}
-00216     {\cf20 // Test adding edges}\par
-{\bkmkstart AAAAAAACBK}{\bkmkend AAAAAAACBK}
-00217     graph.addEdge(0, 1);\par
+00112     std::string result4 = app.translateWord({\cf22 ""});\par
 {\bkmkstart AAAAAAACBN}{\bkmkend AAAAAAACBN}
-00218     graph.addEdge(1, 2);\par
+00113     EXPECT_TRUE(result4.empty());\par
+{\bkmkstart AAAAAAACBQ}{\bkmkend AAAAAAACBQ}
+00114     \par
 {\bkmkstart AAAAAAACBR}{\bkmkend AAAAAAACBR}
-00219     graph.addEdge(2, 3);\par
+00115     std::string result5 = app.translatePhrase({\cf22 ""});\par
+{\bkmkstart AAAAAAACBT}{\bkmkend AAAAAAACBT}
+00116     EXPECT_TRUE(result5.empty());\par
 {\bkmkstart AAAAAAACBU}{\bkmkend AAAAAAACBU}
-00220     graph.addEdge(3, 4);\par
-{\bkmkstart AAAAAAACBX}{\bkmkend AAAAAAACBX}
-00221     graph.addEdge(4, 0);\par
-{\bkmkstart AAAAAAACCB}{\bkmkend AAAAAAACCB}
-00222     \par
+00117     \par
+{\bkmkstart AAAAAAACBV}{\bkmkend AAAAAAACBV}
+00118     std::string result6 = app.translateText({\cf22 ""});\par
+{\bkmkstart AAAAAAACBZ}{\bkmkend AAAAAAACBZ}
+00119     EXPECT_TRUE(result6.empty());\par
+{\bkmkstart AAAAAAACCA}{\bkmkend AAAAAAACCA}
+00120     \par
 {\bkmkstart AAAAAAACCC}{\bkmkend AAAAAAACCC}
-00223     {\cf20 // Test BFS}\par
-{\bkmkstart AAAAAAACCE}{\bkmkend AAAAAAACCE}
-00224     std::vector<int> bfsResult;\par
-{\bkmkstart AAAAAAACCR}{\bkmkend AAAAAAACCR}
-00225     graph.BFS(0, [&bfsResult]({\cf18 int} vertex) \{\par
-{\bkmkstart AAAAAAACCW}{\bkmkend AAAAAAACCW}
-00226         bfsResult.push_back(vertex);\par
-{\bkmkstart AAAAAAACDB}{\bkmkend AAAAAAACDB}
-00227     \});\par
-{\bkmkstart AAAAAAACDE}{\bkmkend AAAAAAACDE}
-00228     EXPECT_FALSE(bfsResult.empty());\par
+00121     {\cf20 // Test phrase library}\par
+{\bkmkstart AAAAAAACCD}{\bkmkend AAAAAAACCD}
+00122     app.addPhrase({\cf22 "Hello, how are you?"}, {\cf22 "greetings"});\par
+{\bkmkstart AAAAAAACCG}{\bkmkend AAAAAAACCG}
+00123     app.addPhrase({\cf22 "Thank you very much"}, {\cf22 "politeness"});\par
+{\bkmkstart AAAAAAACCK}{\bkmkend AAAAAAACCK}
+00124     \par
+{\bkmkstart AAAAAAACCM}{\bkmkend AAAAAAACCM}
+00125     {\cf20 // Test learning tips}\par
+{\bkmkstart AAAAAAACCP}{\bkmkend AAAAAAACCP}
+00126     app.addLearningTip({\cf22 "Practice daily"});\par
+{\bkmkstart AAAAAAACCX}{\bkmkend AAAAAAACCX}
+00127     app.addLearningTip({\cf22 "Use flashcards"});\par
 {\bkmkstart AAAAAAACDK}{\bkmkend AAAAAAACDK}
-00229     \par
-{\bkmkstart AAAAAAACDN}{\bkmkend AAAAAAACDN}
-00230     {\cf20 // Test DFS}\par
-{\bkmkstart AAAAAAACDP}{\bkmkend AAAAAAACDP}
-00231     std::vector<int> dfsResult;\par
+00128     \par
+{\bkmkstart AAAAAAACDM}{\bkmkend AAAAAAACDM}
+00129     {\cf20 // Test pronunciation guide}\par
+{\bkmkstart AAAAAAACDQ}{\bkmkend AAAAAAACDQ}
+00130     app.addPronunciation({\cf22 "hello"}, {\cf22 "heh-LOH"});\par
+{\bkmkstart AAAAAAACDW}{\bkmkend AAAAAAACDW}
+00131     app.addPronunciation({\cf22 "world"}, {\cf22 "wurld"});\par
 {\bkmkstart AAAAAAACDZ}{\bkmkend AAAAAAACDZ}
-00232     graph.DFS(0, [&dfsResult]({\cf18 int} vertex) \{\par
-{\bkmkstart AAAAAAACEH}{\bkmkend AAAAAAACEH}
-00233         dfsResult.push_back(vertex);\par
+00132     \par
+{\bkmkstart AAAAAAACEB}{\bkmkend AAAAAAACEB}
+00133     {\cf20 // Test API functions}\par
+{\bkmkstart AAAAAAACEE}{\bkmkend AAAAAAACEE}
+00134     app.setAPIKey({\cf22 "test-key"});\par
 {\bkmkstart AAAAAAACEJ}{\bkmkend AAAAAAACEJ}
-00234     \});\par
-{\bkmkstart AAAAAAACEL}{\bkmkend AAAAAAACEL}
-00235     EXPECT_FALSE(dfsResult.empty());\par
-{\bkmkstart AAAAAAACER}{\bkmkend AAAAAAACER}
-00236     \par
-{\bkmkstart AAAAAAACES}{\bkmkend AAAAAAACES}
-00237     {\cf20 // Test hasEdge}\par
-{\bkmkstart AAAAAAACET}{\bkmkend AAAAAAACET}
-00238     EXPECT_TRUE(graph.hasEdge(0, 1));\par
-{\bkmkstart AAAAAAACEX}{\bkmkend AAAAAAACEX}
-00239     EXPECT_TRUE(graph.hasEdge(1, 2));\par
-{\bkmkstart AAAAAAACFC}{\bkmkend AAAAAAACFC}
-00240     EXPECT_FALSE(graph.hasEdge(0, 3));\par
-{\bkmkstart AAAAAAACFF}{\bkmkend AAAAAAACFF}
-00241     \par
-{\bkmkstart AAAAAAACFG}{\bkmkend AAAAAAACFG}
-00242     {\cf20 // Test removeEdge}\par
-{\bkmkstart AAAAAAACFH}{\bkmkend AAAAAAACFH}
-00243     graph.removeEdge(0, 1);\par
-{\bkmkstart AAAAAAACFJ}{\bkmkend AAAAAAACFJ}
-00244     EXPECT_FALSE(graph.hasEdge(0, 1));\par
-{\bkmkstart AAAAAAACFM}{\bkmkend AAAAAAACFM}
-00245     \par
-{\bkmkstart AAAAAAACFN}{\bkmkend AAAAAAACFN}
-00246     {\cf20 // Test getNeighbors}\par
-{\bkmkstart AAAAAAACFO}{\bkmkend AAAAAAACFO}
-00247     {\cf17 auto} neighbors = graph.getNeighbors(1);\par
-{\bkmkstart AAAAAAACFQ}{\bkmkend AAAAAAACFQ}
-00248     EXPECT_FALSE(neighbors.empty());\par
-{\bkmkstart AAAAAAACFU}{\bkmkend AAAAAAACFU}
-00249 \}\par
+00135     app.setAPIMode({\cf17 true});\par
+{\bkmkstart AAAAAAACEQ}{\bkmkend AAAAAAACEQ}
+00136     app.setAPIMode({\cf17 false});\par
+{\bkmkstart AAAAAAACEY}{\bkmkend AAAAAAACEY}
+00137     \par
+{\bkmkstart AAAAAAACEZ}{\bkmkend AAAAAAACEZ}
+00138     std::string apiResult1 = app.translateWithGoogleAPI({\cf22 "hello"}, {\cf22 "en"}, {\cf22 "tr"});\par
+{\bkmkstart AAAAAAACFS}{\bkmkend AAAAAAACFS}
+00139     EXPECT_TRUE(apiResult1.empty());\par
 {\bkmkstart AAAAAAACFW}{\bkmkend AAAAAAACFW}
-00250 \par
-{\bkmkstart AAAAAAACFX}{\bkmkend AAAAAAACFX}
-00251 {\cf20 // Test HashTable comprehensive coverage}\par
-{\bkmkstart AAAAAAACGE}{\bkmkend AAAAAAACGE}
-00252 TEST_F(AdvancedCoverageBoostTest, TestHashTableComprehensive) \{\par
-{\bkmkstart AAAAAAACGN}{\bkmkend AAAAAAACGN}
-00253     HashTable<std::string, int> hashTable(10);\par
-{\bkmkstart AAAAAAACGV}{\bkmkend AAAAAAACGV}
-00254     \par
+00140     \par
+{\bkmkstart AAAAAAACGA}{\bkmkend AAAAAAACGA}
+00141     std::string apiResult2 = app.translateWithMicrosoftAPI({\cf22 "hello"}, {\cf22 "en"}, {\cf22 "tr"});\par
+{\bkmkstart AAAAAAACGK}{\bkmkend AAAAAAACGK}
+00142     EXPECT_TRUE(apiResult2.empty());\par
+{\bkmkstart AAAAAAACGU}{\bkmkend AAAAAAACGU}
+00143     \par
+{\bkmkstart AAAAAAACGW}{\bkmkend AAAAAAACGW}
+00144     {\cf20 // Test data management}\par
 {\bkmkstart AAAAAAACGX}{\bkmkend AAAAAAACGX}
-00255     {\cf20 // Test insertion}\par
-{\bkmkstart AAAAAAACHA}{\bkmkend AAAAAAACHA}
-00256     hashTable.insert({\cf22 "key1"}, 1);\par
-{\bkmkstart AAAAAAACHD}{\bkmkend AAAAAAACHD}
-00257     hashTable.insert({\cf22 "key2"}, 2);\par
+00145     EXPECT_NO_THROW(app.initializeDefaultData());\par
 {\bkmkstart AAAAAAACHF}{\bkmkend AAAAAAACHF}
-00258     hashTable.insert({\cf22 "key3"}, 3);\par
-{\bkmkstart AAAAAAACHI}{\bkmkend AAAAAAACHI}
-00259     \par
-{\bkmkstart AAAAAAACHJ}{\bkmkend AAAAAAACHJ}
-00260     {\cf20 // Test search}\par
-{\bkmkstart AAAAAAACHK}{\bkmkend AAAAAAACHK}
-00261     EXPECT_TRUE(hashTable.search({\cf22 "key1"}));\par
+00146     EXPECT_NO_THROW(app.saveData());\par
 {\bkmkstart AAAAAAACHM}{\bkmkend AAAAAAACHM}
-00262     EXPECT_TRUE(hashTable.search({\cf22 "key2"}));\par
-{\bkmkstart AAAAAAACHP}{\bkmkend AAAAAAACHP}
-00263     EXPECT_TRUE(hashTable.search({\cf22 "key3"}));\par
-{\bkmkstart AAAAAAACHV}{\bkmkend AAAAAAACHV}
-00264     EXPECT_FALSE(hashTable.search({\cf22 "key4"}));\par
-{\bkmkstart AAAAAAACIA}{\bkmkend AAAAAAACIA}
-00265     \par
-{\bkmkstart AAAAAAACID}{\bkmkend AAAAAAACID}
-00266     {\cf20 // Test get}\par
-{\bkmkstart AAAAAAACIF}{\bkmkend AAAAAAACIF}
-00267     EXPECT_EQ(hashTable.get({\cf22 "key1"}), 1);\par
-{\bkmkstart AAAAAAACIL}{\bkmkend AAAAAAACIL}
-00268     EXPECT_EQ(hashTable.get({\cf22 "key2"}), 2);\par
-{\bkmkstart AAAAAAACIQ}{\bkmkend AAAAAAACIQ}
-00269     EXPECT_EQ(hashTable.get({\cf22 "key3"}), 3);\par
-{\bkmkstart AAAAAAACIU}{\bkmkend AAAAAAACIU}
-00270     \par
-{\bkmkstart AAAAAAACIW}{\bkmkend AAAAAAACIW}
-00271     {\cf20 // Test update}\par
-{\bkmkstart AAAAAAACIY}{\bkmkend AAAAAAACIY}
-00272     hashTable.insert({\cf22 "key1"}, 10);\par
-{\bkmkstart AAAAAAACJC}{\bkmkend AAAAAAACJC}
-00273     EXPECT_EQ(hashTable.get({\cf22 "key1"}), 10);\par
-{\bkmkstart AAAAAAACJI}{\bkmkend AAAAAAACJI}
-00274     \par
-{\bkmkstart AAAAAAACJL}{\bkmkend AAAAAAACJL}
-00275     {\cf20 // Test removal}\par
-{\bkmkstart AAAAAAACJN}{\bkmkend AAAAAAACJN}
-00276     hashTable.remove({\cf22 "key1"});\par
-{\bkmkstart AAAAAAACJQ}{\bkmkend AAAAAAACJQ}
-00277     EXPECT_FALSE(hashTable.search({\cf22 "key1"}));\par
-{\bkmkstart AAAAAAACJT}{\bkmkend AAAAAAACJT}
-00278     \par
+00147     EXPECT_NO_THROW(app.loadData());\par
+{\bkmkstart AAAAAAACHQ}{\bkmkend AAAAAAACHQ}
+00148     EXPECT_NO_THROW(app.loadAllDictionaries());\par
+{\bkmkstart AAAAAAACHW}{\bkmkend AAAAAAACHW}
+00149     \par
+{\bkmkstart AAAAAAACHY}{\bkmkend AAAAAAACHY}
+00150     {\cf20 // Test menu handling}\par
+{\bkmkstart AAAAAAACHZ}{\bkmkend AAAAAAACHZ}
+00151     EXPECT_NO_THROW(app.handleUserChoice(0));\par
+{\bkmkstart AAAAAAACIH}{\bkmkend AAAAAAACIH}
+00152     EXPECT_NO_THROW(app.handleUserChoice(1));\par
+{\bkmkstart AAAAAAACIO}{\bkmkend AAAAAAACIO}
+00153     EXPECT_NO_THROW(app.handleUserChoice(2));\par
+{\bkmkstart AAAAAAACIX}{\bkmkend AAAAAAACIX}
+00154     EXPECT_NO_THROW(app.handleUserChoice(3));\par
+{\bkmkstart AAAAAAACJD}{\bkmkend AAAAAAACJD}
+00155     EXPECT_NO_THROW(app.handleUserChoice(4));\par
+{\bkmkstart AAAAAAACJJ}{\bkmkend AAAAAAACJJ}
+00156     EXPECT_NO_THROW(app.handleUserChoice(5));\par
+{\bkmkstart AAAAAAACJP}{\bkmkend AAAAAAACJP}
+00157     EXPECT_NO_THROW(app.handleUserChoice(6));\par
 {\bkmkstart AAAAAAACJV}{\bkmkend AAAAAAACJV}
-00279     {\cf20 // Test size}\par
+00158     EXPECT_NO_THROW(app.handleUserChoice(99));\par
 {\bkmkstart AAAAAAACJY}{\bkmkend AAAAAAACJY}
-00280     EXPECT_EQ(hashTable.size(), 2);\par
-{\bkmkstart AAAAAAACKD}{\bkmkend AAAAAAACKD}
-00281     \par
-{\bkmkstart AAAAAAACKF}{\bkmkend AAAAAAACKF}
-00282     {\cf20 // Test empty}\par
-{\bkmkstart AAAAAAACKG}{\bkmkend AAAAAAACKG}
-00283     EXPECT_FALSE(hashTable.isEmpty());\par
-{\bkmkstart AAAAAAACKT}{\bkmkend AAAAAAACKT}
-00284     \par
+00159     \par
+{\bkmkstart AAAAAAACKB}{\bkmkend AAAAAAACKB}
+00160     {\cf20 // Test display functions}\par
+{\bkmkstart AAAAAAACKK}{\bkmkend AAAAAAACKK}
+00161     EXPECT_NO_THROW(app.showLanguageSelection());\par
 {\bkmkstart AAAAAAACKW}{\bkmkend AAAAAAACKW}
-00285     {\cf20 // Test clear}\par
+00162     EXPECT_NO_THROW(app.showPhraseLibrary());\par
 {\bkmkstart AAAAAAACKZ}{\bkmkend AAAAAAACKZ}
-00286     hashTable.clear();\par
-{\bkmkstart AAAAAAACLB}{\bkmkend AAAAAAACLB}
-00287     EXPECT_TRUE(hashTable.isEmpty());\par
-{\bkmkstart AAAAAAACLF}{\bkmkend AAAAAAACLF}
-00288     EXPECT_EQ(hashTable.size(), 0);\par
+00163     EXPECT_NO_THROW(app.showLearningTips());\par
+{\bkmkstart AAAAAAACLE}{\bkmkend AAAAAAACLE}
+00164     EXPECT_NO_THROW(app.showPronunciationGuide());\par
+{\bkmkstart AAAAAAACLI}{\bkmkend AAAAAAACLI}
+00165 \}\par
+{\bkmkstart AAAAAAACLJ}{\bkmkend AAAAAAACLJ}
+00166 \par
 {\bkmkstart AAAAAAACLK}{\bkmkend AAAAAAACLK}
-00289 \}\par
-{\bkmkstart AAAAAAACLM}{\bkmkend AAAAAAACLM}
-00290 \par
-{\bkmkstart AAAAAAACLP}{\bkmkend AAAAAAACLP}
-00291 {\cf20 // Test Heap comprehensive coverage}\par
-{\bkmkstart AAAAAAACLQ}{\bkmkend AAAAAAACLQ}
-00292 TEST_F(AdvancedCoverageBoostTest, TestHeapComprehensive) \{\par
-{\bkmkstart AAAAAAACLZ}{\bkmkend AAAAAAACLZ}
-00293     Heap<int> heap;\par
-{\bkmkstart AAAAAAACME}{\bkmkend AAAAAAACME}
-00294     \par
-{\bkmkstart AAAAAAACMF}{\bkmkend AAAAAAACMF}
-00295     {\cf20 // Test empty heap}\par
+00167 {\cf20 // Test DoublyLinkedList comprehensive coverage}\par
+{\bkmkstart AAAAAAACLN}{\bkmkend AAAAAAACLN}
+00168 TEST_F(AdvancedCoverageBoostTest, TestDoublyLinkedListComprehensive) \{\par
+{\bkmkstart AAAAAAACLS}{\bkmkend AAAAAAACLS}
+00169     DoublyLinkedList<int> list;\par
+{\bkmkstart AAAAAAACMA}{\bkmkend AAAAAAACMA}
+00170     \par
+{\bkmkstart AAAAAAACMC}{\bkmkend AAAAAAACMC}
+00171     {\cf20 // Test empty list}\par
 {\bkmkstart AAAAAAACMI}{\bkmkend AAAAAAACMI}
-00296     EXPECT_TRUE(heap.isEmpty());\par
-{\bkmkstart AAAAAAACMQ}{\bkmkend AAAAAAACMQ}
-00297     EXPECT_EQ(heap.size(), 0);\par
+00172     EXPECT_TRUE(list.isEmpty());\par
+{\bkmkstart AAAAAAACMP}{\bkmkend AAAAAAACMP}
+00173     EXPECT_EQ(list.size(), 0);\par
+{\bkmkstart AAAAAAACMS}{\bkmkend AAAAAAACMS}
+00174     \par
+{\bkmkstart AAAAAAACMT}{\bkmkend AAAAAAACMT}
+00175     {\cf20 // Test insertion}\par
+{\bkmkstart AAAAAAACMU}{\bkmkend AAAAAAACMU}
+00176     list.insertAtBeginning(1);\par
+{\bkmkstart AAAAAAACMW}{\bkmkend AAAAAAACMW}
+00177     list.insertAtEnd(2);\par
 {\bkmkstart AAAAAAACMY}{\bkmkend AAAAAAACMY}
-00298     \par
+00178     list.insertAtPosition(1, 3);\par
+{\bkmkstart AAAAAAACMZ}{\bkmkend AAAAAAACMZ}
+00179     \par
 {\bkmkstart AAAAAAACNA}{\bkmkend AAAAAAACNA}
-00299     {\cf20 // Test insertion}\par
-{\bkmkstart AAAAAAACNB}{\bkmkend AAAAAAACNB}
-00300     heap.insert(5);\par
+00180     EXPECT_FALSE(list.isEmpty());\par
+{\bkmkstart AAAAAAACND}{\bkmkend AAAAAAACND}
+00181     EXPECT_EQ(list.size(), 3);\par
 {\bkmkstart AAAAAAACNF}{\bkmkend AAAAAAACNF}
-00301     heap.insert(3);\par
-{\bkmkstart AAAAAAACNJ}{\bkmkend AAAAAAACNJ}
-00302     heap.insert(8);\par
-{\bkmkstart AAAAAAACNO}{\bkmkend AAAAAAACNO}
-00303     heap.insert(1);\par
-{\bkmkstart AAAAAAACNT}{\bkmkend AAAAAAACNT}
-00304     heap.insert(9);\par
-{\bkmkstart AAAAAAACNW}{\bkmkend AAAAAAACNW}
-00305     \par
-{\bkmkstart AAAAAAACNZ}{\bkmkend AAAAAAACNZ}
-00306     EXPECT_FALSE(heap.isEmpty());\par
+00182     \par
+{\bkmkstart AAAAAAACNG}{\bkmkend AAAAAAACNG}
+00183     {\cf20 // Test traversal}\par
+{\bkmkstart AAAAAAACNH}{\bkmkend AAAAAAACNH}
+00184     std::vector<int> elements;\par
+{\bkmkstart AAAAAAACNL}{\bkmkend AAAAAAACNL}
+00185     list.traverse([&elements]({\cf18 int} value) \{\par
+{\bkmkstart AAAAAAACNP}{\bkmkend AAAAAAACNP}
+00186         elements.push_back(value);\par
+{\bkmkstart AAAAAAACNS}{\bkmkend AAAAAAACNS}
+00187     \});\par
+{\bkmkstart AAAAAAACNV}{\bkmkend AAAAAAACNV}
+00188     EXPECT_EQ(elements.size(), 3);\par
+{\bkmkstart AAAAAAACNY}{\bkmkend AAAAAAACNY}
+00189     \par
+{\bkmkstart AAAAAAACOB}{\bkmkend AAAAAAACOB}
+00190     {\cf20 // Test search}\par
 {\bkmkstart AAAAAAACOD}{\bkmkend AAAAAAACOD}
-00307     EXPECT_EQ(heap.size(), 5);\par
-{\bkmkstart AAAAAAACOK}{\bkmkend AAAAAAACOK}
-00308     \par
-{\bkmkstart AAAAAAACON}{\bkmkend AAAAAAACON}
-00309     {\cf20 // Test peek}\par
+00191     EXPECT_TRUE(list.search(1));\par
+{\bkmkstart AAAAAAACOH}{\bkmkend AAAAAAACOH}
+00192     EXPECT_TRUE(list.search(2));\par
+{\bkmkstart AAAAAAACOI}{\bkmkend AAAAAAACOI}
+00193     EXPECT_TRUE(list.search(3));\par
+{\bkmkstart AAAAAAACOJ}{\bkmkend AAAAAAACOJ}
+00194     EXPECT_FALSE(list.search(4));\par
+{\bkmkstart AAAAAAACOM}{\bkmkend AAAAAAACOM}
+00195     \par
+{\bkmkstart AAAAAAACOO}{\bkmkend AAAAAAACOO}
+00196     {\cf20 // Test deletion}\par
+{\bkmkstart AAAAAAACOQ}{\bkmkend AAAAAAACOQ}
+00197     list.deleteFromBeginning();\par
 {\bkmkstart AAAAAAACOR}{\bkmkend AAAAAAACOR}
-00310     EXPECT_EQ(heap.peek(), 9); {\cf20 // Max heap}\par
+00198     EXPECT_EQ(list.size(), 2);\par
+{\bkmkstart AAAAAAACOT}{\bkmkend AAAAAAACOT}
+00199     \par
+{\bkmkstart AAAAAAACOU}{\bkmkend AAAAAAACOU}
+00200     list.deleteFromEnd();\par
+{\bkmkstart AAAAAAACOW}{\bkmkend AAAAAAACOW}
+00201     EXPECT_EQ(list.size(), 1);\par
 {\bkmkstart AAAAAAACOY}{\bkmkend AAAAAAACOY}
-00311     \par
+00202     \par
 {\bkmkstart AAAAAAACPA}{\bkmkend AAAAAAACPA}
-00312     {\cf20 // Test extraction}\par
-{\bkmkstart AAAAAAACPD}{\bkmkend AAAAAAACPD}
-00313     EXPECT_EQ(heap.extractMax(), 9);\par
-{\bkmkstart AAAAAAACPJ}{\bkmkend AAAAAAACPJ}
-00314     EXPECT_EQ(heap.extractMax(), 8);\par
-{\bkmkstart AAAAAAACPO}{\bkmkend AAAAAAACPO}
-00315     EXPECT_EQ(heap.extractMax(), 5);\par
-{\bkmkstart AAAAAAACPT}{\bkmkend AAAAAAACPT}
-00316     EXPECT_EQ(heap.extractMax(), 3);\par
+00203     list.deleteFromPosition(0);\par
 {\bkmkstart AAAAAAACPY}{\bkmkend AAAAAAACPY}
-00317     EXPECT_EQ(heap.extractMax(), 1);\par
+00204     EXPECT_TRUE(list.isEmpty());\par
 {\bkmkstart AAAAAAACQE}{\bkmkend AAAAAAACQE}
-00318     \par
-{\bkmkstart AAAAAAACQG}{\bkmkend AAAAAAACQG}
-00319     EXPECT_TRUE(heap.isEmpty());\par
-{\bkmkstart AAAAAAACQO}{\bkmkend AAAAAAACQO}
-00320     \par
+00205     \par
+{\bkmkstart AAAAAAACQF}{\bkmkend AAAAAAACQF}
+00206     {\cf20 // Test edge cases}\par
+{\bkmkstart AAAAAAACQI}{\bkmkend AAAAAAACQI}
+00207     EXPECT_THROW(list.deleteFromBeginning(), std::runtime_error);\par
 {\bkmkstart AAAAAAACQQ}{\bkmkend AAAAAAACQQ}
-00321     {\cf20 // Test edge cases}\par
-{\bkmkstart AAAAAAACQT}{\bkmkend AAAAAAACQT}
-00322     EXPECT_THROW(heap.peek(), std::runtime_error);\par
+00208     EXPECT_THROW(list.deleteFromEnd(), std::runtime_error);\par
+{\bkmkstart AAAAAAACRU}{\bkmkend AAAAAAACRU}
+00209     EXPECT_THROW(list.deleteFromPosition(0), std::runtime_error);\par
+{\bkmkstart AAAAAAACSA}{\bkmkend AAAAAAACSA}
+00210 \}\par
+{\bkmkstart AAAAAAACSC}{\bkmkend AAAAAAACSC}
+00211 \par
+{\bkmkstart AAAAAAACSE}{\bkmkend AAAAAAACSE}
+00212 {\cf20 // Test Graph comprehensive coverage}\par
+{\bkmkstart AAAAAAACSG}{\bkmkend AAAAAAACSG}
+00213 TEST_F(AdvancedCoverageBoostTest, TestGraphComprehensive) \{\par
+{\bkmkstart AAAAAAACSM}{\bkmkend AAAAAAACSM}
+00214     Graph<int> graph(5);\par
+{\bkmkstart AAAAAAACSQ}{\bkmkend AAAAAAACSQ}
+00215     \par
+{\bkmkstart AAAAAAACSS}{\bkmkend AAAAAAACSS}
+00216     {\cf20 // Test adding edges}\par
+{\bkmkstart AAAAAAACSV}{\bkmkend AAAAAAACSV}
+00217     graph.addEdge(0, 1);\par
+{\bkmkstart AAAAAAACSW}{\bkmkend AAAAAAACSW}
+00218     graph.addEdge(1, 2);\par
+{\bkmkstart AAAAAAACSY}{\bkmkend AAAAAAACSY}
+00219     graph.addEdge(2, 3);\par
+{\bkmkstart AAAAAAACTC}{\bkmkend AAAAAAACTC}
+00220     graph.addEdge(3, 4);\par
+{\bkmkstart AAAAAAACTF}{\bkmkend AAAAAAACTF}
+00221     graph.addEdge(4, 0);\par
+{\bkmkstart AAAAAAACTG}{\bkmkend AAAAAAACTG}
+00222     \par
+{\bkmkstart AAAAAAACTH}{\bkmkend AAAAAAACTH}
+00223     {\cf20 // Test BFS}\par
+{\bkmkstart AAAAAAACTK}{\bkmkend AAAAAAACTK}
+00224     std::vector<int> bfsResult;\par
+{\bkmkstart AAAAAAACTP}{\bkmkend AAAAAAACTP}
+00225     graph.BFS(0, [&bfsResult]({\cf18 int} vertex) \{\par
+{\bkmkstart AAAAAAACTT}{\bkmkend AAAAAAACTT}
+00226         bfsResult.push_back(vertex);\par
+{\bkmkstart AAAAAAACTZ}{\bkmkend AAAAAAACTZ}
+00227     \});\par
 {\bkmkstart AAAAAAACUB}{\bkmkend AAAAAAACUB}
-00323     EXPECT_THROW(heap.extractMax(), std::runtime_error);\par
+00228     EXPECT_FALSE(bfsResult.empty());\par
+{\bkmkstart AAAAAAACUE}{\bkmkend AAAAAAACUE}
+00229     \par
 {\bkmkstart AAAAAAACUF}{\bkmkend AAAAAAACUF}
-00324 \}\par
+00230     {\cf20 // Test DFS}\par
 {\bkmkstart AAAAAAACUH}{\bkmkend AAAAAAACUH}
-00325 \par
-{\bkmkstart AAAAAAACUO}{\bkmkend AAAAAAACUO}
-00326 {\cf20 // Test Queue comprehensive coverage}\par
-{\bkmkstart AAAAAAACUQ}{\bkmkend AAAAAAACUQ}
-00327 TEST_F(AdvancedCoverageBoostTest, TestQueueComprehensive) \{\par
+00231     std::vector<int> dfsResult;\par
+{\bkmkstart AAAAAAACUL}{\bkmkend AAAAAAACUL}
+00232     graph.DFS(0, [&dfsResult]({\cf18 int} vertex) \{\par
+{\bkmkstart AAAAAAACUS}{\bkmkend AAAAAAACUS}
+00233         dfsResult.push_back(vertex);\par
 {\bkmkstart AAAAAAACUU}{\bkmkend AAAAAAACUU}
-00328     Queue<int> queue;\par
+00234     \});\par
+{\bkmkstart AAAAAAACUW}{\bkmkend AAAAAAACUW}
+00235     EXPECT_FALSE(dfsResult.empty());\par
+{\bkmkstart AAAAAAACUZ}{\bkmkend AAAAAAACUZ}
+00236     \par
 {\bkmkstart AAAAAAACVA}{\bkmkend AAAAAAACVA}
-00329     \par
-{\bkmkstart AAAAAAACVC}{\bkmkend AAAAAAACVC}
-00330     {\cf20 // Test empty queue}\par
+00237     {\cf20 // Test hasEdge}\par
+{\bkmkstart AAAAAAACVB}{\bkmkend AAAAAAACVB}
+00238     EXPECT_TRUE(graph.hasEdge(0, 1));\par
+{\bkmkstart AAAAAAACVD}{\bkmkend AAAAAAACVD}
+00239     EXPECT_TRUE(graph.hasEdge(1, 2));\par
 {\bkmkstart AAAAAAACVF}{\bkmkend AAAAAAACVF}
-00331     EXPECT_TRUE(queue.isEmpty());\par
-{\bkmkstart AAAAAAACVL}{\bkmkend AAAAAAACVL}
-00332     EXPECT_EQ(queue.size(), 0);\par
-{\bkmkstart AAAAAAACVQ}{\bkmkend AAAAAAACVQ}
-00333     \par
-{\bkmkstart AAAAAAACVS}{\bkmkend AAAAAAACVS}
-00334     {\cf20 // Test enqueue}\par
+00240     EXPECT_FALSE(graph.hasEdge(0, 3));\par
+{\bkmkstart AAAAAAACVI}{\bkmkend AAAAAAACVI}
+00241     \par
+{\bkmkstart AAAAAAACVK}{\bkmkend AAAAAAACVK}
+00242     {\cf20 // Test removeEdge}\par
+{\bkmkstart AAAAAAACVM}{\bkmkend AAAAAAACVM}
+00243     graph.removeEdge(0, 1);\par
+{\bkmkstart AAAAAAACVP}{\bkmkend AAAAAAACVP}
+00244     EXPECT_FALSE(graph.hasEdge(0, 1));\par
+{\bkmkstart AAAAAAACVT}{\bkmkend AAAAAAACVT}
+00245     \par
+{\bkmkstart AAAAAAACVU}{\bkmkend AAAAAAACVU}
+00246     {\cf20 // Test getNeighbors}\par
 {\bkmkstart AAAAAAACVV}{\bkmkend AAAAAAACVV}
-00335     queue.enqueue(1);\par
+00247     {\cf17 auto} neighbors = graph.getNeighbors(1);\par
 {\bkmkstart AAAAAAACVX}{\bkmkend AAAAAAACVX}
-00336     queue.enqueue(2);\par
-{\bkmkstart AAAAAAACWA}{\bkmkend AAAAAAACWA}
-00337     queue.enqueue(3);\par
-{\bkmkstart AAAAAAACWC}{\bkmkend AAAAAAACWC}
-00338     \par
+00248     EXPECT_FALSE(neighbors.empty());\par
+{\bkmkstart AAAAAAACVZ}{\bkmkend AAAAAAACVZ}
+00249 \}\par
+{\bkmkstart AAAAAAACWB}{\bkmkend AAAAAAACWB}
+00250 \par
+{\bkmkstart AAAAAAACWD}{\bkmkend AAAAAAACWD}
+00251 {\cf20 // Test HashTable comprehensive coverage}\par
 {\bkmkstart AAAAAAACWE}{\bkmkend AAAAAAACWE}
-00339     EXPECT_FALSE(queue.isEmpty());\par
-{\bkmkstart AAAAAAACWH}{\bkmkend AAAAAAACWH}
-00340     EXPECT_EQ(queue.size(), 3);\par
+00252 TEST_F(AdvancedCoverageBoostTest, TestHashTableComprehensive) \{\par
 {\bkmkstart AAAAAAACWK}{\bkmkend AAAAAAACWK}
-00341     \par
-{\bkmkstart AAAAAAACWM}{\bkmkend AAAAAAACWM}
-00342     {\cf20 // Test front}\par
-{\bkmkstart AAAAAAACWO}{\bkmkend AAAAAAACWO}
-00343     EXPECT_EQ(queue.front(), 1);\par
+00253     HashTable<std::string, int> hashTable(10);\par
+{\bkmkstart AAAAAAACWN}{\bkmkend AAAAAAACWN}
+00254     \par
+{\bkmkstart AAAAAAACWP}{\bkmkend AAAAAAACWP}
+00255     {\cf20 // Test insertion}\par
+{\bkmkstart AAAAAAACWQ}{\bkmkend AAAAAAACWQ}
+00256     hashTable.insert({\cf22 "key1"}, 1);\par
 {\bkmkstart AAAAAAACWT}{\bkmkend AAAAAAACWT}
-00344     \par
+00257     hashTable.insert({\cf22 "key2"}, 2);\par
 {\bkmkstart AAAAAAACWV}{\bkmkend AAAAAAACWV}
-00345     {\cf20 // Test dequeue}\par
+00258     hashTable.insert({\cf22 "key3"}, 3);\par
 {\bkmkstart AAAAAAACWX}{\bkmkend AAAAAAACWX}
-00346     EXPECT_EQ(queue.dequeue(), 1);\par
+00259     \par
+{\bkmkstart AAAAAAACWY}{\bkmkend AAAAAAACWY}
+00260     {\cf20 // Test search}\par
+{\bkmkstart AAAAAAACXA}{\bkmkend AAAAAAACXA}
+00261     EXPECT_TRUE(hashTable.search({\cf22 "key1"}));\par
 {\bkmkstart AAAAAAACXB}{\bkmkend AAAAAAACXB}
-00347     EXPECT_EQ(queue.dequeue(), 2);\par
+00262     EXPECT_TRUE(hashTable.search({\cf22 "key2"}));\par
 {\bkmkstart AAAAAAACXE}{\bkmkend AAAAAAACXE}
-00348     EXPECT_EQ(queue.dequeue(), 3);\par
-{\bkmkstart AAAAAAACXI}{\bkmkend AAAAAAACXI}
-00349     \par
-{\bkmkstart AAAAAAACXK}{\bkmkend AAAAAAACXK}
-00350     EXPECT_TRUE(queue.isEmpty());\par
+00263     EXPECT_TRUE(hashTable.search({\cf22 "key3"}));\par
+{\bkmkstart AAAAAAACXG}{\bkmkend AAAAAAACXG}
+00264     EXPECT_FALSE(hashTable.search({\cf22 "key4"}));\par
+{\bkmkstart AAAAAAACXJ}{\bkmkend AAAAAAACXJ}
+00265     \par
+{\bkmkstart AAAAAAACXL}{\bkmkend AAAAAAACXL}
+00266     {\cf20 // Test get}\par
+{\bkmkstart AAAAAAACXN}{\bkmkend AAAAAAACXN}
+00267     EXPECT_EQ(hashTable.get({\cf22 "key1"}), 1);\par
 {\bkmkstart AAAAAAACXO}{\bkmkend AAAAAAACXO}
-00351     \par
+00268     EXPECT_EQ(hashTable.get({\cf22 "key2"}), 2);\par
+{\bkmkstart AAAAAAACXP}{\bkmkend AAAAAAACXP}
+00269     EXPECT_EQ(hashTable.get({\cf22 "key3"}), 3);\par
 {\bkmkstart AAAAAAACXQ}{\bkmkend AAAAAAACXQ}
-00352     {\cf20 // Test edge cases}\par
-{\bkmkstart AAAAAAACXR}{\bkmkend AAAAAAACXR}
-00353     EXPECT_THROW(queue.front(), std::runtime_error);\par
+00270     \par
+{\bkmkstart AAAAAAACXS}{\bkmkend AAAAAAACXS}
+00271     {\cf20 // Test update}\par
+{\bkmkstart AAAAAAACXT}{\bkmkend AAAAAAACXT}
+00272     hashTable.insert({\cf22 "key1"}, 10);\par
 {\bkmkstart AAAAAAACXU}{\bkmkend AAAAAAACXU}
-00354     EXPECT_THROW(queue.dequeue(), std::runtime_error);\par
+00273     EXPECT_EQ(hashTable.get({\cf22 "key1"}), 10);\par
+{\bkmkstart AAAAAAACXV}{\bkmkend AAAAAAACXV}
+00274     \par
 {\bkmkstart AAAAAAACXW}{\bkmkend AAAAAAACXW}
-00355 \}\par
+00275     {\cf20 // Test removal}\par
 {\bkmkstart AAAAAAACXX}{\bkmkend AAAAAAACXX}
-00356 \par
+00276     hashTable.remove({\cf22 "key1"});\par
 {\bkmkstart AAAAAAACXZ}{\bkmkend AAAAAAACXZ}
-00357 {\cf20 // Test SparseMatrix comprehensive coverage}\par
+00277     EXPECT_FALSE(hashTable.search({\cf22 "key1"}));\par
 {\bkmkstart AAAAAAACYB}{\bkmkend AAAAAAACYB}
-00358 TEST_F(AdvancedCoverageBoostTest, TestSparseMatrixComprehensive) \{\par
-{\bkmkstart AAAAAAACYD}{\bkmkend AAAAAAACYD}
-00359     SparseMatrix<int> matrix(5, 5, 0);\par
-{\bkmkstart AAAAAAACYJ}{\bkmkend AAAAAAACYJ}
-00360     \par
-{\bkmkstart AAAAAAACYL}{\bkmkend AAAAAAACYL}
-00361     {\cf20 // Test empty matrix}\par
-{\bkmkstart AAAAAAACYN}{\bkmkend AAAAAAACYN}
-00362     EXPECT_EQ(matrix.getNonZeroCount(), 0);\par
+00278     \par
+{\bkmkstart AAAAAAACYC}{\bkmkend AAAAAAACYC}
+00279     {\cf20 // Test size}\par
+{\bkmkstart AAAAAAACYE}{\bkmkend AAAAAAACYE}
+00280     EXPECT_EQ(hashTable.size(), 2);\par
+{\bkmkstart AAAAAAACYG}{\bkmkend AAAAAAACYG}
+00281     \par
+{\bkmkstart AAAAAAACYH}{\bkmkend AAAAAAACYH}
+00282     {\cf20 // Test empty}\par
+{\bkmkstart AAAAAAACYI}{\bkmkend AAAAAAACYI}
+00283     EXPECT_FALSE(hashTable.isEmpty());\par
+{\bkmkstart AAAAAAACYM}{\bkmkend AAAAAAACYM}
+00284     \par
 {\bkmkstart AAAAAAACYP}{\bkmkend AAAAAAACYP}
-00363     EXPECT_EQ(matrix.get(0, 0), 0);\par
-{\bkmkstart AAAAAAACYU}{\bkmkend AAAAAAACYU}
-00364     EXPECT_FALSE(matrix.hasValue(0, 0));\par
-{\bkmkstart AAAAAAACYW}{\bkmkend AAAAAAACYW}
-00365     \par
-{\bkmkstart AAAAAAACYX}{\bkmkend AAAAAAACYX}
-00366     {\cf20 // Test setting values}\par
-{\bkmkstart AAAAAAACYY}{\bkmkend AAAAAAACYY}
-00367     matrix.set(1, 1, 10);\par
+00285     {\cf20 // Test clear}\par
+{\bkmkstart AAAAAAACYQ}{\bkmkend AAAAAAACYQ}
+00286     hashTable.clear();\par
+{\bkmkstart AAAAAAACYS}{\bkmkend AAAAAAACYS}
+00287     EXPECT_TRUE(hashTable.isEmpty());\par
+{\bkmkstart AAAAAAACYV}{\bkmkend AAAAAAACYV}
+00288     EXPECT_EQ(hashTable.size(), 0);\par
+{\bkmkstart AAAAAAACYZ}{\bkmkend AAAAAAACYZ}
+00289 \}\par
 {\bkmkstart AAAAAAACZA}{\bkmkend AAAAAAACZA}
-00368     matrix.set(2, 2, 20);\par
+00290 \par
 {\bkmkstart AAAAAAACZB}{\bkmkend AAAAAAACZB}
-00369     matrix.set(3, 3, 30);\par
-{\bkmkstart AAAAAAACZD}{\bkmkend AAAAAAACZD}
-00370     \par
-{\bkmkstart AAAAAAACZE}{\bkmkend AAAAAAACZE}
-00371     EXPECT_EQ(matrix.getNonZeroCount(), 3);\par
-{\bkmkstart AAAAAAACZG}{\bkmkend AAAAAAACZG}
-00372     EXPECT_EQ(matrix.get(1, 1), 10);\par
-{\bkmkstart AAAAAAACZI}{\bkmkend AAAAAAACZI}
-00373     EXPECT_EQ(matrix.get(2, 2), 20);\par
-{\bkmkstart AAAAAAACZK}{\bkmkend AAAAAAACZK}
-00374     EXPECT_EQ(matrix.get(3, 3), 30);\par
-{\bkmkstart AAAAAAACZN}{\bkmkend AAAAAAACZN}
-00375     EXPECT_TRUE(matrix.hasValue(1, 1));\par
+00291 {\cf20 // Test Heap comprehensive coverage}\par
+{\bkmkstart AAAAAAACZC}{\bkmkend AAAAAAACZC}
+00292 TEST_F(AdvancedCoverageBoostTest, TestHeapComprehensive) \{\par
+{\bkmkstart AAAAAAACZF}{\bkmkend AAAAAAACZF}
+00293     Heap<int> heap;\par
 {\bkmkstart AAAAAAACZP}{\bkmkend AAAAAAACZP}
-00376     EXPECT_TRUE(matrix.hasValue(2, 2));\par
+00294     \par
 {\bkmkstart AAAAAAACZQ}{\bkmkend AAAAAAACZQ}
-00377     EXPECT_TRUE(matrix.hasValue(3, 3));\par
-{\bkmkstart AAAAAAACZT}{\bkmkend AAAAAAACZT}
-00378     \par
-{\bkmkstart AAAAAAACZU}{\bkmkend AAAAAAACZU}
-00379     {\cf20 // Test removing values}\par
-{\bkmkstart AAAAAAACZV}{\bkmkend AAAAAAACZV}
-00380     matrix.remove(1, 1);\par
+00295     {\cf20 // Test empty heap}\par
+{\bkmkstart AAAAAAACZR}{\bkmkend AAAAAAACZR}
+00296     EXPECT_TRUE(heap.isEmpty());\par
 {\bkmkstart AAAAAAACZW}{\bkmkend AAAAAAACZW}
-00381     EXPECT_EQ(matrix.getNonZeroCount(), 2);\par
+00297     EXPECT_EQ(heap.size(), 0);\par
+{\bkmkstart AAAAAAACZX}{\bkmkend AAAAAAACZX}
+00298     \par
+{\bkmkstart AAAAAAACZY}{\bkmkend AAAAAAACZY}
+00299     {\cf20 // Test insertion}\par
+{\bkmkstart AAAAAAACZZ}{\bkmkend AAAAAAACZZ}
+00300     heap.insert(5);\par
 {\bkmkstart AAAAAAADAA}{\bkmkend AAAAAAADAA}
-00382     EXPECT_FALSE(matrix.hasValue(1, 1));\par
+00301     heap.insert(3);\par
 {\bkmkstart AAAAAAADAB}{\bkmkend AAAAAAADAB}
-00383     EXPECT_EQ(matrix.get(1, 1), 0);\par
+00302     heap.insert(8);\par
 {\bkmkstart AAAAAAADAD}{\bkmkend AAAAAAADAD}
-00384     \par
+00303     heap.insert(1);\par
 {\bkmkstart AAAAAAADAE}{\bkmkend AAAAAAADAE}
-00385     {\cf20 // Test memory usage}\par
+00304     heap.insert(9);\par
 {\bkmkstart AAAAAAADAF}{\bkmkend AAAAAAADAF}
-00386     {\cf18 size_t} memoryUsage = matrix.getMemoryUsage();\par
-{\bkmkstart AAAAAAADAJ}{\bkmkend AAAAAAADAJ}
-00387     EXPECT_GT(memoryUsage, 0);\par
-{\bkmkstart AAAAAAADAL}{\bkmkend AAAAAAADAL}
-00388     \par
+00305     \par
+{\bkmkstart AAAAAAADAG}{\bkmkend AAAAAAADAG}
+00306     EXPECT_FALSE(heap.isEmpty());\par
+{\bkmkstart AAAAAAADAI}{\bkmkend AAAAAAADAI}
+00307     EXPECT_EQ(heap.size(), 5);\par
+{\bkmkstart AAAAAAADAK}{\bkmkend AAAAAAADAK}
+00308     \par
 {\bkmkstart AAAAAAADAM}{\bkmkend AAAAAAADAM}
-00389     {\cf20 // Test getting all non-zero elements}\par
+00309     {\cf20 // Test peek}\par
+{\bkmkstart AAAAAAADAO}{\bkmkend AAAAAAADAO}
+00310     EXPECT_EQ(heap.peek(), 9); {\cf20 // Max heap}\par
 {\bkmkstart AAAAAAADAP}{\bkmkend AAAAAAADAP}
-00390     {\cf17 auto} nonZeroElements = matrix.getAllNonZero();\par
+00311     \par
 {\bkmkstart AAAAAAADAQ}{\bkmkend AAAAAAADAQ}
-00391     EXPECT_EQ(nonZeroElements.size(), 2);\par
-{\bkmkstart AAAAAAADAR}{\bkmkend AAAAAAADAR}
-00392     \par
+00312     {\cf20 // Test extraction}\par
 {\bkmkstart AAAAAAADAS}{\bkmkend AAAAAAADAS}
-00393     {\cf20 // Test out of bounds}\par
-{\bkmkstart AAAAAAADAT}{\bkmkend AAAAAAADAT}
-00394     EXPECT_THROW(matrix.get(10, 10), std::out_of_range);\par
-{\bkmkstart AAAAAAADAV}{\bkmkend AAAAAAADAV}
-00395     EXPECT_THROW(matrix.set(10, 10, 100), std::out_of_range);\par
+00313     EXPECT_EQ(heap.extractMax(), 9);\par
+{\bkmkstart AAAAAAADAU}{\bkmkend AAAAAAADAU}
+00314     EXPECT_EQ(heap.extractMax(), 8);\par
 {\bkmkstart AAAAAAADAY}{\bkmkend AAAAAAADAY}
-00396 \}\par
+00315     EXPECT_EQ(heap.extractMax(), 5);\par
+{\bkmkstart AAAAAAADAZ}{\bkmkend AAAAAAADAZ}
+00316     EXPECT_EQ(heap.extractMax(), 3);\par
 {\bkmkstart AAAAAAADBA}{\bkmkend AAAAAAADBA}
-00397 \par
-{\bkmkstart AAAAAAADBB}{\bkmkend AAAAAAADBB}
-00398 {\cf20 // Test Stack comprehensive coverage}\par
+00317     EXPECT_EQ(heap.extractMax(), 1);\par
 {\bkmkstart AAAAAAADBC}{\bkmkend AAAAAAADBC}
-00399 TEST_F(AdvancedCoverageBoostTest, TestStackComprehensive) \{\par
-{\bkmkstart AAAAAAADBI}{\bkmkend AAAAAAADBI}
-00400     Stack<int> stack;\par
-{\bkmkstart AAAAAAADBN}{\bkmkend AAAAAAADBN}
-00401     \par
+00318     \par
+{\bkmkstart AAAAAAADBD}{\bkmkend AAAAAAADBD}
+00319     EXPECT_TRUE(heap.isEmpty());\par
+{\bkmkstart AAAAAAADBF}{\bkmkend AAAAAAADBF}
+00320     \par
+{\bkmkstart AAAAAAADBG}{\bkmkend AAAAAAADBG}
+00321     {\cf20 // Test edge cases}\par
+{\bkmkstart AAAAAAADBH}{\bkmkend AAAAAAADBH}
+00322     EXPECT_THROW(heap.peek(), std::runtime_error);\par
+{\bkmkstart AAAAAAADBK}{\bkmkend AAAAAAADBK}
+00323     EXPECT_THROW(heap.extractMax(), std::runtime_error);\par
+{\bkmkstart AAAAAAADBM}{\bkmkend AAAAAAADBM}
+00324 \}\par
 {\bkmkstart AAAAAAADBO}{\bkmkend AAAAAAADBO}
-00402     {\cf20 // Test empty stack}\par
-{\bkmkstart AAAAAAADBP}{\bkmkend AAAAAAADBP}
-00403     EXPECT_TRUE(stack.isEmpty());\par
+00325 \par
 {\bkmkstart AAAAAAADBS}{\bkmkend AAAAAAADBS}
-00404     EXPECT_EQ(stack.size(), 0);\par
+00326 {\cf20 // Test Queue comprehensive coverage}\par
 {\bkmkstart AAAAAAADBT}{\bkmkend AAAAAAADBT}
-00405     \par
-{\bkmkstart AAAAAAADBU}{\bkmkend AAAAAAADBU}
-00406     {\cf20 // Test push}\par
-{\bkmkstart AAAAAAADBW}{\bkmkend AAAAAAADBW}
-00407     stack.push(1);\par
+00327 TEST_F(AdvancedCoverageBoostTest, TestQueueComprehensive) \{\par
+{\bkmkstart AAAAAAADBV}{\bkmkend AAAAAAADBV}
+00328     Queue<int> queue;\par
 {\bkmkstart AAAAAAADCA}{\bkmkend AAAAAAADCA}
-00408     stack.push(2);\par
+00329     \par
+{\bkmkstart AAAAAAADCB}{\bkmkend AAAAAAADCB}
+00330     {\cf20 // Test empty queue}\par
 {\bkmkstart AAAAAAADCD}{\bkmkend AAAAAAADCD}
-00409     stack.push(3);\par
-{\bkmkstart AAAAAAADCE}{\bkmkend AAAAAAADCE}
-00410     \par
+00331     EXPECT_TRUE(queue.isEmpty());\par
 {\bkmkstart AAAAAAADCF}{\bkmkend AAAAAAADCF}
-00411     EXPECT_FALSE(stack.isEmpty());\par
+00332     EXPECT_EQ(queue.size(), 0);\par
+{\bkmkstart AAAAAAADCG}{\bkmkend AAAAAAADCG}
+00333     \par
+{\bkmkstart AAAAAAADCH}{\bkmkend AAAAAAADCH}
+00334     {\cf20 // Test enqueue}\par
 {\bkmkstart AAAAAAADCI}{\bkmkend AAAAAAADCI}
-00412     EXPECT_EQ(stack.size(), 3);\par
+00335     queue.enqueue(1);\par
+{\bkmkstart AAAAAAADCJ}{\bkmkend AAAAAAADCJ}
+00336     queue.enqueue(2);\par
 {\bkmkstart AAAAAAADCK}{\bkmkend AAAAAAADCK}
-00413     \par
-{\bkmkstart AAAAAAADCM}{\bkmkend AAAAAAADCM}
-00414     {\cf20 // Test top}\par
+00337     queue.enqueue(3);\par
 {\bkmkstart AAAAAAADCN}{\bkmkend AAAAAAADCN}
-00415     EXPECT_EQ(stack.top(), 3);\par
-{\bkmkstart AAAAAAADCQ}{\bkmkend AAAAAAADCQ}
-00416     \par
+00338     \par
+{\bkmkstart AAAAAAADCO}{\bkmkend AAAAAAADCO}
+00339     EXPECT_FALSE(queue.isEmpty());\par
+{\bkmkstart AAAAAAADCP}{\bkmkend AAAAAAADCP}
+00340     EXPECT_EQ(queue.size(), 3);\par
 {\bkmkstart AAAAAAADCR}{\bkmkend AAAAAAADCR}
-00417     {\cf20 // Test pop}\par
+00341     \par
+{\bkmkstart AAAAAAADCS}{\bkmkend AAAAAAADCS}
+00342     {\cf20 // Test front}\par
 {\bkmkstart AAAAAAADCT}{\bkmkend AAAAAAADCT}
-00418     EXPECT_EQ(stack.pop(), 3);\par
-{\bkmkstart AAAAAAADCW}{\bkmkend AAAAAAADCW}
-00419     EXPECT_EQ(stack.pop(), 2);\par
-{\bkmkstart AAAAAAADCY}{\bkmkend AAAAAAADCY}
-00420     EXPECT_EQ(stack.pop(), 1);\par
-{\bkmkstart AAAAAAADDC}{\bkmkend AAAAAAADDC}
-00421     \par
-{\bkmkstart AAAAAAADDE}{\bkmkend AAAAAAADDE}
-00422     EXPECT_TRUE(stack.isEmpty());\par
+00343     EXPECT_EQ(queue.front(), 1);\par
+{\bkmkstart AAAAAAADCV}{\bkmkend AAAAAAADCV}
+00344     \par
+{\bkmkstart AAAAAAADCX}{\bkmkend AAAAAAADCX}
+00345     {\cf20 // Test dequeue}\par
+{\bkmkstart AAAAAAADCZ}{\bkmkend AAAAAAADCZ}
+00346     EXPECT_EQ(queue.dequeue(), 1);\par
+{\bkmkstart AAAAAAADDD}{\bkmkend AAAAAAADDD}
+00347     EXPECT_EQ(queue.dequeue(), 2);\par
+{\bkmkstart AAAAAAADDH}{\bkmkend AAAAAAADDH}
+00348     EXPECT_EQ(queue.dequeue(), 3);\par
 {\bkmkstart AAAAAAADDI}{\bkmkend AAAAAAADDI}
-00423     \par
+00349     \par
+{\bkmkstart AAAAAAADDJ}{\bkmkend AAAAAAADDJ}
+00350     EXPECT_TRUE(queue.isEmpty());\par
 {\bkmkstart AAAAAAADDK}{\bkmkend AAAAAAADDK}
-00424     {\cf20 // Test edge cases}\par
+00351     \par
+{\bkmkstart AAAAAAADDL}{\bkmkend AAAAAAADDL}
+00352     {\cf20 // Test edge cases}\par
 {\bkmkstart AAAAAAADDM}{\bkmkend AAAAAAADDM}
-00425     EXPECT_THROW(stack.top(), std::runtime_error);\par
-{\bkmkstart AAAAAAADDQ}{\bkmkend AAAAAAADDQ}
-00426     EXPECT_THROW(stack.pop(), std::runtime_error);\par
+00353     EXPECT_THROW(queue.front(), std::runtime_error);\par
+{\bkmkstart AAAAAAADDN}{\bkmkend AAAAAAADDN}
+00354     EXPECT_THROW(queue.dequeue(), std::runtime_error);\par
+{\bkmkstart AAAAAAADDP}{\bkmkend AAAAAAADDP}
+00355 \}\par
+{\bkmkstart AAAAAAADDR}{\bkmkend AAAAAAADDR}
+00356 \par
 {\bkmkstart AAAAAAADDT}{\bkmkend AAAAAAADDT}
-00427     \par
+00357 {\cf20 // Test SparseMatrix comprehensive coverage}\par
 {\bkmkstart AAAAAAADDV}{\bkmkend AAAAAAADDV}
-00428     {\cf20 // Test clear}\par
-{\bkmkstart AAAAAAADDY}{\bkmkend AAAAAAADDY}
-00429     stack.push(1);\par
-{\bkmkstart AAAAAAADEA}{\bkmkend AAAAAAADEA}
-00430     stack.push(2);\par
+00358 TEST_F(AdvancedCoverageBoostTest, TestSparseMatrixComprehensive) \{\par
+{\bkmkstart AAAAAAADDW}{\bkmkend AAAAAAADDW}
+00359     SparseMatrix<int> matrix(5, 5, 0);\par
 {\bkmkstart AAAAAAADEB}{\bkmkend AAAAAAADEB}
-00431     stack.clear();\par
+00360     \par
 {\bkmkstart AAAAAAADED}{\bkmkend AAAAAAADED}
-00432     EXPECT_TRUE(stack.isEmpty());\par
-{\bkmkstart AAAAAAADEF}{\bkmkend AAAAAAADEF}
-00433 \}\par
-{\bkmkstart AAAAAAADEH}{\bkmkend AAAAAAADEH}
-00434 \par
-{\bkmkstart AAAAAAADEK}{\bkmkend AAAAAAADEK}
-00435 {\cf20 // Test XORLinkedList comprehensive coverage}\par
+00361     {\cf20 // Test empty matrix}\par
+{\bkmkstart AAAAAAADEG}{\bkmkend AAAAAAADEG}
+00362     EXPECT_EQ(matrix.getNonZeroCount(), 0);\par
+{\bkmkstart AAAAAAADEI}{\bkmkend AAAAAAADEI}
+00363     EXPECT_EQ(matrix.get(0, 0), 0);\par
 {\bkmkstart AAAAAAADEL}{\bkmkend AAAAAAADEL}
-00436 TEST_F(AdvancedCoverageBoostTest, TestXORLinkedListComprehensive) \{\par
-{\bkmkstart AAAAAAADER}{\bkmkend AAAAAAADER}
-00437     XORLinkedList<int> list;\par
-{\bkmkstart AAAAAAADEV}{\bkmkend AAAAAAADEV}
-00438     \par
+00364     EXPECT_FALSE(matrix.hasValue(0, 0));\par
+{\bkmkstart AAAAAAADEN}{\bkmkend AAAAAAADEN}
+00365     \par
+{\bkmkstart AAAAAAADEO}{\bkmkend AAAAAAADEO}
+00366     {\cf20 // Test setting values}\par
+{\bkmkstart AAAAAAADEP}{\bkmkend AAAAAAADEP}
+00367     matrix.set(1, 1, 10);\par
+{\bkmkstart AAAAAAADES}{\bkmkend AAAAAAADES}
+00368     matrix.set(2, 2, 20);\par
+{\bkmkstart AAAAAAADEU}{\bkmkend AAAAAAADEU}
+00369     matrix.set(3, 3, 30);\par
+{\bkmkstart AAAAAAADEW}{\bkmkend AAAAAAADEW}
+00370     \par
 {\bkmkstart AAAAAAADEX}{\bkmkend AAAAAAADEX}
-00439     {\cf20 // Test empty list}\par
-{\bkmkstart AAAAAAADEY}{\bkmkend AAAAAAADEY}
-00440     EXPECT_TRUE(list.isEmpty());\par
-{\bkmkstart AAAAAAADFB}{\bkmkend AAAAAAADFB}
-00441     EXPECT_EQ(list.size(), 0);\par
+00371     EXPECT_EQ(matrix.getNonZeroCount(), 3);\par
+{\bkmkstart AAAAAAADEZ}{\bkmkend AAAAAAADEZ}
+00372     EXPECT_EQ(matrix.get(1, 1), 10);\par
+{\bkmkstart AAAAAAADFA}{\bkmkend AAAAAAADFA}
+00373     EXPECT_EQ(matrix.get(2, 2), 20);\par
+{\bkmkstart AAAAAAADFD}{\bkmkend AAAAAAADFD}
+00374     EXPECT_EQ(matrix.get(3, 3), 30);\par
 {\bkmkstart AAAAAAADFF}{\bkmkend AAAAAAADFF}
-00442     \par
+00375     EXPECT_TRUE(matrix.hasValue(1, 1));\par
 {\bkmkstart AAAAAAADFG}{\bkmkend AAAAAAADFG}
-00443     {\cf20 // Test insertion}\par
+00376     EXPECT_TRUE(matrix.hasValue(2, 2));\par
 {\bkmkstart AAAAAAADFI}{\bkmkend AAAAAAADFI}
-00444     list.insertAtBeginning(1);\par
+00377     EXPECT_TRUE(matrix.hasValue(3, 3));\par
 {\bkmkstart AAAAAAADFK}{\bkmkend AAAAAAADFK}
-00445     list.insertAtEnd(2);\par
+00378     \par
+{\bkmkstart AAAAAAADFL}{\bkmkend AAAAAAADFL}
+00379     {\cf20 // Test removing values}\par
 {\bkmkstart AAAAAAADFN}{\bkmkend AAAAAAADFN}
-00446     list.insertAtPosition(1, 3);\par
+00380     matrix.remove(1, 1);\par
 {\bkmkstart AAAAAAADFO}{\bkmkend AAAAAAADFO}
-00447     \par
-{\bkmkstart AAAAAAADFP}{\bkmkend AAAAAAADFP}
-00448     EXPECT_FALSE(list.isEmpty());\par
+00381     EXPECT_EQ(matrix.getNonZeroCount(), 2);\par
 {\bkmkstart AAAAAAADFR}{\bkmkend AAAAAAADFR}
-00449     EXPECT_EQ(list.size(), 3);\par
+00382     EXPECT_FALSE(matrix.hasValue(1, 1));\par
+{\bkmkstart AAAAAAADFS}{\bkmkend AAAAAAADFS}
+00383     EXPECT_EQ(matrix.get(1, 1), 0);\par
+{\bkmkstart AAAAAAADFU}{\bkmkend AAAAAAADFU}
+00384     \par
 {\bkmkstart AAAAAAADFV}{\bkmkend AAAAAAADFV}
-00450     \par
+00385     {\cf20 // Test memory usage}\par
 {\bkmkstart AAAAAAADFW}{\bkmkend AAAAAAADFW}
-00451     {\cf20 // Test traversal}\par
+00386     {\cf18 size_t} memoryUsage = matrix.getMemoryUsage();\par
 {\bkmkstart AAAAAAADFY}{\bkmkend AAAAAAADFY}
-00452     std::vector<int> elements;\par
-{\bkmkstart AAAAAAADGD}{\bkmkend AAAAAAADGD}
-00453     list.traverse([&elements]({\cf18 int} value) \{\par
+00387     EXPECT_GT(memoryUsage, 0);\par
+{\bkmkstart AAAAAAADFZ}{\bkmkend AAAAAAADFZ}
+00388     \par
+{\bkmkstart AAAAAAADGA}{\bkmkend AAAAAAADGA}
+00389     {\cf20 // Test getting all non-zero elements}\par
+{\bkmkstart AAAAAAADGB}{\bkmkend AAAAAAADGB}
+00390     {\cf17 auto} nonZeroElements = matrix.getAllNonZero();\par
+{\bkmkstart AAAAAAADGE}{\bkmkend AAAAAAADGE}
+00391     EXPECT_EQ(nonZeroElements.size(), 2);\par
+{\bkmkstart AAAAAAADGF}{\bkmkend AAAAAAADGF}
+00392     \par
 {\bkmkstart AAAAAAADGG}{\bkmkend AAAAAAADGG}
-00454         elements.push_back(value);\par
+00393     {\cf20 // Test out of bounds}\par
 {\bkmkstart AAAAAAADGH}{\bkmkend AAAAAAADGH}
-00455     \});\par
+00394     EXPECT_THROW(matrix.get(10, 10), std::out_of_range);\par
 {\bkmkstart AAAAAAADGJ}{\bkmkend AAAAAAADGJ}
-00456     EXPECT_EQ(elements.size(), 3);\par
+00395     EXPECT_THROW(matrix.set(10, 10, 100), std::out_of_range);\par
 {\bkmkstart AAAAAAADGM}{\bkmkend AAAAAAADGM}
-00457     \par
+00396 \}\par
+{\bkmkstart AAAAAAADGN}{\bkmkend AAAAAAADGN}
+00397 \par
 {\bkmkstart AAAAAAADGO}{\bkmkend AAAAAAADGO}
-00458     {\cf20 // Test search}\par
+00398 {\cf20 // Test Stack comprehensive coverage}\par
 {\bkmkstart AAAAAAADGP}{\bkmkend AAAAAAADGP}
-00459     EXPECT_TRUE(list.search(1));\par
-{\bkmkstart AAAAAAADGT}{\bkmkend AAAAAAADGT}
-00460     EXPECT_TRUE(list.search(2));\par
-{\bkmkstart AAAAAAADGY}{\bkmkend AAAAAAADGY}
-00461     EXPECT_TRUE(list.search(3));\par
-{\bkmkstart AAAAAAADHB}{\bkmkend AAAAAAADHB}
-00462     EXPECT_FALSE(list.search(4));\par
-{\bkmkstart AAAAAAADHD}{\bkmkend AAAAAAADHD}
-00463     \par
-{\bkmkstart AAAAAAADHF}{\bkmkend AAAAAAADHF}
-00464     {\cf20 // Test deletion}\par
+00399 TEST_F(AdvancedCoverageBoostTest, TestStackComprehensive) \{\par
+{\bkmkstart AAAAAAADGU}{\bkmkend AAAAAAADGU}
+00400     Stack<int> stack;\par
+{\bkmkstart AAAAAAADGW}{\bkmkend AAAAAAADGW}
+00401     \par
+{\bkmkstart AAAAAAADGX}{\bkmkend AAAAAAADGX}
+00402     {\cf20 // Test empty stack}\par
+{\bkmkstart AAAAAAADGZ}{\bkmkend AAAAAAADGZ}
+00403     EXPECT_TRUE(stack.isEmpty());\par
+{\bkmkstart AAAAAAADHE}{\bkmkend AAAAAAADHE}
+00404     EXPECT_EQ(stack.size(), 0);\par
+{\bkmkstart AAAAAAADHG}{\bkmkend AAAAAAADHG}
+00405     \par
 {\bkmkstart AAAAAAADHH}{\bkmkend AAAAAAADHH}
-00465     list.deleteFromBeginning();\par
+00406     {\cf20 // Test push}\par
+{\bkmkstart AAAAAAADHJ}{\bkmkend AAAAAAADHJ}
+00407     stack.push(1);\par
 {\bkmkstart AAAAAAADHM}{\bkmkend AAAAAAADHM}
-00466     EXPECT_EQ(list.size(), 2);\par
-{\bkmkstart AAAAAAADHN}{\bkmkend AAAAAAADHN}
-00467     \par
+00408     stack.push(2);\par
+{\bkmkstart AAAAAAADHO}{\bkmkend AAAAAAADHO}
+00409     stack.push(3);\par
 {\bkmkstart AAAAAAADHP}{\bkmkend AAAAAAADHP}
-00468     list.deleteFromEnd();\par
-{\bkmkstart AAAAAAADHS}{\bkmkend AAAAAAADHS}
-00469     EXPECT_EQ(list.size(), 1);\par
+00410     \par
+{\bkmkstart AAAAAAADHQ}{\bkmkend AAAAAAADHQ}
+00411     EXPECT_FALSE(stack.isEmpty());\par
+{\bkmkstart AAAAAAADHT}{\bkmkend AAAAAAADHT}
+00412     EXPECT_EQ(stack.size(), 3);\par
+{\bkmkstart AAAAAAADHU}{\bkmkend AAAAAAADHU}
+00413     \par
+{\bkmkstart AAAAAAADHV}{\bkmkend AAAAAAADHV}
+00414     {\cf20 // Test top}\par
+{\bkmkstart AAAAAAADHW}{\bkmkend AAAAAAADHW}
+00415     EXPECT_EQ(stack.top(), 3);\par
 {\bkmkstart AAAAAAADHX}{\bkmkend AAAAAAADHX}
-00470     \par
+00416     \par
+{\bkmkstart AAAAAAADHY}{\bkmkend AAAAAAADHY}
+00417     {\cf20 // Test pop}\par
 {\bkmkstart AAAAAAADHZ}{\bkmkend AAAAAAADHZ}
-00471     list.deleteFromPosition(0);\par
+00418     EXPECT_EQ(stack.pop(), 3);\par
+{\bkmkstart AAAAAAADIA}{\bkmkend AAAAAAADIA}
+00419     EXPECT_EQ(stack.pop(), 2);\par
+{\bkmkstart AAAAAAADIB}{\bkmkend AAAAAAADIB}
+00420     EXPECT_EQ(stack.pop(), 1);\par
 {\bkmkstart AAAAAAADIC}{\bkmkend AAAAAAADIC}
-00472     EXPECT_TRUE(list.isEmpty());\par
+00421     \par
+{\bkmkstart AAAAAAADID}{\bkmkend AAAAAAADID}
+00422     EXPECT_TRUE(stack.isEmpty());\par
 {\bkmkstart AAAAAAADIE}{\bkmkend AAAAAAADIE}
-00473     \par
+00423     \par
+{\bkmkstart AAAAAAADIF}{\bkmkend AAAAAAADIF}
+00424     {\cf20 // Test edge cases}\par
 {\bkmkstart AAAAAAADIG}{\bkmkend AAAAAAADIG}
-00474     {\cf20 // Test edge cases}\par
+00425     EXPECT_THROW(stack.top(), std::runtime_error);\par
+{\bkmkstart AAAAAAADII}{\bkmkend AAAAAAADII}
+00426     EXPECT_THROW(stack.pop(), std::runtime_error);\par
 {\bkmkstart AAAAAAADIJ}{\bkmkend AAAAAAADIJ}
-00475     EXPECT_THROW(list.deleteFromBeginning(), std::runtime_error);\par
+00427     \par
+{\bkmkstart AAAAAAADIK}{\bkmkend AAAAAAADIK}
+00428     {\cf20 // Test clear}\par
+{\bkmkstart AAAAAAADIL}{\bkmkend AAAAAAADIL}
+00429     stack.push(1);\par
 {\bkmkstart AAAAAAADIM}{\bkmkend AAAAAAADIM}
-00476     EXPECT_THROW(list.deleteFromEnd(), std::runtime_error);\par
+00430     stack.push(2);\par
+{\bkmkstart AAAAAAADIN}{\bkmkend AAAAAAADIN}
+00431     stack.clear();\par
+{\bkmkstart AAAAAAADIO}{\bkmkend AAAAAAADIO}
+00432     EXPECT_TRUE(stack.isEmpty());\par
 {\bkmkstart AAAAAAADIP}{\bkmkend AAAAAAADIP}
-00477     EXPECT_THROW(list.deleteFromPosition(0), std::runtime_error);\par
-{\bkmkstart AAAAAAADIT}{\bkmkend AAAAAAADIT}
-00478 \}\par
-{\bkmkstart AAAAAAADIU}{\bkmkend AAAAAAADIU}
-00479 \par
-{\bkmkstart AAAAAAADIV}{\bkmkend AAAAAAADIV}
-00480 {\cf20 // Test performance and stress testing}\par
+00433 \}\par
+{\bkmkstart AAAAAAADIQ}{\bkmkend AAAAAAADIQ}
+00434 \par
+{\bkmkstart AAAAAAADIR}{\bkmkend AAAAAAADIR}
+00435 {\cf20 // Test XORLinkedList comprehensive coverage}\par
+{\bkmkstart AAAAAAADIS}{\bkmkend AAAAAAADIS}
+00436 TEST_F(AdvancedCoverageBoostTest, TestXORLinkedListComprehensive) \{\par
 {\bkmkstart AAAAAAADIW}{\bkmkend AAAAAAADIW}
-00481 TEST_F(AdvancedCoverageBoostTest, TestPerformanceStress) \{\par
+00437     XORLinkedList<int> list;\par
+{\bkmkstart AAAAAAADIY}{\bkmkend AAAAAAADIY}
+00438     \par
+{\bkmkstart AAAAAAADIZ}{\bkmkend AAAAAAADIZ}
+00439     {\cf20 // Test empty list}\par
 {\bkmkstart AAAAAAADJB}{\bkmkend AAAAAAADJB}
-00482     {\cf20 // Test SafeChronoCalculator performance}\par
-{\bkmkstart AAAAAAADJE}{\bkmkend AAAAAAADJE}
-00483     {\cf17 auto} start = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAADJG}{\bkmkend AAAAAAADJG}
-00484     \par
+00440     EXPECT_TRUE(list.isEmpty());\par
+{\bkmkstart AAAAAAADJC}{\bkmkend AAAAAAADJC}
+00441     EXPECT_EQ(list.size(), 0);\par
+{\bkmkstart AAAAAAADJF}{\bkmkend AAAAAAADJF}
+00442     \par
+{\bkmkstart AAAAAAADJI}{\bkmkend AAAAAAADJI}
+00443     {\cf20 // Test insertion}\par
 {\bkmkstart AAAAAAADJJ}{\bkmkend AAAAAAADJJ}
-00485     {\cf19 for} ({\cf18 int} i = 1; i <= 1000; ++i) \{\par
-{\bkmkstart AAAAAAADJN}{\bkmkend AAAAAAADJN}
-00486         {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(i, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAADJT}{\bkmkend AAAAAAADJT}
-00487         EXPECT_GE(result.count(), 0);\par
+00444     list.insertAtBeginning(1);\par
+{\bkmkstart AAAAAAADJL}{\bkmkend AAAAAAADJL}
+00445     list.insertAtEnd(2);\par
+{\bkmkstart AAAAAAADJM}{\bkmkend AAAAAAADJM}
+00446     list.insertAtPosition(1, 3);\par
+{\bkmkstart AAAAAAADJQ}{\bkmkend AAAAAAADJQ}
+00447     \par
+{\bkmkstart AAAAAAADJR}{\bkmkend AAAAAAADJR}
+00448     EXPECT_FALSE(list.isEmpty());\par
+{\bkmkstart AAAAAAADJS}{\bkmkend AAAAAAADJS}
+00449     EXPECT_EQ(list.size(), 3);\par
+{\bkmkstart AAAAAAADJU}{\bkmkend AAAAAAADJU}
+00450     \par
+{\bkmkstart AAAAAAADJV}{\bkmkend AAAAAAADJV}
+00451     {\cf20 // Test traversal}\par
+{\bkmkstart AAAAAAADJW}{\bkmkend AAAAAAADJW}
+00452     std::vector<int> elements;\par
 {\bkmkstart AAAAAAADJX}{\bkmkend AAAAAAADJX}
-00488     \}\par
+00453     list.traverse([&elements]({\cf18 int} value) \{\par
 {\bkmkstart AAAAAAADJY}{\bkmkend AAAAAAADJY}
-00489     \par
+00454         elements.push_back(value);\par
+{\bkmkstart AAAAAAADJZ}{\bkmkend AAAAAAADJZ}
+00455     \});\par
 {\bkmkstart AAAAAAADKA}{\bkmkend AAAAAAADKA}
-00490     {\cf17 auto} end = std::chrono::high_resolution_clock::now();\par
+00456     EXPECT_EQ(elements.size(), 3);\par
+{\bkmkstart AAAAAAADKC}{\bkmkend AAAAAAADKC}
+00457     \par
+{\bkmkstart AAAAAAADKD}{\bkmkend AAAAAAADKD}
+00458     {\cf20 // Test search}\par
+{\bkmkstart AAAAAAADKE}{\bkmkend AAAAAAADKE}
+00459     EXPECT_TRUE(list.search(1));\par
+{\bkmkstart AAAAAAADKF}{\bkmkend AAAAAAADKF}
+00460     EXPECT_TRUE(list.search(2));\par
 {\bkmkstart AAAAAAADKI}{\bkmkend AAAAAAADKI}
-00491     {\cf17 auto} duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);\par
+00461     EXPECT_TRUE(list.search(3));\par
+{\bkmkstart AAAAAAADKJ}{\bkmkend AAAAAAADKJ}
+00462     EXPECT_FALSE(list.search(4));\par
+{\bkmkstart AAAAAAADKL}{\bkmkend AAAAAAADKL}
+00463     \par
+{\bkmkstart AAAAAAADKM}{\bkmkend AAAAAAADKM}
+00464     {\cf20 // Test deletion}\par
+{\bkmkstart AAAAAAADKN}{\bkmkend AAAAAAADKN}
+00465     list.deleteFromBeginning();\par
+{\bkmkstart AAAAAAADKO}{\bkmkend AAAAAAADKO}
+00466     EXPECT_EQ(list.size(), 2);\par
 {\bkmkstart AAAAAAADKP}{\bkmkend AAAAAAADKP}
-00492     EXPECT_LT(duration.count(), 1000);\par
+00467     \par
+{\bkmkstart AAAAAAADKQ}{\bkmkend AAAAAAADKQ}
+00468     list.deleteFromEnd();\par
 {\bkmkstart AAAAAAADKR}{\bkmkend AAAAAAADKR}
-00493     \par
-{\bkmkstart AAAAAAADKS}{\bkmkend AAAAAAADKS}
-00494     {\cf20 // Test LanguageTranslatorApp performance}\par
+00469     EXPECT_EQ(list.size(), 1);\par
+{\bkmkstart AAAAAAADKT}{\bkmkend AAAAAAADKT}
+00470     \par
 {\bkmkstart AAAAAAADKU}{\bkmkend AAAAAAADKU}
-00495     LanguageTranslatorApp app;\par
+00471     list.deleteFromPosition(0);\par
+{\bkmkstart AAAAAAADKV}{\bkmkend AAAAAAADKV}
+00472     EXPECT_TRUE(list.isEmpty());\par
+{\bkmkstart AAAAAAADKX}{\bkmkend AAAAAAADKX}
+00473     \par
+{\bkmkstart AAAAAAADKY}{\bkmkend AAAAAAADKY}
+00474     {\cf20 // Test edge cases}\par
 {\bkmkstart AAAAAAADKZ}{\bkmkend AAAAAAADKZ}
-00496     \par
+00475     EXPECT_THROW(list.deleteFromBeginning(), std::runtime_error);\par
 {\bkmkstart AAAAAAADLA}{\bkmkend AAAAAAADLA}
-00497     {\cf19 for} ({\cf18 int} i = 0; i < 100; ++i) \{\par
+00476     EXPECT_THROW(list.deleteFromEnd(), std::runtime_error);\par
+{\bkmkstart AAAAAAADLB}{\bkmkend AAAAAAADLB}
+00477     EXPECT_THROW(list.deleteFromPosition(0), std::runtime_error);\par
+{\bkmkstart AAAAAAADLC}{\bkmkend AAAAAAADLC}
+00478 \}\par
 {\bkmkstart AAAAAAADLD}{\bkmkend AAAAAAADLD}
-00498         app.addPhrase({\cf22 "phrase "} + std::to_string(i), {\cf22 "category"} + std::to_string(i % 5));\par
-{\bkmkstart AAAAAAADLK}{\bkmkend AAAAAAADLK}
-00499         app.addLearningTip({\cf22 "tip "} + std::to_string(i));\par
-{\bkmkstart AAAAAAADLQ}{\bkmkend AAAAAAADLQ}
-00500         app.addPronunciation({\cf22 "word"} + std::to_string(i), {\cf22 "pronunciation"} + std::to_string(i));\par
-{\bkmkstart AAAAAAADLW}{\bkmkend AAAAAAADLW}
-00501     \}\par
-{\bkmkstart AAAAAAADLZ}{\bkmkend AAAAAAADLZ}
-00502     \par
-{\bkmkstart AAAAAAADMB}{\bkmkend AAAAAAADMB}
-00503     EXPECT_NO_THROW(app.showPhraseLibrary());\par
-{\bkmkstart AAAAAAADME}{\bkmkend AAAAAAADME}
-00504     EXPECT_NO_THROW(app.showLearningTips());\par
-{\bkmkstart AAAAAAADMJ}{\bkmkend AAAAAAADMJ}
-00505     EXPECT_NO_THROW(app.showPronunciationGuide());\par
-{\bkmkstart AAAAAAADMM}{\bkmkend AAAAAAADMM}
-00506 \}\par
+00479 \par
+{\bkmkstart AAAAAAADLE}{\bkmkend AAAAAAADLE}
+00480 {\cf20 // Test performance and stress testing}\par
+{\bkmkstart AAAAAAADLF}{\bkmkend AAAAAAADLF}
+00481 TEST_F(AdvancedCoverageBoostTest, TestPerformanceStress) \{\par
+{\bkmkstart AAAAAAADLG}{\bkmkend AAAAAAADLG}
+00482     {\cf20 // Test SafeChronoCalculator performance}\par
+{\bkmkstart AAAAAAADLH}{\bkmkend AAAAAAADLH}
+00483     {\cf17 auto} start = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAADLL}{\bkmkend AAAAAAADLL}
+00484     \par
+{\bkmkstart AAAAAAADLM}{\bkmkend AAAAAAADLM}
+00485     {\cf19 for} ({\cf18 int} i = 1; i <= 1000; ++i) \{\par
+{\bkmkstart AAAAAAADLO}{\bkmkend AAAAAAADLO}
+00486         {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(i, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAADLR}{\bkmkend AAAAAAADLR}
+00487         EXPECT_GE(result.count(), 0);\par
+{\bkmkstart AAAAAAADLT}{\bkmkend AAAAAAADLT}
+00488     \}\par
+{\bkmkstart AAAAAAADLU}{\bkmkend AAAAAAADLU}
+00489     \par
+{\bkmkstart AAAAAAADLV}{\bkmkend AAAAAAADLV}
+00490     {\cf17 auto} end = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAADMA}{\bkmkend AAAAAAADMA}
+00491     {\cf17 auto} duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);\par
+{\bkmkstart AAAAAAADMF}{\bkmkend AAAAAAADMF}
+00492     EXPECT_LT(duration.count(), 1000);\par
+{\bkmkstart AAAAAAADMI}{\bkmkend AAAAAAADMI}
+00493     \par
+{\bkmkstart AAAAAAADMK}{\bkmkend AAAAAAADMK}
+00494     {\cf20 // Test LanguageTranslatorApp performance}\par
+{\bkmkstart AAAAAAADML}{\bkmkend AAAAAAADML}
+00495     LanguageTranslatorApp app;\par
+{\bkmkstart AAAAAAADMN}{\bkmkend AAAAAAADMN}
+00496     \par
 {\bkmkstart AAAAAAADMO}{\bkmkend AAAAAAADMO}
-00507 \par
-{\bkmkstart AAAAAAADMP}{\bkmkend AAAAAAADMP}
-00508 {\cf20 // Test error handling and edge cases}\par
-{\bkmkstart AAAAAAADMR}{\bkmkend AAAAAAADMR}
-00509 TEST_F(AdvancedCoverageBoostTest, TestErrorHandlingEdgeCases) \{\par
-{\bkmkstart AAAAAAADMV}{\bkmkend AAAAAAADMV}
-00510     {\cf20 // Test SafeChronoCalculator error handling}\par
-{\bkmkstart AAAAAAADND}{\bkmkend AAAAAAADND}
-00511     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 0, 1000000000), std::invalid_argument);\par
-{\bkmkstart AAAAAAADNF}{\bkmkend AAAAAAADNF}
-00512     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, -1000, 1000000000), std::invalid_argument);\par
-{\bkmkstart AAAAAAADNI}{\bkmkend AAAAAAADNI}
-00513     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 0), std::invalid_argument);\par
+00497     {\cf19 for} ({\cf18 int} i = 0; i < 100; ++i) \{\par
+{\bkmkstart AAAAAAADMS}{\bkmkend AAAAAAADMS}
+00498         app.addPhrase({\cf22 "phrase "} + std::to_string(i), {\cf22 "category"} + std::to_string(i % 5));\par
+{\bkmkstart AAAAAAADMX}{\bkmkend AAAAAAADMX}
+00499         app.addLearningTip({\cf22 "tip "} + std::to_string(i));\par
+{\bkmkstart AAAAAAADNG}{\bkmkend AAAAAAADNG}
+00500         app.addPronunciation({\cf22 "word"} + std::to_string(i), {\cf22 "pronunciation"} + std::to_string(i));\par
 {\bkmkstart AAAAAAADNJ}{\bkmkend AAAAAAADNJ}
-00514     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 1000000, -1000), std::invalid_argument);\par
-{\bkmkstart AAAAAAADNO}{\bkmkend AAAAAAADNO}
-00515     \par
-{\bkmkstart AAAAAAADNQ}{\bkmkend AAAAAAADNQ}
-00516     {\cf20 // Test LanguageTranslatorApp edge cases}\par
+00501     \}\par
+{\bkmkstart AAAAAAADNK}{\bkmkend AAAAAAADNK}
+00502     \par
+{\bkmkstart AAAAAAADNL}{\bkmkend AAAAAAADNL}
+00503     EXPECT_NO_THROW(app.showPhraseLibrary());\par
+{\bkmkstart AAAAAAADNM}{\bkmkend AAAAAAADNM}
+00504     EXPECT_NO_THROW(app.showLearningTips());\par
+{\bkmkstart AAAAAAADNS}{\bkmkend AAAAAAADNS}
+00505     EXPECT_NO_THROW(app.showPronunciationGuide());\par
 {\bkmkstart AAAAAAADNT}{\bkmkend AAAAAAADNT}
-00517     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAADNU}{\bkmkend AAAAAAADNU}
-00518     \par
+00506 \}\par
 {\bkmkstart AAAAAAADNV}{\bkmkend AAAAAAADNV}
-00519     {\cf20 // Test with very long text}\par
-{\bkmkstart AAAAAAADNW}{\bkmkend AAAAAAADNW}
-00520     std::string longText(1000, {\cf23 'a'});\par
-{\bkmkstart AAAAAAADOA}{\bkmkend AAAAAAADOA}
-00521     std::string result = app.translateText(longText);\par
-{\bkmkstart AAAAAAADOD}{\bkmkend AAAAAAADOD}
-00522     EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADOF}{\bkmkend AAAAAAADOF}
-00523     \par
+00507 \par
+{\bkmkstart AAAAAAADNZ}{\bkmkend AAAAAAADNZ}
+00508 {\cf20 // Test error handling and edge cases}\par
+{\bkmkstart AAAAAAADOB}{\bkmkend AAAAAAADOB}
+00509 TEST_F(AdvancedCoverageBoostTest, TestErrorHandlingEdgeCases) \{\par
+{\bkmkstart AAAAAAADOE}{\bkmkend AAAAAAADOE}
+00510     {\cf20 // Test SafeChronoCalculator error handling}\par
+{\bkmkstart AAAAAAADOG}{\bkmkend AAAAAAADOG}
+00511     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 0, 1000000000), std::invalid_argument);\par
 {\bkmkstart AAAAAAADOH}{\bkmkend AAAAAAADOH}
-00524     {\cf20 // Test with special characters}\par
-{\bkmkstart AAAAAAADOI}{\bkmkend AAAAAAADOI}
-00525     result = app.translateText({\cf22 "Hello, World! @#$%^&*()"});\par
-{\bkmkstart AAAAAAADON}{\bkmkend AAAAAAADON}
-00526     EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADOO}{\bkmkend AAAAAAADOO}
-00527     \par
-{\bkmkstart AAAAAAADOP}{\bkmkend AAAAAAADOP}
-00528     {\cf20 // Test with numbers}\par
-{\bkmkstart AAAAAAADOR}{\bkmkend AAAAAAADOR}
-00529     result = app.translateText({\cf22 "123 456 789"});\par
-{\bkmkstart AAAAAAADOT}{\bkmkend AAAAAAADOT}
-00530     EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADOU}{\bkmkend AAAAAAADOU}
-00531     \par
-{\bkmkstart AAAAAAADOV}{\bkmkend AAAAAAADOV}
-00532     {\cf20 // Test with mixed languages}\par
-{\bkmkstart AAAAAAADOW}{\bkmkend AAAAAAADOW}
-00533     result = app.translateText({\cf22 "hello merhaba hola"});\par
-{\bkmkstart AAAAAAADOX}{\bkmkend AAAAAAADOX}
-00534     EXPECT_FALSE(result.empty());\par
+00512     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, -1000, 1000000000), std::invalid_argument);\par
+{\bkmkstart AAAAAAADOJ}{\bkmkend AAAAAAADOJ}
+00513     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 0), std::invalid_argument);\par
+{\bkmkstart AAAAAAADOL}{\bkmkend AAAAAAADOL}
+00514     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 1000000, -1000), std::invalid_argument);\par
 {\bkmkstart AAAAAAADOY}{\bkmkend AAAAAAADOY}
-00535 \}\par
+00515     \par
 {\bkmkstart AAAAAAADOZ}{\bkmkend AAAAAAADOZ}
-00536 \par
+00516     {\cf20 // Test LanguageTranslatorApp edge cases}\par
 {\bkmkstart AAAAAAADPA}{\bkmkend AAAAAAADPA}
-00537 {\cf20 // Test consistency and reliability}\par
-{\bkmkstart AAAAAAADPB}{\bkmkend AAAAAAADPB}
-00538 TEST_F(AdvancedCoverageBoostTest, TestConsistencyReliability) \{\par
-{\bkmkstart AAAAAAADPC}{\bkmkend AAAAAAADPC}
-00539     {\cf20 // Test SafeChronoCalculator consistency}\par
+00517     LanguageTranslatorApp app;\par
 {\bkmkstart AAAAAAADPD}{\bkmkend AAAAAAADPD}
-00540     {\cf17 auto} result1 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
+00518     \par
 {\bkmkstart AAAAAAADPE}{\bkmkend AAAAAAADPE}
-00541     {\cf17 auto} result2 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
+00519     {\cf20 // Test with very long text}\par
+{\bkmkstart AAAAAAADPF}{\bkmkend AAAAAAADPF}
+00520     std::string longText(1000, {\cf23 'a'});\par
 {\bkmkstart AAAAAAADPG}{\bkmkend AAAAAAADPG}
-00542     EXPECT_EQ(result1.count(), result2.count());\par
+00521     std::string result = app.translateText(longText);\par
 {\bkmkstart AAAAAAADPH}{\bkmkend AAAAAAADPH}
-00543     \par
+00522     EXPECT_FALSE(result.empty());\par
 {\bkmkstart AAAAAAADPI}{\bkmkend AAAAAAADPI}
-00544     {\cf20 // Test LanguageTranslatorApp consistency}\par
+00523     \par
 {\bkmkstart AAAAAAADPJ}{\bkmkend AAAAAAADPJ}
-00545     LanguageTranslatorApp app;\par
+00524     {\cf20 // Test with special characters}\par
 {\bkmkstart AAAAAAADPK}{\bkmkend AAAAAAADPK}
-00546     std::string input = {\cf22 "hello world"};\par
+00525     result = app.translateText({\cf22 "Hello, World! @#$%^&*()"});\par
 {\bkmkstart AAAAAAADPL}{\bkmkend AAAAAAADPL}
-00547     std::string result1_lang = app.translateText(input);\par
+00526     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAADPM}{\bkmkend AAAAAAADPM}
+00527     \par
 {\bkmkstart AAAAAAADPN}{\bkmkend AAAAAAADPN}
-00548     std::string result2_lang = app.translateText(input);\par
+00528     {\cf20 // Test with numbers}\par
+{\bkmkstart AAAAAAADPO}{\bkmkend AAAAAAADPO}
+00529     result = app.translateText({\cf22 "123 456 789"});\par
 {\bkmkstart AAAAAAADPP}{\bkmkend AAAAAAADPP}
-00549     EXPECT_EQ(result1_lang, result2_lang);\par
+00530     EXPECT_FALSE(result.empty());\par
 {\bkmkstart AAAAAAADPQ}{\bkmkend AAAAAAADPQ}
-00550     \par
+00531     \par
 {\bkmkstart AAAAAAADPR}{\bkmkend AAAAAAADPR}
-00551     {\cf20 // Test data structure consistency}\par
+00532     {\cf20 // Test with mixed languages}\par
 {\bkmkstart AAAAAAADPS}{\bkmkend AAAAAAADPS}
-00552     DoublyLinkedList<int> list;\par
+00533     result = app.translateText({\cf22 "hello merhaba hola"});\par
+{\bkmkstart AAAAAAADPT}{\bkmkend AAAAAAADPT}
+00534     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAADPU}{\bkmkend AAAAAAADPU}
+00535 \}\par
+{\bkmkstart AAAAAAADPV}{\bkmkend AAAAAAADPV}
+00536 \par
 {\bkmkstart AAAAAAADPW}{\bkmkend AAAAAAADPW}
-00553     list.insertAtEnd(1);\par
+00537 {\cf20 // Test consistency and reliability}\par
 {\bkmkstart AAAAAAADPX}{\bkmkend AAAAAAADPX}
-00554     list.insertAtEnd(2);\par
+00538 TEST_F(AdvancedCoverageBoostTest, TestConsistencyReliability) \{\par
 {\bkmkstart AAAAAAADPY}{\bkmkend AAAAAAADPY}
-00555     list.insertAtEnd(3);\par
+00539     {\cf20 // Test SafeChronoCalculator consistency}\par
 {\bkmkstart AAAAAAADPZ}{\bkmkend AAAAAAADPZ}
-00556     \par
+00540     {\cf17 auto} result1 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
 {\bkmkstart AAAAAAADQA}{\bkmkend AAAAAAADQA}
-00557     std::vector<int> elements1, elements2;\par
+00541     {\cf17 auto} result2 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAADQB}{\bkmkend AAAAAAADQB}
+00542     EXPECT_EQ(result1.count(), result2.count());\par
+{\bkmkstart AAAAAAADQC}{\bkmkend AAAAAAADQC}
+00543     \par
+{\bkmkstart AAAAAAADQD}{\bkmkend AAAAAAADQD}
+00544     {\cf20 // Test LanguageTranslatorApp consistency}\par
 {\bkmkstart AAAAAAADQE}{\bkmkend AAAAAAADQE}
-00558     list.traverse([&elements1]({\cf18 int} value) \{ elements1.push_back(value); \});\par
+00545     LanguageTranslatorApp app;\par
+{\bkmkstart AAAAAAADQF}{\bkmkend AAAAAAADQF}
+00546     std::string input = {\cf22 "hello world"};\par
+{\bkmkstart AAAAAAADQG}{\bkmkend AAAAAAADQG}
+00547     std::string result1_lang = app.translateText(input);\par
 {\bkmkstart AAAAAAADQH}{\bkmkend AAAAAAADQH}
-00559     list.traverse([&elements2]({\cf18 int} value) \{ elements2.push_back(value); \});\par
+00548     std::string result2_lang = app.translateText(input);\par
+{\bkmkstart AAAAAAADQI}{\bkmkend AAAAAAADQI}
+00549     EXPECT_EQ(result1_lang, result2_lang);\par
 {\bkmkstart AAAAAAADQJ}{\bkmkend AAAAAAADQJ}
-00560     \par
+00550     \par
+{\bkmkstart AAAAAAADQK}{\bkmkend AAAAAAADQK}
+00551     {\cf20 // Test data structure consistency}\par
 {\bkmkstart AAAAAAADQL}{\bkmkend AAAAAAADQL}
-00561     EXPECT_EQ(elements1, elements2);\par
+00552     DoublyLinkedList<int> list;\par
+{\bkmkstart AAAAAAADQM}{\bkmkend AAAAAAADQM}
+00553     list.insertAtEnd(1);\par
+{\bkmkstart AAAAAAADQN}{\bkmkend AAAAAAADQN}
+00554     list.insertAtEnd(2);\par
 {\bkmkstart AAAAAAADQO}{\bkmkend AAAAAAADQO}
+00555     list.insertAtEnd(3);\par
+{\bkmkstart AAAAAAADQP}{\bkmkend AAAAAAADQP}
+00556     \par
+{\bkmkstart AAAAAAADQQ}{\bkmkend AAAAAAADQQ}
+00557     std::vector<int> elements1, elements2;\par
+{\bkmkstart AAAAAAADQR}{\bkmkend AAAAAAADQR}
+00558     list.traverse([&elements1]({\cf18 int} value) \{ elements1.push_back(value); \});\par
+{\bkmkstart AAAAAAADQS}{\bkmkend AAAAAAADQS}
+00559     list.traverse([&elements2]({\cf18 int} value) \{ elements2.push_back(value); \});\par
+{\bkmkstart AAAAAAADQT}{\bkmkend AAAAAAADQT}
+00560     \par
+{\bkmkstart AAAAAAADQU}{\bkmkend AAAAAAADQU}
+00561     EXPECT_EQ(elements1, elements2);\par
+{\bkmkstart AAAAAAADQV}{\bkmkend AAAAAAADQV}
 00562 \}\par
 }
 }

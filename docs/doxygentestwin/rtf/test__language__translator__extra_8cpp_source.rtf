@@ -151,107 +151,107 @@
 test_language_translator_extra.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_extra.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_extra.cpp}
-{\bkmkstart AAAAAAADUR}
-{\bkmkend AAAAAAADUR}
+{\bkmkstart AAAAAAADQW}
+{\bkmkend AAAAAAADQW}
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAADVP}{\bkmkend AAAAAAADVP}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAADQX}{\bkmkend AAAAAAADQX}
 00001 {\cf20 // Ek kapsama: LanguageTranslatorApp için kayıt, sözlük yükleme ve çeşitli yollar}\par
-{\bkmkstart AAAAAAADVT}{\bkmkend AAAAAAADVT}
+{\bkmkstart AAAAAAADQY}{\bkmkend AAAAAAADQY}
 00002 \par
-{\bkmkstart AAAAAAADVU}{\bkmkend AAAAAAADVU}
+{\bkmkstart AAAAAAADQZ}{\bkmkend AAAAAAADQZ}
 00003 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAADVW}{\bkmkend AAAAAAADVW}
+{\bkmkstart AAAAAAADRC}{\bkmkend AAAAAAADRC}
 00004 {\cf21 #include <fstream>}\par
-{\bkmkstart AAAAAAADWJ}{\bkmkend AAAAAAADWJ}
+{\bkmkstart AAAAAAADRF}{\bkmkend AAAAAAADRF}
 00005 {\cf21 #include <string>}\par
-{\bkmkstart AAAAAAADWX}{\bkmkend AAAAAAADWX}
+{\bkmkstart AAAAAAADRI}{\bkmkend AAAAAAADRI}
 00006 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
-{\bkmkstart AAAAAAADYB}{\bkmkend AAAAAAADYB}
+{\bkmkstart AAAAAAADRP}{\bkmkend AAAAAAADRP}
 00007 \par
-{\bkmkstart AAAAAAADYC}{\bkmkend AAAAAAADYC}
+{\bkmkstart AAAAAAADRQ}{\bkmkend AAAAAAADRQ}
 00008 {\cf17 using namespace }Coruh::LanguageTranslator;\par
-{\bkmkstart AAAAAAADYK}{\bkmkend AAAAAAADYK}
+{\bkmkstart AAAAAAADRR}{\bkmkend AAAAAAADRR}
 00009 \par
-{\bkmkstart AAAAAAADYM}{\bkmkend AAAAAAADYM}
+{\bkmkstart AAAAAAADRS}{\bkmkend AAAAAAADRS}
 00010 TEST(LanguageTranslatorExtra, RegisterExistingUserFails)\{\par
-{\bkmkstart AAAAAAADYU}{\bkmkend AAAAAAADYU}
+{\bkmkstart AAAAAAADRV}{\bkmkend AAAAAAADRV}
 00011     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAADZA}{\bkmkend AAAAAAADZA}
+{\bkmkstart AAAAAAADRW}{\bkmkend AAAAAAADRW}
 00012     {\cf20 // 'admin' zaten rezervli kabul ediliyor}\par
-{\bkmkstart AAAAAAADZC}{\bkmkend AAAAAAADZC}
+{\bkmkstart AAAAAAADRX}{\bkmkend AAAAAAADRX}
 00013     EXPECT_FALSE(app.registerUser({\cf22 "admin"}, {\cf22 "anything"}));\par
-{\bkmkstart AAAAAAADZG}{\bkmkend AAAAAAADZG}
+{\bkmkstart AAAAAAADRZ}{\bkmkend AAAAAAADRZ}
 00014 \}\par
-{\bkmkstart AAAAAAADZI}{\bkmkend AAAAAAADZI}
+{\bkmkstart AAAAAAADSA}{\bkmkend AAAAAAADSA}
 00015 \par
-{\bkmkstart AAAAAAADZJ}{\bkmkend AAAAAAADZJ}
+{\bkmkstart AAAAAAADSB}{\bkmkend AAAAAAADSB}
 00016 TEST(LanguageTranslatorExtra, LoadDictionaryFromRealFile)\{\par
-{\bkmkstart AAAAAAADZQ}{\bkmkend AAAAAAADZQ}
+{\bkmkstart AAAAAAADSE}{\bkmkend AAAAAAADSE}
 00017     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAADZS}{\bkmkend AAAAAAADZS}
+{\bkmkstart AAAAAAADSF}{\bkmkend AAAAAAADSF}
 00018     app.setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAADZV}{\bkmkend AAAAAAADZV}
+{\bkmkstart AAAAAAADSG}{\bkmkend AAAAAAADSG}
 00019     app.setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAEBM}{\bkmkend AAAAAAAEBM}
+{\bkmkstart AAAAAAADSJ}{\bkmkend AAAAAAADSJ}
 00020 \par
-{\bkmkstart AAAAAAAEBN}{\bkmkend AAAAAAAEBN}
+{\bkmkstart AAAAAAADSK}{\bkmkend AAAAAAADSK}
 00021     {\cf20 // Geçici sözlük dosyası oluştur}\par
-{\bkmkstart AAAAAAAEBO}{\bkmkend AAAAAAAEBO}
+{\bkmkstart AAAAAAADSL}{\bkmkend AAAAAAADSL}
 00022     {\cf17 const} std::string fname = {\cf22 "temp_en_tr_dict_test.txt"};\par
-{\bkmkstart AAAAAAAEBV}{\bkmkend AAAAAAAEBV}
+{\bkmkstart AAAAAAADSM}{\bkmkend AAAAAAADSM}
 00023     \{\par
-{\bkmkstart AAAAAAAEBY}{\bkmkend AAAAAAAEBY}
+{\bkmkstart AAAAAAADSO}{\bkmkend AAAAAAADSO}
 00024         std::ofstream ofs(fname, std::ios::trunc);\par
-{\bkmkstart AAAAAAAECQ}{\bkmkend AAAAAAAECQ}
+{\bkmkstart AAAAAAADSQ}{\bkmkend AAAAAAADSQ}
 00025         ASSERT_TRUE(ofs.good());\par
-{\bkmkstart AAAAAAAECT}{\bkmkend AAAAAAAECT}
+{\bkmkstart AAAAAAADSR}{\bkmkend AAAAAAADSR}
 00026         ofs << {\cf22 "bye:gule\\n"};\par
-{\bkmkstart AAAAAAAEDB}{\bkmkend AAAAAAAEDB}
+{\bkmkstart AAAAAAADSW}{\bkmkend AAAAAAADSW}
 00027         ofs << {\cf22 "# comment line\\n"};\par
-{\bkmkstart AAAAAAAEDE}{\bkmkend AAAAAAAEDE}
+{\bkmkstart AAAAAAADSY}{\bkmkend AAAAAAADSY}
 00028         ofs << {\cf22 "  space : bosluk  \\n"}; {\cf20 // trim testi}\par
-{\bkmkstart AAAAAAAEDF}{\bkmkend AAAAAAAEDF}
+{\bkmkstart AAAAAAADTA}{\bkmkend AAAAAAADTA}
 00029     \}\par
-{\bkmkstart AAAAAAAEDG}{\bkmkend AAAAAAAEDG}
+{\bkmkstart AAAAAAADTC}{\bkmkend AAAAAAADTC}
 00030 \par
-{\bkmkstart AAAAAAAEDH}{\bkmkend AAAAAAAEDH}
+{\bkmkstart AAAAAAADTD}{\bkmkend AAAAAAADTD}
 00031     {\cf20 // Yükle ve doğrula}\par
-{\bkmkstart AAAAAAAEDJ}{\bkmkend AAAAAAAEDJ}
+{\bkmkstart AAAAAAADTE}{\bkmkend AAAAAAADTE}
 00032     ASSERT_TRUE(app.loadDictionaryFromFile({\cf22 "English"}, {\cf22 "Turkish"}, fname));\par
-{\bkmkstart AAAAAAAEED}{\bkmkend AAAAAAAEED}
+{\bkmkstart AAAAAAADTK}{\bkmkend AAAAAAADTK}
 00033     EXPECT_EQ(app.translateWord({\cf22 "bye"}), {\cf22 "gule"});\par
-{\bkmkstart AAAAAAAEEP}{\bkmkend AAAAAAAEEP}
+{\bkmkstart AAAAAAADTM}{\bkmkend AAAAAAADTM}
 00034     {\cf20 // Trim edilmiş anahtar/değerler de yüklenmiş olmalı}\par
-{\bkmkstart AAAAAAAEGC}{\bkmkend AAAAAAAEGC}
+{\bkmkstart AAAAAAADTO}{\bkmkend AAAAAAADTO}
 00035     EXPECT_EQ(app.translateWord({\cf22 "space"}), {\cf22 "bosluk"});\par
-{\bkmkstart AAAAAAAEGG}{\bkmkend AAAAAAAEGG}
+{\bkmkstart AAAAAAADTQ}{\bkmkend AAAAAAADTQ}
 00036 \}\par
-{\bkmkstart AAAAAAAEGI}{\bkmkend AAAAAAAEGI}
+{\bkmkstart AAAAAAADTR}{\bkmkend AAAAAAADTR}
 00037 \par
-{\bkmkstart AAAAAAAEGJ}{\bkmkend AAAAAAAEGJ}
+{\bkmkstart AAAAAAADTU}{\bkmkend AAAAAAADTU}
 00038 TEST(LanguageTranslatorExtra, AddLanguageNoDuplicate)\{\par
-{\bkmkstart AAAAAAAEGP}{\bkmkend AAAAAAAEGP}
+{\bkmkstart AAAAAAADTX}{\bkmkend AAAAAAADTX}
 00039     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAAEGS}{\bkmkend AAAAAAAEGS}
+{\bkmkstart AAAAAAADUA}{\bkmkend AAAAAAADUA}
 00040     {\cf17 auto} before = app.getSupportedLanguages();\par
-{\bkmkstart AAAAAAAEGV}{\bkmkend AAAAAAAEGV}
+{\bkmkstart AAAAAAADUD}{\bkmkend AAAAAAADUD}
 00041     app.addLanguage({\cf22 "Klingon"});\par
-{\bkmkstart AAAAAAAEGW}{\bkmkend AAAAAAAEGW}
+{\bkmkstart AAAAAAADUE}{\bkmkend AAAAAAADUE}
 00042     {\cf17 auto} afterAdd = app.getSupportedLanguages();\par
-{\bkmkstart AAAAAAAEGY}{\bkmkend AAAAAAAEGY}
+{\bkmkstart AAAAAAADVP}{\bkmkend AAAAAAADVP}
 00043     EXPECT_GE(afterAdd.size(), before.size() + 1);\par
-{\bkmkstart AAAAAAAEHD}{\bkmkend AAAAAAAEHD}
+{\bkmkstart AAAAAAADWB}{\bkmkend AAAAAAADWB}
 00044     {\cf20 // Aynı dili tekrar ekleme — boyut değişmemeli}\par
-{\bkmkstart AAAAAAAEHF}{\bkmkend AAAAAAAEHF}
+{\bkmkstart AAAAAAADWC}{\bkmkend AAAAAAADWC}
 00045     app.addLanguage({\cf22 "Klingon"});\par
-{\bkmkstart AAAAAAAEHG}{\bkmkend AAAAAAAEHG}
+{\bkmkstart AAAAAAADWF}{\bkmkend AAAAAAADWF}
 00046     {\cf17 auto} afterDup = app.getSupportedLanguages();\par
-{\bkmkstart AAAAAAAEHJ}{\bkmkend AAAAAAAEHJ}
+{\bkmkstart AAAAAAADWH}{\bkmkend AAAAAAADWH}
 00047     EXPECT_EQ(afterDup.size(), afterAdd.size());\par
-{\bkmkstart AAAAAAAEHL}{\bkmkend AAAAAAAEHL}
+{\bkmkstart AAAAAAADWJ}{\bkmkend AAAAAAADWJ}
 00048 \}\par
-{\bkmkstart AAAAAAAEHM}{\bkmkend AAAAAAAEHM}
+{\bkmkstart AAAAAAADWK}{\bkmkend AAAAAAADWK}
 00049 \par
 }
 }
