@@ -66,7 +66,7 @@ call reportgenerator "-title:translate Library Unit Test Coverage Report (Window
     "-reporttypes:Html" ^
     "-reports:**/translateapp_unit_win_cobertura.xml" ^
     "-sourcedirs:src;include" ^
-    "-filefilters:+*src/LanguageTranslator/src/*;+*src/LanguageTranslator/header/*;+*src/SafeChronoCalculator.*;+*src/coverage_anchor/*;+*include/ds/*;-*\\tests\\*;-*build*;-*gtest*" ^
+    "-filefilters:+*src/*;+*include/*;-*\\tests\\*;-*build*;-*gtest*" ^
     "-historydir:report_test_hist_win"
 
 echo.

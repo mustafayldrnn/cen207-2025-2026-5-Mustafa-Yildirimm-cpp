@@ -151,313 +151,313 @@
 test_language_translator_user_management.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_user_management.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_user_management.cpp}
-{\bkmkstart AAAAAAAERK}
-{\bkmkend AAAAAAAERK}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAERL" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAENK}
+{\bkmkend AAAAAAAENK}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAENL" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAERM}{\bkmkend AAAAAAAERM}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAENQ}{\bkmkend AAAAAAAENQ}
 00001 \par
-{\bkmkstart AAAAAAAERN}{\bkmkend AAAAAAAERN}
+{\bkmkstart AAAAAAAENR}{\bkmkend AAAAAAAENR}
 00006 \par
-{\bkmkstart AAAAAAAERO}{\bkmkend AAAAAAAERO}
+{\bkmkstart AAAAAAAENS}{\bkmkend AAAAAAAENS}
 00007 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAERP}{\bkmkend AAAAAAAERP}
+{\bkmkstart AAAAAAAENT}{\bkmkend AAAAAAAENT}
 00008 {\cf21 #include <filesystem>}\par
-{\bkmkstart AAAAAAAERQ}{\bkmkend AAAAAAAERQ}
+{\bkmkstart AAAAAAAENU}{\bkmkend AAAAAAAENU}
 00009 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
-{\bkmkstart AAAAAAAERX}{\bkmkend AAAAAAAERX}
+{\bkmkstart AAAAAAAENV}{\bkmkend AAAAAAAENV}
 00010 \par
-{\bkmkstart AAAAAAAERZ}{\bkmkend AAAAAAAERZ}
+{\bkmkstart AAAAAAAENW}{\bkmkend AAAAAAAENW}
 00011 {\cf17 using namespace }Coruh::LanguageTranslator;\par
-{\bkmkstart AAAAAAAESF}{\bkmkend AAAAAAAESF}
+{\bkmkstart AAAAAAAENX}{\bkmkend AAAAAAAENX}
 00012 \par
-{\bkmkstart AAAAAAAESG}{\bkmkend AAAAAAAESG}
+{\bkmkstart AAAAAAAENY}{\bkmkend AAAAAAAENY}
 00013 {\cf17 class }LanguageTranslatorUserManagementTest : {\cf17 public} ::testing::Test \{\par
-{\bkmkstart AAAAAAAESH}{\bkmkend AAAAAAAESH}
+{\bkmkstart AAAAAAAENZ}{\bkmkend AAAAAAAENZ}
 00014 {\cf17 protected}:\par
-{\bkmkstart AAAAAAAESI}{\bkmkend AAAAAAAESI}
+{\bkmkstart AAAAAAAEOA}{\bkmkend AAAAAAAEOA}
 00015     {\cf18 void} SetUp(){\cf17  override }\{\par
-{\bkmkstart AAAAAAAESL}{\bkmkend AAAAAAAESL}
+{\bkmkstart AAAAAAAEOB}{\bkmkend AAAAAAAEOB}
 00016         {\cf20 // Clean up any existing data files}\par
-{\bkmkstart AAAAAAAESM}{\bkmkend AAAAAAAESM}
+{\bkmkstart AAAAAAAEOC}{\bkmkend AAAAAAAEOC}
 00017         {\cf19 if} (std::filesystem::exists({\cf22 "data/users.bin"})) \{\par
-{\bkmkstart AAAAAAAESN}{\bkmkend AAAAAAAESN}
+{\bkmkstart AAAAAAAEOD}{\bkmkend AAAAAAAEOD}
 00018             std::filesystem::remove({\cf22 "data/users.bin"});\par
-{\bkmkstart AAAAAAAESO}{\bkmkend AAAAAAAESO}
+{\bkmkstart AAAAAAAEOE}{\bkmkend AAAAAAAEOE}
 00019         \}\par
-{\bkmkstart AAAAAAAESP}{\bkmkend AAAAAAAESP}
+{\bkmkstart AAAAAAAEOF}{\bkmkend AAAAAAAEOF}
 00020         app = std::make_unique<LanguageTranslatorApp>();\par
-{\bkmkstart AAAAAAAESS}{\bkmkend AAAAAAAESS}
+{\bkmkstart AAAAAAAEOH}{\bkmkend AAAAAAAEOH}
 00021     \}\par
-{\bkmkstart AAAAAAAESU}{\bkmkend AAAAAAAESU}
+{\bkmkstart AAAAAAAEOJ}{\bkmkend AAAAAAAEOJ}
 00022     \par
-{\bkmkstart AAAAAAAESW}{\bkmkend AAAAAAAESW}
+{\bkmkstart AAAAAAAEOK}{\bkmkend AAAAAAAEOK}
 00023     {\cf18 void} TearDown(){\cf17  override }\{\par
-{\bkmkstart AAAAAAAETA}{\bkmkend AAAAAAAETA}
+{\bkmkstart AAAAAAAEON}{\bkmkend AAAAAAAEON}
 00024         app.reset();\par
-{\bkmkstart AAAAAAAETS}{\bkmkend AAAAAAAETS}
+{\bkmkstart AAAAAAAEOO}{\bkmkend AAAAAAAEOO}
 00025     \}\par
-{\bkmkstart AAAAAAAETT}{\bkmkend AAAAAAAETT}
+{\bkmkstart AAAAAAAEOP}{\bkmkend AAAAAAAEOP}
 00026     \par
-{\bkmkstart AAAAAAAETV}{\bkmkend AAAAAAAETV}
+{\bkmkstart AAAAAAAEOQ}{\bkmkend AAAAAAAEOQ}
 00027     std::unique_ptr<LanguageTranslatorApp> app;\par
-{\bkmkstart AAAAAAAETX}{\bkmkend AAAAAAAETX}
+{\bkmkstart AAAAAAAEOT}{\bkmkend AAAAAAAEOT}
 00028 \};\par
-{\bkmkstart AAAAAAAETY}{\bkmkend AAAAAAAETY}
+{\bkmkstart AAAAAAAEOU}{\bkmkend AAAAAAAEOU}
 00029 \par
-{\bkmkstart AAAAAAAETZ}{\bkmkend AAAAAAAETZ}
+{\bkmkstart AAAAAAAEOV}{\bkmkend AAAAAAAEOV}
 00030 {\cf20 // Test user registration with valid credentials}\par
-{\bkmkstart AAAAAAAEUA}{\bkmkend AAAAAAAEUA}
+{\bkmkstart AAAAAAAEOX}{\bkmkend AAAAAAAEOX}
 00031 TEST_F(LanguageTranslatorUserManagementTest, TestUserRegistration) \{\par
-{\bkmkstart AAAAAAAEUI}{\bkmkend AAAAAAAEUI}
+{\bkmkstart AAAAAAAEPE}{\bkmkend AAAAAAAEPE}
 00032     EXPECT_TRUE(app->registerUser({\cf22 "testuser1"}, {\cf22 "password123"}));\par
-{\bkmkstart AAAAAAAEUQ}{\bkmkend AAAAAAAEUQ}
+{\bkmkstart AAAAAAAEPH}{\bkmkend AAAAAAAEPH}
 00033     EXPECT_TRUE(app->registerUser({\cf22 "testuser2"}, {\cf22 "anotherpass"}));\par
-{\bkmkstart AAAAAAAEUS}{\bkmkend AAAAAAAEUS}
+{\bkmkstart AAAAAAAEPJ}{\bkmkend AAAAAAAEPJ}
 00034     EXPECT_TRUE(app->registerUser({\cf22 "john_doe"}, {\cf22 "securePass456"}));\par
-{\bkmkstart AAAAAAAEUT}{\bkmkend AAAAAAAEUT}
+{\bkmkstart AAAAAAAEPK}{\bkmkend AAAAAAAEPK}
 00035 \}\par
-{\bkmkstart AAAAAAAEUV}{\bkmkend AAAAAAAEUV}
+{\bkmkstart AAAAAAAEPM}{\bkmkend AAAAAAAEPM}
 00036 \par
-{\bkmkstart AAAAAAAEUX}{\bkmkend AAAAAAAEUX}
+{\bkmkstart AAAAAAAEPO}{\bkmkend AAAAAAAEPO}
 00037 {\cf20 // Test user registration with duplicate username}\par
-{\bkmkstart AAAAAAAEUZ}{\bkmkend AAAAAAAEUZ}
+{\bkmkstart AAAAAAAEPP}{\bkmkend AAAAAAAEPP}
 00038 TEST_F(LanguageTranslatorUserManagementTest, TestDuplicateUserRegistration) \{\par
-{\bkmkstart AAAAAAAEVC}{\bkmkend AAAAAAAEVC}
+{\bkmkstart AAAAAAAEPR}{\bkmkend AAAAAAAEPR}
 00039     EXPECT_TRUE(app->registerUser({\cf22 "testuser"}, {\cf22 "password123"}));\par
-{\bkmkstart AAAAAAAEVD}{\bkmkend AAAAAAAEVD}
+{\bkmkstart AAAAAAAEPT}{\bkmkend AAAAAAAEPT}
 00040     EXPECT_FALSE(app->registerUser({\cf22 "testuser"}, {\cf22 "differentpassword"}));\par
-{\bkmkstart AAAAAAAEVE}{\bkmkend AAAAAAAEVE}
+{\bkmkstart AAAAAAAEPW}{\bkmkend AAAAAAAEPW}
 00041 \}\par
-{\bkmkstart AAAAAAAEVF}{\bkmkend AAAAAAAEVF}
+{\bkmkstart AAAAAAAEPY}{\bkmkend AAAAAAAEPY}
 00042 \par
-{\bkmkstart AAAAAAAEVH}{\bkmkend AAAAAAAEVH}
+{\bkmkstart AAAAAAAEQA}{\bkmkend AAAAAAAEQA}
 00043 {\cf20 // Test admin user is reserved}\par
-{\bkmkstart AAAAAAAEVI}{\bkmkend AAAAAAAEVI}
+{\bkmkstart AAAAAAAEQB}{\bkmkend AAAAAAAEQB}
 00044 TEST_F(LanguageTranslatorUserManagementTest, TestAdminUserReserved) \{\par
-{\bkmkstart AAAAAAAEVL}{\bkmkend AAAAAAAEVL}
+{\bkmkstart AAAAAAAEQC}{\bkmkend AAAAAAAEQC}
 00045     EXPECT_FALSE(app->registerUser({\cf22 "admin"}, {\cf22 "anypassword"}));\par
-{\bkmkstart AAAAAAAEVO}{\bkmkend AAAAAAAEVO}
+{\bkmkstart AAAAAAAEQG}{\bkmkend AAAAAAAEQG}
 00046 \}\par
-{\bkmkstart AAAAAAAEVP}{\bkmkend AAAAAAAEVP}
+{\bkmkstart AAAAAAAEQH}{\bkmkend AAAAAAAEQH}
 00047 \par
-{\bkmkstart AAAAAAAEVQ}{\bkmkend AAAAAAAEVQ}
+{\bkmkstart AAAAAAAEQJ}{\bkmkend AAAAAAAEQJ}
 00048 {\cf20 // Test login with valid credentials}\par
-{\bkmkstart AAAAAAAEVR}{\bkmkend AAAAAAAEVR}
+{\bkmkstart AAAAAAAEQK}{\bkmkend AAAAAAAEQK}
 00049 TEST_F(LanguageTranslatorUserManagementTest, TestValidLogin) \{\par
-{\bkmkstart AAAAAAAEVT}{\bkmkend AAAAAAAEVT}
+{\bkmkstart AAAAAAAEQL}{\bkmkend AAAAAAAEQL}
 00050     app->registerUser({\cf22 "testuser"}, {\cf22 "password123"});\par
-{\bkmkstart AAAAAAAEVV}{\bkmkend AAAAAAAEVV}
+{\bkmkstart AAAAAAAEQM}{\bkmkend AAAAAAAEQM}
 00051     EXPECT_TRUE(app->login({\cf22 "testuser"}, {\cf22 "password123"}));\par
-{\bkmkstart AAAAAAAEVW}{\bkmkend AAAAAAAEVW}
+{\bkmkstart AAAAAAAEQN}{\bkmkend AAAAAAAEQN}
 00052     EXPECT_TRUE(app->isUserLoggedIn());\par
-{\bkmkstart AAAAAAAEVY}{\bkmkend AAAAAAAEVY}
+{\bkmkstart AAAAAAAEQO}{\bkmkend AAAAAAAEQO}
 00053 \}\par
-{\bkmkstart AAAAAAAEWA}{\bkmkend AAAAAAAEWA}
+{\bkmkstart AAAAAAAEQQ}{\bkmkend AAAAAAAEQQ}
 00054 \par
-{\bkmkstart AAAAAAAEWB}{\bkmkend AAAAAAAEWB}
+{\bkmkstart AAAAAAAEQS}{\bkmkend AAAAAAAEQS}
 00055 {\cf20 // Test login with invalid credentials}\par
-{\bkmkstart AAAAAAAEWE}{\bkmkend AAAAAAAEWE}
+{\bkmkstart AAAAAAAEQU}{\bkmkend AAAAAAAEQU}
 00056 TEST_F(LanguageTranslatorUserManagementTest, TestInvalidLogin) \{\par
-{\bkmkstart AAAAAAAEWH}{\bkmkend AAAAAAAEWH}
+{\bkmkstart AAAAAAAEQX}{\bkmkend AAAAAAAEQX}
 00057     app->registerUser({\cf22 "testuser"}, {\cf22 "password123"});\par
-{\bkmkstart AAAAAAAFAV}{\bkmkend AAAAAAAFAV}
+{\bkmkstart AAAAAAAERA}{\bkmkend AAAAAAAERA}
 00058     EXPECT_FALSE(app->login({\cf22 "testuser"}, {\cf22 "wrongpassword"}));\par
-{\bkmkstart AAAAAAAFAW}{\bkmkend AAAAAAAFAW}
+{\bkmkstart AAAAAAAERD}{\bkmkend AAAAAAAERD}
 00059     EXPECT_FALSE(app->login({\cf22 "nonexistent"}, {\cf22 "password"}));\par
-{\bkmkstart AAAAAAAFAX}{\bkmkend AAAAAAAFAX}
+{\bkmkstart AAAAAAAERE}{\bkmkend AAAAAAAERE}
 00060 \}\par
-{\bkmkstart AAAAAAAFAY}{\bkmkend AAAAAAAFAY}
+{\bkmkstart AAAAAAAERF}{\bkmkend AAAAAAAERF}
 00061 \par
-{\bkmkstart AAAAAAAFAZ}{\bkmkend AAAAAAAFAZ}
+{\bkmkstart AAAAAAAERG}{\bkmkend AAAAAAAERG}
 00062 {\cf20 // Test admin login}\par
-{\bkmkstart AAAAAAAFBA}{\bkmkend AAAAAAAFBA}
+{\bkmkstart AAAAAAAERH}{\bkmkend AAAAAAAERH}
 00063 TEST_F(LanguageTranslatorUserManagementTest, TestAdminLogin) \{\par
-{\bkmkstart AAAAAAAFBB}{\bkmkend AAAAAAAFBB}
+{\bkmkstart AAAAAAAERK}{\bkmkend AAAAAAAERK}
 00064     EXPECT_TRUE(app->login({\cf22 "admin"}, {\cf22 "admin"}));\par
-{\bkmkstart AAAAAAAFBC}{\bkmkend AAAAAAAFBC}
+{\bkmkstart AAAAAAAERM}{\bkmkend AAAAAAAERM}
 00065     EXPECT_TRUE(app->isUserLoggedIn());\par
-{\bkmkstart AAAAAAAFBD}{\bkmkend AAAAAAAFBD}
+{\bkmkstart AAAAAAAERO}{\bkmkend AAAAAAAERO}
 00066 \}\par
-{\bkmkstart AAAAAAAFBE}{\bkmkend AAAAAAAFBE}
+{\bkmkstart AAAAAAAERQ}{\bkmkend AAAAAAAERQ}
 00067 \par
-{\bkmkstart AAAAAAAFBF}{\bkmkend AAAAAAAFBF}
+{\bkmkstart AAAAAAAERR}{\bkmkend AAAAAAAERR}
 00068 {\cf20 // Test logout functionality}\par
-{\bkmkstart AAAAAAAFBG}{\bkmkend AAAAAAAFBG}
+{\bkmkstart AAAAAAAERS}{\bkmkend AAAAAAAERS}
 00069 TEST_F(LanguageTranslatorUserManagementTest, TestLogout) \{\par
-{\bkmkstart AAAAAAAFBH}{\bkmkend AAAAAAAFBH}
+{\bkmkstart AAAAAAAERT}{\bkmkend AAAAAAAERT}
 00070     app->registerUser({\cf22 "testuser"}, {\cf22 "password123"});\par
-{\bkmkstart AAAAAAAFBI}{\bkmkend AAAAAAAFBI}
+{\bkmkstart AAAAAAAERU}{\bkmkend AAAAAAAERU}
 00071     app->login({\cf22 "testuser"}, {\cf22 "password123"});\par
-{\bkmkstart AAAAAAAFBJ}{\bkmkend AAAAAAAFBJ}
+{\bkmkstart AAAAAAAERV}{\bkmkend AAAAAAAERV}
 00072     EXPECT_TRUE(app->isUserLoggedIn());\par
-{\bkmkstart AAAAAAAFBK}{\bkmkend AAAAAAAFBK}
+{\bkmkstart AAAAAAAERZ}{\bkmkend AAAAAAAERZ}
 00073     \par
-{\bkmkstart AAAAAAAFBL}{\bkmkend AAAAAAAFBL}
+{\bkmkstart AAAAAAAESB}{\bkmkend AAAAAAAESB}
 00074     app->logout();\par
-{\bkmkstart AAAAAAAFBM}{\bkmkend AAAAAAAFBM}
+{\bkmkstart AAAAAAAESC}{\bkmkend AAAAAAAESC}
 00075     EXPECT_FALSE(app->isUserLoggedIn());\par
-{\bkmkstart AAAAAAAFBN}{\bkmkend AAAAAAAFBN}
+{\bkmkstart AAAAAAAESE}{\bkmkend AAAAAAAESE}
 00076 \}\par
-{\bkmkstart AAAAAAAFBO}{\bkmkend AAAAAAAFBO}
+{\bkmkstart AAAAAAAESF}{\bkmkend AAAAAAAESF}
 00077 \par
-{\bkmkstart AAAAAAAFBP}{\bkmkend AAAAAAAFBP}
+{\bkmkstart AAAAAAAESG}{\bkmkend AAAAAAAESG}
 00078 {\cf20 // Test user session persistence}\par
-{\bkmkstart AAAAAAAFBQ}{\bkmkend AAAAAAAFBQ}
+{\bkmkstart AAAAAAAESI}{\bkmkend AAAAAAAESI}
 00079 TEST_F(LanguageTranslatorUserManagementTest, TestSessionPersistence) \{\par
-{\bkmkstart AAAAAAAFBR}{\bkmkend AAAAAAAFBR}
+{\bkmkstart AAAAAAAESL}{\bkmkend AAAAAAAESL}
 00080     app->registerUser({\cf22 "testuser"}, {\cf22 "password123"});\par
-{\bkmkstart AAAAAAAFBS}{\bkmkend AAAAAAAFBS}
+{\bkmkstart AAAAAAAESN}{\bkmkend AAAAAAAESN}
 00081     app->login({\cf22 "testuser"}, {\cf22 "password123"});\par
-{\bkmkstart AAAAAAAFBT}{\bkmkend AAAAAAAFBT}
+{\bkmkstart AAAAAAAESQ}{\bkmkend AAAAAAAESQ}
 00082     EXPECT_TRUE(app->isUserLoggedIn());\par
-{\bkmkstart AAAAAAAFBU}{\bkmkend AAAAAAAFBU}
+{\bkmkstart AAAAAAAESS}{\bkmkend AAAAAAAESS}
 00083     \par
-{\bkmkstart AAAAAAAFBV}{\bkmkend AAAAAAAFBV}
+{\bkmkstart AAAAAAAEST}{\bkmkend AAAAAAAEST}
 00084     {\cf20 // Simulate using the app}\par
-{\bkmkstart AAAAAAAFBW}{\bkmkend AAAAAAAFBW}
+{\bkmkstart AAAAAAAESV}{\bkmkend AAAAAAAESV}
 00085     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAAFBX}{\bkmkend AAAAAAAFBX}
+{\bkmkstart AAAAAAAESX}{\bkmkend AAAAAAAESX}
 00086     app->setTargetLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAAFBY}{\bkmkend AAAAAAAFBY}
+{\bkmkstart AAAAAAAESY}{\bkmkend AAAAAAAESY}
 00087     app->translateText({\cf22 "hello world"});\par
-{\bkmkstart AAAAAAAFBZ}{\bkmkend AAAAAAAFBZ}
+{\bkmkstart AAAAAAAETA}{\bkmkend AAAAAAAETA}
 00088     \par
-{\bkmkstart AAAAAAAFCA}{\bkmkend AAAAAAAFCA}
+{\bkmkstart AAAAAAAETC}{\bkmkend AAAAAAAETC}
 00089     {\cf20 // Should still be logged in}\par
-{\bkmkstart AAAAAAAFCB}{\bkmkend AAAAAAAFCB}
+{\bkmkstart AAAAAAAETG}{\bkmkend AAAAAAAETG}
 00090     EXPECT_TRUE(app->isUserLoggedIn());\par
-{\bkmkstart AAAAAAAFCC}{\bkmkend AAAAAAAFCC}
+{\bkmkstart AAAAAAAETI}{\bkmkend AAAAAAAETI}
 00091 \}\par
-{\bkmkstart AAAAAAAFCD}{\bkmkend AAAAAAAFCD}
+{\bkmkstart AAAAAAAETJ}{\bkmkend AAAAAAAETJ}
 00092 \par
-{\bkmkstart AAAAAAAFCF}{\bkmkend AAAAAAAFCF}
+{\bkmkstart AAAAAAAETK}{\bkmkend AAAAAAAETK}
 00093 {\cf20 // Test multiple login attempts}\par
-{\bkmkstart AAAAAAAFCH}{\bkmkend AAAAAAAFCH}
+{\bkmkstart AAAAAAAETM}{\bkmkend AAAAAAAETM}
 00094 TEST_F(LanguageTranslatorUserManagementTest, TestMultipleLoginAttempts) \{\par
-{\bkmkstart AAAAAAAFCI}{\bkmkend AAAAAAAFCI}
+{\bkmkstart AAAAAAAETQ}{\bkmkend AAAAAAAETQ}
 00095     app->registerUser({\cf22 "testuser"}, {\cf22 "password123"});\par
-{\bkmkstart AAAAAAAFCJ}{\bkmkend AAAAAAAFCJ}
+{\bkmkstart AAAAAAAETT}{\bkmkend AAAAAAAETT}
 00096     \par
-{\bkmkstart AAAAAAAFCK}{\bkmkend AAAAAAAFCK}
+{\bkmkstart AAAAAAAETV}{\bkmkend AAAAAAAETV}
 00097     {\cf20 // First login}\par
-{\bkmkstart AAAAAAAFCL}{\bkmkend AAAAAAAFCL}
+{\bkmkstart AAAAAAAETX}{\bkmkend AAAAAAAETX}
 00098     EXPECT_TRUE(app->login({\cf22 "testuser"}, {\cf22 "password123"}));\par
-{\bkmkstart AAAAAAAFCM}{\bkmkend AAAAAAAFCM}
+{\bkmkstart AAAAAAAETY}{\bkmkend AAAAAAAETY}
 00099     app->logout();\par
-{\bkmkstart AAAAAAAFCN}{\bkmkend AAAAAAAFCN}
+{\bkmkstart AAAAAAAEUA}{\bkmkend AAAAAAAEUA}
 00100     \par
-{\bkmkstart AAAAAAAFCO}{\bkmkend AAAAAAAFCO}
+{\bkmkstart AAAAAAAEUB}{\bkmkend AAAAAAAEUB}
 00101     {\cf20 // Second login}\par
-{\bkmkstart AAAAAAAFCP}{\bkmkend AAAAAAAFCP}
+{\bkmkstart AAAAAAAEUD}{\bkmkend AAAAAAAEUD}
 00102     EXPECT_TRUE(app->login({\cf22 "testuser"}, {\cf22 "password123"}));\par
-{\bkmkstart AAAAAAAFCQ}{\bkmkend AAAAAAAFCQ}
+{\bkmkstart AAAAAAAEUH}{\bkmkend AAAAAAAEUH}
 00103     app->logout();\par
-{\bkmkstart AAAAAAAFCR}{\bkmkend AAAAAAAFCR}
+{\bkmkstart AAAAAAAEUI}{\bkmkend AAAAAAAEUI}
 00104     \par
-{\bkmkstart AAAAAAAFCS}{\bkmkend AAAAAAAFCS}
+{\bkmkstart AAAAAAAEUJ}{\bkmkend AAAAAAAEUJ}
 00105     {\cf20 // Third login}\par
-{\bkmkstart AAAAAAAFCT}{\bkmkend AAAAAAAFCT}
+{\bkmkstart AAAAAAAEUK}{\bkmkend AAAAAAAEUK}
 00106     EXPECT_TRUE(app->login({\cf22 "testuser"}, {\cf22 "password123"}));\par
-{\bkmkstart AAAAAAAFCU}{\bkmkend AAAAAAAFCU}
+{\bkmkstart AAAAAAAEUL}{\bkmkend AAAAAAAEUL}
 00107 \}\par
-{\bkmkstart AAAAAAAFCV}{\bkmkend AAAAAAAFCV}
+{\bkmkstart AAAAAAAEUM}{\bkmkend AAAAAAAEUM}
 00108 \par
-{\bkmkstart AAAAAAAFCW}{\bkmkend AAAAAAAFCW}
+{\bkmkstart AAAAAAAEUN}{\bkmkend AAAAAAAEUN}
 00109 {\cf20 // Test concurrent user registration}\par
-{\bkmkstart AAAAAAAFCX}{\bkmkend AAAAAAAFCX}
+{\bkmkstart AAAAAAAEUO}{\bkmkend AAAAAAAEUO}
 00110 TEST_F(LanguageTranslatorUserManagementTest, TestConcurrentUsers) \{\par
-{\bkmkstart AAAAAAAFCY}{\bkmkend AAAAAAAFCY}
+{\bkmkstart AAAAAAAEUP}{\bkmkend AAAAAAAEUP}
 00111     EXPECT_TRUE(app->registerUser({\cf22 "user1"}, {\cf22 "pass1"}));\par
-{\bkmkstart AAAAAAAFCZ}{\bkmkend AAAAAAAFCZ}
+{\bkmkstart AAAAAAAEUQ}{\bkmkend AAAAAAAEUQ}
 00112     EXPECT_TRUE(app->registerUser({\cf22 "user2"}, {\cf22 "pass2"}));\par
-{\bkmkstart AAAAAAAFDA}{\bkmkend AAAAAAAFDA}
+{\bkmkstart AAAAAAAEUR}{\bkmkend AAAAAAAEUR}
 00113     EXPECT_TRUE(app->registerUser({\cf22 "user3"}, {\cf22 "pass3"}));\par
-{\bkmkstart AAAAAAAFDB}{\bkmkend AAAAAAAFDB}
+{\bkmkstart AAAAAAAEUS}{\bkmkend AAAAAAAEUS}
 00114     \par
-{\bkmkstart AAAAAAAFDC}{\bkmkend AAAAAAAFDC}
+{\bkmkstart AAAAAAAEUT}{\bkmkend AAAAAAAEUT}
 00115     {\cf20 // All should be able to login}\par
-{\bkmkstart AAAAAAAFDD}{\bkmkend AAAAAAAFDD}
+{\bkmkstart AAAAAAAEUU}{\bkmkend AAAAAAAEUU}
 00116     EXPECT_TRUE(app->login({\cf22 "user1"}, {\cf22 "pass1"}));\par
-{\bkmkstart AAAAAAAFDE}{\bkmkend AAAAAAAFDE}
+{\bkmkstart AAAAAAAEUV}{\bkmkend AAAAAAAEUV}
 00117     app->logout();\par
-{\bkmkstart AAAAAAAFDF}{\bkmkend AAAAAAAFDF}
+{\bkmkstart AAAAAAAEUW}{\bkmkend AAAAAAAEUW}
 00118     EXPECT_TRUE(app->login({\cf22 "user2"}, {\cf22 "pass2"}));\par
-{\bkmkstart AAAAAAAFDG}{\bkmkend AAAAAAAFDG}
+{\bkmkstart AAAAAAAEUX}{\bkmkend AAAAAAAEUX}
 00119     app->logout();\par
-{\bkmkstart AAAAAAAFDH}{\bkmkend AAAAAAAFDH}
+{\bkmkstart AAAAAAAEUY}{\bkmkend AAAAAAAEUY}
 00120     EXPECT_TRUE(app->login({\cf22 "user3"}, {\cf22 "pass3"}));\par
-{\bkmkstart AAAAAAAFDI}{\bkmkend AAAAAAAFDI}
+{\bkmkstart AAAAAAAEUZ}{\bkmkend AAAAAAAEUZ}
 00121 \}\par
-{\bkmkstart AAAAAAAFDJ}{\bkmkend AAAAAAAFDJ}
+{\bkmkstart AAAAAAAEVA}{\bkmkend AAAAAAAEVA}
 00122 \par
-{\bkmkstart AAAAAAAFDK}{\bkmkend AAAAAAAFDK}
+{\bkmkstart AAAAAAAEVB}{\bkmkend AAAAAAAEVB}
 00123 {\cf20 // Test empty username and password}\par
-{\bkmkstart AAAAAAAFDL}{\bkmkend AAAAAAAFDL}
+{\bkmkstart AAAAAAAEVC}{\bkmkend AAAAAAAEVC}
 00124 TEST_F(LanguageTranslatorUserManagementTest, TestEmptyCredentials) \{\par
-{\bkmkstart AAAAAAAFDM}{\bkmkend AAAAAAAFDM}
+{\bkmkstart AAAAAAAEVD}{\bkmkend AAAAAAAEVD}
 00125     EXPECT_TRUE(app->registerUser({\cf22 ""}, {\cf22 "password"}));  {\cf20 // Empty username might be allowed}\par
-{\bkmkstart AAAAAAAFDN}{\bkmkend AAAAAAAFDN}
+{\bkmkstart AAAAAAAEVE}{\bkmkend AAAAAAAEVE}
 00126     EXPECT_TRUE(app->registerUser({\cf22 "username"}, {\cf22 ""}));  {\cf20 // Empty password might be allowed}\par
-{\bkmkstart AAAAAAAFDO}{\bkmkend AAAAAAAFDO}
+{\bkmkstart AAAAAAAEVF}{\bkmkend AAAAAAAEVF}
 00127 \}\par
-{\bkmkstart AAAAAAAFDP}{\bkmkend AAAAAAAFDP}
+{\bkmkstart AAAAAAAEVG}{\bkmkend AAAAAAAEVG}
 00128 \par
-{\bkmkstart AAAAAAAFDQ}{\bkmkend AAAAAAAFDQ}
+{\bkmkstart AAAAAAAEVH}{\bkmkend AAAAAAAEVH}
 00129 {\cf20 // Test special characters in username}\par
-{\bkmkstart AAAAAAAFDR}{\bkmkend AAAAAAAFDR}
+{\bkmkstart AAAAAAAEVI}{\bkmkend AAAAAAAEVI}
 00130 TEST_F(LanguageTranslatorUserManagementTest, TestSpecialCharactersInUsername) \{\par
-{\bkmkstart AAAAAAAFDS}{\bkmkend AAAAAAAFDS}
+{\bkmkstart AAAAAAAEVJ}{\bkmkend AAAAAAAEVJ}
 00131     EXPECT_TRUE(app->registerUser({\cf22 "user_name"}, {\cf22 "password"}));\par
-{\bkmkstart AAAAAAAFDT}{\bkmkend AAAAAAAFDT}
+{\bkmkstart AAAAAAAEVK}{\bkmkend AAAAAAAEVK}
 00132     EXPECT_TRUE(app->registerUser({\cf22 "user.name"}, {\cf22 "password"}));\par
-{\bkmkstart AAAAAAAFDU}{\bkmkend AAAAAAAFDU}
+{\bkmkstart AAAAAAAEVL}{\bkmkend AAAAAAAEVL}
 00133     EXPECT_TRUE(app->registerUser({\cf22 "user123"}, {\cf22 "password"}));\par
-{\bkmkstart AAAAAAAFDV}{\bkmkend AAAAAAAFDV}
+{\bkmkstart AAAAAAAEVM}{\bkmkend AAAAAAAEVM}
 00134 \}\par
-{\bkmkstart AAAAAAAFDW}{\bkmkend AAAAAAAFDW}
+{\bkmkstart AAAAAAAEVN}{\bkmkend AAAAAAAEVN}
 00135 \par
-{\bkmkstart AAAAAAAFDX}{\bkmkend AAAAAAAFDX}
+{\bkmkstart AAAAAAAEVO}{\bkmkend AAAAAAAEVO}
 00136 {\cf20 // Test long username and password}\par
-{\bkmkstart AAAAAAAFDY}{\bkmkend AAAAAAAFDY}
+{\bkmkstart AAAAAAAEVP}{\bkmkend AAAAAAAEVP}
 00137 TEST_F(LanguageTranslatorUserManagementTest, TestLongCredentials) \{\par
-{\bkmkstart AAAAAAAFEA}{\bkmkend AAAAAAAFEA}
+{\bkmkstart AAAAAAAEVQ}{\bkmkend AAAAAAAEVQ}
 00138     std::string longUsername(100, {\cf23 'a'});\par
-{\bkmkstart AAAAAAAFEB}{\bkmkend AAAAAAAFEB}
+{\bkmkstart AAAAAAAEVR}{\bkmkend AAAAAAAEVR}
 00139     std::string longPassword(100, {\cf23 'b'});\par
-{\bkmkstart AAAAAAAFEE}{\bkmkend AAAAAAAFEE}
+{\bkmkstart AAAAAAAEVS}{\bkmkend AAAAAAAEVS}
 00140     EXPECT_TRUE(app->registerUser(longUsername, longPassword));\par
-{\bkmkstart AAAAAAAFEF}{\bkmkend AAAAAAAFEF}
+{\bkmkstart AAAAAAAEVT}{\bkmkend AAAAAAAEVT}
 00141     EXPECT_TRUE(app->login(longUsername, longPassword));\par
-{\bkmkstart AAAAAAAFEG}{\bkmkend AAAAAAAFEG}
+{\bkmkstart AAAAAAAEVU}{\bkmkend AAAAAAAEVU}
 00142 \}\par
-{\bkmkstart AAAAAAAFEH}{\bkmkend AAAAAAAFEH}
+{\bkmkstart AAAAAAAEVV}{\bkmkend AAAAAAAEVV}
 00143 \par
-{\bkmkstart AAAAAAAFEI}{\bkmkend AAAAAAAFEI}
+{\bkmkstart AAAAAAAEVW}{\bkmkend AAAAAAAEVW}
 00144 {\cf20 // Test user preferred language settings}\par
-{\bkmkstart AAAAAAAFEJ}{\bkmkend AAAAAAAFEJ}
+{\bkmkstart AAAAAAAEVX}{\bkmkend AAAAAAAEVX}
 00145 TEST_F(LanguageTranslatorUserManagementTest, TestUserPreferredLanguages) \{\par
-{\bkmkstart AAAAAAAFEK}{\bkmkend AAAAAAAFEK}
+{\bkmkstart AAAAAAAEVY}{\bkmkend AAAAAAAEVY}
 00146     app->setSourceLanguage({\cf22 "Spanish"});\par
-{\bkmkstart AAAAAAAFEL}{\bkmkend AAAAAAAFEL}
+{\bkmkstart AAAAAAAEVZ}{\bkmkend AAAAAAAEVZ}
 00147     app->setTargetLanguage({\cf22 "French"});\par
-{\bkmkstart AAAAAAAFEM}{\bkmkend AAAAAAAFEM}
+{\bkmkstart AAAAAAAEWA}{\bkmkend AAAAAAAEWA}
 00148     \par
-{\bkmkstart AAAAAAAFEN}{\bkmkend AAAAAAAFEN}
+{\bkmkstart AAAAAAAEWB}{\bkmkend AAAAAAAEWB}
 00149     app->registerUser({\cf22 "testuser"}, {\cf22 "password"});\par
-{\bkmkstart AAAAAAAFEO}{\bkmkend AAAAAAAFEO}
+{\bkmkstart AAAAAAAEWC}{\bkmkend AAAAAAAEWC}
 00150     app->login({\cf22 "testuser"}, {\cf22 "password"});\par
-{\bkmkstart AAAAAAAFEP}{\bkmkend AAAAAAAFEP}
+{\bkmkstart AAAAAAAEWD}{\bkmkend AAAAAAAEWD}
 00151     \par
-{\bkmkstart AAAAAAAFEQ}{\bkmkend AAAAAAAFEQ}
+{\bkmkstart AAAAAAAEWE}{\bkmkend AAAAAAAEWE}
 00152     {\cf20 // User's preferred languages should be loaded (implementation dependent)}\par
-{\bkmkstart AAAAAAAFER}{\bkmkend AAAAAAAFER}
+{\bkmkstart AAAAAAAEWF}{\bkmkend AAAAAAAEWF}
 00153     EXPECT_TRUE(app->isUserLoggedIn());\par
-{\bkmkstart AAAAAAAFES}{\bkmkend AAAAAAAFES}
+{\bkmkstart AAAAAAAEWG}{\bkmkend AAAAAAAEWG}
 00154 \}\par
-{\bkmkstart AAAAAAAFET}{\bkmkend AAAAAAAFET}
+{\bkmkstart AAAAAAAEWH}{\bkmkend AAAAAAAEWH}
 00155 \par
 }
 }

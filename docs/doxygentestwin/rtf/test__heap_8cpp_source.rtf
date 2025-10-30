@@ -151,135 +151,135 @@
 test_heap.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_heap.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_heap.cpp}
-{\bkmkstart AAAAAAACSB}
-{\bkmkend AAAAAAACSB}
+{\bkmkstart AAAAAAACWF}
+{\bkmkend AAAAAAACWF}
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAACUH}{\bkmkend AAAAAAACUH}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAACYS}{\bkmkend AAAAAAACYS}
 00001 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAACVJ}{\bkmkend AAAAAAACVJ}
+{\bkmkstart AAAAAAACZX}{\bkmkend AAAAAAACZX}
 00002 {\cf21 #include "ds/heap.h"}\par
-{\bkmkstart AAAAAAACWE}{\bkmkend AAAAAAACWE}
+{\bkmkstart AAAAAAADAN}{\bkmkend AAAAAAADAN}
 00003 \par
-{\bkmkstart AAAAAAACWG}{\bkmkend AAAAAAACWG}
+{\bkmkstart AAAAAAADAO}{\bkmkend AAAAAAADAO}
 00004 TEST(BinaryHeap, PushPopOrder)\{\par
-{\bkmkstart AAAAAAADAZ}{\bkmkend AAAAAAADAZ}
+{\bkmkstart AAAAAAADAU}{\bkmkend AAAAAAADAU}
 00005     ds::BinaryHeap<int> h; h.push(3); h.push(1); h.push(5); h.push(2);\par
-{\bkmkstart AAAAAAADBL}{\bkmkend AAAAAAADBL}
+{\bkmkstart AAAAAAADAX}{\bkmkend AAAAAAADAX}
 00006     EXPECT_EQ(h.top(), 5); h.pop(); EXPECT_EQ(h.top(), 3); h.pop(); EXPECT_EQ(h.top(), 2);\par
-{\bkmkstart AAAAAAADBR}{\bkmkend AAAAAAADBR}
+{\bkmkstart AAAAAAADBE}{\bkmkend AAAAAAADBE}
 00007 \}\par
-{\bkmkstart AAAAAAADBT}{\bkmkend AAAAAAADBT}
+{\bkmkstart AAAAAAADBF}{\bkmkend AAAAAAADBF}
 00008 \par
-{\bkmkstart AAAAAAADBU}{\bkmkend AAAAAAADBU}
+{\bkmkstart AAAAAAADBG}{\bkmkend AAAAAAADBG}
 00009 TEST(BinaryHeap, HeapSort)\{\par
-{\bkmkstart AAAAAAADBX}{\bkmkend AAAAAAADBX}
+{\bkmkstart AAAAAAADBK}{\bkmkend AAAAAAADBK}
 00010     ds::BinaryHeap<int> h; {\cf19 for} ({\cf18 int} v: \{5,1,4,2,3\}) h.push(v);\par
-{\bkmkstart AAAAAAADCD}{\bkmkend AAAAAAADCD}
+{\bkmkstart AAAAAAADBV}{\bkmkend AAAAAAADBV}
 00011     {\cf17 auto} sorted = h.heap_sort_copy();\par
-{\bkmkstart AAAAAAADCI}{\bkmkend AAAAAAADCI}
+{\bkmkstart AAAAAAADBY}{\bkmkend AAAAAAADBY}
 00012     {\cf20 // For max-heap, heap_sort_copy returns descending}\par
-{\bkmkstart AAAAAAADCK}{\bkmkend AAAAAAADCK}
+{\bkmkstart AAAAAAADCB}{\bkmkend AAAAAAADCB}
 00013     ASSERT_EQ(sorted.size(), 5u);\par
-{\bkmkstart AAAAAAADCO}{\bkmkend AAAAAAADCO}
+{\bkmkstart AAAAAAADCC}{\bkmkend AAAAAAADCC}
 00014     EXPECT_EQ(sorted[0], 5); EXPECT_EQ(sorted[1], 4); EXPECT_EQ(sorted[2], 3); EXPECT_EQ(sorted[3], 2); EXPECT_EQ(sorted[4], 1);\par
-{\bkmkstart AAAAAAADCR}{\bkmkend AAAAAAADCR}
+{\bkmkstart AAAAAAADCH}{\bkmkend AAAAAAADCH}
 00015 \}\par
-{\bkmkstart AAAAAAADCS}{\bkmkend AAAAAAADCS}
+{\bkmkstart AAAAAAADCJ}{\bkmkend AAAAAAADCJ}
 00016 \par
-{\bkmkstart AAAAAAADCU}{\bkmkend AAAAAAADCU}
+{\bkmkstart AAAAAAADCL}{\bkmkend AAAAAAADCL}
 00017 TEST(BinaryHeap, SizeAndEmpty)\{\par
-{\bkmkstart AAAAAAADCW}{\bkmkend AAAAAAADCW}
+{\bkmkstart AAAAAAADCP}{\bkmkend AAAAAAADCP}
 00018     ds::BinaryHeap<int> h;\par
-{\bkmkstart AAAAAAADCX}{\bkmkend AAAAAAADCX}
+{\bkmkstart AAAAAAADCV}{\bkmkend AAAAAAADCV}
 00019     EXPECT_TRUE(h.empty());\par
-{\bkmkstart AAAAAAADDA}{\bkmkend AAAAAAADDA}
+{\bkmkstart AAAAAAADCX}{\bkmkend AAAAAAADCX}
 00020     EXPECT_EQ(h.size(), 0u);\par
-{\bkmkstart AAAAAAADDD}{\bkmkend AAAAAAADDD}
+{\bkmkstart AAAAAAADCZ}{\bkmkend AAAAAAADCZ}
 00021     \par
-{\bkmkstart AAAAAAADDE}{\bkmkend AAAAAAADDE}
+{\bkmkstart AAAAAAADDA}{\bkmkend AAAAAAADDA}
 00022     h.push(10);\par
-{\bkmkstart AAAAAAADDF}{\bkmkend AAAAAAADDF}
+{\bkmkstart AAAAAAADDD}{\bkmkend AAAAAAADDD}
 00023     EXPECT_FALSE(h.empty());\par
-{\bkmkstart AAAAAAADDI}{\bkmkend AAAAAAADDI}
+{\bkmkstart AAAAAAADDG}{\bkmkend AAAAAAADDG}
 00024     EXPECT_EQ(h.size(), 1u);\par
-{\bkmkstart AAAAAAADDM}{\bkmkend AAAAAAADDM}
+{\bkmkstart AAAAAAADDL}{\bkmkend AAAAAAADDL}
 00025     \par
-{\bkmkstart AAAAAAADDP}{\bkmkend AAAAAAADDP}
+{\bkmkstart AAAAAAADDN}{\bkmkend AAAAAAADDN}
 00026     h.push(20);\par
-{\bkmkstart AAAAAAADDR}{\bkmkend AAAAAAADDR}
+{\bkmkstart AAAAAAADDO}{\bkmkend AAAAAAADDO}
 00027     EXPECT_EQ(h.size(), 2u);\par
-{\bkmkstart AAAAAAADDT}{\bkmkend AAAAAAADDT}
+{\bkmkstart AAAAAAADDP}{\bkmkend AAAAAAADDP}
 00028     \par
-{\bkmkstart AAAAAAADDV}{\bkmkend AAAAAAADDV}
+{\bkmkstart AAAAAAADDR}{\bkmkend AAAAAAADDR}
 00029     h.pop();\par
-{\bkmkstart AAAAAAADDW}{\bkmkend AAAAAAADDW}
+{\bkmkstart AAAAAAADDS}{\bkmkend AAAAAAADDS}
 00030     EXPECT_EQ(h.size(), 1u);\par
-{\bkmkstart AAAAAAADDY}{\bkmkend AAAAAAADDY}
+{\bkmkstart AAAAAAADDU}{\bkmkend AAAAAAADDU}
 00031     \par
-{\bkmkstart AAAAAAADEA}{\bkmkend AAAAAAADEA}
+{\bkmkstart AAAAAAADDW}{\bkmkend AAAAAAADDW}
 00032     h.pop();\par
-{\bkmkstart AAAAAAADEC}{\bkmkend AAAAAAADEC}
+{\bkmkstart AAAAAAADDZ}{\bkmkend AAAAAAADDZ}
 00033     EXPECT_TRUE(h.empty());\par
-{\bkmkstart AAAAAAADEG}{\bkmkend AAAAAAADEG}
+{\bkmkstart AAAAAAADEC}{\bkmkend AAAAAAADEC}
 00034     EXPECT_EQ(h.size(), 0u);\par
-{\bkmkstart AAAAAAADEH}{\bkmkend AAAAAAADEH}
+{\bkmkstart AAAAAAADEE}{\bkmkend AAAAAAADEE}
 00035 \}\par
-{\bkmkstart AAAAAAADEJ}{\bkmkend AAAAAAADEJ}
+{\bkmkstart AAAAAAADEG}{\bkmkend AAAAAAADEG}
 00036 \par
-{\bkmkstart AAAAAAADEK}{\bkmkend AAAAAAADEK}
+{\bkmkstart AAAAAAADEI}{\bkmkend AAAAAAADEI}
 00037 TEST(BinaryHeap, MinHeap)\{\par
-{\bkmkstart AAAAAAADEN}{\bkmkend AAAAAAADEN}
+{\bkmkstart AAAAAAADEM}{\bkmkend AAAAAAADEM}
 00038     ds::BinaryHeap<int, std::greater<int>> minHeap;\par
 {\bkmkstart AAAAAAADEQ}{\bkmkend AAAAAAADEQ}
 00039     minHeap.push(5); minHeap.push(1); minHeap.push(3); minHeap.push(2);\par
-{\bkmkstart AAAAAAADES}{\bkmkend AAAAAAADES}
+{\bkmkstart AAAAAAADET}{\bkmkend AAAAAAADET}
 00040     EXPECT_EQ(minHeap.top(), 1);\par
-{\bkmkstart AAAAAAADEU}{\bkmkend AAAAAAADEU}
+{\bkmkstart AAAAAAADEW}{\bkmkend AAAAAAADEW}
 00041     minHeap.pop();\par
-{\bkmkstart AAAAAAADEV}{\bkmkend AAAAAAADEV}
-00042     EXPECT_EQ(minHeap.top(), 2);\par
-{\bkmkstart AAAAAAADEX}{\bkmkend AAAAAAADEX}
-00043     minHeap.pop();\par
 {\bkmkstart AAAAAAADEZ}{\bkmkend AAAAAAADEZ}
+00042     EXPECT_EQ(minHeap.top(), 2);\par
+{\bkmkstart AAAAAAADFC}{\bkmkend AAAAAAADFC}
+00043     minHeap.pop();\par
+{\bkmkstart AAAAAAADFE}{\bkmkend AAAAAAADFE}
 00044     EXPECT_EQ(minHeap.top(), 3);\par
-{\bkmkstart AAAAAAADFD}{\bkmkend AAAAAAADFD}
+{\bkmkstart AAAAAAADFJ}{\bkmkend AAAAAAADFJ}
 00045 \}\par
-{\bkmkstart AAAAAAADFF}{\bkmkend AAAAAAADFF}
+{\bkmkstart AAAAAAADFL}{\bkmkend AAAAAAADFL}
 00046 \par
-{\bkmkstart AAAAAAADFH}{\bkmkend AAAAAAADFH}
-00047 TEST(BinaryHeap, LargeDataset)\{\par
-{\bkmkstart AAAAAAADFK}{\bkmkend AAAAAAADFK}
-00048     ds::BinaryHeap<int> h;\par
 {\bkmkstart AAAAAAADFM}{\bkmkend AAAAAAADFM}
-00049     {\cf20 // Add 100 elements}\par
-{\bkmkstart AAAAAAADFO}{\bkmkend AAAAAAADFO}
-00050     {\cf19 for}({\cf18 int} i = 0; i < 100; ++i) \{\par
+00047 TEST(BinaryHeap, LargeDataset)\{\par
+{\bkmkstart AAAAAAADFQ}{\bkmkend AAAAAAADFQ}
+00048     ds::BinaryHeap<int> h;\par
 {\bkmkstart AAAAAAADFS}{\bkmkend AAAAAAADFS}
+00049     {\cf20 // Add 100 elements}\par
+{\bkmkstart AAAAAAADFU}{\bkmkend AAAAAAADFU}
+00050     {\cf19 for}({\cf18 int} i = 0; i < 100; ++i) \{\par
+{\bkmkstart AAAAAAADFX}{\bkmkend AAAAAAADFX}
 00051         h.push(i);\par
-{\bkmkstart AAAAAAADFT}{\bkmkend AAAAAAADFT}
-00052     \}\par
-{\bkmkstart AAAAAAADFV}{\bkmkend AAAAAAADFV}
-00053     EXPECT_EQ(h.size(), 100u);\par
-{\bkmkstart AAAAAAADFW}{\bkmkend AAAAAAADFW}
-00054     EXPECT_EQ(h.top(), 99); {\cf20 // Max element}\par
 {\bkmkstart AAAAAAADGA}{\bkmkend AAAAAAADGA}
+00052     \}\par
+{\bkmkstart AAAAAAADGB}{\bkmkend AAAAAAADGB}
+00053     EXPECT_EQ(h.size(), 100u);\par
+{\bkmkstart AAAAAAADGC}{\bkmkend AAAAAAADGC}
+00054     EXPECT_EQ(h.top(), 99); {\cf20 // Max element}\par
+{\bkmkstart AAAAAAADGI}{\bkmkend AAAAAAADGI}
 00055     \par
-{\bkmkstart AAAAAAADGD}{\bkmkend AAAAAAADGD}
-00056     {\cf20 // Test heap sort}\par
-{\bkmkstart AAAAAAADGE}{\bkmkend AAAAAAADGE}
-00057     {\cf17 auto} sorted = h.heap_sort_copy();\par
-{\bkmkstart AAAAAAADGG}{\bkmkend AAAAAAADGG}
-00058     EXPECT_EQ(sorted.size(), 100u);\par
-{\bkmkstart AAAAAAADGJ}{\bkmkend AAAAAAADGJ}
-00059     {\cf19 for}({\cf18 int} i = 0; i < 100; ++i) \{\par
 {\bkmkstart AAAAAAADGL}{\bkmkend AAAAAAADGL}
-00060         EXPECT_EQ(sorted[i], 99 - i);\par
-{\bkmkstart AAAAAAADGQ}{\bkmkend AAAAAAADGQ}
-00061     \}\par
+00056     {\cf20 // Test heap sort}\par
+{\bkmkstart AAAAAAADGN}{\bkmkend AAAAAAADGN}
+00057     {\cf17 auto} sorted = h.heap_sort_copy();\par
 {\bkmkstart AAAAAAADGR}{\bkmkend AAAAAAADGR}
+00058     EXPECT_EQ(sorted.size(), 100u);\par
+{\bkmkstart AAAAAAADGU}{\bkmkend AAAAAAADGU}
+00059     {\cf19 for}({\cf18 int} i = 0; i < 100; ++i) \{\par
+{\bkmkstart AAAAAAADHA}{\bkmkend AAAAAAADHA}
+00060         EXPECT_EQ(sorted[i], 99 - i);\par
+{\bkmkstart AAAAAAADHG}{\bkmkend AAAAAAADHG}
+00061     \}\par
+{\bkmkstart AAAAAAADHI}{\bkmkend AAAAAAADHI}
 00062 \}\par
-{\bkmkstart AAAAAAADGS}{\bkmkend AAAAAAADGS}
+{\bkmkstart AAAAAAADHK}{\bkmkend AAAAAAADHK}
 00063 \par
 }
 }

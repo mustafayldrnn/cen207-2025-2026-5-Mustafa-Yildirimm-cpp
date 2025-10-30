@@ -151,9 +151,9 @@
 graph.h\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/graph.h}
-{\bkmkstart AAAAAAAAAI}
-{\bkmkend AAAAAAAAAI}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
@@ -164,38 +164,38 @@ graph.h\par \pard\plain
 8 \par
 9 {\cf17 namespace }ds \{\par
 10 \par
-12 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAQ" }{}}{\fldrslt {\cs37\ul\cf2 Graph}}}
+12 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 Graph}}}
  \{\par
 13     std::vector<std::vector<int>> adj_;\par
 14 {\cf17 public}:\par
-16     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAQ" }{}}{\fldrslt {\cs37\ul\cf2 Graph}}}
+16     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 Graph}}}
 ({\cf18 int} n=0): adj_(n) \{\}\par
-18     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 resize}}}
+18     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 resize}}}
 ({\cf18 int} n)\{ adj_.assign(n, \{\}); \}\par
-20     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
+20     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 add_edge}}}
 ({\cf18 int} u, {\cf18 int} v, {\cf18 bool} undirected={\cf17 false})\{ adj_[u].push_back(v); {\cf19 if} (undirected) adj_[v].push_back(u); \}\par
-22     {\cf17 const} std::vector<int>& {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABW" }{}}{\fldrslt {\cs37\ul\cf2 neighbors}}}
+22     {\cf17 const} std::vector<int>& {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 neighbors}}}
 ({\cf18 int} u){\cf17  const }\{ {\cf19 return} adj_[u]; \}\par
-24     {\cf18 int} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
+24     {\cf18 int} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
 (){\cf17  const }\{ {\cf19 return} {\cf17 static_cast<}{\cf18 int}{\cf17 >}(adj_.size()); \}\par
 25 \par
-27     std::vector<int> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACG" }{}}{\fldrslt {\cs37\ul\cf2 bfs_dist}}}
+27     std::vector<int> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 bfs_dist}}}
 ({\cf18 int} s){\cf17  const }\{\par
-28         std::vector<int> dist({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
+28         std::vector<int> dist({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
 (), -1); std::queue<int> q; dist[s]=0; q.push(s);\par
 29         {\cf19 while}(!q.empty())\{ {\cf18 int} u=q.front(); q.pop(); {\cf19 for}({\cf18 int} v:adj_[u]) {\cf19 if}(dist[v]==-1)\{ dist[v]=dist[u]+1; q.push(v);\} \}\par
 30         {\cf19 return} dist;\par
 31     \}\par
 32 \par
-34     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 dfs_util}}}
+34     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 dfs_util}}}
 ({\cf18 int} u, std::vector<int>& vis, std::vector<int>& order){\cf17  const }\{\par
-35         vis[u]=1; order.push_back(u); {\cf19 for}({\cf18 int} v:adj_[u]) {\cf19 if}(!vis[v]) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 dfs_util}}}
+35         vis[u]=1; order.push_back(u); {\cf19 for}({\cf18 int} v:adj_[u]) {\cf19 if}(!vis[v]) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 dfs_util}}}
 (v, vis, order);\par
 36     \}\par
-38     std::vector<int> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 dfs_order}}}
-({\cf18 int} s=0){\cf17  const }\{ std::vector<int> vis({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
-(),0), order; {\cf19 if}(s<{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
-()) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 dfs_util}}}
+38     std::vector<int> {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 dfs_order}}}
+({\cf18 int} s=0){\cf17  const }\{ std::vector<int> vis({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
+(),0), order; {\cf19 if}(s<{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 size}}}
+()) {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 dfs_util}}}
 (s, vis, order); {\cf19 return} order; \}\par
 39 \};\par
 40 \par

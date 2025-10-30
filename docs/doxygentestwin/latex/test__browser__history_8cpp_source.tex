@@ -1,0 +1,61 @@
+\doxysection{test\+\_\+browser\+\_\+history.\+cpp}
+\hypertarget{test__browser__history_8cpp_source}{}\label{test__browser__history_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_browser\_history.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_browser\_history.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}BrowserHistory/header/BrowserHistory.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00004}00004\ \textcolor{keyword}{using\ }Coruh::Applications::BrowserHistory;}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00006}00006\ TEST(BrowserHistory,\ EmptyAndSinglePage)\ \{}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00007}00007\ \ \ \ \ BrowserHistory\ bh;}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00008}00008\ \ \ \ \ EXPECT\_EQ(bh.getHistorySize(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00009}00009\ \ \ \ \ EXPECT\_FALSE(bh.canGoBack());}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00010}00010\ \ \ \ \ EXPECT\_FALSE(bh.canGoForward());}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00011}00011\ \ \ \ \ EXPECT\_EQ(bh.getCurrentUrl(),\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00013}00013\ \ \ \ \ bh.navigateTo(\textcolor{stringliteral}{"{}a.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00014}00014\ \ \ \ \ EXPECT\_EQ(bh.getHistorySize(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00015}00015\ \ \ \ \ EXPECT\_EQ(bh.getCurrentUrl(),\ \textcolor{stringliteral}{"{}a.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00016}00016\ \ \ \ \ EXPECT\_FALSE(bh.canGoBack());}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00017}00017\ \ \ \ \ EXPECT\_FALSE(bh.canGoForward());}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00018}00018\ \ \ \ \ EXPECT\_EQ(bh.goBack(),\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00019}00019\ \ \ \ \ EXPECT\_EQ(bh.goForward(),\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00022}00022\ TEST(BrowserHistory,\ BackAndForward)\ \{}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00023}00023\ \ \ \ \ BrowserHistory\ bh;}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00024}00024\ \ \ \ \ bh.navigateTo(\textcolor{stringliteral}{"{}a.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00025}00025\ \ \ \ \ bh.navigateTo(\textcolor{stringliteral}{"{}b.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00026}00026\ \ \ \ \ bh.navigateTo(\textcolor{stringliteral}{"{}c.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00028}00028\ \ \ \ \ EXPECT\_TRUE(bh.canGoBack());}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00029}00029\ \ \ \ \ EXPECT\_FALSE(bh.canGoForward());}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00031}00031\ \ \ \ \ EXPECT\_EQ(bh.goBack(),\ \textcolor{stringliteral}{"{}b.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00032}00032\ \ \ \ \ EXPECT\_EQ(bh.getCurrentUrl(),\ \textcolor{stringliteral}{"{}b.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00033}00033\ \ \ \ \ EXPECT\_TRUE(bh.canGoForward());}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00034}00034\ \ \ \ \ EXPECT\_EQ(bh.goForward(),\ \textcolor{stringliteral}{"{}c.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00037}00037\ TEST(BrowserHistory,\ NavigateAfterBackPrunesForward)\ \{}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00038}00038\ \ \ \ \ BrowserHistory\ bh;}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00039}00039\ \ \ \ \ bh.navigateTo(\textcolor{stringliteral}{"{}a.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00040}00040\ \ \ \ \ bh.navigateTo(\textcolor{stringliteral}{"{}b.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00041}00041\ \ \ \ \ bh.navigateTo(\textcolor{stringliteral}{"{}c.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{comment}{//\ Go\ back\ to\ b.com\ then\ navigate\ to\ d.com\ -\/>\ forward\ (c.com)\ should\ be\ dropped}}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00044}00044\ \ \ \ \ EXPECT\_EQ(bh.goBack(),\ \textcolor{stringliteral}{"{}b.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00045}00045\ \ \ \ \ bh.navigateTo(\textcolor{stringliteral}{"{}d.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00047}00047\ \ \ \ \ EXPECT\_EQ(bh.getCurrentUrl(),\ \textcolor{stringliteral}{"{}d.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00048}00048\ \ \ \ \ EXPECT\_TRUE(bh.canGoBack());}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00049}00049\ \ \ \ \ EXPECT\_FALSE(bh.canGoForward());}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00051}00051\ \ \ \ \ EXPECT\_EQ(bh.goBack(),\ \textcolor{stringliteral}{"{}b.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{comment}{//\ forward\ should\ now\ be\ d.com\ only}}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00053}00053\ \ \ \ \ EXPECT\_TRUE(bh.canGoForward());}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00054}00054\ \ \ \ \ EXPECT\_EQ(bh.goForward(),\ \textcolor{stringliteral}{"{}d.com"{}});}
+\DoxyCodeLine{\Hypertarget{test__browser__history_8cpp_source_l00055}00055\ \}}
+
+\end{DoxyCode}

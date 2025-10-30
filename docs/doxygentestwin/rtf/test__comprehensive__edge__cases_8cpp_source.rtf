@@ -151,849 +151,849 @@
 test_comprehensive_edge_cases.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_comprehensive_edge_cases.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_comprehensive_edge_cases.cpp}
-{\bkmkstart AAAAAAAAHF}
-{\bkmkend AAAAAAAAHF}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHH" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAAGJ}
+{\bkmkend AAAAAAAAGJ}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAKE}{\bkmkend AAAAAAAAKE}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAWL}{\bkmkend AAAAAAAAWL}
 00001 \par
-{\bkmkstart AAAAAAAAKX}{\bkmkend AAAAAAAAKX}
+{\bkmkstart AAAAAAAAXG}{\bkmkend AAAAAAAAXG}
 00008 \par
-{\bkmkstart AAAAAAAAKY}{\bkmkend AAAAAAAAKY}
+{\bkmkstart AAAAAAAAXJ}{\bkmkend AAAAAAAAXJ}
 00009 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAAMP}{\bkmkend AAAAAAAAMP}
+{\bkmkstart AAAAAAABAM}{\bkmkend AAAAAAABAM}
 00010 {\cf21 #include <chrono>}\par
-{\bkmkstart AAAAAAAAOH}{\bkmkend AAAAAAAAOH}
+{\bkmkstart AAAAAAABCI}{\bkmkend AAAAAAABCI}
 00011 {\cf21 #include <thread>}\par
-{\bkmkstart AAAAAAAAPN}{\bkmkend AAAAAAAAPN}
+{\bkmkstart AAAAAAABDY}{\bkmkend AAAAAAABDY}
 00012 {\cf21 #include <iostream>}\par
-{\bkmkstart AAAAAAAARC}{\bkmkend AAAAAAAARC}
-00013 {\cf21 #include <vector>}\par
-{\bkmkstart AAAAAAAASR}{\bkmkend AAAAAAAASR}
-00014 {\cf21 #include <string>}\par
-{\bkmkstart AAAAAAAATT}{\bkmkend AAAAAAAATT}
-00015 {\cf21 #include <memory>}\par
-{\bkmkstart AAAAAAAAYA}{\bkmkend AAAAAAAAYA}
-00016 {\cf21 #include <limits>}\par
-{\bkmkstart AAAAAAAAZJ}{\bkmkend AAAAAAAAZJ}
-00017 {\cf21 #include <stdexcept>}\par
-{\bkmkstart AAAAAAABAW}{\bkmkend AAAAAAABAW}
-00018 \par
-{\bkmkstart AAAAAAABAY}{\bkmkend AAAAAAABAY}
-00019 {\cf20 // Include all headers for comprehensive testing}\par
-{\bkmkstart AAAAAAABBC}{\bkmkend AAAAAAABBC}
-00020 {\cf21 #include "../src/SafeChronoCalculator.h"}\par
-{\bkmkstart AAAAAAABCM}{\bkmkend AAAAAAABCM}
-00021 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
-{\bkmkstart AAAAAAABES}{\bkmkend AAAAAAABES}
-00022 \par
-{\bkmkstart AAAAAAABEV}{\bkmkend AAAAAAABEV}
-00023 {\cf17 using namespace }SafeChrono;\par
-{\bkmkstart AAAAAAABFH}{\bkmkend AAAAAAABFH}
-00024 {\cf17 using namespace }Coruh::LanguageTranslator;\par
-{\bkmkstart AAAAAAABFU}{\bkmkend AAAAAAABFU}
-00025 \par
 {\bkmkstart AAAAAAABFX}{\bkmkend AAAAAAABFX}
-00026 {\cf17 class }ComprehensiveEdgeCasesTest : {\cf17 public} ::testing::Test \{\par
-{\bkmkstart AAAAAAABGJ}{\bkmkend AAAAAAABGJ}
-00027 {\cf17 protected}:\par
-{\bkmkstart AAAAAAABGM}{\bkmkend AAAAAAABGM}
-00028     {\cf18 void} SetUp(){\cf17  override }\{\par
-{\bkmkstart AAAAAAABGY}{\bkmkend AAAAAAABGY}
-00029         {\cf20 // Setup for each test}\par
-{\bkmkstart AAAAAAABHD}{\bkmkend AAAAAAABHD}
-00030     \}\par
-{\bkmkstart AAAAAAABHF}{\bkmkend AAAAAAABHF}
-00031     \par
-{\bkmkstart AAAAAAABHJ}{\bkmkend AAAAAAABHJ}
-00032     {\cf18 void} TearDown(){\cf17  override }\{\par
-{\bkmkstart AAAAAAABIA}{\bkmkend AAAAAAABIA}
-00033         {\cf20 // Cleanup after each test}\par
+00013 {\cf21 #include <vector>}\par
+{\bkmkstart AAAAAAABHS}{\bkmkend AAAAAAABHS}
+00014 {\cf21 #include <string>}\par
 {\bkmkstart AAAAAAABIC}{\bkmkend AAAAAAABIC}
-00034     \}\par
-{\bkmkstart AAAAAAABIF}{\bkmkend AAAAAAABIF}
-00035 \};\par
-{\bkmkstart AAAAAAABIK}{\bkmkend AAAAAAABIK}
-00036 \par
-{\bkmkstart AAAAAAABIN}{\bkmkend AAAAAAABIN}
-00037 {\cf20 // Test SafeChronoCalculator edge cases}\par
-{\bkmkstart AAAAAAABIQ}{\bkmkend AAAAAAABIQ}
-00038 TEST_F(ComprehensiveEdgeCasesTest, TestSafeChronoCalculatorEdgeCases) \{\par
-{\bkmkstart AAAAAAABKB}{\bkmkend AAAAAAABKB}
-00039     {\cf20 // Test with zero values}\par
+00015 {\cf21 #include <memory>}\par
+{\bkmkstart AAAAAAABJF}{\bkmkend AAAAAAABJF}
+00016 {\cf21 #include <limits>}\par
 {\bkmkstart AAAAAAABKH}{\bkmkend AAAAAAABKH}
-00040     {\cf17 auto} result1 = SafeChronoCalculator::safeCalculateDuration(0, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAABLB}{\bkmkend AAAAAAABLB}
-00041     EXPECT_EQ(result1.count(), 0);\par
-{\bkmkstart AAAAAAABLM}{\bkmkend AAAAAAABLM}
-00042     \par
-{\bkmkstart AAAAAAABLP}{\bkmkend AAAAAAABLP}
-00043     {\cf20 // Test with very small values}\par
-{\bkmkstart AAAAAAABLV}{\bkmkend AAAAAAABLV}
-00044     {\cf17 auto} result2 = SafeChronoCalculator::safeCalculateDuration(1, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAABMM}{\bkmkend AAAAAAABMM}
-00045     EXPECT_GE(result2.count(), 0);\par
-{\bkmkstart AAAAAAABMT}{\bkmkend AAAAAAABMT}
-00046     \par
-{\bkmkstart AAAAAAABNB}{\bkmkend AAAAAAABNB}
-00047     {\cf20 // Test with maximum safe values}\par
-{\bkmkstart AAAAAAABNI}{\bkmkend AAAAAAABNI}
-00048     {\cf18 long} {\cf18 long} maxSafe = std::numeric_limits<long long>::max() / 8;\par
-{\bkmkstart AAAAAAABNN}{\bkmkend AAAAAAABNN}
-00049     {\cf17 auto} result3 = SafeChronoCalculator::safeCalculateDuration(maxSafe, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAABOA}{\bkmkend AAAAAAABOA}
-00050     EXPECT_GE(result3.count(), 0);\par
-{\bkmkstart AAAAAAABOD}{\bkmkend AAAAAAABOD}
-00051     \par
-{\bkmkstart AAAAAAABOF}{\bkmkend AAAAAAABOF}
-00052     {\cf20 // Test with negative values (should handle gracefully)}\par
-{\bkmkstart AAAAAAABOM}{\bkmkend AAAAAAABOM}
-00053     {\cf17 auto} result4 = SafeChronoCalculator::safeCalculateDuration(-1000, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAABOW}{\bkmkend AAAAAAABOW}
-00054     EXPECT_LE(result4.count(), 0);\par
-{\bkmkstart AAAAAAABPB}{\bkmkend AAAAAAABPB}
-00055     \par
-{\bkmkstart AAAAAAABPE}{\bkmkend AAAAAAABPE}
-00056     {\cf20 // Test with very large frequency}\par
-{\bkmkstart AAAAAAABPI}{\bkmkend AAAAAAABPI}
-00057     {\cf17 auto} result5 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000000, 1000000000);\par
-{\bkmkstart AAAAAAABPY}{\bkmkend AAAAAAABPY}
-00058     EXPECT_GE(result5.count(), 0);\par
-{\bkmkstart AAAAAAABQD}{\bkmkend AAAAAAABQD}
-00059     \par
-{\bkmkstart AAAAAAABQI}{\bkmkend AAAAAAABQI}
-00060     {\cf20 // Test with very large period denominator}\par
-{\bkmkstart AAAAAAABQL}{\bkmkend AAAAAAABQL}
-00061     {\cf17 auto} result6 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000000);\par
-{\bkmkstart AAAAAAABQW}{\bkmkend AAAAAAABQW}
-00062     EXPECT_GE(result6.count(), 0);\par
-{\bkmkstart AAAAAAABRD}{\bkmkend AAAAAAABRD}
-00063     \par
+00017 {\cf21 #include <stdexcept>}\par
+{\bkmkstart AAAAAAABLX}{\bkmkend AAAAAAABLX}
+00018 \par
+{\bkmkstart AAAAAAABLZ}{\bkmkend AAAAAAABLZ}
+00019 {\cf20 // Include all headers for comprehensive testing}\par
+{\bkmkstart AAAAAAABMD}{\bkmkend AAAAAAABMD}
+00020 {\cf21 #include "../src/SafeChronoCalculator.h"}\par
+{\bkmkstart AAAAAAABNO}{\bkmkend AAAAAAABNO}
+00021 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
+{\bkmkstart AAAAAAABQM}{\bkmkend AAAAAAABQM}
+00022 \par
+{\bkmkstart AAAAAAABQP}{\bkmkend AAAAAAABQP}
+00023 {\cf17 using namespace }SafeChrono;\par
+{\bkmkstart AAAAAAABQY}{\bkmkend AAAAAAABQY}
+00024 {\cf17 using namespace }Coruh::LanguageTranslator;\par
 {\bkmkstart AAAAAAABRH}{\bkmkend AAAAAAABRH}
-00064     {\cf20 // Test 10MHz with various values}\par
-{\bkmkstart AAAAAAABRK}{\bkmkend AAAAAAABRK}
-00065     {\cf17 auto} result7 = SafeChronoCalculator::calculateFor10MHz(0);\par
-{\bkmkstart AAAAAAABRU}{\bkmkend AAAAAAABRU}
-00066     EXPECT_EQ(result7.count(), 0);\par
-{\bkmkstart AAAAAAABRY}{\bkmkend AAAAAAABRY}
-00067     \par
-{\bkmkstart AAAAAAABSA}{\bkmkend AAAAAAABSA}
-00068     {\cf17 auto} result8 = SafeChronoCalculator::calculateFor10MHz(1);\par
-{\bkmkstart AAAAAAABSE}{\bkmkend AAAAAAABSE}
-00069     EXPECT_GT(result8.count(), 0);\par
-{\bkmkstart AAAAAAABSI}{\bkmkend AAAAAAABSI}
-00070     \par
-{\bkmkstart AAAAAAABSK}{\bkmkend AAAAAAABSK}
-00071     {\cf17 auto} result9 = SafeChronoCalculator::calculateFor10MHz(1000000);\par
-{\bkmkstart AAAAAAABSU}{\bkmkend AAAAAAABSU}
-00072     EXPECT_GT(result9.count(), 0);\par
-{\bkmkstart AAAAAAABSY}{\bkmkend AAAAAAABSY}
-00073     \par
+00025 \par
+{\bkmkstart AAAAAAABRI}{\bkmkend AAAAAAABRI}
+00026 {\cf17 class }ComprehensiveEdgeCasesTest : {\cf17 public} ::testing::Test \{\par
+{\bkmkstart AAAAAAABRZ}{\bkmkend AAAAAAABRZ}
+00027 {\cf17 protected}:\par
+{\bkmkstart AAAAAAABSC}{\bkmkend AAAAAAABSC}
+00028     {\cf18 void} SetUp(){\cf17  override }\{\par
+{\bkmkstart AAAAAAABSV}{\bkmkend AAAAAAABSV}
+00029         {\cf20 // Setup for each test}\par
 {\bkmkstart AAAAAAABSZ}{\bkmkend AAAAAAABSZ}
-00074     {\cf20 // Test 24MHz with various values}\par
+00030     \}\par
 {\bkmkstart AAAAAAABTB}{\bkmkend AAAAAAABTB}
-00075     {\cf17 auto} result10 = SafeChronoCalculator::calculateFor24MHz(0);\par
-{\bkmkstart AAAAAAABTL}{\bkmkend AAAAAAABTL}
-00076     EXPECT_EQ(result10.count(), 0);\par
+00031     \par
+{\bkmkstart AAAAAAABTD}{\bkmkend AAAAAAABTD}
+00032     {\cf18 void} TearDown(){\cf17  override }\{\par
+{\bkmkstart AAAAAAABTK}{\bkmkend AAAAAAABTK}
+00033         {\cf20 // Cleanup after each test}\par
+{\bkmkstart AAAAAAABTO}{\bkmkend AAAAAAABTO}
+00034     \}\par
 {\bkmkstart AAAAAAABTP}{\bkmkend AAAAAAABTP}
-00077     \par
+00035 \};\par
+{\bkmkstart AAAAAAABTQ}{\bkmkend AAAAAAABTQ}
+00036 \par
 {\bkmkstart AAAAAAABTS}{\bkmkend AAAAAAABTS}
-00078     {\cf17 auto} result11 = SafeChronoCalculator::calculateFor24MHz(1);\par
+00037 {\cf20 // Test SafeChronoCalculator edge cases}\par
+{\bkmkstart AAAAAAABTT}{\bkmkend AAAAAAABTT}
+00038 TEST_F(ComprehensiveEdgeCasesTest, TestSafeChronoCalculatorEdgeCases) \{\par
+{\bkmkstart AAAAAAABUF}{\bkmkend AAAAAAABUF}
+00039     {\cf20 // Test with zero values}\par
+{\bkmkstart AAAAAAABUH}{\bkmkend AAAAAAABUH}
+00040     {\cf17 auto} result1 = SafeChronoCalculator::safeCalculateDuration(0, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAABUT}{\bkmkend AAAAAAABUT}
+00041     EXPECT_EQ(result1.count(), 0);\par
+{\bkmkstart AAAAAAABUW}{\bkmkend AAAAAAABUW}
+00042     \par
 {\bkmkstart AAAAAAABUX}{\bkmkend AAAAAAABUX}
-00079     EXPECT_GT(result11.count(), 0);\par
-{\bkmkstart AAAAAAABVD}{\bkmkend AAAAAAABVD}
-00080     \par
-{\bkmkstart AAAAAAABVF}{\bkmkend AAAAAAABVF}
-00081     {\cf17 auto} result12 = SafeChronoCalculator::calculateFor24MHz(1000000);\par
-{\bkmkstart AAAAAAABVM}{\bkmkend AAAAAAABVM}
-00082     EXPECT_GT(result12.count(), 0);\par
-{\bkmkstart AAAAAAABVT}{\bkmkend AAAAAAABVT}
-00083     \par
-{\bkmkstart AAAAAAABVV}{\bkmkend AAAAAAABVV}
-00084     {\cf20 // Test overflow detection with various edge cases}\par
-{\bkmkstart AAAAAAABVW}{\bkmkend AAAAAAABVW}
-00085     {\cf18 bool} overflow1 = SafeChronoCalculator::wouldOverflow(0, 0);\par
-{\bkmkstart AAAAAAABWF}{\bkmkend AAAAAAABWF}
-00086     EXPECT_FALSE(overflow1);\par
-{\bkmkstart AAAAAAABWK}{\bkmkend AAAAAAABWK}
-00087     \par
-{\bkmkstart AAAAAAABWN}{\bkmkend AAAAAAABWN}
-00088     {\cf18 bool} overflow2 = SafeChronoCalculator::wouldOverflow(1, 0);\par
-{\bkmkstart AAAAAAABWW}{\bkmkend AAAAAAABWW}
-00089     EXPECT_FALSE(overflow2);\par
-{\bkmkstart AAAAAAABWZ}{\bkmkend AAAAAAABWZ}
-00090     \par
-{\bkmkstart AAAAAAABXC}{\bkmkend AAAAAAABXC}
-00091     {\cf18 bool} overflow3 = SafeChronoCalculator::wouldOverflow(0, 1);\par
-{\bkmkstart AAAAAAABXK}{\bkmkend AAAAAAABXK}
-00092     EXPECT_FALSE(overflow3);\par
-{\bkmkstart AAAAAAABXO}{\bkmkend AAAAAAABXO}
-00093     \par
-{\bkmkstart AAAAAAABXR}{\bkmkend AAAAAAABXR}
-00094     {\cf18 bool} overflow4 = SafeChronoCalculator::wouldOverflow(-1, 1);\par
-{\bkmkstart AAAAAAABXW}{\bkmkend AAAAAAABXW}
-00095     EXPECT_FALSE(overflow4);\par
+00043     {\cf20 // Test with very small values}\par
+{\bkmkstart AAAAAAABUZ}{\bkmkend AAAAAAABUZ}
+00044     {\cf17 auto} result2 = SafeChronoCalculator::safeCalculateDuration(1, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAABVC}{\bkmkend AAAAAAABVC}
+00045     EXPECT_GE(result2.count(), 0);\par
+{\bkmkstart AAAAAAABVH}{\bkmkend AAAAAAABVH}
+00046     \par
+{\bkmkstart AAAAAAABVJ}{\bkmkend AAAAAAABVJ}
+00047     {\cf20 // Test with maximum safe values}\par
+{\bkmkstart AAAAAAABVN}{\bkmkend AAAAAAABVN}
+00048     {\cf18 long} {\cf18 long} maxSafe = std::numeric_limits<long long>::max() / 8;\par
+{\bkmkstart AAAAAAABXB}{\bkmkend AAAAAAABXB}
+00049     {\cf17 auto} result3 = SafeChronoCalculator::safeCalculateDuration(maxSafe, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAABXX}{\bkmkend AAAAAAABXX}
+00050     EXPECT_GE(result3.count(), 0);\par
 {\bkmkstart AAAAAAABYB}{\bkmkend AAAAAAABYB}
-00096     \par
-{\bkmkstart AAAAAAABYD}{\bkmkend AAAAAAABYD}
-00097     {\cf18 bool} overflow5 = SafeChronoCalculator::wouldOverflow(1, -1);\par
-{\bkmkstart AAAAAAABYN}{\bkmkend AAAAAAABYN}
-00098     EXPECT_FALSE(overflow5);\par
-{\bkmkstart AAAAAAABYR}{\bkmkend AAAAAAABYR}
-00099     \par
+00051     \par
+{\bkmkstart AAAAAAABYE}{\bkmkend AAAAAAABYE}
+00052     {\cf20 // Test with negative values (should handle gracefully)}\par
+{\bkmkstart AAAAAAABYH}{\bkmkend AAAAAAABYH}
+00053     {\cf17 auto} result4 = SafeChronoCalculator::safeCalculateDuration(-1000, 1000000, 1000000000);\par
 {\bkmkstart AAAAAAABYV}{\bkmkend AAAAAAABYV}
-00100     {\cf18 bool} overflow6 = SafeChronoCalculator::wouldOverflow(-1, -1);\par
-{\bkmkstart AAAAAAABYZ}{\bkmkend AAAAAAABYZ}
-00101     EXPECT_FALSE(overflow6);\par
-{\bkmkstart AAAAAAABZC}{\bkmkend AAAAAAABZC}
-00102     \par
-{\bkmkstart AAAAAAABZD}{\bkmkend AAAAAAABZD}
-00103     {\cf20 // Test with maximum values}\par
-{\bkmkstart AAAAAAABZF}{\bkmkend AAAAAAABZF}
-00104     {\cf18 long} {\cf18 long} maxValue = std::numeric_limits<long long>::max();\par
-{\bkmkstart AAAAAAACAE}{\bkmkend AAAAAAACAE}
-00105     {\cf18 bool} overflow7 = SafeChronoCalculator::wouldOverflow(maxValue, 1);\par
-{\bkmkstart AAAAAAACAJ}{\bkmkend AAAAAAACAJ}
-00106     EXPECT_FALSE(overflow7);\par
-{\bkmkstart AAAAAAACAL}{\bkmkend AAAAAAACAL}
-00107     \par
-{\bkmkstart AAAAAAACAN}{\bkmkend AAAAAAACAN}
-00108     {\cf18 bool} overflow8 = SafeChronoCalculator::wouldOverflow(1, maxValue);\par
-{\bkmkstart AAAAAAACAS}{\bkmkend AAAAAAACAS}
-00109     EXPECT_FALSE(overflow8);\par
-{\bkmkstart AAAAAAACAU}{\bkmkend AAAAAAACAU}
-00110     \par
-{\bkmkstart AAAAAAACAV}{\bkmkend AAAAAAACAV}
-00111     {\cf18 bool} overflow9 = SafeChronoCalculator::wouldOverflow(maxValue, 2);\par
+00054     EXPECT_LE(result4.count(), 0);\par
+{\bkmkstart AAAAAAABZA}{\bkmkend AAAAAAABZA}
+00055     \par
+{\bkmkstart AAAAAAABZE}{\bkmkend AAAAAAABZE}
+00056     {\cf20 // Test with very large frequency}\par
+{\bkmkstart AAAAAAABZH}{\bkmkend AAAAAAABZH}
+00057     {\cf17 auto} result5 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000000, 1000000000);\par
+{\bkmkstart AAAAAAABZP}{\bkmkend AAAAAAABZP}
+00058     EXPECT_GE(result5.count(), 0);\par
+{\bkmkstart AAAAAAABZX}{\bkmkend AAAAAAABZX}
+00059     \par
+{\bkmkstart AAAAAAABZZ}{\bkmkend AAAAAAABZZ}
+00060     {\cf20 // Test with very large period denominator}\par
+{\bkmkstart AAAAAAACAB}{\bkmkend AAAAAAACAB}
+00061     {\cf17 auto} result6 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000000);\par
+{\bkmkstart AAAAAAACAH}{\bkmkend AAAAAAACAH}
+00062     EXPECT_GE(result6.count(), 0);\par
+{\bkmkstart AAAAAAACAK}{\bkmkend AAAAAAACAK}
+00063     \par
+{\bkmkstart AAAAAAACAO}{\bkmkend AAAAAAACAO}
+00064     {\cf20 // Test 10MHz with various values}\par
+{\bkmkstart AAAAAAACAR}{\bkmkend AAAAAAACAR}
+00065     {\cf17 auto} result7 = SafeChronoCalculator::calculateFor10MHz(0);\par
 {\bkmkstart AAAAAAACBA}{\bkmkend AAAAAAACBA}
-00112     EXPECT_TRUE(overflow9);\par
-{\bkmkstart AAAAAAACBC}{\bkmkend AAAAAAACBC}
-00113     \par
-{\bkmkstart AAAAAAACBD}{\bkmkend AAAAAAACBD}
-00114     {\cf18 bool} overflow10 = SafeChronoCalculator::wouldOverflow(2, maxValue);\par
-{\bkmkstart AAAAAAACBI}{\bkmkend AAAAAAACBI}
-00115     EXPECT_TRUE(overflow10);\par
-{\bkmkstart AAAAAAACBK}{\bkmkend AAAAAAACBK}
-00116 \}\par
-{\bkmkstart AAAAAAACBO}{\bkmkend AAAAAAACBO}
-00117 \par
+00066     EXPECT_EQ(result7.count(), 0);\par
+{\bkmkstart AAAAAAACBE}{\bkmkend AAAAAAACBE}
+00067     \par
+{\bkmkstart AAAAAAACBG}{\bkmkend AAAAAAACBG}
+00068     {\cf17 auto} result8 = SafeChronoCalculator::calculateFor10MHz(1);\par
 {\bkmkstart AAAAAAACBQ}{\bkmkend AAAAAAACBQ}
-00118 {\cf20 // Test LanguageTranslatorApp edge cases}\par
-{\bkmkstart AAAAAAACBS}{\bkmkend AAAAAAACBS}
-00119 TEST_F(ComprehensiveEdgeCasesTest, TestLanguageTranslatorAppEdgeCases) \{\par
-{\bkmkstart AAAAAAACCA}{\bkmkend AAAAAAACCA}
-00120     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAACCM}{\bkmkend AAAAAAACCM}
-00121     \par
-{\bkmkstart AAAAAAACCO}{\bkmkend AAAAAAACCO}
-00122     {\cf20 // Test with empty strings}\par
+00069     EXPECT_GT(result8.count(), 0);\par
+{\bkmkstart AAAAAAACBW}{\bkmkend AAAAAAACBW}
+00070     \par
+{\bkmkstart AAAAAAACBZ}{\bkmkend AAAAAAACBZ}
+00071     {\cf17 auto} result9 = SafeChronoCalculator::calculateFor10MHz(1000000);\par
+{\bkmkstart AAAAAAACCI}{\bkmkend AAAAAAACCI}
+00072     EXPECT_GT(result9.count(), 0);\par
+{\bkmkstart AAAAAAACCL}{\bkmkend AAAAAAACCL}
+00073     \par
+{\bkmkstart AAAAAAACCN}{\bkmkend AAAAAAACCN}
+00074     {\cf20 // Test 24MHz with various values}\par
 {\bkmkstart AAAAAAACCQ}{\bkmkend AAAAAAACCQ}
-00123     std::string result1 = app.translateWord({\cf22 ""});\par
-{\bkmkstart AAAAAAACCY}{\bkmkend AAAAAAACCY}
-00124     EXPECT_TRUE(result1.empty());\par
-{\bkmkstart AAAAAAACDB}{\bkmkend AAAAAAACDB}
-00125     \par
-{\bkmkstart AAAAAAACDE}{\bkmkend AAAAAAACDE}
-00126     std::string result2 = app.translatePhrase({\cf22 ""});\par
-{\bkmkstart AAAAAAACDJ}{\bkmkend AAAAAAACDJ}
-00127     EXPECT_TRUE(result2.empty());\par
-{\bkmkstart AAAAAAACDL}{\bkmkend AAAAAAACDL}
-00128     \par
-{\bkmkstart AAAAAAACDO}{\bkmkend AAAAAAACDO}
-00129     std::string result3 = app.translateText({\cf22 ""});\par
-{\bkmkstart AAAAAAACDT}{\bkmkend AAAAAAACDT}
-00130     EXPECT_TRUE(result3.empty());\par
-{\bkmkstart AAAAAAACDV}{\bkmkend AAAAAAACDV}
-00131     \par
-{\bkmkstart AAAAAAACDW}{\bkmkend AAAAAAACDW}
-00132     {\cf20 // Test with whitespace only}\par
-{\bkmkstart AAAAAAACDZ}{\bkmkend AAAAAAACDZ}
-00133     std::string result4 = app.translateWord({\cf22 "   "});\par
-{\bkmkstart AAAAAAACEG}{\bkmkend AAAAAAACEG}
-00134     EXPECT_FALSE(result4.empty());\par
-{\bkmkstart AAAAAAACEJ}{\bkmkend AAAAAAACEJ}
-00135     \par
-{\bkmkstart AAAAAAACEL}{\bkmkend AAAAAAACEL}
-00136     std::string result5 = app.translatePhrase({\cf22 "   "});\par
-{\bkmkstart AAAAAAACER}{\bkmkend AAAAAAACER}
-00137     EXPECT_FALSE(result5.empty());\par
+00075     {\cf17 auto} result10 = SafeChronoCalculator::calculateFor24MHz(0);\par
+{\bkmkstart AAAAAAACCX}{\bkmkend AAAAAAACCX}
+00076     EXPECT_EQ(result10.count(), 0);\par
+{\bkmkstart AAAAAAACDC}{\bkmkend AAAAAAACDC}
+00077     \par
+{\bkmkstart AAAAAAACDG}{\bkmkend AAAAAAACDG}
+00078     {\cf17 auto} result11 = SafeChronoCalculator::calculateFor24MHz(1);\par
+{\bkmkstart AAAAAAACDQ}{\bkmkend AAAAAAACDQ}
+00079     EXPECT_GT(result11.count(), 0);\par
+{\bkmkstart AAAAAAACDU}{\bkmkend AAAAAAACDU}
+00080     \par
+{\bkmkstart AAAAAAACDX}{\bkmkend AAAAAAACDX}
+00081     {\cf17 auto} result12 = SafeChronoCalculator::calculateFor24MHz(1000000);\par
+{\bkmkstart AAAAAAACEC}{\bkmkend AAAAAAACEC}
+00082     EXPECT_GT(result12.count(), 0);\par
+{\bkmkstart AAAAAAACED}{\bkmkend AAAAAAACED}
+00083     \par
+{\bkmkstart AAAAAAACEF}{\bkmkend AAAAAAACEF}
+00084     {\cf20 // Test overflow detection with various edge cases}\par
+{\bkmkstart AAAAAAACEI}{\bkmkend AAAAAAACEI}
+00085     {\cf18 bool} overflow1 = SafeChronoCalculator::wouldOverflow(0, 0);\par
+{\bkmkstart AAAAAAACEM}{\bkmkend AAAAAAACEM}
+00086     EXPECT_FALSE(overflow1);\par
+{\bkmkstart AAAAAAACEO}{\bkmkend AAAAAAACEO}
+00087     \par
+{\bkmkstart AAAAAAACEP}{\bkmkend AAAAAAACEP}
+00088     {\cf18 bool} overflow2 = SafeChronoCalculator::wouldOverflow(1, 0);\par
 {\bkmkstart AAAAAAACEU}{\bkmkend AAAAAAACEU}
-00138     \par
-{\bkmkstart AAAAAAACEV}{\bkmkend AAAAAAACEV}
-00139     std::string result6 = app.translateText({\cf22 "   "});\par
-{\bkmkstart AAAAAAACFE}{\bkmkend AAAAAAACFE}
-00140     EXPECT_FALSE(result6.empty());\par
-{\bkmkstart AAAAAAACFH}{\bkmkend AAAAAAACFH}
-00141     \par
-{\bkmkstart AAAAAAACFJ}{\bkmkend AAAAAAACFJ}
-00142     {\cf20 // Test with very long strings}\par
+00089     EXPECT_FALSE(overflow2);\par
+{\bkmkstart AAAAAAACEY}{\bkmkend AAAAAAACEY}
+00090     \par
+{\bkmkstart AAAAAAACEZ}{\bkmkend AAAAAAACEZ}
+00091     {\cf18 bool} overflow3 = SafeChronoCalculator::wouldOverflow(0, 1);\par
+{\bkmkstart AAAAAAACFI}{\bkmkend AAAAAAACFI}
+00092     EXPECT_FALSE(overflow3);\par
+{\bkmkstart AAAAAAACFK}{\bkmkend AAAAAAACFK}
+00093     \par
 {\bkmkstart AAAAAAACFL}{\bkmkend AAAAAAACFL}
-00143     std::string longString(10000, {\cf23 'a'});\par
-{\bkmkstart AAAAAAACFS}{\bkmkend AAAAAAACFS}
-00144     std::string result7 = app.translateText(longString);\par
-{\bkmkstart AAAAAAACFX}{\bkmkend AAAAAAACFX}
-00145     EXPECT_FALSE(result7.empty());\par
+00094     {\cf18 bool} overflow4 = SafeChronoCalculator::wouldOverflow(-1, 1);\par
+{\bkmkstart AAAAAAACFP}{\bkmkend AAAAAAACFP}
+00095     EXPECT_FALSE(overflow4);\par
+{\bkmkstart AAAAAAACFT}{\bkmkend AAAAAAACFT}
+00096     \par
+{\bkmkstart AAAAAAACFV}{\bkmkend AAAAAAACFV}
+00097     {\cf18 bool} overflow5 = SafeChronoCalculator::wouldOverflow(1, -1);\par
 {\bkmkstart AAAAAAACFZ}{\bkmkend AAAAAAACFZ}
-00146     \par
+00098     EXPECT_FALSE(overflow5);\par
 {\bkmkstart AAAAAAACGB}{\bkmkend AAAAAAACGB}
-00147     {\cf20 // Test with special characters}\par
-{\bkmkstart AAAAAAACGD}{\bkmkend AAAAAAACGD}
-00148     std::string result8 = app.translateText({\cf22 "Hello, World! @#$%^&*()"});\par
-{\bkmkstart AAAAAAACGN}{\bkmkend AAAAAAACGN}
-00149     EXPECT_FALSE(result8.empty());\par
-{\bkmkstart AAAAAAACGR}{\bkmkend AAAAAAACGR}
-00150     \par
-{\bkmkstart AAAAAAACGT}{\bkmkend AAAAAAACGT}
-00151     {\cf20 // Test with numbers}\par
-{\bkmkstart AAAAAAACGV}{\bkmkend AAAAAAACGV}
-00152     std::string result9 = app.translateText({\cf22 "123 456 789"});\par
-{\bkmkstart AAAAAAACHA}{\bkmkend AAAAAAACHA}
-00153     EXPECT_FALSE(result9.empty());\par
-{\bkmkstart AAAAAAACHD}{\bkmkend AAAAAAACHD}
-00154     \par
-{\bkmkstart AAAAAAACHG}{\bkmkend AAAAAAACHG}
-00155     {\cf20 // Test with mixed languages}\par
-{\bkmkstart AAAAAAACHJ}{\bkmkend AAAAAAACHJ}
-00156     std::string result10 = app.translateText({\cf22 "hello merhaba hola bonjour"});\par
-{\bkmkstart AAAAAAACHS}{\bkmkend AAAAAAACHS}
-00157     EXPECT_FALSE(result10.empty());\par
+00099     \par
+{\bkmkstart AAAAAAACGC}{\bkmkend AAAAAAACGC}
+00100     {\cf18 bool} overflow6 = SafeChronoCalculator::wouldOverflow(-1, -1);\par
+{\bkmkstart AAAAAAACGI}{\bkmkend AAAAAAACGI}
+00101     EXPECT_FALSE(overflow6);\par
+{\bkmkstart AAAAAAACGL}{\bkmkend AAAAAAACGL}
+00102     \par
+{\bkmkstart AAAAAAACGP}{\bkmkend AAAAAAACGP}
+00103     {\cf20 // Test with maximum values}\par
+{\bkmkstart AAAAAAACGS}{\bkmkend AAAAAAACGS}
+00104     {\cf18 long} {\cf18 long} maxValue = std::numeric_limits<long long>::max();\par
 {\bkmkstart AAAAAAACHW}{\bkmkend AAAAAAACHW}
-00158     \par
-{\bkmkstart AAAAAAACHY}{\bkmkend AAAAAAACHY}
-00159     {\cf20 // Test with unicode characters}\par
-{\bkmkstart AAAAAAACIA}{\bkmkend AAAAAAACIA}
-00160     std::string result11 = app.translateText({\cf22 "café naïve résumé"});\par
-{\bkmkstart AAAAAAACIJ}{\bkmkend AAAAAAACIJ}
-00161     EXPECT_FALSE(result11.empty());\par
-{\bkmkstart AAAAAAACIP}{\bkmkend AAAAAAACIP}
-00162     \par
-{\bkmkstart AAAAAAACIS}{\bkmkend AAAAAAACIS}
-00163     {\cf20 // Test with newlines and tabs}\par
-{\bkmkstart AAAAAAACIW}{\bkmkend AAAAAAACIW}
-00164     std::string result12 = app.translateText({\cf22 "hello\\nworld\\ttest"});\par
-{\bkmkstart AAAAAAACJC}{\bkmkend AAAAAAACJC}
-00165     EXPECT_FALSE(result12.empty());\par
-{\bkmkstart AAAAAAACJL}{\bkmkend AAAAAAACJL}
-00166     \par
-{\bkmkstart AAAAAAACJN}{\bkmkend AAAAAAACJN}
-00167     {\cf20 // Test user management edge cases}\par
-{\bkmkstart AAAAAAACJP}{\bkmkend AAAAAAACJP}
-00168     EXPECT_TRUE(app.registerUser({\cf22 ""}, {\cf22 "password"}));\par
-{\bkmkstart AAAAAAACJT}{\bkmkend AAAAAAACJT}
-00169     EXPECT_TRUE(app.registerUser({\cf22 "username"}, {\cf22 ""}));\par
-{\bkmkstart AAAAAAACKD}{\bkmkend AAAAAAACKD}
-00170     EXPECT_TRUE(app.registerUser({\cf22 ""}, {\cf22 ""}));\par
+00105     {\cf18 bool} overflow7 = SafeChronoCalculator::wouldOverflow(maxValue, 1);\par
+{\bkmkstart AAAAAAACIH}{\bkmkend AAAAAAACIH}
+00106     EXPECT_FALSE(overflow7);\par
+{\bkmkstart AAAAAAACIM}{\bkmkend AAAAAAACIM}
+00107     \par
+{\bkmkstart AAAAAAACIN}{\bkmkend AAAAAAACIN}
+00108     {\cf18 bool} overflow8 = SafeChronoCalculator::wouldOverflow(1, maxValue);\par
+{\bkmkstart AAAAAAACJA}{\bkmkend AAAAAAACJA}
+00109     EXPECT_FALSE(overflow8);\par
+{\bkmkstart AAAAAAACJF}{\bkmkend AAAAAAACJF}
+00110     \par
+{\bkmkstart AAAAAAACJH}{\bkmkend AAAAAAACJH}
+00111     {\cf18 bool} overflow9 = SafeChronoCalculator::wouldOverflow(maxValue, 2);\par
+{\bkmkstart AAAAAAACJS}{\bkmkend AAAAAAACJS}
+00112     EXPECT_TRUE(overflow9);\par
+{\bkmkstart AAAAAAACJX}{\bkmkend AAAAAAACJX}
+00113     \par
+{\bkmkstart AAAAAAACKB}{\bkmkend AAAAAAACKB}
+00114     {\cf18 bool} overflow10 = SafeChronoCalculator::wouldOverflow(2, maxValue);\par
 {\bkmkstart AAAAAAACKK}{\bkmkend AAAAAAACKK}
-00171     \par
-{\bkmkstart AAAAAAACKN}{\bkmkend AAAAAAACKN}
-00172     {\cf20 // Test login with empty credentials}\par
-{\bkmkstart AAAAAAACKQ}{\bkmkend AAAAAAACKQ}
-00173     app.login({\cf22 ""}, {\cf22 "password"});\par
-{\bkmkstart AAAAAAACKW}{\bkmkend AAAAAAACKW}
-00174     app.login({\cf22 "username"}, {\cf22 ""});\par
-{\bkmkstart AAAAAAACKZ}{\bkmkend AAAAAAACKZ}
-00175     app.login({\cf22 ""}, {\cf22 ""});\par
-{\bkmkstart AAAAAAACLB}{\bkmkend AAAAAAACLB}
-00176     \par
-{\bkmkstart AAAAAAACLC}{\bkmkend AAAAAAACLC}
-00177     {\cf20 // Test language management edge cases}\par
-{\bkmkstart AAAAAAACLH}{\bkmkend AAAAAAACLH}
-00178     app.setSourceLanguage({\cf22 ""});\par
-{\bkmkstart AAAAAAACLL}{\bkmkend AAAAAAACLL}
-00179     app.setTargetLanguage({\cf22 ""});\par
-{\bkmkstart AAAAAAACLN}{\bkmkend AAAAAAACLN}
-00180     app.addLanguage({\cf22 ""});\par
-{\bkmkstart AAAAAAACLS}{\bkmkend AAAAAAACLS}
-00181     \par
-{\bkmkstart AAAAAAACLT}{\bkmkend AAAAAAACLT}
-00182     {\cf20 // Test phrase library edge cases}\par
-{\bkmkstart AAAAAAACLX}{\bkmkend AAAAAAACLX}
-00183     app.addPhrase({\cf22 ""}, {\cf22 ""});\par
-{\bkmkstart AAAAAAACMD}{\bkmkend AAAAAAACMD}
-00184     app.addPhrase({\cf22 "phrase"}, {\cf22 ""});\par
-{\bkmkstart AAAAAAACMH}{\bkmkend AAAAAAACMH}
-00185     app.addPhrase({\cf22 ""}, {\cf22 "category"});\par
-{\bkmkstart AAAAAAACMK}{\bkmkend AAAAAAACMK}
-00186     \par
-{\bkmkstart AAAAAAACML}{\bkmkend AAAAAAACML}
-00187     {\cf20 // Test learning tips edge cases}\par
-{\bkmkstart AAAAAAACMN}{\bkmkend AAAAAAACMN}
-00188     app.addLearningTip({\cf22 ""});\par
-{\bkmkstart AAAAAAACMQ}{\bkmkend AAAAAAACMQ}
-00189     app.addLearningTip({\cf22 "   "});\par
+00115     EXPECT_TRUE(overflow10);\par
+{\bkmkstart AAAAAAACKP}{\bkmkend AAAAAAACKP}
+00116 \}\par
+{\bkmkstart AAAAAAACKR}{\bkmkend AAAAAAACKR}
+00117 \par
+{\bkmkstart AAAAAAACKV}{\bkmkend AAAAAAACKV}
+00118 {\cf20 // Test LanguageTranslatorApp edge cases}\par
+{\bkmkstart AAAAAAACKY}{\bkmkend AAAAAAACKY}
+00119 TEST_F(ComprehensiveEdgeCasesTest, TestLanguageTranslatorAppEdgeCases) \{\par
+{\bkmkstart AAAAAAACLI}{\bkmkend AAAAAAACLI}
+00120     LanguageTranslatorApp app;\par
+{\bkmkstart AAAAAAACMA}{\bkmkend AAAAAAACMA}
+00121     \par
+{\bkmkstart AAAAAAACMC}{\bkmkend AAAAAAACMC}
+00122     {\cf20 // Test with empty strings}\par
+{\bkmkstart AAAAAAACMG}{\bkmkend AAAAAAACMG}
+00123     std::string result1 = app.translateWord({\cf22 ""});\par
+{\bkmkstart AAAAAAACMO}{\bkmkend AAAAAAACMO}
+00124     EXPECT_TRUE(result1.empty());\par
+{\bkmkstart AAAAAAACMU}{\bkmkend AAAAAAACMU}
+00125     \par
 {\bkmkstart AAAAAAACMW}{\bkmkend AAAAAAACMW}
-00190     \par
-{\bkmkstart AAAAAAACMX}{\bkmkend AAAAAAACMX}
-00191     {\cf20 // Test pronunciation guide edge cases}\par
-{\bkmkstart AAAAAAACNA}{\bkmkend AAAAAAACNA}
-00192     app.addPronunciation({\cf22 ""}, {\cf22 ""});\par
-{\bkmkstart AAAAAAACNE}{\bkmkend AAAAAAACNE}
-00193     app.addPronunciation({\cf22 "word"}, {\cf22 ""});\par
-{\bkmkstart AAAAAAACNK}{\bkmkend AAAAAAACNK}
-00194     app.addPronunciation({\cf22 ""}, {\cf22 "pronunciation"});\par
-{\bkmkstart AAAAAAACNO}{\bkmkend AAAAAAACNO}
-00195     \par
+00126     std::string result2 = app.translatePhrase({\cf22 ""});\par
+{\bkmkstart AAAAAAACNG}{\bkmkend AAAAAAACNG}
+00127     EXPECT_TRUE(result2.empty());\par
+{\bkmkstart AAAAAAACNN}{\bkmkend AAAAAAACNN}
+00128     \par
 {\bkmkstart AAAAAAACNR}{\bkmkend AAAAAAACNR}
-00196     {\cf20 // Test API functions with edge cases}\par
+00129     std::string result3 = app.translateText({\cf22 ""});\par
+{\bkmkstart AAAAAAACOB}{\bkmkend AAAAAAACOB}
+00130     EXPECT_TRUE(result3.empty());\par
 {\bkmkstart AAAAAAACOG}{\bkmkend AAAAAAACOG}
-00197     app.setAPIKey({\cf22 ""});\par
-{\bkmkstart AAAAAAACOL}{\bkmkend AAAAAAACOL}
-00198     app.setAPIMode({\cf17 true});\par
+00131     \par
+{\bkmkstart AAAAAAACOI}{\bkmkend AAAAAAACOI}
+00132     {\cf20 // Test with whitespace only}\par
+{\bkmkstart AAAAAAACOM}{\bkmkend AAAAAAACOM}
+00133     std::string result4 = app.translateWord({\cf22 "   "});\par
 {\bkmkstart AAAAAAACOV}{\bkmkend AAAAAAACOV}
-00199     app.setAPIMode({\cf17 false});\par
-{\bkmkstart AAAAAAACPA}{\bkmkend AAAAAAACPA}
-00200     \par
+00134     EXPECT_FALSE(result4.empty());\par
 {\bkmkstart AAAAAAACPB}{\bkmkend AAAAAAACPB}
-00201     std::string apiResult1 = app.translateWithGoogleAPI({\cf22 ""}, {\cf22 ""}, {\cf22 ""});\par
-{\bkmkstart AAAAAAACPI}{\bkmkend AAAAAAACPI}
-00202     EXPECT_TRUE(apiResult1.empty());\par
+00135     \par
+{\bkmkstart AAAAAAACPE}{\bkmkend AAAAAAACPE}
+00136     std::string result5 = app.translatePhrase({\cf22 "   "});\par
 {\bkmkstart AAAAAAACPL}{\bkmkend AAAAAAACPL}
-00203     \par
-{\bkmkstart AAAAAAACPM}{\bkmkend AAAAAAACPM}
-00204     std::string apiResult2 = app.translateWithMicrosoftAPI({\cf22 ""}, {\cf22 ""}, {\cf22 ""});\par
+00137     EXPECT_FALSE(result5.empty());\par
+{\bkmkstart AAAAAAACPR}{\bkmkend AAAAAAACPR}
+00138     \par
 {\bkmkstart AAAAAAACPS}{\bkmkend AAAAAAACPS}
-00205     EXPECT_TRUE(apiResult2.empty());\par
-{\bkmkstart AAAAAAACPW}{\bkmkend AAAAAAACPW}
-00206     \par
-{\bkmkstart AAAAAAACPZ}{\bkmkend AAAAAAACPZ}
-00207     {\cf20 // Test menu handling edge cases}\par
-{\bkmkstart AAAAAAACQB}{\bkmkend AAAAAAACQB}
-00208     {\cf19 for} ({\cf18 int} i = -10; i <= 10; ++i) \{\par
-{\bkmkstart AAAAAAACQH}{\bkmkend AAAAAAACQH}
-00209         EXPECT_NO_THROW(app.handleUserChoice(i));\par
-{\bkmkstart AAAAAAACQP}{\bkmkend AAAAAAACQP}
-00210     \}\par
-{\bkmkstart AAAAAAACQT}{\bkmkend AAAAAAACQT}
-00211     \par
+00139     std::string result6 = app.translateText({\cf22 "   "});\par
+{\bkmkstart AAAAAAACQA}{\bkmkend AAAAAAACQA}
+00140     EXPECT_FALSE(result6.empty());\par
+{\bkmkstart AAAAAAACQF}{\bkmkend AAAAAAACQF}
+00141     \par
+{\bkmkstart AAAAAAACQJ}{\bkmkend AAAAAAACQJ}
+00142     {\cf20 // Test with very long strings}\par
+{\bkmkstart AAAAAAACQM}{\bkmkend AAAAAAACQM}
+00143     std::string longString(10000, {\cf23 'a'});\par
 {\bkmkstart AAAAAAACQU}{\bkmkend AAAAAAACQU}
-00212     {\cf20 // Test display functions multiple times}\par
-{\bkmkstart AAAAAAACQW}{\bkmkend AAAAAAACQW}
-00213     {\cf19 for} ({\cf18 int} i = 0; i < 10; ++i) \{\par
+00144     std::string result7 = app.translateText(longString);\par
 {\bkmkstart AAAAAAACRA}{\bkmkend AAAAAAACRA}
+00145     EXPECT_FALSE(result7.empty());\par
+{\bkmkstart AAAAAAACRE}{\bkmkend AAAAAAACRE}
+00146     \par
+{\bkmkstart AAAAAAACRG}{\bkmkend AAAAAAACRG}
+00147     {\cf20 // Test with special characters}\par
+{\bkmkstart AAAAAAACRJ}{\bkmkend AAAAAAACRJ}
+00148     std::string result8 = app.translateText({\cf22 "Hello, World! @#$%^&*()"});\par
+{\bkmkstart AAAAAAACRO}{\bkmkend AAAAAAACRO}
+00149     EXPECT_FALSE(result8.empty());\par
+{\bkmkstart AAAAAAACRS}{\bkmkend AAAAAAACRS}
+00150     \par
+{\bkmkstart AAAAAAACRV}{\bkmkend AAAAAAACRV}
+00151     {\cf20 // Test with numbers}\par
+{\bkmkstart AAAAAAACRW}{\bkmkend AAAAAAACRW}
+00152     std::string result9 = app.translateText({\cf22 "123 456 789"});\par
+{\bkmkstart AAAAAAACSE}{\bkmkend AAAAAAACSE}
+00153     EXPECT_FALSE(result9.empty());\par
+{\bkmkstart AAAAAAACSK}{\bkmkend AAAAAAACSK}
+00154     \par
+{\bkmkstart AAAAAAACSN}{\bkmkend AAAAAAACSN}
+00155     {\cf20 // Test with mixed languages}\par
+{\bkmkstart AAAAAAACSQ}{\bkmkend AAAAAAACSQ}
+00156     std::string result10 = app.translateText({\cf22 "hello merhaba hola bonjour"});\par
+{\bkmkstart AAAAAAACSW}{\bkmkend AAAAAAACSW}
+00157     EXPECT_FALSE(result10.empty());\par
+{\bkmkstart AAAAAAACSZ}{\bkmkend AAAAAAACSZ}
+00158     \par
+{\bkmkstart AAAAAAACTC}{\bkmkend AAAAAAACTC}
+00159     {\cf20 // Test with unicode characters}\par
+{\bkmkstart AAAAAAACTF}{\bkmkend AAAAAAACTF}
+00160     std::string result11 = app.translateText({\cf22 "café naïve résumé"});\par
+{\bkmkstart AAAAAAACTM}{\bkmkend AAAAAAACTM}
+00161     EXPECT_FALSE(result11.empty());\par
+{\bkmkstart AAAAAAACTS}{\bkmkend AAAAAAACTS}
+00162     \par
+{\bkmkstart AAAAAAACTT}{\bkmkend AAAAAAACTT}
+00163     {\cf20 // Test with newlines and tabs}\par
+{\bkmkstart AAAAAAACTV}{\bkmkend AAAAAAACTV}
+00164     std::string result12 = app.translateText({\cf22 "hello\\nworld\\ttest"});\par
+{\bkmkstart AAAAAAACUD}{\bkmkend AAAAAAACUD}
+00165     EXPECT_FALSE(result12.empty());\par
+{\bkmkstart AAAAAAACUG}{\bkmkend AAAAAAACUG}
+00166     \par
+{\bkmkstart AAAAAAACUJ}{\bkmkend AAAAAAACUJ}
+00167     {\cf20 // Test user management edge cases}\par
+{\bkmkstart AAAAAAACUK}{\bkmkend AAAAAAACUK}
+00168     EXPECT_TRUE(app.registerUser({\cf22 ""}, {\cf22 "password"}));\par
+{\bkmkstart AAAAAAACUM}{\bkmkend AAAAAAACUM}
+00169     EXPECT_TRUE(app.registerUser({\cf22 "username"}, {\cf22 ""}));\par
+{\bkmkstart AAAAAAACUS}{\bkmkend AAAAAAACUS}
+00170     EXPECT_TRUE(app.registerUser({\cf22 ""}, {\cf22 ""}));\par
+{\bkmkstart AAAAAAACUV}{\bkmkend AAAAAAACUV}
+00171     \par
+{\bkmkstart AAAAAAACUX}{\bkmkend AAAAAAACUX}
+00172     {\cf20 // Test login with empty credentials}\par
+{\bkmkstart AAAAAAACUY}{\bkmkend AAAAAAACUY}
+00173     app.login({\cf22 ""}, {\cf22 "password"});\par
+{\bkmkstart AAAAAAACVB}{\bkmkend AAAAAAACVB}
+00174     app.login({\cf22 "username"}, {\cf22 ""});\par
+{\bkmkstart AAAAAAACVG}{\bkmkend AAAAAAACVG}
+00175     app.login({\cf22 ""}, {\cf22 ""});\par
+{\bkmkstart AAAAAAACVI}{\bkmkend AAAAAAACVI}
+00176     \par
+{\bkmkstart AAAAAAACVK}{\bkmkend AAAAAAACVK}
+00177     {\cf20 // Test language management edge cases}\par
+{\bkmkstart AAAAAAACVM}{\bkmkend AAAAAAACVM}
+00178     app.setSourceLanguage({\cf22 ""});\par
+{\bkmkstart AAAAAAACVP}{\bkmkend AAAAAAACVP}
+00179     app.setTargetLanguage({\cf22 ""});\par
+{\bkmkstart AAAAAAACVT}{\bkmkend AAAAAAACVT}
+00180     app.addLanguage({\cf22 ""});\par
+{\bkmkstart AAAAAAACVW}{\bkmkend AAAAAAACVW}
+00181     \par
+{\bkmkstart AAAAAAACVY}{\bkmkend AAAAAAACVY}
+00182     {\cf20 // Test phrase library edge cases}\par
+{\bkmkstart AAAAAAACVZ}{\bkmkend AAAAAAACVZ}
+00183     app.addPhrase({\cf22 ""}, {\cf22 ""});\par
+{\bkmkstart AAAAAAACWG}{\bkmkend AAAAAAACWG}
+00184     app.addPhrase({\cf22 "phrase"}, {\cf22 ""});\par
+{\bkmkstart AAAAAAACWJ}{\bkmkend AAAAAAACWJ}
+00185     app.addPhrase({\cf22 ""}, {\cf22 "category"});\par
+{\bkmkstart AAAAAAACWN}{\bkmkend AAAAAAACWN}
+00186     \par
+{\bkmkstart AAAAAAACWP}{\bkmkend AAAAAAACWP}
+00187     {\cf20 // Test learning tips edge cases}\par
+{\bkmkstart AAAAAAACWR}{\bkmkend AAAAAAACWR}
+00188     app.addLearningTip({\cf22 ""});\par
+{\bkmkstart AAAAAAACWW}{\bkmkend AAAAAAACWW}
+00189     app.addLearningTip({\cf22 "   "});\par
+{\bkmkstart AAAAAAACWZ}{\bkmkend AAAAAAACWZ}
+00190     \par
+{\bkmkstart AAAAAAACXA}{\bkmkend AAAAAAACXA}
+00191     {\cf20 // Test pronunciation guide edge cases}\par
+{\bkmkstart AAAAAAACXC}{\bkmkend AAAAAAACXC}
+00192     app.addPronunciation({\cf22 ""}, {\cf22 ""});\par
+{\bkmkstart AAAAAAACXF}{\bkmkend AAAAAAACXF}
+00193     app.addPronunciation({\cf22 "word"}, {\cf22 ""});\par
+{\bkmkstart AAAAAAACXJ}{\bkmkend AAAAAAACXJ}
+00194     app.addPronunciation({\cf22 ""}, {\cf22 "pronunciation"});\par
+{\bkmkstart AAAAAAACXM}{\bkmkend AAAAAAACXM}
+00195     \par
+{\bkmkstart AAAAAAACXP}{\bkmkend AAAAAAACXP}
+00196     {\cf20 // Test API functions with edge cases}\par
+{\bkmkstart AAAAAAACXS}{\bkmkend AAAAAAACXS}
+00197     app.setAPIKey({\cf22 ""});\par
+{\bkmkstart AAAAAAACXT}{\bkmkend AAAAAAACXT}
+00198     app.setAPIMode({\cf17 true});\par
+{\bkmkstart AAAAAAACXV}{\bkmkend AAAAAAACXV}
+00199     app.setAPIMode({\cf17 false});\par
+{\bkmkstart AAAAAAACXY}{\bkmkend AAAAAAACXY}
+00200     \par
+{\bkmkstart AAAAAAACYA}{\bkmkend AAAAAAACYA}
+00201     std::string apiResult1 = app.translateWithGoogleAPI({\cf22 ""}, {\cf22 ""}, {\cf22 ""});\par
+{\bkmkstart AAAAAAACYC}{\bkmkend AAAAAAACYC}
+00202     EXPECT_TRUE(apiResult1.empty());\par
+{\bkmkstart AAAAAAACYE}{\bkmkend AAAAAAACYE}
+00203     \par
+{\bkmkstart AAAAAAACYF}{\bkmkend AAAAAAACYF}
+00204     std::string apiResult2 = app.translateWithMicrosoftAPI({\cf22 ""}, {\cf22 ""}, {\cf22 ""});\par
+{\bkmkstart AAAAAAACYG}{\bkmkend AAAAAAACYG}
+00205     EXPECT_TRUE(apiResult2.empty());\par
+{\bkmkstart AAAAAAACYH}{\bkmkend AAAAAAACYH}
+00206     \par
+{\bkmkstart AAAAAAACYI}{\bkmkend AAAAAAACYI}
+00207     {\cf20 // Test menu handling edge cases}\par
+{\bkmkstart AAAAAAACYK}{\bkmkend AAAAAAACYK}
+00208     {\cf19 for} ({\cf18 int} i = -10; i <= 10; ++i) \{\par
+{\bkmkstart AAAAAAACYM}{\bkmkend AAAAAAACYM}
+00209         EXPECT_NO_THROW(app.handleUserChoice(i));\par
+{\bkmkstart AAAAAAACYO}{\bkmkend AAAAAAACYO}
+00210     \}\par
+{\bkmkstart AAAAAAACYQ}{\bkmkend AAAAAAACYQ}
+00211     \par
+{\bkmkstart AAAAAAACYR}{\bkmkend AAAAAAACYR}
+00212     {\cf20 // Test display functions multiple times}\par
+{\bkmkstart AAAAAAACYT}{\bkmkend AAAAAAACYT}
+00213     {\cf19 for} ({\cf18 int} i = 0; i < 10; ++i) \{\par
+{\bkmkstart AAAAAAACYV}{\bkmkend AAAAAAACYV}
 00214         EXPECT_NO_THROW(app.showLanguageSelection());\par
-{\bkmkstart AAAAAAACRH}{\bkmkend AAAAAAACRH}
+{\bkmkstart AAAAAAACYZ}{\bkmkend AAAAAAACYZ}
 00215         EXPECT_NO_THROW(app.showPhraseLibrary());\par
-{\bkmkstart AAAAAAACRP}{\bkmkend AAAAAAACRP}
+{\bkmkstart AAAAAAACZC}{\bkmkend AAAAAAACZC}
 00216         EXPECT_NO_THROW(app.showLearningTips());\par
-{\bkmkstart AAAAAAADCV}{\bkmkend AAAAAAADCV}
+{\bkmkstart AAAAAAACZF}{\bkmkend AAAAAAACZF}
 00217         EXPECT_NO_THROW(app.showPronunciationGuide());\par
-{\bkmkstart AAAAAAADDH}{\bkmkend AAAAAAADDH}
+{\bkmkstart AAAAAAACZH}{\bkmkend AAAAAAACZH}
 00218     \}\par
-{\bkmkstart AAAAAAADDJ}{\bkmkend AAAAAAADDJ}
+{\bkmkstart AAAAAAACZJ}{\bkmkend AAAAAAACZJ}
 00219 \}\par
-{\bkmkstart AAAAAAADDL}{\bkmkend AAAAAAADDL}
+{\bkmkstart AAAAAAACZL}{\bkmkend AAAAAAACZL}
 00220 \par
-{\bkmkstart AAAAAAADDO}{\bkmkend AAAAAAADDO}
+{\bkmkstart AAAAAAACZM}{\bkmkend AAAAAAACZM}
 00221 {\cf20 // Test error handling and exceptions}\par
-{\bkmkstart AAAAAAADDS}{\bkmkend AAAAAAADDS}
+{\bkmkstart AAAAAAACZO}{\bkmkend AAAAAAACZO}
 00222 TEST_F(ComprehensiveEdgeCasesTest, TestErrorHandling) \{\par
-{\bkmkstart AAAAAAADEB}{\bkmkend AAAAAAADEB}
+{\bkmkstart AAAAAAACZR}{\bkmkend AAAAAAACZR}
 00223     {\cf20 // Test SafeChronoCalculator error handling}\par
-{\bkmkstart AAAAAAADEE}{\bkmkend AAAAAAADEE}
+{\bkmkstart AAAAAAACZS}{\bkmkend AAAAAAACZS}
 00224     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 0, 1000000000), std::invalid_argument);\par
-{\bkmkstart AAAAAAADEL}{\bkmkend AAAAAAADEL}
+{\bkmkstart AAAAAAACZY}{\bkmkend AAAAAAACZY}
 00225     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, -1000, 1000000000), std::invalid_argument);\par
-{\bkmkstart AAAAAAADER}{\bkmkend AAAAAAADER}
+{\bkmkstart AAAAAAACZZ}{\bkmkend AAAAAAACZZ}
 00226     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 0), std::invalid_argument);\par
-{\bkmkstart AAAAAAADEW}{\bkmkend AAAAAAADEW}
+{\bkmkstart AAAAAAADAC}{\bkmkend AAAAAAADAC}
 00227     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 1000000, -1000), std::invalid_argument);\par
-{\bkmkstart AAAAAAADFB}{\bkmkend AAAAAAADFB}
+{\bkmkstart AAAAAAADAG}{\bkmkend AAAAAAADAG}
 00228     \par
-{\bkmkstart AAAAAAADFE}{\bkmkend AAAAAAADFE}
+{\bkmkstart AAAAAAADAH}{\bkmkend AAAAAAADAH}
 00229     {\cf20 // Test with very large values that might cause overflow}\par
-{\bkmkstart AAAAAAADFG}{\bkmkend AAAAAAADFG}
+{\bkmkstart AAAAAAADAI}{\bkmkend AAAAAAADAI}
 00230     {\cf18 long} {\cf18 long} veryLarge = std::numeric_limits<long long>::max();\par
-{\bkmkstart AAAAAAADGU}{\bkmkend AAAAAAADGU}
+{\bkmkstart AAAAAAADAW}{\bkmkend AAAAAAADAW}
 00231     EXPECT_NO_THROW(SafeChronoCalculator::safeCalculateDuration(veryLarge, 1, 1));\par
-{\bkmkstart AAAAAAADGZ}{\bkmkend AAAAAAADGZ}
+{\bkmkstart AAAAAAADAZ}{\bkmkend AAAAAAADAZ}
 00232     EXPECT_NO_THROW(SafeChronoCalculator::safeCalculateDuration(1, veryLarge, 1));\par
-{\bkmkstart AAAAAAADHB}{\bkmkend AAAAAAADHB}
+{\bkmkstart AAAAAAADBD}{\bkmkend AAAAAAADBD}
 00233     EXPECT_NO_THROW(SafeChronoCalculator::safeCalculateDuration(1, 1, veryLarge));\par
-{\bkmkstart AAAAAAADHG}{\bkmkend AAAAAAADHG}
+{\bkmkstart AAAAAAADBH}{\bkmkend AAAAAAADBH}
 00234 \}\par
-{\bkmkstart AAAAAAADHH}{\bkmkend AAAAAAADHH}
+{\bkmkstart AAAAAAADBJ}{\bkmkend AAAAAAADBJ}
 00235 \par
-{\bkmkstart AAAAAAADHI}{\bkmkend AAAAAAADHI}
+{\bkmkstart AAAAAAADBL}{\bkmkend AAAAAAADBL}
 00236 {\cf20 // Test performance under stress}\par
-{\bkmkstart AAAAAAADHK}{\bkmkend AAAAAAADHK}
+{\bkmkstart AAAAAAADBM}{\bkmkend AAAAAAADBM}
 00237 TEST_F(ComprehensiveEdgeCasesTest, TestPerformanceStress) \{\par
-{\bkmkstart AAAAAAADHS}{\bkmkend AAAAAAADHS}
+{\bkmkstart AAAAAAADBQ}{\bkmkend AAAAAAADBQ}
 00238     {\cf20 // Test SafeChronoCalculator performance}\par
-{\bkmkstart AAAAAAADHU}{\bkmkend AAAAAAADHU}
+{\bkmkstart AAAAAAADBR}{\bkmkend AAAAAAADBR}
 00239     {\cf17 auto} start = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAADHX}{\bkmkend AAAAAAADHX}
+{\bkmkstart AAAAAAADBX}{\bkmkend AAAAAAADBX}
 00240     \par
-{\bkmkstart AAAAAAADIA}{\bkmkend AAAAAAADIA}
+{\bkmkstart AAAAAAADBZ}{\bkmkend AAAAAAADBZ}
 00241     {\cf19 for} ({\cf18 int} i = 1; i <= 10000; ++i) \{\par
-{\bkmkstart AAAAAAADIF}{\bkmkend AAAAAAADIF}
+{\bkmkstart AAAAAAADCG}{\bkmkend AAAAAAADCG}
 00242         {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(i, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAADII}{\bkmkend AAAAAAADII}
+{\bkmkstart AAAAAAADCO}{\bkmkend AAAAAAADCO}
 00243         EXPECT_GE(result.count(), 0);\par
-{\bkmkstart AAAAAAADIM}{\bkmkend AAAAAAADIM}
+{\bkmkstart AAAAAAADCS}{\bkmkend AAAAAAADCS}
 00244         \par
-{\bkmkstart AAAAAAADIN}{\bkmkend AAAAAAADIN}
+{\bkmkstart AAAAAAADCU}{\bkmkend AAAAAAADCU}
 00245         {\cf18 bool} overflow = SafeChronoCalculator::wouldOverflow(i, i);\par
-{\bkmkstart AAAAAAADIQ}{\bkmkend AAAAAAADIQ}
+{\bkmkstart AAAAAAADDB}{\bkmkend AAAAAAADDB}
 00246         {\cf20 // Don't assert on overflow result as it depends on implementation}\par
-{\bkmkstart AAAAAAADIS}{\bkmkend AAAAAAADIS}
+{\bkmkstart AAAAAAADDF}{\bkmkend AAAAAAADDF}
 00247     \}\par
-{\bkmkstart AAAAAAADIT}{\bkmkend AAAAAAADIT}
+{\bkmkstart AAAAAAADDH}{\bkmkend AAAAAAADDH}
 00248     \par
-{\bkmkstart AAAAAAADIV}{\bkmkend AAAAAAADIV}
+{\bkmkstart AAAAAAADDJ}{\bkmkend AAAAAAADDJ}
 00249     {\cf17 auto} end = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAADJE}{\bkmkend AAAAAAADJE}
+{\bkmkstart AAAAAAADDX}{\bkmkend AAAAAAADDX}
 00250     {\cf17 auto} duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);\par
-{\bkmkstart AAAAAAADJL}{\bkmkend AAAAAAADJL}
+{\bkmkstart AAAAAAADEJ}{\bkmkend AAAAAAADEJ}
 00251     EXPECT_LT(duration.count(), 5000); {\cf20 // Should complete in less than 5 seconds}\par
-{\bkmkstart AAAAAAADJP}{\bkmkend AAAAAAADJP}
+{\bkmkstart AAAAAAADEN}{\bkmkend AAAAAAADEN}
 00252     \par
-{\bkmkstart AAAAAAADJR}{\bkmkend AAAAAAADJR}
+{\bkmkstart AAAAAAADEO}{\bkmkend AAAAAAADEO}
 00253     {\cf20 // Test LanguageTranslatorApp performance}\par
-{\bkmkstart AAAAAAADJS}{\bkmkend AAAAAAADJS}
+{\bkmkstart AAAAAAADEP}{\bkmkend AAAAAAADEP}
 00254     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAADJU}{\bkmkend AAAAAAADJU}
+{\bkmkstart AAAAAAADES}{\bkmkend AAAAAAADES}
 00255     \par
-{\bkmkstart AAAAAAADJW}{\bkmkend AAAAAAADJW}
+{\bkmkstart AAAAAAADEU}{\bkmkend AAAAAAADEU}
 00256     start = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAADJY}{\bkmkend AAAAAAADJY}
+{\bkmkstart AAAAAAADFA}{\bkmkend AAAAAAADFA}
 00257     \par
-{\bkmkstart AAAAAAADJZ}{\bkmkend AAAAAAADJZ}
+{\bkmkstart AAAAAAADFD}{\bkmkend AAAAAAADFD}
 00258     {\cf19 for} ({\cf18 int} i = 0; i < 1000; ++i) \{\par
-{\bkmkstart AAAAAAADKC}{\bkmkend AAAAAAADKC}
+{\bkmkstart AAAAAAADFH}{\bkmkend AAAAAAADFH}
 00259         app.addPhrase({\cf22 "phrase "} + std::to_string(i), {\cf22 "category"} + std::to_string(i % 10));\par
-{\bkmkstart AAAAAAADKM}{\bkmkend AAAAAAADKM}
+{\bkmkstart AAAAAAADFT}{\bkmkend AAAAAAADFT}
 00260         app.addLearningTip({\cf22 "tip "} + std::to_string(i));\par
-{\bkmkstart AAAAAAADKQ}{\bkmkend AAAAAAADKQ}
+{\bkmkstart AAAAAAADFZ}{\bkmkend AAAAAAADFZ}
 00261         app.addPronunciation({\cf22 "word"} + std::to_string(i), {\cf22 "pronunciation"} + std::to_string(i));\par
-{\bkmkstart AAAAAAADKZ}{\bkmkend AAAAAAADKZ}
+{\bkmkstart AAAAAAADGE}{\bkmkend AAAAAAADGE}
 00262         \par
-{\bkmkstart AAAAAAADLB}{\bkmkend AAAAAAADLB}
+{\bkmkstart AAAAAAADGF}{\bkmkend AAAAAAADGF}
 00263         std::string result = app.translateText({\cf22 "test "} + std::to_string(i));\par
-{\bkmkstart AAAAAAADLI}{\bkmkend AAAAAAADLI}
+{\bkmkstart AAAAAAADGQ}{\bkmkend AAAAAAADGQ}
 00264         EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADLL}{\bkmkend AAAAAAADLL}
+{\bkmkstart AAAAAAADGV}{\bkmkend AAAAAAADGV}
 00265     \}\par
-{\bkmkstart AAAAAAADLN}{\bkmkend AAAAAAADLN}
+{\bkmkstart AAAAAAADGW}{\bkmkend AAAAAAADGW}
 00266     \par
-{\bkmkstart AAAAAAADLP}{\bkmkend AAAAAAADLP}
+{\bkmkstart AAAAAAADGX}{\bkmkend AAAAAAADGX}
 00267     end = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAADLU}{\bkmkend AAAAAAADLU}
+{\bkmkstart AAAAAAADHE}{\bkmkend AAAAAAADHE}
 00268     duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);\par
-{\bkmkstart AAAAAAADLZ}{\bkmkend AAAAAAADLZ}
+{\bkmkstart AAAAAAADHQ}{\bkmkend AAAAAAADHQ}
 00269     EXPECT_LT(duration.count(), 10000); {\cf20 // Should complete in less than 10 seconds}\par
-{\bkmkstart AAAAAAADMD}{\bkmkend AAAAAAADMD}
+{\bkmkstart AAAAAAADHV}{\bkmkend AAAAAAADHV}
 00270 \}\par
-{\bkmkstart AAAAAAADME}{\bkmkend AAAAAAADME}
+{\bkmkstart AAAAAAADHW}{\bkmkend AAAAAAADHW}
 00271 \par
-{\bkmkstart AAAAAAADMG}{\bkmkend AAAAAAADMG}
+{\bkmkstart AAAAAAADHY}{\bkmkend AAAAAAADHY}
 00272 {\cf20 // Test memory usage and resource management}\par
-{\bkmkstart AAAAAAADMI}{\bkmkend AAAAAAADMI}
+{\bkmkstart AAAAAAADIA}{\bkmkend AAAAAAADIA}
 00273 TEST_F(ComprehensiveEdgeCasesTest, TestMemoryUsage) \{\par
-{\bkmkstart AAAAAAADMN}{\bkmkend AAAAAAADMN}
+{\bkmkstart AAAAAAADIF}{\bkmkend AAAAAAADIF}
 00274     {\cf20 // Test with many LanguageTranslatorApp instances}\par
-{\bkmkstart AAAAAAADMO}{\bkmkend AAAAAAADMO}
+{\bkmkstart AAAAAAADII}{\bkmkend AAAAAAADII}
 00275     std::vector<std::unique_ptr<LanguageTranslatorApp>> apps;\par
-{\bkmkstart AAAAAAADMV}{\bkmkend AAAAAAADMV}
+{\bkmkstart AAAAAAADIO}{\bkmkend AAAAAAADIO}
 00276     \par
-{\bkmkstart AAAAAAADMY}{\bkmkend AAAAAAADMY}
+{\bkmkstart AAAAAAADIQ}{\bkmkend AAAAAAADIQ}
 00277     {\cf19 for} ({\cf18 int} i = 0; i < 100; ++i) \{\par
-{\bkmkstart AAAAAAADNC}{\bkmkend AAAAAAADNC}
+{\bkmkstart AAAAAAADIS}{\bkmkend AAAAAAADIS}
 00278         {\cf17 auto} app = std::make_unique<LanguageTranslatorApp>();\par
-{\bkmkstart AAAAAAADNJ}{\bkmkend AAAAAAADNJ}
+{\bkmkstart AAAAAAADIX}{\bkmkend AAAAAAADIX}
 00279         \par
-{\bkmkstart AAAAAAADNL}{\bkmkend AAAAAAADNL}
+{\bkmkstart AAAAAAADIY}{\bkmkend AAAAAAADIY}
 00280         {\cf20 // Add some data to each app}\par
-{\bkmkstart AAAAAAADNM}{\bkmkend AAAAAAADNM}
+{\bkmkstart AAAAAAADJA}{\bkmkend AAAAAAADJA}
 00281         {\cf19 for} ({\cf18 int} j = 0; j < 10; ++j) \{\par
-{\bkmkstart AAAAAAADNP}{\bkmkend AAAAAAADNP}
+{\bkmkstart AAAAAAADJC}{\bkmkend AAAAAAADJC}
 00282             app->addPhrase({\cf22 "phrase "} + std::to_string(j), {\cf22 "category"});\par
-{\bkmkstart AAAAAAADNY}{\bkmkend AAAAAAADNY}
+{\bkmkstart AAAAAAADJI}{\bkmkend AAAAAAADJI}
 00283             app->addLearningTip({\cf22 "tip "} + std::to_string(j));\par
-{\bkmkstart AAAAAAADOH}{\bkmkend AAAAAAADOH}
+{\bkmkstart AAAAAAADJO}{\bkmkend AAAAAAADJO}
 00284             app->addPronunciation({\cf22 "word"} + std::to_string(j), {\cf22 "pronunciation"});\par
-{\bkmkstart AAAAAAADOM}{\bkmkend AAAAAAADOM}
+{\bkmkstart AAAAAAADJQ}{\bkmkend AAAAAAADJQ}
 00285         \}\par
-{\bkmkstart AAAAAAADOP}{\bkmkend AAAAAAADOP}
+{\bkmkstart AAAAAAADJS}{\bkmkend AAAAAAADJS}
 00286         \par
-{\bkmkstart AAAAAAADOS}{\bkmkend AAAAAAADOS}
+{\bkmkstart AAAAAAADJU}{\bkmkend AAAAAAADJU}
 00287         apps.push_back(std::move(app));\par
-{\bkmkstart AAAAAAADPH}{\bkmkend AAAAAAADPH}
+{\bkmkstart AAAAAAADKF}{\bkmkend AAAAAAADKF}
 00288     \}\par
-{\bkmkstart AAAAAAADPI}{\bkmkend AAAAAAADPI}
+{\bkmkstart AAAAAAADKG}{\bkmkend AAAAAAADKG}
 00289     \par
-{\bkmkstart AAAAAAADPJ}{\bkmkend AAAAAAADPJ}
+{\bkmkstart AAAAAAADKH}{\bkmkend AAAAAAADKH}
 00290     {\cf20 // Test that all apps still work}\par
-{\bkmkstart AAAAAAADPL}{\bkmkend AAAAAAADPL}
+{\bkmkstart AAAAAAADKK}{\bkmkend AAAAAAADKK}
 00291     {\cf19 for} ({\cf17 const} {\cf17 auto}& app : apps) \{\par
-{\bkmkstart AAAAAAADPS}{\bkmkend AAAAAAADPS}
+{\bkmkstart AAAAAAADKN}{\bkmkend AAAAAAADKN}
 00292         EXPECT_NO_THROW(app->showPhraseLibrary());\par
-{\bkmkstart AAAAAAADPW}{\bkmkend AAAAAAADPW}
+{\bkmkstart AAAAAAADKQ}{\bkmkend AAAAAAADKQ}
 00293         EXPECT_NO_THROW(app->showLearningTips());\par
-{\bkmkstart AAAAAAADPY}{\bkmkend AAAAAAADPY}
+{\bkmkstart AAAAAAADKT}{\bkmkend AAAAAAADKT}
 00294         EXPECT_NO_THROW(app->showPronunciationGuide());\par
-{\bkmkstart AAAAAAADQA}{\bkmkend AAAAAAADQA}
+{\bkmkstart AAAAAAADKW}{\bkmkend AAAAAAADKW}
 00295     \}\par
-{\bkmkstart AAAAAAADQB}{\bkmkend AAAAAAADQB}
+{\bkmkstart AAAAAAADKX}{\bkmkend AAAAAAADKX}
 00296     \par
-{\bkmkstart AAAAAAADQD}{\bkmkend AAAAAAADQD}
+{\bkmkstart AAAAAAADKY}{\bkmkend AAAAAAADKY}
 00297     {\cf20 // Clear apps to test cleanup}\par
-{\bkmkstart AAAAAAADQE}{\bkmkend AAAAAAADQE}
+{\bkmkstart AAAAAAADLB}{\bkmkend AAAAAAADLB}
 00298     apps.clear();\par
-{\bkmkstart AAAAAAADQJ}{\bkmkend AAAAAAADQJ}
+{\bkmkstart AAAAAAADLE}{\bkmkend AAAAAAADLE}
 00299     \par
-{\bkmkstart AAAAAAADQK}{\bkmkend AAAAAAADQK}
+{\bkmkstart AAAAAAADLF}{\bkmkend AAAAAAADLF}
 00300     {\cf20 // Test that we can create new apps after cleanup}\par
-{\bkmkstart AAAAAAADQL}{\bkmkend AAAAAAADQL}
+{\bkmkstart AAAAAAADLH}{\bkmkend AAAAAAADLH}
 00301     LanguageTranslatorApp newApp;\par
-{\bkmkstart AAAAAAADQR}{\bkmkend AAAAAAADQR}
+{\bkmkstart AAAAAAADLI}{\bkmkend AAAAAAADLI}
 00302     EXPECT_NO_THROW(newApp.translateText({\cf22 "test"}));\par
-{\bkmkstart AAAAAAADQU}{\bkmkend AAAAAAADQU}
+{\bkmkstart AAAAAAADLM}{\bkmkend AAAAAAADLM}
 00303 \}\par
-{\bkmkstart AAAAAAADQW}{\bkmkend AAAAAAADQW}
+{\bkmkstart AAAAAAADLN}{\bkmkend AAAAAAADLN}
 00304 \par
-{\bkmkstart AAAAAAADQY}{\bkmkend AAAAAAADQY}
+{\bkmkstart AAAAAAADLO}{\bkmkend AAAAAAADLO}
 00305 {\cf20 // Test concurrent access (basic thread safety)}\par
-{\bkmkstart AAAAAAADRB}{\bkmkend AAAAAAADRB}
+{\bkmkstart AAAAAAADLP}{\bkmkend AAAAAAADLP}
 00306 TEST_F(ComprehensiveEdgeCasesTest, TestConcurrentAccess) \{\par
-{\bkmkstart AAAAAAADRF}{\bkmkend AAAAAAADRF}
+{\bkmkstart AAAAAAADLS}{\bkmkend AAAAAAADLS}
 00307     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAADRK}{\bkmkend AAAAAAADRK}
+{\bkmkstart AAAAAAADLX}{\bkmkend AAAAAAADLX}
 00308     \par
-{\bkmkstart AAAAAAADRL}{\bkmkend AAAAAAADRL}
+{\bkmkstart AAAAAAADMA}{\bkmkend AAAAAAADMA}
 00309     {\cf20 // Test multiple threads accessing the same app}\par
-{\bkmkstart AAAAAAADRN}{\bkmkend AAAAAAADRN}
+{\bkmkstart AAAAAAADMC}{\bkmkend AAAAAAADMC}
 00310     std::vector<std::thread> threads;\par
-{\bkmkstart AAAAAAADRX}{\bkmkend AAAAAAADRX}
+{\bkmkstart AAAAAAADMH}{\bkmkend AAAAAAADMH}
 00311     \par
-{\bkmkstart AAAAAAADRZ}{\bkmkend AAAAAAADRZ}
+{\bkmkstart AAAAAAADMK}{\bkmkend AAAAAAADMK}
 00312     {\cf19 for} ({\cf18 int} i = 0; i < 10; ++i) \{\par
-{\bkmkstart AAAAAAADSC}{\bkmkend AAAAAAADSC}
+{\bkmkstart AAAAAAADMN}{\bkmkend AAAAAAADMN}
 00313         threads.emplace_back([&app, i]() \{\par
-{\bkmkstart AAAAAAADSJ}{\bkmkend AAAAAAADSJ}
+{\bkmkstart AAAAAAADMS}{\bkmkend AAAAAAADMS}
 00314             {\cf19 for} ({\cf18 int} j = 0; j < 100; ++j) \{\par
-{\bkmkstart AAAAAAADSM}{\bkmkend AAAAAAADSM}
+{\bkmkstart AAAAAAADMU}{\bkmkend AAAAAAADMU}
 00315                 app.addPhrase({\cf22 "phrase "} + std::to_string(i) + {\cf22 "_"} + std::to_string(j), {\cf22 "category"});\par
-{\bkmkstart AAAAAAADSS}{\bkmkend AAAAAAADSS}
+{\bkmkstart AAAAAAADNC}{\bkmkend AAAAAAADNC}
 00316                 app.addLearningTip({\cf22 "tip "} + std::to_string(i) + {\cf22 "_"} + std::to_string(j));\par
-{\bkmkstart AAAAAAADSY}{\bkmkend AAAAAAADSY}
+{\bkmkstart AAAAAAADNE}{\bkmkend AAAAAAADNE}
 00317                 app.addPronunciation({\cf22 "word"} + std::to_string(i) + {\cf22 "_"} + std::to_string(j), {\cf22 "pronunciation"});\par
-{\bkmkstart AAAAAAADTG}{\bkmkend AAAAAAADTG}
+{\bkmkstart AAAAAAADNG}{\bkmkend AAAAAAADNG}
 00318                 \par
-{\bkmkstart AAAAAAADTH}{\bkmkend AAAAAAADTH}
+{\bkmkstart AAAAAAADNH}{\bkmkend AAAAAAADNH}
 00319                 std::string result = app.translateText({\cf22 "test "} + std::to_string(i) + {\cf22 "_"} + std::to_string(j));\par
-{\bkmkstart AAAAAAADTP}{\bkmkend AAAAAAADTP}
+{\bkmkstart AAAAAAADNK}{\bkmkend AAAAAAADNK}
 00320                 EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADTS}{\bkmkend AAAAAAADTS}
+{\bkmkstart AAAAAAADNL}{\bkmkend AAAAAAADNL}
 00321             \}\par
-{\bkmkstart AAAAAAADTT}{\bkmkend AAAAAAADTT}
+{\bkmkstart AAAAAAADNM}{\bkmkend AAAAAAADNM}
 00322         \});\par
-{\bkmkstart AAAAAAADTZ}{\bkmkend AAAAAAADTZ}
+{\bkmkstart AAAAAAADNN}{\bkmkend AAAAAAADNN}
 00323     \}\par
-{\bkmkstart AAAAAAADUC}{\bkmkend AAAAAAADUC}
+{\bkmkstart AAAAAAADNP}{\bkmkend AAAAAAADNP}
 00324     \par
-{\bkmkstart AAAAAAADUD}{\bkmkend AAAAAAADUD}
+{\bkmkstart AAAAAAADNR}{\bkmkend AAAAAAADNR}
 00325     {\cf20 // Wait for all threads to complete}\par
-{\bkmkstart AAAAAAADUF}{\bkmkend AAAAAAADUF}
+{\bkmkstart AAAAAAADNS}{\bkmkend AAAAAAADNS}
 00326     {\cf19 for} ({\cf17 auto}& thread : threads) \{\par
-{\bkmkstart AAAAAAADUJ}{\bkmkend AAAAAAADUJ}
+{\bkmkstart AAAAAAADNX}{\bkmkend AAAAAAADNX}
 00327         thread.join();\par
-{\bkmkstart AAAAAAADUL}{\bkmkend AAAAAAADUL}
+{\bkmkstart AAAAAAADNY}{\bkmkend AAAAAAADNY}
 00328     \}\par
-{\bkmkstart AAAAAAADUM}{\bkmkend AAAAAAADUM}
+{\bkmkstart AAAAAAADNZ}{\bkmkend AAAAAAADNZ}
 00329     \par
-{\bkmkstart AAAAAAADUO}{\bkmkend AAAAAAADUO}
+{\bkmkstart AAAAAAADOB}{\bkmkend AAAAAAADOB}
 00330     {\cf20 // Test that the app still works after concurrent access}\par
-{\bkmkstart AAAAAAADUQ}{\bkmkend AAAAAAADUQ}
+{\bkmkstart AAAAAAADOC}{\bkmkend AAAAAAADOC}
 00331     EXPECT_NO_THROW(app.showPhraseLibrary());\par
-{\bkmkstart AAAAAAADUT}{\bkmkend AAAAAAADUT}
+{\bkmkstart AAAAAAADOE}{\bkmkend AAAAAAADOE}
 00332     EXPECT_NO_THROW(app.showLearningTips());\par
-{\bkmkstart AAAAAAADUW}{\bkmkend AAAAAAADUW}
+{\bkmkstart AAAAAAADOG}{\bkmkend AAAAAAADOG}
 00333     EXPECT_NO_THROW(app.showPronunciationGuide());\par
-{\bkmkstart AAAAAAADUX}{\bkmkend AAAAAAADUX}
+{\bkmkstart AAAAAAADOJ}{\bkmkend AAAAAAADOJ}
 00334 \}\par
-{\bkmkstart AAAAAAADUZ}{\bkmkend AAAAAAADUZ}
+{\bkmkstart AAAAAAADOK}{\bkmkend AAAAAAADOK}
 00335 \par
-{\bkmkstart AAAAAAADVA}{\bkmkend AAAAAAADVA}
+{\bkmkstart AAAAAAADOL}{\bkmkend AAAAAAADOL}
 00336 {\cf20 // Test boundary conditions}\par
-{\bkmkstart AAAAAAADVB}{\bkmkend AAAAAAADVB}
+{\bkmkstart AAAAAAADOM}{\bkmkend AAAAAAADOM}
 00337 TEST_F(ComprehensiveEdgeCasesTest, TestBoundaryConditions) \{\par
-{\bkmkstart AAAAAAADVG}{\bkmkend AAAAAAADVG}
+{\bkmkstart AAAAAAADOQ}{\bkmkend AAAAAAADOQ}
 00338     {\cf20 // Test SafeChronoCalculator boundary conditions}\par
-{\bkmkstart AAAAAAADVH}{\bkmkend AAAAAAADVH}
+{\bkmkstart AAAAAAADOS}{\bkmkend AAAAAAADOS}
 00339     {\cf18 long} {\cf18 long} minValue = std::numeric_limits<long long>::min();\par
-{\bkmkstart AAAAAAADVU}{\bkmkend AAAAAAADVU}
+{\bkmkstart AAAAAAADPF}{\bkmkend AAAAAAADPF}
 00340     {\cf18 long} {\cf18 long} maxValue = std::numeric_limits<long long>::max();\par
-{\bkmkstart AAAAAAADWE}{\bkmkend AAAAAAADWE}
+{\bkmkstart AAAAAAADPT}{\bkmkend AAAAAAADPT}
 00341     \par
-{\bkmkstart AAAAAAADWF}{\bkmkend AAAAAAADWF}
+{\bkmkstart AAAAAAADPU}{\bkmkend AAAAAAADPU}
 00342     {\cf20 // Test with minimum values}\par
-{\bkmkstart AAAAAAADWH}{\bkmkend AAAAAAADWH}
+{\bkmkstart AAAAAAADPV}{\bkmkend AAAAAAADPV}
 00343     EXPECT_NO_THROW(SafeChronoCalculator::safeCalculateDuration(minValue, 1, 1));\par
-{\bkmkstart AAAAAAADWK}{\bkmkend AAAAAAADWK}
+{\bkmkstart AAAAAAADQB}{\bkmkend AAAAAAADQB}
 00344     EXPECT_NO_THROW(SafeChronoCalculator::safeCalculateDuration(1, minValue, 1));\par
-{\bkmkstart AAAAAAADWN}{\bkmkend AAAAAAADWN}
+{\bkmkstart AAAAAAADQC}{\bkmkend AAAAAAADQC}
 00345     EXPECT_NO_THROW(SafeChronoCalculator::safeCalculateDuration(1, 1, minValue));\par
-{\bkmkstart AAAAAAADWQ}{\bkmkend AAAAAAADWQ}
+{\bkmkstart AAAAAAADQD}{\bkmkend AAAAAAADQD}
 00346     \par
-{\bkmkstart AAAAAAADWT}{\bkmkend AAAAAAADWT}
+{\bkmkstart AAAAAAADQF}{\bkmkend AAAAAAADQF}
 00347     {\cf20 // Test with maximum values}\par
-{\bkmkstart AAAAAAADWU}{\bkmkend AAAAAAADWU}
+{\bkmkstart AAAAAAADQG}{\bkmkend AAAAAAADQG}
 00348     EXPECT_NO_THROW(SafeChronoCalculator::safeCalculateDuration(maxValue, 1, 1));\par
-{\bkmkstart AAAAAAADWX}{\bkmkend AAAAAAADWX}
+{\bkmkstart AAAAAAADQI}{\bkmkend AAAAAAADQI}
 00349     EXPECT_NO_THROW(SafeChronoCalculator::safeCalculateDuration(1, maxValue, 1));\par
-{\bkmkstart AAAAAAADWZ}{\bkmkend AAAAAAADWZ}
+{\bkmkstart AAAAAAADQK}{\bkmkend AAAAAAADQK}
 00350     EXPECT_NO_THROW(SafeChronoCalculator::safeCalculateDuration(1, 1, maxValue));\par
-{\bkmkstart AAAAAAADXB}{\bkmkend AAAAAAADXB}
+{\bkmkstart AAAAAAADQM}{\bkmkend AAAAAAADQM}
 00351     \par
-{\bkmkstart AAAAAAADXC}{\bkmkend AAAAAAADXC}
+{\bkmkstart AAAAAAADQN}{\bkmkend AAAAAAADQN}
 00352     {\cf20 // Test overflow detection with boundary values}\par
-{\bkmkstart AAAAAAADXD}{\bkmkend AAAAAAADXD}
+{\bkmkstart AAAAAAADQP}{\bkmkend AAAAAAADQP}
 00353     EXPECT_FALSE(SafeChronoCalculator::wouldOverflow(minValue, 1));\par
-{\bkmkstart AAAAAAADXE}{\bkmkend AAAAAAADXE}
+{\bkmkstart AAAAAAADQQ}{\bkmkend AAAAAAADQQ}
 00354     EXPECT_FALSE(SafeChronoCalculator::wouldOverflow(1, minValue));\par
-{\bkmkstart AAAAAAADXG}{\bkmkend AAAAAAADXG}
+{\bkmkstart AAAAAAADQR}{\bkmkend AAAAAAADQR}
 00355     EXPECT_FALSE(SafeChronoCalculator::wouldOverflow(minValue, minValue));\par
-{\bkmkstart AAAAAAADXH}{\bkmkend AAAAAAADXH}
+{\bkmkstart AAAAAAADQS}{\bkmkend AAAAAAADQS}
 00356     \par
-{\bkmkstart AAAAAAADXI}{\bkmkend AAAAAAADXI}
+{\bkmkstart AAAAAAADQT}{\bkmkend AAAAAAADQT}
 00357     EXPECT_FALSE(SafeChronoCalculator::wouldOverflow(maxValue, 1));\par
-{\bkmkstart AAAAAAADXK}{\bkmkend AAAAAAADXK}
+{\bkmkstart AAAAAAADQU}{\bkmkend AAAAAAADQU}
 00358     EXPECT_FALSE(SafeChronoCalculator::wouldOverflow(1, maxValue));\par
-{\bkmkstart AAAAAAADXQ}{\bkmkend AAAAAAADXQ}
+{\bkmkstart AAAAAAADQY}{\bkmkend AAAAAAADQY}
 00359     EXPECT_TRUE(SafeChronoCalculator::wouldOverflow(maxValue, 2));\par
-{\bkmkstart AAAAAAADXU}{\bkmkend AAAAAAADXU}
+{\bkmkstart AAAAAAADQZ}{\bkmkend AAAAAAADQZ}
 00360     EXPECT_TRUE(SafeChronoCalculator::wouldOverflow(2, maxValue));\par
-{\bkmkstart AAAAAAADXX}{\bkmkend AAAAAAADXX}
+{\bkmkstart AAAAAAADRA}{\bkmkend AAAAAAADRA}
 00361     \par
-{\bkmkstart AAAAAAADXY}{\bkmkend AAAAAAADXY}
+{\bkmkstart AAAAAAADRB}{\bkmkend AAAAAAADRB}
 00362     {\cf20 // Test LanguageTranslatorApp boundary conditions}\par
-{\bkmkstart AAAAAAADYA}{\bkmkend AAAAAAADYA}
+{\bkmkstart AAAAAAADRC}{\bkmkend AAAAAAADRC}
 00363     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAADYE}{\bkmkend AAAAAAADYE}
+{\bkmkstart AAAAAAADRD}{\bkmkend AAAAAAADRD}
 00364     \par
-{\bkmkstart AAAAAAADYF}{\bkmkend AAAAAAADYF}
+{\bkmkstart AAAAAAADRE}{\bkmkend AAAAAAADRE}
 00365     {\cf20 // Test with maximum length strings}\par
-{\bkmkstart AAAAAAADYH}{\bkmkend AAAAAAADYH}
+{\bkmkstart AAAAAAADRF}{\bkmkend AAAAAAADRF}
 00366     std::string maxString(100000, {\cf23 'a'});\par
-{\bkmkstart AAAAAAADYK}{\bkmkend AAAAAAADYK}
+{\bkmkstart AAAAAAADRG}{\bkmkend AAAAAAADRG}
 00367     std::string result = app.translateText(maxString);\par
-{\bkmkstart AAAAAAADYP}{\bkmkend AAAAAAADYP}
+{\bkmkstart AAAAAAADRH}{\bkmkend AAAAAAADRH}
 00368     EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADYQ}{\bkmkend AAAAAAADYQ}
+{\bkmkstart AAAAAAADRI}{\bkmkend AAAAAAADRI}
 00369     \par
-{\bkmkstart AAAAAAADYR}{\bkmkend AAAAAAADYR}
+{\bkmkstart AAAAAAADRJ}{\bkmkend AAAAAAADRJ}
 00370     {\cf20 // Test with many phrases}\par
-{\bkmkstart AAAAAAADYS}{\bkmkend AAAAAAADYS}
+{\bkmkstart AAAAAAADRK}{\bkmkend AAAAAAADRK}
 00371     {\cf19 for} ({\cf18 int} i = 0; i < 10000; ++i) \{\par
-{\bkmkstart AAAAAAADYV}{\bkmkend AAAAAAADYV}
+{\bkmkstart AAAAAAADRL}{\bkmkend AAAAAAADRL}
 00372         app.addPhrase({\cf22 "phrase "} + std::to_string(i), {\cf22 "category"});\par
-{\bkmkstart AAAAAAADYX}{\bkmkend AAAAAAADYX}
+{\bkmkstart AAAAAAADRM}{\bkmkend AAAAAAADRM}
 00373     \}\par
-{\bkmkstart AAAAAAADYY}{\bkmkend AAAAAAADYY}
+{\bkmkstart AAAAAAADRN}{\bkmkend AAAAAAADRN}
 00374     \par
-{\bkmkstart AAAAAAADYZ}{\bkmkend AAAAAAADYZ}
+{\bkmkstart AAAAAAADRO}{\bkmkend AAAAAAADRO}
 00375     EXPECT_NO_THROW(app.showPhraseLibrary());\par
-{\bkmkstart AAAAAAADZA}{\bkmkend AAAAAAADZA}
+{\bkmkstart AAAAAAADRP}{\bkmkend AAAAAAADRP}
 00376     \par
-{\bkmkstart AAAAAAADZC}{\bkmkend AAAAAAADZC}
+{\bkmkstart AAAAAAADRQ}{\bkmkend AAAAAAADRQ}
 00377     {\cf20 // Test with many learning tips}\par
-{\bkmkstart AAAAAAADZE}{\bkmkend AAAAAAADZE}
+{\bkmkstart AAAAAAADRR}{\bkmkend AAAAAAADRR}
 00378     {\cf19 for} ({\cf18 int} i = 0; i < 10000; ++i) \{\par
-{\bkmkstart AAAAAAADZH}{\bkmkend AAAAAAADZH}
+{\bkmkstart AAAAAAADRS}{\bkmkend AAAAAAADRS}
 00379         app.addLearningTip({\cf22 "tip "} + std::to_string(i));\par
-{\bkmkstart AAAAAAADZI}{\bkmkend AAAAAAADZI}
+{\bkmkstart AAAAAAADRT}{\bkmkend AAAAAAADRT}
 00380     \}\par
-{\bkmkstart AAAAAAADZJ}{\bkmkend AAAAAAADZJ}
+{\bkmkstart AAAAAAADRU}{\bkmkend AAAAAAADRU}
 00381     \par
-{\bkmkstart AAAAAAADZK}{\bkmkend AAAAAAADZK}
+{\bkmkstart AAAAAAADRV}{\bkmkend AAAAAAADRV}
 00382     EXPECT_NO_THROW(app.showLearningTips());\par
-{\bkmkstart AAAAAAADZM}{\bkmkend AAAAAAADZM}
+{\bkmkstart AAAAAAADRW}{\bkmkend AAAAAAADRW}
 00383     \par
-{\bkmkstart AAAAAAADZN}{\bkmkend AAAAAAADZN}
+{\bkmkstart AAAAAAADRX}{\bkmkend AAAAAAADRX}
 00384     {\cf20 // Test with many pronunciations}\par
-{\bkmkstart AAAAAAADZO}{\bkmkend AAAAAAADZO}
+{\bkmkstart AAAAAAADRY}{\bkmkend AAAAAAADRY}
 00385     {\cf19 for} ({\cf18 int} i = 0; i < 10000; ++i) \{\par
-{\bkmkstart AAAAAAADZP}{\bkmkend AAAAAAADZP}
+{\bkmkstart AAAAAAADRZ}{\bkmkend AAAAAAADRZ}
 00386         app.addPronunciation({\cf22 "word"} + std::to_string(i), {\cf22 "pronunciation"});\par
-{\bkmkstart AAAAAAADZT}{\bkmkend AAAAAAADZT}
+{\bkmkstart AAAAAAADSA}{\bkmkend AAAAAAADSA}
 00387     \}\par
-{\bkmkstart AAAAAAADZV}{\bkmkend AAAAAAADZV}
+{\bkmkstart AAAAAAADSB}{\bkmkend AAAAAAADSB}
 00388     \par
-{\bkmkstart AAAAAAADZW}{\bkmkend AAAAAAADZW}
+{\bkmkstart AAAAAAADSC}{\bkmkend AAAAAAADSC}
 00389     EXPECT_NO_THROW(app.showPronunciationGuide());\par
-{\bkmkstart AAAAAAADZX}{\bkmkend AAAAAAADZX}
+{\bkmkstart AAAAAAADSD}{\bkmkend AAAAAAADSD}
 00390 \}\par
-{\bkmkstart AAAAAAADZY}{\bkmkend AAAAAAADZY}
+{\bkmkstart AAAAAAADSE}{\bkmkend AAAAAAADSE}
 00391 \par
-{\bkmkstart AAAAAAADZZ}{\bkmkend AAAAAAADZZ}
+{\bkmkstart AAAAAAADSF}{\bkmkend AAAAAAADSF}
 00392 {\cf20 // Test consistency and reliability}\par
-{\bkmkstart AAAAAAAEAA}{\bkmkend AAAAAAAEAA}
+{\bkmkstart AAAAAAADSG}{\bkmkend AAAAAAADSG}
 00393 TEST_F(ComprehensiveEdgeCasesTest, TestConsistencyReliability) \{\par
-{\bkmkstart AAAAAAAEAC}{\bkmkend AAAAAAAEAC}
+{\bkmkstart AAAAAAADSH}{\bkmkend AAAAAAADSH}
 00394     {\cf20 // Test SafeChronoCalculator consistency}\par
-{\bkmkstart AAAAAAAEAD}{\bkmkend AAAAAAAEAD}
+{\bkmkstart AAAAAAADSI}{\bkmkend AAAAAAADSI}
 00395     {\cf19 for} ({\cf18 int} i = 0; i < 1000; ++i) \{\par
-{\bkmkstart AAAAAAAEAE}{\bkmkend AAAAAAAEAE}
+{\bkmkstart AAAAAAADSJ}{\bkmkend AAAAAAADSJ}
 00396         {\cf17 auto} result1 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAAEAJ}{\bkmkend AAAAAAAEAJ}
+{\bkmkstart AAAAAAADSK}{\bkmkend AAAAAAADSK}
 00397         {\cf17 auto} result2 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAAEAM}{\bkmkend AAAAAAAEAM}
+{\bkmkstart AAAAAAADSL}{\bkmkend AAAAAAADSL}
 00398         EXPECT_EQ(result1.count(), result2.count());\par
-{\bkmkstart AAAAAAAEAO}{\bkmkend AAAAAAAEAO}
+{\bkmkstart AAAAAAADSM}{\bkmkend AAAAAAADSM}
 00399         \par
-{\bkmkstart AAAAAAAEAP}{\bkmkend AAAAAAAEAP}
+{\bkmkstart AAAAAAADSN}{\bkmkend AAAAAAADSN}
 00400         {\cf18 bool} overflow1 = SafeChronoCalculator::wouldOverflow(1000, 1000);\par
-{\bkmkstart AAAAAAAEAQ}{\bkmkend AAAAAAAEAQ}
+{\bkmkstart AAAAAAADSO}{\bkmkend AAAAAAADSO}
 00401         {\cf18 bool} overflow2 = SafeChronoCalculator::wouldOverflow(1000, 1000);\par
-{\bkmkstart AAAAAAAEAR}{\bkmkend AAAAAAAEAR}
+{\bkmkstart AAAAAAADSP}{\bkmkend AAAAAAADSP}
 00402         EXPECT_EQ(overflow1, overflow2);\par
-{\bkmkstart AAAAAAAEAS}{\bkmkend AAAAAAAEAS}
+{\bkmkstart AAAAAAADSQ}{\bkmkend AAAAAAADSQ}
 00403     \}\par
-{\bkmkstart AAAAAAAEAT}{\bkmkend AAAAAAAEAT}
+{\bkmkstart AAAAAAADSR}{\bkmkend AAAAAAADSR}
 00404     \par
-{\bkmkstart AAAAAAAEAU}{\bkmkend AAAAAAAEAU}
+{\bkmkstart AAAAAAADSS}{\bkmkend AAAAAAADSS}
 00405     {\cf20 // Test LanguageTranslatorApp consistency}\par
-{\bkmkstart AAAAAAAEAV}{\bkmkend AAAAAAAEAV}
+{\bkmkstart AAAAAAADST}{\bkmkend AAAAAAADST}
 00406     LanguageTranslatorApp app;\par
-{\bkmkstart AAAAAAAEAW}{\bkmkend AAAAAAAEAW}
+{\bkmkstart AAAAAAADSV}{\bkmkend AAAAAAADSV}
 00407     \par
-{\bkmkstart AAAAAAAEAX}{\bkmkend AAAAAAAEAX}
+{\bkmkstart AAAAAAADSW}{\bkmkend AAAAAAADSW}
 00408     {\cf19 for} ({\cf18 int} i = 0; i < 1000; ++i) \{\par
-{\bkmkstart AAAAAAAEAY}{\bkmkend AAAAAAAEAY}
+{\bkmkstart AAAAAAADSX}{\bkmkend AAAAAAADSX}
 00409         std::string input = {\cf22 "test "} + std::to_string(i);\par
-{\bkmkstart AAAAAAAEAZ}{\bkmkend AAAAAAAEAZ}
+{\bkmkstart AAAAAAADSY}{\bkmkend AAAAAAADSY}
 00410         std::string result1 = app.translateText(input);\par
-{\bkmkstart AAAAAAAEBA}{\bkmkend AAAAAAAEBA}
+{\bkmkstart AAAAAAADSZ}{\bkmkend AAAAAAADSZ}
 00411         std::string result2 = app.translateText(input);\par
-{\bkmkstart AAAAAAAEBB}{\bkmkend AAAAAAAEBB}
+{\bkmkstart AAAAAAADTA}{\bkmkend AAAAAAADTA}
 00412         EXPECT_EQ(result1, result2);\par
-{\bkmkstart AAAAAAAEBC}{\bkmkend AAAAAAAEBC}
+{\bkmkstart AAAAAAADTC}{\bkmkend AAAAAAADTC}
 00413     \}\par
-{\bkmkstart AAAAAAAEBD}{\bkmkend AAAAAAAEBD}
+{\bkmkstart AAAAAAADTD}{\bkmkend AAAAAAADTD}
 00414     \par
-{\bkmkstart AAAAAAAEBE}{\bkmkend AAAAAAAEBE}
+{\bkmkstart AAAAAAADTE}{\bkmkend AAAAAAADTE}
 00415     {\cf20 // Test that same operations produce same results}\par
-{\bkmkstart AAAAAAAEBF}{\bkmkend AAAAAAAEBF}
+{\bkmkstart AAAAAAADTF}{\bkmkend AAAAAAADTF}
 00416     app.addPhrase({\cf22 "test phrase"}, {\cf22 "category"});\par
-{\bkmkstart AAAAAAAEBG}{\bkmkend AAAAAAAEBG}
+{\bkmkstart AAAAAAADTG}{\bkmkend AAAAAAADTG}
 00417     app.addLearningTip({\cf22 "test tip"});\par
-{\bkmkstart AAAAAAAEBH}{\bkmkend AAAAAAAEBH}
+{\bkmkstart AAAAAAADTH}{\bkmkend AAAAAAADTH}
 00418     app.addPronunciation({\cf22 "test word"}, {\cf22 "test pronunciation"});\par
-{\bkmkstart AAAAAAAEBI}{\bkmkend AAAAAAAEBI}
+{\bkmkstart AAAAAAADTI}{\bkmkend AAAAAAADTI}
 00419     \par
-{\bkmkstart AAAAAAAEBJ}{\bkmkend AAAAAAAEBJ}
+{\bkmkstart AAAAAAADTJ}{\bkmkend AAAAAAADTJ}
 00420     {\cf19 for} ({\cf18 int} i = 0; i < 100; ++i) \{\par
-{\bkmkstart AAAAAAAEBK}{\bkmkend AAAAAAAEBK}
+{\bkmkstart AAAAAAADTK}{\bkmkend AAAAAAADTK}
 00421         EXPECT_NO_THROW(app.showPhraseLibrary());\par
-{\bkmkstart AAAAAAAEBL}{\bkmkend AAAAAAAEBL}
+{\bkmkstart AAAAAAADTL}{\bkmkend AAAAAAADTL}
 00422         EXPECT_NO_THROW(app.showLearningTips());\par
-{\bkmkstart AAAAAAAEBM}{\bkmkend AAAAAAAEBM}
+{\bkmkstart AAAAAAADTM}{\bkmkend AAAAAAADTM}
 00423         EXPECT_NO_THROW(app.showPronunciationGuide());\par
-{\bkmkstart AAAAAAAEBN}{\bkmkend AAAAAAAEBN}
+{\bkmkstart AAAAAAADTO}{\bkmkend AAAAAAADTO}
 00424     \}\par
-{\bkmkstart AAAAAAAEBO}{\bkmkend AAAAAAAEBO}
+{\bkmkstart AAAAAAADTP}{\bkmkend AAAAAAADTP}
 00425 \}\par
 }
 }

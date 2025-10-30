@@ -151,549 +151,549 @@
 test_language_translator_comprehensive.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_comprehensive.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_language_translator_comprehensive.cpp}
-{\bkmkstart AAAAAAACXL}
-{\bkmkend AAAAAAACXL}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACXN" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAADPM}
+{\bkmkend AAAAAAADPM}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADPO" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAACZN}{\bkmkend AAAAAAACZN}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAADQV}{\bkmkend AAAAAAADQV}
 00001 \par
-{\bkmkstart AAAAAAACZX}{\bkmkend AAAAAAACZX}
+{\bkmkstart AAAAAAADQW}{\bkmkend AAAAAAADQW}
 00008 \par
-{\bkmkstart AAAAAAACZZ}{\bkmkend AAAAAAACZZ}
-00009 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAADAW}{\bkmkend AAAAAAADAW}
-00010 {\cf21 #include <fstream>}\par
-{\bkmkstart AAAAAAADCL}{\bkmkend AAAAAAADCL}
-00011 {\cf21 #include <sstream>}\par
-{\bkmkstart AAAAAAADDC}{\bkmkend AAAAAAADDC}
-00012 {\cf21 #include <filesystem>}\par
-{\bkmkstart AAAAAAADED}{\bkmkend AAAAAAADED}
-00013 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
-{\bkmkstart AAAAAAADFQ}{\bkmkend AAAAAAADFQ}
-00014 \par
-{\bkmkstart AAAAAAADFR}{\bkmkend AAAAAAADFR}
-00015 {\cf17 using namespace }Coruh::LanguageTranslator;\par
-{\bkmkstart AAAAAAADFZ}{\bkmkend AAAAAAADFZ}
-00016 \par
-{\bkmkstart AAAAAAADGB}{\bkmkend AAAAAAADGB}
-00017 {\cf17 class }LanguageTranslatorComprehensiveTest : {\cf17 public} ::testing::Test \{\par
-{\bkmkstart AAAAAAADGM}{\bkmkend AAAAAAADGM}
-00018 {\cf17 protected}:\par
-{\bkmkstart AAAAAAADGO}{\bkmkend AAAAAAADGO}
-00019     {\cf18 void} SetUp(){\cf17  override }\{\par
-{\bkmkstart AAAAAAADGY}{\bkmkend AAAAAAADGY}
-00020         app = std::make_unique<LanguageTranslatorApp>();\par
-{\bkmkstart AAAAAAADHC}{\bkmkend AAAAAAADHC}
-00021     \}\par
-{\bkmkstart AAAAAAADHD}{\bkmkend AAAAAAADHD}
-00022     \par
-{\bkmkstart AAAAAAADHF}{\bkmkend AAAAAAADHF}
-00023     {\cf18 void} TearDown(){\cf17  override }\{\par
-{\bkmkstart AAAAAAADHM}{\bkmkend AAAAAAADHM}
-00024         app.reset();\par
-{\bkmkstart AAAAAAADHP}{\bkmkend AAAAAAADHP}
-00025     \}\par
-{\bkmkstart AAAAAAADHQ}{\bkmkend AAAAAAADHQ}
-00026     \par
-{\bkmkstart AAAAAAADHR}{\bkmkend AAAAAAADHR}
-00027     std::unique_ptr<LanguageTranslatorApp> app;\par
-{\bkmkstart AAAAAAADHW}{\bkmkend AAAAAAADHW}
-00028 \};\par
-{\bkmkstart AAAAAAADHY}{\bkmkend AAAAAAADHY}
-00029 \par
-{\bkmkstart AAAAAAADHZ}{\bkmkend AAAAAAADHZ}
-00030 {\cf20 // Test constructor and basic initialization}\par
-{\bkmkstart AAAAAAADIC}{\bkmkend AAAAAAADIC}
-00031 TEST_F(LanguageTranslatorComprehensiveTest, TestConstructor) \{\par
-{\bkmkstart AAAAAAADIL}{\bkmkend AAAAAAADIL}
-00032     EXPECT_FALSE(app->isUserLoggedIn());\par
-{\bkmkstart AAAAAAADIP}{\bkmkend AAAAAAADIP}
-00033     {\cf20 // Check if the number of supported languages is reasonable (not exactly 4)}\par
-{\bkmkstart AAAAAAADIR}{\bkmkend AAAAAAADIR}
-00034     {\cf17 auto} languages = app->getSupportedLanguages();\par
-{\bkmkstart AAAAAAADIU}{\bkmkend AAAAAAADIU}
-00035     EXPECT_GE(languages.size(), 4); {\cf20 // At least 4 languages}\par
-{\bkmkstart AAAAAAADIW}{\bkmkend AAAAAAADIW}
-00036     EXPECT_LE(languages.size(), 10); {\cf20 // But not too many}\par
-{\bkmkstart AAAAAAADIY}{\bkmkend AAAAAAADIY}
-00037 \}\par
-{\bkmkstart AAAAAAADIZ}{\bkmkend AAAAAAADIZ}
-00038 \par
-{\bkmkstart AAAAAAADJB}{\bkmkend AAAAAAADJB}
-00039 {\cf20 // Test language management functions}\par
-{\bkmkstart AAAAAAADJD}{\bkmkend AAAAAAADJD}
-00040 TEST_F(LanguageTranslatorComprehensiveTest, TestLanguageManagement) \{\par
-{\bkmkstart AAAAAAADJG}{\bkmkend AAAAAAADJG}
-00041     {\cf20 // Test setSourceLanguage}\par
-{\bkmkstart AAAAAAADJH}{\bkmkend AAAAAAADJH}
-00042     app->setSourceLanguage({\cf22 "Spanish"});\par
-{\bkmkstart AAAAAAADJJ}{\bkmkend AAAAAAADJJ}
-00043     app->setTargetLanguage({\cf22 "French"});\par
-{\bkmkstart AAAAAAADJM}{\bkmkend AAAAAAADJM}
-00044     \par
-{\bkmkstart AAAAAAADJO}{\bkmkend AAAAAAADJO}
-00045     {\cf20 // Test addLanguage}\par
-{\bkmkstart AAAAAAADJQ}{\bkmkend AAAAAAADJQ}
-00046     app->addLanguage({\cf22 "German"});\par
-{\bkmkstart AAAAAAADJT}{\bkmkend AAAAAAADJT}
-00047     {\cf17 auto} languages = app->getSupportedLanguages();\par
-{\bkmkstart AAAAAAADJV}{\bkmkend AAAAAAADJV}
-00048     EXPECT_TRUE(std::find(languages.begin(), languages.end(), {\cf22 "German"}) != languages.end());\par
-{\bkmkstart AAAAAAADKA}{\bkmkend AAAAAAADKA}
-00049 \}\par
-{\bkmkstart AAAAAAADKB}{\bkmkend AAAAAAADKB}
-00050 \par
-{\bkmkstart AAAAAAADKD}{\bkmkend AAAAAAADKD}
-00051 {\cf20 // Test user management functions}\par
-{\bkmkstart AAAAAAADKF}{\bkmkend AAAAAAADKF}
-00052 TEST_F(LanguageTranslatorComprehensiveTest, TestUserManagement) \{\par
-{\bkmkstart AAAAAAADKG}{\bkmkend AAAAAAADKG}
-00053     {\cf20 // Test registration}\par
-{\bkmkstart AAAAAAADKH}{\bkmkend AAAAAAADKH}
-00054     EXPECT_TRUE(app->registerUser({\cf22 "testuser"}, {\cf22 "password123"}));\par
-{\bkmkstart AAAAAAADKK}{\bkmkend AAAAAAADKK}
-00055     EXPECT_TRUE(app->registerUser({\cf22 "testuser2"}, {\cf22 "password456"}));\par
-{\bkmkstart AAAAAAADKN}{\bkmkend AAAAAAADKN}
-00056     \par
-{\bkmkstart AAAAAAADKO}{\bkmkend AAAAAAADKO}
-00057     {\cf20 // Test login - might not work as expected, so just test that it doesn't crash}\par
-{\bkmkstart AAAAAAADKR}{\bkmkend AAAAAAADKR}
-00058     app->login({\cf22 "testuser"}, {\cf22 "password123"});\par
-{\bkmkstart AAAAAAADKT}{\bkmkend AAAAAAADKT}
-00059     {\cf20 // Don't assert on isUserLoggedIn() as it might not work as expected}\par
-{\bkmkstart AAAAAAADKU}{\bkmkend AAAAAAADKU}
-00060     \par
-{\bkmkstart AAAAAAADKV}{\bkmkend AAAAAAADKV}
-00061     {\cf20 // Test logout}\par
-{\bkmkstart AAAAAAADKX}{\bkmkend AAAAAAADKX}
-00062     app->logout();\par
-{\bkmkstart AAAAAAADLC}{\bkmkend AAAAAAADLC}
-00063     EXPECT_FALSE(app->isUserLoggedIn());\par
-{\bkmkstart AAAAAAADLE}{\bkmkend AAAAAAADLE}
-00064     \par
-{\bkmkstart AAAAAAADLF}{\bkmkend AAAAAAADLF}
-00065     {\cf20 // Test invalid login - just test that it doesn't crash}\par
-{\bkmkstart AAAAAAADLH}{\bkmkend AAAAAAADLH}
-00066     app->login({\cf22 "testuser"}, {\cf22 "wrongpassword"});\par
-{\bkmkstart AAAAAAADLJ}{\bkmkend AAAAAAADLJ}
-00067     app->login({\cf22 "nonexistent"}, {\cf22 "password"});\par
-{\bkmkstart AAAAAAADLK}{\bkmkend AAAAAAADLK}
-00068 \}\par
-{\bkmkstart AAAAAAADLM}{\bkmkend AAAAAAADLM}
-00069 \par
-{\bkmkstart AAAAAAADLO}{\bkmkend AAAAAAADLO}
-00070 {\cf20 // Test phrase library functions}\par
-{\bkmkstart AAAAAAADLQ}{\bkmkend AAAAAAADLQ}
-00071 TEST_F(LanguageTranslatorComprehensiveTest, TestPhraseLibrary) \{\par
-{\bkmkstart AAAAAAADLS}{\bkmkend AAAAAAADLS}
-00072     {\cf20 // Test adding phrases}\par
-{\bkmkstart AAAAAAADLT}{\bkmkend AAAAAAADLT}
-00073     app->addPhrase({\cf22 "Hello, how are you?"}, {\cf22 "greetings"});\par
-{\bkmkstart AAAAAAADLV}{\bkmkend AAAAAAADLV}
-00074     app->addPhrase({\cf22 "Thank you very much"}, {\cf22 "politeness"});\par
-{\bkmkstart AAAAAAADLX}{\bkmkend AAAAAAADLX}
-00075     app->addPhrase({\cf22 "Where is the bathroom?"}, {\cf22 "travel"});\par
-{\bkmkstart AAAAAAADLY}{\bkmkend AAAAAAADLY}
-00076     \par
-{\bkmkstart AAAAAAADMA}{\bkmkend AAAAAAADMA}
-00077     {\cf20 // Test phrase translation}\par
-{\bkmkstart AAAAAAADMB}{\bkmkend AAAAAAADMB}
-00078     std::string result = app->translatePhrase({\cf22 "Hello, how are you?"});\par
-{\bkmkstart AAAAAAADMF}{\bkmkend AAAAAAADMF}
-00079     EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADMJ}{\bkmkend AAAAAAADMJ}
-00080 \}\par
-{\bkmkstart AAAAAAADMK}{\bkmkend AAAAAAADMK}
-00081 \par
-{\bkmkstart AAAAAAADML}{\bkmkend AAAAAAADML}
-00082 {\cf20 // Test learning tips functions}\par
-{\bkmkstart AAAAAAADMM}{\bkmkend AAAAAAADMM}
-00083 TEST_F(LanguageTranslatorComprehensiveTest, TestLearningTips) \{\par
-{\bkmkstart AAAAAAADMP}{\bkmkend AAAAAAADMP}
-00084     {\cf20 // Test adding learning tips}\par
-{\bkmkstart AAAAAAADMQ}{\bkmkend AAAAAAADMQ}
-00085     app->addLearningTip({\cf22 "Practice daily for better results"});\par
-{\bkmkstart AAAAAAADMR}{\bkmkend AAAAAAADMR}
-00086     app->addLearningTip({\cf22 "Use flashcards for vocabulary"});\par
-{\bkmkstart AAAAAAADMT}{\bkmkend AAAAAAADMT}
-00087     app->addLearningTip({\cf22 "Listen to native speakers"});\par
-{\bkmkstart AAAAAAADMX}{\bkmkend AAAAAAADMX}
-00088     \par
-{\bkmkstart AAAAAAADMZ}{\bkmkend AAAAAAADMZ}
-00089     {\cf20 // Test showing learning tips (should not crash)}\par
-{\bkmkstart AAAAAAADNA}{\bkmkend AAAAAAADNA}
-00090     EXPECT_NO_THROW(app->showLearningTips());\par
-{\bkmkstart AAAAAAADNE}{\bkmkend AAAAAAADNE}
-00091 \}\par
-{\bkmkstart AAAAAAADNG}{\bkmkend AAAAAAADNG}
-00092 \par
-{\bkmkstart AAAAAAADNH}{\bkmkend AAAAAAADNH}
-00093 {\cf20 // Test pronunciation guide functions}\par
-{\bkmkstart AAAAAAADNI}{\bkmkend AAAAAAADNI}
-00094 TEST_F(LanguageTranslatorComprehensiveTest, TestPronunciationGuide) \{\par
-{\bkmkstart AAAAAAADNN}{\bkmkend AAAAAAADNN}
-00095     {\cf20 // Test adding pronunciation guides}\par
-{\bkmkstart AAAAAAADNO}{\bkmkend AAAAAAADNO}
-00096     app->addPronunciation({\cf22 "hello"}, {\cf22 "heh-LOH"});\par
-{\bkmkstart AAAAAAADNQ}{\bkmkend AAAAAAADNQ}
-00097     app->addPronunciation({\cf22 "world"}, {\cf22 "wurld"});\par
-{\bkmkstart AAAAAAADNS}{\bkmkend AAAAAAADNS}
-00098     app->addPronunciation({\cf22 "thank you"}, {\cf22 "thangk yoo"});\par
-{\bkmkstart AAAAAAADNV}{\bkmkend AAAAAAADNV}
-00099     \par
-{\bkmkstart AAAAAAADNX}{\bkmkend AAAAAAADNX}
-00100     {\cf20 // Test showing pronunciation guide (should not crash)}\par
-{\bkmkstart AAAAAAADNZ}{\bkmkend AAAAAAADNZ}
-00101     EXPECT_NO_THROW(app->showPronunciationGuide());\par
-{\bkmkstart AAAAAAADOB}{\bkmkend AAAAAAADOB}
-00102 \}\par
-{\bkmkstart AAAAAAADOC}{\bkmkend AAAAAAADOC}
-00103 \par
-{\bkmkstart AAAAAAADOD}{\bkmkend AAAAAAADOD}
-00104 {\cf20 // Test data management functions}\par
-{\bkmkstart AAAAAAADOF}{\bkmkend AAAAAAADOF}
-00105 TEST_F(LanguageTranslatorComprehensiveTest, TestDataManagement) \{\par
-{\bkmkstart AAAAAAADOJ}{\bkmkend AAAAAAADOJ}
-00106     {\cf20 // Test initializeDefaultData (should not crash)}\par
-{\bkmkstart AAAAAAADOK}{\bkmkend AAAAAAADOK}
-00107     EXPECT_NO_THROW(app->initializeDefaultData());\par
-{\bkmkstart AAAAAAADON}{\bkmkend AAAAAAADON}
-00108     \par
-{\bkmkstart AAAAAAADOQ}{\bkmkend AAAAAAADOQ}
-00109     {\cf20 // Test saveData (should not crash)}\par
-{\bkmkstart AAAAAAADOT}{\bkmkend AAAAAAADOT}
-00110     EXPECT_NO_THROW(app->saveData());\par
-{\bkmkstart AAAAAAADOV}{\bkmkend AAAAAAADOV}
-00111     \par
-{\bkmkstart AAAAAAADOW}{\bkmkend AAAAAAADOW}
-00112     {\cf20 // Test loadData (should not crash)}\par
-{\bkmkstart AAAAAAADOY}{\bkmkend AAAAAAADOY}
-00113     EXPECT_NO_THROW(app->loadData());\par
-{\bkmkstart AAAAAAADPA}{\bkmkend AAAAAAADPA}
-00114 \}\par
-{\bkmkstart AAAAAAADPC}{\bkmkend AAAAAAADPC}
-00115 \par
-{\bkmkstart AAAAAAADPE}{\bkmkend AAAAAAADPE}
-00116 {\cf20 // Test dictionary management functions}\par
-{\bkmkstart AAAAAAADPF}{\bkmkend AAAAAAADPF}
-00117 TEST_F(LanguageTranslatorComprehensiveTest, TestDictionaryManagement) \{\par
-{\bkmkstart AAAAAAADPK}{\bkmkend AAAAAAADPK}
-00118     {\cf20 // Test loadAllDictionaries (should not crash)}\par
-{\bkmkstart AAAAAAADPM}{\bkmkend AAAAAAADPM}
-00119     EXPECT_NO_THROW(app->loadAllDictionaries());\par
-{\bkmkstart AAAAAAADPP}{\bkmkend AAAAAAADPP}
-00120     \par
-{\bkmkstart AAAAAAADPQ}{\bkmkend AAAAAAADPQ}
-00121     {\cf20 // Test loadDictionaryFromFile with non-existent file}\par
-{\bkmkstart AAAAAAADPR}{\bkmkend AAAAAAADPR}
-00122     EXPECT_FALSE(app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "nonexistent.txt"}));\par
-{\bkmkstart AAAAAAADPT}{\bkmkend AAAAAAADPT}
-00123     \par
-{\bkmkstart AAAAAAADPV}{\bkmkend AAAAAAADPV}
-00124     {\cf20 // Test loadDictionaryFromFile with valid file (if it exists)}\par
-{\bkmkstart AAAAAAADPX}{\bkmkend AAAAAAADPX}
-00125     std::filesystem::create_directory({\cf22 "dictionaries"});\par
-{\bkmkstart AAAAAAADPZ}{\bkmkend AAAAAAADPZ}
-00126     std::ofstream testFile({\cf22 "dictionaries/test_en_de.txt"});\par
-{\bkmkstart AAAAAAADQC}{\bkmkend AAAAAAADQC}
-00127     testFile << {\cf22 "hello=halo\\nworld=welt\\n"};\par
-{\bkmkstart AAAAAAADQF}{\bkmkend AAAAAAADQF}
-00128     testFile.close();\par
-{\bkmkstart AAAAAAADQG}{\bkmkend AAAAAAADQG}
-00129     \par
-{\bkmkstart AAAAAAADQH}{\bkmkend AAAAAAADQH}
-00130     EXPECT_TRUE(app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "dictionaries/test_en_de.txt"}));\par
-{\bkmkstart AAAAAAADQM}{\bkmkend AAAAAAADQM}
-00131     \par
-{\bkmkstart AAAAAAADQN}{\bkmkend AAAAAAADQN}
-00132     {\cf20 // Clean up}\par
-{\bkmkstart AAAAAAADQP}{\bkmkend AAAAAAADQP}
-00133     std::filesystem::remove({\cf22 "dictionaries/test_en_de.txt"});\par
-{\bkmkstart AAAAAAADQT}{\bkmkend AAAAAAADQT}
-00134 \}\par
-{\bkmkstart AAAAAAADQV}{\bkmkend AAAAAAADQV}
-00135 \par
 {\bkmkstart AAAAAAADQX}{\bkmkend AAAAAAADQX}
-00136 {\cf20 // Test API functions}\par
-{\bkmkstart AAAAAAADRA}{\bkmkend AAAAAAADRA}
-00137 TEST_F(LanguageTranslatorComprehensiveTest, TestAPIFunctions) \{\par
-{\bkmkstart AAAAAAADRD}{\bkmkend AAAAAAADRD}
-00138     {\cf20 // Test isAPIAvailable}\par
-{\bkmkstart AAAAAAADRE}{\bkmkend AAAAAAADRE}
-00139     EXPECT_FALSE(app->isAPIAvailable());\par
-{\bkmkstart AAAAAAADRG}{\bkmkend AAAAAAADRG}
-00140     \par
-{\bkmkstart AAAAAAADRI}{\bkmkend AAAAAAADRI}
-00141     {\cf20 // Test setAPIKey}\par
-{\bkmkstart AAAAAAADRJ}{\bkmkend AAAAAAADRJ}
-00142     app->setAPIKey({\cf22 "test-api-key-123"});\par
-{\bkmkstart AAAAAAADRM}{\bkmkend AAAAAAADRM}
-00143     \par
-{\bkmkstart AAAAAAADRO}{\bkmkend AAAAAAADRO}
-00144     {\cf20 // Test setAPIMode}\par
-{\bkmkstart AAAAAAADRQ}{\bkmkend AAAAAAADRQ}
-00145     app->setAPIMode({\cf17 true});\par
-{\bkmkstart AAAAAAADRR}{\bkmkend AAAAAAADRR}
-00146     app->setAPIMode({\cf17 false});\par
-{\bkmkstart AAAAAAADRU}{\bkmkend AAAAAAADRU}
-00147     \par
-{\bkmkstart AAAAAAADRV}{\bkmkend AAAAAAADRV}
-00148     {\cf20 // Test Google API translation (should return empty string)}\par
-{\bkmkstart AAAAAAADRY}{\bkmkend AAAAAAADRY}
-00149     std::string result = app->translateWithGoogleAPI({\cf22 "hello"}, {\cf22 "en"}, {\cf22 "tr"});\par
-{\bkmkstart AAAAAAADSA}{\bkmkend AAAAAAADSA}
-00150     EXPECT_TRUE(result.empty());\par
-{\bkmkstart AAAAAAADSD}{\bkmkend AAAAAAADSD}
-00151     \par
-{\bkmkstart AAAAAAADSF}{\bkmkend AAAAAAADSF}
-00152     {\cf20 // Test Microsoft API translation (should return empty string)}\par
-{\bkmkstart AAAAAAADSH}{\bkmkend AAAAAAADSH}
-00153     result = app->translateWithMicrosoftAPI({\cf22 "hello"}, {\cf22 "en"}, {\cf22 "tr"});\par
-{\bkmkstart AAAAAAADSL}{\bkmkend AAAAAAADSL}
-00154     EXPECT_TRUE(result.empty());\par
-{\bkmkstart AAAAAAADSN}{\bkmkend AAAAAAADSN}
-00155 \}\par
-{\bkmkstart AAAAAAADSO}{\bkmkend AAAAAAADSO}
-00156 \par
-{\bkmkstart AAAAAAADSP}{\bkmkend AAAAAAADSP}
-00157 {\cf20 // Test translation functions with various inputs}\par
-{\bkmkstart AAAAAAADSQ}{\bkmkend AAAAAAADSQ}
-00158 TEST_F(LanguageTranslatorComprehensiveTest, TestTranslationFunctions) \{\par
-{\bkmkstart AAAAAAADST}{\bkmkend AAAAAAADST}
-00159     {\cf20 // Test translateWord}\par
-{\bkmkstart AAAAAAADSV}{\bkmkend AAAAAAADSV}
-00160     std::string result = app->translateWord({\cf22 "hello"});\par
-{\bkmkstart AAAAAAADSW}{\bkmkend AAAAAAADSW}
-00161     EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADTA}{\bkmkend AAAAAAADTA}
-00162     \par
+00009 {\cf21 #include <gtest/gtest.h>}\par
+{\bkmkstart AAAAAAADSU}{\bkmkend AAAAAAADSU}
+00010 {\cf21 #include <fstream>}\par
 {\bkmkstart AAAAAAADTB}{\bkmkend AAAAAAADTB}
-00163     {\cf20 // Test translatePhrase}\par
-{\bkmkstart AAAAAAADTC}{\bkmkend AAAAAAADTC}
-00164     result = app->translatePhrase({\cf22 "good morning"});\par
-{\bkmkstart AAAAAAADTE}{\bkmkend AAAAAAADTE}
-00165     EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADTF}{\bkmkend AAAAAAADTF}
-00166     \par
-{\bkmkstart AAAAAAADTI}{\bkmkend AAAAAAADTI}
-00167     {\cf20 // Test translateText}\par
-{\bkmkstart AAAAAAADTJ}{\bkmkend AAAAAAADTJ}
-00168     result = app->translateText({\cf22 "hello world"});\par
-{\bkmkstart AAAAAAADTK}{\bkmkend AAAAAAADTK}
-00169     EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADTL}{\bkmkend AAAAAAADTL}
-00170     \par
-{\bkmkstart AAAAAAADTM}{\bkmkend AAAAAAADTM}
-00171     {\cf20 // Test with empty input}\par
+00011 {\cf21 #include <sstream>}\par
 {\bkmkstart AAAAAAADTN}{\bkmkend AAAAAAADTN}
-00172     result = app->translateWord({\cf22 ""});\par
-{\bkmkstart AAAAAAADTO}{\bkmkend AAAAAAADTO}
-00173     EXPECT_TRUE(result.empty());\par
+00012 {\cf21 #include <filesystem>}\par
 {\bkmkstart AAAAAAADTQ}{\bkmkend AAAAAAADTQ}
-00174     \par
-{\bkmkstart AAAAAAADTR}{\bkmkend AAAAAAADTR}
-00175     result = app->translatePhrase({\cf22 ""});\par
+00013 {\cf21 #include "../src/LanguageTranslator/header/LanguageTranslator.h"}\par
+{\bkmkstart AAAAAAADTT}{\bkmkend AAAAAAADTT}
+00014 \par
 {\bkmkstart AAAAAAADTU}{\bkmkend AAAAAAADTU}
-00176     EXPECT_TRUE(result.empty());\par
+00015 {\cf17 using namespace }Coruh::LanguageTranslator;\par
 {\bkmkstart AAAAAAADTV}{\bkmkend AAAAAAADTV}
-00177     \par
+00016 \par
 {\bkmkstart AAAAAAADTW}{\bkmkend AAAAAAADTW}
-00178     result = app->translateText({\cf22 ""});\par
+00017 {\cf17 class }LanguageTranslatorComprehensiveTest : {\cf17 public} ::testing::Test \{\par
 {\bkmkstart AAAAAAADTX}{\bkmkend AAAAAAADTX}
-00179     EXPECT_TRUE(result.empty());\par
+00018 {\cf17 protected}:\par
 {\bkmkstart AAAAAAADTY}{\bkmkend AAAAAAADTY}
-00180 \}\par
+00019     {\cf18 void} SetUp(){\cf17  override }\{\par
+{\bkmkstart AAAAAAADTZ}{\bkmkend AAAAAAADTZ}
+00020         app = std::make_unique<LanguageTranslatorApp>();\par
 {\bkmkstart AAAAAAADUA}{\bkmkend AAAAAAADUA}
-00181 \par
+00021     \}\par
 {\bkmkstart AAAAAAADUB}{\bkmkend AAAAAAADUB}
-00182 {\cf20 // Test edge cases and error handling}\par
+00022     \par
+{\bkmkstart AAAAAAADUC}{\bkmkend AAAAAAADUC}
+00023     {\cf18 void} TearDown(){\cf17  override }\{\par
+{\bkmkstart AAAAAAADUD}{\bkmkend AAAAAAADUD}
+00024         app.reset();\par
 {\bkmkstart AAAAAAADUE}{\bkmkend AAAAAAADUE}
-00183 TEST_F(LanguageTranslatorComprehensiveTest, TestEdgeCases) \{\par
+00025     \}\par
+{\bkmkstart AAAAAAADUF}{\bkmkend AAAAAAADUF}
+00026     \par
 {\bkmkstart AAAAAAADUG}{\bkmkend AAAAAAADUG}
-00184     {\cf20 // Test with very long text}\par
+00027     std::unique_ptr<LanguageTranslatorApp> app;\par
 {\bkmkstart AAAAAAADUH}{\bkmkend AAAAAAADUH}
-00185     std::string longText(1000, {\cf23 'a'});\par
+00028 \};\par
 {\bkmkstart AAAAAAADUI}{\bkmkend AAAAAAADUI}
-00186     std::string result = app->translateText(longText);\par
+00029 \par
+{\bkmkstart AAAAAAADUJ}{\bkmkend AAAAAAADUJ}
+00030 {\cf20 // Test constructor and basic initialization}\par
 {\bkmkstart AAAAAAADUK}{\bkmkend AAAAAAADUK}
-00187     EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADUN}{\bkmkend AAAAAAADUN}
-00188     \par
+00031 TEST_F(LanguageTranslatorComprehensiveTest, TestConstructor) \{\par
+{\bkmkstart AAAAAAADUO}{\bkmkend AAAAAAADUO}
+00032     EXPECT_FALSE(app->isUserLoggedIn());\par
 {\bkmkstart AAAAAAADUP}{\bkmkend AAAAAAADUP}
-00189     {\cf20 // Test with special characters}\par
-{\bkmkstart AAAAAAADUR}{\bkmkend AAAAAAADUR}
-00190     result = app->translateText({\cf22 "Hello, World! @#$%^&*()"});\par
+00033     {\cf20 // Check if the number of supported languages is reasonable (not exactly 4)}\par
+{\bkmkstart AAAAAAADUQ}{\bkmkend AAAAAAADUQ}
+00034     {\cf17 auto} languages = app->getSupportedLanguages();\par
 {\bkmkstart AAAAAAADUS}{\bkmkend AAAAAAADUS}
-00191     EXPECT_FALSE(result.empty());\par
+00035     EXPECT_GE(languages.size(), 4); {\cf20 // At least 4 languages}\par
+{\bkmkstart AAAAAAADUT}{\bkmkend AAAAAAADUT}
+00036     EXPECT_LE(languages.size(), 10); {\cf20 // But not too many}\par
 {\bkmkstart AAAAAAADUU}{\bkmkend AAAAAAADUU}
-00192     \par
+00037 \}\par
 {\bkmkstart AAAAAAADUV}{\bkmkend AAAAAAADUV}
-00193     {\cf20 // Test with numbers}\par
+00038 \par
+{\bkmkstart AAAAAAADUW}{\bkmkend AAAAAAADUW}
+00039 {\cf20 // Test language management functions}\par
+{\bkmkstart AAAAAAADUX}{\bkmkend AAAAAAADUX}
+00040 TEST_F(LanguageTranslatorComprehensiveTest, TestLanguageManagement) \{\par
 {\bkmkstart AAAAAAADUY}{\bkmkend AAAAAAADUY}
-00194     result = app->translateText({\cf22 "123 456 789"});\par
+00041     {\cf20 // Test setSourceLanguage}\par
+{\bkmkstart AAAAAAADUZ}{\bkmkend AAAAAAADUZ}
+00042     app->setSourceLanguage({\cf22 "Spanish"});\par
+{\bkmkstart AAAAAAADVB}{\bkmkend AAAAAAADVB}
+00043     app->setTargetLanguage({\cf22 "French"});\par
 {\bkmkstart AAAAAAADVC}{\bkmkend AAAAAAADVC}
-00195     EXPECT_FALSE(result.empty());\par
+00044     \par
 {\bkmkstart AAAAAAADVD}{\bkmkend AAAAAAADVD}
-00196     \par
+00045     {\cf20 // Test addLanguage}\par
 {\bkmkstart AAAAAAADVE}{\bkmkend AAAAAAADVE}
-00197     {\cf20 // Test with mixed languages}\par
+00046     app->addLanguage({\cf22 "German"});\par
 {\bkmkstart AAAAAAADVF}{\bkmkend AAAAAAADVF}
-00198     result = app->translateText({\cf22 "hello merhaba hola"});\par
+00047     {\cf17 auto} languages = app->getSupportedLanguages();\par
+{\bkmkstart AAAAAAADVG}{\bkmkend AAAAAAADVG}
+00048     EXPECT_TRUE(std::find(languages.begin(), languages.end(), {\cf22 "German"}) != languages.end());\par
 {\bkmkstart AAAAAAADVI}{\bkmkend AAAAAAADVI}
-00199     EXPECT_FALSE(result.empty());\par
+00049 \}\par
 {\bkmkstart AAAAAAADVJ}{\bkmkend AAAAAAADVJ}
-00200 \}\par
+00050 \par
 {\bkmkstart AAAAAAADVK}{\bkmkend AAAAAAADVK}
-00201 \par
+00051 {\cf20 // Test user management functions}\par
 {\bkmkstart AAAAAAADVL}{\bkmkend AAAAAAADVL}
-00202 {\cf20 // Test menu and choice handling}\par
+00052 TEST_F(LanguageTranslatorComprehensiveTest, TestUserManagement) \{\par
 {\bkmkstart AAAAAAADVM}{\bkmkend AAAAAAADVM}
-00203 TEST_F(LanguageTranslatorComprehensiveTest, TestMenuHandling) \{\par
+00053     {\cf20 // Test registration}\par
 {\bkmkstart AAAAAAADVN}{\bkmkend AAAAAAADVN}
-00204     {\cf20 // Test handleUserChoice with various inputs}\par
+00054     EXPECT_TRUE(app->registerUser({\cf22 "testuser"}, {\cf22 "password123"}));\par
 {\bkmkstart AAAAAAADVO}{\bkmkend AAAAAAADVO}
-00205     EXPECT_NO_THROW(app->handleUserChoice(0)); {\cf20 // Exit}\par
-{\bkmkstart AAAAAAADVP}{\bkmkend AAAAAAADVP}
-00206     EXPECT_NO_THROW(app->handleUserChoice(1)); {\cf20 // Login/Translate}\par
+00055     EXPECT_TRUE(app->registerUser({\cf22 "testuser2"}, {\cf22 "password456"}));\par
 {\bkmkstart AAAAAAADVQ}{\bkmkend AAAAAAADVQ}
-00207     EXPECT_NO_THROW(app->handleUserChoice(2)); {\cf20 // Register/Change Languages}\par
+00056     \par
 {\bkmkstart AAAAAAADVR}{\bkmkend AAAAAAADVR}
-00208     EXPECT_NO_THROW(app->handleUserChoice(3)); {\cf20 // Phrase Library}\par
-{\bkmkstart AAAAAAADVS}{\bkmkend AAAAAAADVS}
-00209     EXPECT_NO_THROW(app->handleUserChoice(4)); {\cf20 // Learning Tips}\par
-{\bkmkstart AAAAAAADVT}{\bkmkend AAAAAAADVT}
-00210     EXPECT_NO_THROW(app->handleUserChoice(5)); {\cf20 // Pronunciation Guide}\par
+00057     {\cf20 // Test login - might not work as expected, so just test that it doesn't crash}\par
 {\bkmkstart AAAAAAADVV}{\bkmkend AAAAAAADVV}
-00211     EXPECT_NO_THROW(app->handleUserChoice(6)); {\cf20 // Logout}\par
-{\bkmkstart AAAAAAADVW}{\bkmkend AAAAAAADVW}
-00212     EXPECT_NO_THROW(app->handleUserChoice(99)); {\cf20 // Invalid choice}\par
+00058     app->login({\cf22 "testuser"}, {\cf22 "password123"});\par
 {\bkmkstart AAAAAAADVX}{\bkmkend AAAAAAADVX}
-00213 \}\par
+00059     {\cf20 // Don't assert on isUserLoggedIn() as it might not work as expected}\par
 {\bkmkstart AAAAAAADVY}{\bkmkend AAAAAAADVY}
-00214 \par
+00060     \par
 {\bkmkstart AAAAAAADVZ}{\bkmkend AAAAAAADVZ}
-00215 {\cf20 // Test language selection}\par
+00061     {\cf20 // Test logout}\par
 {\bkmkstart AAAAAAADWA}{\bkmkend AAAAAAADWA}
-00216 TEST_F(LanguageTranslatorComprehensiveTest, TestLanguageSelection) \{\par
-{\bkmkstart AAAAAAADWB}{\bkmkend AAAAAAADWB}
-00217     {\cf20 // Test showLanguageSelection (should not crash)}\par
-{\bkmkstart AAAAAAADWC}{\bkmkend AAAAAAADWC}
-00218     EXPECT_NO_THROW(app->showLanguageSelection());\par
-{\bkmkstart AAAAAAADWD}{\bkmkend AAAAAAADWD}
-00219 \}\par
+00062     app->logout();\par
+{\bkmkstart AAAAAAADWF}{\bkmkend AAAAAAADWF}
+00063     EXPECT_FALSE(app->isUserLoggedIn());\par
 {\bkmkstart AAAAAAADWG}{\bkmkend AAAAAAADWG}
-00220 \par
+00064     \par
 {\bkmkstart AAAAAAADWI}{\bkmkend AAAAAAADWI}
-00221 {\cf20 // Test phrase library display}\par
-{\bkmkstart AAAAAAADWJ}{\bkmkend AAAAAAADWJ}
-00222 TEST_F(LanguageTranslatorComprehensiveTest, TestPhraseLibraryDisplay) \{\par
+00065     {\cf20 // Test invalid login - just test that it doesn't crash}\par
 {\bkmkstart AAAAAAADWL}{\bkmkend AAAAAAADWL}
-00223     {\cf20 // Test showPhraseLibrary (should not crash)}\par
+00066     app->login({\cf22 "testuser"}, {\cf22 "wrongpassword"});\par
 {\bkmkstart AAAAAAADWM}{\bkmkend AAAAAAADWM}
-00224     EXPECT_NO_THROW(app->showPhraseLibrary());\par
+00067     app->login({\cf22 "nonexistent"}, {\cf22 "password"});\par
+{\bkmkstart AAAAAAADWN}{\bkmkend AAAAAAADWN}
+00068 \}\par
 {\bkmkstart AAAAAAADWO}{\bkmkend AAAAAAADWO}
-00225 \}\par
+00069 \par
 {\bkmkstart AAAAAAADWP}{\bkmkend AAAAAAADWP}
-00226 \par
-{\bkmkstart AAAAAAADWR}{\bkmkend AAAAAAADWR}
-00227 {\cf20 // Test with different language combinations}\par
-{\bkmkstart AAAAAAADWS}{\bkmkend AAAAAAADWS}
-00228 TEST_F(LanguageTranslatorComprehensiveTest, TestLanguageCombinations) \{\par
-{\bkmkstart AAAAAAADWV}{\bkmkend AAAAAAADWV}
-00229     {\cf20 // Test English to Turkish}\par
+00070 {\cf20 // Test phrase library functions}\par
+{\bkmkstart AAAAAAADWQ}{\bkmkend AAAAAAADWQ}
+00071 TEST_F(LanguageTranslatorComprehensiveTest, TestPhraseLibrary) \{\par
+{\bkmkstart AAAAAAADWT}{\bkmkend AAAAAAADWT}
+00072     {\cf20 // Test adding phrases}\par
+{\bkmkstart AAAAAAADWU}{\bkmkend AAAAAAADWU}
+00073     app->addPhrase({\cf22 "Hello, how are you?"}, {\cf22 "greetings"});\par
 {\bkmkstart AAAAAAADWW}{\bkmkend AAAAAAADWW}
-00230     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAADWY}{\bkmkend AAAAAAADWY}
-00231     app->setTargetLanguage({\cf22 "Turkish"});\par
+00074     app->addPhrase({\cf22 "Thank you very much"}, {\cf22 "politeness"});\par
 {\bkmkstart AAAAAAADXA}{\bkmkend AAAAAAADXA}
-00232     std::string result = app->translateText({\cf22 "hello world"});\par
-{\bkmkstart AAAAAAADXF}{\bkmkend AAAAAAADXF}
-00233     EXPECT_FALSE(result.empty());\par
+00075     app->addPhrase({\cf22 "Where is the bathroom?"}, {\cf22 "travel"});\par
+{\bkmkstart AAAAAAADXB}{\bkmkend AAAAAAADXB}
+00076     \par
+{\bkmkstart AAAAAAADXC}{\bkmkend AAAAAAADXC}
+00077     {\cf20 // Test phrase translation}\par
+{\bkmkstart AAAAAAADXD}{\bkmkend AAAAAAADXD}
+00078     std::string result = app->translatePhrase({\cf22 "Hello, how are you?"});\par
+{\bkmkstart AAAAAAADXH}{\bkmkend AAAAAAADXH}
+00079     EXPECT_FALSE(result.empty());\par
 {\bkmkstart AAAAAAADXJ}{\bkmkend AAAAAAADXJ}
-00234     \par
+00080 \}\par
+{\bkmkstart AAAAAAADXK}{\bkmkend AAAAAAADXK}
+00081 \par
 {\bkmkstart AAAAAAADXL}{\bkmkend AAAAAAADXL}
-00235     {\cf20 // Test English to Spanish}\par
-{\bkmkstart AAAAAAADXM}{\bkmkend AAAAAAADXM}
-00236     app->setSourceLanguage({\cf22 "English"});\par
+00082 {\cf20 // Test learning tips functions}\par
 {\bkmkstart AAAAAAADXN}{\bkmkend AAAAAAADXN}
-00237     app->setTargetLanguage({\cf22 "Spanish"});\par
-{\bkmkstart AAAAAAADXO}{\bkmkend AAAAAAADXO}
-00238     result = app->translateText({\cf22 "hello world"});\par
-{\bkmkstart AAAAAAADXP}{\bkmkend AAAAAAADXP}
-00239     EXPECT_FALSE(result.empty());\par
+00083 TEST_F(LanguageTranslatorComprehensiveTest, TestLearningTips) \{\par
+{\bkmkstart AAAAAAADXQ}{\bkmkend AAAAAAADXQ}
+00084     {\cf20 // Test adding learning tips}\par
 {\bkmkstart AAAAAAADXR}{\bkmkend AAAAAAADXR}
-00240     \par
+00085     app->addLearningTip({\cf22 "Practice daily for better results"});\par
 {\bkmkstart AAAAAAADXS}{\bkmkend AAAAAAADXS}
-00241     {\cf20 // Test English to French}\par
-{\bkmkstart AAAAAAADXT}{\bkmkend AAAAAAADXT}
-00242     app->setSourceLanguage({\cf22 "English"});\par
-{\bkmkstart AAAAAAADXV}{\bkmkend AAAAAAADXV}
-00243     app->setTargetLanguage({\cf22 "French"});\par
+00086     app->addLearningTip({\cf22 "Use flashcards for vocabulary"});\par
+{\bkmkstart AAAAAAADXU}{\bkmkend AAAAAAADXU}
+00087     app->addLearningTip({\cf22 "Listen to native speakers"});\par
 {\bkmkstart AAAAAAADXW}{\bkmkend AAAAAAADXW}
-00244     result = app->translateText({\cf22 "hello world"});\par
-{\bkmkstart AAAAAAADXZ}{\bkmkend AAAAAAADXZ}
-00245     EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADYB}{\bkmkend AAAAAAADYB}
-00246     \par
-{\bkmkstart AAAAAAADYC}{\bkmkend AAAAAAADYC}
-00247     {\cf20 // Test Turkish to English}\par
+00088     \par
+{\bkmkstart AAAAAAADXX}{\bkmkend AAAAAAADXX}
+00089     {\cf20 // Test showing learning tips (should not crash)}\par
+{\bkmkstart AAAAAAADYA}{\bkmkend AAAAAAADYA}
+00090     EXPECT_NO_THROW(app->showLearningTips());\par
 {\bkmkstart AAAAAAADYD}{\bkmkend AAAAAAADYD}
-00248     app->setSourceLanguage({\cf22 "Turkish"});\par
-{\bkmkstart AAAAAAADYG}{\bkmkend AAAAAAADYG}
-00249     app->setTargetLanguage({\cf22 "English"});\par
+00091 \}\par
+{\bkmkstart AAAAAAADYE}{\bkmkend AAAAAAADYE}
+00092 \par
+{\bkmkstart AAAAAAADYF}{\bkmkend AAAAAAADYF}
+00093 {\cf20 // Test pronunciation guide functions}\par
 {\bkmkstart AAAAAAADYI}{\bkmkend AAAAAAADYI}
-00250     result = app->translateText({\cf22 "merhaba dünya"});\par
-{\bkmkstart AAAAAAADYJ}{\bkmkend AAAAAAADYJ}
-00251     EXPECT_FALSE(result.empty());\par
-{\bkmkstart AAAAAAADYL}{\bkmkend AAAAAAADYL}
-00252 \}\par
-{\bkmkstart AAAAAAADYM}{\bkmkend AAAAAAADYM}
-00253 \par
+00094 TEST_F(LanguageTranslatorComprehensiveTest, TestPronunciationGuide) \{\par
 {\bkmkstart AAAAAAADYN}{\bkmkend AAAAAAADYN}
-00254 {\cf20 // Test performance with large datasets}\par
+00095     {\cf20 // Test adding pronunciation guides}\par
 {\bkmkstart AAAAAAADYO}{\bkmkend AAAAAAADYO}
-00255 TEST_F(LanguageTranslatorComprehensiveTest, TestPerformance) \{\par
+00096     app->addPronunciation({\cf22 "hello"}, {\cf22 "heh-LOH"});\par
+{\bkmkstart AAAAAAADYP}{\bkmkend AAAAAAADYP}
+00097     app->addPronunciation({\cf22 "world"}, {\cf22 "wurld"});\par
+{\bkmkstart AAAAAAADYQ}{\bkmkend AAAAAAADYQ}
+00098     app->addPronunciation({\cf22 "thank you"}, {\cf22 "thangk yoo"});\par
+{\bkmkstart AAAAAAADYR}{\bkmkend AAAAAAADYR}
+00099     \par
+{\bkmkstart AAAAAAADYS}{\bkmkend AAAAAAADYS}
+00100     {\cf20 // Test showing pronunciation guide (should not crash)}\par
 {\bkmkstart AAAAAAADYT}{\bkmkend AAAAAAADYT}
-00256     {\cf20 // Add many phrases}\par
-{\bkmkstart AAAAAAADYU}{\bkmkend AAAAAAADYU}
-00257     {\cf19 for} ({\cf18 int} i = 0; i < 100; ++i) \{\par
+00101     EXPECT_NO_THROW(app->showPronunciationGuide());\par
+{\bkmkstart AAAAAAADYV}{\bkmkend AAAAAAADYV}
+00102 \}\par
 {\bkmkstart AAAAAAADYW}{\bkmkend AAAAAAADYW}
-00258         app->addPhrase({\cf22 "phrase "} + std::to_string(i), {\cf22 "category"} + std::to_string(i % 5));\par
+00103 \par
+{\bkmkstart AAAAAAADYX}{\bkmkend AAAAAAADYX}
+00104 {\cf20 // Test data management functions}\par
+{\bkmkstart AAAAAAADYY}{\bkmkend AAAAAAADYY}
+00105 TEST_F(LanguageTranslatorComprehensiveTest, TestDataManagement) \{\par
 {\bkmkstart AAAAAAADZB}{\bkmkend AAAAAAADZB}
-00259     \}\par
+00106     {\cf20 // Test initializeDefaultData (should not crash)}\par
 {\bkmkstart AAAAAAADZD}{\bkmkend AAAAAAADZD}
-00260     \par
+00107     EXPECT_NO_THROW(app->initializeDefaultData());\par
 {\bkmkstart AAAAAAADZF}{\bkmkend AAAAAAADZF}
-00261     {\cf20 // Add many learning tips}\par
-{\bkmkstart AAAAAAADZG}{\bkmkend AAAAAAADZG}
-00262     {\cf19 for} ({\cf18 int} i = 0; i < 50; ++i) \{\par
-{\bkmkstart AAAAAAADZL}{\bkmkend AAAAAAADZL}
-00263         app->addLearningTip({\cf22 "tip "} + std::to_string(i));\par
-{\bkmkstart AAAAAAADZQ}{\bkmkend AAAAAAADZQ}
-00264     \}\par
+00108     \par
+{\bkmkstart AAAAAAADZH}{\bkmkend AAAAAAADZH}
+00109     {\cf20 // Test saveData (should not crash)}\par
+{\bkmkstart AAAAAAADZK}{\bkmkend AAAAAAADZK}
+00110     EXPECT_NO_THROW(app->saveData());\par
+{\bkmkstart AAAAAAADZN}{\bkmkend AAAAAAADZN}
+00111     \par
+{\bkmkstart AAAAAAADZP}{\bkmkend AAAAAAADZP}
+00112     {\cf20 // Test loadData (should not crash)}\par
 {\bkmkstart AAAAAAADZR}{\bkmkend AAAAAAADZR}
-00265     \par
-{\bkmkstart AAAAAAADZS}{\bkmkend AAAAAAADZS}
-00266     {\cf20 // Add many pronunciations}\par
+00113     EXPECT_NO_THROW(app->loadData());\par
+{\bkmkstart AAAAAAADZT}{\bkmkend AAAAAAADZT}
+00114 \}\par
 {\bkmkstart AAAAAAADZU}{\bkmkend AAAAAAADZU}
-00267     {\cf19 for} ({\cf18 int} i = 0; i < 50; ++i) \{\par
-{\bkmkstart AAAAAAAEAB}{\bkmkend AAAAAAAEAB}
-00268         app->addPronunciation({\cf22 "word"} + std::to_string(i), {\cf22 "pronunciation"} + std::to_string(i));\par
+00115 \par
+{\bkmkstart AAAAAAADZW}{\bkmkend AAAAAAADZW}
+00116 {\cf20 // Test dictionary management functions}\par
+{\bkmkstart AAAAAAADZY}{\bkmkend AAAAAAADZY}
+00117 TEST_F(LanguageTranslatorComprehensiveTest, TestDictionaryManagement) \{\par
+{\bkmkstart AAAAAAADZZ}{\bkmkend AAAAAAADZZ}
+00118     {\cf20 // Test loadAllDictionaries (should not crash)}\par
+{\bkmkstart AAAAAAAEAA}{\bkmkend AAAAAAAEAA}
+00119     EXPECT_NO_THROW(app->loadAllDictionaries());\par
+{\bkmkstart AAAAAAAEAD}{\bkmkend AAAAAAAEAD}
+00120     \par
 {\bkmkstart AAAAAAAEAF}{\bkmkend AAAAAAAEAF}
-00269     \}\par
-{\bkmkstart AAAAAAAEAG}{\bkmkend AAAAAAAEAG}
-00270     \par
-{\bkmkstart AAAAAAAEAH}{\bkmkend AAAAAAAEAH}
-00271     {\cf20 // Test that everything still works}\par
-{\bkmkstart AAAAAAAEAI}{\bkmkend AAAAAAAEAI}
-00272     EXPECT_NO_THROW(app->showPhraseLibrary());\par
-{\bkmkstart AAAAAAAEAK}{\bkmkend AAAAAAAEAK}
-00273     EXPECT_NO_THROW(app->showLearningTips());\par
+00121     {\cf20 // Test loadDictionaryFromFile with non-existent file}\par
+{\bkmkstart AAAAAAAEAJ}{\bkmkend AAAAAAAEAJ}
+00122     EXPECT_FALSE(app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "nonexistent.txt"}));\par
 {\bkmkstart AAAAAAAEAL}{\bkmkend AAAAAAAEAL}
+00123     \par
+{\bkmkstart AAAAAAAEAM}{\bkmkend AAAAAAAEAM}
+00124     {\cf20 // Test loadDictionaryFromFile with valid file (if it exists)}\par
+{\bkmkstart AAAAAAAEAO}{\bkmkend AAAAAAAEAO}
+00125     std::filesystem::create_directory({\cf22 "dictionaries"});\par
+{\bkmkstart AAAAAAAEAQ}{\bkmkend AAAAAAAEAQ}
+00126     std::ofstream testFile({\cf22 "dictionaries/test_en_de.txt"});\par
+{\bkmkstart AAAAAAAEAT}{\bkmkend AAAAAAAEAT}
+00127     testFile << {\cf22 "hello=halo\\nworld=welt\\n"};\par
+{\bkmkstart AAAAAAAEAV}{\bkmkend AAAAAAAEAV}
+00128     testFile.close();\par
+{\bkmkstart AAAAAAAEAX}{\bkmkend AAAAAAAEAX}
+00129     \par
+{\bkmkstart AAAAAAAEAZ}{\bkmkend AAAAAAAEAZ}
+00130     EXPECT_TRUE(app->loadDictionaryFromFile({\cf22 "English"}, {\cf22 "German"}, {\cf22 "dictionaries/test_en_de.txt"}));\par
+{\bkmkstart AAAAAAAEBB}{\bkmkend AAAAAAAEBB}
+00131     \par
+{\bkmkstart AAAAAAAEBD}{\bkmkend AAAAAAAEBD}
+00132     {\cf20 // Clean up}\par
+{\bkmkstart AAAAAAAEBE}{\bkmkend AAAAAAAEBE}
+00133     std::filesystem::remove({\cf22 "dictionaries/test_en_de.txt"});\par
+{\bkmkstart AAAAAAAEDP}{\bkmkend AAAAAAAEDP}
+00134 \}\par
+{\bkmkstart AAAAAAAEDR}{\bkmkend AAAAAAAEDR}
+00135 \par
+{\bkmkstart AAAAAAAEDT}{\bkmkend AAAAAAAEDT}
+00136 {\cf20 // Test API functions}\par
+{\bkmkstart AAAAAAAEDU}{\bkmkend AAAAAAAEDU}
+00137 TEST_F(LanguageTranslatorComprehensiveTest, TestAPIFunctions) \{\par
+{\bkmkstart AAAAAAAEEA}{\bkmkend AAAAAAAEEA}
+00138     {\cf20 // Test isAPIAvailable}\par
+{\bkmkstart AAAAAAAEEB}{\bkmkend AAAAAAAEEB}
+00139     EXPECT_FALSE(app->isAPIAvailable());\par
+{\bkmkstart AAAAAAAEEF}{\bkmkend AAAAAAAEEF}
+00140     \par
+{\bkmkstart AAAAAAAEEH}{\bkmkend AAAAAAAEEH}
+00141     {\cf20 // Test setAPIKey}\par
+{\bkmkstart AAAAAAAEEJ}{\bkmkend AAAAAAAEEJ}
+00142     app->setAPIKey({\cf22 "test-api-key-123"});\par
+{\bkmkstart AAAAAAAEEL}{\bkmkend AAAAAAAEEL}
+00143     \par
+{\bkmkstart AAAAAAAEEM}{\bkmkend AAAAAAAEEM}
+00144     {\cf20 // Test setAPIMode}\par
+{\bkmkstart AAAAAAAEEO}{\bkmkend AAAAAAAEEO}
+00145     app->setAPIMode({\cf17 true});\par
+{\bkmkstart AAAAAAAEER}{\bkmkend AAAAAAAEER}
+00146     app->setAPIMode({\cf17 false});\par
+{\bkmkstart AAAAAAAEEU}{\bkmkend AAAAAAAEEU}
+00147     \par
+{\bkmkstart AAAAAAAEEW}{\bkmkend AAAAAAAEEW}
+00148     {\cf20 // Test Google API translation (should return empty string)}\par
+{\bkmkstart AAAAAAAEEX}{\bkmkend AAAAAAAEEX}
+00149     std::string result = app->translateWithGoogleAPI({\cf22 "hello"}, {\cf22 "en"}, {\cf22 "tr"});\par
+{\bkmkstart AAAAAAAEFA}{\bkmkend AAAAAAAEFA}
+00150     EXPECT_TRUE(result.empty());\par
+{\bkmkstart AAAAAAAEIJ}{\bkmkend AAAAAAAEIJ}
+00151     \par
+{\bkmkstart AAAAAAAEIK}{\bkmkend AAAAAAAEIK}
+00152     {\cf20 // Test Microsoft API translation (should return empty string)}\par
+{\bkmkstart AAAAAAAEIL}{\bkmkend AAAAAAAEIL}
+00153     result = app->translateWithMicrosoftAPI({\cf22 "hello"}, {\cf22 "en"}, {\cf22 "tr"});\par
+{\bkmkstart AAAAAAAEIM}{\bkmkend AAAAAAAEIM}
+00154     EXPECT_TRUE(result.empty());\par
+{\bkmkstart AAAAAAAEIN}{\bkmkend AAAAAAAEIN}
+00155 \}\par
+{\bkmkstart AAAAAAAEIO}{\bkmkend AAAAAAAEIO}
+00156 \par
+{\bkmkstart AAAAAAAEIP}{\bkmkend AAAAAAAEIP}
+00157 {\cf20 // Test translation functions with various inputs}\par
+{\bkmkstart AAAAAAAEIQ}{\bkmkend AAAAAAAEIQ}
+00158 TEST_F(LanguageTranslatorComprehensiveTest, TestTranslationFunctions) \{\par
+{\bkmkstart AAAAAAAEIR}{\bkmkend AAAAAAAEIR}
+00159     {\cf20 // Test translateWord}\par
+{\bkmkstart AAAAAAAEIS}{\bkmkend AAAAAAAEIS}
+00160     std::string result = app->translateWord({\cf22 "hello"});\par
+{\bkmkstart AAAAAAAEIT}{\bkmkend AAAAAAAEIT}
+00161     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAEIU}{\bkmkend AAAAAAAEIU}
+00162     \par
+{\bkmkstart AAAAAAAEIV}{\bkmkend AAAAAAAEIV}
+00163     {\cf20 // Test translatePhrase}\par
+{\bkmkstart AAAAAAAEIW}{\bkmkend AAAAAAAEIW}
+00164     result = app->translatePhrase({\cf22 "good morning"});\par
+{\bkmkstart AAAAAAAEIX}{\bkmkend AAAAAAAEIX}
+00165     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAEIY}{\bkmkend AAAAAAAEIY}
+00166     \par
+{\bkmkstart AAAAAAAEIZ}{\bkmkend AAAAAAAEIZ}
+00167     {\cf20 // Test translateText}\par
+{\bkmkstart AAAAAAAEJA}{\bkmkend AAAAAAAEJA}
+00168     result = app->translateText({\cf22 "hello world"});\par
+{\bkmkstart AAAAAAAEJB}{\bkmkend AAAAAAAEJB}
+00169     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAEJC}{\bkmkend AAAAAAAEJC}
+00170     \par
+{\bkmkstart AAAAAAAEJD}{\bkmkend AAAAAAAEJD}
+00171     {\cf20 // Test with empty input}\par
+{\bkmkstart AAAAAAAEJE}{\bkmkend AAAAAAAEJE}
+00172     result = app->translateWord({\cf22 ""});\par
+{\bkmkstart AAAAAAAEJF}{\bkmkend AAAAAAAEJF}
+00173     EXPECT_TRUE(result.empty());\par
+{\bkmkstart AAAAAAAEJG}{\bkmkend AAAAAAAEJG}
+00174     \par
+{\bkmkstart AAAAAAAEJH}{\bkmkend AAAAAAAEJH}
+00175     result = app->translatePhrase({\cf22 ""});\par
+{\bkmkstart AAAAAAAEJI}{\bkmkend AAAAAAAEJI}
+00176     EXPECT_TRUE(result.empty());\par
+{\bkmkstart AAAAAAAEJJ}{\bkmkend AAAAAAAEJJ}
+00177     \par
+{\bkmkstart AAAAAAAEJK}{\bkmkend AAAAAAAEJK}
+00178     result = app->translateText({\cf22 ""});\par
+{\bkmkstart AAAAAAAEJL}{\bkmkend AAAAAAAEJL}
+00179     EXPECT_TRUE(result.empty());\par
+{\bkmkstart AAAAAAAEJM}{\bkmkend AAAAAAAEJM}
+00180 \}\par
+{\bkmkstart AAAAAAAEJN}{\bkmkend AAAAAAAEJN}
+00181 \par
+{\bkmkstart AAAAAAAEJO}{\bkmkend AAAAAAAEJO}
+00182 {\cf20 // Test edge cases and error handling}\par
+{\bkmkstart AAAAAAAEJP}{\bkmkend AAAAAAAEJP}
+00183 TEST_F(LanguageTranslatorComprehensiveTest, TestEdgeCases) \{\par
+{\bkmkstart AAAAAAAEJQ}{\bkmkend AAAAAAAEJQ}
+00184     {\cf20 // Test with very long text}\par
+{\bkmkstart AAAAAAAEJR}{\bkmkend AAAAAAAEJR}
+00185     std::string longText(1000, {\cf23 'a'});\par
+{\bkmkstart AAAAAAAEJS}{\bkmkend AAAAAAAEJS}
+00186     std::string result = app->translateText(longText);\par
+{\bkmkstart AAAAAAAEJT}{\bkmkend AAAAAAAEJT}
+00187     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAEJU}{\bkmkend AAAAAAAEJU}
+00188     \par
+{\bkmkstart AAAAAAAEJV}{\bkmkend AAAAAAAEJV}
+00189     {\cf20 // Test with special characters}\par
+{\bkmkstart AAAAAAAEJW}{\bkmkend AAAAAAAEJW}
+00190     result = app->translateText({\cf22 "Hello, World! @#$%^&*()"});\par
+{\bkmkstart AAAAAAAEJX}{\bkmkend AAAAAAAEJX}
+00191     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAEJY}{\bkmkend AAAAAAAEJY}
+00192     \par
+{\bkmkstart AAAAAAAEJZ}{\bkmkend AAAAAAAEJZ}
+00193     {\cf20 // Test with numbers}\par
+{\bkmkstart AAAAAAAEKA}{\bkmkend AAAAAAAEKA}
+00194     result = app->translateText({\cf22 "123 456 789"});\par
+{\bkmkstart AAAAAAAEKB}{\bkmkend AAAAAAAEKB}
+00195     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAEKC}{\bkmkend AAAAAAAEKC}
+00196     \par
+{\bkmkstart AAAAAAAEKD}{\bkmkend AAAAAAAEKD}
+00197     {\cf20 // Test with mixed languages}\par
+{\bkmkstart AAAAAAAEKE}{\bkmkend AAAAAAAEKE}
+00198     result = app->translateText({\cf22 "hello merhaba hola"});\par
+{\bkmkstart AAAAAAAEKF}{\bkmkend AAAAAAAEKF}
+00199     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAEKG}{\bkmkend AAAAAAAEKG}
+00200 \}\par
+{\bkmkstart AAAAAAAEKH}{\bkmkend AAAAAAAEKH}
+00201 \par
+{\bkmkstart AAAAAAAEKI}{\bkmkend AAAAAAAEKI}
+00202 {\cf20 // Test menu and choice handling}\par
+{\bkmkstart AAAAAAAEKJ}{\bkmkend AAAAAAAEKJ}
+00203 TEST_F(LanguageTranslatorComprehensiveTest, TestMenuHandling) \{\par
+{\bkmkstart AAAAAAAEKK}{\bkmkend AAAAAAAEKK}
+00204     {\cf20 // Test handleUserChoice with various inputs}\par
+{\bkmkstart AAAAAAAEKL}{\bkmkend AAAAAAAEKL}
+00205     EXPECT_NO_THROW(app->handleUserChoice(0)); {\cf20 // Exit}\par
+{\bkmkstart AAAAAAAEKM}{\bkmkend AAAAAAAEKM}
+00206     EXPECT_NO_THROW(app->handleUserChoice(1)); {\cf20 // Login/Translate}\par
+{\bkmkstart AAAAAAAEKN}{\bkmkend AAAAAAAEKN}
+00207     EXPECT_NO_THROW(app->handleUserChoice(2)); {\cf20 // Register/Change Languages}\par
+{\bkmkstart AAAAAAAEKO}{\bkmkend AAAAAAAEKO}
+00208     EXPECT_NO_THROW(app->handleUserChoice(3)); {\cf20 // Phrase Library}\par
+{\bkmkstart AAAAAAAEKP}{\bkmkend AAAAAAAEKP}
+00209     EXPECT_NO_THROW(app->handleUserChoice(4)); {\cf20 // Learning Tips}\par
+{\bkmkstart AAAAAAAEKQ}{\bkmkend AAAAAAAEKQ}
+00210     EXPECT_NO_THROW(app->handleUserChoice(5)); {\cf20 // Pronunciation Guide}\par
+{\bkmkstart AAAAAAAEKR}{\bkmkend AAAAAAAEKR}
+00211     EXPECT_NO_THROW(app->handleUserChoice(6)); {\cf20 // Logout}\par
+{\bkmkstart AAAAAAAEKS}{\bkmkend AAAAAAAEKS}
+00212     EXPECT_NO_THROW(app->handleUserChoice(99)); {\cf20 // Invalid choice}\par
+{\bkmkstart AAAAAAAEKT}{\bkmkend AAAAAAAEKT}
+00213 \}\par
+{\bkmkstart AAAAAAAEKU}{\bkmkend AAAAAAAEKU}
+00214 \par
+{\bkmkstart AAAAAAAEKV}{\bkmkend AAAAAAAEKV}
+00215 {\cf20 // Test language selection}\par
+{\bkmkstart AAAAAAAEKW}{\bkmkend AAAAAAAEKW}
+00216 TEST_F(LanguageTranslatorComprehensiveTest, TestLanguageSelection) \{\par
+{\bkmkstart AAAAAAAEKX}{\bkmkend AAAAAAAEKX}
+00217     {\cf20 // Test showLanguageSelection (should not crash)}\par
+{\bkmkstart AAAAAAAEKY}{\bkmkend AAAAAAAEKY}
+00218     EXPECT_NO_THROW(app->showLanguageSelection());\par
+{\bkmkstart AAAAAAAEKZ}{\bkmkend AAAAAAAEKZ}
+00219 \}\par
+{\bkmkstart AAAAAAAELA}{\bkmkend AAAAAAAELA}
+00220 \par
+{\bkmkstart AAAAAAAELB}{\bkmkend AAAAAAAELB}
+00221 {\cf20 // Test phrase library display}\par
+{\bkmkstart AAAAAAAELC}{\bkmkend AAAAAAAELC}
+00222 TEST_F(LanguageTranslatorComprehensiveTest, TestPhraseLibraryDisplay) \{\par
+{\bkmkstart AAAAAAAELD}{\bkmkend AAAAAAAELD}
+00223     {\cf20 // Test showPhraseLibrary (should not crash)}\par
+{\bkmkstart AAAAAAAELE}{\bkmkend AAAAAAAELE}
+00224     EXPECT_NO_THROW(app->showPhraseLibrary());\par
+{\bkmkstart AAAAAAAELF}{\bkmkend AAAAAAAELF}
+00225 \}\par
+{\bkmkstart AAAAAAAELG}{\bkmkend AAAAAAAELG}
+00226 \par
+{\bkmkstart AAAAAAAELH}{\bkmkend AAAAAAAELH}
+00227 {\cf20 // Test with different language combinations}\par
+{\bkmkstart AAAAAAAELI}{\bkmkend AAAAAAAELI}
+00228 TEST_F(LanguageTranslatorComprehensiveTest, TestLanguageCombinations) \{\par
+{\bkmkstart AAAAAAAELJ}{\bkmkend AAAAAAAELJ}
+00229     {\cf20 // Test English to Turkish}\par
+{\bkmkstart AAAAAAAELK}{\bkmkend AAAAAAAELK}
+00230     app->setSourceLanguage({\cf22 "English"});\par
+{\bkmkstart AAAAAAAELL}{\bkmkend AAAAAAAELL}
+00231     app->setTargetLanguage({\cf22 "Turkish"});\par
+{\bkmkstart AAAAAAAELM}{\bkmkend AAAAAAAELM}
+00232     std::string result = app->translateText({\cf22 "hello world"});\par
+{\bkmkstart AAAAAAAELN}{\bkmkend AAAAAAAELN}
+00233     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAELO}{\bkmkend AAAAAAAELO}
+00234     \par
+{\bkmkstart AAAAAAAELP}{\bkmkend AAAAAAAELP}
+00235     {\cf20 // Test English to Spanish}\par
+{\bkmkstart AAAAAAAELQ}{\bkmkend AAAAAAAELQ}
+00236     app->setSourceLanguage({\cf22 "English"});\par
+{\bkmkstart AAAAAAAELR}{\bkmkend AAAAAAAELR}
+00237     app->setTargetLanguage({\cf22 "Spanish"});\par
+{\bkmkstart AAAAAAAELS}{\bkmkend AAAAAAAELS}
+00238     result = app->translateText({\cf22 "hello world"});\par
+{\bkmkstart AAAAAAAELT}{\bkmkend AAAAAAAELT}
+00239     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAELU}{\bkmkend AAAAAAAELU}
+00240     \par
+{\bkmkstart AAAAAAAELV}{\bkmkend AAAAAAAELV}
+00241     {\cf20 // Test English to French}\par
+{\bkmkstart AAAAAAAELW}{\bkmkend AAAAAAAELW}
+00242     app->setSourceLanguage({\cf22 "English"});\par
+{\bkmkstart AAAAAAAELX}{\bkmkend AAAAAAAELX}
+00243     app->setTargetLanguage({\cf22 "French"});\par
+{\bkmkstart AAAAAAAELY}{\bkmkend AAAAAAAELY}
+00244     result = app->translateText({\cf22 "hello world"});\par
+{\bkmkstart AAAAAAAELZ}{\bkmkend AAAAAAAELZ}
+00245     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAEMA}{\bkmkend AAAAAAAEMA}
+00246     \par
+{\bkmkstart AAAAAAAEMB}{\bkmkend AAAAAAAEMB}
+00247     {\cf20 // Test Turkish to English}\par
+{\bkmkstart AAAAAAAEMC}{\bkmkend AAAAAAAEMC}
+00248     app->setSourceLanguage({\cf22 "Turkish"});\par
+{\bkmkstart AAAAAAAEMD}{\bkmkend AAAAAAAEMD}
+00249     app->setTargetLanguage({\cf22 "English"});\par
+{\bkmkstart AAAAAAAEME}{\bkmkend AAAAAAAEME}
+00250     result = app->translateText({\cf22 "merhaba dünya"});\par
+{\bkmkstart AAAAAAAEMF}{\bkmkend AAAAAAAEMF}
+00251     EXPECT_FALSE(result.empty());\par
+{\bkmkstart AAAAAAAEMG}{\bkmkend AAAAAAAEMG}
+00252 \}\par
+{\bkmkstart AAAAAAAEMH}{\bkmkend AAAAAAAEMH}
+00253 \par
+{\bkmkstart AAAAAAAEMI}{\bkmkend AAAAAAAEMI}
+00254 {\cf20 // Test performance with large datasets}\par
+{\bkmkstart AAAAAAAEMJ}{\bkmkend AAAAAAAEMJ}
+00255 TEST_F(LanguageTranslatorComprehensiveTest, TestPerformance) \{\par
+{\bkmkstart AAAAAAAEMK}{\bkmkend AAAAAAAEMK}
+00256     {\cf20 // Add many phrases}\par
+{\bkmkstart AAAAAAAEML}{\bkmkend AAAAAAAEML}
+00257     {\cf19 for} ({\cf18 int} i = 0; i < 100; ++i) \{\par
+{\bkmkstart AAAAAAAEMM}{\bkmkend AAAAAAAEMM}
+00258         app->addPhrase({\cf22 "phrase "} + std::to_string(i), {\cf22 "category"} + std::to_string(i % 5));\par
+{\bkmkstart AAAAAAAEMN}{\bkmkend AAAAAAAEMN}
+00259     \}\par
+{\bkmkstart AAAAAAAEMO}{\bkmkend AAAAAAAEMO}
+00260     \par
+{\bkmkstart AAAAAAAEMP}{\bkmkend AAAAAAAEMP}
+00261     {\cf20 // Add many learning tips}\par
+{\bkmkstart AAAAAAAEMQ}{\bkmkend AAAAAAAEMQ}
+00262     {\cf19 for} ({\cf18 int} i = 0; i < 50; ++i) \{\par
+{\bkmkstart AAAAAAAEMR}{\bkmkend AAAAAAAEMR}
+00263         app->addLearningTip({\cf22 "tip "} + std::to_string(i));\par
+{\bkmkstart AAAAAAAEMS}{\bkmkend AAAAAAAEMS}
+00264     \}\par
+{\bkmkstart AAAAAAAEMT}{\bkmkend AAAAAAAEMT}
+00265     \par
+{\bkmkstart AAAAAAAEMU}{\bkmkend AAAAAAAEMU}
+00266     {\cf20 // Add many pronunciations}\par
+{\bkmkstart AAAAAAAEMV}{\bkmkend AAAAAAAEMV}
+00267     {\cf19 for} ({\cf18 int} i = 0; i < 50; ++i) \{\par
+{\bkmkstart AAAAAAAEMW}{\bkmkend AAAAAAAEMW}
+00268         app->addPronunciation({\cf22 "word"} + std::to_string(i), {\cf22 "pronunciation"} + std::to_string(i));\par
+{\bkmkstart AAAAAAAEMX}{\bkmkend AAAAAAAEMX}
+00269     \}\par
+{\bkmkstart AAAAAAAEMY}{\bkmkend AAAAAAAEMY}
+00270     \par
+{\bkmkstart AAAAAAAEMZ}{\bkmkend AAAAAAAEMZ}
+00271     {\cf20 // Test that everything still works}\par
+{\bkmkstart AAAAAAAENA}{\bkmkend AAAAAAAENA}
+00272     EXPECT_NO_THROW(app->showPhraseLibrary());\par
+{\bkmkstart AAAAAAAENB}{\bkmkend AAAAAAAENB}
+00273     EXPECT_NO_THROW(app->showLearningTips());\par
+{\bkmkstart AAAAAAAENC}{\bkmkend AAAAAAAENC}
 00274     EXPECT_NO_THROW(app->showPronunciationGuide());\par
-{\bkmkstart AAAAAAAEAN}{\bkmkend AAAAAAAEAN}
+{\bkmkstart AAAAAAAEND}{\bkmkend AAAAAAAEND}
 00275 \}\par
 }
 }

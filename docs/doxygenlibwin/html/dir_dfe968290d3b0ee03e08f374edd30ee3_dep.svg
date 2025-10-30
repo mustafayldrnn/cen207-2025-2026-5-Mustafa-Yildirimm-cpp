@@ -6,11 +6,22 @@
 <!-- Title: C:/Users/ahmet/OneDrive/Masaüstü Pages: 1 -->
 <svg width="193pt" height="60pt"
  viewBox="0.00 0.00 193.00 60.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 56)">
 <title>C:/Users/ahmet/OneDrive/Masaüstü</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_dfe968290d3b0ee03e08f374edd30ee3</title>
-<g id="a_clust1"><a xlink:href="dir_dfe968290d3b0ee03e08f374edd30ee3.html">
+<g id="a_clust1"><a xlink:href="dir_dfe968290d3b0ee03e08f374edd30ee3.html" target="_top">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="8,-8 8,-44 177,-44 177,-8 8,-8"/>
 </a>
 </g>
@@ -23,11 +34,26 @@
 <!-- dir_87f260dbaa04f06c7d57423ba5ebac9d -->
 <g id="node2" class="node">
 <title>dir_87f260dbaa04f06c7d57423ba5ebac9d</title>
-<g id="a_node2"><a xlink:href="dir_87f260dbaa04f06c7d57423ba5ebac9d.html" xlink:title="DataStructure">
+<g id="a_node2"><a xlink:href="dir_87f260dbaa04f06c7d57423ba5ebac9d.html" target="_top" xlink:title="DataStructure">
 <polygon fill="#a2b4d6" stroke="#404040" points="169.38,-36 92.62,-36 92.62,-16 169.38,-16 169.38,-36"/>
 <text xml:space="preserve" text-anchor="middle" x="131" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">DataStructure</text>
 </a>
 </g>
 </g>
 </g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

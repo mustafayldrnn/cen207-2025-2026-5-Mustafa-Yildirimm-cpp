@@ -31,6 +31,7 @@ set(TEST_SOURCES
     test_chrono_advanced_coverage.cpp
     test_comprehensive_edge_cases.cpp
     test_advanced_coverage_boost.cpp
+    test_browser_history.cpp
 )
 
 add_executable(unit_tests ${TEST_SOURCES})
@@ -44,6 +45,7 @@ target_sources(unit_tests PRIVATE
     ../src/utility/src/mathUtility.cpp
     ../src/coverage_anchor/CoverageAnchor.cpp
     ../src/SafeChronoCalculator.cpp
+    ../src/BrowserHistory/src/BrowserHistory.cpp
 )
 
 # Add include directories for main library headers

@@ -7,8 +7,7 @@
 #define BROWSER_HISTORY_H
 
 #include <string>
-// Fix relative include path to shared data structure
-#include "../../DoubleLinkedList/header/DoubleLinkedList.h"
+#include "../../../include/ds/doubly_linked_list.h"
 
 namespace Coruh
 {
@@ -21,7 +20,8 @@ namespace Coruh
         class BrowserHistory
         {
         private:
-            DataStructures::DoubleLinkedList<std::string> history;
+            ds::DoublyLinkedList<std::string> history_;
+            ds::DoublyLinkedList<std::string>::iterator current_{};
             std::string currentUrl;
             
         public:

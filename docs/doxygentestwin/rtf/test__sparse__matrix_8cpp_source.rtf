@@ -151,141 +151,141 @@
 test_sparse_matrix.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_sparse_matrix.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_sparse_matrix.cpp}
-{\bkmkstart AAAAAAAFWE}
-{\bkmkend AAAAAAAFWE}
+{\bkmkstart AAAAAAAFQN}
+{\bkmkend AAAAAAAFQN}
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAFWL}{\bkmkend AAAAAAAFWL}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAFQR}{\bkmkend AAAAAAAFQR}
 00001 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAFWM}{\bkmkend AAAAAAAFWM}
+{\bkmkstart AAAAAAAFQT}{\bkmkend AAAAAAAFQT}
 00002 {\cf21 #include "ds/sparse_matrix.h"}\par
-{\bkmkstart AAAAAAAFWN}{\bkmkend AAAAAAAFWN}
+{\bkmkstart AAAAAAAFQY}{\bkmkend AAAAAAAFQY}
 00003 \par
-{\bkmkstart AAAAAAAFWO}{\bkmkend AAAAAAAFWO}
+{\bkmkstart AAAAAAAFQZ}{\bkmkend AAAAAAAFQZ}
 00004 TEST(SparseMatrix, InsertAndLookup)\{\par
-{\bkmkstart AAAAAAAFWP}{\bkmkend AAAAAAAFWP}
+{\bkmkstart AAAAAAAFRB}{\bkmkend AAAAAAAFRB}
 00005     ds::SparseMatrix<int> sm(100,100);\par
-{\bkmkstart AAAAAAAFWQ}{\bkmkend AAAAAAAFWQ}
+{\bkmkstart AAAAAAAFRE}{\bkmkend AAAAAAAFRE}
 00006     EXPECT_EQ(sm.nonZeroCount(), 0u);\par
-{\bkmkstart AAAAAAAFWR}{\bkmkend AAAAAAAFWR}
+{\bkmkstart AAAAAAAFRH}{\bkmkend AAAAAAAFRH}
 00007     sm.set(2,3,10); sm.set(50,50,7);\par
-{\bkmkstart AAAAAAAFWS}{\bkmkend AAAAAAAFWS}
+{\bkmkstart AAAAAAAFRI}{\bkmkend AAAAAAAFRI}
 00008     EXPECT_EQ(sm.nonZeroCount(), 2u);\par
-{\bkmkstart AAAAAAAFWT}{\bkmkend AAAAAAAFWT}
+{\bkmkstart AAAAAAAFRJ}{\bkmkend AAAAAAAFRJ}
 00009     {\cf17 auto} v = sm.get(2,3); ASSERT_NE(v, {\cf17 nullptr}); EXPECT_EQ(*v, 10);\par
-{\bkmkstart AAAAAAAFWU}{\bkmkend AAAAAAAFWU}
+{\bkmkstart AAAAAAAFRM}{\bkmkend AAAAAAAFRM}
 00010     {\cf17 auto} v2 = sm.get(1,1); EXPECT_EQ(v2, {\cf17 nullptr});\par
-{\bkmkstart AAAAAAAFWV}{\bkmkend AAAAAAAFWV}
+{\bkmkstart AAAAAAAFRN}{\bkmkend AAAAAAAFRN}
 00011 \}\par
-{\bkmkstart AAAAAAAFWW}{\bkmkend AAAAAAAFWW}
+{\bkmkstart AAAAAAAFRO}{\bkmkend AAAAAAAFRO}
 00012 \par
-{\bkmkstart AAAAAAAFWX}{\bkmkend AAAAAAAFWX}
+{\bkmkstart AAAAAAAFRP}{\bkmkend AAAAAAAFRP}
 00013 TEST(SparseMatrix, Dimensions)\{\par
-{\bkmkstart AAAAAAAFWY}{\bkmkend AAAAAAAFWY}
+{\bkmkstart AAAAAAAFRQ}{\bkmkend AAAAAAAFRQ}
 00014     ds::SparseMatrix<int> sm(50, 75);\par
-{\bkmkstart AAAAAAAFWZ}{\bkmkend AAAAAAAFWZ}
+{\bkmkstart AAAAAAAFRV}{\bkmkend AAAAAAAFRV}
 00015     EXPECT_EQ(sm.rows(), 50u);\par
-{\bkmkstart AAAAAAAFXA}{\bkmkend AAAAAAAFXA}
+{\bkmkstart AAAAAAAFRW}{\bkmkend AAAAAAAFRW}
 00016     EXPECT_EQ(sm.cols(), 75u);\par
-{\bkmkstart AAAAAAAFXB}{\bkmkend AAAAAAAFXB}
+{\bkmkstart AAAAAAAFRX}{\bkmkend AAAAAAAFRX}
 00017     \par
-{\bkmkstart AAAAAAAFXC}{\bkmkend AAAAAAAFXC}
+{\bkmkstart AAAAAAAFRY}{\bkmkend AAAAAAAFRY}
 00018     {\cf20 // Test boundary conditions}\par
-{\bkmkstart AAAAAAAFXD}{\bkmkend AAAAAAAFXD}
+{\bkmkstart AAAAAAAFRZ}{\bkmkend AAAAAAAFRZ}
 00019     sm.set(0, 0, 1);\par
-{\bkmkstart AAAAAAAFXE}{\bkmkend AAAAAAAFXE}
+{\bkmkstart AAAAAAAFSC}{\bkmkend AAAAAAAFSC}
 00020     sm.set(49, 74, 2);\par
-{\bkmkstart AAAAAAAFXF}{\bkmkend AAAAAAAFXF}
+{\bkmkstart AAAAAAAFSF}{\bkmkend AAAAAAAFSF}
 00021     EXPECT_EQ(sm.nonZeroCount(), 2u);\par
-{\bkmkstart AAAAAAAFXG}{\bkmkend AAAAAAAFXG}
+{\bkmkstart AAAAAAAFSI}{\bkmkend AAAAAAAFSI}
 00022     \par
-{\bkmkstart AAAAAAAFXH}{\bkmkend AAAAAAAFXH}
+{\bkmkstart AAAAAAAFSJ}{\bkmkend AAAAAAAFSJ}
 00023     {\cf17 auto} v1 = sm.get(0, 0);\par
-{\bkmkstart AAAAAAAFXI}{\bkmkend AAAAAAAFXI}
+{\bkmkstart AAAAAAAFSK}{\bkmkend AAAAAAAFSK}
 00024     ASSERT_NE(v1, {\cf17 nullptr});\par
-{\bkmkstart AAAAAAAFXJ}{\bkmkend AAAAAAAFXJ}
+{\bkmkstart AAAAAAAFSN}{\bkmkend AAAAAAAFSN}
 00025     EXPECT_EQ(*v1, 1);\par
-{\bkmkstart AAAAAAAFXK}{\bkmkend AAAAAAAFXK}
+{\bkmkstart AAAAAAAFSO}{\bkmkend AAAAAAAFSO}
 00026     \par
-{\bkmkstart AAAAAAAFXL}{\bkmkend AAAAAAAFXL}
+{\bkmkstart AAAAAAAFSP}{\bkmkend AAAAAAAFSP}
 00027     {\cf17 auto} v2 = sm.get(49, 74);\par
-{\bkmkstart AAAAAAAFXM}{\bkmkend AAAAAAAFXM}
+{\bkmkstart AAAAAAAFSQ}{\bkmkend AAAAAAAFSQ}
 00028     ASSERT_NE(v2, {\cf17 nullptr});\par
-{\bkmkstart AAAAAAAFXN}{\bkmkend AAAAAAAFXN}
+{\bkmkstart AAAAAAAFSR}{\bkmkend AAAAAAAFSR}
 00029     EXPECT_EQ(*v2, 2);\par
-{\bkmkstart AAAAAAAFXO}{\bkmkend AAAAAAAFXO}
+{\bkmkstart AAAAAAAFSS}{\bkmkend AAAAAAAFSS}
 00030 \}\par
-{\bkmkstart AAAAAAAFXP}{\bkmkend AAAAAAAFXP}
+{\bkmkstart AAAAAAAFST}{\bkmkend AAAAAAAFST}
 00031 \par
-{\bkmkstart AAAAAAAFXQ}{\bkmkend AAAAAAAFXQ}
+{\bkmkstart AAAAAAAFSU}{\bkmkend AAAAAAAFSU}
 00032 TEST(SparseMatrix, UpdateValues)\{\par
-{\bkmkstart AAAAAAAFXR}{\bkmkend AAAAAAAFXR}
+{\bkmkstart AAAAAAAFSV}{\bkmkend AAAAAAAFSV}
 00033     ds::SparseMatrix<int> sm(10, 10);\par
-{\bkmkstart AAAAAAAFXS}{\bkmkend AAAAAAAFXS}
+{\bkmkstart AAAAAAAFSX}{\bkmkend AAAAAAAFSX}
 00034     sm.set(5, 5, 100);\par
-{\bkmkstart AAAAAAAFXT}{\bkmkend AAAAAAAFXT}
+{\bkmkstart AAAAAAAFSY}{\bkmkend AAAAAAAFSY}
 00035     EXPECT_EQ(sm.nonZeroCount(), 1u);\par
-{\bkmkstart AAAAAAAFXU}{\bkmkend AAAAAAAFXU}
+{\bkmkstart AAAAAAAFTA}{\bkmkend AAAAAAAFTA}
 00036     \par
-{\bkmkstart AAAAAAAFXV}{\bkmkend AAAAAAAFXV}
+{\bkmkstart AAAAAAAFTB}{\bkmkend AAAAAAAFTB}
 00037     {\cf20 // Update existing value}\par
-{\bkmkstart AAAAAAAFXW}{\bkmkend AAAAAAAFXW}
+{\bkmkstart AAAAAAAFTC}{\bkmkend AAAAAAAFTC}
 00038     sm.set(5, 5, 200);\par
-{\bkmkstart AAAAAAAFXX}{\bkmkend AAAAAAAFXX}
+{\bkmkstart AAAAAAAFTE}{\bkmkend AAAAAAAFTE}
 00039     EXPECT_EQ(sm.nonZeroCount(), 1u); {\cf20 // Still only one non-zero element}\par
-{\bkmkstart AAAAAAAFXY}{\bkmkend AAAAAAAFXY}
+{\bkmkstart AAAAAAAFTL}{\bkmkend AAAAAAAFTL}
 00040     \par
-{\bkmkstart AAAAAAAFXZ}{\bkmkend AAAAAAAFXZ}
+{\bkmkstart AAAAAAAFTM}{\bkmkend AAAAAAAFTM}
 00041     {\cf17 auto} v = sm.get(5, 5);\par
-{\bkmkstart AAAAAAAFYA}{\bkmkend AAAAAAAFYA}
+{\bkmkstart AAAAAAAFTR}{\bkmkend AAAAAAAFTR}
 00042     ASSERT_NE(v, {\cf17 nullptr});\par
-{\bkmkstart AAAAAAAFYB}{\bkmkend AAAAAAAFYB}
+{\bkmkstart AAAAAAAFTV}{\bkmkend AAAAAAAFTV}
 00043     EXPECT_EQ(*v, 200);\par
-{\bkmkstart AAAAAAAFYC}{\bkmkend AAAAAAAFYC}
+{\bkmkstart AAAAAAAFTX}{\bkmkend AAAAAAAFTX}
 00044 \}\par
-{\bkmkstart AAAAAAAFYD}{\bkmkend AAAAAAAFYD}
+{\bkmkstart AAAAAAAFTY}{\bkmkend AAAAAAAFTY}
 00045 \par
-{\bkmkstart AAAAAAAFYE}{\bkmkend AAAAAAAFYE}
+{\bkmkstart AAAAAAAFUB}{\bkmkend AAAAAAAFUB}
 00046 TEST(SparseMatrix, LargeMatrix)\{\par
-{\bkmkstart AAAAAAAFYF}{\bkmkend AAAAAAAFYF}
+{\bkmkstart AAAAAAAFUE}{\bkmkend AAAAAAAFUE}
 00047     ds::SparseMatrix<int> sm(1000, 1000);\par
-{\bkmkstart AAAAAAAFYG}{\bkmkend AAAAAAAFYG}
+{\bkmkstart AAAAAAAFUJ}{\bkmkend AAAAAAAFUJ}
 00048     EXPECT_EQ(sm.rows(), 1000u);\par
-{\bkmkstart AAAAAAAFYH}{\bkmkend AAAAAAAFYH}
+{\bkmkstart AAAAAAAFUN}{\bkmkend AAAAAAAFUN}
 00049     EXPECT_EQ(sm.cols(), 1000u);\par
-{\bkmkstart AAAAAAAFYI}{\bkmkend AAAAAAAFYI}
+{\bkmkstart AAAAAAAFUR}{\bkmkend AAAAAAAFUR}
 00050     \par
-{\bkmkstart AAAAAAAFYJ}{\bkmkend AAAAAAAFYJ}
+{\bkmkstart AAAAAAAFUU}{\bkmkend AAAAAAAFUU}
 00051     {\cf20 // Add elements in different quadrants}\par
-{\bkmkstart AAAAAAAFYK}{\bkmkend AAAAAAAFYK}
+{\bkmkstart AAAAAAAFUY}{\bkmkend AAAAAAAFUY}
 00052     sm.set(100, 200, 1);\par
-{\bkmkstart AAAAAAAFYL}{\bkmkend AAAAAAAFYL}
+{\bkmkstart AAAAAAAFVA}{\bkmkend AAAAAAAFVA}
 00053     sm.set(500, 500, 2);\par
-{\bkmkstart AAAAAAAFYM}{\bkmkend AAAAAAAFYM}
+{\bkmkstart AAAAAAAFVJ}{\bkmkend AAAAAAAFVJ}
 00054     sm.set(800, 900, 3);\par
-{\bkmkstart AAAAAAAFYN}{\bkmkend AAAAAAAFYN}
+{\bkmkstart AAAAAAAFVM}{\bkmkend AAAAAAAFVM}
 00055     \par
-{\bkmkstart AAAAAAAFYO}{\bkmkend AAAAAAAFYO}
+{\bkmkstart AAAAAAAFVN}{\bkmkend AAAAAAAFVN}
 00056     EXPECT_EQ(sm.nonZeroCount(), 3u);\par
-{\bkmkstart AAAAAAAFYP}{\bkmkend AAAAAAAFYP}
+{\bkmkstart AAAAAAAFVQ}{\bkmkend AAAAAAAFVQ}
 00057     \par
-{\bkmkstart AAAAAAAFYQ}{\bkmkend AAAAAAAFYQ}
+{\bkmkstart AAAAAAAFVT}{\bkmkend AAAAAAAFVT}
 00058     EXPECT_EQ(*sm.get(100, 200), 1);\par
-{\bkmkstart AAAAAAAFYR}{\bkmkend AAAAAAAFYR}
+{\bkmkstart AAAAAAAFVX}{\bkmkend AAAAAAAFVX}
 00059     EXPECT_EQ(*sm.get(500, 500), 2);\par
-{\bkmkstart AAAAAAAFYS}{\bkmkend AAAAAAAFYS}
+{\bkmkstart AAAAAAAFWB}{\bkmkend AAAAAAAFWB}
 00060     EXPECT_EQ(*sm.get(800, 900), 3);\par
-{\bkmkstart AAAAAAAFYT}{\bkmkend AAAAAAAFYT}
+{\bkmkstart AAAAAAAFWF}{\bkmkend AAAAAAAFWF}
 00061     \par
-{\bkmkstart AAAAAAAFYU}{\bkmkend AAAAAAAFYU}
+{\bkmkstart AAAAAAAFWH}{\bkmkend AAAAAAAFWH}
 00062     {\cf20 // Verify empty positions}\par
-{\bkmkstart AAAAAAAFYV}{\bkmkend AAAAAAAFYV}
+{\bkmkstart AAAAAAAFWI}{\bkmkend AAAAAAAFWI}
 00063     EXPECT_EQ(sm.get(0, 0), {\cf17 nullptr});\par
-{\bkmkstart AAAAAAAFYW}{\bkmkend AAAAAAAFYW}
+{\bkmkstart AAAAAAAFWM}{\bkmkend AAAAAAAFWM}
 00064     EXPECT_EQ(sm.get(999, 999), {\cf17 nullptr});\par
-{\bkmkstart AAAAAAAFYX}{\bkmkend AAAAAAAFYX}
+{\bkmkstart AAAAAAAFWQ}{\bkmkend AAAAAAAFWQ}
 00065 \}\par
-{\bkmkstart AAAAAAAFYY}{\bkmkend AAAAAAAFYY}
+{\bkmkstart AAAAAAAFWT}{\bkmkend AAAAAAAFWT}
 00066 \par
 }
 }
