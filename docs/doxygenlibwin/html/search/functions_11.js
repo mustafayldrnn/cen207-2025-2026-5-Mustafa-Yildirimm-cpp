@@ -6,5 +6,6 @@ var searchData=
   ['translatetext_3',['translateText',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a03ad354d985ea9953caeb220ba353675',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
   ['translatewithgoogleapi_4',['translateWithGoogleAPI',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#acd8648d60bbb51b35c35ffd92bb7537d',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
   ['translatewithmicrosoftapi_5',['translateWithMicrosoftAPI',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a42d55ad7d00fd049ec011b6b1c3d6a82',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['translateword_6',['translateWord',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#afd506854467cc68e7a55c7f9ccb4d3c1',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]]
+  ['translateword_6',['translateWord',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#afd506854467cc68e7a55c7f9ccb4d3c1',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['treenode_7',['TreeNode',['../structds_1_1_tree_node.html#a92f832d1143a20dcde7c323112a70cb3',1,'ds::TreeNode']]]
 ];

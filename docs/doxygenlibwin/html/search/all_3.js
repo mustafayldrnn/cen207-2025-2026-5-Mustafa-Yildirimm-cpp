@@ -17,8 +17,10 @@ var searchData=
   ['cond_14',['cond',['../structtranslator_1_1_if_goto_stmt.html#a0799d00d21436cbcadd3a2e7ccb94275',1,'translator::IfGotoStmt']]],
   ['contains_15',['contains',['../classds_1_1_hash_table.html#a0acc1f9c857e04c3769939702b0e19c5',1,'ds::HashTable']]],
   ['count_5f_16',['count_',['../classds_1_1_hash_table.html#a9b7d14e05e82361e2166dac9be580190',1,'ds::HashTable']]],
-  ['currentsourcelanguage_17',['currentSourceLanguage',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#aa86b1cad9a69fa6362942d33211a2f0f',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['currenttargetlanguage_18',['currentTargetLanguage',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#adc41b2365e79a4e7320db409d4aa9465',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['currentuser_19',['currentUser',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a14f59f9002016c487ab842d1fdb92249',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
-  ['currentusername_20',['currentUsername',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a4ed5d4c536368652ce1f4aa83b5a4d16',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]]
+  ['countnodes_17',['countNodes',['../classds_1_1_binary_tree.html#ac685d0e150b7186f20ed22663c0d4e0d',1,'ds::BinaryTree']]],
+  ['createroot_18',['createRoot',['../classds_1_1_binary_tree.html#aaf4137cb035b7b51cd72145e90f075b7',1,'ds::BinaryTree']]],
+  ['currentsourcelanguage_19',['currentSourceLanguage',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#aa86b1cad9a69fa6362942d33211a2f0f',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['currenttargetlanguage_20',['currentTargetLanguage',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#adc41b2365e79a4e7320db409d4aa9465',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['currentuser_21',['currentUser',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a14f59f9002016c487ab842d1fdb92249',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
+  ['currentusername_22',['currentUsername',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a4ed5d4c536368652ce1f4aa83b5a4d16',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]]
 ];

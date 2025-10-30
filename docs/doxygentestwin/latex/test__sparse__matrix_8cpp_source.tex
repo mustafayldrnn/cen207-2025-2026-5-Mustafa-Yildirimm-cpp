@@ -14,5 +14,59 @@
 \DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00010}00010\ \ \ \ \ \textcolor{keyword}{auto}\ v2\ =\ sm.get(1,1);\ EXPECT\_EQ(v2,\ \textcolor{keyword}{nullptr});}
 \DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00011}00011\ \}}
 \DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00013}00013\ TEST(SparseMatrix,\ Dimensions)\{}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00014}00014\ \ \ \ \ ds::SparseMatrix<int>\ sm(50,\ 75);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00015}00015\ \ \ \ \ EXPECT\_EQ(sm.rows(),\ 50u);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00016}00016\ \ \ \ \ EXPECT\_EQ(sm.cols(),\ 75u);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00017}00017\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{comment}{//\ Test\ boundary\ conditions}}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00019}00019\ \ \ \ \ sm.set(0,\ 0,\ 1);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00020}00020\ \ \ \ \ sm.set(49,\ 74,\ 2);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00021}00021\ \ \ \ \ EXPECT\_EQ(sm.nonZeroCount(),\ 2u);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00022}00022\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{keyword}{auto}\ v1\ =\ sm.get(0,\ 0);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00024}00024\ \ \ \ \ ASSERT\_NE(v1,\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00025}00025\ \ \ \ \ EXPECT\_EQ(*v1,\ 1);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00026}00026\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keyword}{auto}\ v2\ =\ sm.get(49,\ 74);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00028}00028\ \ \ \ \ ASSERT\_NE(v2,\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00029}00029\ \ \ \ \ EXPECT\_EQ(*v2,\ 2);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00030}00030\ \}}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00032}00032\ TEST(SparseMatrix,\ UpdateValues)\{}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00033}00033\ \ \ \ \ ds::SparseMatrix<int>\ sm(10,\ 10);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00034}00034\ \ \ \ \ sm.set(5,\ 5,\ 100);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00035}00035\ \ \ \ \ EXPECT\_EQ(sm.nonZeroCount(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00036}00036\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{comment}{//\ Update\ existing\ value}}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00038}00038\ \ \ \ \ sm.set(5,\ 5,\ 200);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00039}00039\ \ \ \ \ EXPECT\_EQ(sm.nonZeroCount(),\ 1u);\ \textcolor{comment}{//\ Still\ only\ one\ non-\/zero\ element}}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00040}00040\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{keyword}{auto}\ v\ =\ sm.get(5,\ 5);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00042}00042\ \ \ \ \ ASSERT\_NE(v,\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00043}00043\ \ \ \ \ EXPECT\_EQ(*v,\ 200);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00044}00044\ \}}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00046}00046\ TEST(SparseMatrix,\ LargeMatrix)\{}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00047}00047\ \ \ \ \ ds::SparseMatrix<int>\ sm(1000,\ 1000);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00048}00048\ \ \ \ \ EXPECT\_EQ(sm.rows(),\ 1000u);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00049}00049\ \ \ \ \ EXPECT\_EQ(sm.cols(),\ 1000u);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00050}00050\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{comment}{//\ Add\ elements\ in\ different\ quadrants}}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00052}00052\ \ \ \ \ sm.set(100,\ 200,\ 1);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00053}00053\ \ \ \ \ sm.set(500,\ 500,\ 2);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00054}00054\ \ \ \ \ sm.set(800,\ 900,\ 3);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00055}00055\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00056}00056\ \ \ \ \ EXPECT\_EQ(sm.nonZeroCount(),\ 3u);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00057}00057\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00058}00058\ \ \ \ \ EXPECT\_EQ(*sm.get(100,\ 200),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00059}00059\ \ \ \ \ EXPECT\_EQ(*sm.get(500,\ 500),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00060}00060\ \ \ \ \ EXPECT\_EQ(*sm.get(800,\ 900),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00061}00061\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00062}00062\ \ \ \ \ \textcolor{comment}{//\ Verify\ empty\ positions}}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00063}00063\ \ \ \ \ EXPECT\_EQ(sm.get(0,\ 0),\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00064}00064\ \ \ \ \ EXPECT\_EQ(sm.get(999,\ 999),\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00065}00065\ \}}
+\DoxyCodeLine{\Hypertarget{test__sparse__matrix_8cpp_source_l00066}00066\ }
 
 \end{DoxyCode}

@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structds_1_1_tree_node" kind="struct" language="C++" prot="public">
+    <compoundname>ds::TreeNode</compoundname>
+    <includes refid="binary__tree_8h" local="no">binary_tree.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structds_1_1_tree_node_1aad7f43ee8209ee46b48a42064501a434" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T ds::TreeNode&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>ds::TreeNode::value</qualifiedname>
+        <briefdescription>
+<para>Düğüm değeri. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="23" column="7" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structds_1_1_tree_node_1af97c1bc1a548b0d54df70d4e41b61a8e" prot="public" static="no" mutable="no">
+        <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref> *</type>
+        <definition>TreeNode* ds::TreeNode&lt; T &gt;::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <qualifiedname>ds::TreeNode::left</qualifiedname>
+        <briefdescription>
+<para>Sol çocuk pointer&apos;ı </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="24" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structds_1_1_tree_node_1a7170c8d9f3b0a9951e41c266bf207497" prot="public" static="no" mutable="no">
+        <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref> *</type>
+        <definition>TreeNode* ds::TreeNode&lt; T &gt;::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <qualifiedname>ds::TreeNode::right</qualifiedname>
+        <briefdescription>
+<para>Sağ çocuk pointer&apos;ı </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="25" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structds_1_1_tree_node_1a92f832d1143a20dcde7c323112a70cb3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ds::TreeNode&lt; T &gt;::TreeNode</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>TreeNode</name>
+        <qualifiedname>ds::TreeNode::TreeNode</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Düğüm oluşturur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Düğümde saklanacak değer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="31" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Binary tree düğüm yapısı </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Değer türü </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ds::TreeNode&lt; T &gt;</label>
+        <link refid="structds_1_1_tree_node"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+left</edgelabel>
+          <edgelabel>+right</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ds::TreeNode&lt; T &gt;</label>
+        <link refid="structds_1_1_tree_node"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+left</edgelabel>
+          <edgelabel>+right</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="22" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="22" bodyend="32"/>
+    <listofallmembers>
+      <member refid="structds_1_1_tree_node_1af97c1bc1a548b0d54df70d4e41b61a8e" prot="public" virt="non-virtual"><scope>ds::TreeNode</scope><name>left</name></member>
+      <member refid="structds_1_1_tree_node_1a7170c8d9f3b0a9951e41c266bf207497" prot="public" virt="non-virtual"><scope>ds::TreeNode</scope><name>right</name></member>
+      <member refid="structds_1_1_tree_node_1a92f832d1143a20dcde7c323112a70cb3" prot="public" virt="non-virtual"><scope>ds::TreeNode</scope><name>TreeNode</name></member>
+      <member refid="structds_1_1_tree_node_1aad7f43ee8209ee46b48a42064501a434" prot="public" virt="non-virtual"><scope>ds::TreeNode</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

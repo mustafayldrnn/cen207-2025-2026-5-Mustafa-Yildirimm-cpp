@@ -22,5 +22,6 @@ var searchData=
   ['translateword_19',['translateWord',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#afd506854467cc68e7a55c7f9ccb4d3c1',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]],
   ['translationrecord_20',['TranslationRecord',['../struct_coruh_1_1_language_translator_1_1_translation_record.html',1,'Coruh::LanguageTranslator']]],
   ['translator_20c_2017_21',['BASIC Translator (C++17)',['../index.html',1,'']]],
-  ['type_22',['type',['../structtranslator_1_1_token.html#a36c889bc7ded337a56b399f92ae1fc2a',1,'translator::Token']]]
+  ['treenode_22',['TreeNode',['../structds_1_1_tree_node.html',1,'ds::TreeNode&lt; T &gt;'],['../structds_1_1_tree_node.html#a92f832d1143a20dcde7c323112a70cb3',1,'ds::TreeNode::TreeNode()']]],
+  ['type_23',['type',['../structtranslator_1_1_token.html#a36c889bc7ded337a56b399f92ae1fc2a',1,'translator::Token']]]
 ];

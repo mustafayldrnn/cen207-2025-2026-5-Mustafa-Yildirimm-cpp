@@ -17,5 +17,106 @@
 \DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00013}00013\ \ \ \ \ EXPECT\_EQ(after[0],0);\ EXPECT\_EQ(after[1],2);}
 \DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00014}00014\ \}}
 \DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00016}00016\ TEST(XORLinkedList,\ SizeAndEmpty)\{}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00017}00017\ \ \ \ \ ds::XORLinkedList<int>\ xl;}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00018}00018\ \ \ \ \ EXPECT\_TRUE(xl.empty());}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00019}00019\ \ \ \ \ EXPECT\_EQ(xl.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00020}00020\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00021}00021\ \ \ \ \ xl.push\_back(10);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00022}00022\ \ \ \ \ EXPECT\_FALSE(xl.empty());}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00023}00023\ \ \ \ \ EXPECT\_EQ(xl.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00024}00024\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00025}00025\ \ \ \ \ xl.push\_front(20);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00026}00026\ \ \ \ \ EXPECT\_EQ(xl.size(),\ 2u);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00027}00027\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00028}00028\ \ \ \ \ xl.remove\_first(10);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00029}00029\ \ \ \ \ EXPECT\_EQ(xl.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00030}00030\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00031}00031\ \ \ \ \ xl.remove\_first(20);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00032}00032\ \ \ \ \ EXPECT\_TRUE(xl.empty());}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00033}00033\ \ \ \ \ EXPECT\_EQ(xl.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00036}00036\ TEST(XORLinkedList,\ PushFrontBack)\{}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00037}00037\ \ \ \ \ ds::XORLinkedList<int>\ xl;}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00038}00038\ \ \ \ \ xl.push\_front(1);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00039}00039\ \ \ \ \ xl.push\_front(2);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00040}00040\ \ \ \ \ xl.push\_back(3);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00041}00041\ \ \ \ \ xl.push\_back(4);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00042}00042\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00043}00043\ \ \ \ \ EXPECT\_EQ(xl.size(),\ 4u);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00044}00044\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00045}00045\ \ \ \ \ \textcolor{comment}{//\ Forward\ traversal\ should\ be:\ 2,\ 1,\ 3,\ 4}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{keywordtype}{int}\ forward[4];\ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00047}00047\ \ \ \ \ xl.for\_each\_forward([\&](\textcolor{keywordtype}{int}\ v)\{\ forward[i++]\ =\ v;\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \});}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00048}00048\ \ \ \ \ EXPECT\_EQ(forward[0],\ 2);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00049}00049\ \ \ \ \ EXPECT\_EQ(forward[1],\ 1);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00050}00050\ \ \ \ \ EXPECT\_EQ(forward[2],\ 3);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00051}00051\ \ \ \ \ EXPECT\_EQ(forward[3],\ 4);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00052}00052\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{comment}{//\ Backward\ traversal\ should\ be:\ 4,\ 3,\ 1,\ 2}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keywordtype}{int}\ backward[4];\ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00055}00055\ \ \ \ \ xl.for\_each\_backward([\&](\textcolor{keywordtype}{int}\ v)\{\ backward[i++]\ =\ v;\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \});}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00056}00056\ \ \ \ \ EXPECT\_EQ(backward[0],\ 4);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00057}00057\ \ \ \ \ EXPECT\_EQ(backward[1],\ 3);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00058}00058\ \ \ \ \ EXPECT\_EQ(backward[2],\ 1);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00059}00059\ \ \ \ \ EXPECT\_EQ(backward[3],\ 2);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00060}00060\ \}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00062}00062\ TEST(XORLinkedList,\ RemoveFirst)\{}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00063}00063\ \ \ \ \ ds::XORLinkedList<int>\ xl;}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00064}00064\ \ \ \ \ xl.push\_back(1);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00065}00065\ \ \ \ \ xl.push\_back(2);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00066}00066\ \ \ \ \ xl.push\_back(1);\ \textcolor{comment}{//\ Duplicate}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00067}00067\ \ \ \ \ xl.push\_back(3);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00068}00068\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00069}00069\ \ \ \ \ EXPECT\_EQ(xl.size(),\ 4u);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00070}00070\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00071}00071\ \ \ \ \ \textcolor{comment}{//\ Remove\ first\ occurrence\ of\ 1}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00072}00072\ \ \ \ \ EXPECT\_TRUE(xl.remove\_first(1));}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00073}00073\ \ \ \ \ EXPECT\_EQ(xl.size(),\ 3u);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00074}00074\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{comment}{//\ Verify\ only\ first\ occurrence\ was\ removed}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{keywordtype}{int}\ forward[3];\ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00077}00077\ \ \ \ \ xl.for\_each\_forward([\&](\textcolor{keywordtype}{int}\ v)\{\ forward[i++]\ =\ v;\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \});}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00078}00078\ \ \ \ \ EXPECT\_EQ(forward[0],\ 2);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00079}00079\ \ \ \ \ EXPECT\_EQ(forward[1],\ 1);\ \textcolor{comment}{//\ Second\ occurrence\ should\ still\ be\ there}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00080}00080\ \ \ \ \ EXPECT\_EQ(forward[2],\ 3);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00081}00081\ \}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00083}00083\ TEST(XORLinkedList,\ RemoveNonExistent)\{}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00084}00084\ \ \ \ \ ds::XORLinkedList<int>\ xl;}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00085}00085\ \ \ \ \ xl.push\_back(1);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00086}00086\ \ \ \ \ xl.push\_back(2);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00087}00087\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00088}00088\ \ \ \ \ EXPECT\_FALSE(xl.remove\_first(99));\ \textcolor{comment}{//\ Non-\/existent\ element}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00089}00089\ \ \ \ \ EXPECT\_EQ(xl.size(),\ 2u);\ \textcolor{comment}{//\ Size\ should\ remain\ unchanged}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00090}00090\ \}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00092}00092\ TEST(XORLinkedList,\ LargeDataset)\{}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00093}00093\ \ \ \ \ ds::XORLinkedList<int>\ xl;}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00094}00094\ \ \ \ \ \textcolor{comment}{//\ Add\ 100\ elements}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00095}00095\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 100;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ xl.push\_back(i);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00097}00097\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00098}00098\ \ \ \ \ EXPECT\_EQ(xl.size(),\ 100u);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00099}00099\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00100}00100\ \ \ \ \ \textcolor{comment}{//\ Verify\ forward\ traversal}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{keywordtype}{int}\ count\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00102}00102\ \ \ \ \ xl.for\_each\_forward([\&](\textcolor{keywordtype}{int}\ v)\{\ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00103}00103\ \ \ \ \ \ \ \ \ EXPECT\_EQ(v,\ count++);\ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00104}00104\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00105}00105\ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00106}00106\ \ \ \ \ EXPECT\_EQ(count,\ 100);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00107}00107\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00108}00108\ \ \ \ \ \textcolor{comment}{//\ Verify\ backward\ traversal}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00109}00109\ \ \ \ \ count\ =\ 99;}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00110}00110\ \ \ \ \ xl.for\_each\_backward([\&](\textcolor{keywordtype}{int}\ v)\{\ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00111}00111\ \ \ \ \ \ \ \ \ EXPECT\_EQ(v,\ count-\/-\/);\ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00112}00112\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ }
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00113}00113\ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00114}00114\ \ \ \ \ EXPECT\_EQ(count,\ -\/1);}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00115}00115\ \}}
+\DoxyCodeLine{\Hypertarget{test__xor__linked__list_8cpp_source_l00116}00116\ }
 
 \end{DoxyCode}

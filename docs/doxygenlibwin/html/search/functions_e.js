@@ -10,8 +10,13 @@ var searchData=
   ['pop_7',['pop',['../classds_1_1_binary_heap.html#ab8da6f06f1a9a012cf1c4c53f2a8cf6d',1,'ds::BinaryHeap::pop()'],['../classds_1_1_stack.html#a28e85edcd47ae3f343be66afc8cdfb67',1,'ds::Stack::pop()']]],
   ['pop_5fback_8',['pop_back',['../classds_1_1_x_o_r_linked_list.html#a611686ef9b169694b3c1236cd68cfc82',1,'ds::XORLinkedList']]],
   ['pop_5ffront_9',['pop_front',['../classds_1_1_x_o_r_linked_list.html#a69b5b524d0a79c35e7324090124bda57',1,'ds::XORLinkedList']]],
-  ['printstmt_10',['PrintStmt',['../structtranslator_1_1_print_stmt.html#acf477bf52c1d1a6b3d4ddb399a4128a8',1,'translator::PrintStmt']]],
-  ['push_11',['push',['../classds_1_1_binary_heap.html#a97c2f6999ad6446c6833cb8f45185dea',1,'ds::BinaryHeap::push()'],['../classds_1_1_stack.html#ab4a7ca4fc3ba1304565946fb584cff09',1,'ds::Stack::push()']]],
-  ['push_5fback_12',['push_back',['../classds_1_1_doubly_linked_list.html#a1eef59637606e2427a92a1c345bcf7de',1,'ds::DoublyLinkedList::push_back()'],['../classds_1_1_x_o_r_linked_list.html#a0e31879a97cd4ca5e4f3d33f43e773ec',1,'ds::XORLinkedList::push_back()']]],
-  ['push_5ffront_13',['push_front',['../classds_1_1_doubly_linked_list.html#a0bf5bd3a047a9f9af555efb35f0afcdb',1,'ds::DoublyLinkedList::push_front()'],['../classds_1_1_x_o_r_linked_list.html#a8359f4aee2a942c557a35213f58a7b71',1,'ds::XORLinkedList::push_front()']]]
+  ['postorder_10',['postorder',['../classds_1_1_binary_tree.html#a05fcac9727d9c1d707508f0023bbc6c0',1,'ds::BinaryTree']]],
+  ['postordertraversal_11',['postorderTraversal',['../classds_1_1_binary_tree.html#a9f5004654fd0145717a5349b731f76c3',1,'ds::BinaryTree']]],
+  ['preorder_12',['preorder',['../classds_1_1_binary_tree.html#aa933613e2ffe04a7be5f1e8050fc6e16',1,'ds::BinaryTree']]],
+  ['preorderiterative_13',['preorderIterative',['../classds_1_1_binary_tree.html#afcd0802f7dea51e48562e23f937ccc34',1,'ds::BinaryTree']]],
+  ['preordertraversal_14',['preorderTraversal',['../classds_1_1_binary_tree.html#a498e4163f70cedc4139146b97fcdd407',1,'ds::BinaryTree']]],
+  ['printstmt_15',['PrintStmt',['../structtranslator_1_1_print_stmt.html#acf477bf52c1d1a6b3d4ddb399a4128a8',1,'translator::PrintStmt']]],
+  ['push_16',['push',['../classds_1_1_binary_heap.html#a97c2f6999ad6446c6833cb8f45185dea',1,'ds::BinaryHeap::push()'],['../classds_1_1_stack.html#ab4a7ca4fc3ba1304565946fb584cff09',1,'ds::Stack::push()']]],
+  ['push_5fback_17',['push_back',['../classds_1_1_doubly_linked_list.html#a1eef59637606e2427a92a1c345bcf7de',1,'ds::DoublyLinkedList::push_back()'],['../classds_1_1_x_o_r_linked_list.html#a0e31879a97cd4ca5e4f3d33f43e773ec',1,'ds::XORLinkedList::push_back()']]],
+  ['push_5ffront_18',['push_front',['../classds_1_1_doubly_linked_list.html#a0bf5bd3a047a9f9af555efb35f0afcdb',1,'ds::DoublyLinkedList::push_front()'],['../classds_1_1_x_o_r_linked_list.html#a8359f4aee2a942c557a35213f58a7b71',1,'ds::XORLinkedList::push_front()']]]
 ];

@@ -15,8 +15,11 @@ var searchData=
   ['return_12',['Return',['../ast_8h.html#ae91056a6e5d3941ec5899084a4007a3da988fd738de9c6d177440c5dcf69e73ce',1,'translator']]],
   ['returnstmt_13',['ReturnStmt',['../structtranslator_1_1_return_stmt.html',1,'translator']]],
   ['rhs_14',['rhs',['../structtranslator_1_1_binary_expr.html#a899fc189d22f70035034243de177b9ed',1,'translator::BinaryExpr']]],
-  ['rows_15',['rows',['../classds_1_1_sparse_matrix.html#a626c4e3435266b08cc44477570f73021',1,'ds::SparseMatrix']]],
-  ['rows_5f_16',['rows_',['../classds_1_1_sparse_matrix.html#a9491432e44a4e92cc7ef89f097eb78aa',1,'ds::SparseMatrix']]],
-  ['rparen_17',['RParen',['../token_8h.html#a0eb119efce2d20d6019adb661cd4c480ad011e3feb19babda65e8951ff7189c0c',1,'translator']]],
-  ['run_18',['run',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a3c58319ebc4b52530f96df35244e6766',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]]
+  ['right_15',['right',['../structds_1_1_tree_node.html#a7170c8d9f3b0a9951e41c266bf207497',1,'ds::TreeNode']]],
+  ['root_16',['root',['../classds_1_1_binary_tree.html#a102d00608b01d8b4dc9d3596e11ee086',1,'ds::BinaryTree']]],
+  ['root_5f_17',['root_',['../classds_1_1_binary_tree.html#ab52b03a7d856c0f079184011d5ee09eb',1,'ds::BinaryTree']]],
+  ['rows_18',['rows',['../classds_1_1_sparse_matrix.html#a626c4e3435266b08cc44477570f73021',1,'ds::SparseMatrix']]],
+  ['rows_5f_19',['rows_',['../classds_1_1_sparse_matrix.html#a9491432e44a4e92cc7ef89f097eb78aa',1,'ds::SparseMatrix']]],
+  ['rparen_20',['RParen',['../token_8h.html#a0eb119efce2d20d6019adb661cd4c480ad011e3feb19babda65e8951ff7189c0c',1,'translator']]],
+  ['run_21',['run',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a3c58319ebc4b52530f96df35244e6766',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]]
 ];

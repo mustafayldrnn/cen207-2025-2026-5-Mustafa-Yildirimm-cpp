@@ -1,0 +1,220 @@
+\doxysection{test\+\_\+language\+\_\+translator\+\_\+dictionary.\+cpp}
+\hypertarget{test__language__translator__dictionary_8cpp_source}{}\label{test__language__translator__dictionary_8cpp_source}\index{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_language\_translator\_dictionary.cpp@{C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-\/2025-\/2026-\/5-\/Mustafa-\/Yildirimm-\/cpp/tests/test\_language\_translator\_dictionary.cpp}}
+\mbox{\hyperlink{test__language__translator__dictionary_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}../src/LanguageTranslator/header/LanguageTranslator.h"{}}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00012}00012\ \textcolor{keyword}{using\ namespace\ }Coruh::LanguageTranslator;}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00014}00014\ \textcolor{keyword}{class\ }LanguageTranslatorDictionaryTest\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00015}00015\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00016}00016\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Create\ dictionaries\ directory}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ std::filesystem::create\_directory(\textcolor{stringliteral}{"{}dictionaries"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ app\ =\ std::make\_unique<LanguageTranslatorApp>();}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00021}00021\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Clean\ up\ test\ files}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::filesystem::exists(\textcolor{stringliteral}{"{}dictionaries/test\_en\_de.txt"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ std::filesystem::remove(\textcolor{stringliteral}{"{}dictionaries/test\_en\_de.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::filesystem::exists(\textcolor{stringliteral}{"{}dictionaries/test\_empty.txt"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ std::filesystem::remove(\textcolor{stringliteral}{"{}dictionaries/test\_empty.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::filesystem::exists(\textcolor{stringliteral}{"{}dictionaries/test\_comments.txt"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ std::filesystem::remove(\textcolor{stringliteral}{"{}dictionaries/test\_comments.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ app.reset();}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00035}00035\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00036}00036\ \ \ \ \ std::unique\_ptr<LanguageTranslatorApp>\ app;}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00037}00037\ \};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00039}00039\ \textcolor{comment}{//\ Test\ dictionary\ file\ loading\ with\ valid\ format}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00040}00040\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestLoadValidDictionaryFile)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{comment}{//\ Create\ a\ test\ dictionary\ file}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00042}00042\ \ \ \ \ std::ofstream\ file(\textcolor{stringliteral}{"{}dictionaries/test\_en\_de.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00043}00043\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}hello=halo\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00044}00044\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}world=welt\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00045}00045\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}good=gut\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00046}00046\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}morning=morgen\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00047}00047\ \ \ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00048}00048\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00049}00049\ \ \ \ \ EXPECT\_TRUE(app-\/>loadDictionaryFromFile(\textcolor{stringliteral}{"{}English"{}},\ \textcolor{stringliteral}{"{}German"{}},\ \textcolor{stringliteral}{"{}dictionaries/test\_en\_de.txt"{}}));}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00050}00050\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00051}00051\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00052}00052\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}German"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00053}00053\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}halo"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00054}00054\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}world"{}}),\ \textcolor{stringliteral}{"{}welt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00055}00055\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00057}00057\ \textcolor{comment}{//\ Test\ dictionary\ file\ loading\ with\ comments}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00058}00058\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestLoadDictionaryWithComments)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00059}00059\ \ \ \ \ std::ofstream\ file(\textcolor{stringliteral}{"{}dictionaries/test\_comments.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00060}00060\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\#\ This\ is\ a\ comment\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00061}00061\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}hello=halo\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00062}00062\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\#\ Another\ comment\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00063}00063\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}world=welt\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00064}00064\ \ \ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00065}00065\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00066}00066\ \ \ \ \ EXPECT\_TRUE(app-\/>loadDictionaryFromFile(\textcolor{stringliteral}{"{}English"{}},\ \textcolor{stringliteral}{"{}German"{}},\ \textcolor{stringliteral}{"{}dictionaries/test\_comments.txt"{}}));}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00067}00067\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00068}00068\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}German"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00069}00069\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}halo"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00070}00070\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00072}00072\ \textcolor{comment}{//\ Test\ empty\ dictionary\ file}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00073}00073\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestLoadEmptyDictionaryFile)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00074}00074\ \ \ \ \ std::ofstream\ file(\textcolor{stringliteral}{"{}dictionaries/test\_empty.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00075}00075\ \ \ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00076}00076\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00077}00077\ \ \ \ \ \textcolor{comment}{//\ Should\ not\ crash,\ might\ return\ false\ or\ true}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00078}00078\ \ \ \ \ app-\/>loadDictionaryFromFile(\textcolor{stringliteral}{"{}English"{}},\ \textcolor{stringliteral}{"{}German"{}},\ \textcolor{stringliteral}{"{}dictionaries/test\_empty.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00079}00079\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00081}00081\ \textcolor{comment}{//\ Test\ loading\ non-\/existent\ file}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00082}00082\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestLoadNonExistentFile)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00083}00083\ \ \ \ \ EXPECT\_FALSE(app-\/>loadDictionaryFromFile(\textcolor{stringliteral}{"{}English"{}},\ \textcolor{stringliteral}{"{}German"{}},\ \textcolor{stringliteral}{"{}dictionaries/nonexistent.txt"{}}));}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00084}00084\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00086}00086\ \textcolor{comment}{//\ Test\ dictionary\ loading\ with\ whitespace\ trimming}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00087}00087\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestDictionaryWhitespaceTrimming)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00088}00088\ \ \ \ \ std::ofstream\ file(\textcolor{stringliteral}{"{}dictionaries/test\_en\_de.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00089}00089\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\ \ hello\ \ :\ \ halo\ \ \(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00090}00090\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}world:welt\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00091}00091\ \ \ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00092}00092\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00093}00093\ \ \ \ \ app-\/>loadDictionaryFromFile(\textcolor{stringliteral}{"{}English"{}},\ \textcolor{stringliteral}{"{}German"{}},\ \textcolor{stringliteral}{"{}dictionaries/test\_en\_de.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00094}00094\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00095}00095\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}German"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00096}00096\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}halo"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00097}00097\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}world"{}}),\ \textcolor{stringliteral}{"{}welt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00098}00098\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00100}00100\ \textcolor{comment}{//\ Test\ multiple\ dictionary\ loading}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00101}00101\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestLoadMultipleDictionaries)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00102}00102\ \ \ \ \ \textcolor{comment}{//\ Load\ English\ to\ Turkish}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00103}00103\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00104}00104\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Turkish"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00105}00105\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}merhaba"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00106}00106\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00107}00107\ \ \ \ \ \textcolor{comment}{//\ Load\ English\ to\ Spanish}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00108}00108\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00109}00109\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Spanish"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00110}00110\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}hola"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00111}00111\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00112}00112\ \ \ \ \ \textcolor{comment}{//\ Load\ English\ to\ French}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00113}00113\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00114}00114\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}French"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00115}00115\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}bonjour"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00116}00116\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00118}00118\ \textcolor{comment}{//\ Test\ all\ dictionaries\ loading}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00119}00119\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestLoadAllDictionaries)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00120}00120\ \ \ \ \ EXPECT\_NO\_THROW(app-\/>loadAllDictionaries());}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00121}00121\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00122}00122\ \ \ \ \ \textcolor{comment}{//\ Should\ have\ loaded\ multiple\ language\ pairs}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00123}00123\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00124}00124\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Turkish"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00125}00125\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}merhaba"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00126}00126\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00128}00128\ \textcolor{comment}{//\ Test\ word\ translation\ with\ existing\ dictionary}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00129}00129\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestWordTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00130}00130\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00131}00131\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Turkish"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00132}00132\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00133}00133\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}merhaba"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00134}00134\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}world"{}}),\ \textcolor{stringliteral}{"{}dünya"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00135}00135\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}good"{}}),\ \textcolor{stringliteral}{"{}iyi"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00136}00136\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}water"{}}),\ \textcolor{stringliteral}{"{}su"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00137}00137\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00138}00138\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00139}00139\ \textcolor{comment}{//\ Test\ phrase\ translation}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00140}00140\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestPhraseTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00141}00141\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00142}00142\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Turkish"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00143}00143\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00144}00144\ \ \ \ \ EXPECT\_EQ(app-\/>translatePhrase(\textcolor{stringliteral}{"{}good\ morning"{}}),\ \textcolor{stringliteral}{"{}günaydın"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00145}00145\ \ \ \ \ EXPECT\_EQ(app-\/>translatePhrase(\textcolor{stringliteral}{"{}thank\ you"{}}),\ \textcolor{stringliteral}{"{}teşekkür\ ederim"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00146}00146\ \ \ \ \ EXPECT\_EQ(app-\/>translatePhrase(\textcolor{stringliteral}{"{}how\ are\ you"{}}),\ \textcolor{stringliteral}{"{}nasılsın"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00147}00147\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00148}00148\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00149}00149\ \textcolor{comment}{//\ Test\ unknown\ word\ handling}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00150}00150\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestUnknownWordHandling)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00151}00151\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00152}00152\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Turkish"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00153}00153\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00154}00154\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}unknownword"{}}),\ \textcolor{stringliteral}{"{}unknownword"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00155}00155\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}xyz123"{}}),\ \textcolor{stringliteral}{"{}xyz123"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00156}00156\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00157}00157\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00158}00158\ \textcolor{comment}{//\ Test\ translation\ with\ different\ language\ pairs}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00159}00159\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestTranslationLanguagePairs)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00160}00160\ \ \ \ \ \textcolor{comment}{//\ English\ to\ Spanish}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00161}00161\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00162}00162\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Spanish"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00163}00163\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}hola"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00164}00164\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}world"{}}),\ \textcolor{stringliteral}{"{}mundo"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00165}00165\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00166}00166\ \ \ \ \ \textcolor{comment}{//\ English\ to\ French}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00167}00167\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00168}00168\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}French"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00169}00169\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}bonjour"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00170}00170\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}world"{}}),\ \textcolor{stringliteral}{"{}monde"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00171}00171\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00172}00172\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00173}00173\ \textcolor{comment}{//\ Test\ same\ language\ translation}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00174}00174\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestSameLanguageTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00175}00175\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00176}00176\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00177}00177\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}hello"{}}),\ \textcolor{stringliteral}{"{}hello"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00178}00178\ \ \ \ \ EXPECT\_EQ(app-\/>translateText(\textcolor{stringliteral}{"{}hello\ world"{}}),\ \textcolor{stringliteral}{"{}hello\ world"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00179}00179\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00180}00180\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00181}00181\ \textcolor{comment}{//\ Test\ dictionary\ with\ malformed\ entries}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00182}00182\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestMalformedDictionaryEntries)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00183}00183\ \ \ \ \ std::ofstream\ file(\textcolor{stringliteral}{"{}dictionaries/test\_en\_de.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00184}00184\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}nocolon\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00185}00185\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}only=word=\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00186}00186\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}valid:entry\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00187}00187\ \ \ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00188}00188\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00189}00189\ \ \ \ \ app-\/>loadDictionaryFromFile(\textcolor{stringliteral}{"{}English"{}},\ \textcolor{stringliteral}{"{}German"{}},\ \textcolor{stringliteral}{"{}dictionaries/test\_en\_de.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00190}00190\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00191}00191\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}German"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00192}00192\ \ \ \ \ \textcolor{comment}{//\ Should\ handle\ malformed\ entries\ gracefully}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00193}00193\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00194}00194\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00195}00195\ \textcolor{comment}{//\ Test\ translation\ with\ mixed\ case}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00196}00196\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestMixedCaseTranslation)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00197}00197\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00198}00198\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}Turkish"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00199}00199\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00200}00200\ \ \ \ \ \textcolor{comment}{//\ Dictionary\ is\ case-\/sensitive}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00201}00201\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}HELLO"{}}),\ \textcolor{stringliteral}{"{}HELLO"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00202}00202\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}Hello"{}}),\ \textcolor{stringliteral}{"{}Hello"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00203}00203\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00204}00204\ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00205}00205\ \textcolor{comment}{//\ Test\ large\ dictionary\ loading}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00206}00206\ TEST\_F(LanguageTranslatorDictionaryTest,\ TestLargeDictionaryLoading)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00207}00207\ \ \ \ \ std::ofstream\ file(\textcolor{stringliteral}{"{}dictionaries/test\_en\_de.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00208}00208\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 100;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00209}00209\ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}word"{}}\ <<\ i\ <<\ \textcolor{stringliteral}{"{}=wort"{}}\ <<\ i\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00210}00210\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00211}00211\ \ \ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00212}00212\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00213}00213\ \ \ \ \ app-\/>loadDictionaryFromFile(\textcolor{stringliteral}{"{}English"{}},\ \textcolor{stringliteral}{"{}German"{}},\ \textcolor{stringliteral}{"{}dictionaries/test\_en\_de.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00214}00214\ \ \ \ \ app-\/>setSourceLanguage(\textcolor{stringliteral}{"{}English"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00215}00215\ \ \ \ \ app-\/>setTargetLanguage(\textcolor{stringliteral}{"{}German"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00216}00216\ \ \ \ \ EXPECT\_EQ(app-\/>translateWord(\textcolor{stringliteral}{"{}word50"{}}),\ \textcolor{stringliteral}{"{}wort50"{}});}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00217}00217\ \}}
+\DoxyCodeLine{\Hypertarget{test__language__translator__dictionary_8cpp_source_l00218}00218\ }
+
+\end{DoxyCode}

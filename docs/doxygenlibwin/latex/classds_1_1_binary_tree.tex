@@ -1,0 +1,398 @@
+\doxysection{ds\+::Binary\+Tree\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classds_1_1_binary_tree}{}\label{classds_1_1_binary_tree}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+
+
+Binary tree veri yapısı  
+
+
+
+
+{\ttfamily \#include $<$binary\+\_\+tree.\+h$>$}
+
+
+
+Collaboration diagram for ds\+::Binary\+Tree\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classds_1_1_binary_tree__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classds_1_1_binary_tree_a13657d21d3a9089f6d352b4f9f8b9f09}\label{classds_1_1_binary_tree_a13657d21d3a9089f6d352b4f9f8b9f09} 
+{\bfseries Binary\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Varsayılan constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_binary_tree_adc0877f60defc2c8d1eaf006c2385293}\label{classds_1_1_binary_tree_adc0877f60defc2c8d1eaf006c2385293} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Binary\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Destructor -\/ Tüm düğümleri serbest bırakır. \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_binary_tree_a7f13a233979c2f6b7e322e5551f8db43}\label{classds_1_1_binary_tree_a7f13a233979c2f6b7e322e5551f8db43} 
+{\bfseries Binary\+Tree} (const \mbox{\hyperlink{classds_1_1_binary_tree}{Binary\+Tree}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor (silinmiş) \end{DoxyCompactList}\item 
+\Hypertarget{classds_1_1_binary_tree_a2717c0ac8dbee6219efc04f0494271d0}\label{classds_1_1_binary_tree_a2717c0ac8dbee6219efc04f0494271d0} 
+\mbox{\hyperlink{classds_1_1_binary_tree}{Binary\+Tree}} \& {\bfseries operator=} (const \mbox{\hyperlink{classds_1_1_binary_tree}{Binary\+Tree}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy assignment operator (silinmiş) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_binary_tree_a102d00608b01d8b4dc9d3596e11ee086}{root}} () const
+\begin{DoxyCompactList}\small\item\em Kök düğüm pointer\textquotesingle{}ını döndürür. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classds_1_1_binary_tree_a04648ef36c6d3825d03394d6e454ea5a}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Ağacın boş olup olmadığını kontrol eder. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classds_1_1_binary_tree_aa7d57ab79bbdee5e201f6eee643c5726}{size}} () const
+\begin{DoxyCompactList}\small\item\em Ağaçtaki düğüm sayısını döndürür. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classds_1_1_binary_tree_a80a7e4158fd094e0f173eaf8c7b8455a}{height}} () const
+\begin{DoxyCompactList}\small\item\em Ağacın yüksekliğini döndürür. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classds_1_1_binary_tree_af447c33b205e77a49f372712b4ce0dee}{set\+Root}} (\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node)
+\begin{DoxyCompactList}\small\item\em Kök düğümü ayarlar. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_binary_tree_aaf4137cb035b7b51cd72145e90f075b7}{create\+Root}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Yeni kök düğümü oluşturur ve ayarlar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classds_1_1_binary_tree_a9d116533b9b2984bd294093a9ad221b2}{inorder}} (std\+::function$<$ void(const T \&)$>$ visit) const
+\begin{DoxyCompactList}\small\item\em Inorder traversal (LNR\+: Left, Node, Right) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classds_1_1_binary_tree_aa933613e2ffe04a7be5f1e8050fc6e16}{preorder}} (std\+::function$<$ void(const T \&)$>$ visit) const
+\begin{DoxyCompactList}\small\item\em Preorder traversal (NLR\+: Node, Left, Right) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classds_1_1_binary_tree_a05fcac9727d9c1d707508f0023bbc6c0}{postorder}} (std\+::function$<$ void(const T \&)$>$ visit) const
+\begin{DoxyCompactList}\small\item\em Postorder traversal (LRN\+: Left, Right, Node) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classds_1_1_binary_tree_a96b133ad76ed2c05c564c0eb1f823e33}{level\+Order}} (std\+::function$<$ void(const T \&)$>$ visit) const
+\begin{DoxyCompactList}\small\item\em Level-\/order traversal (breadth-\/first) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classds_1_1_binary_tree_a1fa3176166a909dc11177452e16e10b7}{inorder\+Iterative}} (std\+::function$<$ void(const T \&)$>$ visit) const
+\begin{DoxyCompactList}\small\item\em Inorder traversal (iterative) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classds_1_1_binary_tree_afcd0802f7dea51e48562e23f937ccc34}{preorder\+Iterative}} (std\+::function$<$ void(const T \&)$>$ visit) const
+\begin{DoxyCompactList}\small\item\em Preorder traversal (iterative) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classds_1_1_binary_tree_a500e2473a4c0a835ecd66ecf2c67011d}{destroy}} (\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node)
+\begin{DoxyCompactList}\small\item\em Ağacı temizler (recursive) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classds_1_1_binary_tree_ab6781f27dd54174a5e2791acdd97e8df}{height}} (\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node) const
+\begin{DoxyCompactList}\small\item\em Ağacın yüksekliğini hesaplar (recursive) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classds_1_1_binary_tree_ac685d0e150b7186f20ed22663c0d4e0d}{count\+Nodes}} (\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node) const
+\begin{DoxyCompactList}\small\item\em Ağaçtaki düğüm sayısını hesaplar (recursive) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classds_1_1_binary_tree_a1cdb8f747fffd86521a977d077570858}{inorder\+Traversal}} (\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node, std\+::function$<$ void(const T \&)$>$ visit) const
+\begin{DoxyCompactList}\small\item\em Inorder traversal (recursive) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classds_1_1_binary_tree_a498e4163f70cedc4139146b97fcdd407}{preorder\+Traversal}} (\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node, std\+::function$<$ void(const T \&)$>$ visit) const
+\begin{DoxyCompactList}\small\item\em Preorder traversal (recursive) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classds_1_1_binary_tree_a9f5004654fd0145717a5349b731f76c3}{postorder\+Traversal}} (\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node, std\+::function$<$ void(const T \&)$>$ visit) const
+\begin{DoxyCompactList}\small\item\em Postorder traversal (recursive) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classds_1_1_binary_tree_ab52b03a7d856c0f079184011d5ee09eb}\label{classds_1_1_binary_tree_ab52b03a7d856c0f079184011d5ee09eb} 
+\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*} {\bfseries root\+\_\+}
+\begin{DoxyCompactList}\small\item\em Kök düğüm pointer\textquotesingle{}ı \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class ds\+::\+Binary\+Tree$<$ T $>$}
+Binary tree veri yapısı 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Değer türü\\
+\hline
+\end{DoxyTemplParams}
+Bu sınıf, binary tree veri yapısını implement eder. Tree traversals (inorder, preorder, postorder) ve level-\/order traversal desteği sağlar. 
+
+\label{doc-func-members}
+\Hypertarget{classds_1_1_binary_tree_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classds_1_1_binary_tree_ac685d0e150b7186f20ed22663c0d4e0d}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!countNodes@{countNodes}}
+\index{countNodes@{countNodes}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{countNodes()}{countNodes()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_ac685d0e150b7186f20ed22663c0d4e0d} 
+template$<$typename T$>$ \\
+int \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::count\+Nodes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Ağaçtaki düğüm sayısını hesaplar (recursive) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Sayılacak düğüm \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Düğüm sayısı 
+\end{DoxyReturn}
+\Hypertarget{classds_1_1_binary_tree_aaf4137cb035b7b51cd72145e90f075b7}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!createRoot@{createRoot}}
+\index{createRoot@{createRoot}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{createRoot()}{createRoot()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_aaf4137cb035b7b51cd72145e90f075b7} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::create\+Root (\begin{DoxyParamCaption}\item[{const T \&}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Yeni kök düğümü oluşturur ve ayarlar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Kök düğümün değeri \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Oluşturulan kök düğüm pointer\textquotesingle{}ı 
+\end{DoxyReturn}
+\Hypertarget{classds_1_1_binary_tree_a500e2473a4c0a835ecd66ecf2c67011d}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!destroy@{destroy}}
+\index{destroy@{destroy}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_a500e2473a4c0a835ecd66ecf2c67011d} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Ağacı temizler (recursive) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Temizlenecek düğüm \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classds_1_1_binary_tree_a04648ef36c6d3825d03394d6e454ea5a}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_a04648ef36c6d3825d03394d6e454ea5a} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ağacın boş olup olmadığını kontrol eder. 
+
+\begin{DoxyReturn}{Returns}
+true eğer ağaç boşsa 
+\end{DoxyReturn}
+\Hypertarget{classds_1_1_binary_tree_a80a7e4158fd094e0f173eaf8c7b8455a}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!height@{height}}
+\index{height@{height}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_a80a7e4158fd094e0f173eaf8c7b8455a} 
+template$<$typename T$>$ \\
+int \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ağacın yüksekliğini döndürür. 
+
+\begin{DoxyReturn}{Returns}
+Ağaç yüksekliği 
+\end{DoxyReturn}
+\Hypertarget{classds_1_1_binary_tree_ab6781f27dd54174a5e2791acdd97e8df}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!height@{height}}
+\index{height@{height}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_ab6781f27dd54174a5e2791acdd97e8df} 
+template$<$typename T$>$ \\
+int \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::height (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Ağacın yüksekliğini hesaplar (recursive) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Hesaplanacak düğüm \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ağaç yüksekliği 
+\end{DoxyReturn}
+\Hypertarget{classds_1_1_binary_tree_a9d116533b9b2984bd294093a9ad221b2}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!inorder@{inorder}}
+\index{inorder@{inorder}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{inorder()}{inorder()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_a9d116533b9b2984bd294093a9ad221b2} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::inorder (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const T \&)$>$}]{visit}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inorder traversal (LNR\+: Left, Node, Right) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visit} & Her düğümü ziyaret ederken çağrılacak fonksiyon\\
+\hline
+\end{DoxyParams}
+Inorder traversal, düğümleri sol alt ağaç, kök, sağ alt ağaç sırasında gezer. Binary search tree\textquotesingle{}lerde sıralı çıktı verir. \Hypertarget{classds_1_1_binary_tree_a1fa3176166a909dc11177452e16e10b7}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!inorderIterative@{inorderIterative}}
+\index{inorderIterative@{inorderIterative}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{inorderIterative()}{inorderIterative()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_a1fa3176166a909dc11177452e16e10b7} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::inorder\+Iterative (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const T \&)$>$}]{visit}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inorder traversal (iterative) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visit} & Her düğümü ziyaret ederken çağrılacak fonksiyon \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classds_1_1_binary_tree_a1cdb8f747fffd86521a977d077570858}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!inorderTraversal@{inorderTraversal}}
+\index{inorderTraversal@{inorderTraversal}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{inorderTraversal()}{inorderTraversal()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_a1cdb8f747fffd86521a977d077570858} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::inorder\+Traversal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{node}{, }\item[{std\+::function$<$ void(const T \&)$>$}]{visit}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Inorder traversal (recursive) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Gezilecek düğüm \\
+\hline
+{\em visit} & Ziyaret fonksiyonu \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classds_1_1_binary_tree_a96b133ad76ed2c05c564c0eb1f823e33}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!levelOrder@{levelOrder}}
+\index{levelOrder@{levelOrder}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{levelOrder()}{levelOrder()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_a96b133ad76ed2c05c564c0eb1f823e33} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::level\+Order (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const T \&)$>$}]{visit}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Level-\/order traversal (breadth-\/first) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visit} & Her düğümü ziyaret ederken çağrılacak fonksiyon\\
+\hline
+\end{DoxyParams}
+Level-\/order traversal, düğümleri seviye seviye gezer. \doxylink{classds_1_1_queue}{Queue} kullanarak breadth-\/first search yapar. \Hypertarget{classds_1_1_binary_tree_a05fcac9727d9c1d707508f0023bbc6c0}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!postorder@{postorder}}
+\index{postorder@{postorder}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{postorder()}{postorder()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_a05fcac9727d9c1d707508f0023bbc6c0} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::postorder (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const T \&)$>$}]{visit}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Postorder traversal (LRN\+: Left, Right, Node) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visit} & Her düğümü ziyaret ederken çağrılacak fonksiyon\\
+\hline
+\end{DoxyParams}
+Postorder traversal, düğümleri sol alt ağaç, sağ alt ağaç, kök sırasında gezer. Tree\textquotesingle{}yi silmek için kullanılabilir. \Hypertarget{classds_1_1_binary_tree_a9f5004654fd0145717a5349b731f76c3}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!postorderTraversal@{postorderTraversal}}
+\index{postorderTraversal@{postorderTraversal}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{postorderTraversal()}{postorderTraversal()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_a9f5004654fd0145717a5349b731f76c3} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::postorder\+Traversal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{node}{, }\item[{std\+::function$<$ void(const T \&)$>$}]{visit}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Postorder traversal (recursive) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Gezilecek düğüm \\
+\hline
+{\em visit} & Ziyaret fonksiyonu \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classds_1_1_binary_tree_aa933613e2ffe04a7be5f1e8050fc6e16}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!preorder@{preorder}}
+\index{preorder@{preorder}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{preorder()}{preorder()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_aa933613e2ffe04a7be5f1e8050fc6e16} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::preorder (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const T \&)$>$}]{visit}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Preorder traversal (NLR\+: Node, Left, Right) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visit} & Her düğümü ziyaret ederken çağrılacak fonksiyon\\
+\hline
+\end{DoxyParams}
+Preorder traversal, düğümleri kök, sol alt ağaç, sağ alt ağaç sırasında gezer. Tree\textquotesingle{}yi copy etmek için kullanılabilir. \Hypertarget{classds_1_1_binary_tree_afcd0802f7dea51e48562e23f937ccc34}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!preorderIterative@{preorderIterative}}
+\index{preorderIterative@{preorderIterative}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{preorderIterative()}{preorderIterative()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_afcd0802f7dea51e48562e23f937ccc34} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::preorder\+Iterative (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const T \&)$>$}]{visit}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Preorder traversal (iterative) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visit} & Her düğümü ziyaret ederken çağrılacak fonksiyon \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classds_1_1_binary_tree_a498e4163f70cedc4139146b97fcdd407}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!preorderTraversal@{preorderTraversal}}
+\index{preorderTraversal@{preorderTraversal}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{preorderTraversal()}{preorderTraversal()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_a498e4163f70cedc4139146b97fcdd407} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::preorder\+Traversal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{node}{, }\item[{std\+::function$<$ void(const T \&)$>$}]{visit}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Preorder traversal (recursive) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Gezilecek düğüm \\
+\hline
+{\em visit} & Ziyaret fonksiyonu \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classds_1_1_binary_tree_a102d00608b01d8b4dc9d3596e11ee086}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!root@{root}}
+\index{root@{root}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{root()}{root()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_a102d00608b01d8b4dc9d3596e11ee086} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::root (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Kök düğüm pointer\textquotesingle{}ını döndürür. 
+
+\begin{DoxyReturn}{Returns}
+Kök düğüm pointer\textquotesingle{}ı 
+\end{DoxyReturn}
+\Hypertarget{classds_1_1_binary_tree_af447c33b205e77a49f372712b4ce0dee}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!setRoot@{setRoot}}
+\index{setRoot@{setRoot}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setRoot()}{setRoot()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_af447c33b205e77a49f372712b4ce0dee} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::set\+Root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structds_1_1_tree_node}{Tree\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Kök düğümü ayarlar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Kök düğüm pointer\textquotesingle{}ı \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classds_1_1_binary_tree_aa7d57ab79bbdee5e201f6eee643c5726}\index{ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}!size@{size}}
+\index{size@{size}!ds::BinaryTree$<$ T $>$@{ds::BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classds_1_1_binary_tree_aa7d57ab79bbdee5e201f6eee643c5726} 
+template$<$typename T$>$ \\
+int \mbox{\hyperlink{classds_1_1_binary_tree}{ds\+::\+Binary\+Tree}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ağaçtaki düğüm sayısını döndürür. 
+
+\begin{DoxyReturn}{Returns}
+Düğüm sayısı 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ahmet/\+One\+Drive/\+Masaüstü/\+Data\+Structure/cen207-\/2025-\/2026-\/5-\/\+Mustafa-\/\+Yildirimm-\/cpp/include/ds/\mbox{\hyperlink{binary__tree_8h}{binary\+\_\+tree.\+h}}\end{DoxyCompactItemize}

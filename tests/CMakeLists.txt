@@ -36,12 +36,14 @@ set(TEST_SOURCES
 add_executable(unit_tests ${TEST_SOURCES})
 target_link_libraries(unit_tests PRIVATE translatorlib safechronolib GTest::gtest_main)
 
-# Add LanguageTranslator source files to tests
+# Add LanguageTranslator and other source files to tests
+# Note: translatorlib already includes lexer, parser, codegen
 target_sources(unit_tests PRIVATE 
     ../src/LanguageTranslator/src/LanguageTranslator.cpp
     ../src/LanguageTranslator/src/Persistence.cpp
     ../src/utility/src/mathUtility.cpp
     ../src/coverage_anchor/CoverageAnchor.cpp
+    ../src/SafeChronoCalculator.cpp
 )
 
 # Add include directories for main library headers

@@ -151,387 +151,387 @@
 test_safe_chrono_calculator.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_safe_chrono_calculator.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_safe_chrono_calculator.cpp}
-{\bkmkstart AAAAAAADNQ}
-{\bkmkend AAAAAAADNQ}
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADNR" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
+{\bkmkstart AAAAAAAEBR}
+{\bkmkend AAAAAAAEBR}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAEBS" }{}}{\fldrslt {\cs37\ul\cf2 Go to the documentation of this file.}}}
 \par
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAADOB}{\bkmkend AAAAAAADOB}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAEBW}{\bkmkend AAAAAAAEBW}
 00001 \par
-{\bkmkstart AAAAAAADOG}{\bkmkend AAAAAAADOG}
-00008 \par
-{\bkmkstart AAAAAAADOH}{\bkmkend AAAAAAADOH}
-00009 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAADON}{\bkmkend AAAAAAADON}
-00010 {\cf21 #include <chrono>}\par
-{\bkmkstart AAAAAAADOW}{\bkmkend AAAAAAADOW}
-00011 {\cf21 #include <thread>}\par
-{\bkmkstart AAAAAAADOZ}{\bkmkend AAAAAAADOZ}
-00012 {\cf21 #include <iostream>}\par
-{\bkmkstart AAAAAAADPK}{\bkmkend AAAAAAADPK}
-00013 {\cf21 #include "../src/SafeChronoCalculator.h"}\par
-{\bkmkstart AAAAAAADPT}{\bkmkend AAAAAAADPT}
-00014 \par
-{\bkmkstart AAAAAAADPU}{\bkmkend AAAAAAADPU}
-00015 {\cf17 using namespace }SafeChrono;\par
-{\bkmkstart AAAAAAADPV}{\bkmkend AAAAAAADPV}
-00016 \par
-{\bkmkstart AAAAAAADPX}{\bkmkend AAAAAAADPX}
-00017 {\cf17 class }SafeChronoCalculatorTest : {\cf17 public} ::testing::Test \{\par
-{\bkmkstart AAAAAAADPZ}{\bkmkend AAAAAAADPZ}
-00018 {\cf17 protected}:\par
-{\bkmkstart AAAAAAADQB}{\bkmkend AAAAAAADQB}
-00019     {\cf18 void} SetUp(){\cf17  override }\{\par
-{\bkmkstart AAAAAAADQF}{\bkmkend AAAAAAADQF}
-00020         {\cf20 // SafeChronoCalculator uses static methods, no instance needed}\par
-{\bkmkstart AAAAAAADQH}{\bkmkend AAAAAAADQH}
-00021     \}\par
-{\bkmkstart AAAAAAADQJ}{\bkmkend AAAAAAADQJ}
-00022     \par
-{\bkmkstart AAAAAAADQL}{\bkmkend AAAAAAADQL}
-00023     {\cf18 void} TearDown(){\cf17  override }\{\par
-{\bkmkstart AAAAAAADQP}{\bkmkend AAAAAAADQP}
-00024         {\cf20 // No cleanup needed for static methods}\par
-{\bkmkstart AAAAAAADQQ}{\bkmkend AAAAAAADQQ}
-00025     \}\par
-{\bkmkstart AAAAAAADQR}{\bkmkend AAAAAAADQR}
-00026 \};\par
-{\bkmkstart AAAAAAADQS}{\bkmkend AAAAAAADQS}
-00027 \par
-{\bkmkstart AAAAAAADQT}{\bkmkend AAAAAAADQT}
-00028 {\cf20 // Test basic safe duration calculation}\par
-{\bkmkstart AAAAAAADQU}{\bkmkend AAAAAAADQU}
-00029 TEST_F(SafeChronoCalculatorTest, TestSafeDurationCalculation) \{\par
-{\bkmkstart AAAAAAADQX}{\bkmkend AAAAAAADQX}
-00030     {\cf20 // Test normal calculation}\par
-{\bkmkstart AAAAAAADQZ}{\bkmkend AAAAAAADQZ}
-00031     {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAADRB}{\bkmkend AAAAAAADRB}
-00032     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAADRE}{\bkmkend AAAAAAADRE}
-00033     \par
-{\bkmkstart AAAAAAADRF}{\bkmkend AAAAAAADRF}
-00034     {\cf20 // Test with different values}\par
-{\bkmkstart AAAAAAADRG}{\bkmkend AAAAAAADRG}
-00035     result = SafeChronoCalculator::safeCalculateDuration(5000, 2000000, 1000000000);\par
-{\bkmkstart AAAAAAADRJ}{\bkmkend AAAAAAADRJ}
-00036     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAADRK}{\bkmkend AAAAAAADRK}
-00037     \par
-{\bkmkstart AAAAAAADRL}{\bkmkend AAAAAAADRL}
-00038     {\cf20 // Test with large values}\par
-{\bkmkstart AAAAAAADRM}{\bkmkend AAAAAAADRM}
-00039     result = SafeChronoCalculator::safeCalculateDuration(1000000, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAADRP}{\bkmkend AAAAAAADRP}
-00040     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAADRR}{\bkmkend AAAAAAADRR}
-00041 \}\par
-{\bkmkstart AAAAAAADRS}{\bkmkend AAAAAAADRS}
-00042 \par
-{\bkmkstart AAAAAAADRT}{\bkmkend AAAAAAADRT}
-00043 {\cf20 // Test 10MHz calculation}\par
-{\bkmkstart AAAAAAADRU}{\bkmkend AAAAAAADRU}
-00044 TEST_F(SafeChronoCalculatorTest, Test10MHzCalculation) \{\par
-{\bkmkstart AAAAAAADRY}{\bkmkend AAAAAAADRY}
-00045     {\cf17 auto} result = SafeChronoCalculator::calculateFor10MHz(1000);\par
-{\bkmkstart AAAAAAADRZ}{\bkmkend AAAAAAADRZ}
-00046     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAADSA}{\bkmkend AAAAAAADSA}
-00047     \par
-{\bkmkstart AAAAAAADSB}{\bkmkend AAAAAAADSB}
-00048     result = SafeChronoCalculator::calculateFor10MHz(10000);\par
-{\bkmkstart AAAAAAADSD}{\bkmkend AAAAAAADSD}
-00049     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAADSE}{\bkmkend AAAAAAADSE}
-00050     \par
-{\bkmkstart AAAAAAADSF}{\bkmkend AAAAAAADSF}
-00051     result = SafeChronoCalculator::calculateFor10MHz(100000);\par
-{\bkmkstart AAAAAAADSJ}{\bkmkend AAAAAAADSJ}
-00052     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAADSK}{\bkmkend AAAAAAADSK}
-00053 \}\par
-{\bkmkstart AAAAAAADSL}{\bkmkend AAAAAAADSL}
-00054 \par
-{\bkmkstart AAAAAAADSN}{\bkmkend AAAAAAADSN}
-00055 {\cf20 // Test 24MHz calculation}\par
-{\bkmkstart AAAAAAADSP}{\bkmkend AAAAAAADSP}
-00056 TEST_F(SafeChronoCalculatorTest, Test24MHzCalculation) \{\par
-{\bkmkstart AAAAAAADST}{\bkmkend AAAAAAADST}
-00057     {\cf17 auto} result = SafeChronoCalculator::calculateFor24MHz(1000);\par
-{\bkmkstart AAAAAAADSV}{\bkmkend AAAAAAADSV}
-00058     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAADSX}{\bkmkend AAAAAAADSX}
-00059     \par
-{\bkmkstart AAAAAAADSZ}{\bkmkend AAAAAAADSZ}
-00060     result = SafeChronoCalculator::calculateFor24MHz(10000);\par
-{\bkmkstart AAAAAAADTD}{\bkmkend AAAAAAADTD}
-00061     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAADTF}{\bkmkend AAAAAAADTF}
-00062     \par
-{\bkmkstart AAAAAAADTG}{\bkmkend AAAAAAADTG}
-00063     result = SafeChronoCalculator::calculateFor24MHz(100000);\par
-{\bkmkstart AAAAAAADTJ}{\bkmkend AAAAAAADTJ}
-00064     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAADTL}{\bkmkend AAAAAAADTL}
-00065 \}\par
-{\bkmkstart AAAAAAADTM}{\bkmkend AAAAAAADTM}
-00066 \par
-{\bkmkstart AAAAAAADTN}{\bkmkend AAAAAAADTN}
-00067 {\cf20 // Test overflow detection}\par
-{\bkmkstart AAAAAAADTO}{\bkmkend AAAAAAADTO}
-00068 TEST_F(SafeChronoCalculatorTest, TestOverflowDetection) \{\par
-{\bkmkstart AAAAAAADTR}{\bkmkend AAAAAAADTR}
-00069     {\cf20 // Test no overflow}\par
-{\bkmkstart AAAAAAADTS}{\bkmkend AAAAAAADTS}
-00070     {\cf18 bool} wouldOverflow = SafeChronoCalculator::wouldOverflow(1000, 1000);\par
-{\bkmkstart AAAAAAADTW}{\bkmkend AAAAAAADTW}
-00071     EXPECT_FALSE(wouldOverflow);\par
-{\bkmkstart AAAAAAADTX}{\bkmkend AAAAAAADTX}
-00072     \par
-{\bkmkstart AAAAAAADTZ}{\bkmkend AAAAAAADTZ}
-00073     {\cf20 // Test with zero values}\par
-{\bkmkstart AAAAAAADUB}{\bkmkend AAAAAAADUB}
-00074     wouldOverflow = SafeChronoCalculator::wouldOverflow(0, 1000);\par
-{\bkmkstart AAAAAAADUD}{\bkmkend AAAAAAADUD}
-00075     EXPECT_FALSE(wouldOverflow);\par
-{\bkmkstart AAAAAAADUE}{\bkmkend AAAAAAADUE}
-00076     \par
-{\bkmkstart AAAAAAADUF}{\bkmkend AAAAAAADUF}
-00077     wouldOverflow = SafeChronoCalculator::wouldOverflow(1000, 0);\par
-{\bkmkstart AAAAAAADUG}{\bkmkend AAAAAAADUG}
-00078     EXPECT_FALSE(wouldOverflow);\par
-{\bkmkstart AAAAAAADUH}{\bkmkend AAAAAAADUH}
-00079     \par
-{\bkmkstart AAAAAAADUI}{\bkmkend AAAAAAADUI}
-00080     {\cf20 // Test with large values that might overflow}\par
-{\bkmkstart AAAAAAADUJ}{\bkmkend AAAAAAADUJ}
-00081     {\cf18 long} {\cf18 long} largeValue = std::numeric_limits<long long>::max() / 2;\par
-{\bkmkstart AAAAAAADUR}{\bkmkend AAAAAAADUR}
-00082     wouldOverflow = SafeChronoCalculator::wouldOverflow(largeValue, 3);\par
-{\bkmkstart AAAAAAADUS}{\bkmkend AAAAAAADUS}
-00083     EXPECT_TRUE(wouldOverflow);\par
-{\bkmkstart AAAAAAADUT}{\bkmkend AAAAAAADUT}
-00084     \par
-{\bkmkstart AAAAAAADUU}{\bkmkend AAAAAAADUU}
-00085     {\cf20 // Test with negative values}\par
-{\bkmkstart AAAAAAADUV}{\bkmkend AAAAAAADUV}
-00086     wouldOverflow = SafeChronoCalculator::wouldOverflow(-1000, 1000);\par
-{\bkmkstart AAAAAAADUX}{\bkmkend AAAAAAADUX}
-00087     EXPECT_FALSE(wouldOverflow);\par
-{\bkmkstart AAAAAAADVA}{\bkmkend AAAAAAADVA}
-00088     \par
-{\bkmkstart AAAAAAADVB}{\bkmkend AAAAAAADVB}
-00089     wouldOverflow = SafeChronoCalculator::wouldOverflow(1000, -1000);\par
-{\bkmkstart AAAAAAADVD}{\bkmkend AAAAAAADVD}
-00090     EXPECT_FALSE(wouldOverflow);\par
-{\bkmkstart AAAAAAADVG}{\bkmkend AAAAAAADVG}
-00091     \par
-{\bkmkstart AAAAAAADVH}{\bkmkend AAAAAAADVH}
-00092     wouldOverflow = SafeChronoCalculator::wouldOverflow(-1000, -1000);\par
-{\bkmkstart AAAAAAADVK}{\bkmkend AAAAAAADVK}
-00093     EXPECT_FALSE(wouldOverflow);\par
-{\bkmkstart AAAAAAADVL}{\bkmkend AAAAAAADVL}
-00094 \}\par
-{\bkmkstart AAAAAAADVM}{\bkmkend AAAAAAADVM}
-00095 \par
-{\bkmkstart AAAAAAADVN}{\bkmkend AAAAAAADVN}
-00096 {\cf20 // Test error handling}\par
-{\bkmkstart AAAAAAADVQ}{\bkmkend AAAAAAADVQ}
-00097 TEST_F(SafeChronoCalculatorTest, TestErrorHandling) \{\par
-{\bkmkstart AAAAAAADZZ}{\bkmkend AAAAAAADZZ}
-00098     {\cf20 // Test invalid frequency}\par
-{\bkmkstart AAAAAAAEAA}{\bkmkend AAAAAAAEAA}
-00099     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 0, 1000000000), std::invalid_argument);\par
-{\bkmkstart AAAAAAAEAB}{\bkmkend AAAAAAAEAB}
-00100     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, -1000, 1000000000), std::invalid_argument);\par
-{\bkmkstart AAAAAAAEAC}{\bkmkend AAAAAAAEAC}
-00101     \par
-{\bkmkstart AAAAAAAEAD}{\bkmkend AAAAAAAEAD}
-00102     {\cf20 // Test invalid period denominator}\par
-{\bkmkstart AAAAAAAEAE}{\bkmkend AAAAAAAEAE}
-00103     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 0), std::invalid_argument);\par
-{\bkmkstart AAAAAAAEAF}{\bkmkend AAAAAAAEAF}
-00104     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 1000000, -1000), std::invalid_argument);\par
-{\bkmkstart AAAAAAAEAG}{\bkmkend AAAAAAAEAG}
-00105 \}\par
-{\bkmkstart AAAAAAAEAH}{\bkmkend AAAAAAAEAH}
-00106 \par
-{\bkmkstart AAAAAAAEAI}{\bkmkend AAAAAAAEAI}
-00107 {\cf20 // Test edge cases}\par
-{\bkmkstart AAAAAAAEAJ}{\bkmkend AAAAAAAEAJ}
-00108 TEST_F(SafeChronoCalculatorTest, TestEdgeCases) \{\par
-{\bkmkstart AAAAAAAEAK}{\bkmkend AAAAAAAEAK}
-00109     {\cf20 // Test with very small values}\par
-{\bkmkstart AAAAAAAEAL}{\bkmkend AAAAAAAEAL}
-00110     {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(1, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAAEAM}{\bkmkend AAAAAAAEAM}
-00111     EXPECT_GE(result.count(), 0); {\cf20 // Changed from GT to GE to allow zero}\par
-{\bkmkstart AAAAAAAEAN}{\bkmkend AAAAAAAEAN}
-00112     \par
-{\bkmkstart AAAAAAAEAO}{\bkmkend AAAAAAAEAO}
-00113     {\cf20 // Test with zero counter}\par
-{\bkmkstart AAAAAAAEAP}{\bkmkend AAAAAAAEAP}
-00114     result = SafeChronoCalculator::safeCalculateDuration(0, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAAEAQ}{\bkmkend AAAAAAAEAQ}
-00115     EXPECT_EQ(result.count(), 0);\par
-{\bkmkstart AAAAAAAEAR}{\bkmkend AAAAAAAEAR}
-00116     \par
-{\bkmkstart AAAAAAAEAS}{\bkmkend AAAAAAAEAS}
-00117     {\cf20 // Test with maximum safe values}\par
-{\bkmkstart AAAAAAAEAT}{\bkmkend AAAAAAAEAT}
-00118     {\cf18 long} {\cf18 long} maxSafe = std::numeric_limits<long long>::max() / 2;\par
-{\bkmkstart AAAAAAAEAU}{\bkmkend AAAAAAAEAU}
-00119     result = SafeChronoCalculator::safeCalculateDuration(maxSafe, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAAEAV}{\bkmkend AAAAAAAEAV}
-00120     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAAEAW}{\bkmkend AAAAAAAEAW}
-00121 \}\par
-{\bkmkstart AAAAAAAEAX}{\bkmkend AAAAAAAEAX}
-00122 \par
-{\bkmkstart AAAAAAAEAY}{\bkmkend AAAAAAAEAY}
-00123 {\cf20 // Test performance}\par
-{\bkmkstart AAAAAAAEAZ}{\bkmkend AAAAAAAEAZ}
-00124 TEST_F(SafeChronoCalculatorTest, TestPerformance) \{\par
-{\bkmkstart AAAAAAAEBA}{\bkmkend AAAAAAAEBA}
-00125     {\cf17 auto} start = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAAEBB}{\bkmkend AAAAAAAEBB}
-00126     \par
-{\bkmkstart AAAAAAAEBC}{\bkmkend AAAAAAAEBC}
-00127     {\cf20 // Perform many calculations}\par
-{\bkmkstart AAAAAAAEBD}{\bkmkend AAAAAAAEBD}
-00128     {\cf19 for} ({\cf18 int} i = 1; i <= 1000; ++i) \{ {\cf20 // Start from 1 to avoid zero division issues}\par
-{\bkmkstart AAAAAAAEBE}{\bkmkend AAAAAAAEBE}
-00129         {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(i, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAAEBF}{\bkmkend AAAAAAAEBF}
-00130         EXPECT_GE(result.count(), 0); {\cf20 // Changed from GT to GE to allow zero}\par
-{\bkmkstart AAAAAAAEBG}{\bkmkend AAAAAAAEBG}
-00131     \}\par
-{\bkmkstart AAAAAAAEBH}{\bkmkend AAAAAAAEBH}
-00132     \par
-{\bkmkstart AAAAAAAEBI}{\bkmkend AAAAAAAEBI}
-00133     {\cf17 auto} end = std::chrono::high_resolution_clock::now();\par
-{\bkmkstart AAAAAAAEBJ}{\bkmkend AAAAAAAEBJ}
-00134     {\cf17 auto} duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);\par
-{\bkmkstart AAAAAAAEBK}{\bkmkend AAAAAAAEBK}
-00135     \par
-{\bkmkstart AAAAAAAEBL}{\bkmkend AAAAAAAEBL}
-00136     {\cf20 // Should complete in reasonable time}\par
-{\bkmkstart AAAAAAAEBM}{\bkmkend AAAAAAAEBM}
-00137     EXPECT_LT(duration.count(), 1000); {\cf20 // Less than 1 second}\par
-{\bkmkstart AAAAAAAEBN}{\bkmkend AAAAAAAEBN}
-00138 \}\par
-{\bkmkstart AAAAAAAEBO}{\bkmkend AAAAAAAEBO}
-00139 \par
-{\bkmkstart AAAAAAAEBP}{\bkmkend AAAAAAAEBP}
-00140 {\cf20 // Test different frequency combinations}\par
-{\bkmkstart AAAAAAAEBQ}{\bkmkend AAAAAAAEBQ}
-00141 TEST_F(SafeChronoCalculatorTest, TestDifferentFrequencies) \{\par
-{\bkmkstart AAAAAAAEBR}{\bkmkend AAAAAAAEBR}
-00142     {\cf20 // Test with 1MHz}\par
-{\bkmkstart AAAAAAAEBS}{\bkmkend AAAAAAAEBS}
-00143     {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
-{\bkmkstart AAAAAAAEBT}{\bkmkend AAAAAAAEBT}
-00144     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAAEBU}{\bkmkend AAAAAAAEBU}
-00145     \par
-{\bkmkstart AAAAAAAEBV}{\bkmkend AAAAAAAEBV}
-00146     {\cf20 // Test with 5MHz}\par
-{\bkmkstart AAAAAAAEBW}{\bkmkend AAAAAAAEBW}
-00147     result = SafeChronoCalculator::safeCalculateDuration(1000, 5000000, 1000000000);\par
-{\bkmkstart AAAAAAAEBX}{\bkmkend AAAAAAAEBX}
-00148     EXPECT_GT(result.count(), 0);\par
 {\bkmkstart AAAAAAAEBY}{\bkmkend AAAAAAAEBY}
-00149     \par
+00008 \par
 {\bkmkstart AAAAAAAEBZ}{\bkmkend AAAAAAAEBZ}
-00150     {\cf20 // Test with 50MHz}\par
-{\bkmkstart AAAAAAAECA}{\bkmkend AAAAAAAECA}
-00151     result = SafeChronoCalculator::safeCalculateDuration(1000, 50000000, 1000000000);\par
+00009 {\cf21 #include <gtest/gtest.h>}\par
 {\bkmkstart AAAAAAAECB}{\bkmkend AAAAAAAECB}
-00152     EXPECT_GT(result.count(), 0);\par
-{\bkmkstart AAAAAAAECC}{\bkmkend AAAAAAAECC}
-00153     \par
+00010 {\cf21 #include <chrono>}\par
 {\bkmkstart AAAAAAAECD}{\bkmkend AAAAAAAECD}
-00154     {\cf20 // Test with 100MHz}\par
-{\bkmkstart AAAAAAAECE}{\bkmkend AAAAAAAECE}
-00155     result = SafeChronoCalculator::safeCalculateDuration(1000, 100000000, 1000000000);\par
-{\bkmkstart AAAAAAAECF}{\bkmkend AAAAAAAECF}
-00156     EXPECT_GT(result.count(), 0);\par
+00011 {\cf21 #include <thread>}\par
 {\bkmkstart AAAAAAAECG}{\bkmkend AAAAAAAECG}
-00157 \}\par
-{\bkmkstart AAAAAAAECH}{\bkmkend AAAAAAAECH}
-00158 \par
-{\bkmkstart AAAAAAAECI}{\bkmkend AAAAAAAECI}
-00159 {\cf20 // Test overflow error handling}\par
-{\bkmkstart AAAAAAAECJ}{\bkmkend AAAAAAAECJ}
-00160 TEST_F(SafeChronoCalculatorTest, TestOverflowErrorHandling) \{\par
+00012 {\cf21 #include <iostream>}\par
 {\bkmkstart AAAAAAAECK}{\bkmkend AAAAAAAECK}
-00161     {\cf20 // Test with values that would cause overflow - use more reasonable values}\par
-{\bkmkstart AAAAAAAECL}{\bkmkend AAAAAAAECL}
-00162     {\cf18 long} {\cf18 long} veryLargeCounter = std::numeric_limits<long long>::max() / 2;\par
-{\bkmkstart AAAAAAAECM}{\bkmkend AAAAAAAECM}
-00163     {\cf18 long} {\cf18 long} veryLargeFrequency = 1;\par
-{\bkmkstart AAAAAAAECN}{\bkmkend AAAAAAAECN}
-00164     {\cf18 long} {\cf18 long} veryLargePeriodDen = std::numeric_limits<long long>::max() / 2;\par
-{\bkmkstart AAAAAAAECO}{\bkmkend AAAAAAAECO}
-00165     \par
-{\bkmkstart AAAAAAAECP}{\bkmkend AAAAAAAECP}
-00166     {\cf20 // This might not throw an exception depending on implementation}\par
-{\bkmkstart AAAAAAAECQ}{\bkmkend AAAAAAAECQ}
-00167     {\cf20 // So we'll just test that it doesn't crash}\par
-{\bkmkstart AAAAAAAECR}{\bkmkend AAAAAAAECR}
-00168     EXPECT_NO_THROW(SafeChronoCalculator::safeCalculateDuration(veryLargeCounter, veryLargeFrequency, veryLargePeriodDen));\par
+00013 {\cf21 #include "../src/SafeChronoCalculator.h"}\par
 {\bkmkstart AAAAAAAECS}{\bkmkend AAAAAAAECS}
-00169 \}\par
+00014 \par
 {\bkmkstart AAAAAAAECT}{\bkmkend AAAAAAAECT}
-00170 \par
+00015 {\cf17 using namespace }SafeChrono;\par
 {\bkmkstart AAAAAAAECU}{\bkmkend AAAAAAAECU}
-00171 {\cf20 // Test consistency}\par
+00016 \par
 {\bkmkstart AAAAAAAECV}{\bkmkend AAAAAAAECV}
-00172 TEST_F(SafeChronoCalculatorTest, TestConsistency) \{\par
-{\bkmkstart AAAAAAAECW}{\bkmkend AAAAAAAECW}
-00173     {\cf20 // Test that same inputs give same outputs}\par
-{\bkmkstart AAAAAAAECX}{\bkmkend AAAAAAAECX}
-00174     {\cf17 auto} result1 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
+00017 {\cf17 class }SafeChronoCalculatorTest : {\cf17 public} ::testing::Test \{\par
 {\bkmkstart AAAAAAAECY}{\bkmkend AAAAAAAECY}
-00175     {\cf17 auto} result2 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
+00018 {\cf17 protected}:\par
 {\bkmkstart AAAAAAAECZ}{\bkmkend AAAAAAAECZ}
-00176     EXPECT_EQ(result1.count(), result2.count());\par
-{\bkmkstart AAAAAAAEDA}{\bkmkend AAAAAAAEDA}
-00177     \par
-{\bkmkstart AAAAAAAEDB}{\bkmkend AAAAAAAEDB}
-00178     {\cf20 // Test that 10MHz and 24MHz give different results for same counter}\par
-{\bkmkstart AAAAAAAEDC}{\bkmkend AAAAAAAEDC}
-00179     {\cf17 auto} result10MHz = SafeChronoCalculator::calculateFor10MHz(1000);\par
-{\bkmkstart AAAAAAAEDD}{\bkmkend AAAAAAAEDD}
-00180     {\cf17 auto} result24MHz = SafeChronoCalculator::calculateFor24MHz(1000);\par
-{\bkmkstart AAAAAAAEDE}{\bkmkend AAAAAAAEDE}
-00181     EXPECT_NE(result10MHz.count(), result24MHz.count());\par
-{\bkmkstart AAAAAAAEDF}{\bkmkend AAAAAAAEDF}
-00182 \}\par
+00019     {\cf18 void} SetUp(){\cf17  override }\{\par
 {\bkmkstart AAAAAAAEDG}{\bkmkend AAAAAAAEDG}
-00183 \par
+00020         {\cf20 // SafeChronoCalculator uses static methods, no instance needed}\par
 {\bkmkstart AAAAAAAEDH}{\bkmkend AAAAAAAEDH}
-00184 {\cf20 // Test boundary values}\par
+00021     \}\par
 {\bkmkstart AAAAAAAEDI}{\bkmkend AAAAAAAEDI}
-00185 TEST_F(SafeChronoCalculatorTest, TestBoundaryValues) \{\par
+00022     \par
 {\bkmkstart AAAAAAAEDJ}{\bkmkend AAAAAAAEDJ}
-00186     {\cf20 // Test with minimum positive values}\par
+00023     {\cf18 void} TearDown(){\cf17  override }\{\par
 {\bkmkstart AAAAAAAEDK}{\bkmkend AAAAAAAEDK}
-00187     {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(1, 1, 1);\par
+00024         {\cf20 // No cleanup needed for static methods}\par
 {\bkmkstart AAAAAAAEDL}{\bkmkend AAAAAAAEDL}
-00188     EXPECT_GE(result.count(), 0); {\cf20 // Changed from GT to GE to allow zero}\par
+00025     \}\par
 {\bkmkstart AAAAAAAEDM}{\bkmkend AAAAAAAEDM}
-00189     \par
+00026 \};\par
 {\bkmkstart AAAAAAAEDN}{\bkmkend AAAAAAAEDN}
-00190     {\cf20 // Test with maximum safe values}\par
+00027 \par
 {\bkmkstart AAAAAAAEDO}{\bkmkend AAAAAAAEDO}
-00191     {\cf18 long} {\cf18 long} maxSafe = std::numeric_limits<long long>::max() / 8; {\cf20 // Use even smaller value}\par
+00028 {\cf20 // Test basic safe duration calculation}\par
 {\bkmkstart AAAAAAAEDP}{\bkmkend AAAAAAAEDP}
-00192     result = SafeChronoCalculator::safeCalculateDuration(maxSafe, 1000000, 1000000000);\par
+00029 TEST_F(SafeChronoCalculatorTest, TestSafeDurationCalculation) \{\par
 {\bkmkstart AAAAAAAEDQ}{\bkmkend AAAAAAAEDQ}
-00193     EXPECT_GE(result.count(), 0); {\cf20 // Changed from GT to GE to allow zero}\par
+00030     {\cf20 // Test normal calculation}\par
 {\bkmkstart AAAAAAAEDR}{\bkmkend AAAAAAAEDR}
+00031     {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAAEDS}{\bkmkend AAAAAAAEDS}
+00032     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEDT}{\bkmkend AAAAAAAEDT}
+00033     \par
+{\bkmkstart AAAAAAAEDU}{\bkmkend AAAAAAAEDU}
+00034     {\cf20 // Test with different values}\par
+{\bkmkstart AAAAAAAEDV}{\bkmkend AAAAAAAEDV}
+00035     result = SafeChronoCalculator::safeCalculateDuration(5000, 2000000, 1000000000);\par
+{\bkmkstart AAAAAAAEDW}{\bkmkend AAAAAAAEDW}
+00036     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEDX}{\bkmkend AAAAAAAEDX}
+00037     \par
+{\bkmkstart AAAAAAAEDY}{\bkmkend AAAAAAAEDY}
+00038     {\cf20 // Test with large values}\par
+{\bkmkstart AAAAAAAEDZ}{\bkmkend AAAAAAAEDZ}
+00039     result = SafeChronoCalculator::safeCalculateDuration(1000000, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAAEEA}{\bkmkend AAAAAAAEEA}
+00040     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEEB}{\bkmkend AAAAAAAEEB}
+00041 \}\par
+{\bkmkstart AAAAAAAEEC}{\bkmkend AAAAAAAEEC}
+00042 \par
+{\bkmkstart AAAAAAAEED}{\bkmkend AAAAAAAEED}
+00043 {\cf20 // Test 10MHz calculation}\par
+{\bkmkstart AAAAAAAEEE}{\bkmkend AAAAAAAEEE}
+00044 TEST_F(SafeChronoCalculatorTest, Test10MHzCalculation) \{\par
+{\bkmkstart AAAAAAAEEF}{\bkmkend AAAAAAAEEF}
+00045     {\cf17 auto} result = SafeChronoCalculator::calculateFor10MHz(1000);\par
+{\bkmkstart AAAAAAAEEG}{\bkmkend AAAAAAAEEG}
+00046     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEEH}{\bkmkend AAAAAAAEEH}
+00047     \par
+{\bkmkstart AAAAAAAEEI}{\bkmkend AAAAAAAEEI}
+00048     result = SafeChronoCalculator::calculateFor10MHz(10000);\par
+{\bkmkstart AAAAAAAEEK}{\bkmkend AAAAAAAEEK}
+00049     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEEL}{\bkmkend AAAAAAAEEL}
+00050     \par
+{\bkmkstart AAAAAAAEEM}{\bkmkend AAAAAAAEEM}
+00051     result = SafeChronoCalculator::calculateFor10MHz(100000);\par
+{\bkmkstart AAAAAAAEEN}{\bkmkend AAAAAAAEEN}
+00052     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEEQ}{\bkmkend AAAAAAAEEQ}
+00053 \}\par
+{\bkmkstart AAAAAAAEER}{\bkmkend AAAAAAAEER}
+00054 \par
+{\bkmkstart AAAAAAAEES}{\bkmkend AAAAAAAEES}
+00055 {\cf20 // Test 24MHz calculation}\par
+{\bkmkstart AAAAAAAEET}{\bkmkend AAAAAAAEET}
+00056 TEST_F(SafeChronoCalculatorTest, Test24MHzCalculation) \{\par
+{\bkmkstart AAAAAAAEEU}{\bkmkend AAAAAAAEEU}
+00057     {\cf17 auto} result = SafeChronoCalculator::calculateFor24MHz(1000);\par
+{\bkmkstart AAAAAAAEEV}{\bkmkend AAAAAAAEEV}
+00058     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEEW}{\bkmkend AAAAAAAEEW}
+00059     \par
+{\bkmkstart AAAAAAAEEX}{\bkmkend AAAAAAAEEX}
+00060     result = SafeChronoCalculator::calculateFor24MHz(10000);\par
+{\bkmkstart AAAAAAAEEY}{\bkmkend AAAAAAAEEY}
+00061     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEEZ}{\bkmkend AAAAAAAEEZ}
+00062     \par
+{\bkmkstart AAAAAAAEFA}{\bkmkend AAAAAAAEFA}
+00063     result = SafeChronoCalculator::calculateFor24MHz(100000);\par
+{\bkmkstart AAAAAAAEFB}{\bkmkend AAAAAAAEFB}
+00064     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEFC}{\bkmkend AAAAAAAEFC}
+00065 \}\par
+{\bkmkstart AAAAAAAEFD}{\bkmkend AAAAAAAEFD}
+00066 \par
+{\bkmkstart AAAAAAAEFE}{\bkmkend AAAAAAAEFE}
+00067 {\cf20 // Test overflow detection}\par
+{\bkmkstart AAAAAAAEFF}{\bkmkend AAAAAAAEFF}
+00068 TEST_F(SafeChronoCalculatorTest, TestOverflowDetection) \{\par
+{\bkmkstart AAAAAAAEFG}{\bkmkend AAAAAAAEFG}
+00069     {\cf20 // Test no overflow}\par
+{\bkmkstart AAAAAAAEFH}{\bkmkend AAAAAAAEFH}
+00070     {\cf18 bool} wouldOverflow = SafeChronoCalculator::wouldOverflow(1000, 1000);\par
+{\bkmkstart AAAAAAAEFI}{\bkmkend AAAAAAAEFI}
+00071     EXPECT_FALSE(wouldOverflow);\par
+{\bkmkstart AAAAAAAEFK}{\bkmkend AAAAAAAEFK}
+00072     \par
+{\bkmkstart AAAAAAAEFL}{\bkmkend AAAAAAAEFL}
+00073     {\cf20 // Test with zero values}\par
+{\bkmkstart AAAAAAAEFM}{\bkmkend AAAAAAAEFM}
+00074     wouldOverflow = SafeChronoCalculator::wouldOverflow(0, 1000);\par
+{\bkmkstart AAAAAAAEFN}{\bkmkend AAAAAAAEFN}
+00075     EXPECT_FALSE(wouldOverflow);\par
+{\bkmkstart AAAAAAAEFO}{\bkmkend AAAAAAAEFO}
+00076     \par
+{\bkmkstart AAAAAAAEFP}{\bkmkend AAAAAAAEFP}
+00077     wouldOverflow = SafeChronoCalculator::wouldOverflow(1000, 0);\par
+{\bkmkstart AAAAAAAEFQ}{\bkmkend AAAAAAAEFQ}
+00078     EXPECT_FALSE(wouldOverflow);\par
+{\bkmkstart AAAAAAAEFR}{\bkmkend AAAAAAAEFR}
+00079     \par
+{\bkmkstart AAAAAAAEFS}{\bkmkend AAAAAAAEFS}
+00080     {\cf20 // Test with large values that might overflow}\par
+{\bkmkstart AAAAAAAEFT}{\bkmkend AAAAAAAEFT}
+00081     {\cf18 long} {\cf18 long} largeValue = std::numeric_limits<long long>::max() / 2;\par
+{\bkmkstart AAAAAAAEFW}{\bkmkend AAAAAAAEFW}
+00082     wouldOverflow = SafeChronoCalculator::wouldOverflow(largeValue, 3);\par
+{\bkmkstart AAAAAAAEFX}{\bkmkend AAAAAAAEFX}
+00083     EXPECT_TRUE(wouldOverflow);\par
+{\bkmkstart AAAAAAAEFY}{\bkmkend AAAAAAAEFY}
+00084     \par
+{\bkmkstart AAAAAAAEFZ}{\bkmkend AAAAAAAEFZ}
+00085     {\cf20 // Test with negative values}\par
+{\bkmkstart AAAAAAAEGA}{\bkmkend AAAAAAAEGA}
+00086     wouldOverflow = SafeChronoCalculator::wouldOverflow(-1000, 1000);\par
+{\bkmkstart AAAAAAAEGB}{\bkmkend AAAAAAAEGB}
+00087     EXPECT_FALSE(wouldOverflow);\par
+{\bkmkstart AAAAAAAEGC}{\bkmkend AAAAAAAEGC}
+00088     \par
+{\bkmkstart AAAAAAAEGD}{\bkmkend AAAAAAAEGD}
+00089     wouldOverflow = SafeChronoCalculator::wouldOverflow(1000, -1000);\par
+{\bkmkstart AAAAAAAEGE}{\bkmkend AAAAAAAEGE}
+00090     EXPECT_FALSE(wouldOverflow);\par
+{\bkmkstart AAAAAAAEGF}{\bkmkend AAAAAAAEGF}
+00091     \par
+{\bkmkstart AAAAAAAEGG}{\bkmkend AAAAAAAEGG}
+00092     wouldOverflow = SafeChronoCalculator::wouldOverflow(-1000, -1000);\par
+{\bkmkstart AAAAAAAEGH}{\bkmkend AAAAAAAEGH}
+00093     EXPECT_FALSE(wouldOverflow);\par
+{\bkmkstart AAAAAAAEGI}{\bkmkend AAAAAAAEGI}
+00094 \}\par
+{\bkmkstart AAAAAAAEGJ}{\bkmkend AAAAAAAEGJ}
+00095 \par
+{\bkmkstart AAAAAAAEGK}{\bkmkend AAAAAAAEGK}
+00096 {\cf20 // Test error handling}\par
+{\bkmkstart AAAAAAAEGL}{\bkmkend AAAAAAAEGL}
+00097 TEST_F(SafeChronoCalculatorTest, TestErrorHandling) \{\par
+{\bkmkstart AAAAAAAEGO}{\bkmkend AAAAAAAEGO}
+00098     {\cf20 // Test invalid frequency}\par
+{\bkmkstart AAAAAAAEGP}{\bkmkend AAAAAAAEGP}
+00099     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 0, 1000000000), std::invalid_argument);\par
+{\bkmkstart AAAAAAAEGQ}{\bkmkend AAAAAAAEGQ}
+00100     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, -1000, 1000000000), std::invalid_argument);\par
+{\bkmkstart AAAAAAAEGT}{\bkmkend AAAAAAAEGT}
+00101     \par
+{\bkmkstart AAAAAAAEGU}{\bkmkend AAAAAAAEGU}
+00102     {\cf20 // Test invalid period denominator}\par
+{\bkmkstart AAAAAAAEGV}{\bkmkend AAAAAAAEGV}
+00103     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 0), std::invalid_argument);\par
+{\bkmkstart AAAAAAAEGX}{\bkmkend AAAAAAAEGX}
+00104     EXPECT_THROW(SafeChronoCalculator::safeCalculateDuration(1000, 1000000, -1000), std::invalid_argument);\par
+{\bkmkstart AAAAAAAEGZ}{\bkmkend AAAAAAAEGZ}
+00105 \}\par
+{\bkmkstart AAAAAAAEHA}{\bkmkend AAAAAAAEHA}
+00106 \par
+{\bkmkstart AAAAAAAEHB}{\bkmkend AAAAAAAEHB}
+00107 {\cf20 // Test edge cases}\par
+{\bkmkstart AAAAAAAEHC}{\bkmkend AAAAAAAEHC}
+00108 TEST_F(SafeChronoCalculatorTest, TestEdgeCases) \{\par
+{\bkmkstart AAAAAAAEHF}{\bkmkend AAAAAAAEHF}
+00109     {\cf20 // Test with very small values}\par
+{\bkmkstart AAAAAAAEHG}{\bkmkend AAAAAAAEHG}
+00110     {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(1, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAAEHI}{\bkmkend AAAAAAAEHI}
+00111     EXPECT_GE(result.count(), 0); {\cf20 // Changed from GT to GE to allow zero}\par
+{\bkmkstart AAAAAAAEHJ}{\bkmkend AAAAAAAEHJ}
+00112     \par
+{\bkmkstart AAAAAAAEHK}{\bkmkend AAAAAAAEHK}
+00113     {\cf20 // Test with zero counter}\par
+{\bkmkstart AAAAAAAEHL}{\bkmkend AAAAAAAEHL}
+00114     result = SafeChronoCalculator::safeCalculateDuration(0, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAAEHO}{\bkmkend AAAAAAAEHO}
+00115     EXPECT_EQ(result.count(), 0);\par
+{\bkmkstart AAAAAAAEHP}{\bkmkend AAAAAAAEHP}
+00116     \par
+{\bkmkstart AAAAAAAEHQ}{\bkmkend AAAAAAAEHQ}
+00117     {\cf20 // Test with maximum safe values}\par
+{\bkmkstart AAAAAAAEHR}{\bkmkend AAAAAAAEHR}
+00118     {\cf18 long} {\cf18 long} maxSafe = std::numeric_limits<long long>::max() / 2;\par
+{\bkmkstart AAAAAAAEHZ}{\bkmkend AAAAAAAEHZ}
+00119     result = SafeChronoCalculator::safeCalculateDuration(maxSafe, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAAEIC}{\bkmkend AAAAAAAEIC}
+00120     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEIF}{\bkmkend AAAAAAAEIF}
+00121 \}\par
+{\bkmkstart AAAAAAAEIG}{\bkmkend AAAAAAAEIG}
+00122 \par
+{\bkmkstart AAAAAAAEIH}{\bkmkend AAAAAAAEIH}
+00123 {\cf20 // Test performance}\par
+{\bkmkstart AAAAAAAEII}{\bkmkend AAAAAAAEII}
+00124 TEST_F(SafeChronoCalculatorTest, TestPerformance) \{\par
+{\bkmkstart AAAAAAAEIK}{\bkmkend AAAAAAAEIK}
+00125     {\cf17 auto} start = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAEIO}{\bkmkend AAAAAAAEIO}
+00126     \par
+{\bkmkstart AAAAAAAEIP}{\bkmkend AAAAAAAEIP}
+00127     {\cf20 // Perform many calculations}\par
+{\bkmkstart AAAAAAAEIQ}{\bkmkend AAAAAAAEIQ}
+00128     {\cf19 for} ({\cf18 int} i = 1; i <= 1000; ++i) \{ {\cf20 // Start from 1 to avoid zero division issues}\par
+{\bkmkstart AAAAAAAEIR}{\bkmkend AAAAAAAEIR}
+00129         {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(i, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAAEIS}{\bkmkend AAAAAAAEIS}
+00130         EXPECT_GE(result.count(), 0); {\cf20 // Changed from GT to GE to allow zero}\par
+{\bkmkstart AAAAAAAEIU}{\bkmkend AAAAAAAEIU}
+00131     \}\par
+{\bkmkstart AAAAAAAEIV}{\bkmkend AAAAAAAEIV}
+00132     \par
+{\bkmkstart AAAAAAAEIW}{\bkmkend AAAAAAAEIW}
+00133     {\cf17 auto} end = std::chrono::high_resolution_clock::now();\par
+{\bkmkstart AAAAAAAEIZ}{\bkmkend AAAAAAAEIZ}
+00134     {\cf17 auto} duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);\par
+{\bkmkstart AAAAAAAEJC}{\bkmkend AAAAAAAEJC}
+00135     \par
+{\bkmkstart AAAAAAAEJD}{\bkmkend AAAAAAAEJD}
+00136     {\cf20 // Should complete in reasonable time}\par
+{\bkmkstart AAAAAAAEJE}{\bkmkend AAAAAAAEJE}
+00137     EXPECT_LT(duration.count(), 1000); {\cf20 // Less than 1 second}\par
+{\bkmkstart AAAAAAAEJG}{\bkmkend AAAAAAAEJG}
+00138 \}\par
+{\bkmkstart AAAAAAAEJH}{\bkmkend AAAAAAAEJH}
+00139 \par
+{\bkmkstart AAAAAAAEJJ}{\bkmkend AAAAAAAEJJ}
+00140 {\cf20 // Test different frequency combinations}\par
+{\bkmkstart AAAAAAAEJL}{\bkmkend AAAAAAAEJL}
+00141 TEST_F(SafeChronoCalculatorTest, TestDifferentFrequencies) \{\par
+{\bkmkstart AAAAAAAEJN}{\bkmkend AAAAAAAEJN}
+00142     {\cf20 // Test with 1MHz}\par
+{\bkmkstart AAAAAAAEJO}{\bkmkend AAAAAAAEJO}
+00143     {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAAEJT}{\bkmkend AAAAAAAEJT}
+00144     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEJU}{\bkmkend AAAAAAAEJU}
+00145     \par
+{\bkmkstart AAAAAAAEJV}{\bkmkend AAAAAAAEJV}
+00146     {\cf20 // Test with 5MHz}\par
+{\bkmkstart AAAAAAAEJX}{\bkmkend AAAAAAAEJX}
+00147     result = SafeChronoCalculator::safeCalculateDuration(1000, 5000000, 1000000000);\par
+{\bkmkstart AAAAAAAEKA}{\bkmkend AAAAAAAEKA}
+00148     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEKC}{\bkmkend AAAAAAAEKC}
+00149     \par
+{\bkmkstart AAAAAAAEKD}{\bkmkend AAAAAAAEKD}
+00150     {\cf20 // Test with 50MHz}\par
+{\bkmkstart AAAAAAAEKE}{\bkmkend AAAAAAAEKE}
+00151     result = SafeChronoCalculator::safeCalculateDuration(1000, 50000000, 1000000000);\par
+{\bkmkstart AAAAAAAEKI}{\bkmkend AAAAAAAEKI}
+00152     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEKK}{\bkmkend AAAAAAAEKK}
+00153     \par
+{\bkmkstart AAAAAAAEKL}{\bkmkend AAAAAAAEKL}
+00154     {\cf20 // Test with 100MHz}\par
+{\bkmkstart AAAAAAAEKM}{\bkmkend AAAAAAAEKM}
+00155     result = SafeChronoCalculator::safeCalculateDuration(1000, 100000000, 1000000000);\par
+{\bkmkstart AAAAAAAEKQ}{\bkmkend AAAAAAAEKQ}
+00156     EXPECT_GT(result.count(), 0);\par
+{\bkmkstart AAAAAAAEKS}{\bkmkend AAAAAAAEKS}
+00157 \}\par
+{\bkmkstart AAAAAAAEKU}{\bkmkend AAAAAAAEKU}
+00158 \par
+{\bkmkstart AAAAAAAEKV}{\bkmkend AAAAAAAEKV}
+00159 {\cf20 // Test overflow error handling}\par
+{\bkmkstart AAAAAAAEKX}{\bkmkend AAAAAAAEKX}
+00160 TEST_F(SafeChronoCalculatorTest, TestOverflowErrorHandling) \{\par
+{\bkmkstart AAAAAAAEKY}{\bkmkend AAAAAAAEKY}
+00161     {\cf20 // Test with values that would cause overflow - use more reasonable values}\par
+{\bkmkstart AAAAAAAELA}{\bkmkend AAAAAAAELA}
+00162     {\cf18 long} {\cf18 long} veryLargeCounter = std::numeric_limits<long long>::max() / 2;\par
+{\bkmkstart AAAAAAAELN}{\bkmkend AAAAAAAELN}
+00163     {\cf18 long} {\cf18 long} veryLargeFrequency = 1;\par
+{\bkmkstart AAAAAAAELP}{\bkmkend AAAAAAAELP}
+00164     {\cf18 long} {\cf18 long} veryLargePeriodDen = std::numeric_limits<long long>::max() / 2;\par
+{\bkmkstart AAAAAAAEMA}{\bkmkend AAAAAAAEMA}
+00165     \par
+{\bkmkstart AAAAAAAEMD}{\bkmkend AAAAAAAEMD}
+00166     {\cf20 // This might not throw an exception depending on implementation}\par
+{\bkmkstart AAAAAAAEME}{\bkmkend AAAAAAAEME}
+00167     {\cf20 // So we'll just test that it doesn't crash}\par
+{\bkmkstart AAAAAAAEMG}{\bkmkend AAAAAAAEMG}
+00168     EXPECT_NO_THROW(SafeChronoCalculator::safeCalculateDuration(veryLargeCounter, veryLargeFrequency, veryLargePeriodDen));\par
+{\bkmkstart AAAAAAAEMI}{\bkmkend AAAAAAAEMI}
+00169 \}\par
+{\bkmkstart AAAAAAAEMJ}{\bkmkend AAAAAAAEMJ}
+00170 \par
+{\bkmkstart AAAAAAAEML}{\bkmkend AAAAAAAEML}
+00171 {\cf20 // Test consistency}\par
+{\bkmkstart AAAAAAAEMM}{\bkmkend AAAAAAAEMM}
+00172 TEST_F(SafeChronoCalculatorTest, TestConsistency) \{\par
+{\bkmkstart AAAAAAAEMQ}{\bkmkend AAAAAAAEMQ}
+00173     {\cf20 // Test that same inputs give same outputs}\par
+{\bkmkstart AAAAAAAEMR}{\bkmkend AAAAAAAEMR}
+00174     {\cf17 auto} result1 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAAEMV}{\bkmkend AAAAAAAEMV}
+00175     {\cf17 auto} result2 = SafeChronoCalculator::safeCalculateDuration(1000, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAAEMW}{\bkmkend AAAAAAAEMW}
+00176     EXPECT_EQ(result1.count(), result2.count());\par
+{\bkmkstart AAAAAAAEMY}{\bkmkend AAAAAAAEMY}
+00177     \par
+{\bkmkstart AAAAAAAENA}{\bkmkend AAAAAAAENA}
+00178     {\cf20 // Test that 10MHz and 24MHz give different results for same counter}\par
+{\bkmkstart AAAAAAAENC}{\bkmkend AAAAAAAENC}
+00179     {\cf17 auto} result10MHz = SafeChronoCalculator::calculateFor10MHz(1000);\par
+{\bkmkstart AAAAAAAENG}{\bkmkend AAAAAAAENG}
+00180     {\cf17 auto} result24MHz = SafeChronoCalculator::calculateFor24MHz(1000);\par
+{\bkmkstart AAAAAAAENI}{\bkmkend AAAAAAAENI}
+00181     EXPECT_NE(result10MHz.count(), result24MHz.count());\par
+{\bkmkstart AAAAAAAENK}{\bkmkend AAAAAAAENK}
+00182 \}\par
+{\bkmkstart AAAAAAAENM}{\bkmkend AAAAAAAENM}
+00183 \par
+{\bkmkstart AAAAAAAENN}{\bkmkend AAAAAAAENN}
+00184 {\cf20 // Test boundary values}\par
+{\bkmkstart AAAAAAAENO}{\bkmkend AAAAAAAENO}
+00185 TEST_F(SafeChronoCalculatorTest, TestBoundaryValues) \{\par
+{\bkmkstart AAAAAAAENR}{\bkmkend AAAAAAAENR}
+00186     {\cf20 // Test with minimum positive values}\par
+{\bkmkstart AAAAAAAENT}{\bkmkend AAAAAAAENT}
+00187     {\cf17 auto} result = SafeChronoCalculator::safeCalculateDuration(1, 1, 1);\par
+{\bkmkstart AAAAAAAENW}{\bkmkend AAAAAAAENW}
+00188     EXPECT_GE(result.count(), 0); {\cf20 // Changed from GT to GE to allow zero}\par
+{\bkmkstart AAAAAAAENZ}{\bkmkend AAAAAAAENZ}
+00189     \par
+{\bkmkstart AAAAAAAEOA}{\bkmkend AAAAAAAEOA}
+00190     {\cf20 // Test with maximum safe values}\par
+{\bkmkstart AAAAAAAEOB}{\bkmkend AAAAAAAEOB}
+00191     {\cf18 long} {\cf18 long} maxSafe = std::numeric_limits<long long>::max() / 8; {\cf20 // Use even smaller value}\par
+{\bkmkstart AAAAAAAEOM}{\bkmkend AAAAAAAEOM}
+00192     result = SafeChronoCalculator::safeCalculateDuration(maxSafe, 1000000, 1000000000);\par
+{\bkmkstart AAAAAAAEOO}{\bkmkend AAAAAAAEOO}
+00193     EXPECT_GE(result.count(), 0); {\cf20 // Changed from GT to GE to allow zero}\par
+{\bkmkstart AAAAAAAEOQ}{\bkmkend AAAAAAAEOQ}
 00194 \}\par
 }
 }

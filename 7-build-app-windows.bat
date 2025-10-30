@@ -7,8 +7,8 @@ for %%A in ("%~dp0.") do (
     set "currentDir=%%~fA"
 )
 
-::echo Clean Project
-::call 9-clean-project.bat
+echo Clean Project
+call 9-clean-project.bat
 
 echo Create the "release" folder and its contents
 mkdir publish_win
@@ -73,38 +73,61 @@ start "Install Debug" cmake --install build_win --config Debug --strip
 start "Install Release" cmake --install build_win --config Release --strip
 echo Test CMAKE
 cd build_win
-:: Test are already run with OpenCppCoverage...
-::call ctest -C Debug -j4 --output-on-failure --output-log test_results_windows.log
+echo Run tests first before coverage collection
 call ctest -C Debug -j4 --output-junit testResults_windows.xml --output-log test_results_windows.log
-call junit2html testResults_windows.xml testResults_windows.html
-call copy testResults_windows.html "..\docs\testresultswin\index.html"
+if %ERRORLEVEL% EQU 0 (
+    call junit2html testResults_windows.xml testResults_windows.html
+    call copy testResults_windows.html "..\docs\testresultswin\index.html"
+) else (
+    echo Tests failed but continuing with coverage...
+)
 cd ..
 
 echo Generate Test Coverage Data for unit_tests (translator project)
-rem Limit coverage strictly to coverage_anchor to force 100%% when reporting
-call OpenCppCoverage.exe --export_type=binary:translator_tests_unit_win.cov ^
-    --sources "%currentDir%\src\coverage_anchor" ^
-    --excluded_sources "Program Files\\*" ^
-    --excluded_sources "C:\\Windows\\*" ^
-    -- build_win\tests\Debug\unit_tests.exe
+rem Comprehensive coverage including all source files and headers
+if exist "build_win\tests\Debug\unit_tests.exe" (
+    echo Running OpenCppCoverage on existing test executable...
+    call OpenCppCoverage.exe --export_type=binary:translator_tests_unit_win.cov ^
+        --sources "%currentDir%\src" ^
+        --sources "%currentDir%\include" ^
+        --excluded_sources "Program Files\\*" ^
+        --excluded_sources "C:\\Windows\\*" ^
+        --excluded_sources "*\\tests\\*" ^
+        --excluded_sources "*\\build_win\\*" ^
+        --excluded_sources "*\\gtest\\*" ^
+        -- build_win\tests\Debug\unit_tests.exe
+) else (
+    echo ERROR: unit_tests.exe not found! Build might have failed.
+    echo Please check build_win directory for errors.
+)
 
 echo Export Cobertura Coverage from collected data
-call OpenCppCoverage.exe --input_coverage=translator_tests_unit_win.cov ^
-    --export_type=cobertura:translateapp_unit_win_cobertura.xml ^
-    --sources "%currentDir%\src\coverage_anchor" ^
-    --excluded_sources "Program Files\\*" ^
-    --excluded_sources "C:\\Windows\\*" ^
-    -- build_win\tests\Debug\unit_tests.exe
+if exist "translator_tests_unit_win.cov" (
+    echo Converting binary coverage to Cobertura XML...
+    call OpenCppCoverage.exe --input_coverage=translator_tests_unit_win.cov ^
+        --export_type=cobertura:translateapp_unit_win_cobertura.xml ^
+        --sources "%currentDir%\src" ^
+        --sources "%currentDir%\include" ^
+        --excluded_sources "Program Files\\*" ^
+        --excluded_sources "C:\\Windows\\*" ^
+        --excluded_sources "*\\tests\\*" ^
+        --excluded_sources "*\\build_win\\*" ^
+        --excluded_sources "*\\gtest\\*" ^
+        -- build_win\tests\Debug\unit_tests.exe
+) else (
+    echo ERROR: translator_tests_unit_win.cov not found! Coverage collection failed.
+    echo Skipping Cobertura export...
+)
 
 echo Generate Unit Test Coverage Report
 call reportgenerator "-title:translate Library Unit Test Coverage Report (Windows)" ^
     "-targetdir:docs/coveragereportlibwin" ^
     "-reporttypes:Html" ^
     "-reports:**/translateapp_unit_win_cobertura.xml" ^
-    "-sourcedirs:src/coverage_anchor" ^
-    "-filefilters:+*src/coverage_anchor/*;-*" ^
+    "-sourcedirs:src;include" ^
+    "-filefilters:+*src/LanguageTranslator/src/*;+*src/LanguageTranslator/header/*;+*src/SafeChronoCalculator.*;+*src/coverage_anchor/*;+*include/ds/*;-*\\tests\\*;-*build*;-*gtest*" ^
     "-historydir:report_test_hist_win"
-call reportgenerator "-targetdir:assets/codecoveragelibwin" "-reporttypes:Badges" "-reports:**/translateapp_unit_win_cobertura.xml" "-sourcedirs:include;src/translator;tests" "-filefilters:-*minkernel\*;-*gtest*;-*a\_work\*;-*gtest-*;-*gtest.cc;-*gtest.h;-*build*"
+call reportgenerator "-targetdir:assets/codecoveragelibwin" "-reporttypes:Badges" "-reports:**/translateapp_unit_win_cobertura.xml" "-sourcedirs:src;include" "-filefilters:-*minkernel\*;-*gtest*;-*a\_work\*;-*gtest-*;-*gtest.cc;-*gtest.h;-*build*;-*tests*"
 
 echo Copy the "assets" folder and its contents to "docs" recursively
 call robocopy assets "docs\assets" /E

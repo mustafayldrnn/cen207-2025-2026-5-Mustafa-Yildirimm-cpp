@@ -9,5 +9,6 @@ var searchData=
   ['head_5f_6',['head_',['../classds_1_1_doubly_linked_list.html#ab984830080da01385b6e0c8eb8e1b963',1,'ds::DoublyLinkedList::head_'],['../classds_1_1_queue.html#af3e1805acba3c9de41f864bd19238db8',1,'ds::Queue::head_'],['../classds_1_1_x_o_r_linked_list.html#af85d2ae57585cb42db59f56c04c054bd',1,'ds::XORLinkedList::head_']]],
   ['heap_2eh_7',['heap.h',['../heap_8h.html',1,'']]],
   ['heap_5fsort_5fcopy_8',['heap_sort_copy',['../classds_1_1_binary_heap.html#ad7467e086392e18c40c5423283ca38f6',1,'ds::BinaryHeap']]],
-  ['history_9',['history',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a71f9662143bf653bb8c710907e6ba9aa',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]]
+  ['height_9',['height',['../classds_1_1_binary_tree.html#ab6781f27dd54174a5e2791acdd97e8df',1,'ds::BinaryTree::height(TreeNode&lt; T &gt; *node) const'],['../classds_1_1_binary_tree.html#a80a7e4158fd094e0f173eaf8c7b8455a',1,'ds::BinaryTree::height() const']]],
+  ['history_10',['history',['../class_coruh_1_1_language_translator_1_1_language_translator_app.html#a71f9662143bf653bb8c710907e6ba9aa',1,'Coruh::LanguageTranslator::LanguageTranslatorApp']]]
 ];

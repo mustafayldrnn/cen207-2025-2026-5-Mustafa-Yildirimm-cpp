@@ -16,5 +16,79 @@
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00012}00012\ \ \ \ \ EXPECT\_EQ(q.front(),\ 1);\ q.dequeue();\ EXPECT\_EQ(q.front(),\ 2);\ q.dequeue();\ EXPECT\_EQ(q.front(),\ 3);}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00013}00013\ \}}
 \DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00015}00015\ TEST(StackQueue,\ StackSizeAndEmpty)\{}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00016}00016\ \ \ \ \ ds::Stack<int>\ st;}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00017}00017\ \ \ \ \ EXPECT\_TRUE(st.empty());}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00018}00018\ \ \ \ \ EXPECT\_EQ(st.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00019}00019\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00020}00020\ \ \ \ \ st.push(10);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00021}00021\ \ \ \ \ EXPECT\_FALSE(st.empty());}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00022}00022\ \ \ \ \ EXPECT\_EQ(st.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00023}00023\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00024}00024\ \ \ \ \ st.push(20);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00025}00025\ \ \ \ \ EXPECT\_EQ(st.size(),\ 2u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00026}00026\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00027}00027\ \ \ \ \ st.pop();}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00028}00028\ \ \ \ \ EXPECT\_EQ(st.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00029}00029\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00030}00030\ \ \ \ \ st.pop();}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00031}00031\ \ \ \ \ EXPECT\_TRUE(st.empty());}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00032}00032\ \ \ \ \ EXPECT\_EQ(st.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00035}00035\ TEST(StackQueue,\ QueueSizeAndEmpty)\{}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00036}00036\ \ \ \ \ ds::Queue<int>\ q;}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00037}00037\ \ \ \ \ EXPECT\_TRUE(q.empty());}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00038}00038\ \ \ \ \ EXPECT\_EQ(q.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00039}00039\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00040}00040\ \ \ \ \ q.enqueue(10);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00041}00041\ \ \ \ \ EXPECT\_FALSE(q.empty());}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00042}00042\ \ \ \ \ EXPECT\_EQ(q.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00043}00043\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00044}00044\ \ \ \ \ q.enqueue(20);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00045}00045\ \ \ \ \ EXPECT\_EQ(q.size(),\ 2u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00046}00046\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00047}00047\ \ \ \ \ q.dequeue();}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00048}00048\ \ \ \ \ EXPECT\_EQ(q.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00049}00049\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00050}00050\ \ \ \ \ q.dequeue();}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00051}00051\ \ \ \ \ EXPECT\_TRUE(q.empty());}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00052}00052\ \ \ \ \ EXPECT\_EQ(q.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00053}00053\ \}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00055}00055\ TEST(StackQueue,\ StackLargeDataset)\{}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00056}00056\ \ \ \ \ ds::Stack<int>\ st;}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{comment}{//\ Push\ 100\ elements}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 100;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ st.push(i);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00060}00060\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00061}00061\ \ \ \ \ EXPECT\_EQ(st.size(),\ 100u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00062}00062\ \ \ \ \ EXPECT\_EQ(st.top(),\ 99);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00063}00063\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00064}00064\ \ \ \ \ \textcolor{comment}{//\ Pop\ all\ elements}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00065}00065\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 99;\ i\ >=\ 0;\ -\/-\/i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ EXPECT\_EQ(st.top(),\ i);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ st.pop();}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00068}00068\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00069}00069\ \ \ \ \ EXPECT\_TRUE(st.empty());}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00070}00070\ \}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00072}00072\ TEST(StackQueue,\ QueueLargeDataset)\{}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00073}00073\ \ \ \ \ ds::Queue<int>\ q;}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00074}00074\ \ \ \ \ \textcolor{comment}{//\ Enqueue\ 100\ elements}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 100;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ q.enqueue(i);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00077}00077\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00078}00078\ \ \ \ \ EXPECT\_EQ(q.size(),\ 100u);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00079}00079\ \ \ \ \ EXPECT\_EQ(q.front(),\ 0);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00080}00080\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{comment}{//\ Dequeue\ all\ elements}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00082}00082\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 100;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00083}00083\ \ \ \ \ \ \ \ \ EXPECT\_EQ(q.front(),\ i);}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00084}00084\ \ \ \ \ \ \ \ \ q.dequeue();}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00085}00085\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00086}00086\ \ \ \ \ EXPECT\_TRUE(q.empty());}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00087}00087\ \}}
+\DoxyCodeLine{\Hypertarget{test__stack__queue_8cpp_source_l00088}00088\ }
 
 \end{DoxyCode}

@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classds_1_1_binary_tree" kind="class" language="C++" prot="public">
+    <compoundname>ds::BinaryTree</compoundname>
+    <includes refid="binary__tree_8h" local="no">binary_tree.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classds_1_1_binary_tree_1ab52b03a7d856c0f079184011d5ee09eb" prot="private" static="no" mutable="no">
+        <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref>&lt; T &gt; *</type>
+        <definition>TreeNode&lt;T&gt;* ds::BinaryTree&lt; T &gt;::root_</definition>
+        <argsstring></argsstring>
+        <name>root_</name>
+        <qualifiedname>ds::BinaryTree::root_</qualifiedname>
+        <briefdescription>
+<para>Kök düğüm pointer&apos;ı </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="44" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a500e2473a4c0a835ecd66ecf2c67011d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryTree&lt; T &gt;::destroy</definition>
+        <argsstring>(TreeNode&lt; T &gt; *node)</argsstring>
+        <name>destroy</name>
+        <qualifiedname>ds::BinaryTree::destroy</qualifiedname>
+        <param>
+          <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Ağacı temizler (recursive) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Temizlenecek düğüm </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="50" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1ab6781f27dd54174a5e2791acdd97e8df" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ds::BinaryTree&lt; T &gt;::height</definition>
+        <argsstring>(TreeNode&lt; T &gt; *node) const</argsstring>
+        <name>height</name>
+        <qualifiedname>ds::BinaryTree::height</qualifiedname>
+        <param>
+          <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Ağacın yüksekliğini hesaplar (recursive) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hesaplanacak düğüm </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ağaç yüksekliği </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="63" column="9" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1ac685d0e150b7186f20ed22663c0d4e0d" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ds::BinaryTree&lt; T &gt;::countNodes</definition>
+        <argsstring>(TreeNode&lt; T &gt; *node) const</argsstring>
+        <name>countNodes</name>
+        <qualifiedname>ds::BinaryTree::countNodes</qualifiedname>
+        <param>
+          <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Ağaçtaki düğüm sayısını hesaplar (recursive) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sayılacak düğüm </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Düğüm sayısı </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="73" column="9" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a1cdb8f747fffd86521a977d077570858" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryTree&lt; T &gt;::inorderTraversal</definition>
+        <argsstring>(TreeNode&lt; T &gt; *node, std::function&lt; void(const T &amp;)&gt; visit) const</argsstring>
+        <name>inorderTraversal</name>
+        <qualifiedname>ds::BinaryTree::inorderTraversal</qualifiedname>
+        <param>
+          <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+<para>Inorder traversal (recursive) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gezilecek düğüm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ziyaret fonksiyonu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="83" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="83" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a498e4163f70cedc4139146b97fcdd407" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryTree&lt; T &gt;::preorderTraversal</definition>
+        <argsstring>(TreeNode&lt; T &gt; *node, std::function&lt; void(const T &amp;)&gt; visit) const</argsstring>
+        <name>preorderTraversal</name>
+        <qualifiedname>ds::BinaryTree::preorderTraversal</qualifiedname>
+        <param>
+          <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+<para>Preorder traversal (recursive) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gezilecek düğüm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ziyaret fonksiyonu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="96" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="96" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a9f5004654fd0145717a5349b731f76c3" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryTree&lt; T &gt;::postorderTraversal</definition>
+        <argsstring>(TreeNode&lt; T &gt; *node, std::function&lt; void(const T &amp;)&gt; visit) const</argsstring>
+        <name>postorderTraversal</name>
+        <qualifiedname>ds::BinaryTree::postorderTraversal</qualifiedname>
+        <param>
+          <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+<para>Postorder traversal (recursive) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gezilecek düğüm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ziyaret fonksiyonu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="109" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="109" bodyend="115"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a13657d21d3a9089f6d352b4f9f8b9f09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ds::BinaryTree&lt; T &gt;::BinaryTree</definition>
+        <argsstring>()</argsstring>
+        <name>BinaryTree</name>
+        <qualifiedname>ds::BinaryTree::BinaryTree</qualifiedname>
+        <briefdescription>
+<para>Varsayılan constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="121" column="5" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1adc0877f60defc2c8d1eaf006c2385293" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ds::BinaryTree&lt; T &gt;::~BinaryTree</definition>
+        <argsstring>()</argsstring>
+        <name>~BinaryTree</name>
+        <qualifiedname>ds::BinaryTree::~BinaryTree</qualifiedname>
+        <briefdescription>
+<para>Destructor - Tüm düğümleri serbest bırakır. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="126" column="5" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a7f13a233979c2f6b7e322e5551f8db43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ds::BinaryTree&lt; T &gt;::BinaryTree</definition>
+        <argsstring>(const BinaryTree &amp;)=delete</argsstring>
+        <name>BinaryTree</name>
+        <qualifiedname>ds::BinaryTree::BinaryTree</qualifiedname>
+        <param>
+          <type>const <ref refid="classds_1_1_binary_tree" kindref="compound">BinaryTree</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy constructor (silinmiş) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="131" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a2717c0ac8dbee6219efc04f0494271d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classds_1_1_binary_tree" kindref="compound">BinaryTree</ref> &amp;</type>
+        <definition>BinaryTree &amp; ds::BinaryTree&lt; T &gt;::operator=</definition>
+        <argsstring>(const BinaryTree &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>ds::BinaryTree::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classds_1_1_binary_tree" kindref="compound">BinaryTree</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy assignment operator (silinmiş) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="136" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a102d00608b01d8b4dc9d3596e11ee086" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref>&lt; T &gt; *</type>
+        <definition>TreeNode&lt; T &gt; * ds::BinaryTree&lt; T &gt;::root</definition>
+        <argsstring>() const</argsstring>
+        <name>root</name>
+        <qualifiedname>ds::BinaryTree::root</qualifiedname>
+        <briefdescription>
+<para>Kök düğüm pointer&apos;ını döndürür. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Kök düğüm pointer&apos;ı </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="142" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a04648ef36c6d3825d03394d6e454ea5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ds::BinaryTree&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>ds::BinaryTree::empty</qualifiedname>
+        <briefdescription>
+<para>Ağacın boş olup olmadığını kontrol eder. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true eğer ağaç boşsa </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="148" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1aa7d57ab79bbdee5e201f6eee643c5726" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ds::BinaryTree&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>ds::BinaryTree::size</qualifiedname>
+        <briefdescription>
+<para>Ağaçtaki düğüm sayısını döndürür. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Düğüm sayısı </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="154" column="9" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a80a7e4158fd094e0f173eaf8c7b8455a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ds::BinaryTree&lt; T &gt;::height</definition>
+        <argsstring>() const</argsstring>
+        <name>height</name>
+        <qualifiedname>ds::BinaryTree::height</qualifiedname>
+        <briefdescription>
+<para>Ağacın yüksekliğini döndürür. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Ağaç yüksekliği </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="160" column="9" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="160" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1af447c33b205e77a49f372712b4ce0dee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryTree&lt; T &gt;::setRoot</definition>
+        <argsstring>(TreeNode&lt; T &gt; *node)</argsstring>
+        <name>setRoot</name>
+        <qualifiedname>ds::BinaryTree::setRoot</qualifiedname>
+        <param>
+          <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Kök düğümü ayarlar. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kök düğüm pointer&apos;ı </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="166" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1aaf4137cb035b7b51cd72145e90f075b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structds_1_1_tree_node" kindref="compound">TreeNode</ref>&lt; T &gt; *</type>
+        <definition>TreeNode&lt; T &gt; * ds::BinaryTree&lt; T &gt;::createRoot</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>createRoot</name>
+        <qualifiedname>ds::BinaryTree::createRoot</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Yeni kök düğümü oluşturur ve ayarlar. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kök düğümün değeri </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Oluşturulan kök düğüm pointer&apos;ı </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="173" column="14" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a9d116533b9b2984bd294093a9ad221b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryTree&lt; T &gt;::inorder</definition>
+        <argsstring>(std::function&lt; void(const T &amp;)&gt; visit) const</argsstring>
+        <name>inorder</name>
+        <qualifiedname>ds::BinaryTree::inorder</qualifiedname>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+<para>Inorder traversal (LNR: Left, Node, Right) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Her düğümü ziyaret ederken çağrılacak fonksiyon</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Inorder traversal, düğümleri sol alt ağaç, kök, sağ alt ağaç sırasında gezer. Binary search tree&apos;lerde sıralı çıktı verir. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="185" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="185" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1aa933613e2ffe04a7be5f1e8050fc6e16" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryTree&lt; T &gt;::preorder</definition>
+        <argsstring>(std::function&lt; void(const T &amp;)&gt; visit) const</argsstring>
+        <name>preorder</name>
+        <qualifiedname>ds::BinaryTree::preorder</qualifiedname>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+<para>Preorder traversal (NLR: Node, Left, Right) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Her düğümü ziyaret ederken çağrılacak fonksiyon</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Preorder traversal, düğümleri kök, sol alt ağaç, sağ alt ağaç sırasında gezer. Tree&apos;yi copy etmek için kullanılabilir. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="196" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="196" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a05fcac9727d9c1d707508f0023bbc6c0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryTree&lt; T &gt;::postorder</definition>
+        <argsstring>(std::function&lt; void(const T &amp;)&gt; visit) const</argsstring>
+        <name>postorder</name>
+        <qualifiedname>ds::BinaryTree::postorder</qualifiedname>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+<para>Postorder traversal (LRN: Left, Right, Node) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Her düğümü ziyaret ederken çağrılacak fonksiyon</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Postorder traversal, düğümleri sol alt ağaç, sağ alt ağaç, kök sırasında gezer. Tree&apos;yi silmek için kullanılabilir. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="207" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a96b133ad76ed2c05c564c0eb1f823e33" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryTree&lt; T &gt;::levelOrder</definition>
+        <argsstring>(std::function&lt; void(const T &amp;)&gt; visit) const</argsstring>
+        <name>levelOrder</name>
+        <qualifiedname>ds::BinaryTree::levelOrder</qualifiedname>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+<para>Level-order traversal (breadth-first) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Her düğümü ziyaret ederken çağrılacak fonksiyon</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Level-order traversal, düğümleri seviye seviye gezer. <ref refid="classds_1_1_queue" kindref="compound">Queue</ref> kullanarak breadth-first search yapar. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="218" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="218" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1a1fa3176166a909dc11177452e16e10b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryTree&lt; T &gt;::inorderIterative</definition>
+        <argsstring>(std::function&lt; void(const T &amp;)&gt; visit) const</argsstring>
+        <name>inorderIterative</name>
+        <qualifiedname>ds::BinaryTree::inorderIterative</qualifiedname>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+<para>Inorder traversal (iterative) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Her düğümü ziyaret ederken çağrılacak fonksiyon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="238" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="238" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classds_1_1_binary_tree_1afcd0802f7dea51e48562e23f937ccc34" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ds::BinaryTree&lt; T &gt;::preorderIterative</definition>
+        <argsstring>(std::function&lt; void(const T &amp;)&gt; visit) const</argsstring>
+        <name>preorderIterative</name>
+        <qualifiedname>ds::BinaryTree::preorderIterative</qualifiedname>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+<para>Preorder traversal (iterative) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Her düğümü ziyaret ederken çağrılacak fonksiyon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="260" column="10" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="260" bodyend="274"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Binary tree veri yapısı </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Değer türü</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Bu sınıf, binary tree veri yapısını implement eder. Tree traversals (inorder, preorder, postorder) ve level-order traversal desteği sağlar. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ds::BinaryTree&lt; T &gt;</label>
+        <link refid="classds_1_1_binary_tree"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" line="43" column="1" bodyfile="C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/include/ds/binary_tree.h" bodystart="43" bodyend="275"/>
+    <listofallmembers>
+      <member refid="classds_1_1_binary_tree_1a13657d21d3a9089f6d352b4f9f8b9f09" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>BinaryTree</name></member>
+      <member refid="classds_1_1_binary_tree_1a7f13a233979c2f6b7e322e5551f8db43" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>BinaryTree</name></member>
+      <member refid="classds_1_1_binary_tree_1ac685d0e150b7186f20ed22663c0d4e0d" prot="private" virt="non-virtual"><scope>ds::BinaryTree</scope><name>countNodes</name></member>
+      <member refid="classds_1_1_binary_tree_1aaf4137cb035b7b51cd72145e90f075b7" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>createRoot</name></member>
+      <member refid="classds_1_1_binary_tree_1a500e2473a4c0a835ecd66ecf2c67011d" prot="private" virt="non-virtual"><scope>ds::BinaryTree</scope><name>destroy</name></member>
+      <member refid="classds_1_1_binary_tree_1a04648ef36c6d3825d03394d6e454ea5a" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>empty</name></member>
+      <member refid="classds_1_1_binary_tree_1ab6781f27dd54174a5e2791acdd97e8df" prot="private" virt="non-virtual"><scope>ds::BinaryTree</scope><name>height</name></member>
+      <member refid="classds_1_1_binary_tree_1a80a7e4158fd094e0f173eaf8c7b8455a" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>height</name></member>
+      <member refid="classds_1_1_binary_tree_1a9d116533b9b2984bd294093a9ad221b2" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>inorder</name></member>
+      <member refid="classds_1_1_binary_tree_1a1fa3176166a909dc11177452e16e10b7" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>inorderIterative</name></member>
+      <member refid="classds_1_1_binary_tree_1a1cdb8f747fffd86521a977d077570858" prot="private" virt="non-virtual"><scope>ds::BinaryTree</scope><name>inorderTraversal</name></member>
+      <member refid="classds_1_1_binary_tree_1a96b133ad76ed2c05c564c0eb1f823e33" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>levelOrder</name></member>
+      <member refid="classds_1_1_binary_tree_1a2717c0ac8dbee6219efc04f0494271d0" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>operator=</name></member>
+      <member refid="classds_1_1_binary_tree_1a05fcac9727d9c1d707508f0023bbc6c0" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>postorder</name></member>
+      <member refid="classds_1_1_binary_tree_1a9f5004654fd0145717a5349b731f76c3" prot="private" virt="non-virtual"><scope>ds::BinaryTree</scope><name>postorderTraversal</name></member>
+      <member refid="classds_1_1_binary_tree_1aa933613e2ffe04a7be5f1e8050fc6e16" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>preorder</name></member>
+      <member refid="classds_1_1_binary_tree_1afcd0802f7dea51e48562e23f937ccc34" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>preorderIterative</name></member>
+      <member refid="classds_1_1_binary_tree_1a498e4163f70cedc4139146b97fcdd407" prot="private" virt="non-virtual"><scope>ds::BinaryTree</scope><name>preorderTraversal</name></member>
+      <member refid="classds_1_1_binary_tree_1a102d00608b01d8b4dc9d3596e11ee086" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>root</name></member>
+      <member refid="classds_1_1_binary_tree_1ab52b03a7d856c0f079184011d5ee09eb" prot="private" virt="non-virtual"><scope>ds::BinaryTree</scope><name>root_</name></member>
+      <member refid="classds_1_1_binary_tree_1af447c33b205e77a49f372712b4ce0dee" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>setRoot</name></member>
+      <member refid="classds_1_1_binary_tree_1aa7d57ab79bbdee5e201f6eee643c5726" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>size</name></member>
+      <member refid="classds_1_1_binary_tree_1adc0877f60defc2c8d1eaf006c2385293" prot="public" virt="non-virtual"><scope>ds::BinaryTree</scope><name>~BinaryTree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

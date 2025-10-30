@@ -16,5 +16,51 @@
 \DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00012}00012\ \ \ \ \ EXPECT\_EQ(ht.find(\textcolor{stringliteral}{"{}a"{}}),\ \textcolor{keyword}{nullptr});}
 \DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00013}00013\ \}}
 \DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00015}00015\ TEST(HashTable,\ SizeAndEmpty)\{}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00016}00016\ \ \ \ \ ds::HashTable<std::string,int>\ ht(4);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00017}00017\ \ \ \ \ EXPECT\_TRUE(ht.empty());}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00018}00018\ \ \ \ \ EXPECT\_EQ(ht.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00019}00019\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00020}00020\ \ \ \ \ ht.insert(\textcolor{stringliteral}{"{}key1"{}},\ 10);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00021}00021\ \ \ \ \ EXPECT\_FALSE(ht.empty());}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00022}00022\ \ \ \ \ EXPECT\_EQ(ht.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00023}00023\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00024}00024\ \ \ \ \ ht.insert(\textcolor{stringliteral}{"{}key2"{}},\ 20);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00025}00025\ \ \ \ \ EXPECT\_EQ(ht.size(),\ 2u);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00026}00026\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00027}00027\ \ \ \ \ ht.erase(\textcolor{stringliteral}{"{}key1"{}});}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00028}00028\ \ \ \ \ EXPECT\_EQ(ht.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00029}00029\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00030}00030\ \ \ \ \ ht.erase(\textcolor{stringliteral}{"{}key2"{}});}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00031}00031\ \ \ \ \ EXPECT\_TRUE(ht.empty());}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00032}00032\ \ \ \ \ EXPECT\_EQ(ht.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00035}00035\ TEST(HashTable,\ Contains)\{}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00036}00036\ \ \ \ \ ds::HashTable<std::string,int>\ ht(8);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00037}00037\ \ \ \ \ EXPECT\_FALSE(ht.contains(\textcolor{stringliteral}{"{}nonexistent"{}}));}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00038}00038\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00039}00039\ \ \ \ \ ht.insert(\textcolor{stringliteral}{"{}test"{}},\ 42);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00040}00040\ \ \ \ \ EXPECT\_TRUE(ht.contains(\textcolor{stringliteral}{"{}test"{}}));}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00041}00041\ \ \ \ \ EXPECT\_FALSE(ht.contains(\textcolor{stringliteral}{"{}other"{}}));}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00042}00042\ \}}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00044}00044\ TEST(HashTable,\ Rehash)\{}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00045}00045\ \ \ \ \ ds::HashTable<std::string,int>\ ht(2);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{comment}{//\ Force\ rehash\ by\ adding\ many\ elements}}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ ht.insert(\textcolor{stringliteral}{"{}key"{}}\ +\ std::to\_string(i),\ i);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00049}00049\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00050}00050\ \ \ \ \ EXPECT\_EQ(ht.size(),\ 10u);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00051}00051\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{comment}{//\ Verify\ all\ elements\ are\ still\ accessible}}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ EXPECT\_TRUE(ht.contains(\textcolor{stringliteral}{"{}key"{}}\ +\ std::to\_string(i)));}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ v\ =\ ht.find(\textcolor{stringliteral}{"{}key"{}}\ +\ std::to\_string(i));}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ ASSERT\_NE(v,\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ EXPECT\_EQ(*v,\ i);}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00058}00058\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00059}00059\ \}}
+\DoxyCodeLine{\Hypertarget{test__hash__table_8cpp_source_l00060}00060\ }
 
 \end{DoxyCode}

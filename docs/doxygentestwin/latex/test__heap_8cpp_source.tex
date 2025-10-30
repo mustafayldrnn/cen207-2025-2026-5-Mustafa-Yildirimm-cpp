@@ -18,5 +18,52 @@
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00014}00014\ \ \ \ \ EXPECT\_EQ(sorted[0],\ 5);\ EXPECT\_EQ(sorted[1],\ 4);\ EXPECT\_EQ(sorted[2],\ 3);\ EXPECT\_EQ(sorted[3],\ 2);\ EXPECT\_EQ(sorted[4],\ 1);}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00015}00015\ \}}
 \DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00017}00017\ TEST(BinaryHeap,\ SizeAndEmpty)\{}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00018}00018\ \ \ \ \ ds::BinaryHeap<int>\ h;}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00019}00019\ \ \ \ \ EXPECT\_TRUE(h.empty());}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00020}00020\ \ \ \ \ EXPECT\_EQ(h.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00021}00021\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00022}00022\ \ \ \ \ h.push(10);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00023}00023\ \ \ \ \ EXPECT\_FALSE(h.empty());}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00024}00024\ \ \ \ \ EXPECT\_EQ(h.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00025}00025\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00026}00026\ \ \ \ \ h.push(20);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00027}00027\ \ \ \ \ EXPECT\_EQ(h.size(),\ 2u);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00028}00028\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00029}00029\ \ \ \ \ h.pop();}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00030}00030\ \ \ \ \ EXPECT\_EQ(h.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00031}00031\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00032}00032\ \ \ \ \ h.pop();}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00033}00033\ \ \ \ \ EXPECT\_TRUE(h.empty());}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00034}00034\ \ \ \ \ EXPECT\_EQ(h.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00037}00037\ TEST(BinaryHeap,\ MinHeap)\{}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00038}00038\ \ \ \ \ ds::BinaryHeap<int,\ std::greater<int>>\ minHeap;}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00039}00039\ \ \ \ \ minHeap.push(5);\ minHeap.push(1);\ minHeap.push(3);\ minHeap.push(2);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00040}00040\ \ \ \ \ EXPECT\_EQ(minHeap.top(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00041}00041\ \ \ \ \ minHeap.pop();}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00042}00042\ \ \ \ \ EXPECT\_EQ(minHeap.top(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00043}00043\ \ \ \ \ minHeap.pop();}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00044}00044\ \ \ \ \ EXPECT\_EQ(minHeap.top(),\ 3);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00045}00045\ \}}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00047}00047\ TEST(BinaryHeap,\ LargeDataset)\{}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00048}00048\ \ \ \ \ ds::BinaryHeap<int>\ h;}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{comment}{//\ Add\ 100\ elements}}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 100;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ h.push(i);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00052}00052\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00053}00053\ \ \ \ \ EXPECT\_EQ(h.size(),\ 100u);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00054}00054\ \ \ \ \ EXPECT\_EQ(h.top(),\ 99);\ \textcolor{comment}{//\ Max\ element}}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00055}00055\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{comment}{//\ Test\ heap\ sort}}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keyword}{auto}\ sorted\ =\ h.heap\_sort\_copy();}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00058}00058\ \ \ \ \ EXPECT\_EQ(sorted.size(),\ 100u);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 100;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ EXPECT\_EQ(sorted[i],\ 99\ -\/\ i);}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00061}00061\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00062}00062\ \}}
+\DoxyCodeLine{\Hypertarget{test__heap_8cpp_source_l00063}00063\ }
 
 \end{DoxyCode}

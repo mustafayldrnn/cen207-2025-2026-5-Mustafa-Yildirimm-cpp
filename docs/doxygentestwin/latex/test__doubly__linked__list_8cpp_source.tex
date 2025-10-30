@@ -28,5 +28,77 @@
 \DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ dll.begin();\ EXPECT\_EQ(*it,\ 42);}
 \DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00025}00025\ \}}
 \DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00027}00027\ TEST(DoublyLinkedList,\ SizeAndEmpty)\{}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00028}00028\ \ \ \ \ ds::DoublyLinkedList<int>\ dll;}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00029}00029\ \ \ \ \ EXPECT\_TRUE(dll.empty());}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00030}00030\ \ \ \ \ EXPECT\_EQ(dll.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00031}00031\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00032}00032\ \ \ \ \ dll.push\_back(10);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00033}00033\ \ \ \ \ EXPECT\_FALSE(dll.empty());}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00034}00034\ \ \ \ \ EXPECT\_EQ(dll.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00035}00035\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00036}00036\ \ \ \ \ dll.push\_front(20);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00037}00037\ \ \ \ \ EXPECT\_EQ(dll.size(),\ 2u);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00038}00038\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00039}00039\ \ \ \ \ dll.erase(dll.begin());}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00040}00040\ \ \ \ \ EXPECT\_EQ(dll.size(),\ 1u);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00041}00041\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00042}00042\ \ \ \ \ dll.clear();}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00043}00043\ \ \ \ \ EXPECT\_TRUE(dll.empty());}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00044}00044\ \ \ \ \ EXPECT\_EQ(dll.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00045}00045\ \}}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00047}00047\ TEST(DoublyLinkedList,\ ReverseTraversal)\{}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00048}00048\ \ \ \ \ ds::DoublyLinkedList<int>\ dll;}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00049}00049\ \ \ \ \ dll.push\_back(1);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00050}00050\ \ \ \ \ dll.push\_back(2);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00051}00051\ \ \ \ \ dll.push\_back(3);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00052}00052\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{comment}{//\ Test\ reverse\ iteration}}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ dll.rbegin();}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00055}00055\ \ \ \ \ EXPECT\_EQ(*it,\ 3);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00056}00056\ \ \ \ \ -\/-\/it;}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00057}00057\ \ \ \ \ EXPECT\_EQ(*it,\ 2);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00058}00058\ \ \ \ \ -\/-\/it;}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00059}00059\ \ \ \ \ EXPECT\_EQ(*it,\ 1);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00060}00060\ \}}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00062}00062\ TEST(DoublyLinkedList,\ InsertAfterEnd)\{}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00063}00063\ \ \ \ \ ds::DoublyLinkedList<int>\ dll;}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00064}00064\ \ \ \ \ dll.push\_back(1);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00065}00065\ \ \ \ \ dll.push\_back(2);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00066}00066\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{comment}{//\ Insert\ after\ the\ last\ element}}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00068}00068\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ dll.begin();}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00069}00069\ \ \ \ \ ++it;\ \textcolor{comment}{//\ Now\ pointing\ to\ second\ element}}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00070}00070\ \ \ \ \ dll.insert\_after(it,\ 3);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00071}00071\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00072}00072\ \ \ \ \ EXPECT\_EQ(dll.size(),\ 3u);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00073}00073\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00074}00074\ \ \ \ \ \textcolor{comment}{//\ Verify\ order}}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordtype}{int}\ arr[3];\ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ it2\ =\ dll.begin();\ it2\ !=\ dll.end();\ ++it2)\ \{}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ arr[i++]\ =\ *it2;}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00078}00078\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00079}00079\ \ \ \ \ EXPECT\_EQ(arr[0],\ 1);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00080}00080\ \ \ \ \ EXPECT\_EQ(arr[1],\ 2);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00081}00081\ \ \ \ \ EXPECT\_EQ(arr[2],\ 3);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00082}00082\ \}}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00084}00084\ TEST(DoublyLinkedList,\ EraseAllElements)\{}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00085}00085\ \ \ \ \ ds::DoublyLinkedList<int>\ dll;}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00086}00086\ \ \ \ \ dll.push\_back(1);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00087}00087\ \ \ \ \ dll.push\_back(2);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00088}00088\ \ \ \ \ dll.push\_back(3);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00089}00089\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{comment}{//\ Erase\ all\ elements\ one\ by\ one}}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keywordflow}{while}(!dll.empty())\ \{}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ dll.erase(dll.begin());}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00093}00093\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00094}00094\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00095}00095\ \ \ \ \ EXPECT\_TRUE(dll.empty());}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00096}00096\ \ \ \ \ EXPECT\_EQ(dll.size(),\ 0u);}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00097}00097\ \}}
+\DoxyCodeLine{\Hypertarget{test__doubly__linked__list_8cpp_source_l00098}00098\ }
 
 \end{DoxyCode}

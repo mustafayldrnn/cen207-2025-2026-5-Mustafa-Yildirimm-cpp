@@ -151,35 +151,123 @@
 test_graph_bfs_dfs.cpp\par \pard\plain 
 {\tc\tcl2 \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_graph_bfs_dfs.cpp}
 {\xe \v C:/Users/ahmet/OneDrive/Masaüstü/DataStructure/cen207-2025-2026-5-Mustafa-Yildirimm-cpp/tests/test_graph_bfs_dfs.cpp}
-{\bkmkstart AAAAAAAAAO}
-{\bkmkend AAAAAAAAAO}
+{\bkmkstart AAAAAAAAGQ}
+{\bkmkend AAAAAAAAGQ}
 {
 \par
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAABC}{\bkmkend AAAAAAAABC}
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\bkmkstart AAAAAAAAPI}{\bkmkend AAAAAAAAPI}
 00001 {\cf21 #include <gtest/gtest.h>}\par
-{\bkmkstart AAAAAAAABU}{\bkmkend AAAAAAAABU}
+{\bkmkstart AAAAAAAARO}{\bkmkend AAAAAAAARO}
 00002 {\cf21 #include "ds/graph.h"}\par
-{\bkmkstart AAAAAAAACD}{\bkmkend AAAAAAAACD}
+{\bkmkstart AAAAAAAATN}{\bkmkend AAAAAAAATN}
 00003 \par
-{\bkmkstart AAAAAAAACF}{\bkmkend AAAAAAAACF}
+{\bkmkstart AAAAAAAATQ}{\bkmkend AAAAAAAATQ}
 00004 TEST(Graph, BFSandDFS)\{\par
-{\bkmkstart AAAAAAAACK}{\bkmkend AAAAAAAACK}
+{\bkmkstart AAAAAAAATZ}{\bkmkend AAAAAAAATZ}
 00005     ds::Graph g(6);\par
-{\bkmkstart AAAAAAAACN}{\bkmkend AAAAAAAACN}
+{\bkmkstart AAAAAAAAUF}{\bkmkend AAAAAAAAUF}
 00006     g.add_edge(0,1,{\cf17 true}); g.add_edge(1,2,{\cf17 true}); g.add_edge(2,3,{\cf17 true}); g.add_edge(3,4,{\cf17 true}); g.add_edge(4,5,{\cf17 true});\par
-{\bkmkstart AAAAAAAACQ}{\bkmkend AAAAAAAACQ}
+{\bkmkstart AAAAAAAAUS}{\bkmkend AAAAAAAAUS}
 00007     {\cf17 auto} dist = g.bfs_dist(0);\par
-{\bkmkstart AAAAAAAACW}{\bkmkend AAAAAAAACW}
+{\bkmkstart AAAAAAAAUY}{\bkmkend AAAAAAAAUY}
 00008     EXPECT_EQ(dist[0],0); EXPECT_EQ(dist[5],5);\par
-{\bkmkstart AAAAAAAADD}{\bkmkend AAAAAAAADD}
+{\bkmkstart AAAAAAAAVK}{\bkmkend AAAAAAAAVK}
 00009     {\cf17 auto} order = g.dfs_order(0);\par
-{\bkmkstart AAAAAAAADG}{\bkmkend AAAAAAAADG}
+{\bkmkstart AAAAAAAAVQ}{\bkmkend AAAAAAAAVQ}
 00010     ASSERT_FALSE(order.empty());\par
-{\bkmkstart AAAAAAAADJ}{\bkmkend AAAAAAAADJ}
+{\bkmkstart AAAAAAAAVV}{\bkmkend AAAAAAAAVV}
 00011     EXPECT_EQ(order.front(), 0);\par
-{\bkmkstart AAAAAAAADM}{\bkmkend AAAAAAAADM}
+{\bkmkstart AAAAAAAAWG}{\bkmkend AAAAAAAAWG}
 00012 \}\par
-{\bkmkstart AAAAAAAADN}{\bkmkend AAAAAAAADN}
+{\bkmkstart AAAAAAAAWK}{\bkmkend AAAAAAAAWK}
 00013 \par
+{\bkmkstart AAAAAAAAWO}{\bkmkend AAAAAAAAWO}
+00014 TEST(Graph, DirectedGraph)\{\par
+{\bkmkstart AAAAAAAAWQ}{\bkmkend AAAAAAAAWQ}
+00015     ds::Graph g(4);\par
+{\bkmkstart AAAAAAAAWX}{\bkmkend AAAAAAAAWX}
+00016     g.add_edge(0, 1, {\cf17 false}); {\cf20 // directed edge}\par
+{\bkmkstart AAAAAAAAXB}{\bkmkend AAAAAAAAXB}
+00017     g.add_edge(1, 2, {\cf17 false});\par
+{\bkmkstart AAAAAAAAXF}{\bkmkend AAAAAAAAXF}
+00018     g.add_edge(2, 3, {\cf17 false});\par
+{\bkmkstart AAAAAAAAXJ}{\bkmkend AAAAAAAAXJ}
+00019     \par
+{\bkmkstart AAAAAAAAXO}{\bkmkend AAAAAAAAXO}
+00020     {\cf17 auto} dist = g.bfs_dist(0);\par
+{\bkmkstart AAAAAAAAXW}{\bkmkend AAAAAAAAXW}
+00021     EXPECT_EQ(dist[0], 0);\par
+{\bkmkstart AAAAAAAAYC}{\bkmkend AAAAAAAAYC}
+00022     EXPECT_EQ(dist[1], 1);\par
+{\bkmkstart AAAAAAAAYJ}{\bkmkend AAAAAAAAYJ}
+00023     EXPECT_EQ(dist[2], 2);\par
+{\bkmkstart AAAAAAAAYN}{\bkmkend AAAAAAAAYN}
+00024     EXPECT_EQ(dist[3], 3);\par
+{\bkmkstart AAAAAAAAYR}{\bkmkend AAAAAAAAYR}
+00025 \}\par
+{\bkmkstart AAAAAAAAYT}{\bkmkend AAAAAAAAYT}
+00026 \par
+{\bkmkstart AAAAAAAAYV}{\bkmkend AAAAAAAAYV}
+00027 TEST(Graph, DisconnectedComponents)\{\par
+{\bkmkstart AAAAAAAAZD}{\bkmkend AAAAAAAAZD}
+00028     ds::Graph g(6);\par
+{\bkmkstart AAAAAAAAZI}{\bkmkend AAAAAAAAZI}
+00029     {\cf20 // First component: 0-1-2}\par
+{\bkmkstart AAAAAAAAZL}{\bkmkend AAAAAAAAZL}
+00030     g.add_edge(0, 1, {\cf17 true});\par
+{\bkmkstart AAAAAAAAZS}{\bkmkend AAAAAAAAZS}
+00031     g.add_edge(1, 2, {\cf17 true});\par
+{\bkmkstart AAAAAAABAD}{\bkmkend AAAAAAABAD}
+00032     {\cf20 // Second component: 3-4-5}\par
+{\bkmkstart AAAAAAABAG}{\bkmkend AAAAAAABAG}
+00033     g.add_edge(3, 4, {\cf17 true});\par
+{\bkmkstart AAAAAAABAK}{\bkmkend AAAAAAABAK}
+00034     g.add_edge(4, 5, {\cf17 true});\par
+{\bkmkstart AAAAAAABAP}{\bkmkend AAAAAAABAP}
+00035     \par
+{\bkmkstart AAAAAAABAV}{\bkmkend AAAAAAABAV}
+00036     {\cf17 auto} dist = g.bfs_dist(0);\par
+{\bkmkstart AAAAAAABBD}{\bkmkend AAAAAAABBD}
+00037     EXPECT_EQ(dist[0], 0);\par
+{\bkmkstart AAAAAAABBJ}{\bkmkend AAAAAAABBJ}
+00038     EXPECT_EQ(dist[1], 1);\par
+{\bkmkstart AAAAAAABBN}{\bkmkend AAAAAAABBN}
+00039     EXPECT_EQ(dist[2], 2);\par
+{\bkmkstart AAAAAAABBR}{\bkmkend AAAAAAABBR}
+00040     {\cf20 // Nodes 3,4,5 should be unreachable from 0}\par
+{\bkmkstart AAAAAAABBU}{\bkmkend AAAAAAABBU}
+00041     EXPECT_EQ(dist[3], -1);\par
+{\bkmkstart AAAAAAABBX}{\bkmkend AAAAAAABBX}
+00042     EXPECT_EQ(dist[4], -1);\par
+{\bkmkstart AAAAAAABBZ}{\bkmkend AAAAAAABBZ}
+00043     EXPECT_EQ(dist[5], -1);\par
+{\bkmkstart AAAAAAABCE}{\bkmkend AAAAAAABCE}
+00044 \}\par
+{\bkmkstart AAAAAAABCH}{\bkmkend AAAAAAABCH}
+00045 \par
+{\bkmkstart AAAAAAABCI}{\bkmkend AAAAAAABCI}
+00046 TEST(Graph, DFSOrder)\{\par
+{\bkmkstart AAAAAAABCR}{\bkmkend AAAAAAABCR}
+00047     ds::Graph g(5);\par
+{\bkmkstart AAAAAAABCX}{\bkmkend AAAAAAABCX}
+00048     g.add_edge(0, 1, {\cf17 true});\par
+{\bkmkstart AAAAAAABDF}{\bkmkend AAAAAAABDF}
+00049     g.add_edge(0, 2, {\cf17 true});\par
+{\bkmkstart AAAAAAABDL}{\bkmkend AAAAAAABDL}
+00050     g.add_edge(1, 3, {\cf17 true});\par
+{\bkmkstart AAAAAAABDT}{\bkmkend AAAAAAABDT}
+00051     g.add_edge(2, 4, {\cf17 true});\par
+{\bkmkstart AAAAAAABEB}{\bkmkend AAAAAAABEB}
+00052     \par
+{\bkmkstart AAAAAAABEE}{\bkmkend AAAAAAABEE}
+00053     {\cf17 auto} order = g.dfs_order(0);\par
+{\bkmkstart AAAAAAABEK}{\bkmkend AAAAAAABEK}
+00054     EXPECT_EQ(order.front(), 0); {\cf20 // Start node}\par
+{\bkmkstart AAAAAAABER}{\bkmkend AAAAAAABER}
+00055     EXPECT_EQ(order.back(), 4); {\cf20 // Should reach the end}\par
+{\bkmkstart AAAAAAABFB}{\bkmkend AAAAAAABFB}
+00056 \}\par
+{\bkmkstart AAAAAAABFE}{\bkmkend AAAAAAABFE}
+00057 \par
 }
 }
